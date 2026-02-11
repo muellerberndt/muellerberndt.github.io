@@ -1,11 +1,435 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="refresh" content="0; url=/starklab/" />
-    <title>Redirecting...</title>
-  </head>
-  <body>
-    <p>Redirecting to <a href="/starklab/">Stark Lab</a>...</p>
-    <script>window.location.href = "/starklab/";</script>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary Meta Tags -->
+  <title>Floating Pragma — Security Research & Interactive Learning</title>
+  <meta name="title" content="Floating Pragma — Security Research & Interactive Learning" />
+  <meta name="description" content="Interactive learning platforms for zero-knowledge proofs, STARK proofs, and AI security. By Bernhard Mueller." />
+  <meta name="keywords" content="zero knowledge proofs, ZKP, STARK, SNARK, AI security, adversarial ML, cryptography, security research, Bernhard Mueller" />
+  <meta name="author" content="Bernhard Mueller" />
+  <link rel="canonical" href="https://floatingpragma.io/" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://floatingpragma.io/" />
+  <meta property="og:title" content="Floating Pragma — Security Research & Interactive Learning" />
+  <meta property="og:description" content="Interactive learning platforms for zero-knowledge proofs, STARK proofs, and AI security. By Bernhard Mueller." />
+  <meta property="og:site_name" content="Floating Pragma" />
+  <meta property="og:image" content="https://floatingpragma.io/pragma.jpg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://floatingpragma.io/" />
+  <meta name="twitter:title" content="Floating Pragma — Security Research & Interactive Learning" />
+  <meta name="twitter:description" content="Interactive learning platforms for zero-knowledge proofs, STARK proofs, and AI security. By Bernhard Mueller." />
+  <meta name="twitter:image" content="https://floatingpragma.io/pragma.jpg" />
+
+  <!-- Additional SEO -->
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Floating Pragma",
+    "description": "Security research and interactive learning platforms by Bernhard Mueller",
+    "url": "https://floatingpragma.io",
+    "author": {
+      "@type": "Person",
+      "name": "Bernhard Mueller",
+      "url": "https://floatingpragma.io",
+      "sameAs": [
+        "https://github.com/muellerberndt",
+        "https://twitter.com/muellerberndt"
+      ]
+    },
+    "hasPart": [
+      {
+        "@type": "WebSite",
+        "name": "STARK Lab",
+        "url": "https://floatingpragma.io/starklab/",
+        "description": "Interactive step-by-step tutorial for understanding STARK proofs"
+      },
+      {
+        "@type": "WebSite",
+        "name": "Awesome Zero-Knowledge Proofs",
+        "url": "https://floatingpragma.io/awesome-zk-proofs/",
+        "description": "Curated learning path for SNARKs, STARKs, and Bulletproofs"
+      },
+      {
+        "@type": "WebSite",
+        "name": "Awesome AI Security",
+        "url": "https://floatingpragma.io/awesome-ai-security/",
+        "description": "Curated learning path for AI security, adversarial ML, and AI pentesting"
+      },
+      {
+        "@type": "CollectionPage",
+        "name": "Selected Works",
+        "url": "https://floatingpragma.io/selected-works/",
+        "description": "20 years of offensive security research by Bernhard Mueller"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HLGH209WMG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-HLGH209WMG');
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg-primary: #0a0a0a;
+      --bg-secondary: #111111;
+      --bg-tertiary: #1a1a1a;
+      --accent-green: #00ff41;
+      --accent-purple: #ff79c6;
+      --accent-cyan: #4ee7ff;
+      --accent-amber: #ffb300;
+      --accent-rose: #f43f5e;
+      --text-primary: #ffffff;
+      --text-secondary: #d0d0d0;
+      --text-muted: #888888;
+      --border-color: #333333;
+    }
+
+    ::selection {
+      background: rgba(78, 231, 255, 0.3);
+      color: #fff;
+    }
+
+    body {
+      font-family: 'JetBrains Mono', 'SF Mono', Consolas, monospace;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* Scan line */
+    .scan-line {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--accent-cyan), transparent);
+      opacity: 0.3;
+      pointer-events: none;
+      animation: scan 8s linear infinite;
+      z-index: 100;
+    }
+
+    @keyframes scan {
+      0% { transform: translateY(-100%); }
+      100% { transform: translateY(100vh); }
+    }
+
+    /* Layout */
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Header */
+    header {
+      padding: 48px 0 0;
+      text-align: center;
+    }
+
+    .logo {
+      width: 64px;
+      height: 64px;
+      margin: 0 auto 24px;
+      opacity: 0;
+      animation: fade-in 0.6s ease forwards;
+    }
+
+    .logo img {
+      width: 100%;
+      height: 100%;
+      border-radius: 12px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+      opacity: 0;
+      animation: fade-in 0.6s ease 0.1s forwards;
+    }
+
+    .gradient-text {
+      background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .tagline {
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      font-weight: 400;
+      margin-bottom: 8px;
+      opacity: 0;
+      animation: fade-in 0.6s ease 0.2s forwards;
+    }
+
+    .author {
+      color: var(--text-muted);
+      font-size: 0.75rem;
+      opacity: 0;
+      animation: fade-in 0.6s ease 0.3s forwards;
+    }
+
+    .author a {
+      color: var(--accent-cyan);
+      text-decoration: none;
+    }
+
+    .author a:hover {
+      text-decoration: underline;
+    }
+
+    /* Projects grid */
+    .projects {
+      padding: 56px 0 40px;
+    }
+
+    .section-label {
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+      opacity: 0;
+      animation: fade-in 0.6s ease 0.4s forwards;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+    }
+
+    /* Card */
+    .card {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 24px;
+      text-decoration: none;
+      color: var(--text-primary);
+      transition: all 0.2s ease;
+      opacity: 0;
+      animation: slide-up 0.5s ease forwards;
+      display: block;
+    }
+
+    .card:nth-child(1) { animation-delay: 0.45s; }
+    .card:nth-child(2) { animation-delay: 0.55s; }
+    .card:nth-child(3) { animation-delay: 0.65s; }
+    .card:nth-child(4) { animation-delay: 0.75s; }
+
+    .card:hover {
+      transform: translateY(-2px);
+      background: var(--bg-tertiary);
+    }
+
+    .card:hover .card-accent {
+      opacity: 0.15;
+    }
+
+    .card-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .card-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .card-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+
+    .card-desc {
+      font-size: 0.78rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+      margin-bottom: 12px;
+    }
+
+    .card-tag {
+      display: inline-block;
+      font-size: 0.65rem;
+      padding: 3px 8px;
+      border-radius: 4px;
+      border: 1px solid;
+      opacity: 0.7;
+    }
+
+    /* Color accents */
+    .accent-green .card-dot { background: var(--accent-green); box-shadow: 0 0 8px rgba(0,255,65,0.4); }
+    .accent-green .card-tag { color: var(--accent-green); border-color: rgba(0,255,65,0.3); }
+    .accent-green:hover { border-color: rgba(0,255,65,0.4); }
+
+    .accent-purple .card-dot { background: var(--accent-purple); box-shadow: 0 0 8px rgba(255,121,198,0.4); }
+    .accent-purple .card-tag { color: var(--accent-purple); border-color: rgba(255,121,198,0.3); }
+    .accent-purple:hover { border-color: rgba(255,121,198,0.4); }
+
+    .accent-cyan .card-dot { background: var(--accent-cyan); box-shadow: 0 0 8px rgba(78,231,255,0.4); }
+    .accent-cyan .card-tag { color: var(--accent-cyan); border-color: rgba(78,231,255,0.3); }
+    .accent-cyan:hover { border-color: rgba(78,231,255,0.4); }
+
+    .accent-amber .card-dot { background: var(--accent-amber); box-shadow: 0 0 8px rgba(255,179,0,0.4); }
+    .accent-amber .card-tag { color: var(--accent-amber); border-color: rgba(255,179,0,0.3); }
+    .accent-amber:hover { border-color: rgba(255,179,0,0.4); }
+
+    /* Footer */
+    footer {
+      padding: 32px 0 48px;
+      border-top: 1px solid var(--border-color);
+      text-align: center;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      margin-bottom: 16px;
+    }
+
+    .footer-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.75rem;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover {
+      color: var(--accent-cyan);
+    }
+
+    .copyright {
+      color: var(--text-muted);
+      font-size: 0.65rem;
+    }
+
+    /* Animations */
+    @keyframes fade-in {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slide-up {
+      from { opacity: 0; transform: translateY(16px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: var(--bg-primary); }
+    ::-webkit-scrollbar-thumb { background: var(--border-color); border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #444; }
+
+    /* Mobile */
+    @media (max-width: 640px) {
+      header { padding: 32px 0 0; }
+      h1 { font-size: 1.5rem; }
+      .projects { padding: 40px 0 32px; }
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="scan-line"></div>
+
+  <div class="container">
+    <header>
+      <div class="logo">
+        <img src="/pragma-cropped.jpg" alt="Floating Pragma" />
+      </div>
+      <h1><span class="gradient-text">Floating Pragma</span></h1>
+      <p class="tagline">Security research &amp; interactive learning</p>
+      <p class="author">by <a href="https://github.com/muellerberndt" target="_blank" rel="noopener noreferrer">Bernhard Mueller</a></p>
+    </header>
+
+    <section class="projects">
+      <p class="section-label">Projects</p>
+      <div class="grid">
+        <a href="/starklab/" class="card accent-green">
+          <div class="card-header">
+            <span class="card-dot"></span>
+            <span class="card-title">STARK Lab</span>
+          </div>
+          <p class="card-desc">Interactive, step-by-step tutorial for understanding STARK proofs intuitively. Build traces, constraints, and FRI from scratch.</p>
+          <span class="card-tag">Interactive Tutorial</span>
+        </a>
+
+        <a href="/awesome-zk-proofs/" class="card accent-purple">
+          <div class="card-header">
+            <span class="card-dot"></span>
+            <span class="card-title">Awesome ZK Proofs</span>
+          </div>
+          <p class="card-desc">Curated learning path for zero-knowledge proofs. Three parallel tracks: SNARKs, STARKs, and Bulletproofs.</p>
+          <span class="card-tag">Learning Path</span>
+        </a>
+
+        <a href="/awesome-ai-security/" class="card accent-cyan">
+          <div class="card-header">
+            <span class="card-dot"></span>
+            <span class="card-title">Awesome AI Security</span>
+          </div>
+          <p class="card-desc">Curated learning path for AI security. Adversarial attacks, prompt injection, and AI-powered pentesting.</p>
+          <span class="card-tag">Learning Path</span>
+        </a>
+
+        <a href="/selected-works/" class="card accent-amber">
+          <div class="card-header">
+            <span class="card-dot"></span>
+            <span class="card-title">Selected Works</span>
+          </div>
+          <p class="card-desc">20 years of offensive security research. From Symbian 0-days to smart contract symbolic execution to AI security agents.</p>
+          <span class="card-tag">Papers &amp; Tools</span>
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-links">
+        <a href="https://github.com/muellerberndt" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://twitter.com/muellerberndt" target="_blank" rel="noopener noreferrer">Twitter</a>
+      </div>
+      <p class="copyright">&copy; Bernhard Mueller</p>
+    </footer>
+  </div>
+</body>
 </html>

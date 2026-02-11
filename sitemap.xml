@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>https://floatingpragma.io/sitemap-root.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://floatingpragma.io/starklab/sitemap.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://floatingpragma.io/awesome-zk-proofs/sitemap.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://floatingpragma.io/awesome-ai-security/sitemap.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://floatingpragma.io/selected-works/sitemap.xml</loc>
+  </sitemap>
+</sitemapindex>
