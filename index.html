@@ -122,12 +122,35 @@
       margin: 0 auto 32px;
       opacity: 0;
       animation: glow-in 1.5s ease forwards;
+      position: relative;
     }
     .logo img {
       width: 100%;
       height: 100%;
       border-radius: 14px;
       filter: none;
+      position: relative;
+      z-index: 1;
+    }
+    /* Pulse rings */
+    .logo::before,
+    .logo::after {
+      content: '';
+      position: absolute;
+      inset: -8px;
+      border-radius: 20px;
+      border: 1px solid rgba(78, 231, 255, 0.15);
+      opacity: 0;
+      animation: pulse-ring 4s ease-out 2s infinite;
+    }
+    .logo::after {
+      animation-delay: 4s;
+    }
+    @keyframes pulse-ring {
+      0% { opacity: 0; inset: -4px; border-radius: 18px; }
+      10% { opacity: 0.4; }
+      80% { opacity: 0; }
+      100% { opacity: 0; inset: -40px; border-radius: 34px; }
     }
 
     /* Tagline */
@@ -137,8 +160,6 @@
       color: var(--muted);
       letter-spacing: 0.12em;
       text-transform: uppercase;
-      opacity: 0;
-      animation: fade-in 1.5s ease 0.8s forwards;
     }
 
     /* Founder line */
@@ -146,8 +167,6 @@
       margin-top: 32px;
       font-size: 0.62rem;
       color: var(--faint);
-      opacity: 0;
-      animation: fade-in 1.5s ease 2s forwards;
     }
     .founder a {
       color: var(--muted);
@@ -167,8 +186,6 @@
       justify-content: center;
       gap: 28px;
       flex-wrap: wrap;
-      opacity: 0;
-      animation: fade-in 1.5s ease 1.5s forwards;
     }
     .pages a {
       font-size: 0.7rem;
@@ -204,18 +221,45 @@
     <div class="logo">
       <img src="/pragma-cropped.jpg" alt="Pragma" />
     </div>
-    <div class="tagline">Stealth Company</div>
+    <div class="tagline" data-decode data-delay="800">Stealth Company</div>
 
     <div class="founder">
-      <a href="/selected-works/">Bernhard Mueller</a>, Chief Hacking Officer
+      <a href="/selected-works/" data-decode data-delay="2000">Bernhard Mueller</a>, <span data-decode data-delay="2200">Chief Hacking Officer</span>
     </div>
 
     <div class="pages">
-      <a href="/selected-works/">Works</a>
-      <a href="/starklab/">STARK Lab</a>
-      <a href="/awesome-zk-proofs/">ZK Proofs</a>
-      <a href="/awesome-ai-security/">AI Security</a>
+      <a href="/selected-works/" data-decode data-delay="1500">Works</a>
+      <a href="/starklab/" data-decode data-delay="1600">STARK Lab</a>
+      <a href="/awesome-zk-proofs/" data-decode data-delay="1700">ZK Proofs</a>
+      <a href="/awesome-ai-security/" data-decode data-delay="1800">AI Security</a>
     </div>
   </div>
+
+  <script>
+    const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$%&*!?/\\|{}[]<>';
+
+    document.querySelectorAll('[data-decode]').forEach(el => {
+      const final = el.textContent;
+      const delay = parseInt(el.dataset.delay) || 0;
+      el.textContent = '';
+
+      setTimeout(() => {
+        let iteration = 0;
+        const interval = setInterval(() => {
+          el.textContent = final
+            .split('')
+            .map((char, i) => {
+              if (char === ' ') return ' ';
+              if (i < iteration) return final[i];
+              return chars[Math.floor(Math.random() * chars.length)];
+            })
+            .join('');
+
+          if (iteration >= final.length) clearInterval(interval);
+          iteration += 1 / 3;
+        }, 30);
+      }, delay);
+    });
+  </script>
 </body>
 </html>
