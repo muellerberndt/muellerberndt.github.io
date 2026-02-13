@@ -81,21 +81,6 @@
       -webkit-font-smoothing: antialiased;
     }
 
-    /* Scan line — slow, barely visible */
-    .scan-line {
-      position: fixed;
-      top: 0; left: 0; right: 0;
-      height: 1px;
-      background: linear-gradient(90deg, transparent, var(--cyan), transparent);
-      opacity: 0.15;
-      pointer-events: none;
-      animation: scan 12s linear infinite;
-      z-index: 10;
-    }
-    @keyframes scan {
-      0% { transform: translateY(-100%); }
-      100% { transform: translateY(100vh); }
-    }
 
     /* Subtle grid bg */
     .grid-bg {
@@ -214,7 +199,7 @@
   </style>
 </head>
 <body>
-  <div class="scan-line"></div>
+
   <div class="grid-bg"></div>
 
   <div class="center">
