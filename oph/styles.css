@@ -444,6 +444,38 @@ h3 {
   bottom: 18px;
 }
 
+.hero-note {
+  padding: 14px 16px;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.hero-note strong {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 0.66rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.hero-note p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.76rem;
+  line-height: 1.58;
+}
+
+.hero-note p + p {
+  margin-top: 10px;
+}
+
+.hero-note a {
+  color: var(--text);
+  border-bottom: 1px solid rgba(78, 231, 255, 0.35);
+}
+
 .section {
   margin-top: 54px;
 }
