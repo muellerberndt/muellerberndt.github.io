@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Observer Patch Holography | Floating Pragma</title>
+  <meta name="title" content="Observer Patch Holography | Floating Pragma" />
+  <meta name="description" content="Observer Patch Holography is Floating Pragma's theory-of-everything program. Explore the OPH book, the interactive lab, and the disproval challenge from one central hub." />
+  <meta name="author" content="Bernhard Mueller" />
+  <link rel="canonical" href="https://floatingpragma.io/oph/" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://floatingpragma.io/oph/" />
+  <meta property="og:title" content="Observer Patch Holography | Floating Pragma" />
+  <meta property="og:description" content="The central OPH hub for Reverse Engineering Reality, the interactive OPH Lab, and the disproval challenge." />
+  <meta property="og:site_name" content="Floating Pragma" />
+  <meta property="og:image" content="https://floatingpragma.io/pragma.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Observer Patch Holography | Floating Pragma" />
+  <meta name="twitter:description" content="The central OPH hub for Reverse Engineering Reality, the interactive OPH Lab, and the disproval challenge." />
+  <meta name="twitter:image" content="https://floatingpragma.io/pragma.jpg" />
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Observer Patch Holography",
+    "url": "https://floatingpragma.io/oph/",
+    "description": "The central hub for Floating Pragma's Observer Patch Holography program.",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Floating Pragma",
+      "url": "https://floatingpragma.io/"
+    },
+    "hasPart": [
+      {
+        "@type": "CreativeWork",
+        "name": "Reverse Engineering Reality",
+        "url": "https://oph-book.floatingpragma.io/"
+      },
+      {
+        "@type": "WebApplication",
+        "name": "OPH Lab",
+        "url": "https://oph-lab.floatingpragma.io/"
+      },
+      {
+        "@type": "WebPage",
+        "name": "OPH Disproval Challenge",
+        "url": "https://challenge.floatingpragma.io/"
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+
+    :root {
+      --bg: #05080d;
+      --panel: rgba(9, 13, 19, 0.76);
+      --panel-strong: rgba(10, 15, 22, 0.92);
+      --border: rgba(78, 231, 255, 0.18);
+      --border-soft: rgba(255, 255, 255, 0.08);
+      --text: #f4f8fb;
+      --muted: #9aa8b9;
+      --cyan: #4ee7ff;
+      --gold: #d4b56e;
+      --rose: #ff7d87;
+      --lime: #7dff9e;
+      --blue: #7ca6ff;
+      --shadow: 0 28px 70px rgba(0, 0, 0, 0.45);
+      --radius: 28px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--text);
+      font-family: 'JetBrains Mono', monospace;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(78, 231, 255, 0.12), transparent 28%),
+        radial-gradient(circle at 80% 10%, rgba(124, 166, 255, 0.14), transparent 24%),
+        radial-gradient(circle at 50% 100%, rgba(212, 181, 110, 0.12), transparent 30%),
+        linear-gradient(180deg, #070b11 0%, #05080d 50%, #06090f 100%);
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(78, 231, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(78, 231, 255, 0.03) 1px, transparent 1px);
+      background-size: 56px 56px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .shell {
+      width: min(1180px, calc(100% - 40px));
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .topbar {
+      padding: 28px 0 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      min-width: 0;
+    }
+
+    .brand-mark {
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      padding: 2px;
+      background: linear-gradient(135deg, rgba(78, 231, 255, 0.45), rgba(124, 166, 255, 0.2), rgba(212, 181, 110, 0.28));
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.28);
+      flex-shrink: 0;
+    }
+
+    .brand-mark img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      border-radius: 12px;
+    }
+
+    .brand-copy {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      min-width: 0;
+    }
+
+    .brand-copy strong {
+      font-size: 0.82rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--text);
+    }
+
+    .brand-copy span {
+      font-size: 0.68rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .top-links {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      font-size: 0.72rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .top-links a {
+      padding: 6px 0;
+      border-bottom: 1px solid transparent;
+      transition: color 0.2s ease, border-color 0.2s ease;
+    }
+
+    .top-links a:hover,
+    .top-links a:focus-visible {
+      color: var(--cyan);
+      border-color: rgba(78, 231, 255, 0.45);
+    }
+
+    main {
+      padding: 28px 0 96px;
+    }
+
+    .panel {
+      position: relative;
+      overflow: hidden;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      background: var(--panel);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(18px);
+    }
+
+    .panel::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.04), transparent 40%);
+      pointer-events: none;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
+      gap: 24px;
+      align-items: stretch;
+    }
+
+    .hero-copy {
+      padding: 42px 42px 36px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.72rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--cyan);
+      margin-bottom: 18px;
+    }
+
+    .hero h1,
+    .section-heading h2,
+    .resource-card h3,
+    .manifesto-copy h2,
+    .pillars h2,
+    .chain-card h3,
+    .topic h3,
+    .cta-copy h2 {
+      margin: 0;
+      font-family: 'Space Grotesk', sans-serif;
+      letter-spacing: -0.04em;
+      color: var(--text);
+    }
+
+    .hero h1 {
+      font-size: clamp(3rem, 6vw, 5.6rem);
+      line-height: 0.94;
+      max-width: 10.5ch;
+      margin-bottom: 18px;
+    }
+
+    .hero p {
+      margin: 0;
+      max-width: 62ch;
+      font-size: 0.97rem;
+      line-height: 1.75;
+      color: var(--muted);
+    }
+
+    .hero p + p {
+      margin-top: 16px;
+    }
+
+    .hero-actions {
+      margin-top: 30px;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 48px;
+      padding: 0 18px;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      border: 1px solid transparent;
+      transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease, color 0.2s ease;
+    }
+
+    .btn:hover,
+    .btn:focus-visible {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      color: var(--text);
+      background: linear-gradient(135deg, rgba(78, 231, 255, 0.22), rgba(78, 231, 255, 0.08));
+      border-color: rgba(78, 231, 255, 0.35);
+    }
+
+    .btn-secondary {
+      color: var(--muted);
+      background: rgba(255, 255, 255, 0.02);
+      border-color: rgba(255, 255, 255, 0.12);
+    }
+
+    .btn-secondary:hover,
+    .btn-secondary:focus-visible {
+      color: var(--text);
+      border-color: rgba(255, 255, 255, 0.24);
+    }
+
+    .metrics {
+      margin-top: 32px;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .metric {
+      padding: 14px 16px;
+      border-radius: 18px;
+      border: 1px solid rgba(78, 231, 255, 0.12);
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    .metric span {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 0.64rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .metric strong {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .hero-panel {
+      padding: 34px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 28px;
+      background:
+        radial-gradient(circle at top, rgba(78, 231, 255, 0.09), transparent 42%),
+        linear-gradient(180deg, rgba(6, 9, 14, 0.94), rgba(8, 12, 18, 0.94));
+    }
+
+    .signal {
+      min-height: 270px;
+      display: grid;
+      place-items: center;
+      position: relative;
+    }
+
+    .signal-core {
+      width: 166px;
+      height: 166px;
+      border-radius: 50%;
+      position: relative;
+      display: grid;
+      place-items: center;
+      color: var(--text);
+      font-size: 0.72rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      text-align: center;
+      background:
+        radial-gradient(circle at 30% 30%, rgba(78, 231, 255, 0.6), rgba(78, 231, 255, 0.12) 40%, rgba(5, 8, 13, 0.2) 65%, rgba(5, 8, 13, 0.92) 100%);
+      box-shadow:
+        0 0 0 18px rgba(78, 231, 255, 0.05),
+        0 0 0 42px rgba(124, 166, 255, 0.04),
+        0 0 48px rgba(78, 231, 255, 0.22);
+      animation: pulse 8s ease-in-out infinite;
+    }
+
+    .signal-core::before,
+    .signal-core::after {
+      content: "";
+      position: absolute;
+      inset: -32px;
+      border-radius: 50%;
+      border: 1px solid rgba(78, 231, 255, 0.12);
+    }
+
+    .signal-core::after {
+      inset: -58px;
+      border-color: rgba(124, 166, 255, 0.16);
+    }
+
+    .node {
+      position: absolute;
+      max-width: 140px;
+      padding: 12px 14px;
+      border-radius: 18px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      background: rgba(4, 8, 12, 0.82);
+      color: var(--text);
+      font-size: 0.68rem;
+      line-height: 1.55;
+      text-align: center;
+      box-shadow: 0 14px 24px rgba(0, 0, 0, 0.22);
+    }
+
+    .node strong {
+      display: block;
+      color: var(--cyan);
+      margin-bottom: 3px;
+      font-size: 0.62rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .node-top { top: 8px; left: 50%; transform: translateX(-50%); }
+    .node-left { left: 0; top: 50%; transform: translateY(-50%); }
+    .node-right { right: 0; top: 50%; transform: translateY(-50%); }
+    .node-bottom { left: 50%; bottom: 0; transform: translateX(-50%); }
+
+    .panel-note {
+      padding: 18px 20px;
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    .panel-note p {
+      margin: 0;
+      font-size: 0.83rem;
+      line-height: 1.7;
+      color: var(--muted);
+    }
+
+    .panel-note p + p {
+      margin-top: 10px;
+    }
+
+    .panel-note a {
+      color: var(--text);
+      border-bottom: 1px solid rgba(78, 231, 255, 0.35);
+    }
+
+    .section {
+      margin-top: 76px;
+    }
+
+    .section-heading {
+      max-width: 760px;
+      margin-bottom: 24px;
+    }
+
+    .section-heading h2 {
+      font-size: clamp(2rem, 4vw, 3.3rem);
+      line-height: 1.02;
+    }
+
+    .section-heading p {
+      margin: 14px 0 0;
+      color: var(--muted);
+      font-size: 0.92rem;
+      line-height: 1.75;
+    }
+
+    .resource-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .resource-card {
+      min-height: 100%;
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      border-radius: 24px;
+      border: 1px solid var(--border-soft);
+      background: linear-gradient(180deg, rgba(8, 12, 18, 0.88), rgba(7, 10, 16, 0.78));
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .resource-card::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      height: 2px;
+    }
+
+    .resource-card.book::before { background: linear-gradient(90deg, rgba(212, 181, 110, 0.2), rgba(212, 181, 110, 0.9)); }
+    .resource-card.lab::before { background: linear-gradient(90deg, rgba(78, 231, 255, 0.2), rgba(78, 231, 255, 0.95)); }
+    .resource-card.challenge::before { background: linear-gradient(90deg, rgba(255, 125, 135, 0.2), rgba(255, 125, 135, 0.95)); }
+
+    .resource-kicker {
+      font-size: 0.68rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .resource-card h3 {
+      font-size: 1.85rem;
+      line-height: 1;
+    }
+
+    .resource-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.9rem;
+      line-height: 1.75;
+    }
+
+    .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      padding: 8px 10px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      font-size: 0.66rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text);
+    }
+
+    .resource-card .btn {
+      margin-top: auto;
+      width: fit-content;
+    }
+
+    .manifesto {
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+      gap: 20px;
+    }
+
+    .manifesto-copy,
+    .pillars {
+      padding: 32px;
+    }
+
+    .manifesto-copy h2,
+    .pillars h2 {
+      font-size: clamp(1.9rem, 3.6vw, 3rem);
+      line-height: 1.03;
+    }
+
+    .manifesto-copy .lead {
+      margin: 20px 0 16px;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.4rem;
+      line-height: 1.2;
+      color: var(--text);
+    }
+
+    .manifesto-copy p,
+    .pillars p {
+      margin: 0;
+      font-size: 0.92rem;
+      line-height: 1.75;
+      color: var(--muted);
+    }
+
+    .pillar-list {
+      margin-top: 20px;
+      display: grid;
+      gap: 14px;
+    }
+
+    .pillar {
+      padding: 16px 18px;
+      border-radius: 18px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: rgba(255, 255, 255, 0.025);
+    }
+
+    .pillar strong {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 0.72rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    .pillar span {
+      color: var(--text);
+      font-size: 0.86rem;
+      line-height: 1.7;
+    }
+
+    .chain-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .chain-card {
+      padding: 28px;
+    }
+
+    .chain-card.rose { border-color: rgba(255, 125, 135, 0.22); }
+    .chain-card.blue { border-color: rgba(124, 166, 255, 0.22); }
+
+    .chain-label {
+      display: inline-flex;
+      margin-bottom: 12px;
+      font-size: 0.66rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .chain-card h3 {
+      font-size: 2rem;
+      margin-bottom: 12px;
+    }
+
+    .chain-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.88rem;
+      line-height: 1.75;
+    }
+
+    .step-list {
+      margin: 22px 0 26px;
+      display: grid;
+      gap: 12px;
+    }
+
+    .step {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 14px;
+      border-radius: 18px;
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      background: rgba(255, 255, 255, 0.025);
+    }
+
+    .step-index {
+      width: 30px;
+      height: 30px;
+      display: grid;
+      place-items: center;
+      border-radius: 999px;
+      font-size: 0.76rem;
+      color: var(--text);
+      flex-shrink: 0;
+    }
+
+    .chain-card.rose .step-index {
+      background: rgba(255, 125, 135, 0.18);
+      border: 1px solid rgba(255, 125, 135, 0.28);
+    }
+
+    .chain-card.blue .step-index {
+      background: rgba(124, 166, 255, 0.16);
+      border: 1px solid rgba(124, 166, 255, 0.3);
+    }
+
+    .step span {
+      color: var(--text);
+      font-size: 0.84rem;
+      line-height: 1.55;
+    }
+
+    .chain-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.74rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--text);
+      border-bottom: 1px solid rgba(78, 231, 255, 0.35);
+    }
+
+    .topic-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .topic {
+      padding: 22px;
+      border-radius: 22px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: rgba(255, 255, 255, 0.03);
+      box-shadow: var(--shadow);
+    }
+
+    .topic h3 {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+    }
+
+    .topic p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.85rem;
+      line-height: 1.7;
+    }
+
+    .cta-band {
+      margin-top: 76px;
+      padding: 34px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+      background:
+        radial-gradient(circle at left, rgba(78, 231, 255, 0.12), transparent 32%),
+        linear-gradient(180deg, rgba(9, 13, 19, 0.9), rgba(8, 12, 18, 0.94));
+    }
+
+    .cta-copy {
+      max-width: 720px;
+    }
+
+    .cta-copy h2 {
+      font-size: clamp(1.9rem, 3.4vw, 3rem);
+      line-height: 1.02;
+    }
+
+    .cta-copy p {
+      margin: 14px 0 0;
+      color: var(--muted);
+      font-size: 0.92rem;
+      line-height: 1.75;
+    }
+
+    .cta-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .footer {
+      padding: 28px 0 42px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      font-size: 0.7rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      border-bottom: 1px solid transparent;
+      transition: color 0.2s ease, border-color 0.2s ease;
+    }
+
+    .footer-links a:hover,
+    .footer-links a:focus-visible {
+      color: var(--cyan);
+      border-color: rgba(78, 231, 255, 0.45);
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(22px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.03); }
+    }
+
+    @media (max-width: 1080px) {
+      .hero,
+      .manifesto,
+      .chain-grid,
+      .resource-grid,
+      .topic-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cta-band {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .cta-actions {
+        justify-content: flex-start;
+      }
+    }
+
+    @media (max-width: 820px) {
+      .shell {
+        width: min(100% - 28px, 1180px);
+      }
+
+      .topbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .hero-copy,
+      .hero-panel,
+      .manifesto-copy,
+      .pillars,
+      .chain-card,
+      .cta-band {
+        padding: 24px;
+      }
+
+      .metrics {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .signal {
+        min-height: 360px;
+      }
+
+      .node-left,
+      .node-right {
+        top: auto;
+        transform: none;
+      }
+
+      .node-left {
+        left: 8px;
+        bottom: 88px;
+      }
+
+      .node-right {
+        right: 8px;
+        bottom: 88px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .hero h1 {
+        font-size: clamp(2.55rem, 15vw, 4rem);
+      }
+
+      .top-links,
+      .footer,
+      .footer-links {
+        width: 100%;
+      }
+
+      .btn,
+      .resource-card .btn {
+        width: 100%;
+      }
+
+      .hero-actions,
+      .cta-actions {
+        width: 100%;
+      }
+
+      .metrics {
+        grid-template-columns: 1fr;
+      }
+
+      .signal {
+        min-height: 420px;
+      }
+
+      .signal-core {
+        width: 138px;
+        height: 138px;
+      }
+
+      .node {
+        max-width: 120px;
+        padding: 10px 12px;
+      }
+
+      .node-top { top: 4px; }
+      .node-bottom { bottom: 8px; }
+
+      .node-left { left: 0; bottom: 118px; }
+      .node-right { right: 0; bottom: 118px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      .signal-core,
+      .reveal {
+        animation: none;
+        transition: none;
+      }
+
+      .reveal {
+        opacity: 1;
+        transform: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <a class="brand" href="/">
+        <span class="brand-mark">
+          <img src="/pragma-cropped.jpg" alt="Floating Pragma" />
+        </span>
+        <span class="brand-copy">
+          <strong>Floating Pragma</strong>
+          <span>Observer Patch Holography</span>
+        </span>
+      </a>
+      <nav class="top-links" aria-label="OPH navigation">
+        <a href="/">Home</a>
+        <a href="https://oph-book.floatingpragma.io/">Book</a>
+        <a href="https://oph-lab.floatingpragma.io/">Lab</a>
+        <a href="https://challenge.floatingpragma.io/">Challenge</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="panel hero-copy reveal">
+          <div class="eyebrow">Observer Patch Holography</div>
+          <h1>The theory of everything, reverse engineered.</h1>
+          <p>
+            OPH treats physics as a consistency problem on a holographic screen. If overlapping observers must agree,
+            spacetime, quantum mechanics, gauge structure, and much of known physics become outputs instead of inputs.
+          </p>
+          <p>
+            This page is the central hub for the narrative, the derivations, and the attack surface.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://oph-lab.floatingpragma.io/">Open the OPH Lab</a>
+            <a class="btn btn-secondary" href="https://oph-book.floatingpragma.io/">Read the Book</a>
+            <a class="btn btn-secondary" href="https://challenge.floatingpragma.io/">Take the Challenge</a>
+          </div>
+
+          <div class="metrics">
+            <div class="metric">
+              <span>Foundations</span>
+              <strong>5 axioms</strong>
+            </div>
+            <div class="metric">
+              <span>Structure</span>
+              <strong>2 chains</strong>
+            </div>
+            <div class="metric">
+              <span>Claim</span>
+              <strong>1 framework</strong>
+            </div>
+            <div class="metric">
+              <span>Attitude</span>
+              <strong>Pressure test it</strong>
+            </div>
+          </div>
+        </div>
+
+        <aside class="panel hero-panel reveal">
+          <div class="signal" aria-hidden="true">
+            <div class="signal-core">OPH<br />signal</div>
+            <div class="node node-top">
+              <strong>Input</strong>
+              5 axioms + MAR
+            </div>
+            <div class="node node-left">
+              <strong>Geometry</strong>
+              Spacetime from entanglement
+            </div>
+            <div class="node node-right">
+              <strong>Gauge</strong>
+              Symmetry from gluing
+            </div>
+            <div class="node node-bottom">
+              <strong>Outcome</strong>
+              Gravity, QFT, dark matter
+            </div>
+          </div>
+
+          <div class="panel-note">
+            <p>
+              Start with the story in <a href="https://oph-book.floatingpragma.io/">Reverse Engineering Reality</a>.
+            </p>
+            <p>
+              Walk the actual derivation map in the <a href="https://oph-lab.floatingpragma.io/">interactive lab</a>.
+            </p>
+            <p>
+              If you think the framework breaks, try the <a href="https://challenge.floatingpragma.io/">disproval challenge</a>.
+            </p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-heading">
+          <div class="eyebrow">Launch Points</div>
+          <h2>Choose your angle of attack.</h2>
+          <p>
+            OPH is public in three different forms: a narrative entry point, an interactive derivation system,
+            and an adversarial challenge for anyone who thinks the framework fails.
+          </p>
+        </div>
+
+        <div class="resource-grid">
+          <article class="resource-card book">
+            <div class="resource-kicker">Narrative</div>
+            <h3>Reverse Engineering Reality</h3>
+            <p>
+              The book version of OPH. Start here if you want the philosophical setup, the intuition, and the big picture
+              before diving into derivations.
+            </p>
+            <div class="tag-row">
+              <span class="tag">Story-first</span>
+              <span class="tag">Physics intuition</span>
+              <span class="tag">Nonlinear ideas</span>
+            </div>
+            <a class="btn btn-secondary" href="https://oph-book.floatingpragma.io/">Open the book</a>
+          </article>
+
+          <article class="resource-card lab">
+            <div class="resource-kicker">Interactive</div>
+            <h3>OPH Lab</h3>
+            <p>
+              The derivation engine. Follow two explicit chains from axioms to gravity, quantum mechanics,
+              gauge structure, particle masses, and synthesis.
+            </p>
+            <div class="tag-row">
+              <span class="tag">Interactive demos</span>
+              <span class="tag">Full walkthrough</span>
+              <span class="tag">Reference pages</span>
+            </div>
+            <a class="btn btn-primary" href="https://oph-lab.floatingpragma.io/">Enter the lab</a>
+          </article>
+
+          <article class="resource-card challenge">
+            <div class="resource-kicker">Adversarial</div>
+            <h3>Disproval Challenge</h3>
+            <p>
+              Treat OPH like an attack target, not a belief system. The point is to surface a decisive failure if one exists,
+              not to protect the framework from pressure.
+            </p>
+            <div class="tag-row">
+              <span class="tag">Stress test</span>
+              <span class="tag">Adversarial review</span>
+              <span class="tag">Make the break explicit</span>
+            </div>
+            <a class="btn btn-secondary" href="https://challenge.floatingpragma.io/">Challenge OPH</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section manifesto reveal">
+        <article class="panel manifesto-copy">
+          <div class="eyebrow">Core Claim</div>
+          <h2>There is no view from nowhere.</h2>
+          <p class="lead">
+            Reality is what survives consistency across observer patches.
+          </p>
+          <p>
+            OPH starts from local observers on a holographic screen, not a universe with a built-in god's-eye frame.
+            Where patches overlap, their descriptions must agree. The laws of physics are the constraints that make
+            that agreement possible.
+          </p>
+        </article>
+
+        <article class="panel pillars">
+          <div class="eyebrow">Framework</div>
+          <h2>What the framework is trying to do.</h2>
+          <div class="pillar-list">
+            <div class="pillar">
+              <strong>Spacetime</strong>
+              <span>Recover Lorentz symmetry, geometry, and gravity from entanglement and consistency.</span>
+            </div>
+            <div class="pillar">
+              <strong>Quantum theory</strong>
+              <span>Explain why observer-dependent measurement and overlap constraints lead toward quantum mechanics.</span>
+            </div>
+            <div class="pillar">
+              <strong>Gauge structure</strong>
+              <span>Derive gauge redundancy and Standard Model structure from gluing rules across patches.</span>
+            </div>
+            <div class="pillar">
+              <strong>Phenomenology</strong>
+              <span>Connect the framework to dark matter behavior, particle masses, and broader consistency checks.</span>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-heading">
+          <div class="eyebrow">Derivation Map</div>
+          <h2>From five axioms to the visible universe.</h2>
+          <p>
+            The lab is organized as two explicit chains. The goal is not to hint at a result. The goal is to make the steps inspectable.
+          </p>
+        </div>
+
+        <div class="chain-grid">
+          <article class="panel chain-card rose">
+            <span class="chain-label">Chain 1</span>
+            <h3>Axioms to gravity</h3>
+            <p>
+              Follow entropy bounds, entanglement, modular flow, and geometry toward general relativity, de Sitter structure,
+              and dark matter phenomenology.
+            </p>
+            <div class="step-list">
+              <div class="step"><span class="step-index">01</span><span>Five hints and the no-objective-reality setup</span></div>
+              <div class="step"><span class="step-index">02</span><span>The holographic screen and core axioms</span></div>
+              <div class="step"><span class="step-index">03</span><span>Entropy, area bounds, and entanglement geometry</span></div>
+              <div class="step"><span class="step-index">04</span><span>Lorentz symmetry, modular flow, and gravity</span></div>
+              <div class="step"><span class="step-index">05</span><span>de Sitter space, dark matter, and classical physics</span></div>
+            </div>
+            <a class="chain-link" href="https://oph-lab.floatingpragma.io/gravity">Jump into the gravity chain</a>
+          </article>
+
+          <article class="panel chain-card blue">
+            <span class="chain-label">Chain 2</span>
+            <h3>Axioms to quantum field theory</h3>
+            <p>
+              Follow overlap consistency, gluing, and MAR toward quantum mechanics, gauge symmetry,
+              Standard Model structure, and mass hierarchies.
+            </p>
+            <div class="step-list">
+              <div class="step"><span class="step-index">01</span><span>Five hints and the observer-patch starting point</span></div>
+              <div class="step"><span class="step-index">02</span><span>The holographic screen, axioms, and MAR</span></div>
+              <div class="step"><span class="step-index">03</span><span>Quantum mechanics, Bell, and entanglement</span></div>
+              <div class="step"><span class="step-index">04</span><span>Error correction, gauge symmetry, and the Standard Model</span></div>
+              <div class="step"><span class="step-index">05</span><span>Masses, unification, and synthesis</span></div>
+            </div>
+            <a class="chain-link" href="https://oph-lab.floatingpragma.io/standard-model">Jump into the QFT chain</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-heading">
+          <div class="eyebrow">Coverage</div>
+          <h2>What OPH is trying to connect.</h2>
+          <p>
+            The ambition is to provide one framework for the places where modern physics usually fragments into separate stories.
+          </p>
+        </div>
+
+        <div class="topic-grid">
+          <article class="topic">
+            <h3>Observer patches</h3>
+            <p>Replace objective reality with overlapping local descriptions that must agree where they intersect.</p>
+          </article>
+          <article class="topic">
+            <h3>Emergent spacetime</h3>
+            <p>Use entanglement and holography to recover geometry, causal structure, and gravity.</p>
+          </article>
+          <article class="topic">
+            <h3>Quantum mechanics</h3>
+            <p>Treat measurement, overlap, and consistency as the reason quantum behavior looks the way it does.</p>
+          </article>
+          <article class="topic">
+            <h3>Gauge structure</h3>
+            <p>Read symmetry and redundancy as consequences of how local patch descriptions are glued together.</p>
+          </article>
+          <article class="topic">
+            <h3>Phenomenology</h3>
+            <p>Push toward particle masses, dark matter behavior, and concrete constraints instead of stopping at slogans.</p>
+          </article>
+          <article class="topic">
+            <h3>Adversarial testing</h3>
+            <p>Expose the framework to explicit attacks rather than asking for trust, mood affiliation, or mystique.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel cta-band reveal">
+        <div class="cta-copy">
+          <div class="eyebrow">Next Move</div>
+          <h2>Start with story, proofs, or pressure.</h2>
+          <p>
+            If you want intuition, start with the book. If you want the structure, open the lab.
+            If you think the whole thing fails, take the challenge and make the break explicit.
+          </p>
+        </div>
+
+        <div class="cta-actions">
+          <a class="btn btn-primary" href="https://oph-lab.floatingpragma.io/">Open the lab</a>
+          <a class="btn btn-secondary" href="https://oph-book.floatingpragma.io/">Read the book</a>
+          <a class="btn btn-secondary" href="https://challenge.floatingpragma.io/">Challenge OPH</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>Floating Pragma / Bernhard Mueller</div>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/selected-works/">Selected Works</a>
+        <a href="https://oph-lab.floatingpragma.io/">OPH Lab</a>
+        <a href="https://oph-book.floatingpragma.io/">Book</a>
+        <a href="https://challenge.floatingpragma.io/">Challenge</a>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    const revealItems = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      });
+    }, { threshold: 0.15 });
+
+    revealItems.forEach(item => observer.observe(item));
+  </script>
+</body>
+</html>

@@ -5,6 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>404 - Floating Pragma</title>
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <script>
+    (function () {
+      var path = window.location.pathname || '';
+      if (!path.startsWith('/oph/') || path === '/oph/' || path === '/oph/index.html') return;
+
+      var suffix = path.slice('/oph'.length);
+      var target = 'https://oph-lab.floatingpragma.io' + suffix + window.location.search + window.location.hash;
+      window.location.replace(target);
+    })();
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
@@ -47,6 +57,8 @@
     <p>Page not found</p>
     <a href="/">Back to Floating Pragma</a>
     <div class="links">
+      <a href="/oph/">OPH</a>
+      <a href="https://oph-lab.floatingpragma.io/">OPH Lab</a>
       <a href="/starklab/">STARK Lab</a>
       <a href="/awesome-zk-proofs/">ZK Proofs</a>
       <a href="/awesome-ai-security/">AI Security</a>
