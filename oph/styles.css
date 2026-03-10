@@ -555,6 +555,15 @@ h3 {
   line-height: 1.55;
 }
 
+.link-format {
+  display: inline-block;
+  margin-right: 8px;
+  color: var(--cyan);
+  font-size: 0.58rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
 .entry-links a:hover,
 .entry-links a:focus-visible,
 .lane-card:hover,
