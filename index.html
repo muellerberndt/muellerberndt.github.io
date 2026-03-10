@@ -4,22 +4,23 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Pragma</title>
-  <meta name="title" content="Pragma" />
-  <meta name="description" content="Something is coming." />
+  <title>Floating Pragma | Security Research, Interactive Labs, and Observer Patch Holography</title>
+  <meta name="title" content="Floating Pragma | Security Research, Interactive Labs, and Observer Patch Holography" />
+  <meta name="description" content="Floating Pragma is Bernhard Mueller's home for security research, interactive learning labs, and Observer Patch Holography, a theory-of-everything and quantum-gravity framework." />
+  <meta name="keywords" content="Floating Pragma, Bernhard Mueller, Observer Patch Holography, OPH, theory of everything, quantum gravity, simulation theory, reality as simulation, security research, STARK Lab" />
   <meta name="author" content="Pragma" />
   <link rel="canonical" href="https://floatingpragma.io/" />
 
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://floatingpragma.io/" />
-  <meta property="og:title" content="Pragma" />
-  <meta property="og:description" content="Something is coming." />
-  <meta property="og:site_name" content="Pragma" />
+  <meta property="og:title" content="Floating Pragma | Security Research, Interactive Labs, and Observer Patch Holography" />
+  <meta property="og:description" content="Security research, interactive learning labs, and Observer Patch Holography under one Floating Pragma umbrella." />
+  <meta property="og:site_name" content="Floating Pragma" />
   <meta property="og:image" content="https://floatingpragma.io/pragma.jpg" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Pragma" />
-  <meta name="twitter:description" content="Something is coming." />
+  <meta name="twitter:title" content="Floating Pragma | Security Research, Interactive Labs, and Observer Patch Holography" />
+  <meta name="twitter:description" content="Security research, interactive learning labs, and Observer Patch Holography under one Floating Pragma umbrella." />
   <meta name="twitter:image" content="https://floatingpragma.io/pragma.jpg" />
 
   <meta name="robots" content="index, follow" />
@@ -28,10 +29,15 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Pragma",
+    "@type": "WebSite",
+    "name": "Floating Pragma",
     "url": "https://floatingpragma.io",
-    "logo": "https://floatingpragma.io/pragma.jpg"
+    "description": "Security research, interactive learning labs, and Observer Patch Holography.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Floating Pragma",
+      "logo": "https://floatingpragma.io/pragma.jpg"
+    }
   }
   </script>
 
@@ -41,7 +47,7 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-HLGH209WMG');
+    gtag('config', 'G-HLGH209WMG', { cookie_domain: 'floatingpragma.io' });
   </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -288,10 +294,10 @@
       <details>
         <summary data-decode data-delay="1700">OPH</summary>
         <div class="dropdown">
-          <a href="/oph/" data-decode data-delay="1750">OPH Overview</a>
-          <a href="https://oph-book.floatingpragma.io/" data-decode data-delay="1800">Reverse Engineering Reality</a>
-          <a href="https://challenge.floatingpragma.io/" data-decode data-delay="1850">Disproval Challenge</a>
-          <a href="https://oph-lab.floatingpragma.io/" data-decode data-delay="1900">OPH Lab</a>
+          <a href="/oph/" data-decode data-delay="1750" data-track-link="oph-overview">OPH Overview</a>
+          <a href="https://oph-book.floatingpragma.io/" data-decode data-delay="1800" data-track-link="oph-book">Reverse Engineering Reality</a>
+          <a href="https://challenge.floatingpragma.io/" data-decode data-delay="1850" data-track-link="oph-challenge">Disproval Challenge</a>
+          <a href="https://oph-lab.floatingpragma.io/" data-decode data-delay="1900" data-track-link="oph-lab">OPH Lab</a>
         </div>
       </details>
       <a href="/awesome-zk-proofs/" data-decode data-delay="1950">ZK Proofs</a>
@@ -341,6 +347,18 @@
         if (!dropdown.hasAttribute('open')) return;
         dropdown.removeAttribute('open');
         dropdown.querySelector('summary')?.focus();
+      });
+    });
+
+    document.addEventListener('click', event => {
+      const link = event.target.closest('a[data-track-link]');
+      if (!link || typeof window.gtag !== 'function') return;
+
+      window.gtag('event', 'navigation_click', {
+        link_label: link.dataset.trackLink,
+        link_text: (link.textContent || '').trim(),
+        link_url: link.href,
+        page_section: 'homepage'
       });
     });
   </script>
