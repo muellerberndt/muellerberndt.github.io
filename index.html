@@ -171,8 +171,10 @@
       justify-content: center;
       gap: 28px;
       flex-wrap: wrap;
+      align-items: flex-start;
     }
-    .pages a {
+    .pages a,
+    .pages summary {
       font-size: 0.7rem;
       letter-spacing: 0.1em;
       text-transform: uppercase;
@@ -181,10 +183,78 @@
       padding: 6px 0;
       border-bottom: 1px solid transparent;
       transition: all 0.3s;
+      cursor: pointer;
     }
-    .pages a:hover {
+    .pages a:hover,
+    .pages summary:hover,
+    .pages details[open] > summary {
       color: var(--cyan);
       border-bottom-color: rgba(78, 231, 255, 0.4);
+    }
+    .pages summary {
+      list-style: none;
+    }
+    .pages summary::-webkit-details-marker {
+      display: none;
+    }
+    .pages details {
+      position: relative;
+    }
+    .pages details:focus-within > summary {
+      color: var(--cyan);
+      border-bottom-color: rgba(78, 231, 255, 0.4);
+    }
+    .pages .dropdown {
+      position: absolute;
+      top: calc(100% + 12px);
+      left: 50%;
+      z-index: 5;
+      transform: translateX(-50%) translateY(-6px);
+      min-width: 240px;
+      padding: 12px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      background: rgba(10, 10, 10, 0.96);
+      border: 1px solid rgba(78, 231, 255, 0.18);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+      backdrop-filter: blur(10px);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+    .pages details[open] .dropdown,
+    .pages details:hover .dropdown,
+    .pages details:focus-within .dropdown {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateX(-50%) translateY(0);
+    }
+    .pages .dropdown a {
+      padding: 0;
+      text-align: left;
+      line-height: 1.5;
+      border-bottom: none;
+    }
+    .pages .dropdown a:hover,
+    .pages .dropdown a:focus-visible {
+      color: var(--cyan);
+    }
+
+    @media (max-width: 640px) {
+      .pages {
+        gap: 18px;
+      }
+      .pages .dropdown {
+        left: 0;
+        transform: translateX(0) translateY(-6px);
+        min-width: 220px;
+      }
+      .pages details[open] .dropdown,
+      .pages details:hover .dropdown,
+      .pages details:focus-within .dropdown {
+        transform: translateX(0) translateY(0);
+      }
     }
 
     /* Animations */
@@ -215,7 +285,14 @@
     <div class="pages">
       <a href="/selected-works/" data-decode data-delay="1500">Works</a>
       <a href="/starklab/" data-decode data-delay="1600">STARK Lab</a>
-      <a href="/oph/" data-decode data-delay="1700">OPH</a>
+      <details>
+        <summary data-decode data-delay="1700">OPH</summary>
+        <div class="dropdown">
+          <a href="https://oph-book.floatingpragma.io/" data-decode data-delay="1750">Reverse Engineering Reality</a>
+          <a href="https://challenge.floatingpragma.io/" data-decode data-delay="1800">Disproval Challenge</a>
+          <a href="https://floatingpragma.io/oph/" data-decode data-delay="1850">OPH Lab</a>
+        </div>
+      </details>
       <a href="/awesome-zk-proofs/" data-decode data-delay="1800">ZK Proofs</a>
       <a href="/awesome-ai-security/" data-decode data-delay="1900">AI Security</a>
     </div>
@@ -223,6 +300,7 @@
 
   <script>
     const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$%&*!?/\\|{}[]<>';
+    const navDropdowns = document.querySelectorAll('.pages details');
 
     document.querySelectorAll('[data-decode]').forEach(el => {
       const final = el.textContent;
@@ -245,6 +323,24 @@
           iteration += 1 / 3;
         }, 30);
       }, delay);
+    });
+
+    document.addEventListener('click', event => {
+      navDropdowns.forEach(dropdown => {
+        if (!dropdown.contains(event.target)) {
+          dropdown.removeAttribute('open');
+        }
+      });
+    });
+
+    document.addEventListener('keydown', event => {
+      if (event.key !== 'Escape') return;
+
+      navDropdowns.forEach(dropdown => {
+        if (!dropdown.hasAttribute('open')) return;
+        dropdown.removeAttribute('open');
+        dropdown.querySelector('summary')?.focus();
+      });
     });
   </script>
 </body>
