@@ -245,6 +245,41 @@ h3 {
   flex-wrap: wrap;
 }
 
+.hero-callout {
+  margin-top: 18px;
+  padding: 16px 18px;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.hero-callout strong {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 0.66rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.hero-callout p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.6;
+}
+
+.hero-callout a {
+  display: inline-flex;
+  margin-top: 12px;
+  padding-bottom: 3px;
+  border-bottom: 1px solid rgba(78, 231, 255, 0.35);
+  color: var(--text);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 .btn {
   min-height: 42px;
   display: inline-flex;
@@ -499,6 +534,21 @@ h3 {
   font-size: 0.72rem;
   line-height: 1.45;
   transition: transform 0.18s ease, border-color 0.18s ease, color 0.18s ease;
+}
+
+.entry-links a strong {
+  display: block;
+  color: var(--text);
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+.entry-links a small {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 0.68rem;
+  line-height: 1.55;
 }
 
 .entry-links a:hover,
