@@ -369,7 +369,7 @@ h3 {
   border-radius: 22px;
   overflow: hidden;
   border: 1px solid rgba(78, 231, 255, 0.16);
-  background: radial-gradient(circle at 50% 20%, rgba(78, 231, 255, 0.08), transparent 40%), #060a10;
+  background: #07111a;
 }
 
 .hero-image-frame img {
@@ -379,17 +379,8 @@ h3 {
   height: 100%;
   object-fit: contain;
   object-position: center;
-  opacity: 0.96;
-}
-
-.hero-image-frame::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background:
-    linear-gradient(180deg, rgba(6, 8, 12, 0.08), rgba(6, 8, 12, 0.52)),
-    repeating-linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.02) 2px, transparent 2px, transparent 8px);
-  pointer-events: none;
+  opacity: 1;
+  filter: brightness(1.1) saturate(1.04);
 }
 
 .hero-orbit {
