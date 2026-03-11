@@ -560,67 +560,6 @@ h3 {
   line-height: 1.4;
 }
 
-.video-stage {
-  display: grid;
-  gap: 18px;
-}
-
-.video-frame {
-  position: relative;
-  overflow: hidden;
-  border-radius: 22px;
-  border: 1px solid rgba(78, 231, 255, 0.16);
-  background:
-    radial-gradient(circle at 18% 16%, rgba(78, 231, 255, 0.12), transparent 28%),
-    linear-gradient(180deg, rgba(8, 12, 18, 0.98), rgba(7, 11, 18, 0.92));
-  aspect-ratio: 16 / 9;
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.03);
-}
-
-.video-frame iframe {
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-
-.video-caption {
-  display: grid;
-  grid-template-columns: minmax(0, 1.2fr) auto;
-  gap: 18px;
-  align-items: end;
-}
-
-.video-copy {
-  display: grid;
-  gap: 10px;
-}
-
-.video-followups {
-  margin-top: 14px;
-}
-
-.video-followups .entry-kicker {
-  margin-bottom: 12px;
-}
-
-.video-lane-grid {
-  align-items: stretch;
-}
-
-.video-lane-grid .lane-card strong {
-  font-size: 1rem;
-  line-height: 1.2;
-}
-
-.video-lane-grid .lane-card small {
-  font-size: 0.74rem;
-}
-
-.video-cta-row {
-  margin-top: 0;
-  justify-content: flex-end;
-}
-
 .entry-links a small {
   display: block;
   margin-top: 4px;
@@ -817,14 +756,6 @@ h3 {
   .hero-image-frame {
     min-height: 300px;
   }
-
-  .video-caption {
-    grid-template-columns: 1fr;
-  }
-
-  .video-cta-row {
-    justify-content: flex-start;
-  }
 }
 
 @media (max-width: 640px) {
@@ -848,15 +779,6 @@ h3 {
 
   .hero-image-frame {
     min-height: 240px;
-  }
-
-  .video-frame {
-    aspect-ratio: auto;
-    min-height: 220px;
-  }
-
-  .video-cta-row {
-    width: 100%;
   }
 
   .hero-badge {
