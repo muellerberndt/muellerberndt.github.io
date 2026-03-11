@@ -560,13 +560,9 @@ h3 {
   line-height: 1.4;
 }
 
-.video-grid {
-  align-items: start;
-}
-
-.video-stage,
-.video-card {
-  min-height: 100%;
+.video-stage {
+  display: grid;
+  gap: 18px;
 }
 
 .video-frame {
@@ -587,14 +583,42 @@ h3 {
   border: 0;
 }
 
-.video-card {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+.video-caption {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) auto;
+  gap: 18px;
+  align-items: end;
 }
 
-.video-links {
-  margin-top: 6px;
+.video-copy {
+  display: grid;
+  gap: 10px;
+}
+
+.video-followups {
+  margin-top: 14px;
+}
+
+.video-followups .entry-kicker {
+  margin-bottom: 12px;
+}
+
+.video-lane-grid {
+  align-items: stretch;
+}
+
+.video-lane-grid .lane-card strong {
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.video-lane-grid .lane-card small {
+  font-size: 0.74rem;
+}
+
+.video-cta-row {
+  margin-top: 0;
+  justify-content: flex-end;
 }
 
 .entry-links a small {
@@ -793,6 +817,14 @@ h3 {
   .hero-image-frame {
     min-height: 300px;
   }
+
+  .video-caption {
+    grid-template-columns: 1fr;
+  }
+
+  .video-cta-row {
+    justify-content: flex-start;
+  }
 }
 
 @media (max-width: 640px) {
@@ -821,6 +853,10 @@ h3 {
   .video-frame {
     aspect-ratio: auto;
     min-height: 220px;
+  }
+
+  .video-cta-row {
+    width: 100%;
   }
 
   .hero-badge {
