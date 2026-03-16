@@ -280,6 +280,30 @@ h3 {
   text-transform: uppercase;
 }
 
+.research-disclaimer {
+  margin-top: 18px;
+  padding: 16px 18px;
+  border-radius: 18px;
+  border: 1px solid rgba(212, 181, 110, 0.28);
+  background: linear-gradient(135deg, rgba(212, 181, 110, 0.1), rgba(78, 231, 255, 0.05));
+}
+
+.research-disclaimer strong {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 0.66rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.research-disclaimer p {
+  margin: 0;
+  color: var(--text);
+  font-size: 0.78rem;
+  line-height: 1.65;
+}
+
 .btn {
   min-height: 42px;
   display: inline-flex;
