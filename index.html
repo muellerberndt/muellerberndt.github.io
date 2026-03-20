@@ -72,6 +72,18 @@
       color: #fff;
     }
 
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
     html, body {
       height: 100%;
     }
@@ -218,6 +230,7 @@
   <div class="grid-bg"></div>
 
   <div class="center">
+    <h1 class="sr-only">Floating Pragma</h1>
     <div class="logo">
       <img src="/pragma-cropped.jpg" alt="Pragma" />
     </div>
