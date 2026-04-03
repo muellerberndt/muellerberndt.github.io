@@ -4,23 +4,23 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Floating Pragma | Security Research, Interactive Labs, and Observer Patch Holography</title>
-  <meta name="title" content="Floating Pragma | Security Research, Interactive Labs, and Observer Patch Holography" />
-  <meta name="description" content="Floating Pragma is Bernhard Mueller's home for security research, interactive learning labs, and Observer Patch Holography, a theory-of-everything and quantum-gravity framework." />
-  <meta name="keywords" content="Floating Pragma, Bernhard Mueller, Observer Patch Holography, OPH, theory of everything, quantum gravity, simulation theory, reality as simulation, security research, STARK Lab" />
+  <title>Floating Pragma | Simulation Theory, Theory of Everything, and Security Research</title>
+  <meta name="title" content="Floating Pragma | Simulation Theory, Theory of Everything, and Security Research" />
+  <meta name="description" content="Floating Pragma is Bernhard Mueller's home for security research, interactive labs, and Observer Patch Holography: a concrete implementation of simulation theory and a concrete theory of everything." />
+  <meta name="keywords" content="Floating Pragma, Bernhard Mueller, Observer Patch Holography, OPH, theory of everything, theory-of-everything, simulation theory, reality as simulation, quantum gravity, security research, STARK Lab" />
   <meta name="author" content="Pragma" />
   <link rel="canonical" href="https://floatingpragma.io/" />
 
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://floatingpragma.io/" />
-  <meta property="og:title" content="Floating Pragma | Security Research, Interactive Labs, and Observer Patch Holography" />
-  <meta property="og:description" content="Security research, interactive learning labs, and Observer Patch Holography under one Floating Pragma umbrella." />
+  <meta property="og:title" content="Floating Pragma | Simulation Theory, Theory of Everything, and Security Research" />
+  <meta property="og:description" content="Security research, interactive labs, and Observer Patch Holography under one Floating Pragma umbrella, including a concrete simulation theory implementation and a concrete theory of everything." />
   <meta property="og:site_name" content="Floating Pragma" />
   <meta property="og:image" content="https://floatingpragma.io/pragma.jpg" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Floating Pragma | Security Research, Interactive Labs, and Observer Patch Holography" />
-  <meta name="twitter:description" content="Security research, interactive learning labs, and Observer Patch Holography under one Floating Pragma umbrella." />
+  <meta name="twitter:title" content="Floating Pragma | Simulation Theory, Theory of Everything, and Security Research" />
+  <meta name="twitter:description" content="Security research, interactive labs, and Observer Patch Holography under one Floating Pragma umbrella, including a concrete simulation theory implementation and a concrete theory of everything." />
   <meta name="twitter:image" content="https://floatingpragma.io/pragma.jpg" />
 
   <meta name="robots" content="index, follow" />
@@ -32,12 +32,19 @@
     "@type": "WebSite",
     "name": "Floating Pragma",
     "url": "https://floatingpragma.io",
-    "description": "Security research, interactive learning labs, and Observer Patch Holography.",
+    "description": "Security research, interactive labs, and Observer Patch Holography, including a concrete simulation theory implementation and a concrete theory of everything.",
     "publisher": {
       "@type": "Organization",
       "name": "Floating Pragma",
       "logo": "https://floatingpragma.io/pragma.jpg"
-    }
+    },
+    "keywords": [
+      "simulation theory",
+      "theory of everything",
+      "theory-of-everything",
+      "observer patch holography",
+      "quantum gravity"
+    ]
   }
   </script>
 
@@ -95,7 +102,9 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      overflow: hidden;
+      overflow-x: hidden;
+      overflow-y: auto;
+      padding: 32px 20px;
       -webkit-font-smoothing: antialiased;
     }
 
@@ -116,6 +125,7 @@
       text-align: center;
       position: relative;
       z-index: 2;
+      width: min(100%, 860px);
     }
 
     /* Logo */
@@ -208,9 +218,39 @@
       border-bottom-color: rgba(78, 231, 255, 0.4);
     }
 
+    .oph-note {
+      max-width: 720px;
+      margin: 36px auto 0;
+      padding: 16px 18px;
+      border: 1px solid rgba(78, 231, 255, 0.16);
+      background: rgba(78, 231, 255, 0.04);
+      color: var(--muted);
+      font-size: 0.72rem;
+      line-height: 1.7;
+    }
+    .oph-note strong {
+      color: #fff;
+      font-weight: 600;
+    }
+    .oph-note a {
+      color: var(--cyan);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(78, 231, 255, 0.28);
+    }
+    .oph-note a:hover,
+    .oph-note a:focus-visible {
+      border-bottom-color: rgba(78, 231, 255, 0.7);
+    }
+
     @media (max-width: 640px) {
       .pages {
         gap: 18px;
+      }
+
+      .oph-note {
+        margin-top: 28px;
+        font-size: 0.68rem;
+        padding: 14px 16px;
       }
     }
 
@@ -230,7 +270,7 @@
   <div class="grid-bg"></div>
 
   <div class="center">
-    <h1 class="sr-only">Floating Pragma</h1>
+    <h1 class="sr-only">Floating Pragma | Simulation Theory and Theory of Everything Research</h1>
     <div class="logo">
       <img src="/pragma-cropped.jpg" alt="Pragma" />
     </div>
@@ -247,6 +287,13 @@
       <a href="/awesome-zk-proofs/" data-decode data-delay="1950">ZK Proofs</a>
       <a href="/awesome-ai-security/" data-decode data-delay="2000">AI Security</a>
     </div>
+
+    <p class="oph-note">
+      <strong>Observer Patch Holography</strong> is Floating Pragma's concrete implementation of
+      <a href="/oph/simulation-theory/" data-track-link="oph-simulation">simulation theory</a> and a concrete
+      <a href="/oph/theory-of-everything/" data-track-link="oph-toe">theory of everything</a>.
+      Start at the <a href="/oph/" data-track-link="oph-overview">OPH hub</a> for papers, the book, the <a href="https://learn.floatingpragma.io/" data-track-link="oph-textbooks">OPH Textbooks study app</a>, the simulator-hardware story, the interactive lab, and the public challenge.
+    </p>
   </div>
 
   <script>
