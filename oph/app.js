@@ -1,5 +1,4 @@
 (function () {
-  const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$%&*!?/\\|{}[]<>";
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   if (!reduceMotion && "IntersectionObserver" in window) {
@@ -17,35 +16,7 @@
   }
 
   document.querySelectorAll(".decode, [data-decode]").forEach((element) => {
-    const finalText = element.textContent || "";
-    const delay = Number(element.getAttribute("data-delay") || 0);
-    if (reduceMotion) {
-      element.textContent = finalText;
-      return;
-    }
-
-    element.textContent = "";
-
-    window.setTimeout(() => {
-      let iteration = 0;
-      const interval = window.setInterval(() => {
-        element.textContent = finalText
-          .split("")
-          .map((char, index) => {
-            if (char === " ") return " ";
-            if (index < iteration) return finalText[index];
-            return chars[Math.floor(Math.random() * chars.length)];
-          })
-          .join("");
-
-        if (iteration >= finalText.length) {
-          window.clearInterval(interval);
-          element.textContent = finalText;
-        }
-
-        iteration += 1 / 3;
-      }, 26);
-    }, delay);
+    element.textContent = element.textContent || "";
   });
 
   document.addEventListener("click", (event) => {
