@@ -1,4 +1,5 @@
 (function () {
+  const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$%&*!?/\\|{}[]<>";
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   if (!reduceMotion && "IntersectionObserver" in window) {
@@ -16,7 +17,43 @@
   }
 
   document.querySelectorAll(".decode, [data-decode]").forEach((element) => {
-    element.textContent = element.textContent || "";
+    const finalText = element.textContent || "";
+    const delay = Number(element.getAttribute("data-delay") || 0);
+    if (!finalText.trim()) return;
+
+    element.setAttribute("aria-label", finalText);
+
+    if (reduceMotion) {
+      element.textContent = finalText;
+      return;
+    }
+
+    window.setTimeout(() => {
+      let frame = 0;
+      const letters = Array.from(finalText);
+      const totalFrames = Math.max(24, Math.ceil(letters.length * 1.8));
+
+      const interval = window.setInterval(() => {
+        const progress = frame / totalFrames;
+        const revealCount = Math.floor(progress * letters.length);
+
+        element.textContent = letters
+          .map((char, index) => {
+            if (char === " ") return " ";
+            if (index < revealCount) return char;
+            if (progress > 0.72 && Math.random() < progress - 0.66) return char;
+            return chars[Math.floor(Math.random() * chars.length)];
+          })
+          .join("");
+
+        frame += 1;
+
+        if (frame > totalFrames) {
+          window.clearInterval(interval);
+          element.textContent = finalText;
+        }
+      }, 24);
+    }, delay);
   });
 
   document.addEventListener("click", (event) => {
