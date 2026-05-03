@@ -253,48 +253,43 @@ h3 {
 
 .hero-panel:not(.article-hero) .hero-copy {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(340px, 0.72fr);
-  column-gap: 42px;
-  align-items: start;
+  gap: 26px;
   padding: 46px;
 }
 
-.hero-panel:not(.article-hero) .eyebrow,
 .hero-panel:not(.article-hero) .hero-copy h1 {
-  grid-column: 1 / -1;
   max-width: none;
 }
 
-.hero-panel:not(.article-hero) .hero-lead,
-.hero-panel:not(.article-hero) .hero-copy > p:not(.hero-lead) {
-  grid-column: 1;
+.hero-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(340px, 0.72fr);
+  gap: 42px;
+  align-items: start;
+}
+
+.hero-main {
+  min-width: 0;
 }
 
 .hero-panel:not(.article-hero) .hero-lead {
   max-width: 86ch;
 }
 
-.hero-panel:not(.article-hero) .research-disclaimer {
-  grid-column: 2;
-  grid-row: 3 / span 2;
+.hero-rail {
+  display: grid;
+  gap: 16px;
+  align-content: start;
+}
+
+.hero-rail .research-disclaimer,
+.hero-rail .hero-callout,
+.hero-rail .hero-stats {
   margin-top: 0;
 }
 
-.hero-panel:not(.article-hero) .hero-callout {
-  grid-column: 2;
-  grid-row: 5 / span 2;
-  margin-top: 0;
-}
-
-.hero-panel:not(.article-hero) .hero-stats {
-  grid-column: 2;
-  grid-row: 7 / span 2;
-  align-self: end;
+.hero-rail .hero-stats {
   grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.hero-panel:not(.article-hero) .cta-row {
-  grid-column: 1;
 }
 
 .hero-lead,
@@ -796,26 +791,11 @@ h3 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .hero-body,
   .hero-panel:not(.article-hero) .hero-copy {
     grid-template-columns: 1fr;
   }
 
-  .hero-panel:not(.article-hero) .eyebrow,
-  .hero-panel:not(.article-hero) .hero-copy h1,
-  .hero-panel:not(.article-hero) .hero-lead,
-  .hero-panel:not(.article-hero) .hero-copy > p:not(.hero-lead),
-  .hero-panel:not(.article-hero) .research-disclaimer,
-  .hero-panel:not(.article-hero) .hero-callout,
-  .hero-panel:not(.article-hero) .hero-stats,
-  .hero-panel:not(.article-hero) .cta-row {
-    grid-column: 1;
-    grid-row: auto;
-  }
-
-  .hero-panel:not(.article-hero) .research-disclaimer,
-  .hero-panel:not(.article-hero) .hero-callout {
-    margin-top: 18px;
-  }
 }
 
 @media (max-width: 820px) {
