@@ -1,0 +1,28 @@
+# Floating Pragma / Observer Patch Holography
+
+Floating Pragma hosts Observer Patch Holography (OPH), a proof-driven reconstruction program that starts from finite observers, local patches, overlaps, repair moves, and stable public records.
+
+## Core OPH Links
+
+- OPH hub: https://floatingpragma.io/oph/
+- OPH stress-test packet: https://floatingpragma.io/oph/stress-test/
+- OPH NotebookLM notebook: https://notebooklm.google.com/notebook/d5249760-6ce8-44a0-927b-ccf90402711a
+- OPH Lab: https://oph-lab.floatingpragma.io/
+- OPH book: https://oph-book.floatingpragma.io/
+- OPH repository: https://github.com/FloatingPragma/observer-patch-holography
+- OPH RSS feed: https://floatingpragma.io/oph/feed.xml
+- OPH JSON feed: https://floatingpragma.io/oph/feed.json
+
+## Public Essays
+
+- Semiotics and the Physics of Meaning: https://blog.floatingpragma.io/semiotics-and-the-physics-of-meaning
+- P = NP on the Observer Screen: https://blog.floatingpragma.io/p-equals-np-on-the-observer-screen
+- The Trigger: https://blog.floatingpragma.io/the-trigger
+
+## Review Contact
+
+For detailed objections, collaboration requests, and serious review notes, contact Tom at tom@floatingpragma.io.
+
+## Important Caveat
+
+The essay "P = NP on the Observer Screen" does not claim a classical proof of P = NP. It describes an OPH computational primitive: verification, mismatch detection, repair, and stable record formation on observer screens.

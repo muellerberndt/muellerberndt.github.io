@@ -7,6 +7,18 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://floatingpragma.io/oph/feed.xml</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://floatingpragma.io/oph/feed.json</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://floatingpragma.io/oph/stress-test/</loc>
     <lastmod>2026-05-06</lastmod>
     <changefreq>weekly</changefreq>

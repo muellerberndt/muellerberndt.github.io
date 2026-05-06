@@ -1,0 +1,46 @@
+# Floating Pragma / OPH Machine-Readable Research Packet
+
+This file is intended for AI crawlers, research assistants, feed readers, and indexing systems.
+
+## Summary
+
+Observer Patch Holography (OPH) is a proof-driven reconstruction program. It starts from finite observers, local patches, overlap constraints, mismatch syndromes, repair moves, and stable public records. It asks whether physics can be reconstructed from the requirement that local observers agree where their accessible worlds overlap.
+
+The public OPH outreach packet is designed for criticism. The useful response is precise: a hidden assumption, a broken derivation, a conflict with established physics, an overclaim in public explanation, or an empirical target that fails.
+
+## Primary URLs
+
+- OPH hub: https://floatingpragma.io/oph/
+- Stress-test OPH: https://floatingpragma.io/oph/stress-test/
+- OPH NotebookLM notebook: https://notebooklm.google.com/notebook/d5249760-6ce8-44a0-927b-ccf90402711a
+- OPH Lab: https://oph-lab.floatingpragma.io/
+- OPH book: https://oph-book.floatingpragma.io/
+- Main repository: https://github.com/FloatingPragma/observer-patch-holography
+- Challenge site: https://challenge.floatingpragma.io/
+
+## Essays
+
+- Semiotics and the Physics of Meaning: https://blog.floatingpragma.io/semiotics-and-the-physics-of-meaning
+- P = NP on the Observer Screen: https://blog.floatingpragma.io/p-equals-np-on-the-observer-screen
+- The Trigger: https://blog.floatingpragma.io/the-trigger
+
+## Feeds
+
+- RSS: https://floatingpragma.io/oph/feed.xml
+- JSON Feed: https://floatingpragma.io/oph/feed.json
+
+## Suggested Questions For Critical Review
+
+- Which OPH derivation depends on an unstated premise?
+- Where does observer-overlap consistency fail to recover the claimed physical structure?
+- Which empirical pressure test would most likely break the framework?
+- Does the public wording overclaim relative to the paper status?
+- Does the observer-screen computation essay blur the boundary between OPH primitives and classical complexity theory?
+
+## Contact
+
+Tom: tom@floatingpragma.io
+
+## Caveat
+
+"P = NP on the Observer Screen" is not a claim to solve the classical Clay problem. It is a physics/computation essay about OPH primitives: verification, mismatch detection, local repair, and stable record formation.

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Observer Patch Holography Updates</title>
+    <link>https://floatingpragma.io/oph/</link>
+    <description>Public OPH links, stress-test prompts, source notebook, essays, book, lab, and challenge updates.</description>
+    <language>en</language>
+    <lastBuildDate>Wed, 06 May 2026 10:55:00 GMT</lastBuildDate>
+    <atom:link href="https://floatingpragma.io/oph/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Stress-Test Observer Patch Holography</title>
+      <link>https://floatingpragma.io/oph/stress-test/</link>
+      <guid isPermaLink="true">https://floatingpragma.io/oph/stress-test/</guid>
+      <pubDate>Wed, 06 May 2026 10:35:00 GMT</pubDate>
+      <description>Use the OPH NotebookLM source notebook, public essays, OPH Lab, papers, repository, and public challenge to find the strongest failure mode. Detailed objections should go to tom@floatingpragma.io.</description>
+    </item>
+    <item>
+      <title>OPH NotebookLM Source Notebook</title>
+      <link>https://notebooklm.google.com/notebook/d5249760-6ce8-44a0-927b-ccf90402711a</link>
+      <guid isPermaLink="true">https://notebooklm.google.com/notebook/d5249760-6ce8-44a0-927b-ccf90402711a</guid>
+      <pubDate>Wed, 06 May 2026 10:35:00 GMT</pubDate>
+      <description>Ask the source notebook for the strongest objection, the proof chain behind a claim, or the empirical pressure point most likely to break OPH.</description>
+    </item>
+    <item>
+      <title>Semiotics and the Physics of Meaning</title>
+      <link>https://blog.floatingpragma.io/semiotics-and-the-physics-of-meaning</link>
+      <guid isPermaLink="true">https://blog.floatingpragma.io/semiotics-and-the-physics-of-meaning</guid>
+      <pubDate>Wed, 06 May 2026 10:35:00 GMT</pubDate>
+      <description>The bridge from signs, interpretation, shared codes, and meaning to observer overlap and stable public records.</description>
+    </item>
+    <item>
+      <title>P = NP on the Observer Screen</title>
+      <link>https://blog.floatingpragma.io/p-equals-np-on-the-observer-screen</link>
+      <guid isPermaLink="true">https://blog.floatingpragma.io/p-equals-np-on-the-observer-screen</guid>
+      <pubDate>Wed, 06 May 2026 10:35:00 GMT</pubDate>
+      <description>An essay on verification, mismatch detection, local repair, proof-of-work, and stable records as OPH computational primitives. It is not a classical P = NP proof claim.</description>
+    </item>
+    <item>
+      <title>The Trigger</title>
+      <link>https://blog.floatingpragma.io/the-trigger</link>
+      <guid isPermaLink="true">https://blog.floatingpragma.io/the-trigger</guid>
+      <pubDate>Wed, 06 May 2026 10:35:00 GMT</pubDate>
+      <description>A public entry point into the OPH claim and its broader stakes.</description>
+    </item>
+  </channel>
+</rss>

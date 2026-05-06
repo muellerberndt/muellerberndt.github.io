@@ -1,0 +1,50 @@
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "Observer Patch Holography Updates",
+  "home_page_url": "https://floatingpragma.io/oph/",
+  "feed_url": "https://floatingpragma.io/oph/feed.json",
+  "description": "Public OPH links, stress-test prompts, source notebook, essays, book, lab, and challenge updates.",
+  "language": "en",
+  "authors": [
+    {
+      "name": "Pragma"
+    }
+  ],
+  "items": [
+    {
+      "id": "https://floatingpragma.io/oph/stress-test/",
+      "url": "https://floatingpragma.io/oph/stress-test/",
+      "title": "Stress-Test Observer Patch Holography",
+      "date_published": "2026-05-06T10:35:00Z",
+      "summary": "Use the OPH NotebookLM source notebook, public essays, OPH Lab, papers, repository, and public challenge to find the strongest failure mode. Detailed objections should go to tom@floatingpragma.io."
+    },
+    {
+      "id": "https://notebooklm.google.com/notebook/d5249760-6ce8-44a0-927b-ccf90402711a",
+      "url": "https://notebooklm.google.com/notebook/d5249760-6ce8-44a0-927b-ccf90402711a",
+      "title": "OPH NotebookLM Source Notebook",
+      "date_published": "2026-05-06T10:35:00Z",
+      "summary": "Ask the source notebook for the strongest objection, the proof chain behind a claim, or the empirical pressure point most likely to break OPH."
+    },
+    {
+      "id": "https://blog.floatingpragma.io/semiotics-and-the-physics-of-meaning",
+      "url": "https://blog.floatingpragma.io/semiotics-and-the-physics-of-meaning",
+      "title": "Semiotics and the Physics of Meaning",
+      "date_published": "2026-05-06T10:35:00Z",
+      "summary": "The bridge from signs, interpretation, shared codes, and meaning to observer overlap and stable public records."
+    },
+    {
+      "id": "https://blog.floatingpragma.io/p-equals-np-on-the-observer-screen",
+      "url": "https://blog.floatingpragma.io/p-equals-np-on-the-observer-screen",
+      "title": "P = NP on the Observer Screen",
+      "date_published": "2026-05-06T10:35:00Z",
+      "summary": "An essay on verification, mismatch detection, local repair, proof-of-work, and stable records as OPH computational primitives. It is not a classical P = NP proof claim."
+    },
+    {
+      "id": "https://blog.floatingpragma.io/the-trigger",
+      "url": "https://blog.floatingpragma.io/the-trigger",
+      "title": "The Trigger",
+      "date_published": "2026-05-06T10:35:00Z",
+      "summary": "A public entry point into the OPH claim and its broader stakes."
+    }
+  ]
+}
