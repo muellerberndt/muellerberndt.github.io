@@ -243,10 +243,53 @@
     .oph-note a:focus-visible {
       border-bottom-color: rgba(78, 231, 255, 0.7);
     }
+    .oph-resource-links {
+      max-width: 720px;
+      margin: 28px auto 0;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(220px, 1fr));
+      gap: 12px;
+    }
+    .oph-resource-link {
+      padding: 14px 16px;
+      border: 1px solid rgba(78, 231, 255, 0.18);
+      background: rgba(78, 231, 255, 0.055);
+      color: #fff;
+      text-align: left;
+      text-decoration: none;
+      transition: all 0.25s ease;
+    }
+    .oph-resource-link:hover,
+    .oph-resource-link:focus-visible {
+      transform: translateY(-1px);
+      border-color: rgba(78, 231, 255, 0.46);
+      background: rgba(78, 231, 255, 0.1);
+    }
+    .oph-resource-link strong,
+    .oph-resource-link span {
+      display: block;
+    }
+    .oph-resource-link strong {
+      color: #fff;
+      font-size: 0.74rem;
+      line-height: 1.35;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .oph-resource-link span {
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: 0.66rem;
+      line-height: 1.45;
+    }
 
     @media (max-width: 640px) {
       .pages {
         gap: 18px;
+      }
+
+      .oph-resource-links {
+        grid-template-columns: 1fr;
       }
 
       .oph-note {
@@ -289,6 +332,17 @@
       <a href="/oph/" data-decode data-delay="1700" data-track-link="oph-hub">OPH</a>
       <a href="/awesome-zk-proofs/" data-decode data-delay="1950">ZK Proofs</a>
       <a href="/awesome-ai-security/" data-decode data-delay="2000">AI Security</a>
+    </div>
+
+    <div class="oph-resource-links" aria-label="Best OPH resources">
+      <a class="oph-resource-link" href="https://learn.floatingpragma.io/" data-track-link="oph-resource-textbooks">
+        <strong>OPH Textbooks</strong>
+        <span>Guided study path through the OPH derivations.</span>
+      </a>
+      <a class="oph-resource-link" href="https://oph-book.floatingpragma.io/" data-track-link="oph-resource-book">
+        <strong>Reverse Engineering Reality</strong>
+        <span>The book-length route into the full OPH framework.</span>
+      </a>
     </div>
 
     <p class="oph-note">

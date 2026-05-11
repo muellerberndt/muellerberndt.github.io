@@ -3,10 +3,24 @@
   <channel>
     <title>Observer Patch Holography Updates</title>
     <link>https://floatingpragma.io/oph/</link>
-    <description>Public OPH links, stress-test prompts, source notebook, essays, book, lab, and challenge updates.</description>
+    <description>Public OPH links, with OPH Textbooks and Reverse Engineering Reality as the best starting points, plus stress-test prompts, source notebook, essays, lab, and challenge updates.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 06 May 2026 10:55:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 11 May 2026 23:45:00 GMT</lastBuildDate>
     <atom:link href="https://floatingpragma.io/oph/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OPH Textbooks</title>
+      <link>https://learn.floatingpragma.io/</link>
+      <guid isPermaLink="true">https://learn.floatingpragma.io/</guid>
+      <pubDate>Mon, 11 May 2026 23:45:00 GMT</pubDate>
+      <description>The guided study surface and the best structured route into the OPH derivations.</description>
+    </item>
+    <item>
+      <title>Reverse Engineering Reality</title>
+      <link>https://oph-book.floatingpragma.io/</link>
+      <guid isPermaLink="true">https://oph-book.floatingpragma.io/</guid>
+      <pubDate>Mon, 11 May 2026 23:45:00 GMT</pubDate>
+      <description>The book-length narrative route into Observer Patch Holography and the full research framework.</description>
+    </item>
     <item>
       <title>Stress-Test Observer Patch Holography</title>
       <link>https://floatingpragma.io/oph/stress-test/</link>
