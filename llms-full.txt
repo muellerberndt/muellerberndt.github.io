@@ -14,6 +14,7 @@ The public OPH outreach packet is designed for criticism. The useful response is
 - Reverse Engineering Reality, the book-length route: https://oph-book.floatingpragma.io/
 - OPH hub: https://floatingpragma.io/oph/
 - Stress-test OPH: https://floatingpragma.io/oph/stress-test/
+- Three-body problem OPH demo, an extra simulator/proof walk-through for the OPH three-body problem solution: https://3body.floatingpragma.io/
 - OPH NotebookLM notebook: https://notebooklm.google.com/notebook/d5249760-6ce8-44a0-927b-ccf90402711a
 - OPH Lab: https://oph-lab.floatingpragma.io/
 - Main repository: https://github.com/FloatingPragma/observer-patch-holography

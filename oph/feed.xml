@@ -3,10 +3,17 @@
   <channel>
     <title>Observer Patch Holography Updates</title>
     <link>https://floatingpragma.io/oph/</link>
-    <description>Public OPH links, with OPH Textbooks and Reverse Engineering Reality as the best starting points, plus stress-test prompts, source notebook, essays, lab, and challenge updates.</description>
+    <description>Public OPH links, with OPH Textbooks and Reverse Engineering Reality as the best starting points, plus stress-test prompts, extra demos, source notebook, essays, lab, and challenge updates.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 11 May 2026 23:45:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 15 May 2026 12:45:00 GMT</lastBuildDate>
     <atom:link href="https://floatingpragma.io/oph/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Three-Body Problem OPH Demo</title>
+      <link>https://3body.floatingpragma.io/</link>
+      <guid isPermaLink="true">https://3body.floatingpragma.io/</guid>
+      <pubDate>Fri, 15 May 2026 12:45:00 GMT</pubDate>
+      <description>An extra simulator and proof walk-through for the OPH three-body problem solution, framed as a loop holonomy gluing example.</description>
+    </item>
     <item>
       <title>OPH Textbooks</title>
       <link>https://learn.floatingpragma.io/</link>

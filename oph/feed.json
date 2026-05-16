@@ -3,7 +3,7 @@
   "title": "Observer Patch Holography Updates",
   "home_page_url": "https://floatingpragma.io/oph/",
   "feed_url": "https://floatingpragma.io/oph/feed.json",
-  "description": "Public OPH links, with OPH Textbooks and Reverse Engineering Reality as the best starting points, plus stress-test prompts, source notebook, essays, lab, and challenge updates.",
+  "description": "Public OPH links, with OPH Textbooks and Reverse Engineering Reality as the best starting points, plus stress-test prompts, extra demos, source notebook, essays, lab, and challenge updates.",
   "language": "en",
   "authors": [
     {
@@ -11,6 +11,13 @@
     }
   ],
   "items": [
+    {
+      "id": "https://3body.floatingpragma.io/",
+      "url": "https://3body.floatingpragma.io/",
+      "title": "Three-Body Problem OPH Demo",
+      "date_published": "2026-05-15T12:45:00Z",
+      "summary": "An extra simulator and proof walk-through for the OPH three-body problem solution, framed as a loop holonomy gluing example."
+    },
     {
       "id": "https://learn.floatingpragma.io/",
       "url": "https://learn.floatingpragma.io/",
