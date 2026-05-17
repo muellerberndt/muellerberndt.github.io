@@ -16,7 +16,7 @@
   --rose: #ff8f97;
   --sage: #91d9bd;
   --shadow: 0 30px 90px rgba(0, 0, 0, 0.42);
-  --radius: 26px;
+  --radius: 8px;
 }
 
 *,
@@ -96,7 +96,7 @@ a {
 .brand-mark {
   width: 46px;
   height: 46px;
-  border-radius: 14px;
+  border-radius: 8px;
   padding: 2px;
   background: linear-gradient(135deg, rgba(78, 231, 255, 0.44), rgba(124, 166, 255, 0.18), rgba(212, 181, 110, 0.22));
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.28);
@@ -107,7 +107,7 @@ a {
   width: 100%;
   height: 100%;
   display: block;
-  border-radius: 12px;
+  border-radius: 6px;
 }
 
 .brand-copy {
@@ -236,7 +236,8 @@ main {
   align-items: stretch;
   overflow: hidden;
   background:
-    linear-gradient(132deg, rgba(13, 16, 22, 0.96), rgba(8, 10, 14, 0.88) 54%, rgba(12, 16, 16, 0.94)),
+    linear-gradient(132deg, rgba(8, 12, 18, 0.98), rgba(10, 14, 18, 0.9) 42%, rgba(16, 13, 9, 0.92)),
+    linear-gradient(42deg, rgba(78, 231, 255, 0.12), transparent 34%, rgba(212, 181, 110, 0.1)),
     var(--panel);
 }
 
@@ -245,11 +246,12 @@ main {
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.045) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
-    linear-gradient(135deg, transparent 0 62%, rgba(78, 231, 255, 0.07) 62% 62.2%, transparent 62.2%);
-  background-size: 92px 92px, 92px 92px, 100% 100%;
-  opacity: 0.55;
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(135deg, transparent 0 60%, rgba(78, 231, 255, 0.1) 60% 60.16%, transparent 60.16%),
+    linear-gradient(24deg, transparent 0 42%, rgba(212, 181, 110, 0.08) 42% 42.15%, transparent 42.15%);
+  background-size: 78px 78px, 78px 78px, 100% 100%, 100% 100%;
+  opacity: 0.68;
   pointer-events: none;
 }
 
@@ -336,7 +338,7 @@ h3 {
   align-content: start;
 }
 
-.hero-rail .research-disclaimer,
+.hero-rail .proof-ledger,
 .hero-rail .hero-callout,
 .hero-rail .hero-stats {
   margin-top: 0;
@@ -388,7 +390,7 @@ h3 {
 .hero-callout {
   margin-top: 18px;
   padding: 16px 18px;
-  border-radius: 18px;
+  border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.08);
   background: rgba(255, 255, 255, 0.03);
 }
@@ -420,28 +422,49 @@ h3 {
   text-transform: uppercase;
 }
 
-.research-disclaimer {
+.proof-ledger {
   margin-top: 18px;
   padding: 16px 18px;
-  border-radius: 18px;
-  border: 1px solid rgba(212, 181, 110, 0.28);
-  background: linear-gradient(135deg, rgba(212, 181, 110, 0.1), rgba(78, 231, 255, 0.05));
+  border-radius: 8px;
+  border: 1px solid rgba(78, 231, 255, 0.3);
+  background:
+    linear-gradient(135deg, rgba(78, 231, 255, 0.14), rgba(212, 181, 110, 0.08)),
+    rgba(255, 255, 255, 0.035);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
 }
 
-.research-disclaimer strong {
+.proof-ledger strong {
   display: block;
   margin-bottom: 8px;
   font-size: 0.66rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--gold);
+  color: var(--cyan);
 }
 
-.research-disclaimer p {
+.proof-ledger p {
   margin: 0;
   color: var(--text);
   font-size: 0.78rem;
   line-height: 1.65;
+}
+
+.proof-ledger ul {
+  margin: 12px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+  list-style: none;
+}
+
+.proof-ledger li {
+  padding: 9px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  background: rgba(5, 8, 12, 0.54);
+  color: var(--text);
+  font-size: 0.7rem;
+  line-height: 1.48;
 }
 
 .btn {
@@ -450,7 +473,7 @@ h3 {
   align-items: center;
   justify-content: center;
   padding: 0 18px;
-  border-radius: 12px;
+  border-radius: 8px;
   font-size: 0.7rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -499,7 +522,7 @@ h3 {
 
 .stat-card {
   padding: 12px 14px;
-  border-radius: 12px;
+  border-radius: 8px;
   border: 1px solid rgba(78, 231, 255, 0.12);
   background: rgba(255, 255, 255, 0.03);
 }
@@ -547,7 +570,7 @@ h3 {
 .entry-card,
 .article-panel {
   padding: 26px;
-  border-radius: 18px;
+  border-radius: 8px;
 }
 
 .feature-list {
@@ -598,7 +621,7 @@ h3 {
 .entry-links a {
   display: block;
   padding: 11px 12px;
-  border-radius: 10px;
+  border-radius: 8px;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.08);
   font-size: 0.72rem;
@@ -683,7 +706,7 @@ h3 {
 
 .meta-chip {
   padding: 8px 10px;
-  border-radius: 10px;
+  border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   background: rgba(255, 255, 255, 0.03);
   font-size: 0.58rem;
@@ -697,7 +720,7 @@ h3 {
   margin: 36px 36px 36px 0;
   padding: 0;
   overflow: hidden;
-  border-radius: 20px;
+  border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.09);
   background:
     linear-gradient(90deg, rgba(78, 231, 255, 0.12), transparent 1px),
@@ -770,7 +793,7 @@ h3 {
 
 .faq-card {
   padding: 20px;
-  border-radius: 20px;
+  border-radius: 8px;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
