@@ -3,10 +3,31 @@
   <channel>
     <title>Observer Patch Holography Updates</title>
     <link>https://floatingpragma.io/oph/</link>
-    <description>Public OPH links, with OPH Textbooks and Reverse Engineering Reality as the best starting points, plus stress-test prompts, extra demos, source notebook, essays, lab, and challenge updates.</description>
+    <description>Public OPH links, with OPH Textbooks and Reverse Engineering Reality as the best starting points, plus physics unification, coherence, OMEGA, stress-test prompts, extra demos, source notebook, essays, lab, and challenge updates.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 15 May 2026 12:45:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 21 May 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://floatingpragma.io/oph/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Physics Unification via OPH</title>
+      <link>https://floatingpragma.io/oph/physics-unification/</link>
+      <guid isPermaLink="true">https://floatingpragma.io/oph/physics-unification/</guid>
+      <pubDate>Thu, 21 May 2026 00:00:00 GMT</pubDate>
+      <description>The direct public entry page for OPH as a physics-unification framework connecting gravity, quantum theory, particles, records, observers, and simulation theory.</description>
+    </item>
+    <item>
+      <title>OMEGA Hardware Guide</title>
+      <link>https://omega.floatingpragma.io/</link>
+      <guid isPermaLink="true">https://omega.floatingpragma.io/</guid>
+      <pubDate>Thu, 21 May 2026 00:00:00 GMT</pubDate>
+      <description>The hardware-facing OPH optical chamber computation and consensus guide.</description>
+    </item>
+    <item>
+      <title>OPH Coherence Map</title>
+      <link>https://coherence.floatingpragma.io/</link>
+      <guid isPermaLink="true">https://coherence.floatingpragma.io/</guid>
+      <pubDate>Thu, 21 May 2026 00:00:00 GMT</pubDate>
+      <description>The public graph surface for OPH concepts, overlaps, and cross-domain routes.</description>
+    </item>
     <item>
       <title>Three-Body Problem OPH Demo</title>
       <link>https://3body.floatingpragma.io/</link>

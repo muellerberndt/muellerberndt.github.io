@@ -8,13 +8,13 @@
   </url>
   <url>
     <loc>https://floatingpragma.io/oph/feed.xml</loc>
-    <lastmod>2026-05-15</lastmod>
+    <lastmod>2026-05-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://floatingpragma.io/oph/feed.json</loc>
-    <lastmod>2026-05-15</lastmod>
+    <lastmod>2026-05-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -26,6 +26,12 @@
   </url>
   <url>
     <loc>https://floatingpragma.io/oph/theory-of-everything/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://floatingpragma.io/oph/physics-unification/</loc>
     <lastmod>2026-05-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>

@@ -3,7 +3,7 @@
   "title": "Observer Patch Holography Updates",
   "home_page_url": "https://floatingpragma.io/oph/",
   "feed_url": "https://floatingpragma.io/oph/feed.json",
-  "description": "Public OPH links, with OPH Textbooks and Reverse Engineering Reality as the best starting points, plus stress-test prompts, extra demos, source notebook, essays, lab, and challenge updates.",
+  "description": "Public OPH links, with OPH Textbooks and Reverse Engineering Reality as the best starting points, plus physics unification, coherence, OMEGA, stress-test prompts, extra demos, source notebook, essays, lab, and challenge updates.",
   "language": "en",
   "authors": [
     {
@@ -11,6 +11,27 @@
     }
   ],
   "items": [
+    {
+      "id": "https://floatingpragma.io/oph/physics-unification/",
+      "url": "https://floatingpragma.io/oph/physics-unification/",
+      "title": "Physics Unification via OPH",
+      "date_published": "2026-05-21T00:00:00Z",
+      "summary": "The direct public entry page for OPH as a physics-unification framework connecting gravity, quantum theory, particles, records, observers, and simulation theory."
+    },
+    {
+      "id": "https://omega.floatingpragma.io/",
+      "url": "https://omega.floatingpragma.io/",
+      "title": "OMEGA Hardware Guide",
+      "date_published": "2026-05-21T00:00:00Z",
+      "summary": "The hardware-facing OPH optical chamber computation and consensus guide."
+    },
+    {
+      "id": "https://coherence.floatingpragma.io/",
+      "url": "https://coherence.floatingpragma.io/",
+      "title": "OPH Coherence Map",
+      "date_published": "2026-05-21T00:00:00Z",
+      "summary": "The public graph surface for OPH concepts, overlaps, and cross-domain routes."
+    },
     {
       "id": "https://3body.floatingpragma.io/",
       "url": "https://3body.floatingpragma.io/",
