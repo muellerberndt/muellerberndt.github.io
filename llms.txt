@@ -12,6 +12,7 @@ Floating Pragma hosts Observer Patch Holography (OPH), a proof-driven reconstruc
 - OPH Coherence Map, the public graph surface for OPH concepts and overlaps: https://coherence.floatingpragma.io/
 - OMEGA hardware guide, the hardware-facing optical chamber computation surface: https://omega.floatingpragma.io/
 - Three-body problem OPH demo, an extra simulator/proof walk-through for the OPH three-body problem solution: https://3body.floatingpragma.io/
+- Floating Pragma Blog, public essays and entry points for OPH: https://blog.floatingpragma.io/
 - OPH NotebookLM notebook: https://notebooklm.google.com/notebook/d5249760-6ce8-44a0-927b-ccf90402711a
 - OPH Lab: https://oph-lab.floatingpragma.io/
 - OPH repository: https://github.com/FloatingPragma/observer-patch-holography
