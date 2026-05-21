@@ -27,6 +27,13 @@
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="alternate" type="application/rss+xml" title="Observer Patch Holography Updates" href="https://floatingpragma.io/oph/feed.xml" />
   <link rel="alternate" type="application/feed+json" title="Observer Patch Holography Updates" href="https://floatingpragma.io/oph/feed.json" />
+  <link rel="related" href="https://floatingpragma.io/oph/" title="Observer Patch Holography" />
+  <link rel="related" href="https://learn.floatingpragma.io/" title="OPH Textbooks" />
+  <link rel="related" href="https://oph-book.floatingpragma.io/" title="Reverse Engineering Reality" />
+  <link rel="related" href="https://oph-lab.floatingpragma.io/" title="OPH Lab" />
+  <link rel="related" href="https://coherence.floatingpragma.io/" title="OPH Coherence Map" />
+  <link rel="related" href="https://omega.floatingpragma.io/" title="OMEGA Hardware Guide" />
+  <link rel="related" href="https://3body.floatingpragma.io/" title="Three-Body Problem OPH Demo" />
 
   <script type="application/ld+json">
   {
@@ -40,6 +47,15 @@
       "name": "Floating Pragma",
       "logo": "https://floatingpragma.io/pragma.jpg"
     },
+    "sameAs": [
+      "https://floatingpragma.io/oph/",
+      "https://learn.floatingpragma.io/",
+      "https://oph-book.floatingpragma.io/",
+      "https://oph-lab.floatingpragma.io/",
+      "https://coherence.floatingpragma.io/",
+      "https://omega.floatingpragma.io/",
+      "https://3body.floatingpragma.io/"
+    ],
     "keywords": [
       "simulation theory",
       "theory of everything",
@@ -244,10 +260,10 @@
       border-bottom-color: rgba(78, 231, 255, 0.7);
     }
     .oph-resource-links {
-      max-width: 720px;
+      max-width: 860px;
       margin: 28px auto 0;
       display: grid;
-      grid-template-columns: repeat(2, minmax(220px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
       gap: 12px;
     }
     .oph-resource-link {
@@ -334,7 +350,11 @@
       <a href="/awesome-ai-security/" data-decode data-delay="2000">AI Security</a>
     </div>
 
-    <div class="oph-resource-links" aria-label="Best OPH resources">
+    <div class="oph-resource-links" aria-label="OPH network links">
+      <a class="oph-resource-link" href="/oph/" data-track-link="oph-resource-overview">
+        <strong>OPH Overview</strong>
+        <span>The hub for papers, explainers, apps, and challenge surfaces.</span>
+      </a>
       <a class="oph-resource-link" href="https://learn.floatingpragma.io/" data-track-link="oph-resource-textbooks">
         <strong>OPH Textbooks</strong>
         <span>Guided study path through the OPH derivations.</span>
@@ -343,6 +363,22 @@
         <strong>Reverse Engineering Reality</strong>
         <span>The book-length route into the full OPH framework.</span>
       </a>
+      <a class="oph-resource-link" href="https://oph-lab.floatingpragma.io/" data-track-link="oph-resource-lab">
+        <strong>OPH Lab</strong>
+        <span>Interactive derivation map for the public OPH stack.</span>
+      </a>
+      <a class="oph-resource-link" href="https://coherence.floatingpragma.io/" data-track-link="oph-resource-coherence">
+        <strong>Coherence Map</strong>
+        <span>Public graph surface for OPH concepts and overlaps.</span>
+      </a>
+      <a class="oph-resource-link" href="https://omega.floatingpragma.io/" data-track-link="oph-resource-omega">
+        <strong>OMEGA</strong>
+        <span>Hardware-facing guide to OPH optical chamber computation.</span>
+      </a>
+      <a class="oph-resource-link" href="https://3body.floatingpragma.io/" data-track-link="oph-resource-three-body">
+        <strong>Three-Body Demo</strong>
+        <span>Simulator and proof walk-through for the finite patch-net example.</span>
+      </a>
     </div>
 
     <p class="oph-note">
@@ -350,8 +386,8 @@
       <a href="/oph/simulation-theory/" data-track-link="oph-simulation">simulation theory in physics</a>, a
       <a href="/oph/theory-of-everything/" data-track-link="oph-toe">theory of everything</a>, and the
       <a href="/oph/theory-of-everything/" data-track-link="oph-unification">physics-unification layer</a>.
-      Start at the <a href="/oph/" data-track-link="oph-overview">Observer Patch Holography hub</a> for papers, the book, the <a href="https://learn.floatingpragma.io/" data-track-link="oph-textbooks">OPH Textbooks study app</a>, the <a href="https://oph-lab.floatingpragma.io/" data-track-link="oph-lab">interactive lab</a>, and the non-branded entry pages on <a href="/oph/simulation-theory/" data-track-link="oph-simulation-entry">simulation theory</a> and <a href="/oph/theory-of-everything/" data-track-link="oph-toe-entry">theory of everything</a>.
-      For an extra simulator-facing example, see the <a href="https://3body.floatingpragma.io/" data-track-link="oph-three-body">three-body problem OPH demo</a>.
+      Start at the <a href="/oph/" data-track-link="oph-overview">Observer Patch Holography hub</a> for papers, the book, the <a href="https://learn.floatingpragma.io/" data-track-link="oph-textbooks">OPH Textbooks study app</a>, the <a href="https://oph-lab.floatingpragma.io/" data-track-link="oph-lab">interactive lab</a>, the <a href="https://coherence.floatingpragma.io/" data-track-link="oph-coherence">coherence map</a>, and the non-branded entry pages on <a href="/oph/simulation-theory/" data-track-link="oph-simulation-entry">simulation theory</a> and <a href="/oph/theory-of-everything/" data-track-link="oph-toe-entry">theory of everything</a>.
+      For hardware-facing and simulator-facing examples, see the <a href="https://omega.floatingpragma.io/" data-track-link="oph-omega">OMEGA hardware guide</a> and the <a href="https://3body.floatingpragma.io/" data-track-link="oph-three-body">three-body problem OPH demo</a>.
       For broader essays and public-facing notes, the <a href="https://blog.floatingpragma.io/" data-track-link="blog-surface">Floating Pragma Blog</a> starts with
       <a href="https://blog.floatingpragma.io/semiotics-and-the-physics-of-meaning" data-track-link="blog-semiotics">Semiotics and the Physics of Meaning</a>.
     </p>
