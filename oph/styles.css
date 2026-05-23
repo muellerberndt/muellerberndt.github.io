@@ -161,7 +161,7 @@ a {
   margin: 8px 0 22px;
   padding: 14px;
   display: grid;
-  grid-template-columns: auto repeat(2, minmax(220px, 1fr));
+  grid-template-columns: auto repeat(3, minmax(200px, 1fr));
   gap: 12px;
   align-items: stretch;
   border: 1px solid rgba(212, 181, 110, 0.28);

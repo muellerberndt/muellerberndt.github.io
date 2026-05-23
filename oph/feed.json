@@ -3,7 +3,7 @@
   "title": "Observer Patch Holography Updates",
   "home_page_url": "https://floatingpragma.io/oph/",
   "feed_url": "https://floatingpragma.io/oph/feed.json",
-  "description": "Public OPH links, with OPH Textbooks and Reverse Engineering Reality as the best starting points, plus physics unification, coherence, OMEGA, stress-test prompts, extra demos, source notebook, essays, lab, and challenge updates.",
+  "description": "Public OPH links, with OPH Textbooks, Reverse Engineering Reality, and Applications as the best starting points, plus physics unification, coherence, stress-test prompts, extra demos, source notebook, essays, lab, and challenge updates.",
   "language": "en",
   "authors": [
     {
@@ -28,9 +28,9 @@
     {
       "id": "https://omega.floatingpragma.io/",
       "url": "https://omega.floatingpragma.io/",
-      "title": "OMEGA Hardware Guide",
+      "title": "OPH Applications",
       "date_published": "2026-05-21T00:00:00Z",
-      "summary": "The hardware-facing OPH optical chamber computation and consensus guide."
+      "summary": "The OPH applications page for hardware, compute, energy, AGI, lift, and optical chamber consensus."
     },
     {
       "id": "https://coherence.floatingpragma.io/",
