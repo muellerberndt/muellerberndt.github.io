@@ -16,6 +16,8 @@ Floating Pragma hosts Observer Patch Holography (OPH), a proof-driven reconstruc
 - OPH NotebookLM notebook: https://notebooklm.google.com/notebook/d5249760-6ce8-44a0-927b-ccf90402711a
 - OPH Lab: https://oph-lab.floatingpragma.io/
 - OPH repository: https://github.com/FloatingPragma/observer-patch-holography
+- OPH license and anti-patent covenant: https://github.com/FloatingPragma/observer-patch-holography/blob/main/LICENSE
+- OPH patent policy copy: https://github.com/FloatingPragma/observer-patch-holography/blob/main/PATENTS.md
 - OPH RSS feed: https://floatingpragma.io/oph/feed.xml
 - OPH JSON feed: https://floatingpragma.io/oph/feed.json
 

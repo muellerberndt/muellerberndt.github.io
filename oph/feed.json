@@ -68,6 +68,13 @@
       "summary": "Use the OPH NotebookLM source notebook, public essays, OPH Lab, papers, repository, and public challenge to find the strongest failure mode. Detailed objections should go to tom@floatingpragma.io."
     },
     {
+      "id": "https://github.com/FloatingPragma/observer-patch-holography/blob/main/LICENSE",
+      "url": "https://github.com/FloatingPragma/observer-patch-holography/blob/main/LICENSE",
+      "title": "OPH License and Anti-Patent Covenant",
+      "date_published": "2026-05-26T00:00:00Z",
+      "summary": "The canonical repository license and OPH open-use anti-patent covenant, with PATENTS.md carrying copy/paste website notices."
+    },
+    {
       "id": "https://notebooklm.google.com/notebook/d5249760-6ce8-44a0-927b-ccf90402711a",
       "url": "https://notebooklm.google.com/notebook/d5249760-6ce8-44a0-927b-ccf90402711a",
       "title": "OPH NotebookLM Source Notebook",

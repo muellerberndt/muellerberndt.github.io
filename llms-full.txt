@@ -22,6 +22,8 @@ The public OPH outreach packet is designed for criticism. The useful response is
 - OPH NotebookLM notebook: https://notebooklm.google.com/notebook/d5249760-6ce8-44a0-927b-ccf90402711a
 - OPH Lab: https://oph-lab.floatingpragma.io/
 - Main repository: https://github.com/FloatingPragma/observer-patch-holography
+- License and anti-patent covenant: https://github.com/FloatingPragma/observer-patch-holography/blob/main/LICENSE
+- Patent policy copy/paste notices: https://github.com/FloatingPragma/observer-patch-holography/blob/main/PATENTS.md
 - Challenge site: https://challenge.floatingpragma.io/
 
 ## Essays
