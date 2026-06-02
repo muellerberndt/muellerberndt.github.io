@@ -13,7 +13,10 @@ The public OPH outreach packet is designed for criticism. The useful response is
 - OPH Textbooks, the best guided study surface: https://learn.floatingpragma.io/
 - Reverse Engineering Reality, the book-length route: https://oph-book.floatingpragma.io/
 - OPH hub: https://floatingpragma.io/oph/
+- OPH paper summaries, HTML summaries of the six-paper stack: https://floatingpragma.io/oph/papers/
 - Physics Unification via OPH: https://floatingpragma.io/oph/physics-unification/
+- Standard Model unified with gravity via OPH: https://floatingpragma.io/oph/standard-model-gravity-unification/
+- Cosmological constant derivation via OPH: https://floatingpragma.io/oph/cosmological-constant-derivation/
 - Stress-test OPH: https://floatingpragma.io/oph/stress-test/
 - OPH Coherence Map, the public graph surface for OPH concepts and overlaps: https://coherence.floatingpragma.io/
 - OPH Applications, the public applications page for hardware, compute, energy, AGI, lift, and optical chamber consensus: https://omega.floatingpragma.io/

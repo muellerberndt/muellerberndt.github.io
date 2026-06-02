@@ -3,10 +3,31 @@
   <channel>
     <title>Observer Patch Holography Updates</title>
     <link>https://floatingpragma.io/oph/</link>
-    <description>Public OPH links, with OPH Textbooks, Reverse Engineering Reality, and Applications as the best starting points, plus physics unification, coherence, stress-test prompts, extra demos, source notebook, essays, lab, and challenge updates.</description>
+    <description>Public OPH links, with OPH Textbooks, Reverse Engineering Reality, Applications, paper summaries, physics unification, Standard Model plus gravity, cosmological constant, coherence, essays, lab, and challenge updates.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 26 May 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 02 Jun 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://floatingpragma.io/oph/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OPH Paper Summaries</title>
+      <link>https://floatingpragma.io/oph/papers/</link>
+      <guid isPermaLink="true">https://floatingpragma.io/oph/papers/</guid>
+      <pubDate>Tue, 02 Jun 2026 00:00:00 GMT</pubDate>
+      <description>HTML summaries of the six-paper Observer Patch Holography stack and supporting papers, with links to the formal PDFs.</description>
+    </item>
+    <item>
+      <title>Standard Model Unified with Gravity via OPH</title>
+      <link>https://floatingpragma.io/oph/standard-model-gravity-unification/</link>
+      <guid isPermaLink="true">https://floatingpragma.io/oph/standard-model-gravity-unification/</guid>
+      <pubDate>Tue, 02 Jun 2026 00:00:00 GMT</pubDate>
+      <description>The focused OPH entry page for the Standard Model unified with gravity, connecting the compact paper to the Lorentz/null-modular/Einstein branch and realized Standard Model quotient.</description>
+    </item>
+    <item>
+      <title>Cosmological Constant Derivation via OPH</title>
+      <link>https://floatingpragma.io/oph/cosmological-constant-derivation/</link>
+      <guid isPermaLink="true">https://floatingpragma.io/oph/cosmological-constant-derivation/</guid>
+      <pubDate>Tue, 02 Jun 2026 00:00:00 GMT</pubDate>
+      <description>The OPH de Sitter screen-capacity route to the cosmological constant, with Lambda treated as global capacity data on the input-dependent branch.</description>
+    </item>
     <item>
       <title>Physics Unification via OPH</title>
       <link>https://floatingpragma.io/oph/physics-unification/</link>

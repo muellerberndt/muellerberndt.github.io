@@ -3,7 +3,7 @@
   "title": "Observer Patch Holography Updates",
   "home_page_url": "https://floatingpragma.io/oph/",
   "feed_url": "https://floatingpragma.io/oph/feed.json",
-  "description": "Public OPH links, with OPH Textbooks, Reverse Engineering Reality, and Applications as the best starting points, plus physics unification, coherence, stress-test prompts, extra demos, source notebook, essays, lab, and challenge updates.",
+  "description": "Public OPH links, with OPH Textbooks, Reverse Engineering Reality, Applications, paper summaries, physics unification, Standard Model plus gravity, cosmological constant, coherence, essays, lab, and challenge updates.",
   "language": "en",
   "authors": [
     {
@@ -11,6 +11,27 @@
     }
   ],
   "items": [
+    {
+      "id": "https://floatingpragma.io/oph/papers/",
+      "url": "https://floatingpragma.io/oph/papers/",
+      "title": "OPH Paper Summaries",
+      "date_published": "2026-06-02T00:00:00Z",
+      "summary": "HTML summaries of the six-paper Observer Patch Holography stack and supporting papers, with links to the formal PDFs."
+    },
+    {
+      "id": "https://floatingpragma.io/oph/standard-model-gravity-unification/",
+      "url": "https://floatingpragma.io/oph/standard-model-gravity-unification/",
+      "title": "Standard Model Unified with Gravity via OPH",
+      "date_published": "2026-06-02T00:00:00Z",
+      "summary": "The focused OPH entry page for the Standard Model unified with gravity, connecting the compact paper to the Lorentz/null-modular/Einstein branch and realized Standard Model quotient."
+    },
+    {
+      "id": "https://floatingpragma.io/oph/cosmological-constant-derivation/",
+      "url": "https://floatingpragma.io/oph/cosmological-constant-derivation/",
+      "title": "Cosmological Constant Derivation via OPH",
+      "date_published": "2026-06-02T00:00:00Z",
+      "summary": "The OPH de Sitter screen-capacity route to the cosmological constant, with Lambda treated as global capacity data on the input-dependent branch."
+    },
     {
       "id": "https://floatingpragma.io/oph/physics-unification/",
       "url": "https://floatingpragma.io/oph/physics-unification/",

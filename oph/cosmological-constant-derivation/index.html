@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Cosmological Constant Derivation | Observer Patch Holography</title>
+  <meta name="title" content="Cosmological Constant Derivation | Observer Patch Holography" />
+  <meta name="description" content="The OPH cosmological constant derivation route: Lambda as de Sitter screen capacity, with N_scr about 3.31 x 10^122 and Lambda = 3 pi / (G N_scr) on the input-dependent cosmological-capacity branch." />
+  <meta name="keywords" content="cosmological constant derivation, cosmological constant problem, Lambda derivation, dark energy derivation, de Sitter screen capacity, observer patch holography, quantum gravity, theory of everything, simulation theory, correct theory of everything" />
+  <meta name="author" content="Pragma" />
+  <link rel="canonical" href="https://floatingpragma.io/oph/cosmological-constant-derivation/" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://floatingpragma.io/oph/cosmological-constant-derivation/" />
+  <meta property="og:title" content="Cosmological Constant Derivation | Observer Patch Holography" />
+  <meta property="og:description" content="The OPH route from de Sitter static-patch horizon entropy to the cosmological constant as global screen capacity." />
+  <meta property="og:image" content="https://floatingpragma.io/oph/screen.webp" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Cosmological Constant Derivation | Observer Patch Holography" />
+  <meta name="twitter:description" content="The OPH route from de Sitter static-patch horizon entropy to the cosmological constant as global screen capacity." />
+  <meta name="twitter:image" content="https://floatingpragma.io/oph/screen.webp" />
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="related" href="https://floatingpragma.io/oph/" title="Observer Patch Holography Hub" />
+  <link rel="related" href="https://floatingpragma.io/oph/papers/" title="OPH Paper Summaries" />
+  <link rel="related" href="https://floatingpragma.io/oph/quantum-gravity/" title="Observer Patch Holography and Quantum Gravity" />
+  <link rel="related" href="https://floatingpragma.io/oph/standard-model-gravity-unification/" title="Standard Model Unified with Gravity" />
+  <link rel="related" href="https://floatingpragma.io/oph/physics-unification/" title="Observer Patch Holography and Physics Unification" />
+  <link rel="related" href="https://floatingpragma.io/oph/theory-of-everything/" title="Observer Patch Holography and the Theory of Everything" />
+  <link rel="related" href="https://floatingpragma.io/oph/simulation-theory/" title="Observer Patch Holography and Simulation Theory" />
+  <link rel="related" href="https://learn.floatingpragma.io/" title="OPH Textbooks" />
+  <link rel="related" href="https://oph-book.floatingpragma.io/" title="Reverse Engineering Reality" />
+  <link rel="related" href="https://oph-lab.floatingpragma.io/de-sitter/" title="OPH Lab de Sitter" />
+  <link rel="related" href="https://blog.floatingpragma.io/" title="Floating Pragma Blog" />
+  <link rel="license" href="https://github.com/FloatingPragma/observer-patch-holography/blob/main/LICENSE" title="OPH License and Anti-Patent Covenant" />
+  <link rel="related" href="https://github.com/FloatingPragma/observer-patch-holography/blob/main/PATENTS.md" title="OPH Open Use and Anti-Patent Covenant" />
+  <link rel="stylesheet" href="/oph/styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Cosmological Constant Derivation via Observer Patch Holography",
+    "url": "https://floatingpragma.io/oph/cosmological-constant-derivation/",
+    "description": "A focused page explaining the OPH cosmological constant derivation route: Lambda as a global de Sitter screen-capacity parameter on the input-dependent cosmological-capacity branch.",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Floating Pragma",
+      "url": "https://floatingpragma.io/"
+    },
+    "about": [
+      {
+        "@type": "Thing",
+        "name": "Cosmological constant derivation"
+      },
+      {
+        "@type": "Thing",
+        "name": "de Sitter horizon entropy"
+      },
+      {
+        "@type": "ResearchProject",
+        "name": "Observer Patch Holography",
+        "url": "https://floatingpragma.io/oph/"
+      }
+    ],
+    "keywords": [
+      "cosmological constant derivation",
+      "cosmological constant problem",
+      "de Sitter screen capacity",
+      "dark energy",
+      "quantum gravity",
+      "observer patch holography"
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How does OPH derive the cosmological constant?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "On the input-dependent cosmological-capacity branch, OPH treats the cosmological constant as a global screen-capacity parameter. The de Sitter horizon entropy gives N_scr, and the branch relation is Lambda = 3 pi / (G N_scr)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is this a local vacuum-energy calculation?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. OPH separates the cosmological constant from local particle-physics couplings. It is described as global capacity data associated with the de Sitter static patch."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What number does OPH use for screen capacity?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For the observed late-time de Sitter horizon, OPH cites a bare radius-squared count around 1.05 x 10^122 and an entropy capacity N_scr around 3.31 x 10^122."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Floating Pragma",
+        "item": "https://floatingpragma.io/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Observer Patch Holography",
+        "item": "https://floatingpragma.io/oph/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Cosmological Constant Derivation",
+        "item": "https://floatingpragma.io/oph/cosmological-constant-derivation/"
+      }
+    ]
+  }
+  </script>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HLGH209WMG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-HLGH209WMG', { cookie_domain: 'floatingpragma.io' });
+  </script>
+</head>
+<body class="oph-page landing-page">
+  <div class="site-grid"></div>
+  <div class="page-shell">
+    <header class="site-header reveal">
+      <a class="brand" href="/oph/">
+        <span class="brand-mark">
+          <img src="/pragma-cropped.jpg" alt="Pragma" />
+        </span>
+        <span class="brand-copy">
+          <strong>Pragma</strong>
+          <span>Cosmological Constant</span>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="OPH navigation">
+        <a href="/oph/" data-track-link="nav-hub">Hub</a>
+        <a href="/oph/papers/" data-track-link="nav-papers">Papers</a>
+        <a href="/oph/quantum-gravity/" data-track-link="nav-quantum-gravity">Quantum Gravity</a>
+        <a href="/oph/standard-model-gravity-unification/" data-track-link="nav-smg">SM + Gravity</a>
+        <a href="https://oph-lab.floatingpragma.io/de-sitter/" data-track-link="nav-lab-desitter">de Sitter Lab</a>
+        <a href="https://oph-book.floatingpragma.io/" data-track-link="nav-book">Book</a>
+      </nav>
+    </header>
+
+    <div class="primary-resource-strip reveal" aria-label="Best OPH starting points">
+      <div class="primary-resource-label">Best starting points</div>
+      <a class="primary-resource-link" href="https://oph-lab.floatingpragma.io/de-sitter/" data-track-link="primary-desitter-lab">
+        <strong>de Sitter Lab</strong>
+        <span>Interactive route through static patches and cosmological capacity.</span>
+      </a>
+      <a class="primary-resource-link" href="/oph/papers/" data-track-link="primary-paper-summaries">
+        <strong>Paper summaries</strong>
+        <span>HTML summaries of the OPH paper stack.</span>
+      </a>
+      <a class="primary-resource-link" href="https://oph-book.floatingpragma.io/" data-track-link="primary-book">
+        <strong>Reverse Engineering Reality</strong>
+        <span>Book route into de Sitter horizons and OPH cosmology.</span>
+      </a>
+    </div>
+
+    <main>
+      <section class="hero-panel article-hero reveal">
+        <div class="article-copy">
+          <div class="eyebrow decode" data-delay="120">Observer Patch Holography</div>
+          <h1 class="decode" data-delay="260">Cosmological constant derivation.</h1>
+          <p class="article-lead">
+            OPH's <strong>cosmological constant derivation</strong> is a screen-capacity statement.
+            On the input-dependent cosmological-capacity branch, the observed positive cosmological constant is read as the global size parameter of the de Sitter observer patch.
+          </p>
+          <p>
+            The key relation is <code>Lambda = 3 pi / (G N_scr)</code>. For the observed late-time horizon, OPH cites a bare radius-squared count near <code>1.05 x 10^122</code>
+            and an entropy capacity <code>N_scr</code> near <code>3.31 x 10^122</code>.
+          </p>
+          <p>
+            This is not presented as a local vacuum-energy calculation. It is OPH's global-capacity branch: the cosmological constant is the horizon-scale data local patch reconstruction cannot erase.
+          </p>
+
+          <div class="article-meta">
+            <span class="meta-chip">Cosmological constant derivation</span>
+            <span class="meta-chip">de Sitter screen capacity</span>
+            <span class="meta-chip">Dark energy</span>
+            <span class="meta-chip">Quantum gravity</span>
+          </div>
+
+          <div class="cta-row">
+            <a class="btn btn-primary" href="https://oph-lab.floatingpragma.io/de-sitter/" data-track-link="cc-lab-desitter">Open the de Sitter Lab</a>
+            <a class="btn btn-primary" href="/oph/papers/" data-track-link="cc-paper-summaries">Read paper summaries</a>
+            <a class="btn btn-secondary" href="https://wkaxfdgxoqmghwgshymt.supabase.co/storage/v1/object/public/papers/observers_are_all_you_need.pdf" target="_blank" rel="noopener noreferrer" data-track-link="cc-main-paper">Read the main paper</a>
+          </div>
+        </div>
+
+        <aside class="article-side">
+          <div class="side-stack">
+            <div class="side-card">
+              <strong>Input branch</strong>
+              <p>The branch supplies total screen capacity from the de Sitter horizon entropy rather than deriving it from local particle couplings.</p>
+            </div>
+            <div class="side-card">
+              <strong>Capacity formula</strong>
+              <p>The OPH relation is Lambda = 3 pi / (G N_scr), with N_scr read from the late-time horizon entropy.</p>
+            </div>
+            <div class="side-card">
+              <strong>Claim boundary</strong>
+              <p>Local gravity and gauge reconstruction stay separate from this global cosmological-capacity statement.</p>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section reveal">
+        <div class="article-grid">
+          <article class="article-panel">
+            <h2>Why de Sitter is the natural OPH screen</h2>
+            <p>
+              A de Sitter static patch gives an observer a finite cosmological horizon. That horizon has area, temperature, and finite entropy.
+              For OPH, this makes it the natural cosmological screen: no observer has access to the whole universe at once, and the horizon bounds the data available to that observer.
+            </p>
+            <p>
+              The book route states the intuition directly: the de Sitter horizon is the natural holographic screen because finite observers live inside finite causal patches.
+            </p>
+          </article>
+
+          <article class="article-panel">
+            <h2>What Lambda means in the OPH branch</h2>
+            <p>
+              In the OPH account, Lambda is not one more local coupling. It is the global capacity datum of the screen. Local null-modular probes reconstruct stress-energy only up to the metric-proportional term,
+              so the cosmological constant enters as the residual global scale.
+            </p>
+            <p>
+              The phrase cosmological constant derivation therefore names a capacity relation, not a claim that ordinary vacuum-energy estimates suddenly become small.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-head">
+          <div class="eyebrow">Where To Inspect</div>
+          <h2>Follow the de Sitter path through book, lab, and papers.</h2>
+        </div>
+        <div class="card-grid">
+          <article class="entry-card">
+            <div class="entry-kicker">Book route</div>
+            <h3>The de Sitter Patch</h3>
+            <p>The book chapter explains static patches, finite entropy, horizon thermodynamics, and Lambda as global capacity in broad-reader language.</p>
+            <div class="entry-links">
+              <a href="https://oph-book.floatingpragma.io/" data-track-link="cc-book-card"><strong>Reverse Engineering Reality</strong><small><span class="link-format">book / web</span>Use Chapter 13 for the de Sitter and cosmological-constant route.</small></a>
+            </div>
+          </article>
+          <article class="entry-card">
+            <div class="entry-kicker">Lab route</div>
+            <h3>de Sitter and gravity</h3>
+            <p>The lab route shows how the cosmological horizon and gravity branch sit in the interactive OPH derivation map.</p>
+            <div class="entry-links">
+              <a href="https://oph-lab.floatingpragma.io/de-sitter/" data-track-link="cc-lab-desitter-card">de Sitter</a>
+              <a href="https://oph-lab.floatingpragma.io/gravity/" data-track-link="cc-lab-gravity-card">Gravity</a>
+              <a href="https://oph-lab.floatingpragma.io/synthesis/" data-track-link="cc-lab-synthesis-card">Synthesis</a>
+            </div>
+          </article>
+          <article class="entry-card">
+            <div class="entry-kicker">Formal route</div>
+            <h3>Main OPH paper</h3>
+            <p>The main paper states the screen-capacity branch and separates it from the local recovered-core gravity and gauge claims.</p>
+            <div class="entry-links">
+              <a href="https://wkaxfdgxoqmghwgshymt.supabase.co/storage/v1/object/public/papers/observers_are_all_you_need.pdf" target="_blank" rel="noopener noreferrer" data-track-link="cc-main-paper-card"><strong>Observers Are All You Need</strong><small><span class="link-format">paper / pdf</span>Main OPH synthesis including de Sitter screen capacity and the Lambda relation.</small></a>
+            </div>
+          </article>
+          <article class="entry-card">
+            <div class="entry-kicker">Related routes</div>
+            <h3>Neighboring search intents</h3>
+            <p>Readers who arrive through dark energy, quantum gravity, theory of everything, or simulation theory can move through these entry pages.</p>
+            <div class="entry-links">
+              <a href="/oph/quantum-gravity/" data-track-link="cc-qg">Quantum Gravity</a>
+              <a href="/oph/standard-model-gravity-unification/" data-track-link="cc-smg">Standard Model Unified with Gravity</a>
+              <a href="/oph/theory-of-everything/" data-track-link="cc-toe">Theory of Everything</a>
+              <a href="/oph/simulation-theory/" data-track-link="cc-simulation">Simulation Theory</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-head">
+          <div class="eyebrow">FAQ</div>
+          <h2>Short answers for search readers.</h2>
+        </div>
+        <div class="faq-grid">
+          <article class="faq-card">
+            <h3>How does OPH derive the cosmological constant?</h3>
+            <p>On the input-dependent cosmological-capacity branch, OPH treats the cosmological constant as a global screen-capacity parameter. The de Sitter horizon entropy gives N_scr, and the branch relation is Lambda = 3 pi / (G N_scr).</p>
+          </article>
+          <article class="faq-card">
+            <h3>Is this a local vacuum-energy calculation?</h3>
+            <p>No. OPH separates the cosmological constant from local particle-physics couplings. It is described as global capacity data associated with the de Sitter static patch.</p>
+          </article>
+          <article class="faq-card">
+            <h3>What number does OPH use for screen capacity?</h3>
+            <p>For the observed late-time de Sitter horizon, OPH cites a bare radius-squared count around 1.05 x 10^122 and an entropy capacity N_scr around 3.31 x 10^122.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer reveal">
+      <div>Pragma</div>
+      <div class="site-footer-links">
+        <a href="/oph/" data-track-link="footer-hub">Observer Patch Holography</a>
+        <a href="/oph/papers/" data-track-link="footer-papers">Papers</a>
+        <a href="/oph/physics-unification/" data-track-link="footer-physics-unification">Physics Unification</a>
+        <a href="/oph/standard-model-gravity-unification/" data-track-link="footer-smg">SM + Gravity</a>
+        <a href="/oph/quantum-gravity/" data-track-link="footer-qg">Quantum Gravity</a>
+        <a href="/oph/theory-of-everything/" data-track-link="footer-toe">Theory of Everything</a>
+        <a href="/oph/simulation-theory/" data-track-link="footer-sim">Simulation Theory</a>
+        <a href="https://oph-lab.floatingpragma.io/" data-track-link="footer-lab">Lab</a>
+        <a href="https://oph-book.floatingpragma.io/" data-track-link="footer-book">Book</a>
+        <a href="https://blog.floatingpragma.io/" data-track-link="footer-blog">Blog</a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="/oph/app.js"></script>
+</body>
+</html>
