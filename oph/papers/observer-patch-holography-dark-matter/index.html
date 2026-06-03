@@ -1,0 +1,3166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Observer Patch Holography and the Dark Matter Phenomenon | OPH Paper</title>
+  <meta name="title" content="Observer Patch Holography and the Dark Matter Phenomenon | OPH Paper" />
+  <meta name="description" content="The OPH dark-matter phenomenology paper. It connects finite observer-overlap collars, record-repair load, galaxy rotation laws, lensing, BTFR behavior, and cosmological caveats." />
+  <meta name="keywords" content="dark matter, galaxy rotation curves, MOND, BTFR, gravitational lensing, dark-sector corrections, Observer Patch Holography" />
+  <meta name="author" content="Pragma" />
+  <link rel="canonical" href="https://floatingpragma.io/oph/papers/observer-patch-holography-dark-matter/" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://floatingpragma.io/oph/papers/observer-patch-holography-dark-matter/" />
+  <meta property="og:title" content="Observer Patch Holography and the Dark Matter Phenomenon | OPH Paper" />
+  <meta property="og:description" content="The OPH dark-matter phenomenology paper. It connects finite observer-overlap collars, record-repair load, galaxy rotation laws, lensing, BTFR behavior, and cosmological caveats." />
+  <meta property="og:image" content="https://floatingpragma.io/oph/screen.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Observer Patch Holography and the Dark Matter Phenomenon | OPH Paper" />
+  <meta name="twitter:description" content="The OPH dark-matter phenomenology paper. It connects finite observer-overlap collars, record-repair load, galaxy rotation laws, lensing, BTFR behavior, and cosmological caveats." />
+  <meta name="twitter:image" content="https://floatingpragma.io/oph/screen.webp" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="stylesheet" href="/oph/styles.css" />
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['\\(', '\\)'], ['$', '$']], displayMath: [['\\[', '\\]']] },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Observer Patch Holography and the Dark Matter Phenomenon",
+  "name": "Observer Patch Holography and the Dark Matter Phenomenon",
+  "description": "The OPH dark-matter phenomenology paper. It connects finite observer-overlap collars, record-repair load, galaxy rotation laws, lensing, BTFR behavior, and cosmological caveats.",
+  "url": "https://floatingpragma.io/oph/papers/observer-patch-holography-dark-matter/",
+  "encoding": {
+    "@type": "MediaObject",
+    "contentUrl": "https://floatingpragma.io/oph/papers/pdf/oph_dark_matter_paper.pdf",
+    "encodingFormat": "application/pdf"
+  },
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Bernhard Mueller"
+    }
+  ],
+  "isPartOf": {
+    "@type": "ResearchProject",
+    "name": "Observer Patch Holography",
+    "url": "https://floatingpragma.io/oph/"
+  },
+  "keywords": [
+    "dark matter",
+    "galaxy rotation curves",
+    "MOND",
+    "BTFR",
+    "gravitational lensing",
+    "dark-sector corrections",
+    "Observer Patch Holography"
+  ],
+  "datePublished": "June 3, 2026",
+  "dateModified": "June 3, 2026",
+  "version": "r1461"
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Floating Pragma",
+      "item": "https://floatingpragma.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Observer Patch Holography",
+      "item": "https://floatingpragma.io/oph/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "OPH Papers",
+      "item": "https://floatingpragma.io/oph/papers/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Observer Patch Holography and the Dark Matter Phenomenon",
+      "item": "https://floatingpragma.io/oph/papers/observer-patch-holography-dark-matter/"
+    }
+  ]
+}
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HLGH209WMG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-HLGH209WMG', { cookie_domain: 'floatingpragma.io' });
+  </script>
+</head>
+<body class="oph-page paper-page">
+  <div class="site-grid"></div>
+  <div class="page-shell">
+    <header class="site-header reveal">
+      <a class="brand" href="/oph/">
+        <span class="brand-mark">
+          <img src="/pragma-cropped.jpg" alt="Pragma" />
+        </span>
+        <span class="brand-copy">
+          <strong>Pragma</strong>
+          <span>OPH Paper</span>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="OPH navigation">
+        <a href="/oph/" data-track-link="nav-hub">Hub</a>
+        <a href="/oph/papers/" data-track-link="nav-papers">Papers</a>
+        <a href="/oph/standard-model-gravity-unification/" data-track-link="nav-smg">SM + Gravity</a>
+        <a href="/oph/theory-of-everything/" data-track-link="nav-toe">Theory of Everything</a>
+        <a href="https://oph-lab.floatingpragma.io/" data-track-link="nav-lab">Lab</a>
+        <a href="https://challenge.floatingpragma.io/" data-track-link="nav-challenge">Challenge</a>
+      </nav>
+    </header>
+
+    <main>
+      <article class="paper-reader reveal">
+        <header class="paper-reader-header">
+          <div class="eyebrow">Dark matter</div>
+          <h1>Observer Patch Holography and the Dark Matter Phenomenon</h1>
+          <p class="article-lead">The OPH dark-matter phenomenology paper. It connects finite observer-overlap collars, record-repair load, galaxy rotation laws, lensing, BTFR behavior, and cosmological caveats.</p>
+          <div class="paper-meta-line">
+            <span>r1461</span>
+            <span>June 3, 2026</span>
+            <span>extra papers</span>
+          </div>
+          <div class="paper-author-line">Authors: Bernhard Mueller</div>
+          <div class="article-meta">
+              <span class="meta-chip">dark matter</span>
+              <span class="meta-chip">galaxy rotation curves</span>
+              <span class="meta-chip">MOND</span>
+              <span class="meta-chip">BTFR</span>
+              <span class="meta-chip">gravitational lensing</span>
+              <span class="meta-chip">dark-sector corrections</span>
+          </div>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="/oph/papers/pdf/oph_dark_matter_paper.pdf" target="_blank" rel="noopener noreferrer" data-track-link="paper-pdf-oph_dark_matter_paper">Download PDF</a>
+            <a class="btn btn-secondary" href="/oph/papers/" data-track-link="paper-index">All OPH papers</a>
+            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r1461" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
+          </div>
+        </header>
+        <div class="paper-reader-grid">
+          <aside class="paper-reader-side" aria-label="Paper navigation">
+            <div class="side-card">
+              <strong>Formal artifact</strong>
+              <p>The PDF is mirrored on this site and remains the formal release artifact for theorem status and branch boundaries.</p>
+              <a href="/oph/papers/pdf/oph_dark_matter_paper.pdf" target="_blank" rel="noopener noreferrer">Open first-party PDF</a>
+            </div>
+            <div class="side-card">
+              <strong>Sections</strong>
+              <nav class="paper-toc" aria-label="Paper sections"><a href="#plain-picture">Plain Picture</a>
+<a href="#three-claim-layers">Three Claim Layers</a>
+<a href="#the-dark-matter-challenge">The Dark Matter Challenge</a>
+<a href="#standard-routes">Standard Routes</a>
+<a href="#cold-dark-matter">Cold Dark Matter</a>
+<a href="#mond">MOND</a>
+<a href="#the-oph-route">The OPH Route</a>
+<a href="#static-galaxy-derivation">Static Galaxy Derivation</a>
+<a href="#source-from-the-carried-collar-remainder">Source From The Carried Collar Remainder</a>
+<a href="#the-acceleration-variable">The Acceleration Variable</a>
+<a href="#poisson-activation">Poisson Activation</a>
+<a href="#conservative-potential-equation">Conservative Potential Equation</a></nav>
+            </div>
+          </aside>
+          <div class="paper-body">
+<div class="center">
+
+<p><strong>Paper release:</strong> r1461 <strong>Released:</strong> June
+3, 2026</p>
+</div>
+
+<h1 id="plain-picture">Plain Picture</h1>
+<p>A galaxy does two jobs in this model. Its baryons source the ordinary
+weak field, and its finite observer-overlap collars carry a
+record-repair load. The load is dark to electromagnetic probes because
+ordinary luminous charges are absent. It gravitates because OPH puts
+carried collar remainders into the effective stress bookkeeping.</p>
+<p>The RAR shape has a simple origin. The relevant repair opportunities
+live on cuts, so their broad count scales like <span
+class="math inline">\(r_M/r=\sqrt{g_b/a_{0,\mathrm{OPH}}}\)</span>.
+Independent local opportunity counts give a Poisson zero-count law. The
+active fraction is <span
+class="math inline">\(1-\exp[-\lambda_{\mathrm{collar}}\sqrt{g_b/a_{0,\mathrm{OPH}}}]\)</span>.
+The conservative field equation promotes that scalar response into a
+potential equation. The simple algebraic acceleration law is exact only
+when symmetry removes the curl term.</p>
+<h1 id="three-claim-layers">Three Claim Layers</h1>
+<p>The first layer is the static galaxy law. It contains the RAR shape,
+the BTFR limit, the effective dark density, the no-slip lensing rule,
+and the <span class="math inline">\(\mathbb Z_6\)</span>/Poisson
+coefficient.</p>
+<p>The second layer is the dynamic dark component. It treats the anomaly
+as a transported stress that relaxes toward the static equilibrium over
+<span class="math inline">\(\tau_{\mathrm{rec}}\)</span>. Cluster
+offsets use this layer.</p>
+<p>The third layer is cosmological dark matter. It uses the same stress
+in linear perturbation theory, with a background abundance, a relaxation
+rate, and an equilibrium kernel. CMB, BAO, lensing, growth, and <span
+class="math inline">\(S_8\)</span> test this layer.</p>
+<h1 id="the-dark-matter-challenge">The Dark Matter Challenge</h1>
+<p>In Newtonian gravity and in the weak-field limit of general
+relativity, a test particle in a circular orbit satisfies</p>
+<p><span class="math display">\[\begin{equation}
+  \frac{v^2(r)}{r}=g(r)=\frac{G M(&lt;r)}{r^2}.
+\end{equation}\]</span></p>
+<p>If almost all gravitating matter is visible baryonic matter, then
+outside the bright disk the enclosed mass should stop growing quickly
+and the rotation speed should fall as <span
+class="math inline">\(v(r)\propto r^{-1/2}\)</span>. Disk galaxies do
+not behave that way. Their outer rotation curves often remain flat, so
+the inferred dynamical mass grows approximately linearly with
+radius:</p>
+<p><span class="math display">\[\begin{equation}
+  M_{\mathrm{dyn}}(&lt;r)=\frac{v^2 r}{G}.
+\end{equation}\]</span></p>
+<p>The galaxy problem is only one part of the evidence. Clusters need
+more gravity than the observed gas and galaxies provide. Weak lensing
+maps in merging systems such as the Bullet Cluster show gravitational
+potential peaks separated from the X-ray gas . The CMB and large-scale
+structure prefer a gravitating component that is mostly non-baryonic,
+close to pressureless, and present before galaxies settle . Planck’s
+base <span class="math inline">\(\Lambda\mathrm{CDM}\)</span> parameter
+set gives <span class="math inline">\(\Omega_c
+h^2=0.120\pm0.001\)</span> and <span class="math inline">\(\Omega_b
+h^2=0.0224\pm0.0001\)</span>, so most matter is not baryonic in that
+model .</p>
+<p>The challenge includes more than “flat rotation curves”. A good
+theory has to explain:</p>
+<ul>
+<li><p>galaxy rotation curves and the baryonic Tully-Fisher
+relation;</p></li>
+<li><p>the tight radial acceleration relation, abbreviated RAR;</p></li>
+<li><p>galaxy and cluster lensing;</p></li>
+<li><p>cluster offsets in mergers;</p></li>
+<li><p>CMB acoustic peaks, BAO, matter power, weak lensing, and <span
+class="math inline">\(S_8\)</span>.</p></li>
+</ul>
+<h1 id="standard-routes">Standard Routes</h1>
+<h2 id="cold-dark-matter">Cold Dark Matter</h2>
+<p>The standard route adds a new non-baryonic matter component. In its
+simplest form it is cold, effectively collisionless, and pressureless on
+cosmological scales. <span
+class="math inline">\(\Lambda\mathrm{CDM}\)</span> uses the same
+component for CMB peaks, large-scale structure, clusters, lensing, and
+galaxy halos.</p>
+<p>The particle identity is absent. Direct detection has produced no
+confirmed dark matter particle. Galaxy data show a tight connection
+between baryonic acceleration and observed acceleration, much tighter
+than a naive halo-plus-disk picture suggests. Halo fitting also
+introduces galaxy-level nuisance freedom, while the RAR looks like a
+law.</p>
+<h2 id="mond">MOND</h2>
+<p>MOND should be treated as a clue, not as a failure. Its basic
+phenomenology starts from a critical acceleration <span
+class="math inline">\(a_0\)</span>, and in the deep low-acceleration
+regime it gives</p>
+<p><span class="math display">\[\begin{equation}
+  g \simeq \sqrt{a_0 g_b}.
+\end{equation}\]</span></p>
+<p>For a point baryonic mass this implies</p>
+<p><span class="math display">\[\begin{equation}
+  v^4 = G M_b a_0,
+\end{equation}\]</span></p>
+<p>which is exactly the baryonic Tully-Fisher scaling . This is MOND’s
+great success: it goes straight at the galaxy regularity.</p>
+<p>The pressure points start when the same static acceleration rule is
+asked to do more jobs than a galaxy equilibrium law can naturally
+do:</p>
+<ul>
+<li><p><em>Relativistic completion and lensing.</em> A nonrelativistic
+force law does not by itself say which metric photons follow, or how the
+modified field contributes to the stress side of Einstein’s equations.
+Relativistic completions such as TeVeS exist , but the lensing sector
+then depends on extra fields and closure assumptions.</p></li>
+<li><p><em>Clusters.</em> MOND reduces the cluster mass discrepancy but
+does not remove the need for additional gravitating stress in clusters.
+Merging systems are especially sharp: if the anomaly is an instantaneous
+function of the local baryonic acceleration, the lensing peak wants to
+remain too tightly tied to the visible baryonic source.</p></li>
+<li><p><em>The early universe.</em> The CMB acoustic peaks, BAO, matter
+growth, CMB lensing, and weak-lensing amplitudes need a homogeneous and
+perturbative gravitating component before settled galaxies exist. A
+static RAR law does not by itself define that background abundance or
+its linear response.</p></li>
+<li><p><em>Non-spherical and time-dependent systems.</em> The algebraic
+relation <span class="math inline">\(g\simeq\sqrt{a_0g_b}\)</span> is
+clean in high-symmetry systems. In real three-dimensional fields, curl
+terms, environmental dependence, transport, and relaxation can
+matter.</p></li>
+</ul>
+<p>OPH does not treat the static RAR formula as the master law. It
+approximates MOND in the regime where the OPH stress sector has relaxed
+onto the old, settled, low-acceleration galaxy branch. It need not
+approximate MOND in mergers, clusters, or the early universe, because
+those systems are not static one-dimensional galaxy equilibria. The
+underlying object is an effective stress sector carried by finite
+overlap repair. In old relaxed disks it projects to a baryon-linked
+acceleration law. In lensing it enters the metric-potential bookkeeping.
+In cluster mergers it is transported and relaxes over a finite repair
+time. In FLRW and perturbation theory it has to be specified as a
+homogeneous charge, load current, and response kernel.</p>
+<p>This is the sense in which the MOND pressure points dissolve in OPH.
+OPH treats those failures as wrong-regime extrapolations, without making
+the same algebraic law more complicated. The static galaxy formula is
+allowed to be a very good equilibrium approximation, while lensing,
+clusters, and cosmology are handled by the corresponding OPH stress,
+transport, and perturbation equations. Those equations must pass their
+own falsifiers. The claim is structural separation, with no immunity
+from data.</p>
+<h1 id="the-oph-route">The OPH Route</h1>
+<p>Observer-Patch Holography starts from finite observer patches and the
+demand that neighboring patches agree on overlap data. The relevant OPH
+inputs for the dark branch are:</p>
+<ul>
+<li><p>finite overlap collars and fixed-cutoff collar algebras;</p></li>
+<li><p>edge and cut registers on those collars;</p></li>
+<li><p>read, compare, repair, commit, and refresh operations;</p></li>
+<li><p>a finite carried modular remainder on the collar;</p></li>
+<li><p>the recovered Einstein branch with a screen-capacity de Sitter
+scale.</p></li>
+</ul>
+<p>The dark-sector proposal is:</p>
+<blockquote>
+<p>The dark source is a transported modular/collar information-defect
+remainder. It gravitates because it contributes to the effective stress
+bookkeeping. It is electromagnetically dark because it is a
+record-repair remainder, not an ordinary luminous matter species.</p>
+</blockquote>
+<p>No new particle species is postulated. The effective dark stress is
+the gravitating part of finite-observer information repair.</p>
+<p><span class="math display">\[\begin{equation}
+  G_{ab}+\Lambda g_{ab}
+  =
+  8\pi G
+  \left(
+    T_{ab}^{\mathrm{SM}}
+    +T_{ab}^{\mathcal I}
+    +T_{ab}^{\mathrm{repair}}
+  \right).
+  \label{eq:informationstresssurface}
+\end{equation}\]</span></p>
+<p>The symbol <span class="math inline">\(A\)</span> in formulas below
+denotes this anomaly or information-defect component. It is an effective
+stress sector, with no literal particle species claim.</p>
+<p>This differs from particle dark matter and MOND in a useful way. It
+is stress-first like dark matter, so lensing and cosmology have a
+natural slot. It is baryon-linked like MOND only on the settled galaxy
+branch, because that equilibrium response is activated by collar/cut
+repair opportunities sourced by baryonic acceleration. The important
+contrast with MOND is not the square-root galaxy law; OPH intentionally
+reproduces that approximation where the equilibrium assumptions apply.
+The contrast is where the law lives. In MOND, the galaxy formula is
+often treated as the modification itself. In OPH it is the equilibrium
+projection of a transported stress component. That is why lensing,
+clusters, and cosmology can have their own equations without giving up
+the galaxy regularity.</p>
+<h1 id="static-galaxy-derivation">Static Galaxy Derivation</h1>
+<h2 id="source-from-the-carried-collar-remainder">Source From The
+Carried Collar Remainder</h2>
+<p>On the support-visible BW branch the primary theorem is the cap
+automorphism identity. In the special type-I or effective local
+representation where the geometric generator may be written inside the
+cap algebra, the OPH modular decomposition has the local form</p>
+<p><span class="math display">\[\begin{equation}
+  K_C = 2\pi B_C + K_C^{(\mathrm{anom})}+\mathrm{const}.
+\end{equation}\]</span></p>
+<p>At finite regulator stage, the nonadditive modular part is carried on
+the overlap collar. The dark branch packages the galaxy-scale positive
+remainder as</p>
+<p><span class="math display">\[\begin{equation}
+  R_C := I(A:D|B)\ge 0,
+\end{equation}\]</span></p>
+<p>where <span class="math inline">\(I(A:D|B)\)</span> is conditional
+mutual information. This is a phenomenological carried-defect variable
+on the continuation branch: small CMI supplies a recovered comparison
+state and a fixed-collar replacement modulus, not a one-shot exact
+Markov normal form or an exact finite-cutoff Einstein source. The
+corresponding effective rest-energy density is written</p>
+<p><span class="math display">\[\begin{equation}
+  \rho_A c^2
+    = \frac{15}{8\pi^2\ell^4} R_C.
+  \label{eq:rhoA}
+\end{equation}\]</span></p>
+<p>The weak-field Poisson equation becomes</p>
+<p><span class="math display">\[\begin{equation}
+  \nabla^2 \Phi = 4\pi G(\rho_b+\rho_A).
+  \label{eq:poisson}
+\end{equation}\]</span></p>
+<h4 id="conditional-theorem-1-attractive-sign">Conditional theorem 1,
+attractive sign.</h4>
+<p>If the carried galaxy remainder is <span
+class="math inline">\(R_C=I(A:D|B)\)</span> and the coarse-grained
+domain measure is nonnegative, then the anomaly is attractive in the
+Newtonian weak-field equation.</p>
+<h4 id="proof">Proof.</h4>
+<p>Conditional mutual information is nonnegative, so <span
+class="math inline">\(R_C\ge0\)</span>. Equation
+<a href="#eq:rhoA" data-reference-type="eqref" data-reference="eq:rhoA">[eq:rhoA]</a>
+gives <span class="math inline">\(\rho_A\ge0\)</span>. Equation
+<a href="#eq:poisson" data-reference-type="eqref" data-reference="eq:poisson">[eq:poisson]</a>
+then shows that the anomaly enters with the same attractive sign as
+baryonic mass. <span class="math inline">\(\square\)</span></p>
+<p>The source identification is a theorem target.</p>
+<h2 id="the-acceleration-variable">The Acceleration Variable</h2>
+<p>Define the baryonic acceleration ratio</p>
+<p><span class="math display">\[\begin{equation}
+  x := \frac{g_b}{a_{0,\mathrm{OPH}}}.
+\end{equation}\]</span></p>
+<p>For a point baryonic source,</p>
+<p><span class="math display">\[\begin{equation}
+  g_b(r)=\frac{G M_b}{r^2},
+  \qquad
+  r_M := \sqrt{\frac{G M_b}{a_{0,\mathrm{OPH}}}},
+\end{equation}\]</span></p>
+<p>so</p>
+<p><span class="math display">\[\begin{equation}
+  x=\left(\frac{r_M}{r}\right)^2,
+  \qquad
+  \sqrt{x}=\frac{r_M}{r}.
+  \label{eq:sqrtx}
+\end{equation}\]</span></p>
+<p>The OPH support assumption is that settled-galaxy repair
+opportunities live on codimension-one collar/cut support. A screen-area
+count would scale as <span class="math inline">\(x\)</span>. A cut-count
+scales as <span class="math inline">\(\sqrt{x}\)</span>, as in
+<a href="#eq:sqrtx" data-reference-type="eqref" data-reference="eq:sqrtx">[eq:sqrtx]</a>.</p>
+<h2 id="poisson-activation">Poisson Activation</h2>
+<p>Let the mean number of independent local repair opportunities be</p>
+<p><span class="math display">\[\begin{equation}
+  \mu(x)=\lambda_{\mathrm{collar}}\sqrt{x}.
+\end{equation}\]</span></p>
+<p>The Poisson law does not follow from fixing this mean alone. Fixed
+mean alone would select a geometric distribution on nonnegative
+integers. The OPH claim needs the stronger collar-count premise:
+independent increments on disjoint collar intervals, rare local repair
+events, and refinement stability. Partition an interval <span
+class="math inline">\(I\)</span> with mean <span
+class="math inline">\(\mu(I)\)</span> into <span
+class="math inline">\(m\)</span> equal subintervals. If each subinterval
+has one activation opportunity with probability <span
+class="math inline">\(\mu(I)/m+O(m^{-2})\)</span>, and the probability
+of two or more events in one subinterval is <span
+class="math inline">\(O(m^{-2})\)</span>, then for every fixed <span
+class="math inline">\(n\)</span>,</p>
+<p><span class="math display">\[\begin{equation}
+  \Pr[N(I)=n]
+  =
+  \lim_{m\to\infty}
+  {m\choose n}
+  \left(\frac{\mu(I)}{m}\right)^n
+  \left(1-\frac{\mu(I)}{m}\right)^{m-n}
+  =
+  e^{-\mu(I)}\frac{\mu(I)^n}{n!}.
+  \label{eq:poissonlaw}
+\end{equation}\]</span></p>
+<p>In particular, the zero-count probability is</p>
+<p><span class="math display">\[\begin{equation}
+  \Pr[N(I)=0]
+  =
+  \lim_{m\to\infty}
+  \left(1-\frac{\mu(I)}{m}\right)^m
+  =
+  e^{-\mu(I)}.
+\end{equation}\]</span></p>
+<p>The probability that at least one repair opportunity is active is</p>
+<p><span class="math display">\[\begin{equation}
+  p(x)=1-\Pr[N=0]
+      =1-\exp[-\lambda_{\mathrm{collar}}\sqrt{x}].
+  \label{eq:activation}
+\end{equation}\]</span></p>
+<p>The activation count is only the counting part of the static law. The
+source closure says that active scalar repair opportunities recover
+baryonic flux in the settled one-dimensional branch:</p>
+<p><span class="math display">\[\begin{equation}
+  g_b = p(x) g_{\mathrm{obs}}.
+  \label{eq:fluxrecovery}
+\end{equation}\]</span></p>
+<p>Thus</p>
+<p><span class="math display">\[\begin{equation}
+  g_{\mathrm{obs}}
+    = \nu_{\mathrm{OPH}}(x) g_b,
+  \qquad
+  \nu_{\mathrm{OPH}}(x)
+    = \frac{1}{1-\exp[-\lambda_{\mathrm{collar}}\sqrt{x}]}.
+  \label{eq:ophrar}
+\end{equation}\]</span></p>
+<h4 id="conditional-theorem-2-activation-law">Conditional theorem 2,
+activation law.</h4>
+<p>Assume codimension-one collar/cut support, independent increments on
+disjoint collar intervals, rare local repair events, refinement
+stability, and the settled scalar flux-recovery closure
+<a href="#eq:fluxrecovery" data-reference-type="eqref" data-reference="eq:fluxrecovery">[eq:fluxrecovery]</a>.
+Then the settled one-dimensional galaxy response is
+<a href="#eq:ophrar" data-reference-type="eqref" data-reference="eq:ophrar">[eq:ophrar]</a>.</p>
+<h4 id="proof-1">Proof.</h4>
+<p>Codimension-one support gives a mean count proportional to <span
+class="math inline">\(\sqrt{x}\)</span>. The scalar coefficient is <span
+class="math inline">\(\lambda_{\mathrm{collar}}\)</span>. Independent
+increments and rare-event refinement give the Poisson law
+<a href="#eq:poissonlaw" data-reference-type="eqref" data-reference="eq:poissonlaw">[eq:poissonlaw]</a>.
+The active probability is the complement of the zero-count event, which
+is
+<a href="#eq:activation" data-reference-type="eqref" data-reference="eq:activation">[eq:activation]</a>.
+Solving <span class="math inline">\(g_b=p(x)g_{\mathrm{obs}}\)</span> in
+one-dimensional symmetry gives
+<a href="#eq:ophrar" data-reference-type="eqref" data-reference="eq:ophrar">[eq:ophrar]</a>.
+<span class="math inline">\(\square\)</span></p>
+<h2 id="conservative-potential-equation">Conservative Potential
+Equation</h2>
+<p>For general disks and three-dimensional baryonic profiles, the
+algebraic vector rule</p>
+<p><span class="math display">\[\begin{equation}
+  \mathbf g_{\mathrm{alg}}
+  =
+  \nu_{\mathrm{OPH}}(|\mathbf g_b|/a_{0,\mathrm{OPH}})\mathbf g_b
+\end{equation}\]</span></p>
+<p>need not be curl-free because</p>
+<p><span class="math display">\[\begin{equation}
+  \nabla\times\mathbf g_{\mathrm{alg}}
+  =
+  \nabla\nu_{\mathrm{OPH}}\times\mathbf g_b.
+\end{equation}\]</span></p>
+<p>A gravitational acceleration must be derived from a potential. The
+primary static OPH equation is therefore</p>
+<p><span class="math display">\[\begin{equation}
+  \nabla^2\Phi
+  =
+  \nabla\cdot
+  \left[
+    \nu_{\mathrm{OPH}}\!\left(\frac{|\nabla\Phi_b|}{a_{0,\mathrm{OPH}}}\right)
+    \nabla\Phi_b
+  \right],
+  \qquad
+  \mathbf g_{\mathrm{obs}}=-\nabla\Phi,
+  \label{eq:ophpotential}
+\end{equation}\]</span></p>
+<p>with</p>
+<p><span class="math display">\[\begin{equation}
+  \nabla^2\Phi_b=4\pi G\rho_b.
+\end{equation}\]</span></p>
+<p>In one-dimensional symmetry,
+<a href="#eq:ophpotential" data-reference-type="eqref" data-reference="eq:ophpotential">[eq:ophpotential]</a>
+integrates to</p>
+<p><span class="math display">\[\begin{equation}
+  g_{\mathrm{obs}}
+  =
+  \nu_{\mathrm{OPH}}(g_b/a_{0,\mathrm{OPH}})g_b+C.
+\end{equation}\]</span></p>
+<p>The boundary condition <span
+class="math inline">\(g_{\mathrm{obs}}\to0\)</span> when the enclosed
+baryonic flux vanishes sets <span class="math inline">\(C=0\)</span>, so
+<a href="#eq:ophrar" data-reference-type="eqref" data-reference="eq:ophrar">[eq:ophrar]</a>
+is exact for spherical, planar, or one-dimensional symmetry. The SPARC
+tables in this note use the algebraic diagnostic; a full disk-potential
+solver is required for publication-grade rotation and lensing
+claims.</p>
+<h2 id="newtonian-and-deep-ir-limits">Newtonian And Deep-IR Limits</h2>
+<p>For <span class="math inline">\(x\gg1\)</span>, <span
+class="math inline">\(p(x)\to1\)</span>, hence</p>
+<p><span class="math display">\[\begin{equation}
+  g_{\mathrm{obs}}\to g_b.
+\end{equation}\]</span></p>
+<p>For <span class="math inline">\(x\ll1\)</span>,</p>
+<p><span class="math display">\[\begin{equation}
+  p(x)=\lambda_{\mathrm{collar}}\sqrt{x}+O(x),
+\end{equation}\]</span></p>
+<p>so</p>
+<p><span class="math display">\[\begin{equation}
+  g_{\mathrm{obs}}
+  \simeq
+\frac{g_b}{\lambda_{\mathrm{collar}}\sqrt{g_b/a_{0,\mathrm{OPH}}}}
+  = \sqrt{\frac{a_{0,\mathrm{OPH}}}{\lambda_{\mathrm{collar}}^2}g_b}
+  = \sqrt{a_{0,\mathrm{eff}}g_b},
+\end{equation}\]</span></p>
+<p>where</p>
+<p><span class="math display">\[\begin{equation}
+  a_{0,\mathrm{eff}}=
+\frac{a_{0,\mathrm{OPH}}}{\lambda_{\mathrm{collar}}^2}.
+  \label{eq:aeff}
+\end{equation}\]</span></p>
+<p>For a point source,</p>
+<p><span class="math display">\[\begin{equation}
+  v^4 = G M_b a_{0,\mathrm{eff}}.
+  \label{eq:btfr}
+\end{equation}\]</span></p>
+<h4 id="theorem-3-btfr">Theorem 3, BTFR.</h4>
+<p>The OPH activation law implies the baryonic Tully-Fisher scaling in
+the deep-IR limit.</p>
+<h4 id="proof-2">Proof.</h4>
+<p>For a circular orbit, <span
+class="math inline">\(v^2/r=g_{\mathrm{obs}}\)</span>. In the deep-IR
+limit, <span
+class="math inline">\(g_{\mathrm{obs}}=\sqrt{a_{0,\mathrm{eff}}G
+M_b/r^2}\)</span>. Multiplying by <span class="math inline">\(r\)</span>
+gives <span class="math inline">\(v^2=\sqrt{G
+M_ba_{0,\mathrm{eff}}}\)</span>, hence
+<a href="#eq:btfr" data-reference-type="eqref" data-reference="eq:btfr">[eq:btfr]</a>.
+<span class="math inline">\(\square\)</span></p>
+<h2 id="effective-dark-density">Effective Dark Density</h2>
+<p>The anomaly can be represented as an equilibrium effective
+density:</p>
+<p><span class="math display">\[\begin{equation}
+  \mathbf g_A=(\nu_{\mathrm{OPH}}-1)\mathbf g_b,
+  \qquad
+  \rho_{A,\mathrm{eq}}
+   =-\frac{1}{4\pi G}\nabla\cdot[(\nu_{\mathrm{OPH}}-1)\mathbf g_b].
+  \label{eq:rhoaeq}
+\end{equation}\]</span></p>
+<p>For a spherical system,</p>
+<p><span class="math display">\[\begin{equation}
+  M_{\mathrm{dyn}}(r)=\nu_{\mathrm{OPH}}(x) M_b(r),
+  \qquad
+  M_A(r)=[\nu_{\mathrm{OPH}}(x)-1]M_b(r).
+\end{equation}\]</span></p>
+<p>In the deep-IR point-source limit, <span
+class="math inline">\(M_{\mathrm{dyn}}(r)\propto r\)</span>, which is
+the effective mass profile behind flat rotation curves.</p>
+<p>For a point baryonic source, the exact equilibrium expression is</p>
+<p><span class="math display">\[\begin{equation}
+  M_A(r)
+  =
+  \frac{M_b}{\exp(\lambda_{\mathrm{collar}}r_M/r)-1},
+\end{equation}\]</span></p>
+<p>and</p>
+<p><span class="math display">\[\begin{equation}
+  \rho_A(r)
+  =
+  \frac{
+    M_b\lambda_{\mathrm{collar}}r_M\exp(\lambda_{\mathrm{collar}}r_M/r)
+  }{
+    4\pi r^4[\exp(\lambda_{\mathrm{collar}}r_M/r)-1]^2
+  }.
+\end{equation}\]</span></p>
+<p>For an extended spherical baryonic profile, positivity of the settled
+effective density is the monotonicity condition</p>
+<p><span class="math display">\[\begin{equation}
+  \frac{\mathrm{d}}{\mathrm{d}r}
+  \left(
+    [\nu_{\mathrm{OPH}}(x(r))-1]M_b(r)
+  \right)
+  \ge 0.
+\end{equation}\]</span></p>
+<p>Profiles that violate this condition need finite pressure, shear, or
+transport terms instead of the settled dust equilibrium alone.</p>
+<h1 id="the-finite-collar-coefficient">The Finite-Collar
+Coefficient</h1>
+<h2 id="unit-branch">Unit Branch</h2>
+<p>The default branch is</p>
+<p><span class="math display">\[\begin{equation}
+  \lambda_{\mathrm{collar}}=1,
+  \qquad
+  a_{0,\mathrm{eff}}=a_{0,\mathrm{OPH}}.
+\end{equation}\]</span></p>
+<p>This branch sets the finite-collar opportunity density to one.</p>
+<h2 id="mathbb-z_6-reserve-branch"><span class="math inline">\(\mathbb
+Z_6\)</span> Reserve Branch</h2>
+<p>The OPH gauge structure contains the realized quotient</p>
+<p><span class="math display">\[\begin{equation}
+  G_{\mathrm{phys}}
+    = \frac{SU(3)\times SU(2)\times U(1)}{\mathbb Z_6}.
+\end{equation}\]</span></p>
+<p>The protected shared-edge reserve has mean</p>
+<p><span class="math display">\[\begin{equation}
+  \epsilon_{\mathbb Z_6}
+    = \frac{\bar\ell_{\mathrm{shared}}}{|\mathbb Z_6|}
+    = \frac{P/4}{6}
+    = \frac{P}{24}.
+\end{equation}\]</span></p>
+<p>Using</p>
+<p><span class="math display">\[\begin{equation}
+  P=1.630968209403959,
+\end{equation}\]</span></p>
+<p>gives</p>
+<p><span class="math display">\[\begin{equation}
+  \epsilon_{\mathbb Z_6}=0.06795700872516496.
+\end{equation}\]</span></p>
+<h4 id="conditional-bridge-4-quotient-edge-co-registration">Conditional
+bridge 4, quotient-edge co-registration.</h4>
+<p>Galaxy scalar repair opportunities are quotient-edge cut-register
+events on the same edge-center resolution that carries the protected
+<span class="math inline">\(\mathbb Z_6\)</span> reserve. The <span
+class="math inline">\(\mathbb Z_6\)</span> reserve therefore
+co-registers with the scalar activation count.</p>
+<h4 id="conditional-argument">Conditional argument.</h4>
+<p>The scalar source is a quotient-local recoverability defect, so pure
+<span class="math inline">\(\mathbb Z_6\)</span> center motion changes
+no realized matter or Higgs state and is inactive for scalar sourcing.
+If the scalar count and the protected reserve are forced onto the same
+center-projector resolution, the reserve removes active scalar
+opportunities from that same layer. <span
+class="math inline">\(\square\)</span></p>
+<h4 id="proof-obligation">Proof obligation.</h4>
+<p>The fixed-cutoff screen-net construction must prove that galaxy
+scalar activation cannot live in a separate bulk, screen-area, or
+noncentral collar channel.</p>
+<h4 id="conditional-bridge-5-local-poisson-reserve-survival">Conditional
+bridge 5, local Poisson reserve survival.</h4>
+<p>If the reserve occupancy in a co-registered local scalar slot at
+transverse collar coordinate <span class="math inline">\(y\)</span> is
+Poisson with mean <span class="math inline">\(\epsilon_{\mathbb
+Z_6}(y)\)</span>, then the local scalar survival factor is</p>
+<p><span class="math display">\[\begin{equation}
+  \lambda_{\mathrm{slot}}(y)
+  =
+  \Pr[N_{\mathbb Z_6}(y)=0]
+  =
+  \exp[-\epsilon_{\mathbb Z_6}(y)].
+  \label{eq:z6localsurvival}
+\end{equation}\]</span></p>
+<h4 id="proof-3">Proof.</h4>
+<p>A Poisson variable with mean <span
+class="math inline">\(\epsilon_{\mathbb Z_6}\)</span> has zero-count
+probability <span class="math inline">\(\exp(-\epsilon_{\mathbb
+Z_6})\)</span>. A scalar opportunity survives only when its
+co-registered reserve count is zero. This proves the local survival
+factor. <span class="math inline">\(\square\)</span></p>
+<h2 id="finite-thickness">Finite Thickness</h2>
+<p>Let <span class="math inline">\(y\)</span> be the transverse collar
+coordinate and <span class="math inline">\(w(y)\)</span> the normalized
+activation weight:</p>
+<p><span class="math display">\[\begin{equation}
+  \int \mathrm{d}y\,w(y)=1.
+\end{equation}\]</span></p>
+<p>The finite-thickness branch gives</p>
+<p><span class="math display">\[\begin{equation}
+  \lambda_{\mathrm{collar}}
+   =\int \mathrm{d}y\, w(y)\exp[-\epsilon_{\mathbb Z_6}(y)].
+  \label{eq:thick}
+\end{equation}\]</span></p>
+<p>If</p>
+<p><span class="math display">\[\begin{equation}
+  \int \mathrm{d}y\,w(y)\epsilon_{\mathbb Z_6}(y)=P/24,
+\end{equation}\]</span></p>
+<p>then Jensen’s inequality gives</p>
+<p><span class="math display">\[\begin{equation}
+  \lambda_{\mathrm{collar}}\ge \exp(-P/24).
+\end{equation}\]</span></p>
+<p>Equality holds when <span class="math inline">\(\epsilon_{\mathbb
+Z_6}(y)\)</span> is constant on the weighted collar.</p>
+<h4
+id="conditional-bridge-6-exact-finite-thickness-coefficient">Conditional
+bridge 6, exact finite-thickness coefficient.</h4>
+<p>On the product transverse regulator with one quotient trace, the
+exact finite-thickness coefficient is <span
+class="math inline">\(\lambda_{\mathrm{collar}}=\exp(-P/24)\)</span>.</p>
+<h4 id="conditional-argument-1">Conditional argument.</h4>
+<p>If the finite-thickness reserve density is uniform on the
+scalar-weighted collar layer, then <span
+class="math inline">\(\epsilon_{\mathbb Z_6}(y)=\epsilon_{\mathbb
+Z_6}\)</span>. Equation
+<a href="#eq:thick" data-reference-type="eqref" data-reference="eq:thick">[eq:thick]</a>
+becomes</p>
+<p><span class="math display">\[\begin{equation}
+  \lambda_{\mathrm{collar}}
+  =\exp(-\epsilon_{\mathbb Z_6})\int \mathrm{d}y\,w(y)
+  =\exp(-\epsilon_{\mathbb Z_6}).
+\end{equation}\]</span></p>
+<p>Using <span class="math inline">\(\epsilon_{\mathbb
+Z_6}=P/24\)</span> proves the claim. <span
+class="math inline">\(\square\)</span></p>
+<p>On that exact branch,</p>
+<p><span class="math display">\[\begin{equation}
+  \lambda_{\mathrm{collar}}=\exp(-P/24)=0.934300639489386\ldots
+  \label{eq:z6lambda}
+\end{equation}\]</span></p>
+<p>and by
+<a href="#eq:aeff" data-reference-type="eqref" data-reference="eq:aeff">[eq:aeff]</a></p>
+<p><span class="math display">\[\begin{equation}
+  a_{0,\mathrm{eff}}=1.179018696\times10^{-10}\,\mathrm{m\,s^{-2}}.
+\end{equation}\]</span></p>
+<h4 id="failure-consequence">Failure consequence.</h4>
+<p>Without finite-thickness uniformity, the coefficient is the integral
+<a href="#eq:thick" data-reference-type="eqref" data-reference="eq:thick">[eq:thick]</a>.
+Exact <span class="math inline">\(\exp(-P/24)\)</span> is not available
+as a theorem-grade number.</p>
+<h1 id="lensing-and-relativistic-stress">Lensing And Relativistic
+Stress</h1>
+<p>A density source by itself fixes the Newtonian Poisson equation.
+Lensing also depends on the spatial stress. The OPH no-slip claim uses
+the transported record-number stress and its spatial moments.</p>
+<p>The conditional OPH stress closure is a kinetic record measure. At
+each coarse-grained event, the finite collar packet emits a positive
+measure <span class="math inline">\(\mathrm{d}\mathcal E_x(v)\)</span>
+on the future unit timelike shell. Define</p>
+<p><span class="math display">\[\begin{equation}
+  J_{\mathcal I}^a(x)=\int v^a\,\mathrm{d}\mathcal E_x(v),
+  \qquad
+  T_{\mathcal I}^{ab}(x)=\int v^a v^b\,\mathrm{d}\mathcal E_x(v).
+  \label{eq:kineticstress}
+\end{equation}\]</span></p>
+<p>This stress is symmetric and future-positive. Relative to an observer
+<span class="math inline">\(u^a\)</span>, it decomposes as</p>
+<p><span class="math display">\[\begin{equation}
+  T_{\mathcal I}^{ab}
+  =
+  \rho_{\mathcal I}u^a u^b
+  +P_{\mathcal I}h^{ab}
+  +q_{\mathcal I}^{(a}u^{b)}
+  +\pi_{\mathcal I}^{ab}.
+  \label{eq:stressdecomposition}
+\end{equation}\]</span></p>
+<p>The settled galaxy branch is the monokinetic rest branch <span
+class="math inline">\(\mathrm{d}\mathcal E_x(v)=\rho_{\mathcal
+I}(x)\delta(v-u_{\mathcal I})\mathrm{d}\Omega\)</span>. Then</p>
+<p><span class="math display">\[\begin{equation}
+  T_{\mathcal I}^{ab}
+  =
+  \rho_{\mathcal I}u_{\mathcal I}^a u_{\mathcal I}^b,
+  \qquad
+  P_{\mathcal I}=0,
+  \qquad
+  q_{\mathcal I}^a=0,
+  \qquad
+  \pi_{\mathcal I}^{ab}=0.
+  \label{eq:duststress}
+\end{equation}\]</span></p>
+<p>In Newtonian gauge,</p>
+<p><span class="math display">\[\begin{equation}
+  \mathrm{d}s^2
+  =a^2[-(1+2\Psi)\mathrm{d}\eta^2+(1-2\Phi)\mathrm{d}x^2].
+\end{equation}\]</span></p>
+<p>The off-diagonal spatial Einstein equation gives</p>
+<p><span class="math display">\[\begin{equation}
+  k^2(\Phi-\Psi)
+  =12\pi G a^2\sum_i(\rho_i+P_i)\sigma_i.
+\end{equation}\]</span></p>
+<p>The <span class="math inline">\(\mathcal I\)</span>-sector
+contribution to the right-hand side vanishes on
+<a href="#eq:duststress" data-reference-type="eqref" data-reference="eq:duststress">[eq:duststress]</a>.
+If baryonic, neutrino, radiation, and repair-sector anisotropic stresses
+are absent or handled separately, then</p>
+<p><span class="math display">\[\begin{equation}
+  \Phi=\Psi.
+\end{equation}\]</span></p>
+<p>The lensing potential is therefore the same potential that controls
+dynamics:</p>
+<p><span class="math display">\[\begin{equation}
+  \Phi_{\mathrm{lens}}=\frac{\Phi+\Psi}{2}=\Phi.
+\end{equation}\]</span></p>
+<p>This is where OPH behaves differently from a force-only MOND law. The
+correction is attached to stress bookkeeping, so the same potential
+controls slow matter and lensing on settled no-slip galaxy states.
+Cluster mergers and cosmological perturbations use the full
+decomposition
+<a href="#eq:stressdecomposition" data-reference-type="eqref" data-reference="eq:stressdecomposition">[eq:stressdecomposition]</a>;
+a velocity-spread branch can carry pressure, heat flux, or anisotropic
+stress.</p>
+<h1 id="clusters-and-transport">Clusters And Transport</h1>
+<p>The static galaxy law is an equilibrium law. Merging clusters need a
+transported information-defect state. In the cold transported branch,
+the kinetic stress
+<a href="#eq:kineticstress" data-reference-type="eqref" data-reference="eq:kineticstress">[eq:kineticstress]</a>
+reduces to a density and velocity field:</p>
+<p><span class="math display">\[\begin{align}
+  \partial_t\rho_{\mathcal I}
+    +\nabla\cdot(\rho_{\mathcal I}\mathbf v_{\mathcal I})
+    &amp;=-\frac{\rho_{\mathcal I}
+      -\rho_{\mathcal I,\mathrm{eq}}[\rho_b]}{\tau_{\mathrm{rec}}},
+    \label{eq:transport1}\\
+  \partial_t\mathbf v_{\mathcal I}
+    +(\mathbf v_{\mathcal I}\cdot\nabla)\mathbf v_{\mathcal I}
+    &amp;=-\nabla\Phi,
+    \label{eq:transport2}\\
+  \nabla^2\Phi&amp;=4\pi G(\rho_b+\rho_{\mathcal I}).
+    \label{eq:transport3}
+\end{align}\]</span></p>
+<p>Velocity-spread branches use the moment equations of
+<a href="#eq:stressdecomposition" data-reference-type="eqref" data-reference="eq:stressdecomposition">[eq:stressdecomposition]</a>
+instead of
+<a href="#eq:transport1" data-reference-type="eqref" data-reference="eq:transport1">[eq:transport1]</a>.</p>
+<p>The repair-commit theorem gives the form of the relaxation term. Once
+the finite collar packet algebra is declared, the fixed-cutoff packet
+state space, proposal rule, equilibrium weights, reversible transition
+matrix, and spectral gap are determined by packet microphysics. Let
+<span class="math inline">\(\gamma_{\mathrm{rec}}\)</span> be that
+dimensionless gap and <span
+class="math inline">\(t_{\mathrm{commit}}\)</span> the physical commit
+time. Then</p>
+<p><span class="math display">\[\begin{equation}
+  \Gamma_{\mathrm{rec}}
+   =\frac{\gamma_{\mathrm{rec}}}{t_{\mathrm{commit}}},
+  \qquad
+  \tau_{\mathrm{rec}}
+   =\frac{t_{\mathrm{commit}}}{\gamma_{\mathrm{rec}}}.
+\end{equation}\]</span></p>
+<p>Bianchi consistency requires a repair-exchange stress:</p>
+<p><span class="math display">\[\begin{equation}
+  \nabla_a(T_b^{ab}+T_{\mathcal I}^{ab}+T_R^{ab}+\cdots)=0.
+\end{equation}\]</span></p>
+<p>In quasi-covariant notation,</p>
+<p><span class="math display">\[\begin{equation}
+  \nabla_a T_{\mathcal I}^{ab}
+  =
+  -\Gamma_{\mathrm{rec}}
+  (\rho_{\mathcal I}-\rho_{\mathcal I,\mathrm{eq}})
+  u_{\mathcal I}^b,
+\end{equation}\]</span></p>
+<p>and <span class="math inline">\(T_R^{ab}\)</span> carries the
+opposite exchange flux.</p>
+<p>An OPH-side no-fit clock candidate is the Jacobi mismatch rate. Let
+<span class="math inline">\(E_{ij}=C_{0i0j}\)</span> be the electric
+Weyl tidal tensor measured in the local free-fall frame, equivalently
+the trace-free Newtonian Hessian in the weak field. The homogeneous FLRW
+Ricci focusing term is subtracted, because it does not create a local
+overlap-visible cluster offset. The scalar rate</p>
+<p><span class="math display">\[\begin{equation}
+  \Gamma_J
+  =
+  \left(\frac{E_{ij}E^{ij}}{6}\right)^{1/4},
+  \qquad
+  \tau_J=\Gamma_J^{-1}
+  \label{eq:jacobiclock}
+\end{equation}\]</span></p>
+<p>is invariant under local rotations and has the right units. For a
+Newtonian point source,</p>
+<p><span class="math display">\[\begin{equation}
+  E_{ij}E^{ij}=6\left(\frac{GM}{r^3}\right)^2,
+  \qquad
+  \tau_J=\sqrt{\frac{r^3}{GM}}.
+\end{equation}\]</span></p>
+<p>The numerical scale is:</p>
+<div class="center">
+
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Scale</th>
+<th style="text-align: right;"><span
+class="math inline">\(M/M_{\odot}\)</span></th>
+<th style="text-align: right;"><span class="math inline">\(r\)</span> in
+kpc</th>
+<th style="text-align: right;"><span
+class="math inline">\(\tau_J\)</span> in Gyr</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Inner spiral disk</td>
+<td style="text-align: right;"><span
+class="math inline">\(6.0\times10^{10}\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(10\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(0.0608673\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">Outer spiral disk</td>
+<td style="text-align: right;"><span
+class="math inline">\(6.0\times10^{10}\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(30\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(0.316276\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">Dwarf scale</td>
+<td style="text-align: right;"><span
+class="math inline">\(1.0\times10^9\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(5\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(0.166692\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">Cluster core</td>
+<td style="text-align: right;"><span
+class="math inline">\(1.0\times10^{14}\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(300\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(0.244986\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">Massive cluster aperture</td>
+<td style="text-align: right;"><span
+class="math inline">\(1.0\times10^{15}\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(1000\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(0.471476\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p>For <span class="math inline">\(d_0=200\,\mathrm{kpc}\)</span> and
+<span class="math inline">\(t=0.2\,\mathrm{Gyr}\)</span>, the
+massive-cluster aperture row gives <span
+class="math inline">\(d(t)=130.859\,\mathrm{kpc}\)</span>.</p>
+<p>The conditional physical-time conversion is</p>
+<p><span class="math display">\[\begin{equation}
+  \Gamma_{\mathrm{rec}}(x,t)=\Gamma_J(x,t),
+  \qquad
+  t_{\mathrm{commit}}(x,t)
+  =\frac{\gamma_{\mathrm{rec}}(x,t)}{\Gamma_J(x,t)} .
+\end{equation}\]</span></p>
+<p>The static RAR law does not determine this clock. Any positive
+relaxation rate leaves the same equilibrium density. The Jacobi clock
+requires the premise that repair timing is set by the overlap-visible
+tidal mismatch rate of transported information-defect records. The
+theorem-grade packet clock must derive this premise without using
+cluster offsets as selectors.</p>
+<p>For a one-mode merger offset,</p>
+<p><span class="math display">\[\begin{equation}
+  d(t)=d_0\exp(-t/\tau_{\mathrm{rec}}),
+  \qquad
+  \tau_{\mathrm{rec}}=\frac{t}{\ln(d_0/d(t))}.
+\end{equation}\]</span></p>
+<p>With <span class="math inline">\(d_0=200\,\mathrm{kpc}\)</span> and
+<span class="math inline">\(t=0.2\,\mathrm{Gyr}\)</span>:</p>
+<div class="center">
+
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Retained offset</th>
+<th style="text-align: right;">Required <span
+class="math inline">\(\tau_{\mathrm{rec}}\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"><span
+class="math inline">\(50\,\mathrm{kpc}\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(0.144\,\mathrm{Gyr}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: right;"><span
+class="math inline">\(100\,\mathrm{kpc}\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(0.288\,\mathrm{Gyr}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: right;"><span
+class="math inline">\(134\,\mathrm{kpc}\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(0.500\,\mathrm{Gyr}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: right;"><span
+class="math inline">\(150\,\mathrm{kpc}\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(0.696\,\mathrm{Gyr}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: right;"><span
+class="math inline">\(164\,\mathrm{kpc}\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(1.000\,\mathrm{Gyr}\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p>Settled galaxies impose</p>
+<p><span class="math display">\[\begin{equation}
+  \tau_{\mathrm{rec}}&lt;\frac{T_{\mathrm{set}}}{\ln(1/\epsilon)}
+\end{equation}\]</span></p>
+<p>if the allowed tracking error after settling time <span
+class="math inline">\(T_{\mathrm{set}}\)</span> is <span
+class="math inline">\(\epsilon\)</span>. For <span
+class="math inline">\(T_{\mathrm{set}}=5\,\mathrm{Gyr}\)</span>, the
+bounds are <span class="math inline">\(2.17\,\mathrm{Gyr}\)</span>,
+<span class="math inline">\(1.67\,\mathrm{Gyr}\)</span>, and <span
+class="math inline">\(1.09\,\mathrm{Gyr}\)</span> for <span
+class="math inline">\(10\%\)</span>, <span
+class="math inline">\(5\%\)</span>, and <span
+class="math inline">\(1\%\)</span> tracking error.</p>
+<h1 id="cmb-bao-growth-and-s_8">CMB, BAO, Growth, And <span
+class="math inline">\(S_8\)</span></h1>
+<p>The linear cosmology contract has two distinct branches. A conserved
+homogeneous information-defect branch obeys</p>
+<p><span class="math display">\[\begin{equation}
+  \rho_A&#39; + 3\mathcal H\rho_A=0,
+  \qquad
+  \rho_A(a)=\rho_{A0}a^{-3},
+  \label{eq:conservedbranch}
+\end{equation}\]</span></p>
+<p>where primes denote conformal time and <span
+class="math inline">\(\mathcal H=a&#39;/a\)</span>. This branch behaves
+like a cold stress component if its kinetic measure is monokinetic and
+its homogeneous charge <span class="math inline">\(Q_A=a^3\rho_A
+V_{\mathrm{com}}\)</span> is selected by OPH screen data.</p>
+<p>A repair-exchange branch instead relaxes toward a finite-collar
+equilibrium source:</p>
+<p><span class="math display">\[\begin{equation}
+  \rho_A&#39; + 3\mathcal H\rho_A
+  = -a\Gamma_{\mathrm{rec}}(\rho_A-\rho_{A,\mathrm{eq}}).
+  \label{eq:repairbackground}
+\end{equation}\]</span></p>
+<p>The factor <span
+class="math inline">\(a\Gamma_{\mathrm{rec}}\)</span> is the
+conformal-time rate associated with the physical repair rate. Define</p>
+<p><span class="math display">\[\begin{equation}
+  q_A=\frac{\rho_{A,\mathrm{eq}}}{\rho_A},
+  \qquad
+  \delta_{A,\mathrm{eq}}(k,a)=B_A(k,a)\delta_b(k,a).
+\end{equation}\]</span></p>
+<p>For a pressureless no-slip repair branch with energy exchange
+parallel to the anomaly four-velocity, the Newtonian-gauge perturbations
+reduce to</p>
+<p><span class="math display">\[\begin{align}
+  \delta_A&#39;
+    &amp;=-\theta_A+3\Phi&#39;
+      -a\Gamma_{\mathrm{rec}}q_A
+       (\delta_A-\delta_{A,\mathrm{eq}}),
+       \label{eq:deltaA}\\
+  \theta_A&#39;
+    &amp;=-\mathcal H\theta_A+k^2\Psi.
+       \label{eq:thetaA}
+\end{align}\]</span></p>
+<p>The no-slip statement here concerns the information-defect sector.
+The total metric slip depends on baryons, radiation, neutrinos, repair
+stress, and any anisotropic stress in a velocity-spread branch.</p>
+<p>The finite scalar-load repair diagnostic gives</p>
+<p><span class="math display">\[\gamma_{\mathrm{rec}}=0.050717471,
+  \qquad
+  \tau_{\mathrm{rec}}/t_{\mathrm{commit}}=19.717071 .\]</span></p>
+<p>It maps a cluster-scale relaxation window to the following commit
+times:</p>
+<div class="center">
+
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"><span
+class="math inline">\(\tau_{\mathrm{rec}}\)</span></th>
+<th style="text-align: right;"><span
+class="math inline">\(t_{\mathrm{commit}}\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"><span
+class="math inline">\(0.3\,\mathrm{Gyr}\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(15.2152\,\mathrm{Myr}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: right;"><span
+class="math inline">\(0.5\,\mathrm{Gyr}\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(25.3587\,\mathrm{Myr}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: right;"><span
+class="math inline">\(1.0\,\mathrm{Gyr}\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(50.7175\,\mathrm{Myr}\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p>For the same relaxation window, a simple background timing diagnostic
+gives:</p>
+<div class="center">
+
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"><span
+class="math inline">\(\tau_{\mathrm{rec}}\)</span></th>
+<th style="text-align: right;"><span
+class="math inline">\(z=0\)</span></th>
+<th style="text-align: right;"><span
+class="math inline">\(z=10\)</span></th>
+<th style="text-align: right;"><span
+class="math inline">\(z=1100\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"><span
+class="math inline">\(0.3\,\mathrm{Gyr}\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(48.4092\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(2.36213\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(0.00205644\)</span></td>
+</tr>
+<tr>
+<td style="text-align: right;"><span
+class="math inline">\(0.5\,\mathrm{Gyr}\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(29.0455\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(1.41728\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(0.00123387\)</span></td>
+</tr>
+<tr>
+<td style="text-align: right;"><span
+class="math inline">\(1.0\,\mathrm{Gyr}\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(14.5228\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(0.708639\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(0.000616933\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p>For a hybrid branch, repair relaxation is tiny during acoustic
+physics and large in low-Hubble settled environments. A cosmology claim
+requires a Boltzmann implementation and likelihood tests against CMB
+TT/TE/EE, CMB lensing, BAO, weak lensing, redshift-space distortions,
+and <span class="math inline">\(S_8\)</span>.</p>
+<h1 id="abundance-and-kernel-targets">Abundance And Kernel Targets</h1>
+<p>The static galaxy law fixes a settled response around resolved
+baryonic inhomogeneity. A cosmological dark-matter branch needs two
+extra OPH outputs:</p>
+<p><span class="math display">\[\begin{equation}
+  \rho_A(a),
+  \qquad
+  B_A(k,a).
+\end{equation}\]</span></p>
+<p>The first is the homogeneous anomaly abundance. The second is the
+linear equilibrium-source kernel in</p>
+<p><span class="math display">\[\begin{equation}
+  \delta_{A,\mathrm{eq}}(k,a)=B_A(k,a)\delta_b(k,a).
+\end{equation}\]</span></p>
+<h2 id="static-flrw-boundary">Static FLRW Boundary</h2>
+<p>The nonlinear galaxy law cannot be inserted directly into FLRW
+perturbation theory. In an exactly homogeneous background there is no
+preferred baryonic acceleration vector. If one tries to Taylor-expand
+the static RAR law at <span class="math inline">\(\mathbf
+g_b=0\)</span>, the susceptibility is singular because <span
+class="math inline">\(\nu_{\mathrm{OPH}}(x)\sim(\lambda_{\mathrm{collar}}\sqrt{x})^{-1}\)</span>.
+The static RAR branch therefore does not select a homogeneous anomaly
+density or a universal CMB kernel.</p>
+<p>This is a useful boundary. It prevents a hidden fit from being
+smuggled into the galaxy law. The CMB branch has to declare its
+background anomaly charge and its perturbation kernel from OPH state
+selection or finite-collar microphysics.</p>
+<h2 id="flat-capacity-saturated-state-selection">Flat Capacity-Saturated
+State Selection</h2>
+<p>One clean homogeneous branch is flat capacity saturation. The de
+Sitter screen capacity fixes <span
+class="math inline">\(H_{\mathrm{dS}}\)</span>, and the flat Friedmann
+constraint at <span class="math inline">\(a=1\)</span> gives</p>
+<p><span class="math display">\[\begin{equation}
+  \Omega_{A0}
+  =
+  1-\Omega_{\Lambda,\mathrm{OPH}}-\Omega_{b0}-\Omega_{\nu0}-\Omega_{r0},
+  \qquad
+  \Omega_{\Lambda,\mathrm{OPH}}
+  =
+  \left(\frac{H_{\mathrm{dS}}}{H_0}\right)^2.
+  \label{eq:flatresidual}
+\end{equation}\]</span></p>
+<p>The transported homogeneous dust branch is</p>
+<p><span class="math display">\[\begin{equation}
+  \rho_A(a)=\rho_{A0}a^{-3}.
+\end{equation}\]</span></p>
+<p>Using <span
+class="math inline">\(H_0=67.4\,\mathrm{km\,s^{-1}\,Mpc^{-1}}\)</span>,
+<span class="math inline">\(\Omega_b h^2=0.02237\)</span>, the OPH
+neutrino mass sum, and <span
+class="math inline">\(\Omega_r=9.17\times10^{-5}\)</span>, the residual
+is:</p>
+<div class="center">
+
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Quantity</th>
+<th style="text-align: right;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span
+class="math inline">\(H_{\mathrm{dS}}\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(55.759940256\,\mathrm{km\,s^{-1}\,Mpc^{-1}}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span
+class="math inline">\(\Omega_{\Lambda,\mathrm{OPH}}\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(0.684423332\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span
+class="math inline">\(\Omega_b\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(0.049243191\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span
+class="math inline">\(\Omega_\nu\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(0.002127375\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span
+class="math inline">\(\Omega_r\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(0.000091700\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span
+class="math inline">\(\Omega_A\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(0.264114401\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span
+class="math inline">\(\Omega_m\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(0.315484968\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span
+class="math inline">\(\rho_{A0}\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(2.253649933\times10^{-27}\,\mathrm{kg\,m^{-3}}\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p>This matches the Planck-like cold-matter budget at the
+compressed-parameter level. The number is a state-selection residual.
+The static galaxy RAR law does not determine it. The OPH theorem that
+would make it standalone is a finite-screen additive-load selector for
+the conserved homogeneous anomaly charge.</p>
+<p>The closed transported branch does give a theorem-grade current and
+charge. Let <span class="math inline">\(u_A^a\)</span> be the branch
+four-velocity and let <span class="math inline">\(\rho_A\)</span> be the
+coarse-grained information-defect load density. The load current is</p>
+<p><span class="math display">\[\begin{equation}
+  J_A^a=\rho_A u_A^a .
+\end{equation}\]</span></p>
+<p>On the closed branch,</p>
+<p><span class="math display">\[\begin{equation}
+  \nabla_aJ_A^a=0,
+  \qquad
+  Q_A[\Sigma]=\int_{\Sigma} J_A^a n_a\,\mathrm{d}\Sigma
+\end{equation}\]</span></p>
+<p>is independent of the homogeneous slice. In FLRW this gives</p>
+<p><span class="math display">\[\begin{equation}
+  Q_A=a^3\rho_A V_{\mathrm{com}},
+  \qquad
+  \rho_A(a)=\frac{Q_A}{a^3V_{\mathrm{com}}}.
+\end{equation}\]</span></p>
+<p>This proves transport of a supplied homogeneous load. It does not fix
+the amplitude <span class="math inline">\(Q_A\)</span>. The missing OPH
+object is a nontrivial finite-screen additive load invariant</p>
+<p><span class="math display">\[\begin{equation}
+  Q_A=
+  F_{\mathrm{OPH}}\!\left(
+    N_{\mathrm{scr}},P,\text{screen normal-form data}
+  \right).
+\end{equation}\]</span></p>
+<p>Without that invariant, the abundance is cosmological state data or
+the flat capacity-saturated residual
+<a href="#eq:flatresidual" data-reference-type="eqref" data-reference="eq:flatresidual">[eq:flatresidual]</a>.</p>
+<h2 id="environmental-kernel">Environmental Kernel</h2>
+<p>Around a nonzero local background field <span
+class="math inline">\(\bar{\mathbf g}_b\)</span>, write</p>
+<p><span class="math display">\[\begin{equation}
+  x=\frac{|\bar{\mathbf g}_b|}{a_{0,\mathrm{OPH}}},
+  \qquad
+  \mathbf n=\frac{\bar{\mathbf g}_b}{|\bar{\mathbf g}_b|}.
+\end{equation}\]</span></p>
+<p>Linearizing the anomaly field <span
+class="math inline">\((\nu_{\mathrm{OPH}}-1)\mathbf g_b\)</span> gives
+the susceptibility</p>
+<p><span class="math display">\[\begin{equation}
+  A_{ij}
+  =
+  [\nu_{\mathrm{OPH}}(x)-1]\delta_{ij}
+  +x\nu_{\mathrm{OPH}}&#39;(x)n_i n_j,
+\end{equation}\]</span></p>
+<p>where</p>
+<p><span class="math display">\[\begin{equation}
+  \nu_{\mathrm{OPH}}&#39;(x)
+  =
+  -\frac{
+    \lambda_{\mathrm{collar}}\exp[-\lambda_{\mathrm{collar}}\sqrt{x}]
+  }{
+    2\sqrt{x}[1-\exp(-\lambda_{\mathrm{collar}}\sqrt{x})]^2
+  }.
+\end{equation}\]</span></p>
+<p>For a Fourier mode whose direction has cosine <span
+class="math inline">\(\mu\)</span> against <span
+class="math inline">\(\mathbf n\)</span>, the density-response
+multiplier is</p>
+<p><span class="math display">\[\begin{equation}
+  K_A^{(\rho)}(x,\mu)
+  =
+  \nu_{\mathrm{OPH}}(x)-1+x\nu_{\mathrm{OPH}}&#39;(x)\mu^2.
+  \label{eq:environmentalkernel}
+\end{equation}\]</span></p>
+<p>An isotropic environmental average gives</p>
+<p><span class="math display">\[\begin{equation}
+  \langle K_A^{(\rho)}\rangle
+  =
+  \nu_{\mathrm{OPH}}(x)-1+\frac{x}{3}\nu_{\mathrm{OPH}}&#39;(x).
+\end{equation}\]</span></p>
+<p>The contrast kernel used in perturbation equations is normalized by
+the background density ratio:</p>
+<p><span class="math display">\[\begin{equation}
+  B_A(k,a)
+  =
+  \frac{\bar\rho_b(a)}{\bar\rho_A(a)}K_A^{(\rho)}(k,a).
+\end{equation}\]</span></p>
+<p>In a realistic cosmological calculation, this local expression has to
+be integrated against the distribution of environmental fields,</p>
+<p><span class="math display">\[\begin{equation}
+  K_A^{(\rho)}(k,a)
+  =
+  \int\mathrm{d}x\,\mathrm{d}\mu\,
+  \Pi(x,\mu|k,a)
+  [\nu_{\mathrm{OPH}}(x)-1+x\nu_{\mathrm{OPH}}&#39;(x)\mu^2].
+\end{equation}\]</span></p>
+<p>This average is finite only under an explicit small-field support
+condition, for example</p>
+<p><span class="math display">\[\begin{equation}
+  \int_0^\epsilon \mathrm{d}x\,\mathrm{d}\mu\,
+  \Pi(x,\mu|k,a)\,x^{-1/2}&lt;\infty
+  \qquad
+  \text{for some }\epsilon&gt;0.
+\end{equation}\]</span></p>
+<p>If <span class="math inline">\(\Pi\)</span> has an exact atom at
+<span class="math inline">\(x=0\)</span>, the local nonzero-field kernel
+is not the correct FLRW response. The distribution <span
+class="math inline">\(\Pi\)</span> is an OPH finite-collar output or an
+explicitly declared environmental closure. Exact FLRW has <span
+class="math inline">\(x=0\)</span>, so
+<a href="#eq:environmentalkernel" data-reference-type="eqref" data-reference="eq:environmentalkernel">[eq:environmentalkernel]</a>
+does not provide a regular universal CMB density-response kernel by
+itself.</p>
+<p>The implementation contract uses one parent finite-collar
+functional:</p>
+<p><span class="math display">\[\begin{equation}
+  \rho_{A,\mathrm{eq}}[X]c^2
+  =
+  \frac{15}{8\pi^2\ell(X)^4}
+  \int_{\mathcal C_X}\mathrm{d}\mu_C\,
+  I_{\omega_C}(A:D|B).
+  \label{eq:parentfunctional}
+\end{equation}\]</span></p>
+<p>For finite samples <span class="math inline">\(s\)</span> with
+weights <span class="math inline">\(w_s\)</span>, define</p>
+<p><span class="math display">\[\begin{align}
+  R(X)&amp;=\frac{\sum_s w_s I_s}{\sum_s w_s},\\
+  K_A^{(\rho)}(k,a)
+  &amp;=\frac{1}{\bar\rho_b}
+    \frac{\partial \rho_{A,\mathrm{eq}}}{\partial \delta_b(k,a)},\\
+  B_A(k,a)
+  &amp;=\frac{\bar\rho_b(a)}{\bar\rho_A(a)}K_A^{(\rho)}(k,a).
+\end{align}\]</span></p>
+<p>The same evaluator emits the homogeneous equilibrium density, the
+linear density-response kernel, the settled galaxy source, and the
+cluster equilibrium source. A theorem-grade prediction requires the OPH
+collar measure <span class="math inline">\(\mathrm{d}\mu_C\)</span>, the
+finite-screen ensemble, and the small-field support condition. Fitting
+<span class="math inline">\(\Pi\)</span> to CMB, weak-lensing, SPARC, or
+cluster data is excluded.</p>
+<h2 id="compressed-cmb-bao-growth-and-s_8-diagnostic">Compressed CMB,
+BAO, Growth, And <span class="math inline">\(S_8\)</span>
+Diagnostic</h2>
+<p>The local Boltzmann plumbing test passes the anomaly as a cold
+pressureless component with the flat-residual diagnostic parent-grid
+ratio <span class="math inline">\(\rho_A/\rho_b=5.363470441\)</span>. It
+uses CAMB <span class="math inline">\(1.6.6\)</span>, the OPH neutrino
+mass sum, and diagonal Gaussian compressed rows:</p>
+<div class="center">
+
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Quantity</th>
+<th style="text-align: right;">Prediction</th>
+<th style="text-align: right;">Target</th>
+<th style="text-align: right;">Pull</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Planck <span
+class="math inline">\(\Omega_m\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(0.315905207\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(0.315\pm0.007\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(+0.129\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">Planck <span
+class="math inline">\(\sigma_8\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(0.807787208\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(0.811\pm0.006\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(-0.535\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">Planck <span
+class="math inline">\(S_8\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(0.828924043\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(0.831027707\pm0.0111\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(-0.190\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">DESI DR1 BAO <span
+class="math inline">\(\Omega_m\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(0.315905207\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(0.295\pm0.015\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(+1.394\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">DESI DR1 BAO/BBN/<span
+class="math inline">\(\theta_\ast\)</span> <span
+class="math inline">\(H_0\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(67.4\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(68.52\pm0.62\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(-1.806\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">Weak-lensing <span
+class="math inline">\(S_8\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(0.828924043\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(0.790\pm0.016\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(+2.433\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p>The diagonal compressed value is <span
+class="math inline">\(\chi^2=11.463\)</span> for six rows. This is a
+plumbing check. It does not replace Planck, DESI, or weak-lensing
+likelihoods. A publication-grade calculation needs the OPH <span
+class="math inline">\(B_A(k,a)\)</span> kernel in a custom Boltzmann
+module and the full experimental covariances.</p>
+<h1 id="likelihood-contracts">Likelihood Contracts</h1>
+<h2 id="sparc-disk-potential-contract">SPARC Disk-Potential
+Contract</h2>
+<p>The publication-grade SPARC test must solve the conservative disk
+equation</p>
+<p><span class="math display">\[\begin{equation}
+  \nabla^2\Phi
+  =
+  \nabla\cdot
+  \left[
+    \nu_\lambda\!\left(\frac{|\nabla\Phi_b|}{a_{0,\mathrm{OPH}}}\right)
+    \nabla\Phi_b
+  \right]
+\end{equation}\]</span></p>
+<p>on an axisymmetric baryonic disk model. The hierarchy must
+marginalize or profile distance, inclination, disk and bulge
+mass-to-light ratios, gas scale, intrinsic scatter, velocity covariance,
+quality cuts, and grid convergence. The unit branch and the <span
+class="math inline">\(\mathbb Z_6\)</span>/Poisson branch are fixed
+before this test; SPARC is used as a comparison, not as the selector for
+<span class="math inline">\(\lambda_{\mathrm{collar}}\)</span>.</p>
+<h2 id="cluster-map-contract">Cluster Map Contract</h2>
+<p>The cluster forward model uses gas hydrodynamics, stellar and galaxy
+tracers, transported defect stress, the repair source <span
+class="math inline">\(\rho_{A,\mathrm{eq}}\)</span>, lensing projection,
+X-ray emissivity, SZ pressure, and covariance-aware map likelihoods.
+Merging clusters test whether the transported stress lags collisional
+gas. Relaxed clusters test whether the same stress law returns to the
+static equilibrium source. The static-only failure mode is part of the
+likelihood contract.</p>
+<h2 id="boltzmann-contract">Boltzmann Contract</h2>
+<p>The Boltzmann module exposes</p>
+<p><span class="math display">\[\bar\rho_A(a),\quad
+  \bar\rho_{A,\mathrm{eq}}(a),\quad
+  w_A(a),\quad
+  c_{s,A}^2(k,a),\quad
+  \sigma_A(k,a),\quad
+  Q_A^\mu,\quad
+  B_A(k,a),\quad
+  \Gamma_{\mathrm{rec}}(k,a),\]</span></p>
+<p>with the OPH neutrino mass sum in the same run. It must recover the
+<span class="math inline">\(\Lambda\mathrm{CDM}\)</span> cold-component
+limit when the exchange and stress corrections are turned off, reproduce
+the compressed diagnostic rows, and then run the full CMB TT/TE/EE, CMB
+lensing, BAO, supernova, weak-lensing, RSD, and <span
+class="math inline">\(S_8\)</span> likelihoods under the same nuisance
+model used for <span class="math inline">\(\Lambda\mathrm{CDM}\)</span>
+and <span class="math inline">\(w_0w_a\)</span>.</p>
+<h1 id="numerical-galaxy-comparison">Numerical Galaxy Comparison</h1>
+<p>The OPH capacity benchmark used here is</p>
+<p><span class="math display">\[\begin{equation}
+  a_{0,\mathrm{OPH}}= 1.029186271\times10^{-10}\,\mathrm{m\,s^{-2}}.
+\end{equation}\]</span></p>
+<p>The common empirical reference is</p>
+<p><span class="math display">\[\begin{equation}
+  a_0^{\mathrm{emp}}=1.2\times10^{-10}\,\mathrm{m\,s^{-2}}.
+\end{equation}\]</span></p>
+<p>The <span class="math inline">\(\mathbb Z_6\)</span>/Poisson branch
+gives</p>
+<p><span class="math display">\[\begin{equation}
+  \lambda_{\mathrm{collar}}=0.934300639,
+  \qquad
+  a_{0,\mathrm{eff}}=1.179018696\times10^{-10}\,\mathrm{m\,s^{-2}}.
+\end{equation}\]</span></p>
+<div class="center">
+
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Quantity</th>
+<th style="text-align: right;">Value</th>
+<th style="text-align: right;">Comparison</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span
+class="math inline">\(a_{0,\mathrm{OPH}}\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(1.029186271\times10^{-10}\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(-8.070\%\)</span> versus best same-function
+RAR</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span
+class="math inline">\(a_{0,\mathrm{OPH}}\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(1.029186271\times10^{-10}\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(-14.234\%\)</span> versus empirical reference</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span
+class="math inline">\(a_{0,\mathrm{eff}}\)</span>, <span
+class="math inline">\(\mathbb Z_6\)</span>/Poisson</td>
+<td style="text-align: right;"><span
+class="math inline">\(1.179018696\times10^{-10}\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(+5.314\%\)</span> versus best same-function
+RAR</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span
+class="math inline">\(a_{0,\mathrm{eff}}\)</span>, <span
+class="math inline">\(\mathbb Z_6\)</span>/Poisson</td>
+<td style="text-align: right;"><span
+class="math inline">\(1.179018696\times10^{-10}\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(-1.748\%\)</span> versus empirical reference</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<h2 id="sparc-rar">SPARC RAR</h2>
+<p>Using the public SPARC RAR data , the local diagnostic gives:</p>
+<div class="center">
+
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Scenario</th>
+<th style="text-align: right;"><span class="math inline">\(a_0\)</span>
+in <span class="math inline">\(\mathrm{m\,s^{-2}}\)</span></th>
+<th style="text-align: right;">RMS dex</th>
+<th style="text-align: right;">Binned RMS dex</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">OPH unit</td>
+<td style="text-align: right;"><span
+class="math inline">\(1.029186271\times10^{-10}\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(0.134208\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(0.026169\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="math inline">\(\mathbb
+Z_6\)</span>/Poisson</td>
+<td style="text-align: right;"><span
+class="math inline">\(1.179018696\times10^{-10}\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(0.132834\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(0.015760\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">Empirical reference</td>
+<td style="text-align: right;"><span
+class="math inline">\(1.200000000\times10^{-10}\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(0.132913\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(0.016164\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">Best same-function</td>
+<td style="text-align: right;"><span
+class="math inline">\(1.119530397\times10^{-10}\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(0.132947\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(0.017428\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<h2 id="rotation-diagnostics">Rotation Diagnostics</h2>
+<p>The fixed stellar mass-to-light diagnostic and the first
+nuisance-profiled diagnostic give:</p>
+<div class="center">
+
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Scenario</th>
+<th style="text-align: right;">Fixed-M/L RMS</th>
+<th style="text-align: right;">Profiled-M/L <span
+class="math inline">\(\chi^2/\mathrm{pt}\)</span></th>
+<th style="text-align: right;">Profiled RMS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">OPH unit</td>
+<td style="text-align: right;"><span
+class="math inline">\(23.366208\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(1.341948\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(12.420181\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="math inline">\(\mathbb
+Z_6\)</span>/Poisson</td>
+<td style="text-align: right;"><span
+class="math inline">\(22.868866\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(1.390941\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(12.590203\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">Empirical reference</td>
+<td style="text-align: right;"><span
+class="math inline">\(22.842145\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(1.400930\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(12.624079\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p>Units for the RMS columns are <span
+class="math inline">\(\mathrm{km\,s^{-1}}\)</span>.</p>
+<h2 id="systematic-likelihood-scaffold">Systematic Likelihood
+Scaffold</h2>
+<p>A stronger local scaffold profiles stellar M/L, distance,
+inclination, and gas scale per galaxy using the SPARC sample table . It
+uses <span class="math inline">\(Q\le2\)</span>, inclination at least
+<span class="math inline">\(30^\circ\)</span>, and 3168 rotation-curve
+rows.</p>
+<div class="center">
+
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Scenario</th>
+<th style="text-align: right;"><span
+class="math inline">\(\chi^2/\mathrm{pt}\)</span></th>
+<th style="text-align: right;"><span
+class="math inline">\(\chi^2/\mathrm{dof}\)</span></th>
+<th style="text-align: right;">RMS</th>
+<th style="text-align: right;">Median disk M/L</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">OPH unit</td>
+<td style="text-align: right;"><span
+class="math inline">\(1.016589\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(1.275672\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(11.249541\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(0.519102\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="math inline">\(\mathbb
+Z_6\)</span>/Poisson</td>
+<td style="text-align: right;"><span
+class="math inline">\(1.021093\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(1.281324\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(11.276832\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(0.497435\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">Empirical reference</td>
+<td style="text-align: right;"><span
+class="math inline">\(1.023261\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(1.284045\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(11.285518\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(0.493865\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p>The systematic scaffold mildly favors the unit branch. The <span
+class="math inline">\(\mathbb Z_6\)</span>/Poisson branch remains the
+better acceleration-scale and fixed-M/L RAR match. The fixed-M/L
+improvement alone is weak evidence for the <span
+class="math inline">\(\mathbb Z_6\)</span> bridge theorem.</p>
+<h2 id="empirical-implementation-scorecard">Empirical Implementation
+Scorecard</h2>
+<p>The executable empirical pass combines four diagnostic layers: public
+SPARC tables, the flat capacity-saturated homogeneous anomaly state, the
+finite repair matrix with a cluster timing gate, and the compressed CAMB
+rows. The single-pass output is:</p>
+<div class="center">
+
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Quantity</th>
+<th style="text-align: left;">OPH output</th>
+<th style="text-align: left;">Measurement comparison</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span
+class="math inline">\(\Omega_A\)</span></td>
+<td style="text-align: left;"><span
+class="math inline">\(0.264114401\)</span></td>
+<td style="text-align: left;">Planck-like matter budget</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span
+class="math inline">\(\Omega_{\Lambda,\mathrm{OPH}}\)</span></td>
+<td style="text-align: left;"><span
+class="math inline">\(0.684423332\)</span></td>
+<td style="text-align: left;">capacity de Sitter branch</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span
+class="math inline">\(\rho_A/\rho_b\)</span></td>
+<td style="text-align: left;"><span
+class="math inline">\(5.363470441\)</span></td>
+<td style="text-align: left;">flat residual ratio</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span
+class="math inline">\(\gamma_{\mathrm{rec}}\)</span></td>
+<td style="text-align: left;"><span
+class="math inline">\(0.050717471\)</span></td>
+<td style="text-align: left;">finite repair matrix gap</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span
+class="math inline">\(a_{0,\mathrm{OPH}}\)</span></td>
+<td style="text-align: left;"><span
+class="math inline">\(1.029186271\times10^{-10}\)</span></td>
+<td style="text-align: left;"><span
+class="math inline">\(8.070\%\)</span> low versus best RAR</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span
+class="math inline">\(a_{0,\mathrm{eff}}\)</span>, <span
+class="math inline">\(\mathbb Z_6\)</span>/Poisson</td>
+<td style="text-align: left;"><span
+class="math inline">\(1.179018696\times10^{-10}\)</span></td>
+<td style="text-align: left;"><span
+class="math inline">\(1.748\%\)</span> low versus common empirical <span
+class="math inline">\(a_0\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">SPARC systematic <span
+class="math inline">\(\chi^2/\mathrm{pt}\)</span>, unit</td>
+<td style="text-align: left;"><span
+class="math inline">\(1.016589\)</span></td>
+<td style="text-align: left;">best scaffold row</td>
+</tr>
+<tr>
+<td style="text-align: left;">SPARC systematic <span
+class="math inline">\(\chi^2/\mathrm{pt}\)</span>, <span
+class="math inline">\(\mathbb Z_6\)</span></td>
+<td style="text-align: left;"><span
+class="math inline">\(1.021093\)</span></td>
+<td style="text-align: left;">close scaffold row</td>
+</tr>
+<tr>
+<td style="text-align: left;">CAMB <span
+class="math inline">\(\Omega_m\)</span></td>
+<td style="text-align: left;"><span
+class="math inline">\(0.315905206\)</span></td>
+<td style="text-align: left;"><span
+class="math inline">\(+0.129\sigma\)</span> versus Planck</td>
+</tr>
+<tr>
+<td style="text-align: left;">CAMB <span
+class="math inline">\(\sigma_8\)</span></td>
+<td style="text-align: left;"><span
+class="math inline">\(0.807787204\)</span></td>
+<td style="text-align: left;"><span
+class="math inline">\(-0.535\sigma\)</span> versus Planck</td>
+</tr>
+<tr>
+<td style="text-align: left;">CAMB <span
+class="math inline">\(S_8\)</span></td>
+<td style="text-align: left;"><span
+class="math inline">\(0.828924037\)</span></td>
+<td style="text-align: left;"><span
+class="math inline">\(+2.433\sigma\)</span> versus weak lensing</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p>The compressed CMB/BAO/growth score is</p>
+<p><span class="math display">\[\chi^2_{\mathrm{diag}}=11.463
+  \qquad \hbox{for six compressed rows.}\]</span></p>
+<p>The pressure point is weak-lensing <span
+class="math inline">\(S_8\)</span>. The diagnostic value is <span
+class="math inline">\(0.828924037\)</span>. The DES/KiDS compressed row
+is <span class="math inline">\(0.790\pm0.016\)</span>.</p>
+<p>For the cluster timing gate, take a <span
+class="math inline">\(200\,\mathrm{kpc}\)</span> initial anomaly
+separation, a <span class="math inline">\(0.2\,\mathrm{Gyr}\)</span>
+time after passage, and an example measured offset <span
+class="math inline">\(150\pm50\,\mathrm{kpc}\)</span>. The repair matrix
+gives:</p>
+<div class="center">
+
+<table>
+<thead>
+<tr>
+<th style="text-align: right;"><span
+class="math inline">\(\tau_{\mathrm{rec}}\)</span> in Gyr</th>
+<th style="text-align: right;"><span
+class="math inline">\(t_{\mathrm{commit}}\)</span> in Myr</th>
+<th style="text-align: right;">Retained fraction</th>
+<th style="text-align: right;">Offset in kpc</th>
+<th style="text-align: right;"><span
+class="math inline">\(\chi^2\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;"><span
+class="math inline">\(0.3\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(15.2152\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(0.513417\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(102.683\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(0.896\)</span></td>
+</tr>
+<tr>
+<td style="text-align: right;"><span
+class="math inline">\(0.5\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(25.3587\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(0.670320\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(134.064\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(0.102\)</span></td>
+</tr>
+<tr>
+<td style="text-align: right;"><span
+class="math inline">\(1.0\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(50.7175\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(0.818731\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(163.746\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(0.076\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p>This row is a timing gate. Map likelihoods need observed lensing
+maps, gas maps, stellar maps, merger-age priors, and covariance.</p>
+<h2 id="implementation-work-packages">Implementation Work Packages</h2>
+<p>The code required for paper-grade empirical tests consists of the
+following modules:</p>
+<ol type="1">
+<li><p>An axisymmetric conservative disk-potential solver for</p>
+<p><span class="math display">\[\nabla^2\Phi
+  =
+  \nabla\cdot[\nu(|\nabla\Phi_b|/a_{0,\mathrm{OPH}})\nabla\Phi_b],\]</span></p>
+<p>with grid-convergence tests and lensing-potential output.</p></li>
+<li><p>A hierarchical SPARC likelihood that samples or profiles
+distance, inclination, disk M/L, bulge M/L, gas scale, intrinsic
+scatter, velocity covariance, and selection cuts under one nuisance
+model.</p></li>
+<li><p>A finite-collar parent evaluator for <span
+class="math inline">\(\rho_A(a)\)</span>, <span
+class="math inline">\(K_A^{(\rho)}(k,a)\)</span>, <span
+class="math inline">\(B_A(k,a)\)</span>, and <span
+class="math inline">\(\rho_{A,\mathrm{eq}}[X]\)</span>, using OPH collar
+samples as input. The scalar-load diagnostic grid is plumbing
+only.</p></li>
+<li><p>A CAMB or CLASS anomaly module exposing the background density,
+stress variables, exchange current, relaxation kernel, environmental
+response kernel, and the OPH neutrino mass sum in one run.</p></li>
+<li><p>A cluster forward model with gas hydrodynamics, galaxy and
+stellar tracers, transported anomaly stress, lensing projection, X-ray
+and SZ observables, merger-age priors, and map covariance.</p></li>
+<li><p>A likelihood runner for Planck or ACT spectra, CMB lensing, BAO,
+supernovae, weak lensing, RSD, SPARC, and cluster maps, with model
+comparison against <span
+class="math inline">\(\Lambda\mathrm{CDM}\)</span>, empirical MOND
+functions, halo models, and <span class="math inline">\(w_0w_a\)</span>
+extensions.</p></li>
+<li><p>A reproducibility harness with fixed data hashes, fixed random
+seeds, unit checks, and independent numerical replication of the
+scorecard rows.</p></li>
+</ol>
+<h2 id="correction-audit">Correction Audit</h2>
+<p>The comparison mostly tests normalization because the OPH static law
+uses the same acceleration-family shape as the empirical RAR fit. If
+<span class="math inline">\(a_{0,\mathrm{OPH}}\)</span> is held fixed,
+different targets imply different <span
+class="math inline">\(\lambda_{\mathrm{collar}}\)</span> values:</p>
+<div class="center">
+
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Target</th>
+<th style="text-align: right;">Required <span
+class="math inline">\(\lambda_{\mathrm{collar}}\)</span></th>
+<th style="text-align: right;">Reserve <span
+class="math inline">\(-\ln\lambda_{\mathrm{collar}}\)</span></th>
+<th style="text-align: right;">Ratio to <span
+class="math inline">\(P/24\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Best same-function RAR</td>
+<td style="text-align: right;"><span
+class="math inline">\(0.958802256\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(0.042070424\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(0.619074\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">Binned RAR</td>
+<td style="text-align: right;"><span
+class="math inline">\(0.936737944\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(0.065351711\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(0.961663\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">Common empirical <span
+class="math inline">\(a_0\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(0.926096769\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(0.076776547\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(1.129781\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">Fixed-M/L rotation</td>
+<td style="text-align: right;"><span
+class="math inline">\(0.926654674\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(0.076174302\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(1.120919\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">OPH <span class="math inline">\(\mathbb
+Z_6\)</span>/Poisson</td>
+<td style="text-align: right;"><span
+class="math inline">\(0.934300639\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(0.067957009\)</span></td>
+<td style="text-align: right;"><span
+class="math inline">\(1.000000\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p>This rules out several tempting shortcuts. In the
+normalization-profiled all-point objective, a generalized activation
+exponent near <span class="math inline">\(0.503420\)</span> appears.
+With fixed <span class="math inline">\(a_{0,\mathrm{OPH}}\)</span>,
+direct RAR objectives give exponents near <span
+class="math inline">\(0.516\)</span> all-point and <span
+class="math inline">\(0.519\)</span> weighted-bin. These shifts are
+objective-dependent, and flat deep-IR rotation requires <span
+class="math inline">\(0.5\)</span>. Moving the exponent would buy little
+and would damage the BTFR theorem.</p>
+<p>Finite-thickness nonuniformity can raise <span
+class="math inline">\(\lambda_{\mathrm{collar}}\)</span> above <span
+class="math inline">\(\exp(-P/24)\)</span>, which moves the coefficient
+toward the binned RAR value. It cannot lower <span
+class="math inline">\(\lambda_{\mathrm{collar}}\)</span> toward the
+common empirical or fixed-M/L values while the mean reserve remains
+<span class="math inline">\(P/24\)</span> and Poisson counting is
+retained. An exact hit to the common empirical acceleration would
+require about <span class="math inline">\(13\%\)</span> more protected
+inactive reserve than <span class="math inline">\(P/24\)</span>, or a
+different microscopic selector. That extra reserve needs an OPH theorem
+before use.</p>
+<h1 id="claim-boundaries">Claim Boundaries</h1>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Pressure point</th>
+<th style="text-align: left;">OPH route</th>
+<th style="text-align: left;">Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Unknown particle</td>
+<td style="text-align: left;">Dark source is a carried modular/collar
+information-defect</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">stress.</td>
+<td style="text-align: left;">Conditional source target.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Galaxy RAR and BTFR</td>
+<td style="text-align: left;">Collar/cut activation gives the
+square-root transition</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">and Poisson activation law under
+independent-increment repair counting.</td>
+<td style="text-align: left;">Conditional static theorem.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Acceleration scale</td>
+<td style="text-align: left;">Capacity scale gives <span
+class="math inline">\(a_{0,\mathrm{OPH}}\)</span>; <span
+class="math inline">\(\mathbb Z_6\)</span>/Poisson reserve</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">gives <span
+class="math inline">\(a_{0,\mathrm{eff}}\)</span> close to the empirical
+scale.</td>
+<td style="text-align: left;">Conditional coefficient</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">theorem.</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Galaxy lensing</td>
+<td style="text-align: left;">No-slip branch gives <span
+class="math inline">\(\Phi=\Psi\)</span> if the information-defect</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">stress is dust on settled galaxies.</td>
+<td style="text-align: left;">Conditional stress theorem.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Cluster offsets</td>
+<td style="text-align: left;">Transported anomaly can lag collisional
+gas; the Jacobi</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">clock gives a no-fit scale under the
+tidal-mismatch premise.</td>
+<td style="text-align: left;">Forward</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">likelihood contract.</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">CMB and growth</td>
+<td style="text-align: left;">Flat capacity state selection gives a
+CDM-like homogeneous</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p>residual; the closed branch has a conserved load current;
+environmental kernels describe nonzero-field response. | Amplitude
+selector and real Boltzmann likelihood work in progress. |</p>
+<p>The supported claim is:</p>
+<blockquote>
+<p>OPH defines an imperfect-information correction to the recovered
+Einstein branch. Under explicit bridge premises, the static galaxy
+equation reproduces the RAR/BTFR functional form from collar/cut repair
+statistics and predicts an acceleration scale close to SPARC. The unit
+branch is low in normalization. The <span class="math inline">\(\mathbb
+Z_6\)</span>/Poisson branch lands within <span
+class="math inline">\(1.748\%\)</span> of the common empirical
+acceleration reference. Profiled stellar, distance, inclination, and gas
+nuisances mildly favor the unit branch. The Jacobi clock gives a no-fit
+cluster-offset scale under its tidal-mismatch premise. Flat capacity
+state selection gives a Planck-like homogeneous information-defect
+residual, while closed-branch transport gives a conserved load current.
+Cluster and CMB/growth likelihoods require measured cluster covariances,
+a finite-screen amplitude selector, the environmental kernel, and a
+Boltzmann implementation.</p>
+</blockquote>
+<p>Claim outside this paper:</p>
+<blockquote>
+<p>OPH has fully derived dark matter and solved MOND’s cluster and CMB
+problems.</p>
+</blockquote>
+<p>That stronger statement requires SPARC publication likelihoods,
+cluster likelihoods, and Boltzmann likelihoods.</p>
+<h1 id="proof-ledger">Proof Ledger</h1>
+<div class="center">
+
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Target</th>
+<th style="text-align: left;">OPH closure</th>
+<th style="text-align: left;">Numerical state</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Galaxy source</td>
+<td style="text-align: left;">Minimal scalar recoverability defect</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">$`R_C=I(A:D</td>
+<td style="text-align: left;">B)`$.</td>
+<td style="text-align: left;">Conditional source target.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Quotient-edge locality</td>
+<td style="text-align: left;">Scalar repair opportunities are
+edge-center</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">cut-register events on the physical
+quotient.</td>
+<td style="text-align: left;">Conditional bridge.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Finite thickness</td>
+<td style="text-align: left;">Product transverse regulator with one
+quotient trace makes</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">the protected center reserve uniform
+through the weighted collar.</td>
+<td style="text-align: left;">Conditional bridge.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">No-slip stress</td>
+<td style="text-align: left;">Positive kinetic collar measure; settled
+monokinetic branch</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">has dust stress and vanishing
+information-sector anisotropic stress.</td>
+<td style="text-align: left;">Conditional stress theorem.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Repair relaxation</td>
+<td style="text-align: left;">Fixed repair-commit chain gives</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span
+class="math inline">\(\tau_{\mathrm{rec}}=t_{\mathrm{commit}}/\gamma_{\mathrm{rec}}\)</span>.</td>
+<td style="text-align: left;">Conditional packet theorem and clock
+candidate.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">CMB and growth</td>
+<td style="text-align: left;">Nonzero-environment kernel is explicit;
+exact FLRW static</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">RAR kernel is blocked by a no-go
+theorem.</td>
+<td style="text-align: left;">Boltzmann module contract.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Abundance history</td>
+<td style="text-align: left;">Flat capacity state selection gives a
+CDM-like residual;</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">the closed transported branch has a
+conserved load current and charge.</td>
+<td style="text-align: left;">Amplitude selector work in progress.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Linear transfer</td>
+<td style="text-align: left;">The perturbation equation has a relaxation
+transfer</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">solution between CDM-like and tracking
+limits.</td>
+<td style="text-align: left;">Requires evaluated</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span
+class="math inline">\(B_A(k,a)\)</span>.</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">Parent functional</td>
+<td style="text-align: left;">The finite collar expectation of the
+positive repair</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p>defect emits <span
+class="math inline">\(\rho_{A,\mathrm{eq}}\)</span> and <span
+class="math inline">\(B_A\)</span> if its FLRW limit is regular. |
+Finite-sample evaluator contract. | | Repair matrix | A reversible
+Metropolis kernel on packet states gives a concrete <span
+class="math inline">\(K\)</span>. | Conditional on declared packet
+schema. | | Jacobi clock | The tidal scalar <span
+class="math inline">\((E_{ij}E^{ij}/6)^{1/4}\)</span> gives a no-fit
+dynamic repair scale under the Jacobi mismatch premise. | Conditional
+clock. |</p>
+</div>
+
+<h2 id="positive-galaxy-source">Positive Galaxy Source</h2>
+<h4 id="theorem-target-0a">Theorem target 0A.</h4>
+<p>Let a settled galaxy collar state be judged by a scalar repair defect
+<span class="math inline">\(D_C\)</span> with these properties: <span
+class="math inline">\(D_C\ge0\)</span>; <span
+class="math inline">\(D_C=0\)</span> exactly on locally recoverable
+Markov states; <span class="math inline">\(D_C\)</span> is invariant
+under boundary redundancy; <span class="math inline">\(D_C\)</span> is
+additive over independent collar components; and <span
+class="math inline">\(D_C\)</span> is monotone under local recovery
+maps. Then the minimal scalar branch is</p>
+<p><span class="math display">\[\begin{equation}
+  D_C=\kappa I(A:D|B),
+  \qquad
+  \kappa\ge0.
+\end{equation}\]</span></p>
+<p>The OPH dark branch uses <span
+class="math inline">\(R_C=I(A:D|B)\)</span>.</p>
+<h4 id="explicit-premise">Explicit premise.</h4>
+<p>The galaxy-scale finite-stage modular nonadditivity is represented by
+this minimal scalar recoverability defect on settled collar states.</p>
+<h4 id="conditional-argument-2">Conditional argument.</h4>
+<p>Conditional mutual information has all listed properties on a finite
+collar. A different scalar with the same zero set and additivity would
+add an independent scalar datum to the minimal branch. The minimal
+scalar selector is therefore fixed up to a nonnegative multiplier. The
+OPH unit convention sets that multiplier to one. Since <span
+class="math inline">\(I(A:D|B)\ge0\)</span>, the weak-field density
+defined by the anomaly normalization is nonnegative. <span
+class="math inline">\(\square\)</span></p>
+<h4 id="proof-obligation-1">Proof obligation.</h4>
+<p>Derive the map from the finite-stage modular nonadditivity term to
+<span class="math inline">\(I(A:D|B)\)</span> on the galaxy branch.</p>
+<h4 id="failure-consequence-1">Failure consequence.</h4>
+<p>If the modular remainder is not this positive defect, the attractive
+source and normalization formula must be replaced by the derived
+scalar.</p>
+<h2 id="quotient-edge-scalar-opportunity">Quotient-Edge Scalar
+Opportunity</h2>
+<h4 id="theorem-target-0b">Theorem target 0B.</h4>
+<p>At fixed cutoff, physical collar observables live on the
+quotient-local fixed-point algebra. A settled galaxy scalar repair
+opportunity is the local event that the quotient-local recoverability
+defect on a collar cut is nonzero. Then the scalar opportunity is
+counted on the edge-center cut register.</p>
+<h4 id="explicit-premise-1">Explicit premise.</h4>
+<p>The scalar recoverability event has no independent bulk, screen-area,
+or noncentral collar channel.</p>
+<h4 id="conditional-argument-3">Conditional argument.</h4>
+<p>The defect is a physical scalar. Boundary-redundant representatives
+produce the same defect value because the quotient repair law descends
+through the projection onto physical collar states. The event that the
+defect is nonzero is therefore an observable event on the quotient-local
+collar algebra. For a connected cut, the fixed-cutoff edge-center
+decomposition supplies the central projectors that resolve physical cut
+sectors. A scalar event with no vector, tensor, or bulk label selects
+support through those central projectors. Thus the scalar opportunity
+count is a quotient-edge cut-register count. The protected <span
+class="math inline">\(\mathbb Z_6\)</span> center reserve is supported
+on the same register. <span class="math inline">\(\square\)</span></p>
+<h4 id="proof-obligation-2">Proof obligation.</h4>
+<p>Prove the fixed-cutoff uniqueness statement: every quotient-local
+scalar recoverability event is resolved on the edge-center cut
+register.</p>
+<h4 id="failure-consequence-2">Failure consequence.</h4>
+<p>If a separate scalar channel exists, the <span
+class="math inline">\(\mathbb Z_6\)</span> reserve does not fix <span
+class="math inline">\(\lambda_{\mathrm{collar}}\)</span> without an
+additional co-registration theorem.</p>
+<h2 id="uniform-finite-thickness-reserve">Uniform Finite-Thickness
+Reserve</h2>
+<h4 id="theorem-target-0c">Theorem target 0C.</h4>
+<p>Let the finite collar be a transverse thickening of one quotient-edge
+cut algebra with normalized transverse weight <span
+class="math inline">\(w(y)\)</span> and a single quotient trace on the
+edge algebra. Let the protected <span class="math inline">\(\mathbb
+Z_6\)</span> reserve be a central edge projector whose mean on that
+trace is <span class="math inline">\(\epsilon_{\mathbb
+Z_6}=P/24\)</span>. Then</p>
+<p><span class="math display">\[\begin{equation}
+  \lambda_{\mathrm{collar}}=\exp(-P/24).
+\end{equation}\]</span></p>
+<h4 id="explicit-premise-2">Explicit premise.</h4>
+<p>The scalar-weighted transverse regulator is a product thickening with
+one quotient trace and uniform protected-center density.</p>
+<h4 id="conditional-argument-4">Conditional argument.</h4>
+<p>The protected reserve belongs to the edge-center algebra. The
+transverse coordinate belongs to the regulator thickening. With one
+quotient trace on the edge algebra, the trace of the protected central
+projector is the same on every transverse slice that carries scalar
+activation weight. Hence <span class="math inline">\(\epsilon_{\mathbb
+Z_6}(y)=\epsilon_{\mathbb Z_6}\)</span>. Poisson zero-reserve survival
+gives <span class="math inline">\(\exp(-\epsilon_{\mathbb Z_6})\)</span>
+at each slice. Averaging with <span class="math inline">\(w(y)\)</span>
+leaves the same value. Using <span
+class="math inline">\(\epsilon_{\mathbb Z_6}=P/24\)</span> gives the
+stated coefficient. <span class="math inline">\(\square\)</span></p>
+<h4 id="proof-obligation-3">Proof obligation.</h4>
+<p>Derive <span class="math inline">\(w(y)\)</span>, the transverse
+regulator, and the quotient trace from base OPH screen/collar data.</p>
+<h4 id="failure-consequence-3">Failure consequence.</h4>
+<p>If the reserve density is nonuniform, the coefficient is</p>
+<p><span
+class="math display">\[\int\mathrm{d}y\,w(y)\exp[-\epsilon_{\mathbb
+Z_6}(y)],\]</span></p>
+<p>not necessarily <span class="math inline">\(\exp(-P/24)\)</span>.</p>
+<h2 id="no-slip-settled-stress">No-Slip Settled Stress</h2>
+<h4 id="theorem-target-0d">Theorem target 0D.</h4>
+<p>Let the information-defect stress be the second moment of a positive
+finite-collar kinetic measure <span
+class="math inline">\(\mathrm{d}\mathcal E_x(v)\)</span> on the future
+unit timelike shell:</p>
+<p><span class="math display">\[\begin{equation}
+  T_{\mathcal I}^{ab}=\int v^a v^b\,\mathrm{d}\mathcal E_x(v).
+\end{equation}\]</span></p>
+<p>If the settled galaxy branch is monokinetic in its rest frame,
+then</p>
+<p><span class="math display">\[\begin{equation}
+  T_{\mathcal I}^{ab}
+  =
+  \rho_{\mathcal I}u_{\mathcal I}^a u_{\mathcal I}^b,
+  \qquad
+  P_{\mathcal I}=0,
+  \qquad
+  q_{\mathcal I}^a=0,
+  \qquad
+  \pi_{\mathcal I}^{ab}=0.
+\end{equation}\]</span></p>
+<p>For negligible or separately modeled anisotropic stress in all other
+sectors, <span class="math inline">\(\Phi=\Psi\)</span>.</p>
+<h4 id="explicit-premise-3">Explicit premise.</h4>
+<p>The finite collar packet state emits the positive kinetic measure,
+and the settled galaxy branch is monokinetic at the coarse scale used
+for lensing.</p>
+<h4 id="conditional-argument-5">Conditional argument.</h4>
+<p>A positive measure on future timelike velocities has a symmetric
+future-positive second moment. In the monokinetic branch the measure is
+concentrated at one four-velocity, so the second moment is <span
+class="math inline">\(\rho_{\mathcal I}u_{\mathcal I}^a u_{\mathcal
+I}^b\)</span>. Its pressure, heat flux, and anisotropic stress vanish in
+that rest frame. The off-diagonal spatial Einstein equation then gives
+<span class="math inline">\(\Phi=\Psi\)</span> when the other sectors
+carry no uncompensated anisotropic stress. <span
+class="math inline">\(\square\)</span></p>
+<h4 id="proof-obligation-4">Proof obligation.</h4>
+<p>Derive <span class="math inline">\(\mathrm{d}\mathcal E_x(v)\)</span>
+from the finite OPH collar packet state or from an equivalent covariant
+parent action.</p>
+<h4 id="failure-consequence-4">Failure consequence.</h4>
+<p>If pressure or anisotropic stress survives coarse graining, the
+lensing slip equation must include those terms and no-slip is
+regime-dependent.</p>
+<h2 id="repair-relaxation-scale">Repair Relaxation Scale</h2>
+<h4 id="theorem-0e">Theorem 0E.</h4>
+<p>Let <span class="math inline">\(K\)</span> be the fixed-cutoff
+repair-commit transition matrix for one local coarse cell at fixed
+baryonic source. If <span class="math inline">\(K\)</span> is finite,
+irreducible, and aperiodic, with spectral gap <span
+class="math inline">\(\gamma_{\mathrm{rec}}\)</span>, then</p>
+<p><span class="math display">\[\begin{equation}
+  \tau_{\mathrm{rec}}
+  =\frac{t_{\mathrm{commit}}}{\gamma_{\mathrm{rec}}}.
+\end{equation}\]</span></p>
+<p>If every allowed repair move has probability at least <span
+class="math inline">\(q_{\min}&gt;0\)</span> and the comparison chain
+has conductance <span class="math inline">\(\Phi_K\)</span>, then</p>
+<p><span class="math display">\[\begin{equation}
+  \gamma_{\mathrm{rec}}\ge \frac12 q_{\min}\Phi_K^2.
+\end{equation}\]</span></p>
+<h4 id="proof-4">Proof.</h4>
+<p>A finite irreducible aperiodic chain has a unique stationary state.
+Every nonstationary mode decays as <span
+class="math inline">\(\exp(-\gamma_n n)\)</span> in repair-step time,
+and the slowest nonzero mode has rate <span
+class="math inline">\(\gamma_{\mathrm{rec}}\)</span>. One physical
+commit step takes <span
+class="math inline">\(t_{\mathrm{commit}}\)</span>, so physical
+relaxation has rate <span
+class="math inline">\(\gamma_{\mathrm{rec}}/t_{\mathrm{commit}}\)</span>.
+The conductance bound follows from the standard Cheeger comparison for
+the reversible comparison chain and the lower move probability <span
+class="math inline">\(q_{\min}\)</span>. <span
+class="math inline">\(\square\)</span></p>
+<h2 id="environmental-kernel-around-a-nonzero-field">Environmental
+Kernel Around A Nonzero Field</h2>
+<h4 id="conditional-theorem-0f">Conditional theorem 0F.</h4>
+<p>Let the settled anomaly field be</p>
+<p><span class="math display">\[\begin{equation}
+  \mathbf g_A=(\nu_{\mathrm{OPH}}-1)\mathbf g_b.
+\end{equation}\]</span></p>
+<p>Linearize around a nonzero background field <span
+class="math inline">\(\bar{\mathbf g}_b\)</span>. With</p>
+<p><span class="math display">\[x=|\bar{\mathbf
+g}_b|/a_{0,\mathrm{OPH}},
+  \qquad
+  n_i=\bar g_{b,i}/|\bar{\mathbf g}_b|,\]</span></p>
+<p>the Fourier density response to a baryonic density mode is</p>
+<p><span class="math display">\[\begin{equation}
+  K_A^{(\rho)}(x,\mu)
+  =
+  \nu_{\mathrm{OPH}}(x)-1+x\nu_{\mathrm{OPH}}&#39;(x)\mu^2,
+\end{equation}\]</span></p>
+<p>where <span class="math inline">\(\mu\)</span> is the cosine between
+the mode direction and <span class="math inline">\(\mathbf n\)</span>.
+The contrast kernel is</p>
+<p><span class="math display">\[\begin{equation}
+  B_A(k,a)
+  =
+  \frac{\bar\rho_b(a)}{\bar\rho_A(a)}K_A^{(\rho)}(k,a).
+\end{equation}\]</span></p>
+<h4 id="proof-5">Proof.</h4>
+<p>The first variation is</p>
+<p><span class="math display">\[\begin{equation}
+  \delta g_{A,i}
+  =
+  \left(
+    [\nu_{\mathrm{OPH}}(x)-1]\delta_{ij}
+    +x\nu_{\mathrm{OPH}}&#39;(x)n_i n_j
+  \right)\delta g_{b,j}.
+\end{equation}\]</span></p>
+<p>Taking the divergence and using the Fourier-space Poisson relation
+for <span class="math inline">\(\delta\mathbf g_b\)</span> gives the
+displayed scalar multiplier. The derivative of</p>
+<p><span
+class="math display">\[\nu_{\mathrm{OPH}}(x)=[1-\exp(-\lambda_{\mathrm{collar}}\sqrt{x})]^{-1}\]</span></p>
+<p>is</p>
+<p><span class="math display">\[\nu_{\mathrm{OPH}}&#39;(x)
+  =
+  -\frac{\lambda_{\mathrm{collar}}\exp[-\lambda_{\mathrm{collar}}\sqrt{x}]}
+  {2\sqrt{x}[1-\exp(-\lambda_{\mathrm{collar}}\sqrt{x})]^2}.\]</span></p>
+<p><span class="math inline">\(\square\)</span></p>
+<h2 id="background-abundance-green-function">Background Abundance Green
+Function</h2>
+<h4 id="theorem-0g">Theorem 0G.</h4>
+<p>Let the background anomaly density obey</p>
+<p><span class="math display">\[\begin{equation}
+  \rho_A&#39; + 3\mathcal H\rho_A
+  = -a\Gamma_{\mathrm{rec}}(\rho_A-\rho_{A,\mathrm{eq}}).
+\end{equation}\]</span></p>
+<p>Define the comoving densities</p>
+<p><span class="math display">\[\begin{equation}
+  R_A=a^3\rho_A,
+  \qquad
+  R_{A,\mathrm{eq}}=a^3\rho_{A,\mathrm{eq}}.
+\end{equation}\]</span></p>
+<p>Then</p>
+<p><span class="math display">\[\begin{equation}
+  R_A(\eta)=
+  W(\eta,\eta_i)R_A(\eta_i)
+  +\int_{\eta_i}^{\eta}\mathrm{d}\eta&#39;\,
+    W(\eta,\eta&#39;)a(\eta&#39;)\Gamma_{\mathrm{rec}}(\eta&#39;)
+    R_{A,\mathrm{eq}}(\eta&#39;),
+\end{equation}\]</span></p>
+<p>where</p>
+<p><span class="math display">\[\begin{equation}
+  W(\eta,\eta&#39;)
+  =
+  \exp\!\left[
+    -\int_{\eta&#39;}^{\eta}\mathrm{d}\tilde\eta\,
+      a(\tilde\eta)\Gamma_{\mathrm{rec}}(\tilde\eta)
+  \right].
+\end{equation}\]</span></p>
+<h4 id="proof-6">Proof.</h4>
+<p>Multiplying the background equation by <span
+class="math inline">\(a^3\)</span> gives</p>
+<p><span class="math display">\[\begin{equation}
+  R_A&#39;
+  =
+  -a\Gamma_{\mathrm{rec}}(R_A-R_{A,\mathrm{eq}}).
+\end{equation}\]</span></p>
+<p>This is a first-order linear equation. Multiplication by the
+integrating factor</p>
+<p><span class="math display">\[\begin{equation}
+  \exp\!\left[
+    \int_{\eta_i}^{\eta}\mathrm{d}\eta&#39;\,
+      a(\eta&#39;)\Gamma_{\mathrm{rec}}(\eta&#39;)
+  \right]
+\end{equation}\]</span></p>
+<p>and integration gives the stated expression. <span
+class="math inline">\(\square\)</span></p>
+<p>The theorem shows exactly where abundance information enters: the
+initial comoving anomaly load, the equilibrium source, and the repair
+rate. These are OPH microphysical outputs, not SPARC parameters.</p>
+<h2 id="linear-relaxation-transfer">Linear Relaxation Transfer</h2>
+<h4 id="theorem-0h">Theorem 0H.</h4>
+<p>For fixed <span class="math inline">\(k\)</span>, assume the no-slip
+anomaly perturbation equation</p>
+<p><span class="math display">\[\begin{equation}
+  \delta_A&#39;
+    =-\theta_A+3\Phi&#39;
+      -a\Gamma_{\mathrm{rec}}q_A
+       (\delta_A-B_A\delta_b).
+\end{equation}\]</span></p>
+<p>Define</p>
+<p><span class="math display">\[\begin{equation}
+  \Xi_A=a\Gamma_{\mathrm{rec}}q_A.
+\end{equation}\]</span></p>
+<p>Then</p>
+<p><span class="math display">\[\begin{equation}
+\begin{aligned}
+  \delta_A(\eta,k)
+  &amp;=W_A(\eta,\eta_i)\delta_A(\eta_i,k)\\
+  &amp;\quad
+  +\int_{\eta_i}^{\eta}\mathrm{d}\eta&#39;\,
+    W_A(\eta,\eta&#39;)
+    \left[
+      -\theta_A+3\Phi&#39;
+      +\Xi_A B_A\delta_b
+    \right]_{\eta&#39;,k},
+\end{aligned}
+\end{equation}\]</span></p>
+<p>with</p>
+<p><span class="math display">\[\begin{equation}
+  W_A(\eta,\eta&#39;)
+  =
+  \exp\!\left[
+    -\int_{\eta&#39;}^{\eta}\mathrm{d}\tilde\eta\,\Xi_A(\tilde\eta,k)
+  \right].
+\end{equation}\]</span></p>
+<h4 id="proof-7">Proof.</h4>
+<p>Move the damping term to the left:</p>
+<p><span class="math display">\[\begin{equation}
+  \delta_A&#39; + \Xi_A\delta_A
+  =
+  -\theta_A+3\Phi&#39; + \Xi_A B_A\delta_b.
+\end{equation}\]</span></p>
+<p>The integrating-factor solution is the displayed expression. <span
+class="math inline">\(\square\)</span></p>
+<p>This formula makes the two useful limits explicit. If <span
+class="math inline">\(\Xi_A/\mathcal H\ll1\)</span>, the anomaly evolves
+like pressureless free-falling matter. If <span
+class="math inline">\(\Xi_A/\mathcal H\gg1\)</span>, it tracks the OPH
+equilibrium source up to derivative corrections. Cluster offsets and
+settled galaxies require the same relaxation operator to sit between
+those limits.</p>
+<h2 id="static-to-linear-separation">Static-To-Linear Separation</h2>
+<h4 id="theorem-0i">Theorem 0I.</h4>
+<p>The nonlinear static RAR law</p>
+<p><span class="math display">\[\begin{equation}
+  g_{\mathrm{obs}}
+  =
+  \frac{g_b}{1-\exp[-\lambda_{\mathrm{collar}}\sqrt{g_b/a_{0,\mathrm{OPH}}}]}
+\end{equation}\]</span></p>
+<p>does not define the FLRW anomaly abundance or the linear CMB kernel
+by itself.</p>
+<h4 id="proof-8">Proof.</h4>
+<p>The RAR law is written for a static weak-field acceleration vector
+sourced by a resolved baryonic inhomogeneity. An exactly homogeneous
+FLRW background has no preferred spatial acceleration vector. Its scalar
+data are background densities and perturbation kernels, with no radial
+acceleration profile. In addition, the RAR map contains <span
+class="math inline">\(\sqrt{g_b}\)</span>, so its first derivative is
+singular at <span class="math inline">\(g_b=0\)</span> if treated as a
+homogeneous-background Taylor series. Therefore the static law cannot be
+linearized into CMB equations without an OPH parent functional. The
+parent functional must emit <span
+class="math inline">\(\rho_A(a)\)</span> and <span
+class="math inline">\(B_A(k,a)\)</span>. <span
+class="math inline">\(\square\)</span></p>
+<h2 id="parent-collar-functional">Parent Collar Functional</h2>
+<h4 id="theorem-target-0j">Theorem target 0J.</h4>
+<p>Let <span class="math inline">\(\mathcal C_x(a)\)</span> be the
+finite collar family contributing to a coarse FLRW cell <span
+class="math inline">\(x\)</span> at scale factor <span
+class="math inline">\(a\)</span>. Assume this finite-collar state
+selection has a regular FLRW limit. Let <span
+class="math inline">\(\omega[\rho_b]\)</span> be the OPH collar state
+selected by the baryonic source, and let</p>
+<p><span class="math display">\[\begin{equation}
+  R_C[\omega]=I_\omega(A:D|B).
+\end{equation}\]</span></p>
+<p>Define</p>
+<p><span class="math display">\[\begin{equation}
+  \rho_{A,\mathrm{eq}}(x,a)c^2
+  =
+  \frac{15}{8\pi^2\ell(a)^4}
+  \int_{\mathcal C_x(a)}\mathrm{d}\mu_C\,
+  R_C[\omega[\rho_b]].
+  \label{eq:parentcollar}
+\end{equation}\]</span></p>
+<p>Then
+<a href="#eq:parentcollar" data-reference-type="eqref" data-reference="eq:parentcollar">[eq:parentcollar]</a>
+is a scalar parent collar functional that emits a background equilibrium
+source and a linear kernel:</p>
+<p><span class="math display">\[\begin{equation}
+  \bar\rho_{A,\mathrm{eq}}(a)=
+  \rho_{A,\mathrm{eq}}[\bar\rho_b](a),
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation}
+  K_A^{(\rho)}(k,a)=
+  \widehat{
+  \left.
+  \frac{\delta\rho_{A,\mathrm{eq}}(x,a)}
+       {\delta\rho_b(x&#39;,a)}
+  \right|_{\bar\rho_b}
+  }(k),
+  \qquad
+  B_A(k,a)=\frac{\rho_b(a)}{\rho_A(a)}K_A^{(\rho)}(k,a).
+\end{equation}\]</span></p>
+<h4 id="conditional-argument-6">Conditional argument.</h4>
+<p>The collar measure, the conditional mutual information, and the
+selected collar state are quotient-local scalar data. The integral is
+therefore a scalar density on the coarse FLRW cell. Evaluating the
+functional on a homogeneous baryonic density gives the background
+equilibrium source. Taking the first functional derivative around that
+homogeneous state gives a translation-invariant and rotation-invariant
+linear response kernel. Its Fourier transform is <span
+class="math inline">\(K_A^{(\rho)}(k,a)\)</span>, and division by the
+background density gives <span class="math inline">\(B_A(k,a)\)</span>.
+<span class="math inline">\(\square\)</span></p>
+<p>The finite-collar evaluation of
+<a href="#eq:parentcollar" data-reference-type="eqref" data-reference="eq:parentcollar">[eq:parentcollar]</a>
+is the mathematical target for replacing a fitted dark-matter
+abundance.</p>
+<h4 id="proof-obligation-5">Proof obligation.</h4>
+<p>Evaluate the collar measure and selected state from finite OPH
+screen/collar data in the homogeneous, perturbative, galaxy, and cluster
+regimes.</p>
+<h2 id="finite-repair-matrix">Finite Repair Matrix</h2>
+<h4 id="theorem-0k">Theorem 0K.</h4>
+<p>Let <span class="math inline">\(\mathsf S\)</span> be the finite
+packet-state space declared by one fixed-cutoff overlap interface. Let
+<span class="math inline">\(\pi_{\mathrm{eq}}(s|\rho_b)\)</span> be the
+equilibrium packet distribution emitted by the parent collar functional.
+Let <span class="math inline">\(q(s,s&#39;)\)</span> be an
+inverse-closed local proposal rule generated by the declared repair
+menu, with <span class="math inline">\(q(s,s&#39;)&gt;0\)</span> iff
+<span class="math inline">\(q(s&#39;,s)&gt;0\)</span>. Define, for <span
+class="math inline">\(s\ne s&#39;\)</span>,</p>
+<p><span class="math display">\[\begin{equation}
+  K(s,s&#39;)
+  =
+  q(s,s&#39;)
+  \min\!\left(
+    1,
+    \frac{\pi_{\mathrm{eq}}(s&#39;|\rho_b)q(s&#39;,s)}
+         {\pi_{\mathrm{eq}}(s|\rho_b)q(s,s&#39;)}
+  \right),
+\end{equation}\]</span></p>
+<p>and</p>
+<p><span class="math display">\[\begin{equation}
+  K(s,s)=1-\sum_{s&#39;\ne s}K(s,s&#39;).
+\end{equation}\]</span></p>
+<p>Then <span class="math inline">\(K\)</span> is a finite stochastic
+repair transition matrix with stationary distribution <span
+class="math inline">\(\pi_{\mathrm{eq}}\)</span>. If the proposal graph
+is connected and some rejection or hold probability is nonzero, <span
+class="math inline">\(K\)</span> is irreducible and aperiodic.</p>
+<h4 id="proof-9">Proof.</h4>
+<p>Each row sums to one by construction, so <span
+class="math inline">\(K\)</span> is stochastic. For <span
+class="math inline">\(s\ne s&#39;\)</span>, inverse-closed proposals
+make both directions available. Hence</p>
+<p><span class="math display">\[\begin{equation}
+  \pi_{\mathrm{eq}}(s)K(s,s&#39;)
+  =
+  \min\!\left(
+    \pi_{\mathrm{eq}}(s)q(s,s&#39;),
+    \pi_{\mathrm{eq}}(s&#39;)q(s&#39;,s)
+  \right)
+  =
+  \pi_{\mathrm{eq}}(s&#39;)K(s&#39;,s).
+\end{equation}\]</span></p>
+<p>Detailed balance proves stationarity. Connected proposal support
+gives irreducibility, and a nonzero hold probability gives aperiodicity.
+<span class="math inline">\(\square\)</span></p>
+<p>This construction declares <span class="math inline">\(K\)</span>
+from OPH data: packet states, local proposals, and the parent
+equilibrium distribution.</p>
+<h4 id="scalar-load-diagnostic">Scalar-load diagnostic.</h4>
+<p>The executable packet diagnostic takes</p>
+<p><span class="math display">\[\mathsf S=\{0,1,\ldots,40\},
+  \qquad
+  \pi_{\mathrm{eq}}(n)=
+  \mathrm{Pois}\!\left(n;5.363470441\right)\]</span></p>
+<p>with truncation at <span class="math inline">\(40\)</span>,
+nearest-neighbor inverse-closed proposals, and hold probability <span
+class="math inline">\(0.25\)</span>. The resulting matrix has row-sum
+error <span class="math inline">\(1.110\times10^{-16}\)</span>,
+detailed-balance error <span
+class="math inline">\(6.939\times10^{-18}\)</span>, and</p>
+<p><span
+class="math display">\[\gamma_{\mathrm{rec}}=0.050717471.\]</span></p>
+<p>This diagnostic is a finite packet schema. The OPH task is to derive
+that schema, or its replacement, from the finite collar states.</p>
+<h2 id="finite-repair-graph-gap">Finite Repair-Graph Gap</h2>
+<h4 id="theorem-0l">Theorem 0L.</h4>
+<p>For a declared fixed-cutoff repair graph with transition matrix <span
+class="math inline">\(K\)</span>, the relaxation time used by clusters
+and perturbations is computable from the second eigenvalue. If <span
+class="math inline">\(K\)</span> is reversible with stationary
+distribution <span class="math inline">\(\pi_{\mathrm{eq}}\)</span>,
+then</p>
+<p><span class="math display">\[\begin{equation}
+  \gamma_{\mathrm{rec}}=1-\lambda_2(K)
+\end{equation}\]</span></p>
+<p>in discrete repair-step units, where <span
+class="math inline">\(\lambda_2\)</span> is the largest nontrivial
+eigenvalue in absolute value on the mean-zero subspace. For
+continuous-time generator <span class="math inline">\(L=K-\mathbf
+1\)</span>, the gap is the smallest positive eigenvalue of <span
+class="math inline">\(-L\)</span>.</p>
+<h4 id="proof-10">Proof.</h4>
+<p>Reversibility makes <span class="math inline">\(K\)</span>
+self-adjoint in <span
+class="math inline">\(L^2(\pi_{\mathrm{eq}})\)</span>. The stationary
+vector has eigenvalue one. Every mean-zero mode decomposes into
+eigenvectors and decays by its eigenvalue per repair step. The slowest
+decaying nonstationary mode is therefore the largest nontrivial
+eigenvalue, giving <span
+class="math inline">\(\gamma_{\mathrm{rec}}=1-\lambda_2(K)\)</span>. The
+continuous-time statement follows by exponentiating the generator. <span
+class="math inline">\(\square\)</span></p>
+<p>This is an exact finite-matrix target for the repair/commit
+microphysics. A cluster timescale is a prediction only after this matrix
+or its OPH state functional is supplied.</p>
+<h2 id="jacobi-repair-clock">Jacobi Repair Clock</h2>
+<h4 id="theorem-target-0m">Theorem target 0M.</h4>
+<p>Assume repair timing is set by the overlap-visible Jacobi mismatch
+rate of transported information-defect records. Let <span
+class="math inline">\(E_{ij}=C_{0i0j}\)</span> be the electric Weyl
+tensor in the local free-fall frame, equivalently the trace-free
+Newtonian tidal tensor in the weak-field limit. Homogeneous FLRW Ricci
+focusing is excluded from this local cluster-offset clock. The scalar
+repair rate is</p>
+<p><span class="math display">\[\begin{equation}
+  \Gamma_J
+  =
+  \left(\frac{E_{ij}E^{ij}}{6}\right)^{1/4}.
+\end{equation}\]</span></p>
+<p>For a Newtonian point source this gives</p>
+<p><span class="math display">\[\begin{equation}
+  \Gamma_J=\sqrt{\frac{GM}{r^3}},
+  \qquad
+  \tau_J=\sqrt{\frac{r^3}{GM}}.
+\end{equation}\]</span></p>
+<h4 id="explicit-premise-4">Explicit premise.</h4>
+<p>The repair-cycle clock is controlled by overlap-visible
+geodesic-deviation mismatch of transported information-defect
+records.</p>
+<h4 id="conditional-argument-7">Conditional argument.</h4>
+<p>The relative acceleration of neighboring transported records is
+controlled by the Jacobi operator. The local cluster-offset part is the
+trace-free Weyl electric tensor <span
+class="math inline">\(E_{ij}\)</span>; the homogeneous FLRW Ricci term
+changes the background expansion and is excluded from the local offset
+between collisional gas and transported record stress. A scalar clock
+made from <span class="math inline">\(E_{ij}\)</span>, with no chosen
+direction and no extra dimensional constant, must be a power of <span
+class="math inline">\(E_{ij}E^{ij}\)</span>. The fourth root has units
+of inverse time. For a point Newtonian source the eigenvalues of <span
+class="math inline">\(E_{ij}\)</span> are <span
+class="math inline">\(-2GM/r^3,GM/r^3,GM/r^3\)</span> up to sign
+convention, hence <span
+class="math inline">\(E_{ij}E^{ij}=6(GM/r^3)^2\)</span>. The
+normalization in the theorem makes the point-source result exact. <span
+class="math inline">\(\square\)</span></p>
+<h4 id="proof-obligation-6">Proof obligation.</h4>
+<p>Derive from OPH packet microphysics that the commit clock is the
+overlap-visible Weyl-Jacobi mismatch clock, while pixel, de Sitter,
+entropy-production, local-acceleration, and Ricci-curvature clocks are
+excluded. The self-consistent prediction evaluates <span
+class="math inline">\(E_{ij}\)</span> from the total weak-field
+potential determined by baryons plus information-defect stress.</p>
+<h4 id="failure-consequence-5">Failure consequence.</h4>
+<p>Without that derivation, <span
+class="math inline">\(\Gamma_J\)</span> is a no-fit dynamic diagnostic
+rather than a repair-clock theorem.</p>
+<h4 id="static-clock-boundary">Static-clock boundary.</h4>
+<p>The static equilibrium equation contains <span
+class="math inline">\(\rho_{A,\mathrm{eq}}\)</span> but no relaxation
+rate. Replacing <span
+class="math inline">\(\Gamma_{\mathrm{rec}}\)</span> by any positive
+function leaves the same settled solution. The Jacobi clock is therefore
+a dynamic OPH premise and has no theorem status inside the static RAR
+law.</p>
+<h2 id="homogeneous-anomaly-state-selection">Homogeneous Anomaly State
+Selection</h2>
+<h4 id="theorem-target-0n">Theorem target 0N.</h4>
+<p>Under flat capacity-saturated FLRW state selection, the homogeneous
+anomaly abundance is</p>
+<p><span class="math display">\[\begin{equation}
+  \Omega_{A0}
+  =
+  1-\Omega_{\Lambda,\mathrm{OPH}}
+   -\Omega_{b0}-\Omega_{\nu0}-\Omega_{r0},
+  \qquad
+  \Omega_{\Lambda,\mathrm{OPH}}
+  =
+  \left(\frac{H_{\mathrm{dS}}}{H_0}\right)^2.
+\end{equation}\]</span></p>
+<p>If the homogeneous anomaly charge is transported as dust with no
+homogeneous repair exchange, then</p>
+<p><span class="math display">\[\begin{equation}
+  \rho_A(a)=\rho_{A0}a^{-3}.
+\end{equation}\]</span></p>
+<h4 id="explicit-premise-5">Explicit premise.</h4>
+<p>The homogeneous state is flat, capacity-saturated, and selected by a
+residual Friedmann constraint after <span
+class="math inline">\(H_0\)</span>, baryons, neutrinos, and radiation
+are supplied.</p>
+<h4 id="conditional-argument-8">Conditional argument.</h4>
+<p>The flat Friedmann equation at <span
+class="math inline">\(a=1\)</span> is</p>
+<p><span class="math display">\[\begin{equation}
+  1
+  =
+  \Omega_{\Lambda,\mathrm{OPH}}
+  +\Omega_{b0}+\Omega_{\nu0}+\Omega_{r0}+\Omega_{A0}.
+\end{equation}\]</span></p>
+<p>Solving for <span class="math inline">\(\Omega_{A0}\)</span> gives
+the displayed residual. Pressureless homogeneous transport with zero
+homogeneous exchange obeys</p>
+<p><span class="math display">\[\rho_A&#39;+3\mathcal
+H\rho_A=0,\]</span></p>
+<p>whose solution is <span
+class="math inline">\(\rho_A(a)=\rho_{A0}a^{-3}\)</span>. <span
+class="math inline">\(\square\)</span></p>
+<h4 id="proof-obligation-7">Proof obligation.</h4>
+<p>Derive the conserved homogeneous information-defect charge <span
+class="math inline">\(Q_A\)</span> from OPH screen state data, or
+declare it as cosmological state data.</p>
+<h4 id="failure-consequence-6">Failure consequence.</h4>
+<p>The CMB dark abundance is conditional if <span
+class="math inline">\(Q_A\)</span> is not selected by OPH
+microphysics.</p>
+<h4 id="capacity-boundary">Capacity boundary.</h4>
+<p>The screen capacity fixes the de Sitter scale. After <span
+class="math inline">\(H_0\)</span> is supplied, it fixes <span
+class="math inline">\(\Omega_{\Lambda,\mathrm{OPH}}\)</span>. It does
+not by itself fix the baryon density, the neutrino density, the
+radiation density, or a conserved homogeneous anomaly charge. A
+standalone OPH cosmology needs a theorem of the form</p>
+<p><span class="math display">\[Q_A=F_{\mathrm{OPH}}(\hbox{screen
+capacity},P,\hbox{screen state data})\]</span></p>
+<p>or an explicitly declared state-selection premise such as
+<a href="#eq:flatresidual" data-reference-type="eqref" data-reference="eq:flatresidual">[eq:flatresidual]</a>.</p>
+<h1 id="falsifiers">Falsifiers</h1>
+<p>The OPH dark branch fails if any of the following happens:</p>
+<ol type="1">
+<li><p>OPH collar/cut microphysics cannot derive the activation law
+<span
+class="math inline">\(p(x)=1-\exp[-\lambda_{\mathrm{collar}}\sqrt{x}]\)</span>,
+or a replacement law that passes the same galaxy tests.</p></li>
+<li><p>The carried galaxy defect is not positive or not
+attractive.</p></li>
+<li><p>The settled anomaly stress cannot give <span
+class="math inline">\(\Phi=\Psi\)</span>.</p></li>
+<li><p>A full SPARC likelihood rejects both the unit branch and every
+independently derived coefficient branch under the same nuisance
+treatment used for comparison models.</p></li>
+<li><p>Cluster lensing offsets require a relaxation law incompatible
+with old settled-galaxy RAR.</p></li>
+<li><p>CMB peaks, CMB lensing, BAO, weak lensing, or growth reject every
+<span class="math inline">\(\Gamma_{\mathrm{rec}}\)</span>, <span
+class="math inline">\(B_A(k,a)\)</span>, and <span
+class="math inline">\(\rho_A(a)\)</span> closure compatible with the
+galaxy branch.</p></li>
+</ol>
+<h1 id="reproducibility">Reproducibility</h1>
+<p>The numerical tables were produced in the OPH cosmology workspace
+by:</p>
+<pre><code>python3 cosmology/scripts/dark_sector_measurement_ledger.py
+python3 cosmology/scripts/dark_empirical_scorecard.py --quiet
+python3 cosmology/scripts/sparc_systematic_likelihood.py
+python3 cosmology/scripts/dark_perturbation_parameters.py
+python3 cosmology/scripts/dark_repair_transition_matrix.py
+python3 cosmology/scripts/dark_cluster_boltzmann_prelikelihood.py
+python3 cosmology/scripts/dark_jacobi_repair_clock.py
+python3 cosmology/scripts/dark_homogeneous_state_selection.py
+python3 cosmology/scripts/dark_parent_collar_grid.py --diagnostic-scalar-load \
+  --mu-eq 5.363470440729118 \
+  --out cosmology/outputs/dark_parent_flat_capacity_state_selection.json
+python3 cosmology/scripts/dark_cmb_bao_growth_s8_likelihood.py \
+  --parent-grid cosmology/outputs/dark_parent_flat_capacity_state_selection.json
+python3 cosmology/scripts/camb_fixed_neutrino_compare.py</code></pre>
+<p>The SPARC data files used are public measurement tables from the
+SPARC page .</p>
+<div class="thebibliography">
+
+<p>99</p>
+<p>B. Mueller, A. Osika, K. Xue, and P. Nguyen, <em>Recovering
+Relativity and the Standard Model from Observer Overlap
+Consistency</em>, OPH compact paper, release r1411, May 3, 2026. <a
+href="https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/recovering_relativity_and_standard_model_structure_from_observer_overlap_consistency_compact.pdf">https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/recovering_relativity_and_standard_model_structure_from_observer_overlap_consistency_compact.pdf</a></p>
+<p>B. Mueller, A. Osika, K. Xue, P. Nguyen, M. Poneder, and K. A.
+Anirudha, <em>Observers Are All You Need</em>, OPH synthesis paper,
+release r1411, May 3, 2026. <a
+href="https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/observers_are_all_you_need.pdf">https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/observers_are_all_you_need.pdf</a></p>
+<p>B. Mueller and K. Xue, <em>Federated Echosahedral Screen
+Microphysics: Patch Hardware, Records, and Observer Synchronization in
+OPH</em>, OPH microphysics paper. <a
+href="https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/screen_microphysics_and_observer_synchronization.pdf">https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/screen_microphysics_and_observer_synchronization.pdf</a></p>
+<p>B. Mueller, A. Osika, K. Xue, and M. Poneder, <em>Deriving the
+Particle Zoo from Observer Consistency</em>, OPH particle paper, release
+r1411, May 3, 2026. <a
+href="https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/deriving_the_particle_zoo_from_observer_consistency.pdf">https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/deriving_the_particle_zoo_from_observer_consistency.pdf</a></p>
+<p>Planck Collaboration, <em>Planck 2018 results. VI. Cosmological
+parameters</em>, arXiv:1807.06209. <a
+href="https://arxiv.org/abs/1807.06209">https://arxiv.org/abs/1807.06209</a></p>
+<p>F. Lelli, S. S. McGaugh, and J. M. Schombert, <em>SPARC: Mass Models
+for 175 Disk Galaxies with Spitzer Photometry and Accurate Rotation
+Curves</em>, Astron. J. 152, 157, 2016, arXiv:1606.09251. <a
+href="https://arxiv.org/abs/1606.09251">https://arxiv.org/abs/1606.09251</a></p>
+<p>F. Lelli, S. S. McGaugh, and J. M. Schombert, SPARC public data page.
+<a
+href="https://astroweb.cwru.edu/SPARC/">https://astroweb.cwru.edu/SPARC/</a></p>
+<p>S. S. McGaugh, F. Lelli, and J. M. Schombert, <em>The Radial
+Acceleration Relation in Rotationally Supported Galaxies</em>, Phys.
+Rev. Lett. 117, 201101, 2016, arXiv:1609.05917. <a
+href="https://arxiv.org/abs/1609.05917">https://arxiv.org/abs/1609.05917</a></p>
+<p>P. Li, F. Lelli, S. S. McGaugh, and J. M. Schombert, <em>Fitting the
+radial acceleration relation to individual SPARC galaxies</em>, Astron.
+Astrophys. 615, A3, 2018, arXiv:1803.00022. <a
+href="https://arxiv.org/abs/1803.00022">https://arxiv.org/abs/1803.00022</a></p>
+<p>M. Milgrom, <em>A modification of the Newtonian dynamics as a
+possible alternative to the hidden mass hypothesis</em>, Astrophys. J.
+270, 365, 1983. <a
+href="https://ui.adsabs.harvard.edu/abs/1983ApJ...270..365M/abstract">https://ui.adsabs.harvard.edu/abs/1983ApJ...270..365M/abstract</a></p>
+<p>J. D. Bekenstein, <em>Relativistic gravitation theory for the
+modified Newtonian dynamics paradigm</em>, Phys. Rev. D 70, 083509,
+2004. <a
+href="https://doi.org/10.1103/PhysRevD.70.083509">https://doi.org/10.1103/PhysRevD.70.083509</a></p>
+<p>D. Clowe, M. Bradac, A. H. Gonzalez, M. Markevitch, S. W. Randall, C.
+Jones, and D. Zaritsky, <em>A direct empirical proof of the existence of
+dark matter</em>, Astrophys. J. Lett. 648, L109, 2006,
+arXiv:astro-ph/0608407. <a
+href="https://arxiv.org/abs/astro-ph/0608407">https://arxiv.org/abs/astro-ph/0608407</a></p>
+</div>
+
+          </div>
+        </div>
+      </article>
+    </main>
+    <footer class="site-footer reveal">
+      <div>Pragma</div>
+      <div class="site-footer-links">
+        <a href="/oph/" data-track-link="footer-hub">Observer Patch Holography</a>
+        <a href="/oph/papers/" data-track-link="footer-papers">Papers</a>
+        <a href="/oph/standard-model-gravity-unification/" data-track-link="footer-smg">SM + Gravity</a>
+        <a href="/oph/theory-of-everything/" data-track-link="footer-toe">Theory of Everything</a>
+        <a href="/oph/simulation-theory/" data-track-link="footer-sim">Simulation Theory</a>
+        <a href="/oph/quantum-gravity/" data-track-link="footer-qg">Quantum Gravity</a>
+        <a href="https://oph-book.floatingpragma.io/" data-track-link="footer-book">Book</a>
+        <a href="https://challenge.floatingpragma.io/" data-track-link="footer-challenge">Challenge</a>
+      </div>
+    </footer>
+
+  </div>
+  <script src="/oph/app.js"></script>
+</body>
+</html>

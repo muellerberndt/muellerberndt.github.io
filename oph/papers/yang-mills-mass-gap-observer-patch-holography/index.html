@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Explaining the Yang-Mills Mass Gap in Observer Patch Holography | OPH Paper</title>
+  <meta name="title" content="Explaining the Yang-Mills Mass Gap in Observer Patch Holography | OPH Paper" />
+  <meta name="description" content="A branch-scoped OPH paper on the Yang-Mills mass gap, support-visible compact-gauge extraction, Euclidean consensus, repair completeness, and the exact repair gap." />
+  <meta name="keywords" content="Yang-Mills mass gap, Clay Millennium problem, quantum Yang-Mills theory, compact gauge theory, mass gap, Observer Patch Holography" />
+  <meta name="author" content="Pragma" />
+  <link rel="canonical" href="https://floatingpragma.io/oph/papers/yang-mills-mass-gap-observer-patch-holography/" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://floatingpragma.io/oph/papers/yang-mills-mass-gap-observer-patch-holography/" />
+  <meta property="og:title" content="Explaining the Yang-Mills Mass Gap in Observer Patch Holography | OPH Paper" />
+  <meta property="og:description" content="A branch-scoped OPH paper on the Yang-Mills mass gap, support-visible compact-gauge extraction, Euclidean consensus, repair completeness, and the exact repair gap." />
+  <meta property="og:image" content="https://floatingpragma.io/oph/screen.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Explaining the Yang-Mills Mass Gap in Observer Patch Holography | OPH Paper" />
+  <meta name="twitter:description" content="A branch-scoped OPH paper on the Yang-Mills mass gap, support-visible compact-gauge extraction, Euclidean consensus, repair completeness, and the exact repair gap." />
+  <meta name="twitter:image" content="https://floatingpragma.io/oph/screen.webp" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="stylesheet" href="/oph/styles.css" />
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['\\(', '\\)'], ['$', '$']], displayMath: [['\\[', '\\]']] },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Explaining the Yang-Mills Mass Gap in Observer Patch Holography",
+  "name": "Explaining the Yang-Mills Mass Gap in Observer Patch Holography",
+  "description": "A branch-scoped OPH paper on the Yang-Mills mass gap, support-visible compact-gauge extraction, Euclidean consensus, repair completeness, and the exact repair gap.",
+  "url": "https://floatingpragma.io/oph/papers/yang-mills-mass-gap-observer-patch-holography/",
+  "encoding": {
+    "@type": "MediaObject",
+    "contentUrl": "https://floatingpragma.io/oph/papers/pdf/yang_mills_gap_clay_problem.pdf",
+    "encodingFormat": "application/pdf"
+  },
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Bernhard Mueller"
+    }
+  ],
+  "isPartOf": {
+    "@type": "ResearchProject",
+    "name": "Observer Patch Holography",
+    "url": "https://floatingpragma.io/oph/"
+  },
+  "keywords": [
+    "Yang-Mills mass gap",
+    "Clay Millennium problem",
+    "quantum Yang-Mills theory",
+    "compact gauge theory",
+    "mass gap",
+    "Observer Patch Holography"
+  ],
+  "datePublished": "June 3, 2026",
+  "dateModified": "June 3, 2026",
+  "version": "r1461"
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Floating Pragma",
+      "item": "https://floatingpragma.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Observer Patch Holography",
+      "item": "https://floatingpragma.io/oph/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "OPH Papers",
+      "item": "https://floatingpragma.io/oph/papers/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Explaining the Yang-Mills Mass Gap in Observer Patch Holography",
+      "item": "https://floatingpragma.io/oph/papers/yang-mills-mass-gap-observer-patch-holography/"
+    }
+  ]
+}
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HLGH209WMG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-HLGH209WMG', { cookie_domain: 'floatingpragma.io' });
+  </script>
+</head>
+<body class="oph-page paper-page">
+  <div class="site-grid"></div>
+  <div class="page-shell">
+    <header class="site-header reveal">
+      <a class="brand" href="/oph/">
+        <span class="brand-mark">
+          <img src="/pragma-cropped.jpg" alt="Pragma" />
+        </span>
+        <span class="brand-copy">
+          <strong>Pragma</strong>
+          <span>OPH Paper</span>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="OPH navigation">
+        <a href="/oph/" data-track-link="nav-hub">Hub</a>
+        <a href="/oph/papers/" data-track-link="nav-papers">Papers</a>
+        <a href="/oph/standard-model-gravity-unification/" data-track-link="nav-smg">SM + Gravity</a>
+        <a href="/oph/theory-of-everything/" data-track-link="nav-toe">Theory of Everything</a>
+        <a href="https://oph-lab.floatingpragma.io/" data-track-link="nav-lab">Lab</a>
+        <a href="https://challenge.floatingpragma.io/" data-track-link="nav-challenge">Challenge</a>
+      </nav>
+    </header>
+
+    <main>
+      <article class="paper-reader reveal">
+        <header class="paper-reader-header">
+          <div class="eyebrow">Mathematical physics</div>
+          <h1>Explaining the Yang-Mills Mass Gap in Observer Patch Holography</h1>
+          <p class="article-lead">A branch-scoped OPH paper on the Yang-Mills mass gap, support-visible compact-gauge extraction, Euclidean consensus, repair completeness, and the exact repair gap.</p>
+          <div class="paper-meta-line">
+            <span>r1461</span>
+            <span>June 3, 2026</span>
+            <span>extra papers</span>
+          </div>
+          <div class="paper-author-line">Authors: Bernhard Mueller</div>
+          <div class="article-meta">
+              <span class="meta-chip">Yang-Mills mass gap</span>
+              <span class="meta-chip">Clay Millennium problem</span>
+              <span class="meta-chip">quantum Yang-Mills theory</span>
+              <span class="meta-chip">compact gauge theory</span>
+              <span class="meta-chip">mass gap</span>
+              <span class="meta-chip">Observer Patch Holography</span>
+          </div>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="/oph/papers/pdf/yang_mills_gap_clay_problem.pdf" target="_blank" rel="noopener noreferrer" data-track-link="paper-pdf-yang_mills_gap_clay_problem">Download PDF</a>
+            <a class="btn btn-secondary" href="/oph/papers/" data-track-link="paper-index">All OPH papers</a>
+            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r1461" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
+          </div>
+        </header>
+        <div class="paper-reader-grid">
+          <aside class="paper-reader-side" aria-label="Paper navigation">
+            <div class="side-card">
+              <strong>Formal artifact</strong>
+              <p>The PDF is mirrored on this site and remains the formal release artifact for theorem status and branch boundaries.</p>
+              <a href="/oph/papers/pdf/yang_mills_gap_clay_problem.pdf" target="_blank" rel="noopener noreferrer">Open first-party PDF</a>
+            </div>
+            <div class="side-card">
+              <strong>Sections</strong>
+              <nav class="paper-toc" aria-label="Paper sections"><a href="#claim-boundary">Claim Boundary</a>
+<a href="#position-in-the-oph-paper-stack">Position in the OPH Paper Stack</a>
+<a href="#the-clay-target">The Clay Target</a>
+<a href="#standing-setup">Standing Setup</a>
+<a href="#imported-4d-euclidean-yangmills-form">Imported 4D Euclidean Yang–Mills Form</a>
+<a href="#fixed-cutoff-repair-equals-projection">Fixed-Cutoff Repair Equals Projection</a>
+<a href="#exact-euclidean-consensus-law">Exact Euclidean-Consensus Law</a>
+<a href="#continuum-extraction">Continuum Extraction</a>
+<a href="#main-theorem">Main Theorem</a>
+<a href="#exact-gap-accounting">Exact Gap Accounting</a>
+<a href="#relation-to-the-2d-yangmills-bridge">Relation to the 2D Yang–Mills Bridge</a>
+<a href="#clay-deliverables-checklist">Clay Deliverables Checklist</a></nav>
+            </div>
+          </aside>
+          <div class="paper-body">
+<div class="center">
+
+<p><strong>Paper release:</strong> r1461 <strong>Released:</strong> June
+3, 2026</p>
+</div>
+
+<h1 id="claim-boundary">Claim Boundary</h1>
+<p>This paper proves the Yang–Mills mass-gap theorem on the sharpened
+support-visible exact Euclidean-consensus branch of OPH. The branch data
+are compact-gauge reconstruction, four-dimensional Euclidean scaling,
+reflection positivity, the ordinary zero-obstruction vacuum sector,
+exact local repair as conditional expectation, bounded-color active
+collar covers, repair completeness, and support-visible compact-gauge
+continuum extraction.</p>
+<p>More precisely, the imported four-dimensional form theorem uses
+compact-gauge reconstruction, the four-dimensional scaling chart, the
+reflection-positive ordinary vacuum sector, the absence of additional
+gauge-invariant relevant dimension-four pure-gauge operators beyond the
+positive quadratic curvature invariant, and the support-visible cylinder
+extraction. The later mass-gap step adds exact local repair,
+bounded-color active collars, and repair completeness.</p>
+<p>Acceptance as a Clay-admissible solution depends on accepting the
+upgraded OPH compact-gauge support-visible extraction and Euclidean
+Yang–Mills form theorems as the four-dimensional axiomatic Yang–Mills
+construction required by the Clay/Jaffe–Witten statement. The proof
+below then isolates the mass-gap step and identifies the gap
+exactly:</p>
+<p><span
+class="math display">\[\Delta_{\mathrm{YM}}=\Delta_{\mathrm{rep}}.\]</span></p>
+<p>The two-dimensional heat-kernel identity in the wider OPH stack
+remains a separate normalization and worldsheet-effective bridge; it is
+not the mass-gap proof.</p>
+<h1 id="position-in-the-oph-paper-stack">Position in the OPH Paper
+Stack</h1>
+<p>This paper is a focused companion to the OPH paper stack. The broad
+reconstruction program is summarized in <em>Observers Are All You
+Need</em> . The compact technical core is <em>Recovering Relativity and
+the Standard Model from Observer Overlap Consistency</em> , which
+carries the support-visible compact-gauge repair-gap theorem inside the
+compact paper itself. The particle branch is separate . The finite
+repair and quotient-normal-form machinery comes from <em>Reality as a
+Consensus Protocol</em> . The regulated screen, record, and edge
+heat-kernel architecture is developed in <em>Federated Echosahedral
+Screen Microphysics</em> .</p>
+<p>The edge-sector theorem in the stack relates OPH heat-kernel weights
+to a two-dimensional Yang–Mills partition identity. That identity fixes
+normalization and the controlled worldsheet effective bridge. The
+four-dimensional mass-gap argument uses repair dynamics: exact local
+repair becomes a positive Euclidean relaxation generator, and the
+uniform repair gap is transported to the compact-gauge Hamiltonian.</p>
+<p>The Clay-facing import is the compact paper’s D7 Yang–Mills theorem
+surface: the compact-gauge reconstruction ladder, the four-dimensional
+Euclidean Yang–Mills form theorem, the coherent compact-gauge extraction
+proposition, the support-visible Osterwalder–Schrader reconstruction
+theorem, the realized nontriviality step, and the exact repair-gap
+theorem. This note isolates that branch theorem surface; it does not
+enlarge it.</p>
+<h1 id="the-clay-target">The Clay Target</h1>
+<p>The Clay Mathematics Institute describes the Yang–Mills mass gap as
+the missing mathematical foundation behind the quantum theory used for
+nonabelian gauge forces . Jaffe and Witten state the problem as follows:
+for every compact simple gauge group <span
+class="math inline">\(G\)</span>, construct a nontrivial quantum
+Yang–Mills theory on <span class="math inline">\(\mathbb R^4\)</span>
+satisfying axiomatic properties at least as strong as the stated
+Wightman or Osterwalder–Schrader references and prove a mass gap <span
+class="math inline">\(\Delta&gt;0\)</span> .</p>
+<p>The OPH proof below addresses that target through a different
+variable. The starting data are finite observer patches, compact-gauge
+visible quotient data, and exact repair collars. The nonzero energy
+threshold is the cost of leaving the repair-fixed vacuum sector.</p>
+<h1 id="standing-setup">Standing Setup</h1>
+<p>Fix a compact simple gauge group <span
+class="math inline">\(G\)</span> carried by an OPH compact-gauge
+zero-obstruction vacuum branch, realized at fixed cutoff by the declared
+compact-gauge patch-carrier architecture. The architecture supplies
+finite local Hilbert spaces, exact local constraints, patch and overlap
+algebras, overlap sector projectors, record layers, and local repair
+interfaces.</p>
+<p>Let <span class="math inline">\(r\)</span> range over a cofinal
+refinement family of finite regulators. For each <span
+class="math inline">\(r\)</span>, let</p>
+<p><span class="math display">\[(\mathcal H_r,\Omega_r,H_r),
+\qquad
+T_r(t)=e^{-tH_r},\]</span></p>
+<p>be the physical Euclidean Hilbert space, vacuum, Hamiltonian, and
+transfer semigroup.</p>
+<p>Let <span class="math inline">\(X_r\)</span> be the support-visible
+compact-gauge quotient state space, let <span
+class="math inline">\(\pi_r\)</span> be the vacuum stationary measure,
+and set</p>
+<p><span class="math display">\[K_r:=L^2(X_r,\pi_r).\]</span></p>
+<p>Let <span class="math inline">\(\mathcal C_r\)</span> be the finite
+family of active repair collars. For each active collar <span
+class="math inline">\(C\in\mathcal C_r\)</span>, let</p>
+<p><span class="math display">\[\rho_C:X_r\to Y_C\]</span></p>
+<p>be the complete repaired visible datum, and let</p>
+<p><span class="math display">\[E_C:K_r\to K_r\]</span></p>
+<p>be conditional expectation onto the <span
+class="math inline">\(\rho_C\)</span>-measurable functions.</p>
+<p>The proof stays on the ordinary or central zero-obstruction vacuum
+branch. The genuinely noncentral higher-gauge branch is a different
+fixed-cutoff sector in the OPH stack and is not used for the ordinary
+compact-simple <span class="math inline">\(G\)</span> theorem below.</p>
+<div class="longtable">
+
+<p>@L0.24L0.68@ Notation &amp; Meaning<br />
+<span class="math inline">\(X_r,\pi_r,K_r\)</span> &amp; support-visible
+quotient state space, vacuum stationary measure, and <span
+class="math inline">\(L^2(X_r,\pi_r)\)</span>.<br />
+<span class="math inline">\(\mathcal C_r\)</span> &amp; finite active
+repair-collar family at regulator <span
+class="math inline">\(r\)</span>.<br />
+<span class="math inline">\(\rho_C\)</span> &amp; complete repaired
+visible datum on collar <span class="math inline">\(C\)</span>.<br />
+<span class="math inline">\(E_C\)</span> &amp; <span
+class="math inline">\(\pi_r\)</span>-preserving conditional expectation
+onto <span class="math inline">\(\rho_C\)</span>-measurable
+functions.<br />
+<span class="math inline">\(L_r^{\mathrm{rep}}\)</span> &amp;
+ground-state transformed Euclidean repair generator at cutoff <span
+class="math inline">\(r\)</span>.<br />
+<span class="math inline">\(P_{0,r}\)</span> &amp; projection onto
+constants in <span class="math inline">\(K_r\)</span>, corresponding to
+the physical vacuum.<br />
+<span class="math inline">\(U_r\)</span> &amp; finite-stage unitary from
+the physical Euclidean Hilbert space to the repair <span
+class="math inline">\(L^2\)</span> space.<br />
+<span class="math inline">\(K,\mathcal H,U\)</span> &amp;
+support-visible continuum repair Hilbert space, physical Hilbert space,
+and limiting unitary.<br />
+<span class="math inline">\(c_*\)</span> &amp; uniform active-collar
+repair-rate floor.</p>
+</div>
+
+<h1 id="imported-4d-euclidean-yangmills-form">Imported 4D Euclidean
+Yang–Mills Form</h1>
+<div id="ass:ym-branch" class="assumption">
+
+<p><strong>Assumption 1</strong> (Support-visible compact-gauge
+Yang–Mills branch). <em>The compact-gauge branch used below satisfies
+the following branch-local conditions.</em></p>
+<ol type="1">
+<li><p><em>the ordinary or central zero-obstruction compact-gauge sector
+survives refinement with compact simple structure group <span
+class="math inline">\(G\)</span>;</em></p></li>
+<li><p><em>the support-visible quotient carries a four-dimensional
+Euclidean scaling chart;</em></p></li>
+<li><p><em>the ordinary vacuum sector is reflection positive and has
+topological angle <span
+class="math inline">\(\theta=0\)</span>;</em></p></li>
+<li><p><em>the local finite-constraint MaxEnt/Gibbs family is
+gauge-invariant, Euclidean local, rotation-invariant, and
+refinement-stable;</em></p></li>
+<li><p><em>no additional gauge-invariant relevant dimension-four
+pure-gauge operator remains on this branch besides the positive
+quadratic curvature invariant;</em></p></li>
+<li><p><em>the support-visible compact-gauge cylinder family has the
+weak-<span class="math inline">\(*\)</span> / GNS continuum extraction
+stated in
+Proposition <a href="#prop:extraction" data-reference-type="ref" data-reference="prop:extraction">10</a>.</em></p></li>
+</ol>
+</div>
+
+<div id="thm:ym-form" class="theorem">
+
+<p><strong>Theorem 2</strong> (Imported OPH branch theorem:
+four-dimensional Euclidean Yang–Mills form). *Under
+Assumption <a href="#ass:ym-branch" data-reference-type="ref" data-reference="ass:ym-branch">1</a>,
+the continuum gauge-sector Euclidean action is</p>
+<p><span class="math display">\[S_E[A]=\frac{1}{4g^2}\int_{\mathbb R^4}
+\langle F_{\mu\nu},F_{\mu\nu}\rangle\,d^4x,
+\qquad
+F=dA+A\wedge A,
+\tag{YM}\]</span></p>
+<p>with compact simple structure group <span
+class="math inline">\(G\)</span>. Equivalently, the support-visible
+continuum transfer semigroup is the Euclidean Yang–Mills semigroup
+associated with the gauge-quotient cylinder measure</p>
+<p><span
+class="math display">\[d\mu_{\mathrm{YM}}(A)=Z^{-1}e^{-S_E[A]}\,D
+A/G\]</span></p>
+<p>in the OPH support-visible GNS representation.*</p>
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> This is the support-visible compact-gauge Yang–Mills
+form theorem of the compact OPH paper, where it appears as Theorem
+<code>thm:oph-4d-euclidean-yang-mills-form</code> . The proof spine is
+recalled here because it fixes the target Hamiltonian for the mass-gap
+step.</p>
+<p>The compact-gauge branch reconstructs a compact group <span
+class="math inline">\(G\)</span> from the zero-obstruction transportable
+bosonic sector category and its faithful fiber functor . At fixed
+cutoff, the declared compact-gauge patch-carrier presentation gives
+support-visible link holonomies and plaquette holonomies. In the
+refinement limit, the zero-obstruction gluing law makes infinitesimal
+rectangle holonomies multiplicative and path-local. Therefore there is a
+local connection <span class="math inline">\(A\)</span> on the
+four-dimensional scaling chart, and the infinitesimal plaquette defect
+is</p>
+<p><span class="math display">\[U_{\mu\nu}(\varepsilon,x)
+=
+\mathbf 1+\varepsilon^2F_{\mu\nu}(x)+O(\varepsilon^3),
+\qquad
+F=dA+A\wedge A.\]</span></p>
+<p>The Euclideanized MaxEnt/local-Gibbs branch gives a local
+finite-range action density built from support-visible gauge-invariant
+collar data. Gauge quotienting permits only class functions of the
+curvature and its covariant derivatives. The four-dimensional scaling
+chart, Euclidean rotation invariance, locality, and reflection
+positivity leave one relevant dimension-four positive quadratic
+invariant in the pure gauge sector:</p>
+<p><span class="math display">\[\langle
+F_{\mu\nu},F_{\mu\nu}\rangle.\]</span></p>
+<p>The possible topological density <span class="math inline">\(\langle
+F\wedge F\rangle\)</span> is reflection odd and belongs to a separate
+topological-angle sector; it is absent on the ordinary
+reflection-positive zero-obstruction vacuum branch used here. Higher
+curvature powers and covariant-derivative terms are irrelevant operators
+under the declared continuum scaling and vanish from the strict
+Yang–Mills fixed form. Normalizing the unique positive quadratic
+invariant defines the coupling <span class="math inline">\(g\)</span>
+and gives (YM).</p>
+<p>The finite-stage cylinder measures are the gauge-register /
+quantum-link Gibbs measures pushed to the support-visible quotient.
+Assumption <a href="#ass:ym-branch" data-reference-type="ref" data-reference="ass:ym-branch">1</a>
+supplies the compatible support-visible weak-<span
+class="math inline">\(*\)</span> / GNS cylinder extraction. The
+resulting Euclidean transfer semigroup is therefore the transfer
+semigroup of (YM). ◻</p>
+</div>
+
+<div class="remark">
+
+<p><em>Remark 3</em> (Why this step matters for the prize). The proof
+has two separate claims.
+Theorem <a href="#thm:ym-form" data-reference-type="ref" data-reference="thm:ym-form">2</a>
+identifies the support-visible continuum gauge sector with
+four-dimensional Euclidean Yang–Mills. The spectral argument applies to
+that Hamiltonian and proves a positive gap.</p>
+</div>
+
+<h1 id="fixed-cutoff-repair-equals-projection">Fixed-Cutoff Repair
+Equals Projection</h1>
+<div id="prop:local-repair" class="proposition">
+
+<p><strong>Proposition 4</strong> (Local exact repair equals conditional
+expectation). <em>For each active collar <span
+class="math inline">\(C\)</span>, the exact-Markov repair map on the
+support-visible quotient is the <span
+class="math inline">\(\pi_r\)</span>-preserving conditional expectation
+<span class="math inline">\(E_C\)</span>.</em></p>
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> On the exact-Markov branch, repair preserves exactly
+the repaired visible datum <span class="math inline">\(\rho_C\)</span>,
+changes only complementary invisible fiber data, and acts on the
+quotient-first physical algebra rather than on microscopic
+representatives. Let <span class="math inline">\(\Phi_C\)</span> be the
+Heisenberg repair map and let <span class="math inline">\(\mathcal
+N_C\)</span> be the repaired local fixed algebra. The repair semantics
+give</p>
+<p><span class="math display">\[\Phi_C(a)=a \quad (a\in\mathcal
+N_C),\]</span></p>
+<p><span class="math display">\[\Phi_C(\mathcal
+A^{\mathrm{sv}}_r)\subseteq\mathcal N_C,
+\qquad
+\pi_r\circ\Phi_C=\pi_r,\]</span></p>
+<p>and <span class="math inline">\(\Phi_C\)</span> is <span
+class="math inline">\(\mathcal N_C\)</span>-bimodular. Therefore, for
+<span class="math inline">\(a\in\mathcal N_C\)</span> and <span
+class="math inline">\(x\in\mathcal A^{\mathrm{sv}}_r\)</span>,</p>
+<p><span
+class="math display">\[\pi_r\!\left(a^*\Phi_C(x)\right)=\pi_r(a^*x).\]</span></p>
+<p>Since <span class="math inline">\(\Phi_C(x)\in\mathcal N_C\)</span>
+and <span class="math inline">\(\pi_r\)</span> is faithful, this
+equation uniquely characterizes <span
+class="math inline">\(\Phi_C(x)\)</span> as the orthogonal projection of
+<span class="math inline">\(x\)</span> onto <span
+class="math inline">\(\mathcal N_C\)</span> in the GNS inner product.
+That orthogonal projection is the <span
+class="math inline">\(\pi_r\)</span>-preserving conditional expectation
+<span class="math inline">\(E_C\)</span>. ◻</p>
+</div>
+
+<h1 id="exact-euclidean-consensus-law">Exact Euclidean-Consensus
+Law</h1>
+<div id="lem:fiber-symmetry" class="lemma">
+
+<p><strong>Lemma 5</strong> (Implementation hiding gives fiber
+permutation symmetry). *Fix an active collar <span
+class="math inline">\(C\)</span> and a repaired value <span
+class="math inline">\(y\in Y_C\)</span>. On the support-visible
+quotient, the hidden fiber</p>
+<p><span class="math display">\[F_C(y)=\rho_C^{-1}(y)\]</span></p>
+<p>has no remaining observable labels. Consequently the conditioned
+local MaxEnt state is uniform on <span
+class="math inline">\(F_C(y)\)</span>, and the primitive collar
+relaxation commutes with all finite permutations of <span
+class="math inline">\(F_C(y)\)</span>.*</p>
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> The quotient removes implementation labels by
+construction: two representatives with the same repaired datum <span
+class="math inline">\(y\)</span> and different hidden fiber coordinates
+define the same support-visible observable state. The MaxEnt rule
+conditioned on <span class="math inline">\(y\)</span> therefore has no
+admissible support-visible constraint that can distinguish two points of
+<span class="math inline">\(F_C(y)\)</span>. The unique
+constraint-compatible conditioned state is the uniform state on that
+finite fiber. Any primitive collar relaxation preserving the OPH
+quotient must commute with the resulting full permutation action. ◻</p>
+</div>
+
+<div id="lem:scalar-relaxation" class="lemma">
+
+<p><strong>Lemma 6</strong> (Scalar relaxation on a uniform hidden
+fiber). *Let <span class="math inline">\(F\)</span> be a finite hidden
+fiber with uniform measure, let <span class="math inline">\(E_F\)</span>
+be expectation onto constants, and let <span
+class="math inline">\(D_F\)</span> be a positive self-adjoint Markov
+relaxation generator such that</p>
+<p><span class="math display">\[\ker
+D_F=\operatorname{Ran}(E_F)\]</span></p>
+<p>and <span class="math inline">\(D_F\)</span> commutes with the full
+permutation group of <span class="math inline">\(F\)</span>. Then there
+is a scalar <span class="math inline">\(c_F&gt;0\)</span> such that</p>
+<p><span class="math display">\[D_F=c_F(I-E_F).
+```*
+
+&lt;/div&gt;
+
+&lt;div class=&quot;proof&quot;&gt;
+
+*Proof.* The permutation representation on $`L^2(F)`$ splits as
+constants plus the zero-sum subspace.
+The zero-sum subspace is irreducible for the full symmetric group when
+$`|F|\ge2`$. Schur’s lemma
+therefore makes $`D_F`$ a scalar on that subspace. Positivity and the
+kernel condition make the
+scalar strictly positive. The formula follows. ◻
+
+&lt;/div&gt;
+
+&lt;div id=&quot;thm:ec-law&quot; class=&quot;theorem&quot;&gt;
+
+**Theorem 7** (Exact Euclidean repair law). *There are positive
+constants $`c_C&gt;0`$ such that the ground-state transformed physical
+Euclidean
+generator is exactly
+``` math
+L_r^{\mathrm{rep}}=\sum_{C\in\mathcal C_r} c_C(I-E_C),
+\tag{1}\]</span></p>
+<p>and therefore</p>
+<p><span class="math display">\[U_r
+e^{-tH_r}U_r^{-1}=e^{-tL_r^{\mathrm{rep}}}
+\qquad(t\ge0),
+\tag{2}\]</span></p>
+<p>for a unitary <span class="math inline">\(U_r:\mathcal H_r\to
+K_r\)</span> with <span class="math inline">\(U_r\Omega_r=\mathbf
+1_r\)</span>.*</p>
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> The OPH MaxEnt axiom gives a local-Gibbs state with a
+quasi-local finite-range generator on the declared finite-constraint
+branch. After the support-visible quotient, each primitive local
+Euclidean piece <span class="math inline">\(D_C\)</span> is supported on
+one collar <span class="math inline">\(C\)</span>, preserves exactly the
+repaired visible datum <span class="math inline">\(\rho_C\)</span>, and
+relaxes only complementary fiber data. Hence</p>
+<p><span class="math display">\[\ker
+D_C=\operatorname{Ran}(E_C).\]</span></p>
+<p>Lemma <a href="#lem:fiber-symmetry" data-reference-type="ref" data-reference="lem:fiber-symmetry">5</a>
+gives the full hidden-fiber permutation symmetry. Applying
+Lemma <a href="#lem:scalar-relaxation" data-reference-type="ref" data-reference="lem:scalar-relaxation">6</a>
+fiberwise gives a positive scalar <span
+class="math inline">\(c_C\)</span> on the orthogonal complement of the
+repaired datum:</p>
+<p><span class="math display">\[D_C=c_C(I-E_C).\]</span></p>
+<p>The scalar is positive because <span class="math inline">\(C\)</span>
+is active. Branch homogeneity makes it a collar-type scalar, so summing
+over the active collars gives (1), and exponentiation of the positive
+self-adjoint generator gives (2). ◻</p>
+</div>
+
+<div id="lem:floor" class="lemma">
+
+<p><strong>Lemma 8</strong> (Uniform active-collar rate floor). *Assume
+finite local combinatorial type, a branch-homogeneous local constraint
+family, and refinement-stable exact repair semantics. Then the local
+Euclidean repair rate depends only on active collar type, the active
+collar-type set is finite across the cofinal refinement family, and
+there is <span class="math inline">\(c_*&gt;0\)</span>, independent of
+<span class="math inline">\(r\)</span>, such that</p>
+<p><span class="math display">\[c_C\ge c_*
+\qquad
+\text{for every active collar }C\in\mathcal C_r.
+\tag{3}
+```*
+
+&lt;/div&gt;
+
+&lt;div class=&quot;proof&quot;&gt;
+
+*Proof.* Active collars are exactly the collars on which complementary
+invisible fiber data are genuinely
+relaxed. Hence $`D_C\neq0`$ on $`\ker(E_C)`$, so $`c_C&gt;0`$. Finite
+local combinatorial type gives
+a finite list of bounded collar patterns, including their visible
+interface alphabets, hidden
+fiber cardinalities, local constraint templates, and admissible repair
+maps. Branch homogeneity
+makes the conditioned MaxEnt relaxation scalar a function of this finite
+type data. Refinement
+stability says that refinement replaces a collar by copies of the same
+bounded type templates
+with the same normalized local Euclidean repair semantics, so no new
+rate-degenerating collar
+type appears along the cofinal family. Taking the minimum of $`c_C`$
+over the finite active type
+list gives $`c_*&gt;0`$. ◻
+
+&lt;/div&gt;
+
+# Finite-Stage Gap
+
+&lt;div id=&quot;prop:finite-gap&quot; class=&quot;proposition&quot;&gt;
+
+**Proposition 9** (Finite-stage repair gap). *Assume that the collar
+family admits a bounded-color decomposition
+``` math
+\mathcal C_r=\bigsqcup_{a=1}^{q}\mathcal C_{r,a},
+\qquad q&lt;\infty,
+\tag{4}\]</span></p>
+<p>independent of <span class="math inline">\(r\)</span>, and that exact
+quotient-local gluing makes the corresponding color expectations
+commute. Then</p>
+<p><span class="math display">\[L_r^{\mathrm{rep}}\ge c_*(I-P_{0,r}),
+\tag{5}\]</span></p>
+<p>where <span class="math inline">\(P_{0,r}\)</span> projects onto
+constants in <span class="math inline">\(K_r\)</span>. Hence</p>
+<p><span class="math display">\[\Delta_{\mathrm{rep},r}\ge c_*&gt;0.
+\tag{6}
+```*
+
+&lt;/div&gt;
+
+&lt;div class=&quot;proof&quot;&gt;
+
+*Proof.* For each color $`a`$, define the parallel color expectation
+``` math
+E_{r,a}:=\prod_{C\in\mathcal C_{r,a}}E_C.\]</span></p>
+<p>Same-color collars are disjoint, so the factors commute. Exact
+quotient-local gluing makes <span
+class="math inline">\(\{E_{r,a}\}_{a=1}^{q}\)</span> a commuting family
+of orthogonal projections on the vacuum branch.</p>
+<p>Repair completeness says that the only support-visible observables
+fixed by every local repair are constants:</p>
+<p><span
+class="math display">\[\bigcap_{a=1}^{q}\operatorname{Ran}(E_{r,a})=\mathbb
+C\,\mathbf 1_r.
+\tag{7}\]</span></p>
+<p>Define</p>
+<p><span class="math display">\[\widetilde L_r:=\sum_{a=1}^{q}
+c_*(I-E_{r,a}).\]</span></p>
+<p>For commuting projections,</p>
+<p><span class="math display">\[I-\prod E_C\le
+\sum_C(I-E_C),\]</span></p>
+<p>so <span class="math inline">\(\widetilde L_r\le
+L_r^{\mathrm{rep}}\)</span>. The projections <span
+class="math inline">\(E_{r,a}\)</span> are simultaneously
+diagonalizable. On the joint all-ones eigenspace, (7) says the vector is
+constant. Every nonconstant joint eigenspace has at least one color
+eigenvalue zero, so</p>
+<p><span class="math display">\[\widetilde L_r\ge
+c_*(I-P_{0,r}).\]</span></p>
+<p>This proves (5), and the spectral gap bound (6) follows. ◻</p>
+</div>
+
+<h1 id="continuum-extraction">Continuum Extraction</h1>
+<div id="prop:extraction" class="proposition">
+
+<p><strong>Proposition 10</strong> (Coherent refinement and
+support-visible extraction). <em>Under
+Assumption <a href="#ass:ym-branch" data-reference-type="ref" data-reference="ass:ym-branch">1</a>,
+the compact-gauge branch supplies the coherence and extraction data
+needed for the continuum intertwining theorem:</em></p>
+<ol type="1">
+<li><p><em>finite-stage support-visible quotient state spaces <span
+class="math inline">\(X_r\)</span>, algebras <span
+class="math inline">\(\mathcal A^{\mathrm{sv}}_r\)</span>, stationary
+states <span class="math inline">\(\pi_r\)</span>, and Hilbert spaces
+<span class="math inline">\(K_r=L^2(X_r,\pi_r)\)</span>;</em></p></li>
+<li><p><em>refinement maps <span
+class="math inline">\(\jmath^{\mathrm{rep}}_{rs}:K_r\to K_s\)</span> and
+<span class="math inline">\(\jmath^{\mathrm{phys}}_{rs}:\mathcal
+H_r\to\mathcal H_s\)</span> compatible with all repaired local
+marginals;</em></p></li>
+<li><p><em>a projectively compatible family of finite-stage
+compact-gauge cylinder marginals;</em></p></li>
+<li><p><em>weak-<span class="math inline">\(*\)</span> compactness and a
+diagonal subnet whose local marginals converge on every support-visible
+cylinder algebra;</em></p></li>
+<li><p><em>support-visible GNS gluing to continuum Hilbert spaces <span
+class="math inline">\(K\)</span> and <span
+class="math inline">\(\mathcal H\)</span>, with dense images of the
+local cylinder algebras;</em></p></li>
+<li><p><em>a faithful limiting vacuum pair on the support-visible
+gauge-invariant algebra after quotienting the maximal repair-invariant
+overlap-trivial kernel.</em></p></li>
+</ol>
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> The compact-gauge ladder in the OPH compact paper
+proves fixed-cutoff bosonic sector categories, faithful monoidal
+refinement functors, compatible finite-dimensional fibers, the directed
+colimit sector category, and compact gauge reconstruction . The
+support-visible compact-gauge quotient algebra is generated by overlap
+sector projectors and compact-gauge visible bosonic observables, modulo
+the maximal repair-invariant overlap-trivial kernel.</p>
+<p>Each regulator has finite-dimensional state space and finite local
+cylinder algebras, so its state space is weak-<span
+class="math inline">\(*\)</span> compact. Refinement compatibility makes
+the local marginals projective: the restriction of a refined cylinder
+marginal to any coarser cylinder equals the coarser marginal. Choosing a
+countable cofinal family of support-visible cylinders and applying a
+diagonal subnet argument gives a limiting state on their algebraic
+union. Positivity and normalization pass to the limit on every cylinder,
+and the quotient by the repair-invariant overlap-trivial kernel makes
+the limit faithful on the support-visible gauge-invariant algebra.</p>
+<p>The GNS construction applied to this limiting state gives <span
+class="math inline">\(K\)</span>. Transporting the same coherent
+refinement data through the finite-stage intertwiners <span
+class="math inline">\(U_r\)</span> gives the physical limiting Hilbert
+space <span class="math inline">\(\mathcal H\)</span>. These are exactly
+the support-visible continuum objects used below. ◻</p>
+</div>
+
+<div id="thm:continuum" class="theorem">
+
+<p><strong>Theorem 11</strong> (Continuum exact transfer
+identification). *There is a unitary</p>
+<p><span class="math display">\[U:\mathcal H\to K\]</span></p>
+<p>such that</p>
+<p><span class="math display">\[U e^{-tH}U^{-1}=e^{-tL^{\mathrm{rep}}}
+\qquad(t\ge0),
+\tag{8}\]</span></p>
+<p>and hence</p>
+<p><span class="math display">\[UHU^{-1}=L^{\mathrm{rep}}.
+\tag{9}
+```*
+
+&lt;/div&gt;
+
+&lt;div class=&quot;proof&quot;&gt;
+
+*Proof.* Theorem &lt;a href=&quot;#thm:ec-law&quot;
+data-reference-type=&quot;ref&quot;
+data-reference=&quot;thm:ec-law&quot;&gt;7&lt;/a&gt; gives exact
+finite-stage intertwining. Proposition &lt;a
+href=&quot;#prop:extraction&quot; data-reference-type=&quot;ref&quot;
+data-reference=&quot;prop:extraction&quot;&gt;10&lt;/a&gt;
+supplies the direct-limit and support-visible GNS extraction hypotheses.
+Therefore the finite
+intertwiners pass to the continuum. Equality of generators follows from
+uniqueness of the
+self-adjoint generator of a strongly continuous contraction semigroup. ◻
+
+&lt;/div&gt;
+
+# Axiomatic Reconstruction and Nontriviality
+
+&lt;div id=&quot;thm:os&quot; class=&quot;theorem&quot;&gt;
+
+**Theorem 12** (Osterwalder–Schrader reconstruction on the
+support-visible compact-gauge branch). *Under Assumption &lt;a
+href=&quot;#ass:ym-branch&quot; data-reference-type=&quot;ref&quot;
+data-reference=&quot;ass:ym-branch&quot;&gt;1&lt;/a&gt; and
+Proposition &lt;a href=&quot;#prop:extraction&quot;
+data-reference-type=&quot;ref&quot;
+data-reference=&quot;prop:extraction&quot;&gt;10&lt;/a&gt;, the
+continuum
+support-visible compact-gauge cylinder family is Euclidean invariant,
+reflection positive,
+regular on gauge-invariant local cylinder observables, and cyclic for
+the vacuum sector. Hence
+Osterwalder–Schrader reconstruction gives a four-dimensional quantum
+Yang–Mills theory
+``` math
+(\mathcal H,\Omega,H,\mathcal A_{\mathrm{loc}}^{G})\]</span></p>
+<p>on the support-visible gauge-invariant local algebra, with <span
+class="math inline">\(H\ge0\)</span> and <span
+class="math inline">\(e^{-tH}\)</span> equal to the Euclidean transfer
+semigroup of
+Theorem <a href="#thm:ym-form" data-reference-type="ref" data-reference="thm:ym-form">2</a>.*</p>
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> Euclidean covariance is part of the four-dimensional
+scaling chart and the local-Gibbs cylinder family. Reflection positivity
+is part of the ordinary vacuum branch in
+Assumption <a href="#ass:ym-branch" data-reference-type="ref" data-reference="ass:ym-branch">1</a>.
+Regularity follows from the finite local cylinder construction and the
+support-visible weak-<span class="math inline">\(*\)</span> limit in
+Proposition <a href="#prop:extraction" data-reference-type="ref" data-reference="prop:extraction">10</a>.
+The vacuum vector is cyclic for the GNS closure of the gauge-invariant
+local cylinder algebra by construction. The standard
+Osterwalder–Schrader reconstruction theorem therefore produces the
+Hilbert space, vacuum, local algebra, and positive Hamiltonian, and
+identifies the physical time-translation semigroup with the Euclidean
+transfer semigroup . ◻</p>
+</div>
+
+<div id="prop:nontriviality" class="proposition">
+
+<p><strong>Proposition 13</strong> (Nontriviality of the support-visible
+compact-gauge theory). <em>The support-visible compact-gauge local
+algebra on the zero-obstruction vacuum branch strictly contains the
+vacuum scalars and admits a non-vacuum finite-energy local
+excitation.</em></p>
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> The compact-gauge witness and physical-UV landing
+theorem in the OPH compact paper supplies a realized nontrivial
+compact-gauge branch . At finite cutoff this gives a support-visible
+gauge-invariant local observable, such as a nonconstant Wilson/plaquette
+cylinder observable, whose vacuum variance is positive. Its GNS vector
+is orthogonal to the vacuum after subtracting its expectation value. The
+finite-range local-Gibbs generator assigns finite energy to
+finite-cylinder excitations.
+Proposition <a href="#prop:extraction" data-reference-type="ref" data-reference="prop:extraction">10</a>
+transports these local cylinder vectors into the support-visible
+continuum, so the continuum local algebra is strictly larger than <span
+class="math inline">\(\mathbb CI\)</span> and contains non-vacuum
+finite-energy local excitations. ◻</p>
+</div>
+
+<h1 id="main-theorem">Main Theorem</h1>
+<div id="thm:main" class="theorem">
+
+<p><strong>Theorem 14</strong> (Positive four-dimensional compact-gauge
+Yang–Mills mass gap). *Let <span class="math inline">\(G\)</span> be a
+compact simple gauge group carried by a support-visible compact-gauge
+OPH vacuum branch satisfying the standing setup above. The theory
+reconstructed in
+Theorem <a href="#thm:os" data-reference-type="ref" data-reference="thm:os">12</a>
+is nontrivial by
+Proposition <a href="#prop:nontriviality" data-reference-type="ref" data-reference="prop:nontriviality">13</a>,
+and its continuum support-visible Hamiltonian <span
+class="math inline">\(H\)</span> satisfies</p>
+<p><span class="math display">\[H\ge c_*(I-P_0),
+\tag{10}\]</span></p>
+<p>where <span class="math inline">\(P_0\)</span> projects onto the
+vacuum. Therefore</p>
+<p><span
+class="math display">\[\operatorname{Spec}(H)\cap(0,c_*)=\varnothing,
+\qquad
+\Delta_{\mathrm{YM}}\ge c_*&gt;0.
+\tag{11}\]</span></p>
+<p>Moreover, the repair gap and Yang–Mills gap are exactly equal:</p>
+<p><span
+class="math display">\[\Delta_{\mathrm{YM}}=\Delta_{\mathrm{rep}}.
+\tag{12}
+```*
+
+&lt;/div&gt;
+
+&lt;div class=&quot;proof&quot;&gt;
+
+*Proof.* At every finite stage, Proposition &lt;a
+href=&quot;#prop:finite-gap&quot; data-reference-type=&quot;ref&quot;
+data-reference=&quot;prop:finite-gap&quot;&gt;9&lt;/a&gt; gives
+``` math
+L_r^{\mathrm{rep}}\ge c_*(I-P_{0,r}).\]</span></p>
+<p>By
+Proposition <a href="#prop:extraction" data-reference-type="ref" data-reference="prop:extraction">10</a>
+and
+Theorem <a href="#thm:continuum" data-reference-type="ref" data-reference="thm:continuum">11</a>,
+this lower bound passes to the support-visible continuum:</p>
+<p><span class="math display">\[L^{\mathrm{rep}}\ge
+c_*(I-P_0).\]</span></p>
+<p>Using (9), <span
+class="math inline">\(UHU^{-1}=L^{\mathrm{rep}}\)</span>. Conjugating
+the lower bound by <span class="math inline">\(U^{-1}\)</span> gives
+(10), and the spectral statement (11) follows. Since unitary equivalence
+preserves the nonzero spectrum and identifies the vacuum with the
+constant sector, the infimum of the nonzero spectrum is the same on both
+sides, giving (12). ◻</p>
+</div>
+
+<div class="remark">
+
+<p><em>Remark 15</em> (Group-uniform form). The proof is group-uniform.
+Once a compact simple <span class="math inline">\(G\)</span> is carried
+by a compact-gauge zero-obstruction OPH branch, no step uses special
+properties of the realized Standard Model quotient. The inputs are
+compact-gauge support-visible quotient locality, exact local repair on
+collars, bounded-color collar covers, refinement coherence, and
+support-visible continuum extraction.</p>
+</div>
+
+<h1 id="exact-gap-accounting">Exact Gap Accounting</h1>
+<p>The proof gives more than a positive lower bound. It identifies the
+Hamiltonian whose gap is being measured:</p>
+<p><span class="math display">\[H=U^{-1}L^{\mathrm{rep}}U.\]</span></p>
+<p>Therefore</p>
+<p><span class="math display">\[\operatorname{Spec}(H)\setminus\{0\}
+=
+\operatorname{Spec}(L^{\mathrm{rep}})\setminus\{0\}.\]</span></p>
+<p>The Yang–Mills gap is exactly the first nonzero repair
+eigenvalue:</p>
+<p><span class="math display">\[\Delta_{\mathrm{YM}}
+:=
+\inf\bigl(\operatorname{Spec}(H)\setminus\{0\}\bigr)
+=
+\inf\bigl(\operatorname{Spec}(L^{\mathrm{rep}})\setminus\{0\}\bigr)
+=:
+\Delta_{\mathrm{rep}}.\]</span></p>
+<p>The finite-stage color argument proves <span
+class="math inline">\(\Delta_{\mathrm{rep}}\ge c_*&gt;0\)</span>. The
+exact accounting statement is the equality <span
+class="math inline">\(\Delta_{\mathrm{YM}}=\Delta_{\mathrm{rep}}\)</span>;
+the inequality is the positivity proof for that same quantity.</p>
+<h1 id="relation-to-the-2d-yangmills-bridge">Relation to the 2D
+Yang–Mills Bridge</h1>
+<p>The OPH corpus also contains an exact edge-sector identity:</p>
+<p><span class="math display">\[Z_{\mathrm{edge}}(t)=\sum_R
+d_R^2e^{-tC_2(R)}=K_t(1),\]</span></p>
+<p>which is the compact-group heat kernel at the identity and matches
+the standard two-dimensional Yang–Mills heat-kernel partition form.
+Peter–Weyl supplies the heat-kernel identity, and Gross–Taylor gives the
+standard large-<span class="math inline">\(N\)</span> worldsheet
+dictionary when a separate large-<span
+class="math inline">\(N_{\mathrm{edge}}\)</span> branch with remainder
+control is declared .</p>
+<p>That 2D result is a normalization and worldsheet-effective bridge.
+The spectral theorem above concerns the support-visible compact-gauge
+Hamiltonian and obtains its lower bound by identifying Euclidean
+transfer with the repair generator.</p>
+<h1 id="clay-deliverables-checklist">Clay Deliverables Checklist</h1>
+<div class="longtable">
+
+<p>@L0.30L0.62@ Clay/Jaffe–Witten target &amp; OPH repair-dynamics
+status<br />
+Compact simple gauge group <span class="math inline">\(G\)</span> &amp;
+<span class="math inline">\(G\)</span> is arbitrary compact simple,
+provided it is carried by the OPH compact-gauge zero-obstruction
+branch.<br />
+Four-dimensional Euclidean Yang–Mills form &amp;
+Theorem <a href="#thm:ym-form" data-reference-type="ref" data-reference="thm:ym-form">2</a>,
+imported from the compact paper’s D7 Yang–Mills theorem surface, gives
+<span class="math inline">\(S_E[A]=\frac{1}{4g^2}\int_{\mathbb
+R^4}\langle F_{\mu\nu},F_{\mu\nu}\rangle\,d^4x\)</span> under the branch
+assumptions in
+Assumption <a href="#ass:ym-branch" data-reference-type="ref" data-reference="ass:ym-branch">1</a>.<br />
+Four-dimensional quantum Yang–Mills theory &amp; Supplied through the
+support-visible compact-gauge continuum extraction of
+Proposition <a href="#prop:extraction" data-reference-type="ref" data-reference="prop:extraction">10</a>
+and OS reconstruction in
+Theorem <a href="#thm:os" data-reference-type="ref" data-reference="thm:os">12</a>.
+The Clay-facing admissibility claim is exactly that this branch-local
+support-visible extraction supplies the required four-dimensional
+axiomatic construction.<br />
+Nontriviality &amp;
+Proposition <a href="#prop:nontriviality" data-reference-type="ref" data-reference="prop:nontriviality">13</a>
+gives a non-vacuum finite-energy local excitation in the support-visible
+compact-gauge algebra.<br />
+Axiomatic strength &amp;
+Theorem <a href="#thm:os" data-reference-type="ref" data-reference="thm:os">12</a>
+states the OS reconstruction step on the support-visible gauge-invariant
+local algebra.<br />
+Mass gap &amp; The repair generator satisfies <span
+class="math inline">\(L^{\mathrm{rep}}\ge c_*(I-P_0)\)</span>, and
+unitary transfer gives <span class="math inline">\(H\ge
+c_*(I-P_0)\)</span>.<br />
+Exact gap accounting &amp; The unitary identity <span
+class="math inline">\(UHU^{-1}=L^{\mathrm{rep}}\)</span> gives <span
+class="math inline">\(\Delta_{\mathrm{YM}}=\Delta_{\mathrm{rep}}\)</span>.
+OPH accounts exactly for the Yang–Mills gap as the first nonzero repair
+eigenvalue.<br />
+Uniformity in <span class="math inline">\(G\)</span> &amp; The proof
+uses compact simplicity and compact-gauge quotient locality, not
+Standard-Model-specific representation data.</p>
+</div>
+
+<h1 id="conclusion">Conclusion</h1>
+<p>The OPH answer to the Yang–Mills mass gap is simple in mechanism. On
+the sharpened exact Euclidean-consensus branch, the gap statement is the
+operator identity <span
+class="math inline">\(UHU^{-1}=L^{\mathrm{rep}}\)</span>, followed by
+spectral positivity. A non-vacuum support-visible compact-gauge
+excitation is not fixed by all local repair collars. At least one active
+collar must relax it. Because active collar rates have a uniform
+positive floor and the collars can be organized into finitely many
+commuting colors, every non-vacuum state pays a positive Euclidean
+repair cost. The continuum compact-gauge Hamiltonian is unitarily
+equivalent to that repair generator. Therefore the Yang–Mills gap is the
+repair gap.</p>
+<p><span class="math display">\[\boxed{
+\Delta_{\mathrm{YM}}=\Delta_{\mathrm{rep}}\ge c_*&gt;0.
+}\]</span></p>
+<div class="thebibliography">
+
+<p>99</p>
+<p>B. Müller, A. Osika, K. Xue, B. Cassie, P. Nguyen, M. Poneder, and
+K. A. Anirudha, <em>Observers Are All You Need</em>, 2026.<br />
+Source: <a
+href="https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/observers_are_all_you_need.tex">https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/observers_are_all_you_need.tex</a>.<br />
+PDF: <a
+href="https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/observers_are_all_you_need.pdf">https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/observers_are_all_you_need.pdf</a>.</p>
+<p>B. Müller, A. Osika, K. Xue, and P. Nguyen, <em>Recovering Relativity
+and the Standard Model from Observer Overlap Consistency</em>,
+2026.<br />
+Source: <a
+href="https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/recovering_relativity_and_standard_model_structure_from_observer_overlap_consistency_compact.tex">https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/recovering_relativity_and_standard_model_structure_from_observer_overlap_consistency_compact.tex</a>.<br />
+PDF: <a
+href="https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/recovering_relativity_and_standard_model_structure_from_observer_overlap_consistency_compact.pdf">https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/recovering_relativity_and_standard_model_structure_from_observer_overlap_consistency_compact.pdf</a>.</p>
+<p>B. Müller, A. Osika, K. Xue, and M. Poneder, <em>Deriving the
+Particle Zoo from Observer Consistency</em>, 2026.<br />
+Source: <a
+href="https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/deriving_the_particle_zoo_from_observer_consistency.tex">https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/deriving_the_particle_zoo_from_observer_consistency.tex</a>.<br />
+PDF: <a
+href="https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/deriving_the_particle_zoo_from_observer_consistency.pdf">https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/deriving_the_particle_zoo_from_observer_consistency.pdf</a>.</p>
+<p>B. Müller, K. Xue, and K. A. Anirudha, <em>Reality as a Consensus
+Protocol: The Fixed-Point Computation That Implements Physics</em>,
+2026.<br />
+Source: <a
+href="https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/reality_as_consensus_protocol.tex">https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/reality_as_consensus_protocol.tex</a>.<br />
+PDF: <a
+href="https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/reality_as_consensus_protocol.pdf">https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/reality_as_consensus_protocol.pdf</a>.</p>
+<p>B. Müller, A. Osika, K. Xue, and B. Cassie, <em>Federated
+Echosahedral Screen Microphysics: Patch Hardware, Records, and Observer
+Synchronization in OPH</em>, 2026.<br />
+Source: <a
+href="https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/screen_microphysics_and_observer_synchronization.tex">https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/screen_microphysics_and_observer_synchronization.tex</a>.<br />
+PDF: <a
+href="https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/screen_microphysics_and_observer_synchronization.pdf">https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/screen_microphysics_and_observer_synchronization.pdf</a>.</p>
+<p>Clay Mathematics Institute, “Yang–Mills &amp; the Mass Gap.”<br />
+<a
+href="https://www.claymath.org/millennium/yang-mills-the-maths-gap/">https://www.claymath.org/millennium/yang-mills-the-maths-gap/</a>.</p>
+<p>A. Jaffe and E. Witten, “Quantum Yang–Mills Theory,” official Clay
+Mathematics Institute problem description.<br />
+<a
+href="https://www.claymath.org/wp-content/uploads/2022/06/yangmills.pdf">https://www.claymath.org/wp-content/uploads/2022/06/yangmills.pdf</a>.</p>
+<p>J. Carlson, A. Jaffe, and A. Wiles (eds.), <em>The Millennium Prize
+Problems</em>, Clay Mathematics Institute and American Mathematical
+Society.<br />
+<a
+href="https://www.claymath.org/library/monographs/MPPc.pdf">https://www.claymath.org/library/monographs/MPPc.pdf</a>.</p>
+<p>K. Osterwalder and R. Schrader, “Axioms for Euclidean Green’s
+functions,” <em>Communications in Mathematical Physics</em>
+<strong>31</strong> (1973), 83–112.</p>
+<p>K. Osterwalder and R. Schrader, “Axioms for Euclidean Green’s
+functions II,” <em>Communications in Mathematical Physics</em>
+<strong>42</strong> (1975), 281–305.</p>
+<p>F. Peter and H. Weyl, “Die Vollständigkeit der primitiven
+Darstellungen einer geschlossenen kontinuierlichen Gruppe,”
+<em>Mathematische Annalen</em> <strong>97</strong> (1927), 737–755.</p>
+<p>D. J. Gross and W. Taylor, “Two-dimensional QCD is a string theory,”
+<em>Nucl. Phys. B</em> <strong>400</strong> (1993), 181–208,
+arXiv:hep-th/9301068.</p>
+</div>
+
+          </div>
+        </div>
+      </article>
+    </main>
+    <footer class="site-footer reveal">
+      <div>Pragma</div>
+      <div class="site-footer-links">
+        <a href="/oph/" data-track-link="footer-hub">Observer Patch Holography</a>
+        <a href="/oph/papers/" data-track-link="footer-papers">Papers</a>
+        <a href="/oph/standard-model-gravity-unification/" data-track-link="footer-smg">SM + Gravity</a>
+        <a href="/oph/theory-of-everything/" data-track-link="footer-toe">Theory of Everything</a>
+        <a href="/oph/simulation-theory/" data-track-link="footer-sim">Simulation Theory</a>
+        <a href="/oph/quantum-gravity/" data-track-link="footer-qg">Quantum Gravity</a>
+        <a href="https://oph-book.floatingpragma.io/" data-track-link="footer-book">Book</a>
+        <a href="https://challenge.floatingpragma.io/" data-track-link="footer-challenge">Challenge</a>
+      </div>
+    </footer>
+
+  </div>
+  <script src="/oph/app.js"></script>
+</body>
+</html>

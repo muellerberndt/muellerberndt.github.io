@@ -1,0 +1,1648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Theoretical Bounds on Chi-Nu Susceptibility in Observer Patch Holography | OPH Paper</title>
+  <meta name="title" content="Theoretical Bounds on Chi-Nu Susceptibility in Observer Patch Holography | OPH Paper" />
+  <meta name="description" content="A branch-scoped OPH calculation for chi-nu susceptibility bounds, coherent scalar sourcing, quotient-edge response, and engineering chart values." />
+  <meta name="keywords" content="chi-nu susceptibility, local gravity response, dark-sector scalar, gravity engineering, coherent matter, Observer Patch Holography" />
+  <meta name="author" content="Pragma" />
+  <link rel="canonical" href="https://floatingpragma.io/oph/papers/chi-nu-susceptibility-bounds/" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://floatingpragma.io/oph/papers/chi-nu-susceptibility-bounds/" />
+  <meta property="og:title" content="Theoretical Bounds on Chi-Nu Susceptibility in Observer Patch Holography | OPH Paper" />
+  <meta property="og:description" content="A branch-scoped OPH calculation for chi-nu susceptibility bounds, coherent scalar sourcing, quotient-edge response, and engineering chart values." />
+  <meta property="og:image" content="https://floatingpragma.io/oph/screen.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Theoretical Bounds on Chi-Nu Susceptibility in Observer Patch Holography | OPH Paper" />
+  <meta name="twitter:description" content="A branch-scoped OPH calculation for chi-nu susceptibility bounds, coherent scalar sourcing, quotient-edge response, and engineering chart values." />
+  <meta name="twitter:image" content="https://floatingpragma.io/oph/screen.webp" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="stylesheet" href="/oph/styles.css" />
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['\\(', '\\)'], ['$', '$']], displayMath: [['\\[', '\\]']] },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Theoretical Bounds on Chi-Nu Susceptibility in Observer Patch Holography",
+  "name": "Theoretical Bounds on Chi-Nu Susceptibility in Observer Patch Holography",
+  "description": "A branch-scoped OPH calculation for chi-nu susceptibility bounds, coherent scalar sourcing, quotient-edge response, and engineering chart values.",
+  "url": "https://floatingpragma.io/oph/papers/chi-nu-susceptibility-bounds/",
+  "encoding": {
+    "@type": "MediaObject",
+    "contentUrl": "https://floatingpragma.io/oph/papers/pdf/chi_nu_susceptibility_bounds.pdf",
+    "encodingFormat": "application/pdf"
+  },
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Bernhard Mueller"
+    },
+    {
+      "@type": "Person",
+      "name": "Alex Osika"
+    }
+  ],
+  "isPartOf": {
+    "@type": "ResearchProject",
+    "name": "Observer Patch Holography",
+    "url": "https://floatingpragma.io/oph/"
+  },
+  "keywords": [
+    "chi-nu susceptibility",
+    "local gravity response",
+    "dark-sector scalar",
+    "gravity engineering",
+    "coherent matter",
+    "Observer Patch Holography"
+  ],
+  "datePublished": "June 3, 2026",
+  "dateModified": "June 3, 2026",
+  "version": "r1461"
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Floating Pragma",
+      "item": "https://floatingpragma.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Observer Patch Holography",
+      "item": "https://floatingpragma.io/oph/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "OPH Papers",
+      "item": "https://floatingpragma.io/oph/papers/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Theoretical Bounds on Chi-Nu Susceptibility in Observer Patch Holography",
+      "item": "https://floatingpragma.io/oph/papers/chi-nu-susceptibility-bounds/"
+    }
+  ]
+}
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HLGH209WMG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-HLGH209WMG', { cookie_domain: 'floatingpragma.io' });
+  </script>
+</head>
+<body class="oph-page paper-page">
+  <div class="site-grid"></div>
+  <div class="page-shell">
+    <header class="site-header reveal">
+      <a class="brand" href="/oph/">
+        <span class="brand-mark">
+          <img src="/pragma-cropped.jpg" alt="Pragma" />
+        </span>
+        <span class="brand-copy">
+          <strong>Pragma</strong>
+          <span>OPH Paper</span>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="OPH navigation">
+        <a href="/oph/" data-track-link="nav-hub">Hub</a>
+        <a href="/oph/papers/" data-track-link="nav-papers">Papers</a>
+        <a href="/oph/standard-model-gravity-unification/" data-track-link="nav-smg">SM + Gravity</a>
+        <a href="/oph/theory-of-everything/" data-track-link="nav-toe">Theory of Everything</a>
+        <a href="https://oph-lab.floatingpragma.io/" data-track-link="nav-lab">Lab</a>
+        <a href="https://challenge.floatingpragma.io/" data-track-link="nav-challenge">Challenge</a>
+      </nav>
+    </header>
+
+    <main>
+      <article class="paper-reader reveal">
+        <header class="paper-reader-header">
+          <div class="eyebrow">Gravity engineering</div>
+          <h1>Theoretical Bounds on Chi-Nu Susceptibility in Observer Patch Holography</h1>
+          <p class="article-lead">A branch-scoped OPH calculation for chi-nu susceptibility bounds, coherent scalar sourcing, quotient-edge response, and engineering chart values.</p>
+          <div class="paper-meta-line">
+            <span>r1461</span>
+            <span>June 3, 2026</span>
+            <span>extra papers</span>
+          </div>
+          <div class="paper-author-line">Authors: Bernhard Mueller, Alex Osika</div>
+          <div class="article-meta">
+              <span class="meta-chip">chi-nu susceptibility</span>
+              <span class="meta-chip">local gravity response</span>
+              <span class="meta-chip">dark-sector scalar</span>
+              <span class="meta-chip">gravity engineering</span>
+              <span class="meta-chip">coherent matter</span>
+              <span class="meta-chip">Observer Patch Holography</span>
+          </div>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="/oph/papers/pdf/chi_nu_susceptibility_bounds.pdf" target="_blank" rel="noopener noreferrer" data-track-link="paper-pdf-chi_nu_susceptibility_bounds">Download PDF</a>
+            <a class="btn btn-secondary" href="/oph/papers/" data-track-link="paper-index">All OPH papers</a>
+            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r1461" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
+          </div>
+        </header>
+        <div class="paper-reader-grid">
+          <aside class="paper-reader-side" aria-label="Paper navigation">
+            <div class="side-card">
+              <strong>Formal artifact</strong>
+              <p>The PDF is mirrored on this site and remains the formal release artifact for theorem status and branch boundaries.</p>
+              <a href="/oph/papers/pdf/chi_nu_susceptibility_bounds.pdf" target="_blank" rel="noopener noreferrer">Open first-party PDF</a>
+            </div>
+            <div class="side-card">
+              <strong>Sections</strong>
+              <nav class="paper-toc" aria-label="Paper sections"><a href="#introduction">Introduction</a>
+<a href="#what-the-bound-says-for-devices">What the Bound Says for Devices</a>
+<a href="#status-and-claim-boundary">Status and Claim Boundary</a>
+<a href="#canonical-chain">Canonical Chain</a>
+<a href="#fixed-cutoff-carrier">Fixed-cutoff carrier</a>
+<a href="#mismatch-and-repair">Mismatch and repair</a>
+<a href="#records-and-checkpoints">Records and checkpoints</a>
+<a href="#gravity-and-dark-response">Gravity and dark response</a>
+<a href="#the-coherence-scalar">The Coherence Scalar</a>
+<a href="#structural-properties">Structural Properties</a>
+<a href="#engineering-susceptibility-window">Engineering Susceptibility Window</a>
+<a href="#power-and-stored-energy-bounds">Power and Stored-Energy Bounds</a></nav>
+            </div>
+          </aside>
+          <div class="paper-body">
+<div class="center">
+
+<p><strong>Paper release:</strong> r1461 <strong>Released:</strong> June
+3, 2026</p>
+</div>
+
+<h1 id="introduction">Introduction</h1>
+<p>Keep three layers separate.</p>
+<p>First, the recovered OPH core supplies the fixed-cutoff observer
+carrier, record algebras, quotient-local observables, the Einstein
+branch, and the canonical dark-sector scalar channel. That core leaves
+<span class="math inline">\(\chi_\nu\)</span> unfixed. A zero
+coherent-matter continuation is allowed unless an additional
+continuation branch is declared.</p>
+<p>Second, this paper declares such a branch. Coherent scalar sourcing
+is placed on the same quotient-edge cut register as the canonical
+dark-sector scalar repair opportunities. Granting the dark-sector collar
+lemmas on that shared register, the canonical susceptibility is the
+collar survival coefficient:</p>
+<p><span
+class="math display">\[\chi_\nu^{\mathrm{can}}=\lambda_{\mathrm{collar}}.\]</span></p>
+<p>The theorem belongs to the declared continuation branch. It is
+outside the recovered-core OPH tier.</p>
+<p>Third, engineering calculations often use a different chart. They
+fold stored coherent energy into the scalar. That makes the coefficient
+look tiny, although the canonical coefficient is order one.</p>
+<p>The canonical number is the OPH-invariant number. It uses the
+per-channel observer-facing scalar after the effective patch capacity
+has been divided out. On the exact uniform finite-thickness branch,</p>
+<p><span
+class="math display">\[\chi_\nu^{\mathrm{can}}=e^{-P/24}=0.9343006394893864\ldots
+.\]</span></p>
+<p>With finite-thickness averaging and the protected reserve mean <span
+class="math inline">\(P/24\)</span>, the theorem-grade band is</p>
+<p><span class="math display">\[\boxed{
+0.9343006394893864
+\le
+\chi_\nu^{\mathrm{can}}
+\le
+1.
+}\]</span></p>
+<p>The interval is narrow enough for engineering purposes. The exact
+branch is at the lower end of this interval.</p>
+<p>The engineering chart number is</p>
+<p><span
+class="math display">\[S_{\mathrm{coh}}^{\mathrm{eng}}=N_{\mathrm{coh}}S_{\mathrm{coh}}^{\mathrm{can}},
+\qquad
+N_{\mathrm{coh}}=\varepsilon_{\mathrm{sub}}\frac{u_{\mathrm{stored}}}{u_0}.\]</span></p>
+<p>The coefficient in that chart is smaller by the same factor:</p>
+<p><span class="math display">\[\boxed{
+\chi_\nu^{\mathrm{eng}}=\frac{\chi_\nu^{\mathrm{can}}}{N_{\mathrm{coh}}}.
+}\]</span></p>
+<p>This gives the engineering band</p>
+<p><span class="math display">\[\boxed{
+\frac{0.9343006394893864}{N_{\mathrm{coh}}}
+\le
+\chi_\nu^{\mathrm{eng}}
+\le
+\frac{1}{N_{\mathrm{coh}}}.
+}\]</span></p>
+<p>The translation is simple:</p>
+<p><span class="math display">\[\begin{array}{c|c}
+N_{\mathrm{coh}}&amp; \chi_\nu^{\mathrm{eng}}\ \mathrm{range}\\
+\hline
+10^{20} &amp; 9.34\times10^{-21}\text{ to }1.00\times10^{-20}\\
+10^{21} &amp; 9.34\times10^{-22}\text{ to }1.00\times10^{-21}\\
+10^{22} &amp; 9.34\times10^{-23}\text{ to }1.00\times10^{-22}\\
+10^{23} &amp; 9.34\times10^{-24}\text{ to }1.00\times10^{-23}\\
+10^{24} &amp; 9.34\times10^{-25}\text{ to }1.00\times10^{-24}
+\end{array}\]</span></p>
+<p>The engineering consequence is direct. The coefficient is large
+enough in the canonical chart. The hard part is the scalar: build a
+substrate with enough vertical canonical coherence contrast, keep
+ordinary ambient matter from creating the same scalar accidentally, and
+measure the force with clean controls. Values around <span
+class="math inline">\(10^{-22}\)</span> mean <span
+class="math inline">\(N_{\mathrm{coh}}\sim10^{22}\)</span>, while the
+canonical coefficient stays order one.</p>
+<h1 id="what-the-bound-says-for-devices">What the Bound Says for
+Devices</h1>
+<p>The branch theorem gives the canonical coefficient:</p>
+<p><span class="math display">\[0.9343006394893864
+\le
+\chi_\nu^{\mathrm{can}}
+\le
+1.\]</span></p>
+<p>On the exact uniform finite-thickness branch it is the single
+number</p>
+<p><span
+class="math display">\[\chi_\nu^{\mathrm{can}}=0.9343006394893864\ldots
+.\]</span></p>
+<p>The susceptibility bound belongs to the declared continuation branch.
+It is an order-one coefficient. Zero is excluded on that branch.</p>
+<p>A room-scale lift or weight-reduction device needs only tiny <span
+class="math inline">\(\Delta\nu\)</span>. For areal load <span
+class="math inline">\(\Sigma=M/A_\perp\)</span> and target weight
+fraction <span class="math inline">\(f\)</span>, the required response
+is</p>
+<p><span class="math display">\[\Delta\nu_{\mathrm{req}}
+=
+f\,\frac{4\pi G\Sigma}{g}
+=
+8.5525\times10^{-9}\,f\,\Sigma_2,
+\qquad
+\Sigma_2=\frac{\Sigma}{10^2\,\mathrm{kg\,m^{-2}}}.\]</span></p>
+<p>The forced <span
+class="math inline">\(\chi_\nu^{\mathrm{can}}\)</span> band converts
+this into the required canonical coherence contrast:</p>
+<p><span class="math display">\[\boxed{
+8.55\times10^{-9}\,f\,\Sigma_2
+\le
+\Delta S_{\mathrm{coh,req}}^{\mathrm{can}}
+\le
+9.15\times10^{-9}\,f\,\Sigma_2.
+}\]</span></p>
+<p>For devices, the number to build is the coherence contrast. A <span
+class="math inline">\(100\,\mathrm{kg\,m^{-2}}\)</span> room-scale
+platform requires a vertical canonical coherence contrast of roughly
+<span class="math inline">\(8.6\times10^{-9}\)</span> to <span
+class="math inline">\(9.2\times10^{-9}\)</span> for full weight
+compensation. Ten percent compensation requires roughly <span
+class="math inline">\(8.6\times10^{-10}\)</span> to <span
+class="math inline">\(9.2\times10^{-10}\)</span>.</p>
+<div class="tabularx">
+
+<p>@L0.23R0.15R0.08R0.18X@ Device-scale case &amp; <span
+class="math inline">\(\Sigma\,[\mathrm{kg\,m^{-2}}]\)</span> &amp; <span
+class="math inline">\(f\)</span> &amp; <span
+class="math inline">\(\Delta\nu_{\mathrm{req}}\)</span> &amp; <span
+class="math inline">\(\Delta
+S_{\mathrm{coh,req}}^{\mathrm{can}}\)</span><br />
+light room platform &amp; <span class="math inline">\(50\)</span> &amp;
+<span class="math inline">\(1\)</span> &amp; <span
+class="math inline">\(4.28\times10^{-9}\)</span> &amp; <span
+class="math inline">\(4.28\times10^{-9}\)</span> to <span
+class="math inline">\(4.58\times10^{-9}\)</span><br />
+room-scale platform &amp; <span class="math inline">\(100\)</span> &amp;
+<span class="math inline">\(1\)</span> &amp; <span
+class="math inline">\(8.55\times10^{-9}\)</span> &amp; <span
+class="math inline">\(8.55\times10^{-9}\)</span> to <span
+class="math inline">\(9.15\times10^{-9}\)</span><br />
+heavy room platform &amp; <span class="math inline">\(250\)</span> &amp;
+<span class="math inline">\(1\)</span> &amp; <span
+class="math inline">\(2.14\times10^{-8}\)</span> &amp; <span
+class="math inline">\(2.14\times10^{-8}\)</span> to <span
+class="math inline">\(2.29\times10^{-8}\)</span><br />
+ten percent assist &amp; <span class="math inline">\(100\)</span> &amp;
+<span class="math inline">\(0.1\)</span> &amp; <span
+class="math inline">\(8.55\times10^{-10}\)</span> &amp; <span
+class="math inline">\(8.55\times10^{-10}\)</span> to <span
+class="math inline">\(9.15\times10^{-10}\)</span></p>
+</div>
+
+<p>For a hoverboard-class footprint the areal load is usually higher. A
+rider plus board spread over <span
+class="math inline">\(0.5\,\mathrm{m^2}\)</span> gives <span
+class="math inline">\(\Sigma\simeq200\)</span> to <span
+class="math inline">\(300\,\mathrm{kg\,m^{-2}}\)</span>. Full response
+then asks for</p>
+<p><span class="math display">\[\Delta
+S_{\mathrm{coh,req}}^{\mathrm{can}}
+\simeq
+1.7\times10^{-8}\text{ to }2.7\times10^{-8}.\]</span></p>
+<p>A compact footprint near <span
+class="math inline">\(600\,\mathrm{kg\,m^{-2}}\)</span> asks for
+about</p>
+<p><span class="math display">\[5.1\times10^{-8}\text{ to
+}5.5\times10^{-8}.\]</span></p>
+<p>Ten percent assist divides these numbers by ten. The coefficient is
+in the useful range for hoverboard-class experiments. A practical
+hoverboard depends on whether a real substrate can produce and hold that
+vertical scalar contrast under load.</p>
+<p>The engineering coefficient is a chart value:</p>
+<p><span
+class="math display">\[\chi_\nu^{\mathrm{eng}}=\frac{\chi_\nu^{\mathrm{can}}}{N_{\mathrm{coh}}}.\]</span></p>
+<p>The small engineering numbers are useful only together with the large
+engineering scalar. The response depends on the product</p>
+<p><span class="math display">\[\chi_\nu^{\mathrm{eng}}\,\Delta
+S_{\mathrm{coh}}^{\mathrm{eng}}
+=
+\chi_\nu^{\mathrm{can}}\,\Delta
+S_{\mathrm{coh}}^{\mathrm{can}}.\]</span></p>
+<p>For <span class="math inline">\(N_{\mathrm{coh}}=10^{22}\)</span>,
+the forced engineering band is</p>
+<p><span class="math display">\[9.34\times10^{-23}
+\le
+\chi_\nu^{\mathrm{eng}}
+\le
+1.00\times10^{-22}.\]</span></p>
+<p>A <span class="math inline">\(100\,\mathrm{kg\,m^{-2}}\)</span>
+full-response platform then needs</p>
+<p><span class="math display">\[\Delta
+S_{\mathrm{coh,req}}^{\mathrm{eng}}\simeq
+8.6\times10^{13}\text{ to }9.2\times10^{13}.\]</span></p>
+<p>It equals <span class="math inline">\(10^{22}\)</span> times the
+canonical contrast in
+Table <a href="#tab:room-scale-canonical" data-reference-type="ref" data-reference="tab:room-scale-canonical">[tab:room-scale-canonical]</a>.
+The large scalar and small coefficient are the same normalization
+written in different coordinates.</p>
+<p>On the declared branch, the coefficient is in the useful mathematical
+range for macroscopic weight-reduction devices. No room-temperature
+material claim follows from this bound alone. The engineering task is
+specific: generate a stable vertical <span class="math inline">\(\Delta
+S_{\mathrm{coh}}^{\mathrm{can}}\)</span> near <span
+class="math inline">\(10^{-9}\)</span> for assist and near <span
+class="math inline">\(10^{-8}\)</span> to <span
+class="math inline">\(10^{-7}\)</span> for full hoverboard-class
+response, keep ambient ordinary matter from creating the same scalar
+accidentally, and measure the force with controls that separate the
+effect from acoustic, thermal, electromagnetic, and mechanical
+couplings.</p>
+<h1 id="status-and-claim-boundary">Status and Claim Boundary</h1>
+<p>The paper uses three claim tiers.</p>
+<p>Tier A is the recovered OPH core: finite patch carriers,
+mismatch-lowering repair, observer-accessible record algebras, quotient
+normal forms, checkpoint continuation, support-visible BW scaling,
+fixed-cap generalized-entropy stationarity, and the Jacobson-type
+Einstein branch. These ingredients are supplied by the consensus,
+microphysics, synthesis, and compact SM/GR papers . This tier leaves
+<span class="math inline">\(\chi_\nu\)</span> unfixed.</p>
+<p>Tier B is the coherent-matter continuation law</p>
+<p><span class="math display">\[\begin{equation}
+\delta\nu
+=
+\chi_\nu^{\mathrm{can}}S_{\mathrm{coh}}^{\mathrm{can}}
+=
+\chi_\nu^{\mathrm{eng}}S_{\mathrm{coh}}^{\mathrm{eng}}.
+\label{eq:chinu-law}
+\end{equation}\]</span></p>
+<p>This tier declares the response channel and the two charts without
+assigning a value for <span class="math inline">\(\chi_\nu\)</span>.</p>
+<p>Tier C is the conditional quotient-edge branch. It adds the
+dark-sector collar lemmas stated in
+Section <a href="#sec:canonical-quotient-edge" data-reference-type="ref" data-reference="sec:canonical-quotient-edge">7</a>.
+On this declared branch, coherent scalar opportunities are co-registered
+with the canonical dark-sector scalar repair channel, and <span
+class="math inline">\(\chi_\nu^{\mathrm{can}}\)</span> is forced to
+equal <span
+class="math inline">\(\lambda_{\mathrm{collar}}\)</span>.</p>
+<p>The dark-sector paper supplies the settled weak-field anomaly law</p>
+<p><span class="math display">\[\begin{equation}
+\rho_A
+=
+-\frac{1}{4\pi G}
+\nabla\cdot[(\nu_{\mathrm{OPH}}-1)\mathbf g_b],
+\label{eq:canonical-dark}
+\end{equation}\]</span></p>
+<p>interpreting the anomaly as a transported modular/collar
+information-defect remainder, with no additional particle species
+postulated .</p>
+<p>Here <span
+class="math inline">\(S_{\mathrm{coh}}^{\mathrm{can}}\)</span> is the
+per-channel observer-facing scalar and <span
+class="math inline">\(S_{\mathrm{coh}}^{\mathrm{eng}}\)</span> is the
+stored-energy engineering scalar. The small values useful in device
+estimates are the engineering chart values <span
+class="math inline">\(\chi_\nu^{\mathrm{eng}}=\chi_\nu^{\mathrm{can}}/N_{\mathrm{coh}}\)</span>.</p>
+<h1 id="canonical-chain">Canonical Chain</h1>
+<h2 id="fixed-cutoff-carrier">Fixed-cutoff carrier</h2>
+<p>At fixed cutoff, an observer-facing OPH implementation surface is a
+federated patch carrier</p>
+<p><span class="math display">\[\begin{equation}
+\mathfrak F
+=
+\bigl(V,E,\{\mathcal A_i\}_{i\in V},\{\mathcal I_e\}_{e\in E},
+\{\pi_{i,e}\},\{\mathcal R_i\},\{\mathcal U_i\}\bigr).
+\end{equation}\]</span></p>
+<p>Here <span class="math inline">\(\mathcal A_i\)</span> are local
+finite algebras, <span class="math inline">\(\mathcal I_e\)</span> are
+overlap interfaces, <span class="math inline">\(\pi_{i,e}\)</span> are
+visible restriction maps, <span class="math inline">\(\mathcal
+R_i\subseteq Z(\mathcal A_i)\)</span> are record algebras, and <span
+class="math inline">\(\mathcal U_i\)</span> are local update and repair
+interfaces. Physical claims are made through visible restrictions,
+record algebras, and quotient-local observables, without choosing hidden
+microscopic representatives .</p>
+<h2 id="mismatch-and-repair">Mismatch and repair</h2>
+<p>The consensus paper gives a nonnegative visible mismatch functional
+<span class="math inline">\(\Phi\)</span>. Accepted repairs lower the
+relevant mismatch on finite state spaces. Under the declared
+local-diamond and repair-completeness hypotheses, the terminal
+observer-facing normal form from a fixed initial physical quotient state
+is unique and independent of asynchronous update schedule .</p>
+<h2 id="records-and-checkpoints">Records and checkpoints</h2>
+<p>For an observer-supporting subfederation <span
+class="math inline">\(U\)</span>, the microphysics paper uses a
+checkpoint of the form</p>
+<p><span class="math display">\[\begin{equation}
+\mathrm{Chk}_U(t)=
+\bigl(
+\mathcal R_U(t),
+\rho_U^{\mathrm{acc}}(t),
+\mathfrak I_U^{\mathrm{ext}}(t),
+\nu_{\ge t},
+\mathfrak B_U(t)
+\bigr).
+\end{equation}\]</span></p>
+<p>If two checkpoints agree on the accessible record algebra, accessible
+state, external interface, boundary-update schedule class, and
+provenance bundle, they induce the same continuation law on the
+observer-accessible event algebra. Approximate agreement gives a
+controlled total-variation bound .</p>
+<h2 id="gravity-and-dark-response">Gravity and dark response</h2>
+<p>The compact SM/GR paper keeps the recovered core and downstream
+continuations separate. On the stated support-visible scaling branch,
+the OPH stack gives a Jacobson-type Einstein relation; dark-sector
+response laws are phenomenological continuations outside that
+recovered-core tier . The dark paper then models the anomaly by
+Eq. <a href="#eq:canonical-dark" data-reference-type="eqref" data-reference="eq:canonical-dark">[eq:canonical-dark]</a>.</p>
+<p>On Earth, <span class="math inline">\(g_b/a_0\sim 10^{11}\)</span>,
+so the canonical <span class="math inline">\(\nu_{\mathrm{OPH}}\)</span>
+term is pinned near unity. A terrestrial tabletop anomaly attributed
+only to the canonical OPH dark sector should read null. The <span
+class="math inline">\(\chi_\nu\)</span> continuation is tested against
+that null baseline as a separate effect.</p>
+<h1 id="the-coherence-scalar">The Coherence Scalar</h1>
+<div class="definition">
+
+<p><strong>Definition 1</strong> (Patch coherence factors and channel
+count). *Let <span class="math inline">\(U\)</span> be an
+observer-supporting patch subfederation at cycle <span
+class="math inline">\(t\)</span>, with observer-accessible record
+algebra <span class="math inline">\(\mathcal
+Z^{\mathrm{rec}}_U(t)\)</span>. Let <span
+class="math inline">\(Y_U(t)\)</span> be the induced record outcome
+variable, <span class="math inline">\(X_{\partial U,t+1:t+h}\)</span>
+the boundary packet over horizon <span class="math inline">\(h\)</span>,
+and <span class="math inline">\(\Phi_U(t)\)</span> the visible mismatch
+on the relevant support. Define</p>
+<p><span class="math display">\[\begin{align}
+R_U(t;h)
+&amp;=
+\left[
+1-
+d_{\mathrm{TV}}\!\left(
+\operatorname{Law}(Y_U(t+h)),\operatorname{Law}(Y_U(t))
+\right)
+\right]e^{-\delta_{\mathrm{rec}}(t)},
+\label{eq:R-factor}\\
+P_U(t;h)
+&amp;=
+\frac{
+I\!\left(Y_U(t);X_{\partial U,t+1:t+h}\right)
+}{
+H\!\left(X_{\partial U,t+1:t+h}\right)+\epsilon
+},
+\label{eq:P-factor}\\
+C_U(t)
+&amp;=
+\left[
+1-\frac{\Phi_U(t)}{\Phi_U^{\max}+\epsilon}
+\right]_+.
+\label{eq:C-factor}
+\end{align}\]</span></p>
+<p>On the screen or hardware branch, set the finite coherent channel
+count to</p>
+<p><span class="math display">\[\begin{equation}
+N_U(t):=\operatorname{Cap}(\mathcal Z^{\mathrm{rec}}_U(t)).
+\label{eq:channel-count}
+\end{equation}\]</span></p>
+<p>The exponent-free observer core is</p>
+<p><span class="math display">\[\begin{equation}
+\mathfrak c_U(t;h)=
+\mathbf 1_{\mathrm{self\mbox{-}read}}\,
+R_U(t;h)\,
+P_U(t;h)\,
+C_U(t).
+\label{eq:canonical-core}
+\end{equation}
+```*
+
+&lt;/div&gt;
+
+&lt;div class=&quot;definition&quot;&gt;
+
+**Definition 2** (Canonical and engineering coherence scalars). *The
+capacity-weighted observer scalar is
+``` math
+\begin{equation}
+\mathbb C_U(t;h)=N_U(t)\,\mathfrak c_U(t;h).
+\label{eq:canonical-mass}
+\end{equation}\]</span></p>
+<p>The canonical per-channel scalar is</p>
+<p><span class="math display">\[\begin{equation}
+\boxed{
+S_{\mathrm{coh}}^{\mathrm{can}}(U,t;h)=\frac{\mathbb C_U(t;h)}{N_U(t)}
+=
+\mathfrak c_U(t;h).
+}
+\label{eq:Scoh-can-patch}
+\end{equation}\]</span></p>
+<p>On the quotient-edge continuation branch, <span
+class="math inline">\(S_{\mathrm{coh}}^{\mathrm{can}}\in[0,1]\)</span>
+is read as the fraction of coherent scalar opportunities on the
+edge-center cut register before the protected reserve acts. Let <span
+class="math inline">\(u_{\mathrm{stored}}(U,t)\)</span> be the stored
+coherent matter energy density in the substrate mode supported by <span
+class="math inline">\(U\)</span>, let <span
+class="math inline">\(u_0\)</span> be a fixed reference energy density,
+and let <span
+class="math inline">\(\varepsilon_{\mathrm{sub}}(U)\in[0,1]\)</span> be
+the substrate directness factor. The engineering scalar is</p>
+<p><span class="math display">\[\begin{equation}
+S_{\mathrm{coh}}^{\mathrm{eng}}(U,t;h)
+=
+\varepsilon_{\mathrm{sub}}(U)
+\frac{u_{\mathrm{stored}}(U,t)}{u_0}
+S_{\mathrm{coh}}^{\mathrm{can}}(U,t;h)
+=
+N_{\mathrm{coh}}(U,t)S_{\mathrm{coh}}^{\mathrm{can}}(U,t;h),
+\label{eq:Scoh-eng-patch}
+\end{equation}\]</span></p>
+<p>where</p>
+<p><span class="math display">\[\begin{equation}
+\boxed{
+N_{\mathrm{coh}}(U,t)=
+\varepsilon_{\mathrm{sub}}(U)\frac{u_{\mathrm{stored}}(U,t)}{u_0}.
+}
+\label{eq:Ncoh}
+\end{equation}\]</span></p>
+<p>Given a partition of unity <span
+class="math inline">\(w_U(x)\)</span> over observer-supporting
+subfederations, define the coarse-grained field</p>
+<p><span class="math display">\[\begin{equation}
+S_{\mathrm{coh}}^{\mathrm{can}}(x,t)=\sum_U
+w_U(x)S_{\mathrm{coh}}^{\mathrm{can}}(U,t;h),
+\qquad
+S_{\mathrm{coh}}^{\mathrm{eng}}(x,t)=\sum_U
+w_U(x)S_{\mathrm{coh}}^{\mathrm{eng}}(U,t;h),
+\qquad
+\sum_U w_U(x)=1.
+\label{eq:Scoh-field}
+\end{equation}
+```*
+
+&lt;/div&gt;
+
+The continuation law can be written in either chart:
+``` math
+\begin{equation}
+\boxed{
+\nu_{\mathrm{eff}}(x,t)
+=
+\nu_{\mathrm{OPH}}(x,t)+\chi_\nu^{\mathrm{can}}S_{\mathrm{coh}}^{\mathrm{can}}(x,t)
+=
+\nu_{\mathrm{OPH}}(x,t)+\chi_\nu^{\mathrm{eng}}S_{\mathrm{coh}}^{\mathrm{eng}}(x,t).
+}
+\label{eq:continuation-axiom}
+\end{equation}\]</span></p>
+<p>On a region with representative <span
+class="math inline">\(N_{\mathrm{coh}}\)</span>,</p>
+<p><span class="math display">\[\begin{equation}
+\boxed{
+\chi_\nu^{\mathrm{eng}}=\frac{\chi_\nu^{\mathrm{can}}}{N_{\mathrm{coh}}}.
+}
+\label{eq:chart-map}
+\end{equation}\]</span></p>
+<h1 id="structural-properties">Structural Properties</h1>
+<div class="proposition">
+
+<p><strong>Proposition 3</strong> (Observer-facing quotient
+well-definedness). <em>Assume two microscopic representatives induce the
+same observer-accessible continuation law on <span
+class="math inline">\(U\)</span>, preserve the same visible mismatch
+score, and expose the same stored coherent energy density and substrate
+class. Then they give the same <span
+class="math inline">\(S_{\mathrm{coh}}^{\mathrm{can}}(U,t;h)\)</span>
+and <span
+class="math inline">\(S_{\mathrm{coh}}^{\mathrm{eng}}(U,t;h)\)</span>.</em></p>
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> The factors <span class="math inline">\(R_U\)</span>,
+<span class="math inline">\(P_U\)</span>, and <span
+class="math inline">\(C_U\)</span> are defined from observer-accessible
+records, boundary-law variables, and visible mismatch data. The channel
+count <span class="math inline">\(N_U\)</span> cancels in the
+per-channel scalar. These are precisely the quantities that survive the
+observer-facing quotient. Multiplying by <span
+class="math inline">\(u_{\mathrm{stored}}\)</span> and <span
+class="math inline">\(\varepsilon_{\mathrm{sub}}\)</span>, which are
+declared observable substrate data for the engineering chart, preserves
+hidden-representative independence. ◻</p>
+</div>
+
+<div class="proposition">
+
+<p><strong>Proposition 4</strong> (Null conditions). <em>If <span
+class="math inline">\(U\)</span> has no self-read, no stable record
+algebra, or no predictive boundary coupling at horizon <span
+class="math inline">\(h\)</span>, then <span
+class="math inline">\(S_{\mathrm{coh}}^{\mathrm{can}}(U,t;h)=0\)</span>
+and <span
+class="math inline">\(S_{\mathrm{coh}}^{\mathrm{eng}}(U,t;h)=0\)</span>.</em></p>
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> If there is no self-read, then <span
+class="math inline">\(\mathbf 1_{\mathrm{self\mbox{-}read}}=0\)</span>.
+If no stable record algebra is available, then the stability factor
+<span class="math inline">\(R_U\)</span> vanishes on the declared
+readout. If predictive boundary coupling is absent, then <span
+class="math inline">\(P_U=0\)</span>. In each case <span
+class="math inline">\(\mathfrak c_U=0\)</span>, hence both scalars
+vanish. ◻</p>
+</div>
+
+<div class="proposition">
+
+<p><strong>Proposition 5</strong> (Exact normalization map). *For the
+canonical and engineering scalars in
+Eqs. <a href="#eq:Scoh-can-patch" data-reference-type="eqref" data-reference="eq:Scoh-can-patch">[eq:Scoh-can-patch]</a>
+and
+<a href="#eq:Scoh-eng-patch" data-reference-type="eqref" data-reference="eq:Scoh-eng-patch">[eq:Scoh-eng-patch]</a>,</p>
+<p><span class="math display">\[\begin{equation}
+\boxed{
+\frac{S_{\mathrm{coh}}^{\mathrm{eng}}(U,t;h)}{S_{\mathrm{coh}}^{\mathrm{can}}(U,t;h)}
+=
+N_{\mathrm{coh}}(U,t)
+=
+\varepsilon_{\mathrm{sub}}(U)\frac{u_{\mathrm{stored}}(U,t)}{u_0}.
+}
+\label{eq:normalization-map}
+\end{equation}
+```*
+
+&lt;/div&gt;
+
+&lt;div class=&quot;proof&quot;&gt;
+
+*Proof.* Substitute Eq. &lt;a href=&quot;#eq:Scoh-can-patch&quot;
+data-reference-type=&quot;eqref&quot;
+data-reference=&quot;eq:Scoh-can-patch&quot;&gt;[eq:Scoh-can-patch]&lt;/a&gt;
+into
+Eq. &lt;a href=&quot;#eq:Scoh-eng-patch&quot;
+data-reference-type=&quot;eqref&quot;
+data-reference=&quot;eq:Scoh-eng-patch&quot;&gt;[eq:Scoh-eng-patch]&lt;/a&gt;.
+The quotient is exactly
+$`\varepsilon_{\mathrm{sub}}u_{\mathrm{stored}}/u_0`$. ◻
+
+&lt;/div&gt;
+
+&lt;div class=&quot;proposition&quot;&gt;
+
+**Proposition 6** (Saturated-limit reduction). *If
+``` math
+\mathbf 1_{\mathrm{self\mbox{-}read}}\simeq1,\quad
+R_U\simeq1,\quad
+P_U\simeq1,\quad
+C_U\simeq1,\]</span></p>
+<p>then</p>
+<p><span
+class="math display">\[S_{\mathrm{coh}}^{\mathrm{can}}(U,t;h)\simeq1,
+\qquad
+S_{\mathrm{coh}}^{\mathrm{eng}}(U,t;h)\simeq
+\varepsilon_{\mathrm{sub}}(U)\frac{u_{\mathrm{stored}}(U,t)}{u_0}.
+```*
+
+&lt;/div&gt;
+
+&lt;div class=&quot;proof&quot;&gt;
+
+*Proof.* Substitute the saturated factor values into Eqs. &lt;a
+href=&quot;#eq:Scoh-can-patch&quot;
+data-reference-type=&quot;eqref&quot;
+data-reference=&quot;eq:Scoh-can-patch&quot;&gt;[eq:Scoh-can-patch]&lt;/a&gt;
+and &lt;a href=&quot;#eq:Scoh-eng-patch&quot;
+data-reference-type=&quot;eqref&quot;
+data-reference=&quot;eq:Scoh-eng-patch&quot;&gt;[eq:Scoh-eng-patch]&lt;/a&gt;. ◻
+
+&lt;/div&gt;
+
+# Canonical Quotient-Edge Susceptibility
+
+Everything in this section is a conditional continuation statement. The
+recovered OPH core supplies the observer-facing carrier and the scalar
+channel.
+The nonzero coefficient follows only after the following dark-sector
+branch
+lemmas are granted.
+
+&lt;div id=&quot;ass:dark-collar-lemmas&quot;
+class=&quot;assumption&quot;&gt;
+
+**Assumption 7** (Granted dark-sector collar lemmas).
+
+1.  *Positive scalar source branch: the scalar repair defect is the
+minimal
+    recoverability defect $`R_C=I(A:D\mid B)\ge0`$.*
+
+2.  *Quotient-edge scalar locality: every quotient-local scalar
+recoverability
+    event is resolved on the edge-center cut register.*
+
+3.  *Co-registration with the protected reserve: scalar activation and
+the
+    protected $`\mathbb Z_6`$ reserve live on the same edge-center
+resolution.*
+
+4.  *Local Poisson reserve survival: on a co-registered scalar slot at
+    transverse coordinate $`y`$,
+    ``` math
+    \lambda_{\mathrm{slot}}(y)=\exp[-\epsilon_{\mathbb Z_6}(y)].
+    ```*
+
+5.  *Finite-thickness averaging:
+    ``` math
+    \lambda_{\mathrm{collar}}=
+    \int \,\mathrm dy\,w(y)\exp[-\epsilon_{\mathbb Z_6}(y)],
+    \qquad
+    \int \,\mathrm dy\,w(y)\epsilon_{\mathbb Z_6}(y)=\frac{P}{24}.
+    ```*
+
+6.  *Exact uniform branch: on the product transverse regulator with one
+    quotient trace and uniform protected-center density,
+    ``` math
+    \lambda_{\mathrm{collar}}=e^{-P/24}.
+    ```*
+
+&lt;/div&gt;
+
+The public OPH readout gives
+``` math
+\begin{equation}
+P=1.630968209403959,
+\qquad
+\frac{P}{24}=0.06795700872516496.
+\label{eq:z6-reserve}
+\end{equation}\]</span></p>
+<div class="theorem">
+
+<p><strong>Theorem 8</strong> (Forced canonical susceptibility on the
+co-registered branch). *Assume L1 to L5 of
+Assumption <a href="#ass:dark-collar-lemmas" data-reference-type="ref" data-reference="ass:dark-collar-lemmas">7</a>.
+Then the canonically normalized coherent-matter susceptibility is the
+collar survival coefficient:</p>
+<p><span class="math display">\[\begin{equation}
+\boxed{
+\chi_\nu^{\mathrm{can}}=\lambda_{\mathrm{collar}}.
+}
+\label{eq:chi-can-lambda}
+\end{equation}
+```*
+
+&lt;/div&gt;
+
+&lt;div class=&quot;proof&quot;&gt;
+
+*Proof.* By definition, $`S_{\mathrm{coh}}^{\mathrm{can}}`$ is the
+fraction of coherent scalar opportunities
+present on the quotient-edge cut register before the protected reserve
+acts.
+By L3, the $`\mathbb Z_6`$ reserve acts on that same register. By L4,
+each local
+coherent scalar opportunity survives the reserve with factor
+$`\exp[-\epsilon_{\mathbb Z_6}(y)]`$. By L5, finite-thickness averaging
+gives the
+surviving coherent scalar fraction
+``` math
+S_{\mathrm{coh,after}}^{\mathrm{can}}
+=
+\lambda_{\mathrm{collar}}S_{\mathrm{coh,before}}^{\mathrm{can}}.\]</span></p>
+<p>The continuation law writes the same surviving fraction as</p>
+<p><span class="math display">\[S_{\mathrm{coh,after}}^{\mathrm{can}}
+=
+\chi_\nu^{\mathrm{can}}S_{\mathrm{coh,before}}^{\mathrm{can}}.\]</span></p>
+<p>For any nonzero canonical coherent fraction, the coefficients are
+equal. ◻</p>
+</div>
+
+<div class="corollary">
+
+<p><strong>Corollary 9</strong> (Theorem-grade nonzero band). *Under L1
+to L5,</p>
+<p><span class="math display">\[\begin{equation}
+\boxed{
+0.9343006394893864\ldots
+\le
+\chi_\nu^{\mathrm{can}}
+\le
+1.
+}
+\label{eq:chi-can-band}
+\end{equation}
+```*
+
+&lt;/div&gt;
+
+&lt;div class=&quot;proof&quot;&gt;
+
+*Proof.* The function $`e^{-x}`$ is convex, so the Jensen inequality
+gives
+``` math
+\chi_\nu^{\mathrm{can}}=\int \,\mathrm dy\,w(y)e^{-\epsilon_{\mathbb
+Z_6}(y)}
+\ge
+\exp\!\left[-\int \,\mathrm dy\,w(y)\epsilon_{\mathbb Z_6}(y)\right]
+=e^{-P/24}.\]</span></p>
+<p>Using
+Eq. <a href="#eq:z6-reserve" data-reference-type="eqref" data-reference="eq:z6-reserve">[eq:z6-reserve]</a>,</p>
+<p><span class="math display">\[e^{-P/24}=0.9343006394893864\ldots
+.\]</span></p>
+<p>Reserve survival factors are at most one, so <span
+class="math inline">\(\chi_\nu^{\mathrm{can}}\le1\)</span>. ◻</p>
+</div>
+
+<div class="corollary">
+
+<p><strong>Corollary 10</strong> (Exact canonical value on the uniform
+branch). *Assume L6 in addition to L1 to L5. Then</p>
+<p><span class="math display">\[\begin{equation}
+\boxed{
+\chi_\nu^{\mathrm{can}}
+=
+e^{-P/24}
+=
+0.9343006394893864\ldots .
+}
+\label{eq:chi-can-exact}
+\end{equation}
+```*
+
+&lt;/div&gt;
+
+&lt;div class=&quot;proof&quot;&gt;
+
+*Proof.* By L6, $`\lambda_{\mathrm{collar}}=e^{-P/24}`$. Use
+Eq. &lt;a href=&quot;#eq:chi-can-lambda&quot;
+data-reference-type=&quot;eqref&quot;
+data-reference=&quot;eq:chi-can-lambda&quot;&gt;[eq:chi-can-lambda]&lt;/a&gt;. ◻
+
+&lt;/div&gt;
+
+&lt;div class=&quot;remark&quot;&gt;
+
+*Remark 11* (Profile-envelope number). The dark-sector correction audit
+also lists profile targets: best same-function
+RAR $`0.958802256`$, binned RAR $`0.936737944`$, and the OPH
+$`\mathbb Z_6`$/Poisson value $`0.934300639`$. If an extra numerical
+selector keeps
+the coherent continuation inside that same-function profile envelope,
+one may
+quote the practical profile range
+``` math
+0.934300639\le\chi_\nu^{\mathrm{can}}\le0.958802256.\]</span></p>
+<p>The range is selector-dependent. The theorem-grade band used in the
+rest of this paper is
+Eq. <a href="#eq:chi-can-band" data-reference-type="eqref" data-reference="eq:chi-can-band">[eq:chi-can-band]</a>,
+with the exact value
+Eq. <a href="#eq:chi-can-exact" data-reference-type="eqref" data-reference="eq:chi-can-exact">[eq:chi-can-exact]</a>
+on L6.</p>
+</div>
+
+<div class="corollary">
+
+<p><strong>Corollary 12</strong> (Engineering chart band). *On any
+engineering chart with representative normalization <span
+class="math inline">\(N_{\mathrm{coh}}\)</span>,</p>
+<p><span class="math display">\[\begin{equation}
+\boxed{
+\frac{0.9343006394893864}{N_{\mathrm{coh}}}
+\le
+\chi_\nu^{\mathrm{eng}}
+\le
+\frac{1}{N_{\mathrm{coh}}}.
+}
+\label{eq:chi-eng-band}
+\end{equation}\]</span></p>
+<p>On the exact uniform branch,</p>
+<p><span class="math display">\[\begin{equation}
+\boxed{
+\chi_\nu^{\mathrm{eng}}=\frac{e^{-P/24}}{N_{\mathrm{coh}}}.
+}
+\label{eq:chi-eng-exact}
+\end{equation}
+```*
+
+&lt;/div&gt;
+
+&lt;div class=&quot;tabular&quot;&gt;
+
+@R0.24R0.31R0.31@
+$`N_{\mathrm{coh}}`$ &amp;
+theorem-grade $`\chi_\nu^{\mathrm{eng}}`$ band &amp;
+exact-branch $`\chi_\nu^{\mathrm{eng}}`$  
+$`10^{20}`$ &amp; $`9.34\times10^{-21}\text{ to }1.00\times10^{-20}`$
+&amp; $`9.34\times10^{-21}`$  
+$`10^{21}`$ &amp; $`9.34\times10^{-22}\text{ to }1.00\times10^{-21}`$
+&amp; $`9.34\times10^{-22}`$  
+$`10^{22}`$ &amp; $`9.34\times10^{-23}\text{ to }1.00\times10^{-22}`$
+&amp; $`9.34\times10^{-23}`$  
+$`10^{23}`$ &amp; $`9.34\times10^{-24}\text{ to }1.00\times10^{-23}`$
+&amp; $`9.34\times10^{-24}`$  
+$`10^{24}`$ &amp; $`9.34\times10^{-25}\text{ to }1.00\times10^{-24}`$
+&amp; $`9.34\times10^{-25}`$  
+
+&lt;/div&gt;
+
+# Weak-Field Response
+
+Insert Eq. &lt;a href=&quot;#eq:continuation-axiom&quot;
+data-reference-type=&quot;eqref&quot;
+data-reference=&quot;eq:continuation-axiom&quot;&gt;[eq:continuation-axiom]&lt;/a&gt;
+into the settled weak-field density:
+``` math
+\begin{equation}
+\rho_A^{\mathrm{eff}}
+=
+-\frac{1}{4\pi G}
+\nabla\cdot
+\Bigl[
+\bigl(\nu_{\mathrm{OPH}}-1+\chi_\nu^{\mathrm{eng}}S_{\mathrm{coh}}^{\mathrm{eng}}\bigr)\mathbf
+g_b
+\Bigr].
+\label{eq:rho-eff}
+\end{equation}\]</span></p>
+<p>In a small terrestrial laboratory region with <span
+class="math inline">\(\mathbf g_b\simeq -g\,\hat z\)</span> and
+canonical <span class="math inline">\(\nu_{\mathrm{OPH}}-1\)</span>
+negligible, this becomes</p>
+<p><span class="math display">\[\begin{equation}
+\rho_A^{\mathrm{lab}}
+\simeq
+-\frac{1}{4\pi G}
+\nabla\cdot
+\bigl[\chi_\nu^{\mathrm{eng}}S_{\mathrm{coh}}^{\mathrm{eng}}\,\mathbf
+g\bigr].
+\label{eq:rho-lab}
+\end{equation}\]</span></p>
+<div class="theorem">
+
+<p><strong>Theorem 13</strong> (Planar response law). *Let a thin device
+have horizontal projected area <span
+class="math inline">\(A_\perp\)</span>, and define the bottom-to-top
+coherence contrast</p>
+<p><span class="math display">\[\Delta
+S_{\mathrm{coh}}^{\mathrm{eng}}={S_{\mathrm{coh}}^{\mathrm{eng}}}_{\mathrm{bottom}}-{S_{\mathrm{coh}}^{\mathrm{eng}}}_{\mathrm{top}}.\]</span></p>
+<p>Then, to leading order in the thin-device approximation, the apparent
+vertical force generated by the engineering-chart continuation is</p>
+<p><span class="math display">\[\begin{equation}
+\boxed{
+F_\chi
+=
+\frac{g^2}{4\pi G}A_\perp\,\chi_\nu^{\mathrm{eng}}\,\Delta
+S_{\mathrm{coh}}^{\mathrm{eng}}.
+}
+\label{eq:force-law}
+\end{equation}
+```*
+
+&lt;/div&gt;
+
+&lt;div class=&quot;proof&quot;&gt;
+
+*Proof.* With $`\mathbf g=-g\hat z`$, Eq. &lt;a
+href=&quot;#eq:rho-lab&quot; data-reference-type=&quot;eqref&quot;
+data-reference=&quot;eq:rho-lab&quot;&gt;[eq:rho-lab]&lt;/a&gt; gives
+``` math
+\rho_A^{\mathrm{lab}}
+=
+\frac{g\chi_\nu^{\mathrm{eng}}}{4\pi G}\frac{\partial
+S_{\mathrm{coh}}^{\mathrm{eng}}}{\partial z}\]</span></p>
+<p>up to the sign convention for <span class="math inline">\(z\)</span>.
+Integrating through a thin column gives</p>
+<p><span class="math display">\[M_A=
+\int\rho_A^{\mathrm{lab}}\,\mathrm dV
+=
+-\frac{g\chi_\nu^{\mathrm{eng}}}{4\pi G}A_\perp\,\Delta
+S_{\mathrm{coh}}^{\mathrm{eng}}\]</span></p>
+<p>when <span class="math inline">\(\Delta
+S_{\mathrm{coh}}^{\mathrm{eng}}\)</span> is bottom minus top. The
+apparent weight change is <span
+class="math inline">\(F_\chi=-gM_A\)</span>, yielding
+Eq. <a href="#eq:force-law" data-reference-type="eqref" data-reference="eq:force-law">[eq:force-law]</a>. ◻</p>
+</div>
+
+<div class="corollary">
+
+<p><strong>Corollary 14</strong> (Geometric ceiling). *If <span
+class="math inline">\(|\Delta\nu|\lesssim 1\)</span>, then</p>
+<p><span class="math display">\[\begin{equation}
+\frac{|F_\chi|}{A_\perp}
+\lesssim
+C_g
+\equiv
+\frac{g^2}{4\pi G}
+=
+1.1466\times10^{11}\,\mathrm{N\,m^{-2}}
+\label{eq:geometric-ceiling}
+\end{equation}\]</span></p>
+<p>for <span
+class="math inline">\(g=9.80665\,\mathrm{m\,s^{-2}}\)</span> and <span
+class="math inline">\(G=6.67430\times10^{-11}\,\mathrm{m^3\,kg^{-1}\,s^{-2}}\)</span>.*</p>
+</div>
+
+<p>The ceiling is algebraic. Material reachability of <span
+class="math inline">\(|\Delta\nu|=1\)</span> is a separate claim.</p>
+<h1 id="engineering-susceptibility-window">Engineering Susceptibility
+Window</h1>
+<p>For bounds it is useful to package the contrast geometry, substrate
+directness, and OPH coherence factors into one dimensionless number:</p>
+<p><span class="math display">\[\begin{equation}
+\Delta S_{\mathrm{coh}}^{\mathrm{eng}}
+=
+\Gamma_{\mathrm{eff}}\frac{u}{u_0},
+\qquad
+0\le \Gamma_{\mathrm{eff}}\le 1.
+\label{eq:Gamma-definition}
+\end{equation}\]</span></p>
+<p>Here <span class="math inline">\(u\)</span> is the representative
+stored coherent energy density in the active mode. The factor <span
+class="math inline">\(\Gamma_{\mathrm{eff}}\)</span> includes vertical
+contrast, substrate directness, and effective canonical observer
+coherence.</p>
+<div class="theorem">
+
+<p><strong>Theorem 15</strong> (Nonempty macroscopic linear-response
+window). *Let <span class="math inline">\(\Sigma=M/A_\perp\)</span> be
+the areal load, let <span class="math inline">\(f\in[0,1]\)</span> be
+the target fraction of the ordinary weight <span
+class="math inline">\(Mg\)</span>, and let <span
+class="math inline">\(\epsilon_{\mathrm{lin}}\le 1\)</span> be the
+maximum allowed <span class="math inline">\(|\Delta\nu|\)</span> in the
+chosen linear-response regime. Assume <span
+class="math inline">\(\Gamma_{\mathrm{eff}}&gt;0\)</span>. If</p>
+<p><span class="math display">\[\begin{equation}
+f\,\frac{4\pi G\Sigma}{g}
+&lt;
+\epsilon_{\mathrm{lin}},
+\label{eq:window-condition}
+\end{equation}\]</span></p>
+<p>then the interval</p>
+<p><span class="math display">\[\begin{equation}
+\boxed{
+\frac{4\pi G\Sigma f}{g}\,
+\frac{u_0}{\Gamma_{\mathrm{eff}}u}
+\le
+|\chi_\nu^{\mathrm{eng}}|
+\le
+\epsilon_{\mathrm{lin}}
+\frac{u_0}{\Gamma_{\mathrm{eff}}u}
+}
+\label{eq:chi-eng-window}
+\end{equation}\]</span></p>
+<p>is nonempty. Values in this interval produce at least fraction <span
+class="math inline">\(f\)</span> of the ordinary weight inside the
+declared linear-response bound. Conversely, any value that produces at
+least fraction <span class="math inline">\(f\)</span> while staying
+inside that linear-response bound lies in this interval.*</p>
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> The force law gives</p>
+<p><span class="math display">\[\frac{|F_\chi|}{Mg}
+=
+\frac{g}{4\pi G\Sigma}|\chi_\nu^{\mathrm{eng}}|\Delta
+S_{\mathrm{coh}}^{\mathrm{eng}}.\]</span></p>
+<p>Requiring <span class="math inline">\(|F_\chi|/(Mg)\ge f\)</span>
+gives the lower bound in
+Eq. <a href="#eq:chi-eng-window" data-reference-type="eqref" data-reference="eq:chi-eng-window">[eq:chi-eng-window]</a>.
+Requiring <span
+class="math inline">\(|\Delta\nu|=|\chi_\nu^{\mathrm{eng}}|\Delta
+S_{\mathrm{coh}}^{\mathrm{eng}}\le\epsilon_{\mathrm{lin}}\)</span> gives
+the upper bound. The interval is nonempty exactly when the lower bound
+is smaller than the upper bound, which is
+Eq. <a href="#eq:window-condition" data-reference-type="eqref" data-reference="eq:window-condition">[eq:window-condition]</a>. ◻</p>
+</div>
+
+<div class="corollary">
+
+<p><strong>Corollary 16</strong> (Numerical width in normalized areal
+load). *Let</p>
+<p><span
+class="math display">\[\Sigma_2=\frac{\Sigma}{10^2\,\mathrm{kg\,m^{-2}}}.\]</span></p>
+<p>Then</p>
+<p><span class="math display">\[\frac{4\pi
+G\Sigma}{g}=8.5525\times10^{-9}\,\Sigma_2.\]</span></p>
+<p>The full-response <span class="math inline">\((f=1)\)</span>,
+order-unity linear window has width</p>
+<p><span
+class="math display">\[\frac{\chi_{\mathrm{upper}}}{\chi_{\mathrm{lower}}}
+=
+1.1692\times10^8\,\Sigma_2^{-1},\]</span></p>
+<p>independent of <span class="math inline">\(u\)</span> and <span
+class="math inline">\(\Gamma_{\mathrm{eff}}\)</span>. With <span
+class="math inline">\(\epsilon_{\mathrm{lin}}=0.1\)</span>, the window
+width is <span
+class="math inline">\(1.1692\times10^7\,\Sigma_2^{-1}\)</span>.*</p>
+</div>
+
+<div class="tabular">
+
+<p>@R0.19R0.23R0.25R0.20@ <span
+class="math inline">\(u\,[\mathrm{J\,m^{-3}}]\)</span> &amp; <span
+class="math inline">\(u/u_0\)</span> &amp; <span
+class="math inline">\(|\chi_\nu^{\mathrm{eng}}|_{\mathrm{req}}\)</span>
+for <span
+class="math inline">\(f\Sigma_2/\Gamma_{\mathrm{eff}}=1\)</span> &amp;
+<span
+class="math inline">\(|\chi_\nu^{\mathrm{eng}}|_{\mathrm{lin}}\)</span>
+for <span
+class="math inline">\(\epsilon_{\mathrm{lin}}/\Gamma_{\mathrm{eff}}=1\)</span><br />
+<span class="math inline">\(1.0\times10^5\)</span> &amp; <span
+class="math inline">\(1.18\times10^{14}\)</span> &amp; <span
+class="math inline">\(7.27\times10^{-23}\)</span> &amp; <span
+class="math inline">\(8.5\times10^{-15}\)</span><br />
+<span class="math inline">\(5.5\times10^5\)</span> &amp; <span
+class="math inline">\(6.47\times10^{14}\)</span> &amp; <span
+class="math inline">\(1.32\times10^{-23}\)</span> &amp; <span
+class="math inline">\(1.55\times10^{-15}\)</span><br />
+<span class="math inline">\(1.0\times10^6\)</span> &amp; <span
+class="math inline">\(1.18\times10^{15}\)</span> &amp; <span
+class="math inline">\(7.27\times10^{-24}\)</span> &amp; <span
+class="math inline">\(8.5\times10^{-16}\)</span><br />
+<span class="math inline">\(4.0\times10^6\)</span> &amp; <span
+class="math inline">\(4.71\times10^{15}\)</span> &amp; <span
+class="math inline">\(1.82\times10^{-24}\)</span> &amp; <span
+class="math inline">\(2.13\times10^{-16}\)</span><br />
+<span class="math inline">\(1.0\times10^7\)</span> &amp; <span
+class="math inline">\(1.18\times10^{16}\)</span> &amp; <span
+class="math inline">\(7.27\times10^{-25}\)</span> &amp; <span
+class="math inline">\(8.5\times10^{-17}\)</span></p>
+</div>
+
+<p>The table gives the bound in numerical form. It says that ordinary
+material stress and coherent phonon energy densities put the macroscopic
+response threshold in the <span
+class="math inline">\(\chi_\nu^{\mathrm{eng}}\sim10^{-22}\)</span> to
+<span class="math inline">\(10^{-24}\)</span> range for macroscopic
+areal loads and <span
+class="math inline">\(\Gamma_{\mathrm{eff}}\)</span> near unity. Smaller
+<span class="math inline">\(\Gamma_{\mathrm{eff}}\)</span> shifts the
+required value upward by <span
+class="math inline">\(1/\Gamma_{\mathrm{eff}}\)</span>.</p>
+<h1 id="power-and-stored-energy-bounds">Power and Stored-Energy
+Bounds</h1>
+<p>The force law fixes stored energy. Input power depends on how the
+coherent state is maintained.</p>
+<h2 id="driven-coherent-oscillations">Driven coherent oscillations</h2>
+<p>For a driven oscillator with angular frequency <span
+class="math inline">\(\omega\)</span>, mode volume <span
+class="math inline">\(V_{\mathrm{mode}}\)</span>, quality factor <span
+class="math inline">\(Q\)</span>, and stored density <span
+class="math inline">\(u\)</span>,</p>
+<p><span class="math display">\[\begin{equation}
+P_{\mathrm{loss}}
+=
+\frac{uV_{\mathrm{mode}}\omega}{Q}.
+\label{eq:loss-power}
+\end{equation}\]</span></p>
+<p>Combining
+Eq. <a href="#eq:loss-power" data-reference-type="eqref" data-reference="eq:loss-power">[eq:loss-power]</a>
+with the required density from the macroscopic response law gives</p>
+<p><span class="math display">\[\begin{equation}
+\boxed{
+P_{\mathrm{loss}}
+=
+\frac{4\pi G\Sigma f\,u_0\,V_{\mathrm{mode}}\omega}
+{g\,Q\,\Gamma_{\mathrm{eff}}\,|\chi_\nu^{\mathrm{eng}}|}.
+}
+\label{eq:power-bound}
+\end{equation}\]</span></p>
+<p>For <span class="math inline">\(\Sigma_2=1\)</span>, <span
+class="math inline">\(V_{\mathrm{mode}}=10^{-3}\,\mathrm{m^3}\)</span>,
+<span
+class="math inline">\(\omega=2\pi(4.0\times10^4)\,\mathrm{s^{-1}}\)</span>,
+<span class="math inline">\(Q=10^5\)</span>, <span
+class="math inline">\(f=1\)</span>, and <span
+class="math inline">\(\Gamma_{\mathrm{eff}}=1\)</span>, this gives:</p>
+<p><span class="math display">\[\begin{array}{c|c}
+|\chi_\nu^{\mathrm{eng}}| &amp; P_{\mathrm{loss}}\\
+\hline
+10^{-20} &amp; 1.8\,\mathrm{W}\\
+10^{-21} &amp; 18\,\mathrm{W}\\
+10^{-22} &amp; 183\,\mathrm{W}\\
+10^{-23} &amp; 1.8\,\mathrm{kW}\\
+10^{-24} &amp; 18\,\mathrm{kW}
+\end{array}\]</span></p>
+<p>The scaling is <span
+class="math inline">\(P_{\mathrm{loss}}\propto(Q\Gamma_{\mathrm{eff}}|\chi_\nu^{\mathrm{eng}}|)^{-1}\)</span>.</p>
+<h2 id="static-elastic-storage">Static elastic storage</h2>
+<p>For a static elastic-strain coherent variable, the stored density
+is</p>
+<p><span class="math display">\[\begin{equation}
+u_{\mathrm{elastic}}=\frac{\sigma^2}{2E},
+\label{eq:elastic-density}
+\end{equation}\]</span></p>
+<p>where <span class="math inline">\(\sigma\)</span> is stress and <span
+class="math inline">\(E\)</span> is the Young modulus. In that
+interpretation there is no oscillator decay factor <span
+class="math inline">\(\omega/Q\)</span>. Maintaining the state is then
+limited by creep, relaxation, and mechanical failure. Its loss law
+differs from
+Eq. <a href="#eq:loss-power" data-reference-type="eqref" data-reference="eq:loss-power">[eq:loss-power]</a>.
+The same susceptibility bounds apply, because they depend only on <span
+class="math inline">\(u\)</span>, <span
+class="math inline">\(\Gamma_{\mathrm{eff}}\)</span>, and <span
+class="math inline">\(\Sigma\)</span>.</p>
+<h1 id="construction-scale-consequences">Construction-Scale
+Consequences</h1>
+<p>The bounds are algebraic. Substrate reachability of <span
+class="math inline">\(\Gamma_{\mathrm{eff}}\simeq1\)</span> and safe
+maintenance of a high-energy coherent state are separate engineering
+claims. The bounds specify the requirements for a macroscopic force
+device if the continuation is real.</p>
+<p>A force device, in this narrow sense, is a bounded substrate whose
+active region creates a vertical engineering-coherence contrast <span
+class="math inline">\(\Delta S_{\mathrm{coh}}^{\mathrm{eng}}\)</span>.
+The apparent weight fraction is</p>
+<p><span class="math display">\[\begin{equation}
+\frac{|F_\chi|}{Mg}
+=
+\frac{g}{4\pi G\Sigma}\,
+|\chi_\nu^{\mathrm{eng}}|\,\Gamma_{\mathrm{eff}}\frac{u}{u_0}.
+\label{eq:force-fraction}
+\end{equation}\]</span></p>
+<p>All construction choices enter through the product</p>
+<p><span class="math display">\[\begin{equation}
+|\chi_\nu^{\mathrm{eng}}|\,\Gamma_{\mathrm{eff}}\,u.
+\label{eq:construction-product}
+\end{equation}\]</span></p>
+<p>The product makes <span
+class="math inline">\(\chi_\nu^{\mathrm{eng}}\)</span> the governing
+chart number. Geometry fixes the coefficient <span
+class="math inline">\(g/(4\pi G\Sigma)\)</span>. Better materials can
+raise <span class="math inline">\(u\)</span>. Better mode design can
+raise <span class="math inline">\(\Gamma_{\mathrm{eff}}\)</span>. A
+smaller <span class="math inline">\(\chi_\nu^{\mathrm{eng}}\)</span>
+must be paid for linearly by higher stored energy density, larger active
+volume, better quality factor, or a smaller target response fraction. If
+<span class="math inline">\(\chi_\nu^{\mathrm{eng}}=0\)</span>, no
+amount of construction produces the continuation force.</p>
+<p>For the normalized areal load <span
+class="math inline">\(\Sigma_2=1\)</span>, the full-response condition
+is</p>
+<p><span class="math display">\[\begin{equation}
+\Delta\nu_{\mathrm{full}}(\Sigma_2=1)
+=
+\frac{4\pi G\Sigma}{g}
+=
+8.5525\times10^{-9}.
+\label{eq:full-response-dnu}
+\end{equation}\]</span></p>
+<p>The value is far below even a conservative <span
+class="math inline">\(\epsilon_{\mathrm{lin}}=0.1\)</span> linear bound.
+The required <span class="math inline">\(\Delta\nu\)</span> lies inside
+the theorem window. Construction depends on the required <span
+class="math inline">\(\Gamma_{\mathrm{eff}}u\)</span> product, mode
+volume, quality factor, and material stress.</p>
+<div class="tabularx">
+
+<p>@R0.12R0.16R0.16L0.19X@ <span
+class="math inline">\(|\chi_\nu^{\mathrm{eng}}|\)</span> &amp; <span
+class="math inline">\(u_{\mathrm{req}}\)</span> at <span
+class="math inline">\(f\Sigma_2/\Gamma_{\mathrm{eff}}=1\)</span> &amp;
+<span class="math inline">\(P_{\mathrm{loss}}\)</span> at <span
+class="math inline">\(f\Sigma_2/\Gamma_{\mathrm{eff}}=1,Q=10^5\)</span>
+&amp; Construction class &amp; Interpretation<br />
+<span class="math inline">\(10^{-20}\)</span> &amp; <span
+class="math inline">\(7.3\times10^2\,\mathrm{J\,m^{-3}}\)</span> &amp;
+<span class="math inline">\(1.8\,\mathrm{W}\)</span> &amp; small bench
+article &amp; The force is easy to produce if the coherence scalar is
+real. Existing ambient-coherence nulls become the primary consistency
+check.<br />
+<span class="math inline">\(10^{-21}\)</span> &amp; <span
+class="math inline">\(7.3\times10^3\,\mathrm{J\,m^{-3}}\)</span> &amp;
+<span class="math inline">\(18\,\mathrm{W}\)</span> &amp; tabletop
+module &amp; Accessible to modest driven resonators or static strain
+specimens. A direct balance or pendulum experiment should see it
+cleanly.<br />
+<span class="math inline">\(10^{-22}\)</span> &amp; <span
+class="math inline">\(7.3\times10^4\,\mathrm{J\,m^{-3}}\)</span> &amp;
+<span class="math inline">\(183\,\mathrm{W}\)</span> &amp; high-Q insert
+/ compact platform &amp; The first useful construction band. Full
+response is compatible with ordinary high-Q crystal or metal inserts.
+Thermal management matters.<br />
+<span class="math inline">\(10^{-23}\)</span> &amp; <span
+class="math inline">\(7.3\times10^5\,\mathrm{J\,m^{-3}}\)</span> &amp;
+<span class="math inline">\(1.8\,\mathrm{kW}\)</span> &amp; engineered
+crystal or metal module &amp; Inside high-strength material energy
+densities. Continuous driven operation becomes hard. Static elastic
+storage becomes much more attractive.<br />
+<span class="math inline">\(10^{-24}\)</span> &amp; <span
+class="math inline">\(7.3\times10^6\,\mathrm{J\,m^{-3}}\)</span> &amp;
+<span class="math inline">\(18\,\mathrm{kW}\)</span> &amp; industrial
+multi-module system &amp; Near the upper end of practical stored-density
+claims. Driven operation needs large area, high <span
+class="math inline">\(Q\)</span>, cryogenic or exceptional materials, or
+partial-lift use.<br />
+<span class="math inline">\(10^{-25}\)</span> &amp; <span
+class="math inline">\(7.3\times10^7\,\mathrm{J\,m^{-3}}\)</span> &amp;
+<span class="math inline">\(183\,\mathrm{kW}\)</span> &amp; large array
+/ static-only candidate &amp; Inside the response window. Compact driven
+construction is implausible. Static prestress, very high <span
+class="math inline">\(\Gamma_{\mathrm{eff}}\)</span>, or large arrays
+are the plausible routes.<br />
+<span class="math inline">\(10^{-26}\)</span> &amp; <span
+class="math inline">\(7.3\times10^8\,\mathrm{J\,m^{-3}}\)</span> &amp;
+<span class="math inline">\(1.8\,\mathrm{MW}\)</span> &amp; outside
+compact construction &amp; The response inequalities are satisfied.
+Material and power requirements exceed the intended compact-device
+scale. For compact devices, this row is effectively a null.</p>
+</div>
+
+<p>Two consequences follow.</p>
+<p>First, a measurement of <span
+class="math inline">\(\chi_\nu^{\mathrm{eng}}\)</span> selects a
+construction class. If <span
+class="math inline">\(|\chi_\nu^{\mathrm{eng}}|\gtrsim10^{-22}\)</span>
+and <span class="math inline">\(\Gamma_{\mathrm{eff}}\)</span> is
+reasonably large, compact demonstrators are in the ordinary resonator
+and high-strength-substrate regime. If <span
+class="math inline">\(|\chi_\nu^{\mathrm{eng}}|\sim10^{-23}\)</span> to
+<span class="math inline">\(10^{-24}\)</span>, the design must move
+toward high-Q crystals, larger active area, static strain, or partial
+lift. If <span
+class="math inline">\(|\chi_\nu^{\mathrm{eng}}|\lesssim10^{-25}\)</span>,
+compact force-device construction stops being the right first target.
+The useful output is a bound on the continuation.</p>
+<p>Second, the static-versus-driven distinction is decisive. The driven
+column pays <span
+class="math inline">\(uV_{\mathrm{mode}}\omega/Q\)</span>. Static
+elastic storage pays no oscillator maintenance cost. It must survive
+creep and fracture. The same <span
+class="math inline">\(\chi_\nu^{\mathrm{eng}}\)</span> value can be
+impractical for a driven phonon design and practical for a static strain
+design. The static-stress experiment decides which maintenance law
+applies to the construction table.</p>
+<h1 id="experimental-bound-formula">Experimental Bound Formula</h1>
+<p>Let an experiment have force sensitivity <span
+class="math inline">\(F_{\min}\)</span>, projected area <span
+class="math inline">\(A_\perp\)</span>, and known engineering-coherence
+contrast <span class="math inline">\(\Delta
+S_{\mathrm{coh}}^{\mathrm{eng}}\)</span>. A null result gives</p>
+<p><span class="math display">\[\begin{equation}
+\boxed{
+|\chi_\nu^{\mathrm{eng}}|
+\le
+\frac{4\pi G F_{\min}}{g^2 A_\perp|\Delta
+S_{\mathrm{coh}}^{\mathrm{eng}}|}.
+}
+\label{eq:null-bound-general}
+\end{equation}\]</span></p>
+<p>If the mode is a driven oscillator, with <span
+class="math inline">\(\Delta
+S_{\mathrm{coh}}^{\mathrm{eng}}=\Gamma_{\mathrm{eff}}QP_{\mathrm{in}}/(u_0\omega
+V_{\mathrm{mode}})\)</span>, then</p>
+<p><span class="math display">\[\begin{equation}
+\boxed{
+|\chi_\nu^{\mathrm{eng}}|
+\le
+\frac{4\pi G F_{\min}u_0\omega V_{\mathrm{mode}}}
+{g^2 A_\perp\Gamma_{\mathrm{eff}}QP_{\mathrm{in}}}.
+}
+\label{eq:null-bound-driven}
+\end{equation}\]</span></p>
+<p>If the mode is static elastic storage, replace the driven density by
+<span class="math inline">\(u_{\mathrm{elastic}}\)</span> from
+Eq. <a href="#eq:elastic-density" data-reference-type="eqref" data-reference="eq:elastic-density">[eq:elastic-density]</a>.</p>
+<h1 id="compatibility-with-existing-nulls">Compatibility with Existing
+Nulls</h1>
+<div class="proposition">
+
+<p><strong>Proposition 17</strong> (No ordinary-matter anomaly from null
+coherence). <em>If ordinary non-engineered configurations have <span
+class="math inline">\(\mathfrak c_U=0\)</span> on the observer-facing
+scalar of
+Eq. <a href="#eq:canonical-core" data-reference-type="eqref" data-reference="eq:canonical-core">[eq:canonical-core]</a>,
+then they impose no direct bound on <span
+class="math inline">\(\chi_\nu^{\mathrm{eng}}\)</span>, because <span
+class="math inline">\(\delta\nu=\chi_\nu^{\mathrm{eng}}S_{\mathrm{coh}}^{\mathrm{eng}}=0\)</span>
+for those configurations.</em></p>
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em>
+Equation <a href="#eq:Scoh-eng-patch" data-reference-type="eqref" data-reference="eq:Scoh-eng-patch">[eq:Scoh-eng-patch]</a>
+gives the statement immediately. The continuation couples only to the
+OPH-native coherent scalar. Undifferentiated rest mass or heat is
+outside this ansatz. ◻</p>
+</div>
+
+<p>If ordinary matter has a small nonzero ambient scalar <span
+class="math inline">\({S_{\mathrm{coh}}^{\mathrm{eng}}}_{\mathrm{amb}}\)</span>,
+then existing gravitational null tests bound the product:</p>
+<p><span class="math display">\[\begin{equation}
+|\chi_\nu^{\mathrm{eng}}|\,{S_{\mathrm{coh}}^{\mathrm{eng}}}_{\mathrm{amb}}
+\le
+\delta\nu_{\mathrm{test}}.
+\label{eq:ambient-bound}
+\end{equation}\]</span></p>
+<p>The condition is real. It becomes a theorem-grade number when the
+ambient scalar is specified. The continuation is falsifiable in two
+ways: by direct <span
+class="math inline">\(\chi_\nu^{\mathrm{eng}}\)</span> searches through
+Eq. <a href="#eq:null-bound-general" data-reference-type="eqref" data-reference="eq:null-bound-general">[eq:null-bound-general]</a>
+and by ordinary-gravity null tests once a model for <span
+class="math inline">\({S_{\mathrm{coh}}^{\mathrm{eng}}}_{\mathrm{amb}}\)</span>
+is fixed.</p>
+<h1 id="how-to-read-the-two-bands">How to Read the Two Bands</h1>
+<p>The canonical band in
+Eq. <a href="#eq:chi-can-band" data-reference-type="eqref" data-reference="eq:chi-can-band">[eq:chi-can-band]</a>
+is the quotient-edge continuation statement. It is dimensionless and
+independent of material energy density. It belongs to the branch where
+coherent scalar sourcing is co-registered with the dark-sector scalar
+repair channel. On the exact uniform-reserve branch, the value is the
+single number <span
+class="math inline">\(0.9343006394893864\ldots\)</span>.</p>
+<p>The engineering band in
+Eq. <a href="#eq:chi-eng-band" data-reference-type="eqref" data-reference="eq:chi-eng-band">[eq:chi-eng-band]</a>
+is the same statement in a stored-energy chart. It depends on the
+declared normalization <span
+class="math inline">\(N_{\mathrm{coh}}=\varepsilon_{\mathrm{sub}}u_{\mathrm{stored}}/u_0\)</span>.
+Large coherent stored energy densities make <span
+class="math inline">\(\chi_\nu^{\mathrm{eng}}\)</span> numerically small
+because the scalar itself has been scaled up.</p>
+<p>The response window in
+Eq. <a href="#eq:chi-eng-window" data-reference-type="eqref" data-reference="eq:chi-eng-window">[eq:chi-eng-window]</a>
+is an operating condition for a chosen device geometry and
+linear-response allowance. A design with fixed <span
+class="math inline">\(\Sigma\)</span>, <span
+class="math inline">\(f\)</span>, <span
+class="math inline">\(u\)</span>, and <span
+class="math inline">\(\Gamma_{\mathrm{eff}}\)</span> is compatible with
+the OPH continuation coefficient when the forced engineering band
+intersects that operating window. If the forced band sits above the
+chosen linear ceiling, the design is outside that linear chart. If it
+sits below the target threshold, the target response is too large for
+that design.</p>
+<h1 id="chart-choices">Chart Choices</h1>
+<p>The canonical scalar uses the exponent-free observer core <span
+class="math inline">\(\mathbf
+1_{\mathrm{self\mbox{-}read}}R_UP_UC_U\)</span>. Optional empirical
+exponents or refinement factors are calibrated-chart data. They are
+outside the canonical quotient-edge coefficient.</p>
+<p>The coarse-grained partition weights <span
+class="math inline">\(w_U(x)\)</span> should be induced by a declared
+observer-supporting subcover. Only the contrast entering the force law
+is used in the response bounds.</p>
+<p>The exact value <span class="math inline">\(e^{-P/24}\)</span> uses
+the uniform-reserve finite-thickness branch. The wider numerical
+interval in
+Eq. <a href="#eq:chi-can-band" data-reference-type="eqref" data-reference="eq:chi-can-band">[eq:chi-can-band]</a>
+uses finite-thickness averaging and the protected reserve mean. The
+profile-envelope range in the remark after the exact-value corollary
+needs an extra numerical selector.</p>
+<h1 id="conclusion">Conclusion</h1>
+<p>The recovered OPH core leaves <span
+class="math inline">\(\chi_\nu\)</span> unfixed. This paper defines a
+coherent-matter continuation branch with a canonical quotient-edge chart
+and an engineering stored-energy chart:</p>
+<p><span class="math display">\[\nu_{\mathrm{eff}}
+=
+\nu_{\mathrm{OPH}}+\chi_\nu^{\mathrm{can}}S_{\mathrm{coh}}^{\mathrm{can}}
+=
+\nu_{\mathrm{OPH}}+\chi_\nu^{\mathrm{eng}}S_{\mathrm{coh}}^{\mathrm{eng}}.\]</span></p>
+<p>On the quotient-edge co-registered branch, granting the dark-sector
+collar lemmas forces the canonical coefficient to equal the collar
+survival coefficient:</p>
+<p><span
+class="math display">\[\chi_\nu^{\mathrm{can}}=\lambda_{\mathrm{collar}}.\]</span></p>
+<p>L1 to L5 give the theorem-grade band</p>
+<p><span class="math display">\[0.9343006394893864\ldots
+\le
+\chi_\nu^{\mathrm{can}}
+\le
+1.\]</span></p>
+<p>L6 gives the exact value</p>
+<p><span
+class="math display">\[\chi_\nu^{\mathrm{can}}=e^{-P/24}=0.9343006394893864\ldots
+.\]</span></p>
+<p>This excludes <span
+class="math inline">\(\chi_\nu^{\mathrm{can}}=0\)</span> on the declared
+quotient-edge continuation.</p>
+<p>In the engineering chart,</p>
+<p><span
+class="math display">\[\chi_\nu^{\mathrm{eng}}=\frac{\chi_\nu^{\mathrm{can}}}{N_{\mathrm{coh}}},
+\qquad
+N_{\mathrm{coh}}=\varepsilon_{\mathrm{sub}}\frac{u_{\mathrm{stored}}}{u_0}.\]</span></p>
+<p>This gives</p>
+<p><span
+class="math display">\[\frac{0.9343006394893864}{N_{\mathrm{coh}}}
+\le
+\chi_\nu^{\mathrm{eng}}
+\le
+\frac{1}{N_{\mathrm{coh}}}.\]</span></p>
+<p>Engineering values near <span class="math inline">\(10^{-22}\)</span>
+correspond to <span
+class="math inline">\(N_{\mathrm{coh}}\sim10^{22}\)</span>. The
+response-window inequalities then decide which device geometries and
+material states stay inside the chosen linear-response chart.</p>
+<p>For <span
+class="math inline">\(\Sigma=100\,\mathrm{kg\,m^{-2}}\)</span>, full
+weight response requires</p>
+<p><span class="math display">\[\Delta
+S_{\mathrm{coh,req}}^{\mathrm{can}}
+\simeq
+8.6\times10^{-9}\text{ to }9.2\times10^{-9},\]</span></p>
+<p>and ten percent assist requires about <span
+class="math inline">\(8.6\times10^{-10}\)</span> to <span
+class="math inline">\(9.2\times10^{-10}\)</span>. A hoverboard-class
+areal load around <span class="math inline">\(200\)</span> to <span
+class="math inline">\(600\,\mathrm{kg\,m^{-2}}\)</span> moves the
+full-response target to about <span
+class="math inline">\(2\times10^{-8}\)</span> to <span
+class="math inline">\(6\times10^{-8}\)</span>. The coefficient is
+compatible with those room-scale response levels on the declared branch.
+The engineering task is the construction of a substrate that produces
+the required vertical canonical contrast with stable controls and
+acceptable losses.</p>
+<div class="thebibliography">
+
+<p>99</p>
+<p>B. Müller, A. Osika, K. Xue, B. Cassie, P. Nguyen, M. Poneder, and
+K. A. Anirudha, <em>Observers Are All You Need</em>. <a
+href="https://github.com/FloatingPragma/observer-patch-holography/releases/download/r1461/observers_are_all_you_need.pdf">release
+PDF</a>.</p>
+<p>B. Müller, A. Osika, K. Xue, and P. Nguyen, <em>Recovering Relativity
+and Standard Model Structure from Observer-Overlap Consistency</em>. <a
+href="https://github.com/FloatingPragma/observer-patch-holography/releases/download/r1461/recovering_relativity_and_standard_model_structure_from_observer_overlap_consistency_compact.pdf">release
+PDF</a>.</p>
+<p>B. Müller, A. Osika, K. Xue, and P. Nguyen, <em>Reality as a
+Consensus Protocol</em>. <a
+href="https://github.com/FloatingPragma/observer-patch-holography/releases/download/r1461/reality_as_consensus_protocol.pdf">release
+PDF</a>.</p>
+<p>B. Müller and K. Xue, <em>Federated Echosahedral Screen Microphysics:
+Patch Hardware, Records, and Observer Synchronization in OPH</em>. <a
+href="https://github.com/FloatingPragma/observer-patch-holography/releases/download/r1461/screen_microphysics_and_observer_synchronization.pdf">release
+PDF</a>.</p>
+<p>B. Müller, <em>Observer-Patch Holography and the Dark Matter
+Phenomenon</em>. <a
+href="https://github.com/FloatingPragma/observer-patch-holography/releases/download/r1461/oph_dark_matter_paper.pdf">release
+PDF</a>.</p>
+<p>A. Osika and B. Müller, <em><span
+class="math inline">\(\chi_\nu\)</span>: Probing the OPH Dark Sector via
+Coherent-Matter Susceptibility</em>, draft, May 20, 2026.</p>
+</div>
+
+          </div>
+        </div>
+      </article>
+    </main>
+    <footer class="site-footer reveal">
+      <div>Pragma</div>
+      <div class="site-footer-links">
+        <a href="/oph/" data-track-link="footer-hub">Observer Patch Holography</a>
+        <a href="/oph/papers/" data-track-link="footer-papers">Papers</a>
+        <a href="/oph/standard-model-gravity-unification/" data-track-link="footer-smg">SM + Gravity</a>
+        <a href="/oph/theory-of-everything/" data-track-link="footer-toe">Theory of Everything</a>
+        <a href="/oph/simulation-theory/" data-track-link="footer-sim">Simulation Theory</a>
+        <a href="/oph/quantum-gravity/" data-track-link="footer-qg">Quantum Gravity</a>
+        <a href="https://oph-book.floatingpragma.io/" data-track-link="footer-book">Book</a>
+        <a href="https://challenge.floatingpragma.io/" data-track-link="footer-challenge">Challenge</a>
+      </div>
+    </footer>
+
+  </div>
+  <script src="/oph/app.js"></script>
+</body>
+</html>

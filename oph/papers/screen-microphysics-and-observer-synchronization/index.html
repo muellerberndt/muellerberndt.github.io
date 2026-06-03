@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Screen Microphysics and Observer Synchronization | OPH Paper</title>
+  <meta name="title" content="Screen Microphysics and Observer Synchronization | OPH Paper" />
+  <meta name="description" content="The fixed-cutoff OPH microphysics paper. It develops finite overlap-facing patch carriers, record algebras, measurement surfaces, observer backup, synchronization, and hardware-evidence rules." />
+  <meta name="keywords" content="screen microphysics, observer synchronization, Born rule, measurement problem, holographic screen, simulation hardware, Observer Patch Holography" />
+  <meta name="author" content="Pragma" />
+  <link rel="canonical" href="https://floatingpragma.io/oph/papers/screen-microphysics-and-observer-synchronization/" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://floatingpragma.io/oph/papers/screen-microphysics-and-observer-synchronization/" />
+  <meta property="og:title" content="Screen Microphysics and Observer Synchronization | OPH Paper" />
+  <meta property="og:description" content="The fixed-cutoff OPH microphysics paper. It develops finite overlap-facing patch carriers, record algebras, measurement surfaces, observer backup, synchronization, and hardware-evidence rules." />
+  <meta property="og:image" content="https://floatingpragma.io/oph/screen.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Screen Microphysics and Observer Synchronization | OPH Paper" />
+  <meta name="twitter:description" content="The fixed-cutoff OPH microphysics paper. It develops finite overlap-facing patch carriers, record algebras, measurement surfaces, observer backup, synchronization, and hardware-evidence rules." />
+  <meta name="twitter:image" content="https://floatingpragma.io/oph/screen.webp" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="stylesheet" href="/oph/styles.css" />
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['\\(', '\\)'], ['$', '$']], displayMath: [['\\[', '\\]']] },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Screen Microphysics and Observer Synchronization",
+  "name": "Screen Microphysics and Observer Synchronization",
+  "description": "The fixed-cutoff OPH microphysics paper. It develops finite overlap-facing patch carriers, record algebras, measurement surfaces, observer backup, synchronization, and hardware-evidence rules.",
+  "url": "https://floatingpragma.io/oph/papers/screen-microphysics-and-observer-synchronization/",
+  "encoding": {
+    "@type": "MediaObject",
+    "contentUrl": "https://floatingpragma.io/oph/papers/pdf/screen_microphysics_and_observer_synchronization.pdf",
+    "encodingFormat": "application/pdf"
+  },
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Bernhard Mueller"
+    },
+    {
+      "@type": "Person",
+      "name": "Alexander Osika"
+    },
+    {
+      "@type": "Person",
+      "name": "Kai Xue"
+    },
+    {
+      "@type": "Person",
+      "name": "Ben Cassie"
+    }
+  ],
+  "isPartOf": {
+    "@type": "ResearchProject",
+    "name": "Observer Patch Holography",
+    "url": "https://floatingpragma.io/oph/"
+  },
+  "keywords": [
+    "screen microphysics",
+    "observer synchronization",
+    "Born rule",
+    "measurement problem",
+    "holographic screen",
+    "simulation hardware",
+    "Observer Patch Holography"
+  ],
+  "datePublished": "June 3, 2026",
+  "dateModified": "June 3, 2026",
+  "version": "r1461"
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Floating Pragma",
+      "item": "https://floatingpragma.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Observer Patch Holography",
+      "item": "https://floatingpragma.io/oph/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "OPH Papers",
+      "item": "https://floatingpragma.io/oph/papers/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Screen Microphysics and Observer Synchronization",
+      "item": "https://floatingpragma.io/oph/papers/screen-microphysics-and-observer-synchronization/"
+    }
+  ]
+}
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HLGH209WMG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-HLGH209WMG', { cookie_domain: 'floatingpragma.io' });
+  </script>
+</head>
+<body class="oph-page paper-page">
+  <div class="site-grid"></div>
+  <div class="page-shell">
+    <header class="site-header reveal">
+      <a class="brand" href="/oph/">
+        <span class="brand-mark">
+          <img src="/pragma-cropped.jpg" alt="Pragma" />
+        </span>
+        <span class="brand-copy">
+          <strong>Pragma</strong>
+          <span>OPH Paper</span>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="OPH navigation">
+        <a href="/oph/" data-track-link="nav-hub">Hub</a>
+        <a href="/oph/papers/" data-track-link="nav-papers">Papers</a>
+        <a href="/oph/standard-model-gravity-unification/" data-track-link="nav-smg">SM + Gravity</a>
+        <a href="/oph/theory-of-everything/" data-track-link="nav-toe">Theory of Everything</a>
+        <a href="https://oph-lab.floatingpragma.io/" data-track-link="nav-lab">Lab</a>
+        <a href="https://challenge.floatingpragma.io/" data-track-link="nav-challenge">Challenge</a>
+      </nav>
+    </header>
+
+    <main>
+      <article class="paper-reader reveal">
+        <header class="paper-reader-header">
+          <div class="eyebrow">Screen physics</div>
+          <h1>Screen Microphysics and Observer Synchronization</h1>
+          <p class="article-lead">The fixed-cutoff OPH microphysics paper. It develops finite overlap-facing patch carriers, record algebras, measurement surfaces, observer backup, synchronization, and hardware-evidence rules.</p>
+          <div class="paper-meta-line">
+            <span>r1461</span>
+            <span>June 3, 2026</span>
+            <span>papers</span>
+          </div>
+          <div class="paper-author-line">Authors: Bernhard Mueller, Alexander Osika, Kai Xue, Ben Cassie</div>
+          <div class="article-meta">
+              <span class="meta-chip">screen microphysics</span>
+              <span class="meta-chip">observer synchronization</span>
+              <span class="meta-chip">Born rule</span>
+              <span class="meta-chip">measurement problem</span>
+              <span class="meta-chip">holographic screen</span>
+              <span class="meta-chip">simulation hardware</span>
+          </div>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="/oph/papers/pdf/screen_microphysics_and_observer_synchronization.pdf" target="_blank" rel="noopener noreferrer" data-track-link="paper-pdf-screen_microphysics_and_observer_synchronization">Download PDF</a>
+            <a class="btn btn-secondary" href="/oph/papers/" data-track-link="paper-index">All OPH papers</a>
+            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r1461" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
+          </div>
+        </header>
+        <div class="paper-reader-grid">
+          <aside class="paper-reader-side" aria-label="Paper navigation">
+            <div class="side-card">
+              <strong>Formal artifact</strong>
+              <p>The PDF is mirrored on this site and remains the formal release artifact for theorem status and branch boundaries.</p>
+              <a href="/oph/papers/pdf/screen_microphysics_and_observer_synchronization.pdf" target="_blank" rel="noopener noreferrer">Open first-party PDF</a>
+            </div>
+            <div class="side-card">
+              <strong>Sections</strong>
+              <nav class="paper-toc" aria-label="Paper sections"><a href="#scope">Scope</a>
+<a href="#claim-taxonomy">Claim Taxonomy</a>
+<a href="#the-public-evidence-rule">The Public Evidence Rule</a>
+<a href="#from-spherical-screens-to-federated-patch-carriers">From Spherical Screens to Federated Patch Carriers</a>
+<a href="#the-echosahedral-patch-object">The Echosahedral Patch Object</a>
+<a href="#toroidal-recurrence-is-local">Toroidal Recurrence Is Local</a>
+<a href="#patch-federation-and-overlap-synchronization">Patch Federation and Overlap Synchronization</a>
+<a href="#records-observers-and-checkpoints">Records, Observers, and Checkpoints</a>
+<a href="#central-records-and-measurement">Central Records and Measurement</a>
+<a href="#edge-sectors-and-the-casimir-handoff">Edge Sectors and the Casimir Handoff</a>
+<a href="#bellchsh-event-surfaces">Bell/CHSH Event Surfaces</a>
+<a href="#relation-to-yangmills">Relation to Yang–Mills</a></nav>
+            </div>
+          </aside>
+          <div class="paper-body">
+<div class="center">
+
+<p><strong>Paper release:</strong> <code>r1461</code><br />
+<strong>Released:</strong> June 3, 2026</p>
+</div>
+
+<h1 id="scope">Scope</h1>
+<p>OPH microphysics uses finite observer patches with echosahedral
+interfaces. A spherical screen is a geometry chart for support-visible
+cuts. The cellulated-sphere gauge-register construction is a regulator
+and digital calibration chart. The premise is:</p>
+<blockquote>
+<p>Observers access finite support-visible cuts. A spherical screen is a
+geometry chart for such cuts. The underlying fixed-cutoff implementation
+surface is a federation of finite overlap-facing observer patches, with
+echosahedral local interfaces and recurrent toroidal subchannels.</p>
+</blockquote>
+<p>The paper’s contract is:</p>
+<ol type="1">
+<li><p>state the fixed-cutoff theorem exports used by the other OPH
+papers;</p></li>
+<li><p>use federated patch carriers as the microphysical
+architecture;</p></li>
+<li><p>keep mathematical theorem surfaces separate from public hardware
+evidence surfaces;</p></li>
+<li><p>keep the octahedral <span class="math inline">\(\mathbb
+Z_2/S_3\)</span> simulator at appendix-level calibration
+status;</p></li>
+<li><p>require a public hardware evidence protocol before hardware
+claims receive paper weight.</p></li>
+</ol>
+<h1 id="claim-taxonomy">Claim Taxonomy</h1>
+<p>The paper uses five claim levels.</p>
+<ol type="1">
+<li><p><strong>Mathematical fixed-cutoff claims.</strong> These are
+finite-algebra statements about patches, overlaps, records, repair
+interfaces, event algebras, and checkpoint laws. They are allowed to be
+theorem-bearing. The generic overlap network is a finite constraint code
+only; QECC distance, min-cut resilience, spectral convergence, BFT
+liveness, and hardware speedup need their own certificates.</p></li>
+<li><p><strong>Regulator-chart claims.</strong> These identify a
+convenient finite model, such as a spherical cellulation or a digital
+finite-group simulator, as a calculational chart. Their claim level is
+regulator geometry and calibration.</p></li>
+<li><p><strong>Federated-carrier claims.</strong> These define a
+candidate implementation architecture: observer patches with
+echosahedral multi-port interfaces, recurrent toroidal subchannels,
+exposed overlap data, records, and repair loops.</p></li>
+<li><p><strong>Public hardware-evidence claims.</strong> These may be
+cited only when the raw or reduced evidence is present in a public OPH
+evidence bundle with stable hashes, manifests, calibration files, and
+exact-verifier receipts.</p></li>
+<li><p><strong>Boundary statements.</strong> This paper leaves
+laboratory-hardware identification, unique UV completion, hardware
+solution of the Yang–Mills mass gap, computational complexity collapse,
+and backend-gated hadron rows outside its claim surface.</p></li>
+</ol>
+<h1 id="the-public-evidence-rule">The Public Evidence Rule</h1>
+<p>Hardware-facing language is admissible only under the following
+rule.</p>
+<blockquote>
+<p>Any hardware evidence cited as evidence in this paper must be
+represented by a public evidence bundle in the OPH repository, or by a
+public pinned subrepository commit, with enough raw data and metadata
+for an external reader to audit the claim.</p>
+</blockquote>
+<p>Private notebooks, local runtime logs, unpublished bench transcripts,
+and development-repo notes may motivate architecture choices, but they
+do not carry evidential weight inside the paper. A hardware evidence
+bundle must include, at minimum:</p>
+<ol type="1">
+<li><p>a manifest with stable bundle identifier, date, operator, body
+identifier, controller identifier, firmware hash, mesh/body hash, and
+wiring map hash;</p></li>
+<li><p>raw readout files, such as coupling matrices, MDD or
+discharge-timing traces, dark baselines, low-power sweeps,
+ring-diversity scans, and calibration logs;</p></li>
+<li><p>body and board provenance, including photographs or signed photo
+hashes where relevant;</p></li>
+<li><p>the task definition, scorebook, repair or rerank law, and
+exact-verifier program;</p></li>
+<li><p>exact-verifier receipts for any high-level task claim;</p></li>
+<li><p>negative controls, shuffle or replay controls where applicable,
+and a statement of non-claims.</p></li>
+</ol>
+<p>This rule prevents dependence on hidden laboratory state. The theorem
+sections use finite algebras, declared patch interfaces, and stated
+branch assumptions.</p>
+<h1 id="from-spherical-screens-to-federated-patch-carriers">From
+Spherical Screens to Federated Patch Carriers</h1>
+<p>The spherical screen is useful because an observer-accessible cut
+often has an effective closed two-surface description. A cellulated
+sphere can encode finite capacity, caps, collars, edge centers, and
+support-visible cuts. The microscopic carrier is the finite patch
+federation. The chart is the observer-facing presentation of its
+support-visible data.</p>
+<p>The sphere also fixes the symmetry bridge used by the rest of OPH.
+Caps on <span class="math inline">\(S^2\)</span> are the geometric
+support regions whose modular flows become Lorentz boosts in the
+support-visible scaling branch. The conformal group of <span
+class="math inline">\(S^2\)</span> is <span
+class="math inline">\(\mathrm{SO}^+(3,1)\)</span>, so the same
+observer-facing chart supplies the kinematic bridge to emergent <span
+class="math inline">\(3+1\)</span>D spacetime. Finite cellulations of
+the chart supply the regulator side: patch ports, edge sectors, collars,
+and overlap checks.</p>
+<p>At fixed cutoff, the fundamental object is a finite patch federation.
+Each patch has:</p>
+<ol type="1">
+<li><p>an internal finite state algebra;</p></li>
+<li><p>a bounded family of exposed overlap ports;</p></li>
+<li><p>a local record algebra;</p></li>
+<li><p>a readout map from internal state to port-visible
+packets;</p></li>
+<li><p>a repair interface that changes local state in response to
+mismatch;</p></li>
+<li><p>a checkpoint interface that exposes enough observer-accessible
+data to define continuation.</p></li>
+</ol>
+<p>A spherical screen is then a coarse chart over a federation of such
+patches. It is what a particular observer-facing support cut looks like
+after quotienting hidden implementation details and choosing a geometric
+presentation. The microscopic carrier may be graph-like, federated,
+multi-patch, and locally polyhedral.</p>
+<div class="definition">
+
+<p><strong>Definition 1</strong> (Federated patch carrier). *A
+fixed-cutoff federated patch carrier is a tuple</p>
+<p><span class="math display">\[\mathfrak F=(V,E,\{\mathcal A_i\}_{i\in
+V},\{\mathcal I_e\}_{e\in E},
+\{\pi_{i,e}\},\{\mathcal R_i\},\{\mathcal U_i\}),\]</span></p>
+<p>where <span class="math inline">\(V\)</span> is a finite set of
+patches, <span class="math inline">\(E\)</span> is a finite overlap
+graph, <span class="math inline">\(\mathcal A_i\)</span> is the local
+finite algebra of patch <span class="math inline">\(i\)</span>, <span
+class="math inline">\(\mathcal I_e\)</span> is the finite interface
+algebra on overlap <span class="math inline">\(e=\{i,j\}\)</span>, <span
+class="math inline">\(\pi_{i,e}:\mathcal A_i\to\mathcal I_e\)</span> is
+the declared visible restriction, <span class="math inline">\(\mathcal
+R_i\subseteq Z(\mathcal A_i)\)</span> is the patch record algebra, and
+<span class="math inline">\(\mathcal U_i\)</span> is the allowed local
+update and repair interface.*</p>
+</div>
+
+<p>The carrier is <em>observer-facing</em> when every physical claim is
+made through the visible restrictions <span
+class="math inline">\(\pi_{i,e}\)</span>, record algebras <span
+class="math inline">\(\mathcal R_i\)</span>, and the quotient-local
+observables specified by the OPH consensus package. Hidden coordinates
+may exist, but they are not directly physical.</p>
+<h1 id="the-echosahedral-patch-object">The Echosahedral Patch
+Object</h1>
+<p>An echosahedral patch is the reference local body for this
+microphysics. The term is architectural: a bounded observer patch with a
+highly symmetric multi-port interface.</p>
+<div class="definition">
+
+<p><strong>Definition 2</strong> (Echosahedral patch). *An echosahedral
+patch is a finite patch object</p>
+<p><span class="math display">\[\mathcal E=(\mathcal
+A,\{P_a\}_{a=0}^{11},\{\rho_a\}_{a=0}^{11},
+\mathcal R,\mathcal M,\mathcal U,\mathcal G_{\mathcal E}),\]</span></p>
+<p>where:*</p>
+<ol type="1">
+<li><p><em><span class="math inline">\(\mathcal A\)</span> is the
+internal finite algebra;</em></p></li>
+<li><p><em><span class="math inline">\(P_0,\ldots,P_{11}\)</span> are
+twelve labeled overlap ports;</em></p></li>
+<li><p><em><span class="math inline">\(\rho_a:\mathcal A\to \mathcal
+I_a\)</span> are port readout maps;</em></p></li>
+<li><p><em><span class="math inline">\(\mathcal R\subseteq Z(\mathcal
+A)\)</span> is the observer-accessible record algebra;</em></p></li>
+<li><p><em><span class="math inline">\(\mathcal M\)</span> is a finite
+mismatch-score family on exposed port packets;</em></p></li>
+<li><p><em><span class="math inline">\(\mathcal U\)</span> is a finite
+family of local update and repair instruments;</em></p></li>
+<li><p><em><span class="math inline">\(\mathcal G_{\mathcal E}\)</span>
+is a declared finite symmetry or approximate-symmetry group of the port
+arrangement.</em></p></li>
+</ol>
+</div>
+
+<p>The twelve-port choice is a reference convention. Its role is to give
+the reference patch enough boundary structure to support nontrivial
+overlap comparison, symmetry tests, verifier-shadow behavior, and
+cross-patch routing while remaining small enough for explicit evidence
+records.</p>
+<div class="remark">
+
+<p><em>Remark 3</em>. The word “echosahedral” is intentionally
+implementation-facing. In a mathematical theorem, one uses the tuple
+above. In a public hardware evidence bundle, one may instantiate the
+tuple using a specific twelve-port body, wiring map, controller,
+firmware hash, readout protocol, and evidence manifest.</p>
+</div>
+
+<h1 id="toroidal-recurrence-is-local">Toroidal Recurrence Is Local</h1>
+<p>Toroidal hardware supplies a local recurrence and mode-competition
+surface. A toroidal subchannel is a recurrent internal path inside a
+patch or between a bounded set of ports. It can recycle boundary
+information, support settling dynamics, and expose winding-like or
+phase-locking observables.</p>
+<p>This matters because global scalar order parameters are often
+misleading in recurrent local systems. A toroidal or ring-like patch may
+fail to show global alignment while still selecting a stable winding
+class, a local coherence island, or a persistent twisted state.
+Therefore the validation metrics for toroidal subchannels should
+include:</p>
+<ol type="1">
+<li><p>local coupling matrices, with total brightness treated as a
+secondary summary;</p></li>
+<li><p>recurrence and ring-diversity statistics, with global response
+treated as a secondary summary;</p></li>
+<li><p>winding-sensitive or phase-lock-sensitive summaries when phase
+data are available;</p></li>
+<li><p>matched controls that distinguish chamber-mediated dynamics from
+host-side filtering;</p></li>
+<li><p>exact-verifier receipts for task-level claims.</p></li>
+</ol>
+<p>The OPH interpretation is simple: toroidal recurrence supplies local
+memory and mode competition inside the patch federation. Echosahedral
+symmetry supplies a reference and consensus geometry. The universe, at
+this level of description, is a federated repair system with many local
+carriers.</p>
+<h1 id="patch-federation-and-overlap-synchronization">Patch Federation
+and Overlap Synchronization</h1>
+<p>Given a federation of echosahedral patches, overlaps are formed by
+routing ports into declared interface pairs or interface hyperedges. For
+an edge <span class="math inline">\(e=\{(i,a),(j,b)\}\)</span>, the
+exposed packets are</p>
+<p><span class="math display">\[x_{i,a}=\rho_{i,a}(s_i),\qquad
+x_{j,b}=\rho_{j,b}(s_j),\]</span></p>
+<p>and the edge mismatch is a nonnegative function</p>
+<p><span class="math display">\[\Phi_e(x_{i,a},x_{j,b})\ge
+0.\]</span></p>
+<p>The total visible mismatch is</p>
+<p><span class="math display">\[\Phi(s)=\sum_{e\in
+E}\Phi_e\bigl(\rho_{i,a}(s_i),\rho_{j,b}(s_j)\bigr).\]</span></p>
+<p>The local repair contract is the consensus-paper contract: accepted
+repairs do not increase the declared touched-overlap mismatch, and exact
+fixed-cutoff branches lower the relevant mismatch unless the local
+visible datum is repaired. The implementation is a bounded patch
+operation:</p>
+<ol type="1">
+<li><p>read the exposed overlap packets;</p></li>
+<li><p>compare them through a declared commensurability map;</p></li>
+<li><p>choose an allowed local update or rerank move;</p></li>
+<li><p>write a record of the move;</p></li>
+<li><p>expose the new port packet;</p></li>
+<li><p>let the exact verifier decide any high-level task claim.</p></li>
+</ol>
+<div class="proposition">
+
+<p><strong>Proposition 4</strong> (Federated synchronization contract).
+<em>Suppose a finite patch federation has a declared mismatch functional
+<span class="math inline">\(\Phi\)</span>, a finite repair menu, and an
+accepted-repair rule such that every accepted repair lowers <span
+class="math inline">\(\Phi\)</span> unless the touched visible datum is
+locally repaired. Then every repair sequence terminates at a visible
+local normal form. If the union-collar gluing and repair-completeness
+hypotheses of the OPH consensus theorem hold on the quotient-local
+carrier, the terminal physical observable state is schedule-independent
+on that carrier. The carrier is thereby a finite constraint-code
+implementation surface; no QECC distance, min-cut formula, spectral
+mixing rate, or wall-clock liveness bound follows unless the
+corresponding extra certificate is supplied.</em></p>
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> The first sentence is the finite Lyapunov argument:
+<span class="math inline">\(\Phi\)</span> takes values in a finite
+ordered set of declared mismatch scores and strictly decreases on
+nontrivial accepted repairs. The second sentence is not reproved here;
+it is exactly the quotient-local confluence package supplied by the OPH
+consensus theorem. This paper supplies the federated carrier and visible
+interface on which that theorem is read. ◻</p>
+</div>
+
+<h1 id="records-observers-and-checkpoints">Records, Observers, and
+Checkpoints</h1>
+<p>An observer is not added as a metaphysical extra. In this paper an
+observer is an operational pattern in a patch or patch subfederation
+with persistent access to:</p>
+<ol type="1">
+<li><p>an observer-facing local algebra;</p></li>
+<li><p>a record algebra;</p></li>
+<li><p>a stable readout/update interface;</p></li>
+<li><p>enough checkpoint data to define future observer-accessible
+probabilities.</p></li>
+</ol>
+<div class="definition">
+
+<p><strong>Definition 5</strong> (Federated observer checkpoint). *For
+an observer-supporting patch subfederation <span
+class="math inline">\(O\)</span>, a checkpoint at cycle <span
+class="math inline">\(t\)</span> is</p>
+<p><span class="math display">\[\mathrm{Chk}_O(t)=
+\bigl(
+\mathcal R_O(t),
+\rho_O^{\mathrm{acc}}(t),
+\mathfrak I_O^{\mathrm{ext}}(t),
+\nu_{\ge t},
+\mathfrak B_O(t)
+\bigr),\]</span></p>
+<p>where <span class="math inline">\(\mathcal R_O(t)\)</span> is the
+observer-accessible record algebra, <span
+class="math inline">\(\rho_O^{\mathrm{acc}}(t)\)</span> is the state
+restricted to observer-accessible records and visible interfaces, <span
+class="math inline">\(\mathfrak I_O^{\mathrm{ext}}(t)\)</span> is the
+external port-interface tuple, <span class="math inline">\(\nu_{\ge
+t}\)</span> is the future update schedule class, and <span
+class="math inline">\(\mathfrak B_O(t)\)</span> is the public or
+internal bundle of provenance data needed to replay the checkpoint at
+the declared accuracy.*</p>
+</div>
+
+<div class="theorem">
+
+<p><strong>Theorem 6</strong> (Checkpoint continuation at fixed cutoff).
+<em>If two federated observer checkpoints agree exactly on <span
+class="math inline">\(\mathcal R_O(t)\)</span>, <span
+class="math inline">\(\rho_O^{\mathrm{acc}}(t)\)</span>, <span
+class="math inline">\(\mathfrak I_O^{\mathrm{ext}}(t)\)</span>, and
+<span class="math inline">\(\nu_{\ge t}\)</span>, then they induce the
+same future probability law on the observer-accessible event algebra. If
+their accessible states differ by trace distance at most <span
+class="math inline">\(\varepsilon\)</span>, then the induced future
+history laws differ in total variation by at most <span
+class="math inline">\(\varepsilon\)</span>.</em></p>
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> All future observer-accessible probabilities are
+computed by applying the same completely positive update maps and the
+same event-readout maps to the same accessible algebra and external
+interface data. Exact equality gives equality of all future event
+probabilities. In the approximate case, contractivity of trace distance
+under completely positive trace-preserving maps gives the stated
+total-variation bound. ◻</p>
+</div>
+
+<h1 id="central-records-and-measurement">Central Records and
+Measurement</h1>
+<p>The measurement package is a finite central-record package. Records
+are exposed by observer-facing patch subfederations.</p>
+<p>Let <span class="math inline">\(\mathcal Z_{\mathrm{rec}}(t)\)</span>
+be the commutative algebra generated by the completed,
+observer-accessible record projectors at cycle <span
+class="math inline">\(t\)</span>. An event <span
+class="math inline">\(E\)</span> is a projector in <span
+class="math inline">\(\mathcal Z_{\mathrm{rec}}(t)\)</span>. The
+operational measurement rule is:</p>
+<p><span class="math display">\[\Pr(E)=\mathrm{Tr}(\rho E),
+\qquad
+\rho\mapsto \frac{E\rho E}{\mathrm{Tr}(\rho E)}
+\quad\text{when }\Pr(E)&gt;0.\]</span></p>
+<div class="theorem">
+
+<p><strong>Theorem 7</strong> (Federated central-record measurement).
+<em>On a fixed-cutoff federated patch carrier, once a completed
+write/verify slice exposes a finite commutative central record algebra
+<span class="math inline">\(\mathcal Z_{\mathrm{rec}}(t)\)</span>, the
+Born probability and Lüders conditioning rule above define the
+operational measurement package on the observer-accessible event
+surface. Re-reading the same completed record event has probability one,
+conditional on that record event.</em></p>
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> The theorem is the standard finite-dimensional
+central-record argument. Because all declared record events commute and
+belong to the observer-accessible center for the completed slice, they
+define an ordinary finite classical event algebra. Probabilities are
+Born traces on that event algebra, and conditioning on an event is the
+Lüders update. After conditioning on <span
+class="math inline">\(E\)</span>, the same central projector <span
+class="math inline">\(E\)</span> is true with probability one. ◻</p>
+</div>
+
+<h1 id="edge-sectors-and-the-casimir-handoff">Edge Sectors and the
+Casimir Handoff</h1>
+<p>The edge heat-kernel/Casimir package is a fixed-cutoff theorem
+package tied to an overlap collar with a finite exposed sector
+algebra.</p>
+<p>At fixed cutoff, let <span class="math inline">\(\alpha\)</span>
+label a finite set of exposed edge sectors on one declared overlap
+collar. Suppose the local thermalized edge dynamics has stationary
+weights</p>
+<p><span class="math display">\[\pi_\beta(\alpha)=\frac{d_\alpha
+e^{-\beta C_2(\alpha)}}{Z(\beta)}.\]</span></p>
+<p>For finite groups, <span class="math inline">\(C_2(\alpha)\)</span>
+is the declared sector penalty or finite-group Casimir surrogate. For
+compact groups, the Peter–Weyl lift belongs to the companion
+D10/compact-gauge handoff rather than to hardware evidence.</p>
+<div class="theorem">
+
+<p><strong>Theorem 8</strong> (Fixed-cutoff edge-sector handoff). <em>If
+a declared finite overlap collar has sector labels <span
+class="math inline">\(\alpha\)</span>, degeneracies <span
+class="math inline">\(d_\alpha\)</span>, and a local
+repair/thermalization generator whose detailed-balance stationary law is
+<span class="math inline">\(\pi_\beta(\alpha)\propto d_\alpha e^{-\beta
+C_2(\alpha)}\)</span>, then the collar exports the fixed-cutoff Casimir
+edge law required by the D10 handoff. The compact-group heat-kernel lift
+is a separate companion-branch step.</em></p>
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> This is a finite Markov or finite instrument
+stationary-measure statement on the declared sector algebra. The theorem
+exports only the finite overlap law. The compact-group lift uses the
+Peter–Weyl continuation and normalization conventions supplied on the
+companion compact/D10 surface. ◻</p>
+</div>
+
+<h1 id="bellchsh-event-surfaces">Bell/CHSH Event Surfaces</h1>
+<p>The Bell package is fixed-cutoff and event-surface-local. A federated
+carrier may contain two observer-facing wings <span
+class="math inline">\(L\)</span> and <span
+class="math inline">\(R\)</span> with commuting setting and outcome
+records on one compare slice. If the source-specified joint law is the
+usual two-wing quantum law, the CHSH and Tsirelson statements are
+carried on that declared event algebra.</p>
+<p>Laboratory echosahedral hardware has its own evidence gate for
+Bell-style claims. The theorem package here is a finite event-algebra
+statement inside the OPH microphysics surface.</p>
+<h1 id="relation-to-yangmills">Relation to Yang–Mills</h1>
+<p>The Yang–Mills repair-gap argument belongs to the compact theorem
+surface. Echosahedral geometry supplies:</p>
+<ol type="1">
+<li><p>the fixed-cutoff patch, overlap, record, and repair
+interface;</p></li>
+<li><p>the finite edge-sector Casimir law on declared collars;</p></li>
+<li><p>the local repair semantics that the compact-gauge branch later
+reads in support-visible quotient form.</p></li>
+</ol>
+<p>The four-dimensional Yang–Mills form, reflection-positive ordinary
+vacuum branch, support-visible continuum extraction, and equality
+between the Yang–Mills gap and the repair gap belong to the
+compact/Yang–Mills theorem surface. Hardware evidence may test
+implementation discipline, but it does not supply the Clay-admissible
+construction.</p>
+<h1 id="relation-to-hadrons-and-backend-execution">Relation to Hadrons
+and Backend Execution</h1>
+<p>Source-only hadron masses require a working OPH hadron backend. This
+microphysics states the record and evidence requirements for such a
+backend. A backend fit for promotion must emit:</p>
+<ol type="1">
+<li><p>Ward-projected hadronic spectral data;</p></li>
+<li><p>provenance tying every spectrum to body, controller, firmware,
+geometry, and scorebook;</p></li>
+<li><p>finite-volume, continuum, chiral, and production-systematics
+fields where applicable;</p></li>
+<li><p>exact replay or verification receipts for the pipeline stage
+being claimed;</p></li>
+<li><p>a non-promotion boundary for surrogate or calibration
+runs.</p></li>
+</ol>
+<p>Echosahedral or GLORB-class hardware can be described as a candidate
+backend family when public evidence bundles exist. Before those bundles
+exist, it is an architectural target and a design motivation.
+Source-only hadron theorem status requires the backend evidence listed
+above.</p>
+<h1 id="validation-program">Validation Program</h1>
+<p>The validation program has two independent tracks.</p>
+<h2 id="mathematical-and-digital-calibration">Mathematical and Digital
+Calibration</h2>
+<p>The octahedral <span class="math inline">\(\mathbb Z_2/S_3\)</span>
+simulator is a digital calibration model. It gives exact finite groups,
+explicit patch covers, controlled defects, frustrated cycles, record
+writes, repair schedules, and negative controls.</p>
+<blockquote>
+<p>The simulator validates the finite interface logic. The primary
+physical picture is the federated patch-carrier architecture.</p>
+</blockquote>
+<h2 id="public-hardware-evidence">Public Hardware Evidence</h2>
+<p>A public hardware run may support only the claim class its evidence
+bundle can audit. The minimal claim form is:</p>
+<blockquote>
+<p>Module set <span class="math inline">\(M\)</span> produced candidate
+enrichment or reproducible readout signature on benchmark <span
+class="math inline">\(T\)</span>, under controls <span
+class="math inline">\(C\)</span>, and exact verifier <span
+class="math inline">\(V\)</span> accepted the reported hits.</p>
+</blockquote>
+<p>The rejected form is:</p>
+<blockquote>
+<p>The optical chamber solved the hard problem or proved OPH.</p>
+</blockquote>
+<p>Required gates include dark baseline, low-power sweep, coupling
+matrix, discharge-timing or MDD trace where applicable, ring-diversity
+or recurrence-sensitive metrics for toroidal bodies, duplicate-body
+checks, symmetric-reference or echosahedral shadow checks,
+exact-verifier receipts, and negative controls against hidden duplicate
+amplification or host-side filtering.</p>
+<h1 id="conclusion">Conclusion</h1>
+<p>OPH microphysics is a federation of finite observer patches. The
+sphere is a regulator and symmetry chart for observer-facing cuts. <span
+class="math inline">\(A_5\)</span>-icosahedral and <span
+class="math inline">\(E_8\)</span>-type structure belong to the geometry
+data and representation-closure data. The echosahedral patch is the
+reference local interface: a bounded multi-port patch with symmetry,
+records, readout, repair, and checkpoint data. Toroidal subchannels
+supply local recurrence and winding-sensitive dynamics. The mathematical
+exports remain fixed-cutoff patch-net embedding, edge-sector Casimir
+handoff, central-record measurement, Bell/CHSH event surfaces, and
+checkpoint/restoration.</p>
+<p>The claim discipline is the main point. Hardware can guide the
+architecture and supply public evidence through hash-stable evidence
+bundles. The theorem surface stands on finite algebras and declared OPH
+branch assumptions.</p>
+<h1 id="evidence-bundle-sketch">Evidence Bundle Sketch</h1>
+<p>A minimal hardware evidence bundle should use a structure like:</p>
+<pre><code>evidence/hardware/&lt;bundle-id&gt;/
+  manifest.json
+  README.md
+  body/
+    mesh_hashes.txt
+    photos/
+    measurements.csv
+  controller/
+    firmware_sha256.txt
+    wiring_map.csv
+  calibration/
+    dark_scan.csv
+    low_power_sweep.csv
+    coupling_matrix.csv
+    mdd_trace.csv
+    ring_diversity.csv
+  task/
+    task.json
+    scorebook.json
+    candidates.jsonl
+    verifier_receipts.jsonl
+  controls/
+    shuffle_replay.jsonl
+    abba_controls.csv
+    negative_controls.md
+  claim.md</code></pre>
+<p>The manifest should state the strongest allowed claim and the
+non-claims. The paper may cite the bundle only at that claim level.</p>
+<h1 id="digital-simulator-compatibility">Digital Simulator
+Compatibility</h1>
+<p>The octahedral <span class="math inline">\(\mathbb Z_2/S_3\)</span>
+build has the following reading rule:</p>
+<ol type="1">
+<li><p>it validates finite patch/overlap/record/repair
+bookkeeping;</p></li>
+<li><p>it tests frustrated-cycle and defect behavior in an exact digital
+setting;</p></li>
+<li><p>it calibrates the edge-sector law on a finite declared
+interface;</p></li>
+<li><p>it supplies calibration data for the interface layer;</p></li>
+<li><p>it leaves the physical carrier role with the federated
+echosahedral patch architecture.</p></li>
+</ol>
+<div class="thebibliography">
+
+<p>99</p>
+<p>B. Müller, K. Xue, and K. A. Anirudha, <em>Reality as a Consensus
+Protocol: The Fixed-Point Computation That Implements Physics</em>.</p>
+<p>B. Müller, A. Osika, K. Xue, and P. Nguyen, <em>Recovering Relativity
+and the Standard Model from Observer Overlap Consistency</em>.</p>
+<p>B. Müller, A. Osika, K. Xue, B. Cassie, P. Nguyen, M. Poneder, and
+K. A. Anirudha, <em>Observers Are All You Need</em>.</p>
+<p>B. Müller, A. Osika, K. Xue, and M. Poneder, <em>Deriving the
+Particle Zoo from Observer Consistency</em>.</p>
+<p>B. Müller, <em>Explaining the Yang–Mills Mass Gap with Observer-Patch
+Repair Dynamics: A Support-Visible OPH Route to the Clay
+Problem</em>.</p>
+</div>
+
+          </div>
+        </div>
+      </article>
+    </main>
+    <footer class="site-footer reveal">
+      <div>Pragma</div>
+      <div class="site-footer-links">
+        <a href="/oph/" data-track-link="footer-hub">Observer Patch Holography</a>
+        <a href="/oph/papers/" data-track-link="footer-papers">Papers</a>
+        <a href="/oph/standard-model-gravity-unification/" data-track-link="footer-smg">SM + Gravity</a>
+        <a href="/oph/theory-of-everything/" data-track-link="footer-toe">Theory of Everything</a>
+        <a href="/oph/simulation-theory/" data-track-link="footer-sim">Simulation Theory</a>
+        <a href="/oph/quantum-gravity/" data-track-link="footer-qg">Quantum Gravity</a>
+        <a href="https://oph-book.floatingpragma.io/" data-track-link="footer-book">Book</a>
+        <a href="https://challenge.floatingpragma.io/" data-track-link="footer-challenge">Challenge</a>
+      </div>
+    </footer>
+
+  </div>
+  <script src="/oph/app.js"></script>
+</body>
+</html>

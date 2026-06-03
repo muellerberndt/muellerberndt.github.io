@@ -1,0 +1,2143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Photonic Fixed-Point Consensus for SHA-256d Proof of Work | OPH Paper</title>
+  <meta name="title" content="Photonic Fixed-Point Consensus for SHA-256d Proof of Work | OPH Paper" />
+  <meta name="description" content="An OPH-adjacent physical-computation paper on photonic fixed-point consensus, SHA-256d proof of work, analog constraint satisfaction, and verifier receipts." />
+  <meta name="keywords" content="SHA-256d proof of work, Bitcoin mining, photonic computing, physical cryptanalysis, analog computing, fixed-point consensus, Observer Patch Holography" />
+  <meta name="author" content="Pragma" />
+  <link rel="canonical" href="https://floatingpragma.io/oph/papers/photonic-fixed-point-consensus-sha256d-proof-of-work/" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://floatingpragma.io/oph/papers/photonic-fixed-point-consensus-sha256d-proof-of-work/" />
+  <meta property="og:title" content="Photonic Fixed-Point Consensus for SHA-256d Proof of Work | OPH Paper" />
+  <meta property="og:description" content="An OPH-adjacent physical-computation paper on photonic fixed-point consensus, SHA-256d proof of work, analog constraint satisfaction, and verifier receipts." />
+  <meta property="og:image" content="https://floatingpragma.io/oph/screen.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Photonic Fixed-Point Consensus for SHA-256d Proof of Work | OPH Paper" />
+  <meta name="twitter:description" content="An OPH-adjacent physical-computation paper on photonic fixed-point consensus, SHA-256d proof of work, analog constraint satisfaction, and verifier receipts." />
+  <meta name="twitter:image" content="https://floatingpragma.io/oph/screen.webp" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="stylesheet" href="/oph/styles.css" />
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['\\(', '\\)'], ['$', '$']], displayMath: [['\\[', '\\]']] },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Photonic Fixed-Point Consensus for SHA-256d Proof of Work",
+  "name": "Photonic Fixed-Point Consensus for SHA-256d Proof of Work",
+  "description": "An OPH-adjacent physical-computation paper on photonic fixed-point consensus, SHA-256d proof of work, analog constraint satisfaction, and verifier receipts.",
+  "url": "https://floatingpragma.io/oph/papers/photonic-fixed-point-consensus-sha256d-proof-of-work/",
+  "encoding": {
+    "@type": "MediaObject",
+    "contentUrl": "https://floatingpragma.io/oph/papers/pdf/Photonic_fixed-point_consensus_for_SHA-256d_proof_of_work.pdf",
+    "encodingFormat": "application/pdf"
+  },
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Bernhard Mueller"
+    },
+    {
+      "@type": "Person",
+      "name": "Alexander Osika"
+    }
+  ],
+  "isPartOf": {
+    "@type": "ResearchProject",
+    "name": "Observer Patch Holography",
+    "url": "https://floatingpragma.io/oph/"
+  },
+  "keywords": [
+    "SHA-256d proof of work",
+    "Bitcoin mining",
+    "photonic computing",
+    "physical cryptanalysis",
+    "analog computing",
+    "fixed-point consensus",
+    "Observer Patch Holography"
+  ],
+  "datePublished": "June 3, 2026",
+  "dateModified": "June 3, 2026",
+  "version": "r1461"
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Floating Pragma",
+      "item": "https://floatingpragma.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Observer Patch Holography",
+      "item": "https://floatingpragma.io/oph/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "OPH Papers",
+      "item": "https://floatingpragma.io/oph/papers/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Photonic Fixed-Point Consensus for SHA-256d Proof of Work",
+      "item": "https://floatingpragma.io/oph/papers/photonic-fixed-point-consensus-sha256d-proof-of-work/"
+    }
+  ]
+}
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HLGH209WMG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-HLGH209WMG', { cookie_domain: 'floatingpragma.io' });
+  </script>
+</head>
+<body class="oph-page paper-page">
+  <div class="site-grid"></div>
+  <div class="page-shell">
+    <header class="site-header reveal">
+      <a class="brand" href="/oph/">
+        <span class="brand-mark">
+          <img src="/pragma-cropped.jpg" alt="Pragma" />
+        </span>
+        <span class="brand-copy">
+          <strong>Pragma</strong>
+          <span>OPH Paper</span>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="OPH navigation">
+        <a href="/oph/" data-track-link="nav-hub">Hub</a>
+        <a href="/oph/papers/" data-track-link="nav-papers">Papers</a>
+        <a href="/oph/standard-model-gravity-unification/" data-track-link="nav-smg">SM + Gravity</a>
+        <a href="/oph/theory-of-everything/" data-track-link="nav-toe">Theory of Everything</a>
+        <a href="https://oph-lab.floatingpragma.io/" data-track-link="nav-lab">Lab</a>
+        <a href="https://challenge.floatingpragma.io/" data-track-link="nav-challenge">Challenge</a>
+      </nav>
+    </header>
+
+    <main>
+      <article class="paper-reader reveal">
+        <header class="paper-reader-header">
+          <div class="eyebrow">Physical computation</div>
+          <h1>Photonic Fixed-Point Consensus for SHA-256d Proof of Work</h1>
+          <p class="article-lead">An OPH-adjacent physical-computation paper on photonic fixed-point consensus, SHA-256d proof of work, analog constraint satisfaction, and verifier receipts.</p>
+          <div class="paper-meta-line">
+            <span>r1461</span>
+            <span>June 3, 2026</span>
+            <span>extra papers</span>
+          </div>
+          <div class="paper-author-line">Authors: Bernhard Mueller, Alexander Osika</div>
+          <div class="article-meta">
+              <span class="meta-chip">SHA-256d proof of work</span>
+              <span class="meta-chip">Bitcoin mining</span>
+              <span class="meta-chip">photonic computing</span>
+              <span class="meta-chip">physical cryptanalysis</span>
+              <span class="meta-chip">analog computing</span>
+              <span class="meta-chip">fixed-point consensus</span>
+          </div>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="/oph/papers/pdf/Photonic_fixed-point_consensus_for_SHA-256d_proof_of_work.pdf" target="_blank" rel="noopener noreferrer" data-track-link="paper-pdf-Photonic_fixed-point_consensus_for_SHA-256d_proof_of_work">Download PDF</a>
+            <a class="btn btn-secondary" href="/oph/papers/" data-track-link="paper-index">All OPH papers</a>
+            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r1461" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
+          </div>
+        </header>
+        <div class="paper-reader-grid">
+          <aside class="paper-reader-side" aria-label="Paper navigation">
+            <div class="side-card">
+              <strong>Formal artifact</strong>
+              <p>The PDF is mirrored on this site and remains the formal release artifact for theorem status and branch boundaries.</p>
+              <a href="/oph/papers/pdf/Photonic_fixed-point_consensus_for_SHA-256d_proof_of_work.pdf" target="_blank" rel="noopener noreferrer">Open first-party PDF</a>
+            </div>
+            <div class="side-card">
+              <strong>Sections</strong>
+              <nav class="paper-toc" aria-label="Paper sections"><a href="#introduction">Introduction</a>
+<a href="#reading-the-construction">Reading the Construction</a>
+<a href="#sha-256d-as-a-search-problem">SHA-256d as a Search Problem</a>
+<a href="#the-sha-256-compression-function">The SHA-256 compression function</a>
+<a href="#mining-predicate">Mining predicate</a>
+<a href="#from-gates-to-exact-constraints">From Gates to Exact Constraints</a>
+<a href="#boolean-gate-penalties">Boolean gate penalties</a>
+<a href="#the-four-constraint-patches">The Four Constraint Patches</a>
+<a href="#omega-i1-physical-deployment">OMEGA-I1 physical deployment</a>
+<a href="#observer-screen-repair-dynamics">Observer-Screen Repair Dynamics</a>
+<a href="#the-role-of-the-oph-pixel-constant-p">The Role of the OPH Pixel Constant \(P\)</a>
+<a href="#wave-and-hardware-encodings">Wave and Hardware Encodings</a></nav>
+            </div>
+          </aside>
+          <div class="paper-body">
+<div class="center">
+
+<p><strong>Paper release:</strong> <strong>Released:</strong></p>
+</div>
+
+<p><strong>Keywords:</strong> SHA-256; proof of work; Kaspa; kHeavyHash;
+physical cryptanalysis; optical computing; analog computing; Grover
+search; Observer Patch Holography; constraint satisfaction</p>
+<h1 id="introduction">Introduction</h1>
+<p>SHA-256 is a standard cryptographic hash function specified by NIST
+in FIPS 180-4 . Bitcoin proof of work applies SHA-256 twice to an
+80-byte block header and asks for an output below a target . In the
+ideal-hash abstraction, each tested header is an independent draw from
+<span class="math inline">\(\{0,1\}^{256}\)</span>. If the target
+requires <span class="math inline">\(k\)</span> leading zero bits, an
+unbiased miner succeeds with probability <span
+class="math inline">\(2^{-k}\)</span> per candidate and needs <span
+class="math inline">\(2^k\)</span> trials in expectation.</p>
+<p>The ordinary attack surface is simple. A digital miner evaluates the
+whole compression pipeline for one candidate, then another, then
+another. Modern ASICs reduce the cost per candidate while preserving the
+mathematical shape of the search. Published cryptanalytic attacks reach
+reduced-step variants or related settings. Full SHA-256 preimage search
+is a practical enumeration problem . Quantum computers change the query
+count by Grover amplification: quadratically in the number of
+candidates. Published resource estimates for cryptographic SHA-256
+preimage search remain far beyond fault-tolerant hardware .</p>
+<p>Observer Patch Holography suggests a different representation of the
+problem. The blog essay “P = NP on the Observer Screen” phrases the
+computational primitive in five words: “Verification is the force” . The
+technical OPH papers develop the same idea through patch algebras,
+overlap consistency, syndromes, repair moves, and fixed-point consensus
+. For SHA-256d mining, the primitive becomes an auditable patch
+network.</p>
+<p>The paper has a narrow scope. It gives an exact scorebook for
+SHA-256d mining, then describes a proposed OMEGA-I1 route that can test
+whether physical patch federation enriches the candidate stream before
+exact verification. No SHA-256d break is claimed. The kHeavyHash/Kaspa
+work is used as a proof-of-work precedent and as a warning about
+evidence boundaries.</p>
+<p>The manuscript belongs to the multi-contributor OPH/Karma/OMEGA
+research program. The cited OPH papers, public OMEGA guide,
+acknowledgements, and data-availability statement give the provenance
+and audit boundary: theory, optical hardware, firmware, exact
+verification, and simulation are separate parts of the evidence
+chain.</p>
+<p>The key architectural distinction is simple. The four SHA roles are
+four constraint patches: the factorization and scorebook. OMEGA-I1 is
+the proposed physical patch federation for running and testing that
+scorebook. The physical route uses duplicate torus recurrence,
+search-torus expansion, asymmetric criticism, Echosahedron shadowing,
+and exact host verification.</p>
+<h1 id="reading-the-construction">Reading the Construction</h1>
+<p>The construction has to keep three layers separate.</p>
+<ol type="1">
+<li><p><em>The verifier layer</em> is ordinary cryptography. Given a
+candidate nonce <span class="math inline">\(x\)</span>, compute the real
+double hash <span class="math inline">\(H_2(B,x)\)</span> and check
+whether it lies below the target. This layer is never
+approximate.</p></li>
+<li><p><em>The constraint layer</em> rewrites that same verifier as many
+small claims about wires: this bit is a rotation of that bit, this carry
+bit is the majority of three inputs, this collar value equals the
+adjacent collar value. The four SHA roles are the four constraint
+patches, meaning the factorization and scorebook.</p></li>
+<li><p><em>The physical layer</em> is proposed to run that scorebook on
+OMEGA-I1. The five chambers form the enrichment layer for the candidate
+stream before the exact verifier spends work on it. The verifier decides
+every cryptographic claim.</p></li>
+</ol>
+<p>Informally, the intended loop is:</p>
+<p><span class="math display">\[\begin{aligned}
+\text{exact verifier}
+&amp;\Rightarrow
+\text{local constraints}
+\Rightarrow
+\text{patch collars}\\
+&amp;\Rightarrow
+\text{repair syndromes}
+\Rightarrow
+\text{candidate beam}
+\Rightarrow
+\text{exact verifier}.
+\end{aligned}\]</span></p>
+<p>Hardware measurement can beat enumeration only by changing the
+verifier-visible distribution. SHA-256d supplies no digital gradient. A
+physical body can settle many coupled modes at once, while the exact
+verifier decides which decoded nonces are real. The useful question is
+whether the full OMEGA-I1 route can emit more distinct valid or
+near-valid nonces per settling event than random search would produce
+under the same controls.</p>
+<div class="center">
+
+<div class="minipage">
+
+<div class="tabular">
+
+<p>L0.16L0.30L0.44 Symbol &amp; Plain meaning &amp; Why it appears<br />
+<span class="math inline">\(B\)</span> &amp; Fixed block template or
+midstate context &amp; The part of the header outside the search
+variable for that run.<br />
+<span class="math inline">\(x\)</span> &amp; Nonce or extranonce
+candidate &amp; The variable the search tries to find.<br />
+<span class="math inline">\(T\)</span>, <span
+class="math inline">\(T_k\)</span> &amp; Target set; for <span
+class="math inline">\(T_k\)</span>, outputs with <span
+class="math inline">\(k\)</span> leading zero bits &amp; Defines success
+for proof of work.<br />
+<span class="math inline">\(V_{B,T}(x)\)</span> &amp; Exact yes/no
+verifier &amp; The final authority: <span
+class="math inline">\(1\)</span> means the candidate works.<br />
+<span class="math inline">\(E_{\mathrm{SHA256d},B,T}\)</span> &amp; Sum
+of local gate penalties &amp; A zero value means every SHA wire, carry,
+and target check is internally consistent.<br />
+<span class="math inline">\(A,B,C,D\)</span> &amp; Source, schedule,
+compression, target-face roles &amp; The four SHA constraint roles used
+to build the scorebook.<br />
+<span class="math inline">\(\Gamma_{ij}\)</span> &amp; Collar shared by
+two roles &amp; The variables both roles claim; disagreement is a
+syndrome.<br />
+<span class="math inline">\(\Phi\)</span> &amp; Repair residual &amp;
+The number the repair loop tries to reduce: collar disagreement plus
+local gate violations.<br />
+<span class="math inline">\(\mathcal B_t\)</span> &amp; Candidate beam
+after a module pass &amp; The audited packet of decoded candidate nonces
+or neighborhoods.<br />
+<span class="math inline">\(m_{\mathrm{pkt}}\)</span> &amp; Distinct
+verifier-ready candidates per full route settling event &amp; The
+packet-size term in speedup accounting.<br />
+<span class="math inline">\(\beta(k)\)</span> &amp; Verified enrichment
+at target strength <span class="math inline">\(k\)</span> &amp; The
+measured bias of the physical route over random search.</p>
+</div>
+
+<p><span id="tab:symbolmap" label="tab:symbolmap"></span></p>
+</div>
+
+</div>
+
+<h1 id="sha-256d-as-a-search-problem">SHA-256d as a Search Problem</h1>
+<h2 id="the-sha-256-compression-function">The SHA-256 compression
+function</h2>
+<p>Let a word be an element of <span
+class="math inline">\(\{0,1\}^{32}\)</span>, equivalently an integer
+modulo <span class="math inline">\(2^{32}\)</span>. SHA-256 uses the
+functions</p>
+<p><span class="math display">\[\begin{aligned}
+\operatorname{Ch}(x,y,z)&amp;=(x\wedge y)\oplus(\neg x\wedge z),\\
+\operatorname{Maj}(x,y,z)&amp;=(x\wedge y)\oplus(x\wedge
+z)\oplus(y\wedge z),\\
+\Sigma_0(x)&amp;=\operatorname{ROTR}^2(x)\oplus\operatorname{ROTR}^{13}(x)\oplus\operatorname{ROTR}^{22}(x),\\
+\Sigma_1(x)&amp;=\operatorname{ROTR}^6(x)\oplus\operatorname{ROTR}^{11}(x)\oplus\operatorname{ROTR}^{25}(x),\\
+\sigma_0(x)&amp;=\operatorname{ROTR}^7(x)\oplus\operatorname{ROTR}^{18}(x)\oplus\operatorname{SHR}^3(x),\\
+\sigma_1(x)&amp;=\operatorname{ROTR}^{17}(x)\oplus\operatorname{ROTR}^{19}(x)\oplus\operatorname{SHR}^{10}(x).
+\end{aligned}\]</span></p>
+<p>For a 512-bit block <span class="math inline">\(M\)</span>, the first
+sixteen schedule words are the block words. For <span
+class="math inline">\(16\le t&lt;64\)</span>,</p>
+<p><span
+class="math display">\[W_t=\sigma_1(W_{t-2})+W_{t-7}+\sigma_0(W_{t-15})+W_{t-16}\pmod
+{2^{32}}.\]</span></p>
+<p>Starting from the chaining value <span
+class="math inline">\((H_0,\ldots,H_7)\)</span>, the working variables
+<span class="math inline">\((a_t,\ldots,h_t)\)</span> evolve by</p>
+<p><span class="math display">\[\begin{aligned}
+T_{1,t}&amp;=h_t+\Sigma_1(e_t)+\operatorname{Ch}(e_t,f_t,g_t)+K_t+W_t\pmod
+{2^{32}},\\
+T_{2,t}&amp;=\Sigma_0(a_t)+\operatorname{Maj}(a_t,b_t,c_t)\pmod
+{2^{32}},\\
+(a_{t+1},b_{t+1},c_{t+1},d_{t+1},e_{t+1},f_{t+1},g_{t+1},h_{t+1})
+&amp;=(T_{1,t}+T_{2,t},a_t,b_t,c_t,d_t+T_{1,t},e_t,f_t,g_t).
+\end{aligned}\]</span></p>
+<p>The compressed output is the wordwise sum of the final working state
+and the input chaining value. SHA-256d is <span
+class="math inline">\(H_2(M)=\mathrm{SHA256}(\mathrm{SHA256}(M))\)</span>.</p>
+<p>A Bitcoin block header is <span class="math inline">\(80\)</span>
+bytes, so the first SHA-256 pass spans two <span
+class="math inline">\(512\)</span>-bit message blocks before the second
+SHA-256 pass hashes the <span class="math inline">\(32\)</span>-byte
+digest. Real miners usually precompute the midstate after the first
+<span class="math inline">\(64\)</span> bytes of a fixed header
+template. In this paper, a fixed template may therefore mean either the
+full two-block first pass or the midstate-reduced active circuit. The
+four-constraint-patch compiler is the same in both cases; the
+midstate-reduced version lets Patch A start at the nonce-bearing second
+block and avoids paying physical resources for a fixed compression
+block.</p>
+<h2 id="mining-predicate">Mining predicate</h2>
+<p>Fix a block-header template <span class="math inline">\(B\)</span>,
+an adjustable nonce or extranonce string <span
+class="math inline">\(x\in\{0,1\}^n\)</span>, and a target set <span
+class="math inline">\(T\subseteq\{0,1\}^{256}\)</span>. For a
+leading-zero target of strength <span
+class="math inline">\(k\)</span>,</p>
+<p><span
+class="math display">\[T_k=\{y\in\{0,1\}^{256}:y_0=\cdots=y_{k-1}=0\}.\]</span></p>
+<p>The proof-of-work predicate is</p>
+<p><span
+class="math display">\[V_{B,T}(x)=1\quad\Longleftrightarrow\quad
+H_2(B,x)\in T.\]</span></p>
+<p>The search problem is to find any <span
+class="math inline">\(x\in\{0,1\}^n\)</span> with <span
+class="math inline">\(V_{B,T}(x)=1\)</span>, if one exists. In the
+random-oracle model, if <span
+class="math inline">\(|T|/2^{256}=p\)</span>, then a uniformly sampled
+<span class="math inline">\(x\)</span> succeeds with probability <span
+class="math inline">\(p\)</span>. For <span
+class="math inline">\(T_k\)</span>, <span
+class="math inline">\(p=2^{-k}\)</span>.</p>
+<div id="prop:querycounts" class="proposition">
+
+<p><strong>Proposition 1</strong> (Classical and Grover query counts).
+<em>Let <span class="math inline">\(N=2^n\)</span>, and suppose exactly
+<span class="math inline">\(M\)</span> candidates satisfy <span
+class="math inline">\(V(x)=1\)</span>. A classical random sampler needs
+<span class="math inline">\(N/M\)</span> oracle calls in expectation. A
+quantum computer using Grover search finds a marked candidate with <span
+class="math inline">\(O(\sqrt{N/M})\)</span> oracle calls, and <span
+class="math inline">\(\Omega(\sqrt{N/M})\)</span> calls are necessary in
+the black-box model.</em></p>
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> The classical statement is the mean of a geometric
+random variable with success probability <span
+class="math inline">\(M/N\)</span>. Grover’s algorithm gives the upper
+bound by amplitude amplification . The lower bound is the optimality of
+quantum search , also consistent with the black-box lower-bound result
+of Bennett, Bernstein, Brassard, and Vazirani . ◻</p>
+</div>
+
+<p>For a unique marked item in a 32-bit nonce space, the ideal query
+reduction is from <span class="math inline">\(2^{32}\)</span> to about
+<span class="math inline">\(2^{16}=65{,}536\)</span>. For a leading-zero
+target with success probability <span
+class="math inline">\(2^{-k}\)</span>, the ideal query reduction is from
+<span class="math inline">\(2^k\)</span> to <span
+class="math inline">\(2^{k/2}\)</span>, up to constants. This sets the
+quantum baseline for comparison with the optical constraint-search
+path.</p>
+<h1 id="from-gates-to-exact-constraints">From Gates to Exact
+Constraints</h1>
+<h2 id="boolean-gate-penalties">Boolean gate penalties</h2>
+<p>Every Boolean circuit can be written as a finite system of local
+constraints. For a gate <span
+class="math inline">\(y=g(x_1,\ldots,x_m)\)</span>, define its
+truth-table penalty</p>
+<p><span class="math display">\[E_g(x_1,\ldots,x_m,y)=
+\begin{cases}
+0,&amp;y=g(x_1,\ldots,x_m),\\
+1,&amp;\text{otherwise}.
+\end{cases}\]</span></p>
+<p>The circuit energy is the sum of all gate penalties:</p>
+<p><span class="math display">\[E_C(z)=\sum_{g\in
+C}E_g(z|_{\operatorname{vars}(g)}).\]</span></p>
+<p>Then <span class="math inline">\(E_C(z)=0\)</span> if and only if
+every gate relation is satisfied.</p>
+<p>In plain terms, <span class="math inline">\(E_g\)</span> is a local
+consistency test for one gate. It returns <span
+class="math inline">\(0\)</span> when the input and output wires fit,
+and <span class="math inline">\(1\)</span> otherwise. The full energy
+<span class="math inline">\(E_C\)</span> is just the count of local gate
+mismatches across the circuit. SHA-256 stays hard as a digital search
+problem; the hardware receives a finite set of local inconsistencies
+that can be exposed, routed, and repaired without changing the exact
+verifier.</p>
+<div id="lem:gateenergy" class="lemma">
+
+<p><strong>Lemma 2</strong> (Exact gate-to-energy encoding). *For every
+finite Boolean circuit <span class="math inline">\(C\)</span> with input
+<span class="math inline">\(x\)</span>, output <span
+class="math inline">\(o\)</span>, and ancilla wires <span
+class="math inline">\(a\)</span>, there is a nonnegative integer energy
+<span class="math inline">\(E_C\)</span>. The energy has one
+bounded-locality term per gate and satisfies</p>
+<p><span class="math display">\[\begin{gathered}
+E_C(x,a,o)=0\\
+\Longleftrightarrow\quad
+\begin{cases}
+o=C(x),\\
+\text{all ancilla wires have their circuit values}.
+\end{cases}
+\end{gathered}
+```*
+
+&lt;/div&gt;
+
+&lt;div class=&quot;proof&quot;&gt;
+
+*Proof.* Use the truth-table penalty above for each gate and sum the
+penalties. Every
+term is nonnegative. The sum is zero exactly when every term is zero,
+which is
+exactly the condition that every wire satisfies the gate relation that
+produced
+it. Induction along a topological ordering of the circuit then gives
+$`o=C(x)`$ and fixes every ancilla wire to its circuit value. ◻
+
+&lt;/div&gt;
+
+If a hardware platform requires quadratic unconstrained binary
+optimization
+(QUBO) or an Ising Hamiltonian, the bounded-locality penalties can be
+quadratized by adding ancillas. That route is standard in Ising
+formulations of NP problems . The quadratized Hamiltonian has
+polynomially many variables and terms in the circuit size.
+
+## SHA-256d constraint Hamiltonian
+
+Let $`C_{\mathrm{SHA256d},B,T}`$ be the Boolean circuit that takes
+$`x`$, computes
+$`\mathrm{SHA256d}(B,x)`$, and checks membership in $`T`$. Applying
+Lemma &lt;a href=&quot;#lem:gateenergy&quot;
+data-reference-type=&quot;ref&quot;
+data-reference=&quot;lem:gateenergy&quot;&gt;2&lt;/a&gt; gives an energy
+``` math
+E_{\mathrm{SHA256d},B,T}(x,a)=0
+\quad\Longleftrightarrow\quad
+V_{B,T}(x)=1\]</span></p>
+<p>where <span class="math inline">\(a\)</span> includes all schedule
+words, carry bits, round-state words, and comparison bits.</p>
+<div id="thm:shaencoding" class="theorem">
+
+<p><strong>Theorem 3</strong> (Exact SHA-256d search encoding). *For
+every fixed block-header template <span
+class="math inline">\(B\)</span>, nonce length <span
+class="math inline">\(n\)</span>, and target set <span
+class="math inline">\(T\)</span>, SHA-256d proof-of-work search is
+exactly equivalent to finding a zero-energy state of a finite
+bounded-locality constraint Hamiltonian</p>
+<p><span
+class="math display">\[E_{\mathrm{SHA256d},B,T}:\{0,1\}^{n+r}\to\mathbb
+N\]</span></p>
+<p>of size polynomial in the SHA-256d circuit size. The first <span
+class="math inline">\(n\)</span> coordinates of any zero-energy state
+are valid nonce bits. Every valid nonce extends to at least one
+zero-energy state.*</p>
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> Build the Boolean circuit for <span
+class="math inline">\(\mathrm{SHA256d}(B,x)\)</span> from NOT, XOR, AND,
+fanout, rotations, shifts, full adders, and comparators. Apply
+Lemma <a href="#lem:gateenergy" data-reference-type="ref" data-reference="lem:gateenergy">2</a>
+to all gates. The target comparator contributes zero exactly when the
+256-bit output lies in <span class="math inline">\(T\)</span>. The
+equivalence follows from the gate-energy lemma. Polynomial size follows
+because the SHA-256d circuit has a fixed finite number of word
+operations per block and each word operation expands into polynomially
+many bit gates. ◻</p>
+</div>
+
+<p>The theorem says that a valid nonce and a zero-energy assignment are
+the same object viewed at two resolutions. The nonce <span
+class="math inline">\(x\)</span> is the visible witness. The ancillas
+<span class="math inline">\(a\)</span> are all internal SHA facts that
+make that witness true: schedule words, carries, round registers,
+feed-forward words, and comparison bits. A low energy alone is a
+scorebook record. A cryptographic claim starts only when the visible
+nonce passes <span class="math inline">\(V_{B,T}\)</span> under an
+independent implementation.</p>
+<h1 id="the-four-constraint-patches">The Four Constraint Patches</h1>
+<p>The compiler turns SHA-256d into four constraint patches. Each patch
+is an observer in the OPH sense: it sees a local set of variables,
+checks local relations, and reports only the shared variables on its
+collars. The nonce-bearing message tail is the only freely varied
+source. The schedule recurrence is the first place where that source
+spreads across 64 words. The compression rounds are the main avalanche
+body. The final feed-forward, second pass, and target predicate are the
+target face. These four jobs have different constraint roles, so they
+stay separate in the compiler:</p>
+<p><span class="math display">\[\text{source}\quad\longrightarrow\quad
+\text{schedule closure}\quad\longrightarrow\quad
+\text{compression trajectory}\quad\longrightarrow\quad
+\text{target face}.\]</span></p>
+<p>The four-constraint-patch split minimizes useful logical boundary
+traffic. The <span class="math inline">\(A/B\)</span> collar carries the
+claimed first schedule words. The <span
+class="math inline">\(B/C\)</span> collar carries the schedule and
+round-entry consequences. The <span class="math inline">\(C/D\)</span>
+collar carries the digest-side interface and target bits. Putting two
+adjacent jobs in one logical patch removes an early failure surface.
+Splitting one job into smaller logical patches adds another equality
+collar without creating a new algorithmic interface. This is the
+constraint factorization and scorebook. Physical module count is a
+separate OMEGA-I1 deployment choice: five host-routed chambers for the
+four constraint patches.</p>
+<p>For SHA-256d, the solver is solving these exact constraints:</p>
+<ul>
+<li><p><em>Template and nonce constraints:</em> fixed header or midstate
+words, padding, length fields, nonce grammar, extranonce grammar when
+present, and the active <span class="math inline">\(512\)</span>-bit
+block words <span
+class="math inline">\(W_0,\ldots,W_{15}\)</span>.</p></li>
+<li><p><em>Schedule constraints:</em> for <span
+class="math inline">\(t=16,\ldots,63\)</span>, the recurrence</p>
+<p><span
+class="math display">\[W_t=\sigma_1(W_{t-2})+W_{t-7}+\sigma_0(W_{t-15})+W_{t-16}\pmod
+{2^{32}},\]</span></p>
+<p>with carry witnesses for each word addition.</p></li>
+<li><p><em>Compression constraints:</em> the 64 round equations for
+<span class="math inline">\(T_1\)</span>, <span
+class="math inline">\(T_2\)</span>, <span
+class="math inline">\(\operatorname{Ch}\)</span>, <span
+class="math inline">\(\operatorname{Maj}\)</span>, rotations, modular
+additions, working-register updates, and feed-forward words.</p></li>
+<li><p><em>Second-pass and target constraints:</em> the second SHA-256
+compression of the first digest, the final 256-bit digest, and the
+comparator that checks membership in <span
+class="math inline">\(T\)</span>, or in <span
+class="math inline">\(T_k\)</span> for a leading-zero
+experiment.</p></li>
+<li><p><em>Collar constraints:</em> every variable claimed by two
+neighboring patches has one bit value. A schedule word, carry bit, round
+register, or target bit cannot take different values on the two sides of
+a collar.</p></li>
+</ul>
+<p>The observers agree on a solution by literal boundary equality. Patch
+<span class="math inline">\(A\)</span> proposes source words. Patch
+<span class="math inline">\(B\)</span> accepts them only if its schedule
+closure can reuse the same <span class="math inline">\(A/B\)</span>
+collar bits. Patch <span class="math inline">\(C\)</span> accepts the
+schedule only if its round trajectory reuses the same <span
+class="math inline">\(B/C\)</span> collar bits. Patch <span
+class="math inline">\(D\)</span> accepts the trajectory only if the
+digest and target-face collar bits fit its own local checks. When all
+local energies are zero and all collar values are equal, the four local
+stories glue into one global SHA-256d witness. The exact verifier then
+checks the visible nonce.</p>
+<div class="definition">
+
+<p><strong>Definition 4</strong> (Patch decomposition). Let <span
+class="math inline">\(V\)</span> be the variables of <span
+class="math inline">\(E_{\mathrm{SHA256d},B,T}\)</span>, including
+input, schedule, round-state, carry, and target-check variables. A
+four-constraint-patch decomposition is a cover</p>
+<p><span class="math display">\[V=V_A\cup V_B\cup V_C\cup
+V_D\]</span></p>
+<p>and a partition of gate penalties into local energies</p>
+<p><span class="math display">\[E_A,\ E_B,\ E_C,\ E_D\]</span></p>
+<p>such that every term in <span class="math inline">\(E_i\)</span> uses
+only variables in <span class="math inline">\(V_i\)</span>. The collars
+are the intersections</p>
+<p><span class="math display">\[\Gamma_{AB}=V_A\cap V_B,\quad
+\Gamma_{BC}=V_B\cap V_C,\quad
+\Gamma_{CD}=V_C\cap V_D,\]</span></p>
+<p>and any optional long-range check collar <span
+class="math inline">\(\Gamma_{AD}=V_A\cap V_D\)</span>.</p>
+</div>
+
+<p>Here <span class="math inline">\(V\)</span> is the complete list of
+SHA variables in the constraint body. <span
+class="math inline">\(V_A,\ldots,V_D\)</span> are the subsets each role
+is allowed to talk about. <span
+class="math inline">\(\Gamma_{ij}\)</span> is the overlap, or collar,
+between two roles. If Patch B says a schedule word has one value and
+Patch C says the same word has another value, the mismatch lives on
+<span class="math inline">\(\Gamma_{BC}\)</span>. The repair loop can
+see that failure from shared boundary data.</p>
+<p>For SHA-256d, the intended variable ownership is:</p>
+<p><span class="math display">\[\begin{array}{lll}
+A&amp;:&amp;\text{nonce-bearing active block words, padding, length,
+}W_0,\ldots,W_{15},\\
+B&amp;:&amp;\text{schedule recurrences }W_{16},\ldots,W_{63}\text{ and
+carry wires},\\
+C&amp;:&amp;\text{active compression trajectories and working register
+wires},\\
+D&amp;:&amp;\text{feed-forward interfaces, second pass, and target
+predicate.}
+\end{array}\]</span></p>
+<div id="prop:fourminimal" class="proposition">
+
+<p><strong>Proposition 5</strong> (Four-stage minimality for the
+SHA-256d compiler objective). *Contract the SHA-256d proof-of-work
+circuit into the four stage operators</p>
+<p><span class="math display">\[A=\text{nonce/source},\quad
+B=\text{schedule closure},\quad
+C=\text{compression trajectory},\quad
+D=\text{target face}.\]</span></p>
+<p>Consider logical decompositions that preserve this stage order, place
+each local gate inside at least one patch, and expose each inter-stage
+consistency condition as a collar. Then any such decomposition has at
+least four stage-owning patches. The four-constraint-patch cover <span
+class="math inline">\(A,B,C,D\)</span> reaches that lower bound and has
+exactly the three essential adjacent collars <span
+class="math inline">\(\Gamma_{AB},\Gamma_{BC},\Gamma_{CD}\)</span>.*</p>
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> The contracted stage graph is the path <span
+class="math inline">\(A-B-C-D\)</span>. Each of the four vertices
+contains gates whose variables are not determined by any earlier vertex
+alone: the nonce source in <span class="math inline">\(A\)</span>, the
+expanded schedule in <span class="math inline">\(B\)</span>, the
+compression state in <span class="math inline">\(C\)</span>, and the
+target predicate in <span class="math inline">\(D\)</span>. A
+decomposition that exposes every inter-stage consistency condition must
+give each vertex a stage owner. Merging two adjacent vertices removes
+the collar between them. Splitting a vertex keeps the same contracted
+path and adds only an internal collar. Hence the lower bound is four,
+and the displayed cover attains it. ◻</p>
+</div>
+
+<figure id="fig:fourpatch" data-latex-placement="t">
+
+<figcaption>The four-constraint-patch SHA-256d decomposition. Global satisfying assignments
+are exactly local satisfying assignments that agree on all collars. OMEGA-I1
+uses this graph as the scorebook and route program for a five-module physical
+federation. The mathematical equivalence comes from the variable cover and
+collar equalities.</figcaption>
+</figure>
+
+<div id="thm:equalizer" class="theorem">
+
+<p><strong>Theorem 6</strong> (Patch equalizer theorem). *Let</p>
+<p><span
+class="math display">\[\operatorname{Sol}_i=\{s_i\in\{0,1\}^{V_i}:E_i(s_i)=0\}\]</span></p>
+<p>be the local solution set of patch <span
+class="math inline">\(i\)</span>. Let <span
+class="math inline">\(\operatorname{Sol}_{\mathrm{collar}}\)</span> be
+the set of tuples</p>
+<p><span class="math display">\[(s_A,s_B,s_C,s_D)\in
+\operatorname{Sol}_A\times\operatorname{Sol}_B\times\operatorname{Sol}_C\times\operatorname{Sol}_D\]</span></p>
+<p>whose restrictions agree on every collar:</p>
+<p><span class="math display">\[s_i|_{V_i\cap V_j}=s_j|_{V_i\cap
+V_j}.\]</span></p>
+<p>Then restriction gives a bijection between global zero-energy states
+of <span class="math inline">\(E_A+E_B+E_C+E_D\)</span> and <span
+class="math inline">\(\operatorname{Sol}_{\mathrm{collar}}\)</span>.*</p>
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> If <span class="math inline">\(s\)</span> is a global
+zero-energy state, every nonnegative local energy is zero, so <span
+class="math inline">\(s|_{V_i}\in\operatorname{Sol}_i\)</span>. Since
+all restrictions come from the same global assignment, they agree on
+intersections. Thus <span class="math inline">\(s\)</span> maps into
+<span
+class="math inline">\(\operatorname{Sol}_{\mathrm{collar}}\)</span>.</p>
+<p>Conversely, take a collar-consistent tuple <span
+class="math inline">\((s_A,s_B,s_C,s_D)\)</span>. Collar consistency
+means that if a variable appears in more than one patch, all patches
+assign it the same bit. Therefore the local assignments glue to a unique
+global assignment <span class="math inline">\(s\in\{0,1\}^V\)</span>.
+Every local energy is zero by <span
+class="math inline">\(s_i\in\operatorname{Sol}_i\)</span>, so <span
+class="math inline">\(E_A+E_B+E_C+E_D=0\)</span>. The two maps are
+inverse by construction. ◻</p>
+</div>
+
+<p>This theorem is the formal content behind the phrase that bad
+candidates die at collars. A collar mismatch certifies that a local
+assignment cannot glue to a global satisfying assignment.</p>
+<p>This is also why the OMEGA-I1 route can use different geometries
+without losing the SHA proof. The physical chambers may have different
+bodies; they emit decoded claims about the same variables and collars.
+If those decoded claims agree and have zero local penalty, the equalizer
+theorem supplies the global SHA witness. If they disagree, the
+disagreement is a syndrome for the next repair pass.</p>
+<h2 id="omega-i1-physical-deployment">OMEGA-I1 physical deployment</h2>
+<p>The optimized hardware target is OMEGA-I1: a five-module federation
+rather than a one-to-one four-chamber implementation of <span
+class="math inline">\(A,B,C,D\)</span>. The four-constraint-patch
+compiler produces a scorebook, candidate grammar, collar residuals, and
+exact-verifier interface. The OMEGA-I1 runtime executes that program on
+five host-routed modules with the same architecture used by the
+simulator and the contractor build package described in this paper. The
+public OMEGA educational guide gives a broader visual introduction to
+chamber families, collars, and candidate-set narrowing .</p>
+<div class="center">
+
+<div class="minipage">
+
+<div class="tabular">
+
+<p>L0.20L0.20L0.48 Compiler role &amp; OMEGA-I1 module &amp; SHA-256d
+purpose<br />
+<span class="math inline">\(A/B\)</span> source and early collars &amp;
+<code>TOR-A</code> &amp; Nonce-stream recurrence, prefix-depth collars,
+and primary candidate-beam generation.<br />
+<span class="math inline">\(A/B\)</span> duplicate &amp;
+<code>TOR-B</code> &amp; Independent duplicate of the recurrent stream
+for repeatability, ABBA, and module-specific artifact rejection.<br />
+<span class="math inline">\(A/B/C\)</span> search expansion &amp;
+<code>TOR-C</code> &amp; Search-specialist torus for nonce-neighborhood
+expansion around near-prefix or low-residual candidates.<br />
+<span class="math inline">\(C/D\)</span> critic &amp; <code>MIX-A</code>
+&amp; Asymmetric bit-slice critic for leading-zero windows, selected
+digest-byte constraints, and mode-separation tests.<br />
+<span class="math inline">\(D\)</span> verifier shadow &amp;
+<code>ECH-A</code> &amp; Symmetric reference body for an independent
+SHA-prefix shadow before the final host exact hash.</p>
+</div>
+
+<p><span id="tab:omega-i1-route" label="tab:omega-i1-route"></span></p>
+</div>
+
+</div>
+
+<p>The default optimized route is:</p>
+<p><span class="math display">\[\texttt{TOR-A/TOR-B}
+\longrightarrow
+\texttt{TOR-C}
+\longrightarrow
+\texttt{MIX-A}
+\longrightarrow
+\texttt{ECH-A}
+\longrightarrow
+\text{exact SHA-256d verifier}.\]</span></p>
+<p>All arrows in this route are host messages. OMEGA-I1 has no direct
+module-to-module optical path, timing wire, or shared chamber power rail
+in the contractor acceptance build. That constraint is useful: every
+boundary update is recorded as a replayable scorebook transition with
+module IDs, firmware hashes, coupling-matrix hashes, operator-probe
+hashes, input and output beam hashes, and the host verifier receipt.</p>
+<p>This five-module route is also the optimization surface.
+<code>TOR-A</code> and <code>TOR-B</code> earn trust through statistical
+agreement. <code>TOR-C</code> increases local candidate density around
+low-residual prefixes. <code>MIX-A</code> rejects digest-window false
+positives under same-energy controls. <code>ECH-A</code> preserves
+useful candidates under a different geometry before the exact verifier
+spends hashes. A claimed lift that appears only after host ranking, only
+in one torus duplicate, or only after exact-verifier selection is
+outside the OMEGA-I1 hardware claim.</p>
+<h2
+id="how-the-federation-searches-many-candidates-in-one-settling-event">How
+the federation searches many candidates in one settling event</h2>
+<p>OMEGA-I1 uses a host-routed consensus search over optical candidate
+beams across five chambers. A candidate beam is a recorded packet</p>
+<p><span class="math display">\[\mathcal
+B_t=\{(x,\rho,\phi,\sigma,\pi)\},\]</span></p>
+<p>where <span class="math inline">\(x\)</span> is a candidate nonce or
+nonce-neighborhood descriptor, <span class="math inline">\(\rho\)</span>
+is a rank score, <span class="math inline">\(\phi\)</span> is the
+decoded patch/collar residual, <span
+class="math inline">\(\sigma\)</span> is the module-local readout
+signature, and <span class="math inline">\(\pi\)</span> is provenance:
+route ID, module ID, drive program, decoder, firmware hash, and run
+time. The optical chamber is responsible for changing the distribution
+of <span class="math inline">\(\mathcal B_t\)</span>. The host is
+responsible for recording the transition and exact-checking any decoded
+nonce.</p>
+<p>The phrase “many candidates at the same time” means that one
+drive/settle/read cycle populates many optical paths, scattering
+histories, port-coupling modes, and decoder branches before a digital
+verifier is called. The paper counts no photon, analog microstate, or
+possible real-valued readout as a verified hash unless the audited
+decoder emits a distinct verifier-ready candidate. The packet size in
+the speedup formula, <span
+class="math inline">\(m_{\mathrm{pkt}}\)</span>, is the number of
+distinct verifier-ready candidates emitted by the audited decoder after
+deduplication. A larger effective mode envelope <span
+class="math inline">\(N_{\mathrm{eff}}\)</span> is useful only if it
+produces a larger audited <span
+class="math inline">\(m_{\mathrm{pkt}}\)</span>, a larger verified bias
+<span class="math inline">\(\beta(k)\)</span>, or both.</p>
+<p>Each stage has a different geometry because different failure modes
+need different witnesses:</p>
+<div class="center">
+
+<div class="minipage">
+
+<div class="tabular">
+
+<p>L0.16L0.22L0.28L0.24 Stage &amp; Input &amp; Physical job &amp;
+Output message<br />
+<code>TOR-A</code> &amp; Header or midstate scorebook, nonce grammar,
+collar weights &amp; Populate a recurrent nonce beam and expose
+prefix-depth collars &amp; Primary beam <span
+class="math inline">\(\mathcal B_A\)</span>, local residuals, port
+signature.<br />
+<code>TOR-B</code> &amp; Same scorebook under blinded labels or ABBA
+order &amp; Repeat the recurrent search in an independent duplicate
+torus &amp; Duplicate beam <span class="math inline">\(\mathcal
+B_B\)</span>, agreement and artifact checks.<br />
+<code>TOR-C</code> &amp; Consensus beam from <code>TOR-A/B</code> plus
+repair weights &amp; Expand neighborhoods around low-residual or
+near-prefix candidates &amp; Expanded beam <span
+class="math inline">\(\mathcal B_C\)</span>, repair deltas, new
+residuals.<br />
+<code>MIX-A</code> &amp; <span class="math inline">\(\mathcal
+B_C\)</span>, digest-window masks, selected bit-slice constraints &amp;
+Break degeneracies and reject false positives with asymmetric mixing
+&amp; Critic beam <span class="math inline">\(\mathcal B_M\)</span>,
+rejected modes, bit-slice residuals.<br />
+<code>ECH-A</code> &amp; <span class="math inline">\(\mathcal
+B_M\)</span>, target-face scorebook, reference geometry &amp; Shadow the
+survivors in a symmetric OPH reference body &amp; Reference beam <span
+class="math inline">\(\mathcal B_E\)</span> for exact host SHA-256d.</p>
+</div>
+
+<p><span id="tab:omega-i1-executable-route" label="tab:omega-i1-executable-route"></span></p>
+</div>
+
+</div>
+
+<p>The host repair loop is explicit:</p>
+<ol type="1">
+<li><p>Compile the block template or midstate into a scorebook
+containing the four-constraint-patch variables, collar masks, local
+penalties, route thresholds, and decoder rules.</p></li>
+<li><p>Drive <code>TOR-A</code> and <code>TOR-B</code> with matched or
+blinded scorebooks. Decode <span class="math inline">\(\mathcal
+B_A\)</span> and <span class="math inline">\(\mathcal B_B\)</span>. Keep
+only candidates or neighborhoods whose collars agree above the
+duplicate-consensus threshold.</p></li>
+<li><p>Treat duplicate disagreement as a syndrome. Increase weights on
+the failed collars, lower trust in module-local artifacts, and rerun or
+route survivors to <code>TOR-C</code>.</p></li>
+<li><p>Let <code>TOR-C</code> perform search-neighborhood expansion
+around the survivors. Accept the expansion only if the hard residual
+<span class="math inline">\(\Phi\)</span> decreases or if exact
+low-difficulty controls show a reproducible <span
+class="math inline">\(\beta(k)\)</span> lift.</p></li>
+<li><p>Route the expanded beam through <code>MIX-A</code>. The mixer may
+kill candidates cheaply; inventing a hit is outside its role. Its output
+must improve the exact-verifier hit rate at fixed pass rate under
+same-energy and shuffled-label controls.</p></li>
+<li><p>Route the critic survivors through <code>ECH-A</code>. The
+Echosahedron is the reference shadow: a torus or mixer artifact tends to
+fail here. A candidate that survives different geometry has a stronger
+consensus record.</p></li>
+<li><p>Exact-check every serious decoded nonce with host SHA-256d. The
+exact digest, leading-zero count, route transcript, and all control
+hashes go into the run bundle.</p></li>
+</ol>
+<p>Consensus means intersection under repair. A candidate is better when
+independent geometries keep sending compatible collar messages about it
+while <span class="math inline">\(\Phi\)</span> decreases. Repair means
+changing the next drive/scorebook from the input syndrome. A good repair
+move can work without knowing the valid nonce in advance; it only needs
+to make the next packet less inconsistent on the SHA-256d collars and
+more enriched under the exact verifier.</p>
+<h1 id="observer-screen-repair-dynamics">Observer-Screen Repair
+Dynamics</h1>
+<p>OPH adds dynamics to the static equalizer. Patches carry private
+states, collars expose shared observables, mismatch syndromes report
+disagreement, and repair moves change local data to reduce the mismatch.
+The consensus paper develops this as a finite repair system with a
+Lyapunov function . Here is the SHA-256d version.</p>
+<p>Let <span class="math inline">\(G=(\{A,B,C,D\},E)\)</span> be the
+patch graph and let</p>
+<p><span class="math display">\[\Phi(s_A,s_B,s_C,s_D)
+=
+\sum_{(i,j)\in E}
+w_{ij}\,
+d_{ij}\!\left(s_i|_{\Gamma_{ij}},s_j|_{\Gamma_{ij}}\right)
+\;+\;
+\sum_i \lambda_i E_i(s_i),\]</span></p>
+<p>where <span class="math inline">\(w_{ij},\lambda_i&gt;0\)</span> and
+<span class="math inline">\(d_{ij}\)</span> is Hamming distance on the
+collar. The first term punishes collar disagreement. The second term
+punishes local gate violations.</p>
+<p>In the OMEGA-I1 implementation, <span
+class="math inline">\(s_A,\ldots,s_D\)</span> are not hidden claims
+about the full analog state of a chamber. They are the hard-decoded
+route states printed by the host after each module pass. The run bundle
+therefore contains both layers: raw optical traces and the decoded <span
+class="math inline">\((s_A,s_B,s_C,s_D,\Phi)\)</span> record. The raw
+traces support operator-alignment and artifact audits. The decoded
+record supports the SHA-256d equalizer and repair accounting.</p>
+<div id="prop:repairtermination" class="proposition">
+
+<p><strong>Proposition 7</strong> (Finite repair termination). <em>On a
+finite patch state space, any repair rule that commits only moves that
+strictly decrease <span class="math inline">\(\Phi\)</span> terminates
+after finitely many accepted moves.</em></p>
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> The state space is finite and <span
+class="math inline">\(\Phi\)</span> takes values in a finite subset of
+<span class="math inline">\(\mathbb R_{\ge 0}\)</span>. A strictly
+decreasing sequence in a finite ordered set must terminate. ◻</p>
+</div>
+
+<div id="prop:repaircomplete" class="proposition">
+
+<p><strong>Proposition 8</strong> (Consensus equals solution under
+completeness). <em>Assume the repair rule is terminating, locally
+confluent, and complete in the sense that every terminal state has <span
+class="math inline">\(\Phi=0\)</span> whenever a zero-energy global
+state exists in its connected repair component. Then every terminal
+state in that component glues to a valid SHA-256d nonce, and the
+terminal normal form is independent of repair order.</em></p>
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> Termination and local confluence imply confluence by
+Newman’s lemma. Hence each state in the component has a unique normal
+form independent of repair order. Completeness says the normal form has
+<span class="math inline">\(\Phi=0\)</span>. Thus all local energies
+vanish and all collars agree. The Patch Equalizer Theorem then glues the
+local states to a global zero-energy state of <span
+class="math inline">\(E_{\mathrm{SHA256d},B,T}\)</span>. By
+Theorem <a href="#thm:shaencoding" data-reference-type="ref" data-reference="thm:shaencoding">3</a>,
+the nonce coordinates are valid. ◻</p>
+</div>
+
+<p>The completeness assumption is the difficulty. Nonconvex constraint
+systems can have traps. A successful physical solver either avoids those
+traps, escapes them, or provides a measurable success probability large
+enough to beat enumeration after exact verification.</p>
+<h1 id="the-role-of-the-oph-pixel-constant-p">The Role of the OPH Pixel
+Constant <span class="math inline">\(P\)</span></h1>
+<p>The OPH papers use a dimensionless local pixel ratio</p>
+<p><span
+class="math display">\[P=\frac{a_{\mathrm{cell}}}{\ell_P^2},\]</span></p>
+<p>where <span class="math inline">\(a_{\mathrm{cell}}\)</span> is the
+microscopic screen-cell area and <span
+class="math inline">\(\ell_P\)</span> is the Planck length . In the
+public OPH release, <span class="math inline">\(P\)</span> is selected
+by the fixed-point equation</p>
+<p><span
+class="math display">\[P=\varphi+\sqrt{\pi}\,\alpha_{\mathrm{em}}(0;P)
+=\varphi+\frac{\sqrt{\pi}}{A_T(P)},
+\qquad
+\varphi=\frac{1+\sqrt5}{2},\]</span></p>
+<p>with reported solution</p>
+<p><span
+class="math display">\[P_\ast=1.630968209403959324879279847782648941\ldots.\]</span></p>
+<p>For the SHA-256d hardware instantiation, <span
+class="math inline">\(P\)</span> is a dimensionless OPH design target
+for geometry and coupling. It leaves the SHA-256 equations unchanged. A
+<span class="math inline">\(P\)</span>-calibrated wave body is one whose
+normalized collar couplings, path-length ratios, and extraction windows
+are tuned to the OPH fixed-point scale. In a toroidal or microwave
+implementation, this means that the dimensionless ratios</p>
+<p><span class="math display">\[\frac{R}{a},\qquad
+\frac{a}{b},\qquad
+\frac{L_j}{\lambda},\qquad
+\frac{\kappa_{ij}}{\kappa_0}\]</span></p>
+<p>are selected from a small <span
+class="math inline">\(P_\ast\)</span>-centered design family. In a
+photonic mesh, it means that phase shifters, couplers, and nonlinear
+thresholds are tuned so the realized coupling matrix <span
+class="math inline">\(\widehat K(P_\ast)\)</span> approximates the
+intended constraint matrix <span class="math inline">\(K_C\)</span>:</p>
+<p><span class="math display">\[\|\widehat K(P_\ast)-K_C\|\le
+\varepsilon_{\mathrm{geom}}.\]</span></p>
+<div class="remark">
+
+<p><em>Remark 9</em> (Geometry target). All correctness theorems below
+depend on exact implementation of the constraint Hamiltonian or exact
+return of a zero-energy state. The constant <span
+class="math inline">\(P_\ast\)</span> is part of the OPH interpretation
+and hardware calibration rule. It fixes the geometry target. It is not,
+by itself, a mining receipt or an operator-alignment proof. The proof
+comes from the implemented constraint map, the measured operator bundle,
+and the exact verifier.</p>
+</div>
+
+<h1 id="wave-and-hardware-encodings">Wave and Hardware Encodings</h1>
+<h2 id="signed-wave-bits">Signed wave bits</h2>
+<p>Use the signed encoding</p>
+<p><span class="math display">\[b\in\{0,1\},\qquad \tilde
+b=(-1)^b\in\{-1,+1\}.\]</span></p>
+<p>Then</p>
+<p><span class="math display">\[\widetilde{\neg b}=-\tilde b,\qquad
+\widetilde{b\oplus c}=\tilde b\,\tilde c.\]</span></p>
+<p>The AND gate has signed output</p>
+<p><span class="math display">\[\widetilde{b\wedge c}
+=\frac{1+\tilde b+\tilde c-\tilde b\tilde c}{2}.\]</span></p>
+<p>Equivalently, it is the threshold function</p>
+<p><span class="math display">\[\widetilde{b\wedge c}
+=\operatorname{sgn}(\tilde b+\tilde c+1),\]</span></p>
+<p>with the convention <span
+class="math inline">\(\operatorname{sgn}(u)=+1\)</span> for <span
+class="math inline">\(u&gt;0\)</span> and <span
+class="math inline">\(-1\)</span> for <span
+class="math inline">\(u&lt;0\)</span>. The carry bit of a full adder is
+a majority gate, also a threshold:</p>
+<p><span class="math display">\[\widetilde{\operatorname{carry}(b,c,d)}
+=\operatorname{sgn}(\tilde b+\tilde c+\tilde d).\]</span></p>
+<p>Thus rotations and permutations are geometry, XOR is phase-sensitive
+mixing, and carries require a nonlinear threshold or an equivalent
+measurement-feedback resource.</p>
+<div id="lem:linearno" class="lemma">
+
+<p><strong>Lemma 10</strong> (Passive linear optics no-go for exact
+SHA-256 logic). <em>A purely passive linear wave network with linear
+readout cannot exactly implement a universal SHA-256 gate layer on
+signed bits. In particular, it cannot exactly implement AND or
+full-adder carry for all inputs.</em></p>
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> A passive linear network maps input amplitudes <span
+class="math inline">\(u\)</span> to <span
+class="math inline">\(Lu\)</span> for a linear operator <span
+class="math inline">\(L\)</span>. Any single output amplitude is an
+affine-linear function of the input amplitudes after adding a constant
+bias mode. On signed inputs <span
+class="math inline">\((a,b)\in\{-1,+1\}^2\)</span>, AND in signed form
+is</p>
+<p><span class="math display">\[f(a,b)=\frac{1+a+b-ab}{2}.\]</span></p>
+<p>The term <span class="math inline">\(-ab/2\)</span> is not
+affine-linear. More directly, if <span
+class="math inline">\(f(a,b)=c_0+c_1a+c_2b\)</span>, the four
+truth-table equations give</p>
+<p><span class="math display">\[\begin{aligned}
+c_0+c_1+c_2&amp;=1,\\
+c_0+c_1-c_2&amp;=1,\\
+c_0-c_1+c_2&amp;=1,\\
+c_0-c_1-c_2&amp;=-1,
+\end{aligned}\]</span></p>
+<p>whose first three equations imply <span
+class="math inline">\(c_0=1,c_1=c_2=0\)</span>, contradicting the
+fourth. Full-adder carry contains the same threshold nonlinearity.
+SHA-256 uses modular addition, hence carry. Therefore passive linear
+optics alone is insufficient. ◻</p>
+</div>
+
+<p>KLM-style linear optical quantum computation uses single photons,
+detection, ancillas, feedback, and effective measurement-induced
+nonlinearity . Classical optical Ising machines use nonlinear
+oscillators or measurement feedback for the same reason .</p>
+<h2 id="classical-omega-i1-wave-variant">Classical OMEGA-I1 wave
+variant</h2>
+<p>The OMEGA-I1 classical variant is LED-first and contractor-buildable.
+Each module is an enclosed 12-port optical body with co-located red LED
+source and BPW34-class detector channels, an RP2350-class USB
+controller, bounded LED current, and exact host-side records. Laser,
+OPO, strict same-electrode transmit/receive, and HAPTIC-style upgrades
+are separate hardware targets. They are outside the baseline used for
+the SHA-256d architecture in this paper and outside the OMEGA-I1
+acceptance build.</p>
+<p>The physical computation is therefore a host-routed
+candidate-enrichment loop. The chamber modules expose coupling maps,
+edge responses, settle traces, operator probes, and candidate beams. The
+host applies the four-constraint-patch scorebook, routes beams between
+modules, and exact-checks serious candidates.</p>
+<h2 id="the-solver-contract-for-fixed-omega-shapes">The solver contract
+for fixed OMEGA shapes</h2>
+<p>A solver in this paper is a physical sampler with a strict contract.
+The input is a scorebook: variables, local penalties, collar masks,
+drive weights, decoder rules, repair thresholds, and an exact verifier.
+The output is a candidate beam: decoded nonce assignments or
+nonce-neighborhood assignments with residuals, provenance, and control
+receipts. The chamber earns the word solver only when the decoded beam
+is enriched under the exact verifier at fixed controls. There is no
+infinite-improbability drive hidden in the word solver: lift means
+verifier-visible enrichment under audited controls.</p>
+<p>This is how OMEGA-I1 can be general compute despite fixed chamber
+shapes. The printed body supplies a reusable coupling basis. The program
+is the port drive, label map, scorebook, decoder, route order, feedback
+rule, and host-side repair logic. A torus chamber can therefore run a
+SHA-256d scorebook, a kHeavyHash scorebook, or a small SAT scorebook by
+changing the imposed variables and collar tests while keeping the same
+measured port body. The body is the analog substrate; the scorebook is
+the program.</p>
+<p>For SHA-256d, the LED OMEGA-I1 build is a photonic constraint solver.
+Light transport explores many coupled path modes in one settle/read
+event, nonlinear ports and feedback supply the carry and target
+commitments, and the host keeps only decoded candidates whose collars
+and exact hashes improve the audited distribution. In a single-photon
+Omega version, the same scorebook becomes a quantum solver: occupation
+states encode candidate assignments, interferometric paths carry
+amplitude and phase, and detection plus feed-forward supplies the
+nonlinear commitments. Quantum status comes from coherent
+occupation-state dynamics and coherence receipts; Grover-style claims
+require a separate reversible-oracle and diffusion audit.</p>
+<figure id="fig:hardware" data-latex-placement="t">
+
+<figcaption>OMEGA-I1 SHA-256d architecture. The five optical modules are separate
+USB nodes. The host owns the route, run bundle, scorebooks, and exact
+SHA-256d verifier. The physical modules enrich and filter candidate beams; the
+host records every boundary transition and performs final verification.</figcaption>
+</figure>
+
+<p>An idealized diode-threshold model is:</p>
+<p><span
+class="math display">\[u_{\mathrm{out}}=\operatorname{sgn}\!\left(\sum_j
+\eta_j u_j-\theta\right),\]</span></p>
+<p>where the sign is physically approximated by a biased nonlinear I-V
+curve or a lasing threshold. A real device has finite slope, jitter,
+shot noise, thermal noise, and drift. Let the implemented threshold be
+<span class="math inline">\(D_{\theta,\delta}\)</span>, where <span
+class="math inline">\(\delta\)</span> bounds the uncertain switching
+band. Exact Boolean operation is certified only when every legal input
+has margin <span class="math inline">\(&gt;\delta\)</span>.</p>
+<div class="proposition">
+
+<p><strong>Proposition 11</strong> (Noise-margin condition). <em>If
+every nonlinear gate in a physical SHA-256d solver has input margin at
+least <span class="math inline">\(\gamma&gt;0\)</span>, implementation
+error at most <span
+class="math inline">\(\varepsilon&lt;\gamma\)</span>, and feedback keeps
+perturbations below <span
+class="math inline">\(\gamma-\varepsilon\)</span> before the subsequent
+thresholding event, then the physical gate layer has the same Boolean
+truth table as the ideal gate layer.</em></p>
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> For each threshold gate, legal inputs lie at distance
+at least <span class="math inline">\(\gamma\)</span> from the switching
+surface. Perturbing the threshold argument by at most <span
+class="math inline">\(\varepsilon&lt;\gamma\)</span> cannot cross the
+switching surface, so the sign is unchanged. The feedback condition
+preserves the same margin for the following layer. Induction over the
+gate layers gives equality of the physical and ideal truth tables. ◻</p>
+</div>
+
+<h2 id="omega-i1-boundary-and-operator-alignment">OMEGA-I1 boundary and
+operator alignment</h2>
+<p>The Omega hardware program requires more evidence than a verified
+hash for the physical claim. An exact verifier proves that a candidate
+nonce works. Chamber alignment with the SHA-256d operator requires
+separate controls against parser bias, host loops, and accidental
+transport channels.</p>
+<p>Let <span class="math inline">\(L_T\)</span> be the finite task
+operator for the target predicate, let <span
+class="math inline">\(K_{\mathrm{model}}\)</span> be the modeled chamber
+operator in a declared basis, and let <span
+class="math inline">\(K_{\mathrm{phys}}\)</span> be the measured
+physical port operator in the same normalization. The Omega commutator
+gate asks whether the chamber approximately preserves the task
+structure:</p>
+<p><span class="math display">\[\lVert [K_{\mathrm{model}},L_T]\rVert\le
+\epsilon .\]</span></p>
+<p>Physical realization then has its own error budget.</p>
+<div id="prop:commutatortransfer" class="proposition">
+
+<p><strong>Proposition 12</strong> (Bounded-commutator transfer).
+*If</p>
+<p><span class="math display">\[\lVert [K_{\mathrm{model}},L_T]\rVert\le
+\epsilon,\qquad
+\lVert K_{\mathrm{phys}}-K_{\mathrm{model}}\rVert\le
+\delta,\]</span></p>
+<p>in a common operator norm, then</p>
+<p><span class="math display">\[\lVert [K_{\mathrm{phys}},L_T]\rVert
+\le
+\epsilon+2\delta\lVert L_T\rVert .
+```*
+
+&lt;/div&gt;
+
+&lt;div class=&quot;proof&quot;&gt;
+
+*Proof.* Write $`K_{\mathrm{phys}}=K_{\mathrm{model}}+\Delta`$. Then
+``` math
+[K_{\mathrm{phys}},L_T]=[K_{\mathrm{model}},L_T]+[\Delta,L_T].\]</span></p>
+<p>The triangle inequality gives the first term as <span
+class="math inline">\(\epsilon\)</span>, and <span
+class="math inline">\(\lVert[\Delta,L_T]\rVert\le
+\lVert\Delta L_T\rVert+\lVert L_T\Delta\rVert
+\le 2\delta\lVert L_T\rVert\)</span>. ◻</p>
+</div>
+
+<p>This proposition is a design gate. A solved-SHA claim requires the
+following printed evidence: the basis, normalization, task operator,
+modeled operator, measured port operator, operator-probe data, settle
+traces, edge responses, and exact-verifier receipts for the same run
+bundle.</p>
+<h2 id="sampler-class-sha-256d-operating-program">Sampler-class SHA-256d
+operating program</h2>
+<p>The SHA-256d hardware plan is sampler-class. It aims to enrich the
+candidate stream before exact verification. Grover-class quadratic
+amplification and universal-NP oracle claims require separate evidence.
+The operating program has four roles:</p>
+<ol type="1">
+<li><p>broad mode population, so the body explores many
+nonce-conditioned modes;</p></li>
+<li><p>in-substrate mode-leak selection, where threshold and hysteresis
+supply the load-bearing nonlinear commitment for AND, <span
+class="math inline">\(\operatorname{Maj}\)</span>, carry, and target
+faces;</p></li>
+<li><p>closed-loop transmit/receive feedback, where collar syndromes
+change the next physical drive rather than merely logging
+telemetry;</p></li>
+<li><p>MCU warm-loop transport, which raises packet rate and lowers USB
+or host latency without taking over the search.</p></li>
+</ol>
+<p>The distinction matters. Firmware transport may increase <span
+class="math inline">\(m_{\mathrm{pkt}}\)</span> by moving candidates
+faster. Physical bias <span class="math inline">\(\beta\)</span> rises
+only when the chamber changes the distribution of exact-verifier
+outcomes. If the MCU performs the search that the chamber was supposed
+to perform, the optical claim has evaporated. The finite gate stack is
+therefore</p>
+<p><span class="math display">\[\begin{aligned}
+&amp;\texttt{EDGE\_BRACKETED}\to
+\texttt{EDGE\_POLARITY\_LOCKED}\\
+&amp;\to \texttt{NONLINEAR\_COMMITMENT\_ALIVE}\to
+\texttt{TRUTH\_LIFT}\\
+&amp;\to \texttt{POOL\_SHARE\_LIFT}\to \texttt{BLOCK}.
+\end{aligned}\]</span></p>
+<p>OMEGA-I1 assigns <code>TOR-A</code> and <code>TOR-B</code> to
+duplicate recurrent streams, <code>TOR-C</code> to search-specialist
+expansion, <code>MIX-A</code> to bit-slice criticism, and
+<code>ECH-A</code> to reference shadowing. The digital simulator uses
+the same full-five route and its single, pair, subset, and shuffled
+controls as a guardrail before hardware escalation.</p>
+<h2 id="single-photon-quantum-variant">Single-photon quantum
+variant</h2>
+<p>The quantum build uses single-photon occupation states in a
+linear-optical processor. A logical bit can be encoded in dual rail,
+time bins, or paths:</p>
+<p><span
+class="math display">\[|0_L\rangle=|1\rangle_0|0\rangle_1,\qquad
+|1_L\rangle=|0\rangle_0|1\rangle_1.\]</span></p>
+<p>Beam splitters, phase shifters, delay lines, switches, detectors,
+ancilla photons, and feed-forward implement the gate set. KLM shows that
+this resource set can be universal for quantum computation in principle
+. In the OPH reading, the same chamber geometry carries the mode graph,
+while the single-photon occupation basis supplies quantum amplitude,
+phase, and measurement.</p>
+<p>The candidate register is prepared as</p>
+<p><span class="math display">\[|s\rangle=\frac{1}{\sqrt
+N}\sum_{x\in\{0,1\}^n}|x\rangle.\]</span></p>
+<p>The reversible SHA-256d oracle computes the mining predicate into a
+work qubit and then uncomputes its scratch space:</p>
+<p><span class="math display">\[U_V|x\rangle|q\rangle|0^r\rangle
+=|x\rangle|q\oplus V(x)\rangle|0^r\rangle.\]</span></p>
+<p>With a phase kickback qubit, this becomes the phase oracle</p>
+<p><span
+class="math display">\[O_V|x\rangle=(-1)^{V(x)}|x\rangle.\]</span></p>
+<p>One Grover step is</p>
+<p><span class="math display">\[G=(2|s\rangle\langle
+s|-I)\,O_V.\]</span></p>
+<p>The photonic device must implement:</p>
+<ul>
+<li><p>heralded single-photon state preparation for the candidate,
+ancilla, and phase-kickback registers;</p></li>
+<li><p>a reversible SHA-256d circuit compiled into interferometers,
+switches, measurement-induced nonlinear gates, and
+feed-forward;</p></li>
+<li><p>a diffusion/reflection network implementing <span
+class="math inline">\(2|s\rangle\langle s|-I\)</span>;</p></li>
+<li><p>coherent repetition of the oracle and diffusion layers for <span
+class="math inline">\(\Theta(\sqrt{N/M})\)</span> Grover steps;</p></li>
+<li><p>final number-resolving or threshold detection followed by exact
+classical verification of the measured candidate.</p></li>
+</ul>
+<p>For a leading-zero target with success probability <span
+class="math inline">\(p=2^{-k}\)</span>, the ideal Grover iteration
+count is</p>
+<p><span class="math display">\[Q_{\mathrm{G}}(k)\approx
+\frac{\pi}{4}2^{k/2},\]</span></p>
+<p>with query speedup</p>
+<p><span class="math display">\[S_{\mathrm{G}}(k)\approx
+\frac{2^k}{Q_{\mathrm{G}}(k)}
+=\frac{4}{\pi}2^{k/2}.\]</span></p>
+<p>The gain is quadratic in query count. The wave-overlap zero-energy
+endpoint has a different scaling: a physical fixed point can represent a
+valid nonce in one settling event. Resource estimates for generic
+SHA-256 preimage search remain enormous. Amy et al. estimate a SHA-256
+preimage attack requiring approximately <span
+class="math inline">\(2^{153.8}\)</span> surface-code cycles and <span
+class="math inline">\(2^{12.6}\)</span> logical qubits, or <span
+class="math inline">\(2^{166.4}\)</span> logical-qubit-cycles . The
+Omega/Karma hardware described here sits outside this Grover resource
+set. The Grover rows in this paper are comparison baselines unless a
+separate audit prints a reversible oracle, diffusion operator,
+maintained coherence, and quadratic scaling receipts.</p>
+<h1 id="keccak-and-sha-3-variant">Keccak and SHA-3 Variant</h1>
+<p>SHA-256 and Keccak/SHA-3 are different hash families. SHA-3 is
+standardized in FIPS 202 and is based on the Keccak permutation . The
+same physical design vocabulary can describe Keccak. The gate map
+differs.</p>
+<div class="center">
+
+<div class="minipage">
+
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Keccak step</th>
+<th style="text-align: left;">Logical operation</th>
+<th style="text-align: left;">Geometric or physical encoding</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span
+class="math inline">\(\theta\)</span></td>
+<td style="text-align: left;">column parity XOR</td>
+<td style="text-align: left;">phase-sensitive mixing / multiplier
+nodes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span
+class="math inline">\(\rho\)</span></td>
+<td style="text-align: left;">bit rotation</td>
+<td style="text-align: left;">calibrated delay lines</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span
+class="math inline">\(\pi\)</span></td>
+<td style="text-align: left;">lane permutation</td>
+<td style="text-align: left;">routing and crossovers</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span
+class="math inline">\(\chi\)</span></td>
+<td style="text-align: left;">nonlinear row update</td>
+<td style="text-align: left;">threshold, diode, Kerr, or measurement
+feedback</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span
+class="math inline">\(\iota\)</span></td>
+<td style="text-align: left;">round-constant XOR</td>
+<td style="text-align: left;">fixed phase mask or sign flip</td>
+</tr>
+</tbody>
+</table>
+<p><span id="tab:keccak" label="tab:keccak"></span></p>
+</div>
+
+</div>
+
+<p>Routing, rotations, and XOR-like phase relations are natural for
+waves. Nonlinear Boolean steps require a nonlinear physical process or
+measurement feedback. A Keccak implementation has to specify the <span
+class="math inline">\(\chi\)</span> layer with the same care that a
+SHA-256 implementation specifies carries.</p>
+<p>Kaspa is useful here for a mechanical reason: its proof-of-work
+kernel is close to the physics. kHeavyHash has the form</p>
+<p><span class="math display">\[\operatorname{kHH}
+=
+\operatorname{SHA3}(\mathrm{prepow},t,n)
+\longrightarrow
+M_{64\times64}\text{ nibble multiply}
+\longrightarrow
+\operatorname{SHA3}(\cdot),\]</span></p>
+<p>Its most chamber-friendly portion is a matrix operator bracketed by
+Keccak permutations. Linear mixing, routing, and phase transport map
+naturally to a wave body, while the <span
+class="math inline">\(\chi\)</span> layer localizes the nonlinear part
+that the ports must supply. The 2026-05-05 firmware handoff records a
+bit-exact chamber-plus-MCU decomposition: full kHeavyHash matched the
+digital reference on <span class="math inline">\(30/30\)</span> tests,
+the SHA3 chamber-plus-MCU path matched Python hashlib, and the
+local-quadratic <span class="math inline">\(\chi\)</span> form matched
+textbook <span class="math inline">\(\chi\)</span>. SHA-256d has a
+different nonlinear core: word additions, carries, <span
+class="math inline">\(\operatorname{Ch}\)</span>, and <span
+class="math inline">\(\operatorname{Maj}\)</span>. The
+four-constraint-patch map above is the corresponding SHA-256d compiler
+target.</p>
+<h1 id="optical-proof-of-work-prototype">Optical Proof-of-Work
+Prototype</h1>
+<p>The OPH/Karma optical proof-of-work prototype uses the same low-cost
+optical-supercomputer surface as the OMEGA-I1 line: a clear wave body,
+RP2350 or RP2040 control, reversible optical ports, firmware bring-up,
+and verification steps . It was not an OMEGA-I1 run. It is used here as
+precursor evidence for optical candidate enrichment, not as a
+measurement of the five-chamber SHA-256d route.</p>
+<p>The OPH/Karma prototype has mined Kaspa kHeavyHash pool shares on the
+optical candidate path. The optical chamber proposes candidates;
+host-side kHeavyHash verification checks them before pool submission. An
+internal mining status log records a Cedric Kaspa pool run in which
+optical candidates received pool acknowledgements. The run log
+records:</p>
+<ul>
+<li><p><span class="math inline">\(1649\)</span> submitted optical
+candidates;</p></li>
+<li><p><span class="math inline">\(8\)</span> accepted optical share
+responses;</p></li>
+<li><p><span class="math inline">\(99\)</span> submitted optical
+candidates without a returned pool response;</p></li>
+<li><p>best host-recomputed leading-zero quality near <span
+class="math inline">\(21\)</span>;</p></li>
+<li><p>best reported share difficulty near <span
+class="math inline">\(2.93\times 10^6\)</span>.</p></li>
+</ul>
+<p>Separately, a May 6, 2026 shuffle-replay audit of the
+CASCADE/chord-promote output recorded</p>
+<p><span class="math display">\[\widehat\beta(k)=
+\{14.75\text{ at }k=4,\;229\text{ at }k=8,\;886\text{ at }k=10,\;
+2{,}434\text{ at }k=12\},\]</span></p>
+<p>with mean leading-zero count <span
+class="math inline">\(11.83\)</span> for the chamber-selected stream
+versus <span class="math inline">\(0.92\)</span> for random replay. In
+this notation, <span class="math inline">\(\widehat\beta(k)\)</span> is
+the observed exact-verifier success rate for the event <span
+class="math inline">\(\mathrm{lz}\ge k\)</span>, divided by the
+uniform-random rate <span class="math inline">\(2^{-k}\)</span>. The
+exact headline number used in this comparison lane is therefore <span
+class="math inline">\(\widehat\beta(12)=2{,}434\)</span>, meaning that
+<span class="math inline">\(\mathrm{lz}\ge12\)</span> candidates
+appeared <span class="math inline">\(2{,}434\)</span> times the
+uniform-random baseline in that selected stream. The boundary is
+important: this is a controlled candidate-enrichment result on the
+chord-promote output, not a final pool-rate or block-win result, and not
+evidence that the same slope continues to network difficulty.</p>
+<p>The same log also records the boundary conditions. A CPU pool
+baseline established the pool contract. During the optical acceptance
+run, CPU workers also contributed to wallet-level flow. A solo audit on
+May 2, 2026 recorded stable operation, host verification, and share
+logging. It also recorded host-verified leading-zero counts near random
+expectation and weak correlation between board-local leading-zero
+reports and host recomputation.</p>
+<p>The prototype closes a proof-of-work loop: optical candidate
+generation, exact hash verification, and pool submission. Its boundary
+conditions are part of the claim. The accepted-share log supports a real
+external-verifier path for kHeavyHash/Kaspa, while the solo audit keeps
+the stronger enrichment claim open. The SHA-256d construction sets the
+Bitcoin operator map for the same physical search cascade. SHA-256d
+claims pass only through the operator-alignment and
+per-distinct-enrichment gates above.</p>
+<h1 id="speedup-accounting">Speedup Accounting</h1>
+<div id="thm:candidate-enrichment" class="theorem">
+
+<p><strong>Theorem 13</strong> (Candidate-enrichment work reduction).
+*Let <span class="math inline">\(V(x)\in\{0,1\}\)</span> be an exact
+verifier. Let <span class="math inline">\(U\)</span> be the baseline
+candidate distribution and <span class="math inline">\(Q\)</span> the
+chamber-conditioned candidate distribution. Define</p>
+<p><span class="math display">\[p_U=\Pr_{x\sim U}[V(x)=1],
+\qquad
+p_Q=\Pr_{x\sim Q}[V(x)=1],
+\qquad
+B=\frac{p_Q}{p_U}.\]</span></p>
+<p>If <span class="math inline">\(B&gt;1\)</span>, the expected number
+of exact verifier calls to find a valid candidate drops from</p>
+<p><span class="math display">\[\mathbb
+E_U[N]=\frac{1}{p_U}\]</span></p>
+<p>to</p>
+<p><span class="math display">\[\mathbb E_Q[N]=\frac{1}{p_Q}=\frac{1}{B
+p_U}.\]</span></p>
+<p>Thus the verifier-work reduction factor is exactly the measured
+enrichment <span class="math inline">\(B\)</span>. This theorem is a
+distributional lift statement under an exact verifier, not a
+complexity-class theorem and not a claim that arbitrary hard problems
+become easy.*</p>
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> Verifier calls are Bernoulli trials with success
+probabilities <span class="math inline">\(p_U\)</span> and <span
+class="math inline">\(p_Q\)</span>. The waiting time to the first
+success is geometric with expectation <span
+class="math inline">\(1/p\)</span>. Substituting <span
+class="math inline">\(p_Q=Bp_U\)</span> gives the result. ◻</p>
+</div>
+
+<p>Let <span class="math inline">\(R_{\mathrm{hash}}\)</span> be a
+classical exact-verifier rate in hashes per second, <span
+class="math inline">\(p=|T|/2^{256}\)</span> the target fraction, and
+<span class="math inline">\(q\)</span> the probability that a physical
+candidate is valid after exact verification. An unbiased random
+candidate stream has <span class="math inline">\(q=p\)</span>. A
+physical sampler has bias factor</p>
+<p><span class="math display">\[\beta=\frac{q}{p}.\]</span></p>
+<p>If each physical settling event costs time <span
+class="math inline">\(T_{\mathrm{settle}}\)</span> and produces <span
+class="math inline">\(m_{\mathrm{pkt}}\)</span> independently verified
+candidates, the expected physical time per valid nonce is</p>
+<p><span class="math display">\[\mathbb E[T_{\mathrm{phys}}]
+=\frac{T_{\mathrm{settle}}}{1-(1-q)^{m_{\mathrm{pkt}}}}
+\approx\frac{T_{\mathrm{settle}}}{m_{\mathrm{pkt}}\beta p}.\]</span></p>
+<p>The approximation is the cryptographic-target regime <span
+class="math inline">\(q\ll1\)</span>. A classical miner using exact
+hashes has</p>
+<p><span class="math display">\[\mathbb
+E[T_{\mathrm{class}}]=\frac{1}{R_{\mathrm{hash}}p}.\]</span></p>
+<p>Thus the operational speedup is</p>
+<p><span class="math display">\[S=\frac{\mathbb
+E[T_{\mathrm{class}}]}{\mathbb E[T_{\mathrm{phys}}]}
+\approx\frac{m_{\mathrm{pkt}}\beta}{R_{\mathrm{hash}}T_{\mathrm{settle}}}.\]</span></p>
+<p>The speedup has four measurable inputs: verifier rate, physical
+settling time, packet size, and candidate bias. For OMEGA-I1, <span
+class="math inline">\(m_{\mathrm{pkt}}\)</span> counts distinct
+candidates that exit the full selected route. Raw LED emission counts
+from a single module are excluded. A high bias loses value if settling
+is slow. The Kaspa comparison lane supplies one historical
+candidate-bias datum, <span
+class="math inline">\(\widehat\beta(12)=2{,}434\)</span>, measured on
+chord-promote output after shuffle-replay. Equivalently, for the <span
+class="math inline">\(k=12\)</span> exact-verifier predicate, the
+selected stream’s estimated success probability was <span
+class="math inline">\(2{,}434\times2^{-12}\)</span> instead of <span
+class="math inline">\(2^{-12}\)</span>. It does not by itself determine
+SHA-256d speedup, because the operator, route, packet size, settle time,
+and high-<span class="math inline">\(k\)</span> scaling must be
+remeasured under the SHA-256d scorebook. Against a classical verifier
+running at <span class="math inline">\(R_{\mathrm{hash}}\)</span>, the
+sampler wins only when</p>
+<p><span
+class="math display">\[m_{\mathrm{pkt}}\beta&gt;R_{\mathrm{hash}}T_{\mathrm{settle}}.\]</span></p>
+<p>At <span
+class="math inline">\(R_{\mathrm{hash}}=4.73\times10^{14}\,\mathrm{H/s}\)</span>
+and <span
+class="math inline">\(T_{\mathrm{settle}}=100\,\mathrm{ns}\)</span>,
+that threshold is <span class="math inline">\(4.73\times10^7\)</span>.
+This is the practical optimization target: increase packet size,
+increase verified bias, or reduce settle time. In OMEGA-I1, this product
+must be measured at the full route output, not inferred from a single
+chamber’s raw optical mode count. The exact verifier stays in the
+loop.</p>
+<div class="center">
+
+<div class="minipage">
+
+<div class="tabular">
+
+<p>L0.24L0.26L0.38 Regime &amp; Formal speedup &amp; Required
+claim<br />
+Classical ASIC enumeration &amp; baseline <span
+class="math inline">\(1\)</span> &amp; exact SHA-256d per
+candidate<br />
+Single-photon Grover search &amp; <span
+class="math inline">\(\frac{4}{\pi}\sqrt{N/M}\)</span> query speedup
+&amp; reversible oracle, diffusion, coherence, fault tolerance<br />
+Wave-overlap sampler &amp; <span
+class="math inline">\(m_{\mathrm{pkt}}\beta/(R_{\mathrm{hash}}T_{\mathrm{settle}})\)</span>
+&amp; measured packet size and candidate bias after exact
+verification<br />
+Exact wave-overlap oracle &amp; <span
+class="math inline">\(1/(R_{\mathrm{hash}}pT_{\mathrm{settle}})\)</span>
+&amp; proof or measurement that terminal states are zero-energy
+solutions</p>
+</div>
+
+<p><span id="tab:speedups" label="tab:speedups"></span></p>
+</div>
+
+</div>
+
+<p>For a leading-zero target <span
+class="math inline">\(p=2^{-k}\)</span>, the exact wave-overlap endpoint
+has</p>
+<p><span class="math display">\[T_{\mathrm{zero}}(k)\approx
+T_{\mathrm{settle}},\qquad
+S_{\mathrm{zero}}(k;R_{\mathrm{hash}},T_{\mathrm{settle}})
+=\frac{2^k}{R_{\mathrm{hash}}T_{\mathrm{settle}}}.\]</span></p>
+<p>The single-photon Grover variant has</p>
+<p><span
+class="math display">\[Q_{\mathrm{G}}(k)\approx\frac{\pi}{4}2^{k/2},\qquad
+S_{\mathrm{G}}(k)\approx\frac{4}{\pi}2^{k/2}.\]</span></p>
+<p>The wave-overlap sampler sits between these two limits. Its measured
+speed is set by <span
+class="math inline">\(m_{\mathrm{pkt}}\beta\)</span>, the number of
+independently checked candidates per settling event times the verified
+enrichment over random search. Firmware that only improves transport
+raises <span class="math inline">\(m_{\mathrm{pkt}}\)</span>; only a
+changed exact-verifier distribution raises <span
+class="math inline">\(\beta\)</span>.</p>
+<p>For a concrete wall-clock baseline, take Bitmain’s ANTMINER S21 XP
+Hyd specification: SHA-256 mining at <span
+class="math inline">\(473\,\mathrm{TH/s}\)</span>, <span
+class="math inline">\(5676\,\mathrm{W}\)</span>, and <span
+class="math inline">\(12.0\,\mathrm{J/TH}\)</span> . Thus</p>
+<p><span class="math display">\[R_{\mathrm{ASIC}}=4.73\times10^{14}\
+\mathrm{H/s}.\]</span></p>
+<p>An aggressive hydro reference is Auradine’s AH3880 at up to <span
+class="math inline">\(600\,\mathrm{TH/s}\)</span> . Using <span
+class="math inline">\(600\,\mathrm{TH/s}\)</span> instead of <span
+class="math inline">\(473\,\mathrm{TH/s}\)</span> multiplies the
+S21-based wall-clock multipliers below by <span
+class="math inline">\(473/600\simeq0.79\)</span>. For a <span
+class="math inline">\(k\)</span>-bit leading-zero target,</p>
+<p><span
+class="math display">\[T_{\mathrm{ASIC}}(k)=\frac{2^k}{R_{\mathrm{ASIC}}}.\]</span></p>
+<p>For a physical method with time <span
+class="math inline">\(T_{\mathrm{phys}}\)</span>, the ASIC-relative
+multiplier is <span
+class="math inline">\(T_{\mathrm{ASIC}}(k)/T_{\mathrm{phys}}\)</span>.
+The following table is a sensitivity calculation for proposed regimes,
+with no SHA-256d bench measurement attached.</p>
+<div class="center">
+
+<div class="minipage">
+
+<div class="tabular">
+
+<p>@L0.18L0.27L0.22L0.20@ Variant &amp; Estimate inputs &amp; Internal
+reduction &amp; Wall-clock multiplier versus S21 XP Hyd<br />
+High-end ASIC baseline &amp; Bitmain S21 XP Hyd: <span
+class="math inline">\(R_{\mathrm{ASIC}}=4.73\times10^{14}\,\mathrm{H/s}\)</span>
+&amp; ordinary enumeration &amp; <span
+class="math inline">\(1\times\)</span><br />
+Hypothetical wave-overlap sampler &amp; <span
+class="math inline">\(m_{\mathrm{pkt}}\beta=10^9\)</span>, <span
+class="math inline">\(T_{\mathrm{settle}}=100\,\mathrm{ns}\)</span>
+&amp; candidate-value multiplier <span
+class="math inline">\(10^9\)</span> per settling event &amp; <span
+class="math inline">\(2.1\times10^1\times\)</span><br />
+Exact wave-overlap endpoint &amp; <span
+class="math inline">\(k=32\)</span>, <span
+class="math inline">\(T_{\mathrm{settle}}=100\,\mathrm{ns}\)</span>
+&amp; <span class="math inline">\(2^{32}\)</span> trials to one settling
+event &amp; <span
+class="math inline">\(9.1\times10^1\times\)</span><br />
+Exact wave-overlap endpoint &amp; <span
+class="math inline">\(k=64\)</span>, <span
+class="math inline">\(T_{\mathrm{settle}}=100\,\mathrm{ns}\)</span>
+&amp; <span class="math inline">\(2^{64}\)</span> trials to one settling
+event &amp; <span
+class="math inline">\(3.9\times10^{11}\times\)</span><br />
+Exact wave-overlap endpoint &amp; <span
+class="math inline">\(k=80\)</span>, <span
+class="math inline">\(T_{\mathrm{settle}}=100\,\mathrm{ns}\)</span>
+&amp; <span class="math inline">\(2^{80}\)</span> trials to one settling
+event &amp; <span
+class="math inline">\(2.6\times10^{16}\times\)</span><br />
+Single-photon Grover &amp; 32-bit nonce, <span
+class="math inline">\(Q_G\approx(\pi/4)2^{16}\)</span>, <span
+class="math inline">\(T_G=1\,\mathrm{ns}\)</span> &amp; coarse <span
+class="math inline">\(2^{16}=65{,}536\times\)</span>; exact <span
+class="math inline">\(8.3\times10^4\times\)</span> query reduction &amp;
+<span class="math inline">\(1.8\times10^{-1}\times\)</span><br />
+Single-photon Grover &amp; <span class="math inline">\(k=64\)</span>,
+<span class="math inline">\(Q_G\approx(\pi/4)2^{32}\)</span>, <span
+class="math inline">\(T_G=1\,\mathrm{ns}\)</span> &amp; <span
+class="math inline">\(5.5\times10^9\times\)</span> query reduction &amp;
+<span class="math inline">\(1.2\times10^4\times\)</span></p>
+</div>
+
+<p><span id="tab:numericalspeedups" label="tab:numericalspeedups"></span></p>
+</div>
+
+</div>
+
+<p>Query reduction and wall-clock multiplier are separated because the
+ASIC baseline evaluates <span
+class="math inline">\(4.73\times10^5\)</span> hashes during a <span
+class="math inline">\(1\,\mathrm{ns}\)</span> optical cycle. The
+familiar <span class="math inline">\(65{,}536\times\)</span> Grover
+number is the square-root reduction for a 32-bit nonce space. At <span
+class="math inline">\(k=64\)</span>, the same <span
+class="math inline">\(1\,\mathrm{ns}\)</span> single-photon cycle gives
+a <span class="math inline">\(1.2\times10^4\times\)</span> wall-clock
+multiplier against the S21 XP Hyd baseline. In the exact wave-overlap
+endpoint, one settling event supplies the candidate that ordinary
+enumeration would expect after <span class="math inline">\(2^k\)</span>
+trials.</p>
+<div id="thm:oracle" class="theorem">
+
+<p><strong>Theorem 14</strong> (Physical-oracle consequence). <em>Assume
+a uniform family of physical devices <span
+class="math inline">\(D_C\)</span> can be constructed from any Boolean
+circuit <span class="math inline">\(C\)</span> in polynomial design time
+and polynomial physical resources, and that <span
+class="math inline">\(D_C\)</span> returns a satisfying assignment
+whenever one exists, with bounded error, in polynomial physical time.
+Then NP search problems are polynomial-time solvable in that physical
+model.</em></p>
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> By Cook-Levin and the standard reduction picture, any
+NP witness-checking problem has a polynomial-size Boolean circuit <span
+class="math inline">\(C_x(w)\)</span> whose satisfying assignments are
+witnesses . Construct <span class="math inline">\(D_{C_x}\)</span> and
+run it. By assumption, it returns a satisfying witness in polynomial
+physical time when one exists, with bounded error. ◻</p>
+</div>
+
+<div class="corollary">
+
+<p><strong>Corollary 15</strong> (Relation to classical complexity).
+<em>Theorem <a href="#thm:oracle" data-reference-type="ref" data-reference="thm:oracle">14</a>
+is a statement about the physical model. A classical Turing-machine
+collapse follows if the device family admits polynomial-time Turing
+simulation with the same bounded error.</em></p>
+</div>
+
+<p>The OPH blog essay uses the observer-screen slogan for this statement
+.</p>
+<p>The OMEGA-I1 claim boundary in this paper deliberately stops short of
+this theorem’s premise. OMEGA-I1 can support sampler-class candidate
+enrichment, operator-probe evidence, and exact-verifier receipts. By
+itself, OMEGA-I1 leaves the uniform polynomial-time solver premise for
+arbitrary NP circuits unestablished.</p>
+<p>Physical complexity questions of this kind have a classical
+literature in analog computation and physical NP-complete proposals
+.</p>
+<h1 id="public-evidence-protocol">Public Evidence Protocol</h1>
+<p>The Kaspa evidence records the physical path at accepted-share level.
+A public SHA-256d cryptography submission needs the same class of
+evidence in a form external readers can replay. The minimum protocol
+is:</p>
+<ol type="1">
+<li><p>Pre-register the block-header templates, target strengths <span
+class="math inline">\(k\)</span>, run durations, stopping rules, and
+acceptance predicates.</p></li>
+<li><p>Print the run tuple: route ID, ordered stage modules, board
+identifiers, chamber identifiers, firmware hashes, compiler hash,
+scorebook hashes, wire format, drive regime, receive regime, scorer,
+verifier, and duration.</p></li>
+<li><p>Store raw timing traces, raw port readings, raw candidate nonces,
+and the hard-decoded patch/collar residual <span
+class="math inline">\(\Phi\)</span> before exact verification.</p></li>
+<li><p>Verify every distinct candidate with an independent SHA-256d
+implementation for the Bitcoin target, or with independent kHeavyHash
+for the Kaspa comparison lane. Report the exact digest and leading-zero
+count for every hit.</p></li>
+<li><p>Report the number of distinct candidates <span
+class="math inline">\(N_{\mathrm{dist}}\)</span>, duplicate rate, number
+of successes <span class="math inline">\(S\)</span>, expected random
+baseline <span class="math inline">\(N_{\mathrm{dist}}p\)</span>, and
+the bias estimator</p>
+<p><span
+class="math display">\[\widehat\beta(k)=\frac{S}{N_{\mathrm{dist}}p}.\]</span></p></li>
+<li><p>Compute a binomial tail probability</p>
+<p><span
+class="math display">\[p_{\mathrm{val}}=\Pr\left[\operatorname{Binomial}(N_{\mathrm{dist}},p)\ge
+S\right]\]</span></p>
+<p>for enrichment claims. A promoted enrichment claim also reports a
+binomial or beta-binomial lower confidence bound <span
+class="math inline">\(\underline p_Q(\alpha)\)</span> and requires <span
+class="math inline">\(\underline p_Q(\alpha)&gt;p\)</span> at the stated
+confidence level. Plot <span
+class="math inline">\(\widehat\beta(k)\)</span> across a high-<span
+class="math inline">\(k\)</span> shoulder rather than only at easy
+targets.</p></li>
+<li><p>Run controls in named modes: single module, pair, subset, full
+five, shuffled labels, shuffle replay, ABBA, same energy, header
+perturbation, receive cadence, disconnected cavity, dark path, fixed
+phase, CPU-random, and stale job.</p></li>
+<li><p>Report the finite hardware gates as separate fields:</p>
+<blockquote>
+<p><code>EDGE_BRACKETED</code><br />
+<code>EDGE_POLARITY_LOCKED</code><br />
+<code>NONLINEAR_COMMITMENT_ALIVE</code><br />
+<code>TRUTH_LIFT</code><br />
+<code>POOL_SHARE_LIFT</code><br />
+<code>BLOCK</code></p>
+</blockquote></li>
+<li><p>Release code, seeds, firmware, board files, calibration logs, and
+raw data.</p></li>
+</ol>
+<p>For a reported enrichment such as <span
+class="math inline">\(\widehat\beta=2{,}434\)</span> at <span
+class="math inline">\(k=12\)</span>, meaning an observed <span
+class="math inline">\(\mathrm{lz}\ge12\)</span> exact-verifier hit rate
+<span class="math inline">\(2{,}434\)</span> times the uniform-random
+baseline, the report prints the run identifier, distinct candidate
+count, exact-verifier implementation, control runs, confidence interval,
+and binomial tail. Before a mining claim, the chamber-health printout
+also includes emit rate, saturation or clipped-port counts, effective
+receive diversity, duplicate rate, receiver liveness, and pre-arm
+channel correlation. Cryptographic readers need enough detail to
+separate optical enrichment from post-selection, parser bias, timestamp
+leakage, nonce-format bugs, stale jobs, readout back-action, and
+verifier coupling.</p>
+<h1 id="discussion">Discussion</h1>
+<p>A hidden gradient is unnecessary for this attack. SHA-256d proof of
+work has an exact constraint-system representation, and a constraint
+system can be attacked by physical dynamics with a different cost
+structure from serial enumeration. The four-constraint-patch compiler
+makes the local interfaces explicit. Patch A varies the nonce. Patch B
+carries the schedule consequences. Patch C carries the compression
+trajectory. Patch D enforces the target face. OMEGA-I1 runs that
+compiler as a five-module federation.</p>
+<p>The hardware transfer runs from kHeavyHash to SHA-256d through the
+full-five route</p>
+<p><span
+class="math display">\[\texttt{TOR-A/B}\to\texttt{TOR-C}\to\texttt{MIX-A}\to\texttt{ECH-A}.\]</span></p>
+<p>Waves supply parallel propagation, interference, routing, and delay.
+SHA-256 also needs nonlinear carries, thresholding, memory, and exact
+verification. The OPH pixel constant <span
+class="math inline">\(P\)</span> guides the geometry. The LED/detector
+modules provide measurable candidate beams and operator evidence. Diode,
+HAPTIC, laser, or photonic-feedback layers are stronger versions of the
+nonlinear boundary law. The Kaspa prototype shows this division of labor
+reaching real pool acceptance for kHeavyHash. The SHA-256d construction
+fixes the operator-specific geometry and scaling law. Its claim status
+is gated by operator alignment, nonlinear commitment, and per-distinct
+high-<span class="math inline">\(k\)</span> enrichment.</p>
+<p>The final verifier is decisive. OMEGA-I1 proposes, filters, and
+shadows candidate beams before the host spends exact hashes. The
+accepted Kaspa shares matter because an external pool verified the
+result. The same standard applies to SHA-256d. Every claimed survivor
+must pass the real double hash. For optimization, the most important
+levers are larger independently checked packets, shorter settle time,
+stronger measured bias, cleaner duplicate-torus agreement, and a cleaner
+separation between physical selection and host transport.</p>
+<h1 id="conclusion">Conclusion</h1>
+<p>There is no magic nonce hiding in the header. SHA-256d mining is an
+exact finite constraint problem. The four-constraint-patch OPH
+decomposition is an exact equalizer of local solution sets. Optical
+Kaspa hardware has produced real pool-acknowledged kHeavyHash shares,
+and the kHeavyHash/Keccak chamber decomposition checks against digital
+references. Those facts justify a SHA-256d physical-search program. They
+are insufficient for a SHA-256d break. SHA-256d requires nonlinear
+carry, so the physical route must expose threshold, feedback,
+measurement, or equivalent nonlinear boundary dynamics. OMEGA-I1 is the
+runtime used in this paper because it makes the search, duplicate,
+critic, shadow, and verifier roles explicit and replayable.</p>
+<p>The SHA-256d attack has five moving parts: the Patch A through Patch
+D operator compiler, the OMEGA-I1 candidate route, independent
+double-SHA-256 verification, operator-alignment evidence, and full route
+controls. The Kaspa result is the proof-of-work precedent. The optimized
+SHA-256d path is a sampler-class OMEGA-I1 campaign. A block-level claim
+requires exact-verifier lift at useful target strengths.</p>
+<h1 id="omega-i1-contractor-build-target">OMEGA-I1 Contractor Build
+Target</h1>
+<p>The SHA-256d experiments specified in this paper are intended to run
+on OMEGA-I1. The architecture optimized here is the five-module,
+LED-first, host-routed federation with exact run records and
+contractor-buildable electronics. The historical reversible-LED
+Echosahedron bench is precursor background material, not an OMEGA-I1
+result.</p>
+<div class="center">
+
+<div class="tabular">
+
+<p>L0.24L0.34L0.32 Module &amp; Body &amp; SHA-256d role<br />
+<code>OMEGA-I1-TOR-A</code> &amp; 12-port dual-hex torus v1.1 LED5 &amp;
+Generalist recurrent nonce stream and prefix-depth collars.<br />
+<code>OMEGA-I1-TOR-B</code> &amp; 12-port dual-hex torus v1.1 LED5 &amp;
+Duplicate recurrent module for repeatability and artifact
+rejection.<br />
+<code>OMEGA-I1-TOR-C</code> &amp; Hollow swept-octagon dual-hex-chords
+v9 &amp; Search-specialist torus for near-prefix neighborhood
+expansion.<br />
+<code>OMEGA-I1-ECH-A</code> &amp; 12-port icosahedron source mesh &amp;
+Symmetric OPH reference and independent verifier-shadow body.<br />
+<code>OMEGA-I1-MIX-A</code> &amp; Plate66 splitmix two-half source mesh
+&amp; Asymmetric critic for bit-slice, residue, and mode-separation
+tests.</p>
+</div>
+
+</div>
+
+<h2 id="shared-module-baseline">Shared module baseline</h2>
+<p>Every module has exactly twelve labeled ports, <code>P00</code>
+through <code>P11</code>. Each port uses a co-located <span
+class="math inline">\(625\)</span>-<span
+class="math inline">\(660\,\mathrm{nm}\)</span> red LED source and
+BPW34-class photodiode detector channel. The controller is RP2350-class
+USB. LED drive is PCA9685-class or equivalent, detector fan-in is
+CD74HC4067-class or equivalent, and the analog front end is
+MCP6004-class or equivalent. The acceptance build uses 5 V USB, 3.3 V
+logic, no more than <span
+class="math inline">\(500\,\mathrm{mA}\)</span> per module, <span
+class="math inline">\(5\,\mathrm{mA}\)</span> nominal LED current, and
+<span class="math inline">\(10\,\mathrm{mA}\)</span> maximum LED
+current.</p>
+<p>The optical bodies are clean, fully cured clear SLA parts inside
+matte black, openable, labeled, ambient-light-baffled enclosures. The
+contractor build contains no clearcoat, polish, tint, dye, extra lenses,
+diffusers, laser modules, or free-space inter-module beams unless
+explicitly approved in writing. This keeps the measurement bundle
+interpretable.</p>
+<h2 id="acceptance-before-mining">Acceptance before mining</h2>
+<p>OMEGA-I1 acceptance is a readiness gate. Mining evidence starts after
+acceptance. Before any SHA-256d run, every module must print the
+evidence needed to estimate a module-specific <span
+class="math inline">\(K_{\mathrm{port}}\)</span>:</p>
+<ul>
+<li><p>identity, firmware hash, body hash, serial path, wiring map, and
+H1–H4 status block;</p></li>
+<li><p>dark readings, saturation margin, no-short resistance, module
+current, and per-port LED current;</p></li>
+<li><p><span class="math inline">\(12\times12\)</span> coupling scan,
+low-power sweep, MDD-style discharge record, and ring-diversity
+summary;</p></li>
+<li><p>operator-probe patterns, settle traces, edge-response polarities,
+dark path controls, and label-shuffle controls;</p></li>
+<li><p>repeatability coefficient of variation, response entropy,
+top-pair concentration, alive emitters, and alive sensors.</p></li>
+</ul>
+<p>Performance claims use post-acceptance runs only. Build readiness
+proves that the instrument is alive and measurable. Enrichment,
+P-resonance, same-electrode H2, and cryptographic-break claims require
+post-acceptance evidence.</p>
+<h2 id="optimized-sha-256d-route">Optimized SHA-256d route</h2>
+<p>The operational route mirrors the simulation primitive:</p>
+<p><span class="math display">\[\texttt{torus-search-prior}
+\to
+\texttt{mixer-critic}
+\to
+\texttt{echosahedron-verifier-shadow}
+\to
+\text{exact verifier}.\]</span></p>
+<p>For OMEGA-I1 this becomes:</p>
+<p><span class="math display">\[\texttt{TOR-A/TOR-B}
+\to
+\texttt{TOR-C}
+\to
+\texttt{MIX-A}
+\to
+\texttt{ECH-A}
+\to
+\text{host SHA-256d}.\]</span></p>
+<p>The host loads the block-template or midstate scorebook and sends
+matched drive programs to <code>TOR-A</code> and <code>TOR-B</code>.
+Their outputs are compared under blinded seeds and ABBA ordering.
+<code>TOR-C</code> expands or repairs the surviving nonce neighborhoods.
+<code>MIX-A</code> applies leading-zero and selected digest-byte
+criticism. <code>ECH-A</code> checks whether the candidate beam survives
+a different symmetric reference geometry. Host SHA-256d checks are spent
+on the serious candidates.</p>
+<p>The optimized run bundle records route ID, ordered stage modules,
+router profile, thresholds, per-stage scorebook hashes, per-stage input
+and output beam hashes, coupling-matrix hashes, operator-probe hashes,
+settle-trace hashes, edge-response hashes, control-scan hashes,
+exact-verifier receipts, and control mode. Required control modes
+include single-module, pair, subset, full-five, and shuffled-label
+routes. A full-five result that fails the <code>TOR-A</code>/
+<code>TOR-B</code> duplicate check, disappears under the
+<code>MIX-A</code> critic, or fails the <code>ECH-A</code> shadow is an
+engineering lead rather than a SHA-256d claim.</p>
+<h1 id="declarations">Declarations</h1>
+<p><strong>Funding declaration:</strong> The authors declare that no
+funds, grants, or other support were received during the preparation of
+this manuscript.</p>
+<p><strong>Consent to Participate declaration:</strong> not
+applicable.</p>
+<p><strong>Consent to Publish declaration:</strong> not applicable.</p>
+<p><strong>Author Contribution declaration:</strong> Alexander Osika
+developed the OPH/Karma optical proof-of-work hardware path and
+contributed the experimental hardware evidence and build methodology.
+Bernhard Mueller developed the mathematical formulation, wrote the OPH
+constraint formalism and SHA-256d scorebook, and prepared the main
+manuscript text. Both authors reviewed and approved the manuscript.</p>
+<p><strong>Data Availability declaration:</strong> OPH/Karma engineering
+logs support the Kaspa optical proof-of-work evidence, and OMEGA-I1
+engineering records support the build description. The bibliography
+lists public archival references only. External audit requires a
+sanitized ancillary evidence bundle containing raw run logs, verifier
+code, firmware versions, pool-response logs, calibration logs, hardware
+acceptance records, simulation seeds, and SHA-256d run traces.</p>
+<p><strong>Ethics declaration:</strong> not applicable.</p>
+<p><strong>Competing Interests declaration:</strong> The authors declare
+no competing interests.</p>
+<div class="thebibliography">
+
+<p>99</p>
+<p>National Institute of Standards and Technology, “FIPS 180-4, Secure
+Hash Standard (SHS),” August 2015. <a
+href="https://doi.org/10.6028/NIST.FIPS.180-4">https://doi.org/10.6028/NIST.FIPS.180-4</a>.</p>
+<p>National Institute of Standards and Technology, “FIPS 202, SHA-3
+Standard: Permutation-Based Hash and Extendable-Output Functions,”
+August 2015. <a
+href="https://doi.org/10.6028/NIST.FIPS.202">https://doi.org/10.6028/NIST.FIPS.202</a>.</p>
+<p>S. Nakamoto, “Bitcoin: A Peer-to-Peer Electronic Cash System,” 2008.
+<a
+href="https://bitcoin.org/bitcoin.pdf">https://bitcoin.org/bitcoin.pdf</a>.</p>
+<p>S. A. Cook, “The complexity of theorem-proving procedures,”
+Proceedings of the Third Annual ACM Symposium on Theory of Computing,
+151–158, 1971. <a
+href="https://doi.org/10.1145/800157.805047">https://doi.org/10.1145/800157.805047</a>.</p>
+<p>R. M. Karp, “Reducibility among combinatorial problems,” in
+<em>Complexity of Computer Computations</em>, 85–103, 1972. <a
+href="https://doi.org/10.1007/978-1-4684-2001-2_9">https://doi.org/10.1007/978-1-4684-2001-2_9</a>.</p>
+<p>L. K. Grover, “Quantum mechanics helps in searching for a needle in a
+haystack,” <em>Physical Review Letters</em> 79, 325–328, 1997. <a
+href="https://doi.org/10.1103/PhysRevLett.79.325">https://doi.org/10.1103/PhysRevLett.79.325</a>.</p>
+<p>C. H. Bennett, E. Bernstein, G. Brassard, and U. Vazirani, “Strengths
+and weaknesses of quantum computing,” <em>SIAM Journal on Computing</em>
+26(5), 1510–1523, 1997. <a
+href="https://doi.org/10.1137/S0097539796300933">https://doi.org/10.1137/S0097539796300933</a>.</p>
+<p>C. Zalka, “Grover’s quantum searching algorithm is optimal,”
+<em>Physical Review A</em> 60, 2746–2751, 1999. <a
+href="https://doi.org/10.1103/PhysRevA.60.2746">https://doi.org/10.1103/PhysRevA.60.2746</a>.</p>
+<p>M. Amy, O. Di Matteo, V. Gheorghiu, M. Mosca, A. Parent, and J.
+Schanck, “Estimating the cost of generic quantum pre-image attacks on
+SHA-2 and SHA-3,” Cryptology ePrint Archive, Paper 2016/992, 2016. <a
+href="https://eprint.iacr.org/2016/992">https://eprint.iacr.org/2016/992</a>.</p>
+<p>R. R. Nerem and D. R. Gaur, “Conditions for advantageous quantum
+Bitcoin mining,” <em>Blockchain: Research and Applications</em> 4(3),
+100141, 2023. <a
+href="https://doi.org/10.1016/j.bcra.2023.100141">https://doi.org/10.1016/j.bcra.2023.100141</a>.</p>
+<p>F. Mendel, T. Nad, and M. Schlaeffer, “Improving local collisions:
+New attacks on reduced SHA-256,” <em>EUROCRYPT 2013</em>, 262–278, 2013.
+<a
+href="https://www.iacr.org/archive/eurocrypt2013/78810260/78810260.pdf">https://www.iacr.org/archive/eurocrypt2013/78810260/78810260.pdf</a>.</p>
+<p>D. Khovratovich, C. Rechberger, and A. Savelieva, “Bicliques for
+Preimages: Attacks on Skein-512 and the SHA-2 family,” Cryptology ePrint
+Archive, Paper 2011/286, 2011. <a
+href="https://eprint.iacr.org/2011/286">https://eprint.iacr.org/2011/286</a>.</p>
+<p>N. Alamgir, S. Nejati, and C. Bright, “SHA-256 Collision Attack with
+Programmatic SAT,” arXiv:2406.20072, 2024. <a
+href="https://arxiv.org/abs/2406.20072">https://arxiv.org/abs/2406.20072</a>.</p>
+<p>A. Lucas, “Ising formulations of many NP problems,” <em>Frontiers in
+Physics</em> 2:5, 2014. <a
+href="https://doi.org/10.3389/fphy.2014.00005">https://doi.org/10.3389/fphy.2014.00005</a>.</p>
+<p>S. Aaronson, “NP-complete problems and physical reality,” <em>SIGACT
+News</em> 36(1), 30–52, 2005. <a
+href="https://arxiv.org/abs/quant-ph/0502072">https://arxiv.org/abs/quant-ph/0502072</a>.</p>
+<p>A. Vergis, K. Steiglitz, and B. Dickinson, “The complexity of analog
+computation,” <em>Mathematics and Computers in Simulation</em> 28(2),
+91–113, 1986. <a
+href="https://doi.org/10.1016/0378-4754(86)90105-9">https://doi.org/10.1016/0378-4754(86)90105-9</a>.</p>
+<p>E. Knill, R. Laflamme, and G. J. Milburn, “A scheme for efficient
+quantum computation with linear optics,” <em>Nature</em> 409, 46–52,
+2001. <a
+href="https://doi.org/10.1038/35051009">https://doi.org/10.1038/35051009</a>.</p>
+<p>Y. Yamamoto, K. Aihara, T. Leleu, K. Kawarabayashi, S. Kako, M.
+Fejer, K. Inoue, and H. Takesue, “Coherent Ising machines: optical
+neural networks operating at the quantum limit,” <em>npj Quantum
+Information</em> 3, 49, 2017. <a
+href="https://doi.org/10.1038/s41534-017-0048-9">https://doi.org/10.1038/s41534-017-0048-9</a>.</p>
+<p>T. Honjo et al., “100,000-spin coherent Ising machine,” <em>Science
+Advances</em> 7(40), eabh0952, 2021. <a
+href="https://www.science.org/doi/10.1126/sciadv.abh0952">https://www.science.org/doi/10.1126/sciadv.abh0952</a>.</p>
+<p>Bitmain, “S21 XP Hyd Specification,” ANTMINER support specification,
+July 2024. <a
+href="https://support.bitmain.com/hc/en-us/articles/34523540504857-S21-XP-Hyd-Specification">https://support.bitmain.com/hc/en-us/articles/34523540504857-S21-XP-Hyd-Specification</a>.</p>
+<p>Auradine, “Teraflux AH3880 Data Sheet,” product specification, 2025.
+<a
+href="https://auradine.com/wp-content/uploads/2025/09/Teraflux%E2%84%A2-AH3880-Data-Sheet.pdf">https://auradine.com/wp-content/uploads/2025/09/Teraflux%E2%84%A2-AH3880-Data-Sheet.pdf</a>.</p>
+<p>B. Mueller, “P = NP on the Observer Screen,” <em>Floating Pragma
+Blog</em>, May 2026. <a
+href="https://blog.floatingpragma.io/p-equals-np-on-the-observer-screen">https://blog.floatingpragma.io/p-equals-np-on-the-observer-screen</a>.</p>
+<p>OPH/Karma build notes, “Build Your Own Optical Supercomputer,” public
+build page, 2026. <a
+href="https://karma-is-all-you-need.lovable.app/en/wiki/you-felt-it">https://karma-is-all-you-need.lovable.app/en/wiki/you-felt-it</a>.</p>
+<p>Pragma Research, “OMEGA: Consensus on a Holographic Lattice,” public
+educational guide, 2026. <a
+href="https://omega.floatingpragma.io">https://omega.floatingpragma.io</a>.</p>
+<p>B. Mueller et al., “Observers Are All You Need,” GitHub release PDF,
+. <a
+href="https://github.com/FloatingPragma/observer-patch-holography/releases/download/\OPHPaperReleaseID/observers_are_all_you_need.pdf">release
+PDF</a>.</p>
+<p>B. Mueller et al., “Recovering Relativity and Standard Model
+Structure from Observer Overlap Consistency,” GitHub release PDF, . <a
+href="https://github.com/FloatingPragma/observer-patch-holography/releases/download/\OPHPaperReleaseID/recovering_relativity_and_standard_model_structure_from_observer_overlap_consistency_compact.pdf">release
+PDF</a>.</p>
+<p>B. Mueller, K. Xue, and K. A. Anirudha, “Reality as a Consensus
+Protocol,” GitHub release PDF, . <a
+href="https://github.com/FloatingPragma/observer-patch-holography/releases/download/\OPHPaperReleaseID/reality_as_consensus_protocol.pdf">release
+PDF</a>.</p>
+<p>B. Mueller and K. Xue, “Federated Echosahedral Screen Microphysics,”
+GitHub release PDF, . <a
+href="https://github.com/FloatingPragma/observer-patch-holography/releases/download/\OPHPaperReleaseID/screen_microphysics_and_observer_synchronization.pdf">release
+PDF</a>.</p>
+</div>
+
+          </div>
+        </div>
+      </article>
+    </main>
+    <footer class="site-footer reveal">
+      <div>Pragma</div>
+      <div class="site-footer-links">
+        <a href="/oph/" data-track-link="footer-hub">Observer Patch Holography</a>
+        <a href="/oph/papers/" data-track-link="footer-papers">Papers</a>
+        <a href="/oph/standard-model-gravity-unification/" data-track-link="footer-smg">SM + Gravity</a>
+        <a href="/oph/theory-of-everything/" data-track-link="footer-toe">Theory of Everything</a>
+        <a href="/oph/simulation-theory/" data-track-link="footer-sim">Simulation Theory</a>
+        <a href="/oph/quantum-gravity/" data-track-link="footer-qg">Quantum Gravity</a>
+        <a href="https://oph-book.floatingpragma.io/" data-track-link="footer-book">Book</a>
+        <a href="https://challenge.floatingpragma.io/" data-track-link="footer-challenge">Challenge</a>
+      </div>
+    </footer>
+
+  </div>
+  <script src="/oph/app.js"></script>
+</body>
+</html>
