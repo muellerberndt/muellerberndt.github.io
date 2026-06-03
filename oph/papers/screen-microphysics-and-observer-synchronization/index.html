@@ -384,13 +384,13 @@ presentation. The microscopic carrier may be graph-like, federated,
 multi-patch, and locally polyhedral.</p>
 <div class="definition">
 
-<p><strong>Definition 1</strong> (Federated patch carrier). *A
-fixed-cutoff federated patch carrier is a tuple</p>
-<p><span class="math display">\[\mathfrak F=(V,E,\{\mathcal A_i\}_{i\in
-V},\{\mathcal I_e\}_{e\in E},
-\{\pi_{i,e}\},\{\mathcal R_i\},\{\mathcal U_i\}),\]</span></p>
-<p>where <span class="math inline">\(V\)</span> is a finite set of
-patches, <span class="math inline">\(E\)</span> is a finite overlap
+<p><strong>Definition 1</strong> (Federated patch carrier). <em>A
+fixed-cutoff federated patch carrier is a tuple <span
+class="math display">\[
+\mathfrak F=(V,E,\{\mathcal A_i\}_{i\in V},\{\mathcal I_e\}_{e\in E},
+\{\pi_{i,e}\},\{\mathcal R_i\},\{\mathcal U_i\}),
+\]</span> where <span class="math inline">\(V\)</span> is a finite set
+of patches, <span class="math inline">\(E\)</span> is a finite overlap
 graph, <span class="math inline">\(\mathcal A_i\)</span> is the local
 finite algebra of patch <span class="math inline">\(i\)</span>, <span
 class="math inline">\(\mathcal I_e\)</span> is the finite interface
@@ -399,7 +399,7 @@ class="math inline">\(\pi_{i,e}:\mathcal A_i\to\mathcal I_e\)</span> is
 the declared visible restriction, <span class="math inline">\(\mathcal
 R_i\subseteq Z(\mathcal A_i)\)</span> is the patch record algebra, and
 <span class="math inline">\(\mathcal U_i\)</span> is the allowed local
-update and repair interface.*</p>
+update and repair interface.</em></p>
 </div>
 
 <p>The carrier is <em>observer-facing</em> when every physical claim is
@@ -415,12 +415,12 @@ microphysics. The term is architectural: a bounded observer patch with a
 highly symmetric multi-port interface.</p>
 <div class="definition">
 
-<p><strong>Definition 2</strong> (Echosahedral patch). *An echosahedral
-patch is a finite patch object</p>
-<p><span class="math display">\[\mathcal E=(\mathcal
-A,\{P_a\}_{a=0}^{11},\{\rho_a\}_{a=0}^{11},
-\mathcal R,\mathcal M,\mathcal U,\mathcal G_{\mathcal E}),\]</span></p>
-<p>where:*</p>
+<p><strong>Definition 2</strong> (Echosahedral patch). <em>An
+echosahedral patch is a finite patch object <span
+class="math display">\[
+\mathcal E=(\mathcal A,\{P_a\}_{a=0}^{11},\{\rho_a\}_{a=0}^{11},
+\mathcal R,\mathcal M,\mathcal U,\mathcal G_{\mathcal E}),
+\]</span> where:</em></p>
 <ol type="1">
 <li><p><em><span class="math inline">\(\mathcal A\)</span> is the
 internal finite algebra;</em></p></li>
@@ -487,15 +487,14 @@ and Overlap Synchronization</h1>
 <p>Given a federation of echosahedral patches, overlaps are formed by
 routing ports into declared interface pairs or interface hyperedges. For
 an edge <span class="math inline">\(e=\{(i,a),(j,b)\}\)</span>, the
-exposed packets are</p>
-<p><span class="math display">\[x_{i,a}=\rho_{i,a}(s_i),\qquad
-x_{j,b}=\rho_{j,b}(s_j),\]</span></p>
-<p>and the edge mismatch is a nonnegative function</p>
-<p><span class="math display">\[\Phi_e(x_{i,a},x_{j,b})\ge
-0.\]</span></p>
-<p>The total visible mismatch is</p>
-<p><span class="math display">\[\Phi(s)=\sum_{e\in
-E}\Phi_e\bigl(\rho_{i,a}(s_i),\rho_{j,b}(s_j)\bigr).\]</span></p>
+exposed packets are <span class="math display">\[
+x_{i,a}=\rho_{i,a}(s_i),\qquad x_{j,b}=\rho_{j,b}(s_j),
+\]</span> and the edge mismatch is a nonnegative function <span
+class="math display">\[
+\Phi_e(x_{i,a},x_{j,b})\ge 0.
+\]</span> The total visible mismatch is <span class="math display">\[
+\Phi(s)=\sum_{e\in E}\Phi_e\bigl(\rho_{i,a}(s_i),\rho_{j,b}(s_j)\bigr).
+\]</span></p>
 <p>The local repair contract is the consensus-paper contract: accepted
 repairs do not increase the declared touched-overlap mismatch, and exact
 fixed-cutoff branches lower the relevant mismatch unless the local
@@ -551,20 +550,20 @@ probabilities.</p></li>
 </ol>
 <div class="definition">
 
-<p><strong>Definition 5</strong> (Federated observer checkpoint). *For
-an observer-supporting patch subfederation <span
+<p><strong>Definition 5</strong> (Federated observer checkpoint).
+<em>For an observer-supporting patch subfederation <span
 class="math inline">\(O\)</span>, a checkpoint at cycle <span
-class="math inline">\(t\)</span> is</p>
-<p><span class="math display">\[\mathrm{Chk}_O(t)=
+class="math inline">\(t\)</span> is <span class="math display">\[
+\mathrm{Chk}_O(t)=
 \bigl(
 \mathcal R_O(t),
 \rho_O^{\mathrm{acc}}(t),
 \mathfrak I_O^{\mathrm{ext}}(t),
 \nu_{\ge t},
 \mathfrak B_O(t)
-\bigr),\]</span></p>
-<p>where <span class="math inline">\(\mathcal R_O(t)\)</span> is the
-observer-accessible record algebra, <span
+\bigr),
+\]</span> where <span class="math inline">\(\mathcal R_O(t)\)</span> is
+the observer-accessible record algebra, <span
 class="math inline">\(\rho_O^{\mathrm{acc}}(t)\)</span> is the state
 restricted to observer-accessible records and visible interfaces, <span
 class="math inline">\(\mathfrak I_O^{\mathrm{ext}}(t)\)</span> is the
@@ -572,7 +571,7 @@ external port-interface tuple, <span class="math inline">\(\nu_{\ge
 t}\)</span> is the future update schedule class, and <span
 class="math inline">\(\mathfrak B_O(t)\)</span> is the public or
 internal bundle of provenance data needed to replay the checkpoint at
-the declared accuracy.*</p>
+the declared accuracy.</em></p>
 </div>
 
 <div class="theorem">
@@ -611,11 +610,12 @@ observer-accessible record projectors at cycle <span
 class="math inline">\(t\)</span>. An event <span
 class="math inline">\(E\)</span> is a projector in <span
 class="math inline">\(\mathcal Z_{\mathrm{rec}}(t)\)</span>. The
-operational measurement rule is:</p>
-<p><span class="math display">\[\Pr(E)=\mathrm{Tr}(\rho E),
+operational measurement rule is: <span class="math display">\[
+\Pr(E)=\mathrm{Tr}(\rho E),
 \qquad
 \rho\mapsto \frac{E\rho E}{\mathrm{Tr}(\rho E)}
-\quad\text{when }\Pr(E)&gt;0.\]</span></p>
+\quad\text{when }\Pr(E)&gt;0.
+\]</span></p>
 <div class="theorem">
 
 <p><strong>Theorem 7</strong> (Federated central-record measurement).
@@ -648,13 +648,13 @@ algebra.</p>
 <p>At fixed cutoff, let <span class="math inline">\(\alpha\)</span>
 label a finite set of exposed edge sectors on one declared overlap
 collar. Suppose the local thermalized edge dynamics has stationary
-weights</p>
-<p><span class="math display">\[\pi_\beta(\alpha)=\frac{d_\alpha
-e^{-\beta C_2(\alpha)}}{Z(\beta)}.\]</span></p>
-<p>For finite groups, <span class="math inline">\(C_2(\alpha)\)</span>
-is the declared sector penalty or finite-group Casimir surrogate. For
-compact groups, the Peter–Weyl lift belongs to the companion
-D10/compact-gauge handoff rather than to hardware evidence.</p>
+weights <span class="math display">\[
+\pi_\beta(\alpha)=\frac{d_\alpha e^{-\beta C_2(\alpha)}}{Z(\beta)}.
+\]</span> For finite groups, <span
+class="math inline">\(C_2(\alpha)\)</span> is the declared sector
+penalty or finite-group Casimir surrogate. For compact groups, the
+Peter–Weyl lift belongs to the companion D10/compact-gauge handoff
+rather than to hardware evidence.</p>
 <div class="theorem">
 
 <p><strong>Theorem 8</strong> (Fixed-cutoff edge-sector handoff). <em>If

@@ -1049,10 +1049,17 @@ h3 {
   font-size: 0.92em;
 }
 
+.paper-body .table-scroll {
+  max-width: 100%;
+  overflow-x: auto;
+  margin: 24px 0;
+}
+
 .paper-body table {
   width: 100%;
+  min-width: 680px;
   border-collapse: collapse;
-  margin: 24px 0;
+  margin: 0;
   color: #e7edf5;
   font-size: 0.9rem;
 }
@@ -1072,6 +1079,22 @@ h3 {
 .paper-body .math {
   overflow-x: auto;
   max-width: 100%;
+}
+
+.paper-body .math.display {
+  display: block;
+  margin: 20px 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  line-height: 1.45;
+}
+
+.paper-body mjx-container[display="true"] {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 4px 0 8px;
 }
 
 .paper-body .center {

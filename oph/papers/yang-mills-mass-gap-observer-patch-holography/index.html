@@ -223,11 +223,11 @@
 <a href="#imported-4d-euclidean-yangmills-form">Imported 4D Euclidean Yang–Mills Form</a>
 <a href="#fixed-cutoff-repair-equals-projection">Fixed-Cutoff Repair Equals Projection</a>
 <a href="#exact-euclidean-consensus-law">Exact Euclidean-Consensus Law</a>
+<a href="#finite-stage-gap">Finite-Stage Gap</a>
 <a href="#continuum-extraction">Continuum Extraction</a>
+<a href="#axiomatic-reconstruction-and-nontriviality">Axiomatic Reconstruction and Nontriviality</a>
 <a href="#main-theorem">Main Theorem</a>
-<a href="#exact-gap-accounting">Exact Gap Accounting</a>
-<a href="#relation-to-the-2d-yangmills-bridge">Relation to the 2D Yang–Mills Bridge</a>
-<a href="#clay-deliverables-checklist">Clay Deliverables Checklist</a></nav>
+<a href="#exact-gap-accounting">Exact Gap Accounting</a></nav>
             </div>
           </aside>
           <div class="paper-body">
@@ -256,13 +256,12 @@ bounded-color active collars, and repair completeness.</p>
 upgraded OPH compact-gauge support-visible extraction and Euclidean
 Yang–Mills form theorems as the four-dimensional axiomatic Yang–Mills
 construction required by the Clay/Jaffe–Witten statement. The proof
-below then isolates the mass-gap step and identifies the gap
-exactly:</p>
-<p><span
-class="math display">\[\Delta_{\mathrm{YM}}=\Delta_{\mathrm{rep}}.\]</span></p>
-<p>The two-dimensional heat-kernel identity in the wider OPH stack
-remains a separate normalization and worldsheet-effective bridge; it is
-not the mass-gap proof.</p>
+below then isolates the mass-gap step and identifies the gap exactly:
+<span class="math display">\[
+\Delta_{\mathrm{YM}}=\Delta_{\mathrm{rep}}.
+\]</span> The two-dimensional heat-kernel identity in the wider OPH
+stack remains a separate normalization and worldsheet-effective bridge;
+it is not the mass-gap proof.</p>
 <h1 id="position-in-the-oph-paper-stack">Position in the OPH Paper
 Stack</h1>
 <p>This paper is a focused companion to the OPH paper stack. The broad
@@ -312,24 +311,26 @@ algebras, overlap sector projectors, record layers, and local repair
 interfaces.</p>
 <p>Let <span class="math inline">\(r\)</span> range over a cofinal
 refinement family of finite regulators. For each <span
-class="math inline">\(r\)</span>, let</p>
-<p><span class="math display">\[(\mathcal H_r,\Omega_r,H_r),
+class="math inline">\(r\)</span>, let <span class="math display">\[
+(\mathcal H_r,\Omega_r,H_r),
 \qquad
-T_r(t)=e^{-tH_r},\]</span></p>
-<p>be the physical Euclidean Hilbert space, vacuum, Hamiltonian, and
-transfer semigroup.</p>
+T_r(t)=e^{-tH_r},
+\]</span> be the physical Euclidean Hilbert space, vacuum, Hamiltonian,
+and transfer semigroup.</p>
 <p>Let <span class="math inline">\(X_r\)</span> be the support-visible
 compact-gauge quotient state space, let <span
 class="math inline">\(\pi_r\)</span> be the vacuum stationary measure,
-and set</p>
-<p><span class="math display">\[K_r:=L^2(X_r,\pi_r).\]</span></p>
-<p>Let <span class="math inline">\(\mathcal C_r\)</span> be the finite
-family of active repair collars. For each active collar <span
-class="math inline">\(C\in\mathcal C_r\)</span>, let</p>
-<p><span class="math display">\[\rho_C:X_r\to Y_C\]</span></p>
-<p>be the complete repaired visible datum, and let</p>
-<p><span class="math display">\[E_C:K_r\to K_r\]</span></p>
-<p>be conditional expectation onto the <span
+and set <span class="math display">\[
+K_r:=L^2(X_r,\pi_r).
+\]</span> Let <span class="math inline">\(\mathcal C_r\)</span> be the
+finite family of active repair collars. For each active collar <span
+class="math inline">\(C\in\mathcal C_r\)</span>, let <span
+class="math display">\[
+\rho_C:X_r\to Y_C
+\]</span> be the complete repaired visible datum, and let <span
+class="math display">\[
+E_C:K_r\to K_r
+\]</span> be conditional expectation onto the <span
 class="math inline">\(\rho_C\)</span>-measurable functions.</p>
 <p>The proof stays on the ordinary or central zero-obstruction vacuum
 branch. The genuinely noncentral higher-gauge branch is a different
@@ -398,22 +399,22 @@ Proposition <a href="#prop:extraction" data-reference-type="ref" data-reference
 <div id="thm:ym-form" class="theorem">
 
 <p><strong>Theorem 2</strong> (Imported OPH branch theorem:
-four-dimensional Euclidean Yang–Mills form). *Under
+four-dimensional Euclidean Yang–Mills form). <em>Under
 Assumption <a href="#ass:ym-branch" data-reference-type="ref" data-reference="ass:ym-branch">1</a>,
-the continuum gauge-sector Euclidean action is</p>
-<p><span class="math display">\[S_E[A]=\frac{1}{4g^2}\int_{\mathbb R^4}
+the continuum gauge-sector Euclidean action is <span
+class="math display">\[
+S_E[A]=\frac{1}{4g^2}\int_{\mathbb R^4}
 \langle F_{\mu\nu},F_{\mu\nu}\rangle\,d^4x,
 \qquad
 F=dA+A\wedge A,
-\tag{YM}\]</span></p>
-<p>with compact simple structure group <span
+\tag{YM}
+\]</span> with compact simple structure group <span
 class="math inline">\(G\)</span>. Equivalently, the support-visible
 continuum transfer semigroup is the Euclidean Yang–Mills semigroup
-associated with the gauge-quotient cylinder measure</p>
-<p><span
-class="math display">\[d\mu_{\mathrm{YM}}(A)=Z^{-1}e^{-S_E[A]}\,D
-A/G\]</span></p>
-<p>in the OPH support-visible GNS representation.*</p>
+associated with the gauge-quotient cylinder measure <span
+class="math display">\[
+d\mu_{\mathrm{YM}}(A)=Z^{-1}e^{-S_E[A]}\,D A/G
+\]</span> in the OPH support-visible GNS representation.</em></p>
 </div>
 
 <div class="proof">
@@ -423,7 +424,9 @@ form theorem of the compact OPH paper, where it appears as Theorem
 <code>thm:oph-4d-euclidean-yang-mills-form</code> . The proof spine is
 recalled here because it fixes the target Hamiltonian for the mass-gap
 step.</p>
-<p>The compact-gauge branch reconstructs a compact group <span
+<h1
+id="the-compact-gauge-branch-reconstructs-a-compact-group-g-from-the-zero-obstruction-transportable-bosonic-sector-category-and-its-faithful-fiber-functor--at-fixed-cutoff-the-declared-compact-gauge-patch-carrier-presentation-gives-support-visible-link-holonomies-and-plaquette-holonomies-in-the-refinement-limit-the-zero-obstruction-gluing-law-makes-infinitesimal-rectangle-holonomies-multiplicative-and-path-local-therefore-there-is-a-local-connection-a-on-the-four-dimensional-scaling-chart-and-the-infinitesimal-plaquette-defect-is--u_munuvarepsilonx">The
+compact-gauge branch reconstructs a compact group <span
 class="math inline">\(G\)</span> from the zero-obstruction transportable
 bosonic sector category and its faithful fiber functor . At fixed
 cutoff, the declared compact-gauge patch-carrier presentation gives
@@ -432,30 +435,26 @@ refinement limit, the zero-obstruction gluing law makes infinitesimal
 rectangle holonomies multiplicative and path-local. Therefore there is a
 local connection <span class="math inline">\(A\)</span> on the
 four-dimensional scaling chart, and the infinitesimal plaquette defect
-is</p>
-<p><span class="math display">\[U_{\mu\nu}(\varepsilon,x)
-=
-\mathbf 1+\varepsilon^2F_{\mu\nu}(x)+O(\varepsilon^3),
-\qquad
-F=dA+A\wedge A.\]</span></p>
+is $$ U_{\mu\nu}(\varepsilon,x)</h1>
+<p>\mathbf 1+\varepsilon^2F_{\mu\nu}(x)+O(\varepsilon^3), \qquad
+F=dA+A\wedge A. $$</p>
 <p>The Euclideanized MaxEnt/local-Gibbs branch gives a local
 finite-range action density built from support-visible gauge-invariant
 collar data. Gauge quotienting permits only class functions of the
 curvature and its covariant derivatives. The four-dimensional scaling
 chart, Euclidean rotation invariance, locality, and reflection
 positivity leave one relevant dimension-four positive quadratic
-invariant in the pure gauge sector:</p>
-<p><span class="math display">\[\langle
-F_{\mu\nu},F_{\mu\nu}\rangle.\]</span></p>
-<p>The possible topological density <span class="math inline">\(\langle
-F\wedge F\rangle\)</span> is reflection odd and belongs to a separate
-topological-angle sector; it is absent on the ordinary
-reflection-positive zero-obstruction vacuum branch used here. Higher
-curvature powers and covariant-derivative terms are irrelevant operators
-under the declared continuum scaling and vanish from the strict
-Yang–Mills fixed form. Normalizing the unique positive quadratic
-invariant defines the coupling <span class="math inline">\(g\)</span>
-and gives (YM).</p>
+invariant in the pure gauge sector: <span class="math display">\[
+\langle F_{\mu\nu},F_{\mu\nu}\rangle.
+\]</span> The possible topological density <span
+class="math inline">\(\langle F\wedge F\rangle\)</span> is reflection
+odd and belongs to a separate topological-angle sector; it is absent on
+the ordinary reflection-positive zero-obstruction vacuum branch used
+here. Higher curvature powers and covariant-derivative terms are
+irrelevant operators under the declared continuum scaling and vanish
+from the strict Yang–Mills fixed form. Normalizing the unique positive
+quadratic invariant defines the coupling <span
+class="math inline">\(g\)</span> and gives (YM).</p>
 <p>The finite-stage cylinder measures are the gauge-register /
 quantum-link Gibbs measures pushed to the support-visible quotient.
 Assumption <a href="#ass:ym-branch" data-reference-type="ref" data-reference="ass:ym-branch">1</a>
@@ -496,22 +495,21 @@ quotient-first physical algebra rather than on microscopic
 representatives. Let <span class="math inline">\(\Phi_C\)</span> be the
 Heisenberg repair map and let <span class="math inline">\(\mathcal
 N_C\)</span> be the repaired local fixed algebra. The repair semantics
-give</p>
-<p><span class="math display">\[\Phi_C(a)=a \quad (a\in\mathcal
-N_C),\]</span></p>
-<p><span class="math display">\[\Phi_C(\mathcal
-A^{\mathrm{sv}}_r)\subseteq\mathcal N_C,
+give <span class="math display">\[
+\Phi_C(a)=a \quad (a\in\mathcal N_C),
+\]</span> <span class="math display">\[
+\Phi_C(\mathcal A^{\mathrm{sv}}_r)\subseteq\mathcal N_C,
 \qquad
-\pi_r\circ\Phi_C=\pi_r,\]</span></p>
-<p>and <span class="math inline">\(\Phi_C\)</span> is <span
+\pi_r\circ\Phi_C=\pi_r,
+\]</span> and <span class="math inline">\(\Phi_C\)</span> is <span
 class="math inline">\(\mathcal N_C\)</span>-bimodular. Therefore, for
 <span class="math inline">\(a\in\mathcal N_C\)</span> and <span
-class="math inline">\(x\in\mathcal A^{\mathrm{sv}}_r\)</span>,</p>
-<p><span
-class="math display">\[\pi_r\!\left(a^*\Phi_C(x)\right)=\pi_r(a^*x).\]</span></p>
-<p>Since <span class="math inline">\(\Phi_C(x)\in\mathcal N_C\)</span>
-and <span class="math inline">\(\pi_r\)</span> is faithful, this
-equation uniquely characterizes <span
+class="math inline">\(x\in\mathcal A^{\mathrm{sv}}_r\)</span>, <span
+class="math display">\[
+\pi_r\!\left(a^*\Phi_C(x)\right)=\pi_r(a^*x).
+\]</span> Since <span class="math inline">\(\Phi_C(x)\in\mathcal
+N_C\)</span> and <span class="math inline">\(\pi_r\)</span> is faithful,
+this equation uniquely characterizes <span
 class="math inline">\(\Phi_C(x)\)</span> as the orthogonal projection of
 <span class="math inline">\(x\)</span> onto <span
 class="math inline">\(\mathcal N_C\)</span> in the GNS inner product.
@@ -525,16 +523,16 @@ Law</h1>
 <div id="lem:fiber-symmetry" class="lemma">
 
 <p><strong>Lemma 5</strong> (Implementation hiding gives fiber
-permutation symmetry). *Fix an active collar <span
+permutation symmetry). <em>Fix an active collar <span
 class="math inline">\(C\)</span> and a repaired value <span
 class="math inline">\(y\in Y_C\)</span>. On the support-visible
-quotient, the hidden fiber</p>
-<p><span class="math display">\[F_C(y)=\rho_C^{-1}(y)\]</span></p>
-<p>has no remaining observable labels. Consequently the conditioned
-local MaxEnt state is uniform on <span
+quotient, the hidden fiber <span class="math display">\[
+F_C(y)=\rho_C^{-1}(y)
+\]</span> has no remaining observable labels. Consequently the
+conditioned local MaxEnt state is uniform on <span
 class="math inline">\(F_C(y)\)</span>, and the primitive collar
 relaxation commutes with all finite permutations of <span
-class="math inline">\(F_C(y)\)</span>.*</p>
+class="math inline">\(F_C(y)\)</span>.</em></p>
 </div>
 
 <div class="proof">
@@ -554,50 +552,46 @@ quotient must commute with the resulting full permutation action. ◻</p>
 <div id="lem:scalar-relaxation" class="lemma">
 
 <p><strong>Lemma 6</strong> (Scalar relaxation on a uniform hidden
-fiber). *Let <span class="math inline">\(F\)</span> be a finite hidden
-fiber with uniform measure, let <span class="math inline">\(E_F\)</span>
-be expectation onto constants, and let <span
-class="math inline">\(D_F\)</span> be a positive self-adjoint Markov
-relaxation generator such that</p>
-<p><span class="math display">\[\ker
-D_F=\operatorname{Ran}(E_F)\]</span></p>
-<p>and <span class="math inline">\(D_F\)</span> commutes with the full
-permutation group of <span class="math inline">\(F\)</span>. Then there
-is a scalar <span class="math inline">\(c_F&gt;0\)</span> such that</p>
-<p><span class="math display">\[D_F=c_F(I-E_F).
-```*
+fiber). <em>Let <span class="math inline">\(F\)</span> be a finite
+hidden fiber with uniform measure, let <span
+class="math inline">\(E_F\)</span> be expectation onto constants, and
+let <span class="math inline">\(D_F\)</span> be a positive self-adjoint
+Markov relaxation generator such that <span class="math display">\[
+\ker D_F=\operatorname{Ran}(E_F)
+\]</span> and <span class="math inline">\(D_F\)</span> commutes with the
+full permutation group of <span class="math inline">\(F\)</span>. Then
+there is a scalar <span class="math inline">\(c_F&gt;0\)</span> such
+that <span class="math display">\[
+D_F=c_F(I-E_F).
+\]</span></em></p>
+</div>
 
-&lt;/div&gt;
+<div class="proof">
 
-&lt;div class=&quot;proof&quot;&gt;
+<p><em>Proof.</em> The permutation representation on <span
+class="math inline">\(L^2(F)\)</span> splits as constants plus the
+zero-sum subspace. The zero-sum subspace is irreducible for the full
+symmetric group when <span class="math inline">\(|F|\ge2\)</span>.
+Schur’s lemma therefore makes <span class="math inline">\(D_F\)</span> a
+scalar on that subspace. Positivity and the kernel condition make the
+scalar strictly positive. The formula follows. ◻</p>
+</div>
 
-*Proof.* The permutation representation on $`L^2(F)`$ splits as
-constants plus the zero-sum subspace.
-The zero-sum subspace is irreducible for the full symmetric group when
-$`|F|\ge2`$. Schur’s lemma
-therefore makes $`D_F`$ a scalar on that subspace. Positivity and the
-kernel condition make the
-scalar strictly positive. The formula follows. ◻
+<div id="thm:ec-law" class="theorem">
 
-&lt;/div&gt;
-
-&lt;div id=&quot;thm:ec-law&quot; class=&quot;theorem&quot;&gt;
-
-**Theorem 7** (Exact Euclidean repair law). *There are positive
-constants $`c_C&gt;0`$ such that the ground-state transformed physical
-Euclidean
-generator is exactly
-``` math
+<p><strong>Theorem 7</strong> (Exact Euclidean repair law). <em>There
+are positive constants <span class="math inline">\(c_C&gt;0\)</span>
+such that the ground-state transformed physical Euclidean generator is
+exactly <span class="math display">\[
 L_r^{\mathrm{rep}}=\sum_{C\in\mathcal C_r} c_C(I-E_C),
-\tag{1}\]</span></p>
-<p>and therefore</p>
-<p><span class="math display">\[U_r
-e^{-tH_r}U_r^{-1}=e^{-tL_r^{\mathrm{rep}}}
+\tag{1}
+\]</span> and therefore <span class="math display">\[
+U_r e^{-tH_r}U_r^{-1}=e^{-tL_r^{\mathrm{rep}}}
 \qquad(t\ge0),
-\tag{2}\]</span></p>
-<p>for a unitary <span class="math inline">\(U_r:\mathcal H_r\to
+\tag{2}
+\]</span> for a unitary <span class="math inline">\(U_r:\mathcal H_r\to
 K_r\)</span> with <span class="math inline">\(U_r\Omega_r=\mathbf
-1_r\)</span>.*</p>
+1_r\)</span>.</em></p>
 </div>
 
 <div class="proof">
@@ -608,114 +602,107 @@ branch. After the support-visible quotient, each primitive local
 Euclidean piece <span class="math inline">\(D_C\)</span> is supported on
 one collar <span class="math inline">\(C\)</span>, preserves exactly the
 repaired visible datum <span class="math inline">\(\rho_C\)</span>, and
-relaxes only complementary fiber data. Hence</p>
-<p><span class="math display">\[\ker
-D_C=\operatorname{Ran}(E_C).\]</span></p>
+relaxes only complementary fiber data. Hence <span
+class="math display">\[
+\ker D_C=\operatorname{Ran}(E_C).
+\]</span></p>
 <p>Lemma <a href="#lem:fiber-symmetry" data-reference-type="ref" data-reference="lem:fiber-symmetry">5</a>
 gives the full hidden-fiber permutation symmetry. Applying
 Lemma <a href="#lem:scalar-relaxation" data-reference-type="ref" data-reference="lem:scalar-relaxation">6</a>
 fiberwise gives a positive scalar <span
 class="math inline">\(c_C\)</span> on the orthogonal complement of the
-repaired datum:</p>
-<p><span class="math display">\[D_C=c_C(I-E_C).\]</span></p>
-<p>The scalar is positive because <span class="math inline">\(C\)</span>
-is active. Branch homogeneity makes it a collar-type scalar, so summing
-over the active collars gives (1), and exponentiation of the positive
-self-adjoint generator gives (2). ◻</p>
+repaired datum: <span class="math display">\[
+D_C=c_C(I-E_C).
+\]</span> The scalar is positive because <span
+class="math inline">\(C\)</span> is active. Branch homogeneity makes it
+a collar-type scalar, so summing over the active collars gives (1), and
+exponentiation of the positive self-adjoint generator gives (2). ◻</p>
 </div>
 
 <div id="lem:floor" class="lemma">
 
-<p><strong>Lemma 8</strong> (Uniform active-collar rate floor). *Assume
-finite local combinatorial type, a branch-homogeneous local constraint
-family, and refinement-stable exact repair semantics. Then the local
-Euclidean repair rate depends only on active collar type, the active
-collar-type set is finite across the cofinal refinement family, and
-there is <span class="math inline">\(c_*&gt;0\)</span>, independent of
-<span class="math inline">\(r\)</span>, such that</p>
-<p><span class="math display">\[c_C\ge c_*
+<p><strong>Lemma 8</strong> (Uniform active-collar rate floor).
+<em>Assume finite local combinatorial type, a branch-homogeneous local
+constraint family, and refinement-stable exact repair semantics. Then
+the local Euclidean repair rate depends only on active collar type, the
+active collar-type set is finite across the cofinal refinement family,
+and there is <span class="math inline">\(c_*&gt;0\)</span>, independent
+of <span class="math inline">\(r\)</span>, such that <span
+class="math display">\[
+c_C\ge c_*
 \qquad
 \text{for every active collar }C\in\mathcal C_r.
 \tag{3}
-```*
+\]</span></em></p>
+</div>
 
-&lt;/div&gt;
+<div class="proof">
 
-&lt;div class=&quot;proof&quot;&gt;
+<p><em>Proof.</em> Active collars are exactly the collars on which
+complementary invisible fiber data are genuinely relaxed. Hence <span
+class="math inline">\(D_C\neq0\)</span> on <span
+class="math inline">\(\ker(E_C)\)</span>, so <span
+class="math inline">\(c_C&gt;0\)</span>. Finite local combinatorial type
+gives a finite list of bounded collar patterns, including their visible
+interface alphabets, hidden fiber cardinalities, local constraint
+templates, and admissible repair maps. Branch homogeneity makes the
+conditioned MaxEnt relaxation scalar a function of this finite type
+data. Refinement stability says that refinement replaces a collar by
+copies of the same bounded type templates with the same normalized local
+Euclidean repair semantics, so no new rate-degenerating collar type
+appears along the cofinal family. Taking the minimum of <span
+class="math inline">\(c_C\)</span> over the finite active type list
+gives <span class="math inline">\(c_*&gt;0\)</span>. ◻</p>
+</div>
 
-*Proof.* Active collars are exactly the collars on which complementary
-invisible fiber data are genuinely
-relaxed. Hence $`D_C\neq0`$ on $`\ker(E_C)`$, so $`c_C&gt;0`$. Finite
-local combinatorial type gives
-a finite list of bounded collar patterns, including their visible
-interface alphabets, hidden
-fiber cardinalities, local constraint templates, and admissible repair
-maps. Branch homogeneity
-makes the conditioned MaxEnt relaxation scalar a function of this finite
-type data. Refinement
-stability says that refinement replaces a collar by copies of the same
-bounded type templates
-with the same normalized local Euclidean repair semantics, so no new
-rate-degenerating collar
-type appears along the cofinal family. Taking the minimum of $`c_C`$
-over the finite active type
-list gives $`c_*&gt;0`$. ◻
+<h1 id="finite-stage-gap">Finite-Stage Gap</h1>
+<div id="prop:finite-gap" class="proposition">
 
-&lt;/div&gt;
-
-# Finite-Stage Gap
-
-&lt;div id=&quot;prop:finite-gap&quot; class=&quot;proposition&quot;&gt;
-
-**Proposition 9** (Finite-stage repair gap). *Assume that the collar
-family admits a bounded-color decomposition
-``` math
+<p><strong>Proposition 9</strong> (Finite-stage repair gap). <em>Assume
+that the collar family admits a bounded-color decomposition <span
+class="math display">\[
 \mathcal C_r=\bigsqcup_{a=1}^{q}\mathcal C_{r,a},
 \qquad q&lt;\infty,
-\tag{4}\]</span></p>
-<p>independent of <span class="math inline">\(r\)</span>, and that exact
-quotient-local gluing makes the corresponding color expectations
-commute. Then</p>
-<p><span class="math display">\[L_r^{\mathrm{rep}}\ge c_*(I-P_{0,r}),
-\tag{5}\]</span></p>
-<p>where <span class="math inline">\(P_{0,r}\)</span> projects onto
-constants in <span class="math inline">\(K_r\)</span>. Hence</p>
-<p><span class="math display">\[\Delta_{\mathrm{rep},r}\ge c_*&gt;0.
+\tag{4}
+\]</span> independent of <span class="math inline">\(r\)</span>, and
+that exact quotient-local gluing makes the corresponding color
+expectations commute. Then <span class="math display">\[
+L_r^{\mathrm{rep}}\ge c_*(I-P_{0,r}),
+\tag{5}
+\]</span> where <span class="math inline">\(P_{0,r}\)</span> projects
+onto constants in <span class="math inline">\(K_r\)</span>. Hence <span
+class="math display">\[
+\Delta_{\mathrm{rep},r}\ge c_*&gt;0.
 \tag{6}
-```*
+\]</span></em></p>
+</div>
 
-&lt;/div&gt;
+<div class="proof">
 
-&lt;div class=&quot;proof&quot;&gt;
-
-*Proof.* For each color $`a`$, define the parallel color expectation
-``` math
-E_{r,a}:=\prod_{C\in\mathcal C_{r,a}}E_C.\]</span></p>
-<p>Same-color collars are disjoint, so the factors commute. Exact
+<p><em>Proof.</em> For each color <span
+class="math inline">\(a\)</span>, define the parallel color expectation
+<span class="math display">\[
+E_{r,a}:=\prod_{C\in\mathcal C_{r,a}}E_C.
+\]</span> Same-color collars are disjoint, so the factors commute. Exact
 quotient-local gluing makes <span
 class="math inline">\(\{E_{r,a}\}_{a=1}^{q}\)</span> a commuting family
 of orthogonal projections on the vacuum branch.</p>
 <p>Repair completeness says that the only support-visible observables
-fixed by every local repair are constants:</p>
-<p><span
-class="math display">\[\bigcap_{a=1}^{q}\operatorname{Ran}(E_{r,a})=\mathbb
-C\,\mathbf 1_r.
-\tag{7}\]</span></p>
-<p>Define</p>
-<p><span class="math display">\[\widetilde L_r:=\sum_{a=1}^{q}
-c_*(I-E_{r,a}).\]</span></p>
-<p>For commuting projections,</p>
-<p><span class="math display">\[I-\prod E_C\le
-\sum_C(I-E_C),\]</span></p>
-<p>so <span class="math inline">\(\widetilde L_r\le
+fixed by every local repair are constants: <span class="math display">\[
+\bigcap_{a=1}^{q}\operatorname{Ran}(E_{r,a})=\mathbb C\,\mathbf 1_r.
+\tag{7}
+\]</span> Define <span class="math display">\[
+\widetilde L_r:=\sum_{a=1}^{q} c_*(I-E_{r,a}).
+\]</span> For commuting projections, <span class="math display">\[
+I-\prod E_C\le \sum_C(I-E_C),
+\]</span> so <span class="math inline">\(\widetilde L_r\le
 L_r^{\mathrm{rep}}\)</span>. The projections <span
 class="math inline">\(E_{r,a}\)</span> are simultaneously
 diagonalizable. On the joint all-ones eigenspace, (7) says the vector is
 constant. Every nonconstant joint eigenspace has at least one color
-eigenvalue zero, so</p>
-<p><span class="math display">\[\widetilde L_r\ge
-c_*(I-P_{0,r}).\]</span></p>
-<p>This proves (5), and the spectral gap bound (6) follows. ◻</p>
+eigenvalue zero, so <span class="math display">\[
+\widetilde L_r\ge c_*(I-P_{0,r}).
+\]</span> This proves (5), and the spectral gap bound (6) follows. ◻</p>
 </div>
 
 <h1 id="continuum-extraction">Continuum Extraction</h1>
@@ -782,60 +769,50 @@ the support-visible continuum objects used below. ◻</p>
 <div id="thm:continuum" class="theorem">
 
 <p><strong>Theorem 11</strong> (Continuum exact transfer
-identification). *There is a unitary</p>
-<p><span class="math display">\[U:\mathcal H\to K\]</span></p>
-<p>such that</p>
-<p><span class="math display">\[U e^{-tH}U^{-1}=e^{-tL^{\mathrm{rep}}}
+identification). <em>There is a unitary <span class="math display">\[
+U:\mathcal H\to K
+\]</span> such that <span class="math display">\[
+U e^{-tH}U^{-1}=e^{-tL^{\mathrm{rep}}}
 \qquad(t\ge0),
-\tag{8}\]</span></p>
-<p>and hence</p>
-<p><span class="math display">\[UHU^{-1}=L^{\mathrm{rep}}.
+\tag{8}
+\]</span> and hence <span class="math display">\[
+UHU^{-1}=L^{\mathrm{rep}}.
 \tag{9}
-```*
+\]</span></em></p>
+</div>
 
-&lt;/div&gt;
+<div class="proof">
 
-&lt;div class=&quot;proof&quot;&gt;
-
-*Proof.* Theorem &lt;a href=&quot;#thm:ec-law&quot;
-data-reference-type=&quot;ref&quot;
-data-reference=&quot;thm:ec-law&quot;&gt;7&lt;/a&gt; gives exact
-finite-stage intertwining. Proposition &lt;a
-href=&quot;#prop:extraction&quot; data-reference-type=&quot;ref&quot;
-data-reference=&quot;prop:extraction&quot;&gt;10&lt;/a&gt;
+<p><em>Proof.</em>
+Theorem <a href="#thm:ec-law" data-reference-type="ref" data-reference="thm:ec-law">7</a>
+gives exact finite-stage intertwining.
+Proposition <a href="#prop:extraction" data-reference-type="ref" data-reference="prop:extraction">10</a>
 supplies the direct-limit and support-visible GNS extraction hypotheses.
-Therefore the finite
-intertwiners pass to the continuum. Equality of generators follows from
-uniqueness of the
-self-adjoint generator of a strongly continuous contraction semigroup. ◻
+Therefore the finite intertwiners pass to the continuum. Equality of
+generators follows from uniqueness of the self-adjoint generator of a
+strongly continuous contraction semigroup. ◻</p>
+</div>
 
-&lt;/div&gt;
+<h1 id="axiomatic-reconstruction-and-nontriviality">Axiomatic
+Reconstruction and Nontriviality</h1>
+<div id="thm:os" class="theorem">
 
-# Axiomatic Reconstruction and Nontriviality
-
-&lt;div id=&quot;thm:os&quot; class=&quot;theorem&quot;&gt;
-
-**Theorem 12** (Osterwalder–Schrader reconstruction on the
-support-visible compact-gauge branch). *Under Assumption &lt;a
-href=&quot;#ass:ym-branch&quot; data-reference-type=&quot;ref&quot;
-data-reference=&quot;ass:ym-branch&quot;&gt;1&lt;/a&gt; and
-Proposition &lt;a href=&quot;#prop:extraction&quot;
-data-reference-type=&quot;ref&quot;
-data-reference=&quot;prop:extraction&quot;&gt;10&lt;/a&gt;, the
-continuum
-support-visible compact-gauge cylinder family is Euclidean invariant,
-reflection positive,
-regular on gauge-invariant local cylinder observables, and cyclic for
-the vacuum sector. Hence
+<p><strong>Theorem 12</strong> (Osterwalder–Schrader reconstruction on
+the support-visible compact-gauge branch). <em>Under
+Assumption <a href="#ass:ym-branch" data-reference-type="ref" data-reference="ass:ym-branch">1</a>
+and
+Proposition <a href="#prop:extraction" data-reference-type="ref" data-reference="prop:extraction">10</a>,
+the continuum support-visible compact-gauge cylinder family is Euclidean
+invariant, reflection positive, regular on gauge-invariant local
+cylinder observables, and cyclic for the vacuum sector. Hence
 Osterwalder–Schrader reconstruction gives a four-dimensional quantum
-Yang–Mills theory
-``` math
-(\mathcal H,\Omega,H,\mathcal A_{\mathrm{loc}}^{G})\]</span></p>
-<p>on the support-visible gauge-invariant local algebra, with <span
-class="math inline">\(H\ge0\)</span> and <span
+Yang–Mills theory <span class="math display">\[
+(\mathcal H,\Omega,H,\mathcal A_{\mathrm{loc}}^{G})
+\]</span> on the support-visible gauge-invariant local algebra, with
+<span class="math inline">\(H\ge0\)</span> and <span
 class="math inline">\(e^{-tH}\)</span> equal to the Euclidean transfer
 semigroup of
-Theorem <a href="#thm:ym-form" data-reference-type="ref" data-reference="thm:ym-form">2</a>.*</p>
+Theorem <a href="#thm:ym-form" data-reference-type="ref" data-reference="thm:ym-form">2</a>.</em></p>
 </div>
 
 <div class="proof">
@@ -885,47 +862,44 @@ finite-energy local excitations. ◻</p>
 <div id="thm:main" class="theorem">
 
 <p><strong>Theorem 14</strong> (Positive four-dimensional compact-gauge
-Yang–Mills mass gap). *Let <span class="math inline">\(G\)</span> be a
-compact simple gauge group carried by a support-visible compact-gauge
+Yang–Mills mass gap). <em>Let <span class="math inline">\(G\)</span> be
+a compact simple gauge group carried by a support-visible compact-gauge
 OPH vacuum branch satisfying the standing setup above. The theory
 reconstructed in
 Theorem <a href="#thm:os" data-reference-type="ref" data-reference="thm:os">12</a>
 is nontrivial by
 Proposition <a href="#prop:nontriviality" data-reference-type="ref" data-reference="prop:nontriviality">13</a>,
 and its continuum support-visible Hamiltonian <span
-class="math inline">\(H\)</span> satisfies</p>
-<p><span class="math display">\[H\ge c_*(I-P_0),
-\tag{10}\]</span></p>
-<p>where <span class="math inline">\(P_0\)</span> projects onto the
-vacuum. Therefore</p>
-<p><span
-class="math display">\[\operatorname{Spec}(H)\cap(0,c_*)=\varnothing,
+class="math inline">\(H\)</span> satisfies <span class="math display">\[
+H\ge c_*(I-P_0),
+\tag{10}
+\]</span> where <span class="math inline">\(P_0\)</span> projects onto
+the vacuum. Therefore <span class="math display">\[
+\operatorname{Spec}(H)\cap(0,c_*)=\varnothing,
 \qquad
 \Delta_{\mathrm{YM}}\ge c_*&gt;0.
-\tag{11}\]</span></p>
-<p>Moreover, the repair gap and Yang–Mills gap are exactly equal:</p>
-<p><span
-class="math display">\[\Delta_{\mathrm{YM}}=\Delta_{\mathrm{rep}}.
+\tag{11}
+\]</span> Moreover, the repair gap and Yang–Mills gap are exactly equal:
+<span class="math display">\[
+\Delta_{\mathrm{YM}}=\Delta_{\mathrm{rep}}.
 \tag{12}
-```*
+\]</span></em></p>
+</div>
 
-&lt;/div&gt;
+<div class="proof">
 
-&lt;div class=&quot;proof&quot;&gt;
-
-*Proof.* At every finite stage, Proposition &lt;a
-href=&quot;#prop:finite-gap&quot; data-reference-type=&quot;ref&quot;
-data-reference=&quot;prop:finite-gap&quot;&gt;9&lt;/a&gt; gives
-``` math
-L_r^{\mathrm{rep}}\ge c_*(I-P_{0,r}).\]</span></p>
-<p>By
+<p><em>Proof.</em> At every finite stage,
+Proposition <a href="#prop:finite-gap" data-reference-type="ref" data-reference="prop:finite-gap">9</a>
+gives <span class="math display">\[
+L_r^{\mathrm{rep}}\ge c_*(I-P_{0,r}).
+\]</span> By
 Proposition <a href="#prop:extraction" data-reference-type="ref" data-reference="prop:extraction">10</a>
 and
 Theorem <a href="#thm:continuum" data-reference-type="ref" data-reference="thm:continuum">11</a>,
-this lower bound passes to the support-visible continuum:</p>
-<p><span class="math display">\[L^{\mathrm{rep}}\ge
-c_*(I-P_0).\]</span></p>
-<p>Using (9), <span
+this lower bound passes to the support-visible continuum: <span
+class="math display">\[
+L^{\mathrm{rep}}\ge c_*(I-P_0).
+\]</span> Using (9), <span
 class="math inline">\(UHU^{-1}=L^{\mathrm{rep}}\)</span>. Conjugating
 the lower bound by <span class="math inline">\(U^{-1}\)</span> gives
 (10), and the spectral statement (11) follows. Since unitary equivalence
@@ -946,37 +920,34 @@ support-visible continuum extraction.</p>
 </div>
 
 <h1 id="exact-gap-accounting">Exact Gap Accounting</h1>
-<p>The proof gives more than a positive lower bound. It identifies the
-Hamiltonian whose gap is being measured:</p>
-<p><span class="math display">\[H=U^{-1}L^{\mathrm{rep}}U.\]</span></p>
-<p>Therefore</p>
-<p><span class="math display">\[\operatorname{Spec}(H)\setminus\{0\}
-=
-\operatorname{Spec}(L^{\mathrm{rep}})\setminus\{0\}.\]</span></p>
-<p>The Yang–Mills gap is exactly the first nonzero repair
-eigenvalue:</p>
-<p><span class="math display">\[\Delta_{\mathrm{YM}}
-:=
-\inf\bigl(\operatorname{Spec}(H)\setminus\{0\}\bigr)
-=
-\inf\bigl(\operatorname{Spec}(L^{\mathrm{rep}})\setminus\{0\}\bigr)
-=:
-\Delta_{\mathrm{rep}}.\]</span></p>
-<p>The finite-stage color argument proves <span
+<h1
+id="the-proof-gives-more-than-a-positive-lower-bound-it-identifies-the-hamiltonian-whose-gap-is-being-measured--hu-1lmathrmrepu--therefore--operatornamespechsetminus0">The
+proof gives more than a positive lower bound. It identifies the
+Hamiltonian whose gap is being measured: <span class="math display">\[
+H=U^{-1}L^{\mathrm{rep}}U.
+\]</span> Therefore $$ \operatorname{Spec}(H)\setminus{0}</h1>
+<h1
+id="operatornamespeclmathrmrepsetminus0--the-yangmills-gap-is-exactly-the-first-nonzero-repair-eigenvalue--delta_mathrmym--infbigloperatornamespechsetminus0bigr">\operatorname{Spec}(L^{\mathrm{rep}})\setminus{0}.
+<span class="math display">\[
+The Yang–Mills gap is exactly the first nonzero repair eigenvalue:
+\]</span> \Delta_{\mathrm{YM}} :=
+\inf\bigl(\operatorname{Spec}(H)\setminus{0}\bigr)</h1>
+<p>\inf\bigl(\operatorname{Spec}(L^{\mathrm{rep}})\setminus{0}\bigr) =:
+\Delta_{\mathrm{rep}}. $$ The finite-stage color argument proves <span
 class="math inline">\(\Delta_{\mathrm{rep}}\ge c_*&gt;0\)</span>. The
 exact accounting statement is the equality <span
 class="math inline">\(\Delta_{\mathrm{YM}}=\Delta_{\mathrm{rep}}\)</span>;
 the inequality is the positivity proof for that same quantity.</p>
 <h1 id="relation-to-the-2d-yangmills-bridge">Relation to the 2D
 Yang–Mills Bridge</h1>
-<p>The OPH corpus also contains an exact edge-sector identity:</p>
-<p><span class="math display">\[Z_{\mathrm{edge}}(t)=\sum_R
-d_R^2e^{-tC_2(R)}=K_t(1),\]</span></p>
-<p>which is the compact-group heat kernel at the identity and matches
-the standard two-dimensional Yang–Mills heat-kernel partition form.
-Peter–Weyl supplies the heat-kernel identity, and Gross–Taylor gives the
-standard large-<span class="math inline">\(N\)</span> worldsheet
-dictionary when a separate large-<span
+<p>The OPH corpus also contains an exact edge-sector identity: <span
+class="math display">\[
+Z_{\mathrm{edge}}(t)=\sum_R d_R^2e^{-tC_2(R)}=K_t(1),
+\]</span> which is the compact-group heat kernel at the identity and
+matches the standard two-dimensional Yang–Mills heat-kernel partition
+form. Peter–Weyl supplies the heat-kernel identity, and Gross–Taylor
+gives the standard large-<span class="math inline">\(N\)</span>
+worldsheet dictionary when a separate large-<span
 class="math inline">\(N_{\mathrm{edge}}\)</span> branch with remainder
 control is declared .</p>
 <p>That 2D result is a normalization and worldsheet-effective bridge.
@@ -1042,9 +1013,11 @@ commuting colors, every non-vacuum state pays a positive Euclidean
 repair cost. The continuum compact-gauge Hamiltonian is unitarily
 equivalent to that repair generator. Therefore the Yang–Mills gap is the
 repair gap.</p>
-<p><span class="math display">\[\boxed{
+<p><span class="math display">\[
+\boxed{
 \Delta_{\mathrm{YM}}=\Delta_{\mathrm{rep}}\ge c_*&gt;0.
-}\]</span></p>
+}
+\]</span></p>
 <div class="thebibliography">
 
 <p>99</p>

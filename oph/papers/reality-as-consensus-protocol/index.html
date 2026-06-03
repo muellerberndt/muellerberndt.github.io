@@ -239,16 +239,16 @@
               <strong>Sections</strong>
               <nav class="paper-toc" aria-label="Paper sections"><a href="#introduction">Introduction</a>
 <a href="#patch-nets-overlaps-and-global-consistency">Patch Nets, Overlaps, and Global Consistency</a>
+<a href="#sum_b-mubsum_dsigmadmid-b">\sum_b \mu(b)\sum_d\sigma(d\mid b)</a>
+<a href="#sum_bdmub-nubsigmadmid-b">\sum_{b,d}|\mu(b)-\nu(b)|,\sigma(d\mid b)</a>
 <a href="#gauge-symmetry-as-implementation-hiding">Gauge Symmetry as Implementation Hiding</a>
+<a href="#overline-t_ilambdabiglqsbigr">\overline T_i^\lambda\bigl(q(s&#x27;)\bigr)</a>
+<a href="#overline-t_ilambdabiglqsbigr-1">\overline T_i^\lambda\bigl(q(s)\bigr)</a>
+<a href="#overline-mleftqbigloperatornamenf_lambdasbigrright">\overline M!\left(q\bigl(\operatorname{nf}_\lambda(s)\bigr)\right)</a>
 <a href="#refinement-limit-consensus-classes">Refinement-Limit Consensus Classes</a>
-<a href="#record-algebras-and-the-operator-observation-layer">Record Algebras and the Operator Observation Layer</a>
-<a href="#noisy-fair-block-approximate-consensus">Noisy Fair-Block Approximate Consensus</a>
-<a href="#law-space-selection-and-observer-emergence">Law-Space Selection and Observer Emergence</a>
-<a href="#connection-to-observer-patch-holography">Connection to Observer-Patch Holography</a>
-<a href="#discussion-and-scope-boundaries">Discussion and Scope Boundaries</a>
-<a href="#quotient-repair-and-uv-underdetermination">Quotient Repair and UV Underdetermination</a>
-<a href="#derived-boundary-data-and-ordinary-ec">Derived Boundary Data and Ordinary EC</a>
-<a href="#b1theorem-1-qbft-safety-bound">B.1Theorem 1: QBFT Safety Bound</a></nav>
+<a href="#n_rrho_srx_s">n_r(\rho_{sr}(x_s))</a>
+<a href="#h_rrho_srx_s">h_r(\rho_{sr}(x_s))</a>
+<a href="#record-algebras-and-the-operator-observation-layer">Record Algebras and the Operator Observation Layer</a></nav>
             </div>
           </aside>
           <div class="paper-body">
@@ -404,72 +404,73 @@ phenomenological continuations .</p>
 Overlaps, and Global Consistency</h1>
 <div id="def:patchnet" class="definition">
 
-<p><strong>Definition 1</strong> (Patch net). *Let <span
+<p><strong>Definition 1</strong> (Patch net). <em>Let <span
 class="math inline">\(G=(V,E)\)</span> be a finite connected graph. Each
 vertex <span class="math inline">\(i\in V\)</span> is an
 <strong>observer patch</strong> with finite local state space <span
-class="math inline">\(S_i\)</span>. The global state space is</p>
-<p><span class="math display">\[\Sigma := \prod_{i\in V}
-S_i.\]</span></p>
-<p>For each edge <span class="math inline">\(e=\{i,j\}\in E\)</span>,
-let <span class="math inline">\(I_e\)</span> be an interface alphabet
-and let</p>
-<p><span class="math display">\[\pi_{i,e}:S_i\to I_e,
+class="math inline">\(S_i\)</span>. The global state space is <span
+class="math display">\[
+\Sigma := \prod_{i\in V} S_i.
+\]</span> For each edge <span class="math inline">\(e=\{i,j\}\in
+E\)</span>, let <span class="math inline">\(I_e\)</span> be an interface
+alphabet and let <span class="math display">\[
+\pi_{i,e}:S_i\to I_e,
 \qquad
-\pi_{j,e}:S_j\to I_e\]</span></p>
-<p>be the interface projection maps. A global state <span
+\pi_{j,e}:S_j\to I_e
+\]</span> be the interface projection maps. A global state <span
 class="math inline">\(s=(s_i)_{i\in V}\in\Sigma\)</span> is
 <strong>consistent on edge <span
-class="math inline">\(e=\{i,j\}\)</span></strong> iff</p>
-<p><span
-class="math display">\[\pi_{i,e}(s_i)=\pi_{j,e}(s_j).\]</span></p>
-<p>The global consistency set is</p>
-<p><span class="math display">\[C:=\bigl\{s\in\Sigma:\forall\,
-e=\{i,j\}\in E,\ \pi_{i,e}(s_i)=\pi_{j,e}(s_j)\bigr\}.
-```*
+class="math inline">\(e=\{i,j\}\)</span></strong> iff <span
+class="math display">\[
+\pi_{i,e}(s_i)=\pi_{j,e}(s_j).
+\]</span> The global consistency set is <span class="math display">\[
+C:=\bigl\{s\in\Sigma:\forall\, e=\{i,j\}\in E,\
+\pi_{i,e}(s_i)=\pi_{j,e}(s_j)\bigr\}.
+\]</span></em></p>
+</div>
 
-&lt;/div&gt;
-
-For exposition we use a finite pairwise-overlap graph. The hypergraph
+<p>For exposition we use a finite pairwise-overlap graph. The hypergraph
 version is straightforward: replace edges by hyperedges and pairwise
 equality by a common interface label on each hyperedge. Nothing in the
-proofs depends on the pairwise restriction.
-
-The picture: each observer holds a local state, and neighboring
+proofs depends on the pairwise restriction.</p>
+<p>The picture: each observer holds a local state, and neighboring
 observers share an interface through which they can compare notes. A
 universe-state is physically admissible exactly when all neighbors agree
 on their shared data. This is a constraint satisfaction problem (CSP),
-and the consistent states are the codewords.
+and the consistent states are the codewords.</p>
+<div id="def:potential" class="definition">
 
-&lt;div id=&quot;def:potential&quot; class=&quot;definition&quot;&gt;
-
-**Definition 2** (Inconsistency potential). *For each edge $`e`$, choose
-a weight $`w_e&gt;0`$ and a function $`d_e:I_e\times
-I_e\to\mathbb{R}_{\ge 0}`$ with $`d_e(a,b)=0 \iff a=b`$. On the declared
-fixed-cutoff branch, $`d_e`$ is the overlap score used by the local
-acceptance contract on that interface. Define
-``` math
+<p><strong>Definition 2</strong> (Inconsistency potential). <em>For each
+edge <span class="math inline">\(e\)</span>, choose a weight <span
+class="math inline">\(w_e&gt;0\)</span> and a function <span
+class="math inline">\(d_e:I_e\times I_e\to\mathbb{R}_{\ge 0}\)</span>
+with <span class="math inline">\(d_e(a,b)=0 \iff a=b\)</span>. On the
+declared fixed-cutoff branch, <span class="math inline">\(d_e\)</span>
+is the overlap score used by the local acceptance contract on that
+interface. Define <span class="math display">\[
 \Phi(s)
 :=
 \sum_{e=\{i,j\}\in E}
-w_e\, d_e\!\bigl(\pi_{i,e}(s_i),\pi_{j,e}(s_j)\bigr).\]</span></p>
-<p>Then <span class="math inline">\(s\in C \iff \Phi(s)=0\)</span>.*</p>
+w_e\, d_e\!\bigl(\pi_{i,e}(s_i),\pi_{j,e}(s_j)\bigr).
+\]</span> Then <span class="math inline">\(s\in C \iff
+\Phi(s)=0\)</span>.</em></p>
 </div>
 
 <div id="prop:constraint-code" class="proposition">
 
 <p><strong>Proposition 3</strong> (Bare overlap nets are finite
-constraint codes). *For every finite patch net of
+constraint codes). <em>For every finite patch net of
 Definition <a href="#def:patchnet" data-reference-type="ref" data-reference="def:patchnet">1</a>,
 the consistency set <span class="math inline">\(C\subseteq
 \Sigma\)</span> is a finite constraint code whose codewords are exactly
 the globally overlap-consistent states. With the mismatch potential of
-Definition <a href="#def:potential" data-reference-type="ref" data-reference="def:potential">2</a>,</p>
-<p><span class="math display">\[C=\Phi^{-1}(0).\]</span></p>
-<p>This proposition is the theorem-grade content of the unqualified
-phrase “the overlap network is a code.” It supplies a finite constraint
-code, not a quantum error-correcting code, not a topological code, and
-not a graph-theoretic formula for code distance.*</p>
+Definition <a href="#def:potential" data-reference-type="ref" data-reference="def:potential">2</a>,
+<span class="math display">\[
+C=\Phi^{-1}(0).
+\]</span> This proposition is the theorem-grade content of the
+unqualified phrase “the overlap network is a code.” It supplies a finite
+constraint code, not a quantum error-correcting code, not a topological
+code, and not a graph-theoretic formula for code distance.</em></p>
 </div>
 
 <div class="proof">
@@ -497,38 +498,38 @@ Reconciliation and the Main Fixed-Point Theorem</h1>
 <div id="def:repair" class="definition">
 
 <p><strong>Definition 4</strong> (Recovery-derived local repair law).
-*Fix for each patch <span class="math inline">\(i\)</span> a finite
+<em>Fix for each patch <span class="math inline">\(i\)</span> a finite
 collar chart <span class="math inline">\(A_i\!-\!B_i\!-\!D_i\)</span>
 around the overlaps touched by <span class="math inline">\(i\)</span>,
 together with a fixed local decoder from repaired collar data back to
 the finite patch label at <span class="math inline">\(i\)</span>. A
 <strong>law</strong> <span class="math inline">\(\lambda\)</span> is a
-family of local repair maps</p>
-<p><span class="math display">\[T_i^\lambda:\Sigma\to\Sigma
-\qquad (i\in V)\]</span></p>
-<p>such that <span class="math inline">\(T_i^\lambda\)</span> changes
-only the state of patch <span class="math inline">\(i\)</span> (or, more
-generally, only a bounded neighborhood of <span
+family of local repair maps <span class="math display">\[
+T_i^\lambda:\Sigma\to\Sigma
+\qquad (i\in V)
+\]</span> such that <span class="math inline">\(T_i^\lambda\)</span>
+changes only the state of patch <span class="math inline">\(i\)</span>
+(or, more generally, only a bounded neighborhood of <span
 class="math inline">\(i\)</span>), and the local update is induced by
 one of the declared OPH recovery moves on that collar, where <span
 class="math inline">\(\omega_{A_iB_i}(s)\)</span> denotes the <span
 class="math inline">\(A_i\cup B_i\)</span> marginal of the input collar
-state encoded by <span class="math inline">\(s\)</span>:*</p>
+state encoded by <span class="math inline">\(s\)</span>:</em></p>
 <ol type="1">
 <li><p><em>exact Markov splice on the collar, using
 Theorem <a href="#thm:splice" data-reference-type="ref" data-reference="thm:splice">52</a>
 when <span class="math inline">\(I(A_i:D_i\mid B_i)=0\)</span>;
 or</em></p></li>
-<li><p>*a declared recoverability channel</p>
-<p><span class="math display">\[(\mathrm{id}_{A_i}\otimes \mathcal
-R_i)(\omega_{A_iB_i}(s)),
+<li><p><em>a declared recoverability channel <span
+class="math display">\[
+(\mathrm{id}_{A_i}\otimes \mathcal R_i)(\omega_{A_iB_i}(s)),
 \qquad
-\mathcal R_i=\mathcal R_{\sigma_i,\mathcal N_i},\]</span></p>
-<p>with <span class="math inline">\(\mathcal R_i\)</span> in the
+\mathcal R_i=\mathcal R_{\sigma_i,\mathcal N_i},
+\]</span> with <span class="math inline">\(\mathcal R_i\)</span> in the
 Petz/Fawzi–Renner class of
 Definition <a href="#def:oph-repair-map" data-reference-type="ref" data-reference="def:oph-repair-map">65</a>
 and
-Theorem <a href="#thm:splice" data-reference-type="ref" data-reference="thm:splice">52</a>.*</p></li>
+Theorem <a href="#thm:splice" data-reference-type="ref" data-reference="thm:splice">52</a>.</em></p></li>
 </ol>
 <p><em>The decoder back to <span class="math inline">\(S_i\)</span> is
 bookkeeping for the finite patch presentation; the physical content is
@@ -546,38 +547,40 @@ class="math inline">\(i\in V\)</span>.</em></p>
 <div id="def:localfit" class="definition">
 
 <p><strong>Definition 5</strong> (Touched-overlap potential and accepted
-local-fit contract). *For each repair site <span
-class="math inline">\(i\)</span>, let</p>
-<p><span class="math display">\[E_i^{\mathrm{touch}}
+local-fit contract). <em>For each repair site <span
+class="math inline">\(i\)</span>, let <span class="math display">\[
+E_i^{\mathrm{touch}}
 :=
 \bigl\{
 e\in E:\text{the interface data on }e\text{ may change under
 }T_i^\lambda
-\bigr\}.\]</span></p>
-<p>Define the touched-overlap potential</p>
-<p><span class="math display">\[\Phi_i(s)
+\bigr\}.
+\]</span> Define the touched-overlap potential <span
+class="math display">\[
+\Phi_i(s)
 :=
 \sum_{e=\{u,v\}\in E_i^{\mathrm{touch}}}
-w_e\, d_e\!\bigl(\pi_{u,e}(s_u),\pi_{v,e}(s_v)\bigr).\]</span></p>
-<p>On the declared fixed-cutoff branch, a recovery-derived candidate is
-committed only if it strictly lowers this touched-overlap score:</p>
-<p><span class="math display">\[s\to_i t \implies
-\Phi_i(t)&lt;\Phi_i(s).\]</span></p>
-<p>This is the patch-net form of the regulator-side monotone local-fit
-contract carried by the declared repair package.*</p>
+w_e\, d_e\!\bigl(\pi_{u,e}(s_u),\pi_{v,e}(s_v)\bigr).
+\]</span> On the declared fixed-cutoff branch, a recovery-derived
+candidate is committed only if it strictly lowers this touched-overlap
+score: <span class="math display">\[
+s\to_i t \implies \Phi_i(t)&lt;\Phi_i(s).
+\]</span> This is the patch-net form of the regulator-side monotone
+local-fit contract carried by the declared repair package.</em></p>
 </div>
 
 <div id="def:assoc" class="definition">
 
 <p><strong>Definition 6</strong> (Overlap-associative union-collar
-gluing). *Fix <span class="math inline">\(s\in\Sigma\)</span> and two
+gluing). <em>Fix <span class="math inline">\(s\in\Sigma\)</span> and two
 enabled repairs <span class="math inline">\(s\to_i t\)</span>, <span
-class="math inline">\(s\to_j u\)</span>. Write</p>
-<p><span class="math display">\[E_{ij}^{\mathrm{touch}}
+class="math inline">\(s\to_j u\)</span>. Write <span
+class="math display">\[
+E_{ij}^{\mathrm{touch}}
 :=
-E_i^{\mathrm{touch}}\cup E_j^{\mathrm{touch}}.\]</span></p>
-<p>The declared repair branch is <strong>overlap-associative</strong> if
-the following hold.*</p>
+E_i^{\mathrm{touch}}\cup E_j^{\mathrm{touch}}.
+\]</span> The declared repair branch is
+<strong>overlap-associative</strong> if the following hold.</em></p>
 <ol type="1">
 <li><p><em>If <span class="math inline">\(E_i^{\mathrm{touch}}\cap
 E_j^{\mathrm{touch}}=\varnothing\)</span>, the two accepted local
@@ -637,7 +640,7 @@ is neither too weak (missing some inconsistencies) nor too strong
 <div id="def:tree-packet-domain" class="definition">
 
 <p><strong>Definition 9</strong> (Verified rooted-tree packet-net
-domain). *Fix a finite rooted tree <span
+domain). <em>Fix a finite rooted tree <span
 class="math inline">\(T=(V,E,r)\)</span>. For each non-root vertex <span
 class="math inline">\(i\)</span>, write <span
 class="math inline">\(p(i)\)</span> for its parent and write <span
@@ -646,56 +649,55 @@ class="math inline">\(\{p(i),i\}\)</span>. Let <span
 class="math inline">\(A\)</span> be a finite packet alphabet with <span
 class="math inline">\(|A|\ge2\)</span>, and let <span
 class="math inline">\(K_i\)</span> be a finite hidden-label set. The
-patch state space is</p>
-<p><span class="math display">\[S_i=A\times K_i,
+patch state space is <span class="math display">\[
+S_i=A\times K_i,
 \qquad
-s_i=(x_i,k_i).\]</span></p>
-<p>For every edge <span class="math inline">\(e=\{i,j\}\)</span>, the
-interface alphabet is <span class="math inline">\(I_e=A\)</span>, and
-both endpoint projections read the packet component:</p>
-<p><span class="math display">\[\pi_{i,e}(x_i,k_i)=x_i,
+s_i=(x_i,k_i).
+\]</span> For every edge <span class="math inline">\(e=\{i,j\}\)</span>,
+the interface alphabet is <span class="math inline">\(I_e=A\)</span>,
+and both endpoint projections read the packet component: <span
+class="math display">\[
+\pi_{i,e}(x_i,k_i)=x_i,
 \qquad
-\pi_{j,e}(x_j,k_j)=x_j.\]</span></p>
-<p>Thus <span class="math inline">\(e\)</span> is consistent exactly
-when <span class="math inline">\(x_i=x_j\)</span>. Choose the weights so
-that</p>
-<p><span class="math display">\[w_i&gt;\sum_{j:p(j)=i}w_j
+\pi_{j,e}(x_j,k_j)=x_j.
+\]</span> Thus <span class="math inline">\(e\)</span> is consistent
+exactly when <span class="math inline">\(x_i=x_j\)</span>. Choose the
+weights so that <span class="math display">\[
+w_i&gt;\sum_{j:p(j)=i}w_j
 \qquad
-\text{for every non-root } i,\]</span></p>
-<p>with an empty sum equal to <span class="math inline">\(0\)</span>.
-Define</p>
-<p><span class="math display">\[\Phi(s)=\sum_{\{p(i),i\}\in
-E}w_i\,\mathbf 1[x_i\ne x_{p(i)}].\]</span></p>
-<p>The repair map at a non-root vertex <span
-class="math inline">\(i\)</span> is</p>
-<p><span class="math display">\[T_i(s)_i=(x_{p(i)},k_i),\]</span></p>
-<p>with all other vertices unchanged; if <span
+\text{for every non-root } i,
+\]</span> with an empty sum equal to <span
+class="math inline">\(0\)</span>. Define <span class="math display">\[
+\Phi(s)=\sum_{\{p(i),i\}\in E}w_i\,\mathbf 1[x_i\ne x_{p(i)}].
+\]</span> The repair map at a non-root vertex <span
+class="math inline">\(i\)</span> is <span class="math display">\[
+T_i(s)_i=(x_{p(i)},k_i),
+\]</span> with all other vertices unchanged; if <span
 class="math inline">\(x_i=x_{p(i)}\)</span>, the map is a no-op. The
 root repair map is the identity. The hidden labels <span
 class="math inline">\(k_i\)</span> are acted on by arbitrary finite
-gauge relabelings and are not read by any interface projection.*</p>
+gauge relabelings and are not read by any interface projection.</em></p>
 </div>
 
 <div id="thm:tree-packet-domain" class="theorem">
 
 <p><strong>Theorem 10</strong> (Rooted-tree packet repair completeness
-and quotient closure). *On the domain of
+and quotient closure). <em>On the domain of
 Definition <a href="#def:tree-packet-domain" data-reference-type="ref" data-reference="def:tree-packet-domain">9</a>,
 Assumption <a href="#ass:complete" data-reference-type="ref" data-reference="ass:complete">8</a>
 is a theorem. Every enabled repair strictly decreases <span
 class="math inline">\(\Phi\)</span>. Every maximal asynchronous repair
-run terminates at the unique state</p>
-<p><span class="math display">\[x_i=x_r\quad\text{for all }i\in
-V,\]</span></p>
-<p>with all hidden labels <span class="math inline">\(k_i\)</span>
-unchanged. The normal-form map descends to the quotient by hidden gauge
-relabeling. The four-vertex instance with edges <span
-class="math inline">\(r\!-\!a\)</span>, <span
+run terminates at the unique state <span class="math display">\[
+x_i=x_r\quad\text{for all }i\in V,
+\]</span> with all hidden labels <span
+class="math inline">\(k_i\)</span> unchanged. The normal-form map
+descends to the quotient by hidden gauge relabeling. The four-vertex
+instance with edges <span class="math inline">\(r\!-\!a\)</span>, <span
 class="math inline">\(a\!-\!b\)</span>, <span
 class="math inline">\(a\!-\!c\)</span>, alphabet <span
 class="math inline">\(A=\mathbb Z_3\)</span>, hidden labels <span
 class="math inline">\(K_i=\mathbb Z_2\)</span>, and weights <span
-class="math inline">\(5,1,1\)</span> is exported as .*</p>
+class="math inline">\(5,1,1\)</span> is exported as .</em></p>
 </div>
 
 <div class="proof">
@@ -714,12 +716,13 @@ class="math inline">\(p(j)=i\)</span> can change their contribution to
 <span class="math inline">\(\Phi\)</span>. The parent edge changes from
 inconsistent to consistent, contributing <span
 class="math inline">\(-w_i\)</span>. Each child edge can increase by at
-most its weight. Therefore</p>
-<p><span class="math display">\[\Phi(T_i(s))-\Phi(s)
+most its weight. Therefore <span class="math display">\[
+\Phi(T_i(s))-\Phi(s)
 \le
 -w_i+\sum_{j:p(j)=i}w_j
-&lt;0.\]</span></p>
-<p>So every enabled repair is accepted by the Lyapunov contract.</p>
+&lt;0.
+\]</span> So every enabled repair is accepted by the Lyapunov
+contract.</p>
 <p>Since <span class="math inline">\(\Phi\)</span> takes finitely many
 values, every maximal repair run terminates. At a terminal state no
 non-root vertex differs from its parent, so the terminal packet label is
@@ -729,24 +732,26 @@ state is unique and independent of update order. Because interface
 projections, enabledness, <span class="math inline">\(\Phi\)</span>, and
 the repair maps depend only on <span class="math inline">\(x_i\)</span>,
 arbitrary relabelings of the hidden <span
-class="math inline">\(K_i\)</span> commute with quotienting:</p>
-<p><span class="math display">\[q\circ T_i=\overline T_i\circ
-q.\]</span></p>
-<p>Thus the normal-form map descends to the hidden-label quotient. ◻</p>
+class="math inline">\(K_i\)</span> commute with quotienting: <span
+class="math display">\[
+q\circ T_i=\overline T_i\circ q.
+\]</span> Thus the normal-form map descends to the hidden-label
+quotient. ◻</p>
 </div>
 
 <div id="cor:tree-packet-law" class="corollary">
 
 <p><strong>Corollary 11</strong> (Physical-law map on the verified
-packet domain). *On the rooted-tree packet domain, every gauge-invariant
-observable</p>
-<p><span class="math display">\[M:\prod_i(A\times K_i)\to Y\]</span></p>
-<p>has a schedule-independent repaired value</p>
-<p><span class="math display">\[M(\operatorname{nf}(s)),\]</span></p>
-<p>and this value depends only on the quotient class of <span
+packet domain). <em>On the rooted-tree packet domain, every
+gauge-invariant observable <span class="math display">\[
+M:\prod_i(A\times K_i)\to Y
+\]</span> has a schedule-independent repaired value <span
+class="math display">\[
+M(\operatorname{nf}(s)),
+\]</span> and this value depends only on the quotient class of <span
 class="math inline">\(s\)</span>. Hence the promoted normal-form map is
 usable as physical law on this verified packet branch without adding a
-representative-level gauge-covariance assumption.*</p>
+representative-level gauge-covariance assumption.</em></p>
 </div>
 
 <div class="proof">
@@ -762,8 +767,10 @@ schedule and the hidden representative. ◻</p>
 
 <div id="prop:classical-petz-packet" class="proposition">
 
-<p><strong>Proposition 12</strong> (Classical full-support Petz packet
-domain). *Let <span class="math inline">\(B\)</span> and <span
+<h1
+id="proposition-12-classical-full-support-petz-packet-domain-let-b-and-d-be-finite-packet-alphabets-let-the-collar-algebras-be-diagonal-and-let-mathcal-nmathbb-cbtimes-dtomathbb-cb-be-the-marginal-channel-mathcal-n-pbsum_d-pbd-fix-a-reference-state-sigma_bd-with-sigma_bb0-for-every-b-let--gamma_sigmamin_bin-bsigma_bb0--define-the-petz-recovery-channel--mathcal-r_sigmamathcal-nmubd"><strong>Proposition
+12</strong> (Classical full-support Petz packet domain). *Let <span
+class="math inline">\(B\)</span> and <span
 class="math inline">\(D\)</span> be finite packet alphabets, let the
 collar algebras be diagonal, and let <span
 class="math inline">\(\mathcal N:\mathbb C^{B\times D}\to\mathbb
@@ -771,68 +778,64 @@ C^B\)</span> be the marginal channel <span
 class="math inline">\((\mathcal N p)(b)=\sum_d p(b,d)\)</span>. Fix a
 reference state <span class="math inline">\(\sigma_{BD}\)</span> with
 <span class="math inline">\(\sigma_B(b)&gt;0\)</span> for every <span
-class="math inline">\(b\)</span>. Let</p>
-<p><span class="math display">\[\gamma_\sigma:=\min_{b\in
-B}\sigma_B(b)&gt;0.\]</span></p>
-<p>Define the Petz recovery channel</p>
-<p><span class="math display">\[\mathcal R_{\sigma,\mathcal N}(\mu)(b,d)
-=
-\mu(b)\,\sigma(d\mid b),
-\qquad
-\sigma(d\mid b):=\frac{\sigma_{BD}(b,d)}{\sigma_B(b)}.\]</span></p>
-<p>Then <span class="math inline">\(\mathcal R_{\sigma,\mathcal
-N}\)</span> is stochastic, completely positive and trace preserving on
-the diagonal algebra, and <span
-class="math inline">\(\ell^1\)</span>-contractive:</p>
-<p><span class="math display">\[\|\mathcal R_{\sigma,\mathcal
-N}(\mu)-\mathcal R_{\sigma,\mathcal N}(\nu)\|_1
+class="math inline">\(b\)</span>. Let <span class="math display">\[
+\gamma_\sigma:=\min_{b\in B}\sigma_B(b)&gt;0.
+\]</span> Define the Petz recovery channel $$ \mathcal
+R_{\sigma,\mathcal N}(\mu)(b,d)</h1>
+<p>\mu(b),\sigma(d\mid b), \qquad \sigma(d\mid
+b):=\frac{\sigma_{BD}(b,d)}{\sigma_B(b)}. $$ Then <span
+class="math inline">\(\mathcal R_{\sigma,\mathcal N}\)</span> is
+stochastic, completely positive and trace preserving on the diagonal
+algebra, and <span class="math inline">\(\ell^1\)</span>-contractive:
+<span class="math display">\[
+\|\mathcal R_{\sigma,\mathcal N}(\mu)-\mathcal R_{\sigma,\mathcal
+N}(\nu)\|_1
 \le
-\|\mu-\nu\|_1.\]</span></p>
-<p>The support inverse is uniformly bounded on this domain by</p>
-<p><span class="math display">\[\|\sigma_B^{-1/2}\|\le
-\gamma_\sigma^{-1/2}.\]</span></p>
-<p>If a collar state has the exact classical Markov form</p>
-<p><span
-class="math display">\[\omega_{ABD}(a,b,d)=\omega_{AB}(a,b)\sigma(d\mid
-b),\]</span></p>
-<p>then <span class="math inline">\((\mathrm{id}_A\otimes\mathcal
+\|\mu-\nu\|_1.
+\]</span> The support inverse is uniformly bounded on this domain by
+<span class="math display">\[
+\|\sigma_B^{-1/2}\|\le \gamma_\sigma^{-1/2}.
+\]</span> If a collar state has the exact classical Markov form <span
+class="math display">\[
+\omega_{ABD}(a,b,d)=\omega_{AB}(a,b)\sigma(d\mid b),
+\]</span> then <span class="math inline">\((\mathrm{id}_A\otimes\mathcal
 R_{\sigma,\mathcal N})(\omega_{AB})=\omega_{ABD}\)</span>. The support
 obstruction is exact: if <span
 class="math inline">\(\sigma_B(b)=0\)</span> and an input assigns mass
 to <span class="math inline">\(b\)</span>, the Petz inverse on that
 sector is undefined unless the channel domain is restricted or a
-separate trace-preserving completion is declared.*</p>
+separate trace-preserving completion is declared.</p>
 </div>
 
 <div class="proof">
 
-<p><em>Proof.</em> The displayed formula is the finite diagonal
-specialization of the Petz map</p>
-<p><span class="math display">\[\sigma_{BD}^{1/2}
+<h1
+id="proof-the-displayed-formula-is-the-finite-diagonal-specialization-of-the-petz-map--sigma_bd12-leftsigma_b-12musigma_b-12otimes-mathbf-1_dright-sigma_bd12--full-support-of-sigma_b-makes-the-inverse-well-defined-with-support-gap-gamma_sigma0-hence-sigma_b-12legamma_sigma-12-nonnegativity-is-immediate-and--sum_bdmathcal-r_sigmamathcal-nmubd"><em>Proof.</em>
+The displayed formula is the finite diagonal specialization of the Petz
+map <span class="math display">\[
+\sigma_{BD}^{1/2}
 \left(\sigma_B^{-1/2}\mu\,\sigma_B^{-1/2}\otimes \mathbf 1_D\right)
-\sigma_{BD}^{1/2}.\]</span></p>
-<p>Full support of <span class="math inline">\(\sigma_B\)</span> makes
-the inverse well defined, with support gap <span
+\sigma_{BD}^{1/2}.
+\]</span> Full support of <span class="math inline">\(\sigma_B\)</span>
+makes the inverse well defined, with support gap <span
 class="math inline">\(\gamma_\sigma&gt;0\)</span>, hence <span
 class="math inline">\(\|\sigma_B^{-1/2}\|\le\gamma_\sigma^{-1/2}\)</span>.
-Nonnegativity is immediate, and</p>
-<p><span class="math display">\[\sum_{b,d}\mathcal R_{\sigma,\mathcal
-N}(\mu)(b,d)
-=
-\sum_b \mu(b)\sum_d\sigma(d\mid b)
-=
-\sum_b\mu(b),\]</span></p>
-<p>so the map is trace preserving. Diagonal positive trace-preserving
-maps are completely positive on the diagonal algebra. For signed
-diagonal inputs,</p>
-<p><span class="math display">\[\|\mathcal R_{\sigma,\mathcal
-N}(\mu)-\mathcal R_{\sigma,\mathcal N}(\nu)\|_1
-=
-\sum_{b,d}|\mu(b)-\nu(b)|\,\sigma(d\mid b)
-=
-\sum_b|\mu(b)-\nu(b)|,\]</span></p>
-<p>which gives the stated contraction. The exact Markov recovery
-identity follows by substitution. If <span
+Nonnegativity is immediate, and $$ \sum_{b,d}\mathcal R_{\sigma,\mathcal
+N}(\mu)(b,d)</h1>
+<h1 id="sum_b-mubsum_dsigmadmid-b">\sum_b \mu(b)\sum_d\sigma(d\mid
+b)</h1>
+<h1
+id="sum_bmub--so-the-map-is-trace-preserving-diagonal-positive-trace-preserving-maps-are-completely-positive-on-the-diagonal-algebra-for-signed-diagonal-inputs--mathcal-r_sigmamathcal-nmu-mathcal-r_sigmamathcal-nnu_1">\sum_b\mu(b),
+<span class="math display">\[
+so the map is trace preserving. Diagonal positive trace-preserving maps
+are completely positive on
+the diagonal algebra. For signed diagonal inputs,
+\]</span> |\mathcal R_{\sigma,\mathcal N}(\mu)-\mathcal
+R_{\sigma,\mathcal N}(\nu)|_1</h1>
+<h1 id="sum_bdmub-nubsigmadmid-b">\sum_{b,d}|\mu(b)-\nu(b)|,\sigma(d\mid
+b)</h1>
+<p>\sum_b|\mu(b)-\nu(b)|, $$ which gives the stated contraction. The
+exact Markov recovery identity follows by substitution. If <span
 class="math inline">\(\sigma_B(b)=0\)</span>, the factor <span
 class="math inline">\(\sigma_B^{-1/2}\)</span> has no value on that
 sector; mass placed there by an input is outside the Petz support
@@ -842,26 +845,28 @@ domain. That is the claimed obstruction. ◻</p>
 <div id="prop:lyapunov-descent" class="proposition">
 
 <p><strong>Proposition 13</strong> (Accepted repair moves are
-Lyapunov-decreasing). *For the accepted repair law of
+Lyapunov-decreasing). <em>For the accepted repair law of
 Definitions <a href="#def:repair" data-reference-type="ref" data-reference="def:repair">4</a>
 and
 <a href="#def:localfit" data-reference-type="ref" data-reference="def:localfit">5</a>,
-every enabled repair strictly decreases the inconsistency potential:</p>
-<p><span class="math display">\[s\to t \implies \Phi(t)&lt;\Phi(s).
-```*
+every enabled repair strictly decreases the inconsistency potential:
+<span class="math display">\[
+s\to t \implies \Phi(t)&lt;\Phi(s).
+\]</span></em></p>
+</div>
 
-&lt;/div&gt;
+<div class="proof">
 
-&lt;div class=&quot;proof&quot;&gt;
-
-*Proof.* Write $`s\to_i t`$. If $`e\notin E_i^{\mathrm{touch}}`$, then
-the interface data on $`e`$ are
-unchanged by $`T_i^\lambda`$, so the corresponding term in $`\Phi`$ is
-the same for $`s`$ and
-$`t`$. Therefore
-``` math
-\Phi(t)-\Phi(s)=\Phi_i(t)-\Phi_i(s)&lt;0\]</span></p>
-<p>by
+<p><em>Proof.</em> Write <span class="math inline">\(s\to_i t\)</span>.
+If <span class="math inline">\(e\notin E_i^{\mathrm{touch}}\)</span>,
+then the interface data on <span class="math inline">\(e\)</span> are
+unchanged by <span class="math inline">\(T_i^\lambda\)</span>, so the
+corresponding term in <span class="math inline">\(\Phi\)</span> is the
+same for <span class="math inline">\(s\)</span> and <span
+class="math inline">\(t\)</span>. Therefore <span
+class="math display">\[
+\Phi(t)-\Phi(s)=\Phi_i(t)-\Phi_i(s)&lt;0
+\]</span> by
 Definition <a href="#def:localfit" data-reference-type="ref" data-reference="def:localfit">5</a>. ◻</p>
 </div>
 
@@ -892,24 +897,23 @@ class="math inline">\(\Phi(\Sigma)\)</span>, which is impossible. ◻</p>
 
 <div id="prop:finite-step-bound" class="proposition">
 
-<p><strong>Proposition 15</strong> (Finite repair step bound). *Let
+<p><strong>Proposition 15</strong> (Finite repair step bound). <em>Let
 <span class="math inline">\(s_0\in\Sigma\)</span>. Under
 Proposition <a href="#prop:lyapunov-descent" data-reference-type="ref" data-reference="prop:lyapunov-descent">13</a>,
 every accepted repair run starting at <span
-class="math inline">\(s_0\)</span> has length at most</p>
-<p><span class="math display">\[\bigl|\{\,\Phi(s):s\in\Sigma,\
-\Phi(s)\le \Phi(s_0)\,\}\bigr|-1
-\le |\Phi(\Sigma)|-1.\]</span></p>
-<p>If, additionally, <span class="math inline">\(\Phi\)</span> is
+class="math inline">\(s_0\)</span> has length at most <span
+class="math display">\[
+\bigl|\{\,\Phi(s):s\in\Sigma,\ \Phi(s)\le \Phi(s_0)\,\}\bigr|-1
+\le |\Phi(\Sigma)|-1.
+\]</span> If, additionally, <span class="math inline">\(\Phi\)</span> is
 integer-valued, or more generally every accepted move lowers <span
 class="math inline">\(\Phi\)</span> by at least a fixed <span
-class="math inline">\(\eta&gt;0\)</span>, then the run length
-satisfies</p>
-<p><span class="math display">\[T(s_0)\le
-\left\lceil\frac{\Phi(s_0)}{\eta}\right\rceil .\]</span></p>
-<p>This is a finite descent bound in repair steps only. It is not a
-wall-clock bound, not a probability-one scheduling statement, and not
-spectral or exponential convergence.*</p>
+class="math inline">\(\eta&gt;0\)</span>, then the run length satisfies
+<span class="math display">\[
+T(s_0)\le \left\lceil\frac{\Phi(s_0)}{\eta}\right\rceil .
+\]</span> This is a finite descent bound in repair steps only. It is not
+a wall-clock bound, not a probability-one scheduling statement, and not
+spectral or exponential convergence.</em></p>
 </div>
 
 <div class="proof">
@@ -964,10 +968,9 @@ and <span class="math inline">\(s\to_j u\)</span>. If <span
 class="math inline">\(E_i^{\mathrm{touch}}\cap
 E_j^{\mathrm{touch}}=\varnothing\)</span>, then
 Definition <a href="#def:assoc" data-reference-type="ref" data-reference="def:assoc">6</a>(i)
-gives</p>
-<p><span
-class="math display">\[T_j^\lambda(T_i^\lambda(s))=T_i^\lambda(T_j^\lambda(s)).\]</span></p>
-<p>So with <span
+gives <span class="math display">\[
+T_j^\lambda(T_i^\lambda(s))=T_i^\lambda(T_j^\lambda(s)).
+\]</span> So with <span
 class="math inline">\(v:=T_j^\lambda(T_i^\lambda(s))\)</span> we have
 <span class="math inline">\(t\to_j v\)</span> and <span
 class="math inline">\(u\to_i v\)</span>.</p>
@@ -1006,7 +1009,7 @@ class="math inline">\(\overline v_{ij}(s)\)</span>. ◻</p>
 <div id="thm:confluence" class="theorem">
 
 <p><strong>Theorem 18</strong> (Asynchronous confluence / fixed-point
-law). *For the accepted repair law of
+law). <em>For the accepted repair law of
 Definitions <a href="#def:repair" data-reference-type="ref" data-reference="def:repair">4</a>,
 <a href="#def:localfit" data-reference-type="ref" data-reference="def:localfit">5</a>,
 and
@@ -1014,14 +1017,13 @@ and
 under
 Assumption <a href="#ass:complete" data-reference-type="ref" data-reference="ass:complete">8</a>,
 each fixed initial state <span class="math inline">\(s\in\Sigma\)</span>
-has a unique normal form</p>
-<p><span class="math display">\[\operatorname{nf}_\lambda(s)\in
-C,\]</span></p>
-<p>and every maximal asynchronous repair execution from <span
+has a unique normal form <span class="math display">\[
+\operatorname{nf}_\lambda(s)\in C,
+\]</span> and every maximal asynchronous repair execution from <span
 class="math inline">\(s\)</span> terminates at that same state. The
 terminal state is independent of update order because descent, local
 confluence on the physical quotient, and repair completeness all hold;
-termination alone is not enough.*</p>
+termination alone is not enough.</em></p>
 </div>
 
 <div class="proof">
@@ -1089,47 +1091,47 @@ consistency.</p>
 <div id="thm:holonomy" class="theorem">
 
 <p><strong>Theorem 21</strong> (Cycle-obstruction / holonomy criterion).
-*Let <span class="math inline">\(A\)</span> be an abelian group, and let
-<span class="math inline">\(G=(V,E)\)</span> be a connected graph with
-an arbitrary orientation on each edge. For each oriented edge <span
+<em>Let <span class="math inline">\(A\)</span> be an abelian group, and
+let <span class="math inline">\(G=(V,E)\)</span> be a connected graph
+with an arbitrary orientation on each edge. For each oriented edge <span
 class="math inline">\(e:u\to v\)</span>, assign a label <span
 class="math inline">\(b_e\in A\)</span>. Consider the affine consistency
-equations</p>
-<p><span class="math display">\[x_v - x_u = b_e
+equations <span class="math display">\[
+x_v - x_u = b_e
 \qquad
-\text{for every oriented edge } e:u\to v,\]</span></p>
-<p>where <span class="math inline">\(x_v\in A\)</span> are unknown patch
-labels. A global solution <span class="math inline">\(x:V\to A\)</span>
-exists if and only if for every cycle <span
-class="math inline">\(C\subseteq G\)</span>,</p>
-<p><span class="math display">\[\sum_{e\in C}\varepsilon_C(e)\, b_e =
-0,\]</span></p>
-<p>where <span class="math inline">\(\varepsilon_C(e)=+1\)</span> if the
-cycle traverses <span class="math inline">\(e\)</span> in the chosen
-orientation and <span class="math inline">\(-1\)</span> otherwise.*</p>
+\text{for every oriented edge } e:u\to v,
+\]</span> where <span class="math inline">\(x_v\in A\)</span> are
+unknown patch labels. A global solution <span
+class="math inline">\(x:V\to A\)</span> exists if and only if for every
+cycle <span class="math inline">\(C\subseteq G\)</span>, <span
+class="math display">\[
+\sum_{e\in C}\varepsilon_C(e)\, b_e = 0,
+\]</span> where <span class="math inline">\(\varepsilon_C(e)=+1\)</span>
+if the cycle traverses <span class="math inline">\(e\)</span> in the
+chosen orientation and <span class="math inline">\(-1\)</span>
+otherwise.</em></p>
 </div>
 
 <div class="proof">
 
-<p><em>Proof.</em> <strong>Necessity.</strong> Suppose <span
+<h1
+id="proof-necessity-suppose-x-is-a-solution-summing-the-edge-equations-around-any-cycle-c--sum_euto-vin-cvarepsilon_cex_v-x_u"><em>Proof.</em>
+<strong>Necessity.</strong> Suppose <span
 class="math inline">\(x\)</span> is a solution. Summing the edge
-equations around any cycle <span class="math inline">\(C\)</span>,</p>
-<p><span class="math display">\[\sum_{e:u\to v\in
-C}\varepsilon_C(e)\,(x_v-x_u)
-=
-\sum_{e\in C}\varepsilon_C(e)\,b_e.\]</span></p>
-<p>The left side telescopes to <span class="math inline">\(0\)</span>
-because every vertex appears once with <span
-class="math inline">\(+\)</span> sign and once with <span
+equations around any cycle <span class="math inline">\(C\)</span>, $$
+\sum_{e:u\to v\in C}\varepsilon_C(e),(x_v-x_u)</h1>
+<p>\sum_{e\in C}\varepsilon_C(e),b_e. $$ The left side telescopes to
+<span class="math inline">\(0\)</span> because every vertex appears once
+with <span class="math inline">\(+\)</span> sign and once with <span
 class="math inline">\(-\)</span> sign.</p>
 <p><strong>Sufficiency.</strong> Fix a root <span
 class="math inline">\(r\in V\)</span>. For any vertex <span
 class="math inline">\(v\)</span>, choose a path <span
-class="math inline">\(P_{r\to v}\)</span> and define</p>
-<p><span class="math display">\[x_v := \sum_{e\in P_{r\to v}}
-\varepsilon_{P_{r\to v}}(e)\, b_e,
-\qquad x_r:=0.\]</span></p>
-<p>If <span class="math inline">\(P\)</span> and <span
+class="math inline">\(P_{r\to v}\)</span> and define <span
+class="math display">\[
+x_v := \sum_{e\in P_{r\to v}} \varepsilon_{P_{r\to v}}(e)\, b_e,
+\qquad x_r:=0.
+\]</span> If <span class="math inline">\(P\)</span> and <span
 class="math inline">\(P&#39;\)</span> are two paths from <span
 class="math inline">\(r\)</span> to <span
 class="math inline">\(v\)</span>, traversing <span
@@ -1162,12 +1164,12 @@ solution. The obstruction is carried by the cycle.</p>
 <div id="cor:defects" class="corollary">
 
 <p><strong>Corollary 23</strong> (Stable defects as frustrated
-holonomy). *Define the defect energy</p>
-<p><span class="math display">\[\Phi_b(x) := \sum_{e:u\to v\in E}
-w_e\,\mathbf{1}\!\left[x_v - x_u \neq b_e\right].\]</span></p>
-<p>If the cycle-holonomy condition fails, then <span
+holonomy). <em>Define the defect energy <span class="math display">\[
+\Phi_b(x) := \sum_{e:u\to v\in E} w_e\,\mathbf{1}\!\left[x_v - x_u \neq
+b_e\right].
+\]</span> If the cycle-holonomy condition fails, then <span
 class="math inline">\(\min_{x:V\to A}\Phi_b(x)&gt;0\)</span>. Every
-minimizer contains irreducible residual inconsistency.*</p>
+minimizer contains irreducible residual inconsistency.</em></p>
 </div>
 
 <div class="proof">
@@ -1183,20 +1185,19 @@ repair moves. In the OPH interpretation they are stable topological
 defects of the reconciliation dynamics.</p>
 <div id="thm:higherdefects" class="theorem">
 
-<p><strong>Theorem 24</strong> (Higher-gauge defect hierarchy). *Let a
-finite overlap nerve carry crossed-module defect data <span
+<p><strong>Theorem 24</strong> (Higher-gauge defect hierarchy). <em>Let
+a finite overlap nerve carry crossed-module defect data <span
 class="math inline">\((g_{ij},h_{ijk})\)</span> for a compact crossed
-module</p>
-<p><span class="math display">\[H\xrightarrow{\partial} G.\]</span></p>
-<p>Under local rechartings by</p>
-<p><span class="math display">\[C^1(N,H)\rtimes C^0(N,G),\]</span></p>
-<p>the nonabelian Čech class</p>
-<p><span class="math display">\[q=[(g,h)]\in \check H^2(N,H\to
-G)\]</span></p>
-<p>is invariant. Strict global reconciliation exists if and only if
-<span class="math inline">\(q=0\)</span>, and nonzero <span
+module <span class="math display">\[
+H\xrightarrow{\partial} G.
+\]</span> Under local rechartings by <span class="math display">\[
+C^1(N,H)\rtimes C^0(N,G),
+\]</span> the nonabelian Čech class <span class="math display">\[
+q=[(g,h)]\in \check H^2(N,H\to G)
+\]</span> is invariant. Strict global reconciliation exists if and only
+if <span class="math inline">\(q=0\)</span>, and nonzero <span
 class="math inline">\(q\)</span> labels stable fixed-cutoff higher-gauge
-defects.*</p>
+defects.</em></p>
 </div>
 
 <div class="proof">
@@ -1213,39 +1214,40 @@ as its first layer. ◻</p>
 Implementation Hiding</h1>
 <div id="def:gauge" class="definition">
 
-<p><strong>Definition 25</strong> (Gauge action). *Let <span
+<p><strong>Definition 25</strong> (Gauge action). <em>Let <span
 class="math inline">\(\Gamma = \prod_{i\in V}\Gamma_i\)</span> act on
 <span class="math inline">\(\Sigma\)</span> componentwise. The action is
 a <strong>gauge action</strong> if for every <span
-class="math inline">\(e=\{i,j\}\in E\)</span>,</p>
-<p><span class="math display">\[\pi_{i,e}(\gamma_i\cdot x)=\pi_{i,e}(x)
+class="math inline">\(e=\{i,j\}\in E\)</span>, <span
+class="math display">\[
+\pi_{i,e}(\gamma_i\cdot x)=\pi_{i,e}(x)
 \qquad
-\forall\, x\in S_i,\ \forall\, \gamma_i\in \Gamma_i.\]</span></p>
-<p>Gauge changes alter hidden local representations but do not alter
-overlap data.*</p>
+\forall\, x\in S_i,\ \forall\, \gamma_i\in \Gamma_i.
+\]</span> Gauge changes alter hidden local representations but do not
+alter overlap data.</em></p>
 </div>
 
-<p>Gauge transformations change hidden local representations while
-leaving overlap data fixed. Write</p>
-<p><span class="math display">\[q:\Sigma\to \Sigma/\Gamma,
+<h1
+id="gauge-transformations-change-hidden-local-representations-while-leaving-overlap-data-fixed-write--qsigmato-sigmagamma-qquad-qss--for-the-gauge-orbit-map-a-physical-repair-law-is-the-family-of-quotient-local-maps--overline-t_ilambdasigmagammato-sigmagamma--induced-by-the-recovery-derived-collar-updates-of-definition-4-a-representative-repair-family-is-any-choice-of-lifts--t_ilambdasigmatosigma--such-that--qcirc-t_ilambda">Gauge
+transformations change hidden local representations while leaving
+overlap data fixed. Write <span class="math display">\[
+q:\Sigma\to \Sigma/\Gamma,
 \qquad
-q(s)=[s],\]</span></p>
-<p>for the gauge-orbit map. A <strong>physical repair law</strong> is
-the family of quotient-local maps</p>
-<p><span class="math display">\[\overline T_i^\lambda:\Sigma/\Gamma\to
-\Sigma/\Gamma\]</span></p>
-<p>induced by the recovery-derived collar updates of
+q(s)=[s],
+\]</span> for the gauge-orbit map. A <strong>physical repair
+law</strong> is the family of quotient-local maps <span
+class="math display">\[
+\overline T_i^\lambda:\Sigma/\Gamma\to \Sigma/\Gamma
+\]</span> induced by the recovery-derived collar updates of
 Definition <a href="#def:repair" data-reference-type="ref" data-reference="def:repair">4</a>.
-A <strong>representative repair family</strong> is any choice of
-lifts</p>
-<p><span class="math display">\[T_i^\lambda:\Sigma\to\Sigma\]</span></p>
-<p>such that</p>
-<p><span class="math display">\[q\circ T_i^\lambda
-=
-\overline T_i^\lambda\circ q.\]</span></p>
-<p>This is the finite patch-net form of saying that the repair step is
-defined first on overlap-invariant physical data and only then lifted to
-hidden representatives. The rooted-tree packet domain of
+A <strong>representative repair family</strong> is any choice of lifts
+<span class="math display">\[
+T_i^\lambda:\Sigma\to\Sigma
+\]</span> such that $$ q\circ T_i^\lambda</h1>
+<p>\overline T_i^\lambda\circ q. $$ This is the finite patch-net form of
+saying that the repair step is defined first on overlap-invariant
+physical data and only then lifted to hidden representatives. The
+rooted-tree packet domain of
 Theorem <a href="#thm:tree-packet-domain" data-reference-type="ref" data-reference="thm:tree-packet-domain">10</a>
 proves repair completeness and quotient descent on a nontrivial exported
 packet net, while
@@ -1266,101 +1268,88 @@ gauge-covariance axiom is needed once repair is formulated on the
 quotient.</p>
 <div id="thm:gauge" class="theorem">
 
-<p><strong>Theorem 26</strong> (Gauge quotient theorem). *Under the
-gauge action of
+<h1
+id="theorem-26-gauge-quotient-theorem-under-the-gauge-action-of-definition-25-any-representative-lift-of-a-physical-repair-law-as-just-defined-and-the-hypotheses-of-theorem-18--qbigloperatornamenf_lambdagammacdot-sbigr"><strong>Theorem
+26</strong> (Gauge quotient theorem). *Under the gauge action of
 Definition <a href="#def:gauge" data-reference-type="ref" data-reference="def:gauge">25</a>,
 any representative lift of a physical repair law as just defined, and
 the hypotheses of
-Theorem <a href="#thm:confluence" data-reference-type="ref" data-reference="thm:confluence">18</a>,</p>
-<p><span
-class="math display">\[q\bigl(\operatorname{nf}_\lambda(\gamma\cdot
-s)\bigr)
-=
-q\bigl(\operatorname{nf}_\lambda(s)\bigr)
-\qquad
-\forall\, \gamma\in\Gamma,\ \forall\, s\in\Sigma.\]</span></p>
-<p>Hence the normal-form map descends to the quotient:</p>
-<p><span
-class="math display">\[\overline{\operatorname{nf}}_\lambda:\Sigma/\Gamma
-\to \Sigma/\Gamma,
-\qquad
-[s]\mapsto [\operatorname{nf}_\lambda(s)].
-```*
+Theorem <a href="#thm:confluence" data-reference-type="ref" data-reference="thm:confluence">18</a>,
+$$ q\bigl(\operatorname{nf}_\lambda(\gamma\cdot s)\bigr)</h1>
+<p>q\bigl(\operatorname{nf}<em>\lambda(s)\bigr) \qquad \forall,
+\gamma\in\Gamma,\ \forall, s\in\Sigma. <span class="math display">\[
+Hence the normal-form map descends to the quotient:
+\]</span> \overline{\operatorname{nf}}</em>\lambda:\Sigma/\Gamma \to
+\Sigma/\Gamma, \qquad [s]\mapsto [\operatorname{nf}_\lambda(s)]. $$</p>
+</div>
 
-&lt;/div&gt;
+<div class="proof">
 
-&lt;div class=&quot;proof&quot;&gt;
-
-*Proof.* Suppose $`s\to_i t`$, so $`t=T_i^\lambda(s)\neq s`$. If
-$`s&#39;=\gamma\cdot s`$, then
-``` math
-q\bigl(T_i^\lambda(s&#39;)\bigr)
-=
-\overline T_i^\lambda\bigl(q(s&#39;)\bigr)
-=
-\overline T_i^\lambda\bigl(q(s)\bigr)
-=
-q\bigl(T_i^\lambda(s)\bigr).\]</span></p>
-<p>Thus gauge-equivalent inputs induce the same repaired orbit, and by
-induction the orbit reached after any repair sequence depends only on
-the initial orbit. Every maximal repair sequence from <span
-class="math inline">\(s\)</span> ends at <span
+<h1
+id="proof-suppose-sto_i-t-so-tt_ilambdasneq-s-if-sgammacdot-s-then--qbiglt_ilambdasbigr"><em>Proof.</em>
+Suppose <span class="math inline">\(s\to_i t\)</span>, so <span
+class="math inline">\(t=T_i^\lambda(s)\neq s\)</span>. If <span
+class="math inline">\(s&#39;=\gamma\cdot s\)</span>, then $$
+q\bigl(T_i^\lambda(s')\bigr)</h1>
+<h1 id="overline-t_ilambdabiglqsbigr">\overline
+T_i^\lambda\bigl(q(s')\bigr)</h1>
+<h1 id="overline-t_ilambdabiglqsbigr-1">\overline
+T_i^\lambda\bigl(q(s)\bigr)</h1>
+<p>q\bigl(T_i^\lambda(s)\bigr). $$ Thus gauge-equivalent inputs induce
+the same repaired orbit, and by induction the orbit reached after any
+repair sequence depends only on the initial orbit. Every maximal repair
+sequence from <span class="math inline">\(s\)</span> ends at <span
 class="math inline">\(\operatorname{nf}_\lambda(s)\)</span> by
 Theorem <a href="#thm:confluence" data-reference-type="ref" data-reference="thm:confluence">18</a>,
 so the terminal orbit <span
 class="math inline">\(q(\operatorname{nf}_\lambda(s))\)</span> depends
-only on <span class="math inline">\(q(s)=[s]\)</span>. This makes</p>
-<p><span class="math display">\[[s]\longmapsto
-[\operatorname{nf}_\lambda(s)]\]</span></p>
-<p>well-defined on <span
+only on <span class="math inline">\(q(s)=[s]\)</span>. This makes <span
+class="math display">\[
+[s]\longmapsto [\operatorname{nf}_\lambda(s)]
+\]</span> well-defined on <span
 class="math inline">\(\Sigma/\Gamma\)</span>. ◻</p>
 </div>
 
 <div id="thm:boundary-conditioned-uniqueness" class="theorem">
 
-<p><strong>Theorem 27</strong> (Boundary-conditioned quotient
-uniqueness). *Let</p>
-<p><span class="math display">\[B:\Sigma/\Gamma\to\mathcal
-B\]</span></p>
-<p>record fixed external boundary data, conserved charge, root packet,
-holonomy sector, or task input. Assume accepted quotient repairs
-preserve <span class="math inline">\(B\)</span>:</p>
-<p><span class="math display">\[[s]\to [t]\implies
-B([s])=B([t]).\]</span></p>
-<p>For <span class="math inline">\(b\in\mathcal B\)</span>, define the
-consistent quotient fiber</p>
-<p><span class="math display">\[C_b:=\{\,x\in
-q(C):B(x)=b\,\}.\]</span></p>
-<p>If every <span class="math inline">\(C_b\)</span> has at most one
-element, then all initial states with the same boundary value settle to
-the same observer-facing quotient normal form:</p>
-<p><span class="math display">\[B([s])=B([s&#39;])\implies
-\overline{\operatorname{nf}}_\lambda([s])
-=
-\overline{\operatorname{nf}}_\lambda([s&#39;]).
-```*
+<h1
+id="theorem-27-boundary-conditioned-quotient-uniqueness-let--bsigmagammatomathcal-b--record-fixed-external-boundary-data-conserved-charge-root-packet-holonomy-sector-or-task-input-assume-accepted-quotient-repairs-preserve-b--sto-timplies-bsbt--for-binmathcal-b-define-the-consistent-quotient-fiber--c_bxin-qcbxb--if-every-c_b-has-at-most-one-element-then-all-initial-states-with-the-same-boundary-value-settle-to-the-same-observer-facing-quotient-normal-form--bsbsimplies-overlineoperatornamenf_lambdas"><strong>Theorem
+27</strong> (Boundary-conditioned quotient uniqueness). *Let <span
+class="math display">\[
+B:\Sigma/\Gamma\to\mathcal B
+\]</span> record fixed external boundary data, conserved charge, root
+packet, holonomy sector, or task input. Assume accepted quotient repairs
+preserve <span class="math inline">\(B\)</span>: <span
+class="math display">\[
+[s]\to [t]\implies B([s])=B([t]).
+\]</span> For <span class="math inline">\(b\in\mathcal B\)</span>,
+define the consistent quotient fiber <span class="math display">\[
+C_b:=\{\,x\in q(C):B(x)=b\,\}.
+\]</span> If every <span class="math inline">\(C_b\)</span> has at most
+one element, then all initial states with the same boundary value settle
+to the same observer-facing quotient normal form: $$
+B([s])=B([s'])\implies \overline{\operatorname{nf}}_\lambda([s])</h1>
+<p>\overline{\operatorname{nf}}_\lambda([s']). $$</p>
+</div>
 
-&lt;/div&gt;
+<div class="proof">
 
-&lt;div class=&quot;proof&quot;&gt;
-
-*Proof.* Theorem &lt;a href=&quot;#thm:gauge&quot;
-data-reference-type=&quot;ref&quot;
-data-reference=&quot;thm:gauge&quot;&gt;26&lt;/a&gt; gives unique
-quotient normal forms
-$`\overline{\operatorname{nf}}_\lambda([s])`$ and
-$`\overline{\operatorname{nf}}_\lambda([s&#39;])`$ in $`q(C)`$. Boundary
-preservation along accepted
-repair sequences gives
-``` math
+<p><em>Proof.</em>
+Theorem <a href="#thm:gauge" data-reference-type="ref" data-reference="thm:gauge">26</a>
+gives unique quotient normal forms <span
+class="math inline">\(\overline{\operatorname{nf}}_\lambda([s])\)</span>
+and <span
+class="math inline">\(\overline{\operatorname{nf}}_\lambda([s&#39;])\)</span>
+in <span class="math inline">\(q(C)\)</span>. Boundary preservation
+along accepted repair sequences gives <span class="math display">\[
 B(\overline{\operatorname{nf}}_\lambda([s]))=B([s]),
 \qquad
-B(\overline{\operatorname{nf}}_\lambda([s&#39;]))=B([s&#39;]).\]</span></p>
-<p>If <span class="math inline">\(B([s])=B([s&#39;])=b\)</span>, both
-quotient normal forms lie in <span class="math inline">\(C_b\)</span>.
-By the unique consistent extension assumption, <span
-class="math inline">\(C_b\)</span> has at most one element, so the
-quotient normal forms are equal. ◻</p>
+B(\overline{\operatorname{nf}}_\lambda([s&#39;]))=B([s&#39;]).
+\]</span> If <span class="math inline">\(B([s])=B([s&#39;])=b\)</span>,
+both quotient normal forms lie in <span
+class="math inline">\(C_b\)</span>. By the unique consistent extension
+assumption, <span class="math inline">\(C_b\)</span> has at most one
+element, so the quotient normal forms are equal. ◻</p>
 </div>
 
 <div id="cor:gaugeinv" class="corollary">
@@ -1376,29 +1365,26 @@ the representative.</em></p>
 
 <div class="proof">
 
-<p><em>Proof.</em> Because <span class="math inline">\(M\)</span> is
-gauge-invariant, it factors through the orbit map: <span
-class="math inline">\(M=\overline M\circ q\)</span> for some <span
-class="math inline">\(\overline M:\Sigma/\Gamma\to Y\)</span>.
+<h1
+id="proof-because-m-is-gauge-invariant-it-factors-through-the-orbit-map-moverline-mcirc-q-for-some-overline-msigmagammato-y-theorem-26-gives--qbigloperatornamenf_lambdagammacdot-sbigr"><em>Proof.</em>
+Because <span class="math inline">\(M\)</span> is gauge-invariant, it
+factors through the orbit map: <span class="math inline">\(M=\overline
+M\circ q\)</span> for some <span class="math inline">\(\overline
+M:\Sigma/\Gamma\to Y\)</span>.
 Theorem <a href="#thm:gauge" data-reference-type="ref" data-reference="thm:gauge">26</a>
-gives</p>
-<p><span
-class="math display">\[q\bigl(\operatorname{nf}_\lambda(\gamma\cdot
-s)\bigr)
-=
-q\bigl(\operatorname{nf}_\lambda(s)\bigr),\]</span></p>
-<p>hence</p>
-<p><span
-class="math display">\[M\bigl(\operatorname{nf}_\lambda(\gamma\cdot
-s)\bigr)
-=
-\overline M\!\left(q\bigl(\operatorname{nf}_\lambda(\gamma\cdot
-s)\bigr)\right)
-=
-\overline M\!\left(q\bigl(\operatorname{nf}_\lambda(s)\bigr)\right)
-=
-M\bigl(\operatorname{nf}_\lambda(s)\bigr).\]</span></p>
-<p> ◻</p>
+gives $$ q\bigl(\operatorname{nf}_\lambda(\gamma\cdot s)\bigr)</h1>
+<h1
+id="qbigloperatornamenflambdasbigr--hence--mbigloperatornamenflambdagammacdot-sbigr">q\bigl(\operatorname{nf}<em>\lambda(s)\bigr),
+<span class="math display">\[
+hence
+\]</span> M\bigl(\operatorname{nf}</em>\lambda(\gamma\cdot s)\bigr)</h1>
+<h1
+id="overline-mleftqbigloperatornamenf_lambdagammacdot-sbigrright">\overline
+M!\left(q\bigl(\operatorname{nf}_\lambda(\gamma\cdot
+s)\bigr)\right)</h1>
+<h1 id="overline-mleftqbigloperatornamenf_lambdasbigrright">\overline
+M!\left(q\bigl(\operatorname{nf}_\lambda(s)\bigr)\right)</h1>
+<p>M\bigl(\operatorname{nf}_\lambda(s)\bigr). $$  ◻</p>
 </div>
 
 <div id="def:physobs" class="definition">
@@ -1427,18 +1413,16 @@ A_{\mathrm{phys}}(R)\)</span>.</em></p>
 <div id="thm:obsconfluence" class="theorem">
 
 <p><strong>Theorem 30</strong> (Observable-level confluence on the
-quantum lift). *Under the hypotheses of
+quantum lift). <em>Under the hypotheses of
 Theorems <a href="#thm:confluence" data-reference-type="ref" data-reference="thm:confluence">18</a>
 and
 <a href="#thm:gauge" data-reference-type="ref" data-reference="thm:gauge">26</a>,
 every initial orbit <span
 class="math inline">\([s]\in\Sigma/\Gamma\)</span> has a unique quotient
-normal form</p>
-<p><span
-class="math display">\[\overline{\operatorname{nf}}_\lambda([s])\in
-q(C).\]</span></p>
-<p>Fix a declared region <span class="math inline">\(R\)</span>. Let
-<span class="math inline">\(t,u\in\Sigma\)</span> be terminal
+normal form <span class="math display">\[
+\overline{\operatorname{nf}}_\lambda([s])\in q(C).
+\]</span> Fix a declared region <span class="math inline">\(R\)</span>.
+Let <span class="math inline">\(t,u\in\Sigma\)</span> be terminal
 microscopic representatives reached by representative lifts of maximal
 repair sequences from initial states in the same orbit <span
 class="math inline">\([s]\)</span>. If the induced <span
@@ -1448,14 +1432,14 @@ class="math inline">\(u\)</span> are representatives of the same
 quotient-local glued state in the sense of
 Proposition <a href="#prop:assocglue" data-reference-type="ref" data-reference="prop:assocglue">60</a>,
 then for every physical observable <span
-class="math inline">\(X\in\mathcal A_{\mathrm{phys}}(R)\)</span>,</p>
-<p><span
-class="math display">\[\omega_R^t(X)=\omega_R^u(X).\]</span></p>
-<p>Hence all physical observables converge to the same
+class="math inline">\(X\in\mathcal A_{\mathrm{phys}}(R)\)</span>, <span
+class="math display">\[
+\omega_R^t(X)=\omega_R^u(X).
+\]</span> Hence all physical observables converge to the same
 overlap-consistent values even when the microscopic terminal
 representatives differ by gauge relabelings globally or by
 sector/higher-gauge relabelings inside one declared quotient-local glued
-state.*</p>
+state.</em></p>
 </div>
 
 <div class="proof">
@@ -1499,32 +1483,30 @@ refinement.</p>
 
 <div id="cor:ancilla" class="corollary">
 
-<p><strong>Corollary 32</strong> (Inert ancillary refinement does not
-change physical law). *Let <span class="math inline">\(K=\prod_i
-K_i\)</span> be a finite ancillary state space and define <span
+<h1
+id="corollary-32-inert-ancillary-refinement-does-not-change-physical-law-let-kprod_i-k_i-be-a-finite-ancillary-state-space-and-define-sigmaetasigmatimes-k-lift-the-repair-maps-by--t_ilambdaetaskt_ilambdask--if-metasigmaetato-y-ignores-the-ancillary-factor--metaskms--with-m-gauge-invariant-on-sigma-then--metaoperatornamenf_lambdaetask"><strong>Corollary
+32</strong> (Inert ancillary refinement does not change physical law).
+*Let <span class="math inline">\(K=\prod_i K_i\)</span> be a finite
+ancillary state space and define <span
 class="math inline">\(\Sigma^\eta:=\Sigma\times K\)</span>. Lift the
-repair maps by</p>
-<p><span
-class="math display">\[T_i^{\lambda,\eta}(s,k):=(T_i^\lambda(s),k).\]</span></p>
-<p>If <span class="math inline">\(M^\eta:\Sigma^\eta\to Y\)</span>
-ignores the ancillary factor,</p>
-<p><span class="math display">\[M^\eta(s,k)=M(s),\]</span></p>
-<p>with <span class="math inline">\(M\)</span> gauge-invariant on <span
-class="math inline">\(\Sigma\)</span>, then</p>
-<p><span
-class="math display">\[M^\eta(\operatorname{nf}_\lambda^\eta(s,k))
-=
-M(\operatorname{nf}_\lambda(s))\]</span></p>
-<p>for all <span
-class="math inline">\((s,k)\in\Sigma^\eta\)</span>.*</p>
+repair maps by <span class="math display">\[
+T_i^{\lambda,\eta}(s,k):=(T_i^\lambda(s),k).
+\]</span> If <span class="math inline">\(M^\eta:\Sigma^\eta\to
+Y\)</span> ignores the ancillary factor, <span class="math display">\[
+M^\eta(s,k)=M(s),
+\]</span> with <span class="math inline">\(M\)</span> gauge-invariant on
+<span class="math inline">\(\Sigma\)</span>, then $$
+M^\eta(\operatorname{nf}_\lambda^\eta(s,k))</h1>
+<p>M(\operatorname{nf}_\lambda(s)) $$ for all <span
+class="math inline">\((s,k)\in\Sigma^\eta\)</span>.</p>
 </div>
 
 <div class="proof">
 
-<p><em>Proof.</em> Because the ancillary factor is inert,</p>
-<p><span
-class="math display">\[\operatorname{nf}_\lambda^\eta(s,k)=\bigl(\operatorname{nf}_\lambda(s),k\bigr).\]</span></p>
-<p>Therefore <span
+<p><em>Proof.</em> Because the ancillary factor is inert, <span
+class="math display">\[
+\operatorname{nf}_\lambda^\eta(s,k)=\bigl(\operatorname{nf}_\lambda(s),k\bigr).
+\]</span> Therefore <span
 class="math inline">\(M^\eta(\operatorname{nf}_\lambda^\eta(s,k))=M(\operatorname{nf}_\lambda(s))\)</span>,
 and
 Corollary <a href="#cor:gaugeinv" data-reference-type="ref" data-reference="cor:gaugeinv">28</a>
@@ -1536,101 +1518,86 @@ implementation hiding. The same statement is unchanged under inert
 ancillary stabilization.</p>
 <div id="def:packet-closure-simplex" class="definition">
 
-<p><strong>Definition 33</strong> (Finite packet closure simplex).
-*Assume the finite fixed-cutoff consensus branch of
+<h1
+id="definition-33-finite-packet-closure-simplex-assume-the-finite-fixed-cutoff-consensus-branch-of-theorems-18-and-26-so-the-physical-quotient-qsigmagamma-is-finite-and-carries-the-schedule-independent-quotient-normal-form-map--overlineoperatornamenf_lambdaqto-q--let--n_lambdaoverlineoperatornamenf_lambdaqqc--be-the-quotient-normal-form-set-the-finite-packet-simplex-on-q-is--deltaq-left-muqtomathbb-r_ge0-middle-sum_xin-qmux1-right--and-the-finite-packet-closure-map-is-the-pushforward--mathcal-c_lambdadeltaqtodeltaq-qquad-mathcal-c_lambdamu-bigloverlineoperatornamenf_lambdabigr_mu--equivalently--mathcal-c_lambdamuy"><strong>Definition
+33</strong> (Finite packet closure simplex). *Assume the finite
+fixed-cutoff consensus branch of
 Theorems <a href="#thm:confluence" data-reference-type="ref" data-reference="thm:confluence">18</a>
 and
 <a href="#thm:gauge" data-reference-type="ref" data-reference="thm:gauge">26</a>,
 so the physical quotient <span
 class="math inline">\(Q:=\Sigma/\Gamma\)</span> is finite and carries
-the schedule-independent quotient normal-form map</p>
-<p><span
-class="math display">\[\overline{\operatorname{nf}}_\lambda:Q\to
-Q.\]</span></p>
-<p>Let</p>
-<p><span
-class="math display">\[N_\lambda:=\overline{\operatorname{nf}}_\lambda(Q)=q(C)\]</span></p>
-<p>be the quotient normal-form set. The <strong>finite packet
-simplex</strong> on <span class="math inline">\(Q\)</span> is</p>
-<p><span class="math display">\[\Delta(Q):=
+the schedule-independent quotient normal-form map <span
+class="math display">\[
+\overline{\operatorname{nf}}_\lambda:Q\to Q.
+\]</span> Let <span class="math display">\[
+N_\lambda:=\overline{\operatorname{nf}}_\lambda(Q)=q(C)
+\]</span> be the quotient normal-form set. The <strong>finite packet
+simplex</strong> on <span class="math inline">\(Q\)</span> is <span
+class="math display">\[
+\Delta(Q):=
 \left\{
 \mu:Q\to\mathbb R_{\ge0}\ \middle|\ \sum_{x\in Q}\mu(x)=1
-\right\},\]</span></p>
-<p>and the <strong>finite packet closure map</strong> is the
-pushforward</p>
-<p><span class="math display">\[\mathcal
-C_\lambda:\Delta(Q)\to\Delta(Q),
+\right\},
+\]</span> and the <strong>finite packet closure map</strong> is the
+pushforward <span class="math display">\[
+\mathcal C_\lambda:\Delta(Q)\to\Delta(Q),
 \qquad
 \mathcal C_\lambda(\mu):=
-\bigl(\overline{\operatorname{nf}}_\lambda\bigr)_*\mu,\]</span></p>
-<p>equivalently</p>
-<p><span class="math display">\[\mathcal C_\lambda(\mu)(y)
-=
-\sum_{\substack{x\in Q\\
-\overline{\operatorname{nf}}_\lambda(x)=y}}\mu(x).
-```*
+\bigl(\overline{\operatorname{nf}}_\lambda\bigr)_*\mu,
+\]</span> equivalently $$ \mathcal C_\lambda(\mu)(y)</h1>
+<p>\sum_{\substack{x\in Q\
+\overline{\operatorname{nf}}_\lambda(x)=y}}\mu(x). $$</p>
+</div>
 
-&lt;/div&gt;
+<div id="thm:finite-packet-closure" class="theorem">
 
-&lt;div id=&quot;thm:finite-packet-closure&quot;
-class=&quot;theorem&quot;&gt;
-
-**Theorem 34** (Finite packet-quotient closure map). *On the finite
-fixed-cutoff consensus branch of Definition &lt;a
-href=&quot;#def:packet-closure-simplex&quot;
-data-reference-type=&quot;ref&quot;
-data-reference=&quot;def:packet-closure-simplex&quot;&gt;33&lt;/a&gt;,
-the
-map $`\mathcal C_\lambda`$ is an affine continuous idempotent self-map
-of $`\Delta(Q)`$. Its
-image is exactly the normal-form simplex
-``` math
-\Delta(N_\lambda)
-=
-\left\{
+<h1
+id="theorem-34-finite-packet-quotient-closure-map-on-the-finite-fixed-cutoff-consensus-branch-of-definition-33-the-map-mathcal-c_lambda-is-an-affine-continuous-idempotent-self-map-of-deltaq-its-image-is-exactly-the-normal-form-simplex--deltan_lambda"><strong>Theorem
+34</strong> (Finite packet-quotient closure map). *On the finite
+fixed-cutoff consensus branch of
+Definition <a href="#def:packet-closure-simplex" data-reference-type="ref" data-reference="def:packet-closure-simplex">33</a>,
+the map <span class="math inline">\(\mathcal C_\lambda\)</span> is an
+affine continuous idempotent self-map of <span
+class="math inline">\(\Delta(Q)\)</span>. Its image is exactly the
+normal-form simplex $$ \Delta(N_\lambda)</h1>
+<h1
+id="left-muindeltaq-middle-operatornamesuppmusubseteq-n_lambda-right--hence-the-fixed-points-of-mathcal-c_lambda-are-exactly-the-packets-supported-on-quotient-normal-forms-for-every-initial-quotient-state-sin-q--mathcal-c_lambdadelta_s">\left{
 \mu\in\Delta(Q)\ \middle|\ \operatorname{supp}(\mu)\subseteq N_\lambda
-\right\}.\]</span></p>
-<p>Hence the fixed points of <span class="math inline">\(\mathcal
-C_\lambda\)</span> are exactly the packets supported on quotient normal
-forms. For every initial quotient state <span
-class="math inline">\([s]\in Q\)</span>,</p>
-<p><span class="math display">\[\mathcal C_\lambda(\delta_{[s]})
-=
-\delta_{\overline{\operatorname{nf}}_\lambda([s])}.
-```*
+\right}. $$ Hence the fixed points of <span
+class="math inline">\(\mathcal C_\lambda\)</span> are exactly the
+packets supported on quotient normal forms. For every initial quotient
+state <span class="math inline">\([s]\in Q\)</span>, $$ \mathcal
+C_\lambda(\delta_{[s]})</h1>
+<p>\delta_{\overline{\operatorname{nf}}_\lambda([s])}. $$</p>
+</div>
 
-&lt;/div&gt;
+<div class="proof">
 
-&lt;div class=&quot;proof&quot;&gt;
-
-*Proof.* Because $`\overline{\operatorname{nf}}_\lambda:Q\to Q`$ is a
-set map on a finite set, its
-pushforward on probability packets is affine and continuous in the
-finite-dimensional simplex
-topology.
-
-By Theorems &lt;a href=&quot;#thm:confluence&quot;
-data-reference-type=&quot;ref&quot;
-data-reference=&quot;thm:confluence&quot;&gt;18&lt;/a&gt; and &lt;a
-href=&quot;#thm:gauge&quot; data-reference-type=&quot;ref&quot;
-data-reference=&quot;thm:gauge&quot;&gt;26&lt;/a&gt;, the quotient
-normal form is
-schedule-independent and terminal, so
-``` math
-\overline{\operatorname{nf}}_\lambda\circ\overline{\operatorname{nf}}_\lambda
-=
-\overline{\operatorname{nf}}_\lambda.\]</span></p>
-<p>Pushforward therefore gives</p>
-<p><span class="math display">\[\mathcal C_\lambda^2
-=
-\bigl(\overline{\operatorname{nf}}_\lambda\bigr)_*
-\bigl(\overline{\operatorname{nf}}_\lambda\bigr)_*
-=
-\bigl(\overline{\operatorname{nf}}_\lambda\circ\overline{\operatorname{nf}}_\lambda\bigr)_*
-=
-\mathcal C_\lambda,\]</span></p>
-<p>so <span class="math inline">\(\mathcal C_\lambda\)</span> is
-idempotent.</p>
+<p><em>Proof.</em> Because <span
+class="math inline">\(\overline{\operatorname{nf}}_\lambda:Q\to
+Q\)</span> is a set map on a finite set, its pushforward on probability
+packets is affine and continuous in the finite-dimensional simplex
+topology.</p>
+<h1
+id="by-theorems-18-and-26-the-quotient-normal-form-is-schedule-independent-and-terminal-so--overlineoperatornamenflambdacircoverlineoperatornamenflambda">By
+Theorems <a href="#thm:confluence" data-reference-type="ref" data-reference="thm:confluence">18</a>
+and
+<a href="#thm:gauge" data-reference-type="ref" data-reference="thm:gauge">26</a>,
+the quotient normal form is schedule-independent and terminal, so $$
+\overline{\operatorname{nf}}<em>\lambda\circ\overline{\operatorname{nf}}</em>\lambda</h1>
+<h1
+id="overlineoperatornamenflambda--pushforward-therefore-gives--mathcal-clambda2">\overline{\operatorname{nf}}<em>\lambda.
+<span class="math display">\[
+Pushforward therefore gives
+\]</span> \mathcal C</em>\lambda^2</h1>
+<h1
+id="bigloverlineoperatornamenflambdabigr-bigloverlineoperatornamenflambdabigr">\bigl(\overline{\operatorname{nf}}<em>\lambda\bigr)</em>*
+\bigl(\overline{\operatorname{nf}}<em>\lambda\bigr)</em>*</h1>
+<h1
+id="bigloverlineoperatornamenflambdacircoverlineoperatornamenflambdabigr_">\bigl(\overline{\operatorname{nf}}<em>\lambda\circ\overline{\operatorname{nf}}</em>\lambda\bigr)_*</h1>
+<p>\mathcal C_\lambda, $$ so <span class="math inline">\(\mathcal
+C_\lambda\)</span> is idempotent.</p>
 <p>If <span class="math inline">\(\nu=\mathcal C_\lambda(\mu)\)</span>,
 then every point in <span
 class="math inline">\(\operatorname{supp}(\nu)\)</span> lies in the
@@ -1641,10 +1608,10 @@ class="math inline">\(\operatorname{im}(\mathcal C_\lambda)\subseteq
 \Delta(N_\lambda)\)</span>. Conversely, if <span
 class="math inline">\(\nu\in\Delta(N_\lambda)\)</span>, then <span
 class="math inline">\(\overline{\operatorname{nf}}_\lambda(y)=y\)</span>
-for every <span class="math inline">\(y\in N_\lambda\)</span>, so</p>
-<p><span class="math display">\[\mathcal
-C_\lambda(\nu)=\nu.\]</span></p>
-<p>Hence <span class="math inline">\(\Delta(N_\lambda)\subseteq
+for every <span class="math inline">\(y\in N_\lambda\)</span>, so <span
+class="math display">\[
+\mathcal C_\lambda(\nu)=\nu.
+\]</span> Hence <span class="math inline">\(\Delta(N_\lambda)\subseteq
 \operatorname{im}(\mathcal C_\lambda)\)</span>, proving <span
 class="math inline">\(\operatorname{im}(\mathcal
 C_\lambda)=\Delta(N_\lambda)\)</span>. The same identity shows that
@@ -1676,76 +1643,76 @@ compatibility clauses.</p>
 <div id="def:refinement-consensus" class="definition">
 
 <p><strong>Definition 36</strong> (Separated cofinal refinement
-consensus system). *Let <span class="math inline">\((R,\preceq)\)</span>
-be a directed refinement set. For each <span class="math inline">\(r\in
-R\)</span>, let</p>
-<p><span class="math display">\[Q_r:=\Sigma_r/\Gamma_r\]</span></p>
-<p>be the finite physical quotient state space of a patch presentation,
-let</p>
-<p><span class="math display">\[n_r:Q_r\to Q_r\]</span></p>
-<p>be the finite-stage quotient normal-form map supplied by
+consensus system). <em>Let <span
+class="math inline">\((R,\preceq)\)</span> be a directed refinement set.
+For each <span class="math inline">\(r\in R\)</span>, let <span
+class="math display">\[
+Q_r:=\Sigma_r/\Gamma_r
+\]</span> be the finite physical quotient state space of a patch
+presentation, let <span class="math display">\[
+n_r:Q_r\to Q_r
+\]</span> be the finite-stage quotient normal-form map supplied by
 Theorems <a href="#thm:confluence" data-reference-type="ref" data-reference="thm:confluence">18</a>
 and
 <a href="#thm:gauge" data-reference-type="ref" data-reference="thm:gauge">26</a>,
-and let</p>
-<p><span class="math display">\[h_r:Q_r\to \mathcal H_r\]</span></p>
-<p>be the finite-stage holonomy or higher-gauge obstruction map supplied
-by
+and let <span class="math display">\[
+h_r:Q_r\to \mathcal H_r
+\]</span> be the finite-stage holonomy or higher-gauge obstruction map
+supplied by
 Theorems <a href="#thm:holonomy" data-reference-type="ref" data-reference="thm:holonomy">21</a>
 and
 <a href="#thm:higherdefects" data-reference-type="ref" data-reference="thm:higherdefects">24</a>.
 For <span class="math inline">\(r\preceq s\)</span>, assume restriction
-maps</p>
-<p><span class="math display">\[\rho_{sr}:Q_s\to Q_r,
+maps <span class="math display">\[
+\rho_{sr}:Q_s\to Q_r,
 \qquad
-\chi_{sr}:\mathcal H_s\to\mathcal H_r,\]</span></p>
-<p>with <span class="math inline">\(\rho_{rr}=\mathrm{id}\)</span>,
-<span class="math inline">\(\chi_{rr}=\mathrm{id}\)</span>, and the
-cocycle identities</p>
-<p><span class="math display">\[\rho_{tr}=\rho_{sr}\circ\rho_{ts},
+\chi_{sr}:\mathcal H_s\to\mathcal H_r,
+\]</span> with <span
+class="math inline">\(\rho_{rr}=\mathrm{id}\)</span>, <span
+class="math inline">\(\chi_{rr}=\mathrm{id}\)</span>, and the cocycle
+identities <span class="math display">\[
+\rho_{tr}=\rho_{sr}\circ\rho_{ts},
 \qquad
 \chi_{tr}=\chi_{sr}\circ\chi_{ts}
 \qquad
-(r\preceq s\preceq t).\]</span></p>
-<p>The system is a separated cofinal refinement consensus system
-when:*</p>
+(r\preceq s\preceq t).
+\]</span> The system is a separated cofinal refinement consensus system
+when:</em></p>
 <ol type="1">
-<li>*<strong>Normal-form naturality:</strong>
-<p><span class="math display">\[\rho_{sr}\circ n_s=n_r\circ\rho_{sr}
+<li><p><em><strong>Normal-form naturality:</strong> <span
+class="math display">\[
+\rho_{sr}\circ n_s=n_r\circ\rho_{sr}
 \qquad
 (r\preceq s).
-```*
-\]</span></p></li>
-<li>*<strong>Holonomy naturality:</strong>
-<p><span class="math display">\[\chi_{sr}\circ h_s=h_r\circ\rho_{sr}
+\]</span></em></p></li>
+<li><p><em><strong>Holonomy naturality:</strong> <span
+class="math display">\[
+\chi_{sr}\circ h_s=h_r\circ\rho_{sr}
 \qquad
 (r\preceq s).
-```*
-\]</span></p></li>
-<li><em><strong>Visible separation:</strong> two compatible families in
-<span class="math inline">\(\varprojlim Q_r\)</span>, or in <span
+\]</span></em></p></li>
+<li><p><em><strong>Visible separation:</strong> two compatible families
+in <span class="math inline">\(\varprojlim Q_r\)</span>, or in <span
 class="math inline">\(\varprojlim \mathcal H_r\)</span>, are equal
 whenever their projections agree on a cofinal subset of
-stages.</em></li>
+stages.</em></p></li>
 </ol>
 </div>
 
 <div id="thm:refinement-consensus" class="theorem">
 
 <p><strong>Theorem 37</strong> (Refinement-limit consensus and holonomy
-classes). *For any separated cofinal refinement consensus system, the
-formulas</p>
-<p><span
-class="math display">\[n_\infty\bigl((x_r)_r\bigr):=(n_r(x_r))_r,
+classes). <em>For any separated cofinal refinement consensus system, the
+formulas <span class="math display">\[
+n_\infty\bigl((x_r)_r\bigr):=(n_r(x_r))_r,
 \qquad
-h_\infty\bigl((x_r)_r\bigr):=(h_r(x_r))_r\]</span></p>
-<p>define maps</p>
-<p><span class="math display">\[n_\infty:\varprojlim Q_r\to\varprojlim
-Q_r,
+h_\infty\bigl((x_r)_r\bigr):=(h_r(x_r))_r
+\]</span> define maps <span class="math display">\[
+n_\infty:\varprojlim Q_r\to\varprojlim Q_r,
 \qquad
-h_\infty:\varprojlim Q_r\to\varprojlim\mathcal H_r.\]</span></p>
-<p>The class <span class="math inline">\(n_\infty(x)\)</span> is the
-unique schedule-independent refinement-limit normal form of <span
+h_\infty:\varprojlim Q_r\to\varprojlim\mathcal H_r.
+\]</span> The class <span class="math inline">\(n_\infty(x)\)</span> is
+the unique schedule-independent refinement-limit normal form of <span
 class="math inline">\(x\)</span>. The class <span
 class="math inline">\(h_\infty(x)\)</span> is the refinement-limit
 holonomy obstruction. The pair <span
@@ -1754,40 +1721,38 @@ refinement-limit consensus class. In the inverse-limit topology,
 finite-stage normal forms and holonomy classes converge to these two
 classes: for every stage <span class="math inline">\(r\)</span>, all
 refinements <span class="math inline">\(s\succeq r\)</span> restrict to
-the fixed values</p>
-<p><span class="math display">\[\rho_{sr}(n_s(x_s))=n_r(x_r),
+the fixed values <span class="math display">\[
+\rho_{sr}(n_s(x_s))=n_r(x_r),
 \qquad
-\chi_{sr}(h_s(x_s))=h_r(x_r).\]</span></p>
-<p>Furthermore, <span class="math inline">\(h_\infty(x)=0\)</span> if
-and only if every finite projection has zero finite-stage obstruction.
-If <span class="math inline">\(h_\infty(x)\ne0\)</span>, visible
-separation gives a finite stage that witnesses the nonzero obstruction.
-If two refinement-limit candidates have the same normal-form and
-holonomy projections on a cofinal tail, then they determine the same
-refinement-limit consensus class.*</p>
+\chi_{sr}(h_s(x_s))=h_r(x_r).
+\]</span> Furthermore, <span
+class="math inline">\(h_\infty(x)=0\)</span> if and only if every finite
+projection has zero finite-stage obstruction. If <span
+class="math inline">\(h_\infty(x)\ne0\)</span>, visible separation gives
+a finite stage that witnesses the nonzero obstruction. If two
+refinement-limit candidates have the same normal-form and holonomy
+projections on a cofinal tail, then they determine the same
+refinement-limit consensus class.</em></p>
 </div>
 
 <div class="proof">
 
-<p><em>Proof.</em> Let <span
-class="math inline">\(x=(x_r)_r\in\varprojlim Q_r\)</span>, so <span
-class="math inline">\(\rho_{sr}(x_s)=x_r\)</span> for <span
-class="math inline">\(r\preceq s\)</span>. Normal-form naturality
-gives</p>
-<p><span class="math display">\[\rho_{sr}(n_s(x_s))
-=
-n_r(\rho_{sr}(x_s))
-=
-n_r(x_r),\]</span></p>
-<p>so <span class="math inline">\((n_r(x_r))_r\)</span> is a compatible
+<h1
+id="proof-let-xx_r_rinvarprojlim-q_r-so-rho_srx_sx_r-for-rpreceq-s-normal-form-naturality-gives--rho_srn_sx_s"><em>Proof.</em>
+Let <span class="math inline">\(x=(x_r)_r\in\varprojlim Q_r\)</span>, so
+<span class="math inline">\(\rho_{sr}(x_s)=x_r\)</span> for <span
+class="math inline">\(r\preceq s\)</span>. Normal-form naturality gives
+$$ \rho_{sr}(n_s(x_s))</h1>
+<h1 id="n_rrho_srx_s">n_r(\rho_{sr}(x_s))</h1>
+<h1
+id="n_rx_r--so-n_rx_r_r-is-a-compatible-family-and-n_infty-is-well-defined-the-same-argument-with-holonomy-naturality-gives--chi_srh_sx_s">n_r(x_r),
+$$ so <span class="math inline">\((n_r(x_r))_r\)</span> is a compatible
 family and <span class="math inline">\(n_\infty\)</span> is well
-defined. The same argument with holonomy naturality gives</p>
-<p><span class="math display">\[\chi_{sr}(h_s(x_s))
-=
-h_r(\rho_{sr}(x_s))
-=
-h_r(x_r),\]</span></p>
-<p>so <span class="math inline">\(h_\infty\)</span> is well defined.</p>
+defined. The same argument with holonomy naturality gives $$
+\chi_{sr}(h_s(x_s))</h1>
+<h1 id="h_rrho_srx_s">h_r(\rho_{sr}(x_s))</h1>
+<p>h_r(x_r), $$ so <span class="math inline">\(h_\infty\)</span> is well
+defined.</p>
 <p>Each finite <span class="math inline">\(n_r(x_r)\)</span> is
 independent of update schedule by
 Theorems <a href="#thm:confluence" data-reference-type="ref" data-reference="thm:confluence">18</a>
@@ -1825,71 +1790,70 @@ arbitrary changing repair laws as separate branch conditions.</p>
 <div id="def:controlled-coarse-consensus" class="definition">
 
 <p><strong>Definition 39</strong> (Controlled coarse-graining /
-reconciliation square). *Fix refinement stages <span
+reconciliation square). <em>Fix refinement stages <span
 class="math inline">\(r\preceq s\)</span>. Let <span
 class="math inline">\(Q_r,Q_s\)</span> be the physical quotient state
 spaces, <span class="math inline">\(n_r,n_s\)</span> their finite-stage
 normal-form maps, and <span class="math inline">\(h_r,h_s\)</span> their
-holonomy or higher-gauge obstruction maps. Let</p>
-<p><span class="math display">\[\rho_{sr}:Q_s\to Q_r,
+holonomy or higher-gauge obstruction maps. Let <span
+class="math display">\[
+\rho_{sr}:Q_s\to Q_r,
 \qquad
-\chi_{sr}:\mathcal H_s\to\mathcal H_r\]</span></p>
-<p>be the coarse-graining maps on quotient states and obstruction data.
-Equip <span class="math inline">\(Q_r\)</span> and <span
+\chi_{sr}:\mathcal H_s\to\mathcal H_r
+\]</span> be the coarse-graining maps on quotient states and obstruction
+data. Equip <span class="math inline">\(Q_r\)</span> and <span
 class="math inline">\(\mathcal H_r\)</span> with pseudometrics <span
 class="math inline">\(d^Q_r\)</span> and <span
 class="math inline">\(d^{\mathcal H}_r\)</span> that define the
 macroscopic readout scale at stage <span
-class="math inline">\(r\)</span>.*</p>
-<p>*The square is <span
+class="math inline">\(r\)</span>.</em></p>
+<p><em>The square is <span
 class="math inline">\((\varepsilon^n_{sr},\varepsilon^h_{sr})\)</span>-controlled
-when, for every <span class="math inline">\(x\in Q_s\)</span>,</p>
-<p><span
-class="math display">\[d^Q_r\!\left(\rho_{sr}(n_s(x)),\,n_r(\rho_{sr}(x))\right)
-\le \varepsilon^n_{sr},\]</span></p>
-<p>and</p>
-<p><span class="math display">\[d^{\mathcal
-H}_r\!\left(\chi_{sr}(h_s(x)),\,h_r(\rho_{sr}(x))\right)
-\le \varepsilon^h_{sr}.\]</span></p>
-<p>The errors are <strong>cofinally vanishing</strong> when, for every
-fixed macroscopic stage <span class="math inline">\(r\)</span> and every
-<span class="math inline">\(\delta&gt;0\)</span>, there is a refinement
-stage <span class="math inline">\(s_0\succeq r\)</span> such that <span
+when, for every <span class="math inline">\(x\in Q_s\)</span>, <span
+class="math display">\[
+d^Q_r\!\left(\rho_{sr}(n_s(x)),\,n_r(\rho_{sr}(x))\right)
+\le \varepsilon^n_{sr},
+\]</span> and <span class="math display">\[
+d^{\mathcal H}_r\!\left(\chi_{sr}(h_s(x)),\,h_r(\rho_{sr}(x))\right)
+\le \varepsilon^h_{sr}.
+\]</span> The errors are <strong>cofinally vanishing</strong> when, for
+every fixed macroscopic stage <span class="math inline">\(r\)</span> and
+every <span class="math inline">\(\delta&gt;0\)</span>, there is a
+refinement stage <span class="math inline">\(s_0\succeq r\)</span> such
+that <span
 class="math inline">\(\varepsilon^n_{sr},\varepsilon^h_{sr}&lt;\delta\)</span>
-for all <span class="math inline">\(s\succeq s_0\)</span>.*</p>
+for all <span class="math inline">\(s\succeq s_0\)</span>.</em></p>
 </div>
 
 <div id="thm:coarse-grain-consensus" class="theorem">
 
 <p><strong>Theorem 40</strong> (Coarse-graining commutes with
-reconciliation up to controlled error). *Suppose the refinement square
-of
+reconciliation up to controlled error). <em>Suppose the refinement
+square of
 Definition <a href="#def:controlled-coarse-consensus" data-reference-type="ref" data-reference="def:controlled-coarse-consensus">39</a>
 is <span
 class="math inline">\((\varepsilon^n_{sr},\varepsilon^h_{sr})\)</span>-controlled.
-Define the coarse-stage consensus readout</p>
-<p><span class="math display">\[\mathcal
-C_r(y):=(n_r(y),h_r(y))\]</span></p>
-<p>and the fine-then-coarse readout</p>
-<p><span class="math display">\[\mathcal C_{s\to
-r}^{\mathrm{fine}}(x):=(\rho_{sr}(n_s(x)),\chi_{sr}(h_s(x))).\]</span></p>
-<p>Then, for every fine state <span class="math inline">\(x\in
+Define the coarse-stage consensus readout <span class="math display">\[
+\mathcal C_r(y):=(n_r(y),h_r(y))
+\]</span> and the fine-then-coarse readout <span class="math display">\[
+\mathcal C_{s\to
+r}^{\mathrm{fine}}(x):=(\rho_{sr}(n_s(x)),\chi_{sr}(h_s(x))).
+\]</span> Then, for every fine state <span class="math inline">\(x\in
 Q_s\)</span>, the product readout distance between <span
 class="math inline">\(\mathcal C_{s\to r}^{\mathrm{fine}}(x)\)</span>
 and <span class="math inline">\(\mathcal C_r(\rho_{sr}(x))\)</span> is
-bounded by</p>
-<p><span
-class="math display">\[\max\{\varepsilon^n_{sr},\varepsilon^h_{sr}\}.\]</span></p>
-<p>Thus reconciling at the fine stage and then coarse-graining gives the
-same macroscopic law data as coarse-graining first and reconciling at
-the coarse stage, up to the declared control errors. If the exact
-naturality clauses of
+bounded by <span class="math display">\[
+\max\{\varepsilon^n_{sr},\varepsilon^h_{sr}\}.
+\]</span> Thus reconciling at the fine stage and then coarse-graining
+gives the same macroscopic law data as coarse-graining first and
+reconciling at the coarse stage, up to the declared control errors. If
+the exact naturality clauses of
 Definition <a href="#def:refinement-consensus" data-reference-type="ref" data-reference="def:refinement-consensus">36</a>
 hold, then <span
 class="math inline">\(\varepsilon^n_{sr}=\varepsilon^h_{sr}=0\)</span>.
 If the errors are cofinally vanishing, the two procedures determine the
 same cylinder values in the inverse-limit topology at every fixed
-macroscopic stage.*</p>
+macroscopic stage.</em></p>
 </div>
 
 <div class="proof">
@@ -1899,12 +1863,12 @@ bounded by the first inequality in
 Definition <a href="#def:controlled-coarse-consensus" data-reference-type="ref" data-reference="def:controlled-coarse-consensus">39</a>,
 and the obstruction component is bounded by the second. Taking the
 maximum gives the stated product bound. Exact naturality is precisely
-the special case</p>
-<p><span class="math display">\[\rho_{sr}\circ n_s=n_r\circ\rho_{sr},
+the special case <span class="math display">\[
+\rho_{sr}\circ n_s=n_r\circ\rho_{sr},
 \qquad
-\chi_{sr}\circ h_s=h_r\circ\rho_{sr},\]</span></p>
-<p>so both errors vanish there. Cofinal vanishing means that, for any
-fixed coarse cylinder and any desired readout tolerance, all
+\chi_{sr}\circ h_s=h_r\circ\rho_{sr},
+\]</span> so both errors vanish there. Cofinal vanishing means that, for
+any fixed coarse cylinder and any desired readout tolerance, all
 sufficiently fine presentations give the same cylinder value within that
 tolerance, which is convergence in the inverse-limit topology. ◻</p>
 </div>
@@ -1936,26 +1900,28 @@ lift and no broader observer-metaphysical assumption is used here.</p>
 <div id="def:lattice" class="definition">
 
 <p><strong>Definition 42</strong> (Exact record algebras and approximate
-record presentations). *Fix one completed observer-accessible slice at
-cycle <span class="math inline">\(t\)</span>, and let <span
+record presentations). <em>Fix one completed observer-accessible slice
+at cycle <span class="math inline">\(t\)</span>, and let <span
 class="math inline">\(\mathcal A_t^{\mathrm{acc}}\)</span> be the
 corresponding finite-dimensional accessible algebra. An <em>exact record
 presentation</em> is a family of orthogonal projectors <span
 class="math inline">\(\{\widehat P_a(t)\}_a\subset Z(\mathcal
-A_t^{\mathrm{acc}})\)</span> whose generated algebra</p>
-<p><span class="math display">\[\mathcal Z_{\mathrm{rec}}(t)
+A_t^{\mathrm{acc}})\)</span> whose generated algebra <span
+class="math display">\[
+\mathcal Z_{\mathrm{rec}}(t)
 :=
-\mathrm{Alg}\bigl(\{\widehat P_a(t)\}_a\bigr)\]</span></p>
-<p>is finite and commutative.*</p>
-<p>*An <em>approximate record presentation</em> on the same declared
+\mathrm{Alg}\bigl(\{\widehat P_a(t)\}_a\bigr)
+\]</span> is finite and commutative.</em></p>
+<p><em>An <em>approximate record presentation</em> on the same declared
 readout slots is a family of projectors <span
 class="math inline">\(\{P_a(t)\}_a\subset \mathcal
 A_t^{\mathrm{acc}}\)</span> together with an exact record presentation
-<span class="math inline">\(\{\widehat P_a(t)\}_a\)</span> such that</p>
-<p><span class="math display">\[\delta_{\mathrm{rec}}(t)
+<span class="math inline">\(\{\widehat P_a(t)\}_a\)</span> such that
+<span class="math display">\[
+\delta_{\mathrm{rec}}(t)
 :=
-\max_a \|P_a(t)-\widehat P_a(t)\|\]</span></p>
-<p>is finite.*</p>
+\max_a \|P_a(t)-\widehat P_a(t)\|
+\]</span> is finite.</em></p>
 </div>
 
 <div id="thm:crdt" class="theorem">
@@ -1968,46 +1934,39 @@ at cycle <span class="math inline">\(t\)</span>.</em></p>
 central algebra <span class="math inline">\(\mathcal
 Z_{\mathrm{rec}}(t)\subset Z(\mathcal
 A_t^{\mathrm{acc}})\)</span>.</em></p></li>
-<li><p>*For every event <span class="math inline">\(E\)</span> in the
-finite event algebra generated by <span class="math inline">\(\mathcal
-Z_{\mathrm{rec}}(t)\)</span>,</p>
-<p><span class="math display">\[\mathbb
-P_t(E)=\operatorname{Tr}\!\bigl(\rho_t \widehat P_E(t)\bigr),
-\qquad
-\rho_t\!\mid_E
-=
-\frac{\widehat P_E(t)\rho_t \widehat P_E(t)}
-{\operatorname{Tr}(\rho_t \widehat P_E(t))}.
-```*
-\]</span></p></li>
+<li><h1
+id="for-every-event-e-in-the-finite-event-algebra-generated-by-mathcal-z_mathrmrect--mathbb-p_teoperatornametrbiglrho_t-widehat-p_etbigr-qquad-rho_tmid_e">*For
+every event <span class="math inline">\(E\)</span> in the finite event
+algebra generated by <span class="math inline">\(\mathcal
+Z_{\mathrm{rec}}(t)\)</span>, $$ \mathbb
+P_t(E)=\operatorname{Tr}!\bigl(\rho_t \widehat P_E(t)\bigr), \qquad
+\rho_t!\mid_E</h1>
+<p>\frac{\widehat P_E(t)\rho_t \widehat P_E(t)}
+{\operatorname{Tr}(\rho_t \widehat P_E(t))}. $$*</p></li>
 <li><p><em>If no accepted repair between <span
 class="math inline">\(t\)</span> and <span
 class="math inline">\(t+1\)</span> touches the support of <span
 class="math inline">\(\widehat P_E(t)\)</span>, then the next read of
 <span class="math inline">\(E\)</span> has probability <span
 class="math inline">\(1\)</span>.</em></p></li>
-<li><p>*If <span class="math inline">\(\{P_a(t)\}_a\)</span> is an
-approximate record presentation with modulus <span
-class="math inline">\(\delta_{\mathrm{rec}}(t)\)</span>, then</p>
-<p><span class="math display">\[\|[P_a(t),P_b(t)]\|\le
-4\,\delta_{\mathrm{rec}}(t)\]</span></p>
-<p>for all declared record projectors <span
+<li><h2
+id="if-p_at_a-is-an-approximate-record-presentation-with-modulus-delta_mathrmrect-then--p_atp_btle-4delta_mathrmrect--for-all-declared-record-projectors-p_atp_bt-moreover-for-every-declared-elementary-record-event-a-and-every-restored-accessible-state-widetilderho_t-satisfying--widetilderho_t-rho_t_1le-varepsilon--one-has--bigl-operatornametrbiglwidetilderho_t-p_atbigr">*If
+<span class="math inline">\(\{P_a(t)\}_a\)</span> is an approximate
+record presentation with modulus <span
+class="math inline">\(\delta_{\mathrm{rec}}(t)\)</span>, then <span
+class="math display">\[
+\|[P_a(t),P_b(t)]\|\le 4\,\delta_{\mathrm{rec}}(t)
+\]</span> for all declared record projectors <span
 class="math inline">\(P_a(t),P_b(t)\)</span>. Moreover, for every
 declared elementary record event <span class="math inline">\(a\)</span>
 and every restored accessible state <span
-class="math inline">\(\widetilde\rho_t\)</span> satisfying</p>
-<p><span class="math display">\[\|\widetilde\rho_t-\rho_t\|_1\le
-\varepsilon,\]</span></p>
-<p>one has</p>
-<p><span class="math display">\[\Bigl|
-\operatorname{Tr}\!\bigl(\widetilde\rho_t P_a(t)\bigr)
--
-\operatorname{Tr}\!\bigl(\rho_t \widehat P_a(t)\bigr)
-\Bigr|
-\le
-\varepsilon+\delta_{\mathrm{rec}}(t).
-```*
-\]</span></p></li>
+class="math inline">\(\widetilde\rho_t\)</span> satisfying <span
+class="math display">\[
+\|\widetilde\rho_t-\rho_t\|_1\le \varepsilon,
+\]</span> one has $$ \Bigl| \operatorname{Tr}!\bigl(\widetilde\rho_t
+P_a(t)\bigr)</h2>
+<p>\operatorname{Tr}!\bigl(\rho_t \widehat P_a(t)\bigr) \Bigr| \le
+\varepsilon+\delta_{\mathrm{rec}}(t). $$*</p></li>
 </ol>
 </div>
 
@@ -2025,34 +1984,26 @@ conditioning on <span class="math inline">\(E\)</span>, the state lies
 in the range of <span class="math inline">\(\widehat P_E(t)\)</span>, so
 the next read of the same event has probability <span
 class="math inline">\(1\)</span>. This gives (3).</p>
-<p>For (4), write</p>
-<p><span class="math display">\[[P_a(t),P_b(t)]
-=
-[P_a(t)-\widehat P_a(t),P_b(t)]
-+
-[\widehat P_a(t),P_b(t)-\widehat P_b(t)],\]</span></p>
-<p>because <span class="math inline">\([\widehat P_a(t),\widehat
+<h1 id="for-4-write--p_atp_bt">For (4), write $$ [P_a(t),P_b(t)]</h1>
+<h2
+id="p_at-widehat-p_atp_bt--widehat-p_atp_bt-widehat-p_bt--because-widehat-p_atwidehat-p_bt0-since-every-projector-has-operator-norm-at-most-1--p_atp_bt-le-2p_at-widehat-p_at--2p_bt-widehat-p_bt-le-4delta_mathrmrect--for-the-probability-bound--bigl-operatornametrbiglwidetilderho_t-p_atbigr">[P_a(t)-\widehat
+P_a(t),P_b(t)] + [\widehat P_a(t),P_b(t)-\widehat P_b(t)], $$ because
+<span class="math inline">\([\widehat P_a(t),\widehat
 P_b(t)]=0\)</span>. Since every projector has operator norm at most
-<span class="math inline">\(1\)</span>,</p>
-<p><span class="math display">\[\|[P_a(t),P_b(t)]\|
+<span class="math inline">\(1\)</span>, <span class="math display">\[
+\|[P_a(t),P_b(t)]\|
 \le
 2\|P_a(t)-\widehat P_a(t)\|
 +
 2\|P_b(t)-\widehat P_b(t)\|
 \le
-4\,\delta_{\mathrm{rec}}(t).\]</span></p>
-<p>For the probability bound,</p>
-<p><span class="math display">\[\Bigl|
-\operatorname{Tr}\!\bigl(\widetilde\rho_t P_a(t)\bigr)
--
-\operatorname{Tr}\!\bigl(\rho_t \widehat P_a(t)\bigr)
-\Bigr|
-\le
-\Bigl|\operatorname{Tr}\!\bigl((\widetilde\rho_t-\rho_t)P_a(t)\bigr)\Bigr|
-+
-\Bigl|\operatorname{Tr}\!\bigl(\rho_t(P_a(t)-\widehat
-P_a(t))\bigr)\Bigr|.\]</span></p>
-<p>The first term is bounded by <span
+4\,\delta_{\mathrm{rec}}(t).
+\]</span> For the probability bound, $$ \Bigl|
+\operatorname{Tr}!\bigl(\widetilde\rho_t P_a(t)\bigr)</h2>
+<p>\operatorname{Tr}!\bigl(\rho_t \widehat P_a(t)\bigr) \Bigr| \le
+\Bigl|\operatorname{Tr}!\bigl((\widetilde\rho_t-\rho_t)P_a(t)\bigr)\Bigr|
++ \Bigl|\operatorname{Tr}!\bigl(\rho_t(P_a(t)-\widehat
+P_a(t))\bigr)\Bigr|. $$ The first term is bounded by <span
 class="math inline">\(\|\widetilde\rho_t-\rho_t\|_1\|P_a(t)\|\le
 \varepsilon\)</span>, and the second by <span
 class="math inline">\(\|\rho_t\|_1\|P_a(t)-\widehat P_a(t)\|\le
@@ -2083,18 +2034,17 @@ observer-facing approximate consensus.</p>
 <div id="thm:noisy-fair-block-consensus" class="theorem">
 
 <p><strong>Theorem 44</strong> (Global noisy approximate consensus under
-fair-block contraction). *Let <span
+fair-block contraction). <em>Let <span
 class="math inline">\((Q,d_Q)\)</span> be the observer-facing quotient
 state space of a fixed exported OPH patch federation, and let <span
 class="math inline">\(\mathcal N\subset Q\)</span> be the exact quotient
 normal-form set supplied by the finite repair theorem on that quotient.
-Define</p>
-<p><span class="math display">\[D(q):=d_Q(q,\mathcal
-N)=\inf_{n\in\mathcal N}d_Q(q,n).\]</span></p>
-<p>Let <span class="math inline">\(q_{t+1}=\widetilde
+Define <span class="math display">\[
+D(q):=d_Q(q,\mathcal N)=\inf_{n\in\mathcal N}d_Q(q,n).
+\]</span> Let <span class="math inline">\(q_{t+1}=\widetilde
 T_{i_t,t}(q_t)\)</span> be a noisy asynchronous repair process adapted
 to a filtration <span class="math inline">\((\mathcal F_t)_t\)</span>.
-Assume:*</p>
+Assume:</em></p>
 <ol type="1">
 <li><p><em><strong>Exact quotient target.</strong> The ideal repair
 relation on <span class="math inline">\(Q\)</span> has the exact OPH
@@ -2102,111 +2052,102 @@ normal-form package: finite descent, quotient-local confluence, and
 repair completeness, so every fixed initial quotient state has a
 schedule-independent exact normal form in <span
 class="math inline">\(\mathcal N\)</span>.</em></p></li>
-<li><p>*<strong>Fair asynchronous blocks.</strong> There are stopping
-times</p>
-<p><span
-class="math display">\[0=\tau_0&lt;\tau_1&lt;\tau_2&lt;\cdots\]</span></p>
-<p>such that each interval <span
+<li><p><em><strong>Fair asynchronous blocks.</strong> There are stopping
+times <span class="math display">\[
+0=\tau_0&lt;\tau_1&lt;\tau_2&lt;\cdots
+\]</span> such that each interval <span
 class="math inline">\([\tau_m,\tau_{m+1})\)</span> contains enough local
 repairs to expose and act on every active mismatch class required by the
 exact local-diamond and repair-completeness certificate, with uniformly
 bounded length <span class="math inline">\(\tau_{m+1}-\tau_m\le
-L\)</span>. Write the noisy block map as</p>
-<p><span class="math display">\[\widetilde B_m
+L\)</span>. Write the noisy block map as <span class="math display">\[
+\widetilde B_m
 :=
 \widetilde T_{i_{\tau_{m+1}-1},\,\tau_{m+1}-1}
 \circ\cdots\circ
 \widetilde T_{i_{\tau_m},\,\tau_m}.
-```*
-\]</span></p></li>
-<li><p>*<strong>Uniform block contraction toward normal form.</strong>
-There are constants <span
+\]</span></em></p></li>
+<li><p><em><strong>Uniform block contraction toward normal
+form.</strong> There are constants <span
 class="math inline">\(0&lt;\lambda&lt;1\)</span> and <span
 class="math inline">\(\varepsilon\ge0\)</span> such that, for every
 block <span class="math inline">\(m\)</span> and every reachable
 quotient state <span class="math inline">\(q\)</span> at time <span
-class="math inline">\(\tau_m\)</span>,</p>
-<p><span class="math display">\[\mathbb E\!\left[
+class="math inline">\(\tau_m\)</span>, <span class="math display">\[
+\mathbb E\!\left[
 D\!\left(\widetilde B_m(q)\right)
 \mid \mathcal F_{\tau_m}
 \right]
 \le
 \lambda D(q)+\varepsilon.
-```*
-\]</span></p></li>
-<li><p>*<strong>Controlled within-block excursions.</strong> There are
-constants <span class="math inline">\(A\ge1\)</span> and <span
+\]</span></em></p></li>
+<li><p><em><strong>Controlled within-block excursions.</strong> There
+are constants <span class="math inline">\(A\ge1\)</span> and <span
 class="math inline">\(\beta\ge0\)</span> such that, for every <span
-class="math inline">\(t\in[\tau_m,\tau_{m+1})\)</span>,</p>
-<p><span class="math display">\[\mathbb E\!\left[
+class="math inline">\(t\in[\tau_m,\tau_{m+1})\)</span>, <span
+class="math display">\[
+\mathbb E\!\left[
 D(q_t)\mid \mathcal F_{\tau_m}
 \right]
 \le
 A\,D(q_{\tau_m})+\beta.
-```*
-\]</span></p></li>
+\]</span></em></p></li>
 </ol>
-<p>*Then, at fair-block times,</p>
-<p><span class="math display">\[\mathbb E[D(q_{\tau_m})]
+<p><em>Then, at fair-block times, <span class="math display">\[
+\mathbb E[D(q_{\tau_m})]
 \le
 \lambda^mD(q_0)
 +
-\frac{1-\lambda^m}{1-\lambda}\,\varepsilon,\]</span></p>
-<p>and hence</p>
-<p><span class="math display">\[\limsup_{m\to\infty}\mathbb
-E[D(q_{\tau_m})]
+\frac{1-\lambda^m}{1-\lambda}\,\varepsilon,
+\]</span> and hence <span class="math display">\[
+\limsup_{m\to\infty}\mathbb E[D(q_{\tau_m})]
 \le
-\frac{\varepsilon}{1-\lambda}.\]</span></p>
-<p>At all intermediate asynchronous times,</p>
-<p><span class="math display">\[\limsup_{t\to\infty}\mathbb E[D(q_t)]
+\frac{\varepsilon}{1-\lambda}.
+\]</span> At all intermediate asynchronous times, <span
+class="math display">\[
+\limsup_{t\to\infty}\mathbb E[D(q_t)]
 \le
-A\,\frac{\varepsilon}{1-\lambda}+\beta.\]</span></p>
-<p>Thus the noisy asynchronous OPH repair process converges in
+A\,\frac{\varepsilon}{1-\lambda}+\beta.
+\]</span> Thus the noisy asynchronous OPH repair process converges in
 expectation to a controlled tube around the exact quotient normal-form
 set. If <span class="math inline">\(\varepsilon=\beta=0\)</span>, then
 <span class="math inline">\(D(q_t)\to0\)</span> in <span
 class="math inline">\(L^1\)</span>, hence also in probability, along the
-full asynchronous run.*</p>
+full asynchronous run.</em></p>
 </div>
 
 <div class="proof">
 
-<p><em>Proof.</em> Let <span
-class="math inline">\(D_m:=D(q_{\tau_m})\)</span>. Assumption (G3),
-applied to the realized state <span
-class="math inline">\(q_{\tau_m}\)</span>, gives</p>
-<p><span class="math display">\[\mathbb E[D_{m+1}\mid \mathcal
-F_{\tau_m}]
+<h1
+id="proof-let-d_mdq_tau_m-assumption-g3-applied-to-the-realized-state-q_tau_m-gives--mathbb-ed_m1mid-mathcal-f_tau_m-le-lambda-d_mvarepsilon--taking-expectations--mathbb-ed_m1-le-lambdamathbb-ed_mvarepsilon--iterating-the-scalar-recursion-gives--mathbb-ed_m-le-lambdamdq_0--varepsilonsum_r0m-1lambdar"><em>Proof.</em>
+Let <span class="math inline">\(D_m:=D(q_{\tau_m})\)</span>. Assumption
+(G3), applied to the realized state <span
+class="math inline">\(q_{\tau_m}\)</span>, gives <span
+class="math display">\[
+\mathbb E[D_{m+1}\mid \mathcal F_{\tau_m}]
 \le
-\lambda D_m+\varepsilon.\]</span></p>
-<p>Taking expectations,</p>
-<p><span class="math display">\[\mathbb E[D_{m+1}]
+\lambda D_m+\varepsilon.
+\]</span> Taking expectations, <span class="math display">\[
+\mathbb E[D_{m+1}]
 \le
-\lambda\,\mathbb E[D_m]+\varepsilon.\]</span></p>
-<p>Iterating the scalar recursion gives</p>
-<p><span class="math display">\[\mathbb E[D_m]
-\le
-\lambda^mD(q_0)
-+
-\varepsilon\sum_{r=0}^{m-1}\lambda^r
-=
-\lambda^mD(q_0)
-+
-\frac{1-\lambda^m}{1-\lambda}\varepsilon.\]</span></p>
-<p>Taking <span class="math inline">\(m\to\infty\)</span> yields the
-fair-block limsup bound. For <span
+\lambda\,\mathbb E[D_m]+\varepsilon.
+\]</span> Iterating the scalar recursion gives $$ \mathbb E[D_m] \le
+\lambda^mD(q_0) + \varepsilon\sum_{r=0}^{m-1}\lambda^r</h1>
+<p>\lambda^mD(q_0) + \frac{1-\lambda^m}{1-\lambda}\varepsilon. $$ Taking
+<span class="math inline">\(m\to\infty\)</span> yields the fair-block
+limsup bound. For <span
 class="math inline">\(t\in[\tau_m,\tau_{m+1})\)</span>, Assumption (G4)
-gives</p>
-<p><span class="math display">\[\mathbb E[D(q_t)]
+gives <span class="math display">\[
+\mathbb E[D(q_t)]
 \le
-A\,\mathbb E[D(q_{\tau_m})]+\beta.\]</span></p>
-<p>Substitution of the fair-block estimate and then taking the limsup
-over all intermediate times gives</p>
-<p><span class="math display">\[\limsup_{t\to\infty}\mathbb E[D(q_t)]
+A\,\mathbb E[D(q_{\tau_m})]+\beta.
+\]</span> Substitution of the fair-block estimate and then taking the
+limsup over all intermediate times gives <span class="math display">\[
+\limsup_{t\to\infty}\mathbb E[D(q_t)]
 \le
-A\,\frac{\varepsilon}{1-\lambda}+\beta.\]</span></p>
-<p>If <span class="math inline">\(\varepsilon=\beta=0\)</span>, then
-<span class="math inline">\(\mathbb
+A\,\frac{\varepsilon}{1-\lambda}+\beta.
+\]</span> If <span class="math inline">\(\varepsilon=\beta=0\)</span>,
+then <span class="math inline">\(\mathbb
 E[D(q_{\tau_m})]\le\lambda^mD(q_0)\to0\)</span>. Since <span
 class="math inline">\(D\ge0\)</span>, convergence in expectation to zero
 implies convergence in probability at block times. Assumption (G4) then
@@ -2219,8 +2160,8 @@ along the full asynchronous run. ◻</p>
 <div id="cor:approx-schedule-independence" class="corollary">
 
 <p><strong>Corollary 45</strong> (Approximate observer-facing schedule
-independence). *Let <span class="math inline">\(M:Q\to Y\)</span> be an
-observer-facing readout into a metric space <span
+independence). <em>Let <span class="math inline">\(M:Q\to Y\)</span> be
+an observer-facing readout into a metric space <span
 class="math inline">\((Y,d_Y)\)</span>, and suppose <span
 class="math inline">\(M\)</span> is <span
 class="math inline">\(L_M\)</span>-Lipschitz. Fix an exact sector <span
@@ -2229,37 +2170,35 @@ singleton <span class="math inline">\(\mathcal
 N_\zeta=\{n_\zeta\}\)</span>, and apply
 Theorem <a href="#thm:noisy-fair-block-consensus" data-reference-type="ref" data-reference="thm:noisy-fair-block-consensus">44</a>
 on that sector, so that <span
-class="math inline">\(D(q)=d_Q(q,n_\zeta)\)</span>. Then</p>
-<p><span class="math display">\[\limsup_{t\to\infty}
+class="math inline">\(D(q)=d_Q(q,n_\zeta)\)</span>. Then <span
+class="math display">\[
+\limsup_{t\to\infty}
 \mathbb E\!\left[
 d_Y(M(q_t),M(n_\zeta))
 \right]
 \le
-L_M\left(A\,\frac{\varepsilon}{1-\lambda}+\beta\right).\]</span></p>
-<p>For two noisy asynchronous schedules <span
+L_M\left(A\,\frac{\varepsilon}{1-\lambda}+\beta\right).
+\]</span> For two noisy asynchronous schedules <span
 class="math inline">\(q_t\)</span> and <span
 class="math inline">\(q&#39;_t\)</span> started in the same exact
-singleton sector and satisfying the same certificate,</p>
-<p><span class="math display">\[\limsup_{t\to\infty}
+singleton sector and satisfying the same certificate, <span
+class="math display">\[
+\limsup_{t\to\infty}
 \mathbb E\!\left[
 d_Y(M(q_t),M(q&#39;_t))
 \right]
 \le
 2L_M\left(A\,\frac{\varepsilon}{1-\lambda}+\beta\right).
-```*
+\]</span></em></p>
+</div>
 
-&lt;/div&gt;
+<div class="proof">
 
-&lt;div class=&quot;proof&quot;&gt;
-
-*Proof.* The Lipschitz condition gives
-``` math
-d_Y(M(q_t),M(n_\zeta))
-\le
-L_M d_Q(q_t,n_\zeta)
-=
-L_M D(q_t).\]</span></p>
-<p>The first bound follows from
+<h1
+id="proof-the-lipschitz-condition-gives--d_ymq_tmn_zeta-le-l_m-d_qq_tn_zeta"><em>Proof.</em>
+The Lipschitz condition gives $$ d_Y(M(q_t),M(n_\zeta)) \le L_M
+d_Q(q_t,n_\zeta)</h1>
+<p>L_M D(q_t). $$ The first bound follows from
 Theorem <a href="#thm:noisy-fair-block-consensus" data-reference-type="ref" data-reference="thm:noisy-fair-block-consensus">44</a>.
 The two-schedule bound follows from the triangle inequality through
 <span class="math inline">\(M(n_\zeta)\)</span> and applying the first
@@ -2269,18 +2208,18 @@ estimate to both schedules. ◻</p>
 <div id="cor:high-prob-noisy-tube" class="corollary">
 
 <p><strong>Corollary 46</strong> (High-probability noisy consensus
-tube). *Assume the block-distance process also admits the pathwise
-decomposition</p>
-<p><span class="math display">\[D_{m+1}
+tube). <em>Assume the block-distance process also admits the pathwise
+decomposition <span class="math display">\[
+D_{m+1}
 \le
 \lambda D_m+\varepsilon+\xi_{m+1},
 \qquad
 \mathbb E[\xi_{m+1}\mid\mathcal F_{\tau_m}]=0,
 \qquad
-|\xi_{m+1}|\le b\]</span></p>
-<p>almost surely. Then, for every <span
-class="math inline">\(a&gt;0\)</span>,</p>
-<p><span class="math display">\[\Pr\!\left[
+|\xi_{m+1}|\le b
+\]</span> almost surely. Then, for every <span
+class="math inline">\(a&gt;0\)</span>, <span class="math display">\[
+\Pr\!\left[
 D_m&gt;
 \lambda^mD_0
 +
@@ -2292,33 +2231,32 @@ a
 \exp\!\left(
 -\frac{a^2(1-\lambda^2)}{2b^2}
 \right).
-```*
+\]</span></em></p>
+</div>
 
-&lt;/div&gt;
+<div class="proof">
 
-&lt;div class=&quot;proof&quot;&gt;
-
-*Proof.* Unrolling the recursion gives
-``` math
+<p><em>Proof.</em> Unrolling the recursion gives <span
+class="math display">\[
 D_m
 \le
 \lambda^mD_0
 +
 \frac{1-\lambda^m}{1-\lambda}\varepsilon
 +
-\sum_{r=1}^{m}\lambda^{m-r}\xi_r.\]</span></p>
-<p>The final term is a weighted martingale sum with increments bounded
-by <span
+\sum_{r=1}^{m}\lambda^{m-r}\xi_r.
+\]</span> The final term is a weighted martingale sum with increments
+bounded by <span
 class="math inline">\(|\lambda^{m-r}\xi_r|\le\lambda^{m-r}b\)</span>.
-Azuma–Hoeffding gives</p>
-<p><span class="math display">\[\Pr\!\left[
+Azuma–Hoeffding gives <span class="math display">\[
+\Pr\!\left[
 \sum_{r=1}^{m}\lambda^{m-r}\xi_r&gt;a
 \right]
 \le
 \exp\!\left(
 -\frac{a^2}{2\sum_{r=1}^{m}\lambda^{2(m-r)}b^2}
-\right).\]</span></p>
-<p>Since <span
+\right).
+\]</span> Since <span
 class="math inline">\(\sum_{r=1}^{m}\lambda^{2(m-r)}\le(1-\lambda^2)^{-1}\)</span>,
 substitution yields the claimed bound. ◻</p>
 </div>
@@ -2326,23 +2264,23 @@ substitution yields the claimed bound. ◻</p>
 <div id="prop:finite-fair-block-certificate" class="proposition">
 
 <p><strong>Proposition 47</strong> (Finite fair-block contraction
-certificate). *Let <span class="math inline">\(Q\)</span> be finite, let
-<span class="math inline">\(\mathfrak B_{\mathrm{fair}}\)</span> be a
-finite list of noisy fair-block types, and let <span
+certificate). <em>Let <span class="math inline">\(Q\)</span> be finite,
+let <span class="math inline">\(\mathfrak B_{\mathrm{fair}}\)</span> be
+a finite list of noisy fair-block types, and let <span
 class="math inline">\(K_B(q,q&#39;)\)</span> be the Markov kernel
 induced by block type <span class="math inline">\(B\)</span>. If there
 are constants <span class="math inline">\(0&lt;\lambda&lt;1\)</span> and
-<span class="math inline">\(\varepsilon\ge0\)</span> such that</p>
-<p><span class="math display">\[\sum_{q&#39;\in Q}K_B(q,q&#39;)D(q&#39;)
+<span class="math inline">\(\varepsilon\ge0\)</span> such that <span
+class="math display">\[
+\sum_{q&#39;\in Q}K_B(q,q&#39;)D(q&#39;)
 \le
 \lambda D(q)+\varepsilon
 \qquad
-\forall q\in Q,\quad \forall B\in\mathfrak
-B_{\mathrm{fair}},\]</span></p>
-<p>then Assumption (G3) of
+\forall q\in Q,\quad \forall B\in\mathfrak B_{\mathrm{fair}},
+\]</span> then Assumption (G3) of
 Theorem <a href="#thm:noisy-fair-block-consensus" data-reference-type="ref" data-reference="thm:noisy-fair-block-consensus">44</a>
 holds for any run whose fair blocks are drawn from <span
-class="math inline">\(\mathfrak B_{\mathrm{fair}}\)</span>.*</p>
+class="math inline">\(\mathfrak B_{\mathrm{fair}}\)</span>.</em></p>
 </div>
 
 <div class="proof">
@@ -2360,8 +2298,8 @@ reachable states and fair-block types. ◻</p>
 constants.</h4>
 <p>For a finite exported packet net,
 Proposition <a href="#prop:finite-fair-block-certificate" data-reference-type="ref" data-reference="prop:finite-fair-block-certificate">47</a>
-gives the practical certificate path:</p>
-<p><span class="math display">\[\text{finite quotient }Q
+gives the practical certificate path: <span class="math display">\[
+\text{finite quotient }Q
 \Rightarrow
 \text{exact normal forms }\mathcal N
 \Rightarrow
@@ -2369,12 +2307,12 @@ gives the practical certificate path:</p>
 \Rightarrow
 \text{noisy fair-block kernels }K_B
 \Rightarrow
-(\lambda,\varepsilon)\text{ certificate}.\]</span></p>
-<p>Here <span class="math inline">\(\mathcal N\)</span> is the exact
-quotient normal-form set, <span class="math inline">\(D(q)\)</span> is
-observer-facing residual distance to that set, <span
-class="math inline">\(\lambda\)</span> is the net contraction produced
-by one completed fair block, <span
+(\lambda,\varepsilon)\text{ certificate}.
+\]</span> Here <span class="math inline">\(\mathcal N\)</span> is the
+exact quotient normal-form set, <span
+class="math inline">\(D(q)\)</span> is observer-facing residual distance
+to that set, <span class="math inline">\(\lambda\)</span> is the net
+contraction produced by one completed fair block, <span
 class="math inline">\(\varepsilon\)</span> is the per-block irreducible
 local recovery / record / readout / calibration / environmental noise,
 <span class="math inline">\(A\)</span> bounds transient within-block
@@ -2410,29 +2348,24 @@ module</strong>: a subgraph that maintains a stable record algebra and
 uses its output law to predict its boundary’s future behavior.</p>
 <div id="def:robustness" class="definition">
 
-<p><strong>Definition 48</strong> (Schedule robustness). *Fix
-distributions <span class="math inline">\(\mu\)</span> over initial
-conditions and <span class="math inline">\(\nu\)</span> over
-asynchronous schedules, and a gauge-invariant observable <span
-class="math inline">\(M\)</span>. For a law <span
-class="math inline">\(\lambda\)</span>, define</p>
-<p><span class="math display">\[\mathcal{R}_M(\lambda)
-:=
-\Pr_{s\sim\mu,\;\sigma,\tau\sim\nu}
-\!\left[
-M\bigl(\operatorname{nf}^{\sigma}_\lambda(s)\bigr)
-=
-M\bigl(\operatorname{nf}^{\tau}_\lambda(s)\bigr)
-\right].\]</span></p>
-<p>If
+<h1
+id="definition-48-schedule-robustness-fix-distributions-mu-over-initial-conditions-and-nu-over-asynchronous-schedules-and-a-gauge-invariant-observable-m-for-a-law-lambda-define--mathcalrmlambda--prssimmusigmatausimnu-left-mbigloperatornamenfsigma_lambdasbigr"><strong>Definition
+48</strong> (Schedule robustness). *Fix distributions <span
+class="math inline">\(\mu\)</span> over initial conditions and <span
+class="math inline">\(\nu\)</span> over asynchronous schedules, and a
+gauge-invariant observable <span class="math inline">\(M\)</span>. For a
+law <span class="math inline">\(\lambda\)</span>, define $$
+\mathcal{R}<em>M(\lambda) := \Pr</em>{s\sim\mu,;\sigma,\tau\sim\nu}
+!\left[ M\bigl(\operatorname{nf}^{\sigma}_\lambda(s)\bigr)</h1>
+<p>M\bigl(\operatorname{nf}^{\tau}_\lambda(s)\bigr) \right]. $$ If
 Theorem <a href="#thm:confluence" data-reference-type="ref" data-reference="thm:confluence">18</a>
 holds for <span class="math inline">\(\lambda\)</span>, then <span
-class="math inline">\(\mathcal{R}_M(\lambda)=1\)</span>.*</p>
+class="math inline">\(\mathcal{R}_M(\lambda)=1\)</span>.</p>
 </div>
 
 <div id="def:yield" class="definition">
 
-<p><strong>Definition 49</strong> (Observer yield). *Let <span
+<p><strong>Definition 49</strong> (Observer yield). <em>Let <span
 class="math inline">\(X_t^\lambda\)</span> denote the stationary process
 obtained by repeated local perturbation plus reconciliation under law
 <span class="math inline">\(\lambda\)</span>. For each subgraph <span
@@ -2444,16 +2377,13 @@ available, and let <span class="math inline">\(Y_U(t)\)</span> be the
 corresponding finite outcome variable induced by that record algebra.
 Then <span class="math inline">\(U\)</span> is <span
 class="math inline">\((\eta,\varepsilon,h)\)</span>-observer-like if it
-is record-stable:</p>
-<p><span
-class="math display">\[d_{\mathrm{TV}}\!\bigl(\operatorname{Law}(Y_U(t+h)),\operatorname{Law}(Y_U(t))\bigr)\le
-\eta,\]</span></p>
-<p>and predictive:</p>
-<p><span class="math display">\[I\bigl(Y_U(t);\; X_{\partial
-U,\,t+1:t+h}^\lambda\bigr)\ge\varepsilon.\]</span></p>
-<p>Define</p>
-<p><span
-class="math display">\[\mathcal{O}_{\eta,\varepsilon,h}(\lambda)
+is record-stable: <span class="math display">\[
+d_{\mathrm{TV}}\!\bigl(\operatorname{Law}(Y_U(t+h)),\operatorname{Law}(Y_U(t))\bigr)\le
+\eta,
+\]</span> and predictive: <span class="math display">\[
+I\bigl(Y_U(t);\; X_{\partial U,\,t+1:t+h}^\lambda\bigr)\ge\varepsilon.
+\]</span> Define <span class="math display">\[
+\mathcal{O}_{\eta,\varepsilon,h}(\lambda)
 :=
 \mathbb{E}\!\left[
 \#\left\{
@@ -2461,55 +2391,49 @@ U\subseteq V:
 U \text{ is } (\eta,\varepsilon,h)\text{-observer-like}
 \right\}
 \right].
-```*
+\]</span></em></p>
+</div>
 
-&lt;/div&gt;
+<div id="def:fitness" class="definition">
 
-&lt;div id=&quot;def:fitness&quot; class=&quot;definition&quot;&gt;
-
-**Definition 50** (Law fitness). *Let $`K(\lambda)`$ be a
-description-length penalty. Define
-``` math
+<p><strong>Definition 50</strong> (Law fitness). <em>Let <span
+class="math inline">\(K(\lambda)\)</span> be a description-length
+penalty. Define <span class="math display">\[
 f(\lambda) = \alpha\,\mathcal{R}_M(\lambda) +
-\beta\,\mathcal{O}_{\eta,\varepsilon,h}(\lambda) -
-\gamma\,K(\lambda),\]</span></p>
-<p>with <span
-class="math inline">\(\alpha,\beta,\gamma&gt;0\)</span>.*</p>
+\beta\,\mathcal{O}_{\eta,\varepsilon,h}(\lambda) - \gamma\,K(\lambda),
+\]</span> with <span
+class="math inline">\(\alpha,\beta,\gamma&gt;0\)</span>.</em></p>
 </div>
 
 <div id="thm:replicator" class="theorem">
 
 <p><strong>Theorem 51</strong> (Replicator monotonicity on law space).
-*Let <span
+<em>Let <span
 class="math inline">\(\Lambda=\{\lambda_1,\dots,\lambda_m\}\)</span> be
 candidate laws with population weights <span
-class="math inline">\(x_i(t)\)</span> under replicator dynamics:</p>
-<p><span class="math display">\[\dot{x}_i = x_i(f_i - \bar{f}),
+class="math inline">\(x_i(t)\)</span> under replicator dynamics: <span
+class="math display">\[
+\dot{x}_i = x_i(f_i - \bar{f}),
 \qquad
 f_i := f(\lambda_i),
 \qquad
-\bar{f} := \sum_{j=1}^m x_j f_j.\]</span></p>
-<p>Then</p>
-<p><span class="math display">\[\frac{d}{dt}\bar{f} =
-\operatorname{Var}_x(f) \ge 0.\]</span></p>
-<p>Mean fitness is nondecreasing, and strictly increasing unless all
-extant laws have the same fitness.*</p>
+\bar{f} := \sum_{j=1}^m x_j f_j.
+\]</span> Then <span class="math display">\[
+\frac{d}{dt}\bar{f} = \operatorname{Var}_x(f) \ge 0.
+\]</span> Mean fitness is nondecreasing, and strictly increasing unless
+all extant laws have the same fitness.</em></p>
 </div>
 
 <div class="proof">
 
-<p><em>Proof.</em> Direct computation:</p>
-<p><span class="math display">\[\frac{d}{dt}\bar{f}
-=
-\sum_i \dot{x}_i f_i
-=
-\sum_i x_i(f_i - \bar{f})f_i
-=
-\sum_i x_i f_i^2 - \bar{f}^2
-=
-\operatorname{Var}_x(f) \ge 0.\]</span></p>
-<p>Equality iff all <span class="math inline">\(f_i\)</span> on the
-support of <span class="math inline">\(x\)</span> are equal. ◻</p>
+<h1 id="proof-direct-computation--fracddtbarf"><em>Proof.</em> Direct
+computation: $$ \frac{d}{dt}\bar{f}</h1>
+<h1 id="sum_i-dotx_i-f_i">\sum_i \dot{x}_i f_i</h1>
+<h1 id="sum_i-x_if_i---barff_i">\sum_i x_i(f_i - \bar{f})f_i</h1>
+<h1 id="sum_i-x_i-f_i2---barf2">\sum_i x_i f_i^2 - \bar{f}^2</h1>
+<p>\operatorname{Var}_x(f) \ge 0. $$ Equality iff all <span
+class="math inline">\(f_i\)</span> on the support of <span
+class="math inline">\(x\)</span> are equal. ◻</p>
 </div>
 
 <p>This theorem records the monotonicity property of the meta-selection
@@ -2776,7 +2700,7 @@ All of these extensions are assumption-dependent or conjectural and are
 not part of the core theorem package of Paper 4.</p>
 <div class="center">
 
-<table>
+<div class="table-scroll"><table>
 <thead>
 <tr>
 <th style="text-align: left;"><strong>Desired statement</strong></th>
@@ -2828,7 +2752,7 @@ authentication, and <span class="math inline">\(n\ge3f+1\)</span></td>
 measured under controls</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 </div>
 
 <h1
@@ -2836,126 +2760,101 @@ id="quantumalgebraic-lift-markov-collar-splice-theorem">Quantum/Algebraic
 Lift: Markov-Collar Splice Theorem</h1>
 <p>This appendix records the algebraic splice statement used to relate
 the finite patch-net model to the OPH collar formalism.</p>
-<p>An observer is written as</p>
-<p><span
-class="math display">\[O=(P,\mathcal{A}(P),\rho,R),\]</span></p>
-<p>where <span class="math inline">\(P\)</span> is the screen patch,
-<span class="math inline">\(\mathcal{A}(P)\)</span> the local von
+<p>An observer is written as <span class="math display">\[
+O=(P,\mathcal{A}(P),\rho,R),
+\]</span> where <span class="math inline">\(P\)</span> is the screen
+patch, <span class="math inline">\(\mathcal{A}(P)\)</span> the local von
 Neumann algebra, <span class="math inline">\(\rho\)</span> the local
 state, and <span class="math inline">\(R\)</span> the record
 algebra.</p>
 <div id="thm:splice" class="theorem">
 
-<p><strong>Theorem 52</strong> (Markov-collar splice theorem, exact and
-controlled). *Suppose a collar tripartition <span
+<h1
+id="theorem-52-markov-collar-splice-theorem-exact-and-controlled-suppose-a-collar-tripartition-a-b-d-has-exact-markov-decomposition--rho_abd"><strong>Theorem
+52</strong> (Markov-collar splice theorem, exact and controlled).
+*Suppose a collar tripartition <span
 class="math inline">\(A\)</span>-<span
 class="math inline">\(B\)</span>-<span class="math inline">\(D\)</span>
-has exact Markov decomposition</p>
-<p><span class="math display">\[\rho_{ABD}
-=
-\bigoplus_{\alpha}
-p_\alpha\,
-\rho^{(\alpha)}_{A b_L^\alpha}
-\otimes
-\rho^{(\alpha)}_{b_R^\alpha D}.\]</span></p>
-<p>Let <span class="math inline">\(\sigma_{b_R^\alpha
-D&#39;}^{(\alpha)}\)</span> be any family of normalized environment
-states compatible with the same right-boundary sectors. Define</p>
-<p><span class="math display">\[\rho&#39;_{AB D&#39;}
-=
-\bigoplus_{\alpha}
-p_\alpha\,
-\rho^{(\alpha)}_{A b_L^\alpha}
-\otimes
-\sigma_{b_R^\alpha D&#39;}^{(\alpha)}.\]</span></p>
-<p>Then for every observable <span class="math inline">\(X\)</span>
-supported on <span class="math inline">\(A\cup b_L\)</span>,</p>
-<p><span class="math display">\[\operatorname{Tr}(X\rho&#39;_{AB
-D&#39;})
-=
-\operatorname{Tr}(X\rho_{ABD}).\]</span></p>
-<p>Fix one finite-dimensional collar model and let</p>
-<p><span class="math display">\[\mathfrak M_{A:B:D}
-:=
-\left\{
-\tau_{ABD}: I(A:D\mid B)_\tau=0
-\right\},\]</span></p>
-<p>with exact-Markov distance modulus</p>
-<p><span class="math display">\[\delta^{\mathrm M}_{A:B:D}(\varepsilon)
-:=
-\sup\left\{
-\inf_{\tau\in\mathfrak M_{A:B:D}}\|\omega-\tau\|_1:
-I(A:D\mid B)_\omega\le\varepsilon
-\right\}.\]</span></p>
-<p>Then</p>
-<p><span class="math display">\[\delta^{\mathrm
-M}_{A:B:D}(\varepsilon)\to0
-\qquad
-(\varepsilon\downarrow0).\]</span></p>
-<p>On a fixed faithful collar class with lower floor <span
-class="math inline">\(\lambda_\ast&gt;0\)</span>, this qualitative
-modulus can be sharpened to a collar-local rate</p>
-<p><span class="math display">\[\delta^{\mathrm
-M,\lambda_\ast}_{A:B:D}(\varepsilon)
+has exact Markov decomposition $$ \rho_{ABD}</h1>
+<h1
+id="bigoplus_alpha-p_alpha-rhoalphaa-b_lalpha-otimes-rhoalphab_ralpha-d--let-sigma_b_ralpha-dalpha-be-any-family-of-normalized-environment-states-compatible-with-the-same-right-boundary-sectors-define--rho_ab-d">\bigoplus_{\alpha}
+p_\alpha, \rho^{(\alpha)}<em>{A b_L^\alpha} \otimes
+\rho^{(\alpha)}</em>{b_R^\alpha D}. $$ Let <span
+class="math inline">\(\sigma_{b_R^\alpha D&#39;}^{(\alpha)}\)</span> be
+any family of normalized environment states compatible with the same
+right-boundary sectors. Define $$ \rho'_{AB D'}</h1>
+<h1
+id="bigoplus_alpha-p_alpha-rhoalphaa-b_lalpha-otimes-sigmab_ralpha-dalpha--then-for-every-observable-x-supported-on-acup-b_l--operatornametrxrho_ab-d">\bigoplus_{\alpha}
+p_\alpha, \rho^{(\alpha)}<em>{A b_L^\alpha} \otimes
+\sigma</em>{b_R^\alpha D'}^{(\alpha)}. $$ Then for every observable
+<span class="math inline">\(X\)</span> supported on <span
+class="math inline">\(A\cup b_L\)</span>, $$
+\operatorname{Tr}(X\rho'_{AB D'})</h1>
+<p>\operatorname{Tr}(X\rho_{ABD}). <span class="math display">\[
+Fix one finite-dimensional collar model and let
+\]</span> \mathfrak M_{A:B:D} := \left{ \tau_{ABD}: I(A:D\mid
+B)<em>\tau=0 \right}, <span class="math display">\[
+with exact-Markov distance modulus
+\]</span> \delta^{\mathrm M}</em>{A:B:D}(\varepsilon) := \sup\left{
+\inf_{\tau\in\mathfrak M_{A:B:D}}|\omega-\tau|<em>1: I(A:D\mid
+B)</em>\omega\le\varepsilon \right}. <span class="math display">\[
+Then
+\]</span> \delta^{\mathrm M}_{A:B:D}(\varepsilon)\to0 \qquad
+(\varepsilon\downarrow0). $$ On a fixed faithful collar class with lower
+floor <span class="math inline">\(\lambda_\ast&gt;0\)</span>, this
+qualitative modulus can be sharpened to a collar-local rate <span
+class="math display">\[
+\delta^{\mathrm M,\lambda_\ast}_{A:B:D}(\varepsilon)
 \le
-C_{A:B:D,\lambda_\ast}\,\varepsilon^{\theta_{A:B:D,\lambda_\ast}},\]</span></p>
-<p>by the compact real-analytic Lojasiewicz inequality applied to <span
-class="math inline">\(I(A:D\mid B)\)</span>. The constants depend on the
-fixed collar model and floor; they are not a dimension-free stability
-theorem for arbitrary tripartite systems. Hence if <span
+C_{A:B:D,\lambda_\ast}\,\varepsilon^{\theta_{A:B:D,\lambda_\ast}},
+\]</span> by the compact real-analytic Lojasiewicz inequality applied to
+<span class="math inline">\(I(A:D\mid B)\)</span>. The constants depend
+on the fixed collar model and floor; they are not a dimension-free
+stability theorem for arbitrary tripartite systems. Hence if <span
 class="math inline">\(I(A:D\mid B)_\omega\le \varepsilon\)</span> and
 <span class="math inline">\(\widetilde\omega_\varepsilon\in\mathfrak
-M_{A:B:D}\)</span> is chosen so that</p>
-<p><span
-class="math display">\[\|\omega-\widetilde\omega_\varepsilon\|_1
+M_{A:B:D}\)</span> is chosen so that <span class="math display">\[
+\|\omega-\widetilde\omega_\varepsilon\|_1
 \le
-\delta^{\mathrm M}_{A:B:D}(\varepsilon),\]</span></p>
-<p>the corresponding exact splice <span
+\delta^{\mathrm M}_{A:B:D}(\varepsilon),
+\]</span> the corresponding exact splice <span
 class="math inline">\(\widetilde\omega&#39;_\varepsilon\)</span>
-satisfies</p>
-<p><span class="math display">\[\left|
+satisfies <span class="math display">\[
+\left|
 \operatorname{Tr}(X\omega)-\operatorname{Tr}(X\widetilde\omega&#39;_\varepsilon)
 \right|
 \le
 \|X\|_\infty\,
-\delta^{\mathrm M}_{A:B:D}(\varepsilon)\]</span></p>
-<p>for every observable <span class="math inline">\(X\)</span> supported
-on <span class="math inline">\(A\cup b_L\)</span>.*</p>
-<p>*Independently, if <span class="math inline">\(I(A:D\mid B)_\omega\le
+\delta^{\mathrm M}_{A:B:D}(\varepsilon)
+\]</span> for every observable <span class="math inline">\(X\)</span>
+supported on <span class="math inline">\(A\cup b_L\)</span>.*</p>
+<h2
+id="independently-if-iadmid-b_omegale-varepsilon-then-there-exists-a-recovery-map-mathcal-r_bto-bd-such-that--left-omega_abd">*Independently,
+if <span class="math inline">\(I(A:D\mid B)_\omega\le
 \varepsilon\)</span>, then there exists a recovery map <span
-class="math inline">\(\mathcal R_{B\to BD}\)</span> such that</p>
-<p><span class="math display">\[\left\|
-\omega_{ABD}
--
-(\mathrm{id}_A\otimes \mathcal R_{B\to BD})(\omega_{AB})
-\right\|_1
-\le
-2\sqrt{1-e^{-\varepsilon}}
-\le
-2\sqrt{\varepsilon}.
-```*
+class="math inline">\(\mathcal R_{B\to BD}\)</span> such that $$ \left|
+\omega_{ABD}</h2>
+<p>(\mathrm{id}<em>A\otimes \mathcal R</em>{B\to BD})(\omega_{AB})
+\right|_1 \le 2\sqrt{1-e^{-\varepsilon}} \le 2\sqrt{\varepsilon}.
+$$</p>
+</div>
 
-&lt;/div&gt;
+<div class="proof">
 
-&lt;div class=&quot;proof&quot;&gt;
-
-*Proof.* The exact splice statement is the usual blockwise factorization
-argument:
-``` math
-\operatorname{Tr}(X\rho&#39;_{AB D&#39;})
-=
-\sum_\alpha
-p_\alpha\,
-\operatorname{Tr}\!\left(
-X\, \rho^{(\alpha)}_{A b_L^\alpha}
-\right)
-\operatorname{Tr}\!\left(\sigma_{b_R^\alpha
-D&#39;}^{(\alpha)}\right).\]</span></p>
-<p>Each right factor is normalized, so the value agrees with the same
+<h1
+id="proof-the-exact-splice-statement-is-the-usual-blockwise-factorization-argument--operatornametrxrho_ab-d"><em>Proof.</em>
+The exact splice statement is the usual blockwise factorization
+argument: $$ \operatorname{Tr}(X\rho'_{AB D'})</h1>
+<p>\sum_\alpha p_\alpha, \operatorname{Tr}!\left( X,
+\rho^{(\alpha)}<em>{A b_L^\alpha} \right)
+\operatorname{Tr}!\left(\sigma</em>{b_R^\alpha D'}^{(\alpha)}\right). $$
+Each right factor is normalized, so the value agrees with the same
 computation for <span class="math inline">\(\rho_{ABD}\)</span>.</p>
-<p>For the controlled statement, compactness of the fixed
-finite-dimensional state space and continuity of conditional mutual
-information imply <span class="math inline">\(\delta^{\mathrm
+<h1
+id="for-the-controlled-statement-compactness-of-the-fixed-finite-dimensional-state-space-and-continuity-of-conditional-mutual-information-imply-deltamathrm-m_abdvarepsilonto0-otherwise-one-could-find-a-sequence-with-iadmid-bto0-staying-a-fixed-trace-distance-away-from-every-exact-markov-state-contradicting-convergence-of-a-subsequence-to-an-exact-markov-limit-point-once-widetildeomega_varepsilon-is-chosen-the-exact-splice-identity-for-widetildeomega_varepsilon-gives--left-operatornametrxomega-operatornametrxwidetildeomega_varepsilon-right">For
+the controlled statement, compactness of the fixed finite-dimensional
+state space and continuity of conditional mutual information imply <span
+class="math inline">\(\delta^{\mathrm
 M}_{A:B:D}(\varepsilon)\to0\)</span>: otherwise one could find a
 sequence with <span class="math inline">\(I(A:D\mid B)\to0\)</span>
 staying a fixed trace distance away from every exact Markov state,
@@ -2963,18 +2862,14 @@ contradicting convergence of a subsequence to an exact Markov limit
 point. Once <span
 class="math inline">\(\widetilde\omega_\varepsilon\)</span> is chosen,
 the exact splice identity for <span
-class="math inline">\(\widetilde\omega_\varepsilon\)</span> gives</p>
-<p><span class="math display">\[\left|
-\operatorname{Tr}(X\omega)-\operatorname{Tr}(X\widetilde\omega&#39;_\varepsilon)
-\right|
-=
+class="math inline">\(\widetilde\omega_\varepsilon\)</span> gives $$
 \left|
-\operatorname{Tr}\!\left[X(\omega-\widetilde\omega_\varepsilon)\right]
-\right|
-\le
-\|X\|_\infty\,
-\delta^{\mathrm M}_{A:B:D}(\varepsilon).\]</span></p>
-<p>The final inequality is the standard Fawzi–Renner recovery
+\operatorname{Tr}(X\omega)-\operatorname{Tr}(X\widetilde\omega'_\varepsilon)
+\right|</h1>
+<p>\left|
+\operatorname{Tr}!\left[X(\omega-\widetilde\omega_\varepsilon)\right]
+\right| \le |X|<em>\infty, \delta^{\mathrm M}</em>{A:B:D}(\varepsilon).
+$$ The final inequality is the standard Fawzi–Renner recovery
 bound . ◻</p>
 </div>
 
@@ -3012,13 +2907,11 @@ class="math inline">\(q:\Sigma\to\Sigma/\Gamma\)</span> is the quotient
 by boundary redundancy and <span class="math inline">\(\overline
 T_i\)</span> is the physical quotient update, a representative-level map
 <span class="math inline">\(T_i\)</span> is only required to be a lift
-satisfying</p>
-<p><span class="math display">\[q\circ T_i=\overline T_i\circ
-q.\]</span></p>
-<p>Hence</p>
-<p><span class="math display">\[q(T_i(\gamma\cdot
-s))=q(T_i(s))\]</span></p>
-<p>for gauge-equivalent inputs. Quotient descent is therefore
+satisfying <span class="math display">\[
+q\circ T_i=\overline T_i\circ q.
+\]</span> Hence <span class="math display">\[
+q(T_i(\gamma\cdot s))=q(T_i(s))
+\]</span> for gauge-equivalent inputs. Quotient descent is therefore
 structural, while strict representative-level covariance is only
 implementation bookkeeping. The burden is not to postulate a repair
 rule, but to prove that the accepted recovery-derived local moves
@@ -3079,24 +2972,22 @@ action.</em></p>
 
 <div class="theorem">
 
-<p><strong>Theorem 55</strong> (Derived EC decomposition). *Under the
-fixed-cutoff regulator realization above, and on the ordinary or
-central-defect branch, the collar Hilbert space is</p>
-<p><span class="math display">\[\mathcal H_{B_\delta}
-=
-(\tilde{\mathcal H}_{B_L}\otimes \tilde{\mathcal H}_{B_R})^{\widehat
-K_\Sigma}
-\cong
-\bigoplus_{\alpha}
-\left(\mathcal H_{b_L^\alpha}\otimes \mathcal
-H_{b_R^\alpha}\right),\]</span></p>
-<p>and the center of the collar algebra is generated by the block
-projectors:</p>
-<p><span class="math display">\[Z(\mathcal A(B_\delta))
-=
-\bigoplus_\alpha \mathbb C\cdot \mathbf 1_\alpha.\]</span></p>
-<p>The right half-collar carries the contragredient representation
-because it sees inverse transport across the same cut.*</p>
+<h1
+id="theorem-55-derived-ec-decomposition-under-the-fixed-cutoff-regulator-realization-above-and-on-the-ordinary-or-central-defect-branch-the-collar-hilbert-space-is--mathcal-h_b_delta"><strong>Theorem
+55</strong> (Derived EC decomposition). *Under the fixed-cutoff
+regulator realization above, and on the ordinary or central-defect
+branch, the collar Hilbert space is $$ \mathcal H_{B_\delta}</h1>
+<h1
+id="tildemathcal-hb_lotimes-tildemathcal-hb_rwidehat-k_sigma-cong-bigoplus_alpha-leftmathcal-h_b_lalphaotimes-mathcal-h_b_ralpharight--and-the-center-of-the-collar-algebra-is-generated-by-the-block-projectors--zmathcal-ab_delta">(\tilde{\mathcal
+H}<em>{B_L}\otimes \tilde{\mathcal H}</em>{B_R})^{\widehat K_\Sigma}
+\cong \bigoplus_{\alpha} \left(\mathcal H_{b_L^\alpha}\otimes \mathcal
+H_{b_R^\alpha}\right), <span class="math display">\[
+and the center of the collar algebra is generated by the block
+projectors:
+\]</span> Z(\mathcal A(B_\delta))</h1>
+<p>\bigoplus_\alpha \mathbb C\cdot \mathbf 1_\alpha. $$ The right
+half-collar carries the contragredient representation because it sees
+inverse transport across the same cut.</p>
 </div>
 
 <div class="remark">
@@ -3112,61 +3003,56 @@ id="higher-gauge-replacement-on-the-genuinely-noncentral-branch">Higher-Gauge
 Replacement on the Genuinely Noncentral Branch</h2>
 <div class="proposition">
 
-<p><strong>Proposition 57</strong> (Derived higher-gauge cut datum). *On
-the genuinely noncentral branch, weak overlap gluing on a connected cut
-<span class="math inline">\(\Sigma\)</span> is encoded by a compact
-crossed module</p>
-<p><span class="math display">\[\mathbb
-K_\Sigma=(H_\Sigma\xrightarrow{\partial_\Sigma}G_\Sigma,\triangleright)\]</span></p>
-<p>with defect class</p>
-<p><span class="math display">\[q_\Sigma\in \check
-H^2(N_\Sigma,H_\Sigma\to G_\Sigma),\]</span></p>
-<p>and compact higher-gauge change system</p>
-<p><span class="math display">\[\mathcal
-T_\Sigma=C^1(N_\Sigma,H_\Sigma)\rtimes C^0(N_\Sigma,G_\Sigma).
-```*
+<p><strong>Proposition 57</strong> (Derived higher-gauge cut datum).
+<em>On the genuinely noncentral branch, weak overlap gluing on a
+connected cut <span class="math inline">\(\Sigma\)</span> is encoded by
+a compact crossed module <span class="math display">\[
+\mathbb
+K_\Sigma=(H_\Sigma\xrightarrow{\partial_\Sigma}G_\Sigma,\triangleright)
+\]</span> with defect class <span class="math display">\[
+q_\Sigma\in \check H^2(N_\Sigma,H_\Sigma\to G_\Sigma),
+\]</span> and compact higher-gauge change system <span
+class="math display">\[
+\mathcal T_\Sigma=C^1(N_\Sigma,H_\Sigma)\rtimes C^0(N_\Sigma,G_\Sigma).
+\]</span></em></p>
+</div>
 
-&lt;/div&gt;
+<div class="theorem">
 
-&lt;div class=&quot;theorem&quot;&gt;
-
-**Theorem 58** (Higher-gauge EC decomposition and defect transport). *On
-the genuinely noncentral branch,
-``` math
-\mathcal H_{B_\delta}^{2g}
-=
-(\tilde{\mathcal H}_{B_L}\otimes \tilde{\mathcal H}_{B_R})^{\mathcal
-T_\Sigma}
-\cong
-\bigoplus_\lambda
-(\mathcal H_{b_L^\lambda}\otimes \mathcal H_{b_R^\lambda}),\]</span></p>
-<p>and</p>
-<p><span class="math display">\[Z(\mathcal A_{2g}(B_\delta))
-=
-\bigoplus_\lambda \mathbb C\cdot \mathbf 1_\lambda.\]</span></p>
-<p>Moreover the higher-gauge defect class <span
-class="math inline">\(q_\Sigma\)</span> is invariant under local
-rechartings, vanishes iff the defect is removable, and classifies
-fixed-cutoff genuinely noncentral sectors.*</p>
+<h1
+id="theorem-58-higher-gauge-ec-decomposition-and-defect-transport-on-the-genuinely-noncentral-branch--mathcal-h_b_delta2g"><strong>Theorem
+58</strong> (Higher-gauge EC decomposition and defect transport). *On
+the genuinely noncentral branch, $$ \mathcal H_{B_\delta}^{2g}</h1>
+<h1
+id="tildemathcal-hb_lotimes-tildemathcal-hb_rmathcal-t_sigma-cong-bigoplus_lambda-mathcal-h_b_llambdaotimes-mathcal-h_b_rlambda--and--zmathcal-a_2gb_delta">(\tilde{\mathcal
+H}<em>{B_L}\otimes \tilde{\mathcal H}</em>{B_R})^{\mathcal T_\Sigma}
+\cong \bigoplus_\lambda (\mathcal H_{b_L^\lambda}\otimes \mathcal
+H_{b_R^\lambda}), <span class="math display">\[
+and
+\]</span> Z(\mathcal A_{2g}(B_\delta))</h1>
+<p>\bigoplus_\lambda \mathbb C\cdot \mathbf 1_\lambda. $$ Moreover the
+higher-gauge defect class <span class="math inline">\(q_\Sigma\)</span>
+is invariant under local rechartings, vanishes iff the defect is
+removable, and classifies fixed-cutoff genuinely noncentral
+sectors.</p>
 </div>
 
 <div class="corollary">
 
-<p><strong>Corollary 59</strong> (Exact Markov adds the state
-factorization). *On either the ordinary/central branch of the previous
-theorem or the genuinely noncentral higher-gauge branch, if in
-addition</p>
-<p><span class="math display">\[I_\omega(A_\delta:D_\delta\mid
-B_\delta)=0,\]</span></p>
-<p>or one passes to the explicitly stated idealized recoverability limit
-that reduces to exact Markovity, then</p>
-<p><span class="math display">\[\rho_{A_\delta B_\delta D_\delta}
-=
-\bigoplus_\alpha p_\alpha
-\left(\rho_{A_\delta b_L^\alpha}\otimes \rho_{b_R^\alpha
-D_\delta}\right).\]</span></p>
-<p>EC therefore gives the kinematic block decomposition, while exact
-Markovity is the extra state input that gives the HJPW normal form.*</p>
+<h1
+id="corollary-59-exact-markov-adds-the-state-factorization-on-either-the-ordinarycentral-branch-of-the-previous-theorem-or-the-genuinely-noncentral-higher-gauge-branch-if-in-addition--i_omegaa_deltad_deltamid-b_delta0--or-one-passes-to-the-explicitly-stated-idealized-recoverability-limit-that-reduces-to-exact-markovity-then--rho_a_delta-b_delta-d_delta"><strong>Corollary
+59</strong> (Exact Markov adds the state factorization). *On either the
+ordinary/central branch of the previous theorem or the genuinely
+noncentral higher-gauge branch, if in addition <span
+class="math display">\[
+I_\omega(A_\delta:D_\delta\mid B_\delta)=0,
+\]</span> or one passes to the explicitly stated idealized
+recoverability limit that reduces to exact Markovity, then $$
+\rho_{A_\delta B_\delta D_\delta}</h1>
+<p>\bigoplus_\alpha p_\alpha \left(\rho_{A_\delta b_L^\alpha}\otimes
+\rho_{b_R^\alpha D_\delta}\right). $$ EC therefore gives the kinematic
+block decomposition, while exact Markovity is the extra state input that
+gives the HJPW normal form.</p>
 </div>
 
 <div id="prop:assocglue" class="proposition">
@@ -3214,7 +3100,7 @@ quotient and record-language surface.</p>
 <div id="cor:obsglue" class="corollary">
 
 <p><strong>Corollary 62</strong> (Physical observables are invariant on
-one quotient-local glued state). *Let <span
+one quotient-local glued state). <em>Let <span
 class="math inline">\(U\)</span> be a finite union collar on the
 declared fixed-cutoff branch, and let <span
 class="math inline">\(\omega_U,\omega&#39;_U\)</span> be two microscopic
@@ -3222,12 +3108,11 @@ representatives of the same quotient-local glued state from
 Proposition <a href="#prop:assocglue" data-reference-type="ref" data-reference="prop:assocglue">60</a>.
 Then every physical observable <span class="math inline">\(X\)</span> on
 the collar fixed-point / quotient-local algebra has the same expectation
-in both representatives:</p>
-<p><span
-class="math display">\[\operatorname{Tr}(X\omega_U)=\operatorname{Tr}(X\omega&#39;_U).\]</span></p>
-<p>In particular the same holds for the central sector projectors and
-for any observer-accessible record observable generated from them on
-that same declared surface.*</p>
+in both representatives: <span class="math display">\[
+\operatorname{Tr}(X\omega_U)=\operatorname{Tr}(X\omega&#39;_U).
+\]</span> In particular the same holds for the central sector projectors
+and for any observer-accessible record observable generated from them on
+that same declared surface.</em></p>
 </div>
 
 <div class="proof">
@@ -3368,20 +3253,21 @@ under partial synchrony (A1). ◻</p>
 Convergence of the OPH Repair Map</h2>
 <div id="def:oph-repair-map" class="definition">
 
-<p><strong>Definition 65</strong> (OPH Repair Map: Petz form). *Let
+<p><strong>Definition 65</strong> (OPH Repair Map: Petz form). <em>Let
 <span class="math inline">\(\sigma\in\mathcal{D}(\mathcal{H})\)</span>
 be a full-rank reference state and <span
 class="math inline">\(\mathcal{N}:\mathcal{B}(\mathcal{H})\to\mathcal{B}(\mathcal{K})\)</span>
-a quantum channel. The <em>OPH repair map</em> is</p>
-<p><span class="math display">\[\mathcal{R}_{\sigma,\mathcal{N}}(\rho)
-  := \sigma^{1/2}\,
-     \mathcal{N}^\dagger\!\bigl(
-       \mathcal{N}(\sigma)^{-1/2}\,\rho\,\mathcal{N}(\sigma)^{-1/2}
-     \bigr)
-     \,\sigma^{1/2},\]</span></p>
-<p>where <span class="math inline">\(\mathcal{N}^\dagger\)</span> is the
-adjoint channel and inverses are taken on <span
-class="math inline">\(\mathrm{supp}(\mathcal{N}(\sigma))\)</span>.*</p>
+a quantum channel. The <em>OPH repair map</em> is <span
+class="math display">\[
+\mathcal{R}_{\sigma,\mathcal{N}}(\rho)
+:= \sigma^{1/2}\,
+\mathcal{N}^\dagger\!\bigl(
+\mathcal{N}(\sigma)^{-1/2}\,\rho\,\mathcal{N}(\sigma)^{-1/2}
+\bigr)
+\,\sigma^{1/2},
+\]</span> where <span class="math inline">\(\mathcal{N}^\dagger\)</span>
+is the adjoint channel and inverses are taken on <span
+class="math inline">\(\mathrm{supp}(\mathcal{N}(\sigma))\)</span>.</em></p>
 </div>
 
 <div class="remark">
@@ -3463,84 +3349,84 @@ Fagnola–Umanità . ◻</p>
 <div id="prop:petz-contraction" class="proposition">
 
 <p><strong>Proposition 68</strong> (Analytic contraction certificate
-[Assumption-dependent]). *Suppose a declared quotient repair map <span
-class="math inline">\(T:Q\to Q\)</span> on a metric physical quotient
-<span class="math inline">\((Q,d_Q)\)</span> is strictly contractive
-with coefficient <span
-class="math inline">\(\lambda\in(0,1)\)</span>:</p>
-<p><span class="math display">\[d_Q(Tx,Ty)\le \lambda
-d_Q(x,y).\]</span></p>
-<p>Then <span class="math inline">\(T\)</span> has at most one fixed
-point. If a fixed point <span class="math inline">\(x_\star\)</span>
-exists, the ideal iterates obey <span class="math inline">\(d_Q(T^t
-x,x_\star)\le \lambda^t d_Q(x,x_\star)\)</span>. This is an analytic
-contraction condition. It is not required for the finite OPH normal-form
-theorem, where termination follows from strict Lyapunov descent of
-accepted repairs.*</p>
+[Assumption-dependent]). <em>Suppose a declared quotient repair map
+<span class="math inline">\(T:Q\to Q\)</span> on a metric physical
+quotient <span class="math inline">\((Q,d_Q)\)</span> is strictly
+contractive with coefficient <span
+class="math inline">\(\lambda\in(0,1)\)</span>: <span
+class="math display">\[
+d_Q(Tx,Ty)\le \lambda d_Q(x,y).
+\]</span> Then <span class="math inline">\(T\)</span> has at most one
+fixed point. If a fixed point <span
+class="math inline">\(x_\star\)</span> exists, the ideal iterates obey
+<span class="math inline">\(d_Q(T^t x,x_\star)\le \lambda^t
+d_Q(x,x_\star)\)</span>. This is an analytic contraction condition. It
+is not required for the finite OPH normal-form theorem, where
+termination follows from strict Lyapunov descent of accepted
+repairs.</em></p>
 </div>
 
 <div id="thm:noisy-contraction" class="theorem">
 
 <p><strong>Theorem 69</strong> (Noisy approximate repair stability
-[Contraction branch]). *Assume the contraction certificate of
+[Contraction branch]). <em>Assume the contraction certificate of
 Proposition <a href="#prop:petz-contraction" data-reference-type="ref" data-reference="prop:petz-contraction">68</a>,
 and let <span class="math inline">\(\widetilde T:Q\to Q\)</span> be an
-implemented noisy repair map satisfying</p>
-<p><span class="math display">\[d_Q(\widetilde T x,Tx)\le \varepsilon
-\qquad\text{for all }x\in Q.\]</span></p>
-<p>If <span class="math inline">\(x_\star\)</span> is the ideal fixed
-point of <span class="math inline">\(T\)</span>, then</p>
-<p><span class="math display">\[d_Q(\widetilde T^t x,x_\star)
+implemented noisy repair map satisfying <span class="math display">\[
+d_Q(\widetilde T x,Tx)\le \varepsilon
+\qquad\text{for all }x\in Q.
+\]</span> If <span class="math inline">\(x_\star\)</span> is the ideal
+fixed point of <span class="math inline">\(T\)</span>, then <span
+class="math display">\[
+d_Q(\widetilde T^t x,x_\star)
 \le
-\lambda^t d_Q(x,x_\star)+\frac{\varepsilon}{1-\lambda}.\]</span></p>
-<p>Thus the noisy branch converges only to a controlled error ball, and
-only after the contraction certificate and uniform implementation-error
-bound are supplied.*</p>
+\lambda^t d_Q(x,x_\star)+\frac{\varepsilon}{1-\lambda}.
+\]</span> Thus the noisy branch converges only to a controlled error
+ball, and only after the contraction certificate and uniform
+implementation-error bound are supplied.</em></p>
 </div>
 
 <div class="proof">
 
-<p><em>Proof.</em> The recursion</p>
-<p><span class="math display">\[d_Q(\widetilde T x,x_\star)
+<p><em>Proof.</em> The recursion <span class="math display">\[
+d_Q(\widetilde T x,x_\star)
 \le d_Q(\widetilde T x,Tx)+d_Q(Tx,Tx_\star)
-\le \varepsilon+\lambda d_Q(x,x_\star)\]</span></p>
-<p>iterates to the displayed geometric-series bound. ◻</p>
+\le \varepsilon+\lambda d_Q(x,x_\star)
+\]</span> iterates to the displayed geometric-series bound. ◻</p>
 </div>
 
 <div id="conj:spectral-gap" class="proposition">
 
 <p><strong>Proposition 70</strong> (Spectral-gap criterion
-[Model-dependent]). *Let <span class="math inline">\(\mathcal T\)</span>
-be the Markov, channel, or transfer operator induced by iterated OPH
-repair on a declared analytic realization. If <span
+[Model-dependent]). <em>Let <span class="math inline">\(\mathcal
+T\)</span> be the Markov, channel, or transfer operator induced by
+iterated OPH repair on a declared analytic realization. If <span
 class="math inline">\(\mathcal T\)</span> has stationary projection
 <span class="math inline">\(\Pi_\star\)</span> and constants <span
 class="math inline">\(C&lt;\infty\)</span>, <span
 class="math inline">\(\delta&gt;0\)</span> such that on the
-nonstationary subspace</p>
-<p><span class="math display">\[\|\mathcal T^t-\Pi_\star\|\le C
-e^{-\delta t},\]</span></p>
-<p>then the corresponding analytic channel model has exponential
+nonstationary subspace <span class="math display">\[
+\|\mathcal T^t-\Pi_\star\|\le C e^{-\delta t},
+\]</span> then the corresponding analytic channel model has exponential
 convergence. The finite OPH repair package supplies termination by
 Lyapunov descent on its declared finite state space; a spectral gap is a
 separate quantitative mixing condition for this BFT/QECC-style
-extension.*</p>
+extension.</em></p>
 </div>
 
 <div id="thm:exp-convergence" class="theorem">
 
 <p><strong>Theorem 71</strong> (Exponential Convergence [Under
 Proposition <a href="#conj:spectral-gap" data-reference-type="ref" data-reference="conj:spectral-gap">70</a>]).
-*Under
+<em>Under
 Proposition <a href="#conj:spectral-gap" data-reference-type="ref" data-reference="conj:spectral-gap">70</a>,
 for any initial analytic state <span
-class="math inline">\(\rho\)</span>,</p>
-<p><span class="math display">\[\bigl\|\mathcal
-T^t\rho-\Pi_\star\rho\bigr\|
-  \leq C\,e^{-\delta t}\bigl\|\rho-\Pi_\star\rho\bigr\|.\]</span></p>
-<p>This theorem belongs only to the spectral-gap branch. It is not a
-consequence of a bare finite overlap graph or of finite Lyapunov descent
-alone.*</p>
+class="math inline">\(\rho\)</span>, <span class="math display">\[
+\bigl\|\mathcal T^t\rho-\Pi_\star\rho\bigr\|
+\leq C\,e^{-\delta t}\bigl\|\rho-\Pi_\star\rho\bigr\|.
+\]</span> This theorem belongs only to the spectral-gap branch. It is
+not a consequence of a bare finite overlap graph or of finite Lyapunov
+descent alone.</em></p>
 </div>
 
 <h2 id="b3theorem-3-qecc-correspondence">B.3Theorem 3: QECC
@@ -3588,13 +3474,14 @@ error model–not of the bare overlap graph. ◻</p>
 <div id="def:tcert" class="definition">
 
 <p><strong>Definition 73</strong> (Topological-code realization
-certificate). *An OPH overlap network may be treated as a
-QECC/topological code only after supplying a tuple</p>
-<p><span class="math display">\[\mathsf{TCert}=
+certificate). <em>An OPH overlap network may be treated as a
+QECC/topological code only after supplying a tuple <span
+class="math display">\[
+\mathsf{TCert}=
 (K,\mathcal H_{\mathrm{phys}},\mathcal H_{\mathrm{code}},
 \partial_2,\partial_1,S_X,S_Z,\mathcal L_X,\mathcal L_Z,\mathcal
-E,\mathcal R),\]</span></p>
-<p>where <span
+E,\mathcal R),
+\]</span> where <span
 class="math inline">\(C_2\xrightarrow{\partial_2}C_1\xrightarrow{\partial_1}C_0\)</span>
 is a chain complex over <span class="math inline">\(\mathbb
 F_2\)</span>, the physical carriers live in <span
@@ -3605,30 +3492,32 @@ are stabilizer or gauge checks, <span class="math inline">\(\mathcal
 L_X,\mathcal L_Z\)</span> are logical-operator classes, <span
 class="math inline">\(\mathcal E\)</span> is a declared error family,
 and <span class="math inline">\(\mathcal R\)</span> is a recovery map or
-recovery family.*</p>
+recovery family.</em></p>
 </div>
 
 <div id="thm:tcert-distance" class="theorem">
 
 <p><strong>Theorem 74</strong> (Certified topological-code distance and
-min-cut [Assumption-dependent]). *Suppose a certificate <span
+min-cut [Assumption-dependent]). <em>Suppose a certificate <span
 class="math inline">\(\mathsf{TCert}\)</span> of
 Definition <a href="#def:tcert" data-reference-type="ref" data-reference="def:tcert">73</a>
-is supplied, with logical classes identified as</p>
-<p><span class="math display">\[\mathcal L_X\simeq H_1(K;\mathbb F_2),
+is supplied, with logical classes identified as <span
+class="math display">\[
+\mathcal L_X\simeq H_1(K;\mathbb F_2),
 \qquad
-\mathcal L_Z\simeq H^1(K;\mathbb F_2),\]</span></p>
-<p>and with boundary conditions excluding lower-weight trivial
-representatives. Then the certified distance is</p>
-<p><span class="math display">\[d=
+\mathcal L_Z\simeq H^1(K;\mathbb F_2),
+\]</span> and with boundary conditions excluding lower-weight trivial
+representatives. Then the certified distance is <span
+class="math display">\[
+d=
 \min\left\{
 \min_{\ell\in\mathcal L_X\setminus0}|\ell|,
 \min_{\ell^\star\in\mathcal L_Z\setminus0}|\ell^\star|
-\right\}.\]</span></p>
-<p>Only in geometries where this homological systole equals the relevant
-graph min-cut may one write <span
+\right\}.
+\]</span> Only in geometries where this homological systole equals the
+relevant graph min-cut may one write <span
 class="math inline">\(d=\mathrm{mincut}(G_{\mathrm{OPH}})\)</span>
-.*</p>
+.</em></p>
 </div>
 
 <div class="proof">
@@ -3658,22 +3547,22 @@ implementation.</em></p>
 <div id="thm:qecc" class="theorem">
 
 <p><strong>Theorem 76</strong> (QECC resilience under a supplied code
-certificate [Assumption-dependent]). *Assume a genuine code subspace
+certificate [Assumption-dependent]). <em>Assume a genuine code subspace
 <span class="math inline">\(\mathcal H_{\mathrm{code}}\subseteq\mathcal
 H_{\mathrm{phys}}\)</span> with projector <span
 class="math inline">\(\Pi\)</span>, and let <span
 class="math inline">\(\mathcal E_t\)</span> be the declared set of
 errors supported on fewer than <span class="math inline">\(t\)</span>
-corrupted patches or physical carriers. If</p>
-<p><span class="math display">\[\Pi E_a^\dagger E_b \Pi=\alpha_{ab}\Pi
+corrupted patches or physical carriers. If <span class="math display">\[
+\Pi E_a^\dagger E_b \Pi=\alpha_{ab}\Pi
 \qquad
-\forall E_a,E_b\in\mathcal E_t,\]</span></p>
-<p>then there exists a recovery channel correcting all errors in <span
-class="math inline">\(\mathcal E_t\)</span> . If the supplied
+\forall E_a,E_b\in\mathcal E_t,
+\]</span> then there exists a recovery channel correcting all errors in
+<span class="math inline">\(\mathcal E_t\)</span> . If the supplied
 certificate also gives distance <span class="math inline">\(d\)</span>,
 then all errors of weight <span class="math inline">\(t&lt;d/2\)</span>
 are correctable. No such resilience statement follows from the bare
-overlap graph.*</p>
+overlap graph.</em></p>
 </div>
 
 <div id="cor:qecc-inventory" class="corollary">

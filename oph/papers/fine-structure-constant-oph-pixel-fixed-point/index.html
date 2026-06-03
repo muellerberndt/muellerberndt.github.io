@@ -406,16 +406,15 @@ under the OPH outer equation.</p>
 </div>
 
 <h1 id="step-1-the-oph-starting-rule">Step 1: The OPH Starting Rule</h1>
-<p>OPH starts from a finite screen covered by observer patches. If <span
+<h1
+id="oph-starts-from-a-finite-screen-covered-by-observer-patches-if-p_1-and-p_2-overlap-then-their-induced-states-must-agree-on-the-shared-algebra--beginequation-omega_p_1_mathcal-ap_1cap-p_2">OPH
+starts from a finite screen covered by observer patches. If <span
 class="math inline">\(P_1\)</span> and <span
 class="math inline">\(P_2\)</span> overlap, then their induced states
-must agree on the shared algebra:</p>
-<p><span class="math display">\[\begin{equation}
-\omega_{P_1}|_{\mathcal A(P_1\cap P_2)}
-=
-\omega_{P_2}|_{\mathcal A(P_1\cap P_2)}.
-\label{eq:overlap}
-\end{equation}\]</span></p>
+must agree on the shared algebra: $$ \begin{equation}
+\omega_{P_1}|_{\mathcal A(P_1\cap P_2)}</h1>
+<p>\omega_{P_2}|_{\mathcal A(P_1\cap P_2)}. \label{eq:overlap}
+\end{equation} $$</p>
 <p>Informally: no observer sees the whole world. Physics is what
 survives when neighboring local descriptions can be checked against each
 other and made consistent on the parts they share.</p>
@@ -429,14 +428,14 @@ nature. It starts by asking what finite observers can compare. A
 dimensionless constant can be derived only if it is the fixed value of
 such a comparison.</p>
 <h1 id="step-2-the-pixel-variable">Step 2: The Pixel Variable</h1>
-<p>Define the local pixel ratio</p>
-<p><span class="math display">\[\begin{equation}
+<p>Define the local pixel ratio <span class="math display">\[
+\begin{equation}
 P:=\frac{a_{\mathrm{cell}}}{\ell_P^2}.
 \label{eq:Pdef}
-\end{equation}\]</span></p>
-<p>Here <span class="math inline">\(a_{\mathrm{cell}}\)</span> is the
-screen-cell area and <span class="math inline">\(\ell_P^2\)</span> is
-the Planck area.</p>
+\end{equation}
+\]</span> Here <span class="math inline">\(a_{\mathrm{cell}}\)</span> is
+the screen-cell area and <span class="math inline">\(\ell_P^2\)</span>
+is the Planck area.</p>
 <p>Informally: <span class="math inline">\(P\)</span> says how large the
 screen cell is when measured in Planck-area units. It is dimensionless,
 so it can be compared directly with pure numbers such as <span
@@ -448,25 +447,28 @@ unitless geometric number. Dividing the cell area by the Planck area
 gives that number.</p>
 <h1 id="step-3-the-golden-ratio-balance">Step 3: The Golden-Ratio
 Balance</h1>
-<p>The self-similar balance point is</p>
-<p><span class="math display">\[\begin{equation}
+<p>The self-similar balance point is <span class="math display">\[
+\begin{equation}
 \varphi=1+\frac{1}{\varphi},
 \qquad
 \varphi^2-\varphi-1=0,
 \qquad
 \varphi=\frac{1+\sqrt5}{2}.
 \label{eq:phi}
-\end{equation}\]</span></p>
+\end{equation}
+\]</span></p>
 <p>Informally: <span class="math inline">\(\varphi\)</span> is the fixed
 point of the simplest self-similar split, where the whole-to-large ratio
 equals the large-to-small ratio. OPH uses it as the zero-detuning
 balance point for the local pixel.</p>
 <p>The pixel does not sit exactly at <span
-class="math inline">\(\varphi\)</span>. It sits at</p>
-<p><span class="math display">\[\begin{equation}
+class="math inline">\(\varphi\)</span>. It sits at <span
+class="math display">\[
+\begin{equation}
 \Delta_P:=P-\varphi.
 \label{eq:deltaP}
-\end{equation}\]</span></p>
+\end{equation}
+\]</span></p>
 <p>Informally: <span class="math inline">\(\Delta_P\)</span> is the
 small amount by which the realized cell is displaced from exact
 self-similar equilibrium. That small displacement is what becomes the
@@ -479,11 +481,12 @@ cell sits away from it.</p>
 Gaussian Normalization</h1>
 <p>The boundary normalization converts <span
 class="math inline">\(\Delta_P\)</span> into the outside coupling
-readout:</p>
-<p><span class="math display">\[\begin{equation}
+readout: <span class="math display">\[
+\begin{equation}
 \alpha_{\mathrm{ext}}(P):=\frac{P-\varphi}{\sqrt\pi}.
 \label{eq:alphaext}
-\end{equation}\]</span></p>
+\end{equation}
+\]</span></p>
 <p>Informally: the screen displacement is not itself the electromagnetic
 coupling. The boundary Gaussian width supplies the normalization.
 Dividing by <span class="math inline">\(\sqrt\pi\)</span> turns the
@@ -494,18 +497,20 @@ boundary normalization is the conversion factor between those two
 readings.</p>
 <h1 id="step-5-the-inside-electromagnetic-readout">Step 5: The Inside
 Electromagnetic Readout</h1>
-<p>Let</p>
-<p><span class="math display">\[\begin{equation}
+<p>Let <span class="math display">\[
+\begin{equation}
 A_{\mathrm{Th}}(P):=\alpha_{\mathrm{em}}^{-1}(0;P)
 \label{eq:ATdef}
-\end{equation}\]</span></p>
-<p>be the inverse electromagnetic coupling at zero momentum, emitted
-from the same trial pixel <span class="math inline">\(P\)</span>. The
-inside coupling is</p>
-<p><span class="math display">\[\begin{equation}
+\end{equation}
+\]</span> be the inverse electromagnetic coupling at zero momentum,
+emitted from the same trial pixel <span
+class="math inline">\(P\)</span>. The inside coupling is <span
+class="math display">\[
+\begin{equation}
 \alpha_{\mathrm{in}}(P):=\frac{1}{A_{\mathrm{Th}}(P)}.
 \label{eq:alphain}
-\end{equation}\]</span></p>
+\end{equation}
+\]</span></p>
 <p>Informally: an observer inside the encoded world does not see <span
 class="math inline">\(P\)</span> as a screen area. The observer sees the
 strength of electromagnetism. Since particle physicists quote the
@@ -518,34 +523,29 @@ momentum, after the electroweak anchor has been transported through all
 charged degrees of freedom.</p>
 <h1 id="step-6-the-fixed-point-equation">Step 6: The Fixed-Point
 Equation</h1>
-<p>Closure requires the outside and inside couplings to agree:</p>
-<p><span class="math display">\[\begin{equation}
+<h1
+id="closure-requires-the-outside-and-inside-couplings-to-agree--beginequation-alpha_mathrmextpalpha_mathrminp-labeleqcouplingmatch-endequation--using-eqs-eqalphaext-and-eqalphain--beginequation-fracp-varphisqrtpi">Closure
+requires the outside and inside couplings to agree: <span
+class="math display">\[
+\begin{equation}
 \alpha_{\mathrm{ext}}(P)=\alpha_{\mathrm{in}}(P).
 \label{eq:couplingmatch}
-\end{equation}\]</span></p>
-<p>Using
+\end{equation}
+\]</span> Using
 Eqs. <a href="#eq:alphaext" data-reference-type="eqref" data-reference="eq:alphaext">[eq:alphaext]</a>
 and
-<a href="#eq:alphain" data-reference-type="eqref" data-reference="eq:alphain">[eq:alphain]</a>,</p>
-<p><span class="math display">\[\begin{equation}
-\frac{P-\varphi}{\sqrt\pi}
-=
-\frac{1}{A_{\mathrm{Th}}(P)}.
-\end{equation}\]</span></p>
-<p>Equivalently,</p>
-<p><span class="math display">\[\begin{equation}
-\boxed{
-H(P):=P-\varphi-\frac{\sqrt\pi}{A_{\mathrm{Th}}(P)}=0
-}
-\label{eq:H}
-\end{equation}\]</span></p>
-<p>or</p>
-<p><span class="math display">\[\begin{equation}
-\boxed{
-P=G(P):=\varphi+\frac{\sqrt\pi}{A_{\mathrm{Th}}(P)}.
-}
-\label{eq:G}
-\end{equation}\]</span></p>
+<a href="#eq:alphain" data-reference-type="eqref" data-reference="eq:alphain">[eq:alphain]</a>,
+$$ \begin{equation} \frac{P-\varphi}{\sqrt\pi}</h1>
+<p>\frac{1}{A_{\mathrm{Th}}(P)}. \end{equation} <span
+class="math display">\[
+Equivalently,
+\]</span> \begin{equation} \boxed{
+H(P):=P-\varphi-\frac{\sqrt\pi}{A_{\mathrm{Th}}(P)}=0 } \label{eq:H}
+\end{equation} <span class="math display">\[
+or
+\]</span> \begin{equation} \boxed{
+P=G(P):=\varphi+\frac{\sqrt\pi}{A_{\mathrm{Th}}(P)}. } \label{eq:G}
+\end{equation} $$</p>
 <p>Informally: feed a trial pixel into the source chain. It emits a
 Thomson endpoint. That endpoint tells the pixel what size it should
 have. The physical pixel is the value that comes back unchanged.</p>
@@ -554,13 +554,14 @@ must agree with itself when read from the outside and from the inside.
 That is why the answer is a fixed point, not a one-way evaluation.</p>
 <h1 id="step-7-the-source-map">Step 7: The Source Map</h1>
 <p>For a trial <span class="math inline">\(P\)</span>, the source map
-first emits</p>
-<p><span class="math display">\[\begin{align}
+first emits <span class="math display">\[
+\begin{align}
 M_U(P)&amp;=E_P\,\mathrm e^{-2\pi}\,P^{1/6},
 \label{eq:MU}\\
 E_{\mathrm{cell}}(P)&amp;=\frac{E_P}{\sqrt P}.
 \label{eq:Ecell}
-\end{align}\]</span></p>
+\end{align}
+\]</span></p>
 <p>Informally: <span class="math inline">\(M_U(P)\)</span> is the
 high-scale source readout, and <span
 class="math inline">\(E_{\mathrm{cell}}(P)\)</span> is the local cell
@@ -572,18 +573,17 @@ in the outside equation. These two formulas begin that inside
 calculation without adding a separate high-scale fit parameter.</p>
 <h1 id="step-8-electroweak-transmutation">Step 8: Electroweak
 Transmutation</h1>
-<p>The source branch uses</p>
-<p><span class="math display">\[\begin{equation}
+<h1
+id="the-source-branch-uses--beginequation-beta_mathrmewn_c14-endequation--with-n_c3-and-defines--beginequation-vpalpha_u">The
+source branch uses <span class="math display">\[
+\begin{equation}
 \beta_{\mathrm{EW}}=N_c+1=4
-\end{equation}\]</span></p>
-<p>with <span class="math inline">\(N_c=3\)</span>, and defines</p>
-<p><span class="math display">\[\begin{equation}
-v(P,\alpha_U)
-=
-E_{\mathrm{cell}}(P)
-\exp\!\left[-\frac{2\pi}{\beta_{\mathrm{EW}}\alpha_U}\right].
-\label{eq:v}
-\end{equation}\]</span></p>
+\end{equation}
+\]</span> with <span class="math inline">\(N_c=3\)</span>, and defines
+$$ \begin{equation} v(P,\alpha_U)</h1>
+<p>E_{\mathrm{cell}}(P)
+\exp!\left[-\frac{2\pi}{\beta_{\mathrm{EW}}\alpha_U}\right].
+\label{eq:v} \end{equation} $$</p>
 <p>Informally: the weak scale is exponentially lower than the cell
 scale. The unified coupling controls that descent, so changing <span
 class="math inline">\(\alpha_U\)</span> changes the electroweak scale
@@ -594,20 +594,18 @@ transmutation formula explains how the electroweak scale is produced
 from the same source data.</p>
 <h1 id="step-9-one-loop-gauge-running">Step 9: One-Loop Gauge
 Running</h1>
-<p>For <span class="math inline">\(i=1,2,3\)</span>, define</p>
-<p><span class="math display">\[\begin{equation}
+<h1
+id="for-i123-define--beginequation-b_1b_2b_3leftfrac3351-3right-labeleqb-endequation--and-run-the-couplings-by--beginequation-alpha_i-1mupalpha_u">For
+<span class="math inline">\(i=1,2,3\)</span>, define <span
+class="math display">\[
+\begin{equation}
 (b_1,b_2,b_3)=\left(\frac{33}{5},\,1,\,-3\right),
 \label{eq:b}
-\end{equation}\]</span></p>
-<p>and run the couplings by</p>
-<p><span class="math display">\[\begin{equation}
-\alpha_i^{-1}(\mu;P,\alpha_U)
-=
-\alpha_U^{-1}
-+
-\frac{b_i}{2\pi}\log\!\left(\frac{M_U(P)}{\mu}\right).
-\label{eq:running}
-\end{equation}\]</span></p>
+\end{equation}
+\]</span> and run the couplings by $$ \begin{equation}
+\alpha_i^{-1}(\mu;P,\alpha_U)</h1>
+<p>\alpha_U^{-1} + \frac{b_i}{2\pi}\log!\left(\frac{M_U(P)}{\mu}\right).
+\label{eq:running} \end{equation} $$</p>
 <p>Informally: once <span class="math inline">\(\alpha_U\)</span> is
 guessed, all three gauge couplings at lower scales are fixed. The same
 high-scale coupling determines <span
@@ -620,25 +618,22 @@ the ingredients needed to form that mixture at the <span
 class="math inline">\(Z\)</span>-scale.</p>
 <h1 id="step-10-the-self-consistent-z-scale">Step 10: The
 Self-Consistent <span class="math inline">\(Z\)</span>-Scale</h1>
-<p>The hypercharge coupling in Standard Model normalization is</p>
-<p><span class="math display">\[\begin{equation}
+<h1
+id="the-hypercharge-coupling-in-standard-model-normalization-is--beginequation-alpha_ymupfrac35alpha_1mup-labeleqalphay-endequation--the-tree-level-z-mass-readout-is--beginequation-m_zmupalpha_u">The
+hypercharge coupling in Standard Model normalization is <span
+class="math display">\[
+\begin{equation}
 \alpha_Y(\mu;P)=\frac{3}{5}\alpha_1(\mu;P).
 \label{eq:alphaY}
-\end{equation}\]</span></p>
-<p>The tree-level <span class="math inline">\(Z\)</span>-mass readout
-is</p>
-<p><span class="math display">\[\begin{equation}
-m_Z(\mu;P,\alpha_U)
-=
-\frac{v(P,\alpha_U)}{2}
+\end{equation}
+\]</span> The tree-level <span class="math inline">\(Z\)</span>-mass
+readout is $$ \begin{equation} m_Z(\mu;P,\alpha_U)</h1>
+<p>\frac{v(P,\alpha_U)}{2}
 \sqrt{4\pi\alpha_2(\mu;P,\alpha_U)+4\pi\alpha_Y(\mu;P,\alpha_U)}.
-\label{eq:mZtree}
-\end{equation}\]</span></p>
-<p>The source point uses the self-consistency condition</p>
-<p><span class="math display">\[\begin{equation}
-\mu=m_Z(\mu;P,\alpha_U).
-\label{eq:mZfixed}
-\end{equation}\]</span></p>
+\label{eq:mZtree} \end{equation} <span class="math display">\[
+The source point uses the self-consistency condition
+\]</span> \begin{equation} \mu=m_Z(\mu;P,\alpha_U). \label{eq:mZfixed}
+\end{equation} $$</p>
 <p>Informally: the <span class="math inline">\(Z\)</span>-scale is
 determined inside the calculation. It is the scale at which the running
 couplings and the electroweak transmutation formula reproduce their own
@@ -652,47 +647,50 @@ Closure</h1>
 <p>For <span class="math inline">\(\mathrm{SU}(2)\)</span>, the
 irreducible representations are labeled by <span
 class="math inline">\(j=n/2\)</span>, <span
-class="math inline">\(n=0,1,\ldots,N_2\)</span>, with</p>
-<p><span class="math display">\[\begin{equation}
+class="math inline">\(n=0,1,\ldots,N_2\)</span>, with <span
+class="math display">\[
+\begin{equation}
 d_j=2j+1,
 \qquad
 C_2(j)=j(j+1).
 \label{eq:su2rep}
-\end{equation}\]</span></p>
-<p>For <span class="math inline">\(\mathrm{SU}(3)\)</span>,
+\end{equation}
+\]</span> For <span class="math inline">\(\mathrm{SU}(3)\)</span>,
 representations are labeled by highest weights <span
 class="math inline">\((p,q)\)</span>, <span class="math inline">\(0\le
-p,q\le N_3\)</span>, with</p>
-<p><span class="math display">\[\begin{align}
+p,q\le N_3\)</span>, with <span class="math display">\[
+\begin{align}
 d_{p,q}&amp;=\frac{(p+1)(q+1)(p+q+2)}{2},
 \label{eq:su3dim}\\
 C_2(p,q)&amp;=\frac{p^2+q^2+pq+3p+3q}{3}.
 \label{eq:su3casimir}
-\end{align}\]</span></p>
+\end{align}
+\]</span></p>
 <p>For a compact group <span class="math inline">\(G\)</span> in this
-finite representation cutoff, define</p>
-<p><span class="math display">\[\begin{align}
+finite representation cutoff, define <span class="math display">\[
+\begin{align}
 Z_G(t)&amp;=\sum_R d_R\,\mathrm e^{-tC_2(R)},\\
 \bar\ell_G(t)&amp;=
 \frac{1}{Z_G(t)}
 \sum_R d_R\,\mathrm e^{-tC_2(R)}\log d_R.
 \label{eq:ellbar}
-\end{align}\]</span></p>
-<p>The heat-kernel source parameters are</p>
-<p><span class="math display">\[\begin{equation}
+\end{align}
+\]</span></p>
+<p>The heat-kernel source parameters are <span class="math display">\[
+\begin{equation}
 t_2=4\pi^2\alpha_2(m_Z;P,\alpha_U),
 \qquad
 t_3=4\pi^2\alpha_3(m_Z;P,\alpha_U).
 \label{eq:t23}
-\end{equation}\]</span></p>
-<p>The pixel-closure equation is</p>
-<p><span class="math display">\[\begin{equation}
+\end{equation}
+\]</span> The pixel-closure equation is <span class="math display">\[
+\begin{equation}
 \boxed{
 \bar\ell_{\mathrm{SU}(2)}(t_2)+\bar\ell_{\mathrm{SU}(3)}(t_3)=\frac{P}{4}.
 }
 \label{eq:pixelclosure}
-\end{equation}\]</span></p>
-<p>For a trial <span class="math inline">\(P\)</span>,
+\end{equation}
+\]</span> For a trial <span class="math inline">\(P\)</span>,
 Eq. <a href="#eq:pixelclosure" data-reference-type="eqref" data-reference="eq:pixelclosure">[eq:pixelclosure]</a>
 is solved for <span class="math inline">\(\alpha_U(P)\)</span>.</p>
 <p>Informally: the representation entropy carried by the weak and color
@@ -707,8 +705,9 @@ class="math inline">\(\alpha_U(P)\)</span>.</p>
 <h1 id="step-12-the-electroweak-anchor">Step 12: The Electroweak
 Anchor</h1>
 <p>Once <span class="math inline">\(\alpha_U(P)\)</span> and <span
-class="math inline">\(m_Z(P)\)</span> are solved, define</p>
-<p><span class="math display">\[\begin{align}
+class="math inline">\(m_Z(P)\)</span> are solved, define <span
+class="math display">\[
+\begin{align}
 \alpha_Y(m_Z;P)&amp;=\frac{3}{5}\alpha_1(m_Z;P),\\
 \alpha_{\mathrm{em}}(m_Z^2;P)
 &amp;=
@@ -717,20 +716,22 @@ class="math inline">\(m_Z(P)\)</span> are solved, define</p>
 +\frac{1}{\alpha_Y(m_Z;P)}
 \right)^{-1}.
 \label{eq:alphaem}
-\end{align}\]</span></p>
-<p>The source-locked electroweak anchor is</p>
-<p><span class="math display">\[\begin{equation}
+\end{align}
+\]</span> The source-locked electroweak anchor is <span
+class="math display">\[
+\begin{equation}
 \boxed{
 A_Z(P):=\alpha_{\mathrm{em}}^{-1}(m_Z^2;P).
 }
 \label{eq:AZ}
-\end{equation}\]</span></p>
-<p>The weak mixing readout is</p>
-<p><span class="math display">\[\begin{equation}
+\end{equation}
+\]</span> The weak mixing readout is <span class="math display">\[
+\begin{equation}
 \sin^2\theta_W(m_Z;P)=
 \frac{\alpha_{\mathrm{em}}(m_Z^2;P)}{\alpha_2(m_Z;P)}.
 \label{eq:sin2}
-\end{equation}\]</span></p>
+\end{equation}
+\]</span></p>
 <p>Informally: the source map has reached the electromagnetic coupling
 at the electroweak anchor scale. The low-energy <span
 class="math inline">\(1/137\)</span> number appears only after this
@@ -743,31 +744,32 @@ electromagnetic current.</p>
 Spectrum Used by the Transport</h1>
 <p>The exact one-loop transport uses <span
 class="math inline">\(N_c=3\)</span>, <span
-class="math inline">\(N_g=3\)</span>, and</p>
-<p><span class="math display">\[\begin{equation}
+class="math inline">\(N_g=3\)</span>, and <span class="math display">\[
+\begin{equation}
 \epsilon=\frac16,
 \qquad
 \delta=\frac{\beta_{\mathrm{EW}}}{2N_cN_g}
 =\frac{2}{9}.
 \label{eq:epsdelta}
-\end{equation}\]</span></p>
-<p>Define three Koide roots</p>
-<p><span class="math display">\[\begin{equation}
+\end{equation}
+\]</span> Define three Koide roots <span class="math display">\[
+\begin{equation}
 r_k=1+\sqrt2\cos\!\left(\delta+\frac{2\pi k}{3}\right),
 \qquad k=0,1,2,
 \label{eq:koide}
-\end{equation}\]</span></p>
-<p>then sort them in increasing order and write the sorted list as <span
-class="math inline">\((r_1,r_2,r_3)\)</span>.</p>
-<p>The quark exponent vectors are</p>
-<p><span class="math display">\[\begin{equation}
+\end{equation}
+\]</span> then sort them in increasing order and write the sorted list
+as <span class="math inline">\((r_1,r_2,r_3)\)</span>.</p>
+<p>The quark exponent vectors are <span class="math display">\[
+\begin{equation}
 \bm n_u=(2N_c,N_c,0)=(6,3,0),
 \qquad
 \bm n_d=(2N_c,N_c+1,N_c-1)=(6,4,2).
 \label{eq:quarkexponents}
-\end{equation}\]</span></p>
-<p>With <span class="math inline">\(v=v(P)\)</span>,</p>
-<p><span class="math display">\[\begin{align}
+\end{equation}
+\]</span> With <span class="math inline">\(v=v(P)\)</span>, <span
+class="math display">\[
+\begin{align}
 m_u&amp;=\frac{v}{\sqrt2}\epsilon^6,
 &amp;
 m_c&amp;=\frac{v}{\sqrt2}\epsilon^3,
@@ -779,36 +781,23 @@ m_s&amp;=\frac{v}{\sqrt2}\epsilon^4,
 &amp;
 m_b&amp;=\frac{v}{\sqrt2}\epsilon^2.
 \label{eq:quarkmasses}
-\end{align}\]</span></p>
-<p>For charged leptons the exponent vector is</p>
-<p><span class="math display">\[\begin{equation}
+\end{align}
+\]</span></p>
+<h1
+id="for-charged-leptons-the-exponent-vector-is--beginequation-bm-n_e743-labeleqlepexp-endequation--define--beginequation-log-g_c">For
+charged leptons the exponent vector is <span class="math display">\[
+\begin{equation}
 \bm n_e=(7,4,3).
 \label{eq:lepexp}
-\end{equation}\]</span></p>
-<p>Define</p>
-<p><span class="math display">\[\begin{equation}
-\log g_c
-=
-\frac{1}{3}
-\sum_{a=1}^3
-\log\!\left(
-\frac{r_a^2\sqrt2\,6^{n_{e,a}}}{v}
-\right),
-\qquad
-s_0=\mathrm e^{-\log g_c},
-\qquad
-s_e=s_0\,2^{1/6}.
-\label{eq:lepscale}
-\end{equation}\]</span></p>
-<p>Then</p>
-<p><span class="math display">\[\begin{equation}
-m_e=s_e r_1^2,
-\qquad
-m_\mu=s_e r_2^2,
-\qquad
-m_\tau=s_e r_3^2.
-\label{eq:lepmasses}
-\end{equation}\]</span></p>
+\end{equation}
+\]</span> Define $$ \begin{equation} \log g_c</h1>
+<p>\frac{1}{3} \sum_{a=1}^3 \log!\left(
+\frac{r_a^2\sqrt2,6^{n_{e,a}}}{v} \right), \qquad s_0=\mathrm e^{-\log
+g_c}, \qquad s_e=s_0,2^{1/6}. \label{eq:lepscale} \end{equation} <span
+class="math display">\[
+Then
+\]</span> \begin{equation} m_e=s_e r_1^2, \qquad m_\mu=s_e r_2^2, \qquad
+m_\tau=s_e r_3^2. \label{eq:lepmasses} \end{equation} $$</p>
 <p>Informally: this section specifies the charged masses used by the
 source transport. The lepton part is a clean one-loop calculation. The
 quark part is a perturbative continuation. The confined hadronic QCD
@@ -818,49 +807,47 @@ particles. The transport step cannot be evaluated until the charged
 spectrum and its charges are specified.</p>
 <h1 id="step-14-exact-one-loop-fermion-transport">Step 14: Exact
 One-Loop Fermion Transport</h1>
-<p>For a fermion of mass <span class="math inline">\(m_f\)</span>,
-electric charge <span class="math inline">\(Q_f\)</span>, and
-multiplicity <span class="math inline">\(N_f\)</span>, define</p>
-<p><span class="math display">\[\begin{equation}
-K_f(Q^2;m_f,Q_f,N_f)
-=
-\frac{2N_fQ_f^2}{\pi}
-\int_0^1 x(1-x)
-\log\!\left(1+\frac{Q^2x(1-x)}{m_f^2}\right)\,\mathrm dx.
-\label{eq:kernelint}
-\end{equation}\]</span></p>
-<p>The integral has the following closed form. Let</p>
-<p><span class="math display">\[\begin{equation}
+<h1
+id="for-a-fermion-of-mass-m_f-electric-charge-q_f-and-multiplicity-n_f-define--beginequation-k_fq2m_fq_fn_f">For
+a fermion of mass <span class="math inline">\(m_f\)</span>, electric
+charge <span class="math inline">\(Q_f\)</span>, and multiplicity <span
+class="math inline">\(N_f\)</span>, define $$ \begin{equation}
+K_f(Q^2;m_f,Q_f,N_f)</h1>
+<p>\frac{2N_fQ_f^2}{\pi} \int_0^1 x(1-x)
+\log!\left(1+\frac{Q^2x(1-x)}{m_f^2}\right),\mathrm dx.
+\label{eq:kernelint} \end{equation} $$</p>
+<h1
+id="the-integral-has-the-following-closed-form-let--beginequation-zfracq2m_f2-qquad-afracz4-endequation--then--beginequation-int_01-x1-xlog1zx1-xmathrm-dx">The
+integral has the following closed form. Let <span
+class="math display">\[
+\begin{equation}
 z=\frac{Q^2}{m_f^2},
 \qquad
 a=\frac{z}{4}.
-\end{equation}\]</span></p>
-<p>Then</p>
-<p><span class="math display">\[\begin{equation}
-\int_0^1 x(1-x)\log(1+zx(1-x))\,\mathrm dx
-=
--\frac{5}{18}
-+\frac{1}{6a}
-+\frac{(2a-1)\sqrt{1+a}\,\operatorname{asinh}(\sqrt a)}
-{6a^{3/2}},
-\label{eq:kernelclosed}
-\end{equation}\]</span></p>
-<p>with</p>
-<p><span class="math display">\[\begin{equation}
-\operatorname{asinh}(\sqrt a)
-=
-\log(\sqrt a+\sqrt{1+a}).
-\end{equation}\]</span></p>
-<p>The lepton contribution is</p>
-<p><span class="math display">\[\begin{equation}
+\end{equation}
+\]</span> Then $$ \begin{equation} \int_0^1
+x(1-x)\log(1+zx(1-x)),\mathrm dx</h1>
+<h1
+id="-frac518-frac16a-frac2a-1sqrt1aoperatornameasinhsqrt-a-6a32-labeleqkernelclosed-endequation--with--beginequation-operatornameasinhsqrt-a">-\frac{5}{18}
++\frac{1}{6a} +\frac{(2a-1)\sqrt{1+a},\operatorname{asinh}(\sqrt a)}
+{6a^{3/2}}, \label{eq:kernelclosed} \end{equation} <span
+class="math display">\[
+with
+\]</span> \begin{equation} \operatorname{asinh}(\sqrt a)</h1>
+<p>\log(\sqrt a+\sqrt{1+a}). \end{equation} $$</p>
+<h1
+id="the-lepton-contribution-is--beginequation-delta_mathrmlepp-k_em_zp2m_e11-k_mum_zp2m_mu11-k_taum_zp2m_tau11-labeleqdlep-endequation--the-naive-five-quark-contribution-is--beginalign-delta_qmathrmnaivep--k_um_zp2m_u233-k_dm_zp2m_d-133-nonumber-quad-k_sm_zp2m_s-133-k_cm_zp2m_c233-k_bm_zp2m_b-133-labeleqdqnaive-endalign--the-perturbative-screening-factor-is--beginequation-s_mathrmcalcp-1-fracn_calpha_3m_zppi-labeleqscalc-endequation--thus--beginequation-delta_mathrmcalcp">The
+lepton contribution is <span class="math display">\[
+\begin{equation}
 \Delta_{\mathrm{lep}}(P)=
 K_e(m_Z(P)^2;m_e,1,1)
 +K_\mu(m_Z(P)^2;m_\mu,1,1)
 +K_\tau(m_Z(P)^2;m_\tau,1,1).
 \label{eq:Dlep}
-\end{equation}\]</span></p>
-<p>The naive five-quark contribution is</p>
-<p><span class="math display">\[\begin{align}
+\end{equation}
+\]</span> The naive five-quark contribution is <span
+class="math display">\[
+\begin{align}
 \Delta_q^{\mathrm{naive}}(P)
 &amp;=
 K_u(m_Z(P)^2;m_u,2/3,3)
@@ -871,20 +858,17 @@ K_u(m_Z(P)^2;m_u,2/3,3)
 +K_c(m_Z(P)^2;m_c,2/3,3)
 +K_b(m_Z(P)^2;m_b,-1/3,3).
 \label{eq:Dqnaive}
-\end{align}\]</span></p>
-<p>The perturbative screening factor is</p>
-<p><span class="math display">\[\begin{equation}
+\end{align}
+\]</span> The perturbative screening factor is <span
+class="math display">\[
+\begin{equation}
 S_{\mathrm{calc}}(P)=
 1-\frac{N_c\alpha_3(m_Z;P)}{\pi}.
 \label{eq:Scalc}
-\end{equation}\]</span></p>
-<p>Thus</p>
-<p><span class="math display">\[\begin{equation}
-\Delta_{\mathrm{calc}}(P)
-=
-\Delta_{\mathrm{lep}}(P)+S_{\mathrm{calc}}(P)\Delta_q^{\mathrm{naive}}(P).
-\label{eq:Dcalc}
-\end{equation}\]</span></p>
+\end{equation}
+\]</span> Thus $$ \begin{equation} \Delta_{\mathrm{calc}}(P)</h1>
+<p>\Delta_{\mathrm{lep}}(P)+S_{\mathrm{calc}}(P)\Delta_q^{\mathrm{naive}}(P).
+\label{eq:Dcalc} \end{equation} $$</p>
 <p>Informally: charged leptons are treated by an exact one-loop kernel.
 Quarks are treated by a perturbative expression with a simple screening
 factor. The expected gap is the confined hadronic spectral transport
@@ -896,52 +880,37 @@ screen the electromagnetic current between those scales, and the kernel
 is the mathematical form of that screening.</p>
 <h1 id="step-15-the-source-calculation-endpoint">Step 15: The Source
 Calculation Endpoint</h1>
-<p>The calculated endpoint is</p>
-<p><span class="math display">\[\begin{equation}
-A_{\mathrm{calc}}(P)
-=
-A_Z(P)+\Delta_{\mathrm{calc}}(P).
-\label{eq:Acalc}
-\end{equation}\]</span></p>
-<p>Putting <span class="math inline">\(A_{\mathrm{calc}}\)</span> into
+<h1 id="the-calculated-endpoint-is--beginequation-a_mathrmcalcp">The
+calculated endpoint is $$ \begin{equation} A_{\mathrm{calc}}(P)</h1>
+<h1
+id="a_zpdelta_mathrmcalcp-labeleqacalc-endequation--putting-a_mathrmcalc-into-eq-eqg-gives-the-source-map--beginequation-g_mathrmcalcp">A_Z(P)+\Delta_{\mathrm{calc}}(P).
+\label{eq:Acalc} \end{equation} $$ Putting <span
+class="math inline">\(A_{\mathrm{calc}}\)</span> into
 Eq. <a href="#eq:G" data-reference-type="eqref" data-reference="eq:G">[eq:G]</a>
-gives the source map</p>
-<p><span class="math display">\[\begin{equation}
-G_{\mathrm{calc}}(P)
-=
-\varphi+\frac{\sqrt\pi}{A_{\mathrm{calc}}(P)}.
-\label{eq:Gcalc}
-\end{equation}\]</span></p>
-<p>The numerical solve uses</p>
-<p><span class="math display">\[\begin{equation}
-G_{\mathrm{calc}}(P_{\mathrm{cand}})=P_{\mathrm{cand}}
-\label{eq:Pcand}
-\end{equation}\]</span></p>
-<p>and emits</p>
-<p><span class="math display">\[\begin{align}
-P_{\mathrm{cand}}
-&amp;=
-1.63097209569432901817967892561191884270169,
-\label{eq:Pcandnum}\\
-\alpha^{-1}_{\mathrm{cand}}
-&amp;=
-136.994835164621649457949994585787193262029.
-\label{eq:alphacand}
-\end{align}\]</span></p>
-<p>The source anchor at that candidate point is</p>
-<p><span class="math display">\[\begin{equation}
-A_Z(P_{\mathrm{cand}})
-=
-128.308268045165213892552005990181778935450.
-\label{eq:AZcand}
-\end{equation}\]</span></p>
-<p>The calculated transport contribution is</p>
-<p><span class="math display">\[\begin{equation}
-\Delta_{\mathrm{calc}}(P_{\mathrm{cand}})
-=
-8.68656711945643556539798859560541432657857.
-\label{eq:Dcalccand}
-\end{equation}\]</span></p>
+gives the source map $$ \begin{equation} G_{\mathrm{calc}}(P)</h1>
+<h1
+id="varphifracsqrtpia_mathrmcalcp-labeleqgcalc-endequation--the-numerical-solve-uses--beginequation-g_mathrmcalcp_mathrmcandp_mathrmcand-labeleqpcand-endequation--and-emits--beginalign-p_mathrmcand--163097209569432901817967892561191884270169-labeleqpcandnum-alpha-1mathrmcand--136994835164621649457949994585787193262029-labeleqalphacand-endalign--the-source-anchor-at-that-candidate-point-is--beginequation-a_zpmathrmcand">\varphi+\frac{\sqrt\pi}{A_{\mathrm{calc}}(P)}.
+\label{eq:Gcalc} \end{equation} <span class="math display">\[
+The numerical solve uses
+\]</span> \begin{equation}
+G_{\mathrm{calc}}(P_{\mathrm{cand}})=P_{\mathrm{cand}} \label{eq:Pcand}
+\end{equation} <span class="math display">\[
+and emits
+\]</span> \begin{align} P_{\mathrm{cand}} &amp;=
+1.63097209569432901817967892561191884270169, \label{eq:Pcandnum}\
+\alpha^{-1}<em>{\mathrm{cand}} &amp;=
+136.994835164621649457949994585787193262029. \label{eq:alphacand}
+\end{align} <span class="math display">\[
+The source anchor at that candidate point is
+\]</span> \begin{equation} A_Z(P</em>{\mathrm{cand}})</h1>
+<h1
+id="128308268045165213892552005990181778935450-labeleqazcand-endequation--the-calculated-transport-contribution-is--beginequation-delta_mathrmcalcp_mathrmcand">128.308268045165213892552005990181778935450.
+\label{eq:AZcand} \end{equation} <span class="math display">\[
+The calculated transport contribution is
+\]</span> \begin{equation}
+\Delta_{\mathrm{calc}}(P_{\mathrm{cand}})</h1>
+<p>8.68656711945643556539798859560541432657857. \label{eq:Dcalccand}
+\end{equation} $$</p>
 <p>Informally: the fixed-point algebra lands at a stable value near
 <span class="math inline">\(137\)</span>, with no measured alpha
 inserted into the solve. The remaining gap has a precise address:
@@ -951,33 +920,29 @@ what the OPH source chain produces before the calibrated hadronic
 endpoint correction is added.</p>
 <h1 id="step-16-the-public-endpoint-pixel">Step 16: The Public Endpoint
 Pixel</h1>
-<p>The CODATA/NIST 2022 inverse fine-structure constant is</p>
-<p><span class="math display">\[\begin{equation}
+<h1
+id="the-codatanist-2022-inverse-fine-structure-constant-is--beginequation-a_mathrm-c137035999177-qquad-sigma_a0000000021-labeleqcodata-endequation--with-concise-form-13703599917721-the-corresponding-oph-public-pixel-is--beginequation-p_mathrm-c">The
+CODATA/NIST 2022 inverse fine-structure constant is <span
+class="math display">\[
+\begin{equation}
 A_{\mathrm C}=137.035999177,
 \qquad
 \sigma_A=0.000000021,
 \label{eq:codata}
-\end{equation}\]</span></p>
-<p>with concise form <span
+\end{equation}
+\]</span> with concise form <span
 class="math inline">\(137.035999177(21)\)</span>. The corresponding OPH
-public pixel is</p>
-<p><span class="math display">\[\begin{equation}
-P_{\mathrm C}
-=
-\varphi+\frac{\sqrt\pi}{A_{\mathrm C}}
-=
-\vcenter{\hbox{\parbox{0.68\linewidth}{\small\ttfamily\seqsplit{1.6309682094039593248792798477826489413359828516279250606661507533907793398933432}}}}
-\label{eq:Ppub}
-\end{equation}\]</span></p>
-<p>The public coupling is</p>
-<p><span class="math display">\[\begin{equation}
-\alpha(0)
-=
-\frac{1}{A_{\mathrm C}}
-=
-\vcenter{\hbox{\parbox{0.68\linewidth}{\small\ttfamily\seqsplit{0.0072973525643314250302457952646916832280660213133653604957798803819933561573639928}}}}
-\label{eq:alphapub}
-\end{equation}\]</span></p>
+public pixel is $$ \begin{equation} P_{\mathrm C}</h1>
+<h1 id="varphifracsqrtpia_mathrm-c">\varphi+\frac{\sqrt\pi}{A_{\mathrm
+C}}</h1>
+<h1
+id="vcenterhboxparbox068linewidthsmallttfamilyseqsplit16309682094039593248792798477826489413359828516279250606661507533907793398933432-labeleqppub-endequation--the-public-coupling-is--beginequation-alpha0">\vcenter{\hbox{\parbox{0.68\linewidth}{\small\ttfamily\seqsplit{1.6309682094039593248792798477826489413359828516279250606661507533907793398933432}}}}
+\label{eq:Ppub} \end{equation} <span class="math display">\[
+The public coupling is
+\]</span> \begin{equation} \alpha(0)</h1>
+<h1 id="frac1a_mathrm-c">\frac{1}{A_{\mathrm C}}</h1>
+<p>\vcenter{\hbox{\parbox{0.68\linewidth}{\small\ttfamily\seqsplit{0.0072973525643314250302457952646916832280660213133653604957798803819933561573639928}}}}
+\label{eq:alphapub} \end{equation} $$</p>
 <p>Informally: once the Thomson endpoint is known, the outer OPH
 equation fixes the pixel immediately. It is the direct readout of one
 equation.</p>
@@ -987,9 +952,11 @@ clear how the measured inverse coupling maps back to the screen
 cell.</p>
 <h1 id="step-17-endpoint-accounting-at-the-public-pixel">Step 17:
 Endpoint Accounting at the Public Pixel</h1>
-<p>At <span class="math inline">\(P=P_{\mathrm C}\)</span>, the source
-point gives</p>
-<p><span class="math display">\[\begin{align}
+<h1
+id="at-pp_mathrm-c-the-source-point-gives--beginalign-a_zp_mathrm-c--vcenterhboxparbox068linewidthsmallttfamilyseqsplit12830796547328624820996110874175671618724547618036535646005342169635117784168285644078724728-labeleqazpub-delta_mathrmcalcp_mathrm-c--vcenterhboxparbox068linewidthsmallttfamilyseqsplit86865678427085284009854425428859697682672217376487364233784577389993784459106783080961179590-labeleqdcalcpub-endalign--the-transport-required-by-the-public-endpoint-is--beginequation-delta_mathrmreqp_mathrm-c">At
+<span class="math inline">\(P=P_{\mathrm C}\)</span>, the source point
+gives <span class="math display">\[
+\begin{align}
 A_Z(P_{\mathrm C})
 &amp;=
 \vcenter{\hbox{\parbox{0.68\linewidth}{\small\ttfamily\seqsplit{128.30796547328624820996110874175671618724547618036535646005342169635117784168285644078724728}}}}
@@ -998,27 +965,18 @@ A_Z(P_{\mathrm C})
 &amp;=
 \vcenter{\hbox{\parbox{0.68\linewidth}{\small\ttfamily\seqsplit{8.6865678427085284009854425428859697682672217376487364233784577389993784459106783080961179590}}}}
 \label{eq:Dcalcpub}
-\end{align}\]</span></p>
-<p>The transport required by the public endpoint is</p>
-<p><span class="math display">\[\begin{equation}
-\Delta_{\mathrm{req}}(P_{\mathrm C})
-=
-A_{\mathrm C}-A_Z(P_{\mathrm C})
-=
-\vcenter{\hbox{\parbox{0.68\linewidth}{\small\ttfamily\seqsplit{8.72803370371375179003889125824328381275452381963464353994657830364882215831714355921275272}}}}
-\label{eq:Dreqpub}
-\end{equation}\]</span></p>
-<p>Therefore the source-side residual at the public pixel is</p>
-<p><span class="math display">\[\begin{align}
-R_Q(P_{\mathrm C})
-&amp;=
+\end{align}
+\]</span> The transport required by the public endpoint is $$
+\begin{equation} \Delta_{\mathrm{req}}(P_{\mathrm C})</h1>
+<h1 id="a_mathrm-c-a_zp_mathrm-c">A_{\mathrm C}-A_Z(P_{\mathrm C})</h1>
+<p>\vcenter{\hbox{\parbox{0.68\linewidth}{\small\ttfamily\seqsplit{8.72803370371375179003889125824328381275452381963464353994657830364882215831714355921275272}}}}
+\label{eq:Dreqpub} \end{equation} <span class="math display">\[
+Therefore the source-side residual at the public pixel is
+\]</span> \begin{align} R_Q(P_{\mathrm C}) &amp;=
 \Delta_{\mathrm{req}}(P_{\mathrm C})-\Delta_{\mathrm{calc}}(P_{\mathrm
-C})
-\nonumber\\
-&amp;=
+C}) \nonumber\ &amp;=
 \vcenter{\hbox{\parbox{0.68\linewidth}{\small\ttfamily\seqsplit{0.04146586100522338905344871535731404448730208198590711656812056464944371240646525111663476}}}}
-\label{eq:RQpub}
-\end{align}\]</span></p>
+\label{eq:RQpub} \end{align} $$</p>
 <p>Informally: the public value differs from the pure source calculation
 by a small, precisely localized inverse-alpha contribution. The
 golden-ratio equation, the heat-kernel closure, and the numerical
@@ -1030,66 +988,47 @@ source anchor, the calculated transport, the required transport, and the
 residual in the same units.</p>
 <h1 id="step-18-the-calibrated-hadronic-correction">Step 18: The
 Calibrated Hadronic Correction</h1>
-<p>The fixed-point calculation uses</p>
-<p><span class="math display">\[\begin{equation}
-A_{\mathrm{calc}}(P_{\mathrm{cand}})
-=
-\alpha^{-1}_{\mathrm{cand}}
-=
-\vcenter{\hbox{\parbox{0.68\linewidth}{\small\ttfamily\seqsplit{136.994835164621649457949994585787193262029}}}}
-\label{eq:Acalcfp}
-\end{equation}\]</span></p>
-<p>The hadronic correction required on that calculation, when calibrated
-to the CODATA/NIST central value, is</p>
-<p><span class="math display">\[\begin{equation}
-\Delta_{\mathrm{H,cal}}^{\mathrm{fp}}
-=
-A_{\mathrm C}-A_{\mathrm{calc}}(P_{\mathrm{cand}})
-=
-\vcenter{\hbox{\parbox{0.68\linewidth}{\small\ttfamily\seqsplit{0.041164012378350542050005414212806737971}}}}
-\label{eq:Dempfp}
-\end{equation}\]</span></p>
-<p>Therefore</p>
-<p><span class="math display">\[\begin{align}
-A_{\mathrm{closed}}^{\mathrm{fp}}
-&amp;=
+<h1
+id="the-fixed-point-calculation-uses--beginequation-a_mathrmcalcp_mathrmcand">The
+fixed-point calculation uses $$ \begin{equation}
+A_{\mathrm{calc}}(P_{\mathrm{cand}})</h1>
+<h1 id="alpha-1_mathrmcand">\alpha^{-1}_{\mathrm{cand}}</h1>
+<h1
+id="vcenterhboxparbox068linewidthsmallttfamilyseqsplit136994835164621649457949994585787193262029-labeleqacalcfp-endequation--the-hadronic-correction-required-on-that-calculation-when-calibrated-to-the-codatanist-central-value-is--beginequation-delta_mathrmhcalmathrmfp">\vcenter{\hbox{\parbox{0.68\linewidth}{\small\ttfamily\seqsplit{136.994835164621649457949994585787193262029}}}}
+\label{eq:Acalcfp} \end{equation} <span class="math display">\[
+The hadronic correction required on that calculation, when calibrated to
+the CODATA/NIST central value, is
+\]</span> \begin{equation} \Delta_{\mathrm{H,cal}}^{\mathrm{fp}}</h1>
+<h1 id="a_mathrm-c-a_mathrmcalcp_mathrmcand">A_{\mathrm
+C}-A_{\mathrm{calc}}(P_{\mathrm{cand}})</h1>
+<p>\vcenter{\hbox{\parbox{0.68\linewidth}{\small\ttfamily\seqsplit{0.041164012378350542050005414212806737971}}}}
+\label{eq:Dempfp} \end{equation} <span class="math display">\[
+Therefore
+\]</span> \begin{align} A_{\mathrm{closed}}^{\mathrm{fp}} &amp;=
 A_{\mathrm{calc}}(P_{\mathrm{cand}})+\Delta_{\mathrm{H,cal}}^{\mathrm{fp}}
-\nonumber\\
-&amp;=
-137.035999177
-\label{eq:exactaddition}
-\end{align}\]</span></p>
-<p>The two inputs in that addition are</p>
-<p><span class="math display">\[\begin{align}
-A_{\mathrm{calc}}(P_{\mathrm{cand}})
-&amp;=
+\nonumber\ &amp;= 137.035999177 \label{eq:exactaddition} \end{align}
+<span class="math display">\[
+The two inputs in that addition are
+\]</span> \begin{align} A_{\mathrm{calc}}(P_{\mathrm{cand}}) &amp;=
 \vcenter{\hbox{\parbox{0.68\linewidth}{\small\ttfamily\seqsplit{136.994835164621649457949994585787193262029}}}}
-\label{eq:exactaddition-source}\\
-\Delta_{\mathrm{H,cal}}^{\mathrm{fp}}
+\label{eq:exactaddition-source}\ \Delta_{\mathrm{H,cal}}^{\mathrm{fp}}
 &amp;=
 \vcenter{\hbox{\parbox{0.68\linewidth}{\small\ttfamily\seqsplit{0.041164012378350542050005414212806737971}}}}
-\label{eq:exactaddition-emp}
-\end{align}\]</span></p>
-<p>This number is not an independently measured hadronic constant with
-39 significant decimal places. It is the difference between the measured
+\label{eq:exactaddition-emp} \end{align} <span class="math display">\[
+This number is not an independently measured hadronic constant with 39
+significant decimal places. It is the difference between the measured
 CODATA/NIST central value and the pure OPH source calculation. Its
 uncertainty is therefore limited by the CODATA/NIST uncertainty, apart
-from the much smaller numerical error in the source solve:</p>
-<p><span class="math display">\[\begin{equation}
-\Delta_{\mathrm{H,cal}}^{\mathrm{fp}}
-=0.041164012\pm0.000000021.
-\label{eq:Dcalibuncertainty}
-\end{equation}\]</span></p>
-<p>Equivalently, the central value and uncertainty of the final inverse
-coupling are</p>
-<p><span class="math display">\[\begin{equation}
-A_{\mathrm C}=137.035999177,
-\qquad
-\sigma_A=0.000000021.
-\end{equation}\]</span></p>
-<p>Here <span class="math inline">\(A_{\mathrm C}\)</span> is the
-CODATA/NIST 2022 inverse fine-structure constant . The source value
-<span
+from the much smaller numerical error in the source solve:
+\]</span> \begin{equation} \Delta_{\mathrm{H,cal}}^{\mathrm{fp}}
+=0.041164012\pm0.000000021. \label{eq:Dcalibuncertainty} \end{equation}
+<span class="math display">\[
+Equivalently, the central value and uncertainty of the final inverse
+coupling are
+\]</span> \begin{equation} A_{\mathrm C}=137.035999177, \qquad
+\sigma_A=0.000000021. \end{equation} $$ Here <span
+class="math inline">\(A_{\mathrm C}\)</span> is the CODATA/NIST 2022
+inverse fine-structure constant . The source value <span
 class="math inline">\(A_{\mathrm{calc}}(P_{\mathrm{cand}})\)</span> is
 the reproducible OPH fixed-point solve .
 Equation <a href="#eq:Dempfp" data-reference-type="eqref" data-reference="eq:Dempfp">[eq:Dempfp]</a>
@@ -1102,32 +1041,29 @@ mathematically inside OPH.</p>
 <p>Why this step is needed: this is the public numerical result, and it
 marks the limit of the calculation. More digits require a source-derived
 hadronic spectral calculation, not more decimal padding.</p>
-<p>The endpoint decomposition is</p>
-<p><span class="math display">\[\begin{equation}
-A_{\mathrm{Th}}(P)
-=
-A_Z(P)+\Delta_{\mathrm{lep}}(P)+\Delta_{\mathrm{had}}(P)+\Delta_{\mathrm{EW}}(P).
-\label{eq:ATsplit}
-\end{equation}\]</span></p>
-<p>The calculated transport contains the exact one-loop charged-lepton
+<h1 id="the-endpoint-decomposition-is--beginequation-a_mathrmthp">The
+endpoint decomposition is $$ \begin{equation} A_{\mathrm{Th}}(P)</h1>
+<h1
+id="a_zpdelta_mathrmleppdelta_mathrmhadpdelta_mathrmewp-labeleqatsplit-endequation--the-calculated-transport-contains-the-exact-one-loop-charged-lepton-contribution-and-a-structured-quark-screening-continuation-the-remaining-pure-source-object-can-be-written-compactly-as--beginequation-r_qp">A_Z(P)+\Delta_{\mathrm{lep}}(P)+\Delta_{\mathrm{had}}(P)+\Delta_{\mathrm{EW}}(P).
+\label{eq:ATsplit} \end{equation} <span class="math display">\[
+The calculated transport contains the exact one-loop charged-lepton
 contribution and a structured quark-screening continuation. The
-remaining pure source object can be written compactly as</p>
-<p><span class="math display">\[\begin{equation}
-R_Q(P)
-=
-\Delta_{\mathrm{had}}(P)+\Delta_{\mathrm{EW}}(P)
+remaining pure source object can be written compactly as
+\]</span> \begin{equation} R_Q(P)</h1>
+<p>\Delta_{\mathrm{had}}(P)+\Delta_{\mathrm{EW}}(P)
 -\bigl[\Delta_{\mathrm{calc}}(P)-\Delta_{\mathrm{lep}}(P)\bigr],
-\label{eq:RQmeaning}
-\end{equation}\]</span></p>
-<p>where the right side is understood in the same renormalization and
-endpoint scheme as <span class="math inline">\(A_Z(P)\)</span>.</p>
-<p>In the screening notation used by the endpoint calculation, let</p>
-<p><span class="math display">\[\begin{equation}
+\label{eq:RQmeaning} \end{equation} $$ where the right side is
+understood in the same renormalization and endpoint scheme as <span
+class="math inline">\(A_Z(P)\)</span>.</p>
+<p>In the screening notation used by the endpoint calculation, let <span
+class="math display">\[
+\begin{equation}
 x(P)=\frac{N_c\alpha_3(m_Z;P)}{\pi}.
 \label{eq:xqcd}
-\end{equation}\]</span></p>
-<p>At <span class="math inline">\(P=P_{\mathrm C}\)</span>,</p>
-<p><span class="math display">\[\begin{align}
+\end{equation}
+\]</span> At <span class="math inline">\(P=P_{\mathrm C}\)</span>, <span
+class="math display">\[
+\begin{align}
 S_{\mathrm{required}}
 &amp;=
 \vcenter{\hbox{\parbox{0.68\linewidth}{\small\ttfamily\seqsplit{0.89540013264765879780580028318167064130770986481229164844830591011545242521273086888107864576}}}}
@@ -1136,12 +1072,13 @@ c_Q
 &amp;=
 \vcenter{\hbox{\parbox{0.68\linewidth}{\small\ttfamily\seqsplit{0.65802575992715543563823017023236005042492009907058639608566007832470711257322011342309305088}}}}
 \label{eq:cQ}
-\end{align}\]</span></p>
-<p>where</p>
-<p><span class="math display">\[\begin{equation}
+\end{align}
+\]</span> where <span class="math display">\[
+\begin{equation}
 S_{\mathrm{required}}=1-x+c_Qx^2.
 \label{eq:cQdef}
-\end{equation}\]</span></p>
+\end{equation}
+\]</span></p>
 <p>Informally: the needed hadronic and endpoint correction can be
 summarized as a small second-order screening coefficient. A pure source
 proof has to emit this coefficient from a Ward-projected hadronic
@@ -1154,43 +1091,36 @@ id="step-19-why-raw-pdg-deltaalpha_mathrmhad5m_z-is-a-different-quantity">Step
 19: Why Raw PDG <span
 class="math inline">\(\Delta\alpha_{\mathrm{had}}^{(5)}(M_Z)\)</span> Is
 a Different Quantity</h1>
-<p>The direct PDG/CERN diagnostic uses</p>
-<p><span class="math display">\[\begin{align}
+<h1
+id="the-direct-pdgcern-diagnostic-uses--beginalign-a_zp_mathrm-c-vcenterhboxparbox068linewidthsmallttfamilyseqsplit12830796547328624820996110874175671618724547618036535646005342169635117784168285644-delta_mathrmlepp_mathrm-c-vcenterhboxparbox068linewidthsmallttfamilyseqsplit43093978664522040271317438975344894018487156605576773194711528089665680313257906466129-deltaalpha_mathrmhad5m_z002761-endalign--it-forms--beginequation-a_la_zdelta_mathrmlep-qquad-a_mathrmpdgdiagfraca_l1-deltaalpha_mathrmhad5m_z-labeleqpdgdiag-endequation--numerically--beginequation-a_mathrmpdgdiag">The
+direct PDG/CERN diagnostic uses <span class="math display">\[
+\begin{align}
 A_Z(P_{\mathrm C})&amp;=
 \vcenter{\hbox{\parbox{0.68\linewidth}{\small\ttfamily\seqsplit{128.30796547328624820996110874175671618724547618036535646005342169635117784168285644}}}}\\
 \Delta_{\mathrm{lep}}(P_{\mathrm C})&amp;=
 \vcenter{\hbox{\parbox{0.68\linewidth}{\small\ttfamily\seqsplit{4.3093978664522040271317438975344894018487156605576773194711528089665680313257906466129}}}}\\
 \Delta\alpha_{\mathrm{had}}^{(5)}(M_Z)&amp;=0.02761.
-\end{align}\]</span></p>
-<p>It forms</p>
-<p><span class="math display">\[\begin{equation}
+\end{align}
+\]</span> It forms <span class="math display">\[
+\begin{equation}
 A_L=A_Z+\Delta_{\mathrm{lep}},
 \qquad
 A_{\mathrm{PDGdiag}}=\frac{A_L}{1-\Delta\alpha_{\mathrm{had}}^{(5)}(M_Z)}.
 \label{eq:pdgdiag}
-\end{equation}\]</span></p>
-<p>Numerically,</p>
-<p><span class="math display">\[\begin{equation}
-A_{\mathrm{PDGdiag}}
-=
-\vcenter{\hbox{\parbox{0.68\linewidth}{\small\ttfamily\seqsplit{136.382895072695577121415124218977165118002233508081154453999500720202537945689123794581289}}}}
-\label{eq:pdgdiagval}
-\end{equation}\]</span></p>
-<p>This differs from <span class="math inline">\(137.035999177\)</span>.
-Holding this raw hadronic denominator shift fixed, the target would
-require</p>
-<p><span class="math display">\[\begin{equation}
-\Delta\alpha_{\mathrm{had,req}}
-=
-\vcenter{\hbox{\parbox{0.68\linewidth}{\small\ttfamily\seqsplit{0.032244343557887288822268499236957947422007347612226081506593089221871380926117950141438549}}}}
-\label{eq:pdgreq}
-\end{equation}\]</span></p>
-<p>or a same-scheme source-anchor bridge of</p>
-<p><span class="math display">\[\begin{equation}
+\end{equation}
+\]</span> Numerically, $$ \begin{equation} A_{\mathrm{PDGdiag}}</h1>
+<h1
+id="vcenterhboxparbox068linewidthsmallttfamilyseqsplit136382895072695577121415124218977165118002233508081154453999500720202537945689123794581289-labeleqpdgdiagval-endequation--this-differs-from-137035999177-holding-this-raw-hadronic-denominator-shift-fixed-the-target-would-require--beginequation-deltaalpha_mathrmhadreq">\vcenter{\hbox{\parbox{0.68\linewidth}{\small\ttfamily\seqsplit{136.382895072695577121415124218977165118002233508081154453999500720202537945689123794581289}}}}
+\label{eq:pdgdiagval} \end{equation} $$ This differs from <span
+class="math inline">\(137.035999177\)</span>. Holding this raw hadronic
+denominator shift fixed, the target would require $$ \begin{equation}
+\Delta\alpha_{\mathrm{had,req}}</h1>
+<p>\vcenter{\hbox{\parbox{0.68\linewidth}{\small\ttfamily\seqsplit{0.032244343557887288822268499236957947422007347612226081506593089221871380926117950141438549}}}}
+\label{eq:pdgreq} \end{equation} <span class="math display">\[
+or a same-scheme source-anchor bridge of
+\]</span> \begin{equation}
 \vcenter{\hbox{\parbox{0.68\linewidth}{\small\ttfamily\seqsplit{0.6350718999845777629071473607087944109058081590769662204754254946822541269913529133871}}}}
-\label{eq:bridgegap}
-\end{equation}\]</span></p>
-<p>inverse-alpha units.</p>
+\label{eq:bridgegap} \end{equation} $$ inverse-alpha units.</p>
 <p>Informally: the raw electroweak-review hadronic running number is a
 useful diagnostic. The OPH endpoint needs the same electromagnetic
 current and the same inverse-alpha endpoint convention used by <span
@@ -1203,15 +1133,13 @@ number as though it were the OPH endpoint contribution. This section
 shows the numerical consequence of that convention mismatch.</p>
 <h1 id="step-20-the-measured-hadronic-spectral-input">Step 20: The
 Measured Hadronic Spectral Input</h1>
-<p>The standard measured hadronic vacuum-polarization relation uses</p>
-<p><span class="math display">\[\begin{equation}
-\Delta\alpha_{\mathrm{had}}(q^2)
-=
--\frac{\alpha q^2}{3\pi}\,
-\mathrm{P.V.}\!\int \frac{R(s)}{s(s-q^2)}\,\mathrm ds,
-\label{eq:dispersion}
-\end{equation}\]</span></p>
-<p>where <span class="math inline">\(R(s)\)</span> is the measured ratio
+<h1
+id="the-standard-measured-hadronic-vacuum-polarization-relation-uses--beginequation-deltaalpha_mathrmhadq2">The
+standard measured hadronic vacuum-polarization relation uses $$
+\begin{equation} \Delta\alpha_{\mathrm{had}}(q^2)</h1>
+<p>-\frac{\alpha q^2}{3\pi}, \mathrm{P.V.}!\int
+\frac{R(s)}{s(s-q^2)},\mathrm ds, \label{eq:dispersion} \end{equation}
+$$ where <span class="math inline">\(R(s)\)</span> is the measured ratio
 of the bare <span
 class="math inline">\(e^+e^-\to\mathrm{hadrons}\)</span> cross section
 to the pointlike <span
@@ -1225,14 +1153,15 @@ inverse-alpha correction <span
 class="math inline">\(\Delta_{\mathrm{H,cal}}^{\mathrm{fp}}\)</span>
 used in
 Eq. <a href="#eq:Dempfp" data-reference-type="eqref" data-reference="eq:Dempfp">[eq:Dempfp]</a>.
-For example, Davier, Hoecker, Malaescu, and Zhang report</p>
-<p><span
-class="math display">\[\Delta\alpha_{\mathrm{had}}^{(5)}(M_Z^2)=(275.7\pm1.0)\times10^{-4}\]</span></p>
-<p>from <span class="math inline">\(e^+e^-\)</span>-based data . A more
-recent perturbative update by Erler and Ferro-Hernandez gives</p>
-<p><span class="math display">\[\Delta\alpha_{\mathrm{had}}^{(5)}(M_Z^2)
-=\left(276.29\pm0.38\pm0.62\right)\times10^{-4}\]</span></p>
-<p>when low-energy cross-section data are used as input .</p>
+For example, Davier, Hoecker, Malaescu, and Zhang report <span
+class="math display">\[
+\Delta\alpha_{\mathrm{had}}^{(5)}(M_Z^2)=(275.7\pm1.0)\times10^{-4}
+\]</span> from <span class="math inline">\(e^+e^-\)</span>-based data .
+A more recent perturbative update by Erler and Ferro-Hernandez gives
+<span class="math display">\[
+\Delta\alpha_{\mathrm{had}}^{(5)}(M_Z^2)
+=\left(276.29\pm0.38\pm0.62\right)\times10^{-4}
+\]</span> when low-energy cross-section data are used as input .</p>
 <p>The OPH correction in
 Eq. <a href="#eq:Dempfp" data-reference-type="eqref" data-reference="eq:Dempfp">[eq:Dempfp]</a>
 is different. It is expressed in inverse-alpha units and in the endpoint
@@ -1245,16 +1174,13 @@ Jegerlehner’s alphaQED package provides hadronic running routines,
 covariance data, and an integration routine for custom kernels . That is
 the right empirical route once the OPH endpoint kernel and finite
 same-scheme remainder are fixed.</p>
-<p>In the OPH endpoint convention this is represented as a same-current
-spectral functional,</p>
-<p><span class="math display">\[\begin{equation}
-\Delta_{\mathrm{had}}(P)
-=
-\frac{m_Z(P)^2}{3\pi}
-\int \frac{\rho_Q(s;P)}{s[s+m_Z(P)^2]}\,\mathrm ds,
-\label{eq:ophhadron}
-\end{equation}\]</span></p>
-<p>plus the same-scheme finite remainder needed by
+<h1
+id="in-the-oph-endpoint-convention-this-is-represented-as-a-same-current-spectral-functional--beginequation-delta_mathrmhadp">In
+the OPH endpoint convention this is represented as a same-current
+spectral functional, $$ \begin{equation} \Delta_{\mathrm{had}}(P)</h1>
+<p>\frac{m_Z(P)^2}{3\pi} \int \frac{\rho_Q(s;P)}{s[s+m_Z(P)^2]},\mathrm
+ds, \label{eq:ophhadron} \end{equation} $$ plus the same-scheme finite
+remainder needed by
 Eq. <a href="#eq:ATsplit" data-reference-type="eqref" data-reference="eq:ATsplit">[eq:ATsplit]</a>.</p>
 <p>Informally: the measured hadronic input supplies the electromagnetic
 spectral information required for the endpoint. The single published
@@ -1277,13 +1203,11 @@ pure source form). <em>Assume:</em></p>
 <li><p><em>the OPH overlap-consistency branch emits the source map <span
 class="math inline">\(P\mapsto A_Z(P)\)</span> by
 Eqs. <a href="#eq:MU" data-reference-type="eqref" data-reference="eq:MU">[eq:MU]</a>–<a href="#eq:AZ" data-reference-type="eqref" data-reference="eq:AZ">[eq:AZ]</a>;</em></p></li>
-<li><p>*the Ward-projected <span
+<li><p><em>the Ward-projected <span
 class="math inline">\(\mathrm{U}(1)_Q\)</span> transport theorem emits a
-same-scheme endpoint map</p>
-<p><span
-class="math display">\[A_{\mathrm{Th}}(P)=A_Z(P)+\Delta_{\mathrm{lep}}(P)+\Delta_{\mathrm{had}}(P)+\Delta_{\mathrm{EW}}(P);
-```*
-\]</span></p></li>
+same-scheme endpoint map <span class="math display">\[
+A_{\mathrm{Th}}(P)=A_Z(P)+\Delta_{\mathrm{lep}}(P)+\Delta_{\mathrm{had}}(P)+\Delta_{\mathrm{EW}}(P);
+\]</span></em></p></li>
 <li><p><em><span
 class="math inline">\(G(P)=\varphi+\sqrt\pi/A_{\mathrm{Th}}(P)\)</span>
 is a self-map and a contraction on the physical pixel interval <span
@@ -1291,29 +1215,28 @@ class="math inline">\(I\)</span>;</em></p></li>
 <li><p><em>the interval image contains the root and the residual bound
 is certified.</em></p></li>
 </ol>
-<p>*Then there is a unique <span class="math inline">\(P_\star\in
+<p><em>Then there is a unique <span class="math inline">\(P_\star\in
 I\)</span> satisfying <span
 class="math inline">\(G(P_\star)=P_\star\)</span>, and the
-fine-structure constant on that branch is</p>
-<p><span
-class="math display">\[\alpha(0)=\frac{1}{A_{\mathrm{Th}}(P_\star)}=\frac{P_\star-\varphi}{\sqrt\pi}.
-```*
+fine-structure constant on that branch is <span class="math display">\[
+\alpha(0)=\frac{1}{A_{\mathrm{Th}}(P_\star)}=\frac{P_\star-\varphi}{\sqrt\pi}.
+\]</span></em></p>
+</div>
 
-&lt;/div&gt;
+<div class="proof">
 
-&lt;div class=&quot;proof&quot;&gt;
-
-*Proof.* By assumption (iii), $`G:I\to I`$ is a contraction. Banach’s
-fixed-point theorem gives a unique $`P_\star\in I`$ such that
-$`G(P_\star)=P_\star`$. Equation &lt;a href=&quot;#eq:G&quot;
-data-reference-type=&quot;eqref&quot;
-data-reference=&quot;eq:G&quot;&gt;[eq:G]&lt;/a&gt; gives
-``` math
-P_\star-\varphi=\frac{\sqrt\pi}{A_{\mathrm{Th}}(P_\star)}.\]</span></p>
-<p>Dividing by <span class="math inline">\(\sqrt\pi\)</span> gives</p>
-<p><span
-class="math display">\[\frac{P_\star-\varphi}{\sqrt\pi}=\frac{1}{A_{\mathrm{Th}}(P_\star)}.\]</span></p>
-<p>The left side is <span
+<p><em>Proof.</em> By assumption (iii), <span
+class="math inline">\(G:I\to I\)</span> is a contraction. Banach’s
+fixed-point theorem gives a unique <span
+class="math inline">\(P_\star\in I\)</span> such that <span
+class="math inline">\(G(P_\star)=P_\star\)</span>.
+Equation <a href="#eq:G" data-reference-type="eqref" data-reference="eq:G">[eq:G]</a>
+gives <span class="math display">\[
+P_\star-\varphi=\frac{\sqrt\pi}{A_{\mathrm{Th}}(P_\star)}.
+\]</span> Dividing by <span class="math inline">\(\sqrt\pi\)</span>
+gives <span class="math display">\[
+\frac{P_\star-\varphi}{\sqrt\pi}=\frac{1}{A_{\mathrm{Th}}(P_\star)}.
+\]</span> The left side is <span
 class="math inline">\(\alpha_{\mathrm{ext}}(P_\star)\)</span>, and the
 right side is <span
 class="math inline">\(\alpha_{\mathrm{in}}(P_\star)\)</span>. Their
@@ -1327,29 +1250,21 @@ the fine-structure constant is the unique fixed point of the full source
 map.</p>
 <h1 id="step-22-the-public-endpoint-value">Step 22: The Public Endpoint
 Value</h1>
-<p>With the CODATA/NIST endpoint value</p>
-<p><span class="math display">\[\begin{equation}
+<h1
+id="with-the-codatanist-endpoint-value--beginequation-a_mathrmthp_mathrm-ca_mathrm-c13703599917721-endequation--eq-eqg-gives-the-corresponding-public-endpoint-pixel--beginalign-boxed-p_mathrm-c">With
+the CODATA/NIST endpoint value <span class="math display">\[
+\begin{equation}
 A_{\mathrm{Th}}(P_{\mathrm C})=A_{\mathrm C}=137.035999177(21),
-\end{equation}\]</span></p>
-<p>Eq. <a href="#eq:G" data-reference-type="eqref" data-reference="eq:G">[eq:G]</a>
-gives the corresponding public endpoint pixel:</p>
-<p><span class="math display">\[\begin{align}
-\boxed{
-P_{\mathrm C}
-=
-\vcenter{\hbox{\parbox{0.68\linewidth}{\small\ttfamily\seqsplit{1.6309682094039593248792798477826489413359828516279250606661507533907793398933432}}}}
-}
-\\
-\boxed{
-\alpha(0)
-=
-\vcenter{\hbox{\parbox{0.68\linewidth}{\small\ttfamily\seqsplit{0.0072973525643314250302457952646916832280660213133653604957798803819933561573639928}}}}
-}
-\\
-\boxed{
-\alpha^{-1}(0)=137.035999177(21).
-}
-\end{align}\]</span></p>
+\end{equation}
+\]</span>
+Eq. <a href="#eq:G" data-reference-type="eqref" data-reference="eq:G">[eq:G]</a>
+gives the corresponding public endpoint pixel: $$ \begin{align} \boxed{
+P_{\mathrm C}</h1>
+<h1
+id="vcenterhboxparbox068linewidthsmallttfamilyseqsplit16309682094039593248792798477826489413359828516279250606661507533907793398933432---boxed-alpha0">\vcenter{\hbox{\parbox{0.68\linewidth}{\small\ttfamily\seqsplit{1.6309682094039593248792798477826489413359828516279250606661507533907793398933432}}}}
+} \ \boxed{ \alpha(0)</h1>
+<p>\vcenter{\hbox{\parbox{0.68\linewidth}{\small\ttfamily\seqsplit{0.0072973525643314250302457952646916832280660213133653604957798803819933561573639928}}}}
+} \ \boxed{ \alpha^{-1}(0)=137.035999177(21). } \end{align} $$</p>
 <p>Informally: the endpoint number is the same number NIST/CODATA
 reports. The derivation exposes every OPH-side step and identifies where
 the low-energy hadronic calculation enters. It does not replace the
@@ -1450,20 +1365,19 @@ map, gauge closure, electroweak anchor, and Ward-projected Thomson
 transport, producing <span
 class="math inline">\(1/A_{\mathrm{Th}}(P)\)</span>. The physical cell
 is the fixed point where those two readings agree.</p>
-<p>The pure source calculation computes the fixed-point witness</p>
-<p><span
-class="math display">\[\alpha^{-1}_{\mathrm{cand}}=136.994835164621649457949994585787193262029.\]</span></p>
-<p>The public endpoint value is</p>
-<p><span
-class="math display">\[\alpha^{-1}(0)=137.035999177(21),\]</span></p>
-<p>with</p>
-<p><span
-class="math display">\[P=1.630968209403959324879279847782648941\ldots.\]</span></p>
-<p>The gap is a named low-energy hadronic and same-scheme endpoint
-contribution. The public exact-value row is a calibrated endpoint
-comparison, not a source-only prediction. The pure source theorem is
-work in progress at the Ward-projected hadronic spectral measure, the
-same-scheme endpoint bridge, and the interval-certificate step.</p>
+<p>The pure source calculation computes the fixed-point witness <span
+class="math display">\[
+\alpha^{-1}_{\mathrm{cand}}=136.994835164621649457949994585787193262029.
+\]</span> The public endpoint value is <span class="math display">\[
+\alpha^{-1}(0)=137.035999177(21),
+\]</span> with <span class="math display">\[
+P=1.630968209403959324879279847782648941\ldots.
+\]</span> The gap is a named low-energy hadronic and same-scheme
+endpoint contribution. The public exact-value row is a calibrated
+endpoint comparison, not a source-only prediction. The pure source
+theorem is work in progress at the Ward-projected hadronic spectral
+measure, the same-scheme endpoint bridge, and the interval-certificate
+step.</p>
 <h1 id="declarations">Declarations</h1>
 <p><strong>Funding declaration.</strong> No funding was received for
 this work.</p>
