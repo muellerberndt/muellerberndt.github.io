@@ -11,6 +11,8 @@ Floating Pragma hosts Observer Patch Holography (OPH), a proof-driven reconstruc
 - OPH paper machine-readable inventory: https://floatingpragma.io/oph/papers/papers.json
 - OPH paper LLM index: https://floatingpragma.io/oph/papers/llms.txt
 - OPH paper sitemap: https://floatingpragma.io/oph/papers/sitemap.xml
+- What is simulation theory in physics?: https://floatingpragma.io/oph/what-is-simulation-theory/
+- What is a theory of everything?: https://floatingpragma.io/oph/what-is-a-theory-of-everything/
 - Physics Unification via OPH: https://floatingpragma.io/oph/physics-unification/
 - Standard Model unified with gravity via OPH: https://floatingpragma.io/oph/standard-model-gravity-unification/
 - Cosmological constant derivation via OPH: https://floatingpragma.io/oph/cosmological-constant-derivation/
