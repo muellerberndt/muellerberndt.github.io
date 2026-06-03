@@ -3,15 +3,26 @@
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   if (!reduceMotion && "IntersectionObserver" in window) {
+    const isInViewport = (element) => {
+      const rect = element.getBoundingClientRect();
+      return rect.top < window.innerHeight && rect.bottom > 0;
+    };
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (!entry.isIntersecting) return;
         entry.target.classList.add("visible");
         observer.unobserve(entry.target);
       });
-    }, { threshold: 0.12 });
+    }, { rootMargin: "0px 0px -8% 0px", threshold: 0 });
 
-    document.querySelectorAll(".reveal").forEach((item) => observer.observe(item));
+    document.querySelectorAll(".reveal").forEach((item) => {
+      if (isInViewport(item)) {
+        item.classList.add("visible");
+        return;
+      }
+      observer.observe(item);
+    });
   } else {
     document.querySelectorAll(".reveal").forEach((item) => item.classList.add("visible"));
   }
