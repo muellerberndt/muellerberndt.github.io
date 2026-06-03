@@ -1,0 +1,110 @@
+# Observer Patch Holography Papers
+
+Release: r1461
+Released: June 3, 2026
+
+This page lists the first-party HTML and PDF URLs for the OPH paper stack.
+
+## Deriving the Particle Zoo from Observer Consistency
+
+- HTML: https://floatingpragma.io/oph/papers/particle-spectrum-from-observer-consistency/
+- PDF: https://floatingpragma.io/oph/papers/particle-spectrum-from-observer-consistency/paper.pdf
+- Authors: Bernhard Mueller, Alexander Osika, Kai Xue, Mario Poneder
+- Category: Particles
+- Summary: The OPH particle-spectrum continuation. It treats fine-structure closure, electroweak transport, selected-class quarks, neutrino branches, and status-separated hadron checks.
+
+## Observers Are All You Need
+
+- HTML: https://floatingpragma.io/oph/papers/observers-are-all-you-need/
+- PDF: https://floatingpragma.io/oph/papers/observers-are-all-you-need/paper.pdf
+- Authors: Bernhard Mueller, Alexander Osika, Kai Xue, Ben Cassie, Peter Nguyen, Mario Poneder, Kale Arnav Anirudha
+- Category: Theory of everything
+- Summary: The main Observer Patch Holography paper. It presents the observer-first reconstruction program for spacetime, gravity, Standard Model structure, cosmology, particles, records, and simulation-theory interpretation.
+
+## Paradise as Fixed-Point Consensus
+
+- HTML: https://floatingpragma.io/oph/papers/paradise-as-fixed-point-consensus/
+- PDF: https://floatingpragma.io/oph/papers/paradise-as-fixed-point-consensus/paper.pdf
+- Authors: Bernhard Mueller
+- Category: Observer continuation
+- Summary: The OPH continuation and meaning paper. It reads existence, observer continuation, record consistency, justice, resurrection, and paradise through fixed-point consensus.
+
+## Reality as a Consensus Protocol
+
+- HTML: https://floatingpragma.io/oph/papers/reality-as-consensus-protocol/
+- PDF: https://floatingpragma.io/oph/papers/reality-as-consensus-protocol/paper.pdf
+- Authors: Bernhard Mueller, Kai Xue, Kale Arnav Anirudha
+- Category: Simulation theory
+- Summary: The OPH fixed-point consensus paper. It formulates observer patches, overlap-visible records, repair moves, Lyapunov descent, quotient normal forms, and obstruction classes.
+
+## Recovering Relativity and Standard Model Structure from Observer Overlap Consistency
+
+- HTML: https://floatingpragma.io/oph/papers/standard-model-gravity-unification/
+- PDF: https://floatingpragma.io/oph/papers/standard-model-gravity-unification/paper.pdf
+- Authors: Bernhard Mueller, Kai Xue, Peter Nguyen
+- Category: Unification
+- Summary: The compact OPH route to Lorentz structure, the Einstein branch, compact-gauge reconstruction, the Standard Model quotient, color, generations, hypercharge, and branch-scoped Yang-Mills statements.
+
+## Screen Microphysics and Observer Synchronization
+
+- HTML: https://floatingpragma.io/oph/papers/screen-microphysics-and-observer-synchronization/
+- PDF: https://floatingpragma.io/oph/papers/screen-microphysics-and-observer-synchronization/paper.pdf
+- Authors: Bernhard Mueller, Alexander Osika, Kai Xue, Ben Cassie
+- Category: Screen physics
+- Summary: The fixed-cutoff OPH microphysics paper. It develops finite overlap-facing patch carriers, record algebras, measurement surfaces, observer backup, synchronization, and hardware-evidence rules.
+
+## Photonic Fixed-Point Consensus for SHA-256d Proof of Work
+
+- HTML: https://floatingpragma.io/oph/papers/photonic-fixed-point-consensus-sha256d-proof-of-work/
+- PDF: https://floatingpragma.io/oph/papers/photonic-fixed-point-consensus-sha256d-proof-of-work/paper.pdf
+- Authors: Bernhard Mueller, Alexander Osika
+- Category: Physical computation
+- Summary: An OPH-adjacent physical-computation paper on photonic fixed-point consensus, SHA-256d proof of work, analog constraint satisfaction, and verifier receipts.
+
+## Theoretical Bounds on Chi-Nu Susceptibility in Observer Patch Holography
+
+- HTML: https://floatingpragma.io/oph/papers/chi-nu-susceptibility-bounds/
+- PDF: https://floatingpragma.io/oph/papers/chi-nu-susceptibility-bounds/paper.pdf
+- Authors: Bernhard Mueller, Alex Osika
+- Category: Gravity engineering
+- Summary: A branch-scoped OPH calculation for chi-nu susceptibility bounds, coherent scalar sourcing, quotient-edge response, and engineering chart values.
+
+## The Fine-Structure Constant as an OPH Pixel Fixed Point
+
+- HTML: https://floatingpragma.io/oph/papers/fine-structure-constant-oph-pixel-fixed-point/
+- PDF: https://floatingpragma.io/oph/papers/fine-structure-constant-oph-pixel-fixed-point/paper.pdf
+- Authors: Bernhard Mueller
+- Category: Constants
+- Summary: A focused OPH paper on the fine-structure constant, local screen-cell closure, hadronic endpoint transport, and the fixed-point status of alpha.
+
+## Observer Patch Holography as a String-Vacuum Selector
+
+- HTML: https://floatingpragma.io/oph/papers/observer-patch-holography-string-vacuum-selector/
+- PDF: https://floatingpragma.io/oph/papers/observer-patch-holography-string-vacuum-selector/paper.pdf
+- Authors: Bernhard Mueller
+- Category: String theory
+- Summary: A bridge paper connecting the de Sitter observer problem, OPH edge-string effective language, and a heterotic Standard Model representative as a conditional string-vacuum selector.
+
+## Observer Patch Holography and the Dark Matter Phenomenon
+
+- HTML: https://floatingpragma.io/oph/papers/observer-patch-holography-dark-matter/
+- PDF: https://floatingpragma.io/oph/papers/observer-patch-holography-dark-matter/paper.pdf
+- Authors: Bernhard Mueller
+- Category: Dark matter
+- Summary: The OPH dark-matter phenomenology paper. It connects finite observer-overlap collars, record-repair load, galaxy rotation laws, lensing, BTFR behavior, and cosmological caveats.
+
+## Thinking as Patch-Net Fixed-Point Search
+
+- HTML: https://floatingpragma.io/oph/papers/thinking-as-patch-net-fixed-point-search/
+- PDF: https://floatingpragma.io/oph/papers/thinking-as-patch-net-fixed-point-search/paper.pdf
+- Authors: Bernhard Mueller
+- Category: Consciousness
+- Summary: An OPH paper on brains as biological fixed-point consensus systems, self-reading observer patches, recurrent repair, qualia, and AGI architecture.
+
+## Explaining the Yang-Mills Mass Gap in Observer Patch Holography
+
+- HTML: https://floatingpragma.io/oph/papers/yang-mills-mass-gap-observer-patch-holography/
+- PDF: https://floatingpragma.io/oph/papers/yang-mills-mass-gap-observer-patch-holography/paper.pdf
+- Authors: Bernhard Mueller
+- Category: Mathematical physics
+- Summary: A branch-scoped OPH paper on the Yang-Mills mass gap, support-visible compact-gauge extraction, Euclidean consensus, repair completeness, and the exact repair gap.

@@ -7,7 +7,10 @@ Floating Pragma hosts Observer Patch Holography (OPH), a proof-driven reconstruc
 - OPH Textbooks, the best guided study surface: https://learn.floatingpragma.io/
 - Reverse Engineering Reality, the book-length route: https://oph-book.floatingpragma.io/
 - OPH hub: https://floatingpragma.io/oph/
-- OPH paper summaries, HTML summaries of the six-paper stack: https://floatingpragma.io/oph/papers/
+- OPH paper stack, crawlable first-party HTML and PDFs: https://floatingpragma.io/oph/papers/
+- OPH paper machine-readable inventory: https://floatingpragma.io/oph/papers/papers.json
+- OPH paper LLM index: https://floatingpragma.io/oph/papers/llms.txt
+- OPH paper sitemap: https://floatingpragma.io/oph/papers/sitemap.xml
 - Physics Unification via OPH: https://floatingpragma.io/oph/physics-unification/
 - Standard Model unified with gravity via OPH: https://floatingpragma.io/oph/standard-model-gravity-unification/
 - Cosmological constant derivation via OPH: https://floatingpragma.io/oph/cosmological-constant-derivation/
@@ -29,6 +32,15 @@ Floating Pragma hosts Observer Patch Holography (OPH), a proof-driven reconstruc
 - Semiotics and the Physics of Meaning: https://blog.floatingpragma.io/semiotics-and-the-physics-of-meaning
 - P = NP on the Observer Screen: https://blog.floatingpragma.io/p-equals-np-on-the-observer-screen
 - The Trigger: https://blog.floatingpragma.io/the-trigger
+
+## OPH Paper Pages
+
+- Observers Are All You Need: https://floatingpragma.io/oph/papers/observers-are-all-you-need/
+- Recovering Relativity and Standard Model Structure from Observer Overlap Consistency: https://floatingpragma.io/oph/papers/standard-model-gravity-unification/
+- Deriving the Particle Zoo from Observer Consistency: https://floatingpragma.io/oph/papers/particle-spectrum-from-observer-consistency/
+- Reality as a Consensus Protocol: https://floatingpragma.io/oph/papers/reality-as-consensus-protocol/
+- Screen Microphysics and Observer Synchronization: https://floatingpragma.io/oph/papers/screen-microphysics-and-observer-synchronization/
+- Paradise as Fixed-Point Consensus: https://floatingpragma.io/oph/papers/paradise-as-fixed-point-consensus/
 
 ## Review Contact
 
