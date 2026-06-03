@@ -216,12 +216,12 @@
 <a href="#the-neural-dictionary">The Neural Dictionary</a>
 <a href="#finite-patch-net-theorem-stack">Finite Patch-Net Theorem Stack</a>
 <a href="#classical-fixed-point-support">Classical Fixed-Point Support</a>
-<a href="#proof-only-s_i-changes-so--delta-e">Proof. Only \(s_i\) changes, so $$ \Delta E</a>
 <a href="#what-oph-adds-to-existing-neuroscience">What OPH Adds to Existing Neuroscience</a>
 <a href="#intelligence-as-geometric-fixed-point-repair">Intelligence as Geometric Fixed-Point Repair</a>
 <a href="#repair-as-primitive">Repair as Primitive</a>
 <a href="#spike-as-boundary-commit">Spike as Boundary Commit</a>
-<a href="#fixed-point-repertoire">Fixed-Point Repertoire</a></nav>
+<a href="#fixed-point-repertoire">Fixed-Point Repertoire</a>
+<a href="#creativity-as-basin-discovery">Creativity as Basin Discovery</a></nav>
           </details>
         </header>
         <div class="paper-reader-grid">
@@ -446,24 +446,32 @@ class="math inline">\(\omega_i\)</span> phase state, and <span
 class="math inline">\(\ell_i\)</span> local latent coordinates.</em></p>
 </div>
 
-<h1
-id="at-the-useful-abstraction-level-each-neural-patch-updates-by--x_itdelta-t">At
-the useful abstraction level, each neural patch updates by $$
-x_i(t+\Delta t)</h1>
-<h1
-id="t_ileft-x_it-pi_jto-ix_jt_jin-ni-u_it-r_it-theta_it-right--where-u_it-is-sensory-interoceptive-motor-or-contextual-drive-a-continuous-approximation-is--dot-x_i">T_i!\left(
-x_i(t), {\pi_{j\to i}(x_j(t))}_{j\in N(i)}, u_i(t), r_i(t), \theta_i(t)
-\right), $$ where <span class="math inline">\(u_i(t)\)</span> is
-sensory, interoceptive, motor, or contextual drive. A continuous
-approximation is $$ \dot x_i</h1>
-<p>-M_i(x,t)\nabla_{x_i}\Phi_B(x,u,r) +A_i(x,u,r,t) +\xi_i(t). $$ Here
-<span class="math inline">\(M_i\)</span> is the local precision, gain,
-and mobility tensor, <span class="math inline">\(A_i\)</span> contains
-action-conditioned and value-conditioned drives, and <span
-class="math inline">\(\xi_i\)</span> represents stochastic biological
-fluctuation. This equation describes iterative deformation of a coupled
-state until exposed boundaries agree well enough to support perception,
-action, and record.</p>
+<p>At the useful abstraction level, each neural patch updates by <span
+class="math display">\[
+x_i(t+\Delta t)
+\mathrel{=}
+T_i\!\left(
+x_i(t),
+\{\pi_{j\to i}(x_j(t))\}_{j\in N(i)},
+u_i(t),
+r_i(t),
+\theta_i(t)
+\right),
+\]</span> where <span class="math inline">\(u_i(t)\)</span> is sensory,
+interoceptive, motor, or contextual drive. A continuous approximation is
+<span class="math display">\[
+\dot x_i
+\mathrel{=}
+-M_i(x,t)\nabla_{x_i}\Phi_B(x,u,r)
++A_i(x,u,r,t)
++\xi_i(t).
+\]</span> Here <span class="math inline">\(M_i\)</span> is the local
+precision, gain, and mobility tensor, <span
+class="math inline">\(A_i\)</span> contains action-conditioned and
+value-conditioned drives, and <span class="math inline">\(\xi_i\)</span>
+represents stochastic biological fluctuation. This equation describes
+iterative deformation of a coupled state until exposed boundaries agree
+well enough to support perception, action, and record.</p>
 <p>The compact slogan is: <span class="math display">\[
 \boxed{
 \text{A spike is a local write-commit to an overlap boundary.}
@@ -878,11 +886,17 @@ updates terminate at a fixed point.</em></p>
 
 <div class="proof">
 
-<h1 id="proof-only-s_i-changes-so--delta-e"><em>Proof.</em> Only <span
-class="math inline">\(s_i\)</span> changes, so $$ \Delta E</h1>
-<p>-(s_i'-s_i) \left( \sum_jw_{ij}s_j-\theta_i \right). $$ The update
-chooses <span class="math inline">\(s_i&#39;\)</span> to have the same
-sign as the local field <span
+<p><em>Proof.</em> Only <span class="math inline">\(s_i\)</span>
+changes, so <span class="math display">\[
+\Delta E
+\mathrel{=}
+-(s_i&#39;-s_i)
+\left(
+\sum_jw_{ij}s_j-\theta_i
+\right).
+\]</span> The update chooses <span
+class="math inline">\(s_i&#39;\)</span> to have the same sign as the
+local field <span
 class="math inline">\(h_i=\sum_jw_{ij}s_j-\theta_i\)</span>. Thus <span
 class="math inline">\((s_i&#39;-s_i)h_i\ge0\)</span>, and <span
 class="math inline">\(\Delta E\le0\)</span>. ◻</p>
@@ -913,25 +927,28 @@ Biological neurons are graded, delayed, noisy, and continuous. The
 fixed-point picture extends beyond binary toy networks.</p>
 <div class="theorem">
 
-<h1
-id="theorem-18-predictive-coding-as-oph-repair-in-a-hierarchical-gaussian-predictive-coding-model-let--epsilon_ellx_ell-f_ellx_ell1--and--phi_mathrmpc"><strong>Theorem
-18</strong> (Predictive coding as OPH repair). *In a hierarchical
-Gaussian predictive-coding model, let <span class="math display">\[
+<p><strong>Theorem 18</strong> (Predictive coding as OPH repair). <em>In
+a hierarchical Gaussian predictive-coding model, let <span
+class="math display">\[
 \epsilon_\ell=x_\ell-f_\ell(x_{\ell+1})
-\]</span> and $$ \Phi_{\mathrm{PC}}</h1>
-<p>\sum_\ell \epsilon_\ell^\top\Pi_\ell\epsilon_\ell, $$ where <span
-class="math inline">\(\Pi_\ell\)</span> is a precision matrix.
-Minimizing variational free energy is equivalent, up to priors and
-constants, to minimizing weighted squared overlap mismatch.</p>
+\]</span> and <span class="math display">\[
+\Phi_{\mathrm{PC}}
+\mathrel{=}
+\sum_\ell \epsilon_\ell^\top\Pi_\ell\epsilon_\ell,
+\]</span> where <span class="math inline">\(\Pi_\ell\)</span> is a
+precision matrix. Minimizing variational free energy is equivalent, up
+to priors and constants, to minimizing weighted squared overlap
+mismatch.</em></p>
 </div>
 
 <div class="proof">
 
-<h1
-id="proof-a-gaussian-likelihood-gives---log-px_ellmid-x_ell1"><em>Proof.</em>
-A Gaussian likelihood gives $$ -\log p(x_\ell\mid x_{\ell+1})</h1>
-<p>\frac12\epsilon_\ell^\top\Pi_\ell\epsilon_\ell+\mathrm{constant}. $$
-Summing across levels yields <span
+<p><em>Proof.</em> A Gaussian likelihood gives <span
+class="math display">\[
+-\log p(x_\ell\mid x_{\ell+1})
+\mathrel{=}
+\frac12\epsilon_\ell^\top\Pi_\ell\epsilon_\ell+\mathrm{constant}.
+\]</span> Summing across levels yields <span
 class="math inline">\(\Phi_{\mathrm{PC}}\)</span> plus constants and
 prior terms. Thus predictive coding’s residual-error minimization is an
 OPH overlap-mismatch minimization. ◻</p>
@@ -945,19 +962,22 @@ OPH overlap-mismatch minimization. ◻</p>
 cortex and its descendants .</p>
 <div class="theorem">
 
-<h1
-id="theorem-19-variational-free-energy-bounds-surprise-for-observations-o-latent-variables-z-and-approximate-posterior-qz-define--mathcal-fq-mathbb-e_q-log-pozmathbb-e_qlog-qz--then--mathcal-fq"><strong>Theorem
-19</strong> (Variational free energy bounds surprise). *For observations
-<span class="math inline">\(o\)</span>, latent variables <span
-class="math inline">\(z\)</span>, and approximate posterior <span
-class="math inline">\(q(z)\)</span>, define <span
+<p><strong>Theorem 19</strong> (Variational free energy bounds
+surprise). <em>For observations <span class="math inline">\(o\)</span>,
+latent variables <span class="math inline">\(z\)</span>, and approximate
+posterior <span class="math inline">\(q(z)\)</span>, define <span
 class="math display">\[
 \mathcal F(q)=
 \mathbb E_q[-\log p(o,z)]+\mathbb E_q[\log q(z)].
-\]</span> Then $$ \mathcal F(q)</h1>
-<p>D_{\mathrm{KL}}!\left(q(z),|,p(z\mid o)\right) -\log p(o) \ge -\log
-p(o), $$ with equality iff <span class="math inline">\(q(z)=p(z\mid
-o)\)</span>.</p>
+\]</span> Then <span class="math display">\[
+\mathcal F(q)
+\mathrel{=}
+D_{\mathrm{KL}}\!\left(q(z)\,\|\,p(z\mid o)\right)
+-\log p(o)
+\ge
+-\log p(o),
+\]</span> with equality iff <span class="math inline">\(q(z)=p(z\mid
+o)\)</span>.</em></p>
 </div>
 
 <div class="proof">
@@ -973,23 +993,25 @@ attention changes precision, learning changes the repair landscape, and
 action changes boundary input.</p>
 <div class="proposition">
 
-<h1
-id="proposition-20-equilibrium-propagation-reading-let-e_thetasx-be-a-recurrent-energy-and-csy-a-cost-for-nudged-energy--f_thetabetase_thetasxbeta-csy--let-s_theta0-be-the-free-fixed-point-and-s_thetabeta-the-weakly-nudged-fixed-point-equilibrium-propagation-learning-estimates--fracpartial-jpartialtheta"><strong>Proposition
-20</strong> (Equilibrium propagation reading). *Let <span
-class="math inline">\(E_\theta(s,x)\)</span> be a recurrent energy and
-<span class="math inline">\(C(s,y)\)</span> a cost. For nudged energy
-<span class="math display">\[
+<p><strong>Proposition 20</strong> (Equilibrium propagation reading).
+<em>Let <span class="math inline">\(E_\theta(s,x)\)</span> be a
+recurrent energy and <span class="math inline">\(C(s,y)\)</span> a cost.
+For nudged energy <span class="math display">\[
 F_\theta^\beta(s)=E_\theta(s,x)+\beta C(s,y),
 \]</span> let <span class="math inline">\(s_\theta^0\)</span> be the
 free fixed point and <span class="math inline">\(s_\theta^\beta\)</span>
 the weakly nudged fixed point. Equilibrium-propagation learning
-estimates $$ \frac{\partial J}{\partial\theta}</h1>
-<h2
-id="lim_betato0-frac1beta-left-fracpartial-e_thetapartialthetas_thetabeta">\lim_{\beta\to0}
-\frac1\beta \left[ \frac{\partial
-E_\theta}{\partial\theta}(s_\theta^\beta)</h2>
-<p>\frac{\partial E_\theta}{\partial\theta}(s_\theta^0) \right], $$ up
-to sign convention.</p>
+estimates <span class="math display">\[
+\frac{\partial J}{\partial\theta}
+\mathrel{=}
+\lim_{\beta\to0}
+\frac1\beta
+\left[
+\frac{\partial E_\theta}{\partial\theta}(s_\theta^\beta)
+\text{-}
+\frac{\partial E_\theta}{\partial\theta}(s_\theta^0)
+\right],
+\]</span> up to sign convention.</em></p>
 </div>
 
 <p>The same recurrent substrate can perform inference and learning . It
@@ -1110,15 +1132,15 @@ class="math display">\[
 actually reach under boundary pressure.</p>
 <h2 id="creativity-as-basin-discovery">Creativity as Basin
 Discovery</h2>
-<h1
-id="creativity-is-controlled-basis-change-that-reveals-a-hidden-fixed-point--xstar_mathrmnew">Creativity
-is controlled basis change that reveals a hidden fixed point: $$
-x^\star_{\mathrm{new}}</h1>
-<p>T_{\theta'}(x^\star_{\mathrm{new}}). $$ Here <span
-class="math inline">\(\theta&#39;\)</span> is a temporary transformation
-of basis, field, gain, attention, or geometry. The creative move raises
-short-term dysphony in order to increase future <span
-class="math inline">\(K\)</span>: <span class="math display">\[
+<p>Creativity is controlled basis change that reveals a hidden fixed
+point: <span class="math display">\[
+x^\star_{\mathrm{new}}
+\mathrel{=}
+T_{\theta&#39;}(x^\star_{\mathrm{new}}).
+\]</span> Here <span class="math inline">\(\theta&#39;\)</span> is a
+temporary transformation of basis, field, gain, attention, or geometry.
+The creative move raises short-term dysphony in order to increase future
+<span class="math inline">\(K\)</span>: <span class="math display">\[
 \boxed{
 \text{Creativity is controlled dysphony that raises future }K.
 }
@@ -1170,14 +1192,17 @@ reorganize psychiatric explanation around computational mechanisms
 beyond symptom lists .</p>
 <h2 id="emotion-as-k-gradient">Emotion as <span
 class="math inline">\(K\)</span>-Gradient</h2>
-<h1 id="emotion-is-part-of-the-objective-function--dot-k">Emotion is
-part of the objective function: $$ \dot K</h1>
-<p>S(v,F)+\nabla K^\star(F)\cdot g(F,v). $$ Fear is a negative predicted
-boundary-repair gradient. Curiosity is positive expected information
-gain toward future consensus. Joy is rapid agreement between body,
-world, memory, and action. Grief is persistent field mismatch caused by
-a missing co-radiator. These model-grade readings give a mathematical
-psychology in which affect is load-bearing.</p>
+<p>Emotion is part of the objective function: <span
+class="math display">\[
+\dot K
+\mathrel{=}
+S(v,F)+\nabla K^\star(F)\cdot g(F,v).
+\]</span> Fear is a negative predicted boundary-repair gradient.
+Curiosity is positive expected information gain toward future consensus.
+Joy is rapid agreement between body, world, memory, and action. Grief is
+persistent field mismatch caused by a missing co-radiator. These
+model-grade readings give a mathematical psychology in which affect is
+load-bearing.</p>
 <h1 id="domain-competence-and-personal-competence-atlases">Domain
 Competence and Personal Competence Atlases</h1>
 <p>For a domain <span class="math inline">\(D\)</span>, such as music,
@@ -1194,63 +1219,102 @@ x^\star_D(u)=T_{\theta,D}(x^\star_D(u),u,R),
 \Phi_D(x^\star_D,u)&lt;\epsilon_D.
 \]</span></p>
 <h2 id="domain-competence-score">Domain Competence Score</h2>
-<h1 id="define--boxed-mathrmcomp_db">Define $$ \boxed{
-\mathrm{Comp}_D(B)</h1>
-<p>\mathbb E_{u\sim\mathcal T_D} \left[ \mathbf 1_{\mathrm{success}}(u)
-e^{-\lambda_\Phi \Phi_D(x^\star,u)} e^{-\lambda_\tau \tau_D(u)}
-e^{-\lambda_E E_D(u)} \rho_D(u) \right]. } $$ Here <span
-class="math inline">\(\tau_D(u)\)</span> is convergence time, <span
-class="math inline">\(E_D(u)\)</span> is metabolic or attentional cost,
-and <span class="math inline">\(\rho_D(u)\)</span> is robustness under
+<p>Define <span class="math display">\[
+\boxed{
+\mathrm{Comp}_D(B)
+\mathrel{=}
+\mathbb E_{u\sim\mathcal T_D}
+\left[
+\mathbf 1_{\mathrm{success}}(u)
+e^{-\lambda_\Phi \Phi_D(x^\star,u)}
+e^{-\lambda_\tau \tau_D(u)}
+e^{-\lambda_E E_D(u)}
+\rho_D(u)
+\right].
+}
+\]</span> Here <span class="math inline">\(\tau_D(u)\)</span> is
+convergence time, <span class="math inline">\(E_D(u)\)</span> is
+metabolic or attentional cost, and <span
+class="math inline">\(\rho_D(u)\)</span> is robustness under
 perturbation, sleep loss, noise, stress, novelty, or distraction.
 Competence means reaching good fixed points quickly, cheaply, robustly,
 and repeatedly.</p>
 <h2 id="basin-coverage">Basin Coverage</h2>
-<h1
-id="competence-also-includes-the-fraction-of-a-domains-task-space-for-which-the-brain-has-reachable-basins--boxed-mathcal-b_db">Competence
-also includes the fraction of a domain’s task space for which the brain
-has reachable basins: $$ \boxed{ \mathcal B_D(B)</h1>
-<p>\int_{\mathcal T_D} \mathbf 1 \left[ \exists x^\star:
-x^\star=T_{\theta,D}(x^\star,u),\quad \Phi_D(x^\star,u)&lt;\epsilon_D
-\right] d\mu(u). } $$ A beginner has narrow basin coverage. An expert
-has large basin coverage. A genius has large basin coverage plus high
-transfer between domains.</p>
+<p>Competence also includes the fraction of a domain’s task space for
+which the brain has reachable basins: <span class="math display">\[
+\boxed{
+\mathcal B_D(B)
+\mathrel{=}
+\int_{\mathcal T_D}
+\mathbf 1
+\left[
+\exists x^\star:
+x^\star=T_{\theta,D}(x^\star,u),\quad
+\Phi_D(x^\star,u)&lt;\epsilon_D
+\right]
+d\mu(u).
+}
+\]</span> A beginner has narrow basin coverage. An expert has large
+basin coverage. A genius has large basin coverage plus high transfer
+between domains.</p>
 <h2 id="transfer-and-metacompetence">Transfer and Metacompetence</h2>
-<h1
-id="define-transfer-from-domain-d-to-d-by--boxed-mathrmtransfer_dto-d">Define
-transfer from domain <span class="math inline">\(D\)</span> to <span
-class="math inline">\(D&#39;\)</span> by $$ \boxed{
-\mathrm{Transfer}_{D\to D'}</h1>
-<p>\frac{ I(R_D;Y_{D'}^\star) }{ H(Y_{D'}^\star)+\epsilon }. } $$ This
-measures whether records learned in one domain help another domain
-converge. Music can help language rhythm. Mathematics can help physics.
-Dance can help social timing. Meditation can help emotional regulation.
-Programming can help formal reasoning.</p>
-<h1
-id="humans-are-special-because-they-can-estimate-their-own-convergence--boxed-mathrmmetacomp_d">Humans
-are special because they can estimate their own convergence: $$ \boxed{
-\mathrm{MetaComp}_D</h1>
-<p>I(\widehat{\Phi}_D,\Phi_D) + I(\widehat{\tau}_D,\tau_D) +
-I(\widehat{\mathrm{success}}_D,\mathrm{success}_D). } $$ This is knowing
-whether you know. A strong scientist needs competence and
-metacompetence.</p>
-<h2 id="competence-atlas">Competence Atlas</h2>
-<h1
-id="an-individual-brain-gets-a-competence-vector--boxed-mathbf-c_b">An
-individual brain gets a competence vector $$ \boxed{ \mathbf C_B</h1>
-<p>\left( \begin{gathered} \mathrm{Comp}<em>{\mathrm{language}},
-\mathrm{Comp}</em>{\mathrm{music}}, \mathrm{Comp}<em>{\mathrm{math}},
-\mathrm{Comp}</em>{\mathrm{social}},\ \mathrm{Comp}<em>{\mathrm{motor}},
-\mathrm{Comp}</em>{\mathrm{emotional}},
-\mathrm{Comp}<em>{\mathrm{spatial}},
-\mathrm{Comp}</em>{\mathrm{creative}}, \ldots \end{gathered} \right). }
+<p>Define transfer from domain <span class="math inline">\(D\)</span> to
+<span class="math inline">\(D&#39;\)</span> by <span
+class="math display">\[
+\boxed{
+\mathrm{Transfer}_{D\to D&#39;}
+\mathrel{=}
+\frac{
+I(R_D;Y_{D&#39;}^\star)
+}{
+H(Y_{D&#39;}^\star)+\epsilon
+}.
+}
+\]</span> This measures whether records learned in one domain help
+another domain converge. Music can help language rhythm. Mathematics can
+help physics. Dance can help social timing. Meditation can help
+emotional regulation. Programming can help formal reasoning.</p>
+<p>Humans are special because they can estimate their own convergence:
 <span class="math display">\[
-The transfer matrix
-\]</span> \boxed{ T_{ij}=\mathrm{Transfer}_{D_i\to D_j} } $$ then
-records how learning in one domain improves convergence in another. This
-is a practical target: combine behavior, EEG, fMRI, MEG, wearables,
-sleep/circadian data, and subjective reports into a personal fixed-point
-competence atlas.</p>
+\boxed{
+\mathrm{MetaComp}_D
+\mathrel{=}
+I(\widehat{\Phi}_D,\Phi_D)
++
+I(\widehat{\tau}_D,\tau_D)
++
+I(\widehat{\mathrm{success}}_D,\mathrm{success}_D).
+}
+\]</span> This is knowing whether you know. A strong scientist needs
+competence and metacompetence.</p>
+<h2 id="competence-atlas">Competence Atlas</h2>
+<p>An individual brain gets a competence vector <span
+class="math display">\[
+\boxed{
+\mathbf C_B
+\mathrel{=}
+\left(
+\begin{gathered}
+\mathrm{Comp}_{\mathrm{language}},
+\mathrm{Comp}_{\mathrm{music}},
+\mathrm{Comp}_{\mathrm{math}},
+\mathrm{Comp}_{\mathrm{social}},\\
+\mathrm{Comp}_{\mathrm{motor}},
+\mathrm{Comp}_{\mathrm{emotional}},
+\mathrm{Comp}_{\mathrm{spatial}},
+\mathrm{Comp}_{\mathrm{creative}},
+\ldots
+\end{gathered}
+\right).
+}
+\]</span> The transfer matrix <span class="math display">\[
+\boxed{
+T_{ij}=\mathrm{Transfer}_{D_i\to D_j}
+}
+\]</span> then records how learning in one domain improves convergence
+in another. This is a practical target: combine behavior, EEG, fMRI,
+MEG, wearables, sleep/circadian data, and subjective reports into a
+personal fixed-point competence atlas.</p>
 <p>The neural-manifold result of Sadtler et al. gives the relevant
 constraint: monkeys more readily learned brain-computer-interface
 mappings inside the intrinsic neural manifold than mappings outside it .
@@ -1281,16 +1345,23 @@ memory, motor habit, expectation, timbre, social context, and learned
 syntax all deform the musical repair landscape. Consonance and
 dissonance are low- or high-mismatch regions relative to a trained
 brain-body-cultural patch net.</p>
-<h1
-id="let-the-musical-field-be--f_mt-sum_n-a_n-eiomega_n-tphi_n--music-acts-by-shaping--boxed-mathcal-m">Let
-the musical field be <span class="math display">\[
+<p>Let the musical field be <span class="math display">\[
 F_M(t)=
 \sum_n A_n e^{i(\omega_n t+\phi_n)}.
-\]</span> Music acts by shaping $$ \boxed{ \mathcal M</h1>
-<h2 id="int_0t-e-rho-t-left-svtf_mt">\int_0^T e^{-\rho t} \left[
-S(v(t),F_M(t))</h2>
-<p>\lambda_\Phi\Phi_{\mathrm{brain-body}}(t) + \lambda_K\dot K(t)
-\right]dt. } $$ Here <span
+\]</span> Music acts by shaping <span class="math display">\[
+\boxed{
+\mathcal M
+\mathrel{=}
+\int_0^T e^{-\rho t}
+\left[
+S(v(t),F_M(t))
+\text{-}
+\lambda_\Phi\Phi_{\mathrm{brain-body}}(t)
++
+\lambda_K\dot K(t)
+\right]dt.
+}
+\]</span> Here <span
 class="math inline">\(S(v,F_M)=\operatorname{Re}\langle
 v,F_M\rangle\)</span> is phase alignment, <span
 class="math inline">\(\Phi_{\mathrm{brain-body}}\)</span> is mismatch
@@ -1298,15 +1369,18 @@ among motor, auditory, emotional, memory, and interoceptive patches, and
 <span class="math inline">\(\dot K\)</span> is future coherence or
 value.</p>
 <h2 id="rhythm-harmony-melody">Rhythm, Harmony, Melody</h2>
-<h1
-id="rhythm-creates-a-shared-clock--theta_itmapstotheta_itomega-t--it-raises-phase-unison--gamma_u">Rhythm
-creates a shared clock: <span class="math display">\[
+<p>Rhythm creates a shared clock: <span class="math display">\[
 \theta_i(t)\mapsto\theta_i(t)+\omega t.
-\]</span> It raises phase unison: $$ \Gamma_U</h1>
-<p>\frac{ \left|\sum_i a_i e^{i\theta_i}v_i\right|^2 }{ \left(\sum_i
-a_i|v_i|\right)^2+\epsilon }. $$ Groove is high <span
-class="math inline">\(\Gamma_U\)</span> plus slight repairable
-prediction error: <span class="math display">\[
+\]</span> It raises phase unison: <span class="math display">\[
+\Gamma_U
+\mathrel{=}
+\frac{
+\left|\sum_i a_i e^{i\theta_i}v_i\right|^2
+}{
+\left(\sum_i a_i|v_i|\right)^2+\epsilon
+}.
+\]</span> Groove is high <span class="math inline">\(\Gamma_U\)</span>
+plus slight repairable prediction error: <span class="math display">\[
 \mathrm{Groove}
 \approx
 \Gamma_U
@@ -1331,41 +1405,58 @@ x^\star(t)=T(x^\star(t),F_M(t)).
 predictable means no repair. Too chaotic means no convergence. Beauty is
 repeated successful repair with surprise.</p>
 <h2 id="group-music">Group Music</h2>
-<h1
-id="a-dance-floor-concert-choir-or-rave-is-a-temporary-observer-federation--gamma_mathrmgroup">A
-dance floor, concert, choir, or rave is a temporary observer federation:
-$$ \Gamma_{\mathrm{group}}</h1>
-<p>\frac{ \left| \sum_{p\in\mathrm{people}} a_p e^{i\theta_p}v_p
-\right|^2 }{ \left(\sum_p a_p|v_p|\right)^2+\epsilon }. <span
-class="math display">\[
-A musical peak is
-\]</span> \Gamma_{\mathrm{group}}\uparrow, \qquad
-\Phi_{\mathrm{group}}\downarrow, \qquad K_{\mathrm{group}}\uparrow.
-<span class="math display">\[
-This is OPH federation.
-\]</span> \boxed{ \text{Music is low-cost large-scale human consensus
-technology.} } $$</p>
+<p>A dance floor, concert, choir, or rave is a temporary observer
+federation: <span class="math display">\[
+\Gamma_{\mathrm{group}}
+\mathrel{=}
+\frac{
+\left|
+\sum_{p\in\mathrm{people}}
+a_p e^{i\theta_p}v_p
+\right|^2
+}{
+\left(\sum_p a_p|v_p|\right)^2+\epsilon
+}.
+\]</span> A musical peak is <span class="math display">\[
+\Gamma_{\mathrm{group}}\uparrow,
+\qquad
+\Phi_{\mathrm{group}}\downarrow,
+\qquad
+K_{\mathrm{group}}\uparrow.
+\]</span> This is OPH federation. <span class="math display">\[
+\boxed{
+\text{Music is low-cost large-scale human consensus technology.}
+}
+\]</span></p>
 <h1 id="consciousness-and-qualia-as-self-read-convergence">Consciousness
 and Qualia as Self-Read Convergence</h1>
 <p>OPH treats consciousness as self-reading substrate dynamics: a system
 stores its own state, reads that stored state through its own
 transitions, and updates from that read. The brain implements this
 through recurrent loops and stable records.</p>
-<h1
-id="let-f_ut-be-the-field-admitted-to-a-candidate-observer-federation-u--f_ut">Let
-<span class="math inline">\(F_U(t)\)</span> be the field admitted to a
-candidate observer federation <span class="math inline">\(U\)</span>: $$
-F_U(t)</h1>
-<h1
-id="f_mathrmexterot-f_mathrminterot-f_mathrmmemoryt-f_mathrmsocialt-f_mathrmbodyt--let-v_ut-be-the-instantaneous-self-state-r_ut-the-record-layer-and-phi_ut-the-exposed-mismatch-the-oph-experience-variable-is--boxed-mathrmexperience_ut">F_{\mathrm{extero}}(t)
-+F_{\mathrm{intero}}(t) +F_{\mathrm{memory}}(t) +F_{\mathrm{social}}(t)
-+F_{\mathrm{body}}(t). $$ Let <span
-class="math inline">\(v_U(t)\)</span> be the instantaneous self-state,
-<span class="math inline">\(R_U(t)\)</span> the record layer, and <span
-class="math inline">\(\Phi_U(t)\)</span> the exposed mismatch. The OPH
-experience variable is $$ \boxed{ \mathrm{Experience}_U(t)</h1>
-<p>\left[ v_U(t),F_U(t),R_U(t),\Phi_U(t),K_U(t)
-\right]_{\mathrm{inside}}. } $$</p>
+<p>Let <span class="math inline">\(F_U(t)\)</span> be the field admitted
+to a candidate observer federation <span
+class="math inline">\(U\)</span>: <span class="math display">\[
+F_U(t)
+\mathrel{=}
+F_{\mathrm{extero}}(t)
++F_{\mathrm{intero}}(t)
++F_{\mathrm{memory}}(t)
++F_{\mathrm{social}}(t)
++F_{\mathrm{body}}(t).
+\]</span> Let <span class="math inline">\(v_U(t)\)</span> be the
+instantaneous self-state, <span class="math inline">\(R_U(t)\)</span>
+the record layer, and <span class="math inline">\(\Phi_U(t)\)</span> the
+exposed mismatch. The OPH experience variable is <span
+class="math display">\[
+\boxed{
+\mathrm{Experience}_U(t)
+\mathrel{=}
+\left[
+v_U(t),F_U(t),R_U(t),\Phi_U(t),K_U(t)
+\right]_{\mathrm{inside}}.
+}
+\]</span></p>
 <p>The bracket <span
 class="math inline">\([\cdot]_{\mathrm{inside}}\)</span> matters.
 Experience is the internally available readout of a self-reading patch
@@ -1384,22 +1475,26 @@ boundary, local algebra, record, readout, overlap, and repair. The
 public world is reconstructed from successful overlap repair among such
 records. A self-reading observer therefore sits at the primitive level
 used to assemble the public world.</p>
-<h1
-id="for-a-bounded-patch-o-write-the-record-conditioned-self-update-as--mathcal-u_o-rho_or_of_partial-o-longmapsto-rho_or_o--the-interior-readout-is-the-observer-facing-restriction-of-that-same-process--boxed-mathrminside_ot">For
-a bounded patch <span class="math inline">\(O\)</span>, write the
+<p>For a bounded patch <span class="math inline">\(O\)</span>, write the
 record-conditioned self-update as <span class="math display">\[
 \mathcal U_O:
 (\rho_O,R_O,F_{\partial O})
 \longmapsto
 (\rho_O&#39;,R_O&#39;).
 \]</span> The interior readout is the observer-facing restriction of
-that same process: $$ \boxed{ \mathrm{Inside}_O(t)</h1>
-<p>q_{\mathcal O} !\left( \rho_O(t),R_O(t),F_{\partial O}(t),\mathcal
-U_O \right). } $$ Here <span class="math inline">\(q_{\mathcal
-O}\)</span> forgets hidden representatives and keeps the distinctions
-available to <span class="math inline">\(O\)</span>’s own record and
-update machinery. This is the formal meaning of “inside” in the
-paper.</p>
+that same process: <span class="math display">\[
+\boxed{
+\mathrm{Inside}_O(t)
+\mathrel{=}
+q_{\mathcal O}
+\!\left(
+\rho_O(t),R_O(t),F_{\partial O}(t),\mathcal U_O
+\right).
+}
+\]</span> Here <span class="math inline">\(q_{\mathcal O}\)</span>
+forgets hidden representatives and keeps the distinctions available to
+<span class="math inline">\(O\)</span>’s own record and update
+machinery. This is the formal meaning of “inside” in the paper.</p>
 <div class="claim">
 
 <p><strong>Claim 21</strong> (Why consciousness exists in OPH). <em>If
@@ -1412,9 +1507,7 @@ sense.</em></p>
 <p>The claim is an ontological identification inside OPH. It replaces
 the production picture with a primitive self-read channel inside a
 bounded observer patch.</p>
-<h1
-id="oph-rejects-the-private-world-reading-in-which-the-brain-hallucinates-reality-and-nothing-else-exists-that-reading-is-solipsism-the-sharper-claim-is--boxed-begingathered-textbfseries-there-is-no-view-from-nowhere-object-behind-experience-textbfseries-there-are-observer-patches-records-overlap-checks-textbfseries-and-stable-normal-forms-that-survive-reconciliation-endgathered---standard-physicalism-often-begins-with-a-completed-third-person-world-and-then-asks-how-consciousness-appears-inside-it-oph-reverses-the-order-its-primitive-object-is-an-observer-patch-with-accessible-state-records-and-overlap-relations-a-world-is-the-fixed-point-of-observer-agreement--boxed-mathcal-woperatornamenfs---more-explicitly-the-objective-world-is-the-quotient-of-observer-accessible-records-under-successful-overlap-repair--boxed-mathcal-w_mathrmobjective">OPH
-rejects the private-world reading in which the brain hallucinates
+<p>OPH rejects the private-world reading in which the brain hallucinates
 reality and nothing else exists. That reading is solipsism. The sharper
 claim is: <span class="math display">\[
 \boxed{
@@ -1434,16 +1527,23 @@ point of observer agreement: <span class="math display">\[
 \mathcal W=\operatorname{nf}(s).
 }
 \]</span> More explicitly, the objective world is the quotient of
-observer-accessible records under successful overlap repair: $$ \boxed{
-\mathcal W_{\mathrm{objective}}</h1>
-<p>\left(\prod_i R_i\right)\big/!\sim_{\mathrm{overlap}}. } <span
+observer-accessible records under successful overlap repair: <span
 class="math display">\[
-Here
-\]</span> r_i\sim_{\mathrm{overlap}} r_j \quad\Longleftrightarrow\quad
-\pi_{i,e}(r_i)=\pi_{j,e}(r_j) <span class="math display">\[
-after accepted repair. Objectivity names invariance across observers:
-\]</span> \boxed{ \text{\bfseries Objectivity is intersubjective
-invariance.} } $$</p>
+\boxed{
+\mathcal W_{\mathrm{objective}}
+\mathrel{=}
+\left(\prod_i R_i\right)\big/\!\sim_{\mathrm{overlap}}.
+}
+\]</span> Here <span class="math display">\[
+r_i\sim_{\mathrm{overlap}} r_j
+\quad\Longleftrightarrow\quad
+\pi_{i,e}(r_i)=\pi_{j,e}(r_j)
+\]</span> after accepted repair. Objectivity names invariance across
+observers: <span class="math display">\[
+\boxed{
+\text{\bfseries Objectivity is intersubjective invariance.}
+}
+\]</span></p>
 <div class="definition">
 
 <p><strong>Definition 22</strong> (Object as record normal form). <em>An
@@ -1458,39 +1558,43 @@ T^n(X)\approx X
 \]</span> for the relevant persistence horizon.</em></p>
 </div>
 
-<h1
-id="thus--boxed-textbfseries-objecttextbfseries-persistent-overlap-stable-record-family---a-solid-object-is-the-high-stability-case--operatornamesolidx">Thus
-<span class="math display">\[
+<p>Thus <span class="math display">\[
 \boxed{
 \text{\bfseries Object}=\text{\bfseries persistent overlap-stable record
 family.}
 }
-\]</span> A solid object is the high-stability case: $$
-\operatorname{Solid}(X)</h1>
-<p>\operatorname{Persist}(X), \operatorname{Consensus}(X),
-\operatorname{CounterfactualStability}(X). $$ An object is a record
-family stable under cross-observer comparison, counterfactual
-remeasurement, and lawful intervention. A table is real because it
-survives cross-patch comparison: one observer sees it, another sees it,
-cameras and instruments record it, contact interactions constrain it,
-and repeated measurements reuse it. A measured rock supports stable
-multi-patch predictions under touching, moving, photographing, weighing,
-and repeated return. A dream-table may be vivid inside one patch, while
-multi-observer overlap repair fails. A hallucinated rock is a
-single-patch record that fails consensus; a measured rock is a repaired
-overlap-stable sector.</p>
+\]</span> A solid object is the high-stability case: <span
+class="math display">\[
+\operatorname{Solid}(X)
+\mathrel{=}
+\operatorname{Persist}(X)\,
+\operatorname{Consensus}(X)\,
+\operatorname{CounterfactualStability}(X).
+\]</span> An object is a record family stable under cross-observer
+comparison, counterfactual remeasurement, and lawful intervention. A
+table is real because it survives cross-patch comparison: one observer
+sees it, another sees it, cameras and instruments record it, contact
+interactions constrain it, and repeated measurements reuse it. A
+measured rock supports stable multi-patch predictions under touching,
+moving, photographing, weighing, and repeated return. A dream-table may
+be vivid inside one patch, while multi-observer overlap repair fails. A
+hallucinated rock is a single-patch record that fails consensus; a
+measured rock is a repaired overlap-stable sector.</p>
 <div class="claim">
 
-<h1
-id="claim-23-reality-requires-observer-accessible-records-let-mathcal-w-be-a-physically-meaningful-world-in-oph-then-mathcal-w-is-the-quotient-normal-form-of-observer-accessible-patch-records-under-overlap-repair--mathcal-w"><strong>Claim
-23</strong> (Reality requires observer-accessible records). *Let <span
-class="math inline">\(\mathcal W\)</span> be a physically meaningful
-world in OPH. Then <span class="math inline">\(\mathcal W\)</span> is
-the quotient-normal form of observer-accessible patch records under
-overlap repair: $$ \mathcal W</h1>
-<p>\operatorname{nf}!\left( \prod_i (P_i,\mathcal A(P_i),\rho_i,R_i)
-\right)\big/!\sim_{\mathrm{gauge}}. $$ Therefore physical objecthood is
-observer-consensus objecthood.</p>
+<p><strong>Claim 23</strong> (Reality requires observer-accessible
+records). <em>Let <span class="math inline">\(\mathcal W\)</span> be a
+physically meaningful world in OPH. Then <span
+class="math inline">\(\mathcal W\)</span> is the quotient-normal form of
+observer-accessible patch records under overlap repair: <span
+class="math display">\[
+\mathcal W
+\mathrel{=}
+\operatorname{nf}\!\left(
+\prod_i (P_i,\mathcal A(P_i),\rho_i,R_i)
+\right)\big/\!\sim_{\mathrm{gauge}}.
+\]</span> Therefore physical objecthood is observer-consensus
+objecthood.</em></p>
 </div>
 
 <p>Matter is the public, persistent, low-<span
@@ -1517,22 +1621,24 @@ observer-accessible records.</p>
 \end{gathered}
 }
 \]</span></p>
-<h1
-id="using-the-oph-vibe-notation-define-symphony-and-dysphony-by--svfoperatornamerelangle-vfrangle-qquad-dvfvf-svfge-0--instantaneous-alignment-solves--vstartoperatornameargmax_vfsvft--the-nontrivial-biological-problem-is-intertemporal--kv0t">Using
-the OPH vibe notation, define symphony and dysphony by <span
+<p>Using the OPH vibe notation, define symphony and dysphony by <span
 class="math display">\[
 S(v,F)=\operatorname{Re}\langle v,F\rangle,
 \qquad
 D(v,F)=\|v\|\,\|F\|-S(v,F)\ge 0.
 \]</span> Instantaneous alignment solves <span class="math display">\[
 v^\star(t)=\operatorname*{arg\,max}_{\|v\|=\|F\|}S(v,F(t)).
-\]</span> The nontrivial biological problem is intertemporal: $$
-K[v;0,T]</h1>
-<p>\int_0^T e^{-\rho t}S(v(t),F(t)),dt. <span class="math display">\[
-A locally unpleasant or dysphonic action can be admissible when it
-improves future coherence:
-\]</span> S(v,F)&lt;0, \qquad \nabla K^\star(F)\cdot g(F,v)&gt;|S(v,F)|.
-$$ This is the mathematical place where effort, pain, discipline,
+\]</span> The nontrivial biological problem is intertemporal: <span
+class="math display">\[
+K[v;0,T]
+\mathrel{=}
+\int_0^T e^{-\rho t}S(v(t),F(t))\,dt.
+\]</span> A locally unpleasant or dysphonic action can be admissible
+when it improves future coherence: <span class="math display">\[
+S(v,F)&lt;0,
+\qquad
+\nabla K^\star(F)\cdot g(F,v)&gt;|S(v,F)|.
+\]</span> This is the mathematical place where effort, pain, discipline,
 curiosity, and action belong. They are value-conditioned deformations of
 the convergence landscape.</p>
 <div class="theorem">
@@ -1583,23 +1689,31 @@ respect to self-reading. If at least two possible record states produce
 different update laws, the observer has an internally available
 distinction. OPH calls active, record-stable, update-relevant
 distinctions qualia.</p>
-<h1
-id="let-o-have-record-space-r_o-and-self-update-map--mathcal-u_orhorf_partial-o--define-an-equivalence-relation-on-records-by--requiv_o-r-quadlongleftrightarrowquad-q_mathcal-o-left-mathcal-u_orhorf_partial-o-right">Let
-<span class="math inline">\(O\)</span> have record space <span
+<p>Let <span class="math inline">\(O\)</span> have record space <span
 class="math inline">\(R_O\)</span> and self-update map <span
 class="math display">\[
 \mathcal U_O(\rho,r,F_{\partial O}).
-\]</span> Define an equivalence relation on records by $$ r\equiv_O r'
-\quad\Longleftrightarrow\quad q_{\mathcal O} !\left( \mathcal
-U_O(\rho,r,F_{\partial O}) \right)</h1>
-<h1
-id="q_mathcal-o-left-mathcal-u_orhorf_partial-o-right--for-the-observer-facing-future-law-over-the-relevant-horizon-the-equivalence-classes-are-the-self-read-distinctions-of-o-the-finite-algebra-generated-by-their-characteristic-projectors-is--mathcal-q_omin">q_{\mathcal
-O} !\left( \mathcal U_O(\rho,r',F_{\partial O}) \right) $$ for the
-observer-facing future law over the relevant horizon. The equivalence
-classes are the self-read distinctions of <span
+\]</span> Define an equivalence relation on records by <span
+class="math display">\[
+r\equiv_O r&#39;
+\quad\Longleftrightarrow\quad
+q_{\mathcal O}
+\!\left(
+\mathcal U_O(\rho,r,F_{\partial O})
+\right)
+\mathrel{=}
+q_{\mathcal O}
+\!\left(
+\mathcal U_O(\rho,r&#39;,F_{\partial O})
+\right)
+\]</span> for the observer-facing future law over the relevant horizon.
+The equivalence classes are the self-read distinctions of <span
 class="math inline">\(O\)</span>. The finite algebra generated by their
-characteristic projectors is $$ \mathcal Q_O^{\min}</h1>
-<p>\operatorname{span}{P_{[r]}:[r]\in R_O/!\equiv_O}. $$</p>
+characteristic projectors is <span class="math display">\[
+\mathcal Q_O^{\min}
+\mathrel{=}
+\operatorname{span}\{P_{[r]}:[r]\in R_O/\!\equiv_O\}.
+\]</span></p>
 <div class="proposition">
 
 <p><strong>Proposition 25</strong> (Nontrivial self-read induces qualia
@@ -1663,14 +1777,24 @@ local update interface that writes, compares, and repairs records. The
 microphysics criterion is operational: patch access, metastable records,
 update capability, comparison capability, and persistence over many
 local cycles.</p>
-<h1 id="define-the-qualia-algebra--boxed-mathcal-q_ot">Define the qualia
-algebra $$ \boxed{ \mathcal Q_O(t)</h1>
-<p>\mathcal Z_{\mathrm{rec}}^{O}(t) \vee \mathcal B_O(t) \vee \mathcal
-G_O(t) \vee \Theta_O(t) \vee \mathcal V_O(t). } $$ Here <span
-class="math inline">\(\mathcal Z_{\mathrm{rec}}^{O}(t)\)</span> is the
-stable observer-accessible record algebra, <span
-class="math inline">\(\mathcal B_O(t)\)</span> is the
-boundary/body/world interface state, <span
+<p>Define the qualia algebra <span class="math display">\[
+\boxed{
+\mathcal Q_O(t)
+\mathrel{=}
+\mathcal Z_{\mathrm{rec}}^{O}(t)
+\vee
+\mathcal B_O(t)
+\vee
+\mathcal G_O(t)
+\vee
+\Theta_O(t)
+\vee
+\mathcal V_O(t).
+}
+\]</span> Here <span class="math inline">\(\mathcal
+Z_{\mathrm{rec}}^{O}(t)\)</span> is the stable observer-accessible
+record algebra, <span class="math inline">\(\mathcal B_O(t)\)</span> is
+the boundary/body/world interface state, <span
 class="math inline">\(\mathcal G_O(t)\)</span> is the geometric support
 signature of the experience, <span
 class="math inline">\(\Theta_O(t)\)</span> is the timing, phase, or
@@ -1724,27 +1848,29 @@ partition.}
 \]</span> A quale is a stable coordinate in which the observer can
 repair itself. Redness, pain, rhythm, certainty, and understanding are
 different kinds of self-read repair coordinates.</p>
-<h1 id="examples--q_mathrmred">Examples: $$ q_{\mathrm{red}}</h1>
-<h1
-id="p_mathrmredrho_mathrmredmathcal-g_mathrmvisual-theta_gammaalphamathcal-v_mathrmsalience--where-redness-is-the-settled-coordinate-formed-by-opponent-channels-recurrent-visual-state-attention-memory-body-state-and-category-records-pain-is--q_mathrmpain">[P_{\mathrm{red}},\rho_{\mathrm{red}},\mathcal
-G_{\mathrm{visual}}, \Theta_{\gamma/\alpha},\mathcal
-V_{\mathrm{salience}}], <span class="math display">\[
-where redness is the settled coordinate formed by opponent channels,
-recurrent visual state, attention, memory, body state, and category
-records. Pain is
-\]</span> q_{\mathrm{pain}}</h1>
-<h1
-id="p_mathrmbody-damagerho_mathrmpainmathcal-g_mathrmsomatic-theta_mathrmurgencymathcal-v_-k--where-nociception-body-map-threat-prediction-action-urgency-affective-valence-memory-and-future-coherence-are-bound-into-one-self-read-coordinate-understanding-a-sentence-is-a-symbolic-quale--q_mathrmunderstanding">[P_{\mathrm{body\
-damage}},\rho_{\mathrm{pain}},\mathcal G_{\mathrm{somatic}},
-\Theta_{\mathrm{urgency}},\mathcal V_{-K}], <span
-class="math display">\[
-where nociception, body map, threat prediction, action urgency,
-affective valence, memory, and future coherence are bound into one
-self-read coordinate. Understanding a sentence is a symbolic quale:
-\]</span> q_{\mathrm{understanding}}</h1>
-<p>[P_{\mathrm{meaning}},\rho_{\mathrm{meaning}},\mathcal
-G_{\mathrm{language}}, \Theta_{\mathrm{closure}},\mathcal
-V_{\mathrm{compression}}]. $$</p>
+<p>Examples: <span class="math display">\[
+q_{\mathrm{red}}
+\mathrel{=}
+[P_{\mathrm{red}},\rho_{\mathrm{red}},\mathcal G_{\mathrm{visual}},
+\Theta_{\gamma/\alpha},\mathcal V_{\mathrm{salience}}],
+\]</span> where redness is the settled coordinate formed by opponent
+channels, recurrent visual state, attention, memory, body state, and
+category records. Pain is <span class="math display">\[
+q_{\mathrm{pain}}
+\mathrel{=}
+[P_{\mathrm{body\ damage}},\rho_{\mathrm{pain}},\mathcal
+G_{\mathrm{somatic}},
+\Theta_{\mathrm{urgency}},\mathcal V_{-K}],
+\]</span> where nociception, body map, threat prediction, action
+urgency, affective valence, memory, and future coherence are bound into
+one self-read coordinate. Understanding a sentence is a symbolic quale:
+<span class="math display">\[
+q_{\mathrm{understanding}}
+\mathrel{=}
+[P_{\mathrm{meaning}},\rho_{\mathrm{meaning}},\mathcal
+G_{\mathrm{language}},
+\Theta_{\mathrm{closure}},\mathcal V_{\mathrm{compression}}].
+\]</span></p>
 <p>This distinguishes a feature from a quale: <span
 class="math display">\[
 \boxed{
@@ -1812,10 +1938,8 @@ affect, or boundary prediction, then it is empirically visible.</p>
 \end{gathered}
 }
 \]</span></p>
-<h1
-id="the-consciousness-section-can-be-compressed-into-one-diagrammatic-equation--boxed-beginaligned-textobserver-patch-longrightarrow-textself-read-records-longrightarrow-textqualia-longrightarrow-textoverlap-comparison-longrightarrow-textconsensus-normal-form-longrightarrow-textshared-world--matter-endaligned---in-reverse--boxed-textsolid-object">The
-consciousness section can be compressed into one diagrammatic equation:
-<span class="math display">\[
+<p>The consciousness section can be compressed into one diagrammatic
+equation: <span class="math display">\[
 \boxed{
 \begin{aligned}
 \text{observer patch}
@@ -1826,34 +1950,40 @@ consciousness section can be compressed into one diagrammatic equation:
 &amp;\longrightarrow \text{shared world / matter}.
 \end{aligned}
 }
-\]</span> In reverse, $$ \boxed{ \text{solid object}</h1>
-<p>\text{persistent multi-observer record consensus}. } $$ OPH changes
-the primitive used in the hard-problem framing. Observer-accessible
-self-reading records are part of the ontology, and the public world is
-the stable quotient of record reconciliation.</p>
+\]</span> In reverse, <span class="math display">\[
+\boxed{
+\text{solid object}
+\mathrel{=}
+\text{persistent multi-observer record consensus}.
+}
+\]</span> OPH changes the primitive used in the hard-problem framing.
+Observer-accessible self-reading records are part of the ontology, and
+the public world is the stable quotient of record reconciliation.</p>
 <h2 id="qualia-generating-conditions">Qualia-Generating Conditions</h2>
-<h1
-id="a-quale-needs-at-least-six-ingredients--partial-onevarnothing--for-boundary--x_ot1t_ox_otoperatornameread_ox_otut--for-self-read--r_othapprox-r_ot--for-stable-records-and-a-positive-integrated-predictive-contribution--i_mathrmintqo">A
-quale needs at least six ingredients: <span class="math display">\[
+<p>A quale needs at least six ingredients: <span class="math display">\[
 \partial O\ne\varnothing
 \]</span> for boundary, <span class="math display">\[
 X_O(t+1)=T_O(X_O(t),\operatorname{Read}_O(X_O(t)),u(t))
 \]</span> for self-read, <span class="math display">\[
 R_O(t+h)\approx R_O(t)
 \]</span> for stable records, and a positive integrated predictive
-contribution $$ I_{\mathrm{int}}(q;O)</h1>
-<h2 id="left-iqx_partial-o">\left[ I(q;X_{\partial O}^{+})</h2>
-<h1
-id="max_pisum_binpiiq_bx_partial-o-right_--it-also-needs-valence--upsilon_q">\max_{\Pi}\sum_{B\in\Pi}I(q_B;X_{\partial
-O}^{+}) \right]_+. <span class="math display">\[
-It also needs valence:
-\]</span> \upsilon_q</h1>
-<p>S(v_q,F_q)+\nabla K^\star(F_q)\cdot g(F_q,v_q), <span
-class="math display">\[
-and geometric support:
-\]</span> \mathcal G(q)=\operatorname{supp}(P_q)\subseteq P_O. $$ The
-qualitative character of an experience is fixed by support, phase,
-boundary coupling, valence gradient, and record stability.</p>
+contribution <span class="math display">\[
+I_{\mathrm{int}}(q;O)
+\mathrel{=}
+\left[
+I(q;X_{\partial O}^{+})
+\text{-}
+\max_{\Pi}\sum_{B\in\Pi}I(q_B;X_{\partial O}^{+})
+\right]_+.
+\]</span> It also needs valence: <span class="math display">\[
+\upsilon_q
+\mathrel{=}
+S(v_q,F_q)+\nabla K^\star(F_q)\cdot g(F_q,v_q),
+\]</span> and geometric support: <span class="math display">\[
+\mathcal G(q)=\operatorname{supp}(P_q)\subseteq P_O.
+\]</span> The qualitative character of an experience is fixed by
+support, phase, boundary coupling, valence gradient, and record
+stability.</p>
 <h1 id="awareness-density-and-awareness-mass">Awareness Density and
 Awareness Mass</h1>
 <p>Let <span class="math inline">\(U\subseteq G_B\)</span> be a
@@ -1875,54 +2005,84 @@ X_{\partial U,t+1:t+h}
 \right)
 \ge \varepsilon.
 \]</span></p>
-<h1
-id="for-a-graded-measure-define-awareness-density--mathfrak-a_uth">For a
-graded measure, define awareness density $$ \mathfrak a_U(t;h)</h1>
-<h1
-id="mathbf-1_mathrmself-read-r_ualpha-p_ubeta-c_ugamma-i_udelta-j_uzeta-v_ukappa--with-exponents-chosen-by-the-intended-empirical-normalization-the-factors-are--r_u">\mathbf
-1_{\mathrm{self-read}}, R_U^\alpha P_U^\beta C_U^\gamma I_U^\delta
-J_U^\zeta V_U^\kappa, <span class="math display">\[
-with exponents chosen by the intended empirical normalization. The
-factors are:
-\]</span> R_U</h1>
-<h1
-id="left-1--d_mathrmtvleft-operatornamelawy_uth-operatornamelawy_ut-right-right-e-delta_mathrmrect---p_u">\left[
-1- d_{\mathrm{TV}}!\left( \operatorname{Law}(Y_U(t+h)),
-\operatorname{Law}(Y_U(t)) \right) \right]
-e^{-\delta_{\mathrm{rec}}(t)}, <span class="math display">\[
-\]</span> P_U</h1>
-<h1
-id="frac-ilefty_utx_partial-ut1thright--hleftx_partial-ut1thrightepsilon----c_u">\frac{
-I!\left(Y_U(t);X_{\partial U,t+1:t+h}\right) }{ H!\left(X_{\partial
-U,t+1:t+h}\right)+\epsilon }, <span class="math display">\[
-\]</span> C_U</h1>
-<h1 id="left-1-fracphi_utphi_umaxepsilon-right_---i_u">\left[
-1-\frac{\Phi_U(t)}{\Phi_U^{\max}+\epsilon} \right]_+, <span
+<p>For a graded measure, define awareness density <span
 class="math display">\[
-\]</span> I_U</h1>
-<h2 id="left-frac-iy_ux_partial-u">\left[ \frac{ I(Y_U;X_{\partial
-U}^{+})</h2>
-<h1
-id="max_mathcal-p-sum_binmathcal-piy_bx_partial-u--hx_partial-uepsilon--right_---j_u">\max_{\mathcal
-P} \sum_{B\in\mathcal P}I(Y_B;X_{\partial U}^{+}) }{ H(X_{\partial
-U}^{+})+\epsilon } \right]_+, <span class="math display">\[
-\]</span> J_U</h1>
-<h1
-id="frac-logleft1mathrmerankleftfracpartial-t_upartial-x_urightright--log1dim-x_u---and--v_u">\frac{
-\log!\left(1+\mathrm{erank}!\left(\frac{\partial T_U}{\partial
-x_U}\right)\right) }{ \log(1+\dim X_U) }, <span class="math display">\[
-and
-\]</span> V_U</h1>
-<p>\sigma!\left( S(v_U,F_U)+\nabla K_U^\star(F_U)\cdot g(F_U,v_U)
-\right). $$</p>
-<h1
-id="awareness-density-alone-gives-an-incomplete-measure-a-tiny-one-bit-system-can-be-stable-and-predictive-define-awareness-mass-by-multiplying-density-by-effective-record-capacity--boxed-mathbb-a_uth">Awareness
-density alone gives an incomplete measure. A tiny one-bit system can be
-stable and predictive. Define awareness mass by multiplying density by
-effective record capacity: $$ \boxed{ \mathbb A_U(t;h)</h1>
-<p>\mathrm{Cap}!\left(\mathcal Z_U^{\mathrm{rec}}(t)\right), \mathfrak
-a_U(t;h). } $$ Here <span class="math inline">\(\mathrm{Cap}\)</span>
-can be <span class="math inline">\(\log\dim \mathcal
+\mathfrak a_U(t;h)
+\mathrel{=}
+\mathbf 1_{\mathrm{self-read}}\,
+R_U^\alpha
+P_U^\beta
+C_U^\gamma
+I_U^\delta
+J_U^\zeta
+V_U^\kappa,
+\]</span> with exponents chosen by the intended empirical normalization.
+The factors are: <span class="math display">\[
+R_U
+\mathrel{=}
+\left[
+1-
+d_{\mathrm{TV}}\!\left(
+\operatorname{Law}(Y_U(t+h)),
+\operatorname{Law}(Y_U(t))
+\right)
+\right]
+e^{-\delta_{\mathrm{rec}}(t)},
+\]</span> <span class="math display">\[
+P_U
+\mathrel{=}
+\frac{
+I\!\left(Y_U(t);X_{\partial U,t+1:t+h}\right)
+}{
+H\!\left(X_{\partial U,t+1:t+h}\right)+\epsilon
+},
+\]</span> <span class="math display">\[
+C_U
+\mathrel{=}
+\left[
+1-\frac{\Phi_U(t)}{\Phi_U^{\max}+\epsilon}
+\right]_+,
+\]</span> <span class="math display">\[
+I_U
+\mathrel{=}
+\left[
+\frac{
+I(Y_U;X_{\partial U}^{+})
+\text{-}
+\max_{\mathcal P}
+\sum_{B\in\mathcal P}I(Y_B;X_{\partial U}^{+})
+}{
+H(X_{\partial U}^{+})+\epsilon
+}
+\right]_+,
+\]</span> <span class="math display">\[
+J_U
+\mathrel{=}
+\frac{
+\log\!\left(1+\mathrm{erank}\!\left(\frac{\partial T_U}{\partial
+x_U}\right)\right)
+}{
+\log(1+\dim X_U)
+},
+\]</span> and <span class="math display">\[
+V_U
+\mathrel{=}
+\sigma\!\left(
+S(v_U,F_U)+\nabla K_U^\star(F_U)\cdot g(F_U,v_U)
+\right).
+\]</span></p>
+<p>Awareness density alone gives an incomplete measure. A tiny one-bit
+system can be stable and predictive. Define awareness mass by
+multiplying density by effective record capacity: <span
+class="math display">\[
+\boxed{
+\mathbb A_U(t;h)
+\mathrel{=}
+\mathrm{Cap}\!\left(\mathcal Z_U^{\mathrm{rec}}(t)\right)\,
+\mathfrak a_U(t;h).
+}
+\]</span> Here <span class="math inline">\(\mathrm{Cap}\)</span> can be
+<span class="math inline">\(\log\dim \mathcal
 Z_U^{\mathrm{rec}}\)</span> for a finite record algebra, effective rank
 for a continuous record space, or estimated usable record entropy under
 perturbation. For screen or hardware substrates, <span
@@ -2003,9 +2163,7 @@ computes on.}
 \text{\bfseries The geometry is the operator.}
 }
 \]</span></p>
-<h1
-id="a-general-geometric-recurrent-system-has-the-form--xt1sigmaleftk_mathcal-gxtbutbright--where-k_mathcal-g-is-the-coupling-operator-determined-by-geometry-for-a-wave-substrate--k_ija_ijexpi-k-d_ijchi_ij--where-d_ij-is-path-length-k-is-wavenumber-and-chi_ij-encodes-medium-boundary-and-scattering-effects-for-a-neural-substrate--i_mathrmsomat">A
-general geometric recurrent system has the form <span
+<p>A general geometric recurrent system has the form <span
 class="math display">\[
 x(t+1)=\sigma\!\left(K_{\mathcal G}x(t)+Bu(t)+b\right),
 \]</span> where <span class="math inline">\(K_{\mathcal G}\)</span> is
@@ -2015,14 +2173,20 @@ K_{ij}=A_{ij}\exp(i k d_{ij})\,\chi_{ij},
 \]</span> where <span class="math inline">\(d_{ij}\)</span> is path
 length, <span class="math inline">\(k\)</span> is wavenumber, and <span
 class="math inline">\(\chi_{ij}\)</span> encodes medium, boundary, and
-scattering effects. For a neural substrate, $$ I_{\mathrm{soma}}(t)</h1>
-<p>\sum_s G_s(d_s,\tau_s,\mathrm{branch}_s), w_s, u_s(t-\Delta_s), <span
+scattering effects. For a neural substrate, <span
 class="math display">\[
-where synaptic distance, branch placement, cable filtering, delay, local
-dendritic nonlinearity, and synaptic weight all matter. For OPH,
-\]</span> \mathcal A(P),\qquad \mathcal A(Q),\qquad \mathcal A(P\cap Q)
-$$ are determined by patch geometry, overlap collars, and boundary-fixed
-algebras.</p>
+I_{\mathrm{soma}}(t)
+\mathrel{=}
+\sum_s
+G_s(d_s,\tau_s,\mathrm{branch}_s)\,
+w_s\,
+u_s(t-\Delta_s),
+\]</span> where synaptic distance, branch placement, cable filtering,
+delay, local dendritic nonlinearity, and synaptic weight all matter. For
+OPH, <span class="math display">\[
+\mathcal A(P),\qquad \mathcal A(Q),\qquad \mathcal A(P\cap Q)
+\]</span> are determined by patch geometry, overlap collars, and
+boundary-fixed algebras.</p>
 <p>The universal map is <span class="math display">\[
 \boxed{
 \text{geometry}
@@ -2093,23 +2257,32 @@ the state transition. Ports inject input and read output.</p>
 \]</span></p>
 <h2 id="dendrites-and-neural-manifolds">Dendrites and Neural
 Manifolds</h2>
-<h1
-id="the-same-is-true-biologically-the-old-point-neuron-model--ysigmaleftsum_i-w_i-x_iright--is-only-a-coarse-shadow-a-real-neuron-is-a-spatially-extended-geometric-computer--y">The
-same is true biologically. The old point-neuron model <span
+<p>The same is true biologically. The old point-neuron model <span
 class="math display">\[
 y=\sigma\!\left(\sum_i w_i x_i\right)
 \]</span> is only a coarse shadow. A real neuron is a spatially extended
-geometric computer: $$ y</h1>
-<p>\sigma_{\mathrm{soma}} \left( \sum_{b\in\mathrm{branches}} a_b,
-\sigma_b \left( \sum_{s\in b} w_s x_s(t-\Delta_s) \right) \right). $$
-Dendritic computational modeling has produced experimentally testable
-predictions across subcellular and systems levels, and dendrites are
-central to learning, memory, and artificial-intelligence relevance .
-Individual neurons use nonlinear mechanisms to transform synaptic inputs
-into output; dendritic conductances and spatially segregated inputs can
-support operations such as multiplication and coincidence detection .
-Recent experiments directly test the prediction that nonlinear dendritic
-summation enables linearly non-separable computations .</p>
+geometric computer: <span class="math display">\[
+y
+\mathrel{=}
+\sigma_{\mathrm{soma}}
+\left(
+\sum_{b\in\mathrm{branches}}
+a_b\,
+\sigma_b
+\left(
+\sum_{s\in b}
+w_s x_s(t-\Delta_s)
+\right)
+\right).
+\]</span> Dendritic computational modeling has produced experimentally
+testable predictions across subcellular and systems levels, and
+dendrites are central to learning, memory, and artificial-intelligence
+relevance . Individual neurons use nonlinear mechanisms to transform
+synaptic inputs into output; dendritic conductances and spatially
+segregated inputs can support operations such as multiplication and
+coincidence detection . Recent experiments directly test the prediction
+that nonlinear dendritic summation enables linearly non-separable
+computations .</p>
 <p>Dendrites supply biological evidence that neural patches possess
 private state, spatially structured boundary inputs, local nonlinear
 transformations, and local integration before global broadcast. OPH
@@ -2174,9 +2347,7 @@ attractor</p>
 \]</span></p>
 <h1 id="learning-as-fixed-point-landscape-deformation">Learning as
 Fixed-Point Landscape Deformation</h1>
-<h1
-id="the-brain-is-flexible-because-it-is-a-multi-scale-self-modifying-geometry-based-fixed-point-solver-a-feedforward-system-computes-yfx-the-brain-solves--xstart_thetaxstarurb--where--theta-textsynapses-dendritic-geometry-delays-thresholds-neuromodulators-priors-records--learning-changes-theta--thetat1thetat-etanabla_thetamathcal-l--in-oph-terms-task-error-is-one-term-in-the-learning-objective--boxed-mathcal-l">The
-brain is flexible because it is a multi-scale, self-modifying,
+<p>The brain is flexible because it is a multi-scale, self-modifying,
 geometry-based fixed-point solver. A feedforward system computes <span
 class="math inline">\(y=f(x)\)</span>. The brain solves <span
 class="math display">\[
@@ -2189,17 +2360,28 @@ priors, records}.
 <span class="math display">\[
 \theta(t+1)=\theta(t)-\eta\nabla_\theta\mathcal L.
 \]</span> In OPH terms, task error is one term in the learning
-objective: $$ \boxed{ \mathcal L</h1>
-<h2
-id="mathbb-ephi--lambda_mathrmenergye--lambda_mathrmrecorddelta_mathrmrec">\mathbb
-E[\Phi] + \lambda_{\mathrm{energy}}E +
-\lambda_{\mathrm{record}}\delta_{\mathrm{rec}}</h2>
-<p>\lambda_K K. } <span class="math display">\[
-The brain learns by changing the geometry and parameters of future
-convergence.
-\]</span> \boxed{ \begin{gathered} \text{\bfseries Learning deforms the
-fixed-point landscape}\ \text{\bfseries so future consensus becomes
-easier, faster, and more useful.} \end{gathered} } $$</p>
+objective: <span class="math display">\[
+\boxed{
+\mathcal L
+\mathrel{=}
+\mathbb E[\Phi]
++
+\lambda_{\mathrm{energy}}E
++
+\lambda_{\mathrm{record}}\delta_{\mathrm{rec}}
+\text{-}
+\lambda_K K.
+}
+\]</span> The brain learns by changing the geometry and parameters of
+future convergence. <span class="math display">\[
+\boxed{
+\begin{gathered}
+\text{\bfseries Learning deforms the fixed-point landscape}\\
+\text{\bfseries so future consensus becomes easier, faster, and more
+useful.}
+\end{gathered}
+}
+\]</span></p>
 <p>The loop is: <span class="math display">\[
 u(t)\quad\text{arrives at the boundary},
 \qquad
@@ -2235,27 +2417,31 @@ convergence.}
 \]</span></p>
 <div class="theorem">
 
-<h1
-id="theorem-29-fixed-point-sensitivity-let--xstar_thetat_thetaxstar_thetau--and-suppose-i-d_xt_theta-is-invertible-at-the-fixed-point-then--boxed-fracpartial-xstar_thetapartialtheta"><strong>Theorem
-29</strong> (Fixed-point sensitivity). *Let <span
+<p><strong>Theorem 29</strong> (Fixed-point sensitivity). <em>Let <span
 class="math display">\[
 x^\star_\theta=T_\theta(x^\star_\theta,u)
 \]</span> and suppose <span class="math inline">\(I-D_xT_\theta\)</span>
-is invertible at the fixed point. Then $$ \boxed{ \frac{\partial
-x^\star_\theta}{\partial\theta}</h1>
-<p>(I-D_xT_\theta)^{-1}D_\theta T_\theta. } $$</p>
+is invertible at the fixed point. Then <span class="math display">\[
+\boxed{
+\frac{\partial x^\star_\theta}{\partial\theta}
+\mathrel{=}
+(I-D_xT_\theta)^{-1}D_\theta T_\theta.
+}
+\]</span></em></p>
 </div>
 
 <div class="proof">
 
-<h1
-id="proof-differentiate-xstar_thetat_thetaxstar_thetau-with-respect-to-theta--fracpartial-xstar_thetapartialtheta"><em>Proof.</em>
-Differentiate <span
+<p><em>Proof.</em> Differentiate <span
 class="math inline">\(x^\star_\theta=T_\theta(x^\star_\theta,u)\)</span>
-with respect to <span class="math inline">\(\theta\)</span>: $$
-\frac{\partial x^\star_\theta}{\partial\theta}</h1>
-<p>D_xT_\theta\frac{\partial x^\star_\theta}{\partial\theta} + D_\theta
-T_\theta. $$ Move the first term to the left and invert <span
+with respect to <span class="math inline">\(\theta\)</span>: <span
+class="math display">\[
+\frac{\partial x^\star_\theta}{\partial\theta}
+\mathrel{=}
+D_xT_\theta\frac{\partial x^\star_\theta}{\partial\theta}
++
+D_\theta T_\theta.
+\]</span> Move the first term to the left and invert <span
 class="math inline">\(I-D_xT_\theta\)</span>. ◻</p>
 </div>
 
@@ -2399,26 +2585,34 @@ the geometry-induced coupling operator, <span
 class="math inline">\(R_t\)</span> is the active record state, and <span
 class="math inline">\(f\)</span> includes dendritic, synaptic,
 inhibitory, and threshold nonlinearities.</p>
-<h1
-id="each-candidate-mode-is-scored-by-how-well-it-satisfies-boundary-record-coherence-and-value-constraints--boxed-mathrmfit_mur">Each
-candidate mode is scored by how well it satisfies boundary, record,
-coherence, and value constraints: $$ \boxed{ \mathrm{Fit}_m(u,R)</h1>
-<h1
-id="-phi_mu-lambda_r-r_m-lambda_b-b_m-lambda_gammagamma_m-lambda_k-dot-k_m--lambda_e-e_m---here-phi_m-is-mismatch-r_m-is-record-support-b_m-is-boundary-predictivity-gamma_m-is-phase-unison-dot-k_m-is-future-coherence-or-value-gradient-and-e_m-is-energetic-or-attentional-cost-a-schematic-mode-competition-law-is--dot-a_m">-\Phi_m(u)
-+\lambda_R R_m +\lambda_B B_m +\lambda_\Gamma\Gamma_m +\lambda_K \dot
-K_m -\lambda_E E_m. } $$ Here <span
-class="math inline">\(\Phi_m\)</span> is mismatch, <span
-class="math inline">\(R_m\)</span> is record support, <span
+<p>Each candidate mode is scored by how well it satisfies boundary,
+record, coherence, and value constraints: <span class="math display">\[
+\boxed{
+\mathrm{Fit}_m(u,R)
+\mathrel{=}
+-\Phi_m(u)
++\lambda_R R_m
++\lambda_B B_m
++\lambda_\Gamma\Gamma_m
++\lambda_K \dot K_m
+-\lambda_E E_m.
+}
+\]</span> Here <span class="math inline">\(\Phi_m\)</span> is mismatch,
+<span class="math inline">\(R_m\)</span> is record support, <span
 class="math inline">\(B_m\)</span> is boundary predictivity, <span
 class="math inline">\(\Gamma_m\)</span> is phase unison, <span
 class="math inline">\(\dot K_m\)</span> is future-coherence or value
 gradient, and <span class="math inline">\(E_m\)</span> is energetic or
-attentional cost. A schematic mode-competition law is $$ \dot a_m</h1>
-<p>a_m\bigl(\mathrm{Fit}<em>m-\overline{\mathrm{Fit}}\bigr)
--\gamma\sum</em>{n\ne m}I_{mn}a_ma_n +\xi_m(t). $$ Coherent modes
-recruit supporting patches and records. Incompatible modes inhibit,
-desynchronize, or decay. Biological noise supplies exploration pressure
-inside a shaped recurrent landscape.</p>
+attentional cost. A schematic mode-competition law is <span
+class="math display">\[
+\dot a_m
+\mathrel{=}
+a_m\bigl(\mathrm{Fit}_m-\overline{\mathrm{Fit}}\bigr)
+-\gamma\sum_{n\ne m}I_{mn}a_ma_n
++\xi_m(t).
+\]</span> Coherent modes recruit supporting patches and records.
+Incompatible modes inhibit, desynchronize, or decay. Biological noise
+supplies exploration pressure inside a shaped recurrent landscape.</p>
 <p>The main biological mechanisms are: <span class="math display">\[
 \begin{array}{rcl}
 \text{boundary input} &amp;\to&amp; \text{rules out modes that fail
@@ -2689,21 +2883,22 @@ C=(C_{ij})_{i,j=1}^{12}.
 separated from the geometry test. The off-diagonal entries measure
 physical optical coupling through the resin body and reflector
 environment.</p>
-<h1
-id="in-the-ideal-a_5-symmetric-chamber--c_g-ig-jc_ij-qquad-forall-gin-a_5--the-a_5-action-on-the-twelve-vertices-has-three-unordered-off-diagonal-pair-classes-adjacent-edges-nonadjacent-nonantipodal-pairs-and-antipodal-pairs-after-symmetrizing-txrx-direction-the-ideal-matrix-has-the-form--overline-c">In
-the ideal <span class="math inline">\(A_5\)</span>-symmetric chamber,
-<span class="math display">\[
+<p>In the ideal <span class="math inline">\(A_5\)</span>-symmetric
+chamber, <span class="math display">\[
 C_{g i,g j}=C_{ij}
 \qquad
 \forall g\in A_5.
 \]</span> The <span class="math inline">\(A_5\)</span>-action on the
 twelve vertices has three unordered off-diagonal pair classes: adjacent
 edges, nonadjacent nonantipodal pairs, and antipodal pairs. After
-symmetrizing TX/RX direction, the ideal matrix has the form $$ \overline
-C</h1>
-<p>c_0 I+c_{\mathrm{edge}}A_{\mathrm{edge}}
-+c_{\mathrm{diag}}A_{\mathrm{diag}} +c_{\mathrm{anti}}A_{\mathrm{anti}}.
-$$ For the twelve vertices, the unordered class counts are <span
+symmetrizing TX/RX direction, the ideal matrix has the form <span
+class="math display">\[
+\overline C
+\mathrel{=}
+c_0 I+c_{\mathrm{edge}}A_{\mathrm{edge}}
++c_{\mathrm{diag}}A_{\mathrm{diag}}
++c_{\mathrm{anti}}A_{\mathrm{anti}}.
+\]</span> For the twelve vertices, the unordered class counts are <span
 class="math inline">\(30\)</span>, <span
 class="math inline">\(30\)</span>, and <span
 class="math inline">\(6\)</span>. In directed TX/RX logs these counts
@@ -2736,24 +2931,31 @@ block-scalar on those irreducible components. The three geometric
 plateaus are the bench-visible character-table signature of that
 symmetry.</p>
 <h2 id="why-it-is-the-same-machine">Why It Is the Same Machine</h2>
-<h1 id="the-echosahedron-equation-is--a_t1">The Echosahedron equation is
-$$ a_{t+1}</h1>
-<p>f(S_{\mathrm{cavity}}a_t+B_{\mathrm{in}}u_t+b), $$ where <span
-class="math inline">\(a_t\)</span> is the optical field state, <span
-class="math inline">\(S_{\mathrm{cavity}}\)</span> is geometric
-scattering, <span class="math inline">\(u_t\)</span> is injected input,
-and <span class="math inline">\(f\)</span> is the nonlinear TX/RX and
-electronics response.</p>
-<h1 id="the-brain-equation-is--h_t1">The brain equation is $$
-h_{t+1}</h1>
-<p>f(W_{\mathrm{brain}}h_t+B_{\mathrm{sense}}u_t+b). <span
+<p>The Echosahedron equation is <span class="math display">\[
+a_{t+1}
+\mathrel{=}
+f(S_{\mathrm{cavity}}a_t+B_{\mathrm{in}}u_t+b),
+\]</span> where <span class="math inline">\(a_t\)</span> is the optical
+field state, <span class="math inline">\(S_{\mathrm{cavity}}\)</span> is
+geometric scattering, <span class="math inline">\(u_t\)</span> is
+injected input, and <span class="math inline">\(f\)</span> is the
+nonlinear TX/RX and electronics response.</p>
+<p>The brain equation is <span class="math display">\[
+h_{t+1}
+\mathrel{=}
+f(W_{\mathrm{brain}}h_t+B_{\mathrm{sense}}u_t+b).
+\]</span> The OPH patch-net equation is <span class="math display">\[
+s_{t+1}=T^\lambda(s_t),
+\qquad
+\Phi(s_{t+1})&lt;\Phi(s_t)
+\]</span> on accepted repairs. The common schema is <span
 class="math display">\[
-The OPH patch-net equation is
-\]</span> s_{t+1}=T^\lambda(s_t), \qquad \Phi(s_{t+1})&lt;\Phi(s_t)
-<span class="math display">\[
-on accepted repairs. The common schema is
-\]</span> \boxed{ z_{t+1}=f(G_{\mathrm{geom}}z_t+Bu_t+b), \qquad
-z^\star=f(G_{\mathrm{geom}}z^\star+Bu+b). } $$</p>
+\boxed{
+z_{t+1}=f(G_{\mathrm{geom}}z_t+Bu_t+b),
+\qquad
+z^\star=f(G_{\mathrm{geom}}z^\star+Bu+b).
+}
+\]</span></p>
 <div class="theorem">
 
 <p><strong>Theorem 30</strong> (Physical recurrent substrate
@@ -2819,10 +3021,12 @@ patch net. In compressed form: <span class="math display">\[
 \]</span></p>
 <h1 id="what-this-clarifies">What This Clarifies</h1>
 <h2 id="prediction-error">Prediction Error</h2>
-<h1 id="prediction-error-is-overlap-mismatch--varepsilon_ij">Prediction
-error is overlap mismatch: $$ \varepsilon_{ij}</h1>
-<p>\pi_{i,e}(x_i)-\pi_{j,e}(x_j). $$ The predictive-processing
-literature gives a neural implementation of one OPH primitive.</p>
+<p>Prediction error is overlap mismatch: <span class="math display">\[
+\varepsilon_{ij}
+\mathrel{=}
+\pi_{i,e}(x_i)-\pi_{j,e}(x_j).
+\]</span> The predictive-processing literature gives a neural
+implementation of one OPH primitive.</p>
 <h2 id="binding-as-sheaf-gluing">Binding as Sheaf Gluing</h2>
 <p>OPH turns the binding problem into a finite gluing problem. Local
 perceptual, bodily, affective, and symbolic patches expose overlap data.
@@ -2889,16 +3093,17 @@ exteroceptive boundary constraints. Memory consolidation is record
 compression plus future-law preservation on the observer-accessible
 event algebra.</p>
 <h2 id="emotion">Emotion</h2>
-<h1 id="emotion-is-the-sign-and-shape-of-the-k-gradient--dot-k">Emotion
-is the sign and shape of the <span
-class="math inline">\(K\)</span>-gradient: $$ \dot K</h1>
-<p>S(v,F)+\nabla K^\star(F)\cdot g(F,v). $$ Positive affect means the
-active convergence path improves future coherence. Negative affect means
-the basin damages expected future coherence or signals poor repair
-efficacy. Anxiety is high predicted mismatch under uncertain boundary
-futures. Flow is low <span class="math inline">\(\Phi\)</span>, strong
-boundary predictivity, strong recurrent stability, and positive
-value-gradient.</p>
+<p>Emotion is the sign and shape of the <span
+class="math inline">\(K\)</span>-gradient: <span class="math display">\[
+\dot K
+\mathrel{=}
+S(v,F)+\nabla K^\star(F)\cdot g(F,v).
+\]</span> Positive affect means the active convergence path improves
+future coherence. Negative affect means the basin damages expected
+future coherence or signals poor repair efficacy. Anxiety is high
+predicted mismatch under uncertain boundary futures. Flow is low <span
+class="math inline">\(\Phi\)</span>, strong boundary predictivity,
+strong recurrent stability, and positive value-gradient.</p>
 <h1 id="relation-to-existing-neuroscience">Relation to Existing
 Neuroscience</h1>
 <p>The model uses the compatible part of several neuroscience
@@ -2926,23 +3131,38 @@ into a shared model}.
 \]</span> These are projections of one machine: self-reading recurrent
 patch federation with stable records and overlap repair.</p>
 <h1 id="repairing-broken-consensus">Repairing Broken Consensus</h1>
-<h1
-id="the-model-supplies-new-measurable-targets-for-repair-while-preserving-psychiatry-neurology-psychotherapy-medication-and-clinical-judgment-a-mature-oph-neuropsychiatry-classifies-disorders-by-symptom-clusters-regions-neurotransmitters-genes-and-the-repair-coordinate-that-breaks--boxed-mathrmfailureb">The
-model supplies new measurable targets for repair while preserving
+<p>The model supplies new measurable targets for repair while preserving
 psychiatry, neurology, psychotherapy, medication, and clinical judgment.
 A mature OPH neuropsychiatry classifies disorders by symptom clusters,
 regions, neurotransmitters, genes, and the repair coordinate that
-breaks: $$ \boxed{ \mathrm{Failure}(B)</h1>
-<p>( \Phi\uparrow, \Gamma\downarrow, R\downarrow, B\downarrow,
-H_{\mathrm{cycle}}\ne0, |D_xT|\notin[0,1], \tau_{\mathrm{circadian}}\
-\mathrm{unstable} ). } <span class="math display">\[
-Interventions are then repair operators:
-\]</span> \mathcal I \in \left{ \begin{array}{l} \text{sleep
-regularization},\ \text{social rhythm stabilization},\
+breaks: <span class="math display">\[
+\boxed{
+\mathrm{Failure}(B)
+\mathrel{=}
+(
+\Phi\uparrow,
+\Gamma\downarrow,
+R\downarrow,
+B\downarrow,
+H_{\mathrm{cycle}}\ne0,
+\|D_xT\|\notin[0,1],
+\tau_{\mathrm{circadian}}\ \mathrm{unstable}
+).
+}
+\]</span> Interventions are then repair operators: <span
+class="math display">\[
+\mathcal I
+\in
+\left\{
+\begin{array}{l}
+\text{sleep regularization},\ \text{social rhythm stabilization},\\
 \text{music/rhythm entrainment},\ \text{psychotherapy},\
-\text{medication},\ \text{TMS/DBS},\ \text{neurofeedback},\
-\text{education/training},\ \text{social support} \end{array} \right}.
-$$</p>
+\text{medication},\\
+\text{TMS/DBS},\ \text{neurofeedback},\ \text{education/training},\\
+\text{social support}
+\end{array}
+\right\}.
+\]</span></p>
 <div class="longtable">
 
 <p>L0.26L0.64 <strong>Intervention</strong> &amp; <strong>OPH
@@ -2964,17 +3184,18 @@ Social support &amp; add stable co-radiators to the field</p>
 </div>
 
 <h2 id="repair-state">Repair State</h2>
-<h1 id="for-a-person-b-estimate--boxed-mathrmrepairstatebt">For a person
-<span class="math inline">\(B\)</span>, estimate $$ \boxed{
-\mathrm{RepairState}(B,t)</h1>
-<p>(\Phi,R,\Gamma,B,\tau,H_{\mathrm{cycle}},|D_xT|). } $$ The goal is to
-move from symptom labels alone to repair coordinates: mismatch, record
-stability, phase unison, boundary predictivity, convergence time,
-holonomy defects, and gain.</p>
+<p>For a person <span class="math inline">\(B\)</span>, estimate <span
+class="math display">\[
+\boxed{
+\mathrm{RepairState}(B,t)
+\mathrel{=}
+(\Phi,R,\Gamma,B,\tau,H_{\mathrm{cycle}},\|D_xT\|).
+}
+\]</span> The goal is to move from symptom labels alone to repair
+coordinates: mismatch, record stability, phase unison, boundary
+predictivity, convergence time, holonomy defects, and gain.</p>
 <h2 id="personalized-training">Personalized Training</h2>
-<h1
-id="use-the-competence-atlas--mathbf-c_bc_1ldotsc_n--and-transfer-matrix-t_ij-training-stays-near-the-persons-active-manifold-and-gradually-deforms-it--boxed-textteach-by-expanding-reachable-basins-through-gradual-deformation---a-curriculum-optimizes--delta-c_d">Use
-the competence atlas <span class="math display">\[
+<p>Use the competence atlas <span class="math display">\[
 \mathbf C_B=(C_1,\ldots,C_n)
 \]</span> and transfer matrix <span
 class="math inline">\(T_{ij}\)</span>. Training stays near the person’s
@@ -2982,11 +3203,16 @@ active manifold and gradually deforms it: <span class="math display">\[
 \boxed{
 \text{Teach by expanding reachable basins through gradual deformation.}
 }
-\]</span> A curriculum optimizes $$ \Delta C_D</h1>
-<h2 id="textnew-basin-coverage">\text{new basin coverage}</h2>
-<h2 id="lambdatextfrustration">\lambda,\text{frustration}</h2>
-<p>\mu,\text{fatigue}. $$ This applies to education, rehabilitation,
-music training, sports training, and therapy.</p>
+\]</span> A curriculum optimizes <span class="math display">\[
+\Delta C_D
+\mathrel{=}
+\text{new basin coverage}
+\text{-}
+\lambda\,\text{frustration}
+\text{-}
+\mu\,\text{fatigue}.
+\]</span> This applies to education, rehabilitation, music training,
+sports training, and therapy.</p>
 <h2 id="psychotherapy-as-symbolic-consensus-repair">Psychotherapy as
 Symbolic Consensus Repair</h2>
 <p>Psychotherapy is language-mediated repair of symbolic and emotional
@@ -3068,9 +3294,7 @@ that direction: <span class="math display">\[
 \]</span></p>
 <h2 id="neuromodulation-and-digital-phenotyping">Neuromodulation and
 Digital Phenotyping</h2>
-<h2
-id="tms-dbs-neurofeedback-and-closed-loop-stimulation-can-be-framed-as-perturbing-a-patch-federation--boxed-begingathered-textapply-a-perturbation-that-moves-the-federation-out-of-a-bad-attractor-textand-restores-repair-descent-endgathered---the-optimization-target-is--boxed-min_mathcal-it-int-left-phi--lambda_gamma1-gamma--lambda_rdelta_mathrmrec">TMS,
-DBS, neurofeedback, and closed-loop stimulation can be framed as
+<p>TMS, DBS, neurofeedback, and closed-loop stimulation can be framed as
 perturbing a patch federation: <span class="math display">\[
 \boxed{
 \begin{gathered}
@@ -3079,14 +3303,26 @@ attractor}\\
 \text{and restores repair descent.}
 \end{gathered}
 }
-\]</span> The optimization target is $$ \boxed{ \min_{\mathcal I(t)}
-\int \left[ \Phi + \lambda_\Gamma(1-\Gamma) +
-\lambda_R\delta_{\mathrm{rec}}</h2>
-<p>\lambda_K\dot K \right]dt + \mathrm{Cost}(\mathcal I). } $$ For
-bipolar depression, the rTMS literature includes systematic reviews
-evaluating randomized sham-controlled evidence and protocol choices .
-OPH predicts that personal repair-state metrics add targeting
-specificity beyond diagnosis.</p>
+\]</span> The optimization target is <span class="math display">\[
+\boxed{
+\min_{\mathcal I(t)}
+\int
+\left[
+\Phi
++
+\lambda_\Gamma(1-\Gamma)
++
+\lambda_R\delta_{\mathrm{rec}}
+\text{-}
+\lambda_K\dot K
+\right]dt
++
+\mathrm{Cost}(\mathcal I).
+}
+\]</span> For bipolar depression, the rTMS literature includes
+systematic reviews evaluating randomized sham-controlled evidence and
+protocol choices . OPH predicts that personal repair-state metrics add
+targeting specificity beyond diagnosis.</p>
 <p>Digital phenotyping becomes real-time OPH state estimation. Phones
 and wearables can indirectly track sleep, activity, social rhythm,
 speech, heart rate, movement, and context. Reviews emphasize both the

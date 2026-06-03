@@ -226,14 +226,14 @@
 <a href="#prioritized-achievements">Prioritized achievements</a>
 <a href="#overview-of-results">Overview of Results</a>
 <a href="#dependency-dag">Dependency DAG</a>
-<a href="#overline-t_ilambdabiglqgammacdot-sbigr">\overline T_i^\lambda\bigl(q(\gamma\cdot s)\bigr)</a>
-<a href="#overline-t_ilambdabiglqsbigr">\overline T_i^\lambda\bigl(q(s)\bigr)</a>
 <a href="#collars-edge-centers-and-generalized-entropy">Collars, Edge Centers, and Generalized Entropy</a>
-<a href="#lim_ktoinfty-iadmid-b_rhon_k">\lim_{k\to\infty} I(A:D\mid B)_{\rho^{(n_k)}}</a>
-<a href="#langle-l_crangle">\langle L_C\rangle</a>
-<a href="#log-d_r_3log-d_r_2log-d_q">\log d_{R_3}+\log d_{R_2}+\log d_q</a>
-<a href="#langle-l_crangle-1">\langle L_C\rangle</a>
-<a href="#proof-by-proposition-55--g_mathrmnat">Proof. By Proposition 55 , $$ G_{\mathrm{nat}}</a></nav>
+<a href="#modular-geometry-relativity-and-einstein-dynamics">Modular Geometry, Relativity, and Einstein Dynamics</a>
+<a href="#geometric-modular-flow">Geometric modular flow</a>
+<a href="#the-null-modular-bridge">The null modular bridge</a>
+<a href="#generalized-entropy-and-the-einstein-equation">Generalized entropy and the Einstein equation</a>
+<a href="#gauge-reconstruction-and-standard-model-structure">Gauge Reconstruction and Standard Model Structure</a>
+<a href="#compact-gauge-reconstruction">Compact gauge reconstruction</a>
+<a href="#mar-minimality-and-the-standard-model-quotient">MAR minimality and the Standard Model quotient</a></nav>
           </details>
         </header>
         <div class="paper-reader-grid">
@@ -884,13 +884,14 @@ P\subset Q \implies \mathcal A(P)\subset \mathcal A(Q).
 
 <div id="ax:overlap" class="axiom">
 
-<h1
-id="axiom-2-overlap-consistency-for-overlapping-patches-p_1cap-p_2neqvarnothing-the-local-states-induced-on-the-shared-algebra-agree--omega_p_1_mathcal-ap_1cap-p_2"><strong>Axiom
-2</strong> (Overlap Consistency). *For overlapping patches <span
-class="math inline">\(P_1\cap P_2\neq\varnothing\)</span>, the local
-states induced on the shared algebra agree: $$ \omega_{P_1}|_{\mathcal
-A(P_1\cap P_2)}</h1>
-<p>\omega_{P_2}|_{\mathcal A(P_1\cap P_2)}. $$</p>
+<p><strong>Axiom 2</strong> (Overlap Consistency). <em>For overlapping
+patches <span class="math inline">\(P_1\cap P_2\neq\varnothing\)</span>,
+the local states induced on the shared algebra agree: <span
+class="math display">\[
+\omega_{P_1}|_{\mathcal A(P_1\cap P_2)}
+\mathrel{=}
+\omega_{P_2}|_{\mathcal A(P_1\cap P_2)}.
+\]</span></em></p>
 </div>
 
 <div id="ax:maxent" class="axiom">
@@ -917,20 +918,20 @@ branch.</em></p>
 </div>
 
 <h4 id="derived-local-gibbs-branch">Derived local-Gibbs branch.</h4>
-<h1
-id="on-the-finite-regulator-realization-of-axiom-1-the-standard-finite-dimensional-lagrange-multiplier-argument-applied-to-axiom-3-gives--omega_ell_mathrmuvlambda">On
-the finite regulator realization of
+<p>On the finite regulator realization of
 Axiom <a href="#ax:screen" data-reference-type="ref" data-reference="ax:screen">1</a>,
 the standard finite-dimensional Lagrange-multiplier argument applied to
 Axiom <a href="#ax:maxent" data-reference-type="ref" data-reference="ax:maxent">3</a>
-gives $$ \omega_{\ell_{\mathrm{UV}}}(\lambda)</h1>
-<h1
-id="z_ell_mathrmuvlambda-1expbigl-k_ell_mathrmuvlambdabigr--with--k_ell_mathrmuvlambda">Z_{\ell_{\mathrm{UV}}}(\lambda)^{-1}\exp!\bigl(-K_{\ell_{\mathrm{UV}}}(\lambda)\bigr),
-<span class="math display">\[
-with
-\]</span> K_{\ell_{\mathrm{UV}}}(\lambda)</h1>
-<p>\sum_x \sum_{a=1}^{N_{\mathrm{con}}}\lambda_a O_a(x) +\sum_b \mu_b
-Q_b, $$ where the <span class="math inline">\(Q_b\)</span> are the
+gives <span class="math display">\[
+\omega_{\ell_{\mathrm{UV}}}(\lambda)
+\mathrel{=}
+Z_{\ell_{\mathrm{UV}}}(\lambda)^{-1}\exp\!\bigl(-K_{\ell_{\mathrm{UV}}}(\lambda)\bigr),
+\]</span> with <span class="math display">\[
+K_{\ell_{\mathrm{UV}}}(\lambda)
+\mathrel{=}
+\sum_x \sum_{a=1}^{N_{\mathrm{con}}}\lambda_a O_a(x)
++\sum_b \mu_b Q_b,
+\]</span> where the <span class="math inline">\(Q_b\)</span> are the
 finitely many optional global conserved-charge constraints. Thus the
 logarithm of the selected state is itself a quasi-local UV generator
 built from the same bounded-support densities that define the
@@ -991,28 +992,28 @@ Its theorem-level role is precisely the collar-local mixing and
 support/error control carried into the later fixed-cutoff and
 scaling-limit arguments.</p>
 <h4 id="internal-refinement-notion">Internal refinement notion.</h4>
-<h1
-id="choose-any-family-of-refinement-channels-phi_ellto-l-compatible-with-axiom-3-because-the-same-finite-local-constraint-family-is-preserved-the-regulator-scale-realized-states-are-parameterized-by-one-common-finite-dimensional-multiplier-space-lambda-and-on-the-realized-branch-one-may-write--phi_ellto-lbiglomega_elllambdabigr">Choose
-any family of refinement channels <span
+<p>Choose any family of refinement channels <span
 class="math inline">\(\Phi_{\ell\to L}\)</span> compatible with
 Axiom <a href="#ax:maxent" data-reference-type="ref" data-reference="ax:maxent">3</a>.
 Because the same finite local constraint family is preserved, the
 regulator-scale realized states are parameterized by one common
 finite-dimensional multiplier space <span
 class="math inline">\(\lambda\)</span>, and on the realized branch one
-may write $$ \Phi_{\ell\to L}\bigl(\omega_{\ell}(\lambda)\bigr)</h1>
-<p>\omega_{L}!\bigl(R_{\ell\to L}(\lambda)\bigr) $$ for an induced map
-<span class="math inline">\(R_{\ell\to L}\)</span> on that multiplier
-space. The refinement-stable realized branch is therefore the persistent
-trajectory or invariant subset selected inside this finite-dimensional
-space, not an imported regularity package. This state-side refinement
-notion is enough to compare realized states across cutoffs. Any
-Dobrushin/local-mixing hypothesis used by the compact-gauge branch is
-logically separate: it supplies a collar estimate on a fixed
-finite-dimensional model, not information about the refinement-limit
-gauge phase. Whenever later sections speak of a “refinement-stable
-directed colimit” of zero-obstruction edge sectors, the
-monoidal-refinement/fiber clause is
+may write <span class="math display">\[
+\Phi_{\ell\to L}\bigl(\omega_{\ell}(\lambda)\bigr)
+\mathrel{=}
+\omega_{L}\!\bigl(R_{\ell\to L}(\lambda)\bigr)
+\]</span> for an induced map <span class="math inline">\(R_{\ell\to
+L}\)</span> on that multiplier space. The refinement-stable realized
+branch is therefore the persistent trajectory or invariant subset
+selected inside this finite-dimensional space, not an imported
+regularity package. This state-side refinement notion is enough to
+compare realized states across cutoffs. Any Dobrushin/local-mixing
+hypothesis used by the compact-gauge branch is logically separate: it
+supplies a collar estimate on a fixed finite-dimensional model, not
+information about the refinement-limit gauge phase. Whenever later
+sections speak of a “refinement-stable directed colimit” of
+zero-obstruction edge sectors, the monoidal-refinement/fiber clause is
 Theorem <a href="#thm:refinement-functor-fiber-descent" data-reference-type="ref" data-reference="thm:refinement-functor-fiber-descent">99</a>;
 Axiom <a href="#ax:maxent" data-reference-type="ref" data-reference="ax:maxent">3</a>
 supplies the realized state branch along which the theorem-produced
@@ -1757,16 +1758,17 @@ gauge-covariance axiom.</em></p>
 
 <div class="proof">
 
-<h1
-id="proof-because-qgammacdot-sqs--qbiglt_ilambdagammacdot-sbigr"><em>Proof.</em>
-Because <span class="math inline">\(q(\gamma\cdot s)=q(s)\)</span>, $$
-q\bigl(T_i^\lambda(\gamma\cdot s)\bigr)</h1>
-<h1 id="overline-t_ilambdabiglqgammacdot-sbigr">\overline
-T_i^\lambda\bigl(q(\gamma\cdot s)\bigr)</h1>
-<h1 id="overline-t_ilambdabiglqsbigr">\overline
-T_i^\lambda\bigl(q(s)\bigr)</h1>
-<p>q\bigl(T_i^\lambda(s)\bigr). $$ So gauge-equivalent inputs induce the
-same repaired physical state. ◻</p>
+<p><em>Proof.</em> Because <span class="math inline">\(q(\gamma\cdot
+s)=q(s)\)</span>, <span class="math display">\[
+q\bigl(T_i^\lambda(\gamma\cdot s)\bigr)
+\mathrel{=}
+\overline T_i^\lambda\bigl(q(\gamma\cdot s)\bigr)
+\mathrel{=}
+\overline T_i^\lambda\bigl(q(s)\bigr)
+\mathrel{=}
+q\bigl(T_i^\lambda(s)\bigr).
+\]</span> So gauge-equivalent inputs induce the same repaired physical
+state. ◻</p>
 </div>
 
 <div id="prop:gauge" class="proposition">
@@ -1964,13 +1966,13 @@ I(A:D\mid B)_{\rho\otimes \eta}=I(A:D\mid B)_\rho,
 class="math inline">\(r_{\mathrm{FR}}(\varepsilon)\)</span> and the
 collar Markov modulus <span class="math inline">\(\delta^{\mathrm
 M}_{A:B:D}(\varepsilon)\)</span> are unchanged;</em></p></li>
-<li><h1
-id="if-the-ancillas-are-inert-under-repair-then-they-remain-hidden-representative-data-and-the-quotient-normal-form-on-physical-observables-is-identical--n_qetaleftqeta_mathrmphyssotimes-kright">*if
-the ancillas are inert under repair, then they remain hidden
-representative data and the quotient normal form on physical observables
-is identical: $$ N_{Q^\eta}!\left(q^\eta_{\mathrm{phys}}(s\otimes
-k)\right)</h1>
-<p>N_Q!\left(q_{\mathrm{phys}}(s)\right); $$*</p></li>
+<li><p><em>if the ancillas are inert under repair, then they remain
+hidden representative data and the quotient normal form on physical
+observables is identical: <span class="math display">\[
+N_{Q^\eta}\!\left(q^\eta_{\mathrm{phys}}(s\otimes k)\right)
+\mathrel{=}
+N_Q\!\left(q_{\mathrm{phys}}(s)\right);
+\]</span></em></p></li>
 <li><p><em>if the ancillas carry only trivial neutral sectors, the
 MAR-selected realized sector package is unchanged.</em></p></li>
 </ol>
@@ -2157,10 +2159,9 @@ rather than an ordinary compact group. ◻</p>
 
 <div id="thm:markovcollar" class="theorem">
 
-<h1
-id="theorem-30-derived-edge-center-collar-decomposition-and-exact-markov-normal-form-let-a-b-d-be-a-collar-tripartition-realized-at-fixed-regulator-scale-on-the-ordinary-or-central-defect-branch-of-proposition-29-write-bb_lcup-b_r-with-common-interface-sigmapartial-c-and-let-widehat-k_sigma-be-the-derived-compact-boundary-action-attached-to-that-cut-with-widehat-k_sigmak_sigma-on-the-ordinary-branch-in-the-invariant-state-realization--mathcal-h_btildemathcal-h_b_lotimes-tildemathcal-h_b_rwidehat-k_sigma--decompose-the-left-boundary-data-as--tildemathcal-h_b_lcong-bigoplus_alpha-w_alphaotimes-mathcal-h_b_lalpha--with-w_alpha-irreducible-widehat-k_sigma-modules-because-the-right-half-collar-carries-the-inverse-overlap-transport-across-the-same-cut-it-decomposes-contragrediently--tildemathcal-h_b_rcong-bigoplus_beta-w_betaotimes-mathcal-h_b_rbeta--then--mathcal-h_bcongbigoplus_alpha-mathcal-h_b_lalphaotimes-mathcal-h_b_ralpha--and-the-sector-preserving-collar-algebra--mathcal-a_mathrmecbbigoplus_alpha-mathcal-bmathcal-h_b_lalphaotimes-mathcal-bmathcal-h_b_ralpha--has-center--zmathcal-a_mathrmecbbigoplus_alpha-mathbb-cmathbf-1_alpha--if-in-addition-the-reference-state-on-acup-bcup-d-is-exact-markov--iadb_rho0--then-the-state-decomposes-as--rho_abd"><strong>Theorem
-30</strong> (Derived edge-center collar decomposition and exact Markov
-normal form). *Let <span class="math inline">\(A\)</span>-<span
+<p><strong>Theorem 30</strong> (Derived edge-center collar decomposition
+and exact Markov normal form). <em>Let <span
+class="math inline">\(A\)</span>-<span
 class="math inline">\(B\)</span>-<span class="math inline">\(D\)</span>
 be a collar tripartition realized at fixed regulator scale on the
 ordinary or central-defect branch of
@@ -2198,14 +2199,17 @@ Z(\mathcal A_{\mathrm{EC}}(B))=\bigoplus_\alpha \mathbb C\,\mathbf
 class="math inline">\(A\cup B\cup D\)</span> is exact Markov, <span
 class="math display">\[
 I(A:D|B)_\rho=0,
-\]</span> then the state decomposes as $$ \rho_{ABD}</h1>
-<p>\bigoplus_\alpha p_\alpha, \rho^{(\alpha)}<em>{A b_L^\alpha}\otimes
-\rho^{(\alpha)}</em>{b_R^\alpha D}. $$ The same formula holds in any
-limit state that is exact Markov on this fixed collar model. Thus the
-collar-center block decomposition is forced by overlap consistency plus
-the derived regulator package on the ordinary or central-defect branch;
-exact Markov factorization is an additional state condition, not a
-consequence of the block decomposition alone.</p>
+\]</span> then the state decomposes as <span class="math display">\[
+\rho_{ABD}
+\mathrel{=}
+\bigoplus_\alpha p_\alpha\,
+\rho^{(\alpha)}_{A b_L^\alpha}\otimes \rho^{(\alpha)}_{b_R^\alpha D}.
+\]</span> The same formula holds in any limit state that is exact Markov
+on this fixed collar model. Thus the collar-center block decomposition
+is forced by overlap consistency plus the derived regulator package on
+the ordinary or central-defect branch; exact Markov factorization is an
+additional state condition, not a consequence of the block decomposition
+alone.</em></p>
 </div>
 
 <div class="proof">
@@ -2255,12 +2259,11 @@ literally. ◻</p>
 
 <div id="thm:hgdatum" class="theorem">
 
-<h1
-id="theorem-31-derived-higher-gauge-cut-datum-fix-a-connected-cut-sigma-and-a-finite-regulator-chart-p_i_iin-i_sigma-meeting-along-sigma-with-finite-nerve-n_sigma-on-the-genuinely-noncentral-branch-the-weak-gluing-data-are-implemented-by-a-compact-crossed-module--mathbb-k_sigmah_sigmaxrightarrowpartial_sigmag_sigmatriangleright--together-with-maps--g_ijp_ijto-g_sigma-qquad-h_ijkp_ijkto-h_sigma--obeying--g_ijg_jkpartial_sigmah_ijkg_ik-qquad-h_jklh_ijlg_ijtriangleright-h_iklh_ijk--the-corresponding-higher-gauge-change-system-on-the-cut-is-the-compact-semidirect-product--mathcal-t_sigmac1n_sigmah_sigmartimes-c0n_sigmag_sigma--with-multiplication--etaucdotetau"><strong>Theorem
-31</strong> (Derived higher-gauge cut datum). *Fix a connected cut <span
-class="math inline">\(\Sigma\)</span> and a finite regulator chart <span
-class="math inline">\(\{P_i\}_{i\in I_\Sigma}\)</span> meeting along
-<span class="math inline">\(\Sigma\)</span>, with finite nerve <span
+<p><strong>Theorem 31</strong> (Derived higher-gauge cut datum). <em>Fix
+a connected cut <span class="math inline">\(\Sigma\)</span> and a finite
+regulator chart <span class="math inline">\(\{P_i\}_{i\in
+I_\Sigma}\)</span> meeting along <span
+class="math inline">\(\Sigma\)</span>, with finite nerve <span
 class="math inline">\(N_\Sigma\)</span>. On the genuinely noncentral
 branch, the weak gluing data are implemented by a compact crossed module
 <span class="math display">\[
@@ -2277,22 +2280,25 @@ h_{jkl}h_{ijl}=(g_{ij}\triangleright h_{ikl})\,h_{ijk}.
 \]</span> The corresponding higher-gauge change system on the cut is the
 compact semidirect product <span class="math display">\[
 \mathcal T_\Sigma:=C^1(N_\Sigma,H_\Sigma)\rtimes C^0(N_\Sigma,G_\Sigma),
-\]</span> with multiplication $$ (\eta,u)\cdot(\eta',u')</h1>
-<p>\bigl(\eta,(u\triangleright \eta'),,uu'\bigr), <span
-class="math display">\[
-and standard coboundary action
-\]</span> g_{ij}\mapsto u_i,\partial_\Sigma(\eta_{ij}),g_{ij},u_j^{-1},
-<span class="math display">\[
-\]</span> h_{ijk}\mapsto (u_i\triangleright h_{ijk}), \eta_{ij},
-(g_{ij}\triangleright \eta_{jk}), \eta_{ik}^{-1}. <span
-class="math display">\[
-The fixed-cutoff physical sector on the genuinely noncentral branch is
-therefore the orbit class
-\]</span> q_\Sigma=[(g,h)]\in \check H^2(N_\Sigma,H_\Sigma\to G_\Sigma),
-$$ and no external continuous input <span
+\]</span> with multiplication <span class="math display">\[
+(\eta,u)\cdot(\eta&#39;,u&#39;)
+\mathrel{=}
+\bigl(\eta\,(u\triangleright \eta&#39;),\,uu&#39;\bigr),
+\]</span> and standard coboundary action <span class="math display">\[
+g_{ij}\mapsto u_i\,\partial_\Sigma(\eta_{ij})\,g_{ij}\,u_j^{-1},
+\]</span> <span class="math display">\[
+h_{ijk}\mapsto
+(u_i\triangleright h_{ijk})\,
+\eta_{ij}\,
+(g_{ij}\triangleright \eta_{jk})\,
+\eta_{ik}^{-1}.
+\]</span> The fixed-cutoff physical sector on the genuinely noncentral
+branch is therefore the orbit class <span class="math display">\[
+q_\Sigma=[(g,h)]\in \check H^2(N_\Sigma,H_\Sigma\to G_\Sigma),
+\]</span> and no external continuous input <span
 class="math inline">\(P\)</span> or <span
 class="math inline">\(N_{\mathrm{scr}}\)</span> enters this theorem
-package.</p>
+package.</em></p>
 </div>
 
 <div class="proof">
@@ -2321,12 +2327,11 @@ same crossed-module structures. ◻</p>
 
 <div id="thm:hgedgecenter" class="theorem">
 
-<h1
-id="theorem-32-higher-gauge-edge-center-completion-let-bb_lcup-b_r-be-a-fixed-cutoff-collar-around-a-connected-cut-sigma-on-the-genuinely-noncentral-branch-of-theorem-31-then-as-unitary-mathcal-t_sigma-modules--widetildemathcal-h_b_l-cong-bigoplus_lambdainlambda_sigma-w_lambdaotimes-mathcal-h_b_llambda-qquad-widetildemathcal-h_b_r-cong-bigoplus_muinlambda_sigma-w_muotimes-mathcal-h_b_rmu--for-a-finite-set-lambda_sigma-of-irreducible-unitary-representations-of-mathcal-t_sigma-that-actually-occur-hence-the-physical-higher-gauge-collar-space-is--mathcal-h_b2g--biglwidetildemathcal-h_b_lotimes-widetildemathcal-h_b_rbigrmathcal-t_sigma-cong-bigoplus_lambdainlambda_sigma-mathcal-h_b_llambdaotimes-mathcal-h_b_rlambda--and-the-collar-algebra-and-its-center-are--mathcal-a_2gb-cong-bigoplus_lambdainlambda_sigma-mathcal-bmathcal-h_b_llambdaotimes-mathcal-bmathcal-h_b_rlambda-qquad-zbiglmathcal-a_2gbbigr"><strong>Theorem
-32</strong> (Higher-gauge edge-center completion). *Let <span
-class="math inline">\(B=B_L\cup B_R\)</span> be a fixed-cutoff collar
-around a connected cut <span class="math inline">\(\Sigma\)</span> on
-the genuinely noncentral branch of
+<p><strong>Theorem 32</strong> (Higher-gauge edge-center completion).
+<em>Let <span class="math inline">\(B=B_L\cup B_R\)</span> be a
+fixed-cutoff collar around a connected cut <span
+class="math inline">\(\Sigma\)</span> on the genuinely noncentral branch
+of
 Theorem <a href="#thm:hgdatum" data-reference-type="ref" data-reference="thm:hgdatum">31</a>.
 Then, as unitary <span class="math inline">\(\mathcal
 T_\Sigma\)</span>-modules, <span class="math display">\[
@@ -2351,12 +2356,18 @@ H}_{B_R}\bigr)^{\mathcal T_\Sigma}
 \cong
 \bigoplus_{\lambda\in\Lambda_\Sigma}
 \mathcal H_{b_L^\lambda}\otimes \mathcal H_{b_R^\lambda},
-\]</span> and the collar algebra and its center are $$ \mathcal
-A_{2g}(B) \cong \bigoplus_{\lambda\in\Lambda_\Sigma} \mathcal B(\mathcal
-H_{b_L^\lambda})\otimes \mathcal B(\mathcal H_{b_R^\lambda}), \qquad
-Z\bigl(\mathcal A_{2g}(B)\bigr)</h1>
-<p>\bigoplus_{\lambda\in\Lambda_\Sigma}\mathbb C,\mathbf 1_\lambda.
-$$</p>
+\]</span> and the collar algebra and its center are <span
+class="math display">\[
+\mathcal A_{2g}(B)
+\cong
+\bigoplus_{\lambda\in\Lambda_\Sigma}
+\mathcal B(\mathcal H_{b_L^\lambda})\otimes
+\mathcal B(\mathcal H_{b_R^\lambda}),
+\qquad
+Z\bigl(\mathcal A_{2g}(B)\bigr)
+\mathrel{=}
+\bigoplus_{\lambda\in\Lambda_\Sigma}\mathbb C\,\mathbf 1_\lambda.
+\]</span></em></p>
 </div>
 
 <div class="proof">
@@ -2390,27 +2401,29 @@ and the center formula. ◻</p>
 
 <div id="thm:hgmarkov" class="theorem">
 
-<h1
-id="theorem-33-higher-gauge-markov-collar-and-carried-errors-let-rho_abd-be-a-faithful-state-on-a-collar-whose-middle-region-b-carries-the-higher-gauge-block-decomposition-of-theorem-32-if--iadmid-b_rho0--then--rho_abd"><strong>Theorem
-33</strong> (Higher-gauge Markov collar and carried errors). *Let <span
-class="math inline">\(\rho_{ABD}\)</span> be a faithful state on a
-collar whose middle region <span class="math inline">\(B\)</span>
-carries the higher-gauge block decomposition of
+<p><strong>Theorem 33</strong> (Higher-gauge Markov collar and carried
+errors). <em>Let <span class="math inline">\(\rho_{ABD}\)</span> be a
+faithful state on a collar whose middle region <span
+class="math inline">\(B\)</span> carries the higher-gauge block
+decomposition of
 Theorem <a href="#thm:hgedgecenter" data-reference-type="ref" data-reference="thm:hgedgecenter">32</a>.
 If <span class="math display">\[
 I(A:D\mid B)_\rho=0,
-\]</span> then $$ \rho_{ABD}</h1>
-<p>\bigoplus_{\lambda\in\Lambda_\Sigma} p_\lambda, \rho_{A
-b_L^\lambda}\otimes \rho_{b_R^\lambda D}. $$ If instead <span
-class="math inline">\(I(A:D\mid B)_\rho\le \varepsilon\)</span> on one
-fixed faithful collar model, then the same carried Fawzi–Renner and
-fixed-collar Markov errors as in the ordinary branch continue to hold:
-<span class="math display">\[
+\]</span> then <span class="math display">\[
+\rho_{ABD}
+\mathrel{=}
+\bigoplus_{\lambda\in\Lambda_\Sigma}
+p_\lambda\,
+\rho_{A b_L^\lambda}\otimes \rho_{b_R^\lambda D}.
+\]</span> If instead <span class="math inline">\(I(A:D\mid B)_\rho\le
+\varepsilon\)</span> on one fixed faithful collar model, then the same
+carried Fawzi–Renner and fixed-collar Markov errors as in the ordinary
+branch continue to hold: <span class="math display">\[
 r_{\mathrm{FR}}(\varepsilon)=2\sqrt{1-e^{-\varepsilon}}\le
 2\sqrt{\varepsilon},
 \qquad
 4\lambda_\ast^{-1}\,\delta^{\mathrm M}_{A:B:D}(\varepsilon).
-\]</span></p>
+\]</span></em></p>
 </div>
 
 <div class="proof">
@@ -2662,18 +2675,16 @@ ordinary transportable case.</em></p>
 
 <div id="def:fixed-cutoff-collar-sectors" class="definition">
 
-<h1
-id="definition-38-fixed-cutoff-zero-obstruction-collar-sectors-fix-a-regulator-cutoff-r-and-a-connected-overlap-collar-bb_lcup-b_r-around-a-cut-sigma-on-the-ordinary-or-central-defect-branch-let-widehat-k_sigmar-be-the-compact-boundary-action-supplied-by-the-fixed-cutoff-overlap-gluing-theorem-with-widehat-k_sigmark_sigmar-on-the-ordinary-branch-edge-center-completion-gives--widetildemathcal-h_b_l-cong-bigoplus_alphain-a_sigmar-w_alphaotimes-mathcal-h_b_lalpha-qquad-widetildemathcal-h_b_r-cong-bigoplus_alphain-a_sigmar-w_alphaotimes-mathcal-h_b_ralpha--and-hence--mathcal-h_b"><strong>Definition
-38</strong> (Fixed-cutoff zero-obstruction collar sectors). *Fix a
-regulator cutoff <span class="math inline">\(r\)</span> and a connected
-overlap collar <span class="math inline">\(B=B_L\cup B_R\)</span> around
-a cut <span class="math inline">\(\Sigma\)</span> on the ordinary or
-central-defect branch. Let <span class="math inline">\(\widehat
-K_{\Sigma,r}\)</span> be the compact boundary action supplied by the
-fixed-cutoff overlap gluing theorem, with <span
-class="math inline">\(\widehat K_{\Sigma,r}=K_{\Sigma,r}\)</span> on the
-ordinary branch. Edge-center completion gives <span
-class="math display">\[
+<p><strong>Definition 38</strong> (Fixed-cutoff zero-obstruction collar
+sectors). <em>Fix a regulator cutoff <span
+class="math inline">\(r\)</span> and a connected overlap collar <span
+class="math inline">\(B=B_L\cup B_R\)</span> around a cut <span
+class="math inline">\(\Sigma\)</span> on the ordinary or central-defect
+branch. Let <span class="math inline">\(\widehat K_{\Sigma,r}\)</span>
+be the compact boundary action supplied by the fixed-cutoff overlap
+gluing theorem, with <span class="math inline">\(\widehat
+K_{\Sigma,r}=K_{\Sigma,r}\)</span> on the ordinary branch. Edge-center
+completion gives <span class="math display">\[
 \widetilde{\mathcal H}_{B_L}
 \cong
 \bigoplus_{\alpha\in A_{\Sigma,r}}
@@ -2683,11 +2694,15 @@ W_\alpha\otimes \mathcal H_{b_L^\alpha},
 \cong
 \bigoplus_{\alpha\in A_{\Sigma,r}}
 W_\alpha^*\otimes \mathcal H_{b_R^\alpha},
-\]</span> and hence $$ \mathcal H_B</h1>
-<p>\bigl(\widetilde{\mathcal H}<em>{B_L}\otimes\widetilde{\mathcal
-H}</em>{B_R}\bigr)^{\widehat K_{\Sigma,r}} \cong \bigoplus_{\alpha\in
-A_{\Sigma,r}} \mathcal H_{b_L^\alpha}\otimes \mathcal H_{b_R^\alpha}. $$
-The minimal central projector onto the <span
+\]</span> and hence <span class="math display">\[
+\mathcal H_B
+\mathrel{=}
+\bigl(\widetilde{\mathcal H}_{B_L}\otimes\widetilde{\mathcal
+H}_{B_R}\bigr)^{\widehat K_{\Sigma,r}}
+\cong
+\bigoplus_{\alpha\in A_{\Sigma,r}}
+\mathcal H_{b_L^\alpha}\otimes \mathcal H_{b_R^\alpha}.
+\]</span> The minimal central projector onto the <span
 class="math inline">\(\alpha\)</span>-summand is denoted <span
 class="math inline">\(P_\alpha\)</span>. A simple fixed-cutoff collar
 charge is the zero-obstruction overlap-transport orbit of such a pair
@@ -2705,7 +2720,7 @@ products, and subobjects, define <span class="math display">\[
 \]</span> after transporting all localizations to one reference collar
 by the zero-obstruction transport functor. Different reference collars
 give canonically unitarily equivalent Hom spaces by
-Theorem <a href="#thm:transport-from-gluing" data-reference-type="ref" data-reference="thm:transport-from-gluing">36</a>.</p>
+Theorem <a href="#thm:transport-from-gluing" data-reference-type="ref" data-reference="thm:transport-from-gluing">36</a>.</em></p>
 </div>
 
 <div id="thm:fixed-cutoff-bosonic-sector-category" class="theorem">
@@ -2819,15 +2834,19 @@ so there is no separate fixed-cutoff category input.</em></p>
 
 <div id="prop:hginteracting" class="proposition">
 
-<h1
-id="proposition-41-higher-gauge-interacting-compatibility-in-a-fixed-cutoff-crossed-module-lattice-realization-of-theorem-31-one-may-add-local-collar-terms--k_mathrmcollar2g"><strong>Proposition
-41</strong> (Higher-gauge interacting compatibility). *In a fixed-cutoff
-crossed-module lattice realization of
+<p><strong>Proposition 41</strong> (Higher-gauge interacting
+compatibility). <em>In a fixed-cutoff crossed-module lattice realization
+of
 Theorem <a href="#thm:hgdatum" data-reference-type="ref" data-reference="thm:hgdatum">31</a>,
-one may add local collar terms $$ K_{\mathrm{collar}}^{2g}</h1>
-<p>\sum_{v\in\Sigma_0}\beta_v(1-A_v) + \sum_{e\in\Sigma_1}\beta_e(1-B_e)
-+ \sum_{c\in\mathcal C_\Sigma}\beta_c(1-C_c), $$ where <span
-class="math inline">\(A_v\)</span>, <span
+one may add local collar terms <span class="math display">\[
+K_{\mathrm{collar}}^{2g}
+\mathrel{=}
+\sum_{v\in\Sigma_0}\beta_v(1-A_v)
++
+\sum_{e\in\Sigma_1}\beta_e(1-B_e)
++
+\sum_{c\in\mathcal C_\Sigma}\beta_c(1-C_c),
+\]</span> where <span class="math inline">\(A_v\)</span>, <span
 class="math inline">\(B_e\)</span>, and <span
 class="math inline">\(C_c\)</span> are the local gauge and fake-flat
 projectors of the chosen higher-gauge realization. These terms are
@@ -2835,7 +2854,7 @@ bounded-support and commute in the standard higher-gauge projector
 realization , so the full fixed-cutoff generator is quasi-local and
 inside the
 Axiom <a href="#ax:maxent" data-reference-type="ref" data-reference="ax:maxent">3</a>
-class.</p>
+class.</em></p>
 </div>
 
 <div class="proof">
@@ -2878,10 +2897,8 @@ finite-dimensional collar.</em></p>
 
 <div id="def:markovmodulus" class="definition">
 
-<h1
-id="definition-43-exact-markov-set-and-collar-distance-modulus-fix-the-finite-dimensional-collar-hilbert-space-of-theorem-30-let--mathfrak-m_abd--left-sigma_abd-iadmid-b_sigma0-right--be-the-set-of-exact-markov-states-on-that-fixed-collar-equivalently-by-hjpw-and-theorem-30-sigmainmathfrak-m_abd-iff--sigma_abd"><strong>Definition
-43</strong> (Exact Markov set and collar-distance modulus). *Fix the
-finite-dimensional collar Hilbert space of
+<p><strong>Definition 43</strong> (Exact Markov set and collar-distance
+modulus). <em>Fix the finite-dimensional collar Hilbert space of
 Theorem <a href="#thm:markovcollar" data-reference-type="ref" data-reference="thm:markovcollar">30</a>.
 Let <span class="math display">\[
 \mathfrak M_{A:B:D}
@@ -2892,11 +2909,14 @@ Let <span class="math display">\[
 \]</span> be the set of exact Markov states on that fixed collar.
 Equivalently, by HJPW and
 Theorem <a href="#thm:markovcollar" data-reference-type="ref" data-reference="thm:markovcollar">30</a>,
-<span class="math inline">\(\sigma\in\mathfrak M_{A:B:D}\)</span> iff $$
-\sigma_{ABD}</h1>
-<p>\bigoplus_\alpha q_\alpha, \sigma^{(\alpha)}<em>{A b_L^\alpha}\otimes
-\sigma^{(\alpha)}</em>{b_R^\alpha D} $$ for the fixed edge-center
-decomposition of <span class="math inline">\(B\)</span>.*</p>
+<span class="math inline">\(\sigma\in\mathfrak M_{A:B:D}\)</span> iff
+<span class="math display">\[
+\sigma_{ABD}
+\mathrel{=}
+\bigoplus_\alpha q_\alpha\,
+\sigma^{(\alpha)}_{A b_L^\alpha}\otimes \sigma^{(\alpha)}_{b_R^\alpha D}
+\]</span> for the fixed edge-center decomposition of <span
+class="math inline">\(B\)</span>.</em></p>
 <p><em>For a general state <span
 class="math inline">\(\rho_{ABD}\)</span>, define its distance to the
 exact Markov set by <span class="math display">\[
@@ -2947,9 +2967,7 @@ is continuous there because von Neumann entropy is continuous in finite
 dimension. Hence <span class="math inline">\(\mathfrak
 M_{A:B:D}\)</span> is closed, so it is compact as a closed subset of a
 compact space.</p>
-<h1
-id="suppose-deltamathrm-m_abdvarepsilonnotto-0-then-there-exist-eta0-a-sequence-varepsilon_ndownarrow-0-and-states-rhon-with-iadmid-b_rhonle-varepsilon_n-but-d_mathrm-mrhonge-eta-for-all-n-by-compactness-pass-to-a-trace-norm-convergent-subsequence-rhon_kto-rhoast-continuity-of-conditional-mutual-information-gives--iadmid-b_rhoast">Suppose
-<span class="math inline">\(\delta^{\mathrm
+<p>Suppose <span class="math inline">\(\delta^{\mathrm
 M}_{A:B:D}(\varepsilon)\not\to 0\)</span>. Then there exist <span
 class="math inline">\(\eta&gt;0\)</span>, a sequence <span
 class="math inline">\(\varepsilon_n\downarrow 0\)</span>, and states
@@ -2960,10 +2978,13 @@ M}(\rho^{(n)})\ge \eta\)</span> for all <span
 class="math inline">\(n\)</span>. By compactness, pass to a trace-norm
 convergent subsequence <span class="math inline">\(\rho^{(n_k)}\to
 \rho^\ast\)</span>. Continuity of conditional mutual information gives
-$$ I(A:D\mid B)_{\rho^\ast}</h1>
-<h1 id="lim_ktoinfty-iadmid-b_rhon_k">\lim_{k\to\infty} I(A:D\mid
-B)_{\rho^{(n_k)}}</h1>
-<p>0, $$ so <span class="math inline">\(\rho^\ast\in \mathfrak
+<span class="math display">\[
+I(A:D\mid B)_{\rho^\ast}
+\mathrel{=}
+\lim_{k\to\infty} I(A:D\mid B)_{\rho^{(n_k)}}
+\mathrel{=}
+0,
+\]</span> so <span class="math inline">\(\rho^\ast\in \mathfrak
 M_{A:B:D}\)</span>. But then <span class="math display">\[
 d_{\mathrm M}(\rho^{(n_k)})
 \le
@@ -3075,13 +3096,16 @@ class="math display">\[
 
 <div class="proof">
 
-<h1
-id="proof-the-fidelity-lower-bound-and-the-fuchsvan-de-graaf-inequality-give--rho_abd-rhomathrmrecabd1-le-2sqrt1-frhoabdrhomathrmrecabd2-le-2sqrt1-e-varepsilon"><em>Proof.</em>
-The fidelity lower bound and the Fuchs–van de Graaf inequality give $$
-|\rho_{ABD}-\rho^{\mathrm{rec}}<em>{ABD}|<em>1 \le
-2\sqrt{1-F(\rho</em>{ABD},\rho^{\mathrm{rec}}</em>{ABD})^2} \le
-2\sqrt{1-e^{-\varepsilon}}</h1>
-<p>r_{\mathrm{FR}}(\varepsilon). $$ The estimate <span
+<p><em>Proof.</em> The fidelity lower bound and the Fuchs–van de Graaf
+inequality give <span class="math display">\[
+\|\rho_{ABD}-\rho^{\mathrm{rec}}_{ABD}\|_1
+\le
+2\sqrt{1-F(\rho_{ABD},\rho^{\mathrm{rec}}_{ABD})^2}
+\le
+2\sqrt{1-e^{-\varepsilon}}
+\mathrel{=}
+r_{\mathrm{FR}}(\varepsilon).
+\]</span> The estimate <span
 class="math inline">\(r_{\mathrm{FR}}(\varepsilon)\le
 2\sqrt{\varepsilon}\)</span> follows from <span
 class="math inline">\(1-e^{-x}\le x\)</span>. Contractivity of trace
@@ -3095,26 +3119,30 @@ Markov. ◻</p>
 
 <div id="prop:splice" class="proposition">
 
-<h1
-id="proposition-47-exact-splice-theorem-and-controlled-collar-approximation-under-theorem-30-let-sigma_abdin-mathfrak-m_abd-have-exact-markov-form--sigma_abd"><strong>Proposition
-47</strong> (Exact splice theorem and controlled collar approximation).
-*Under
+<p><strong>Proposition 47</strong> (Exact splice theorem and controlled
+collar approximation). <em>Under
 Theorem <a href="#thm:markovcollar" data-reference-type="ref" data-reference="thm:markovcollar">30</a>,
 let <span class="math inline">\(\sigma_{ABD}\in \mathfrak
-M_{A:B:D}\)</span> have exact Markov form $$ \sigma_{ABD}</h1>
-<h1
-id="bigoplus_alpha-p_alpha-sigmaalphaa-b_lalphaotimes-sigmaalphab_ralpha-d--let-taualpha_b_ralpha-d-be-any-normalized-family-of-states-compatible-with-the-same-right-boundary-sectors-and-define--sigma_ab-d">\bigoplus_\alpha
-p_\alpha, \sigma^{(\alpha)}<em>{A b_L^\alpha}\otimes
-\sigma^{(\alpha)}</em>{b_R^\alpha D}. $$ Let <span
-class="math inline">\(\tau^{(\alpha)}_{b_R^\alpha D&#39;}\)</span> be
-any normalized family of states compatible with the same right-boundary
-sectors, and define $$ \sigma'_{AB D'}</h1>
-<p>\bigoplus_\alpha p_\alpha, \sigma^{(\alpha)}<em>{A b_L^\alpha}\otimes
-\tau^{(\alpha)}</em>{b_R^\alpha D'}. <span class="math display">\[
-Define the common left algebra
-\]</span> \mathcal A_{A b_L}:= \bigoplus_\alpha \mathcal B(\mathcal H_{A
-b_L^\alpha})\otimes \mathbf 1_{b_R^\alpha}, $$ canonically represented
-on both direct-sum Hilbert spaces. Then:*</p>
+M_{A:B:D}\)</span> have exact Markov form <span class="math display">\[
+\sigma_{ABD}
+\mathrel{=}
+\bigoplus_\alpha p_\alpha\,
+\sigma^{(\alpha)}_{A b_L^\alpha}\otimes \sigma^{(\alpha)}_{b_R^\alpha
+D}.
+\]</span> Let <span class="math inline">\(\tau^{(\alpha)}_{b_R^\alpha
+D&#39;}\)</span> be any normalized family of states compatible with the
+same right-boundary sectors, and define <span class="math display">\[
+\sigma&#39;_{AB D&#39;}
+\mathrel{=}
+\bigoplus_\alpha p_\alpha\,
+\sigma^{(\alpha)}_{A b_L^\alpha}\otimes \tau^{(\alpha)}_{b_R^\alpha
+D&#39;}.
+\]</span> Define the common left algebra <span class="math display">\[
+\mathcal A_{A b_L}:=
+\bigoplus_\alpha \mathcal B(\mathcal H_{A b_L^\alpha})\otimes \mathbf
+1_{b_R^\alpha},
+\]</span> canonically represented on both direct-sum Hilbert spaces.
+Then:</em></p>
 <ol type="1">
 <li><p><em>for every <span class="math inline">\(X\in\mathcal A_{A
 b_L}\)</span>, <span class="math display">\[
@@ -3147,15 +3175,15 @@ M}_{A:B:D}(\varepsilon_\delta)\to 0\)</span>.</em></p>
 
 <div class="proof">
 
-<h1
-id="proof-for-item-1-blockwise-factorization-gives--mathrmtrxsigma_ab-d"><em>Proof.</em>
-For item 1, blockwise factorization gives $$ \mathrm{Tr}(X\sigma'_{AB
-D'})</h1>
-<p>\sum_\alpha p_\alpha
-\mathrm{Tr}!\left(X_\alpha\sigma^{(\alpha)}<em>{A b_L^\alpha}\right)
-\mathrm{Tr}!\left(\tau^{(\alpha)}</em>{b_R^\alpha D'}\right). $$ Here
-<span class="math inline">\(X_\alpha\)</span> denotes the <span
-class="math inline">\(\alpha\)</span>-block of <span
+<p><em>Proof.</em> For item 1, blockwise factorization gives <span
+class="math display">\[
+\mathrm{Tr}(X\sigma&#39;_{AB D&#39;})
+\mathrel{=}
+\sum_\alpha p_\alpha
+\mathrm{Tr}\!\left(X_\alpha\sigma^{(\alpha)}_{A b_L^\alpha}\right)
+\mathrm{Tr}\!\left(\tau^{(\alpha)}_{b_R^\alpha D&#39;}\right).
+\]</span> Here <span class="math inline">\(X_\alpha\)</span> denotes the
+<span class="math inline">\(\alpha\)</span>-block of <span
 class="math inline">\(X\)</span> in <span class="math inline">\(\mathcal
 A_{A b_L}\)</span>. Each <span
 class="math inline">\(\tau^{(\alpha)}\)</span> is normalized, so the
@@ -3163,18 +3191,23 @@ second factor is <span class="math inline">\(1\)</span>. The same
 computation for <span class="math inline">\(\sigma_{ABD}\)</span> gives
 the same value because the original right factor is likewise
 normalized.</p>
-<h1
-id="for-item-2-apply-item-1-to-sigma_varepsilon--mathrmtrxsigma_varepsilonmathrmtrxsigma_varepsilon--therefore--left-mathrmtrxrho_abd-mathrmtrxsigma_varepsilon-right">For
-item 2, apply item 1 to <span
+<p>For item 2, apply item 1 to <span
 class="math inline">\(\sigma_\varepsilon\)</span>: <span
 class="math display">\[
 \mathrm{Tr}(X\sigma&#39;_{\varepsilon})=\mathrm{Tr}(X\sigma_{\varepsilon}).
-\]</span> Therefore $$ \left|
-\mathrm{Tr}(X\rho_{ABD})-\mathrm{Tr}(X\sigma'_{\varepsilon})
-\right|</h1>
-<p>\left| \mathrm{Tr}!\left[X(\rho_{ABD}-\sigma_{\varepsilon})\right]
-\right| \le |X|<em>\infty,|\rho</em>{ABD}-\sigma_{\varepsilon}|<em>1 \le
-|X|</em>\infty,\delta^{\mathrm M}_{A:B:D}(\varepsilon). $$  ◻</p>
+\]</span> Therefore <span class="math display">\[
+\left|
+\mathrm{Tr}(X\rho_{ABD})-\mathrm{Tr}(X\sigma&#39;_{\varepsilon})
+\right|
+\mathrel{=}
+\left|
+\mathrm{Tr}\!\left[X(\rho_{ABD}-\sigma_{\varepsilon})\right]
+\right|
+\le
+\|X\|_\infty\,\|\rho_{ABD}-\sigma_{\varepsilon}\|_1
+\le
+\|X\|_\infty\,\delta^{\mathrm M}_{A:B:D}(\varepsilon).
+\]</span>  ◻</p>
 </div>
 
 <div id="prop:modulartransport" class="proposition">
@@ -3217,10 +3250,8 @@ M}_{A:B:D}(\varepsilon)\)</span> of the exact Markov value.</em></p>
 
 <div class="proof">
 
-<h1
-id="proof-by-monotonicity-of-trace-distance-under-partial-trace--rho_x-sigma_varepsilon_x_1-le-rho-sigma_varepsilon_1-le-deltamathrm-m_abdvarepsilon--for-each-xinabdabbdb-on-the-interval-lambda_ast1-the-function-log-x-has-derivative-bounded-by-lambda_ast-1-by-the-standard-integral-representation-of-the-operator-logarithm-this-implies-the-operator-norm-lipschitz-bound--k_xrho-k_xsigma_varepsilon_infty"><em>Proof.</em>
-By monotonicity of trace distance under partial trace, <span
-class="math display">\[
+<p><em>Proof.</em> By monotonicity of trace distance under partial
+trace, <span class="math display">\[
 \|\rho_X-(\sigma_\varepsilon)_X\|_1
 \le
 \|\rho-\sigma_\varepsilon\|_1
@@ -3232,34 +3263,37 @@ class="math inline">\(X\in\{ABD,AB,BD,B\}\)</span>. On the interval
 <span class="math inline">\(\log x\)</span> has derivative bounded by
 <span class="math inline">\(\lambda_\ast^{-1}\)</span>. By the standard
 integral representation of the operator logarithm, this implies the
-operator-norm Lipschitz bound $$
-|K_X(\rho)-K_X(\sigma_\varepsilon)|_\infty</h1>
-<p>|\log (\sigma_\varepsilon)<em>X-\log \rho_X|</em>\infty \le
-\lambda_\ast^{-1},|\rho_X-(\sigma_\varepsilon)<em>X|</em>\infty \le
-\lambda_\ast^{-1},\delta^{\mathrm M}<em>{A:B:D}(\varepsilon). <span
+operator-norm Lipschitz bound <span class="math display">\[
+\|K_X(\rho)-K_X(\sigma_\varepsilon)\|_\infty
+\mathrel{=}
+\|\log (\sigma_\varepsilon)_X-\log \rho_X\|_\infty
+\le
+\lambda_\ast^{-1}\,\|\rho_X-(\sigma_\varepsilon)_X\|_\infty
+\le
+\lambda_\ast^{-1}\,\delta^{\mathrm M}_{A:B:D}(\varepsilon).
+\]</span> Summing the four region contributions gives <span
 class="math display">\[
-Summing the four region contributions gives
-\]</span> |\Delta K(\rho)-\Delta K(\sigma</em>\varepsilon)|<em>\infty
-\le 4\lambda</em>\ast^{-1},\delta^{\mathrm M}_{A:B:D}(\varepsilon). $$
-For <span class="math inline">\(\sigma_\varepsilon\in \mathfrak
-M_{A:B:D}\)</span>, the exact HJPW block factorization implies that
-<span class="math inline">\(\Delta K(\sigma_\varepsilon)\)</span> is
-central or blockwise constant, so the same bound controls all matrix
+\|\Delta K(\rho)-\Delta K(\sigma_\varepsilon)\|_\infty
+\le
+4\lambda_\ast^{-1}\,\delta^{\mathrm M}_{A:B:D}(\varepsilon).
+\]</span> For <span class="math inline">\(\sigma_\varepsilon\in
+\mathfrak M_{A:B:D}\)</span>, the exact HJPW block factorization implies
+that <span class="math inline">\(\Delta K(\sigma_\varepsilon)\)</span>
+is central or blockwise constant, so the same bound controls all matrix
 elements relative to the exact Markov modular-additivity value. ◻</p>
 </div>
 
 <div id="thm:modular-defect-propagation" class="theorem">
 
-<h2
-id="theorem-49-finite-stage-modular-defect-propagation-consider-a-fixed-finite-branch-calculation-that-uses-n-collar-or-strip-modular-additivity-identities-followed-by-finitely-many-sums-products-commutators-with-bounded-operators-bounded-functional-calculus-operations-on-a-fixed-spectral-interval-and-bounded-time-modular-transports-replace-the-j-th-exact-identity-by-its-finite-stage-controlled-form-with-errors--r_mathrmfrvarepsilon_jqquad-deltamathrm-m_jvarepsilon_jqquad-etamathrmreg_j--where-etamathrmreg_j-denotes-the-regularized-support-visible-transport-remainder-when-no-common-full-algebra-floor-is-used-then-every-bounded-downstream-modular-observable-o-produced-by-that-calculation-obeys--left-langle-orangle_mathrmfinite"><strong>Theorem
-49</strong> (Finite-stage modular-defect propagation). *Consider a fixed
-finite branch calculation that uses <span
-class="math inline">\(N\)</span> collar or strip modular-additivity
-identities, followed by finitely many sums, products, commutators with
-bounded operators, bounded functional-calculus operations on a fixed
-spectral interval, and bounded-time modular transports. Replace the
-<span class="math inline">\(j\)</span>-th exact identity by its
-finite-stage controlled form with errors <span class="math display">\[
+<p><strong>Theorem 49</strong> (Finite-stage modular-defect
+propagation). <em>Consider a fixed finite branch calculation that uses
+<span class="math inline">\(N\)</span> collar or strip
+modular-additivity identities, followed by finitely many sums, products,
+commutators with bounded operators, bounded functional-calculus
+operations on a fixed spectral interval, and bounded-time modular
+transports. Replace the <span class="math inline">\(j\)</span>-th exact
+identity by its finite-stage controlled form with errors <span
+class="math display">\[
 r_{\mathrm{FR}}(\varepsilon_j),\qquad
 \delta^{\mathrm M}_j(\varepsilon_j),\qquad
 \eta^{\mathrm{reg}}_j,
@@ -3268,17 +3302,24 @@ class="math inline">\(\eta^{\mathrm{reg}}_j\)</span> denotes the
 regularized support-visible transport remainder when no common
 full-algebra floor is used. Then every bounded downstream modular
 observable <span class="math inline">\(O\)</span> produced by that
-calculation obeys $$ \left| \langle O\rangle_{\mathrm{finite}}</h2>
-<p>\langle O\rangle_{\mathrm{exact}} \right| \le \mathcal P_O!\left(
-{r_{\mathrm{FR}}(\varepsilon_j)}_{j=1}^N, {\delta^{\mathrm
-M}<em>j(\varepsilon_j)}</em>{j=1}^N,
-{\eta^{\mathrm{reg}}<em>j}</em>{j=1}^N \right), $$ for a
-polynomial-continuity modulus <span class="math inline">\(\mathcal
-P_O\)</span> whose coefficients depend only on the fixed collar models,
-the bounded-time interval, the operator norms, and the declared faithful
-floors or regularization schedules. In particular <span
-class="math inline">\(\mathcal P_O\to0\)</span> as all listed errors
-tend to zero.</p>
+calculation obeys <span class="math display">\[
+\left|
+\langle O\rangle_{\mathrm{finite}}
+\text{-}
+\langle O\rangle_{\mathrm{exact}}
+\right|
+\le
+\mathcal P_O\!\left(
+\{r_{\mathrm{FR}}(\varepsilon_j)\}_{j=1}^N,
+\{\delta^{\mathrm M}_j(\varepsilon_j)\}_{j=1}^N,
+\{\eta^{\mathrm{reg}}_j\}_{j=1}^N
+\right),
+\]</span> for a polynomial-continuity modulus <span
+class="math inline">\(\mathcal P_O\)</span> whose coefficients depend
+only on the fixed collar models, the bounded-time interval, the operator
+norms, and the declared faithful floors or regularization schedules. In
+particular <span class="math inline">\(\mathcal P_O\to0\)</span> as all
+listed errors tend to zero.</em></p>
 </div>
 
 <div class="proof">
@@ -3430,19 +3471,18 @@ L_C=\sum_\alpha (\log d_\alpha)P_\alpha.
 
 <div class="proof">
 
-<h1
-id="proof-the-entropy-of-a-direct-sum-is--sleftbigoplus_alpha-p_alpha-sigma_alpharight"><em>Proof.</em>
-The entropy of a direct sum is $$ S!\left(\bigoplus_\alpha p_\alpha
-\sigma_\alpha\right)</h1>
-<p>H(p_\alpha)+\sum_\alpha p_\alpha S(\sigma_\alpha). <span
+<p><em>Proof.</em> The entropy of a direct sum is <span
 class="math display">\[
-Apply this identity with
-\]</span> \sigma_\alpha= \rho^{(\alpha)}<em>{\mathrm{bulk},C}\otimes
-\frac{\mathbf 1^{(\alpha)}</em>{\mathrm{edge}}}{d_\alpha}. <span
-class="math display">\[
-Since
-\]</span> S(\sigma_\alpha)=S(\rho^{(\alpha)}<em>{\mathrm{bulk},C})+\log
-d</em>\alpha, $$ the first statement follows. ◻</p>
+S\!\left(\bigoplus_\alpha p_\alpha \sigma_\alpha\right)
+\mathrel{=}
+H(p_\alpha)+\sum_\alpha p_\alpha S(\sigma_\alpha).
+\]</span> Apply this identity with <span class="math display">\[
+\sigma_\alpha=
+\rho^{(\alpha)}_{\mathrm{bulk},C}\otimes
+\frac{\mathbf 1^{(\alpha)}_{\mathrm{edge}}}{d_\alpha}.
+\]</span> Since <span class="math display">\[
+S(\sigma_\alpha)=S(\rho^{(\alpha)}_{\mathrm{bulk},C})+\log d_\alpha,
+\]</span> the first statement follows. ◻</p>
 </div>
 
 <div id="def:newton" class="definition">
@@ -3464,78 +3504,88 @@ exact algebraic proposition.</em></p>
 
 <div id="prop:sharededgeentropy" class="proposition">
 
-<h1
-id="proposition-55-shared-edge-entropy-identity-on-the-realized-product-group-branch-on-the-realized-product-group-branch--g_mathrmphys"><strong>Proposition
-55</strong> (Shared edge-entropy identity on the realized product-group
-branch). *On the realized product-group branch $$ G_{\mathrm{phys}}</h1>
-<h1
-id="fracmathrmsu3timesmathrmsu2timesmathrmu1mathbb-z_6--let--rr_3boxtimes-r_2boxtimes-q--be-a-lifted-product-presentation-of-one-cut-sector-on-the-quotient-branch-and-let-the-r-sector-contribution-of-the-collar-edge-center-entropy-operator-be--bigll_cbigrmid_rlog-d_r--then--bigll_cbigrmid_r">\frac{\mathrm{SU}(3)\times\mathrm{SU}(2)\times\mathrm{U}(1)}{\mathbb
-Z_6}, <span class="math display">\[
-let
-\]</span> R=R_3\boxtimes R_2\boxtimes q $$ be a lifted product
-presentation of one cut sector on the quotient branch, and let the <span
+<p><strong>Proposition 55</strong> (Shared edge-entropy identity on the
+realized product-group branch). <em>On the realized product-group branch
+<span class="math display">\[
+G_{\mathrm{phys}}
+\mathrel{=}
+\frac{\mathrm{SU}(3)\times\mathrm{SU}(2)\times\mathrm{U}(1)}{\mathbb
+Z_6},
+\]</span> let <span class="math display">\[
+R=R_3\boxtimes R_2\boxtimes q
+\]</span> be a lifted product presentation of one cut sector on the
+quotient branch, and let the <span
 class="math inline">\(R\)</span>-sector contribution of the collar
 edge-center entropy operator be <span class="math display">\[
 \bigl(L_C\bigr)\!\mid_R=\log d_R.
-\]</span> Then $$ \bigl(L_C\bigr)!\mid_R</h1>
-<h1
-id="l_c3l_c2-qquad-l_c3log-d_r_3-qquad-l_c2log-d_r_2--because-every-irreducible-mathrmu1-representation-is-one-dimensional-and-contributes-log-10-consequently-on-the-product-heat-kernel-branch--barell_mathrmshared">L_C^{(3)}+L_C^{(2)},
-\qquad L_C^{(3)}:=\log d_{R_3}, \qquad L_C^{(2)}:=\log d_{R_2}, $$
-because every irreducible <span
+\]</span> Then <span class="math display">\[
+\bigl(L_C\bigr)\!\mid_R
+\mathrel{=}
+L_C^{(3)}+L_C^{(2)},
+\qquad
+L_C^{(3)}:=\log d_{R_3},
+\qquad
+L_C^{(2)}:=\log d_{R_2},
+\]</span> because every irreducible <span
 class="math inline">\(\mathrm{U}(1)\)</span> representation is
 one-dimensional and contributes <span class="math inline">\(\log
-1=0\)</span>. Consequently, on the product heat-kernel branch $$
-\bar{\ell}_{\mathrm{shared}}</h1>
-<h1 id="langle-l_crangle">\langle L_C\rangle</h1>
-<h1
-id="barellmathrmsu3t3mathrmrun--barellmathrmsu2t2mathrmrun--if-the-same-branch-satisfies-the-d10-pixel-law--barellmathrmsu2t2mathrmrun--barellmathrmsu3t3mathrmrun">\bar{\ell}<em>{\mathrm{SU(3)}}(t</em>{3,\mathrm{run}})
-+ \bar{\ell}<em>{\mathrm{SU(2)}}(t</em>{2,\mathrm{run}}). <span
+1=0\)</span>. Consequently, on the product heat-kernel branch <span
 class="math display">\[
-If the same branch satisfies the D10 pixel law
-\]</span> \bar{\ell}<em>{\mathrm{SU(2)}}(t</em>{2,\mathrm{run}}) ;+;
-\bar{\ell}<em>{\mathrm{SU(3)}}(t</em>{3,\mathrm{run}})</h1>
-<p>P/4, <span class="math display">\[
-then
-\]</span> \bar{\ell}_{\mathrm{shared}}=P/4. $$</p>
+\bar{\ell}_{\mathrm{shared}}
+\mathrel{=}
+\langle L_C\rangle
+\mathrel{=}
+\bar{\ell}_{\mathrm{SU(3)}}(t_{3,\mathrm{run}})
++
+\bar{\ell}_{\mathrm{SU(2)}}(t_{2,\mathrm{run}}).
+\]</span> If the same branch satisfies the D10 pixel law <span
+class="math display">\[
+\bar{\ell}_{\mathrm{SU(2)}}(t_{2,\mathrm{run}})
+\;+\;
+\bar{\ell}_{\mathrm{SU(3)}}(t_{3,\mathrm{run}})
+\mathrel{=}
+P/4,
+\]</span> then <span class="math display">\[
+\bar{\ell}_{\mathrm{shared}}=P/4.
+\]</span></em></p>
 </div>
 
 <div class="proof">
 
-<h1
-id="proof-for-the-lifted-product-presentation-rr_3boxtimes-r_2boxtimes-q-of-a-sector-on-the-quotient-branch--d_rd_r_3d_r_2d_q--every-irreducible-mathrmu1-representation-is-one-dimensional-so-d_q1-therefore--log-d_r"><em>Proof.</em>
-For the lifted product presentation <span
+<p><em>Proof.</em> For the lifted product presentation <span
 class="math inline">\(R=R_3\boxtimes R_2\boxtimes q\)</span> of a sector
 on the quotient branch, <span class="math display">\[
 d_R=d_{R_3}d_{R_2}d_q.
 \]</span> Every irreducible <span
 class="math inline">\(\mathrm{U}(1)\)</span> representation is
 one-dimensional, so <span class="math inline">\(d_q=1\)</span>.
-Therefore $$ \log d_R</h1>
-<h1 id="log-d_r_3log-d_r_2log-d_q">\log d_{R_3}+\log d_{R_2}+\log
-d_q</h1>
-<h1
-id="log-d_r_3log-d_r_2--this-proves-the-sector-identity--bigll_cbigrmid_rl_c3l_c2--on-the-product-heat-kernel-branch-expectation-values-add-so--barell_mathrmshared">\log
-d_{R_3}+\log d_{R_2}. <span class="math display">\[
-This proves the sector identity
-\]</span> \bigl(L_C\bigr)!\mid_R=L_C^{(3)}+L_C^{(2)}. <span
-class="math display">\[
-On the product heat-kernel branch, expectation values add, so
-\]</span> \bar{\ell}_{\mathrm{shared}}</h1>
-<h1 id="langle-l_crangle-1">\langle L_C\rangle</h1>
-<p>\bar{\ell}<em>{\mathrm{SU(3)}}(t</em>{3,\mathrm{run}}) +
-\bar{\ell}<em>{\mathrm{SU(2)}}(t</em>{2,\mathrm{run}}). $$ If the same
-branch satisfies the D10 pixel law, the right-hand side equals <span
-class="math inline">\(P/4\)</span>. ◻</p>
+Therefore <span class="math display">\[
+\log d_R
+\mathrel{=}
+\log d_{R_3}+\log d_{R_2}+\log d_q
+\mathrel{=}
+\log d_{R_3}+\log d_{R_2}.
+\]</span> This proves the sector identity <span class="math display">\[
+\bigl(L_C\bigr)\!\mid_R=L_C^{(3)}+L_C^{(2)}.
+\]</span> On the product heat-kernel branch, expectation values add, so
+<span class="math display">\[
+\bar{\ell}_{\mathrm{shared}}
+\mathrel{=}
+\langle L_C\rangle
+\mathrel{=}
+\bar{\ell}_{\mathrm{SU(3)}}(t_{3,\mathrm{run}})
++
+\bar{\ell}_{\mathrm{SU(2)}}(t_{2,\mathrm{run}}).
+\]</span> If the same branch satisfies the D10 pixel law, the right-hand
+side equals <span class="math inline">\(P/4\)</span>. ◻</p>
 </div>
 
 <div id="prop:gsi" class="proposition">
 
-<h1
-id="proposition-56-local-familiar-unit-readout-package-on-the-gravity-row-on-the-declared-local-extension-surface-let-a_mathrmcell-be-the-microscopic-cell-area-datum-and-define--g_mathrmnatfraca_mathrmcell4barell_mathrmshared--if-proposition-55-gives-barell_mathrmsharedp4-then--g_mathrmnatfraca_mathrmcellpell_p2--in-si-units-ell_p2hbar-g_mathrmsic3-therefore--g_mathrmsi"><strong>Proposition
-56</strong> (Local familiar-unit readout package on the gravity row).
-*On the declared local extension surface, let <span
-class="math inline">\(a_{\mathrm{cell}}\)</span> be the microscopic
-cell-area datum and define <span class="math display">\[
+<p><strong>Proposition 56</strong> (Local familiar-unit readout package
+on the gravity row). <em>On the declared local extension surface, let
+<span class="math inline">\(a_{\mathrm{cell}}\)</span> be the
+microscopic cell-area datum and define <span class="math display">\[
 G_{\mathrm{nat}}:=\frac{a_{\mathrm{cell}}}{4\bar{\ell}_{\mathrm{shared}}}.
 \]</span> If
 Proposition <a href="#prop:sharededgeentropy" data-reference-type="ref" data-reference="prop:sharededgeentropy">55</a>
@@ -3544,10 +3594,12 @@ class="math inline">\(\bar{\ell}_{\mathrm{shared}}=P/4\)</span>, then
 <span class="math display">\[
 G_{\mathrm{nat}}=\frac{a_{\mathrm{cell}}}{P}=\ell_P^2.
 \]</span> In SI units <span class="math inline">\(\ell_P^2=\hbar
-G_{\mathrm{SI}}/c^3\)</span>. Therefore $$ G_{\mathrm{SI}}</h1>
-<p>\frac{c^3 a_{\mathrm{cell}}}{\hbar P}. $$ More generally, if <span
-class="math inline">\(\widehat L(P)\)</span>, <span
-class="math inline">\(\widehat T(P)\)</span>, <span
+G_{\mathrm{SI}}/c^3\)</span>. Therefore <span class="math display">\[
+G_{\mathrm{SI}}
+\mathrel{=}
+\frac{c^3 a_{\mathrm{cell}}}{\hbar P}.
+\]</span> More generally, if <span class="math inline">\(\widehat
+L(P)\)</span>, <span class="math inline">\(\widehat T(P)\)</span>, <span
 class="math inline">\(\widehat E(P)\)</span>, and <span
 class="math inline">\(\widehat\Theta(P)\)</span> denote dimensionless
 branch outputs on that same local branch, then <span
@@ -3571,29 +3623,33 @@ and local mass/energy and temperature rows use the inverse <span
 class="math inline">\(a_{\mathrm{cell}}^{1/2}\)</span> scale dressed
 only by the familiar-unit display conventions <span
 class="math inline">\(\hbar\)</span> and <span
-class="math inline">\(k_B\)</span>.</p>
+class="math inline">\(k_B\)</span>.</em></p>
 </div>
 
 <div class="proof">
 
-<h1 id="proof-by-proposition-55--g_mathrmnat"><em>Proof.</em> By
+<p><em>Proof.</em> By
 Proposition <a href="#prop:sharededgeentropy" data-reference-type="ref" data-reference="prop:sharededgeentropy">55</a>,
-$$ G_{\mathrm{nat}}</h1>
-<h1 id="fraca_mathrmcell4p4">\frac{a_{\mathrm{cell}}}{4(P/4)}</h1>
-<h1
-id="fraca_mathrmcellp--since-pa_mathrmcellell_p2-this-equals-ell_p2-the-si-relation--ell_p2frachbar-g_mathrmsic3--then-gives--g_mathrmsi">\frac{a_{\mathrm{cell}}}{P}.
-$$ Since <span
+<span class="math display">\[
+G_{\mathrm{nat}}
+\mathrel{=}
+\frac{a_{\mathrm{cell}}}{4(P/4)}
+\mathrel{=}
+\frac{a_{\mathrm{cell}}}{P}.
+\]</span> Since <span
 class="math inline">\(P=a_{\mathrm{cell}}/\ell_P^2\)</span>, this equals
 <span class="math inline">\(\ell_P^2\)</span>. The SI relation <span
 class="math display">\[
 \ell_P^2=\frac{\hbar G_{\mathrm{SI}}}{c^3}
-\]</span> then gives $$ G_{\mathrm{SI}}</h1>
-<p>\frac{c^3 a_{\mathrm{cell}}}{\hbar P}. $$ The following formulas are
-dimensional bookkeeping on the same declared local branch. Because <span
-class="math inline">\(P\)</span> is dimensionless and <span
-class="math inline">\(a_{\mathrm{cell}}\)</span> is the only local
-microscopic area datum, every local length readout is <span
-class="math inline">\(\sqrt{a_{\mathrm{cell}}}\)</span> times a
+\]</span> then gives <span class="math display">\[
+G_{\mathrm{SI}}
+\mathrel{=}
+\frac{c^3 a_{\mathrm{cell}}}{\hbar P}.
+\]</span> The following formulas are dimensional bookkeeping on the same
+declared local branch. Because <span class="math inline">\(P\)</span> is
+dimensionless and <span class="math inline">\(a_{\mathrm{cell}}\)</span>
+is the only local microscopic area datum, every local length readout is
+<span class="math inline">\(\sqrt{a_{\mathrm{cell}}}\)</span> times a
 dimensionless branch quantity. The structural Lorentz output <span
 class="math inline">\(c\)</span> converts that same local ruler to
 seconds, while the familiar-unit display constants <span
@@ -3778,20 +3834,26 @@ class="math inline">\(\alpha_{\lambda_C(s)}\)</span> denote the induced
 automorphism of the scaling-limit cap net.</p>
 <div id="rem:bw-conditional-branch" class="remark">
 
-<h1
-id="remark-59-bw-is-a-conditional-scaling-limit-branch-the-lorentzbw-statement-is-not-finite-cells-imply-lorentz-invariance-the-branch-theorem-is-the-conditional-implication--begingathered-textsupport-visible-cap-pair-extraction-text-regularized-modular-transport-text-support-readable-modular-covariance-text-round-cap-rigidity-text-kmsbw-normalization-longrightarrow-sigma_tomega_inftymathrmgeoc"><strong>Remark
-59</strong> (BW is a conditional scaling-limit branch). *The Lorentz/BW
-statement is not “finite cells imply Lorentz invariance.” The branch
-theorem is the conditional implication $$ \begin{gathered}
-\text{support-visible cap-pair extraction} +\text{ regularized modular
-transport}\ +\text{ support-readable modular covariance}\ +\text{
-round-cap rigidity} +\text{ KMS/BW normalization} \Longrightarrow
-\sigma_t^{\omega_\infty^{\mathrm{geo},C}}</h1>
-<p>\alpha_{\lambda_C(2\pi t)} . \end{gathered} $$ All four inputs are
-part of the branch certificate. Finite type-I regulators supply collar
-control and regularized support-visible matrix elements; they do not
-make the full finite operational algebra, pointer/record sectors, or
-off-support directions Lorentz covariant.</p>
+<p><strong>Remark 59</strong> (BW is a conditional scaling-limit
+branch). <em>The Lorentz/BW statement is not “finite cells imply Lorentz
+invariance.” The branch theorem is the conditional implication <span
+class="math display">\[
+\begin{gathered}
+\text{support-visible cap-pair extraction}
++\text{ regularized modular transport}\\
++\text{ support-readable modular covariance}\\
++\text{ round-cap rigidity}
++\text{ KMS/BW normalization}
+\Longrightarrow
+\sigma_t^{\omega_\infty^{\mathrm{geo},C}}
+\mathrel{=}
+\alpha_{\lambda_C(2\pi t)} .
+\end{gathered}
+\]</span> All four inputs are part of the branch certificate. Finite
+type-I regulators supply collar control and regularized support-visible
+matrix elements; they do not make the full finite operational algebra,
+pointer/record sectors, or off-support directions Lorentz
+covariant.</em></p>
 </div>
 
 <div id="prop:cap-pair-extraction" class="proposition">
@@ -3843,10 +3905,8 @@ automorphism group. ◻</p>
 
 <div id="lem:support-readable-modular-covariance" class="lemma">
 
-<h1
-id="lemma-61-support-readable-modular-covariance-let-mathcal-a_inftymathrmgeosvcomega_inftymathrmgeoc-be-the-cap-pair-of-proposition-60-assume-the-extracted-support-visible-prime-geometric-subnet-satisfies-outer-regularity--minimal-support-for-every-cap-local-observable-o-the-intersection-of-all-connected-regions-p-with-oinmathcal-a_inftymathrmgeosvp-is-again-a-connected-region-denoted-operatornamesuppo-for-every-connected-cap-local-region-rsubset-c-define--f_tcr--bigcup_oinmathcal-a_inftymathrmgeosvr-operatornamesuppleftsigma_tomega_inftymathrmgeocoright--then-the-modular-automorphism-group-induces-a-one-parameter-support-map-on-cap-local-regions--sigma_tomega_inftymathrmgeoc-leftmathcal-a_inftymathrmgeosvrright"><strong>Lemma
-61</strong> (Support-readable modular covariance). *Let <span
-class="math inline">\((\mathcal
+<p><strong>Lemma 61</strong> (Support-readable modular covariance).
+<em>Let <span class="math inline">\((\mathcal
 A_\infty^{\mathrm{geo,sv}}(C),\omega_\infty^{\mathrm{geo},C})\)</span>
 be the cap pair of
 Proposition <a href="#prop:cap-pair-extraction" data-reference-type="ref" data-reference="prop:cap-pair-extraction">60</a>.
@@ -3864,10 +3924,12 @@ f_t^C(R)
 \bigcup_{O\in\mathcal A_\infty^{\mathrm{geo,sv}}(R)}
 \operatorname{supp}\!\left(\sigma_t^{\omega_\infty^{\mathrm{geo},C}}(O)\right).
 \]</span> Then the modular automorphism group induces a one-parameter
-support map on cap-local regions: $$
-\sigma_t^{\omega_\infty^{\mathrm{geo},C}} !\left(\mathcal
-A_\infty^{\mathrm{geo,sv}}(R)\right)</h1>
-<p>\mathcal A_\infty^{\mathrm{geo,sv}}!\left(f_t^C(R)\right). $$</p>
+support map on cap-local regions: <span class="math display">\[
+\sigma_t^{\omega_\infty^{\mathrm{geo},C}}
+\!\left(\mathcal A_\infty^{\mathrm{geo,sv}}(R)\right)
+\mathrel{=}
+\mathcal A_\infty^{\mathrm{geo,sv}}\!\left(f_t^C(R)\right).
+\]</span></em></p>
 </div>
 
 <div class="proof">
@@ -4020,16 +4082,17 @@ d_{m,\delta}a_\delta,\qquad
 \Delta_\delta|\log a_\delta|,
 \]</span> which vanishes under the stated Markov-replacement and cutoff
 schedule.</em></p></li>
-<li><h1
-id="on-the-support-visible-scaling-limit-cap-pair-the-modular-automorphism-group-is-geometric--sigma_tomega_inftymathrmgeoc">*On
-the support-visible scaling-limit cap pair, the modular automorphism
-group is geometric: $$ \sigma_t^{\omega_\infty^{\mathrm{geo},C}}</h1>
-<p>\alpha_{\lambda_C(2\pi t)}. $$ Equivalently, the modular parameter
-<span class="math inline">\(t\)</span> and the geometric cap-dilation
+<li><p><em>On the support-visible scaling-limit cap pair, the modular
+automorphism group is geometric: <span class="math display">\[
+\sigma_t^{\omega_\infty^{\mathrm{geo},C}}
+\mathrel{=}
+\alpha_{\lambda_C(2\pi t)}.
+\]</span> Equivalently, the modular parameter <span
+class="math inline">\(t\)</span> and the geometric cap-dilation
 parameter <span class="math inline">\(s\)</span> are related by <span
 class="math display">\[
 s=2\pi t.
-\]</span>*</p></li>
+\]</span></em></p></li>
 <li><p><em>No separate cap-isotropy/<span
 class="math inline">\(\mathrm{SO}(2)\)</span>-equivariance selector,
 finite-cell Lorentz-invariance premise, or unregularized full-algebra
@@ -4124,17 +4187,18 @@ that <span class="math display">\[
 \sigma_t^{\omega_\infty^{\mathrm{geo},C}}=\alpha_{\lambda_C(\kappa_C
 t)}.
 \]</span></p>
-<h1
-id="step-5-normalization-the-modular-group-is-kms-at-inverse-temperature-1-by-definition-since-lambda_cs-is-normalized-by-unit-null-dilation-under-the-blow-up-vmapsto-e-sv-the-bisognanowichmannrindler-normalization-fixes--kappa_c2pi--hence--sigma_tomega_inftymathrmgeoc">Step
-5: normalization. The modular group is KMS at inverse temperature <span
-class="math inline">\(1\)</span> by definition. Since <span
-class="math inline">\(\lambda_C(s)\)</span> is normalized by unit null
-dilation under the blow-up <span class="math inline">\(v\mapsto
+<p>Step 5: normalization. The modular group is KMS at inverse
+temperature <span class="math inline">\(1\)</span> by definition. Since
+<span class="math inline">\(\lambda_C(s)\)</span> is normalized by unit
+null dilation under the blow-up <span class="math inline">\(v\mapsto
 e^{-s}v\)</span>, the Bisognano–Wichmann/Rindler normalization fixes
 <span class="math display">\[
 \kappa_C=2\pi,
-\]</span> hence $$ \sigma_t^{\omega_\infty^{\mathrm{geo},C}}</h1>
-<p>\alpha_{\lambda_C(2\pi t)}. $$</p>
+\]</span> hence <span class="math display">\[
+\sigma_t^{\omega_\infty^{\mathrm{geo},C}}
+\mathrel{=}
+\alpha_{\lambda_C(2\pi t)}.
+\]</span></p>
 <p>Step 6: operator versus automorphism form. If the limit cap algebra
 is type I, one can represent the modular automorphism group by a modular
 Hamiltonian <span class="math inline">\(K_C=-\log\rho_C\)</span> and
@@ -4315,26 +4379,34 @@ branches use.</em></p>
 
 <div id="rem:bw-stronger-not-claimed" class="remark">
 
-<h2
-id="remark-71-stronger-bw-convergence-statements-not-claimed-theorem-64-proves-convergence-of-regularized-support-visible-modular-matrix-elements-on-fixed-collar-models-and-identifies-the-resulting-scaling-limit-cap-modular-automorphism-it-does-not-assert-uniform-on-compact-time-convergence-of-regularized-modular-automorphism-groups-for-example--sup_tle-t-left-omega_nleft-x_nastbigl-sigmaa_n_tno_n"><strong>Remark
-71</strong> (Stronger BW convergence statements not claimed).
-*Theorem <a href="#thm:bw" data-reference-type="ref" data-reference="thm:bw">64</a>
+<p><strong>Remark 71</strong> (Stronger BW convergence statements not
+claimed).
+<em>Theorem <a href="#thm:bw" data-reference-type="ref" data-reference="thm:bw">64</a>
 proves convergence of regularized support-visible modular matrix
 elements on fixed collar models and identifies the resulting
 scaling-limit cap modular automorphism. It does not assert
 uniform-on-compact-time convergence of regularized modular automorphism
-groups, for example $$ \sup_{|t|\le T} \left| \omega_n!\left(
-X_n^\ast\bigl[ \sigma^{a_n}_{t,n}(O_n)</h2>
-<p>\alpha_{\lambda_C(2\pi t)}(O)_n \bigr]Y_n \right) \right| \to0, $$
-without an additional equicontinuity, strong-resolvent, or Trotter-type
-lemma for the regularized modular groups. Nor does it invoke a black-box
-AQFT BW theorem from conformal-net axioms. Such an independent route
-would require verifying the relevant scaling-limit cap-net axioms, such
-as isotony, additivity, locality, Haag or wedge duality, standardness of
-the vacuum, positive-energy covariance, and suitable modular inclusions.
-Those would be useful validation routes, but they are extra analytic
-certificates rather than hidden premises of
-Theorem <a href="#thm:bw" data-reference-type="ref" data-reference="thm:bw">64</a>.</p>
+groups, for example <span class="math display">\[
+\sup_{|t|\le T}
+\left|
+\omega_n\!\left(
+X_n^\ast\bigl[
+\sigma^{a_n}_{t,n}(O_n)
+\text{-}
+\alpha_{\lambda_C(2\pi t)}(O)_n
+\bigr]Y_n
+\right)
+\right|
+\to0,
+\]</span> without an additional equicontinuity, strong-resolvent, or
+Trotter-type lemma for the regularized modular groups. Nor does it
+invoke a black-box AQFT BW theorem from conformal-net axioms. Such an
+independent route would require verifying the relevant scaling-limit
+cap-net axioms, such as isotony, additivity, locality, Haag or wedge
+duality, standardness of the vacuum, positive-energy covariance, and
+suitable modular inclusions. Those would be useful validation routes,
+but they are extra analytic certificates rather than hidden premises of
+Theorem <a href="#thm:bw" data-reference-type="ref" data-reference="thm:bw">64</a>.</em></p>
 </div>
 
 <div id="cor:lorentz" class="corollary">
@@ -4478,45 +4550,60 @@ on <span class="math inline">\(\mathcal
 H_{j_R^{\alpha_-,\alpha_+}}\otimes \mathcal
 H_{i_+^{\alpha_+}}\)</span>.</em></p></li>
 </ol>
-<h1
-id="then-the-strip-algebra-has-the-inherited-central-decomposition--mathcal-aj-cong-bigoplus_alpha_-alpha_-mathcal-bmathcal-h_jalpha_-alpha_-qquad-zmathcal-aj">*Then
-the strip algebra has the inherited central decomposition $$ \mathcal
-A(J) \cong \bigoplus_{\alpha_-,\alpha_+} \mathcal B(\mathcal
-H_{j^{\alpha_-,\alpha_+}}), \qquad Z(\mathcal A(J))</h1>
-<p>\bigoplus_{\alpha_-,\alpha_+}\mathbb C,P_{\alpha_-,\alpha_+}, <span
-class="math display">\[
-and, under item (iv),
-\]</span> \mathcal A(J) \cong \bigoplus_{\alpha_-,\alpha_+} \mathcal
-B(\mathcal H_{j_L^{\alpha_-,\alpha_+}}) \otimes \mathcal B(\mathcal
-H_{j_R^{\alpha_-,\alpha_+}}). <span class="math display">\[
-Moreover the glued tripartition carries the block decomposition
-\]</span> \mathcal H_{I_-\cup J\cup I_+} \cong
-\bigoplus_{\alpha_-,\alpha_+} \mathcal H_{i_-^{\alpha_-}} \otimes
-\mathcal H_{j_L^{\alpha_-,\alpha_+}} \otimes \mathcal
-H_{j_R^{\alpha_-,\alpha_+}} \otimes \mathcal H_{i_+^{\alpha_+}}. $$ Thus
-the two null cuts transfer the same center data as the spatial collar
-branch, while the left/right split of the strip multiplicity spaces is
-exactly the extra decomposition-inheritance hypothesis and is not forced
-by center transfer alone.</p>
+<p><em>Then the strip algebra has the inherited central decomposition
+<span class="math display">\[
+\mathcal A(J)
+\cong
+\bigoplus_{\alpha_-,\alpha_+}
+\mathcal B(\mathcal H_{j^{\alpha_-,\alpha_+}}),
+\qquad
+Z(\mathcal A(J))
+\mathrel{=}
+\bigoplus_{\alpha_-,\alpha_+}\mathbb C\,P_{\alpha_-,\alpha_+},
+\]</span> and, under item (iv), <span class="math display">\[
+\mathcal A(J)
+\cong
+\bigoplus_{\alpha_-,\alpha_+}
+\mathcal B(\mathcal H_{j_L^{\alpha_-,\alpha_+}})
+\otimes
+\mathcal B(\mathcal H_{j_R^{\alpha_-,\alpha_+}}).
+\]</span> Moreover the glued tripartition carries the block
+decomposition <span class="math display">\[
+\mathcal H_{I_-\cup J\cup I_+}
+\cong
+\bigoplus_{\alpha_-,\alpha_+}
+\mathcal H_{i_-^{\alpha_-}}
+\otimes
+\mathcal H_{j_L^{\alpha_-,\alpha_+}}
+\otimes
+\mathcal H_{j_R^{\alpha_-,\alpha_+}}
+\otimes
+\mathcal H_{i_+^{\alpha_+}}.
+\]</span> Thus the two null cuts transfer the same center data as the
+spatial collar branch, while the left/right split of the strip
+multiplicity spaces is exactly the extra decomposition-inheritance
+hypothesis and is not forced by center transfer alone.</em></p>
 </div>
 
 <div class="proof">
 
-<h1
-id="proof-by-complete-reducibility-of-the-finite-dimensional-unitary-actions-widehat-k_pm-the-displayed-decompositions-of-tildemathcal-h_i_--tildemathcal-h_j-and-tildemathcal-h_i_-exist-under-item-iii-the-strip-algebra-is-the-commutant-of-the-transported-widehat-k_-times-widehat-k_-action-on--tildemathcal-h_j"><em>Proof.</em>
-By complete reducibility of the finite-dimensional unitary actions <span
-class="math inline">\(\widehat K_\pm\)</span>, the displayed
-decompositions of <span class="math inline">\(\tilde{\mathcal
+<p><em>Proof.</em> By complete reducibility of the finite-dimensional
+unitary actions <span class="math inline">\(\widehat K_\pm\)</span>, the
+displayed decompositions of <span class="math inline">\(\tilde{\mathcal
 H}_{I_-}\)</span>, <span class="math inline">\(\tilde{\mathcal
 H}_J\)</span>, and <span class="math inline">\(\tilde{\mathcal
 H}_{I_+}\)</span> exist. Under item (iii), the strip algebra is the
 commutant of the transported <span class="math inline">\(\widehat
-K_-\times \widehat K_+\)</span> action on $$ \tilde{\mathcal H}_J</h1>
-<p>\bigoplus_{\alpha_-,\alpha_+} W_{\alpha_-}^{*}\otimes \mathcal
-H_{j^{\alpha_-,\alpha_+}}\otimes W_{\alpha_+}. $$ Write an operator
-<span class="math inline">\(X\in \mathcal B(\tilde{\mathcal
-H}_J)\)</span> in matrix form relative to that direct sum. The block
-<span class="math display">\[
+K_-\times \widehat K_+\)</span> action on <span class="math display">\[
+\tilde{\mathcal H}_J
+\mathrel{=}
+\bigoplus_{\alpha_-,\alpha_+}
+W_{\alpha_-}^{*}\otimes
+\mathcal H_{j^{\alpha_-,\alpha_+}}\otimes
+W_{\alpha_+}.
+\]</span> Write an operator <span class="math inline">\(X\in \mathcal
+B(\tilde{\mathcal H}_J)\)</span> in matrix form relative to that direct
+sum. The block <span class="math display">\[
 X_{(\alpha_-,\alpha_+),(\beta_-,\beta_+)}
 \]</span> intertwines <span class="math display">\[
 W_{\alpha_-}^{*}\otimes W_{\alpha_+}
@@ -4614,11 +4701,9 @@ this strip model, write <span class="math display">\[
 K_{I_-\cup J\cup I_+}(\eta)-K_{I_-\cup J}(\eta)-K_{J\cup
 I_+}(\eta)+K_J(\eta).
 \]</span></em></p>
-<h1
-id="if-the-reference-state-omega-is-exact-markov-on-this-inherited-decomposition-then--delta-k_jomegain-zmathcal-aj--and-in-the-canonical-blockwise-identification-of-proposition-73-one-may-take--delta-k_jomega0--equivalently-without-fixing-that-normalization-there-exists-a-central-operator--k_partialjomegain-zmathcal-aj--such-that--k_i_-cup-jcup-i_omega">*If
-the reference state <span class="math inline">\(\omega\)</span> is exact
-Markov on this inherited decomposition, then <span
-class="math display">\[
+<p><em>If the reference state <span
+class="math inline">\(\omega\)</span> is exact Markov on this inherited
+decomposition, then <span class="math display">\[
 \Delta K_J(\omega)\in Z(\mathcal A(J)),
 \]</span> and in the canonical blockwise identification of
 Proposition <a href="#prop:nullec" data-reference-type="ref" data-reference="prop:nullec">73</a>
@@ -4627,12 +4712,13 @@ one may take <span class="math display">\[
 \]</span> Equivalently, without fixing that normalization there exists a
 central operator <span class="math display">\[
 K_{\partial,J}(\omega)\in Z(\mathcal A(J))
-\]</span> such that $$ K_{I_-\cup J\cup I_+}(\omega)</h1>
-<p>K_{I_-\cup J}(\omega)+K_{J\cup
-I_+}(\omega)-K_J(\omega)+K_{\partial,J}(\omega). $$*</p>
-<h1
-id="if-instead-ii_-i_mid-j_omegale-varepsilon-then-on-this-fixed-strip-model-one-may-choose-an-exact-markov-state-widetildeomega_jin-mathfrak-m_i_-ji_-with--omega-widetildeomega_j_1-le-deltamathrm-m_i_-ji_varepsilon--define-the-carried-defect-operator--mathfrak-d_jomegawidetildeomega_j--delta-k_jomega-delta-k_jwidetildeomega_j--then--k_i_-cup-jcup-i_omega">*If
-instead <span class="math inline">\(I(I_-:I_+\mid J)_\omega\le
+\]</span> such that <span class="math display">\[
+K_{I_-\cup J\cup I_+}(\omega)
+\mathrel{=}
+K_{I_-\cup J}(\omega)+K_{J\cup
+I_+}(\omega)-K_J(\omega)+K_{\partial,J}(\omega).
+\]</span></em></p>
+<p><em>If instead <span class="math inline">\(I(I_-:I_+\mid J)_\omega\le
 \varepsilon\)</span>, then on this fixed strip model one may choose an
 exact Markov state <span class="math inline">\(\widetilde\omega_J\in
 \mathfrak M_{I_-:J:I_+}\)</span> with <span class="math display">\[
@@ -4644,19 +4730,19 @@ class="math display">\[
 \mathfrak D_J(\omega,\widetilde\omega_J)
 :=
 \Delta K_J(\omega)-\Delta K_J(\widetilde\omega_J).
-\]</span> Then $$ K_{I_-\cup J\cup I_+}(\omega)</h1>
-<h1
-id="k_i_-cup-jomegak_jcup-i_omega-k_jomega-k_partialjwidetildeomega_j-mathfrak-d_jomegawidetildeomega_j--where--k_partialjwidetildeomega_jdelta-k_jwidetildeomega_jin-zmathcal-aj--for-every-bounded-observable-o-in-mathcal-ai_-cup-j-or-mathcal-ajcup-i_--biglomegao-widetildeomega_jobigr-le-o_infty-deltamathrm-m_i_-ji_varepsilon--if-the-marginals-entering-delta-k_j-for-omega-and-widetildeomega_j-are-uniformly-faithful-with-lower-spectral-bound-lambda_ast0-then--mathfrak-d_jomegawidetildeomega_j_infty-le-4lambda_ast-1-deltamathrm-m_i_-ji_varepsilon--independently-the-fawzirenner-recovery-map-supplies-a-constructive-comparison-state-with-trace-norm-error--r_mathrmfrvarepsilon">K_{I_-\cup
-J}(\omega)+K_{J\cup I_+}(\omega)-K_J(\omega)
-+K_{\partial,J}(\widetilde\omega_J) +\mathfrak
-D_J(\omega,\widetilde\omega_J), <span class="math display">\[
-where
-\]</span> K_{\partial,J}(\widetilde\omega_J):=\Delta
-K_J(\widetilde\omega_J)\in Z(\mathcal A(J)). $$ For every bounded
-observable <span class="math inline">\(O\)</span> in <span
-class="math inline">\(\mathcal A(I_-\cup J)\)</span> or <span
-class="math inline">\(\mathcal A(J\cup I_+)\)</span>, <span
-class="math display">\[
+\]</span> Then <span class="math display">\[
+K_{I_-\cup J\cup I_+}(\omega)
+\mathrel{=}
+K_{I_-\cup J}(\omega)+K_{J\cup I_+}(\omega)-K_J(\omega)
++K_{\partial,J}(\widetilde\omega_J)
++\mathfrak D_J(\omega,\widetilde\omega_J),
+\]</span> where <span class="math display">\[
+K_{\partial,J}(\widetilde\omega_J):=\Delta K_J(\widetilde\omega_J)\in
+Z(\mathcal A(J)).
+\]</span> For every bounded observable <span
+class="math inline">\(O\)</span> in <span class="math inline">\(\mathcal
+A(I_-\cup J)\)</span> or <span class="math inline">\(\mathcal A(J\cup
+I_+)\)</span>, <span class="math display">\[
 \bigl|\omega(O)-\widetilde\omega_J(O)\bigr|
 \le
 \|O\|_\infty\,
@@ -4672,67 +4758,82 @@ class="math display">\[
 4\lambda_\ast^{-1}\,
 \delta^{\mathrm M}_{I_-:J:I_+}(\varepsilon).
 \]</span> Independently, the Fawzi–Renner recovery map supplies a
-constructive comparison state with trace-norm error $$
-r_{\mathrm{FR}}(\varepsilon)</h1>
-<p>2\sqrt{1-e^{-\varepsilon}} \le 2\sqrt{\varepsilon}. <span
+constructive comparison state with trace-norm error <span
 class="math display">\[
-Hence the exact four-term strip relation is available only at exact
-Markovity, or along a controlled strip family on one fixed inherited
-strip model for which
-\]</span> \delta^{\mathrm M}<em>{I</em>-:J:I_+}(\varepsilon_J)\to 0. $$
-In the controlled case, <span class="math inline">\(\mathfrak
-D_J\)</span> is carried explicitly at each finite stage.</p>
+r_{\mathrm{FR}}(\varepsilon)
+\mathrel{=}
+2\sqrt{1-e^{-\varepsilon}}
+\le
+2\sqrt{\varepsilon}.
+\]</span> Hence the exact four-term strip relation is available only at
+exact Markovity, or along a controlled strip family on one fixed
+inherited strip model for which <span class="math display">\[
+\delta^{\mathrm M}_{I_-:J:I_+}(\varepsilon_J)\to 0.
+\]</span> In the controlled case, <span class="math inline">\(\mathfrak
+D_J\)</span> is carried explicitly at each finite stage.</em></p>
 </div>
 
 <div class="proof">
 
-<h1
-id="proof-assume-first-that-omega-is-exact-markov-on-the-inherited-split-of-proposition-73-then-the-hjpw-structure-theorem-gives-on-each-sector-pair-alphaalpha_-alpha_--omega_i_-ji__alpha"><em>Proof.</em>
-Assume first that <span class="math inline">\(\omega\)</span> is exact
-Markov on the inherited split of
+<p><em>Proof.</em> Assume first that <span
+class="math inline">\(\omega\)</span> is exact Markov on the inherited
+split of
 Proposition <a href="#prop:nullec" data-reference-type="ref" data-reference="prop:nullec">73</a>.
 Then the HJPW structure theorem gives, on each sector pair <span
-class="math inline">\(\alpha=(\alpha_-,\alpha_+)\)</span>, $$
-\omega_{I_-JI_+}|_\alpha</h1>
-<h1
-id="p_alpha-omega_i_-j_lalpha-otimes-omega_j_ri_alpha--accordingly--k_i_-cup-jcup-i_omegabig_alpha">p_\alpha,
-\omega_{I_-,j_L}^{(\alpha)} \otimes \omega_{j_R,I_+}^{(\alpha)}. <span
+class="math inline">\(\alpha=(\alpha_-,\alpha_+)\)</span>, <span
 class="math display">\[
-Accordingly,
-\]</span> K_{I_-\cup J\cup I_+}(\omega)\big|_\alpha</h1>
-<h1
-id="-log-p_alphamathbf-1--k_i_-j_lalphaotimes-mathbf-1_j_r-i_--mathbf-1_i_--j_lotimes-k_j_r-i_alpha--tracing-over-i_-i_--or-both-gives-the-marginal-block-formulas--k_i_-cup-jomegabig_alpha">(-\log
-p_\alpha)\mathbf 1 + K_{I_-,j_L}^{(\alpha)}\otimes \mathbf 1_{j_R I_+} +
-\mathbf 1_{I_- j_L}\otimes K_{j_R I_+}^{(\alpha)}. $$ Tracing over <span
-class="math inline">\(I_+\)</span>, <span
+\omega_{I_-JI_+}|_\alpha
+\mathrel{=}
+p_\alpha\,
+\omega_{I_-\,j_L}^{(\alpha)}
+\otimes
+\omega_{j_R\,I_+}^{(\alpha)}.
+\]</span> Accordingly, <span class="math display">\[
+K_{I_-\cup J\cup I_+}(\omega)\big|_\alpha
+\mathrel{=}
+(-\log p_\alpha)\mathbf 1
++
+K_{I_-\,j_L}^{(\alpha)}\otimes \mathbf 1_{j_R I_+}
++
+\mathbf 1_{I_- j_L}\otimes K_{j_R I_+}^{(\alpha)}.
+\]</span> Tracing over <span class="math inline">\(I_+\)</span>, <span
 class="math inline">\(I_-\)</span>, or both gives the marginal block
-formulas $$ K_{I_-\cup J}(\omega)\big|_\alpha</h1>
-<h1
-id="-log-p_alphamathbf-1--k_i_-j_lalphaotimes-mathbf-1_j_r--mathbf-1_i_--j_lotimes-k_j_ralpha---k_jcup-i_omegabig_alpha">(-\log
-p_\alpha)\mathbf 1 + K_{I_-,j_L}^{(\alpha)}\otimes \mathbf 1_{j_R} +
-\mathbf 1_{I_- j_L}\otimes K_{j_R}^{(\alpha)}, <span
-class="math display">\[
-\]</span> K_{J\cup I_+}(\omega)\big|_\alpha</h1>
-<h1
-id="-log-p_alphamathbf-1--k_j_lalphaotimes-mathbf-1_j_r-i_--mathbf-1_j_lotimes-k_j_r-i_alpha---k_jomegabig_alpha">(-\log
-p_\alpha)\mathbf 1 + K_{j_L}^{(\alpha)}\otimes \mathbf 1_{j_R I_+} +
-\mathbf 1_{j_L}\otimes K_{j_R I_+}^{(\alpha)}, <span
-class="math display">\[
-\]</span> K_J(\omega)\big|_\alpha</h1>
-<p>(-\log p_\alpha)\mathbf 1 + K_{j_L}^{(\alpha)}\otimes \mathbf 1_{j_R}
-+ \mathbf 1_{j_L}\otimes K_{j_R}^{(\alpha)}. <span
-class="math display">\[
-Subtracting the last three expressions from the first gives zero on
-every block. Thus, in the canonical blockwise identification supplied by
-Proposition &lt;a href=&quot;#prop:nullec&quot;
-data-reference-type=&quot;ref&quot;
-data-reference=&quot;prop:nullec&quot;&gt;73&lt;/a&gt;,
-\]</span> \Delta K_J(\omega)=0. $$ If one chooses to keep the blockwise
-endpoint-label bookkeeping explicit rather than absorbing those
-constants into the canonical identification, the remainder is a direct
-sum of block constants and is therefore central. This yields the stated
-central form with <span class="math inline">\(K_{\partial,J}(\omega)\in
-Z(\mathcal A(J))\)</span>.</p>
+formulas <span class="math display">\[
+K_{I_-\cup J}(\omega)\big|_\alpha
+\mathrel{=}
+(-\log p_\alpha)\mathbf 1
++
+K_{I_-\,j_L}^{(\alpha)}\otimes \mathbf 1_{j_R}
++
+\mathbf 1_{I_- j_L}\otimes K_{j_R}^{(\alpha)},
+\]</span> <span class="math display">\[
+K_{J\cup I_+}(\omega)\big|_\alpha
+\mathrel{=}
+(-\log p_\alpha)\mathbf 1
++
+K_{j_L}^{(\alpha)}\otimes \mathbf 1_{j_R I_+}
++
+\mathbf 1_{j_L}\otimes K_{j_R I_+}^{(\alpha)},
+\]</span> <span class="math display">\[
+K_J(\omega)\big|_\alpha
+\mathrel{=}
+(-\log p_\alpha)\mathbf 1
++
+K_{j_L}^{(\alpha)}\otimes \mathbf 1_{j_R}
++
+\mathbf 1_{j_L}\otimes K_{j_R}^{(\alpha)}.
+\]</span> Subtracting the last three expressions from the first gives
+zero on every block. Thus, in the canonical blockwise identification
+supplied by
+Proposition <a href="#prop:nullec" data-reference-type="ref" data-reference="prop:nullec">73</a>,
+<span class="math display">\[
+\Delta K_J(\omega)=0.
+\]</span> If one chooses to keep the blockwise endpoint-label
+bookkeeping explicit rather than absorbing those constants into the
+canonical identification, the remainder is a direct sum of block
+constants and is therefore central. This yields the stated central form
+with <span class="math inline">\(K_{\partial,J}(\omega)\in Z(\mathcal
+A(J))\)</span>.</p>
 <p>For the controlled statement, apply
 Proposition <a href="#prop:controlledmarkov" data-reference-type="ref" data-reference="prop:controlledmarkov">44</a>
 on this fixed finite-dimensional strip model, relabeling <span
@@ -4804,10 +4905,9 @@ C_{\psi,\phi,\Omega}\,\bigl(|a&#39;-a|+|b&#39;-b|\bigr).
 class="math inline">\(\widetilde K[I,\Omega]\)</span> are jointly
 Lipschitz in the two endpoints and therefore have finite variation
 there.</em></p>
-<h1
-id="for-null-half-lines-h_aainfty-one-likewise-has--bigllangle-psiwidetilde-k_aomega-widetilde-k_aomegaphiranglebigr-le-c_psiphiomegaa-a--for-aa-in-every-compact-window-hence-for-fixed-psiphi--f_psiphialanglepsiwidetilde-k_aomegaphirangle--is-locally-lipschitz-and-therefore-absolutely-continuous-its-distributional-derivative-defines-a-locally-linfty-sesquilinear-form-density--langlepsiqaomegaphirangle---frac12pipartial_a-f_psiphia--and-for-ab--langlepsiwidetilde-k_bomega-widetilde-k_aomegaphirangle">*For
-null half-lines <span class="math inline">\(H_a=(a,\infty)\)</span>, one
-likewise has <span class="math display">\[
+<p><em>For null half-lines <span
+class="math inline">\(H_a=(a,\infty)\)</span>, one likewise has <span
+class="math display">\[
 \bigl|\langle \psi,(\widetilde K_{a&#39;}(\Omega)-\widetilde
 K_a(\Omega))\phi\rangle\bigr|
 \le
@@ -4823,17 +4923,18 @@ class="math display">\[
 \langle\psi,q(a,\Omega)\phi\rangle
 :=
 -\frac{1}{2\pi}\,\partial_a f_{\psi,\phi}(a),
-\]</span> and for <span class="math inline">\(a&lt;b\)</span>, $$
-\langle\psi,(\widetilde K_b(\Omega)-\widetilde
-K_a(\Omega))\phi\rangle</h1>
-<p>-2\pi\int_a^b \langle\psi,q(v,\Omega)\phi\rangle,dv. $$ The object
-<span class="math inline">\(q(a,\Omega)\)</span> is the weak tail
-generator rather than a local operator-valued density; its
+\]</span> and for <span class="math inline">\(a&lt;b\)</span>, <span
+class="math display">\[
+\langle\psi,(\widetilde K_b(\Omega)-\widetilde K_a(\Omega))\phi\rangle
+\mathrel{=}
+-2\pi\int_a^b \langle\psi,q(v,\Omega)\phi\rangle\,dv.
+\]</span> The object <span class="math inline">\(q(a,\Omega)\)</span> is
+the weak tail generator rather than a local operator-valued density; its
 identification with the positive self-adjoint Borchers generator occurs
 only after the derived half-sided modular inclusion of
 Corollary <a href="#cor:n2" data-reference-type="ref" data-reference="cor:n2">78</a>
 and
-Lemma <a href="#lem:translation" data-reference-type="ref" data-reference="lem:translation">79</a>.</p>
+Lemma <a href="#lem:translation" data-reference-type="ref" data-reference="lem:translation">79</a>.</em></p>
 </div>
 
 <div class="proof">
@@ -4870,10 +4971,9 @@ K_a(\Omega))\phi\rangle\bigr|
 \le
 C_{\psi,\phi,\Omega}\,|a&#39;-a|.
 \]</span></p>
-<h1
-id="hence-on-every-compact-a-interval-the-function--f_psiphialanglepsiwidetilde-k_aomegaphirangle--is-lipschitz-a-lipschitz-function-on-a-compact-interval-is-absolutely-continuous-so-it-has-an-almost-everywhere-derivative-in-linfty-and-obeys-the-fundamental-theorem-of-calculus--f_psiphib-f_psiphiaint_ab-partial_v-f_psiphivdv--define--langlepsiqvomegaphirangle---frac12pipartial_v-f_psiphiv--distributionally-substituting-this-definition-into-the-previous-identity-gives--langlepsiwidetilde-k_bomega-widetilde-k_aomegaphirangle">Hence,
-on every compact <span class="math inline">\(a\)</span>-interval, the
-function <span class="math display">\[
+<p>Hence, on every compact <span
+class="math inline">\(a\)</span>-interval, the function <span
+class="math display">\[
 f_{\psi,\phi}(a):=\langle\psi,\widetilde K_a(\Omega)\phi\rangle
 \]</span> is Lipschitz. A Lipschitz function on a compact interval is
 absolutely continuous, so it has an almost-everywhere derivative in
@@ -4886,50 +4986,51 @@ f_{\psi,\phi}(v)\,dv.
 :=
 -\frac{1}{2\pi}\,\partial_v f_{\psi,\phi}(v)
 \]</span> distributionally. Substituting this definition into the
-previous identity gives $$ \langle\psi,(\widetilde
-K_b(\Omega)-\widetilde K_a(\Omega))\phi\rangle</h1>
-<p>-2\pi\int_a^b \langle\psi,q(v,\Omega)\phi\rangle,dv. $$ This is
-exactly the claimed weak-tail formula. ◻</p>
+previous identity gives <span class="math display">\[
+\langle\psi,(\widetilde K_b(\Omega)-\widetilde K_a(\Omega))\phi\rangle
+\mathrel{=}
+-2\pi\int_a^b \langle\psi,q(v,\Omega)\phi\rangle\,dv.
+\]</span> This is exactly the claimed weak-tail formula. ◻</p>
 </div>
 
 <div id="lem:density" class="theorem">
 
-<h1
-id="theorem-77-downstream-density-upgrade-template-fix-a-null-generator-omega-and-the-renormalized-half-line-family-widetilde-k_aomega-of-proposition-76-for-fixed-vectors-psiphi-in-a-common-dense-domain-let--f_psiphialanglepsiwidetilde-k_aomegaphirangle-qquad-q_psiphialanglepsiqaomegaphirangle"><strong>Theorem
-77</strong> (Downstream density-upgrade template). *Fix a null generator
-<span class="math inline">\(\Omega\)</span> and the renormalized
-half-line family <span class="math inline">\(\widetilde
+<p><strong>Theorem 77</strong> (Downstream density-upgrade template).
+<em>Fix a null generator <span class="math inline">\(\Omega\)</span> and
+the renormalized half-line family <span class="math inline">\(\widetilde
 K_a(\Omega)\)</span> of
 Proposition <a href="#prop:n3" data-reference-type="ref" data-reference="prop:n3">76</a>.
 For fixed vectors <span class="math inline">\(\psi,\phi\)</span> in a
-common dense domain, let $$ f_{\psi,\phi}(a):=\langle\psi,\widetilde
-K_a(\Omega)\phi\rangle, \qquad
-q_{\psi,\phi}(a):=\langle\psi,q(a,\Omega)\phi\rangle</h1>
-<h1
-id="-frac12pipartial_a-f_psiphia--assume-in-addition-that-q_psiphi-is-weakly-differentiable-in-a-that--lim_atoinfty-f_psiphia0-qquad-lim_atoinfty-q_psiphia0--and-define-distributionally--langlepsipaomegaphirangle---partial_a-q_psiphia">-\frac{1}{2\pi},\partial_a
-f_{\psi,\phi}(a). $$ Assume in addition that <span
+common dense domain, let <span class="math display">\[
+f_{\psi,\phi}(a):=\langle\psi,\widetilde K_a(\Omega)\phi\rangle,
+\qquad
+q_{\psi,\phi}(a):=\langle\psi,q(a,\Omega)\phi\rangle
+\mathrel{=}
+-\frac{1}{2\pi}\,\partial_a f_{\psi,\phi}(a).
+\]</span> Assume in addition that <span
 class="math inline">\(q_{\psi,\phi}\)</span> is weakly differentiable in
 <span class="math inline">\(a\)</span>, that <span
 class="math display">\[
 \lim_{a\to+\infty} f_{\psi,\phi}(a)=0,
 \qquad
 \lim_{a\to+\infty} q_{\psi,\phi}(a)=0,
-\]</span> and define distributionally $$
-\langle\psi,p(a,\Omega)\phi\rangle := -\partial_a q_{\psi,\phi}(a)</h1>
-<h1
-id="frac12pipartial_a2-f_psiphia--then--q_psiphia">\frac{1}{2\pi},\partial_a^2
-f_{\psi,\phi}(a). <span class="math display">\[
-Then
-\]</span> q_{\psi,\phi}(a)</h1>
-<h1
-id="int_ainfty-langlepsipvomegaphirangledv--and--langlepsiwidetilde-k_aomegaphirangle">\int_a^\infty
-\langle\psi,p(v,\Omega)\phi\rangle,dv, <span class="math display">\[
-and
-\]</span> \langle\psi,\widetilde K_a(\Omega)\phi\rangle</h1>
-<p>2\pi\int_a^\infty (v-a),\langle\psi,p(v,\Omega)\phi\rangle,dv. $$
-This statement is not part of the present fixed-cutoff bridge; it
-records the exact additional input/output package carried into the
-downstream density-upgrade task.</p>
+\]</span> and define distributionally <span class="math display">\[
+\langle\psi,p(a,\Omega)\phi\rangle
+:=
+-\partial_a q_{\psi,\phi}(a)
+\mathrel{=}
+\frac{1}{2\pi}\,\partial_a^2 f_{\psi,\phi}(a).
+\]</span> Then <span class="math display">\[
+q_{\psi,\phi}(a)
+\mathrel{=}
+\int_a^\infty \langle\psi,p(v,\Omega)\phi\rangle\,dv,
+\]</span> and <span class="math display">\[
+\langle\psi,\widetilde K_a(\Omega)\phi\rangle
+\mathrel{=}
+2\pi\int_a^\infty (v-a)\,\langle\psi,p(v,\Omega)\phi\rangle\,dv.
+\]</span> This statement is not part of the present fixed-cutoff bridge;
+it records the exact additional input/output package carried into the
+downstream density-upgrade task.</em></p>
 </div>
 
 <h4 id="null-half-line-blow-up-net">Null half-line blow-up net.</h4>
@@ -4953,18 +5054,19 @@ a\le b
 \]</span></p>
 <div id="cor:n2" class="corollary">
 
-<h1
-id="corollary-78-derived-half-sided-modular-inclusion-on-null-half-lines-on-the-scaling-limit-geometric-cap-branch-of-theorem-64-the-blow-up-modular-action-near-a-smooth-entangling-cut-acts-on-the-null-coordinate-by--vmapsto-e-2pi-tv--therefore-for-every-age-0--sigma_tomegabiglmathcal-m_aomegabigr"><strong>Corollary
-78</strong> (Derived half-sided modular inclusion on null half-lines).
-*On the scaling-limit geometric-cap branch of
+<p><strong>Corollary 78</strong> (Derived half-sided modular inclusion
+on null half-lines). <em>On the scaling-limit geometric-cap branch of
 Theorem <a href="#thm:bw" data-reference-type="ref" data-reference="thm:bw">64</a>,
 the blow-up modular action near a smooth entangling cut acts on the null
 coordinate by <span class="math display">\[
 v\mapsto e^{-2\pi t}v.
 \]</span> Therefore, for every <span class="math inline">\(a\ge
-0\)</span>, $$ \sigma_t^\omega\bigl(\mathcal M_a(\Omega)\bigr)</h1>
-<p>\mathcal M_{e^{-2\pi t}a}(\Omega). $$ Hence, for every <span
-class="math inline">\(a&gt;0\)</span>, <span class="math display">\[
+0\)</span>, <span class="math display">\[
+\sigma_t^\omega\bigl(\mathcal M_a(\Omega)\bigr)
+\mathrel{=}
+\mathcal M_{e^{-2\pi t}a}(\Omega).
+\]</span> Hence, for every <span class="math inline">\(a&gt;0\)</span>,
+<span class="math display">\[
 \sigma_t^\omega\bigl(\mathcal M_a(\Omega)\bigr)\subseteq \mathcal
 M_a(\Omega)
 \qquad (t\le 0),
@@ -4975,14 +5077,12 @@ convention change <span class="math inline">\(t\mapsto -t\)</span>, one
 recovers the standard positive-time half-sided-inclusion form. The
 half-sided-inclusion step is therefore derived from the null-interval
 structure, isotony, and the scaling-limit geometric action rather than
-imported as an additional modular-QFT ingredient.</p>
+imported as an additional modular-QFT ingredient.</em></p>
 </div>
 
 <div class="proof">
 
-<h1
-id="proof-by-theorem-64-on-every-controlled-collar-family-whose-carried-remainder-vanishes-in-the-refinement-limit-the-cap-modular-flow-converges-to-the-exact-geometric-cap-dilation-with-2pi-normalization-blow-up-the-cap-near-a-smooth-cut-and-restrict-to-the-chosen-null-generator-in-that-tangent-limit-the-cap-preserving-flow-becomes-the-null-dilation-vmapsto-e-2pi-tv-for-every-bounded-interval-cdsubset-h_a-the-blow-up-action-therefore-sends--mathcal-acdomegalongmapsto-mathcal-ae-2pi-tce-2pi-tdomega--taking-the-von-neumann-closure-of-the-algebra-generated-by-all-such-intervals-gives--sigma_tomegamathcal-m_aomega"><em>Proof.</em>
-By
+<p><em>Proof.</em> By
 Theorem <a href="#thm:bw" data-reference-type="ref" data-reference="thm:bw">64</a>,
 on every controlled collar family whose carried remainder vanishes in
 the refinement limit, the cap modular flow converges to the exact
@@ -4996,9 +5096,11 @@ therefore sends <span class="math display">\[
 \mathcal A((c,d),\Omega)\longmapsto \mathcal A((e^{-2\pi t}c,e^{-2\pi
 t}d),\Omega).
 \]</span> Taking the von Neumann closure of the algebra generated by all
-such intervals gives $$ \sigma_t^\omega(\mathcal M_a(\Omega))</h1>
-<p>\mathcal M_{e^{-2\pi t}a}(\Omega). $$ If <span
-class="math inline">\(t\le 0\)</span>, then <span
+such intervals gives <span class="math display">\[
+\sigma_t^\omega(\mathcal M_a(\Omega))
+\mathrel{=}
+\mathcal M_{e^{-2\pi t}a}(\Omega).
+\]</span> If <span class="math inline">\(t\le 0\)</span>, then <span
 class="math inline">\(e^{-2\pi t}a\ge a\)</span>, hence <span
 class="math display">\[
 H_{e^{-2\pi t}a}\subseteq H_a.
@@ -5014,10 +5116,9 @@ positive-time convention if desired. ◻</p>
 
 <div id="lem:translation" class="lemma">
 
-<h1
-id="lemma-79-positive-null-translation-generator-for-the-derived-half-sided-modular-inclusion--mathcal-m_aomegasubset-mathcal-m_0omega-qquad-a0--of-corollary-78-let-delta_0omega-be-the-modular-operator-of-the-standard-pair-mathcal-m_0omegaomega-and-define--k_0omega-log-delta_0omega--then-borcherswiesbrock-yields-a-unique-strongly-continuous-one-parameter-unitary-group--u_omegaaeiap_omega-qquad-ainmathbb-r--such-that--u_omegaaomegaomega-qquad-u_omegaamathcal-m_bomegau_omegaamathcal-m_abomega-quad-abge-0--and-whose-generator-p_omega-is-positive-and-self-adjoint-on-the-stone-domain--dp_omega--left-psiinmathcal-h-lim_ato-0fracu_omegaapsi-psiia-textexists-right--moreover--delta_0omegaitu_omegaadelta_0omega-it"><strong>Lemma
-79</strong> (Positive null-translation generator). *For the derived
-half-sided modular inclusion <span class="math display">\[
+<p><strong>Lemma 79</strong> (Positive null-translation generator).
+<em>For the derived half-sided modular inclusion <span
+class="math display">\[
 \mathcal M_a(\Omega)\subset \mathcal M_0(\Omega)
 \qquad (a&gt;0)
 \]</span> of
@@ -5045,19 +5146,20 @@ D(P_\Omega)
 \psi\in\mathcal H:
 \lim_{a\to 0}\frac{U_\Omega(a)\psi-\psi}{ia}\ \text{exists}
 \right\}.
-\]</span> Moreover, $$
-\Delta_0(\Omega)^{it}U_\Omega(a)\Delta_0(\Omega)^{-it}</h1>
-<h1
-id="u_omegae-2pi-ta-qquad-delta_0omegaitp_omegadelta_0omega-it">U_\Omega(e^{-2\pi
-t}a), \qquad \Delta_0(\Omega)^{it}P_\Omega\Delta_0(\Omega)^{-it}</h1>
-<p>e^{-2\pi t}P_\Omega, $$ and on the common invariant analytic core of
-<span class="math inline">\(K_0(\Omega)\)</span> and <span
+\]</span> Moreover, <span class="math display">\[
+\Delta_0(\Omega)^{it}U_\Omega(a)\Delta_0(\Omega)^{-it}
+\mathrel{=}
+U_\Omega(e^{-2\pi t}a),
+\qquad
+\Delta_0(\Omega)^{it}P_\Omega\Delta_0(\Omega)^{-it}
+\mathrel{=}
+e^{-2\pi t}P_\Omega,
+\]</span> and on the common invariant analytic core of <span
+class="math inline">\(K_0(\Omega)\)</span> and <span
 class="math inline">\(P_\Omega\)</span>, <span class="math display">\[
 [K_0(\Omega),P_\Omega]=-\,i\,2\pi P_\Omega.
-\]</span>*</p>
-<h1
-id="for-each-age-0-let-delta_aomega-be-the-modular-operator-of-the-translated-standard-pair-mathcal-m_aomegaomega-and-define--k_aomega-log-delta_aomega--then--delta_aomegau_omegaadelta_0omegau_omegaa-qquad-k_aomegau_omegaak_0omegau_omegaa--hence--k_aomegak_0omega-2pi-ap_omega--as-a-quadratic-form-identity-on-dk_0omegacap-dp_omega-equivalently--langlepsik_bomega-k_aomegaphirangle">*For
-each <span class="math inline">\(a\ge 0\)</span>, let <span
+\]</span></em></p>
+<p><em>For each <span class="math inline">\(a\ge 0\)</span>, let <span
 class="math inline">\(\Delta_a(\Omega)\)</span> be the modular operator
 of the translated standard pair <span class="math inline">\((\mathcal
 M_a(\Omega),\omega)\)</span> and define <span class="math display">\[
@@ -5070,26 +5172,28 @@ K_a(\Omega)=U_\Omega(a)K_0(\Omega)U_\Omega(a)^*,
 K_a(\Omega)=K_0(\Omega)-2\pi a\,P_\Omega
 \]</span> as a quadratic-form identity on <span
 class="math inline">\(D(K_0(\Omega))\cap D(P_\Omega)\)</span>.
-Equivalently, $$ \langle\psi,(K_b(\Omega)-K_a(\Omega))\phi\rangle</h1>
-<p>-2\pi(b-a),\langle\psi,P_\Omega\phi\rangle $$ for all <span
-class="math inline">\(\psi,\phi\in D(K_0(\Omega))\cap
-D(P_\Omega)\)</span>.*</p>
-<h1
-id="in-the-canonical-blockwise-normalization-of-corollary-74-where-the-half-line-endpoint-term-has-been-absorbed-into-the-central-part-the-weak-endpoint-derivative-of-proposition-76-agrees-with-the-borchers-generator--langlepsip_omegaphirangle">*In
-the canonical blockwise normalization of
+Equivalently, <span class="math display">\[
+\langle\psi,(K_b(\Omega)-K_a(\Omega))\phi\rangle
+\mathrel{=}
+-2\pi(b-a)\,\langle\psi,P_\Omega\phi\rangle
+\]</span> for all <span class="math inline">\(\psi,\phi\in
+D(K_0(\Omega))\cap D(P_\Omega)\)</span>.</em></p>
+<p><em>In the canonical blockwise normalization of
 Corollary <a href="#cor:n1" data-reference-type="ref" data-reference="cor:n1">74</a>,
 where the half-line endpoint term has been absorbed into the central
 part, the weak endpoint derivative of
 Proposition <a href="#prop:n3" data-reference-type="ref" data-reference="prop:n3">76</a>
-agrees with the Borchers generator: $$
-\langle\psi,P_\Omega\phi\rangle</h1>
-<p>-\frac{1}{2\pi}\frac{d}{da}\Big|_{a=0^+} \langle\psi,\widetilde
-K_a(\Omega)\phi\rangle $$ for the same domain vectors. The
-half-sided-inclusion step proves only this affine half-line pair <span
+agrees with the Borchers generator: <span class="math display">\[
+\langle\psi,P_\Omega\phi\rangle
+\mathrel{=}
+-\frac{1}{2\pi}\frac{d}{da}\Big|_{a=0^+}
+\langle\psi,\widetilde K_a(\Omega)\phi\rangle
+\]</span> for the same domain vectors. The half-sided-inclusion step
+proves only this affine half-line pair <span
 class="math inline">\((K_0(\Omega),P_\Omega)\)</span>; bounded-interval
 modular-Hamiltonian formulas are downstream consequences of the separate
 interval-preserving projective branch recorded in
-Theorem <a href="#thm:stress" data-reference-type="ref" data-reference="thm:stress">80</a>.</p>
+Theorem <a href="#thm:stress" data-reference-type="ref" data-reference="thm:stress">80</a>.</em></p>
 </div>
 
 <div class="proof">
@@ -5104,16 +5208,16 @@ class="math inline">\(U_\Omega(a)\omega=\omega\)</span>, the translation
 law for the nested half-line net, and a positive self-adjoint generator
 <span class="math inline">\(P_\Omega\)</span>; Stone’s theorem gives the
 displayed domain formula.</p>
-<h1
-id="the-affine-covariance-relation--delta_0omegaitu_omegaadelta_0omega-it">The
-affine covariance relation $$
-\Delta_0(\Omega)^{it}U_\Omega(a)\Delta_0(\Omega)^{-it}</h1>
-<h1
-id="u_omegae-2pi-ta--is-the-borchers-relation-differentiating-at-a0-gives--delta_0omegaitp_omegadelta_0omega-it">U_\Omega(e^{-2\pi
-t}a) $$ is the Borchers relation. Differentiating at <span
-class="math inline">\(a=0\)</span> gives $$
-\Delta_0(\Omega)^{it}P_\Omega\Delta_0(\Omega)^{-it}</h1>
-<p>e^{-2\pi t}P_\Omega. $$ Since <span
+<p>The affine covariance relation <span class="math display">\[
+\Delta_0(\Omega)^{it}U_\Omega(a)\Delta_0(\Omega)^{-it}
+\mathrel{=}
+U_\Omega(e^{-2\pi t}a)
+\]</span> is the Borchers relation. Differentiating at <span
+class="math inline">\(a=0\)</span> gives <span class="math display">\[
+\Delta_0(\Omega)^{it}P_\Omega\Delta_0(\Omega)^{-it}
+\mathrel{=}
+e^{-2\pi t}P_\Omega.
+\]</span> Since <span
 class="math inline">\(\Delta_0(\Omega)^{it}=e^{-itK_0(\Omega)}\)</span>,
 differentiating at <span class="math inline">\(t=0\)</span> on the
 common analytic core yields <span class="math display">\[
@@ -5121,10 +5225,8 @@ common analytic core yields <span class="math display">\[
 \]</span> hence <span class="math display">\[
 [K_0(\Omega),P_\Omega]=-\,i\,2\pi P_\Omega.
 \]</span></p>
-<h1
-id="because-u_omegaaomegaomega-and--mathcal-m_aomegau_omegaamathcal-m_0omegau_omegaa--the-modular-operator-of-the-translated-standard-pair-is--delta_aomegau_omegaadelta_0omegau_omegaa--so--k_aomegau_omegaak_0omegau_omegaa--differentiating-this-identity-in-a-on-dk_0omegacap-dp_omega-gives--fracddak_aomega">Because
-<span class="math inline">\(U_\Omega(a)\omega=\omega\)</span> and <span
-class="math display">\[
+<p>Because <span class="math inline">\(U_\Omega(a)\omega=\omega\)</span>
+and <span class="math display">\[
 \mathcal M_a(\Omega)=U_\Omega(a)\mathcal M_0(\Omega)U_\Omega(a)^*,
 \]</span> the modular operator of the translated standard pair is <span
 class="math display">\[
@@ -5133,13 +5235,16 @@ class="math display">\[
 K_a(\Omega)=U_\Omega(a)K_0(\Omega)U_\Omega(a)^*.
 \]</span> Differentiating this identity in <span
 class="math inline">\(a\)</span> on <span
-class="math inline">\(D(K_0(\Omega))\cap D(P_\Omega)\)</span> gives $$
-\frac{d}{da}K_a(\Omega)</h1>
-<h1 id="ip_omegak_aomega">i[P_\Omega,K_a(\Omega)]</h1>
-<p>-2\pi P_\Omega, $$ because the commutator relation just proved is
-invariant under conjugation by <span
-class="math inline">\(U_\Omega(a)\)</span>. Integrating from <span
-class="math inline">\(0\)</span> to <span
+class="math inline">\(D(K_0(\Omega))\cap D(P_\Omega)\)</span> gives
+<span class="math display">\[
+\frac{d}{da}K_a(\Omega)
+\mathrel{=}
+i[P_\Omega,K_a(\Omega)]
+\mathrel{=}
+-2\pi P_\Omega,
+\]</span> because the commutator relation just proved is invariant under
+conjugation by <span class="math inline">\(U_\Omega(a)\)</span>.
+Integrating from <span class="math inline">\(0\)</span> to <span
 class="math inline">\(a\)</span> yields the displayed quadratic-form
 identity, and taking matrix elements gives the equivalent form.
 Proposition <a href="#prop:n3" data-reference-type="ref" data-reference="prop:n3">76</a>
@@ -5154,11 +5259,10 @@ action not supplied by half-sided inclusion alone. ◻</p>
 
 <div id="thm:stress" class="theorem">
 
-<h1
-id="theorem-80-the-half-line-generator-is-the-local-null-stress-charge-fix-a-null-generator-omega-and-work-in-the-canonical-blockwise-normalization-of-corollary-74-let-widetilde-k_aomega-denote-the-renormalized-modular-hamiltonian-of-the-half-line-h_a-and-let-p_omega-be-the-positive-borchers-generator-of-lemma-79-then-on--d_omegadk_0omegacap-dp_omega--one-has--langlepsip_omegaphirangle"><strong>Theorem
-80</strong> (The half-line generator is the local null-stress charge).
-*Fix a null generator <span class="math inline">\(\Omega\)</span> and
-work in the canonical blockwise normalization of
+<p><strong>Theorem 80</strong> (The half-line generator is the local
+null-stress charge). <em>Fix a null generator <span
+class="math inline">\(\Omega\)</span> and work in the canonical
+blockwise normalization of
 Corollary <a href="#cor:n1" data-reference-type="ref" data-reference="cor:n1">74</a>.
 Let <span class="math inline">\(\widetilde K_a(\Omega)\)</span> denote
 the renormalized modular Hamiltonian of the half-line <span
@@ -5168,18 +5272,23 @@ generator of
 Lemma <a href="#lem:translation" data-reference-type="ref" data-reference="lem:translation">79</a>.
 Then on <span class="math display">\[
 D_\Omega:=D(K_0(\Omega))\cap D(P_\Omega)
-\]</span> one has $$ \langle\psi,P_\Omega\phi\rangle</h1>
-<p>-\frac{1}{2\pi}\frac{d}{da}\Big|<em>{a=0^+} \langle\psi,\widetilde
-K_a(\Omega)\phi\rangle \qquad (\psi,\phi\in D</em>\Omega), $$ and this
-operator is exactly the local null-stress charge of the effective
-spacetime description on that same half-line family.*</p>
-<h1
-id="equivalently-if-the-effective-spacetime-description-writes-the-same-renormalized-family-as--widetilde-kmathrmeff_aomega">*Equivalently,
-if the effective spacetime description writes the same renormalized
-family as $$ \widetilde K^{\mathrm{eff}}_a(\Omega)</h1>
-<p>2\pi,Q^{\mathrm{mod}}<em>a(\Omega)+K</em>{\partial}(a,\Omega), $$
-with <span class="math inline">\(Q^{\mathrm{mod}}_a(\Omega)\)</span> the
-standard local null modular-energy term and <span
+\]</span> one has <span class="math display">\[
+\langle\psi,P_\Omega\phi\rangle
+\mathrel{=}
+-\frac{1}{2\pi}\frac{d}{da}\Big|_{a=0^+}
+\langle\psi,\widetilde K_a(\Omega)\phi\rangle
+\qquad (\psi,\phi\in D_\Omega),
+\]</span> and this operator is exactly the local null-stress charge of
+the effective spacetime description on that same half-line
+family.</em></p>
+<p><em>Equivalently, if the effective spacetime description writes the
+same renormalized family as <span class="math display">\[
+\widetilde K^{\mathrm{eff}}_a(\Omega)
+\mathrel{=}
+2\pi\,Q^{\mathrm{mod}}_a(\Omega)+K_{\partial}(a,\Omega),
+\]</span> with <span
+class="math inline">\(Q^{\mathrm{mod}}_a(\Omega)\)</span> the standard
+local null modular-energy term and <span
 class="math inline">\(K_{\partial}(a,\Omega)\)</span> central and
 endpoint-supported, then <span class="math display">\[
 Q_{kk}(\Omega)
@@ -5189,7 +5298,7 @@ K^{\mathrm{eff}}_a(\Omega)
 \]</span> satisfies <span class="math display">\[
 P_\Omega = Q_{kk}(\Omega)
 \]</span> as a quadratic-form identity on <span
-class="math inline">\(D_\Omega\)</span>.*</p>
+class="math inline">\(D_\Omega\)</span>.</em></p>
 <p><em>Hence the renormalized half-line null generator is not a separate
 EFT-side input: it is the same operator that the effective spacetime
 description calls the local null-stress charge of the null
@@ -5263,9 +5372,7 @@ class="math inline">\(\phi\)</span>.</em></p>
 
 <div class="proof">
 
-<h1
-id="proof-write--x_aby_abphi-g_ab--with-y_ab-traceless-since-g_abkakb0-on-null-vectors-the-hypothesis-implies-y_abkakb0-for-all-null-k-in-local-inertial-coordinates-let-k1hat-n-with-hat-n1-then--y_abkakb"><em>Proof.</em>
-Write <span class="math display">\[
+<p><em>Proof.</em> Write <span class="math display">\[
 X_{ab}=Y_{ab}+\phi g_{ab}
 \]</span> with <span class="math inline">\(Y_{ab}\)</span> traceless.
 Since <span class="math inline">\(g_{ab}k^ak^b=0\)</span> on null
@@ -5273,12 +5380,15 @@ vectors, the hypothesis implies <span
 class="math inline">\(Y_{ab}k^ak^b=0\)</span> for all null <span
 class="math inline">\(k\)</span>. In local inertial coordinates let
 <span class="math inline">\(k=(1,\hat n)\)</span> with <span
-class="math inline">\(|\hat n|=1\)</span>. Then $$ Y_{ab}k^ak^b</h1>
-<p>Y_{00}+2\hat n^iY_{0i}+\hat n^i\hat n^jY_{ij}. $$ Oddness under <span
-class="math inline">\(\hat n\mapsto-\hat n\)</span> forces <span
-class="math inline">\(Y_{0i}=0\)</span>. Averaging that relation over
-<span class="math inline">\(S^2\)</span> gives <span
+class="math inline">\(|\hat n|=1\)</span>. Then <span
 class="math display">\[
+Y_{ab}k^ak^b
+\mathrel{=}
+Y_{00}+2\hat n^iY_{0i}+\hat n^i\hat n^jY_{ij}.
+\]</span> Oddness under <span class="math inline">\(\hat n\mapsto-\hat
+n\)</span> forces <span class="math inline">\(Y_{0i}=0\)</span>.
+Averaging that relation over <span class="math inline">\(S^2\)</span>
+gives <span class="math display">\[
 Y_{00}+\frac13\delta^{ij}Y_{ij}=0.
 \]</span> Tracelessness of <span class="math inline">\(Y_{ab}\)</span>
 gives <span class="math display">\[
@@ -5447,9 +5557,8 @@ perturbations outside that realized MaxEnt family.</em></p>
 
 <div id="lem:smallball" class="lemma">
 
-<h1
-id="lemma-86-internal-d4-small-ball-bridge-assume-the-hypotheses-of-theorem-80-together-with-the-separate-interval-preserving-projective-branch-invoked-there-for-bounded-intervals-let-p-be-the-cap-center-and-let-ua-be-the-future-directed-unit-tangent-of-the-local-diamond-rest-frame-at-p-in-local-inertial-coordinates-txi-adapted-to-ua-let-d_ell-be-the-causal-diamond-whose-t0-slice-is-the-euclidean-ball--b_ellt0-rell-qquad-r2delta_ijxixj--then--delta-s_mathrmbulkc"><strong>Lemma
-86</strong> (Internal d=4 small-ball bridge). *Assume the hypotheses of
+<p><strong>Lemma 86</strong> (Internal d=4 small-ball bridge).
+<em>Assume the hypotheses of
 Theorem <a href="#thm:stress" data-reference-type="ref" data-reference="thm:stress">80</a>,
 together with the separate interval-preserving projective branch invoked
 there for bounded intervals. Let <span class="math inline">\(p\)</span>
@@ -5464,43 +5573,47 @@ class="math display">\[
 B_\ell=\{t=0,\ r&lt;\ell\},
 \qquad
 r^2=\delta_{ij}x^ix^j.
-\]</span> Then $$ \delta S_{\mathrm{bulk}}(C)</h1>
-<h1
-id="2piint_b_ellfracell2-r22elldeltalangle-t_00rangled3x--deltalangle-eetacellrangle--if-moreover-deltalangle-t_00rangle-is-approximately-constant-across-b_ell-and--deltalangle-eeta_cellrangleoell4--along-the-same-scaling-family-then-in-d4--delta-smathrmbulkc">2\pi\int_{B_\ell}\frac{\ell^2-r^2}{2\ell},\delta\langle
-T_{00}\rangle,d^3x + \delta\langle E^{(\eta)}<em>{C,\ell}\rangle. $$ If,
-moreover, <span class="math inline">\(\delta\langle
+\]</span> Then <span class="math display">\[
+\delta S_{\mathrm{bulk}}(C)
+\mathrel{=}
+2\pi\int_{B_\ell}\frac{\ell^2-r^2}{2\ell}\,\delta\langle
+T_{00}\rangle\,d^3x
++
+\delta\langle E^{(\eta)}_{C,\ell}\rangle.
+\]</span> If, moreover, <span class="math inline">\(\delta\langle
 T_{00}\rangle\)</span> is approximately constant across <span
 class="math inline">\(B_\ell\)</span> and <span class="math display">\[
 \delta\langle E^{(\eta)}_{C,\ell}\rangle=o(\ell^4)
 \]</span> along the same scaling family, then in <span
-class="math inline">\(d=4\)</span>, $$ \delta
-S</em>{\mathrm{bulk}}(C)</h1>
-<p>\frac{8\pi^2\ell^4}{15},\delta\langle T_{00}\rangle +O(\ell^5\partial
-T)+o(\ell^4). $$</p>
+class="math inline">\(d=4\)</span>, <span class="math display">\[
+\delta S_{\mathrm{bulk}}(C)
+\mathrel{=}
+\frac{8\pi^2\ell^4}{15}\,\delta\langle T_{00}\rangle
++O(\ell^5\partial T)+o(\ell^4).
+\]</span></em></p>
 </div>
 
 <div class="proof">
 
-<h1
-id="proof-work-in-the-local-lorentzian-scaling-regime-around-p-on-the-geometric-subnet-branch-of-theorem-64-the-cap-modular-flow-is-the-geometric-flow-of-the-diamond-preserving-conformal-killing-field-in-the-tangent-diamond-d_ell-that-field-is--xi_d_ell"><em>Proof.</em>
-Work in the local Lorentzian scaling regime around <span
-class="math inline">\(p\)</span>. On the geometric-subnet branch of
+<p><em>Proof.</em> Work in the local Lorentzian scaling regime around
+<span class="math inline">\(p\)</span>. On the geometric-subnet branch
+of
 Theorem <a href="#thm:bw" data-reference-type="ref" data-reference="thm:bw">64</a>,
 the cap modular flow is the geometric flow of the diamond-preserving
 conformal Killing field. In the tangent diamond <span
-class="math inline">\(D_\ell\)</span>, that field is $$
-\xi_{D_\ell}</h1>
-<p>\frac{1}{2\ell}
-\Bigl((\ell^2-r^2-t^2),\partial_t-2t,x^i\partial_i\Bigr), $$ so on the
-<span class="math inline">\(t=0\)</span> slice one has <span
+class="math inline">\(D_\ell\)</span>, that field is <span
 class="math display">\[
+\xi_{D_\ell}
+\mathrel{=}
+\frac{1}{2\ell}
+\Bigl((\ell^2-r^2-t^2)\,\partial_t-2t\,x^i\partial_i\Bigr),
+\]</span> so on the <span class="math inline">\(t=0\)</span> slice one
+has <span class="math display">\[
 \xi_{D_\ell}\!\cdot n=\frac{\ell^2-r^2}{2\ell},
 \]</span> with <span class="math inline">\(n^a=u^a\)</span> the slice
 normal at the center.</p>
-<h1
-id="the-same-kernel-is-the-bounded-interval-kernel-supplied-by-that-separate-projective-branch-along-each-null-generator-of-the-diamond-theorem-80-identifies-the-half-line-generator-constructed-above-with-the-local-null-stress-charge-and-the-interval-preserving-projective-branch-transports-that-identification-to-the-affine-covariant-interval-weight-that-vanishes-at-the-two-diamond-endpoints-on-the-t0-slice-that-weight-is-exactly-ell2-r22ell-therefore-the-null-stress-bridge-reconstructs-the-bulk-modular-charge-of-the-geometric-generator-as--deltalangle-b_crangle">The
-same kernel is the bounded-interval kernel supplied by that separate
-projective branch. Along each null generator of the diamond,
+<p>The same kernel is the bounded-interval kernel supplied by that
+separate projective branch. Along each null generator of the diamond,
 Theorem <a href="#thm:stress" data-reference-type="ref" data-reference="thm:stress">80</a>
 identifies the half-line generator constructed above with the local
 null-stress charge, and the interval-preserving projective branch
@@ -5509,50 +5622,55 @@ that vanishes at the two diamond endpoints. On the <span
 class="math inline">\(t=0\)</span> slice that weight is exactly <span
 class="math inline">\((\ell^2-r^2)/(2\ell)\)</span>. Therefore the
 null-stress bridge reconstructs the bulk modular charge of the geometric
-generator as $$ \delta\langle B_C\rangle</h1>
-<p>\int_{B_\ell}\frac{\ell^2-r^2}{2\ell},\delta\langle
-T_{00}\rangle,d^3x +\frac{1}{2\pi},\delta\langle
-E^{(\eta)}_{C,\ell}\rangle. $$ Multiplying by the first-law factor <span
+generator as <span class="math display">\[
+\delta\langle B_C\rangle
+\mathrel{=}
+\int_{B_\ell}\frac{\ell^2-r^2}{2\ell}\,\delta\langle T_{00}\rangle\,d^3x
++\frac{1}{2\pi}\,\delta\langle E^{(\eta)}_{C,\ell}\rangle.
+\]</span> Multiplying by the first-law factor <span
 class="math inline">\(2\pi\)</span> gives the displayed formula for
 <span class="math inline">\(\delta S_{\mathrm{bulk}}(C)\)</span>.</p>
-<h1
-id="if-deltalangle-t_00rangle-is-approximately-constant-across-b_ell-then--int_b_ellfracell2-r22elldeltalangle-t_00rangled3x">If
-<span class="math inline">\(\delta\langle T_{00}\rangle\)</span> is
-approximately constant across <span
-class="math inline">\(B_\ell\)</span>, then $$
-\int_{B_\ell}\frac{\ell^2-r^2}{2\ell},\delta\langle
-T_{00}\rangle,d^3x</h1>
-<h1
-id="frac4piell415deltalangle-t_00rangle-oell5partial-t--the-additional-hypothesis-deltalangle-eeta_cellrangleoell4-then-yields--delta-s_mathrmbulkc">\frac{4\pi\ell^4}{15},\delta\langle
-T_{00}\rangle +O(\ell^5\partial T). $$ The additional hypothesis <span
+<p>If <span class="math inline">\(\delta\langle T_{00}\rangle\)</span>
+is approximately constant across <span
+class="math inline">\(B_\ell\)</span>, then <span
+class="math display">\[
+\int_{B_\ell}\frac{\ell^2-r^2}{2\ell}\,\delta\langle T_{00}\rangle\,d^3x
+\mathrel{=}
+\frac{4\pi\ell^4}{15}\,\delta\langle T_{00}\rangle
++O(\ell^5\partial T).
+\]</span> The additional hypothesis <span
 class="math inline">\(\delta\langle
-E^{(\eta)}_{C,\ell}\rangle=o(\ell^4)\)</span> then yields $$ \delta
-S_{\mathrm{bulk}}(C)</h1>
-<p>2\pi\cdot\frac{4\pi\ell^4}{15},\delta\langle T_{00}\rangle
-+O(\ell^5\partial T)+o(\ell^4), $$ which is exactly the stated
-coefficient. No separate EFT small-ball first law has been used: the
-kernel comes from the geometric cap generator together with the D4
-null-stress bridge. ◻</p>
+E^{(\eta)}_{C,\ell}\rangle=o(\ell^4)\)</span> then yields <span
+class="math display">\[
+\delta S_{\mathrm{bulk}}(C)
+\mathrel{=}
+2\pi\cdot\frac{4\pi\ell^4}{15}\,\delta\langle T_{00}\rangle
++O(\ell^5\partial T)+o(\ell^4),
+\]</span> which is exactly the stated coefficient. No separate EFT
+small-ball first law has been used: the kernel comes from the geometric
+cap generator together with the D4 null-stress bridge. ◻</p>
 </div>
 
 <div id="thm:einstein-remainder" class="theorem">
 
-<h1
-id="theorem-87-finite-cutoff-einstein-remainder-bound-on-the-lorentznull-modulareinstein-branch-before-taking-the-controlled-collar-and-small-ball-limits-the-small-ball-rest-frame-relation-has-the-form--deltaleftg_00lambda-g_00right"><strong>Theorem
-87</strong> (Finite-cutoff Einstein remainder bound). *On the
-Lorentz/null-modular/Einstein branch, before taking the controlled
-collar and small-ball limits, the small-ball rest-frame relation has the
-form $$ \delta!\left(G_{00}+\Lambda g_{00}\right)</h1>
-<p>8\pi G,\delta\langle T_{00}\rangle +\mathcal E_{\ell,\delta}, <span
-class="math display">\[
-where, on one fixed faithful collar model and for a bounded
-support-visible
-observable class,
-\]</span> |\mathcal E_{\ell,\delta}| \le C_1
-r_{\mathrm{FR}}(\varepsilon_\delta) +C_2\delta^{\mathrm
-M}<em>{A</em>\delta:B_\delta:D_\delta}(\varepsilon_\delta)
-+C_3\eta^{\mathrm{reg}}<em>\delta +C_4\ell,|\partial T|
-+o</em>\delta(1)+o_\ell(1). $$ Here <span
+<p><strong>Theorem 87</strong> (Finite-cutoff Einstein remainder bound).
+<em>On the Lorentz/null-modular/Einstein branch, before taking the
+controlled collar and small-ball limits, the small-ball rest-frame
+relation has the form <span class="math display">\[
+\delta\!\left(G_{00}+\Lambda g_{00}\right)
+\mathrel{=}
+8\pi G\,\delta\langle T_{00}\rangle
++\mathcal E_{\ell,\delta},
+\]</span> where, on one fixed faithful collar model and for a bounded
+support-visible observable class, <span class="math display">\[
+|\mathcal E_{\ell,\delta}|
+\le
+C_1 r_{\mathrm{FR}}(\varepsilon_\delta)
++C_2\delta^{\mathrm M}_{A_\delta:B_\delta:D_\delta}(\varepsilon_\delta)
++C_3\eta^{\mathrm{reg}}_\delta
++C_4\ell\,\|\partial T\|
++o_\delta(1)+o_\ell(1).
+\]</span> Here <span
 class="math inline">\(\eta^{\mathrm{reg}}_\delta\)</span> is the
 regularized support-visible modular transport remainder, and the
 constants depend only on the fixed collar model, the bounded observable
@@ -5560,7 +5678,7 @@ class, and the local small-ball chart. If the controlled collar limit
 removes the first three terms and the small-ball limit removes the
 derivative and geometric remainders, the exact rest-frame relation of
 Theorem <a href="#thm:einstein" data-reference-type="ref" data-reference="thm:einstein">88</a>
-follows.</p>
+follows.</em></p>
 </div>
 
 <div class="proof">
@@ -5582,10 +5700,8 @@ class="math inline">\(\mathcal E_{\ell,\delta}\)</span>. ◻</p>
 
 <div id="thm:einstein" class="theorem">
 
-<h1
-id="theorem-88-jacobson-type-rest-frame-relation-from-derived-fixed-cap-generalized-entropy-stationarity-assume-axioms-14-assumption-9-and-the-hypotheses-of-theorem-80-and-lemma-86-then-for-every-sufficiently-small-cap-centered-at-p-and-every-admissible-fixed-cap-maxent-variation-delta-about-a-realized-reference-state-omega-in-the-locally-lorentzian-d4-scaling-regime-if-ua-is-the-future-directed-unit-tangent-of-the-local-diamond-rest-frame-at-p-one-has--deltabiglg_ablambda-g_abua-ubbigr"><strong>Theorem
-88</strong> (Jacobson-type rest-frame relation from derived fixed-cap
-generalized-entropy stationarity). *Assume
+<p><strong>Theorem 88</strong> (Jacobson-type rest-frame relation from
+derived fixed-cap generalized-entropy stationarity). <em>Assume
 Axioms <a href="#ax:screen" data-reference-type="ref" data-reference="ax:screen">1</a>–<a href="#ax:entropy" data-reference-type="ref" data-reference="ax:entropy">4</a>,
 Assumption <a href="#ass:technical" data-reference-type="ref" data-reference="ass:technical">9</a>,
 and the hypotheses of
@@ -5599,56 +5715,59 @@ reference state <span class="math inline">\(\omega\)</span> in the
 locally Lorentzian <span class="math inline">\(d=4\)</span> scaling
 regime, if <span class="math inline">\(u^a\)</span> is the
 future-directed unit tangent of the local diamond rest frame at <span
-class="math inline">\(p\)</span>, one has $$
-\delta!\Bigl[(G_{ab}+\Lambda g_{ab})u^a u^b\Bigr]</h1>
-<p>8\pi G,u^a u^b,\delta\langle T_{ab}\rangle $$ at <span
-class="math inline">\(p\)</span>. In the adapted rest frame <span
-class="math inline">\(u^a=(1,0,0,0)\)</span>, this is <span
+class="math inline">\(p\)</span>, one has <span class="math display">\[
+\delta\!\Bigl[(G_{ab}+\Lambda g_{ab})u^a u^b\Bigr]
+\mathrel{=}
+8\pi G\,u^a u^b\,\delta\langle T_{ab}\rangle
+\]</span> at <span class="math inline">\(p\)</span>. In the adapted rest
+frame <span class="math inline">\(u^a=(1,0,0,0)\)</span>, this is <span
 class="math display">\[
 \delta\!\left(G_{00}+\Lambda g_{00}\right)=8\pi G\,\delta\langle
 T_{00}\rangle.
-\]</span></p>
+\]</span></em></p>
 </div>
 
 <div class="proof">
 
-<h1
-id="proof-theorem-84-gives-the-fixed-cap-generalized-entropy-stationarity-condition--0delta-s_mathrmgenc"><em>Proof.</em>
+<p><em>Proof.</em>
 Theorem <a href="#thm:equilibrium" data-reference-type="ref" data-reference="thm:equilibrium">84</a>
-gives the fixed-cap generalized-entropy stationarity condition $$
-0=\delta S_{\mathrm{gen}}(C)</h1>
-<h1
-id="delta-s_mathrmbulkcfracdelta-a4g--by-lemma-a-hreflemsmallball-data-reference-typeref-data-referencelemsmallball86a--delta-s_mathrmbulkc">\delta
-S_{\mathrm{bulk}}(C)+\frac{\delta A}{4G}. <span class="math display">\[
-By Lemma &lt;a href=&quot;#lem:smallball&quot;
-data-reference-type=&quot;ref&quot;
-data-reference=&quot;lem:smallball&quot;&gt;86&lt;/a&gt;,
-\]</span> \delta S_{\mathrm{bulk}}(C)</h1>
-<p>\frac{8\pi^2\ell^4}{15},u^a u^b,\delta\langle T_{ab}\rangle
-+O(\ell^5\partial T)+o(\ell^4), $$ where in the adapted rest frame the
-contraction is <span class="math inline">\(\delta\langle
-T_{00}\rangle\)</span>.</p>
-<h1
-id="for-a-fixed-volume-small-geodesic-ball-in-d4-the-standard-area-variation-identity-gives--delta-abig_vlambda">For
-a fixed-volume small geodesic ball in <span
-class="math inline">\(d=4\)</span>, the standard area-variation identity
-gives $$ \delta A\big|_{V,\Lambda}</h1>
-<h1
-id="-frac4piell415-deltabiglg_ablambda-g_abua-ubbigr--therefore--0">-\frac{4\pi\ell^4}{15},
-\delta!\Bigl[(G_{ab}+\Lambda g_{ab})u^a u^b\Bigr]. <span
+gives the fixed-cap generalized-entropy stationarity condition <span
 class="math display">\[
-Therefore
-\]</span> 0</h1>
-<h1
-id="frac8pi2ell415ua-ubdeltalangle-t_abrangle--fracpiell415g-deltabiglg_ablambda-g_abua-ubbigr-oell5partial-toell4--dividing-by-ell4-and-taking-the-small-ball-limit-removes-the-oell5partial-toell4-terms-and-yields--deltabiglg_ablambda-g_abua-ubbigr">\frac{8\pi^2\ell^4}{15},u^a
-u^b,\delta\langle T_{ab}\rangle -\frac{\pi\ell^4}{15G},
-\delta!\Bigl[(G_{ab}+\Lambda g_{ab})u^a u^b\Bigr] +O(\ell^5\partial
-T)+o(\ell^4). $$ Dividing by <span class="math inline">\(\ell^4\)</span>
-and taking the small-ball limit removes the <span
+0=\delta S_{\mathrm{gen}}(C)
+\mathrel{=}
+\delta S_{\mathrm{bulk}}(C)+\frac{\delta A}{4G}.
+\]</span> By
+Lemma <a href="#lem:smallball" data-reference-type="ref" data-reference="lem:smallball">86</a>,
+<span class="math display">\[
+\delta S_{\mathrm{bulk}}(C)
+\mathrel{=}
+\frac{8\pi^2\ell^4}{15}\,u^a u^b\,\delta\langle T_{ab}\rangle
++O(\ell^5\partial T)+o(\ell^4),
+\]</span> where in the adapted rest frame the contraction is <span
+class="math inline">\(\delta\langle T_{00}\rangle\)</span>.</p>
+<p>For a fixed-volume small geodesic ball in <span
+class="math inline">\(d=4\)</span>, the standard area-variation identity
+gives <span class="math display">\[
+\delta A\big|_{V,\Lambda}
+\mathrel{=}
+-\frac{4\pi\ell^4}{15}\,
+\delta\!\Bigl[(G_{ab}+\Lambda g_{ab})u^a u^b\Bigr].
+\]</span> Therefore <span class="math display">\[
+0
+\mathrel{=}
+\frac{8\pi^2\ell^4}{15}\,u^a u^b\,\delta\langle T_{ab}\rangle
+-\frac{\pi\ell^4}{15G}\,
+\delta\!\Bigl[(G_{ab}+\Lambda g_{ab})u^a u^b\Bigr]
++O(\ell^5\partial T)+o(\ell^4).
+\]</span> Dividing by <span class="math inline">\(\ell^4\)</span> and
+taking the small-ball limit removes the <span
 class="math inline">\(O(\ell^5\partial T)+o(\ell^4)\)</span> terms and
-yields $$ \delta!\Bigl[(G_{ab}+\Lambda g_{ab})u^a u^b\Bigr]</h1>
-<p>8\pi G,u^a u^b,\delta\langle T_{ab}\rangle. $$ This is precisely the
-desired rest-frame scalar relation. ◻</p>
+yields <span class="math display">\[
+\delta\!\Bigl[(G_{ab}+\Lambda g_{ab})u^a u^b\Bigr]
+\mathrel{=}
+8\pi G\,u^a u^b\,\delta\langle T_{ab}\rangle.
+\]</span> This is precisely the desired rest-frame scalar
+relation. ◻</p>
 </div>
 
 <div id="cor:einstein" class="corollary">
@@ -5685,21 +5804,21 @@ u^a u^b\,\delta Y_{ab}=0
 \qquad
 \text{for every unit timelike }u^a.
 \]</span></p>
-<h1
-id="choose-local-inertial-coordinates-at-p-and-write--uagamma1vi-qquad-vec-v1-qquad-gamma1-vec-v2-12--then--0ua-ubdelta-y_ab">Choose
-local inertial coordinates at <span class="math inline">\(p\)</span> and
-write <span class="math display">\[
+<p>Choose local inertial coordinates at <span
+class="math inline">\(p\)</span> and write <span class="math display">\[
 u^a=\gamma(1,v^i),
 \qquad
 |\vec v|&lt;1,
 \qquad
 \gamma=(1-|\vec v|^2)^{-1/2}.
-\]</span> Then $$ 0=u^a u^b,\delta Y_{ab}</h1>
-<p>\gamma^2\Bigl(\delta Y_{00}+2v^i\delta Y_{0i}+v^iv^j\delta
-Y_{ij}\Bigr) $$ for every <span class="math inline">\(|\vec
-v|&lt;1\)</span>. The quadratic polynomial in <span
-class="math inline">\(v^i\)</span> therefore vanishes on an open ball,
-so all of its coefficients vanish: <span class="math display">\[
+\]</span> Then <span class="math display">\[
+0=u^a u^b\,\delta Y_{ab}
+\mathrel{=}
+\gamma^2\Bigl(\delta Y_{00}+2v^i\delta Y_{0i}+v^iv^j\delta Y_{ij}\Bigr)
+\]</span> for every <span class="math inline">\(|\vec v|&lt;1\)</span>.
+The quadratic polynomial in <span class="math inline">\(v^i\)</span>
+therefore vanishes on an open ball, so all of its coefficients vanish:
+<span class="math display">\[
 \delta Y_{00}=0,\qquad
 \delta Y_{0i}=0,\qquad
 \delta Y_{ij}=0.
@@ -6060,14 +6179,12 @@ F_s\circ U_{rs}\cong F_r
 
 <div class="proof">
 
-<h1
-id="proof-fix-rpreceq-s-and-a-connected-collar-b-around-a-cut-sigma-oph-refinement-subdivides-b-into-a-refined-collar-b_s-and-carries-overlap-records-by-the-deterministic-projection-maps-of-the-separated-cofinal-refinement-system-dualizing-the-finite-refinement-projection-gives-an-injective-unital--homomorphism-on-the-sector-preserving-collar-algebras--jmath_rsbmathcal-a_mathrmecrbhookrightarrow-mathcal-a_mathrmecsb_s--since-this-map-preserves-centers-a-central-edge-block-p_alphar-is-sent-to-the-sum-of-fine-central-blocks-with-coarse-shadow-alpha--jmath_rsbp_alphar"><em>Proof.</em>
-Fix <span class="math inline">\(r\preceq s\)</span> and a connected
-collar <span class="math inline">\(B\)</span> around a cut <span
-class="math inline">\(\Sigma\)</span>. OPH refinement subdivides <span
-class="math inline">\(B\)</span> into a refined collar <span
-class="math inline">\(B_s\)</span> and carries overlap records by the
-deterministic projection maps of the separated cofinal refinement
+<p><em>Proof.</em> Fix <span class="math inline">\(r\preceq s\)</span>
+and a connected collar <span class="math inline">\(B\)</span> around a
+cut <span class="math inline">\(\Sigma\)</span>. OPH refinement
+subdivides <span class="math inline">\(B\)</span> into a refined collar
+<span class="math inline">\(B_s\)</span> and carries overlap records by
+the deterministic projection maps of the separated cofinal refinement
 system. Dualizing the finite refinement projection gives an injective
 unital <span class="math inline">\(^*\)</span>-homomorphism on the
 sector-preserving collar algebras, <span class="math display">\[
@@ -6076,18 +6193,18 @@ sector-preserving collar algebras, <span class="math display">\[
 \]</span> Since this map preserves centers, a central edge block <span
 class="math inline">\(P_{\alpha,r}\)</span> is sent to the sum of fine
 central blocks with coarse shadow <span
-class="math inline">\(\alpha\)</span>: $$
-\jmath_{rs}^{B}(P_{\alpha,r})</h1>
-<p>\sum_{\beta:,\beta\downarrow r=\alpha}P_{\beta,s}. <span
+class="math inline">\(\alpha\)</span>: <span class="math display">\[
+\jmath_{rs}^{B}(P_{\alpha,r})
+\mathrel{=}
+\sum_{\beta:\,\beta\downarrow r=\alpha}P_{\beta,s}.
+\]</span> The same refinement projection gives a coarse-shadow
+homomorphism on the compact overlap recharting systems, <span
 class="math display">\[
-The same refinement projection gives a coarse-shadow homomorphism on the
-compact overlap
-recharting systems,
-\]</span> \pi_{sr}^{\Sigma}:\widehat K_{\Sigma,s}\to \widehat
-K_{\Sigma,r}, $$ where <span class="math inline">\(\widehat K=K\)</span>
-on the ordinary branch and <span class="math inline">\(\widehat
-K\)</span> is the compact central extension on the central branch.
-Refinement associativity gives <span class="math display">\[
+\pi_{sr}^{\Sigma}:\widehat K_{\Sigma,s}\to \widehat K_{\Sigma,r},
+\]</span> where <span class="math inline">\(\widehat K=K\)</span> on the
+ordinary branch and <span class="math inline">\(\widehat K\)</span> is
+the compact central extension on the central branch. Refinement
+associativity gives <span class="math display">\[
 \jmath_{rt}^{B}=\jmath_{st}^{B_s}\circ\jmath_{rs}^{B},
 \qquad
 \pi_{tr}^{\Sigma}=\pi_{sr}^{\Sigma}\circ\pi_{ts}^{\Sigma}.
@@ -6352,9 +6469,7 @@ finite-dimensional fibers, and
 Theorem <a href="#thm:sector-colimit" data-reference-type="ref" data-reference="thm:sector-colimit">100</a>
 descends them to <span
 class="math inline">\((\mathsf{Sect}_\infty,\mathcal F)\)</span>.</p>
-<h1
-id="fix-a-small-skeleton-of-mathsfsect_infty-for-each-object-x-a-monoidal-natural-automorphism-etainmathrmaut_otimesmathcal-f-has-a-unitary-component-eta_xin-umathcal-fx-hence--mathrmaut_otimesmathcal-f-hookrightarrow-prod_x-umathcal-fx-qquad-etamapstoeta_x_x--naturality-imposes-the-closed-relations--mathcal-ffeta_xeta_ymathcal-ff-qquadfxto-y--and-monoidality-imposes-the-closed-relations--eta_xotimes-y">Fix
-a small skeleton of <span
+<p>Fix a small skeleton of <span
 class="math inline">\(\mathsf{Sect}_\infty\)</span>. For each object
 <span class="math inline">\(X\)</span>, a monoidal natural automorphism
 <span class="math inline">\(\eta\in\mathrm{Aut}_\otimes(\mathcal
@@ -6370,10 +6485,14 @@ class="math display">\[
 class="math display">\[
 \mathcal F(f)\eta_X=\eta_Y\mathcal F(f)
 \qquad(f:X\to Y),
-\]</span> and monoidality imposes the closed relations $$ \eta_{X\otimes
-Y}</h1>
-<p>J_{X,Y}(\eta_X\otimes\eta_Y)J_{X,Y}^{-1}, \qquad \eta_{\mathbf
-1}=\mathrm{id}_{\mathbb C}. $$ Thus <span
+\]</span> and monoidality imposes the closed relations <span
+class="math display">\[
+\eta_{X\otimes Y}
+\mathrel{=}
+J_{X,Y}(\eta_X\otimes\eta_Y)J_{X,Y}^{-1},
+\qquad
+\eta_{\mathbf 1}=\mathrm{id}_{\mathbb C}.
+\]</span> Thus <span
 class="math inline">\(G=\mathrm{Aut}_\otimes(\mathcal F)\)</span> is a
 closed subgroup of a product of compact unitary groups, and is
 compact.</p>
@@ -6795,22 +6914,22 @@ N_g=3.
 
 <div class="proof">
 
-<h1
-id="proof-on-the-realized-one-higgs-chiral-branch-intrinsic-ckm-cp-capability-requires--fracn_g-1n_g-220--hence-n_gge-3-for-one-higgs-doublet-the-one-loop-weak-sector-coefficient-is--b_2frac113c_a-frac23sum_f-tr_f-frac13sum_s-tr_s"><em>Proof.</em>
-On the realized one-Higgs chiral branch, intrinsic CKM CP capability
-requires <span class="math display">\[
+<p><em>Proof.</em> On the realized one-Higgs chiral branch, intrinsic
+CKM CP capability requires <span class="math display">\[
 \frac{(N_g-1)(N_g-2)}{2}&gt;0,
 \]</span> hence <span class="math inline">\(N_g\ge 3\)</span>. For one
-Higgs doublet, the one-loop weak-sector coefficient is $$
-b_2=\frac{11}{3}C_A-\frac{2}{3}\sum_f T(R_f)-\frac{1}{3}\sum_s
-T(R_s)</h1>
-<h1
-id="frac223-fracn_gn_c13-frac16">\frac{22}{3}-\frac{N_g(N_c+1)}{3}-\frac16</h1>
-<p>\frac{43}{6}-\frac{N_g(N_c+1)}{3}. <span class="math display">\[
-Asymptotic freedom therefore implies
-\]</span> N_g(N_c+1)&lt;\frac{43}{2}. $$ With <span
-class="math inline">\(N_c=3\)</span>, this gives <span
+Higgs doublet, the one-loop weak-sector coefficient is <span
 class="math display">\[
+b_2=\frac{11}{3}C_A-\frac{2}{3}\sum_f T(R_f)-\frac{1}{3}\sum_s T(R_s)
+\mathrel{=}
+\frac{22}{3}-\frac{N_g(N_c+1)}{3}-\frac16
+\mathrel{=}
+\frac{43}{6}-\frac{N_g(N_c+1)}{3}.
+\]</span> Asymptotic freedom therefore implies <span
+class="math display">\[
+N_g(N_c+1)&lt;\frac{43}{2}.
+\]</span> With <span class="math inline">\(N_c=3\)</span>, this gives
+<span class="math display">\[
 4N_g&lt;\frac{43}{2},
 \qquad\text{hence}\qquad
 N_g\le 5.
@@ -7032,34 +7151,42 @@ Proposition <a href="#prop:z6" data-reference-type="ref" data-reference="prop:z
 
 <div id="thm:mar-witness-landing" class="theorem">
 
-<h1
-id="theorem-120-realized-compact-gauge-witness-and-physical-uv-landing-on-the-ordinary-or-central-zero-obstruction-bosonic-branch-the-oph-compact-reference-architecture-admits-an-oph-realizable-cofinal-heat-kernel-edge-sector-witness--mathcal-w_mathrmsm"><strong>Theorem
-120</strong> (Realized compact-gauge witness and physical UV landing).
-*On the ordinary or central zero-obstruction bosonic branch, the OPH
-compact reference architecture admits an OPH-realizable cofinal
-heat-kernel edge-sector witness $$ \mathcal W_{\mathrm{SM}}</h1>
-<h1
-id="q_iu_icd_icl_ie_ichi13--with--q_i3216qquad-u_icbar-31-23qquad-d_icbar-3113---l_i12-12qquad-e_ic111qquad-h1212--every-witness-sector-has-positive-realized-support-on-the-compact-heat-kernel-branch-and-the-witness-is-mar-admissible-hence-the-mar-admissible-class-used-above-is-nonempty-moreover-every-oph-admissible-microscopic-uv-completion-of-this-realized-branch-has-observer-visible-low-energy-package-modulo-physical-equivalence-in-definition-a-hrefdefmar-space-data-reference-typeref-data-referencedefmar-space6a--mathfrak-smathrmsm">{Q_i,u_i^c,d_i^c,L_i,e_i^c,H}<em>{i=1}^{3}
-<span class="math display">\[
-with
-\]</span> Q_i=(3,2)</em>{1/6},\qquad u_i^c=(\bar 3,1)<em>{-2/3},\qquad
-d_i^c=(\bar 3,1)</em>{1/3}, <span class="math display">\[
-\]</span> L_i=(1,2)<em>{-1/2},\qquad e_i^c=(1,1)<em>1,\qquad
-H=(1,2)</em>{1/2}. <span class="math display">\[
-Every witness sector has positive realized support on the compact
-heat-kernel branch, and the witness is MAR-admissible. Hence the
+<p><strong>Theorem 120</strong> (Realized compact-gauge witness and
+physical UV landing). <em>On the ordinary or central zero-obstruction
+bosonic branch, the OPH compact reference architecture admits an
+OPH-realizable cofinal heat-kernel edge-sector witness <span
+class="math display">\[
+\mathcal W_{\mathrm{SM}}
+\mathrel{=}
+\{Q_i,u_i^c,d_i^c,L_i,e_i^c,H\}_{i=1}^{3}
+\]</span> with <span class="math display">\[
+Q_i=(3,2)_{1/6},\qquad
+u_i^c=(\bar 3,1)_{-2/3},\qquad
+d_i^c=(\bar 3,1)_{1/3},
+\]</span> <span class="math display">\[
+L_i=(1,2)_{-1/2},\qquad
+e_i^c=(1,1)_1,\qquad
+H=(1,2)_{1/2}.
+\]</span> Every witness sector has positive realized support on the
+compact heat-kernel branch, and the witness is MAR-admissible. Hence the
 MAR-admissible class used above is nonempty. Moreover every
 OPH-admissible microscopic UV completion of this realized branch has
 observer-visible low-energy package, modulo physical equivalence in
-Definition &lt;a href=&quot;#def:mar-space&quot;
-data-reference-type=&quot;ref&quot;
-data-reference=&quot;def:mar-space&quot;&gt;6&lt;/a&gt;,
-\]</span> \mathfrak S</em>{\mathrm{SM}}</h1>
-<p>\left(
+Definition <a href="#def:mar-space" data-reference-type="ref" data-reference="def:mar-space">6</a>,
+<span class="math display">\[
+\mathfrak S_{\mathrm{SM}}
+\mathrel{=}
+\left(
 \frac{\mathrm{SU}(3)\times\mathrm{SU}(2)\times\mathrm{U}(1)}{\mathbb
-Z_6}, \mathcal R_{\mathrm{SM}}, H, \mathcal Y_{\mathrm{SM}} \right),
-\qquad N_c=3,\qquad N_g=3, $$ with the hypercharge lattice of
-Theorem <a href="#thm:hypercharge" data-reference-type="ref" data-reference="thm:hypercharge">111</a>.</p>
+Z_6},
+\mathcal R_{\mathrm{SM}},
+H,
+\mathcal Y_{\mathrm{SM}}
+\right),
+\qquad
+N_c=3,\qquad N_g=3,
+\]</span> with the hypercharge lattice of
+Theorem <a href="#thm:hypercharge" data-reference-type="ref" data-reference="thm:hypercharge">111</a>.</em></p>
 </div>
 
 <div class="proof">
@@ -7151,10 +7278,9 @@ that carrier; and</em></p></li>
 weak-sector UV clauses of
 Axiom <a href="#ax:mar" data-reference-type="ref" data-reference="ax:mar">5</a>.</em></p></li>
 </ol>
-<h1
-id="then-mar-minima-exist-and-every-mar-minimal-observer-visible-package-in-that-class-is-physically-equivalent-to--left-fracmathrmsu3timesmathrmsu2timesmathrmu1mathbb-z_6-mathcal-r_mathrmsm-h-mathcal-y_mathrmsm-right-qquad-n_c3qquad-n_g3--where-the-matter-package-is--mathcal-w_mathrmsm">*Then
-MAR minima exist, and every MAR-minimal observer-visible package in that
-class is physically equivalent to <span class="math display">\[
+<p><em>Then MAR minima exist, and every MAR-minimal observer-visible
+package in that class is physically equivalent to <span
+class="math display">\[
 \left(
 \frac{\mathrm{SU}(3)\times\mathrm{SU}(2)\times\mathrm{U}(1)}{\mathbb
 Z_6},
@@ -7164,13 +7290,18 @@ H,
 \right),
 \qquad
 N_c=3,\qquad N_g=3,
-\]</span> where the matter package is $$ \mathcal W_{\mathrm{SM}}</h1>
-<p>{Q_i,u_i^c,d_i^c,L_i,e_i^c,H}<em>{i=1}^{3}, <span
-class="math display">\[
-with
-\]</span> Q_i=(3,2)</em>{1/6},\quad u_i^c=(\bar 3,1)<em>{-2/3},\quad
-d_i^c=(\bar 3,1)</em>{1/3},\quad L_i=(1,2)_{-1/2},\quad
-e_i^c=(1,1)<em>1,\quad H=(1,2)</em>{1/2}. $$</p>
+\]</span> where the matter package is <span class="math display">\[
+\mathcal W_{\mathrm{SM}}
+\mathrel{=}
+\{Q_i,u_i^c,d_i^c,L_i,e_i^c,H\}_{i=1}^{3},
+\]</span> with <span class="math display">\[
+Q_i=(3,2)_{1/6},\quad
+u_i^c=(\bar 3,1)_{-2/3},\quad
+d_i^c=(\bar 3,1)_{1/3},\quad
+L_i=(1,2)_{-1/2},\quad
+e_i^c=(1,1)_1,\quad
+H=(1,2)_{1/2}.
+\]</span></em></p>
 </div>
 
 <div class="proof">
@@ -7302,24 +7433,27 @@ class="math inline">\(P^{1/6}\)</span> is the cell-area scaling relation
 carried by the present D10 implementation.</p>
 <h4 id="golden-ratio-equilibrium-benchmark">Golden-ratio equilibrium
 benchmark.</h4>
-<h1
-id="the-totalbulkedge-hierarchy-has-one-exact-self-similar-balance-point-writing--xcfracs_mathrmgencs_mathrmbulkc">The
-total/bulk/edge hierarchy has one exact self-similar balance point.
-Writing $$ x(C):=\frac{S_{\mathrm{gen}}(C)}{S_{\mathrm{bulk}}(C)}</h1>
-<h1
-id="1fraclangle-l_crangles_mathrmbulkc--the-exact-self-similar-balance-condition--fracs_mathrmgencs_mathrmbulkc">1+\frac{\langle
-L_C\rangle}{S_{\mathrm{bulk}}(C)}, <span class="math display">\[
-the exact self-similar balance condition
-\]</span> \frac{S_{\mathrm{gen}}(C)}{S_{\mathrm{bulk}}(C)}</h1>
-<p>\frac{S_{\mathrm{bulk}}(C)}{\langle L_C\rangle} <span
+<p>The total/bulk/edge hierarchy has one exact self-similar balance
+point. Writing <span class="math display">\[
+x(C):=\frac{S_{\mathrm{gen}}(C)}{S_{\mathrm{bulk}}(C)}
+\mathrel{=}
+1+\frac{\langle L_C\rangle}{S_{\mathrm{bulk}}(C)},
+\]</span> the exact self-similar balance condition <span
 class="math display">\[
-gives
-\]</span> x=\frac{1}{x-1}, \qquad x^2-x-1=0. <span
+\frac{S_{\mathrm{gen}}(C)}{S_{\mathrm{bulk}}(C)}
+\mathrel{=}
+\frac{S_{\mathrm{bulk}}(C)}{\langle L_C\rangle}
+\]</span> gives <span class="math display">\[
+x=\frac{1}{x-1},
+\qquad
+x^2-x-1=0.
+\]</span> Hence the unique positive equilibrium point is <span
 class="math display">\[
-Hence the unique positive equilibrium point is
-\]</span> x=\varphi:=\frac{1+\sqrt5}{2}. <span class="math display">\[
-Equivalently, the equilibrium-breaking order parameter
-\]</span> A_\varphi(x):=x-1-\frac1x $$ vanishes exactly at <span
+x=\varphi:=\frac{1+\sqrt5}{2}.
+\]</span> Equivalently, the equilibrium-breaking order parameter <span
+class="math display">\[
+A_\varphi(x):=x-1-\frac1x
+\]</span> vanishes exactly at <span
 class="math inline">\(x=\varphi\)</span>. In that sense <span
 class="math inline">\(\varphi\)</span> is the exact self-similar balance
 point rather than a numerological comparison constant. The synthesis
@@ -7334,9 +7468,7 @@ realized branch sits at a small equilibrium-breaking detuning away from
 it. The technical question for the quantitative branch is the size of
 that detuning together with the reduced-residual/root-control analysis
 of the printed solve.</p>
-<h1
-id="the-one-dimensional-internal-variable-solved-on-the-d10-branch-is-the-unified-coupling-alpha_u-for-a-trial-value-of-alpha_u-define--valpha_up--e_mathrmcellp-expleft-frac2pibeta_mathrmewalpha_uright--run-the-one-loop-d10-couplings-from--alpha_1m_ualpha_2m_ualpha_3m_ualpha_u--down-to-a-scale-mu-using--alpha_i-1mualpha_up">The
-one-dimensional internal variable solved on the D10 branch is the
+<p>The one-dimensional internal variable solved on the D10 branch is the
 unified coupling <span class="math inline">\(\alpha_U\)</span>. For a
 trial value of <span class="math inline">\(\alpha_U\)</span>, define
 <span class="math display">\[
@@ -7348,19 +7480,29 @@ E_{\mathrm{cell}}(P)\,
 class="math display">\[
 \alpha_1(M_U)=\alpha_2(M_U)=\alpha_3(M_U)=\alpha_U
 \]</span> down to a scale <span class="math inline">\(\mu\)</span> using
-$$ \alpha_i^{-1}(\mu;\alpha_U,P)</h1>
-<h1
-id="alpha_u-1--fracb_i2pilogfracm_upmu--with-the-printed-one-loop-coefficients-b_i-let-mu_astmu_astalpha_up-be-the-fixed-point-determined-by-the-tree-level-z-mass-relation--mu_ast">\alpha_U^{-1}
-+ \frac{b_i}{2\pi}\log\frac{M_U(P)}{\mu}, $$ with the printed one-loop
-coefficients <span class="math inline">\(b_i\)</span>. Let <span
+<span class="math display">\[
+\alpha_i^{-1}(\mu;\alpha_U,P)
+\mathrel{=}
+\alpha_U^{-1}
++
+\frac{b_i}{2\pi}\log\frac{M_U(P)}{\mu},
+\]</span> with the printed one-loop coefficients <span
+class="math inline">\(b_i\)</span>. Let <span
 class="math inline">\(\mu_\ast=\mu_\ast(\alpha_U,P)\)</span> be the
 fixed point determined by the tree-level <span
-class="math inline">\(Z\)</span>-mass relation $$ \mu_\ast</h1>
-<p>\frac{v(\alpha_U,P)}{2}, \sqrt{g_2(\mu_\ast)^2+g_Y(\mu_\ast)^2},
-\qquad \alpha_Y=\frac35,\alpha_1. <span class="math display">\[
-At that fixed point define
-\]</span> t_2(\alpha_U,P)=4\pi^2\alpha_2(\mu_\ast;\alpha_U,P), \qquad
-t_3(\alpha_U,P)=4\pi^2\alpha_3(\mu_\ast;\alpha_U,P). $$</p>
+class="math inline">\(Z\)</span>-mass relation <span
+class="math display">\[
+\mu_\ast
+\mathrel{=}
+\frac{v(\alpha_U,P)}{2}\,
+\sqrt{g_2(\mu_\ast)^2+g_Y(\mu_\ast)^2},
+\qquad
+\alpha_Y=\frac35\,\alpha_1.
+\]</span> At that fixed point define <span class="math display">\[
+t_2(\alpha_U,P)=4\pi^2\alpha_2(\mu_\ast;\alpha_U,P),
+\qquad
+t_3(\alpha_U,P)=4\pi^2\alpha_3(\mu_\ast;\alpha_U,P).
+\]</span></p>
 <p>Let <span class="math inline">\(\bar\ell_{\mathrm{SU}(2)}(t)\)</span>
 and <span class="math inline">\(\bar\ell_{\mathrm{SU}(3)}(t)\)</span>
 denote the nonabelian edge-entropy functions appearing in the D10 pixel
@@ -7575,11 +7717,9 @@ repair-dynamics result in
 Theorem <a href="#thm:oph-yang-mills-gap" data-reference-type="ref" data-reference="thm:oph-yang-mills-gap">152</a>.</p>
 <div id="thm:worldsheet-largeN" class="theorem">
 
-<h1
-id="theorem-125-criterion-for-a-controlled-large-n_mathrmedge-worldsheet-effective-description-assume-theorem-124-and-a-large-n_mathrmedge-realization-of-the-compact-group-heat-kernel-branch-with-n_mathrmedgeneq-n_c3-for-which-the-t-hooft-style-variable--tautn_mathrmedge--is-kept-in-a-compact-interval-isubset-0infty-suppose-moreover-that-for-every-truncation-order-gge-0-there-exist-coefficient-functions-f_gitomathbb-r-and-constants-c_gi-such-that--log-z_mathrmedgeleftfractaun_mathrmedgeright"><strong>Theorem
-125</strong> (Criterion for a controlled large-<span
+<p><strong>Theorem 125</strong> (Criterion for a controlled large-<span
 class="math inline">\(N_{\mathrm{edge}}\)</span> worldsheet effective
-description). *Assume
+description). <em>Assume
 Theorem <a href="#thm:edge-2dym" data-reference-type="ref" data-reference="thm:edge-2dym">124</a>
 and a large-<span class="math inline">\(N_{\mathrm{edge}}\)</span>
 realization of the compact-group heat-kernel branch, with <span
@@ -7591,19 +7731,24 @@ class="math inline">\(I\subset (0,\infty)\)</span>. Suppose moreover
 that for every truncation order <span class="math inline">\(G\ge
 0\)</span> there exist coefficient functions <span
 class="math inline">\(F_g:I\to\mathbb R\)</span> and constants <span
-class="math inline">\(C_{G,I}\)</span> such that $$ \log
-Z_{\mathrm{edge}}!\left(\frac{\tau}{N_{\mathrm{edge}}}\right)</h1>
-<p>\sum_{g=0}^{G} N_{\mathrm{edge}}^{2-2g} F_g(\tau) +
-R_{G+1}(\tau,N_{\mathrm{edge}}) <span class="math display">\[
-with
-\]</span> \bigl|R_{G+1}(\tau,N_{\mathrm{edge}})\bigr| \le
-C_{G,I}N_{\mathrm{edge}}^{-2G} \qquad(\tau\in I). $$ Then this branch
-defines a controlled theorem-level worldsheet effective description of
-the edge dynamics, with control parameters <span
-class="math inline">\(N_{\mathrm{edge}}^{-2}\)</span>, the fixed-<span
-class="math inline">\(\tau\)</span> window <span
+class="math inline">\(C_{G,I}\)</span> such that <span
+class="math display">\[
+\log Z_{\mathrm{edge}}\!\left(\frac{\tau}{N_{\mathrm{edge}}}\right)
+\mathrel{=}
+\sum_{g=0}^{G} N_{\mathrm{edge}}^{2-2g} F_g(\tau)
++
+R_{G+1}(\tau,N_{\mathrm{edge}})
+\]</span> with <span class="math display">\[
+\bigl|R_{G+1}(\tau,N_{\mathrm{edge}})\bigr|
+\le
+C_{G,I}N_{\mathrm{edge}}^{-2G}
+\qquad(\tau\in I).
+\]</span> Then this branch defines a controlled theorem-level worldsheet
+effective description of the edge dynamics, with control parameters
+<span class="math inline">\(N_{\mathrm{edge}}^{-2}\)</span>, the
+fixed-<span class="math inline">\(\tau\)</span> window <span
 class="math inline">\(I\)</span>, and the truncation order <span
-class="math inline">\(G\)</span>.</p>
+class="math inline">\(G\)</span>.</em></p>
 </div>
 
 <div class="proof">
@@ -8187,9 +8332,7 @@ q_e:=\sqrt{g_e d_e},
 edge-defect data. They exist once the same-label gap and overlap
 witnesses are fixed, and they are the shared family-side input used by
 the charged, quark, and neutrino continuations.</p>
-<h1
-id="to-include-the-charge-side-bookkeeping-explicitly-let-s_e-denote-the-realized-sector-charge-step-carried-by-the-same-label-arrow-e-for-any-lane-specific-readout-gamma-on-the-realized-same-label-transport-graph-let--m_gammaeinmathbb-z_ge-0--be-the-multiplicity-with-which-gamma-traverses-the-elementary-same-label-excitation-arrow-e-equivalently-along-the-realized-transport-path-one-has--s_gammasum_e-m_gammaes_e--the-associated-excitation-weight-and-excitation-action-are--a_gamma---sum_e-m_gammaelog-q_e">To
-include the charge-side bookkeeping explicitly, let <span
+<p>To include the charge-side bookkeeping explicitly, let <span
 class="math inline">\(s_e\)</span> denote the realized sector-charge
 step carried by the same-label arrow <span
 class="math inline">\(e\)</span>. For any lane-specific readout <span
@@ -8202,15 +8345,22 @@ same-label excitation arrow <span class="math inline">\(e\)</span>.
 Equivalently, along the realized transport path one has <span
 class="math display">\[
 s_\gamma=\sum_e m_{\gamma,e}s_e.
-\]</span> The associated excitation weight and excitation action are $$
-A_\gamma := -\sum_e m_{\gamma,e}\log q_e</h1>
-<p>-\log!\Bigl(\prod_e q_e^{,m_{\gamma,e}}\Bigr), \qquad
-Y_\gamma^{\mathrm{exc}} := \prod_e q_e^{,m_{\gamma,e}}. $$ So overlap
-holonomy, edge defects, gap data, and sector-charge transport determine
-the suppression law before any base choice is made. What earlier D12
-language called a “texture exponent” or “defect count” is therefore not
-an extra primitive beyond the structural branch. The primitive
-flavor-side integers are the transport multiplicities <span
+\]</span> The associated excitation weight and excitation action are
+<span class="math display">\[
+A_\gamma
+:=
+-\sum_e m_{\gamma,e}\log q_e
+\mathrel{=}
+-\log\!\Bigl(\prod_e q_e^{\,m_{\gamma,e}}\Bigr),
+\qquad
+Y_\gamma^{\mathrm{exc}}
+:=
+\prod_e q_e^{\,m_{\gamma,e}}.
+\]</span> So overlap holonomy, edge defects, gap data, and sector-charge
+transport determine the suppression law before any base choice is made.
+What earlier D12 language called a “texture exponent” or “defect count”
+is therefore not an extra primitive beyond the structural branch. The
+primitive flavor-side integers are the transport multiplicities <span
 class="math inline">\(m_{\gamma,e}\)</span>. A one-number exponent in
 “units of <span class="math inline">\(\log 6\)</span>” is only the
 compressed summary <span class="math display">\[
@@ -8314,9 +8464,7 @@ These particle-continuation statements do not belong to the
 compact-paper claim surface.</p>
 <h4 id="local-unification-surface-and-exact-release-frontier">Local
 unification surface and exact-release frontier.</h4>
-<h1
-id="the-local-quantitative-bridge-can-be-stated-without-inflating-the-recovered-core-claim-on-the-bosonic-side-the-declared-pixel-input-p-fixes-the-d10d11-trunk--plongmapsto-alpha_up-longmapsto-biglt_upt_mathrmtrpbigrlongmapsto-vp--after-which-the-d10-source-basis-fixes-the-declared-electroweak-transport-package-and-the-d11-source-only-split-theorem-with--rho_htlogbigl1tau_2mathrmtreemathrmexactbigr-qquad-pi_ypi_lambdalongmapsto-m_tm_h--by-the-declared-d11-jacobian-again-with-no-inverse-readback-of-the-internal-transmutation-data-from-measured-low-energy-couplings-the-d10pfine-structure-chain-is-the-declared-arithmetic-bridge-on-this-quantitative-surface-the-electroweak-wz-and-running-family-rows-carry-separate-public-validation-artifacts-the-source-spectral-measure-payload-same-scheme-remainder-and-interval-certificate-the-same-d11-jacobian-then-emits-the-higgstop-branch-on-the-gravity-side-the-same-d10-pixel-law-packages--barellmathrmsu2t2mathrmrun--barellmathrmsu3t3mathrmrun">The
-local quantitative bridge can be stated without inflating the
+<p>The local quantitative bridge can be stated without inflating the
 recovered-core claim. On the bosonic side, the declared pixel input
 <span class="math inline">\(P\)</span> fixes the D10/D11 trunk <span
 class="math display">\[
@@ -8336,15 +8484,17 @@ class="math inline">\(W/Z\)</span> and running-family rows carry
 separate public validation artifacts: the source spectral measure
 payload, same-scheme remainder, and interval certificate. The same D11
 Jacobian then emits the Higgs/top branch. On the gravity side, the same
-D10 pixel law packages $$
-\bar{\ell}<em>{\mathrm{SU(2)}}(t</em>{2,\mathrm{run}}) ;+;
-\bar{\ell}<em>{\mathrm{SU(3)}}(t</em>{3,\mathrm{run}})</h1>
-<h1
-id="p4-qquad-gfraca_mathrmcell4barellt--the-exact-local-release-burden-consists-of-two-theorem-sized-objects-one-strict-classical-regime-clause-above-the-bwlorentz-support-package-and-one-target-free-d10-chart-identity-theorem-for-exact-wz-the-familiar-unit-readout-is-not-a-third-theorem-sized-burden-it-is-the-explicit-display-package-attached-to-the-theorem-side-data-a_mathrmcell-c-and-barell_mathrmshared-on-the-gravity-side-proposition-55-gives--barell_mathrmshared">P/4,
-\qquad G=\frac{a_{\mathrm{cell}}}{4,\bar{\ell}(t)}. $$ The exact local
-release burden consists of two theorem-sized objects: one strict
-classical-regime clause above the BW/Lorentz support package and one
-target-free D10 chart-identity theorem for exact <span
+D10 pixel law packages <span class="math display">\[
+\bar{\ell}_{\mathrm{SU(2)}}(t_{2,\mathrm{run}})
+\;+\;
+\bar{\ell}_{\mathrm{SU(3)}}(t_{3,\mathrm{run}})
+\mathrel{=}
+P/4,
+\qquad
+G=\frac{a_{\mathrm{cell}}}{4\,\bar{\ell}(t)}.
+\]</span> The exact local release burden consists of two theorem-sized
+objects: one strict classical-regime clause above the BW/Lorentz support
+package and one target-free D10 chart-identity theorem for exact <span
 class="math inline">\(W/Z\)</span>. The familiar-unit readout is not a
 third theorem-sized burden. It is the explicit display package attached
 to the theorem-side data <span
@@ -8353,17 +8503,19 @@ class="math inline">\(c\)</span>, and <span
 class="math inline">\(\bar{\ell}_{\mathrm{shared}}\)</span>. On the
 gravity side,
 Proposition <a href="#prop:sharededgeentropy" data-reference-type="ref" data-reference="prop:sharededgeentropy">55</a>
-gives $$ \bar{\ell}_{\mathrm{shared}}</h1>
-<h1
-id="barellmathrmsu2t2mathrmrun--barellmathrmsu3t3mathrmrun">\bar{\ell}<em>{\mathrm{SU(2)}}(t</em>{2,\mathrm{run}})
-;+; \bar{\ell}<em>{\mathrm{SU(3)}}(t</em>{3,\mathrm{run}})</h1>
-<p>P/4, <span class="math display">\[
-and Proposition &lt;a href=&quot;#prop:gsi&quot;
-data-reference-type=&quot;ref&quot;
-data-reference=&quot;prop:gsi&quot;&gt;56&lt;/a&gt; gives the local SI
-readout
-\]</span> G_{\mathrm{SI}}=\frac{c^3 a_{\mathrm{cell}}}{\hbar P} $$
-relative to the declared microscopic datum <span
+gives <span class="math display">\[
+\bar{\ell}_{\mathrm{shared}}
+\mathrel{=}
+\bar{\ell}_{\mathrm{SU(2)}}(t_{2,\mathrm{run}})
+\;+\;
+\bar{\ell}_{\mathrm{SU(3)}}(t_{3,\mathrm{run}})
+\mathrel{=}
+P/4,
+\]</span> and
+Proposition <a href="#prop:gsi" data-reference-type="ref" data-reference="prop:gsi">56</a>
+gives the local SI readout <span class="math display">\[
+G_{\mathrm{SI}}=\frac{c^3 a_{\mathrm{cell}}}{\hbar P}
+\]</span> relative to the declared microscopic datum <span
 class="math inline">\(a_{\mathrm{cell}}\)</span>. The same proposition
 fixes the full familiar-unit package: <span class="math display">\[
 L_{\mathrm{loc}}=\sqrt{a_{\mathrm{cell}}}\,\widehat L(P),\qquad
@@ -8573,17 +8725,19 @@ id="cosmological-constant--screen-capacity-closure-1">Cosmological-Constant
 / Screen-Capacity Closure</h2>
 <div class="lemma">
 
-<h1
-id="lemma-133-vacuum-energy-blindness-for-any-null-vector-k--tmathrmvac_kk"><strong>Lemma
-133</strong> (Vacuum energy blindness). *For any null vector <span
-class="math inline">\(k\)</span>, $$ T^{\mathrm{vac}}_{kk}</h1>
-<h1 id="tmathrmvac_abkakb">T^{\mathrm{vac}}_{ab}k^ak^b</h1>
-<h1 id="-rho_mathrmvacg_abkakb">-\rho_{\mathrm{vac}},g_{ab}k^ak^b</h1>
-<ol start="0" type="1">
-<li></li>
-</ol>
-<p>$$ Vacuum-energy contributions therefore lie in the kernel of the
-null map <span class="math inline">\(T_{ab}\mapsto T_{kk}\)</span>.</p>
+<p><strong>Lemma 133</strong> (Vacuum energy blindness). <em>For any
+null vector <span class="math inline">\(k\)</span>, <span
+class="math display">\[
+T^{\mathrm{vac}}_{kk}
+\mathrel{=}
+T^{\mathrm{vac}}_{ab}k^ak^b
+\mathrel{=}
+-\rho_{\mathrm{vac}}\,g_{ab}k^ak^b
+\mathrel{=}
+0.
+\]</span> Vacuum-energy contributions therefore lie in the kernel of the
+null map <span class="math inline">\(T_{ab}\mapsto
+T_{kk}\)</span>.</em></p>
 </div>
 
 <div class="proposition">
@@ -8870,41 +9024,40 @@ d\mu_{\mathrm{YM}}(A)=Z^{-1}e^{-S_E[A]}\,D A/G
 
 <div class="proof">
 
-<h1
-id="proof-the-proof-spine-is-included-here-to-make-the-branch-target-explicit-the-compact-gauge-branch-reconstructs-the-compact-group-g-from-the-zero-obstruction-transportable-bosonic-sector-category-and-its-faithful-fiber-functor-at-fixed-cutoff-the-finite-gauge-register--quantum-link-presentation-gives-support-visible-link-holonomies-and-plaquette-holonomies-in-the-refinement-limit-the-zero-obstruction-gluing-law-makes-infinitesimal-rectangle-holonomies-multiplicative-and-path-local-thus-there-is-a-local-connection-a-on-the-four-dimensional-scaling-chart-with-infinitesimal-plaquette-defect--u_munuvarepsilonx"><em>Proof.</em>
-The proof spine is included here to make the branch target explicit. The
-compact-gauge branch reconstructs the compact group <span
-class="math inline">\(G\)</span> from the zero-obstruction transportable
-bosonic sector category and its faithful fiber functor. At fixed cutoff,
-the finite gauge-register / quantum-link presentation gives
-support-visible link holonomies and plaquette holonomies. In the
+<p><em>Proof.</em> The proof spine is included here to make the branch
+target explicit. The compact-gauge branch reconstructs the compact group
+<span class="math inline">\(G\)</span> from the zero-obstruction
+transportable bosonic sector category and its faithful fiber functor. At
+fixed cutoff, the finite gauge-register / quantum-link presentation
+gives support-visible link holonomies and plaquette holonomies. In the
 refinement limit, the zero-obstruction gluing law makes infinitesimal
 rectangle holonomies multiplicative and path-local. Thus there is a
 local connection <span class="math inline">\(A\)</span> on the
-four-dimensional scaling chart, with infinitesimal plaquette defect $$
-U_{\mu\nu}(\varepsilon,x)</h1>
-<p>\mathbf 1+\varepsilon^2F_{\mu\nu}(x)+O(\varepsilon^3), \qquad
-F=dA+A\wedge A. <span class="math display">\[
-The Euclideanized MaxEnt/local-Gibbs branch supplies a local
-finite-range action density built
-from support-visible gauge-invariant collar data. Gauge quotienting
-permits only class functions
-of the curvature and its covariant derivatives. Four-dimensional
-scaling, Euclidean rotation
-invariance, locality, and reflection positivity leave one relevant
-dimension-four positive
-quadratic invariant in the pure gauge sector:
-\]</span> \langle F_{\mu\nu},F_{\mu\nu}\rangle. $$ The possible
-topological density <span class="math inline">\(\langle F\wedge
-F\rangle\)</span> is reflection odd and belongs to a separate
-topological-angle sector; it is absent on the ordinary
-reflection-positive zero-obstruction vacuum branch used here. Higher
-curvature powers and covariant-derivative terms are irrelevant under the
-declared continuum scaling and vanish from the strict Yang–Mills fixed
-form. Normalizing the unique positive quadratic invariant defines the
-coupling <span class="math inline">\(g\)</span>. The compatible
-finite-stage gauge-register / quantum-link Gibbs measures then pass
-through the same support-visible weak-<span
+four-dimensional scaling chart, with infinitesimal plaquette defect
+<span class="math display">\[
+U_{\mu\nu}(\varepsilon,x)
+\mathrel{=}
+\mathbf 1+\varepsilon^2F_{\mu\nu}(x)+O(\varepsilon^3),
+\qquad
+F=dA+A\wedge A.
+\]</span> The Euclideanized MaxEnt/local-Gibbs branch supplies a local
+finite-range action density built from support-visible gauge-invariant
+collar data. Gauge quotienting permits only class functions of the
+curvature and its covariant derivatives. Four-dimensional scaling,
+Euclidean rotation invariance, locality, and reflection positivity leave
+one relevant dimension-four positive quadratic invariant in the pure
+gauge sector: <span class="math display">\[
+\langle F_{\mu\nu},F_{\mu\nu}\rangle.
+\]</span> The possible topological density <span
+class="math inline">\(\langle F\wedge F\rangle\)</span> is reflection
+odd and belongs to a separate topological-angle sector; it is absent on
+the ordinary reflection-positive zero-obstruction vacuum branch used
+here. Higher curvature powers and covariant-derivative terms are
+irrelevant under the declared continuum scaling and vanish from the
+strict Yang–Mills fixed form. Normalizing the unique positive quadratic
+invariant defines the coupling <span class="math inline">\(g\)</span>.
+The compatible finite-stage gauge-register / quantum-link Gibbs measures
+then pass through the same support-visible weak-<span
 class="math inline">\(*\)</span> / GNS extraction used by the
 compact-gauge branch, giving the displayed Euclidean transfer
 semigroup. ◻</p>
@@ -9312,21 +9465,21 @@ gap and repair gap are equal. ◻</p>
 </div>
 
 <h4 id="exact-gap-accounting">Exact gap accounting.</h4>
-<h1
-id="the-theorem-gives-an-identity-not-merely-a-phenomenological-estimate--operatornamespechsetminus0">The
-theorem gives an identity, not merely a phenomenological estimate: $$
-\operatorname{Spec}(H)\setminus{0}</h1>
-<h1
-id="operatornamespeclmathrmrepsetminus0--thus--delta_mathrmym">\operatorname{Spec}(L^{\mathrm{rep}})\setminus{0}.
-<span class="math display">\[
-Thus
-\]</span> \Delta_{\mathrm{YM}}</h1>
-<h1
-id="infbigloperatornamespechsetminus0bigr">\inf\bigl(\operatorname{Spec}(H)\setminus{0}\bigr)</h1>
-<h1
-id="infbigloperatornamespeclmathrmrepsetminus0bigr">\inf\bigl(\operatorname{Spec}(L^{\mathrm{rep}})\setminus{0}\bigr)</h1>
-<p>\Delta_{\mathrm{rep}}. $$ The finite-stage projection argument proves
-positivity of that same quantity.</p>
+<p>The theorem gives an identity, not merely a phenomenological
+estimate: <span class="math display">\[
+\operatorname{Spec}(H)\setminus\{0\}
+\mathrel{=}
+\operatorname{Spec}(L^{\mathrm{rep}})\setminus\{0\}.
+\]</span> Thus <span class="math display">\[
+\Delta_{\mathrm{YM}}
+\mathrel{=}
+\inf\bigl(\operatorname{Spec}(H)\setminus\{0\}\bigr)
+\mathrel{=}
+\inf\bigl(\operatorname{Spec}(L^{\mathrm{rep}})\setminus\{0\}\bigr)
+\mathrel{=}
+\Delta_{\mathrm{rep}}.
+\]</span> The finite-stage projection argument proves positivity of that
+same quantity.</p>
 <h4 id="relation-to-the-clayjaffewitten-statement">Relation to the
 Clay/Jaffe–Witten statement.</h4>
 <p>The Clay problem asks for a nontrivial quantum Yang–Mills theory on
