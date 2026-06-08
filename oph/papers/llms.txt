@@ -1,6 +1,6 @@
 # Observer Patch Holography Papers
 
-Release: r1464
+Release: r1465
 Released: June 8, 2026
 
 This page lists the first-party HTML and PDF URLs for the OPH paper stack.
@@ -19,7 +19,7 @@ This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 - PDF: https://floatingpragma.io/oph/papers/observers-are-all-you-need/paper.pdf
 - Authors: Bernhard Mueller, Alexander Osika, Kai Xue, Ben Cassie, Peter Nguyen, Mario Poneder, Kale Arnav Anirudha
 - Category: Theory of everything
-- Summary: The main Observer Patch Holography paper. It presents the observer-first reconstruction program for spacetime, gravity, Standard Model structure, cosmology, particles, records, and simulation-theory interpretation.
+- Summary: OPH builds physics from finite public records on horizon-screen cuts. The paper presents the observer-first reconstruction of spacetime, gravity, Standard Model structure, cosmology, particles, records, and simulation-theory interpretation.
 
 ## Paradise as Fixed-Point Consensus
 
