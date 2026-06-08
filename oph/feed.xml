@@ -3,7 +3,7 @@
   <channel>
     <title>Observer Patch Holography Updates</title>
     <link>https://floatingpragma.io/oph/</link>
-    <description>Public OPH links, with OPH Textbooks, Reverse Engineering Reality, Applications, paper summaries, physics unification, Standard Model plus gravity, cosmological constant, coherence, essays, lab, and challenge updates.</description>
+    <description>Public OPH links, with the zero-input two-fixed-point constants headline, OPH Textbooks, Reverse Engineering Reality, Applications, paper summaries, physics unification, Standard Model plus gravity, cosmological constant, coherence, essays, lab, and challenge updates.</description>
     <language>en</language>
     <lastBuildDate>Tue, 02 Jun 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://floatingpragma.io/oph/feed.xml" rel="self" type="application/rss+xml" />
@@ -12,28 +12,28 @@
       <link>https://floatingpragma.io/oph/papers/</link>
       <guid isPermaLink="true">https://floatingpragma.io/oph/papers/</guid>
       <pubDate>Tue, 02 Jun 2026 00:00:00 GMT</pubDate>
-      <description>HTML summaries of the six-paper Observer Patch Holography stack and supporting papers, with links to the formal PDFs.</description>
+      <description>HTML summaries of the six-paper Observer Patch Holography stack and supporting papers, including the zero-input two-fixed-point constants headline, with links to the formal PDFs.</description>
     </item>
     <item>
       <title>Standard Model Unified with Gravity via OPH</title>
       <link>https://floatingpragma.io/oph/standard-model-gravity-unification/</link>
       <guid isPermaLink="true">https://floatingpragma.io/oph/standard-model-gravity-unification/</guid>
       <pubDate>Tue, 02 Jun 2026 00:00:00 GMT</pubDate>
-      <description>The focused OPH entry page for the Standard Model unified with gravity, connecting the compact paper to the Lorentz/null-modular/Einstein branch and realized Standard Model quotient.</description>
+      <description>The focused OPH entry page for the Standard Model unified with gravity, connecting the compact paper to the Lorentz/null-modular/Einstein branch, realized Standard Model quotient, and two closure-defined constants.</description>
     </item>
     <item>
       <title>Cosmological Constant Derivation via OPH</title>
       <link>https://floatingpragma.io/oph/cosmological-constant-derivation/</link>
       <guid isPermaLink="true">https://floatingpragma.io/oph/cosmological-constant-derivation/</guid>
       <pubDate>Tue, 02 Jun 2026 00:00:00 GMT</pubDate>
-      <description>The OPH de Sitter screen-capacity route to the cosmological constant, with Lambda treated as global capacity data on the input-dependent branch.</description>
+      <description>The OPH de Sitter screen-capacity route to the cosmological constant, with the zero-input cosmic record-capacity fixed point N_CRC = F(N_CRC) and Lambda_CRC = 3 pi / (G N_CRC).</description>
     </item>
     <item>
       <title>Physics Unification via OPH</title>
       <link>https://floatingpragma.io/oph/physics-unification/</link>
       <guid isPermaLink="true">https://floatingpragma.io/oph/physics-unification/</guid>
       <pubDate>Thu, 21 May 2026 00:00:00 GMT</pubDate>
-      <description>The direct public entry page for OPH as a physics-unification framework connecting gravity, quantum theory, particles, records, observers, and simulation theory.</description>
+      <description>The direct public entry page for OPH as a zero-input physics-unification framework connecting gravity, quantum theory, particles, records, observers, and simulation theory.</description>
     </item>
     <item>
       <title>Floating Pragma Blog</title>
@@ -82,7 +82,7 @@
       <link>https://floatingpragma.io/oph/stress-test/</link>
       <guid isPermaLink="true">https://floatingpragma.io/oph/stress-test/</guid>
       <pubDate>Wed, 06 May 2026 10:35:00 GMT</pubDate>
-      <description>Use the OPH NotebookLM source notebook, public essays, OPH Lab, papers, repository, and public challenge to find the strongest failure mode. Detailed objections should go to tom@floatingpragma.io.</description>
+      <description>Use the OPH NotebookLM source notebook, public essays, OPH Lab, papers, repository, and public challenge to find the strongest failure mode, including the two fixed-point constants claim. Detailed objections should go to tom@floatingpragma.io.</description>
     </item>
     <item>
       <title>OPH License and Anti-Patent Covenant</title>
