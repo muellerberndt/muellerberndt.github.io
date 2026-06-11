@@ -20,7 +20,7 @@
   <meta name="citation_pdf_url" content="https://floatingpragma.io/oph/papers/compact-proof-of-oph/paper.pdf" />
   <meta name="citation_abstract_html_url" content="https://floatingpragma.io/oph/papers/compact-proof-of-oph/" />
   <meta name="citation_technical_report_institution" content="Pragma Research" />
-  <meta name="citation_technical_report_number" content="OPH r1467 compact_proof_of_oph" />
+  <meta name="citation_technical_report_number" content="OPH r1468 compact_proof_of_oph" />
   <meta name="DC.title" content="Compact Proof Of Oph" />
   <meta name="DC.creator" content="Bernhard Mueller" />
   <meta name="DC.issued" content="2026/06/11" />
@@ -90,7 +90,7 @@
   ],
   "datePublished": "June 11, 2026",
   "dateModified": "June 11, 2026",
-  "version": "r1467",
+  "version": "r1468",
   "subjectOf": [
     {
       "@type": "BlogPosting",
@@ -175,14 +175,14 @@
             <p>First-party HTML and PDF publication page for Compact Proof Of Oph in the OPH paper stack.</p>
           </div>
           <div class="paper-meta-line">
-            <span>r1467</span>
+            <span>r1468</span>
             <span>June 11, 2026</span>
             <span>extra papers</span>
           </div>
           <div class="cta-row">
             <a class="btn btn-primary" href="/oph/papers/compact-proof-of-oph/paper.pdf" target="_blank" rel="noopener noreferrer" data-track-link="paper-pdf-compact_proof_of_oph">Download PDF</a>
             <a class="btn btn-secondary" href="/oph/papers/" data-track-link="paper-index">All OPH papers</a>
-            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r1467" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
+            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r1468" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
             <a class="btn btn-secondary" href="https://challenge.floatingpragma.io/" data-track-link="paper-challenge">Challenge</a>
           </div>
 
@@ -198,7 +198,7 @@
 Row</strong></p>
 <p>From edge entropy and a no-<span class="math inline">\(G\)</span>
 clock-scale proof record to Newton’s constant</p>
-<p>Paper release: <code>r1467</code>Released: June 11, 2026</p>
+<p>Paper release: <code>r1468</code>Released: June 11, 2026</p>
 <p><strong>Conditional closure-to-gravity derivation.</strong></p>
 <p>This note proves a compact conditional readout inside the OPH paper
 stack. It imports four branch proof records: <span
@@ -434,10 +434,10 @@ area, or a cosmological formula containing <span
 class="math inline">\(G\)</span>. Once that no-<span
 class="math inline">\(G\)</span> clock gap is emitted, the conversion to
 <span class="math inline">\(G_{\rm SI}\)</span> is algebra.</p>
-<p>The detailed hierarchy construction is not repeated in this short
-note. It is imported from the public <em>Observers Are All You Need</em>
-paper, cited as O1 in Appendix A. The imported clock-scale object is the
-source bridge <span class="math display">\[
+<p>The hierarchy construction enters this note through the public
+<em>Observers Are All You Need</em> paper, cited as O1 in Appendix A.
+The imported clock-scale object is the source bridge <span
+class="math display">\[
 \mathcal R_\gamma
 \mathrel{=}
 \mathcal R_U
@@ -655,9 +655,10 @@ G_{\rm SI}=6.674299995910528\times10^{-11}
 \end{gathered}\)</span> &amp; Comparison only. <span
 class="math inline">\(G=6.67430(15)\times10^{-11}{\rm
 m^3\,kg^{-1}\,s^{-2}}\)</span>. This CODATA row is excluded upstream by
-the Appendix B anti-smuggling criterion. &amp; conditional; calibration
-checksum unless <span class="math inline">\(\mathcal R_\gamma\)</span>
-is source-emitted &amp; S1,O3,O4<br />
+the no-<span class="math inline">\(G\)</span> criterion in Section 4.
+&amp; conditional; calibration checksum unless <span
+class="math inline">\(\mathcal R_\gamma\)</span> is source-emitted &amp;
+S1,O3,O4<br />
 Cosmological constant &amp; <span class="math inline">\(\Lambda_{\rm
 CRC}\approx1.09\times10^{-52}{\rm m^{-2}}\)</span> &amp; Planck 2018
 gives the late-universe <span class="math inline">\(\Lambda\)</span>CDM
@@ -873,181 +874,6 @@ Consistency</a>.</p>
 <p><span class="math inline">\(\mathrm{O5}\)</span>: <a
 href="https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/deriving_the_particle_zoo_from_observer_consistency.tex">Deriving
 the Particle Zoo from Observer Consistency</a>.</p>
-<p>Appendix B addresses circularity and dependency concerns. It records
-which quantities enter the proof, which quantities are downstream
-comparisons, and which dependency paths are excluded.</p>
-<p><strong>Fixed-point proof-record standard.</strong> A fixed-point row
-is accepted here only when its proof record contains <span
-class="math display">\[
-\mathcal R_X=(I_X,F_X,d_X,q_X,x_0,r_X,\mathcal G_X).
-\]</span> <span class="math inline">\(I_X\)</span> is the declared
-branch interval. <span class="math inline">\(F_X:I_X\to I_X\)</span> is
-the readback map. <span class="math inline">\(d_X\)</span> is the
-metric. <span class="math inline">\(q_X&lt;1\)</span> is the contraction
-constant. <span class="math inline">\(x_0\)</span> is the displayed
-candidate. <span class="math inline">\(r_X=d_X(F_X(x_0),x_0)\)</span> is
-the residual. <span class="math inline">\(\mathcal G_X\)</span> is the
-dependency graph.</p>
-<p>The proof record must give <span class="math display">\[
-F_X(I_X)\subseteq I_X,
-\qquad
-d_X(F_X(x),F_X(y))\le q_Xd_X(x,y).
-\]</span> Then the true fixed point <span
-class="math inline">\(x_\star\)</span> obeys <span
-class="math display">\[
-d_X(x_\star,x_0)\le\frac{r_X}{1-q_X}.
-\]</span> Observed records may identify the physically relevant branch
-interval. They may not modify <span class="math inline">\(F_X\)</span>,
-choose a fitted root, alter <span class="math inline">\(r_X\)</span>, or
-change <span class="math inline">\(\mathcal G_X\)</span> after
-comparison with a target measurement.</p>
-<p><strong>Scale freedom lemma.</strong> No expression using only <span
-class="math inline">\(P_\star,N_\star\)</span>, pure dimensionless
-constants, and exact display constants <span
-class="math inline">\(c,\hbar\)</span> determines <span
-class="math inline">\(B_\star\)</span> in <span
-class="math inline">\({\rm m^{-2}}\)</span>, <span
-class="math inline">\(\ell_\star^2\)</span> in <span
-class="math inline">\({\rm m^2}\)</span>, or <span
-class="math inline">\(G_{\rm SI}\)</span> in SI units.</p>
-<p>Unit check. <span class="math inline">\(P_\star\)</span> and <span
-class="math inline">\(N_\star\)</span> are ratios and counts. They fix
-the shape of the screen and the number of records on it. A pure ratio
-has no metre scale. The scale readout is separate.</p>
-<p>For any <span class="math inline">\(\lambda&gt;0\)</span>, rescale
-<span class="math display">\[
-\ell_\star^2\mapsto\lambda^2\ell_\star^2,\qquad
-a_{\rm cell}\mapsto\lambda^2a_{\rm cell},\qquad
-\Lambda_\star\mapsto\lambda^{-2}\Lambda_\star .
-\]</span> Then both closure coordinates are unchanged: <span
-class="math display">\[
-\frac{\lambda^2a_{\rm cell}}{\lambda^2\ell_\star^2}
-=\frac{a_{\rm cell}}{\ell_\star^2},
-\qquad
-\frac{3\pi}{(\lambda^{-2}\Lambda_\star)(\lambda^2\ell_\star^2)}
-\mathrel{=}
-\frac{3\pi}{\Lambda_\star\ell_\star^2}.
-\]</span> The same <span class="math inline">\(P_\star,N_\star\)</span>
-therefore admit <span class="math display">\[
-B_\star\mapsto\lambda^{-2}B_\star,\qquad
-G_{\rm SI}\mapsto\lambda^2G_{\rm SI}.
-\]</span> The SI gravity row requires a separate scale readout.</p>
-<p><strong>Dependency ledger.</strong></p>
-<div class="center">
-
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th style="text-align: left;"><strong>Object</strong></th>
-<th style="text-align: left;"><strong>Allowed role</strong></th>
-<th style="text-align: left;"><strong>Forbidden upstream
-use</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><span
-class="math inline">\(P_\star\)</span></td>
-<td style="text-align: left;">local pixel fixed point</td>
-<td style="text-align: left;">insufficient for metres</td>
-</tr>
-<tr>
-<td style="text-align: left;"><span
-class="math inline">\(N_\star\)</span></td>
-<td style="text-align: left;">global screen-capacity fixed point</td>
-<td style="text-align: left;">insufficient for metres</td>
-</tr>
-<tr>
-<td style="text-align: left;"><span
-class="math inline">\(\gamma_\star\)</span></td>
-<td style="text-align: left;">dimensionless no-<span
-class="math inline">\(G\)</span> scale readout</td>
-<td style="text-align: left;">must not be fitted from measured <span
-class="math inline">\(G\)</span></td>
-</tr>
-<tr>
-<td style="text-align: left;"><span
-class="math inline">\(B_\star\)</span></td>
-<td style="text-align: left;">SI display of the scale readout</td>
-<td style="text-align: left;">must not be computed from <span
-class="math inline">\(3\pi/(GN_\star)\)</span></td>
-</tr>
-<tr>
-<td style="text-align: left;"><span
-class="math inline">\(\ell_\star^2\)</span></td>
-<td style="text-align: left;">area coordinate from <span
-class="math inline">\(3\pi/B_\star\)</span></td>
-<td style="text-align: left;">must not be computed from <span
-class="math inline">\(\hbar G/c^3\)</span></td>
-</tr>
-<tr>
-<td style="text-align: left;"><span class="math inline">\(G_{\rm
-geom}\)</span></td>
-<td style="text-align: left;">local edge-entropy output</td>
-<td style="text-align: left;">kept out of the scale readout</td>
-</tr>
-<tr>
-<td style="text-align: left;"><span class="math inline">\(\Lambda_{\rm
-CRC}\)</span></td>
-<td style="text-align: left;">downstream de Sitter display</td>
-<td style="text-align: left;">evaluated only after <span
-class="math inline">\(G_{\rm geom}\)</span></td>
-</tr>
-</tbody>
-</table></div>
-</div>
-
-<p><strong>Precision status.</strong> The displayed digits are a
-checksum of the declared branch proof records. The <span
-class="math inline">\(G\)</span> digits have prediction status only if
-<span class="math inline">\(\mathcal R_\gamma\)</span> was fixed before
-comparison with measured <span class="math inline">\(G\)</span>, and its
-dependency graph excludes gravity-calibrated inputs. Otherwise the
-displayed agreement is calibration. The proof is the public readback
-map, residual bound, and dependency graph.</p>
-<p><strong>SI chart and downstream Planck area.</strong> Fix the exact
-SI constants <span class="math inline">\(c\)</span>, <span
-class="math inline">\(\hbar\)</span>, and the cesium clock frequency
-<span class="math inline">\(\nu_{\rm Cs}=9\,192\,631\,770~{\rm
-s^{-1}}\)</span>. A no-<span class="math inline">\(G\)</span> OPH
-emission of <span class="math display">\[
-\gamma_\star=\frac{\ell_\star\nu_{\rm Cs}}{c}
-\]</span> sets the SI area chart. The algebra is <span
-class="math display">\[
-G_{\rm SI}
-\mathrel{=}
-\frac{c^3}{\hbar}\ell_\star^2
-\mathrel{=}
-\frac{c^5}{\hbar\nu_{\rm Cs}^2}\gamma_\star^2
-\mathrel{=}
-\frac{c^5}{4\pi^2\hbar\nu_{\rm Cs}^2}\varepsilon_{\rm Cs}^2 .
-\]</span> After this emission, the SI Planck area is downstream: <span
-class="math display">\[
-\ell_{P,{\rm OPH}}^2
-:=
-\frac{\hbar G_{\rm SI}}{c^3}
-\mathrel{=}
-\ell_\star^2 .
-\]</span> Using <span class="math inline">\(\ell_P^2\)</span> upstream
-would smuggle the answer into the scale readout.</p>
-<p><strong>Sensitivity and frozen-branch test.</strong> For equivalent
-scale coordinates, <span class="math display">\[
-\frac{\delta G}{G}
-\mathrel{=}
-\frac{\delta\ell_\star^2}{\ell_\star^2}
-\mathrel{=}
-2\frac{\delta\gamma_\star}{\gamma_\star}
-\mathrel{=}
--\frac{\delta B_\star}{B_\star}.
-\]</span> These formulas convert a readback residual into a bounded
-interval for the gravity row. If the published scale readout <span
-class="math inline">\(B_\star\)</span>, <span
-class="math inline">\(\ell_\star^2\)</span>, or <span
-class="math inline">\(\gamma_\star\)</span> is changed after a new
-measurement of <span class="math inline">\(G\)</span>, and the change
-lacks a pre-existing no-<span class="math inline">\(G\)</span> OPH
-readback proof, then the numerical gravity row is classified as
-calibration.</p>
 
           </div>
         </div>
