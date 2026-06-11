@@ -1,6 +1,6 @@
 {
-  "release_id": "r1465",
-  "released_at": "June 8, 2026",
+  "release_id": "r1467",
+  "released_at": "June 11, 2026",
   "collection_url": "https://floatingpragma.io/oph/papers/",
   "sitemap_url": "https://floatingpragma.io/oph/papers/sitemap.xml",
   "papers": [
@@ -325,6 +325,32 @@
           "title": "Everything Clicks Into Place",
           "url": "https://blog.floatingpragma.io/everything-that-clicks-into-place",
           "description": "Unification as translation, repair, and stable agreement across domains."
+        }
+      ]
+    },
+    {
+      "id": "compact_proof_of_oph",
+      "title": "Compact Proof Of Oph",
+      "short_title": "Compact Proof Of Oph",
+      "category": "OPH paper",
+      "description": "First-party HTML and PDF publication page for Compact Proof Of Oph in the OPH paper stack.",
+      "authors": [
+        "Bernhard Mueller"
+      ],
+      "keywords": [
+        "Observer Patch Holography",
+        "OPH",
+        "physics",
+        "theory of everything"
+      ],
+      "html_url": "https://floatingpragma.io/oph/papers/compact-proof-of-oph/",
+      "pdf_url": "https://floatingpragma.io/oph/papers/compact-proof-of-oph/paper.pdf",
+      "central_pdf_url": "https://floatingpragma.io/oph/papers/pdf/compact_proof_of_oph.pdf",
+      "related_blog_posts": [
+        {
+          "title": "The Trigger",
+          "url": "https://blog.floatingpragma.io/the-trigger",
+          "description": "High-level public entry point for the OPH claim."
         }
       ]
     },

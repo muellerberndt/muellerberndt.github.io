@@ -1,7 +1,7 @@
 # Observer Patch Holography Papers
 
-Release: r1465
-Released: June 8, 2026
+Release: r1467
+Released: June 11, 2026
 
 This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 
@@ -68,6 +68,14 @@ This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 - Authors: Bernhard Mueller, Alex Osika
 - Category: Gravity engineering
 - Summary: A branch-scoped OPH calculation for chi-nu susceptibility bounds, coherent scalar sourcing, quotient-edge response, and engineering chart values.
+
+## Compact Proof Of Oph
+
+- HTML: https://floatingpragma.io/oph/papers/compact-proof-of-oph/
+- PDF: https://floatingpragma.io/oph/papers/compact-proof-of-oph/paper.pdf
+- Authors: Bernhard Mueller
+- Category: OPH paper
+- Summary: First-party HTML and PDF publication page for Compact Proof Of Oph in the OPH paper stack.
 
 ## The Fine-Structure Constant as an OPH Pixel Fixed Point
 
