@@ -18,6 +18,7 @@
   <meta name="citation_author" content="Alexander Osika" />
   <meta name="citation_author" content="Kai Xue" />
   <meta name="citation_author" content="Mario Poneder" />
+  <meta name="citation_author" content="Maarten Antonie Visser" />
   <meta name="citation_publication_date" content="2026/06/13" />
   <meta name="citation_online_date" content="2026/06/13" />
   <meta name="citation_language" content="en" />
@@ -31,6 +32,7 @@
   <meta name="DC.creator" content="Alexander Osika" />
   <meta name="DC.creator" content="Kai Xue" />
   <meta name="DC.creator" content="Mario Poneder" />
+  <meta name="DC.creator" content="Maarten Antonie Visser" />
   <meta name="DC.issued" content="2026/06/13" />
   <meta name="DC.date" content="2026/06/13" />
   <meta name="DC.type" content="Text" />
@@ -95,6 +97,10 @@
     {
       "@type": "Person",
       "name": "Mario Poneder"
+    },
+    {
+      "@type": "Person",
+      "name": "Maarten Antonie Visser"
     }
   ],
   "isPartOf": {
@@ -204,7 +210,7 @@
         <header class="paper-reader-header">
           <div class="eyebrow">Particles</div>
           <h1 class="citation_title">Deriving the Particle Zoo from Observer Consistency</h1>
-          <h3 class="citation_author">Author: Bernhard Mueller, Alexander Osika, Kai Xue, Mario Poneder</h3>
+          <h3 class="citation_author">Author: Bernhard Mueller, Alexander Osika, Kai Xue, Mario Poneder, Maarten Antonie Visser</h3>
           <div class="paper-reader-abstract">
             <strong>Abstract</strong>
             <p>The OPH particle-spectrum continuation. It treats fine-structure closure, electroweak transport, selected-class quarks, neutrino branches, and status-separated hadron checks.</p>
@@ -248,8 +254,8 @@
           <div class="paper-body">
 <div class="center">
 
-<p><strong>Paper release:</strong> <code>r1473</code><br />
-<strong>Released:</strong> June 11, 2026</p>
+<p><strong>Paper release:</strong> <code>r1485</code>
+<strong>Released:</strong> June 13, 2026</p>
 </div>
 
 <h1 id="introduction">Introduction</h1>
@@ -416,9 +422,11 @@ normalization, source map, and Ward-projected endpoint; any different
 class="math inline">\(P\)</span> and fails the outer/inner equality for
 the same cell. The source-side audit trunk records <span
 class="math display">\[
-P=1.63097209569432901817967892561191884270169,
-\qquad
-\alpha_{\mathrm{cand}}^{-1}=136.994835164621649457949994585787193262029,
+\begin{aligned}
+P&amp;=\vcenter{\hbox{\parbox{0.68\linewidth}{\small\ttfamily\seqsplit{1.63097209569432901817967892561191884270169}}}},\\
+\alpha_{\mathrm{cand}}^{-1}
+&amp;=\vcenter{\hbox{\parbox{0.68\linewidth}{\small\ttfamily\seqsplit{136.994835164621649457949994585787193262029}}}}.
+\end{aligned}
 \]</span> with the detailed endpoint table in
 Section <a href="#sec:particle-input-ledger" data-reference-type="ref" data-reference="sec:particle-input-ledger">4</a>.
 The separate cosmic record-closure target <span
@@ -542,9 +550,11 @@ P\simeq1.6309682094.
 \]</span> The same equation is the local ruler for the downstream
 particle rows. The five-layer OPH audit trunk emits the source-side
 diagnostic point <span class="math display">\[
-P=1.63097209569432901817967892561191884270169,
-\qquad
-\alpha_{\mathrm{cand}}^{-1}=136.994835164621649457949994585787193262029.
+\begin{aligned}
+P&amp;=\vcenter{\hbox{\parbox{0.68\linewidth}{\small\ttfamily\seqsplit{1.63097209569432901817967892561191884270169}}}},\\
+\alpha_{\mathrm{cand}}^{-1}
+&amp;=\vcenter{\hbox{\parbox{0.68\linewidth}{\small\ttfamily\seqsplit{136.994835164621649457949994585787193262029}}}}.
+\end{aligned}
 \]</span> The detailed table records how the diagnostic trunk, endpoint
 residual, and source-spectral payload fit together. A separate hardware
 note reports an optical-cavity check of the same fixed-point geometry;
@@ -663,15 +673,13 @@ class="math inline">\(m_\gamma=m_g=m_{\mathrm{grav}}=0\)</span></td>
 <td style="text-align: left;">Electroweak <span
 class="math inline">\(W/Z\)</span></td>
 <td style="text-align: left;"><span
-class="math inline">\(80.377~\mathrm{GeV}\)</span>, <span
-class="math inline">\(91.18797809193725~\mathrm{GeV}\)</span></td>
+class="math inline">\(\begin{gathered}80.377\\91.18797809193725\end{gathered}~\mathrm{GeV}\)</span></td>
 <td style="text-align: left;">weak-sector validation pair</td>
 </tr>
 <tr>
 <td style="text-align: left;">Higgs/top surface</td>
 <td style="text-align: left;"><span
-class="math inline">\(m_H=125.1995304097179~\mathrm{GeV}\)</span>, <span
-class="math inline">\(m_t=172.35235532883115~\mathrm{GeV}\)</span></td>
+class="math inline">\(\begin{gathered}m_H=125.1995304097179\\m_t=172.35235532883115\end{gathered}~\mathrm{GeV}\)</span></td>
 <td style="text-align: left;">declared D10/D11 split surface</td>
 </tr>
 <tr>
@@ -689,7 +697,7 @@ class="math inline">\(f_P\)</span></td>
 <tr>
 <td style="text-align: left;">Neutrino absolute attachment</td>
 <td style="text-align: left;"><span
-class="math inline">\(0.017454720257976796,0.019481987935919015,0.05307522145074924~\mathrm{eV}\)</span></td>
+class="math inline">\(\begin{gathered}0.017454720257976796\\0.019481987935919015\\0.05307522145074924\end{gathered}~\mathrm{eV}\)</span></td>
 <td style="text-align: left;">weighted-cycle absolute branch</td>
 </tr>
 <tr>
@@ -930,8 +938,10 @@ P\simeq1.6309682094,
 (0.00051099895,\ 0.1056583755,\ 1.7769324651340912)\,\mathrm{GeV},
 \]</span> <span class="math display">\[
 (u,d,s,c,b,t)=
-(0.00216,\ 0.00470,\ 0.0935,\ 1.273,\ 4.183,\
-172.3523553288311)\,\mathrm{GeV},
+\begin{gathered}
+(0.00216,\ 0.00470,\ 0.0935,\ 1.273,\ 4.183,\\
+172.3523553288311)
+\end{gathered}\,\mathrm{GeV},
 \]</span> which matches the official PDG 2025 API running-quark target
 surface exactly, with the top coordinate taken from the PDG
 cross-section mass entry. The auxiliary direct-top row is a compare-only
@@ -941,8 +951,10 @@ goes further and emits explicit exact forward Yukawas <span
 class="math inline">\(Y_u\)</span> and <span
 class="math inline">\(Y_d\)</span>. and <span class="math display">\[
 (m_1,m_2,m_3)=
-(0.017454720257976796,\ 0.019481987935919015,\
-0.05307522145074924)\,\mathrm{eV},
+\begin{gathered}
+(0.017454720257976796,\ 0.019481987935919015,\\
+0.05307522145074924)
+\end{gathered}\,\mathrm{eV},
 \]</span> with emitted weighted-cycle absolute splittings <span
 class="math display">\[
 \begin{aligned}
@@ -1074,9 +1086,10 @@ familiar-unit displays of the inverse local ruler through <span
 class="math inline">\(\hbar\)</span> and <span
 class="math inline">\(k_B\)</span>. On that declared extension surface
 the local release bundle is <span class="math display">\[
-c=299792458\,\mathrm{m/s},
-\qquad
-G=6.674299995910528\times10^{-11}\,\mathrm{m^3\,kg^{-1}\,s^{-2}},
+\begin{aligned}
+c&amp;=299792458\,\mathrm{m/s},\\
+G&amp;=6.674299995910528\times10^{-11}\,\mathrm{m^3\,kg^{-1}\,s^{-2}},
+\end{aligned}
 \]</span> <span class="math display">\[
 (M_W,M_Z,M_H)=
 (80.377,\ 91.18797809193725,\ 125.1995304097179)\,\mathrm{GeV},
@@ -1753,12 +1766,13 @@ class="math inline">\(N_g=3\)</span>; and Witten parity remains a
 consistency check on the realized triplet-doublet package.</p>
 <p>For the particle zoo this structural branch fixes three exact carrier
 statements. First, the photon is massless on the realized
-electromagnetic branch. Second, the gluons are massless on the color
-branch, even though free gluons are never seen as asymptotic particles
-because color is confined. Third, the graviton is massless on the
-dynamical-metric branch of the gravity chain. These are
-symmetry-protected zeros of the realized branch, not continuation-level
-masses.</p>
+electromagnetic branch. On the same branch, the abelian curvature and
+current obey the Maxwell equations after canonical electromagnetic
+normalization. Second, the gluons are massless on the color branch, even
+though free gluons are never seen as asymptotic particles because color
+is confined. Third, the graviton is massless on the dynamical-metric
+branch of the gravity chain. These are symmetry-protected zeros of the
+realized branch, not continuation-level masses.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -1990,9 +2004,6 @@ class="math display">\[
 \alpha_{2,m_Z}&amp;=0.03377843630219015,\\
 \alpha_{Y,m_Z}&amp;=0.010131601067241624,\\
 \eta_{\mathrm{source}}&amp;=0.022147000871961295,
-\end{aligned}
-\qquad
-\begin{aligned}
 v&amp;=246.76711732749683~\mathrm{GeV},\\
 M_W^\dagger&amp;=80.377~\mathrm{GeV},\\
 M_Z^\dagger&amp;=91.18797809193725~\mathrm{GeV},
@@ -2009,18 +2020,20 @@ M_{Z,\mathrm{fiber}}^\dagger&amp;=91.17717018044121~\mathrm{GeV},\\
 \end{aligned}
 \]</span> So the coherent validation couplings are <span
 class="math display">\[
-\alpha_{2,\dagger}=0.03377062798822147,
-\qquad
-\alpha_{Y,\dagger}=0.00969547694807616,
+\begin{aligned}
+\alpha_{2,\dagger}&amp;=0.03377062798822147,\\
+\alpha_{Y,\dagger}&amp;=0.00969547694807616,
+\end{aligned}
 \]</span> and the same coherent branch emits <span
 class="math display">\[
 M_W^\dagger=80.377~\mathrm{GeV},
 \qquad
 M_Z^\dagger=91.18797809193725~\mathrm{GeV},
 \]</span> <span class="math display">\[
-\alpha_{\mathrm{em},\dagger}^{-1}=132.752408550967,
-\qquad
-\sin^2\theta_{W,\dagger}=0.223058333896849.
+\begin{aligned}
+\alpha_{\mathrm{em},\dagger}^{-1}&amp;=132.752408550967,\\
+\sin^2\theta_{W,\dagger}&amp;=0.223058333896849.
+\end{aligned}
 \]</span> These two carrier-side scalars are bookkeeping data on the
 frozen validation surface. They are not the public electromagnetic
 readout on the Ward-projected D10 lane. That freeze-once law provides an
@@ -2139,9 +2152,10 @@ W=80.37700001539531~\mathrm{GeV},
 \qquad
 Z=91.18797807794321~\mathrm{GeV},
 \]</span> <span class="math display">\[
-a_0=128.30576920234813,
-\qquad
-s_0=0.23073542347506173.
+\begin{aligned}
+a_0&amp;=128.30576920234813,\\
+s_0&amp;=0.23073542347506173.
+\end{aligned}
 \]</span></p>
 <div id="thm:ward_u1q_transport" class="theorem">
 
@@ -2249,9 +2263,41 @@ Thomson formula is the <span class="math inline">\(q^2\to0\)</span>
 limit of the same identity. ◻</p>
 </div>
 
+<div id="cor:ward_maxwell_normalization" class="corollary">
+
+<p><strong>Corollary 9</strong> (Ward-projected Maxwell normalization).
+<em>On the same Ward-projected <span
+class="math inline">\(\mathrm{U}(1)_Q\)</span> lane, the electromagnetic
+field strength and current obey <span class="math display">\[
+F_Q=dA_Q,\qquad dF_Q=0,\qquad d{*}F_Q=g_Q^2(q^2;P){*}J_Q,
+\]</span> with <span class="math display">\[
+g_Q^2(q^2;P)=\frac{t_Q(q^2;P)}{2\pi},
+\qquad
+\alpha_{\mathrm{em}}^{-1}(q^2;P)=\frac{8\pi^2}{t_Q(q^2;P)}.
+\]</span> At the Thomson endpoint, this is the Maxwell normalization
+used by the public fine-structure row.</em></p>
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> The compact reconstruction supplies the ordinary
+photon branch as the unbroken abelian <span
+class="math inline">\(\mathrm{U}(1)_Q\)</span> factor with charge
+generator <span class="math inline">\(Q=T_3+Y\)</span>. On an abelian
+factor the compact-gauge curvature restricts to <span
+class="math inline">\(F_Q=dA_Q\)</span>, so <span
+class="math inline">\(d^2=0\)</span> gives <span
+class="math inline">\(dF_Q=0\)</span>. Varying the quadratic
+electromagnetic action in the OPH coupling convention gives <span
+class="math inline">\(d{*}F_Q=g_Q^2{*}J_Q\)</span>. The theorem above
+identifies the same branch coupling as <span
+class="math inline">\(g_Q^2=t_Q/(2\pi)\)</span>, hence <span
+class="math inline">\(\alpha_{\mathrm{em}}^{-1}=8\pi^2/t_Q\)</span>. ◻</p>
+</div>
+
 <div class="corollary">
 
-<p><strong>Corollary 9</strong> (Source-only release criterion on the
+<p><strong>Corollary 10</strong> (Source-only release criterion on the
 Ward-projected D10 lane). <em>The Ward-projected D10 lane supports a
 source-only fine-structure release row only when the populated
 Ward-projected transport kernel satisfies <span class="math display">\[
@@ -2271,12 +2317,14 @@ records the source-side audit trunk without a built-in reference
 inverse-<span class="math inline">\(\alpha\)</span> value. The public
 endpoint value is excluded as a source-only closure-solve input. The
 source-side audit trunk emits <span class="math display">\[
-\alpha_{\mathrm{cand}}^{-1}=136.994835164621649457949994585787193262029,
+\alpha_{\mathrm{cand}}^{-1}
+\mathrel{=}
+\vcenter{\hbox{\parbox{0.68\linewidth}{\small\ttfamily\seqsplit{136.994835164621649457949994585787193262029}}}},
 \]</span> so the difference from the endpoint readout is recorded as an
 endpoint-and-matching audit packet.</p>
 <div class="remark">
 
-<p><strong>Remark 10</strong>. <em>The empirical closure reference is
+<p><strong>Remark 11</strong>. <em>The empirical closure reference is
 the Thomson-limit inverse fine-structure constant. The source anchor
 <span
 class="math inline">\(a_0(P)=128.308268045165213892552005990181778935450\ldots\)</span>
@@ -2292,9 +2340,10 @@ validation, with machine-scale deltas <span class="math display">\[
 \qquad
 \Delta M_Z\approx -1.40\times 10^{-8}~\mathrm{GeV}.
 \]</span> The companion carrier-side pair <span class="math display">\[
-\alpha_{\mathrm{em},\dagger}^{-1}=132.752408550967,
-\qquad
-\sin^2\theta_{W,\dagger}=0.223058333896849
+\begin{aligned}
+\alpha_{\mathrm{em},\dagger}^{-1}&amp;=132.752408550967,\\
+\sin^2\theta_{W,\dagger}&amp;=0.223058333896849
+\end{aligned}
 \]</span> is mass-chart bookkeeping on that frozen validation surface.
 It is not the public electromagnetic readout on the Ward-projected <span
 class="math inline">\(\mathrm{U}(1)_Q\)</span> lane.</p>
@@ -2319,37 +2368,63 @@ without changing the emitted public surface.</p>
 <h2
 id="hierarchy-interpretation-on-the-local-transmutation-branch">Hierarchy
 interpretation on the local transmutation branch</h2>
-<p>The large cosmic horizon ratio and the electroweak hierarchy belong
-to different OPH branches. The global capacity branch <span
-class="math inline">\(N_{\mathrm{CRC}}\)</span> accounts for the cosmic
-area and horizon-length hierarchy. The weak scale is a local
-pixel/transmutation readout: <span class="math display">\[
+<p>The selected exact OPH branch solves the electroweak
+hierarchy/naturality problem. The large cosmic horizon ratio and the
+electroweak hierarchy belong to different OPH branches. The global
+capacity branch <span class="math inline">\(N_{\mathrm{CRC}}\)</span>
+accounts for the cosmic area and horizon-length hierarchy. The weak
+scale is a local pixel/transmutation readout: <span
+class="math display">\[
 \frac{v}{E_\star}
 \mathrel{=}
 P_\star^{-1/2}
 \exp\!\left[-\frac{2\pi}{4\alpha_U(P_\star)}\right].
-\]</span> Thus the Planck-to-weak ratio is generated by the ordinary
-exponential transmutation factor controlled by the unified diffusion
-coupling. It is not a twenty-four-round use of the global capacity
-number.</p>
+\]</span> The hierarchy certificate records the interval <span
+class="math display">\[
+I_U=[0.041123336195630494,\;0.041125336195630496],
+\]</span> the Krawczyk inclusion <span class="math display">\[
+K(I_U)\subset
+[0.0411243357185544983,\;0.0411243366727064662]
+\subset \mathrm{int}(I_U),
+\]</span> and a strictly negative derivative enclosure <span
+class="math inline">\([-10.995768,-10.985284]\)</span>. Thus the local
+source equation has a unique zero in that enclosure. On the public
+endpoint branch, <span class="math display">\[
+\begin{aligned}
+\alpha_U(P_\star)&amp;=0.041124336195630495,\\
+\frac{v}{E_\star}&amp;=2.0199803239725553\times10^{-17}.
+\end{aligned}
+\]</span> The source-audit branch gives <span class="math display">\[
+\begin{aligned}
+P_{\mathrm{cand}}&amp;=\vcenter{\hbox{\parbox{0.68\linewidth}{\small\ttfamily\seqsplit{1.63097209569432901817967892561191884270169}}}},\\
+\frac{v(P_{\mathrm{cand}})}{E_\star}&amp;=2.0198114150099223\times10^{-17},
+\end{aligned}
+\]</span> with the public Thomson endpoint excluded upstream. The
+Planck-to-weak ratio is generated by the ordinary exponential
+transmutation factor controlled by the unified diffusion coupling. The
+twenty-four-round capacity contraction belongs to the global
+horizon-length ratio.</p>
 <p>This is also the OPH reading of Higgs naturalness on the declared
 D10/D11 surface. The observer-visible scalar mass is the normal-form
 readout <span class="math display">\[
 m_H=H_{\mathrm{OPH}}(P_\star)
 \]</span> on the selected branch. The split into a bare Higgs mass plus
-a cutoff correction is a regulator coordinate split, not the
+a cutoff correction is a regulator coordinate split outside the
 observer-facing physical variable. A scalar relevant deformation absent
 from the retained branch constraints is off-branch; a scalar deformation
 present on the selected branch has its value fixed by the branch
 equations. The claim inherits the D10/D11 quantitative surface and the
-<span class="math inline">\(\mathcal R_U\)</span> precision policy
-rather than becoming a recovered-core theorem.</p>
+<span class="math inline">\(\mathcal R_U\)</span> precision policy. The
+selected exact source-to-Higgs coarse-graining square has <span
+class="math inline">\(\epsilon_H=0\)</span>, with <span
+class="math inline">\(\epsilon_H\in[0,0]\)</span>, as stated below.</p>
 <h2
 id="localglobal-resonance-continuation-for-the-hierarchy">Local/global
 resonance continuation for the hierarchy</h2>
-<p>A sharper continuation would identify the D10 transmutation exponent
-with a joint local/global closure involving the cosmic capacity branch.
-The proposed relation is <span class="math display">\[
+<p>The local/global hierarchy resonance compares the D10 transmutation
+exponent with the global capacity branch at the same joint pair <span
+class="math inline">\((P_\star,N_{\mathrm{CRC}})\)</span>. The target
+relation is <span class="math display">\[
 t_{\mathrm{tr}}(P_\star)
 \mathrel{=}
 \frac{P_\star}{12}
@@ -2373,17 +2448,331 @@ class="math inline">\(24\)</span>-round contraction controls the cosmic
 length ratio, while the local weak hierarchy samples the same
 contraction through a <span class="math inline">\(4P_\star\)</span>
 electroweak projection.</p>
+<p>The repair count is fixed by the observer-visible product-adjoint
+spectrum. On the realized product branch, <span class="math display">\[
+m_{\rm rep}
+=2\dim(\mathfrak{su}(3)\oplus\mathfrak{su}(2)\oplus\mathfrak u(1))
+=2(8+3+1)
+=24.
+\]</span> The factor <span class="math inline">\(2\)</span> is the
+reversible write/verify orientation of each repair channel. The <span
+class="math inline">\(\mathfrak{su}(5)\)</span> adjoint has the same
+single-orientation integer for a different support: its <span
+class="math inline">\(X/Y\)</span> mixed gauge channels are absent from
+the OPH product branch.</p>
+<div id="lem:global-repair-tick" class="lemma">
+
+<p><strong>Lemma 12</strong> (Global repair-tick lemma). <em>Let <span
+class="math inline">\(N_{\mathrm{CRC}}=F(N_{\mathrm{CRC}})\)</span> be
+the cosmic record-capacity fixed point with observed-branch readout
+<span class="math inline">\(N_{\mathrm{CRC}}=S_{\mathrm{dS}}\)</span>
+and D6 normalization <span class="math display">\[
+N_{\mathrm{CRC}}=\pi\left(\frac{r_{\mathrm{CRC}}}{\ell_\star}\right)^2.
+\]</span> Work in the multiplicative screen-radius coordinate <span
+class="math inline">\(\rho=\ell/r_{\mathrm{CRC}}\)</span>, so the
+horizon sits at <span class="math inline">\(\rho=1\)</span> and the
+local cell at <span
+class="math inline">\(\rho_\star=\ell_\star/r_{\mathrm{CRC}}\)</span>.
+Define the global repair cycle <span class="math inline">\(G_N\)</span>
+at the fixed point as the scale-free readback transport of the horizon
+record coordinate, with fixed-point closure (readback without deficit or
+slack) meaning <span class="math inline">\(G_N(1)=\rho_\star\)</span>
+exactly. The representation-to-spectrum theorem gives <span
+class="math inline">\(m_{\rm rep}=24\)</span>, so the selected resonance
+branch decomposes as <span class="math inline">\(G_N=g_N^{24}\)</span>
+with <span class="math inline">\(g_N\)</span> the positive root. Then
+<span class="math display">\[
+G_N(\rho)
+\mathrel{=}
+\left(\frac{N_{\mathrm{CRC}}}{\pi}\right)^{-1/2}\rho,
+\qquad
+g_N(\rho)
+\mathrel{=}
+\left(\frac{N_{\mathrm{CRC}}}{\pi}\right)^{-1/48}\rho,
+\qquad
+|g_\star&#39;|=\left(\frac{N_{\mathrm{CRC}}}{\pi}\right)^{-1/48}.
+\]</span> More generally an <span class="math inline">\(m\)</span>-tick
+decomposition gives <span
+class="math inline">\(|g_\star&#39;|=(N_{\mathrm{CRC}}/\pi)^{-1/(2m)}\)</span>;
+<span class="math inline">\(m_{\rm rep}=24\)</span> gives the stated
+exponent.</em></p>
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> The D6 normalization gives <span
+class="math inline">\(\rho_\star=\ell_\star/r_{\mathrm{CRC}}=(N_{\mathrm{CRC}}/\pi)^{-1/2}\)</span>.
+The closure condition follows at the readback interface. The Observers
+synthesis defines the readback map as <span
+class="math inline">\(F(N)=\operatorname{Cap}_{\mathrm{read}}(\operatorname{Obs}(\operatorname{nf}_{r,N}(\mathfrak
+U_{r,N})))\)</span> in the refinement limit, the capacity reconstructed
+by the interior observer sector from the horizon record. Modeling <span
+class="math inline">\(\operatorname{Cap}_{\mathrm{read}}\)</span> by the
+D6 area law at the effective delivery resolution <span
+class="math inline">\(\rho_{\mathrm{read}}\)</span>, the canonical
+scale-covariant extension of <span
+class="math inline">\(N=\pi(r/\ell)^2\)</span>, gives the D6-consistent
+counting identification. The corpus defines <span
+class="math inline">\(\operatorname{Cap}_{\mathrm{read}}\)</span> as
+reconstructed capacity; this certificate adds the D6-consistent counting
+rule. The readback reconstructs <span
+class="math inline">\(F(N)=\pi/\rho_{\mathrm{read}}^2\)</span>, so the
+fixed-point equation <span
+class="math inline">\(N_{\mathrm{CRC}}=F(N_{\mathrm{CRC}})=\pi/\rho_\star^2\)</span>
+forces <span
+class="math inline">\(\rho_{\mathrm{read}}=\rho_\star\)</span> for
+positive roots: deficit (<span
+class="math inline">\(\rho_{\mathrm{read}}&gt;\rho_\star\)</span>) gives
+<span class="math inline">\(F(N)&lt;N\)</span>, slack (<span
+class="math inline">\(\rho_{\mathrm{read}}&lt;\rho_\star\)</span>) gives
+<span class="math inline">\(F(N)&gt;N\)</span>. This is exactly <span
+class="math inline">\(G_N(1)=\rho_\star\)</span>. Homogeneity forces
+<span class="math inline">\(G_N(\rho)=Q\rho\)</span> with <span
+class="math inline">\(Q&gt;0\)</span>, hence <span
+class="math inline">\(Q=(N_{\mathrm{CRC}}/\pi)^{-1/2}\)</span>. The
+homogeneous one-tick map with <span
+class="math inline">\(g_N^{24}=G_N\)</span> is the positive <span
+class="math inline">\(24\)</span>th root, so its multiplier, and hence
+its absolute derivative in this coordinate, is <span
+class="math inline">\((N_{\mathrm{CRC}}/\pi)^{-1/(2\cdot24)}=(N_{\mathrm{CRC}}/\pi)^{-1/48}\)</span>. ◻</p>
+</div>
+
 <p>The emitted particle rows continue to use the <span
-class="math inline">\(\mathcal R_U\)</span> certificate above. A
-theorem-grade promotion of the resonance relation requires a global
-repair-tick lemma, an electroweak tick-projection lemma, a joint
-fixed-point and stability theorem for <span
-class="math inline">\((P,N)\)</span>, and an RG/coarse-graining
-naturality statement showing that radiative corrections change scheme
-coordinates rather than the selected normal-form readout. The relation
-is therefore a continuation target connecting <span
-class="math inline">\(\mathcal R_U\)</span> and <span
-class="math inline">\(\mathcal R_N\)</span>.</p>
+class="math inline">\(\mathcal R_U\)</span> certificate above.
+Lemma <a href="#lem:global-repair-tick" data-reference-type="ref" data-reference="lem:global-repair-tick">12</a>
+closes the global tick side with the derived representation-to-spectrum
+count <span class="math inline">\(m_{\rm rep}=24\)</span>. The proof
+derives the closure transport at the interface level of <span
+class="math inline">\(F\)</span> under the D6 area-law counting model of
+<span
+class="math inline">\(\operatorname{Cap}_{\mathrm{read}}\)</span>.</p>
+<div id="thm:joint-pn-product" class="theorem">
+
+<p><strong>Theorem 13</strong> (Joint product fixed-point branch).
+<em>Let <span class="math inline">\(x=\log N\)</span>, let <span
+class="math inline">\(X=I_P\times I_x\)</span>, and equip <span
+class="math inline">\(X\)</span> with <span class="math display">\[
+d((P,x),(Q,y))=\max\{|P-Q|,\ |x-y|\}.
+\]</span> On the product-separated source branch the joint map is <span
+class="math display">\[
+\mathcal J(P,x)=(\Gamma(P),\widehat C(x)),
+\qquad
+\widehat C(x)=\log F(e^x),
+\]</span> where <span class="math inline">\(\Gamma\)</span> is the local
+pixel closure map and <span class="math inline">\(F\)</span> is the
+global capacity readback map. If <span class="math display">\[
+|\Gamma(P)-\Gamma(Q)|\le q_P|P-Q|,
+\qquad
+|\widehat C(x)-\widehat C(y)|\le q_N|x-y|,
+\qquad q_P,q_N&lt;1,
+\]</span> then <span class="math inline">\(\mathcal J\)</span> has a
+unique fixed point <span class="math inline">\((P_\star,\log
+N_{\mathrm{CRC}})\)</span>, and every iteration in <span
+class="math inline">\(X\)</span> converges to it with contraction
+constant <span
+class="math inline">\(q=\max\{q_P,q_N\}\)</span>.</em></p>
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> For any two points in <span
+class="math inline">\(X\)</span>, <span class="math display">\[
+d(\mathcal J(P,x),\mathcal J(Q,y))
+\le
+\max\{q_P|P-Q|,\ q_N|x-y|\}
+\le
+\max\{q_P,q_N\}d((P,x),(Q,y)).
+\]</span> Banach’s theorem gives existence, uniqueness, and stability. A
+genuinely coupled source map <span class="math inline">\(\mathcal
+J(P,x)=(\Gamma(P,x),\widehat C(P,x))\)</span> requires derivative bounds
+<span class="math inline">\(a,b,c,d\)</span> and a weight <span
+class="math inline">\(r&gt;0\)</span> with <span class="math display">\[
+\max\{a+b/r,\ d+rc\}&lt;1
+\]</span> in the weighted sup metric. Without that bound, the coupled
+branch has residual freedom and no uniqueness theorem. ◻</p>
+</div>
+
+<div id="thm:ew-tick-projection" class="theorem">
+
+<p><strong>Theorem 14</strong> (Electroweak tick-projection bridge).
+<em>On the selected D10 source branch, <span class="math display">\[
+\frac{v}{E_{\mathrm{cell}}}
+\mathrel{=}
+\exp\!\left[-\frac{2\pi}{4\alpha_U(P)}\right].
+\]</span> Together with the global repair tick <span
+class="math display">\[
+|g_\star&#39;|=\left(\frac{N}{\pi}\right)^{-1/48},
+\]</span> define the electroweak projection exponent by <span
+class="math display">\[
+\Pi_{\mathrm{EW}}(P,N)
+:=
+\frac{-\log(v/E_{\mathrm{cell}})}{-\log |g_\star&#39;|}
+\mathrel{=}
+\frac{24\pi}{\alpha_U(P)\log(N/\pi)}.
+\]</span> Since <span
+class="math inline">\(0&lt;|g_\star&#39;|&lt;1\)</span>, this exponent
+is unique. The target projection <span class="math display">\[
+\Pi_{\mathrm{EW}}(P_\star,N_{\mathrm{CRC}})=4P_\star
+\]</span> is equivalent to the bridge residual <span
+class="math display">\[
+\mathcal B_{\mathrm{EW}}(P,N)
+:=
+\alpha_U(P)\log(N/\pi)-\frac{6\pi}{P}
+=0.
+\]</span> Equivalently, the exact bridge target is <span
+class="math display">\[
+N_{\mathrm{EW}}(P)
+\mathrel{=}
+\pi\exp\!\left[\frac{6\pi}{P\alpha_U(P)}\right].
+\]</span> For the public endpoint branch, <span class="math display">\[
+N_{\mathrm{EW}}(P_\star)
+\mathrel{=}
+3.5323546226929906511187512962330547600462\times10^{122}.
+\]</span> For the bridge-refined capacity certificate <span
+class="math display">\[
+N_{\mathrm{CRC}}^{\mathrm{EW}}
+\mathrel{=}
+\pi\exp\!\left[\frac{6\pi}{P_\star\alpha_U(P_\star)}\right],
+\]</span> one has <span class="math inline">\(\mathcal
+B_{\mathrm{EW}}(P_\star,N_{\mathrm{CRC}}^{\mathrm{EW}})=0\)</span>, and
+hence <span class="math display">\[
+\frac{v}{E_{\mathrm{cell}}}
+\mathrel{=}
+\left(\frac{N_{\mathrm{CRC}}^{\mathrm{EW}}}{\pi}\right)^{-P_\star/12}
+\mathrel{=}
+|g_\star&#39;|^{4P_\star}.
+\]</span> The factor <span class="math inline">\(4\)</span> is the
+electroweak transmutation multiplicity <span
+class="math inline">\(\beta_{\mathrm{EW}}=N_c+1=4\)</span>. The factor
+<span class="math inline">\(48\)</span> is <span
+class="math inline">\(2\cdot24\)</span> from the global repair tick,
+hence <span class="math inline">\(12=48/4\)</span>. The rounded <span
+class="math inline">\(N_{\mathrm{CRC}}\simeq3.31\times10^{122}\)</span>
+display is a capacity-scale label and fails the exact bridge
+residual.</em></p>
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> The D10 relation gives <span class="math display">\[
+-\log(v/E_{\mathrm{cell}})=\frac{2\pi}{4\alpha_U(P)}=\frac{\pi}{2\alpha_U(P)}.
+\]</span> The global tick relation gives <span class="math display">\[
+-\log|g_\star&#39;|=\frac{1}{48}\log(N/\pi).
+\]</span> Taking the ratio gives the displayed <span
+class="math inline">\(\Pi_{\mathrm{EW}}\)</span>. Setting <span
+class="math inline">\(\Pi_{\mathrm{EW}}=4P\)</span> and rearranging
+gives <span
+class="math inline">\(\alpha_U(P)\log(N/\pi)=6\pi/P\)</span>, exactly
+<span class="math inline">\(\mathcal B_{\mathrm{EW}}(P,N)=0\)</span>.
+Substitution gives the displayed <span
+class="math inline">\(N_{\mathrm{EW}}(P)\)</span> and the hierarchy
+identity. ◻</p>
+</div>
+
+<div id="thm:ew-exact-capacity" class="theorem">
+
+<p><strong>Theorem 15</strong> (EW-refined exact capacity fixed point).
+<em>Define the log-capacity map <span class="math display">\[
+\mathcal C_{\mathrm{EW}}(P,x)
+\mathrel{=}
+(1-\lambda)x+\lambda\frac{6\pi}{P\alpha_U(P)},
+\qquad 0&lt;\lambda\le1.
+\]</span> For fixed <span class="math inline">\(P=P_\star\)</span> and
+<span class="math inline">\(\lambda=1/2\)</span>, this is a contraction
+with Lipschitz constant <span class="math inline">\(1/2\)</span>. Its
+unique fixed point is <span class="math display">\[
+x_\star=\frac{6\pi}{P_\star\alpha_U(P_\star)},\qquad
+N_{\mathrm{CRC}}^{\mathrm{EW}}=\pi e^{x_\star}.
+\]</span> Therefore <span class="math display">\[
+\mathcal B_{\mathrm{EW}}(P_\star,N_{\mathrm{CRC}}^{\mathrm{EW}})=0.
+\]</span> The rounded <span
+class="math inline">\(3.31\times10^{122}\)</span> capacity display
+remains diagnostic for this bridge.</em></p>
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> The map has derivative <span
+class="math inline">\(1-\lambda\)</span> in <span
+class="math inline">\(x\)</span>, hence is a contraction for <span
+class="math inline">\(0&lt;\lambda\le1\)</span>. Solving <span
+class="math inline">\(x=\mathcal C_{\mathrm{EW}}(P_\star,x)\)</span>
+gives the displayed <span class="math inline">\(x_\star\)</span>.
+Substitution into <span class="math inline">\(\mathcal
+B_{\mathrm{EW}}\)</span> gives zero. ◻</p>
+</div>
+
+<div id="thm:rg-higgs-naturality" class="theorem">
+
+<p><strong>Theorem 16</strong> (RG/Higgs naturality closure). <em>On the
+selected exact hierarchy branch, let <span
+class="math inline">\(Q_s\)</span> be the source hierarchy quotient and
+<span class="math inline">\(Q_H\)</span> the Higgs/electroweak quotient.
+Define <span class="math display">\[
+\rho_{sH}([x]_s)=
+\left[
+P(x),N(x),
+\Theta(P(x),N(x)),
+\Pi_{HT}F_{D11}F_{D10}(P(x),N(x)),0
+\right]_H,
+\]</span> with <span class="math display">\[
+\Theta(P,N)=
+\left(\frac{N}{\pi}\right)^{-P/12}
+=|g_\star&#39;|^{4P}.
+\]</span> For the corresponding normal-form maps and obstruction maps,
+<span class="math display">\[
+\rho_{sH}n_s=n_H\rho_{sH},
+\qquad
+\chi_{sH}h_s=h_H\rho_{sH}.
+\]</span> Consequently, <span class="math display">\[
+\varepsilon_H
+\mathrel{=}
+\max\{\varepsilon^n_{sH},\varepsilon^h_{sH}\}
+=0,
+\qquad
+\varepsilon_H\in[0,0].
+\]</span></em></p>
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> The two routes through the source and Higgs quotients
+preserve the same tuple <span class="math display">\[
+(P,N,\Theta(P,N),\Pi_{HT}F_{D11}F_{D10}(P,N)).
+\]</span> The equality with <span
+class="math inline">\(|g_\star&#39;|^{4P}\)</span> follows from <span
+class="math inline">\(|g_\star&#39;|=(N/\pi)^{-1/48}\)</span>. A hidden
+scalar relevant deformation is not an independent physical input on the
+selected branch: if absent from the retained finite constraint family,
+it is off-branch by refinement stability; if retained, its value is
+fixed by the branch equations and belongs to the displayed Higgs/top
+coordinate. Both controlled squares commute exactly, so the product
+defect is zero. ◻</p>
+</div>
+
+<p>The RG/Higgs naturality closure does not use the measured weak scale.
+Measured <span class="math inline">\(W/Z\)</span>, Higgs/top, <span
+class="math inline">\(G\)</span>, Planck-area, and <span
+class="math inline">\(\Lambda\)</span> data are excluded inputs. The
+local/global package records the closed global repair tick, joint
+product branch, electroweak projection bridge, EW-refined exact capacity
+fixed point, finite readback-resolution certificate, and RG naturality
+square. This is the OPH solution of the electroweak hierarchy/naturality
+problem on the selected exact branch. The finite readback certificate
+defines <span class="math display">\[
+F_r(N)=\operatorname{Cap}_{\rm read}
+\left(\operatorname{Obs}(\operatorname{nf}_{r,N}(\mathfrak
+U_{r,N}))\right),
+\qquad
+\rho_{\rm read}(r,N)=\sqrt{\pi/F_r(N)},
+\]</span> and proves one selected effective delivery resolution on the
+finite branch, with <span class="math inline">\(\rho_{\rm read}(r,N_{\rm
+CRC})\to(N_{\rm CRC}/\pi)^{-1/2}\)</span> in the positive-root
+refinement limit. The representation-to-spectrum theorem gives <span
+class="math inline">\(m_{\rm rep}=2(8+3+1)=24\)</span>, so the
+local/global hierarchy-resonance package closes on the selected branch.
+The promoted hierarchy row does not use the local/global resonance as an
+input.</p>
 <h2 id="higgstop-critical-stage">Higgs/top critical stage</h2>
 <p>The Higgs/top critical stage is a quantitative-theorem stage built on
 top of the electroweak gauge core. It is described by a source-only
@@ -2729,11 +3118,11 @@ law <span class="math display">\[
 t_1=5\,\Delta_{ud}^{\mathrm{overlap}}=\frac56\log\frac{c_d}{c_u}.
 \]</span> The D12 mass-side package is therefore functorial: <span
 class="math display">\[
-\eta_Q^{\mathrm{centered}}=-\frac{1-x_2^2}{27}\,t_1,
-\qquad
-\kappa_Q=-\frac{t_1}{54},
-\qquad
-x_2=-0.5175863354681689.
+\begin{aligned}
+\eta_Q^{\mathrm{centered}}&amp;=-\frac{1-x_2^2}{27}\,t_1,\\
+\kappa_Q&amp;=-\frac{t_1}{54},\\
+x_2&amp;=-0.5175863354681689.
+\end{aligned}
 \]</span> The odd source package is also forced: <span
 class="math display">\[
 \begin{aligned}
@@ -2789,11 +3178,11 @@ class="math inline">\(f_P\)</span>.</p>
 \qquad
 \eta_{ud}:=\frac{\sigma_u-\sigma_d}{2},
 \]</span> <span class="math display">\[
-A_{ud}:=\frac{1}{2(1+\rho_{\mathrm{ord}}-x_2^2)},
-\qquad
-B_{ud}:=\frac{1}{2\!\left(1-x_2^2-\frac{x_2^2}{1+\rho_{\mathrm{ord}}}\right)},
-\qquad
-\rho_{\mathrm{ord}}=1.294284936377706.
+\begin{aligned}
+A_{ud}&amp;:=\frac{1}{2(1+\rho_{\mathrm{ord}}-x_2^2)},\\
+B_{ud}&amp;:=\frac{1}{2\!\left(1-x_2^2-\frac{x_2^2}{1+\rho_{\mathrm{ord}}}\right)},\\
+\rho_{\mathrm{ord}}&amp;=1.294284936377706.
+\end{aligned}
 \]</span> Then <span class="math display">\[
 g_u
 \mathrel{=}
@@ -2882,11 +3271,15 @@ class="math inline">\(c_u/c_d=y_u/y_d=m_u/m_d\)</span> and the D12
 normalization <span
 class="math inline">\(\Delta_{ud}^{\mathrm{overlap}}=\tfrac16\log(c_d/c_u)\)</span>
 fixes <span class="math display">\[
-\Delta_{ud}^{\mathrm{overlap}}=0.13431740757663183,\qquad
-t_1=0.6715870378831591,
+\begin{aligned}
+\Delta_{ud}^{\mathrm{overlap}}&amp;=0.13431740757663183,\\
+t_1&amp;=0.6715870378831591,
+\end{aligned}
 \]</span> <span class="math display">\[
-\eta_Q^{\mathrm{centered}}=-0.018210067243314802,\qquad
-\kappa_Q=-0.012436796997836279.
+\begin{aligned}
+\eta_Q^{\mathrm{centered}}&amp;=-0.018210067243314802,\\
+\kappa_Q&amp;=-0.012436796997836279.
+\end{aligned}
 \]</span> This closes the D12 mass-side scalar package numerically on
 that sidecar surface. It does not replace the selected-class public
 theorem and it does not classify all public quark frame classes.</p>
@@ -2983,12 +3376,13 @@ A_{\mathrm{ch}}(Y_e)=\mu_{\mathrm{phys}}(Y_e).
 \]</span></p>
 <div class="theorem">
 
-<p><strong>Theorem 11</strong> (Charged same-carrier source-pair
+<p><strong>Theorem 17</strong> (Charged same-carrier source-pair
 readback). <em>Fix the ordered charged carrier <span
 class="math display">\[
-(-1,x_2,1),
-\qquad
+\begin{gathered}
+(-1,x_2,1),\\
 x_2=-0.5175863354681689.
+\end{gathered}
 \]</span> If the charged source pair <span class="math display">\[
 (\eta_{\mathrm{ext}},\sigma_{\mathrm{ext}})
 \mathrel{=}
@@ -3047,7 +3441,7 @@ quotient is closed negatively, so centered data alone do not emit the
 affine anchor <span class="math inline">\(A_{\mathrm{ch}}\)</span>.</p>
 <div class="theorem">
 
-<p><strong>Theorem 12</strong> (Charged absolute-scale
+<p><strong>Theorem 18</strong> (Charged absolute-scale
 underdetermination). <em>Let <span class="math display">\[
 E_e^{\mathrm{centered}}
 \mathrel{=}
@@ -3093,24 +3487,31 @@ g_e = e^{\mu_e^{\mathrm{abs}}},
 class="math inline">\(\mu_e^{\mathrm{abs}}\)</span> must not be mixed
 directly with centered log gaps. The same-family writeback therefore
 records the type-consistent shell <span class="math display">\[
-\mu_{e,\mathrm{seed}}^{\mathrm{abs}} = \log(0.9231656602589082) =
--0.07994658034676537,
+\begin{aligned}
+\mu_{e,\mathrm{seed}}^{\mathrm{abs}}
+&amp;= \log(0.9231656602589082)\\
+&amp;= -0.07994658034676537,
+\end{aligned}
 \]</span> <span class="math display">\[
 \mu_{e,\mathrm{cand}}^{\mathrm{abs}}
 \mathrel{=}
 \mu_{e,\mathrm{seed}}^{\mathrm{abs}}-\gamma_{\min}
 \mathrel{=}
 -0.38231224060567365,
-\qquad
-g_e^{\mathrm{cand}} =
-e^{\mu_{e,\mathrm{cand}}^{\mathrm{abs}}}=0.6822819838027987.
+\]</span> <span class="math display">\[
+g_e^{\mathrm{cand}}
+\mathrel{=}
+e^{\mu_{e,\mathrm{cand}}^{\mathrm{abs}}}
+\mathrel{=}
+0.6822819838027987.
 \]</span> This is a representation-consistency shell only, not a
 charged-mass theorem. It fixes the linear-vs-log coordinate discipline.
 The emitted value law for <span class="math inline">\(g_e\)</span> is
 work in progress. The audited shortcut <span class="math display">\[
-\Delta_e^{\mathrm{abs}}=0.30236566025890826,
-\qquad
-g_e=0.6822819838027987
+\begin{aligned}
+\Delta_e^{\mathrm{abs}}&amp;=0.30236566025890826,\\
+g_e&amp;=0.6822819838027987
+\end{aligned}
 \]</span> is not a theorem-grade closure. It merely chooses one
 representative on the common-shift orbit and does not land on the
 physical charged masses.</p>
@@ -3148,22 +3549,23 @@ class="math inline">\(a=1\)</span>, the ordered roots <span
 class="math display">\[
 r_k = a + 2|b|\cos\!\left(\delta + \frac{2\pi k}{3}\right)
 \]</span> become <span class="math display">\[
-r_e = 0.040349908219207475,
-\qquad
-r_\mu = 0.5802119201475368,
-\qquad
-r_\tau = 2.3794381716332555.
+\begin{aligned}
+r_e&amp;=0.040349908219207475,\\
+r_\mu&amp;=0.5802119201475368,\\
+r_\tau&amp;=2.3794381716332555.
+\end{aligned}
 \]</span> Under those assumptions the bridge selects the same-carrier
 pair <span class="math display">\[
-\eta_{\mathrm{ext}} = -6.729586682888832,
-\qquad
-\sigma_{\mathrm{ext}} = 8.154061112725994,
+\begin{aligned}
+\eta_{\mathrm{ext}}&amp;=-6.729586682888832,\\
+\sigma_{\mathrm{ext}}&amp;=8.154061112725994,
+\end{aligned}
 \]</span> with ordered gap values <span class="math display">\[
-\gamma_{21}=5.33160859254774,
-\qquad
-\gamma_{32}=2.822452520178255,
-\qquad
-\kappa_{\mathrm{ext}}=-4.59605680397234,
+\begin{aligned}
+\gamma_{21}&amp;=5.33160859254774,\\
+\gamma_{32}&amp;=2.822452520178255,\\
+\kappa_{\mathrm{ext}}&amp;=-4.59605680397234,
+\end{aligned}
 \]</span> and centered logs <span class="math display">\[
 E_{\log,\mathrm{centered}}
 \mathrel{=}
@@ -3211,15 +3613,22 @@ absolute eV-scale family. The legacy one- and two-parameter adapters are
 compare-only diagnostic continuations beneath that theorem branch.</p>
 <p>On that weighted-cycle theorem branch the paper emits <span
 class="math display">\[
-\theta_{12}=34.225904631810025^\circ,\qquad
-\theta_{23}=49.72282845058266^\circ,\qquad
-\theta_{13}=8.686355527700156^\circ,
+\begin{aligned}
+\theta_{12}&amp;=34.225904631810025^\circ,\\
+\theta_{23}&amp;=49.72282845058266^\circ,\\
+\theta_{13}&amp;=8.686355527700156^\circ,
+\end{aligned}
 \]</span> <span class="math display">\[
-\delta_{\mathrm{PMNS}}=305.58061231449796^\circ,\qquad
-J=-0.02753115613565372,
+\begin{aligned}
+\delta_{\mathrm{PMNS}}&amp;=305.58061231449796^\circ,\\
+J&amp;=-0.02753115613565372,
+\end{aligned}
 \]</span> and the dimensionless hierarchy invariant <span
 class="math display">\[
-\frac{\Delta m_{21}^2}{\Delta m_{32}^2}=0.030721110097966534.
+\begin{aligned}
+\frac{\Delta m_{21}^2}{\Delta m_{32}^2}
+&amp;=0.030721110097966534.
+\end{aligned}
 \]</span> Once the repaired weighted-cycle Majorana matrix is
 transported explicitly through the closed shared same-label basis by
 <span class="math display">\[
@@ -3269,9 +3678,11 @@ class="math display">\[
 \]</span> These exact central numbers are compare-only because the
 proof-facing theorem lane is the weighted-cycle bridge-rigid branch with
 <span class="math display">\[
-C_\nu=0.9994295999075177,\qquad
-P_\nu=6.699825740519345,\qquad
-B_\nu=P_\nu C_\nu=6.696004159297337,
+\begin{aligned}
+C_\nu&amp;=0.9994295999075177,\\
+P_\nu&amp;=6.699825740519345,\\
+B_\nu&amp;=P_\nu C_\nu=6.696004159297337,
+\end{aligned}
 \]</span> and therefore <span class="math display">\[
 \lambda_\nu=\frac{m_{\star,\mathrm{eV}}}{q_{\mathrm{mean}}^{p_\nu}}\,P_\nu
 C_\nu=1.7237014208357415,
@@ -3369,14 +3780,15 @@ class="math display">\[
 (2.3986448447627196,\ 2.3986448447627196,\
 2.590074050773907)\times10^{-12}\ \mathrm{GeV},
 \]</span> with <span class="math display">\[
-\Delta m_{21}^2=0,
-\qquad
-\Delta m_{31}^2=9.549864971855843\times10^{-25}\ \mathrm{GeV}^2.
+\begin{aligned}
+\Delta m_{21}^2&amp;=0,\\
+\Delta m_{31}^2&amp;=9.549864971855843\times10^{-25}\ \mathrm{GeV}^2.
+\end{aligned}
 \]</span> This is the exact neutrino-only isotropy obstruction behind
 the solar-splitting boundary.</p>
 <div class="theorem">
 
-<p><strong>Theorem 13</strong> (Same-label scalar certificate suffices
+<p><strong>Theorem 19</strong> (Same-label scalar certificate suffices
 for intrinsic neutrino masses). <em>Assume the same-label gap and
 overlap scalars are emitted on all realized arrows. Then the full
 intrinsic neutrino mass-eigenstate bundle factors through the scalar
@@ -3391,7 +3803,7 @@ basis.</em></p>
 
 <div class="theorem">
 
-<p><strong>Theorem 14</strong> (Exact principal-branch selector from the
+<p><strong>Theorem 20</strong> (Exact principal-branch selector from the
 centered eta-class). <em>Fix the cycle sum <span class="math display">\[
 \Omega=\psi_{12}+\psi_{23}+\psi_{31},
 \qquad |\Omega|&lt;\frac{3\pi}{2},
@@ -3445,7 +3857,7 @@ a &amp; \rho e^{i\psi_{12}} &amp; \rho e^{i\psi_{31}}\\
 \]</span></p>
 <div class="theorem">
 
-<p><strong>Theorem 15</strong> (Exact intrinsic spectral cubic). <em>Let
+<p><strong>Theorem 21</strong> (Exact intrinsic spectral cubic). <em>Let
 <span class="math inline">\(H=M^\dagger M\)</span>. Then <span
 class="math display">\[
 H=dI+T,
@@ -3481,7 +3893,7 @@ m_k^2=d+\lambda_k.
 
 <div class="corollary">
 
-<p><strong>Corollary 16</strong> (Intrinsic eta-chain closure). <em>Once
+<p><strong>Corollary 22</strong> (Intrinsic eta-chain closure). <em>Once
 the centered eta-class is emitted at the flavor boundary, the intrinsic
 neutrino branch emits <span class="math display">\[
 \nu_1,\nu_2,\nu_3,\qquad
@@ -3563,16 +3975,22 @@ u-
 class="math display">\[
 (\eta_{12},\eta_{23},\eta_{31})
 \mathrel{=}
-(0.13631072512014578,\,-0.18362987264261327,\,0.0473191475224675),
+\begin{gathered}
+(0.13631072512014578,\,-0.18362987264261327,\\
+0.0473191475224675),
+\end{gathered}
 \]</span> and emits intrinsic masses <span class="math display">\[
 (m_1,m_2,m_3)=
 (2.3929601069646055,\,
 2.4048200109774875,\,
 2.589606227283229)\times10^{-12}\ \mathrm{GeV},
 \]</span> with <span class="math display">\[
-\Delta m_{21}^2 = 5.690121167370743\times10^{-26}\ \mathrm{GeV}^2,
-\qquad
-\Delta m_{31}^2 = 9.798023388600230\times10^{-25}\ \mathrm{GeV}^2.
+\begin{aligned}
+\Delta m_{21}^2
+&amp;=5.690121167370743\times10^{-26}\ \mathrm{GeV}^2,\\
+\Delta m_{31}^2
+&amp;=9.798023388600230\times10^{-25}\ \mathrm{GeV}^2.
+\end{aligned}
 \]</span> These are exact outputs of the intrinsic eta-chain once the
 centered eta-class is supplied. They are not flavor-labeled OPH
 rows.</p>
@@ -3746,10 +4164,10 @@ readout tests, because those stages operate on a tiny correlator
 payload. The physical branch is different: it needs backend hardware and
 execution semantics that are absent from the repository environment.
 This paper therefore treats GLORB/Echosahedron-class OPH hardware, or an
-equivalent working OPH hadron backend, as the source-only promotion
-gate. Production hadron masses enter the particle pipeline only with a
-backend-emitted Ward-projected spectral measure and its uncertainty
-budget. This is a source-backend scope boundary.</p>
+equivalent working OPH hadron backend, as the source-only backend
+requirement. Production hadron masses enter the particle pipeline only
+with a backend-emitted Ward-projected spectral measure and its
+uncertainty budget. This is a source-backend scope boundary.</p>
 <h2
 id="stable-channel-correlators-effective-masses-and-forward-windows">Stable-channel
 correlators, effective masses, and forward windows</h2>
@@ -3908,19 +4326,21 @@ surrogate HMC update <span class="math display">\[
 (z,p) \mapsto (z&#39;,p&#39;),
 \qquad
 P_{\mathrm{acc}} = \min(1,e^{-\Delta H}).
-\]</span> This kernel is not physical lattice-QCD RHMC/HMC. It is a
-deterministic executable surrogate honoring the emitted receipt and seed
-law.</p>
+\]</span> This kernel is a deterministic executable surrogate honoring
+the emitted receipt and seed law, with no physical lattice-QCD RHMC/HMC
+claim.</p>
 <p>For validation of the execution bridge, the surrogate locks the
 ground-state masses to the hadron audit proxy values <span
 class="math display">\[
-m_{\pi,\mathrm{proxy}} = 0.13497682776768472\ \mathrm{GeV},
-\qquad
+\begin{aligned}
+m_{\pi,\mathrm{proxy}}
+&amp;=0.13497682776768472\ \mathrm{GeV},\\
 m_{N,\mathrm{iso,proxy}}
-\mathrel{=}
+&amp;=
 \frac{m_p+m_n}{2}
 \mathrel{=}
 0.93891875434\ \mathrm{GeV}.
+\end{aligned}
 \]</span> Thus <span class="math display">\[
 a m_{\pi,\mathrm{proxy}}^{(n)}
 \mathrel{=}
@@ -4353,11 +4773,11 @@ by outward-rounded interval arithmetic.</p>
 <p>The public-pixel branch uses <span class="math display">\[
 P_C
 \mathrel{=}
-1.6309682094039593248792798477826489413359828516279250606661507533907793398933432.
+\vcenter{\hbox{\parbox{0.68\linewidth}{\small\ttfamily\seqsplit{1.6309682094039593248792798477826489413359828516279250606661507533907793398933432}}}}.
 \]</span> The source-audit branch uses <span class="math display">\[
 P_{\mathrm{cand}}
 \mathrel{=}
-1.63097209569432901817967892561191884270169.
+\vcenter{\hbox{\parbox{0.68\linewidth}{\small\ttfamily\seqsplit{1.63097209569432901817967892561191884270169}}}}.
 \]</span> The finite heat-kernel cutoffs are <span
 class="math display">\[
 N_2=128,\qquad N_3=64.
@@ -4371,7 +4791,7 @@ N_c=3,
 derived in this appendix from the recovered OPH core.</p>
 <div class="definition">
 
-<p><strong>Definition 17</strong> (No-hidden-free-variable rule for
+<p><strong>Definition 23</strong> (No-hidden-free-variable rule for
 <span class="math inline">\(\mathcal R_U\)</span>). <em>The following
 objects must be fixed before comparison with electroweak or gravity
 data: <span class="math display">\[
@@ -4449,39 +4869,47 @@ class="math inline">\(\Phi_U(P,\alpha_U(P))=0\)</span>.</p>
 <h4 id="numerical-witness">Numerical witness.</h4>
 <p>For <span class="math inline">\(P=P_C\)</span>, the v0.2 checker
 emits <span class="math display">\[
-\alpha_U(P_C)=0.041124336195630495,
-\qquad
-\alpha_U(P_C)^{-1}=24.316501918546496.
+\begin{aligned}
+\alpha_U(P_C)&amp;=0.041124336195630495,\\
+\alpha_U(P_C)^{-1}&amp;=24.316501918546496.
+\end{aligned}
 \]</span> The corresponding dimensionless hierarchy data are <span
 class="math display">\[
-\frac{M_U(P_C)}{E_\star}=0.0020260720012100037,
-\quad
-\frac{v(P_C)}{E_\star}=2.0199803239725553\times10^{-17},
-\quad
-\frac{\mu_Z(P_C)}{E_\star}=7.502403238986022\times10^{-18}.
+\begin{aligned}
+\frac{M_U(P_C)}{E_\star}&amp;=0.0020260720012100037,\\
+\frac{v(P_C)}{E_\star}&amp;=2.0199803239725553\times10^{-17},\\
+\frac{\mu_Z(P_C)}{E_\star}&amp;=7.502403238986022\times10^{-18}.
+\end{aligned}
 \]</span> The emitted couplings at <span
 class="math inline">\(\mu_Z\)</span> are <span class="math display">\[
-\alpha_1=0.016885708038988166,\qquad
-\alpha_Y=0.010131424823392899,
-\]</span> <span class="math display">\[
-\alpha_2=0.033777889448908055,\qquad
-\alpha_3=0.11833602747445048.
+\begin{aligned}
+\alpha_1&amp;=0.016885708038988166,\\
+\alpha_Y&amp;=0.010131424823392899,\\
+\alpha_2&amp;=0.033777889448908055,\\
+\alpha_3&amp;=0.11833602747445048.
+\end{aligned}
 \]</span> The heat-kernel parameters and entropy readouts are <span
 class="math display">\[
-t_2=1.3334976254578108,\qquad
-t_3=4.6717191102770705,
+\begin{aligned}
+t_2&amp;=1.3334976254578108,\\
+t_3&amp;=4.6717191102770705,
+\end{aligned}
 \]</span> <span class="math display">\[
-\bar\ell_{\mathrm{SU}(2)}=0.39488144681077636,
-\qquad
-\bar\ell_{\mathrm{SU}(3)}=0.012860605540213493.
+\begin{aligned}
+\bar\ell_{\mathrm{SU}(2)}&amp;=0.39488144681077636,\\
+\bar\ell_{\mathrm{SU}(3)}&amp;=0.012860605540213493.
+\end{aligned}
 \]</span> Thus <span class="math display">\[
+\begin{aligned}
 \bar\ell_{\mathrm{SU}(2)}+\bar\ell_{\mathrm{SU}(3)}
-\mathrel{=}
-0.40774205235098987,
-\qquad
-P_C/4=0.4077420523509898,
+&amp;=0.40774205235098987,\\
+P_C/4&amp;=0.4077420523509898,
+\end{aligned}
 \]</span> and <span class="math display">\[
-\Phi_U(P_C,0.041124336195630495)=5.55\times10^{-17}.
+\begin{aligned}
+\Phi_U(P_C,0.041124336195630495)
+&amp;=5.55\times10^{-17}.
+\end{aligned}
 \]</span> A centered derivative check gives <span
 class="math display">\[
 \partial_a\Phi_U(P_C,a)\simeq -10.990524683118785.
@@ -4492,18 +4920,20 @@ bracket signs are <span class="math display">\[
 \Phi_U(P_C,\alpha_U+\delta)=-1.0990300680135956\times10^{-5}.
 \]</span></p>
 <p>For the source-audit pixel, <span class="math display">\[
-\alpha_U(P_{\mathrm{cand}})=0.04112424744557487,
-\qquad
-\alpha_U(P_{\mathrm{cand}})^{-1}=24.316554395881205,
+\begin{aligned}
+\alpha_U(P_{\mathrm{cand}})&amp;=0.04112424744557487,\\
+\alpha_U(P_{\mathrm{cand}})^{-1}&amp;=24.316554395881205,
+\end{aligned}
 \]</span> <span class="math display">\[
-\frac{v(P_{\mathrm{cand}})}{E_\star}=2.0198114150099223\times10^{-17},
-\qquad
-\frac{\mu_Z(P_{\mathrm{cand}})}{E_\star}=7.501767385088398\times10^{-18}.
+\begin{aligned}
+\frac{v(P_{\mathrm{cand}})}{E_\star}&amp;=2.0198114150099223\times10^{-17},\\
+\frac{\mu_Z(P_{\mathrm{cand}})}{E_\star}&amp;=7.501767385088398\times10^{-18}.
+\end{aligned}
 \]</span> This branch is the one to cite when avoiding the measured
 Thomson endpoint in the upstream pixel solve.</p>
 <div id="thm:particle-ru-witness" class="theorem">
 
-<p><strong>Theorem 18</strong> (Electroweak unified-coupling numerical
+<p><strong>Theorem 24</strong> (Electroweak unified-coupling numerical
 witness). <em>Assume the frozen source map, running packet, heat-kernel
 cutoff policy, and no-hidden-free-variable rule above. Let <span
 class="math display">\[
@@ -4606,7 +5036,7 @@ not a second, independent proof of the finite-cutoff same-overlap
 Casimir branch.</p>
 <div class="theorem">
 
-<p><strong>Theorem 19</strong> (Heat-kernel edge-sector weights).
+<p><strong>Theorem 25</strong> (Heat-kernel edge-sector weights).
 <em>Under MaxEnt with bi-invariant constraints on a compact Lie group
 <span class="math inline">\(G\)</span>, the sector probabilities take
 heat-kernel form: <span class="math display">\[
@@ -4618,7 +5048,7 @@ Casimir.</em></p>
 
 <div class="lemma">
 
-<p><strong>Lemma 20</strong> (Bi-invariant operators). <em>If <span
+<p><strong>Lemma 26</strong> (Bi-invariant operators). <em>If <span
 class="math inline">\(G=\prod_i G_i\)</span> is a compact semisimple Lie
 group written as a product of compact simple factors, then any
 bi-invariant second-order differential operator on <span
@@ -4632,7 +5062,7 @@ class="math inline">\(G_i\)</span>.</em></p>
 
 <div class="remark">
 
-<p><strong>Remark 21</strong>. <em>Bi-invariance is equivalent to <span
+<p><strong>Remark 27</strong>. <em>Bi-invariance is equivalent to <span
 class="math inline">\(D\in Z(U(\mathfrak g))\)</span>. Linear terms
 vanish because there are no invariant vectors in the adjoint
 representation, and the quadratic part is proportional to the Killing
@@ -4708,9 +5138,9 @@ href="https://github.com/FloatingPragma/observer-patch-holography/blob/main/pape
 Echosahedral Screen Microphysics: Patch Hardware, Records, and Observer
 Synchronization in OPH</em>. GitHub PDF: <a
 href="https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/screen_microphysics_and_observer_synchronization.pdf">https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/screen_microphysics_and_observer_synchronization.pdf</a></p>
-<p>B. Müller, A. Osika, K. Xue, and P. Nguyen, <em>Recovering Relativity
-and Standard Model Structure from Observer Overlap Consistency</em>.
-GitHub PDF: <a
+<p>B. Müller, A. Osika, K. Xue, M. Poneder, P. Nguyen, and M. A. Visser,
+<em>Recovering Relativity and Standard Model Structure from Observer
+Overlap Consistency</em>. GitHub PDF: <a
 href="https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/recovering_relativity_and_standard_model_structure_from_observer_overlap_consistency_compact.pdf">https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/recovering_relativity_and_standard_model_structure_from_observer_overlap_consistency_compact.pdf</a></p>
 <p>National Institute of Standards and Technology, <em>2022 CODATA
 Recommended Values of the Fundamental Constants of Physics and

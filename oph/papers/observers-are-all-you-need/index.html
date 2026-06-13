@@ -20,6 +20,7 @@
   <meta name="citation_author" content="Kai Xue" />
   <meta name="citation_author" content="Ben Cassie" />
   <meta name="citation_author" content="Peter Nguyen" />
+  <meta name="citation_author" content="Maarten Antonie Visser" />
   <meta name="citation_author" content="Mario Poneder" />
   <meta name="citation_author" content="Kale Arnav Anirudha" />
   <meta name="citation_publication_date" content="2026/06/13" />
@@ -36,6 +37,7 @@
   <meta name="DC.creator" content="Kai Xue" />
   <meta name="DC.creator" content="Ben Cassie" />
   <meta name="DC.creator" content="Peter Nguyen" />
+  <meta name="DC.creator" content="Maarten Antonie Visser" />
   <meta name="DC.creator" content="Mario Poneder" />
   <meta name="DC.creator" content="Kale Arnav Anirudha" />
   <meta name="DC.issued" content="2026/06/13" />
@@ -106,6 +108,10 @@
     {
       "@type": "Person",
       "name": "Peter Nguyen"
+    },
+    {
+      "@type": "Person",
+      "name": "Maarten Antonie Visser"
     },
     {
       "@type": "Person",
@@ -230,7 +236,7 @@
         <header class="paper-reader-header">
           <div class="eyebrow">Theory of everything</div>
           <h1 class="citation_title">Observers Are All You Need</h1>
-          <h3 class="citation_author">Author: Bernhard Mueller, Alexander Osika, Kai Xue, Ben Cassie, Peter Nguyen, Mario Poneder, Kale Arnav Anirudha</h3>
+          <h3 class="citation_author">Author: Bernhard Mueller, Alexander Osika, Kai Xue, Ben Cassie, Peter Nguyen, Maarten Antonie Visser, Mario Poneder, Kale Arnav Anirudha</h3>
           <div class="paper-reader-abstract">
             <strong>Abstract</strong>
             <p>OPH builds physics from finite public records on horizon-screen cuts. The paper presents the observer-first reconstruction of spacetime, gravity, Standard Model structure, cosmology, particles, records, and simulation-theory interpretation.</p>
@@ -260,6 +266,7 @@
             <nav class="paper-toc" aria-label="Paper sections"><a href="#introduction">Introduction</a>
 <a href="#main-achievements">Main Achievements</a>
 <a href="#physical-implementation-and-a_5e_8-significance">Physical Implementation and \(A_5\) / \(E_8\) Significance</a>
+<a href="#famous-equations-and-structural-outputs-recovered">Famous equations and structural outputs recovered</a>
 <a href="#particle-prediction-surface">Particle Prediction Surface</a>
 <a href="#companion-papers">Companion Papers</a>
 <a href="#recovered-core-foundations-and-structural-branches">Recovered Core: Foundations and Structural Branches</a>
@@ -267,16 +274,15 @@
 <a href="#model-and-axioms">Model and Axioms</a>
 <a href="#information-theoretic-tools">Information-Theoretic Tools</a>
 <a href="#overlap-consistency-and-gluing">Overlap Consistency and Gluing</a>
-<a href="#modular-flow-and-lorentz-kinematics">Modular Flow and Lorentz Kinematics</a>
-<a href="#gravity-from-fixed-cap-generalized-entropy-stationarity">Gravity from Fixed-Cap Generalized-Entropy Stationarity</a></nav>
+<a href="#modular-flow-and-lorentz-kinematics">Modular Flow and Lorentz Kinematics</a></nav>
           </details>
         </header>
         <div class="paper-reader-grid">
           <div class="paper-body">
 <div class="center">
 
-<p><strong>Paper release:</strong> <code>r1473</code><br />
-<strong>Released:</strong> June 11, 2026</p>
+<p><strong>Paper release:</strong> <code>r1485</code>
+<strong>Released:</strong> June 13, 2026</p>
 </div>
 
 <div class="center">
@@ -405,11 +411,27 @@ class="math inline">\(\varepsilon_{\mathrm{Cs}}\sim10^{-33}\)</span>
 must be emitted by source-side electroweak transmutation, QCD/hadronic
 data, flavor and nuclear data, and a cesium hyperfine spectral readout,
 with no dependency path from measured gravity or any calibrated
-electroweak or gravity scale. The value of <span
-class="math inline">\(P\)</span> is not inserted as a separate measured
-constant. OPH computes it by giving the same screen cell two readings.
-From outside, the cell sits a little above the exact self-similar
-entropy balance point <span
+electroweak or gravity scale. The <span
+class="math inline">\(\alpha_U\)</span> record is a one-dimensional
+fixed-point certificate: on the public endpoint branch <span
+class="math display">\[
+\begin{aligned}
+\alpha_U(P_\star)&amp;=0.041124336195630495,\\
+\frac{v}{E_\star}&amp;=2.0199803239725553\times10^{-17},
+\end{aligned}
+\]</span> and the Krawczyk image of <span
+class="math inline">\([0.041123336195630494,\;0.041125336195630496]\)</span>
+lies strictly inside that interval. A source-audit branch records the
+nearby value <span
+class="math inline">\(v(P_{\mathrm{cand}})/E_\star=2.0198114150099223\times10^{-17}\)</span>
+with the public Thomson endpoint excluded upstream. This solves the
+local electroweak hierarchy/naturality problem on the selected exact
+branch and supplies one component of the clock hierarchy; the full SI
+gravity row requires the full set of cesium-clock source records. The
+value of <span class="math inline">\(P\)</span> comes from giving the
+same screen cell two readings, with no separate measured constant
+inserted. From outside, the cell sits a little above the exact
+self-similar entropy balance point <span
 class="math inline">\(\varphi=(1+\sqrt5)/2\)</span>. From inside, the
 same cell appears as the smallest electromagnetic observation step
 available in the encoded world. The local scale is the value of <span
@@ -482,7 +504,13 @@ by itself choose the Standard Model. The realized low-energy branch with
 the explicit one-generation/one-Higgs matter package and MAR then
 selects the compact gauge quotient, exact hypercharge, three
 generations, three colors, and the structural absence of gauge-mediated
-proton decay.</p></li>
+proton decay. On the ordinary electromagnetic branch, the unbroken <span
+class="math inline">\(\mathrm{U}(1)_Q\)</span> factor reduces the
+compact-gauge curvature to <span
+class="math inline">\(F_Q=dA_Q\)</span>, and the quadratic field action
+gives <span class="math inline">\(dF_Q=0\)</span> and <span
+class="math inline">\(d{*}F_Q=g_Q^2{*}J_Q\)</span>, i.e. Maxwell’s
+equations after canonical electromagnetic normalization.</p></li>
 <li><p><strong>The local particle scale is computed by fixed-point
 closure.</strong> The pixel ratio <span class="math inline">\(P\)</span>
 is fixed by matching a screen cell’s outer entropy detuning to its inner
@@ -575,6 +603,103 @@ patch-carrier model, fixed-cutoff edge heat-kernel/Casimir law,
 central-record/Born–Lüders measurement interface, Bell/CHSH event
 surface, and checkpoint/restoration package. See Ref. , available as the
 numbered GitHub reference in the bibliography.</p>
+<h2 id="famous-equations-and-structural-outputs-recovered">Famous
+equations and structural outputs recovered</h2>
+<p>The table below maps headline formulas by logical role. Some rows are
+core theorem results, some are short corollaries of recovered actions,
+and some are standard limits once the parent OPH branch is
+established.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th style="text-align: left;">Recovered result</th>
+<th style="text-align: left;">OPH status</th>
+<th style="text-align: left;">Famous display</th>
+<th style="text-align: left;">Claim boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Lorentz kinematics and invariant light
+cone</td>
+<td style="text-align: left;">core theorem</td>
+<td style="text-align: left;"><span
+class="math inline">\(\mathrm{Conf}^+(S^2)\cong\mathrm{SO}^+(3,1)\)</span></td>
+<td style="text-align: left;">scaling-limit prime geometric subnet</td>
+</tr>
+<tr>
+<td style="text-align: left;">Einstein equation</td>
+<td style="text-align: left;">core theorem</td>
+<td style="text-align: left;"><span class="math inline">\(G_{ab}+\Lambda
+g_{ab}=8\pi G\,\langle T_{ab}\rangle\)</span></td>
+<td style="text-align: left;"><span
+class="math inline">\(\Lambda\)</span> fixed by the capacity branch</td>
+</tr>
+<tr>
+<td style="text-align: left;">Newton-Poisson gravity</td>
+<td style="text-align: left;">inherited weak-field limit</td>
+<td style="text-align: left;"><span
+class="math inline">\(\nabla^2\Phi=4\pi G\rho\)</span>, <span
+class="math inline">\(\ddot{\mathbf x}=-\nabla\Phi\)</span></td>
+<td style="text-align: left;">weak field and slow motion</td>
+</tr>
+<tr>
+<td style="text-align: left;">Maxwell equations</td>
+<td style="text-align: left;">electromagnetic corollary</td>
+<td style="text-align: left;"><span class="math inline">\(dF_Q=0,\quad
+d{*}F_Q=g_Q^2{*}J_Q\)</span></td>
+<td style="text-align: left;">ordinary <span
+class="math inline">\(\mathrm U(1)_Q\)</span> branch</td>
+</tr>
+<tr>
+<td style="text-align: left;">Yang–Mills equations</td>
+<td style="text-align: left;">compact-gauge corollary</td>
+<td style="text-align: left;"><span class="math inline">\(DF=0,\quad
+D{*}F=g^2{*}J\)</span></td>
+<td style="text-align: left;">compact-gauge branch</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bekenstein–Hawking / de Sitter area
+law</td>
+<td style="text-align: left;">global capacity branch</td>
+<td style="text-align: left;"><span
+class="math inline">\(N_{\mathrm{scr}}=A/(4\ell_P^2)=3\pi/(G\Lambda)\)</span></td>
+<td style="text-align: left;">screen-capacity closure</td>
+</tr>
+<tr>
+<td style="text-align: left;">Born rule and Lüders update</td>
+<td style="text-align: left;">fixed-cutoff theorem</td>
+<td style="text-align: left;"><span class="math inline">\(\mathbb
+P(E)=\operatorname{Tr}(\rho P_E)\)</span>, <span
+class="math inline">\(\rho\vert{}_E=P_E\rho P_E/\operatorname{Tr}(\rho
+P_E)\)</span></td>
+<td style="text-align: left;">central record algebra</td>
+</tr>
+<tr>
+<td style="text-align: left;">Tsirelson bound</td>
+<td style="text-align: left;">fixed-cutoff theorem</td>
+<td style="text-align: left;"><span
+class="math inline">\(\vert{}S_{\mathrm{CHSH}}\vert{}\le2\sqrt2\)</span></td>
+<td style="text-align: left;">Bell event surface</td>
+</tr>
+<tr>
+<td style="text-align: left;">Charge quantization</td>
+<td style="text-align: left;">core theorem</td>
+<td style="text-align: left;"><span
+class="math inline">\(Q=T_3+Y\)</span>, color singlets have <span
+class="math inline">\(Q\in\mathbb Z\)</span></td>
+<td style="text-align: left;">quarks remain confined fractional-charge
+fields</td>
+</tr>
+<tr>
+<td style="text-align: left;">Exact structural zeros</td>
+<td style="text-align: left;">core structural result</td>
+<td style="text-align: left;"><span
+class="math inline">\(m_\gamma=m_g=m_{\mathrm{grav}}=0\)</span></td>
+<td style="text-align: left;">gluons are confined carriers</td>
+</tr>
+</tbody>
+</table></div>
 <h2 id="particle-prediction-surface">Particle Prediction Surface</h2>
 <p>The particle paper treats the completion pipeline as an explicit
 closure matrix. The non-hadron bundle reports the following status:</p>
@@ -599,8 +724,7 @@ class="math inline">\(m_\gamma=m_g=m_{\mathrm{grav}}=0\)</span></td>
 <td style="text-align: left;"><span
 class="math inline">\(W/Z\)</span></td>
 <td style="text-align: left;"><span
-class="math inline">\(80.377~\mathrm{GeV}\)</span>, <span
-class="math inline">\(91.18797809193725~\mathrm{GeV}\)</span></td>
+class="math inline">\(\begin{gathered}80.377\\91.18797809193725\\\mathrm{GeV}\end{gathered}\)</span></td>
 <td style="text-align: left;">weak-sector validation pair</td>
 <td style="text-align: left;">declared compare-only validation surface;
 ledger records exact scope</td>
@@ -608,8 +732,7 @@ ledger records exact scope</td>
 <tr>
 <td style="text-align: left;">Fine structure</td>
 <td style="text-align: left;"><span
-class="math inline">\(\alpha^{-1}(0)=137.035999177(21)\)</span>, <span
-class="math inline">\(P=1.630968209403959324879279847782648941\ldots\)</span></td>
+class="math inline">\(\begin{gathered}\alpha^{-1}(0)=137.035999177(21)\\P=1.6309682094\ldots\end{gathered}\)</span></td>
 <td style="text-align: left;">fixed-point derivation</td>
 <td style="text-align: left;">source audit and empirical hadron closure
 records are separate bookkeeping surfaces</td>
@@ -617,8 +740,7 @@ records are separate bookkeeping surfaces</td>
 <tr>
 <td style="text-align: left;">Higgs/top</td>
 <td style="text-align: left;"><span
-class="math inline">\(125.1995304097179~\mathrm{GeV}\)</span>, <span
-class="math inline">\(172.35235532883115~\mathrm{GeV}\)</span></td>
+class="math inline">\(\begin{gathered}125.1995304097179\\172.35235532883115\\\mathrm{GeV}\end{gathered}\)</span></td>
 <td style="text-align: left;">declared D10/D11 quantitative surface</td>
 <td style="text-align: left;">auxiliary direct-top PDG codomain is
 compare-only in the available corpus</td>
@@ -626,9 +748,7 @@ compare-only in the available corpus</td>
 <tr>
 <td style="text-align: left;">Charged leptons</td>
 <td style="text-align: left;"><span
-class="math inline">\(0.0005109989499999994\)</span>, <span
-class="math inline">\(0.10565837550000004\)</span>, <span
-class="math inline">\(1.7769324651340912~\mathrm{GeV}\)</span></td>
+class="math inline">\(\begin{gathered}0.00051099895\\0.1056583755\\1.7769324651340912\\\mathrm{GeV}\end{gathered}\)</span></td>
 <td style="text-align: left;">target-anchored same-family exact
 witness</td>
 <td style="text-align: left;">source landing from <span
@@ -638,7 +758,8 @@ theorem-grade uncentered trace lift in the available corpus</td>
 <tr>
 <td style="text-align: left;">Quarks</td>
 <td style="text-align: left;"><span
-class="math inline">\(u,d,s,c,b,t=(0.00216,0.00470,0.0935,1.273,4.183,172.35235532883115)~\mathrm{GeV}\)</span></td>
+class="math inline">\(\begin{gathered}u=0.00216,\ d=0.00470\\s=0.0935,\
+c=1.273\\b=4.183\\t=172.35235532883115\\\mathrm{GeV}\end{gathered}\)</span></td>
 <td style="text-align: left;">selected-class exact theorem</td>
 <td style="text-align: left;">exact only on the selected public quark
 frame class; global public-frame classification has a no-go boundary in
@@ -647,9 +768,7 @@ the available corpus; strong CP is work in progress</td>
 <tr>
 <td style="text-align: left;">Neutrinos</td>
 <td style="text-align: left;"><span
-class="math inline">\(0.017454720257976796\)</span>, <span
-class="math inline">\(0.019481987935919015\)</span>, <span
-class="math inline">\(0.05307522145074924~\mathrm{eV}\)</span></td>
+class="math inline">\(\begin{gathered}0.017454720257976796\\0.019481987935919015\\0.05307522145074924\\\mathrm{eV}\end{gathered}\)</span></td>
 <td style="text-align: left;">weighted-cycle theorem branch</td>
 <td style="text-align: left;">absolute masses are not directly measured;
 PMNS comparison tension is visible</td>
@@ -900,11 +1019,11 @@ B_\star=\mathcal B_\ell=\Lambda_\star N_\star,
 \]</span> The branch certificate used for the SI gravity row is <span
 class="math display">\[
 B_\star=
-3.6078739146803215760518414801601725476877083072171853821242070198789871988886
+3.60787391468\ldots
 \times10^{70}\,\mathrm{m^{-2}},
 \]</span> hence <span class="math display">\[
 \ell_\star^2=
-2.61228030237427777887347769215451001461202676866
+2.61228030237\ldots
 \times10^{-70}\,\mathrm{m^2}.
 \]</span> Rounded capacity displays such as <span
 class="math inline">\(N_{\mathrm{scr}}\simeq3.31\times10^{122}\)</span>
@@ -5321,6 +5440,28 @@ mixing angle, <span class="math inline">\(v\)</span>, and numerical
 <span class="math inline">\(W/Z\)</span> masses belong to the D10
 running/matching surface rather than to this recovered-core structural
 corollary. QED.</p>
+<p><strong>Corollary 6.6d (Maxwell sector on the realized
+electromagnetic branch).</strong> On the ordinary one-Higgs branch, let
+<span class="math inline">\(A_Q\)</span> be the support-visible
+connection component on the unbroken electromagnetic factor <span
+class="math inline">\(\mathrm U(1)_Q\)</span>. The abelian restriction
+of the compact-gauge curvature gives <span class="math display">\[
+F_Q=dA_Q.
+\]</span> With the Lorentzian low-energy electromagnetic action <span
+class="math display">\[
+S_{\mathrm{EM}}[A_Q,J_Q]
+\mathrel{=}
+-\frac{1}{2g_Q^2}\int F_Q\wedge *F_Q
++\int A_Q\wedge *J_Q,
+\]</span> the Euler-Lagrange equations are <span class="math display">\[
+dF_Q=0,
+\qquad
+d*F_Q=g_Q^2 *J_Q.
+\]</span> After canonical electromagnetic normalization, these are
+Maxwell’s equations. The numerical value of <span
+class="math inline">\(g_Q\)</span>, equivalently <span
+class="math inline">\(\alpha_{\mathrm{em}}\)</span>, belongs to the
+Ward-projected electromagnetic readout. QED.</p>
 <h3
 id="refinement-stability-and-unprotected-relevant-operators">Refinement
 stability and unprotected relevant operators</h3>
@@ -6873,8 +7014,12 @@ class="math inline">\(\mathrm U(1)_Y\)</span> lattice, the unbroken
 generator <span class="math inline">\(Q=T_3+Y\)</span>, integer charge
 for color singlets, and the photon <span
 class="math inline">\(A\)</span> as the massless <span
-class="math inline">\(\mathrm U(1)_Q\)</span> carrier. The Thomson-limit
-fine-structure endpoint is a D10 quantitative closure.</p></li>
+class="math inline">\(\mathrm U(1)_Q\)</span> carrier. Corollary 6.6d
+gives <span class="math inline">\(F_Q=dA_Q\)</span>, <span
+class="math inline">\(dF_Q=0\)</span>, and <span
+class="math inline">\(d*F_Q=g_Q^2*J_Q\)</span> on the ordinary photon
+branch. The Thomson-limit fine-structure endpoint is a D10 quantitative
+closure.</p></li>
 </ul>
 <h3 id="testable-items-and-phenomenological-branches">Testable Items and
 Phenomenological Branches</h3>
@@ -7412,10 +7557,9 @@ scope</td>
 trunk</td>
 <td style="text-align: left;"><span
 class="math inline">\(\alpha^{-1}(0)=137.035999177(21)\)</span> with
-<span
-class="math inline">\(P=1.630968209403959324879279847782648941\ldots\)</span>;
-source audit value <span
-class="math inline">\(\alpha_{\mathrm{cand}}^{-1}=136.994835164621649457949994585787193262029\)</span></td>
+<span class="math inline">\(P=1.6309682094\ldots\)</span>; source audit
+value <span
+class="math inline">\(\alpha_{\mathrm{cand}}^{-1}=136.9948351646\ldots\)</span></td>
 <td style="text-align: left;">status ledger records the endpoint
 residual package</td>
 </tr>
@@ -8162,11 +8306,11 @@ B_\star=\mathcal B_\ell=\Lambda_\star N_\star,
 \]</span> The branch certificate used by the SI gravity row is <span
 class="math display">\[
 B_\star=
-3.6078739146803215760518414801601725476877083072171853821242070198789871988886
+3.60787391468\ldots
 \times10^{70}\,\mathrm{m^{-2}},
 \]</span> which gives <span class="math display">\[
 \ell_\star^2=
-2.61228030237427777887347769215451001461202676866
+2.61228030237\ldots
 \times10^{-70}\,\mathrm{m^2}.
 \]</span> The rounded <span
 class="math inline">\(N_{\mathrm{scr}}\simeq3.31\times10^{122}\)</span>
@@ -9753,9 +9897,9 @@ above the identity written here.</p>
 <div class="thebibliography">
 
 <p>99</p>
-<p>B. Müller, A. Osika, K. Xue, and P. Nguyen, <em>Recovering Relativity
-and the Standard Model from Observer Overlap Consistency</em>, 2026.
-Available at <a
+<p>B. Müller, A. Osika, K. Xue, M. Poneder, P. Nguyen, and M. A. Visser,
+<em>Recovering Relativity and the Standard Model from Observer Overlap
+Consistency</em>, 2026. Available at <a
 href="https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/recovering_relativity_and_standard_model_structure_from_observer_overlap_consistency_compact.pdf">GitHub
 PDF</a>.</p>
 <p>B. Müller, K. Xue, and K. A. Anirudha, <em>Reality as a Consensus

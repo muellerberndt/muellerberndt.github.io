@@ -221,8 +221,8 @@
           <div class="paper-body">
 <div class="center">
 
-<p><strong>Paper release:</strong> r1473 <strong>Released:</strong> June
-11, 2026</p>
+<p><strong>Paper release:</strong> r1485 <strong>Released:</strong> June
+13, 2026</p>
 </div>
 
 <h1 id="introduction">Introduction</h1>
@@ -277,6 +277,39 @@ low-energy QCD. These are different layers of the calculation. A
 non-arbitrary endpoint calculation must either evaluate the same-scheme
 hadronic spectral functional directly, or derive the scheme bridge from
 OPH source data.</p>
+<div class="proposition">
+
+<p><strong>Proposition 1</strong> (Maxwell normalization of the endpoint
+lane). <em>On the ordinary electromagnetic branch used by the
+fixed-point equation, the Ward-projected <span
+class="math inline">\(\mathrm{U}(1)_Q\)</span> channel carries <span
+class="math display">\[
+F_Q=dA_Q,\qquad dF_Q=0,\qquad d{*}F_Q=g_Q^2(q^2;P){*}J_Q,
+\]</span> with <span class="math display">\[
+g_Q^2(q^2;P)=4\pi\alpha_{\mathrm{em}}(q^2;P),
+\qquad
+A_{\mathrm{Th}}(P)=\alpha_{\mathrm{em}}^{-1}(0;P).
+\]</span> Thus the inside reading in the pixel equation is the
+Thomson-limit Maxwell coupling of the same electromagnetic
+current.</em></p>
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> The compact OPH reconstruction identifies the
+unbroken electromagnetic branch as <span
+class="math inline">\(\mathrm{U}(1)_Q\)</span>. On that abelian factor,
+the compact-gauge curvature reduces to <span
+class="math inline">\(F_Q=dA_Q\)</span>, and the quadratic field action
+gives <span class="math inline">\(d{*}F_Q=g_Q^2{*}J_Q\)</span>. The
+particle-paper transport theorem then identifies the same <span
+class="math inline">\(g_Q(q^2;P)\)</span> with the Ward-projected
+running electromagnetic coupling. Taking <span
+class="math inline">\(q^2\to0\)</span> gives the endpoint quantity <span
+class="math inline">\(A_{\mathrm{Th}}(P)\)</span> used in the pixel
+fixed-point equation. ◻</p>
+</div>
+
 <p>There is a long history of attempts to understand <span
 class="math inline">\(\alpha\)</span> from deeper structure. Jentschura
 and Nandori give a useful survey of first-principles attempts, including
@@ -302,108 +335,99 @@ production calculation from OPH hadron dynamics is work in progress.</p>
 <h1 id="symbols">Symbols</h1>
 <div class="longtable">
 
-<p>@L0.20L0.32L0.38@ Symbol &amp; Definition &amp; Informal
-meaning<br />
+<p>@L0.20L0.32L0.38@ Symbol &amp; Definition &amp; Informal meaning
 <span class="math inline">\(\mathcal A(P)\)</span> &amp; Patch algebra
 assigned to a screen patch <span class="math inline">\(P\)</span> &amp;
-The local observables available to one finite observer patch.<br />
-<span class="math inline">\(\omega_P\)</span> &amp; State on <span
+The local observables available to one finite observer patch. <span
+class="math inline">\(\omega_P\)</span> &amp; State on <span
 class="math inline">\(\mathcal A(P)\)</span> &amp; The local physical
-description carried by that patch.<br />
-<span class="math inline">\(\mathcal A(P\cap Q)\)</span> &amp; Shared
-overlap algebra &amp; The observables two neighboring patches can
-compare.<br />
-<span class="math inline">\(P\)</span> &amp; <span
+description carried by that patch. <span class="math inline">\(\mathcal
+A(P\cap Q)\)</span> &amp; Shared overlap algebra &amp; The observables
+two neighboring patches can compare. <span
+class="math inline">\(P\)</span> &amp; <span
 class="math inline">\(a_{\mathrm{cell}}/\ell_\star^2\)</span> &amp; The
-dimensionless area of one screen cell in scale-readout units.<br />
-<span class="math inline">\(a_{\mathrm{cell}}\)</span> &amp; Physical
+dimensionless area of one screen cell in scale-readout units. <span
+class="math inline">\(a_{\mathrm{cell}}\)</span> &amp; Physical
 screen-cell area &amp; The area of the local pixel on the holographic
-screen.<br />
-<span class="math inline">\(\ell_\star\)</span> &amp; OPH
+screen. <span class="math inline">\(\ell_\star\)</span> &amp; OPH
 scale-certificate length &amp; The length emitted by the selected
-no-<span class="math inline">\(G\)</span> scale certificate.<br />
-<span class="math inline">\(\ell_P\)</span> &amp; Planck length &amp;
-The SI display of <span class="math inline">\(\ell_\star\)</span> after
-<span
-class="math inline">\(G_{\mathrm{SI}}=c^3\ell_\star^2/\hbar\)</span>.<br />
+no-<span class="math inline">\(G\)</span> scale certificate. <span
+class="math inline">\(\ell_P\)</span> &amp; Planck length &amp; The SI
+display of <span class="math inline">\(\ell_\star\)</span> after <span
+class="math inline">\(G_{\mathrm{SI}}=c^3\ell_\star^2/\hbar\)</span>.
 <span class="math inline">\(\varphi\)</span> &amp; <span
 class="math inline">\((1+\sqrt5)/2\)</span> &amp; The self-similar
-entropy-balance point.<br />
-<span class="math inline">\(\sqrt\pi\)</span> &amp; Boundary Gaussian
-normalization width &amp; The conversion factor from pixel displacement
-to observation width.<br />
-<span class="math inline">\(\alpha_{\mathrm{ext}}(P)\)</span> &amp;
-<span class="math inline">\((P-\varphi)/\sqrt\pi\)</span> &amp; The
-outside, geometric reading of the electromagnetic coupling.<br />
-<span class="math inline">\(A_{\mathrm{Th}}(P)\)</span> &amp; <span
+entropy-balance point. <span class="math inline">\(\sqrt\pi\)</span>
+&amp; Boundary Gaussian normalization width &amp; The conversion factor
+from pixel displacement to observation width. <span
+class="math inline">\(\alpha_{\mathrm{ext}}(P)\)</span> &amp; <span
+class="math inline">\((P-\varphi)/\sqrt\pi\)</span> &amp; The outside,
+geometric reading of the electromagnetic coupling. <span
+class="math inline">\(A_{\mathrm{Th}}(P)\)</span> &amp; <span
 class="math inline">\(\alpha_{\mathrm{em}}^{-1}(0;P)\)</span> &amp; The
 inverse electromagnetic coupling at the Thomson limit emitted by the
-trial pixel.<br />
-<span class="math inline">\(\alpha_{\mathrm{in}}(P)\)</span> &amp; <span
+trial pixel. <span
+class="math inline">\(\alpha_{\mathrm{in}}(P)\)</span> &amp; <span
 class="math inline">\(1/A_{\mathrm{Th}}(P)\)</span> &amp; The inside,
-electromagnetic reading of the same cell.<br />
-<span class="math inline">\(E_P\)</span> &amp; Planck energy &amp; The
-energy unit associated with the selected scale certificate. The
-numerical equations use Planck units unless GeV labels are
-attached.<br />
-<span class="math inline">\(M_U(P)\)</span> &amp; <span
+electromagnetic reading of the same cell. <span
+class="math inline">\(E_P\)</span> &amp; Planck energy &amp; The energy
+unit associated with the selected scale certificate. The numerical
+equations use Planck units unless GeV labels are attached. <span
+class="math inline">\(M_U(P)\)</span> &amp; <span
 class="math inline">\(E_P\mathrm e^{-2\pi}P^{1/6}\)</span> &amp; The OPH
-unification-scale readout emitted by a trial pixel.<br />
-<span class="math inline">\(E_{\mathrm{cell}}(P)\)</span> &amp; <span
+unification-scale readout emitted by a trial pixel. <span
+class="math inline">\(E_{\mathrm{cell}}(P)\)</span> &amp; <span
 class="math inline">\(E_P/\sqrt P\)</span> &amp; The local cell energy
-readout.<br />
-<span class="math inline">\(\alpha_U(P)\)</span> &amp; Unified coupling
-solved from the heat-kernel closure equation &amp; The coupling at <span
-class="math inline">\(M_U(P)\)</span> that makes the gauge
-representation entropy match the pixel.<br />
-<span class="math inline">\(\alpha_i(\mu;P)\)</span> &amp; Gauge
-coupling <span class="math inline">\(i=1,2,3\)</span> at scale <span
+readout. <span class="math inline">\(\alpha_U(P)\)</span> &amp; Unified
+coupling solved from the heat-kernel closure equation &amp; The coupling
+at <span class="math inline">\(M_U(P)\)</span> that makes the gauge
+representation entropy match the pixel. <span
+class="math inline">\(\alpha_i(\mu;P)\)</span> &amp; Gauge coupling
+<span class="math inline">\(i=1,2,3\)</span> at scale <span
 class="math inline">\(\mu\)</span> &amp; The hypercharge, weak, and
 color couplings emitted by the same trial <span
-class="math inline">\(P\)</span>.<br />
-<span class="math inline">\(b_i\)</span> &amp; <span
+class="math inline">\(P\)</span>. <span
+class="math inline">\(b_i\)</span> &amp; <span
 class="math inline">\((33/5,1,-3)\)</span> &amp; The one-loop beta
-coefficients for the high-scale running convention used here.<br />
-<span class="math inline">\(m_Z(P)\)</span> &amp; Self-consistent
-electroweak anchor scale &amp; The <span
-class="math inline">\(Z\)</span>-scale generated by <span
-class="math inline">\(v(P)\)</span>, <span
+coefficients for the high-scale running convention used here. <span
+class="math inline">\(m_Z(P)\)</span> &amp; Self-consistent electroweak
+anchor scale &amp; The <span class="math inline">\(Z\)</span>-scale
+generated by <span class="math inline">\(v(P)\)</span>, <span
 class="math inline">\(\alpha_1(P)\)</span>, and <span
-class="math inline">\(\alpha_2(P)\)</span>.<br />
-<span class="math inline">\(v(P)\)</span> &amp; <span
+class="math inline">\(\alpha_2(P)\)</span>. <span
+class="math inline">\(v(P)\)</span> &amp; <span
 class="math inline">\(E_{\mathrm{cell}}(P)\exp[-2\pi/(\beta_{\mathrm{EW}}\alpha_U(P))]\)</span>
-&amp; The electroweak transmutation scale.<br />
-<span class="math inline">\(\beta_{\mathrm{EW}}\)</span> &amp; <span
+&amp; The electroweak transmutation scale. <span
+class="math inline">\(\beta_{\mathrm{EW}}\)</span> &amp; <span
 class="math inline">\(N_c+1=4\)</span> for <span
 class="math inline">\(N_c=3\)</span> &amp; The coefficient that controls
-the exponential drop to the electroweak scale.<br />
-<span class="math inline">\(A_Z(P)\)</span> &amp; <span
+the exponential drop to the electroweak scale. <span
+class="math inline">\(A_Z(P)\)</span> &amp; <span
 class="math inline">\(\alpha_{\mathrm{em}}^{-1}(m_Z^2;P)\)</span> &amp;
-The electroweak-scale electromagnetic anchor.<br />
-<span class="math inline">\(\Delta_{\mathrm{lep}}(P)\)</span> &amp;
-Lepton transport contribution to inverse alpha &amp; The exact one-loop
-<span class="math inline">\(e,\mu,\tau\)</span> contribution.<br />
-<span class="math inline">\(\Delta_{\mathrm{had}}(P)\)</span> &amp;
-Hadronic transport contribution &amp; The low-energy QCD spectral
-contribution needed for the pure source calculation.<br />
-<span class="math inline">\(\Delta_{\mathrm{EW}}(P)\)</span> &amp;
+The electroweak-scale electromagnetic anchor. <span
+class="math inline">\(\Delta_{\mathrm{lep}}(P)\)</span> &amp; Lepton
+transport contribution to inverse alpha &amp; The exact one-loop <span
+class="math inline">\(e,\mu,\tau\)</span> contribution. <span
+class="math inline">\(\Delta_{\mathrm{had}}(P)\)</span> &amp; Hadronic
+transport contribution &amp; The low-energy QCD spectral contribution
+needed for the pure source calculation. <span
+class="math inline">\(\Delta_{\mathrm{EW}}(P)\)</span> &amp;
 Electroweak/scheme endpoint remainder &amp; Same-scheme finite remainder
-needed to connect the source anchor to the endpoint.<br />
-<span class="math inline">\(\Delta_{\mathrm{calc}}(P)\)</span> &amp;
+needed to connect the source anchor to the endpoint. <span
+class="math inline">\(\Delta_{\mathrm{calc}}(P)\)</span> &amp;
 Calculated charged-fermion transport contribution &amp; The exact lepton
 term plus the screened quark continuation used by the source
-calculation.<br />
-<span
+calculation. <span
 class="math inline">\(\Delta_{\mathrm{H,cal}}^{\mathrm{fp}}\)</span>
 &amp; CODATA-calibrated hadronic endpoint correction for the fixed point
 &amp; The inverse-alpha amount needed to move the pure source
-fixed-point value to the CODATA/NIST central endpoint.<br />
-<span class="math inline">\(R_Q(P)\)</span> &amp; <span
+fixed-point value to the CODATA/NIST central endpoint. <span
+class="math inline">\(R_Q(P)\)</span> &amp; <span
 class="math inline">\(A_{\mathrm{Th}}(P)-[A_Z(P)+\Delta_{\mathrm{calc}}(P)]\)</span>
-&amp; The remaining same-scheme hadronic endpoint contribution.<br />
-<span class="math inline">\(P_{\mathrm C}\)</span> &amp; Public endpoint
-pixel &amp; The pixel obtained from the CODATA/NIST Thomson endpoint
-under the OPH outer equation.</p>
+&amp; The remaining same-scheme hadronic endpoint contribution. <span
+class="math inline">\(P_{\mathrm C}\)</span> &amp; Public endpoint pixel
+&amp; The pixel obtained from the CODATA/NIST Thomson endpoint under the
+OPH outer equation.</p>
 </div>
 
 <h1 id="step-1-the-oph-starting-rule">Step 1: The OPH Starting Rule</h1>
@@ -624,7 +648,7 @@ class="math display">\[
 \alpha_i^{-1}(\mu;P,\alpha_U)
 \mathrel{=}
 \alpha_U^{-1}
-{}+
++
 \frac{b_i}{2\pi}\log\!\left(\frac{M_U(P)}{\mu}\right).
 \label{eq:running}
 \end{equation}
@@ -1433,70 +1457,56 @@ uses the same separation.</p>
 Steps</h1>
 <div class="longtable">
 
-<p>@L0.18L0.44L0.28@ Step &amp; Mathematical object &amp; Status<br />
-Overlap rule &amp;
+<p>@L0.18L0.44L0.28@ Step &amp; Mathematical object &amp; Status Overlap
+rule &amp;
 Eq. <a href="#eq:overlap" data-reference-type="eqref" data-reference="eq:overlap">[eq:overlap]</a>
-&amp; OPH starting structure.<br />
-Pixel variable &amp; <span
+&amp; OPH starting structure. Pixel variable &amp; <span
 class="math inline">\(P=a_{\mathrm{cell}}/\ell_\star^2\)</span> &amp;
-Defined.<br />
-Golden balance &amp; <span
-class="math inline">\(\varphi=(1+\sqrt5)/2\)</span> &amp; Defined.<br />
+Defined. Golden balance &amp; <span
+class="math inline">\(\varphi=(1+\sqrt5)/2\)</span> &amp; Defined.
 Boundary width &amp; <span
 class="math inline">\(\alpha_{\mathrm{ext}}=(P-\varphi)/\sqrt\pi\)</span>
-&amp; Defined.<br />
-Inside readout &amp; <span
+&amp; Defined. Inside readout &amp; <span
 class="math inline">\(\alpha_{\mathrm{in}}=1/A_{\mathrm{Th}}(P)\)</span>
-&amp; Defined.<br />
-Closure &amp; <span
+&amp; Defined. Closure &amp; <span
 class="math inline">\(P=\varphi+\sqrt\pi/A_{\mathrm{Th}}(P)\)</span>
-&amp; Defined.<br />
-Source scale &amp; <span class="math inline">\(M_U=E_P\mathrm
-e^{-2\pi}P^{1/6}\)</span> &amp; Defined and calculated.<br />
-Cell scale &amp; <span class="math inline">\(E_{\mathrm{cell}}=E_P/\sqrt
-P\)</span> &amp; Defined and calculated.<br />
-Transmutation &amp; <span
+&amp; Defined. Source scale &amp; <span
+class="math inline">\(M_U=E_P\mathrm e^{-2\pi}P^{1/6}\)</span> &amp;
+Defined and calculated. Cell scale &amp; <span
+class="math inline">\(E_{\mathrm{cell}}=E_P/\sqrt P\)</span> &amp;
+Defined and calculated. Transmutation &amp; <span
 class="math inline">\(v=E_{\mathrm{cell}}\exp[-2\pi/(\beta_{\mathrm{EW}}\alpha_U)]\)</span>
-&amp; Defined and calculated.<br />
-Gauge running &amp;
+&amp; Defined and calculated. Gauge running &amp;
 Eq. <a href="#eq:running" data-reference-type="eqref" data-reference="eq:running">[eq:running]</a>
-&amp; Defined and calculated.<br />
-<span class="math inline">\(Z\)</span>-scale self-consistency &amp;
+&amp; Defined and calculated. <span
+class="math inline">\(Z\)</span>-scale self-consistency &amp;
 Eq. <a href="#eq:mZfixed" data-reference-type="eqref" data-reference="eq:mZfixed">[eq:mZfixed]</a>
-&amp; Defined and calculated.<br />
-Heat-kernel closure &amp;
+&amp; Defined and calculated. Heat-kernel closure &amp;
 Eq. <a href="#eq:pixelclosure" data-reference-type="eqref" data-reference="eq:pixelclosure">[eq:pixelclosure]</a>
-&amp; Defined and calculated.<br />
-Electroweak anchor &amp; <span
+&amp; Defined and calculated. Electroweak anchor &amp; <span
 class="math inline">\(A_Z=\alpha_{\mathrm{em}}^{-1}(m_Z^2;P)\)</span>
-&amp; Defined and calculated.<br />
-Charged spectrum &amp;
+&amp; Defined and calculated. Charged spectrum &amp;
 Eqs. <a href="#eq:quarkmasses" data-reference-type="eqref" data-reference="eq:quarkmasses">[eq:quarkmasses]</a>
 and
 <a href="#eq:lepmasses" data-reference-type="eqref" data-reference="eq:lepmasses">[eq:lepmasses]</a>
-&amp; Calculated continuation.<br />
-Fermion kernel &amp;
+&amp; Calculated continuation. Fermion kernel &amp;
 Eqs. <a href="#eq:kernelint" data-reference-type="eqref" data-reference="eq:kernelint">[eq:kernelint]</a>
 and
 <a href="#eq:kernelclosed" data-reference-type="eqref" data-reference="eq:kernelclosed">[eq:kernelclosed]</a>
-&amp; Exact one-loop kernel.<br />
-Calculated endpoint &amp; <span
+&amp; Exact one-loop kernel. Calculated endpoint &amp; <span
 class="math inline">\(A_{\mathrm{calc}}=A_Z+\Delta_{\mathrm{calc}}\)</span>
-&amp; Pure source value.<br />
-Calibrated hadronic correction &amp; <span
+&amp; Pure source value. Calibrated hadronic correction &amp; <span
 class="math inline">\(\Delta_{\mathrm{H,cal}}^{\mathrm{fp}}\)</span>,
 Eq. <a href="#eq:Dempfp" data-reference-type="eqref" data-reference="eq:Dempfp">[eq:Dempfp]</a>
-&amp; Hadron-completed endpoint value.<br />
-Hadronic/scheme residual &amp; <span
+&amp; Hadron-completed endpoint value. Hadronic/scheme residual &amp;
+<span
 class="math inline">\(R_Q=A_{\mathrm{Th}}-A_{\mathrm{calc}}\)</span>
-&amp; Isolated endpoint contribution.<br />
-Public endpoint &amp; <span
+&amp; Isolated endpoint contribution. Public endpoint &amp; <span
 class="math inline">\(A_{\mathrm{Th}}=137.035999177(21)\)</span> &amp;
-CODATA/NIST endpoint comparison value.<br />
-Raw PDG diagnostic &amp;
+CODATA/NIST endpoint comparison value. Raw PDG diagnostic &amp;
 Eq. <a href="#eq:pdgdiag" data-reference-type="eqref" data-reference="eq:pdgdiag">[eq:pdgdiag]</a>
-&amp; Comparison diagnostic in a different endpoint convention.<br />
-Interval theorem &amp; Banach/contraction certificate for full <span
+&amp; Comparison diagnostic in a different endpoint convention. Interval
+theorem &amp; Banach/contraction certificate for full <span
 class="math inline">\(G\)</span> &amp; Required for pure source
 theorem.</p>
 </div>
@@ -1513,7 +1523,9 @@ class="math inline">\(1/A_{\mathrm{Th}}(P)\)</span>. The physical cell
 is the fixed point where those two readings agree.</p>
 <p>The pure source calculation computes the fixed-point witness <span
 class="math display">\[
-\alpha^{-1}_{\mathrm{cand}}=136.994835164621649457949994585787193262029.
+\alpha^{-1}_{\mathrm{cand}}
+\mathrel{=}
+\vcenter{\hbox{\parbox{0.68\linewidth}{\small\ttfamily\seqsplit{136.994835164621649457949994585787193262029}}}}.
 \]</span> The public endpoint value is <span class="math display">\[
 \alpha^{-1}(0)=137.035999177(21),
 \]</span> with <span class="math display">\[
@@ -1555,9 +1567,9 @@ K. A. Anirudha, <em>Observers Are All You Need</em>. GitHub source: <a
 href="https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/observers_are_all_you_need.tex">https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/observers_are_all_you_need.tex</a>.
 GitHub PDF: <a
 href="https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/observers_are_all_you_need.pdf">https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/observers_are_all_you_need.pdf</a>.</p>
-<p>B. Müller, A. Osika, K. Xue, and P. Nguyen, <em>Recovering Relativity
-and Standard Model Structure from Observer-Overlap Consistency</em>.
-GitHub source: <a
+<p>B. Müller, A. Osika, K. Xue, M. Poneder, P. Nguyen, and M. A. Visser,
+<em>Recovering Relativity and Standard Model Structure from
+Observer-Overlap Consistency</em>. GitHub source: <a
 href="https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/recovering_relativity_and_standard_model_structure_from_observer_overlap_consistency_compact.tex">https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/recovering_relativity_and_standard_model_structure_from_observer_overlap_consistency_compact.tex</a>.
 GitHub PDF: <a
 href="https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/recovering_relativity_and_standard_model_structure_from_observer_overlap_consistency_compact.pdf">https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/recovering_relativity_and_standard_model_structure_from_observer_overlap_consistency_compact.pdf</a>.</p>

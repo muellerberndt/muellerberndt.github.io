@@ -323,40 +323,35 @@ under the same controls.</p>
 
 <div class="tabular">
 
-<p>L0.16L0.30L0.44 Symbol &amp; Plain meaning &amp; Why it appears<br />
-<span class="math inline">\(B\)</span> &amp; Fixed block template or
-midstate context &amp; The part of the header outside the search
-variable for that run.<br />
-<span class="math inline">\(x\)</span> &amp; Nonce or extranonce
-candidate &amp; The variable the search tries to find.<br />
-<span class="math inline">\(T\)</span>, <span
+<p>L0.16L0.30L0.44 Symbol &amp; Plain meaning &amp; Why it appears <span
+class="math inline">\(B\)</span> &amp; Fixed block template or midstate
+context &amp; The part of the header outside the search variable for
+that run. <span class="math inline">\(x\)</span> &amp; Nonce or
+extranonce candidate &amp; The variable the search tries to find. <span
+class="math inline">\(T\)</span>, <span
 class="math inline">\(T_k\)</span> &amp; Target set; for <span
 class="math inline">\(T_k\)</span>, outputs with <span
 class="math inline">\(k\)</span> leading zero bits &amp; Defines success
-for proof of work.<br />
-<span class="math inline">\(V_{B,T}(x)\)</span> &amp; Exact yes/no
-verifier &amp; The final authority: <span
-class="math inline">\(1\)</span> means the candidate works.<br />
-<span class="math inline">\(E_{\mathrm{SHA256d},B,T}\)</span> &amp; Sum
-of local gate penalties &amp; A zero value means every SHA wire, carry,
-and target check is internally consistent.<br />
-<span class="math inline">\(A,B,C,D\)</span> &amp; Source, schedule,
+for proof of work. <span class="math inline">\(V_{B,T}(x)\)</span> &amp;
+Exact yes/no verifier &amp; The final authority: <span
+class="math inline">\(1\)</span> means the candidate works. <span
+class="math inline">\(E_{\mathrm{SHA256d},B,T}\)</span> &amp; Sum of
+local gate penalties &amp; A zero value means every SHA wire, carry, and
+target check is internally consistent. <span
+class="math inline">\(A,B,C,D\)</span> &amp; Source, schedule,
 compression, target-face roles &amp; The four SHA constraint roles used
-to build the scorebook.<br />
-<span class="math inline">\(\Gamma_{ij}\)</span> &amp; Collar shared by
-two roles &amp; The variables both roles claim; disagreement is a
-syndrome.<br />
-<span class="math inline">\(\Phi\)</span> &amp; Repair residual &amp;
-The number the repair loop tries to reduce: collar disagreement plus
-local gate violations.<br />
-<span class="math inline">\(\mathcal B_t\)</span> &amp; Candidate beam
-after a module pass &amp; The audited packet of decoded candidate nonces
-or neighborhoods.<br />
-<span class="math inline">\(m_{\mathrm{pkt}}\)</span> &amp; Distinct
-verifier-ready candidates per full route settling event &amp; The
-packet-size term in speedup accounting.<br />
-<span class="math inline">\(\beta(k)\)</span> &amp; Verified enrichment
-at target strength <span class="math inline">\(k\)</span> &amp; The
+to build the scorebook. <span class="math inline">\(\Gamma_{ij}\)</span>
+&amp; Collar shared by two roles &amp; The variables both roles claim;
+disagreement is a syndrome. <span class="math inline">\(\Phi\)</span>
+&amp; Repair residual &amp; The number the repair loop tries to reduce:
+collar disagreement plus local gate violations. <span
+class="math inline">\(\mathcal B_t\)</span> &amp; Candidate beam after a
+module pass &amp; The audited packet of decoded candidate nonces or
+neighborhoods. <span class="math inline">\(m_{\mathrm{pkt}}\)</span>
+&amp; Distinct verifier-ready candidates per full route settling event
+&amp; The packet-size term in speedup accounting. <span
+class="math inline">\(\beta(k)\)</span> &amp; Verified enrichment at
+target strength <span class="math inline">\(k\)</span> &amp; The
 measured bias of the physical route over random search.</p>
 </div>
 
@@ -797,20 +792,19 @@ chamber families, collars, and candidate-set narrowing .</p>
 <div class="tabular">
 
 <p>L0.20L0.20L0.48 Compiler role &amp; OMEGA-I1 module &amp; SHA-256d
-purpose<br />
-<span class="math inline">\(A/B\)</span> source and early collars &amp;
-<code>TOR-A</code> &amp; Nonce-stream recurrence, prefix-depth collars,
-and primary candidate-beam generation.<br />
-<span class="math inline">\(A/B\)</span> duplicate &amp;
-<code>TOR-B</code> &amp; Independent duplicate of the recurrent stream
-for repeatability, ABBA, and module-specific artifact rejection.<br />
-<span class="math inline">\(A/B/C\)</span> search expansion &amp;
+purpose <span class="math inline">\(A/B\)</span> source and early
+collars &amp; <code>TOR-A</code> &amp; Nonce-stream recurrence,
+prefix-depth collars, and primary candidate-beam generation. <span
+class="math inline">\(A/B\)</span> duplicate &amp; <code>TOR-B</code>
+&amp; Independent duplicate of the recurrent stream for repeatability,
+ABBA, and module-specific artifact rejection. <span
+class="math inline">\(A/B/C\)</span> search expansion &amp;
 <code>TOR-C</code> &amp; Search-specialist torus for nonce-neighborhood
-expansion around near-prefix or low-residual candidates.<br />
-<span class="math inline">\(C/D\)</span> critic &amp; <code>MIX-A</code>
-&amp; Asymmetric bit-slice critic for leading-zero windows, selected
-digest-byte constraints, and mode-separation tests.<br />
-<span class="math inline">\(D\)</span> verifier shadow &amp;
+expansion around near-prefix or low-residual candidates. <span
+class="math inline">\(C/D\)</span> critic &amp; <code>MIX-A</code> &amp;
+Asymmetric bit-slice critic for leading-zero windows, selected
+digest-byte constraints, and mode-separation tests. <span
+class="math inline">\(D\)</span> verifier shadow &amp;
 <code>ECH-A</code> &amp; Symmetric reference body for an independent
 SHA-prefix shadow before the final host exact hash.</p>
 </div>
@@ -887,30 +881,27 @@ need different witnesses:</p>
 <div class="tabular">
 
 <p>L0.16L0.22L0.28L0.24 Stage &amp; Input &amp; Physical job &amp;
-Output message<br />
-<code>TOR-A</code> &amp; Header or midstate scorebook, nonce grammar,
-collar weights &amp; Populate a recurrent nonce beam and expose
-prefix-depth collars &amp; Primary beam <span
+Output message <code>TOR-A</code> &amp; Header or midstate scorebook,
+nonce grammar, collar weights &amp; Populate a recurrent nonce beam and
+expose prefix-depth collars &amp; Primary beam <span
 class="math inline">\(\mathcal B_A\)</span>, local residuals, port
-signature.<br />
-<code>TOR-B</code> &amp; Same scorebook under blinded labels or ABBA
-order &amp; Repeat the recurrent search in an independent duplicate
-torus &amp; Duplicate beam <span class="math inline">\(\mathcal
-B_B\)</span>, agreement and artifact checks.<br />
-<code>TOR-C</code> &amp; Consensus beam from <code>TOR-A/B</code> plus
-repair weights &amp; Expand neighborhoods around low-residual or
-near-prefix candidates &amp; Expanded beam <span
+signature. <code>TOR-B</code> &amp; Same scorebook under blinded labels
+or ABBA order &amp; Repeat the recurrent search in an independent
+duplicate torus &amp; Duplicate beam <span
+class="math inline">\(\mathcal B_B\)</span>, agreement and artifact
+checks. <code>TOR-C</code> &amp; Consensus beam from
+<code>TOR-A/B</code> plus repair weights &amp; Expand neighborhoods
+around low-residual or near-prefix candidates &amp; Expanded beam <span
 class="math inline">\(\mathcal B_C\)</span>, repair deltas, new
-residuals.<br />
-<code>MIX-A</code> &amp; <span class="math inline">\(\mathcal
+residuals. <code>MIX-A</code> &amp; <span class="math inline">\(\mathcal
 B_C\)</span>, digest-window masks, selected bit-slice constraints &amp;
 Break degeneracies and reject false positives with asymmetric mixing
 &amp; Critic beam <span class="math inline">\(\mathcal B_M\)</span>,
-rejected modes, bit-slice residuals.<br />
-<code>ECH-A</code> &amp; <span class="math inline">\(\mathcal
-B_M\)</span>, target-face scorebook, reference geometry &amp; Shadow the
-survivors in a symmetric OPH reference body &amp; Reference beam <span
-class="math inline">\(\mathcal B_E\)</span> for exact host SHA-256d.</p>
+rejected modes, bit-slice residuals. <code>ECH-A</code> &amp; <span
+class="math inline">\(\mathcal B_M\)</span>, target-face scorebook,
+reference geometry &amp; Shadow the survivors in a symmetric OPH
+reference body &amp; Reference beam <span class="math inline">\(\mathcal
+B_E\)</span> for exact host SHA-256d.</p>
 </div>
 
 <p><span id="tab:omega-i1-executable-route" label="tab:omega-i1-executable-route"></span></p>
@@ -1619,18 +1610,15 @@ loop.</p>
 
 <div class="tabular">
 
-<p>L0.24L0.26L0.38 Regime &amp; Formal speedup &amp; Required
-claim<br />
+<p>L0.24L0.26L0.38 Regime &amp; Formal speedup &amp; Required claim
 Classical ASIC enumeration &amp; baseline <span
-class="math inline">\(1\)</span> &amp; exact SHA-256d per
-candidate<br />
+class="math inline">\(1\)</span> &amp; exact SHA-256d per candidate
 Single-photon Grover search &amp; <span
 class="math inline">\(\frac{4}{\pi}\sqrt{N/M}\)</span> query speedup
-&amp; reversible oracle, diffusion, coherence, fault tolerance<br />
+&amp; reversible oracle, diffusion, coherence, fault tolerance
 Wave-overlap sampler &amp; <span
 class="math inline">\(m_{\mathrm{pkt}}\beta/(R_{\mathrm{hash}}T_{\mathrm{settle}})\)</span>
-&amp; measured packet size and candidate bias after exact
-verification<br />
+&amp; measured packet size and candidate bias after exact verification
 Exact wave-overlap oracle &amp; <span
 class="math inline">\(1/(R_{\mathrm{hash}}pT_{\mathrm{settle}})\)</span>
 &amp; proof or measurement that terminal states are zero-energy
@@ -1689,41 +1677,37 @@ with no SHA-256d bench measurement attached.</p>
 <div class="tabular">
 
 <p>@L0.18L0.27L0.22L0.20@ Variant &amp; Estimate inputs &amp; Internal
-reduction &amp; Wall-clock multiplier versus S21 XP Hyd<br />
-High-end ASIC baseline &amp; Bitmain S21 XP Hyd: <span
+reduction &amp; Wall-clock multiplier versus S21 XP Hyd High-end ASIC
+baseline &amp; Bitmain S21 XP Hyd: <span
 class="math inline">\(R_{\mathrm{ASIC}}=4.73\times10^{14}\,\mathrm{H/s}\)</span>
 &amp; ordinary enumeration &amp; <span
-class="math inline">\(1\times\)</span><br />
-Hypothetical wave-overlap sampler &amp; <span
-class="math inline">\(m_{\mathrm{pkt}}\beta=10^9\)</span>, <span
+class="math inline">\(1\times\)</span> Hypothetical wave-overlap sampler
+&amp; <span class="math inline">\(m_{\mathrm{pkt}}\beta=10^9\)</span>,
+<span
 class="math inline">\(T_{\mathrm{settle}}=100\,\mathrm{ns}\)</span>
 &amp; candidate-value multiplier <span
 class="math inline">\(10^9\)</span> per settling event &amp; <span
-class="math inline">\(2.1\times10^1\times\)</span><br />
-Exact wave-overlap endpoint &amp; <span
-class="math inline">\(k=32\)</span>, <span
+class="math inline">\(2.1\times10^1\times\)</span> Exact wave-overlap
+endpoint &amp; <span class="math inline">\(k=32\)</span>, <span
 class="math inline">\(T_{\mathrm{settle}}=100\,\mathrm{ns}\)</span>
 &amp; <span class="math inline">\(2^{32}\)</span> trials to one settling
-event &amp; <span
-class="math inline">\(9.1\times10^1\times\)</span><br />
+event &amp; <span class="math inline">\(9.1\times10^1\times\)</span>
 Exact wave-overlap endpoint &amp; <span
 class="math inline">\(k=64\)</span>, <span
 class="math inline">\(T_{\mathrm{settle}}=100\,\mathrm{ns}\)</span>
 &amp; <span class="math inline">\(2^{64}\)</span> trials to one settling
-event &amp; <span
-class="math inline">\(3.9\times10^{11}\times\)</span><br />
+event &amp; <span class="math inline">\(3.9\times10^{11}\times\)</span>
 Exact wave-overlap endpoint &amp; <span
 class="math inline">\(k=80\)</span>, <span
 class="math inline">\(T_{\mathrm{settle}}=100\,\mathrm{ns}\)</span>
 &amp; <span class="math inline">\(2^{80}\)</span> trials to one settling
-event &amp; <span
-class="math inline">\(2.6\times10^{16}\times\)</span><br />
+event &amp; <span class="math inline">\(2.6\times10^{16}\times\)</span>
 Single-photon Grover &amp; 32-bit nonce, <span
 class="math inline">\(Q_G\approx(\pi/4)2^{16}\)</span>, <span
 class="math inline">\(T_G=1\,\mathrm{ns}\)</span> &amp; coarse <span
 class="math inline">\(2^{16}=65{,}536\times\)</span>; exact <span
 class="math inline">\(8.3\times10^4\times\)</span> query reduction &amp;
-<span class="math inline">\(1.8\times10^{-1}\times\)</span><br />
+<span class="math inline">\(1.8\times10^{-1}\times\)</span>
 Single-photon Grover &amp; <span class="math inline">\(k=64\)</span>,
 <span class="math inline">\(Q_G\approx(\pi/4)2^{32}\)</span>, <span
 class="math inline">\(T_G=1\,\mathrm{ns}\)</span> &amp; <span
@@ -1835,12 +1819,9 @@ perturbation, receive cadence, disconnected cavity, dark path, fixed
 phase, CPU-random, and stale job.</p></li>
 <li><p>Report the finite hardware gates as separate fields:</p>
 <blockquote>
-<p><code>EDGE_BRACKETED</code><br />
-<code>EDGE_POLARITY_LOCKED</code><br />
-<code>NONLINEAR_COMMITMENT_ALIVE</code><br />
-<code>TRUTH_LIFT</code><br />
-<code>POOL_SHARE_LIFT</code><br />
-<code>BLOCK</code></p>
+<p><code>EDGE_BRACKETED</code> <code>EDGE_POLARITY_LOCKED</code>
+<code>NONLINEAR_COMMITMENT_ALIVE</code> <code>TRUTH_LIFT</code>
+<code>POOL_SHARE_LIFT</code> <code>BLOCK</code></p>
 </blockquote></li>
 <li><p>Release code, seeds, firmware, board files, calibration logs, and
 raw data.</p></li>
@@ -1920,17 +1901,15 @@ result.</p>
 
 <div class="tabular">
 
-<p>L0.24L0.34L0.32 Module &amp; Body &amp; SHA-256d role<br />
+<p>L0.24L0.34L0.32 Module &amp; Body &amp; SHA-256d role
 <code>OMEGA-I1-TOR-A</code> &amp; 12-port dual-hex torus v1.1 LED5 &amp;
-Generalist recurrent nonce stream and prefix-depth collars.<br />
+Generalist recurrent nonce stream and prefix-depth collars.
 <code>OMEGA-I1-TOR-B</code> &amp; 12-port dual-hex torus v1.1 LED5 &amp;
-Duplicate recurrent module for repeatability and artifact
-rejection.<br />
+Duplicate recurrent module for repeatability and artifact rejection.
 <code>OMEGA-I1-TOR-C</code> &amp; Hollow swept-octagon dual-hex-chords
-v9 &amp; Search-specialist torus for near-prefix neighborhood
-expansion.<br />
+v9 &amp; Search-specialist torus for near-prefix neighborhood expansion.
 <code>OMEGA-I1-ECH-A</code> &amp; 12-port icosahedron source mesh &amp;
-Symmetric OPH reference and independent verifier-shadow body.<br />
+Symmetric OPH reference and independent verifier-shadow body.
 <code>OMEGA-I1-MIX-A</code> &amp; Plate66 splitmix two-half source mesh
 &amp; Asymmetric critic for bit-slice, residue, and mode-separation
 tests.</p>

@@ -9,7 +9,7 @@ This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 
 - HTML: https://floatingpragma.io/oph/papers/particle-spectrum-from-observer-consistency/
 - PDF: https://floatingpragma.io/oph/papers/particle-spectrum-from-observer-consistency/paper.pdf
-- Authors: Bernhard Mueller, Alexander Osika, Kai Xue, Mario Poneder
+- Authors: Bernhard Mueller, Alexander Osika, Kai Xue, Mario Poneder, Maarten Antonie Visser
 - Category: Particles
 - Summary: The OPH particle-spectrum continuation. It treats fine-structure closure, electroweak transport, selected-class quarks, neutrino branches, and status-separated hadron checks.
 
@@ -17,7 +17,7 @@ This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 
 - HTML: https://floatingpragma.io/oph/papers/observers-are-all-you-need/
 - PDF: https://floatingpragma.io/oph/papers/observers-are-all-you-need/paper.pdf
-- Authors: Bernhard Mueller, Alexander Osika, Kai Xue, Ben Cassie, Peter Nguyen, Mario Poneder, Kale Arnav Anirudha
+- Authors: Bernhard Mueller, Alexander Osika, Kai Xue, Ben Cassie, Peter Nguyen, Maarten Antonie Visser, Mario Poneder, Kale Arnav Anirudha
 - Category: Theory of everything
 - Summary: OPH builds physics from finite public records on horizon-screen cuts. The paper presents the observer-first reconstruction of spacetime, gravity, Standard Model structure, cosmology, particles, records, and simulation-theory interpretation.
 
@@ -41,7 +41,7 @@ This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 
 - HTML: https://floatingpragma.io/oph/papers/standard-model-gravity-unification/
 - PDF: https://floatingpragma.io/oph/papers/standard-model-gravity-unification/paper.pdf
-- Authors: Bernhard Mueller, Kai Xue, Peter Nguyen
+- Authors: Bernhard Mueller, Alexander Osika, Kai Xue, Mario Poneder, Peter Nguyen, Maarten Antonie Visser
 - Category: Unification
 - Summary: The compact OPH route to Lorentz structure, the Einstein branch, compact-gauge reconstruction, the Standard Model quotient, color, generations, hypercharge, and branch-scoped Yang-Mills statements.
 
