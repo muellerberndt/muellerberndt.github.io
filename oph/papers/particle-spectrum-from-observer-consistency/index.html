@@ -26,7 +26,7 @@
   <meta name="citation_pdf_url" content="https://floatingpragma.io/oph/papers/particle-spectrum-from-observer-consistency/paper.pdf" />
   <meta name="citation_abstract_html_url" content="https://floatingpragma.io/oph/papers/particle-spectrum-from-observer-consistency/" />
   <meta name="citation_technical_report_institution" content="Pragma Research" />
-  <meta name="citation_technical_report_number" content="OPH r1489 deriving_the_particle_zoo_from_observer_consistency" />
+  <meta name="citation_technical_report_number" content="OPH r1490 deriving_the_particle_zoo_from_observer_consistency" />
   <meta name="DC.title" content="Deriving the Particle Zoo from Observer Consistency" />
   <meta name="DC.creator" content="Bernhard Mueller" />
   <meta name="DC.creator" content="Alexander Osika" />
@@ -119,7 +119,7 @@
   ],
   "datePublished": "June 15, 2026",
   "dateModified": "June 15, 2026",
-  "version": "r1489",
+  "version": "r1490",
   "subjectOf": [
     {
       "@type": "BlogPosting",
@@ -216,14 +216,14 @@
             <p>The OPH particle-spectrum continuation. It treats fine-structure closure, electroweak transport, selected-class quarks, neutrino branches, and status-separated hadron checks.</p>
           </div>
           <div class="paper-meta-line">
-            <span>r1489</span>
+            <span>r1490</span>
             <span>June 15, 2026</span>
             <span>papers</span>
           </div>
           <div class="cta-row">
             <a class="btn btn-primary" href="/oph/papers/particle-spectrum-from-observer-consistency/paper.pdf" target="_blank" rel="noopener noreferrer" data-track-link="paper-pdf-deriving_the_particle_zoo_from_observer_consistency">Download PDF</a>
             <a class="btn btn-secondary" href="/oph/papers/" data-track-link="paper-index">All OPH papers</a>
-            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r1489" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
+            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r1490" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
             <a class="btn btn-secondary" href="https://challenge.floatingpragma.io/" data-track-link="paper-challenge">Challenge</a>
           </div>
 
@@ -252,7 +252,7 @@
         </header>
         <div class="paper-reader-grid">
           <div class="paper-body">
-<p><strong>Paper release:</strong> <code>r1489</code>
+<p><strong>Paper release:</strong> <code>r1490</code>
 <strong>Released:</strong> June 15, 2026</p>
 <h1 id="introduction">Introduction</h1>
 <p>Observer-Patch Holography asks a concrete follow-up question after
@@ -397,8 +397,8 @@ flavor transport and observer-facing readout enter.</p>
 <p>The quantitative particle side adds one local closure variable. The
 common pixel ratio <span class="math inline">\(P\)</span>, fixed on the
 synthesis paper’s outer/inner closure branch , feeds the forward
-electroweak map and its descendants. The fixed point gives <span
-class="math display">\[
+electroweak map and its descendants. The public endpoint branch displays
+<span class="math display">\[
 \alpha^{-1}(0)=137.035999177(21),
 \qquad
 \alpha(0)\simeq0.00729735256433,
@@ -411,19 +411,24 @@ class="math inline">\(\sqrt{\pi}\)</span> width, a trial <span
 class="math inline">\(P\)</span> feeds the source map through
 unification, running, and electroweak anchoring, and Ward-projected
 electromagnetic transport gives the Thomson endpoint used by the
-outer/inner pixel fixed point. The value is forced because each
-ingredient in that equation is fixed by the screen balance,
-normalization, source map, and Ward-projected endpoint; any different
-<span class="math inline">\(\alpha\)</span> gives a different <span
+outer/inner pixel fixed point. The value is forced on that declared
+branch because each ingredient in the closure equation is fixed by the
+screen balance, normalization, source map, and Ward-projected endpoint;
+any different electromagnetic readout gives a different <span
 class="math inline">\(P\)</span> and fails the outer/inner equality for
-the same cell. The source-side audit trunk records <span
+the same cell. The source-only diagnostic trunk records <span
 class="math display">\[
 \begin{aligned}
 P&amp;=\vcenter{\hbox{\parbox{0.68\linewidth}{\small\ttfamily\seqsplit{1.63097209569432901817967892561191884270169}}}},\\
 \alpha_{\mathrm{cand}}^{-1}
 &amp;=\vcenter{\hbox{\parbox{0.68\linewidth}{\small\ttfamily\seqsplit{136.994835164621649457949994585787193262029}}}}.
 \end{aligned}
-\]</span> with the detailed endpoint table in
+\]</span> The approximately <span class="math inline">\(0.041\)</span>
+inverse-alpha gap to the public Thomson endpoint is the declared
+QCD/hadronic electromagnetic payload. The endpoint row is therefore a
+public fixed-point row with empirical hadron closure records, while the
+QCD-free hierarchy witness is the cleaner source-only stress test. The
+detailed endpoint table appears in
 Section <a href="#sec:particle-input-ledger" data-reference-type="ref" data-reference="sec:particle-input-ledger">4</a>.
 The separate cosmic record-closure target <span
 class="math inline">\(N_{\mathrm{CRC}}=F(N_{\mathrm{CRC}})\)</span>,
@@ -492,6 +497,14 @@ class="math inline">\(N_{\mathrm{scr}}\simeq3.31\times10^{122}\)</span>.
 The particle-spectrum derivation studied here uses the local pixel fixed
 point <span class="math inline">\(P_\star\)</span> in place of a long
 particle-by-particle parameter list.</p>
+<p>Observation is allowed to supply a branch hint. That is a consequence
+of the OPH picture, where the universe is a closed fixed structure and
+internal observers can read approximate coordinates from experiments.
+The proof obligation is stricter: the exact <span
+class="math inline">\(P_\star\)</span> used by the particle branch must
+be computed by the self-referential pixel equation, and the endpoint
+must be unique on the declared interval. A fitted particle mass can
+identify a neighborhood. It cannot replace the closure solve.</p>
 <h2 id="why-a-single-p-matters">Why a single <span
 class="math inline">\(P\)</span> matters</h2>
 <p>The structural theorems determine <em>what kind</em> of particle
@@ -536,10 +549,19 @@ Thomson endpoint <span class="math display">\[
 A_T(P)=T_Q(a_0(P),F_{\mathrm{src}}(P))=\alpha_{\mathrm{em}}^{-1}(0;P),
 \]</span> and the cell closes when <span class="math display">\[
 P=\varphi+\frac{\sqrt{\pi}}{A_T(P)}.
-\]</span> Thus <span class="math inline">\(\alpha\)</span> is the
-observer-supporting electromagnetic width of the local pixel, and its
-value is fixed by the unique solution of this outer/inner consistency
-equation. The OPH fixed-point readout <span
+\]</span> The numerical solve is therefore a root problem for <span
+class="math display">\[
+H(P):=P-\varphi-\frac{\sqrt{\pi}}{A_T(P)}.
+\]</span> The branch interval is localized from the observer-facing
+data, the solver evaluates <span class="math inline">\(A_T(P)\)</span>
+from the declared source map at each candidate point, and the accepted
+value is the unique zero of <span class="math inline">\(H\)</span> on
+that interval. The measured endpoint can locate the interval. It cannot
+replace the root condition. Thus <span
+class="math inline">\(\alpha\)</span> is the observer-supporting
+electromagnetic width of the local pixel, and its value is fixed by the
+unique solution of this outer/inner consistency equation. The OPH
+fixed-point readout <span
 class="math inline">\(\alpha^{-1}(0)=137.035999177(21)\)</span> gives
 <span class="math display">\[
 P\simeq1.6309682094.
@@ -2665,9 +2687,74 @@ class="math inline">\(N_{\mathrm{EW}}(P)\)</span> and the hierarchy
 identity. ◻</p>
 </div>
 
+<div id="thm:screen-sieve-capacity-projection" class="theorem">
+
+<p><strong>Theorem 15</strong> (Icosahedral screen sieve and capacity
+projection). <em>On the OPH triangulated <span
+class="math inline">\(S^2\)</span> screen branch with a locally
+six-valent MaxEnt vacuum, convex defect cost, edge-center collar
+readout, and no-marked-point finite isotropy, the screen has exactly
+twelve irreducible curvature ports. The ports form the <span
+class="math inline">\(12\)</span>-vertex icosahedral orbit, and an
+invariant screen load <span class="math inline">\(X\)</span> is read
+locally as <span class="math inline">\(X/12\)</span>. For <span
+class="math inline">\(X=\log(N/\pi)\)</span>, local cell entropy <span
+class="math inline">\(P/4\)</span>, and electroweak multiplicity <span
+class="math inline">\(\beta_{\mathrm{EW}}=4\)</span>, <span
+class="math display">\[
+\Gamma_{\mathrm{EW}}
+\mathrel{=}
+\beta_{\mathrm{EW}}\frac{P}{4}\frac{1}{12}\log(N/\pi)
+\mathrel{=}
+\frac{P}{12}\log(N/\pi).
+\]</span> Consequently <span class="math display">\[
+\log(E_{\mathrm{cell}}/v)
+=\frac{P}{12}\log(N/\pi),
+\qquad
+\alpha_U(P)^{-1}=\frac{P}{6\pi}\log(N/\pi),
+\]</span> which is equivalent to the electroweak bridge residual <span
+class="math inline">\(\mathcal B_{\mathrm{EW}}(P,N)=0\)</span>.</em></p>
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> For a triangulated sphere with <span
+class="math inline">\(V\)</span> vertices, <span
+class="math inline">\(E\)</span> edges, and <span
+class="math inline">\(F\)</span> triangular faces, <span
+class="math inline">\(V-E+F=2\)</span>, <span
+class="math inline">\(3F=2E\)</span>, and hence <span
+class="math inline">\(E=3V-6\)</span>. With defect charge <span
+class="math inline">\(q_v=6-\deg(v)\)</span>, <span
+class="math display">\[
+\sum_v q_v=6V-2E=12.
+\]</span> The local vacuum is six-valent, so the total spherical
+curvature appears as positive defects. Convex defect cost spreads the
+fixed charge <span class="math inline">\(12\)</span> into twelve unit
+<span class="math inline">\(q_v=1\)</span> defects. Tetrahedral and
+octahedral alternatives carry the same total charge while concentrating
+it into four <span class="math inline">\(q=3\)</span> defects or six
+<span class="math inline">\(q=2\)</span> defects, placing them outside
+the MaxEnt/refinement-stable screen branch. Edge-center collars expose
+each unit fivefold defect as one central port, and no-marked-point
+finite isotropy places the twelve ports on the maximal finite rotation
+orbit of <span class="math inline">\(S^2\)</span>. For <span
+class="math inline">\(I\simeq A_5\)</span>, orbit-stabilizer gives <span
+class="math inline">\(|I|/|C_5|=60/5=12\)</span>. An invariant scalar
+contraction on that transitive orbit is split equally, giving the <span
+class="math inline">\(1/12\)</span> sieve factor. Multiplying the sieved
+screen load by <span class="math inline">\(P/4\)</span> and <span
+class="math inline">\(\beta_{\mathrm{EW}}=4\)</span> gives <span
+class="math inline">\(\Gamma_{\mathrm{EW}}=(P/12)\log(N/\pi)\)</span>.
+Exponentiating gives the displayed hierarchy relation, and matching it
+to the source transmutation exponent gives the displayed <span
+class="math inline">\(\alpha_U\)</span> equation and <span
+class="math inline">\(\mathcal B_{\mathrm{EW}}(P,N)=0\)</span>. ◻</p>
+</div>
+
 <div id="thm:ew-exact-capacity" class="theorem">
 
-<p><strong>Theorem 15</strong> (EW-refined exact capacity fixed point).
+<p><strong>Theorem 16</strong> (EW-refined exact capacity fixed point).
 <em>Define the log-capacity map <span class="math display">\[
 \mathcal C_{\mathrm{EW}}(P,x)
 \mathrel{=}
@@ -2700,7 +2787,7 @@ B_{\mathrm{EW}}\)</span> gives zero. ◻</p>
 
 <div id="thm:rg-higgs-naturality" class="theorem">
 
-<p><strong>Theorem 16</strong> (RG/Higgs naturality closure). <em>On the
+<p><strong>Theorem 17</strong> (RG/Higgs naturality closure). <em>On the
 selected exact hierarchy branch, let <span
 class="math inline">\(Q_s\)</span> be the source hierarchy quotient and
 <span class="math inline">\(Q_H\)</span> the Higgs/electroweak quotient.
@@ -3372,7 +3459,7 @@ A_{\mathrm{ch}}(Y_e)=\mu_{\mathrm{phys}}(Y_e).
 \]</span></p>
 <div class="theorem">
 
-<p><strong>Theorem 17</strong> (Charged same-carrier source-pair
+<p><strong>Theorem 18</strong> (Charged same-carrier source-pair
 readback). <em>Fix the ordered charged carrier <span
 class="math display">\[
 \begin{gathered}
@@ -3437,7 +3524,7 @@ quotient is closed negatively, so centered data alone do not emit the
 affine anchor <span class="math inline">\(A_{\mathrm{ch}}\)</span>.</p>
 <div class="theorem">
 
-<p><strong>Theorem 18</strong> (Charged absolute-scale
+<p><strong>Theorem 19</strong> (Charged absolute-scale
 underdetermination). <em>Let <span class="math display">\[
 E_e^{\mathrm{centered}}
 \mathrel{=}
@@ -3784,7 +3871,7 @@ class="math display">\[
 the solar-splitting boundary.</p>
 <div class="theorem">
 
-<p><strong>Theorem 19</strong> (Same-label scalar certificate suffices
+<p><strong>Theorem 20</strong> (Same-label scalar certificate suffices
 for intrinsic neutrino masses). <em>Assume the same-label gap and
 overlap scalars are emitted on all realized arrows. Then the full
 intrinsic neutrino mass-eigenstate bundle factors through the scalar
@@ -3799,7 +3886,7 @@ basis.</em></p>
 
 <div class="theorem">
 
-<p><strong>Theorem 20</strong> (Exact principal-branch selector from the
+<p><strong>Theorem 21</strong> (Exact principal-branch selector from the
 centered eta-class). <em>Fix the cycle sum <span class="math display">\[
 \Omega=\psi_{12}+\psi_{23}+\psi_{31},
 \qquad |\Omega|&lt;\frac{3\pi}{2},
@@ -3853,7 +3940,7 @@ a &amp; \rho e^{i\psi_{12}} &amp; \rho e^{i\psi_{31}}\\
 \]</span></p>
 <div class="theorem">
 
-<p><strong>Theorem 21</strong> (Exact intrinsic spectral cubic). <em>Let
+<p><strong>Theorem 22</strong> (Exact intrinsic spectral cubic). <em>Let
 <span class="math inline">\(H=M^\dagger M\)</span>. Then <span
 class="math display">\[
 H=dI+T,
@@ -3889,7 +3976,7 @@ m_k^2=d+\lambda_k.
 
 <div class="corollary">
 
-<p><strong>Corollary 22</strong> (Intrinsic eta-chain closure). <em>Once
+<p><strong>Corollary 23</strong> (Intrinsic eta-chain closure). <em>Once
 the centered eta-class is emitted at the flavor boundary, the intrinsic
 neutrino branch emits <span class="math display">\[
 \nu_1,\nu_2,\nu_3,\qquad
@@ -4787,7 +4874,7 @@ N_c=3,
 derived in this appendix from the recovered OPH core.</p>
 <div class="definition">
 
-<p><strong>Definition 23</strong> (No-hidden-free-variable rule for
+<p><strong>Definition 24</strong> (No-hidden-free-variable rule for
 <span class="math inline">\(\mathcal R_U\)</span>). <em>The following
 objects must be fixed before comparison with electroweak or gravity
 data: <span class="math display">\[
@@ -4929,7 +5016,7 @@ bracket signs are <span class="math display">\[
 Thomson endpoint in the upstream pixel solve.</p>
 <div id="thm:particle-ru-witness" class="theorem">
 
-<p><strong>Theorem 24</strong> (Electroweak unified-coupling numerical
+<p><strong>Theorem 25</strong> (Electroweak unified-coupling numerical
 witness). <em>Assume the frozen source map, running packet, heat-kernel
 cutoff policy, and no-hidden-free-variable rule above. Let <span
 class="math display">\[
@@ -5032,7 +5119,7 @@ not a second, independent proof of the finite-cutoff same-overlap
 Casimir branch.</p>
 <div class="theorem">
 
-<p><strong>Theorem 25</strong> (Heat-kernel edge-sector weights).
+<p><strong>Theorem 26</strong> (Heat-kernel edge-sector weights).
 <em>Under MaxEnt with bi-invariant constraints on a compact Lie group
 <span class="math inline">\(G\)</span>, the sector probabilities take
 heat-kernel form: <span class="math display">\[
@@ -5044,7 +5131,7 @@ Casimir.</em></p>
 
 <div class="lemma">
 
-<p><strong>Lemma 26</strong> (Bi-invariant operators). <em>If <span
+<p><strong>Lemma 27</strong> (Bi-invariant operators). <em>If <span
 class="math inline">\(G=\prod_i G_i\)</span> is a compact semisimple Lie
 group written as a product of compact simple factors, then any
 bi-invariant second-order differential operator on <span
@@ -5058,7 +5145,7 @@ class="math inline">\(G_i\)</span>.</em></p>
 
 <div class="remark">
 
-<p><strong>Remark 27</strong>. <em>Bi-invariance is equivalent to <span
+<p><strong>Remark 28</strong>. <em>Bi-invariance is equivalent to <span
 class="math inline">\(D\in Z(U(\mathfrak g))\)</span>. Linear terms
 vanish because there are no invariant vectors in the adjoint
 representation, and the quadratic part is proportional to the Killing

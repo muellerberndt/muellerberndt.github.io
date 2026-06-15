@@ -30,7 +30,7 @@
   <meta name="citation_pdf_url" content="https://floatingpragma.io/oph/papers/observers-are-all-you-need/paper.pdf" />
   <meta name="citation_abstract_html_url" content="https://floatingpragma.io/oph/papers/observers-are-all-you-need/" />
   <meta name="citation_technical_report_institution" content="Pragma Research" />
-  <meta name="citation_technical_report_number" content="OPH r1489 observers_are_all_you_need" />
+  <meta name="citation_technical_report_number" content="OPH r1490 observers_are_all_you_need" />
   <meta name="DC.title" content="Observers Are All You Need" />
   <meta name="DC.creator" content="Bernhard Mueller" />
   <meta name="DC.creator" content="Alexander Osika" />
@@ -139,7 +139,7 @@
   ],
   "datePublished": "June 15, 2026",
   "dateModified": "June 15, 2026",
-  "version": "r1489",
+  "version": "r1490",
   "subjectOf": [
     {
       "@type": "BlogPosting",
@@ -242,14 +242,14 @@
             <p>OPH builds physics from finite public records on horizon-screen cuts. The paper presents the observer-first reconstruction of spacetime, gravity, Standard Model structure, cosmology, particles, records, and simulation-theory interpretation.</p>
           </div>
           <div class="paper-meta-line">
-            <span>r1489</span>
+            <span>r1490</span>
             <span>June 15, 2026</span>
             <span>papers</span>
           </div>
           <div class="cta-row">
             <a class="btn btn-primary" href="/oph/papers/observers-are-all-you-need/paper.pdf" target="_blank" rel="noopener noreferrer" data-track-link="paper-pdf-observers_are_all_you_need">Download PDF</a>
             <a class="btn btn-secondary" href="/oph/papers/" data-track-link="paper-index">All OPH papers</a>
-            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r1489" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
+            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r1490" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
             <a class="btn btn-secondary" href="https://challenge.floatingpragma.io/" data-track-link="paper-challenge">Challenge</a>
           </div>
 
@@ -279,7 +279,7 @@
         </header>
         <div class="paper-reader-grid">
           <div class="paper-body">
-<p><strong>Paper release:</strong> <code>r1489</code>
+<p><strong>Paper release:</strong> <code>r1490</code>
 <strong>Released:</strong> June 15, 2026</p>
 <div class="minipage">
 
@@ -307,9 +307,24 @@ carry algebras and states, record events use the trace/Born rule on
 their declared operator surface, and the gravity branch uses generalized
 entropy. OPH’s theory-of-everything claim is that the observed effective
 universe can be recovered from this axiom set and its stated branch
-conditions if the framework is correct. It is not a demand that every
-mathematical ingredient be rebuilt from a blank starting point before
-the reconstruction can proceed.</p>
+conditions if the framework is correct. The reconstruction may use
+declared standard mathematics and branch hypotheses without treating
+those ingredients as hidden empirical constants.</p>
+<p>The computational interpretation has a sharp boundary. A conventional
+simulation evolves surrogate universe states, <span
+class="math display">\[
+U_t\longrightarrow U_{t+1}\longrightarrow U_{t+2}\longrightarrow\cdots .
+\]</span> OPH uses a fixed-point computation. In the fundamental
+description there is no global timeline on which the contents of
+spacetime are updated. The readback-and-repair operator acts on
+observer-readable world candidates and selects a stable solution <span
+class="math display">\[
+\mathcal T(W)=W .
+\]</span> The local readout of that normal form supplies history for
+observers who subjectively experience time. This is the OPH meaning of
+simulation: the universe is the observer-facing solution of a
+self-consistency problem whose solution contains observers capable of
+reading it.</p>
 <p>That one demand is strong enough to organize the familiar world. The
 effective bulk is reconstructed from compatible screen data. Locality
 comes from the way collars control recovery across patch boundaries.
@@ -371,13 +386,18 @@ gauge-mediated proton decay.</p>
 core. OPH’s constants program has two dimensionless closure coordinates,
 the local pixel fixed point and the global cosmic record-closure fixed
 point, plus a selected no-<span class="math inline">\(G\)</span> scale
-certificate. Its rule is reverse engineering followed by fixed-point
+proof record. Its rule is reverse engineering followed by fixed-point
 closure: observations are allowed to locate the relevant basin, because
 the OPH universe is treated as a closed mathematical structure whose
 branch coordinates are displayed to its internal observers; the
 published OPH value is then the fixed point picked out by the declared
-map and uniqueness certificate. On the observed branch, the global
-capacity scale is <span class="math inline">\(N_{\mathrm{CRC}}\simeq
+map and uniqueness proof. The exact values <span
+class="math inline">\(P_\star\)</span> and <span
+class="math inline">\(N_{\mathrm{CRC}}\)</span> must be computed as
+closure endpoints. A nearby numerical value may mimic one measurement,
+but a shifted endpoint fails the self-consistency condition for the same
+simulated world. On the observed branch, the global capacity scale is
+<span class="math inline">\(N_{\mathrm{CRC}}\simeq
 N_{\mathrm{scr}}\simeq3.31\times10^{122}\)</span>. The local pixel ratio
 is <span class="math display">\[
 P:=\frac{a_{\mathrm{cell}}}{\ell_\star^2},
@@ -397,7 +417,7 @@ class="math inline">\(N_{\mathrm{CRC}}\simeq3.31\times10^{122}\)</span>
 is only a branch-scale approximation; the exact gravity row uses the
 fixed-point capacity together with the independently supplied scale
 certificate. The no-<span class="math inline">\(G\)</span> burden of the
-scale certificate is the clock hierarchy. The first load-bearing object
+scale proof record is the clock hierarchy. The first load-bearing object
 is the source proof record for <span
 class="math inline">\(\alpha_U(P_\star)\)</span>; after that, the cesium
 gap <span
@@ -422,8 +442,54 @@ with the public Thomson endpoint excluded upstream. This solves the
 local electroweak hierarchy/naturality problem on the selected exact
 branch and supplies one component of the clock hierarchy; the full SI
 gravity row requires the full set of cesium-clock source records. The
-value of <span class="math inline">\(P\)</span> comes from giving the
-same screen cell two readings, with no separate measured constant
+QCD and hadronic weakpoint is narrow. The low-energy Thomson endpoint
+and the cesium-clock display require confined-quark and nuclear spectral
+payloads that are not emitted by the source-only trunk in this paper.
+The source-side fine-structure diagnostic therefore remains <span
+class="math inline">\(\alpha_{\mathrm{cand}}^{-1}=136.9948351646\ldots\)</span>,
+about <span class="math inline">\(0.041\)</span> inverse-alpha units
+below the public Thomson value. For that reason the compact quantitative
+stress test is the hierarchy row above: it avoids the public Thomson
+endpoint, <span class="math inline">\(G\)</span>, <span
+class="math inline">\(\Lambda\)</span>, <span
+class="math inline">\(W/Z\)</span>, Higgs mass, hadronic payloads, and
+the cesium clock.</p>
+<p>The same hierarchy exponent has a local/global capacity form: <span
+class="math display">\[
+\frac{v}{E_{\mathrm{cell}}}
+\mathrel{=}
+\left(\frac{N_{\mathrm{CRC}}^{\mathrm{EW}}}{\pi}\right)^{-P_\star/12},
+\qquad
+N_{\mathrm{CRC}}^{\mathrm{EW}}
+\mathrel{=}
+\pi\exp\!\left[\frac{6\pi}{P_\star\alpha_U(P_\star)}\right].
+\]</span> This is the electroweak bridge capacity, about <span
+class="math inline">\(3.53235\times10^{122}\)</span> on the public
+endpoint branch. The de Sitter capacity display <span
+class="math inline">\(3.31\times10^{122}\)</span> remains the
+cosmological capacity scale. The screen-sieve theorem gives the
+geometric reading of the factor <span class="math inline">\(12\)</span>:
+on the triangulated <span class="math inline">\(S^2\)</span> screen,
+<span class="math inline">\(\sum_v(6-\deg v)=12\)</span>;
+MaxEnt/refinement stability spreads that curvature charge into twelve
+unit fivefold defects; edge-center collars make them central ports;
+<span class="math inline">\(A_5\)</span> symmetry places them on the
+icosahedral vertex orbit.</p>
+<p>The compact proof packages this quantitative surface as a
+source-certified compression test. A row counts in the accidental-hit
+estimate only when its declared source map has no dependency path from
+the measured target or a calibrated proxy. If <span
+class="math inline">\(p_i\)</span> bounds the conditional accidental-hit
+probability for row <span class="math inline">\(i\)</span> after earlier
+accepted rows, then <span class="math display">\[
+P_{\rm acc}\le\prod_i p_i .
+\]</span> Twelve one-percent source-certified rows give <span
+class="math inline">\(P_{\rm acc}\le10^{-24}\)</span>; twenty such rows
+give <span class="math inline">\(10^{-40}\)</span>. The estimate is an
+evidential shorthand. The proof load remains the fixed-point maps,
+uniqueness certificates, source records, and falsifiers.</p>
+<p>The value of <span class="math inline">\(P\)</span> comes from giving
+the same screen cell two readings, with no separate measured constant
 inserted. From outside, the cell sits a little above the exact
 self-similar entropy balance point <span
 class="math inline">\(\varphi=(1+\sqrt5)/2\)</span>. From inside, the
@@ -968,9 +1034,26 @@ fixed structure, so approximate measured values may be used to choose
 the basin in which the internal observers sit. The derivation then
 requires the relevant readback map to be a self-map on that basin and to
 carry a Banach contraction, derivative-sign, strict-concavity, or
-equivalent uniqueness certificate. The observed number supplies an
-initial guess or branch interval; the OPH fixed point supplies the
-reported value.</p>
+equivalent uniqueness proof. The observed number supplies an initial
+guess or branch interval; the OPH fixed point supplies the reported
+value. The exact <span class="math inline">\(P_\star\)</span> and <span
+class="math inline">\(N_{\mathrm{CRC}}\)</span> values must be computed
+as closure endpoints.</p>
+<p>The compact proof uses the same convention as a compression estimate.
+A quantitative row enters that estimate only when the declared source
+map has no dependency path from the measured target or a calibrated
+proxy. If <span class="math inline">\(p_i\)</span> upper-bounds the
+conditional accidental hit probability of row <span
+class="math inline">\(i\)</span> after previous accepted rows, then
+<span class="math display">\[
+P_{\rm acc}\le\prod_i p_i .
+\]</span> Twelve one-percent source-certified rows give <span
+class="math inline">\(P_{\rm acc}\le10^{-24}\)</span>, and twenty give
+<span class="math inline">\(10^{-40}\)</span>. The numerical bound is
+secondary to the theorem stack: the same two closure coordinates
+organize the observer readout, gravity/gauge reconstruction, hierarchy
+bridge, dark energy, dark-sector budget, product-group proton-decay
+exclusion, particle inventory, and string-vacuum selector.</p>
 <p>The two dimensionless closures determine dimensionless geometry, not
 an SI scale by themselves. On the de Sitter branch, <span
 class="math display">\[
@@ -8259,10 +8342,12 @@ mathematical fixed structure, approximate measurements can identify
 which basin or branch interval internal observers inhabit. The
 quantitative claim then requires the OPH map on that interval to be a
 self-map with a contraction, derivative-sign, strict-concavity, or
-equivalent uniqueness certificate. The observational readout supplies
-<span class="math inline">\(x_0\)</span> or the interval; the
-fixed-point theorem supplies <span
-class="math inline">\(x_\star\)</span>.</p>
+equivalent uniqueness proof. The observational readout supplies <span
+class="math inline">\(x_0\)</span> or the interval; the fixed-point
+theorem supplies <span class="math inline">\(x_\star\)</span>. The exact
+<span class="math inline">\(P_\star\)</span> and <span
+class="math inline">\(N_{\mathrm{CRC}}\)</span> values must be computed
+as closure endpoints.</p>
 <p>What <span class="math inline">\(P_\star\)</span> and <span
 class="math inline">\(N_\star\)</span> determine by themselves is the
 dimensionless geometry. With <span class="math display">\[
@@ -8540,7 +8625,13 @@ G(P):=\varphi+\frac{\sqrt{\pi}}{A_T(P)},
 \]</span> the closure problem is the fixed-point condition <span
 class="math inline">\(G(P)=P\)</span>. On any physical interval where
 this induced map is a self-map and a contraction, the closure root is
-locally unique.</p>
+locally unique. Equivalently, the solver can use <span
+class="math display">\[
+H(P):=P-\varphi-\frac{\sqrt{\pi}}{A_T(P)}
+\]</span> and accept the unique zero of <span
+class="math inline">\(H\)</span> on the declared branch interval.
+Observer-facing data may localize that interval. The measured endpoint
+cannot replace the closure solve.</p>
 <p>The closure interpretation assigns one screen cell two coupled roles.
 On the outer side it is one cell of the screen whose displacement above
 the exact self-similar equilibrium <span

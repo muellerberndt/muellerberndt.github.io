@@ -1,6 +1,6 @@
 # Observer Patch Holography Papers
 
-Release: r1489
+Release: r1490
 Released: June 15, 2026
 
 This page lists the first-party HTML and PDF URLs for the OPH paper stack.
@@ -49,9 +49,9 @@ This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 
 - HTML: https://floatingpragma.io/oph/papers/screen-microphysics-and-observer-synchronization/
 - PDF: https://floatingpragma.io/oph/papers/screen-microphysics-and-observer-synchronization/paper.pdf
-- Authors: Bernhard Mueller, Alexander Osika, Kai Xue, Ben Cassie
+- Authors: Bernhard Mueller, Alexander Osika, Kai Xue, Ben Cassie, Maarten Antonie Visser
 - Category: Screen physics
-- Summary: The fixed-cutoff OPH microphysics paper. It develops finite overlap-facing patch carriers, record algebras, measurement surfaces, observer backup, synchronization, and hardware-evidence rules.
+- Summary: The fixed-cutoff OPH microphysics paper. It develops finite overlap-facing patch carriers, the twelve-port screen-sieve theorem, record algebras, measurement surfaces, observer backup, synchronization, and hardware-evidence rules.
 
 ## Photonic Fixed-Point Consensus for SHA-256d Proof of Work
 

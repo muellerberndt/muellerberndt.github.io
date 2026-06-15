@@ -1,5 +1,5 @@
 {
-  "release_id": "r1489",
+  "release_id": "r1490",
   "released_at": "June 15, 2026",
   "collection_url": "https://floatingpragma.io/oph/papers/",
   "sitemap_url": "https://floatingpragma.io/oph/papers/sitemap.xml",
@@ -227,12 +227,13 @@
       "title": "Screen Microphysics and Observer Synchronization",
       "short_title": "Screen microphysics",
       "category": "Screen physics",
-      "description": "The fixed-cutoff OPH microphysics paper. It develops finite overlap-facing patch carriers, record algebras, measurement surfaces, observer backup, synchronization, and hardware-evidence rules.",
+      "description": "The fixed-cutoff OPH microphysics paper. It develops finite overlap-facing patch carriers, the twelve-port screen-sieve theorem, record algebras, measurement surfaces, observer backup, synchronization, and hardware-evidence rules.",
       "authors": [
         "Bernhard Mueller",
         "Alexander Osika",
         "Kai Xue",
-        "Ben Cassie"
+        "Ben Cassie",
+        "Maarten Antonie Visser"
       ],
       "keywords": [
         "screen microphysics",
