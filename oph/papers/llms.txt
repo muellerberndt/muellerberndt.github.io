@@ -1,7 +1,7 @@
 # Observer Patch Holography Papers
 
-Release: r1491
-Released: June 15, 2026
+Release: r1492
+Released: June 17, 2026
 
 This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 
@@ -17,7 +17,7 @@ This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 
 - HTML: https://floatingpragma.io/oph/papers/observers-are-all-you-need/
 - PDF: https://floatingpragma.io/oph/papers/observers-are-all-you-need/paper.pdf
-- Authors: Bernhard Mueller, Alexander Osika, Kai Xue, Ben Cassie, Peter Nguyen, Maarten Antonie Visser, Mario Poneder, Kale Arnav Anirudha
+- Authors: Bernhard Mueller, Alexander Osika, Kai Xue, Mario Poneder, Ben Cassie, Peter Nguyen, Maarten Antonie Visser, Kale Arnav Anirudha
 - Category: Theory of everything
 - Summary: OPH builds physics from finite public records on horizon-screen cuts. The paper presents the observer-first reconstruction of spacetime, gravity, Standard Model structure, cosmology, particles, records, and simulation-theory interpretation.
 
