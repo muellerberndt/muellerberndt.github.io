@@ -30,7 +30,7 @@
   <meta name="citation_pdf_url" content="https://floatingpragma.io/oph/papers/observers-are-all-you-need/paper.pdf" />
   <meta name="citation_abstract_html_url" content="https://floatingpragma.io/oph/papers/observers-are-all-you-need/" />
   <meta name="citation_technical_report_institution" content="Pragma Research" />
-  <meta name="citation_technical_report_number" content="OPH r1494 observers_are_all_you_need" />
+  <meta name="citation_technical_report_number" content="OPH r1495 observers_are_all_you_need" />
   <meta name="DC.title" content="Observers Are All You Need" />
   <meta name="DC.creator" content="Bernhard Mueller" />
   <meta name="DC.creator" content="Alexander Osika" />
@@ -139,7 +139,7 @@
   ],
   "datePublished": "June 20, 2026",
   "dateModified": "June 20, 2026",
-  "version": "r1494",
+  "version": "r1495",
   "subjectOf": [
     {
       "@type": "BlogPosting",
@@ -242,14 +242,14 @@
             <p>OPH builds physics from finite public records on horizon-screen cuts. The paper presents the observer-first reconstruction of spacetime, gravity, Standard Model structure, cosmology, particles, records, and simulation-theory interpretation.</p>
           </div>
           <div class="paper-meta-line">
-            <span>r1494</span>
+            <span>r1495</span>
             <span>June 20, 2026</span>
             <span>papers</span>
           </div>
           <div class="cta-row">
             <a class="btn btn-primary" href="/oph/papers/observers-are-all-you-need/paper.pdf" target="_blank" rel="noopener noreferrer" data-track-link="paper-pdf-observers_are_all_you_need">Download PDF</a>
             <a class="btn btn-secondary" href="/oph/papers/" data-track-link="paper-index">All OPH papers</a>
-            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r1494" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
+            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r1495" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
             <a class="btn btn-secondary" href="https://challenge.floatingpragma.io/" data-track-link="paper-challenge">Challenge</a>
           </div>
 
@@ -279,7 +279,7 @@
         </header>
         <div class="paper-reader-grid">
           <div class="paper-body">
-<p><strong>Paper release:</strong> <code>r1494</code>
+<p><strong>Paper release:</strong> <code>r1495</code>
 <strong>Released:</strong> June 20, 2026</p>
 <div class="minipage">
 
@@ -436,25 +436,36 @@ those ingredients as hidden empirical constants.</p>
 simulation evolves surrogate universe states, <span
 class="math display">\[
 U_t\longrightarrow U_{t+1}\longrightarrow U_{t+2}\longrightarrow\cdots .
-\]</span> OPH uses a fixed-point computation. In the fundamental
-description there is no global timeline on which the contents of
-spacetime are updated. The readback-and-repair operator acts on
-observer-readable world candidates and selects a stable solution <span
-class="math display">\[
+\]</span> OPH uses a fixed-point computation, but the equation alone is
+not the definition of simulation. In the fundamental description there
+is no global timeline on which the contents of spacetime are updated.
+The readback-and-repair operator acts on observer-readable world
+candidates and selects a stable solution <span class="math display">\[
 \mathcal T(W)=W .
-\]</span> The local readout of that normal form supplies history for
-observers who subjectively experience time. This is the OPH meaning of
-simulation: the universe is the observer-facing solution of a
-self-consistency problem whose solution contains observers capable of
-reading it.</p>
-<p>That one demand is strong enough to organize the familiar world. The
-effective bulk is reconstructed from compatible screen data. Locality
-comes from the way collars control recovery across patch boundaries.
-Gauge freedom is the freedom to change the local description without
-changing any shared observable. Records are the stable parts of a patch
-that can be checked by other patches. Matter is the stable charge and
-excitation content that survives transport, fusion, and minimal
-admissible realization.</p>
+\]</span> The companion consensus paper , Definition
+<code>def:oph-simulation</code>, requires five independent clauses:
+recovery-derived endogenous update, nontrivial quotient-readable
+records, strict overlap-repair descent with a schedule-independent
+normal form, elimination of a proper candidate basin in the selected
+boundary/sector fiber, and implementation/clock closure. Its Theorem
+<code>thm:oph-simulation</code> proves that the selected finite OPH
+packet meets those clauses under the stated boundary and record
+hypotheses and then derives the fixed-point equation. The same theorem
+gives an identity-map/constant-functional counterexample, so an ordinary
+equilibrium is not merely renamed a simulation.</p>
+<p>The local readout of the selected normal form supplies history for
+observers who subjectively experience time. Time is therefore internal
+record order rather than an external update parameter. In OPH,
+“simulation” means this certified observer-facing self-consistency
+structure, not a bare fixed point and not a frame renderer.</p>
+<p>That certified consistency demand is strong enough to organize the
+familiar world. The effective bulk is reconstructed from compatible
+screen data. Locality comes from the way collars control recovery across
+patch boundaries. Gauge freedom is the freedom to change the local
+description without changing any shared observable. Records are the
+stable parts of a patch that can be checked by other patches. Matter is
+the stable charge and excitation content that survives transport,
+fusion, and minimal admissible realization.</p>
 <p>The first major achievement is spacetime. Modular flow on screen caps
 becomes geometric, giving the Lorentzian structure of local physics.
 Generalized entropy at fixed cap then gives the Einstein relation in the
@@ -7126,8 +7137,8 @@ inputs.</td>
 <td style="text-align: left;">III</td>
 <td style="text-align: left;">D12</td>
 <td style="text-align: left;">Continuations: flavor details beyond the
-stated theorem surfaces, dark-sector proposals,
-CMB/inflation-replacement kernels, <span
+stated theorem surfaces, dark-sector proposals, conditional
+screen-spectrum and CMB/inflation-replacement kernels, <span
 class="math inline">\(H_0/S_8\)</span> and growth branches, heuristic
 baryogenesis branches, spectroscopy, hadrons, and string/worldsheet
 effective-description branches.</td>
@@ -7140,10 +7151,16 @@ effective-description branches.</td>
 transport, and gauge theorem stack. Phase II supplies quantitative
 closures on top of that core. Phase III contains program branches whose
 extra ansätze are not part of the recovered-core theorem package. In
-particular, low-<span class="math inline">\(\ell\)</span> CMB kernels,
-parity envelopes, inflation-replacement claims, and dark/anomaly <span
-class="math inline">\(H_0/S_8\)</span> growth modifications remain
-continuation gates until their finite-collar source functions and
+particular, the conditional screen-spectrum branch reaches a MaxEnt
+Gaussian screen covariance only after the quotient-normal-form scalar
+field, positive repair operator, operator-tilt, and
+scalar-release-energy receipts pass. A primordial curvature spectrum
+also needs a screen-to-radial lift receipt, and physical TT/TE/EE
+spectra remain behind Boltzmann transfer and likelihood gates. Low-<span
+class="math inline">\(\ell\)</span> CMB kernels, parity envelopes,
+inflation-replacement claims, and dark/anomaly <span
+class="math inline">\(H_0/S_8\)</span> growth modifications therefore
+remain continuation gates until their finite-collar source functions and
 likelihood contracts are supplied.</p>
 <p>The effective low-energy summary is <span class="math display">\[
 \mathcal L_{\mathrm{eff}}^{\mathrm{OPH}}
@@ -7270,6 +7287,10 @@ class="math inline">\(H_0/S_8\)</span> growth modifications, and
 cosmological dark/anomaly Boltzmann kernels beyond the contract stated
 in
 Section <a href="#515-dark-matter-as-modular-anomaly" data-reference-type="ref" data-reference="515-dark-matter-as-modular-anomaly">4.6.15</a>;</p></li>
+<li><p>a primordial curvature spectrum or physical TT/TE/EE spectra from
+the screen-spectrum continuation unless the operator-tilt,
+scalar-release-energy, radial-lift, transfer, and likelihood receipts
+have passed;</p></li>
 <li><p>Page-curve/island closure, PBH/LIGO comb claims, or
 critical-superstring completion;</p></li>
 <li><p>a unique microscopic representative or a full
@@ -9842,10 +9863,52 @@ bookkeeping.</p></li>
 realized cosmological branch must satisfy SO(3)-invariant constraint
 data, that MaxEnt uniqueness holds in every cosmological sector, or that
 the observed universe saturates the displayed CMB benchmark.</p>
+<h2 id="conditional-screen-spectrum-continuation">Conditional
+Screen-Spectrum Continuation</h2>
+<h4 id="theorem-64-conditional-oph-screen-spectrum"><strong>Theorem 6.4
+(Conditional OPH screen spectrum).</strong></h4>
+<p>Let <span class="math inline">\((\mathcal S_r)\)</span> be a cofinal
+finite spherical OPH screen system with a schedule-independent
+quotient-normal-form scalar <span class="math inline">\(q_r\)</span>,
+removal of the background and dipole sector, and a target-free positive
+quadratic repair operator <span class="math inline">\(K_r\)</span>. If
+<span class="math inline">\(K_r\to K\)</span>, the finite scalar release
+energy satisfies <span class="math inline">\(E_r/d_r\to A_q\)</span>,
+and local MaxEnt is imposed at fixed release energy, then <span
+class="math inline">\(q_r\)</span> converges in finite harmonic
+distributions to the centered Gaussian screen field with covariance
+<span class="math inline">\(A_qK^{-1}\)</span>. If the certified
+repair-scale measure is <span
+class="math inline">\(t^{\theta/2}\,dt/\Gamma(1+\theta/2)\)</span>, then
+<span class="math display">\[
+K=(-\Delta_{S^2})^{1+\theta/2},
+\qquad
+C_\ell^q=A_q[\ell(\ell+1)]^{-1-\theta/2}.
+\]</span> If <span class="math inline">\(q\)</span> is instead certified
+as the thin-shell pullback of a homogeneous curvature field with <span
+class="math inline">\(\Delta_\zeta^2(k)=A_\zeta(k/k_\star)^{-\theta}\)</span>,
+the exact finite-<span class="math inline">\(\ell\)</span> precision is
+the gamma-ratio shell operator <span class="math display">\[
+\kappa_\ell(\theta)=
+\frac{\Gamma(\ell+2+\theta/2)}{\Gamma(\ell-\theta/2)},
+\]</span> rather than the pure fractional Laplacian except
+asymptotically.</p>
+<h4 id="receipt-boundary"><strong>Receipt boundary.</strong></h4>
+<p>The screen theorem is a Phase III conditional continuation. It
+requires independent receipts for the quotient-normal-form scalar
+readout, the positive repair operator, the operator tilt, and the scalar
+release energy. Fawzi–Renner/Markov-collar observable control supplies
+upper bounds on release observables; it is not an amplitude equality and
+does not by itself determine <span
+class="math inline">\(A_\zeta\)</span>. A primordial curvature spectrum
+additionally needs a screen-to-radial lift certificate with the exact
+Bessel kernel, radial prior/null-space report, and forward-projection
+residual. No physical TT/TE/EE claim follows without independent
+Boltzmann transfer and likelihood closure.</p>
 <h2
 id="cosmological-constant--screen-capacity-closure">Cosmological-Constant
 / Screen-Capacity Closure</h2>
-<h4 id="theorem-64-d5d6-localglobal-closure-stack"><strong>Theorem 6.4
+<h4 id="theorem-65-d5d6-localglobal-closure-stack"><strong>Theorem 6.5
 (D5–D6 local/global closure stack).</strong></h4>
 <p>On the gravity lane, assume the local Einstein branch has been
 recovered only modulo <span class="math inline">\(\Lambda

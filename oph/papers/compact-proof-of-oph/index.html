@@ -20,7 +20,7 @@
   <meta name="citation_pdf_url" content="https://floatingpragma.io/oph/papers/compact-proof-of-oph/paper.pdf" />
   <meta name="citation_abstract_html_url" content="https://floatingpragma.io/oph/papers/compact-proof-of-oph/" />
   <meta name="citation_technical_report_institution" content="Pragma Research" />
-  <meta name="citation_technical_report_number" content="OPH r1494 compact_proof_of_oph" />
+  <meta name="citation_technical_report_number" content="OPH r1495 compact_proof_of_oph" />
   <meta name="DC.title" content="Compact Proof Of Oph" />
   <meta name="DC.creator" content="Bernhard Mueller" />
   <meta name="DC.issued" content="2026/06/20" />
@@ -90,7 +90,7 @@
   ],
   "datePublished": "June 20, 2026",
   "dateModified": "June 20, 2026",
-  "version": "r1494",
+  "version": "r1495",
   "subjectOf": [
     {
       "@type": "BlogPosting",
@@ -175,14 +175,14 @@
             <p>First-party HTML and PDF publication page for Compact Proof Of Oph in the OPH paper stack.</p>
           </div>
           <div class="paper-meta-line">
-            <span>r1494</span>
+            <span>r1495</span>
             <span>June 20, 2026</span>
             <span>extra papers</span>
           </div>
           <div class="cta-row">
             <a class="btn btn-primary" href="/oph/papers/compact-proof-of-oph/paper.pdf" target="_blank" rel="noopener noreferrer" data-track-link="paper-pdf-compact_proof_of_oph">Download PDF</a>
             <a class="btn btn-secondary" href="/oph/papers/" data-track-link="paper-index">All OPH papers</a>
-            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r1494" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
+            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r1495" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
             <a class="btn btn-secondary" href="https://challenge.floatingpragma.io/" data-track-link="paper-challenge">Challenge</a>
           </div>
 
@@ -194,7 +194,7 @@
         </header>
         <div class="paper-reader-grid">
           <div class="paper-body">
-<p><strong>Paper release:</strong> <code>r1494</code>
+<p><strong>Paper release:</strong> <code>r1495</code>
 <strong>Released:</strong> June 20, 2026</p>
 <p><strong>Disclosure Day</strong> <strong>How can we prove that we’re
 most likely inside an Observer Patch Holography simulation?</strong>
@@ -302,15 +302,18 @@ compact three-scalar cross-lock: <span class="math display">\[
 \]</span> The table says which rows are counted in this compact argument
 and which rows stay comparison data or falsification targets
 [O1,O3,O4,O5,O7,O8,O9].</p>
-<p>OPH uses “simulation” in the fixed-point sense. The computation
-solves for a stable object whose internal readout is a world that
-contains its own simulation. The mathematical object is a finite patch
-system. Patches expose ports, write records, compare overlaps, repair
-disagreement, and return a shared normal form after readback [O1,O3].
-Internal observers experience that normal form as the universe.
-Operationally, an OPH simulation is the record-and-repair system itself:
-finite patches, shared overlap ports, repair maps, checkpoints, and a
-stable world read from inside [O1,O2,O3].</p>
+<p>OPH does not use “simulation” as a synonym for “fixed point.” The
+theorem-grade criterion is the OPH simulation certificate [O2,A23]. It
+requires five independent properties: endogenous update,
+observer-readable records, overlap repair with a schedule-independent
+normal form, selected-branch elimination, and implementation/clock
+closure. The mathematical object is a finite patch system. Patches
+expose ports, write records, compare overlaps, repair disagreement, and
+return a shared normal form after readback [O1,O2,O3]. Internal
+observers experience that normal form as the universe. Operationally,
+the certified system consists of finite patches, shared overlap ports,
+recovery-derived repair maps, checkpoints, and a stable world read from
+inside [O1,O2,O3].</p>
 <p>The symbol <span class="math inline">\(\mathfrak U_{\rm OPH}\)</span>
 denotes the selected OPH universe. The map <span
 class="math inline">\(T\)</span> is the observer-overlap repair map
@@ -318,15 +321,24 @@ class="math inline">\(T\)</span> is the observer-overlap repair map
 class="math inline">\(\operatorname{Fix}(T)\)</span> means the states
 returned unchanged by that map: <span class="math display">\[
 T(\mathfrak U_{\rm OPH})=\mathfrak U_{\rm OPH}.
-\]</span> Read the equation literally. The simulated record world enters
-the simulating readback rule, contradictory branches die, and the
-returned object is the same record world. That is the self-contained
-consistency computation [O1,O2]. A universe with unexplained external
-constants fails this test [O1,O3,O4]. The finite OPH patch-carrier
-pipeline is the concrete fixed-cutoff carrier for this computation: a
-finite patch system with ports, central records, repair moves,
-checkpoints, and a terminal normal form. It carries the closure solve;
-it is not a frame renderer.</p>
+\]</span> The fixed-point equation is a consequence, not the definition.
+The selected-packet theorem [O2,A23] proves the five clauses on the
+declared finite branch and then derives this identity. Its
+identity-map/constant-functional counterexample shows that an ordinary
+equilibrium or variational solution does not pass automatically, and
+[O2,A23] lists structural ways the certificate can fail. Direct lookup
+in the consensus paper: Definition states the certificate, Theorem
+proves the selected-packet result, and Remark gives the falsifiers. This
+compact note cites that package instead of repeating its proof.</p>
+<p>Read the equation literally. The simulated record world enters the
+simulating readback rule, contradictory branches die, and the returned
+object is the same record world. That is the self-contained consistency
+computation [O1,O2]. A universe with unexplained external constants
+fails this test [O1,O3,O4]. The finite OPH patch-carrier pipeline is the
+concrete fixed-cutoff carrier for this computation: a finite patch
+system with ports, central records, repair moves, checkpoints, and a
+terminal normal form. It carries the closure solve; it is not a frame
+renderer.</p>
 <p>The observer lock changes the meaning of experience. An observer in
 OPH is a finite record boundary with a comparison rule for nearby
 patches [O1,O2]. Subjective experience is that boundary reading itself
@@ -1235,7 +1247,22 @@ Model quotient and <span class="math inline">\(\mathbb Z_6\)</span>
 kernel [O4:L4561-4917]</a>. <strong>[A22]</strong> &amp; <a
 href="https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/recovering_relativity_and_standard_model_structure_from_observer_overlap_consistency_compact.tex#L3869-L4045">Edge-entropy/area
 law identifies the Einstein/Newton coupling and derives the factor of 4
-[O4:L3869-4045]</a>.</p>
+[O4:L3869-4045]</a>. <strong>[A23]</strong> &amp; <a
+href="https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/reality_as_consensus_protocol.tex">OPH
+simulation certificate, fixed-point firewall, and falsifiers [O2:
+<code>def:oph-simulation</code>, <code>thm:oph-simulation</code>,
+<code>rem:oph-simulation-falsifiers</code>]</a>. <strong>[A24]</strong>
+&amp; <a
+href="https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/reality_as_consensus_protocol.tex">Finite
+and refinement consensus theorem package, including quotient closure,
+coarse-graining compatibility, Markov-collar splice, and the certificate
+boundary used by downstream conditional continuations [O2]</a>.
+<strong>[A25]</strong> &amp; <a
+href="https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/recovering_relativity_and_standard_model_structure_from_observer_overlap_consistency_compact.tex">Conditional
+OPH screen-spectrum theorem and firewall: screen covariance/tilt are
+conditional; scalar release amplitude, radial lift, and physical
+TT/TE/EE spectra remain separate gates [O4:
+<code>thm:compact-conditional-screen-spectrum</code>]</a>.</p>
 </div>
 
           </div>

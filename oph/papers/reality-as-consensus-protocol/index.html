@@ -24,7 +24,7 @@
   <meta name="citation_pdf_url" content="https://floatingpragma.io/oph/papers/reality-as-consensus-protocol/paper.pdf" />
   <meta name="citation_abstract_html_url" content="https://floatingpragma.io/oph/papers/reality-as-consensus-protocol/" />
   <meta name="citation_technical_report_institution" content="Pragma Research" />
-  <meta name="citation_technical_report_number" content="OPH r1494 reality_as_consensus_protocol" />
+  <meta name="citation_technical_report_number" content="OPH r1495 reality_as_consensus_protocol" />
   <meta name="DC.title" content="Reality as a Consensus Protocol" />
   <meta name="DC.creator" content="Bernhard Mueller" />
   <meta name="DC.creator" content="Kai Xue" />
@@ -107,7 +107,7 @@
   ],
   "datePublished": "June 20, 2026",
   "dateModified": "June 20, 2026",
-  "version": "r1494",
+  "version": "r1495",
   "subjectOf": [
     {
       "@type": "BlogPosting",
@@ -204,14 +204,14 @@
             <p>The OPH fixed-point consensus paper. It formulates observer patches, overlap-visible records, repair moves, Lyapunov descent, quotient normal forms, and obstruction classes.</p>
           </div>
           <div class="paper-meta-line">
-            <span>r1494</span>
+            <span>r1495</span>
             <span>June 20, 2026</span>
             <span>papers</span>
           </div>
           <div class="cta-row">
             <a class="btn btn-primary" href="/oph/papers/reality-as-consensus-protocol/paper.pdf" target="_blank" rel="noopener noreferrer" data-track-link="paper-pdf-reality_as_consensus_protocol">Download PDF</a>
             <a class="btn btn-secondary" href="/oph/papers/" data-track-link="paper-index">All OPH papers</a>
-            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r1494" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
+            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r1495" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
             <a class="btn btn-secondary" href="https://challenge.floatingpragma.io/" data-track-link="paper-challenge">Challenge</a>
           </div>
 
@@ -230,17 +230,17 @@
 <a href="#gauge-symmetry-as-implementation-hiding">Gauge Symmetry as Implementation Hiding</a>
 <a href="#refinement-limit-consensus-classes">Refinement-Limit Consensus Classes</a>
 <a href="#record-algebras-and-the-operator-observation-layer">Record Algebras and the Operator Observation Layer</a>
+<a href="#oph-simulation-criterion-and-fixed-point-firewall">OPH Simulation Criterion and Fixed-Point Firewall</a>
 <a href="#noisy-fair-block-approximate-consensus">Noisy Fair-Block Approximate Consensus</a>
 <a href="#law-space-selection-and-observer-emergence">Law-Space Selection and Observer Emergence</a>
 <a href="#connection-to-observer-patch-holography">Connection to Observer-Patch Holography</a>
 <a href="#discussion-and-scope-boundaries">Discussion and Scope Boundaries</a>
-<a href="#quotient-repair-and-uv-underdetermination">Quotient Repair and UV Underdetermination</a>
-<a href="#derived-boundary-data-and-ordinary-ec">Derived Boundary Data and Ordinary EC</a></nav>
+<a href="#quotient-repair-and-uv-underdetermination">Quotient Repair and UV Underdetermination</a></nav>
           </details>
         </header>
         <div class="paper-reader-grid">
           <div class="paper-body">
-<p><strong>Paper release:</strong> <code>r1494</code>
+<p><strong>Paper release:</strong> <code>r1495</code>
 <strong>Released:</strong> June 20, 2026</p>
 <h1 id="what-this-paper-contributes">What This Paper Contributes</h1>
 <p>The mathematics of repair is old in the right places. Constraint
@@ -275,6 +275,15 @@ whose internal record order is read as history. The patch-net algorithm
 serves as a theorem device for fixed-point selection. The fundamental
 description contains no global timeline on which spacetime contents are
 rendered.</p>
+<p>A bare fixed point is not called an OPH simulation below.
+Definition <a href="#def:oph-simulation" data-reference-type="ref" data-reference="def:oph-simulation">44</a>
+requires recovery-derived endogenous update, nontrivial
+quotient-readable records, overlap repair with schedule-independent
+normal form, elimination of a proper candidate basin in the selected
+boundary/sector fiber, and implementation/clock closure.
+Theorem <a href="#thm:oph-simulation" data-reference-type="ref" data-reference="thm:oph-simulation">45</a>
+proves those clauses on the named finite branch and supplies a generic
+fixed-point and variational counterexample.</p>
 <p>The resulting theorem package has two layers. The bare overlap
 network is only a finite constraint code: its codewords are the globally
 overlap-consistent states. Quantum error-correction, code-distance /
@@ -307,7 +316,7 @@ quantitatively stable approximately commuting projectors. These results
 form the patch-net formulation used in the broader OPH literature,
 including the fixed-cutoff Bell/CHSH package on the companion
 microphysics surface.</p>
-<p>This paper proves a constraint-code firewall and six core consensus
+<p>This paper proves a constraint-code firewall and eight core consensus
 results:</p>
 <ol type="1">
 <li><p><strong>Constraint-code firewall.</strong> A finite overlap net
@@ -318,7 +327,7 @@ class="math inline">\(C=\Phi^{-1}(0)\)</span>
 This is the default meaning of “the overlap network is a code.” It is
 not, by itself, a quantum error-correcting code and does not imply a
 graph min-cut formula for distance
-(Theorem <a href="#thm:no-free-mincut" data-reference-type="ref" data-reference="thm:no-free-mincut">72</a>).</p></li>
+(Theorem <a href="#thm:no-free-mincut" data-reference-type="ref" data-reference="thm:no-free-mincut">76</a>).</p></li>
 <li><p><strong>Asynchronous confluence.</strong> For the declared
 accepted repair law, the local-fit contract makes <span
 class="math inline">\(\Phi\)</span> a Lyapunov functional and hence
@@ -367,6 +376,18 @@ projectors inherit explicit <span
 class="math inline">\((\varepsilon,\delta_{\mathrm{rec}})\)</span>
 stability bounds on the same event surface
 (Theorem <a href="#thm:crdt" data-reference-type="ref" data-reference="thm:crdt">43</a>).</p></li>
+<li><p><strong>OPH simulation firewall.</strong> On a selected
+boundary/sector fiber, “simulation” requires recovery-derived endogenous
+update, nontrivial quotient-readable records, strict overlap-repair
+descent with a schedule-independent normal form, collapse of a proper
+candidate basin to one consistent quotient state, and
+implementation/clock closure. Under the stated selected-fiber and record
+hypotheses, the finite OPH packet has this certificate; a generic
+identity fixed point or constant variational functional does not
+(Definition <a href="#def:oph-simulation" data-reference-type="ref" data-reference="def:oph-simulation">44</a>,
+Theorem <a href="#thm:oph-simulation" data-reference-type="ref" data-reference="thm:oph-simulation">45</a>,
+and
+Remark <a href="#rem:oph-simulation-falsifiers" data-reference-type="ref" data-reference="rem:oph-simulation-falsifiers">46</a>).</p></li>
 <li><p><strong>Conditional noisy fair-block consensus.</strong> If a
 noisy asynchronous implementation admits fair repair blocks, a uniform
 expected contraction toward the exact quotient normal-form set, and
@@ -375,10 +396,10 @@ controlled expected tube around that exact normal-form set. In singleton
 boundary/sector fibers, Lipschitz observer readouts are approximately
 schedule-independent, and a finite Markov-kernel certificate checks the
 block contraction on finite exported nets
-(Theorem <a href="#thm:noisy-fair-block-consensus" data-reference-type="ref" data-reference="thm:noisy-fair-block-consensus">44</a>,
-Corollaries <a href="#cor:approx-schedule-independence" data-reference-type="ref" data-reference="cor:approx-schedule-independence">45</a>–<a href="#cor:high-prob-noisy-tube" data-reference-type="ref" data-reference="cor:high-prob-noisy-tube">46</a>,
+(Theorem <a href="#thm:noisy-fair-block-consensus" data-reference-type="ref" data-reference="thm:noisy-fair-block-consensus">48</a>,
+Corollaries <a href="#cor:approx-schedule-independence" data-reference-type="ref" data-reference="cor:approx-schedule-independence">49</a>–<a href="#cor:high-prob-noisy-tube" data-reference-type="ref" data-reference="cor:high-prob-noisy-tube">50</a>,
 and
-Proposition <a href="#prop:finite-fair-block-certificate" data-reference-type="ref" data-reference="prop:finite-fair-block-certificate">47</a>).</p></li>
+Proposition <a href="#prop:finite-fair-block-certificate" data-reference-type="ref" data-reference="prop:finite-fair-block-certificate">51</a>).</p></li>
 </ol>
 <p>The repair step itself is a concrete recovery move, not a free
 rewrite primitive. On the fixed-cutoff collar branch, a local update is
@@ -392,7 +413,7 @@ fixed-cutoff gluing package supplies the parenthesization-independent
 union-collar glue used for the local diamond. What sits above that step
 is repair completeness and, on the Petz branch, the support/CPTP clause
 stated later in
-Proposition <a href="#prop:petz-cptp" data-reference-type="ref" data-reference="prop:petz-cptp">67</a>.
+Proposition <a href="#prop:petz-cptp" data-reference-type="ref" data-reference="prop:petz-cptp">71</a>.
 A nontrivial exported rooted-tree packet domain where these clauses are
 proved is recorded in
 Definition <a href="#def:tree-packet-domain" data-reference-type="ref" data-reference="def:tree-packet-domain">9</a>
@@ -401,7 +422,7 @@ Theorem <a href="#thm:tree-packet-domain" data-reference-type="ref" data-refere
 <p>We also define a fitness functional over a finite candidate space of
 reconciliation laws and prove that replicator dynamics monotonically
 increases mean fitness
-(Theorem <a href="#thm:replicator" data-reference-type="ref" data-reference="thm:replicator">51</a>).
+(Theorem <a href="#thm:replicator" data-reference-type="ref" data-reference="thm:replicator">55</a>).
 This gives a clean mathematical model for finite-candidate law
 selection, not a universality theorem or a literal cosmological dynamics
 claim.</p>
@@ -526,7 +547,7 @@ class="math inline">\(A_i\cup B_i\)</span> marginal of the input collar
 state encoded by <span class="math inline">\(s\)</span>:</em></p>
 <ol type="1">
 <li><p><em>exact Markov splice on the collar, using
-Theorem <a href="#thm:splice" data-reference-type="ref" data-reference="thm:splice">52</a>
+Theorem <a href="#thm:splice" data-reference-type="ref" data-reference="thm:splice">56</a>
 when <span class="math inline">\(I(A_i:D_i\mid B_i)=0\)</span>;
 or</em></p></li>
 <li><p><em>a declared recoverability channel <span
@@ -536,9 +557,9 @@ class="math display">\[
 \mathcal R_i=\mathcal R_{\sigma_i,\mathcal N_i},
 \]</span> with <span class="math inline">\(\mathcal R_i\)</span> in the
 Petz/Fawzi–Renner class of
-Definition <a href="#def:oph-repair-map" data-reference-type="ref" data-reference="def:oph-repair-map">65</a>
+Definition <a href="#def:oph-repair-map" data-reference-type="ref" data-reference="def:oph-repair-map">69</a>
 and
-Theorem <a href="#thm:splice" data-reference-type="ref" data-reference="thm:splice">52</a>.</em></p></li>
+Theorem <a href="#thm:splice" data-reference-type="ref" data-reference="thm:splice">56</a>.</em></p></li>
 </ol>
 <p><em>The decoder back to <span class="math inline">\(S_i\)</span> is
 bookkeeping for the finite patch presentation; the physical content is
@@ -602,7 +623,7 @@ interfaces in <span
 class="math inline">\(E_{ij}^{\mathrm{touch}}\)</span> such that the
 physical glued state on <span class="math inline">\(U_{ij}\)</span> is
 parenthesization-independent on the quotient, in the sense of
-Proposition <a href="#prop:assocglue" data-reference-type="ref" data-reference="prop:assocglue">60</a>,
+Proposition <a href="#prop:assocglue" data-reference-type="ref" data-reference="prop:assocglue">64</a>,
 and the local decoders/lifts of
 Definition <a href="#def:repair" data-reference-type="ref" data-reference="def:repair">4</a>
 are restriction-compatible on nested collars.</em></p></li>
@@ -624,12 +645,12 @@ restriction-compatible union-collar package of
 Definition <a href="#def:assoc" data-reference-type="ref" data-reference="def:assoc">6</a>.
 The parenthesization-independent quotient-local glue used there is
 supplied by
-Proposition <a href="#prop:assocglue" data-reference-type="ref" data-reference="prop:assocglue">60</a>
+Proposition <a href="#prop:assocglue" data-reference-type="ref" data-reference="prop:assocglue">64</a>
 from the fixed-cutoff center-sector / higher-gauge gluing package. The
 theorem package takes repair completeness as an explicit branch
 condition. On the Petz branch, full CPTP action on all inputs also
 requires the support clause recorded in
-Proposition <a href="#prop:petz-cptp" data-reference-type="ref" data-reference="prop:petz-cptp">67</a>.
+Proposition <a href="#prop:petz-cptp" data-reference-type="ref" data-reference="prop:petz-cptp">71</a>.
 On broader branches one must also prove that the declared union-collar
 compatibility is preserved under refinement or branch change.</p>
 </div>
@@ -991,7 +1012,7 @@ and let <span class="math inline">\(\overline v_{ij}(s)\)</span> denote
 the quotient-local glued state on <span
 class="math inline">\(U_{ij}\)</span> determined by the exterior
 marginals of <span class="math inline">\(s\)</span>.
-Proposition <a href="#prop:assocglue" data-reference-type="ref" data-reference="prop:assocglue">60</a>
+Proposition <a href="#prop:assocglue" data-reference-type="ref" data-reference="prop:assocglue">64</a>
 makes this state independent of whether the local splice/recovery is
 parenthesized as <span class="math inline">\(i\)</span> then <span
 class="math inline">\(j\)</span> or <span
@@ -1268,7 +1289,7 @@ exported packet net and the support/CPTP clause on the Petz branch where
 that channel is used. The touched-overlap local-fit contract gives
 Lyapunov <span class="math inline">\(\Phi\)</span>-descent on accepted
 moves, and
-Proposition <a href="#prop:assocglue" data-reference-type="ref" data-reference="prop:assocglue">60</a>
+Proposition <a href="#prop:assocglue" data-reference-type="ref" data-reference="prop:assocglue">64</a>
 together with
 Definition <a href="#def:assoc" data-reference-type="ref" data-reference="def:assoc">6</a>
 supplies the quotient-local compatibility package used for the local
@@ -1410,7 +1431,7 @@ M\bigl(\operatorname{nf}_\lambda(s)\bigr).
 quantum lift). <em>Fix a finite patch region or union collar <span
 class="math inline">\(R\)</span> on the declared fixed-cutoff quantum
 lift of
-Appendix <a href="#app:consensus-fixed-cutoff-port" data-reference-type="ref" data-reference="app:consensus-fixed-cutoff-port">13</a>.
+Appendix <a href="#app:consensus-fixed-cutoff-port" data-reference-type="ref" data-reference="app:consensus-fixed-cutoff-port">14</a>.
 Its <strong>physical observable algebra</strong> <span
 class="math inline">\(\mathcal A_{\mathrm{phys}}(R)\)</span> is the
 fixed-point collar algebra under the compact boundary redundancy action
@@ -1447,7 +1468,7 @@ class="math inline">\(R\)</span>-collar states of <span
 class="math inline">\(t\)</span> and <span
 class="math inline">\(u\)</span> are representatives of the same
 quotient-local glued state in the sense of
-Proposition <a href="#prop:assocglue" data-reference-type="ref" data-reference="prop:assocglue">60</a>,
+Proposition <a href="#prop:assocglue" data-reference-type="ref" data-reference="prop:assocglue">64</a>,
 then for every physical observable <span
 class="math inline">\(X\in\mathcal A_{\mathrm{phys}}(R)\)</span>, <span
 class="math display">\[
@@ -1469,7 +1490,7 @@ give the unique quotient normal form <span
 class="math inline">\(\overline{\operatorname{nf}}_\lambda([s])=[\operatorname{nf}_\lambda(s)]\in
 q(C)\)</span>. Let <span class="math inline">\(t\)</span> and <span
 class="math inline">\(u\)</span> be as stated. By
-Corollary <a href="#cor:obsglue" data-reference-type="ref" data-reference="cor:obsglue">62</a>,
+Corollary <a href="#cor:obsglue" data-reference-type="ref" data-reference="cor:obsglue">66</a>,
 representatives of the same quotient-local glued state induce the same
 state on the physical observable algebra <span
 class="math inline">\(\mathcal A_{\mathrm{phys}}(R)\)</span>, including
@@ -1490,7 +1511,7 @@ representative-level confluence theorem, quotient descent of the repair
 law,
 Definition <a href="#def:physobs" data-reference-type="ref" data-reference="def:physobs">29</a>,
 and
-Corollary <a href="#cor:obsglue" data-reference-type="ref" data-reference="cor:obsglue">62</a>
+Corollary <a href="#cor:obsglue" data-reference-type="ref" data-reference="cor:obsglue">66</a>
 from the fixed-cutoff union-collar gluing package. The boundary item is
 extension of the same statement to broader refinement-stable branches
 where the declared union-collar compatibility is only approximate or
@@ -2063,6 +2084,232 @@ surface. The broader export problem asks whether richer branches keep
 physically relevant pointer surfaces close to one such central record
 algebra and whether the same control survives refinement and
 continuation.</p>
+<h1 id="oph-simulation-criterion-and-fixed-point-firewall">OPH
+Simulation Criterion and Fixed-Point Firewall</h1>
+<p>A fixed-point equation is necessary for a selected finite OPH packet,
+but it is not the definition of an OPH simulation. The additional
+clauses below are the nontrivial content.</p>
+<div id="def:oph-simulation" class="definition">
+
+<p><strong>Definition 44</strong> (Nontrivial OPH simulation
+certificate). <em>Work on the finite fixed-cutoff branch of
+Definition <a href="#def:packet-closure-simplex" data-reference-type="ref" data-reference="def:packet-closure-simplex">33</a>.
+Write <span class="math display">\[
+Q:=\Sigma/\Gamma,
+\qquad
+n:=\overline{\operatorname{nf}}_\lambda:Q\to Q,
+\qquad
+N_\lambda:=q(C).
+\]</span> Let <span class="math inline">\(B:Q\to\mathcal B\)</span> be a
+boundary/sector map preserved by accepted quotient repairs, fix <span
+class="math inline">\(b\in\mathcal B\)</span>, and set <span
+class="math display">\[
+Q_b:=B^{-1}(b),
+\qquad
+C_b:=N_\lambda\cap Q_b.
+\]</span> For <span class="math inline">\(u\in C_b\)</span>, let <span
+class="math inline">\(\mathfrak U_u:=\delta_u\in\Delta(Q)\)</span>. The
+selected pair <span class="math inline">\((b,u)\)</span>, equivalently
+the packet <span class="math inline">\(\mathfrak U_u\)</span>, has an
+<strong>OPH simulation certificate</strong> when all of the following
+hold.</em></p>
+<ol type="1">
+<li><p><em><strong>Endogenous update.</strong> The local maps are the
+recovery-derived collar maps of
+Definition <a href="#def:repair" data-reference-type="ref" data-reference="def:repair">4</a>,
+descend to the physical quotient, and use only the declared patch,
+overlap, recovery, decoder, and acceptance data. No undeclared oracle
+variable is an argument of an accepted physical update.</em></p></li>
+<li><p><em><strong>Observer-readable records.</strong> A declared
+observer-accessible region carries an exact record presentation <span
+class="math inline">\(\{\widehat P_a\}_a\)</span> as in
+Definition <a href="#def:lattice" data-reference-type="ref" data-reference="def:lattice">42</a>,
+with at least two nonzero orthogonal event projectors. Event
+probabilities, conditioned readouts, and any checkpoint/order relation
+interpreted as history are collected in a physical map <span
+class="math display">\[
+\operatorname{Read}:Q\to\mathcal Y_{\rm rec}
+\]</span> whose terminal value depends only on the quotient normal
+form.</em></p></li>
+<li><p><em><strong>Overlap repair.</strong> Every accepted nontrivial
+move strictly lowers the declared touched-overlap score, normal forms
+are exactly the globally consistent states, and the quotient normal form
+<span class="math inline">\(n\)</span> is terminating and
+schedule-independent.</em></p></li>
+<li><p><em><strong>Nontrivial branch elimination.</strong> The selected
+fiber has one consistent quotient state but more than one candidate:
+<span class="math display">\[
+C_b=\{u\},
+\qquad
+Q_b\setminus C_b\ne\varnothing,
+\qquad
+n(Q_b)=\{u\}.
+\]</span> Thus at least one inconsistent candidate is genuinely removed
+rather than merely renamed a fixed point. A candidate with a nonzero
+declared holonomy or higher-gauge obstruction is rejected as obstructed
+and is not counted as an alternative selected world.</em></p></li>
+<li><p><em><strong>Implementation and clock closure.</strong> The
+physical update and record readout have types <span
+class="math display">\[
+n:Q\to Q,
+\qquad
+\operatorname{Read}:Q\to\mathcal Y_{\rm rec},
+\]</span> with no indispensable machine-state or external-time argument.
+More precisely, for any auxiliary implementation and clock sets <span
+class="math inline">\(\mathcal E_{\rm ext}\)</span> and <span
+class="math inline">\(\Theta_{\rm ext}\)</span>, let <span
+class="math display">\[
+p:Q\times\mathcal E_{\rm ext}\times\Theta_{\rm ext}\to Q
+\]</span> be the physical projection. An admissible lifted update <span
+class="math inline">\(\widetilde n\)</span> and readout <span
+class="math inline">\(\widetilde{\operatorname{Read}}\)</span> must
+satisfy <span class="math display">\[
+p\circ\widetilde n=n\circ p,
+\qquad
+\widetilde{\operatorname{Read}}=\operatorname{Read}\circ p.
+\]</span> The asynchronous schedule and repair-step counter are proof
+data, not physical clock coordinates. Any history claimed by the branch
+is read from records in the terminal quotient state rather than supplied
+by an external clock.</em></p></li>
+</ol>
+<p><em>The identities <span class="math display">\[
+n(u)=u,
+\qquad
+\mathcal C_\lambda(\mathfrak U_u)=\mathfrak U_u
+\]</span> are therefore consequences of the certificate, not its
+definition.</em></p>
+</div>
+
+<div id="thm:oph-simulation" class="theorem">
+
+<p><strong>Theorem 45</strong> (Selected OPH packet and fixed-point
+firewall). <em>Assume
+Definitions <a href="#def:repair" data-reference-type="ref" data-reference="def:repair">4</a>,
+<a href="#def:localfit" data-reference-type="ref" data-reference="def:localfit">5</a>,
+and
+<a href="#def:assoc" data-reference-type="ref" data-reference="def:assoc">6</a>,
+Assumption <a href="#ass:complete" data-reference-type="ref" data-reference="ass:complete">8</a>,
+and the quotient and record hypotheses of
+Theorems <a href="#thm:gauge" data-reference-type="ref" data-reference="thm:gauge">26</a>,
+<a href="#thm:obsconfluence" data-reference-type="ref" data-reference="thm:obsconfluence">30</a>,
+and
+<a href="#thm:crdt" data-reference-type="ref" data-reference="thm:crdt">43</a>.
+Fix a preserved boundary/sector value <span class="math inline">\(b_{\rm
+OPH}\)</span> for which <span class="math display">\[
+C_{b_{\rm OPH}}=\{u_{\rm OPH}\},
+\qquad
+Q_{b_{\rm OPH}}\setminus C_{b_{\rm OPH}}\ne\varnothing,
+\]</span> and assume the selected observer surface has a nontrivial
+exact record presentation whose checkpoint/order data, when interpreted
+as history, are quotient-observable. Then the selected finite OPH packet
+<span class="math display">\[
+\mathfrak U_{\rm OPH}:=\delta_{u_{\rm OPH}}
+\]</span> has an OPH simulation certificate in the sense of
+Definition <a href="#def:oph-simulation" data-reference-type="ref" data-reference="def:oph-simulation">44</a>.
+In particular, <span class="math display">\[
+n(u_{\rm OPH})=u_{\rm OPH},
+\qquad
+\mathcal C_\lambda(\mathfrak U_{\rm OPH})=\mathfrak U_{\rm OPH}.
+\]</span></em></p>
+<p><em>The converse is false: a fixed point, equilibrium, stationary
+point, or variational solution does not by itself imply an OPH
+simulation certificate. Indeed, for any set <span
+class="math inline">\(X\)</span> with <span
+class="math inline">\(|X|&gt;1\)</span>, the identity map <span
+class="math inline">\(F=\mathrm{id}_X\)</span> satisfies <span
+class="math inline">\(F(x)=x\)</span> for every <span
+class="math inline">\(x\in X\)</span>, and every <span
+class="math inline">\(x\)</span> is a global minimizer and stationary
+point of the constant functional <span
+class="math inline">\(V\equiv0\)</span>. Nevertheless, <span
+class="math inline">\(F^{-1}(x)=\{x\}\)</span>, so no proper candidate
+basin collapses to <span class="math inline">\(x\)</span>; clause
+<em>(S4)</em> fails. The fixed-point or variational equation alone also
+supplies none of clauses <em>(S1)</em>–</em>(S3)* or <em>(S5)</em>.</p>
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> Clause <em>(S1)</em> is
+Definition <a href="#def:repair" data-reference-type="ref" data-reference="def:repair">4</a>
+together with quotient descent from
+Theorem <a href="#thm:gauge" data-reference-type="ref" data-reference="thm:gauge">26</a>.
+Clause <em>(S2)</em> follows from
+Theorem <a href="#thm:crdt" data-reference-type="ref" data-reference="thm:crdt">43</a>;
+terminal representative independence is
+Theorem <a href="#thm:obsconfluence" data-reference-type="ref" data-reference="thm:obsconfluence">30</a>.
+Definition <a href="#def:localfit" data-reference-type="ref" data-reference="def:localfit">5</a>,
+Proposition <a href="#prop:lyapunov-termination" data-reference-type="ref" data-reference="prop:lyapunov-termination">14</a>,
+Proposition <a href="#prop:local-confluence" data-reference-type="ref" data-reference="prop:local-confluence">17</a>,
+Assumption <a href="#ass:complete" data-reference-type="ref" data-reference="ass:complete">8</a>,
+and
+Theorem <a href="#thm:confluence" data-reference-type="ref" data-reference="thm:confluence">18</a>
+give clause <em>(S3)</em>.</p>
+<p>For <span class="math inline">\(x\in Q_{b_{\rm OPH}}\)</span>,
+boundary preservation gives <span class="math inline">\(B(n(x))=b_{\rm
+OPH}\)</span>, while repair completeness gives <span
+class="math inline">\(n(x)\in N_\lambda\)</span>. Hence <span
+class="math inline">\(n(x)\in C_{b_{\rm OPH}}=\{u_{\rm OPH}\}\)</span>,
+proving <span class="math inline">\(n(Q_{b_{\rm OPH}})=\{u_{\rm
+OPH}\}\)</span>. The assumed nonempty difference <span
+class="math inline">\(Q_{b_{\rm OPH}}\setminus C_{b_{\rm OPH}}\)</span>
+makes this elimination nontrivial. The holonomy and higher-gauge
+rejection statement is
+Theorems <a href="#thm:holonomy" data-reference-type="ref" data-reference="thm:holonomy">21</a>
+and
+<a href="#thm:higherdefects" data-reference-type="ref" data-reference="thm:higherdefects">24</a>.
+This proves clause <em>(S4)</em>. Its proper-basin requirement is
+nonvacuous: on the verified rooted-tree packet domain of
+Theorem <a href="#thm:tree-packet-domain" data-reference-type="ref" data-reference="thm:tree-packet-domain">10</a>,
+fixing the root packet gives a singleton consistent fiber, while
+changing any non-root packet supplies an inconsistent candidate in that
+fiber.</p>
+<p>The quotient normal-form and physical-record maps are defined on the
+declared physical state alone. Schedule independence removes the
+scheduler from the output, and
+Corollary <a href="#cor:ancilla" data-reference-type="ref" data-reference="cor:ancilla">32</a>
+proves invariance under inert carrier enlargement. The displayed
+projection identities are the admissibility condition for any more
+general carrier or clock realization. Thus an auxiliary implementation
+state or iteration counter cannot change the physical result, proving
+clause <em>(S5)</em>. Finally,
+Theorem <a href="#thm:finite-packet-closure" data-reference-type="ref" data-reference="thm:finite-packet-closure">34</a>
+gives <span class="math display">\[
+\mathcal C_\lambda(\delta_{u_{\rm OPH}})
+=\delta_{n(u_{\rm OPH})}
+=\delta_{u_{\rm OPH}},
+\]</span> because <span class="math inline">\(u_{\rm OPH}\in
+N_\lambda\)</span>. The identity-map and constant-functional example
+proves the final non-implication. ◻</p>
+</div>
+
+<div id="rem:oph-simulation-falsifiers" class="remark">
+
+<p><em>Remark 46</em> (Structural falsification hooks). An asserted OPH
+simulation certificate fails if any one of the following occurs: an
+accepted update depends on undeclared oracle, carrier, or external-clock
+data; the observer record algebra is trivial, unstable, or not
+quotient-readable; an accepted move fails strict mismatch descent;
+terminal states are not exactly the overlap-consistent states; two
+admissible schedules or two candidates in the selected boundary fiber
+produce different physical normal forms; the selected fiber has no
+inconsistent candidate to eliminate; a claimed global branch has nonzero
+holonomy or higher-gauge obstruction; or a carrier/clock lift changes
+the physical update or readout after projection. These are theorem-level
+failure conditions, not semantic disagreements about the word
+“simulation.”</p>
+</div>
+
+<div id="rem:oph-simulation-scope" class="remark">
+
+<p><em>Remark 47</em> (Scope).
+Theorem <a href="#thm:oph-simulation" data-reference-type="ref" data-reference="thm:oph-simulation">45</a>
+certifies the named finite fixed-cutoff branch and selected
+boundary/sector fiber. It does not promote the finite packet closure to
+an arbitrary habitat-level state-and-law space, and it does not remove
+the branch and record hypotheses stated in the theorem.</p>
+</div>
+
 <h1 id="noisy-fair-block-approximate-consensus">Noisy Fair-Block
 Approximate Consensus</h1>
 <p>The exact consensus theorem supplies the quotient normal-form target.
@@ -2072,7 +2319,7 @@ records the conditional bridge from local noisy repair to long-run
 observer-facing approximate consensus.</p>
 <div id="thm:noisy-fair-block-consensus" class="theorem">
 
-<p><strong>Theorem 44</strong> (Global noisy approximate consensus under
+<p><strong>Theorem 48</strong> (Global noisy approximate consensus under
 fair-block contraction). <em>Let <span
 class="math inline">\((Q,d_Q)\)</span> be the observer-facing quotient
 state space of a fixed exported OPH patch federation, and let <span
@@ -2205,7 +2452,7 @@ along the full asynchronous run. ◻</p>
 
 <div id="cor:approx-schedule-independence" class="corollary">
 
-<p><strong>Corollary 45</strong> (Approximate observer-facing schedule
+<p><strong>Corollary 49</strong> (Approximate observer-facing schedule
 independence). <em>Let <span class="math inline">\(M:Q\to Y\)</span> be
 an observer-facing readout into a metric space <span
 class="math inline">\((Y,d_Y)\)</span>, and suppose <span
@@ -2214,7 +2461,7 @@ class="math inline">\(L_M\)</span>-Lipschitz. Fix an exact sector <span
 class="math inline">\(\zeta\)</span> whose exact normal-form set is the
 singleton <span class="math inline">\(\mathcal
 N_\zeta=\{n_\zeta\}\)</span>, and apply
-Theorem <a href="#thm:noisy-fair-block-consensus" data-reference-type="ref" data-reference="thm:noisy-fair-block-consensus">44</a>
+Theorem <a href="#thm:noisy-fair-block-consensus" data-reference-type="ref" data-reference="thm:noisy-fair-block-consensus">48</a>
 on that sector, so that <span
 class="math inline">\(D(q)=d_Q(q,n_\zeta)\)</span>. Then <span
 class="math display">\[
@@ -2248,7 +2495,7 @@ L_M d_Q(q_t,n_\zeta)
 \mathrel{=}
 L_M D(q_t).
 \]</span> The first bound follows from
-Theorem <a href="#thm:noisy-fair-block-consensus" data-reference-type="ref" data-reference="thm:noisy-fair-block-consensus">44</a>.
+Theorem <a href="#thm:noisy-fair-block-consensus" data-reference-type="ref" data-reference="thm:noisy-fair-block-consensus">48</a>.
 The two-schedule bound follows from the triangle inequality through
 <span class="math inline">\(M(n_\zeta)\)</span> and applying the first
 estimate to both schedules. ◻</p>
@@ -2256,7 +2503,7 @@ estimate to both schedules. ◻</p>
 
 <div id="cor:high-prob-noisy-tube" class="corollary">
 
-<p><strong>Corollary 46</strong> (High-probability noisy consensus
+<p><strong>Corollary 50</strong> (High-probability noisy consensus
 tube). <em>Assume the block-distance process also admits the pathwise
 decomposition <span class="math display">\[
 D_{m+1}
@@ -2312,7 +2559,7 @@ substitution yields the claimed bound. ◻</p>
 
 <div id="prop:finite-fair-block-certificate" class="proposition">
 
-<p><strong>Proposition 47</strong> (Finite fair-block contraction
+<p><strong>Proposition 51</strong> (Finite fair-block contraction
 certificate). <em>Let <span class="math inline">\(Q\)</span> be finite,
 let <span class="math inline">\(\mathfrak B_{\mathrm{fair}}\)</span> be
 a finite list of noisy fair-block types, and let <span
@@ -2327,7 +2574,7 @@ class="math display">\[
 \qquad
 \forall q\in Q,\quad \forall B\in\mathfrak B_{\mathrm{fair}},
 \]</span> then Assumption (G3) of
-Theorem <a href="#thm:noisy-fair-block-consensus" data-reference-type="ref" data-reference="thm:noisy-fair-block-consensus">44</a>
+Theorem <a href="#thm:noisy-fair-block-consensus" data-reference-type="ref" data-reference="thm:noisy-fair-block-consensus">48</a>
 holds for any run whose fair blocks are drawn from <span
 class="math inline">\(\mathfrak B_{\mathrm{fair}}\)</span>.</em></p>
 </div>
@@ -2346,7 +2593,7 @@ reachable states and fair-block types. ◻</p>
 <h4 id="finite-audit-route-and-constants">Finite audit route and
 constants.</h4>
 <p>For a finite exported packet net,
-Proposition <a href="#prop:finite-fair-block-certificate" data-reference-type="ref" data-reference="prop:finite-fair-block-certificate">47</a>
+Proposition <a href="#prop:finite-fair-block-certificate" data-reference-type="ref" data-reference="prop:finite-fair-block-certificate">51</a>
 gives the practical certificate path: <span class="math display">\[
 \text{finite quotient }Q
 \Rightarrow
@@ -2373,7 +2620,7 @@ class="math inline">\(\varepsilon\)</span> may absorb Petz-domain
 truncation, Fawzi–Renner recovery error, approximate central-record
 error, detector/readout noise, and coarse-graining defect.</p>
 <h4 id="claim-boundary">Claim boundary.</h4>
-<p>Theorem <a href="#thm:noisy-fair-block-consensus" data-reference-type="ref" data-reference="thm:noisy-fair-block-consensus">44</a>
+<p>Theorem <a href="#thm:noisy-fair-block-consensus" data-reference-type="ref" data-reference="thm:noisy-fair-block-consensus">48</a>
 is a conditional global noisy-consensus theorem. It does not follow from
 the exact finite repair theorem alone. The exact OPH theorem supplies
 the quotient normal-form target <span class="math inline">\(\mathcal
@@ -2397,7 +2644,7 @@ module</strong>: a subgraph that maintains a stable record algebra and
 uses its output law to predict its boundary’s future behavior.</p>
 <div id="def:robustness" class="definition">
 
-<p><strong>Definition 48</strong> (Schedule robustness). <em>Fix
+<p><strong>Definition 52</strong> (Schedule robustness). <em>Fix
 distributions <span class="math inline">\(\mu\)</span> over initial
 conditions and <span class="math inline">\(\nu\)</span> over
 asynchronous schedules, and a gauge-invariant observable <span
@@ -2420,7 +2667,7 @@ class="math inline">\(\mathcal{R}_M(\lambda)=1\)</span>.</em></p>
 
 <div id="def:yield" class="definition">
 
-<p><strong>Definition 49</strong> (Observer yield). <em>Let <span
+<p><strong>Definition 53</strong> (Observer yield). <em>Let <span
 class="math inline">\(X_t^\lambda\)</span> denote the stationary process
 obtained by repeated local perturbation plus reconciliation under law
 <span class="math inline">\(\lambda\)</span>. For each subgraph <span
@@ -2451,7 +2698,7 @@ U \text{ is } (\eta,\varepsilon,h)\text{-observer-like}
 
 <div id="def:fitness" class="definition">
 
-<p><strong>Definition 50</strong> (Law fitness). <em>Let <span
+<p><strong>Definition 54</strong> (Law fitness). <em>Let <span
 class="math inline">\(K(\lambda)\)</span> be a description-length
 penalty. Define <span class="math display">\[
 f(\lambda) = \alpha\,\mathcal{R}_M(\lambda) +
@@ -2462,7 +2709,7 @@ class="math inline">\(\alpha,\beta,\gamma&gt;0\)</span>.</em></p>
 
 <div id="thm:replicator" class="theorem">
 
-<p><strong>Theorem 51</strong> (Replicator monotonicity on law space).
+<p><strong>Theorem 55</strong> (Replicator monotonicity on law space).
 <em>Let <span
 class="math inline">\(\Lambda=\{\lambda_1,\dots,\lambda_m\}\)</span> be
 candidate laws with population weights <span
@@ -2530,9 +2777,9 @@ D}\)</span> is used only at exact Markovity or along the fixed-collar
 replacement limit, while the declared Petz/Fawzi–Renner recovery
 channels supply recovered comparison states from which the local repair
 moves are built (see
-Appendix <a href="#app:splice" data-reference-type="ref" data-reference="app:splice">12</a>
+Appendix <a href="#app:splice" data-reference-type="ref" data-reference="app:splice">13</a>
 and
-Definition <a href="#def:oph-repair-map" data-reference-type="ref" data-reference="def:oph-repair-map">65</a>).</p></li>
+Definition <a href="#def:oph-repair-map" data-reference-type="ref" data-reference="def:oph-repair-map">69</a>).</p></li>
 <li><p>Gauge symmetry as implementation hiding
 (Theorem <a href="#thm:gauge" data-reference-type="ref" data-reference="thm:gauge">26</a>)
 becomes the fixed-cutoff edge-sector package from which the
@@ -2626,7 +2873,7 @@ patch nets, or any hardness lower bound.</p>
 boundary.</h4>
 <p>The theorem-grade consensus statement is exact on the declared
 fixed-cutoff branch. Approximate control begins collar-locally:
-Theorem <a href="#thm:splice" data-reference-type="ref" data-reference="thm:splice">52</a>
+Theorem <a href="#thm:splice" data-reference-type="ref" data-reference="thm:splice">56</a>
 gives the exact-Markov modulus <span
 class="math inline">\(\delta^{\mathrm
 M}_{A:B:D}(\varepsilon)\to0\)</span> on one fixed finite-dimensional
@@ -2638,7 +2885,7 @@ gives the <span
 class="math inline">\((\varepsilon,\delta_{\mathrm{rec}})\)</span>
 repeated-read stability bound for approximate record projectors. The
 long-run noisy statement is conditional:
-Theorem <a href="#thm:noisy-fair-block-consensus" data-reference-type="ref" data-reference="thm:noisy-fair-block-consensus">44</a>
+Theorem <a href="#thm:noisy-fair-block-consensus" data-reference-type="ref" data-reference="thm:noisy-fair-block-consensus">48</a>
 upgrades those local noisy controls to a global expected tube around the
 exact quotient normal-form set only after a fair-block contraction
 certificate <span
@@ -2648,7 +2895,7 @@ descent or fairness alone, and it gives a unique approximate readout
 only inside singleton boundary/sector fibers.</p>
 <h4 id="expressive-power-boundary">Expressive-power boundary.</h4>
 <p>The law-selection model of
-Theorem <a href="#thm:replicator" data-reference-type="ref" data-reference="thm:replicator">51</a>
+Theorem <a href="#thm:replicator" data-reference-type="ref" data-reference="thm:replicator">55</a>
 is a finite-candidate monotonicity result. For each fixed patch net the
 theorem package proves a finite-state exact reconciliation mechanism. A
 universality claim would require an explicit uniform family of patch
@@ -2684,13 +2931,13 @@ observable theorem survives on broader refinement-stable branches where
 the union-collar compatibility is only approximate or where the physical
 observable algebra itself changes under refinement.</p></li>
 <li><p><strong>Global approximate-consensus stability.</strong>
-Theorem <a href="#thm:splice" data-reference-type="ref" data-reference="thm:splice">52</a>
+Theorem <a href="#thm:splice" data-reference-type="ref" data-reference="thm:splice">56</a>
 and
 Theorem <a href="#thm:crdt" data-reference-type="ref" data-reference="thm:crdt">43</a>
 supply the collar-local perturbative controls carried by this paper. The
 rooted-tree packet domain proves the exact finite repair package on one
 nontrivial exported domain.
-Theorem <a href="#thm:noisy-fair-block-consensus" data-reference-type="ref" data-reference="thm:noisy-fair-block-consensus">44</a>
+Theorem <a href="#thm:noisy-fair-block-consensus" data-reference-type="ref" data-reference="thm:noisy-fair-block-consensus">48</a>
 closes the long-run noisy branch only after a fair-block contraction
 certificate is supplied. What remains absent is an automatic theorem
 showing that arbitrary approximate recovery moves on arbitrary
@@ -2731,8 +2978,8 @@ one-vote-per-view, certificate semantics, and
 <span class="roman">DLS</span>-style view-change), a
 <span class="roman">QBFT</span>-style interpretation of
 <span class="roman">OPH</span> repair satisfies safety and liveness
-(Appendix <a href="#app:bft-qecc" data-reference-type="ref" data-reference="app:bft-qecc">14</a>,
-Theorem <a href="#thm:qbft-safety" data-reference-type="ref" data-reference="thm:qbft-safety">64</a>).
+(Appendix <a href="#app:bft-qecc" data-reference-type="ref" data-reference="app:bft-qecc">15</a>,
+Theorem <a href="#thm:qbft-safety" data-reference-type="ref" data-reference="thm:qbft-safety">68</a>).
 On the fixed-cutoff collar branch used here, the repair map is written
 in exact-splice / Petz form; the assumption-dependent item is the
 <span class="roman">CPTP</span> property on all inputs, which requires
@@ -2741,20 +2988,20 @@ class="math inline">\(\mathcal{N}(\sigma)\)</span> or an explicit domain
 restriction, and trace-preserving completion is not automatic when <span
 class="math inline">\(\mathcal{N}(\sigma)\)</span> has a non-trivial
 kernel
-(Proposition <a href="#prop:petz-cptp" data-reference-type="ref" data-reference="prop:petz-cptp">67</a>).
+(Proposition <a href="#prop:petz-cptp" data-reference-type="ref" data-reference="prop:petz-cptp">71</a>).
 A quantum error-correcting interpretation is possible only after a
 genuine code subspace, logical dictionary, error family, and recovery
 map are supplied. The graph-min-cut equality for distance is not a
 property of a bare overlap graph: the same graph can realize distance
 <span class="math inline">\(1\)</span> or distance <span
 class="math inline">\(|V|\)</span> under different interface maps
-(Theorem <a href="#thm:no-free-mincut" data-reference-type="ref" data-reference="thm:no-free-mincut">72</a>).
+(Theorem <a href="#thm:no-free-mincut" data-reference-type="ref" data-reference="thm:no-free-mincut">76</a>).
 Distance/min-cut statements require the topological-code certificate of
-Definition <a href="#def:tcert" data-reference-type="ref" data-reference="def:tcert">73</a>
+Definition <a href="#def:tcert" data-reference-type="ref" data-reference="def:tcert">77</a>
 and
-Theorem <a href="#thm:tcert-distance" data-reference-type="ref" data-reference="thm:tcert-distance">74</a>;
+Theorem <a href="#thm:tcert-distance" data-reference-type="ref" data-reference="thm:tcert-distance">78</a>;
 resilience requires the Knill–Laflamme certificate of
-Theorem <a href="#thm:qecc" data-reference-type="ref" data-reference="thm:qecc">76</a>.
+Theorem <a href="#thm:qecc" data-reference-type="ref" data-reference="thm:qecc">80</a>.
 All of these extensions are assumption-dependent or conjectural and are
 not part of the core theorem package of Paper 4.</p>
 <div class="center">
@@ -2828,7 +3075,7 @@ state, and <span class="math inline">\(R\)</span> the record
 algebra.</p>
 <div id="thm:splice" class="theorem">
 
-<p><strong>Theorem 52</strong> (Markov-collar splice theorem, exact and
+<p><strong>Theorem 56</strong> (Markov-collar splice theorem, exact and
 controlled). <em>Suppose a collar tripartition <span
 class="math inline">\(A\)</span>-<span
 class="math inline">\(B\)</span>-<span class="math inline">\(D\)</span>
@@ -3012,7 +3259,7 @@ carries the parenthesization-invariant union-collar state used for the
 local diamond.</p>
 <div class="proposition">
 
-<p><strong>Proposition 53</strong> (Ancilla-stable UV
+<p><strong>Proposition 57</strong> (Ancilla-stable UV
 underdetermination). <em>Let a fixed-cutoff OPH realization be
 stabilized by finite ancillary factors <span
 class="math inline">\(K_P\)</span> in a fixed product state, with
@@ -3040,7 +3287,7 @@ unchanged. ◻</p>
 Ordinary EC</h2>
 <div class="proposition">
 
-<p><strong>Proposition 54</strong> (Derived boundary gluing datum).
+<p><strong>Proposition 58</strong> (Derived boundary gluing datum).
 <em>Choose a finite regulator chart for the patches meeting along a
 connected cut <span class="math inline">\(\Sigma\)</span>. Because the
 local overlap algebras are finite-dimensional matrix algebras, any
@@ -3060,7 +3307,7 @@ action.</em></p>
 
 <div class="theorem">
 
-<p><strong>Theorem 55</strong> (Derived EC decomposition). <em>Under the
+<p><strong>Theorem 59</strong> (Derived EC decomposition). <em>Under the
 fixed-cutoff regulator realization above, and on the ordinary or
 central-defect branch, the collar Hilbert space is <span
 class="math display">\[
@@ -3083,7 +3330,7 @@ cut.</em></p>
 
 <div class="remark">
 
-<p><em>Remark 56</em>. This is the finite-patch-net origin of the collar
+<p><em>Remark 60</em>. This is the finite-patch-net origin of the collar
 center used by the later Markov, record, and observer packages. Exact
 Markovity is an additional state hypothesis; EC provides the kinematic
 block structure.</p>
@@ -3094,7 +3341,7 @@ id="higher-gauge-replacement-on-the-genuinely-noncentral-branch">Higher-Gauge
 Replacement on the Genuinely Noncentral Branch</h2>
 <div class="proposition">
 
-<p><strong>Proposition 57</strong> (Derived higher-gauge cut datum).
+<p><strong>Proposition 61</strong> (Derived higher-gauge cut datum).
 <em>On the genuinely noncentral branch, weak overlap gluing on a
 connected cut <span class="math inline">\(\Sigma\)</span> is encoded by
 a compact crossed module <span class="math display">\[
@@ -3110,7 +3357,7 @@ class="math display">\[
 
 <div class="theorem">
 
-<p><strong>Theorem 58</strong> (Higher-gauge EC decomposition and defect
+<p><strong>Theorem 62</strong> (Higher-gauge EC decomposition and defect
 transport). <em>On the genuinely noncentral branch, <span
 class="math display">\[
 \mathcal H_{B_\delta}^{2g}
@@ -3132,7 +3379,7 @@ fixed-cutoff genuinely noncentral sectors.</em></p>
 
 <div class="corollary">
 
-<p><strong>Corollary 59</strong> (Exact Markov adds the state
+<p><strong>Corollary 63</strong> (Exact Markov adds the state
 factorization). <em>On either the ordinary/central branch of the
 previous theorem or the genuinely noncentral higher-gauge branch, if in
 addition <span class="math display">\[
@@ -3152,7 +3399,7 @@ form.</em></p>
 
 <div id="prop:assocglue" class="proposition">
 
-<p><strong>Proposition 60</strong> (Parenthesization-invariant
+<p><strong>Proposition 64</strong> (Parenthesization-invariant
 union-collar gluing). <em>Fix a finite union collar <span
 class="math inline">\(U\)</span> built from two overlapping local repair
 collars on the declared fixed-cutoff branch. On the ordinary or
@@ -3186,7 +3433,7 @@ case the physical quotient state is parenthesization-independent. ◻</p>
 
 <div class="remark">
 
-<p><em>Remark 61</em>. Approximate recoverability gives controlled
+<p><em>Remark 65</em>. Approximate recoverability gives controlled
 deviations from this normal form; it is not implied by EC alone. This is
 the fixed-cutoff topological package behind the consensus paper’s
 quotient and record-language surface.</p>
@@ -3194,13 +3441,13 @@ quotient and record-language surface.</p>
 
 <div id="cor:obsglue" class="corollary">
 
-<p><strong>Corollary 62</strong> (Physical observables are invariant on
+<p><strong>Corollary 66</strong> (Physical observables are invariant on
 one quotient-local glued state). <em>Let <span
 class="math inline">\(U\)</span> be a finite union collar on the
 declared fixed-cutoff branch, and let <span
 class="math inline">\(\omega_U,\omega&#39;_U\)</span> be two microscopic
 representatives of the same quotient-local glued state from
-Proposition <a href="#prop:assocglue" data-reference-type="ref" data-reference="prop:assocglue">60</a>.
+Proposition <a href="#prop:assocglue" data-reference-type="ref" data-reference="prop:assocglue">64</a>.
 Then every physical observable <span class="math inline">\(X\)</span> on
 the collar fixed-point / quotient-local algebra has the same expectation
 in both representatives: <span class="math display">\[
@@ -3213,7 +3460,7 @@ that same declared surface.</em></p>
 <div class="proof">
 
 <p><em>Proof.</em> On the ordinary or central-defect branch,
-Proposition <a href="#prop:assocglue" data-reference-type="ref" data-reference="prop:assocglue">60</a>
+Proposition <a href="#prop:assocglue" data-reference-type="ref" data-reference="prop:assocglue">64</a>
 says the two representatives differ only by the boundary-redundancy
 action inside one fixed sector block. The fixed-point collar algebra and
 its central block projectors are invariant under that action, so their
@@ -3243,10 +3490,10 @@ settled result.</p>
 Bound</h2>
 <div id="def:qbft-style" class="definition">
 
-<p><strong>Definition 63</strong> (QBFT-style protocol). <em>A consensus
+<p><strong>Definition 67</strong> (QBFT-style protocol). <em>A consensus
 protocol is <em>QBFT-style</em> in this analysis if it satisfies the
 following three structural properties. The safety proof of
-Theorem <a href="#thm:qbft-safety" data-reference-type="ref" data-reference="thm:qbft-safety">64</a>
+Theorem <a href="#thm:qbft-safety" data-reference-type="ref" data-reference="thm:qbft-safety">68</a>
 uses all three; the theorem does not hold for protocols lacking any of
 them without a compensating change to the argument.</em></p>
 <ol type="1">
@@ -3302,10 +3549,10 @@ class="math inline">\(|Q_a\cap Q_b|\geq f+1\)</span> (guaranteed by
 </ol>
 <div id="thm:qbft-safety" class="theorem">
 
-<p><strong>Theorem 64</strong> (QBFT Safety Bound [Established under
+<p><strong>Theorem 68</strong> (QBFT Safety Bound [Established under
 A1–A6]). <em>Under assumptions (A1)–(A6), any consensus protocol
 satisfying (P1)–(P3) of
-Definition <a href="#def:qbft-style" data-reference-type="ref" data-reference="def:qbft-style">63</a>
+Definition <a href="#def:qbft-style" data-reference-type="ref" data-reference="def:qbft-style">67</a>
 and run over the <span class="roman">OPH</span> observer graph
 satisfies:</em></p>
 <ol type="1">
@@ -3348,7 +3595,7 @@ under partial synchrony (A1). ◻</p>
 Convergence of the OPH Repair Map</h2>
 <div id="def:oph-repair-map" class="definition">
 
-<p><strong>Definition 65</strong> (OPH Repair Map: Petz form). <em>Let
+<p><strong>Definition 69</strong> (OPH Repair Map: Petz form). <em>Let
 <span class="math inline">\(\sigma\in\mathcal{D}(\mathcal{H})\)</span>
 be a full-rank reference state and <span
 class="math inline">\(\mathcal{N}:\mathcal{B}(\mathcal{H})\to\mathcal{B}(\mathcal{K})\)</span>
@@ -3367,7 +3614,7 @@ class="math inline">\(\mathrm{supp}(\mathcal{N}(\sigma))\)</span>.</em></p>
 
 <div class="remark">
 
-<p><em>Remark 66</em> (Petz map vs. trace-distance projection). The
+<p><em>Remark 70</em> (Petz map vs. trace-distance projection). The
 closest-point trace-distance projection <span
 class="math inline">\(\mathcal{P}_{\mathcal{S}}(\rho):=\arg\min_{\tau\in\mathcal{S}}\tfrac12\|\rho-\tau\|_1\)</span>
 is a different object from the Petz map: it is defined by a variational
@@ -3375,12 +3622,12 @@ problem in trace-norm geometry and is not
 <span class="roman">CPTP</span> in general. The two coincide only in
 very special cases not automatic in the <span class="roman">OPH</span>
 setting. All subsequent properties refer exclusively to
-Definition <a href="#def:oph-repair-map" data-reference-type="ref" data-reference="def:oph-repair-map">65</a>.</p>
+Definition <a href="#def:oph-repair-map" data-reference-type="ref" data-reference="def:oph-repair-map">69</a>.</p>
 </div>
 
 <div id="prop:petz-cptp" class="proposition">
 
-<p><strong>Proposition 67</strong> (Petz map CPTP: domain-restricted
+<p><strong>Proposition 71</strong> (Petz map CPTP: domain-restricted
 statement [Established, subject to domain restriction]). <em>Let <span
 class="math inline">\(\sigma\)</span> have full support on <span
 class="math inline">\(\mathcal{H}\)</span>.</em></p>
@@ -3443,7 +3690,7 @@ Fagnola–Umanità . ◻</p>
 
 <div id="prop:petz-contraction" class="proposition">
 
-<p><strong>Proposition 68</strong> (Analytic contraction certificate
+<p><strong>Proposition 72</strong> (Analytic contraction certificate
 [Assumption-dependent]). <em>Suppose a declared quotient repair map
 <span class="math inline">\(T:Q\to Q\)</span> on a metric physical
 quotient <span class="math inline">\((Q,d_Q)\)</span> is strictly
@@ -3463,9 +3710,9 @@ repairs.</em></p>
 
 <div id="thm:noisy-contraction" class="theorem">
 
-<p><strong>Theorem 69</strong> (Noisy approximate repair stability
+<p><strong>Theorem 73</strong> (Noisy approximate repair stability
 [Contraction branch]). <em>Assume the contraction certificate of
-Proposition <a href="#prop:petz-contraction" data-reference-type="ref" data-reference="prop:petz-contraction">68</a>,
+Proposition <a href="#prop:petz-contraction" data-reference-type="ref" data-reference="prop:petz-contraction">72</a>,
 and let <span class="math inline">\(\widetilde T:Q\to Q\)</span> be an
 implemented noisy repair map satisfying <span class="math display">\[
 d_Q(\widetilde T x,Tx)\le \varepsilon
@@ -3492,7 +3739,7 @@ d_Q(\widetilde T x,x_\star)
 
 <div id="conj:spectral-gap" class="proposition">
 
-<p><strong>Proposition 70</strong> (Spectral-gap criterion
+<p><strong>Proposition 74</strong> (Spectral-gap criterion
 [Model-dependent]). <em>Let <span class="math inline">\(\mathcal
 T\)</span> be the Markov, channel, or transfer operator induced by
 iterated OPH repair on a declared analytic realization. If <span
@@ -3511,10 +3758,10 @@ extension.</em></p>
 
 <div id="thm:exp-convergence" class="theorem">
 
-<p><strong>Theorem 71</strong> (Exponential Convergence [Under
-Proposition <a href="#conj:spectral-gap" data-reference-type="ref" data-reference="conj:spectral-gap">70</a>]).
+<p><strong>Theorem 75</strong> (Exponential Convergence [Under
+Proposition <a href="#conj:spectral-gap" data-reference-type="ref" data-reference="conj:spectral-gap">74</a>]).
 <em>Under
-Proposition <a href="#conj:spectral-gap" data-reference-type="ref" data-reference="conj:spectral-gap">70</a>,
+Proposition <a href="#conj:spectral-gap" data-reference-type="ref" data-reference="conj:spectral-gap">74</a>,
 for any initial analytic state <span
 class="math inline">\(\rho\)</span>, <span class="math display">\[
 \bigl\|\mathcal T^t\rho-\Pi_\star\rho\bigr\|
@@ -3534,7 +3781,7 @@ code; <span class="math inline">\(K=2^k\)</span>; quantum Singleton
 bound: <span class="math inline">\(k\leq n-2(d-1)\)</span>.</p>
 <div id="thm:no-free-mincut" class="theorem">
 
-<p><strong>Theorem 72</strong> (No free min-cut theorem for bare overlap
+<p><strong>Theorem 76</strong> (No free min-cut theorem for bare overlap
 graphs [Established]). <em>Let <span
 class="math inline">\(G=(V,E)\)</span> be any connected graph with <span
 class="math inline">\(|V|\ge2\)</span>. The graph <span
@@ -3568,7 +3815,7 @@ error model–not of the bare overlap graph. ◻</p>
 
 <div id="def:tcert" class="definition">
 
-<p><strong>Definition 73</strong> (Topological-code realization
+<p><strong>Definition 77</strong> (Topological-code realization
 certificate). <em>An OPH overlap network may be treated as a
 QECC/topological code only after supplying a tuple <span
 class="math display">\[
@@ -3592,10 +3839,10 @@ recovery family.</em></p>
 
 <div id="thm:tcert-distance" class="theorem">
 
-<p><strong>Theorem 74</strong> (Certified topological-code distance and
+<p><strong>Theorem 78</strong> (Certified topological-code distance and
 min-cut [Assumption-dependent]). <em>Suppose a certificate <span
 class="math inline">\(\mathsf{TCert}\)</span> of
-Definition <a href="#def:tcert" data-reference-type="ref" data-reference="def:tcert">73</a>
+Definition <a href="#def:tcert" data-reference-type="ref" data-reference="def:tcert">77</a>
 is supplied, with logical classes identified as <span
 class="math display">\[
 \mathcal L_X\simeq H_1(K;\mathbb F_2),
@@ -3622,13 +3869,13 @@ distance statement once the chain complex, checks, logical
 representatives, and boundary conditions are declared. The min-cut
 equality is an additional geometric identification of that homological
 minimum with a graph cut. By
-Theorem <a href="#thm:no-free-mincut" data-reference-type="ref" data-reference="thm:no-free-mincut">72</a>,
+Theorem <a href="#thm:no-free-mincut" data-reference-type="ref" data-reference="thm:no-free-mincut">76</a>,
 it cannot be inferred from the bare graph. ◻</p>
 </div>
 
 <div id="conj:comm-complexity" class="conjecture">
 
-<p><strong>Conjecture 75</strong> (Communication complexity
+<p><strong>Conjecture 79</strong> (Communication complexity
 [Conjecture]). <em>The <span class="roman">OPH</span> consensus-repair
 protocol, realised as a quantum communication task, has per-round
 complexity <span
@@ -3641,7 +3888,7 @@ implementation.</em></p>
 
 <div id="thm:qecc" class="theorem">
 
-<p><strong>Theorem 76</strong> (QECC resilience under a supplied code
+<p><strong>Theorem 80</strong> (QECC resilience under a supplied code
 certificate [Assumption-dependent]). <em>Assume a genuine code subspace
 <span class="math inline">\(\mathcal H_{\mathrm{code}}\subseteq\mathcal
 H_{\mathrm{phys}}\)</span> with projector <span
@@ -3662,11 +3909,11 @@ overlap graph.</em></p>
 
 <div id="cor:qecc-inventory" class="corollary">
 
-<p><strong>Corollary 77</strong> (QECC extension inventory). <em>Under
-Definition <a href="#def:tcert" data-reference-type="ref" data-reference="def:tcert">73</a>,
-Theorem <a href="#thm:tcert-distance" data-reference-type="ref" data-reference="thm:tcert-distance">74</a>,
+<p><strong>Corollary 81</strong> (QECC extension inventory). <em>Under
+Definition <a href="#def:tcert" data-reference-type="ref" data-reference="def:tcert">77</a>,
+Theorem <a href="#thm:tcert-distance" data-reference-type="ref" data-reference="thm:tcert-distance">78</a>,
 and
-Theorem <a href="#thm:qecc" data-reference-type="ref" data-reference="thm:qecc">76</a>,
+Theorem <a href="#thm:qecc" data-reference-type="ref" data-reference="thm:qecc">80</a>,
 the OPH BFT/QECC extension carries the following status split:</em></p>
 <ol type="1">
 <li><p><em><span class="roman">[Assumption-dependent]</span> Code
@@ -3695,7 +3942,7 @@ probability space on schedules, a transfer-operator spectral gap, or a
 message-delay bound. A convergence statement of the form “converges with
 probability 1” requires a measure on schedules. Exponential convergence
 requires the spectral-gap certificate of
-Theorem <a href="#thm:exp-convergence" data-reference-type="ref" data-reference="thm:exp-convergence">71</a>.
+Theorem <a href="#thm:exp-convergence" data-reference-type="ref" data-reference="thm:exp-convergence">75</a>.
 Bounded wall-clock liveness requires partial synchrony and quorum
 assumptions. The <span class="roman">FLP</span> impossibility result 
 confirms that fairness is insufficient for bounded-time consensus in a
@@ -3711,7 +3958,7 @@ processing rates.</p></li>
 </ol>
 <div id="thm:eventual-convergence" class="theorem">
 
-<p><strong>Theorem 78</strong> (Eventual finite repair termination
+<p><strong>Theorem 82</strong> (Eventual finite repair termination
 [Finite-descent branch]). <em>For a finite OPH patch net with a strict
 Lyapunov-decreasing accepted repair relation, every maximal repair run
 terminates after finitely many accepted repairs. The step count is
@@ -3729,7 +3976,7 @@ a wall-clock liveness theorem.</em></p>
 
 <div id="thm:quantitative-convergence" class="theorem">
 
-<p><strong>Theorem 79</strong> (Quantitative Convergence [Assuming
+<p><strong>Theorem 83</strong> (Quantitative Convergence [Assuming
 (B1)–(B3)]). <em>In a partially synchronous
 <span class="roman">OPH</span> observer network satisfying (B1)–(B3),
 after <span class="roman">GST</span> every nonfaulty observer reaches
@@ -3751,7 +3998,7 @@ refinements. They are separate from the finite OPH repair theorem, where
 the accepted repair law supplies Lyapunov descent directly.</p></li>
 <li><p>Long-run noisy approximate consensus is available only on the
 fair-block contraction branch of
-Theorem <a href="#thm:noisy-fair-block-consensus" data-reference-type="ref" data-reference="thm:noisy-fair-block-consensus">44</a>:
+Theorem <a href="#thm:noisy-fair-block-consensus" data-reference-type="ref" data-reference="thm:noisy-fair-block-consensus">48</a>:
 the chosen implementation must certify fair blocks, expected contraction
 toward the exact quotient normal-form set, and controlled within-block
 excursions. Fairness alone does not supply that certificate.</p></li>
