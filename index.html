@@ -141,7 +141,7 @@
       align-items: center;
       justify-content: center;
       overflow-x: hidden;
-      overflow-y: auto;
+      overflow-y: hidden;
       padding: 32px 20px;
       -webkit-font-smoothing: antialiased;
       text-rendering: geometricPrecision;
@@ -270,96 +270,9 @@
       background: rgba(78, 231, 255, 0.06);
     }
 
-    .oph-note {
-      max-width: 820px;
-      margin: 30px auto 0;
-      padding: 18px 20px;
-      border: 1px solid rgba(78, 231, 255, 0.16);
-      border-radius: 18px;
-      background:
-        linear-gradient(145deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.015)),
-        rgba(78, 231, 255, 0.035);
-      color: var(--muted);
-      font-size: 0.74rem;
-      line-height: 1.7;
-      box-shadow: 0 24px 70px rgba(0, 0, 0, 0.28);
-      backdrop-filter: blur(18px);
-    }
-    .oph-note strong {
-      color: #fff;
-      font-weight: 600;
-    }
-    .oph-note a {
-      color: var(--cyan);
-      text-decoration: none;
-      border-bottom: 1px solid rgba(78, 231, 255, 0.28);
-    }
-    .oph-note a:hover,
-    .oph-note a:focus-visible {
-      border-bottom-color: rgba(78, 231, 255, 0.7);
-    }
-    .oph-resource-links {
-      max-width: 940px;
-      margin: 32px auto 0;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-      gap: 14px;
-    }
-    .oph-resource-link {
-      padding: 18px 18px;
-      border: 1px solid rgba(78, 231, 255, 0.17);
-      border-radius: 18px;
-      background:
-        radial-gradient(circle at 16% 0%, rgba(78, 231, 255, 0.12), transparent 10rem),
-        linear-gradient(145deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.015)),
-        var(--panel);
-      color: #fff;
-      text-align: left;
-      text-decoration: none;
-      transition: all 0.25s ease;
-      box-shadow: 0 18px 52px rgba(0, 0, 0, 0.26);
-      backdrop-filter: blur(18px);
-    }
-    .oph-resource-link:hover,
-    .oph-resource-link:focus-visible {
-      transform: translateY(-1px);
-      border-color: rgba(78, 231, 255, 0.46);
-      background:
-        radial-gradient(circle at 16% 0%, rgba(78, 231, 255, 0.18), transparent 11rem),
-        linear-gradient(145deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.018)),
-        var(--panel);
-    }
-    .oph-resource-link strong,
-    .oph-resource-link span {
-      display: block;
-    }
-    .oph-resource-link strong {
-      color: #fff;
-      font-size: 0.78rem;
-      line-height: 1.35;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-    }
-    .oph-resource-link span {
-      margin-top: 6px;
-      color: var(--muted);
-      font-size: 0.7rem;
-      line-height: 1.45;
-    }
-
     @media (max-width: 640px) {
       .pages {
         gap: 18px;
-      }
-
-      .oph-resource-links {
-        grid-template-columns: 1fr;
-      }
-
-      .oph-note {
-        margin-top: 28px;
-        font-size: 0.68rem;
-        padding: 14px 16px;
       }
     }
 
@@ -399,53 +312,6 @@
       <a href="/awesome-ai-security/" data-decode data-delay="2000">AI Security</a>
     </div>
 
-    <div class="oph-resource-links" aria-label="OPH network links">
-      <a class="oph-resource-link" href="/oph/" data-track-link="oph-resource-overview">
-        <strong>OPH Overview</strong>
-        <span>The hub for papers, explainers, apps, and challenge surfaces.</span>
-      </a>
-      <a class="oph-resource-link" href="https://learn.floatingpragma.io/" data-track-link="oph-resource-textbooks">
-        <strong>OPH Textbooks</strong>
-        <span>Guided study path through the OPH derivations.</span>
-      </a>
-      <a class="oph-resource-link" href="https://oph-book.floatingpragma.io/" data-track-link="oph-resource-book">
-        <strong>Reverse Engineering Reality</strong>
-        <span>The book-length route into the full OPH framework.</span>
-      </a>
-      <a class="oph-resource-link" href="https://oph-lab.floatingpragma.io/" data-track-link="oph-resource-lab">
-        <strong>OPH Lab</strong>
-        <span>Interactive derivation map for the public OPH stack.</span>
-      </a>
-      <a class="oph-resource-link" href="https://coherence.floatingpragma.io/" data-track-link="oph-resource-coherence">
-        <strong>Coherence Map</strong>
-        <span>Public graph surface for OPH concepts and overlaps.</span>
-      </a>
-      <a class="oph-resource-link" href="https://omega.floatingpragma.io/" data-track-link="oph-resource-omega">
-        <strong>Applications</strong>
-        <span>OPH use cases across hardware, compute, energy, AGI, and lift.</span>
-      </a>
-      <a class="oph-resource-link" href="https://3body.floatingpragma.io/" data-track-link="oph-resource-three-body">
-        <strong>Three-Body Demo</strong>
-        <span>Simulator and proof walk-through for the finite patch-net example.</span>
-      </a>
-    </div>
-
-    <p class="oph-note">
-      <a href="/oph/" data-track-link="oph-brand"><strong>Observer Patch Holography</strong></a> is Pragma's concrete implementation of
-      <a href="/oph/what-is-simulation-theory/" data-track-link="oph-what-is-simulation">simulation theory in physics</a>, a
-      <a href="/oph/what-is-a-theory-of-everything/" data-track-link="oph-what-is-toe">theory of everything</a>, and the
-      <a href="/oph/physics-unification/" data-track-link="oph-unification">physics-unification layer</a>.
-      Start at the <a href="/oph/" data-track-link="oph-overview">Observer Patch Holography hub</a> for papers, the book, the <a href="https://learn.floatingpragma.io/" data-track-link="oph-textbooks">OPH Textbooks study app</a>, the <a href="https://oph-lab.floatingpragma.io/" data-track-link="oph-lab">interactive lab</a>, the <a href="https://coherence.floatingpragma.io/" data-track-link="oph-coherence">coherence map</a>, and the non-branded entry pages on <a href="/oph/simulation-theory/" data-track-link="oph-simulation-entry">simulation theory</a>, <a href="/oph/physics-unification/" data-track-link="oph-unification-entry">physics unification</a>, and <a href="/oph/theory-of-everything/" data-track-link="oph-toe-entry">theory of everything</a>.
-      For OPH applications and simulator-facing examples, see the <a href="https://omega.floatingpragma.io/" data-track-link="oph-omega">Applications page</a> and the <a href="https://3body.floatingpragma.io/" data-track-link="oph-three-body">three-body problem OPH demo</a>.
-      For broader essays and public-facing notes, the <a href="https://blog.floatingpragma.io/" data-track-link="blog-surface">Floating Pragma Blog</a> starts with
-      <a href="https://blog.floatingpragma.io/semiotics-and-the-physics-of-meaning" data-track-link="blog-semiotics">Semiotics and the Physics of Meaning</a>.
-    </p>
-    <p class="oph-note">
-      OPH material is published under the
-      <a href="https://github.com/FloatingPragma/observer-patch-holography/blob/main/LICENSE" target="_blank" rel="noopener noreferrer" data-track-link="oph-license">main license</a>
-      and
-      <a href="https://github.com/FloatingPragma/observer-patch-holography/blob/main/PATENTS.md" target="_blank" rel="noopener noreferrer" data-track-link="oph-anti-patent">anti-patent covenant</a>.
-    </p>
   </div>
 
   <script>
