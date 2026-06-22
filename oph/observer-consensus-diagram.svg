@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="840" viewBox="0 0 1400 840" role="img" aria-labelledby="title desc">
+  <title id="title">Observer-patch consensus diagram</title>
+  <desc id="desc">Finite observer patches compare records, repair mismatch, and settle into a stable public record that feeds continuation and applications.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#061016"/>
+      <stop offset="0.55" stop-color="#091015"/>
+      <stop offset="1" stop-color="#030506"/>
+    </linearGradient>
+    <linearGradient id="cyanStroke" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#56e8ff"/>
+      <stop offset="1" stop-color="#94ddbf"/>
+    </linearGradient>
+    <linearGradient id="goldStroke" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e4c876"/>
+      <stop offset="1" stop-color="#f2a39a"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.31 0 0 0 0 0.91 0 0 0 0 1 0 0 0 0.42 0"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softGold" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.9 0 0 0 0 0.78 0 0 0 0 0.43 0 0 0 0.34 0"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <marker id="arrowCyan" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#56e8ff"/>
+    </marker>
+    <marker id="arrowGold" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#e4c876"/>
+    </marker>
+    <style>
+      .mono { font-family: "JetBrains Mono", "SFMono-Regular", Consolas, monospace; letter-spacing: 1.4px; }
+      .sans { font-family: "Space Grotesk", Inter, system-ui, sans-serif; }
+      .small { font-size: 18px; fill: #aeb8c5; }
+      .tiny { font-size: 14px; fill: #9fa9b7; }
+      .label { font-size: 20px; fill: #eef8ff; font-weight: 700; }
+      .kicker { font-size: 13px; fill: #56e8ff; text-transform: uppercase; }
+      .panel { fill: rgba(255,255,255,0.045); stroke: rgba(255,255,255,0.14); stroke-width: 1.5; }
+      .patch { fill: rgba(86,232,255,0.07); stroke: url(#cyanStroke); stroke-width: 2.2; }
+      .overlap { fill: rgba(228,200,118,0.16); stroke: rgba(228,200,118,0.65); stroke-width: 1.5; }
+      .record { fill: rgba(86,232,255,0.12); stroke: rgba(86,232,255,0.64); stroke-width: 1.3; }
+      .repair { fill: rgba(228,200,118,0.13); stroke: rgba(228,200,118,0.72); stroke-width: 1.5; }
+      .world { fill: rgba(148,221,191,0.12); stroke: rgba(148,221,191,0.72); stroke-width: 2; }
+      .line { fill: none; stroke: rgba(86,232,255,0.72); stroke-width: 2; marker-end: url(#arrowCyan); }
+      .goldLine { fill: none; stroke: rgba(228,200,118,0.76); stroke-width: 2.2; marker-end: url(#arrowGold); }
+      .thin { fill: none; stroke: rgba(255,255,255,0.16); stroke-width: 1; }
+    </style>
+  </defs>
+
+  <rect width="1400" height="840" rx="34" fill="url(#bg)"/>
+
+  <g opacity="0.42">
+    <path d="M80 120H1320M80 220H1320M80 320H1320M80 420H1320M80 520H1320M80 620H1320M80 720H1320" class="thin"/>
+    <path d="M120 80V760M220 80V760M320 80V760M420 80V760M520 80V760M620 80V760M720 80V760M820 80V760M920 80V760M1020 80V760M1120 80V760M1220 80V760" class="thin"/>
+  </g>
+
+  <text x="76" y="88" class="mono kicker">Observer Patch Holography</text>
+  <text x="76" y="128" class="sans" font-size="38" font-weight="700" fill="#f7fbff">Records, repair, continuation</text>
+  <text x="76" y="162" class="sans small">High-level map of the OPH mechanism used by the physics papers and the continuation essay.</text>
+
+  <g transform="translate(86 242)">
+    <rect x="0" y="0" width="456" height="376" rx="18" class="panel"/>
+    <text x="28" y="44" class="mono kicker">Finite observers</text>
+    <text x="28" y="78" class="sans label">Bounded patches with ports</text>
+    <circle cx="160" cy="182" r="82" class="patch" filter="url(#glow)"/>
+    <circle cx="282" cy="182" r="82" class="patch" filter="url(#glow)"/>
+    <circle cx="222" cy="276" r="82" class="patch" filter="url(#glow)"/>
+    <path d="M201 118 C232 146 238 207 215 244 C190 209 187 151 201 118Z" class="overlap"/>
+    <path d="M170 238 C207 221 254 228 284 259 C242 276 198 270 170 238Z" class="overlap"/>
+    <path d="M273 238 C243 221 206 223 181 251 C217 275 255 271 273 238Z" class="overlap" opacity="0.65"/>
+    <text x="124" y="182" class="mono tiny">Patch A</text>
+    <text x="248" y="182" class="mono tiny">Patch B</text>
+    <text x="188" y="298" class="mono tiny">Patch C</text>
+    <text x="28" y="330" class="sans tiny">Local state stays bounded.</text>
+    <text x="28" y="352" class="sans tiny">Only overlap-readable data is exposed.</text>
+  </g>
+
+  <g transform="translate(604 242)">
+    <rect x="0" y="0" width="286" height="376" rx="18" class="panel"/>
+    <text x="26" y="44" class="mono kicker">Overlap check</text>
+    <text x="26" y="78" class="sans label">Shared records</text>
+    <g transform="translate(38 116)">
+      <rect x="0" y="0" width="64" height="48" rx="8" class="record"/>
+      <rect x="82" y="0" width="64" height="48" rx="8" class="record"/>
+      <rect x="164" y="0" width="64" height="48" rx="8" class="record"/>
+      <rect x="0" y="70" width="64" height="48" rx="8" class="record"/>
+      <rect x="82" y="70" width="64" height="48" rx="8" class="repair"/>
+      <rect x="164" y="70" width="64" height="48" rx="8" class="record"/>
+      <rect x="0" y="140" width="64" height="48" rx="8" class="record"/>
+      <rect x="82" y="140" width="64" height="48" rx="8" class="record"/>
+      <rect x="164" y="140" width="64" height="48" rx="8" class="repair"/>
+      <path d="M32 48V70M114 48V70M196 48V70M32 118V140M114 118V140M196 118V140" class="thin"/>
+      <path d="M64 24H82M146 24H164M64 94H82M146 94H164M64 164H82M146 164H164" class="thin"/>
+    </g>
+    <text x="26" y="344" class="sans tiny">Mismatch creates repair work.</text>
+  </g>
+
+  <path d="M548 430 C570 430 580 430 596 430" class="line"/>
+  <path d="M898 430 C924 430 940 430 960 430" class="goldLine"/>
+
+  <g transform="translate(966 242)">
+    <rect x="0" y="0" width="348" height="376" rx="18" class="panel"/>
+    <text x="26" y="44" class="mono kicker">Stable public face</text>
+    <text x="26" y="78" class="sans label">A record others can test</text>
+    <g transform="translate(48 116)">
+      <circle cx="124" cy="110" r="96" class="world" filter="url(#glow)"/>
+      <path d="M54 75 C96 48 160 50 196 86" class="thin"/>
+      <path d="M50 122 C94 152 162 155 204 120" class="thin"/>
+      <path d="M124 14V206M28 110H220" class="thin"/>
+      <circle cx="124" cy="110" r="18" fill="#94ddbf" opacity="0.92" filter="url(#softGold)"/>
+      <circle cx="74" cy="72" r="10" fill="#56e8ff"/>
+      <circle cx="176" cy="78" r="10" fill="#e4c876"/>
+      <circle cx="82" cy="150" r="10" fill="#e4c876"/>
+      <circle cx="170" cy="152" r="10" fill="#56e8ff"/>
+    </g>
+    <text x="26" y="330" class="sans tiny">Stable records can be checked</text>
+    <text x="26" y="352" class="sans tiny">by other observers.</text>
+  </g>
+
+  <g transform="translate(86 666)">
+    <rect x="0" y="0" width="1228" height="104" rx="18" class="panel"/>
+    <text x="28" y="38" class="mono kicker">Downstream reading</text>
+    <text x="28" y="62" class="sans small">Papers, continuation, lab, challenge review, and OMEGA applications</text>
+    <text x="28" y="88" class="sans small">all point back to the same record-and-repair architecture.</text>
+    <g transform="translate(836 25)">
+      <rect x="0" y="0" width="76" height="54" rx="12" class="record"/>
+      <rect x="92" y="0" width="76" height="54" rx="12" class="record"/>
+      <rect x="184" y="0" width="76" height="54" rx="12" class="repair"/>
+      <rect x="276" y="0" width="76" height="54" rx="12" class="world"/>
+      <text x="15" y="33" class="mono tiny">Lab</text>
+      <text x="101" y="33" class="mono tiny">Papers</text>
+      <text x="197" y="33" class="mono tiny">Review</text>
+      <text x="292" y="33" class="mono tiny">OMEGA</text>
+    </g>
+  </g>
+</svg>

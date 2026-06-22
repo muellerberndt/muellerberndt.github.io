@@ -32,6 +32,7 @@
 
 html {
   scroll-behavior: smooth;
+  background: #040609;
 }
 
 body {
@@ -1635,5 +1636,270 @@ h3 {
   .hero-panel,
   .paper-reader-header {
     animation: none;
+  }
+}
+
+.oph-paradise-home {
+  --radius: 10px;
+  --radius-sm: 8px;
+}
+
+.oph-paradise-home h1,
+.oph-paradise-home h2,
+.oph-paradise-home h3 {
+  letter-spacing: 0;
+}
+
+.oph-paradise-home .reveal {
+  opacity: 1;
+  transform: none;
+}
+
+.oph-paradise-home .page-shell {
+  width: min(1440px, calc(100% - 48px));
+}
+
+.oph-paradise-home .hero-panel,
+.oph-paradise-home .content-card,
+.oph-paradise-home .entry-card,
+.oph-paradise-home .lane-card,
+.oph-paradise-home .article-panel,
+.oph-paradise-home .site-footer {
+  border-radius: var(--radius);
+}
+
+.hub-hero {
+  background:
+    linear-gradient(110deg, rgba(4, 8, 11, 0.98), rgba(6, 12, 14, 0.94) 48%, rgba(10, 11, 9, 0.92)),
+    var(--panel);
+}
+
+.hub-hero::before {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.032) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.024) 1px, transparent 1px),
+    linear-gradient(135deg, transparent 0 64%, rgba(78, 231, 255, 0.075) 64% 64.1%, transparent 64.1%);
+  background-size: 92px 92px, 92px 92px, 100% 100%;
+  opacity: 0.72;
+}
+
+.hub-hero-layout {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(520px, 1.08fr);
+  gap: 28px;
+  align-items: center;
+}
+
+.oph-paradise-home .hub-hero .hero-copy {
+  display: block;
+  min-height: auto;
+  padding: 56px 0 56px 56px;
+}
+
+.oph-paradise-home .hub-hero .hero-copy h1 {
+  max-width: 12ch;
+  margin-bottom: 22px;
+  font-size: 4.85rem;
+  line-height: 0.98;
+}
+
+.oph-paradise-home .hero-lead {
+  font-size: 1.12rem;
+  line-height: 1.66;
+}
+
+.oph-paradise-home .hero-copy p,
+.oph-paradise-home .section-head p,
+.oph-paradise-home .entry-card p,
+.oph-paradise-home .split-copy p,
+.oph-paradise-home .application-band p {
+  font-size: 0.98rem;
+  line-height: 1.7;
+}
+
+.status-note {
+  margin-top: 16px;
+  padding: 14px 0 14px 16px;
+  border-left: 2px solid rgba(228, 200, 118, 0.75);
+  color: #dce6ef;
+}
+
+.hub-diagram {
+  margin: 0;
+  padding: 32px 36px 32px 0;
+  min-width: 0;
+}
+
+.hub-diagram img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.28);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.36);
+}
+
+.oph-paradise-home .section-head h2,
+.split-panel h2,
+.application-band h2 {
+  font-size: 2.32rem;
+  line-height: 1.08;
+  letter-spacing: 0;
+}
+
+.step-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.oph-paradise-home .entry-card {
+  padding: 24px;
+}
+
+.oph-paradise-home .entry-card h3 {
+  font-size: 1.32rem;
+  line-height: 1.18;
+  letter-spacing: 0;
+}
+
+.stage-card {
+  min-height: 260px;
+}
+
+.split-panel,
+.application-band {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: 34px;
+  align-items: start;
+  padding: 34px;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.048), rgba(255, 255, 255, 0.018)),
+    rgba(5, 7, 10, 0.64);
+  box-shadow: var(--shadow-soft);
+}
+
+.split-copy {
+  display: grid;
+  gap: 12px;
+}
+
+.split-copy .topic-link-row {
+  margin-top: 8px;
+}
+
+.paper-route-grid .entry-card {
+  min-height: 360px;
+}
+
+.application-band {
+  grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
+  background:
+    linear-gradient(130deg, rgba(78, 231, 255, 0.07), rgba(228, 200, 118, 0.045)),
+    rgba(5, 7, 10, 0.68);
+}
+
+.application-links {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.application-links a {
+  min-height: 58px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  border: 1px solid rgba(255, 255, 255, 0.105);
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.035);
+  color: var(--text);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transition: transform 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+}
+
+.application-links a:hover,
+.application-links a:focus-visible {
+  transform: translateY(-1px);
+  border-color: rgba(78, 231, 255, 0.32);
+  background: rgba(78, 231, 255, 0.06);
+}
+
+.oph-paradise-home .entry-links {
+  margin-top: auto;
+}
+
+@media (max-width: 1180px) {
+  .hub-hero-layout,
+  .split-panel,
+  .application-band {
+    grid-template-columns: 1fr;
+  }
+
+  .oph-paradise-home .hub-hero .hero-copy {
+    padding: 46px 46px 0;
+  }
+
+  .hub-diagram {
+    padding: 0 36px 36px;
+  }
+
+  .step-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 820px) {
+  .oph-paradise-home .page-shell {
+    width: min(100% - 24px, 1440px);
+  }
+
+  .oph-paradise-home .hub-hero .hero-copy {
+    padding: 30px 24px 0;
+  }
+
+  .oph-paradise-home .hub-hero .hero-copy h1 {
+    max-width: none;
+    font-size: 3.35rem;
+    line-height: 1;
+  }
+
+  .hub-diagram {
+    padding: 0 18px 24px;
+  }
+
+  .oph-paradise-home .section-head h2,
+  .split-panel h2,
+  .application-band h2 {
+    font-size: 1.8rem;
+  }
+
+  .step-grid,
+  .application-links {
+    grid-template-columns: 1fr;
+  }
+
+  .split-panel,
+  .application-band {
+    padding: 24px;
+  }
+
+  .stage-card {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .oph-paradise-home .hub-hero .hero-copy h1 {
+    font-size: 2.72rem;
   }
 }
