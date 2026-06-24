@@ -1719,13 +1719,6 @@ h3 {
   line-height: 1.7;
 }
 
-.status-note {
-  margin-top: 16px;
-  padding: 14px 0 14px 16px;
-  border-left: 2px solid rgba(228, 200, 118, 0.75);
-  color: #dce6ef;
-}
-
 .hub-diagram {
   margin: 0;
   padding: 32px 36px 32px 0;
@@ -1796,6 +1789,72 @@ h3 {
 
 .paper-route-grid .entry-card {
   min-height: 360px;
+}
+
+.evidence-strip {
+  margin: -4px 0 18px;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.evidence-strip a {
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 14px;
+  border: 1px solid rgba(228, 200, 118, 0.18);
+  border-radius: var(--radius-sm);
+  background:
+    linear-gradient(135deg, rgba(228, 200, 118, 0.08), rgba(78, 231, 255, 0.035)),
+    rgba(255, 255, 255, 0.025);
+  color: var(--text);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  line-height: 1.3;
+  text-align: center;
+  text-transform: uppercase;
+  transition: transform 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+}
+
+.evidence-strip a:hover,
+.evidence-strip a:focus-visible {
+  transform: translateY(-1px);
+  border-color: rgba(78, 231, 255, 0.34);
+  background: rgba(78, 231, 255, 0.06);
+}
+
+.start-grid {
+  counter-reset: route-card;
+}
+
+.route-card {
+  counter-increment: route-card;
+  min-height: 310px;
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.route-card::after {
+  content: counter(route-card, decimal-leading-zero);
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  z-index: 1;
+  padding: 5px 8px;
+  border: 1px solid rgba(78, 231, 255, 0.2);
+  border-radius: 999px;
+  background: rgba(78, 231, 255, 0.055);
+  color: var(--sage);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.12em;
+  line-height: 1;
+}
+
+.route-card .entry-kicker {
+  padding-right: 54px;
 }
 
 .application-band {
@@ -1884,6 +1943,7 @@ h3 {
   }
 
   .step-grid,
+  .evidence-strip,
   .application-links {
     grid-template-columns: 1fr;
   }
