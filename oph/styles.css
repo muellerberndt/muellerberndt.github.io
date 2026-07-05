@@ -246,10 +246,21 @@ a {
     rgba(8, 12, 16, 0.92);
 }
 
+.primary-resource-link-featured {
+  border-color: rgba(228, 200, 118, 0.24);
+  background:
+    linear-gradient(145deg, rgba(228, 200, 118, 0.11), rgba(78, 231, 255, 0.035)),
+    rgba(5, 7, 10, 0.82);
+}
+
 .primary-resource-link strong {
   color: var(--text);
   font-size: 0.9rem;
   line-height: 1.35;
+}
+
+.primary-resource-link-featured strong {
+  color: var(--gold);
 }
 
 .primary-resource-link span {
@@ -1791,6 +1802,119 @@ h3 {
   min-height: 360px;
 }
 
+.next-steps-section {
+  margin-top: 46px;
+}
+
+.conversion-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.conversion-card {
+  min-height: 340px;
+  border-color: rgba(228, 200, 118, 0.16);
+  background:
+    radial-gradient(circle at 82% 8%, rgba(228, 200, 118, 0.12), transparent 12rem),
+    linear-gradient(150deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.018) 56%, rgba(78, 231, 255, 0.04)),
+    rgba(5, 7, 10, 0.78);
+}
+
+.conversion-card h3 {
+  font-size: clamp(2.2rem, 4vw, 3.35rem);
+  color: var(--text);
+}
+
+.conversion-card .entry-kicker {
+  color: var(--gold);
+}
+
+.conversion-card-blog {
+  background:
+    radial-gradient(circle at 84% 10%, rgba(78, 231, 255, 0.16), transparent 13rem),
+    linear-gradient(150deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.016) 55%, rgba(78, 231, 255, 0.052)),
+    rgba(5, 7, 10, 0.82);
+}
+
+.conversion-card-book {
+  background:
+    radial-gradient(circle at 84% 10%, rgba(228, 200, 118, 0.18), transparent 13rem),
+    linear-gradient(150deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.016) 55%, rgba(228, 200, 118, 0.055)),
+    rgba(5, 7, 10, 0.82);
+}
+
+.conversion-card-learn {
+  background:
+    radial-gradient(circle at 84% 10%, rgba(145, 217, 189, 0.16), transparent 13rem),
+    linear-gradient(150deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.016) 55%, rgba(145, 217, 189, 0.05)),
+    rgba(5, 7, 10, 0.82);
+}
+
+.conversion-link {
+  margin-top: auto;
+  min-height: 52px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 0 18px;
+  border: 1px solid rgba(228, 200, 118, 0.28);
+  border-radius: 999px;
+  background:
+    linear-gradient(135deg, rgba(228, 200, 118, 0.16), rgba(78, 231, 255, 0.08)),
+    rgba(255, 255, 255, 0.035);
+  color: var(--text);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  transition: transform 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+}
+
+.conversion-link:hover,
+.conversion-link:focus-visible {
+  transform: translateY(-1px);
+  border-color: rgba(78, 231, 255, 0.38);
+  background: rgba(78, 231, 255, 0.08);
+}
+
+.secondary-route-note {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+.secondary-route-note span {
+  color: var(--gold);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.secondary-route-note a {
+  padding: 8px 11px;
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.028);
+  color: var(--muted);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.66rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: color 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+}
+
+.secondary-route-note a:hover,
+.secondary-route-note a:focus-visible {
+  color: var(--text);
+  border-color: rgba(78, 231, 255, 0.3);
+  background: rgba(78, 231, 255, 0.06);
+}
+
 .evidence-strip {
   margin: -4px 0 18px;
   display: grid;
@@ -1900,7 +2024,8 @@ h3 {
 @media (max-width: 1180px) {
   .hub-hero-layout,
   .split-panel,
-  .application-band {
+  .application-band,
+  .conversion-grid {
     grid-template-columns: 1fr;
   }
 
@@ -1944,8 +2069,13 @@ h3 {
 
   .step-grid,
   .evidence-strip,
-  .application-links {
+  .application-links,
+  .conversion-grid {
     grid-template-columns: 1fr;
+  }
+
+  .conversion-card {
+    min-height: auto;
   }
 
   .split-panel,
