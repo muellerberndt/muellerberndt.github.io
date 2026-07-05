@@ -1,6 +1,6 @@
 {
-  "release_id": "r1510",
-  "released_at": "June 30, 2026",
+  "release_id": "r1511",
+  "released_at": "July 5, 2026",
   "collection_url": "https://floatingpragma.io/oph/papers/",
   "sitemap_url": "https://floatingpragma.io/oph/papers/sitemap.xml",
   "papers": [
@@ -54,14 +54,7 @@
       "category": "Theory of everything",
       "description": "OPH builds physics from finite public records on horizon-screen cuts. The paper presents the observer-first reconstruction of spacetime, gravity, Standard Model structure, cosmology, particles, records, and simulation-theory interpretation.",
       "authors": [
-        "Bernhard Mueller",
-        "Alexander Osika",
-        "Mario Poneder",
-        "Kai Xue",
-        "Ben Cassie",
-        "Peter Nguyen",
-        "Maarten Antonie Visser",
-        "Kale Arnav Anirudha"
+        "Bernhard Mueller1"
       ],
       "keywords": [
         "Observer Patch Holography",
@@ -146,7 +139,8 @@
       "authors": [
         "Bernhard Mueller",
         "Kai Xue",
-        "Kale Arnav Anirudha"
+        "Kale Arnav Anirudha",
+        "Jonathan Hill"
       ],
       "keywords": [
         "simulation theory",
