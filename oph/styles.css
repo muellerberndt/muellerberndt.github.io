@@ -270,7 +270,7 @@ a {
 }
 
 .compact-resource-strip {
-  grid-template-columns: auto repeat(4, minmax(120px, 1fr));
+  grid-template-columns: auto repeat(3, minmax(140px, 1fr));
   padding: 9px;
   gap: 8px;
 }
