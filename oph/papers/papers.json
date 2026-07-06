@@ -1,6 +1,6 @@
 {
-  "release_id": "r1514",
-  "released_at": "July 5, 2026",
+  "release_id": "r1515",
+  "released_at": "July 6, 2026",
   "collection_url": "https://floatingpragma.io/oph/papers/",
   "sitemap_url": "https://floatingpragma.io/oph/papers/sitemap.xml",
   "papers": [
@@ -62,6 +62,7 @@
         "Peter Nguyen",
         "Maarten Antonie Visser",
         "Kale Arnav Anirudha",
+        "David Matscheko",
         "Jonathan Hill"
       ],
       "keywords": [
@@ -309,8 +310,8 @@
       "category": "Gravity engineering",
       "description": "A branch-scoped OPH calculation for chi-nu susceptibility bounds, coherent scalar sourcing, quotient-edge response, and engineering chart values.",
       "authors": [
-        "Bernhard Mueller",
-        "Alex Osika"
+        "Bernhard Mueller, Alex Osika,",
+        "David Matscheko"
       ],
       "keywords": [
         "chi-nu susceptibility",
@@ -440,7 +441,8 @@
       "category": "Dark matter",
       "description": "The OPH dark-matter phenomenology paper. It connects finite observer-overlap collars, record-repair load, galaxy rotation laws, lensing, BTFR behavior, and cosmological caveats.",
       "authors": [
-        "Bernhard Mueller"
+        "Bernhard Mueller",
+        "David Matscheko"
       ],
       "keywords": [
         "dark matter",

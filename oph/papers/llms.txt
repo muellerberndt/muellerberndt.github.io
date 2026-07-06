@@ -1,7 +1,7 @@
 # Observer Patch Holography Papers
 
-Release: r1514
-Released: July 5, 2026
+Release: r1515
+Released: July 6, 2026
 
 This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 
@@ -17,7 +17,7 @@ This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 
 - HTML: https://floatingpragma.io/oph/papers/observers-are-all-you-need/
 - PDF: https://floatingpragma.io/oph/papers/observers-are-all-you-need/paper.pdf
-- Authors: Bernhard Mueller, Alexander Osika, Mario Poneder, Kai Xue, Ben Cassie, Peter Nguyen, Maarten Antonie Visser, Kale Arnav Anirudha, Jonathan Hill
+- Authors: Bernhard Mueller, Alexander Osika, Mario Poneder, Kai Xue, Ben Cassie, Peter Nguyen, Maarten Antonie Visser, Kale Arnav Anirudha, David Matscheko, Jonathan Hill
 - Category: Theory of everything
 - Summary: OPH builds physics from finite public records on horizon-screen cuts. The paper presents the observer-first reconstruction of spacetime, gravity, Standard Model structure, cosmology, particles, records, and simulation-theory interpretation.
 
@@ -65,7 +65,7 @@ This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 
 - HTML: https://floatingpragma.io/oph/papers/chi-nu-susceptibility-bounds/
 - PDF: https://floatingpragma.io/oph/papers/chi-nu-susceptibility-bounds/paper.pdf
-- Authors: Bernhard Mueller, Alex Osika
+- Authors: Bernhard Mueller, Alex Osika,, David Matscheko
 - Category: Gravity engineering
 - Summary: A branch-scoped OPH calculation for chi-nu susceptibility bounds, coherent scalar sourcing, quotient-edge response, and engineering chart values.
 
@@ -97,7 +97,7 @@ This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 
 - HTML: https://floatingpragma.io/oph/papers/observer-patch-holography-dark-matter/
 - PDF: https://floatingpragma.io/oph/papers/observer-patch-holography-dark-matter/paper.pdf
-- Authors: Bernhard Mueller
+- Authors: Bernhard Mueller, David Matscheko
 - Category: Dark matter
 - Summary: The OPH dark-matter phenomenology paper. It connects finite observer-overlap collars, record-repair load, galaxy rotation laws, lensing, BTFR behavior, and cosmological caveats.
 
