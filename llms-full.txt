@@ -17,6 +17,7 @@ The public OPH outreach packet is designed for criticism. The useful response is
 - OPH paper machine-readable inventory: https://floatingpragma.io/oph/papers/papers.json
 - OPH paper LLM index: https://floatingpragma.io/oph/papers/llms.txt
 - OPH paper sitemap: https://floatingpragma.io/oph/papers/sitemap.xml
+- OPH Mini-Universe Simulation, the interactive observer-patch visualization surface: https://simulation.floatingpragma.io/
 - What is simulation theory in physics?: https://floatingpragma.io/oph/what-is-simulation-theory/
 - What is a theory of everything?: https://floatingpragma.io/oph/what-is-a-theory-of-everything/
 - Physics Unification via OPH: https://floatingpragma.io/oph/physics-unification/

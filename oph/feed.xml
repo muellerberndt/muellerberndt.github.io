@@ -3,9 +3,9 @@
   <channel>
     <title>Observer Patch Holography Updates</title>
     <link>https://floatingpragma.io/oph/</link>
-    <description>Public OPH links, with the zero-input two-fixed-point constants headline, OPH Textbooks, Reverse Engineering Reality, Applications, paper summaries, physics unification, Standard Model plus gravity, cosmological constant, coherence, essays, lab, and challenge updates.</description>
+    <description>Public OPH links, with the zero-input two-fixed-point constants headline, OPH Textbooks, Reverse Engineering Reality, mini-universe simulation, Applications, paper summaries, physics unification, Standard Model plus gravity, cosmological constant, coherence, essays, lab, and challenge updates.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 02 Jun 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 08 Jul 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://floatingpragma.io/oph/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>OPH Paper Summaries</title>
@@ -34,6 +34,13 @@
       <guid isPermaLink="true">https://floatingpragma.io/oph/physics-unification/</guid>
       <pubDate>Thu, 21 May 2026 00:00:00 GMT</pubDate>
       <description>The direct public entry page for OPH as a zero-input physics-unification framework connecting gravity, quantum theory, particles, records, observers, and simulation theory.</description>
+    </item>
+    <item>
+      <title>OPH Mini-Universe Simulation</title>
+      <link>https://simulation.floatingpragma.io/</link>
+      <guid isPermaLink="true">https://simulation.floatingpragma.io/</guid>
+      <pubDate>Wed, 08 Jul 2026 00:00:00 GMT</pubDate>
+      <description>Interactive OPH mini-universe explorer showing observer patches, overlap readback, inconsistency repair, records, and emergent geometry.</description>
     </item>
     <item>
       <title>Floating Pragma Blog</title>
