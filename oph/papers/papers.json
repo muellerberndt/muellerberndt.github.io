@@ -1,6 +1,6 @@
 {
-  "release_id": "r1518",
-  "released_at": "July 7, 2026",
+  "release_id": "r1519",
+  "released_at": "July 8, 2026",
   "collection_url": "https://floatingpragma.io/oph/papers/",
   "sitemap_url": "https://floatingpragma.io/oph/papers/sitemap.xml",
   "papers": [
@@ -15,7 +15,8 @@
         "Alexander Osika",
         "Mario Poneder",
         "Kai Xue",
-        "Maarten Antonie Visser"
+        "Maarten Antonie Visser",
+        "David Matscheko"
       ],
       "keywords": [
         "particle spectrum derivation",
@@ -149,6 +150,7 @@
         "Bernhard Mueller",
         "Kai Xue",
         "Kale Arnav Anirudha",
+        "David Matscheko",
         "Jonathan Hill"
       ],
       "keywords": [
@@ -193,7 +195,8 @@
         "Mario Poneder",
         "Kai Xue",
         "Peter Nguyen",
-        "Maarten Antonie Visser"
+        "Maarten Antonie Visser",
+        "David Matscheko"
       ],
       "keywords": [
         "Standard Model unified with gravity",
@@ -236,7 +239,8 @@
         "Alexander Osika",
         "Kai Xue",
         "Ben Cassie",
-        "Maarten Antonie Visser"
+        "Maarten Antonie Visser",
+        "David Matscheko"
       ],
       "keywords": [
         "screen microphysics",
@@ -355,6 +359,32 @@
       "html_url": "https://floatingpragma.io/oph/papers/compact-proof-of-oph/",
       "pdf_url": "https://floatingpragma.io/oph/papers/compact-proof-of-oph/paper.pdf",
       "central_pdf_url": "https://floatingpragma.io/oph/papers/pdf/compact_proof_of_oph.pdf",
+      "related_blog_posts": [
+        {
+          "title": "The Trigger",
+          "url": "https://blog.floatingpragma.io/the-trigger",
+          "description": "High-level public entry point for the OPH claim."
+        }
+      ]
+    },
+    {
+      "id": "e8_spin8_triality_alt9_certificate",
+      "title": "E8 Spin8 Triality Alt9 Certificate",
+      "short_title": "E8 Spin8 Triality Alt9 Certificate",
+      "category": "OPH paper",
+      "description": "First-party HTML and PDF publication page for E8 Spin8 Triality Alt9 Certificate in the OPH paper stack.",
+      "authors": [
+        "Bernhard Mueller"
+      ],
+      "keywords": [
+        "Observer Patch Holography",
+        "OPH",
+        "physics",
+        "theory of everything"
+      ],
+      "html_url": "https://floatingpragma.io/oph/papers/e8-spin8-triality-alt9-certificate/",
+      "pdf_url": "https://floatingpragma.io/oph/papers/e8-spin8-triality-alt9-certificate/paper.pdf",
+      "central_pdf_url": "https://floatingpragma.io/oph/papers/pdf/e8_spin8_triality_alt9_certificate.pdf",
       "related_blog_posts": [
         {
           "title": "The Trigger",

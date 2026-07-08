@@ -1,7 +1,7 @@
 # Observer Patch Holography Papers
 
-Release: r1518
-Released: July 7, 2026
+Release: r1519
+Released: July 8, 2026
 
 This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 
@@ -9,7 +9,7 @@ This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 
 - HTML: https://floatingpragma.io/oph/papers/particle-spectrum-from-observer-consistency/
 - PDF: https://floatingpragma.io/oph/papers/particle-spectrum-from-observer-consistency/paper.pdf
-- Authors: Bernhard Mueller, Alexander Osika, Mario Poneder, Kai Xue, Maarten Antonie Visser
+- Authors: Bernhard Mueller, Alexander Osika, Mario Poneder, Kai Xue, Maarten Antonie Visser, David Matscheko
 - Category: Particles
 - Summary: The OPH particle-spectrum continuation. It treats fine-structure closure, electroweak transport, selected-class quarks, neutrino branches, and status-separated hadron checks.
 
@@ -33,7 +33,7 @@ This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 
 - HTML: https://floatingpragma.io/oph/papers/reality-as-consensus-protocol/
 - PDF: https://floatingpragma.io/oph/papers/reality-as-consensus-protocol/paper.pdf
-- Authors: Bernhard Mueller, Kai Xue, Kale Arnav Anirudha, Jonathan Hill
+- Authors: Bernhard Mueller, Kai Xue, Kale Arnav Anirudha, David Matscheko, Jonathan Hill
 - Category: Simulation theory
 - Summary: The OPH fixed-point consensus paper. It formulates observer patches, overlap-visible records, repair moves, Lyapunov descent, quotient normal forms, and obstruction classes.
 
@@ -41,7 +41,7 @@ This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 
 - HTML: https://floatingpragma.io/oph/papers/standard-model-gravity-unification/
 - PDF: https://floatingpragma.io/oph/papers/standard-model-gravity-unification/paper.pdf
-- Authors: Bernhard Mueller, Alexander Osika, Mario Poneder, Kai Xue, Peter Nguyen, Maarten Antonie Visser
+- Authors: Bernhard Mueller, Alexander Osika, Mario Poneder, Kai Xue, Peter Nguyen, Maarten Antonie Visser, David Matscheko
 - Category: Unification
 - Summary: The compact OPH route to Lorentz structure, the Einstein branch, compact-gauge reconstruction, the Standard Model quotient, color, generations, hypercharge, and branch-scoped Yang-Mills statements.
 
@@ -49,7 +49,7 @@ This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 
 - HTML: https://floatingpragma.io/oph/papers/screen-microphysics-and-observer-synchronization/
 - PDF: https://floatingpragma.io/oph/papers/screen-microphysics-and-observer-synchronization/paper.pdf
-- Authors: Bernhard Mueller, Alexander Osika, Kai Xue, Ben Cassie, Maarten Antonie Visser
+- Authors: Bernhard Mueller, Alexander Osika, Kai Xue, Ben Cassie, Maarten Antonie Visser, David Matscheko
 - Category: Screen physics
 - Summary: The fixed-cutoff OPH microphysics paper. It develops finite overlap-facing patch carriers, the twelve-port screen-sieve theorem, record algebras, measurement surfaces, observer backup, synchronization, and hardware-evidence rules.
 
@@ -76,6 +76,14 @@ This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 - Authors: Bernhard Mueller
 - Category: OPH paper
 - Summary: First-party HTML and PDF publication page for Compact Proof Of Oph in the OPH paper stack.
+
+## E8 Spin8 Triality Alt9 Certificate
+
+- HTML: https://floatingpragma.io/oph/papers/e8-spin8-triality-alt9-certificate/
+- PDF: https://floatingpragma.io/oph/papers/e8-spin8-triality-alt9-certificate/paper.pdf
+- Authors: Bernhard Mueller
+- Category: OPH paper
+- Summary: First-party HTML and PDF publication page for E8 Spin8 Triality Alt9 Certificate in the OPH paper stack.
 
 ## The Fine-Structure Constant as an OPH Pixel Fixed Point
 
