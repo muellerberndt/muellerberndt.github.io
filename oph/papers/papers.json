@@ -1,6 +1,6 @@
 {
-  "release_id": "r1519",
-  "released_at": "July 8, 2026",
+  "release_id": "r1520",
+  "released_at": "July 9, 2026",
   "collection_url": "https://floatingpragma.io/oph/papers/",
   "sitemap_url": "https://floatingpragma.io/oph/papers/sitemap.xml",
   "papers": [
@@ -368,39 +368,14 @@
       ]
     },
     {
-      "id": "e8_spin8_triality_alt9_certificate",
-      "title": "E8 Spin8 Triality Alt9 Certificate",
-      "short_title": "E8 Spin8 Triality Alt9 Certificate",
-      "category": "OPH paper",
-      "description": "First-party HTML and PDF publication page for E8 Spin8 Triality Alt9 Certificate in the OPH paper stack.",
-      "authors": [
-        "Bernhard Mueller"
-      ],
-      "keywords": [
-        "Observer Patch Holography",
-        "OPH",
-        "physics",
-        "theory of everything"
-      ],
-      "html_url": "https://floatingpragma.io/oph/papers/e8-spin8-triality-alt9-certificate/",
-      "pdf_url": "https://floatingpragma.io/oph/papers/e8-spin8-triality-alt9-certificate/paper.pdf",
-      "central_pdf_url": "https://floatingpragma.io/oph/papers/pdf/e8_spin8_triality_alt9_certificate.pdf",
-      "related_blog_posts": [
-        {
-          "title": "The Trigger",
-          "url": "https://blog.floatingpragma.io/the-trigger",
-          "description": "High-level public entry point for the OPH claim."
-        }
-      ]
-    },
-    {
       "id": "fine_structure_constant_derivation",
       "title": "The Fine-Structure Constant as an OPH Pixel Fixed Point",
       "short_title": "Fine-structure constant",
       "category": "Constants",
       "description": "A focused OPH paper on the fine-structure constant, local screen-cell closure, hadronic endpoint transport, and the fixed-point status of alpha.",
       "authors": [
-        "Bernhard Mueller"
+        "Bernhard Mueller",
+        "Alexander Osika"
       ],
       "keywords": [
         "fine-structure constant",

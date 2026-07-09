@@ -1,7 +1,7 @@
 # Observer Patch Holography Papers
 
-Release: r1519
-Released: July 8, 2026
+Release: r1520
+Released: July 9, 2026
 
 This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 
@@ -77,19 +77,11 @@ This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 - Category: OPH paper
 - Summary: First-party HTML and PDF publication page for Compact Proof Of Oph in the OPH paper stack.
 
-## E8 Spin8 Triality Alt9 Certificate
-
-- HTML: https://floatingpragma.io/oph/papers/e8-spin8-triality-alt9-certificate/
-- PDF: https://floatingpragma.io/oph/papers/e8-spin8-triality-alt9-certificate/paper.pdf
-- Authors: Bernhard Mueller
-- Category: OPH paper
-- Summary: First-party HTML and PDF publication page for E8 Spin8 Triality Alt9 Certificate in the OPH paper stack.
-
 ## The Fine-Structure Constant as an OPH Pixel Fixed Point
 
 - HTML: https://floatingpragma.io/oph/papers/fine-structure-constant-oph-pixel-fixed-point/
 - PDF: https://floatingpragma.io/oph/papers/fine-structure-constant-oph-pixel-fixed-point/paper.pdf
-- Authors: Bernhard Mueller
+- Authors: Bernhard Mueller, Alexander Osika
 - Category: Constants
 - Summary: A focused OPH paper on the fine-structure constant, local screen-cell closure, hadronic endpoint transport, and the fixed-point status of alpha.
 
