@@ -28,7 +28,7 @@
   <meta name="citation_pdf_url" content="https://floatingpragma.io/oph/papers/standard-model-gravity-unification/paper.pdf" />
   <meta name="citation_abstract_html_url" content="https://floatingpragma.io/oph/papers/standard-model-gravity-unification/" />
   <meta name="citation_technical_report_institution" content="Pragma Research" />
-  <meta name="citation_technical_report_number" content="OPH r1527 recovering_relativity_and_standard_model_structure_from_observer_overlap_consistency_compact" />
+  <meta name="citation_technical_report_number" content="OPH r1528 recovering_relativity_and_standard_model_structure_from_observer_overlap_consistency_compact" />
   <meta name="DC.title" content="Recovering Relativity and Standard Model Structure from Observer Overlap Consistency" />
   <meta name="DC.creator" content="Bernhard Mueller" />
   <meta name="DC.creator" content="Alexander Osika" />
@@ -131,7 +131,7 @@
   ],
   "datePublished": "July 11, 2026",
   "dateModified": "July 11, 2026",
-  "version": "r1527",
+  "version": "r1528",
   "subjectOf": [
     {
       "@type": "BlogPosting",
@@ -228,14 +228,14 @@
             <p>The compact OPH route to Lorentz structure, the Einstein branch, compact-gauge reconstruction, the Standard Model quotient, color, generations, hypercharge, and branch-scoped Yang-Mills statements.</p>
           </div>
           <div class="paper-meta-line">
-            <span>r1527</span>
+            <span>r1528</span>
             <span>July 11, 2026</span>
             <span>papers</span>
           </div>
           <div class="cta-row">
             <a class="btn btn-primary" href="/oph/papers/standard-model-gravity-unification/paper.pdf" target="_blank" rel="noopener noreferrer" data-track-link="paper-pdf-recovering_relativity_and_standard_model_structure_from_observer_overlap_consistency_compact">Download PDF</a>
             <a class="btn btn-secondary" href="/oph/papers/" data-track-link="paper-index">All OPH papers</a>
-            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r1527" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
+            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r1528" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
             <a class="btn btn-secondary" href="https://challenge.floatingpragma.io/" data-track-link="paper-challenge">Challenge</a>
           </div>
 
@@ -262,7 +262,7 @@
         </header>
         <div class="paper-reader-grid">
           <div class="paper-body">
-<p><strong>Paper release:</strong> <code>r1527</code>
+<p><strong>Paper release:</strong> <code>r1528</code>
 <strong>Released:</strong> July 11, 2026</p>
 <h1 id="recovered-core-foundations-and-structural-branches">Recovered
 Core: Foundations and Structural Branches</h1>
@@ -7070,20 +7070,24 @@ converge to their predicted ratios as coupling decreases. This provides
 strong internal validation of the mechanism "MaxEnt + Laplacian =&gt;
 heat-kernel sector weights" before applying it to physical gauge
 groups.</p>
-<h3 id="ibm-quantum-cloud-hardware-benchmarks">IBM Quantum Cloud
-hardware benchmarks</h3>
-<p>The lattice calculations above are internal numerical validations.
-The IBM Quantum Cloud benchmarks add a hardware check of whether
-OPH-motivated reduced-sector structures survive preparation and readout
-on real superconducting-qubit devices. These runs are small-sector
-consistency benchmarks rather than a standalone confirmation of the full
-framework. Their value is that they probe the same recoverability and
-heat-kernel observables on physical hardware and in finite reference
-calculations.</p>
-<p>Detailed circuits, representative raw outputs, and rerun instructions
-are public in the project write-up <a
+<h3 id="frozen-ibm-quantum-cloud-engineering-archive">Frozen IBM Quantum
+Cloud engineering archive</h3>
+<p>The former IBM Quantum Cloud program is frozen as an engineering and
+reproducibility archive. It checked whether OPH-motivated reduced-sector
+structures survived preparation and readout on real
+superconducting-qubit devices, and whether a programmed record-gated
+controller beat restricted controller nulls. Standard quantum mechanics
+predicts every prepared state and dynamic circuit used in that program.
+The runs therefore have no power to distinguish OPH from quantum
+mechanics, regardless of shot count or blinding quality. No new
+quantum-cloud campaign is promoted as OPH evidence until a source-closed
+observable with a different numerical QM prediction and an identifiable
+effect size is derived.</p>
+<p>Detailed circuits, representative legacy derived summaries, the
+complete blinded-run receipts, and archived rerun instructions are
+public in the frozen project write-up <a
 href="https://github.com/FloatingPragma/observer-patch-holography/blob/main/extra/IBM_QUANTUM_CLOUD.md"><code>extra/IBM_QUANTUM_CLOUD.md</code></a>
-and the associated code/data bundle <a
+and code/data bundle <a
 href="https://github.com/FloatingPragma/observer-patch-holography/tree/main/code/ibm_quantum_cloud"><code>code/ibm_quantum_cloud/</code></a>.</p>
 <ul>
 <li><p><strong>Stage 1 (Markov/recoverability benchmark).</strong> On
@@ -7095,8 +7099,9 @@ the observed ordering is <span class="math inline">\(0.2309 &lt; 0.3890
 0.8649 &gt; 0.6066\)</span> for Petz fidelity; on <code>ibm_fez</code>,
 it is <span class="math inline">\(0.1498 &lt; 0.4992 &lt;
 0.9166\)</span> and <span class="math inline">\(0.9479 &gt; 0.8117 &gt;
-0.6449\)</span>. This matches the predicted ordering on two independent
-real backends.</p></li>
+0.6449\)</span>. This reproduces the programmed ordering on two real
+backends; the Petz calculation is offline and the result is not
+theory-discriminating.</p></li>
 <li><p><strong>Z<sub>3</sub> hardware sanity check.</strong> The
 overconstrained <span class="math inline">\(Z_3\)</span> extraction
 passes cleanly on hardware: across prepared <span
@@ -7109,37 +7114,28 @@ class="math inline">\(0.0043\)</span>, and leakage stays below <span
 class="math inline">\(0.1\%\)</span>. This shows that the reduced-sector
 preparation and readout path is internally coherent on-device before
 sharper ratio claims are interpreted.</p></li>
-<li><p><strong>Z<sub>5</sub> exact-ratio test.</strong> The
-parameter-free OPH target is <span
-class="math inline">\(\Delta_2/\Delta_1 = \varphi^2 \approx
-2.618\)</span>. Across repeated sweeps on <code>ibm_marrakesh</code> and
-one replication on <code>ibm_fez</code>, the best
-<code>ibm_marrakesh</code> points land within <span
-class="math inline">\(0.8\%\)</span>, <span
-class="math inline">\(1.2\%\)</span>, and <span
-class="math inline">\(1.5\%\)</span> of the target, while a focused
-high-shot rerun at <span class="math inline">\(t = 0.90\)</span> lands
-within <span class="math inline">\(2.6\%\)</span>. The
-<code>ibm_fez</code> replication is noisier but is in the same
-neighborhood rather than producing a clean contradictory ratio.</p></li>
-<li><p><strong>S<sub>3</sub> nonabelian ratio test.</strong> The first
-nonabelian hardware run revealed a real layout-dependent bias. After
-reversing the qubit layout, the mitigated ratio moves from <span
+<li><p><strong>Z<sub>5</sub> exact-ratio preparation.</strong> The
+programmed target is <span class="math inline">\(\Delta_2/\Delta_1 =
+\varphi^2 \approx 2.618\)</span>. The measured values span approximately
+<span class="math inline">\(2.407\)</span> to <span
+class="math inline">\(2.878\)</span>, and the focused high-shot <span
+class="math inline">\(t = 0.90\)</span> interval lies below the exact
+target. Because the target amplitudes are directly prepared, QM predicts
+the same ideal ratio.</p></li>
+<li><p><strong>S<sub>3</sub> nonabelian layout diagnostic.</strong> The
+first hardware run revealed a real layout-dependent bias. Reversing the
+qubit layout moved the mitigated ratio from <span
 class="math inline">\(1.8724\)</span> to <span
-class="math inline">\(2.0299\)</span> against the OPH target <span
-class="math inline">\(2.0000\)</span>, and a direct confirmation run
-returns <span class="math inline">\(2.0657\)</span>. The nonabelian
-target reappears once the hardware mapping is corrected, indicating an
-identifiable device/layout effect instead of a structural failure of the
-OPH prediction.</p></li>
+class="math inline">\(2.0299\)</span>, and a repeat returned <span
+class="math inline">\(2.0657\)</span>. Because the better mapping was
+selected after observing the bias, this is a post-hoc device diagnostic
+rather than a blinded confirmation.</p></li>
 </ul>
-<p>These IBM runs are best read as hardware benchmarks for the local
-edge-sector picture. They show that the predicted recoverability
-ordering survives on two real backends, the abelian exact-ratio tests
-land near the parameter-free targets, and the first nonabelian test
-returns to the expected ratio once a diagnosed layout bias is corrected.
-They add real-device evidence to the finite reference checks, but they
-do not validate the full theorem stack by themselves.</p>
+<p>These frozen runs document preparation, readout, layout, and feedback
+engineering on real devices. They add no evidence for OPH over standard
+quantum mechanics because the two descriptions make no different
+prediction for the implemented interventions. Their proper role is
+reproducibility and controller validation, not theory confirmation.</p>
 <div class="center">
 
 <hr />
