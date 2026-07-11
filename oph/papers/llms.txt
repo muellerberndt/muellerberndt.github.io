@@ -43,7 +43,7 @@ This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 - PDF: https://floatingpragma.io/oph/papers/standard-model-gravity-unification/paper.pdf
 - Authors: Bernhard Mueller, Alexander Osika, Mario Poneder, Kai Xue, Peter Nguyen, Maarten Antonie Visser, David Matscheko
 - Category: Unification
-- Summary: The compact OPH route to Lorentz structure, the Einstein branch, compact-gauge reconstruction, the Standard Model quotient, color, generations, hypercharge, and branch-scoped Yang-Mills statements.
+- Summary: The compact OPH route to Lorentz structure, the Einstein branch, receipt-conditional compact-gauge reconstruction, the Standard Model quotient, color, generations, hypercharge, and branch-scoped Yang-Mills statements.
 
 ## Screen Microphysics and Observer Synchronization
 
