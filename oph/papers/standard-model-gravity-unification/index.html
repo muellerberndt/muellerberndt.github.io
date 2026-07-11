@@ -28,7 +28,7 @@
   <meta name="citation_pdf_url" content="https://floatingpragma.io/oph/papers/standard-model-gravity-unification/paper.pdf" />
   <meta name="citation_abstract_html_url" content="https://floatingpragma.io/oph/papers/standard-model-gravity-unification/" />
   <meta name="citation_technical_report_institution" content="Pragma Research" />
-  <meta name="citation_technical_report_number" content="OPH r1531 recovering_relativity_and_standard_model_structure_from_observer_overlap_consistency_compact" />
+  <meta name="citation_technical_report_number" content="OPH r1532 recovering_relativity_and_standard_model_structure_from_observer_overlap_consistency_compact" />
   <meta name="DC.title" content="Recovering Relativity and Standard Model Structure from Observer Overlap Consistency" />
   <meta name="DC.creator" content="Bernhard Mueller" />
   <meta name="DC.creator" content="Alexander Osika" />
@@ -131,7 +131,7 @@
   ],
   "datePublished": "July 11, 2026",
   "dateModified": "July 11, 2026",
-  "version": "r1531",
+  "version": "r1532",
   "subjectOf": [
     {
       "@type": "BlogPosting",
@@ -228,14 +228,14 @@
             <p>The compact OPH route to Lorentz structure, the Einstein branch, compact-gauge reconstruction, the Standard Model quotient, color, generations, hypercharge, and branch-scoped Yang-Mills statements.</p>
           </div>
           <div class="paper-meta-line">
-            <span>r1531</span>
+            <span>r1532</span>
             <span>July 11, 2026</span>
             <span>papers</span>
           </div>
           <div class="cta-row">
             <a class="btn btn-primary" href="/oph/papers/standard-model-gravity-unification/paper.pdf" target="_blank" rel="noopener noreferrer" data-track-link="paper-pdf-recovering_relativity_and_standard_model_structure_from_observer_overlap_consistency_compact">Download PDF</a>
             <a class="btn btn-secondary" href="/oph/papers/" data-track-link="paper-index">All OPH papers</a>
-            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r1531" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
+            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r1532" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
             <a class="btn btn-secondary" href="https://challenge.floatingpragma.io/" data-track-link="paper-challenge">Challenge</a>
           </div>
 
@@ -262,7 +262,7 @@
         </header>
         <div class="paper-reader-grid">
           <div class="paper-body">
-<p><strong>Paper release:</strong> <code>r1531</code>
+<p><strong>Paper release:</strong> <code>r1532</code>
 <strong>Released:</strong> July 11, 2026</p>
 <h1 id="recovered-core-foundations-and-structural-branches">Recovered
 Core: Foundations and Structural Branches</h1>
@@ -532,26 +532,46 @@ the global state <span class="math inline">\(\omega\)</span> maximizes
 von Neumann entropy subject to:</p>
 <ol type="1">
 <li><p>A finite set <span class="math inline">\(\{O_a\}\)</span> of
-gauge-invariant local operators, each supported on a ball of radius
-<span class="math inline">\(\le r_0 =
+gauge-invariant local operator densities, each supported on a ball of
+radius <span class="math inline">\(\le r_0 =
 O(\ell_{\mathrm{UV}})\)</span>.</p></li>
-<li><p>Constraint equations <span class="math inline">\(\langle O_a(x)
-\rangle = c_a\)</span> for each cell <span
-class="math inline">\(x\)</span> in the UV lattice.</p></li>
+<li><p>Constraint equations <span class="math inline">\(\bigl\langle
+\sum_x O_a(x) \bigr\rangle = C_a\)</span>, one homogeneous global sum
+per density label <span class="math inline">\(a\)</span>, where <span
+class="math inline">\(x\)</span> runs over the cells of the UV lattice.
+The constraints are the <span
+class="math inline">\(N_{\mathrm{con}}\)</span> global sums, not one
+independent constraint per cell, so the number of independent
+constraints and of Lagrange multipliers is <span
+class="math inline">\(N_{\mathrm{con}}\)</span> (plus the optional
+global constraints below) on every lattice, independent of the cell
+count.</p></li>
 <li><p>Optionally, a finite number of global constraints (total energy,
 charge).</p></li>
 </ol>
 <p>This is the minimal specification needed to derive the local Gibbs
-form of Lemma 2.6 from Axiom 3.</p>
+form of Lemma 2.6 from Axiom 3 with a cutoff-independent multiplier
+count.</p>
 <p><strong>Clarification (MaxEnt <span
 class="math inline">\(\neq\)</span> thermal equilibrium).</strong>
 MaxEnt here is <strong>local state selection</strong> given constraints,
-not "the universe is in thermal equilibrium." The Lagrange multipliers
-(inverse temperatures) may vary slowly in space and time.
-Non-equilibrium physics appears as gradients in these multipliers and as
-controlled violations of exact Markov additivity under the explicit
-mixing hypotheses stated later in Section 2.3. Equilibrium is an
-approximation regime with explicit error terms.</p>
+not "the universe is in thermal equilibrium." Non-equilibrium physics is
+modeled in the enlarged <em>local-multiplier</em> family obtained by
+replacing the homogeneous multipliers <span
+class="math inline">\(\lambda_a\)</span> with slowly varying fields
+<span class="math inline">\(\lambda_a(x)\)</span>, equivalently by
+imposing per-cell constraints <span class="math inline">\(\langle
+O_a(x)\rangle = c_a(x)\)</span>. That enlarged family has dimension
+proportional to the number of UV cells, so it is a function-space
+approximation regime with gradient error terms, not the
+finite-dimensional family of the refinement argument: the
+refinement-stable branch and the induced maps <span
+class="math inline">\(R_{\ell\to L}\)</span> below are always statements
+about the homogeneous <span
+class="math inline">\(N_{\mathrm{con}}\)</span>-parameter branch.
+Controlled violations of exact Markov additivity appear under the
+explicit mixing hypotheses stated later in Section 2.3. Equilibrium is
+an approximation regime with explicit error terms.</p>
 <p><strong>Rotationally invariant constraint branch.</strong> Constraint
 sets are <span class="math inline">\(\mathrm{SO}(3)\)</span>-invariant
 on <span class="math inline">\(S^2\)</span>.</p>
@@ -664,21 +684,30 @@ package used in Theorem 4.2.</p>
 of coarse-graining channels <span class="math inline">\(\Phi_{\ell\to
 L}\)</span> between UV scale <span class="math inline">\(\ell\)</span>
 and IR scale <span class="math inline">\(L\)</span> that is compatible
-with the third OPH axiom. Then on the realized branch one may write</p>
+with the third OPH axiom, including its refinement-closure clause. Then
+on the realized branch one may write</p>
 <p><span class="math display">\[
 \Phi_{\ell\to
 L}\bigl(\omega_{\ell}(\lambda)\bigr)=\omega_{L}\!\bigl(R_{\ell\to
 L}(\lambda)\bigr),
 \]</span></p>
 <p>for an induced map <span class="math inline">\(R_{\ell\to L}\)</span>
-on one common finite-dimensional multiplier family. Because the same
-finite constraint family is preserved, the regulator states lie in that
-shared multiplier family rather than in unrelated state spaces at
-different cutoffs, and the realized branch is the persistent trajectory
-or invariant subset selected inside it under the induced refinement
-maps. This is a state-side persistence statement; it does not by itself
-upgrade fixed-cutoff edge labels to a transportable
-refinement-persistent sector colimit.</p>
+on the common finite-dimensional homogeneous multiplier family. The
+existence of <span class="math inline">\(R_{\ell\to L}\)</span> as a
+self-map of that same finite-dimensional family is exactly the closure
+clause, not a bookkeeping consequence of reusing the labels <span
+class="math inline">\(a\)</span>: coarse-graining a finite-range Gibbs
+family generically generates interactions outside the retained density
+list, and the axiom asserts that on the realized branch those generated
+directions vanish or are absorbed into the retained family; no
+closure/projection theorem with truncation errors is proved here.
+Granting closure, the regulator states lie in that shared multiplier
+family rather than in unrelated state spaces at different cutoffs, and
+the realized branch is the persistent trajectory or invariant subset
+selected inside it under the induced refinement maps. This is a
+state-side persistence statement; it does not by itself upgrade
+fixed-cutoff edge labels to a transportable refinement-persistent sector
+colimit.</p>
 <p><strong>Fixed-cutoff realized presentation.</strong> At a UV scale
 <span class="math inline">\(\ell_{\mathrm{UV}}\)</span>, local patch
 algebras are type-I with finite-dimensional Hilbert spaces, and
@@ -767,6 +796,332 @@ finite-dimensional realized presentation supplies the patch-net and
 overlap-gluing data used below. We therefore isolate that realized
 presentation first, then separate the exact-Markov and quantitative
 routes.</p>
+<h4 id="finite-quotient-ensemble-theorem-surface">Finite quotient
+ensemble theorem surface.</h4>
+<p>Fix a finite regulator <span class="math inline">\(r\)</span>. The
+physical presentation space is <span
+class="math inline">\(\Sigma_r\)</span>, the presentation redundancy
+groupoid is <span class="math inline">\(\Gamma_r\)</span>, and the
+finite physical quotient is <span class="math display">\[
+Q_r=\Sigma_r/\Gamma_r,\qquad \pi_r:\Sigma_r\to Q_r.
+\]</span> The quotient removes nonphysical presentation data: gauge
+representatives, port relabelings, mesh labels, shard or worker
+identifiers, queue order, repair schedule identifiers, retry counters,
+timestamps unless declared semantic, hidden carrier coordinates, and
+inert ancillary labels. If only settled configurations carry
+probability, the probability space is the normal-form subset <span
+class="math display">\[
+N_r=n_r(Q_r).
+\]</span> The map <span class="math inline">\(n_r\)</span> is a
+normal-form map, not a probability law. Any promoted physical branch
+inherits this firewall: it must declare the quotient-intrinsic source
+law or action before a normal form can be read as a selection or
+prediction claim.</p>
+<h4 id="observable-algebras-and-reference-states">Observable algebras
+and reference states.</h4>
+<p>In the finite classical case the quotient observable algebra is <span
+class="math display">\[
+\mathcal O_r=\ell^\infty(Q_r).
+\]</span> In the finite quantum case the physical algebra is a declared
+quotient algebra <span class="math inline">\(\mathcal A^{\rm
+phys}_r\)</span> with state <span class="math display">\[
+\omega_r(A)=\operatorname{Tr}(\rho_r A).
+\]</span> When the reference object is obtained from a finite lifted
+carrier, the load-bearing data are not an abstract groupoid cardinality
+alone. They are a tracially pointed quotient <span
+class="math display">\[
+\left(\mathcal A^{\rm phys}_{r,b},\tau^0_{r,b}\right),
+\qquad
+\mathcal A^{\rm phys}_{r,b}
+\mathrel{=}
+z_{r,b}B(\widetilde{\mathcal H}_r)^{G_r}z_{r,b},
+\]</span> where <span class="math inline">\(U_r:G_r\to
+U(\widetilde{\mathcal H}_r)\)</span> is the compact gauge action and
+<span class="math inline">\(z_{r,b}\)</span> is the central projection
+for the declared boundary or superselection sector. The reference trace
+is <span class="math display">\[
+\tau^0_{r,b}(A)
+\mathrel{=}
+\frac{\operatorname{Tr}_{\widetilde{\mathcal H}_r}(A)}
+{\operatorname{Tr}_{\widetilde{\mathcal H}_r}(z_{r,b})}.
+\]</span> If <span class="math display">\[
+z_{r,b}\widetilde{\mathcal H}_r
+\cong
+\bigoplus_\alpha V_\alpha\otimes M_\alpha,
+\]</span> with <span class="math inline">\(d_\alpha=\dim
+V_\alpha\)</span> and <span class="math inline">\(m_\alpha=\dim
+M_\alpha\)</span>, then <span class="math display">\[
+\mathcal A^{\rm phys}_{r,b}
+\cong
+\bigoplus_\alpha I_{V_\alpha}\otimes B(M_\alpha),
+\qquad
+p_{r,\alpha}
+\mathrel{=}
+\frac{d_\alpha m_\alpha}{\sum_\beta d_\beta m_\beta}.
+\]</span> These are the induced central-sector weights only after the
+carrier representation and boundary sector have been fixed.</p>
+<h4 id="oph-quotient-ensemble">OPH quotient ensemble.</h4>
+<p>An OPH quotient ensemble is specified by a quotient-intrinsic base
+weight and action <span class="math display">\[
+m_r:Q_r\to \mathbb R_{&gt;0},
+\qquad
+S_r:Q_r\to \mathbb R\cup\{+\infty\},
+\]</span> and <span class="math display">\[
+w_r(q)=m_r(q)e^{-S_r(q)},\qquad
+Z_r=\sum_{q\in Q_r}w_r(q),\qquad
+\mu_r(q)=Z_r^{-1}w_r(q).
+\]</span> Equivalently, one may state an intrinsic projective prior
+<span class="math inline">\(\nu_r\)</span> on <span
+class="math inline">\(Q_r\)</span> and set <span
+class="math inline">\(\mu_r=(n_r)_\#\nu_r\)</span>. Uniform quotient
+counting, uniform representative counting pushed to the quotient,
+groupoid weights, and tracial central-sector weights are different
+physical claims. The paper must declare which one is being used.</p>
+<h4 id="normal-form-projector-non-selection">Normal-form projector
+non-selection.</h4>
+<p>For any map <span class="math inline">\(N:Q\to Q_{\rm nf}\)</span>,
+the induced map on laws <span class="math display">\[
+\mathcal C_Q(\mu)=N_\#\mu
+\]</span> is idempotent: <span class="math display">\[
+\mathcal C_Q^2=\mathcal C_Q.
+\]</span> Every law supported on <span class="math inline">\(Q_{\rm
+nf}\)</span> is fixed. Therefore settlement or canonicalization never
+selects a unique physical probability law by itself.</p>
+<h4 id="selection-gap-corollary">Selection-gap corollary.</h4>
+<p>Let <span class="math inline">\(X\subseteq Q_{\rm nf}\)</span> be a
+finite set of quotient-normal candidates distinguished by visible
+invariants. Normal-form data determine <span
+class="math inline">\(X\)</span> and its quotient-visible invariants,
+but they do not choose a member of <span
+class="math inline">\(X\)</span>. If two laws <span
+class="math inline">\(\mu,\nu\)</span> are supported on <span
+class="math inline">\(X\)</span> and concentrate on different
+candidates, both are fixed by <span class="math inline">\(\mathcal
+C_Q\)</span>. Unique sector selection therefore requires source data: an
+intrinsic action with a unique minimizer, a declared physical ensemble,
+or a refinement-stable gap certificate. A defect or holonomy
+classification can classify possible sectors without choosing the
+physical sector, and a contraction or repair generator can certify
+convergence toward a declared target without creating the target
+law.</p>
+<h4 id="finite-maxent-quotient-ensemble">Finite MaxEnt quotient
+ensemble.</h4>
+<p>For finite <span class="math inline">\(Q\)</span>, positive <span
+class="math inline">\(m\)</span>, and quotient observables <span
+class="math inline">\(F_1,\ldots,F_k\)</span>, maximizing <span
+class="math display">\[
+\mathcal H_m(\nu)=-\sum_q\nu(q)\log\frac{\nu(q)}{m(q)}
+\]</span> subject to <span class="math display">\[
+\sum_q\nu(q)=1,\qquad \sum_q\nu(q)F_a(q)=c_a
+\]</span> has the full-support solution, when the feasible full-support
+surface is nonempty, <span class="math display">\[
+\mu(q)=
+\frac{m(q)\exp[-\sum_a\theta_aF_a(q)]}{Z(\theta)}.
+\]</span> Boundary optima obey the same formula after restricting to
+their support. On a finite noncommutative quotient algebra with faithful
+reference state <span class="math inline">\(\sigma_r\)</span>, <span
+class="math display">\[
+\rho_r=
+\frac{\exp(\log\sigma_r-\sum_a\theta_aF_{r,a})}
+{\operatorname{Tr}\exp(\log\sigma_r-\sum_a\theta_aF_{r,a})}.
+\]</span> The finite constraint ledger must name every <span
+class="math inline">\(F_{r,a}\)</span>, its units and support, the
+target expectation and source, sector or zero-mode treatment, refinement
+transformation, and proof that no run output or observational output
+entered the source definition.</p>
+<h4 id="refinement-compatibility-and-rg-closure">Refinement
+compatibility and RG closure.</h4>
+<p>For <span class="math inline">\(s\succeq r\)</span>, let <span
+class="math inline">\(c_{sr}:Q_s\to Q_r\)</span> be the physical coarse
+map. Exact compatibility of weighted ensembles is equivalent to the
+fiber-sum identity <span class="math display">\[
+\sum_{q&#39;:\,c_{sr}(q&#39;)=q}m_s(q&#39;)e^{-S_s(q&#39;)}
+\mathrel{=}
+\alpha_{sr}m_r(q)e^{-S_r(q)}
+\]</span> for a constant <span
+class="math inline">\(\alpha_{sr}&gt;0\)</span> independent of <span
+class="math inline">\(q\)</span>. Then <span class="math display">\[
+(c_{sr})_\#\mu_s=\mu_r.
+\]</span> If the one-step defects are <span class="math display">\[
+\delta_{k+1,k}
+\mathrel{=}
+\left\|(c_{k+1,k})_\#\mu_{k+1}-\mu_k\right\|_{\mathrm{TV}},
+\]</span> then <span class="math display">\[
+\left\|(c_{nr})_\#\mu_n-\mu_r\right\|_{\mathrm{TV}}
+\le
+\sum_{k=r}^{n-1}\delta_{k+1,k}.
+\]</span> For exponential-family refinement, exact closure requires the
+fine conditional free energy <span class="math display">\[
+G_{sr,\theta}(q_r)
+\mathrel{=}
+-\log\mathbb E_{m_s^0}\left[
+\exp[-\theta\cdot F_s(Q_s)]\mid c_{sr}(Q_s)=q_r
+\right]
+\]</span> to equal <span
+class="math inline">\(\kappa_{sr}(\theta)+R_{sr}(\theta)\cdot
+F_r(q_r)\)</span>. If the residual is uniformly bounded by <span
+class="math inline">\(\varepsilon\)</span>, the induced total-variation
+defect is bounded by <span
+class="math inline">\(\tanh\varepsilon\)</span>.</p>
+<h4
+id="implementation-invariance-and-representative-lifting">Implementation
+invariance and representative lifting.</h4>
+<p>If implementations <span class="math inline">\(A,B\)</span> have
+quotient bijections <span class="math inline">\(h_r:Q_r^A\to
+Q_r^B\)</span> satisfying <span class="math display">\[
+m_r^B(h_rq)=m_r^A(q),\qquad
+S_r^B(h_rq)=S_r^A(q),
+\qquad
+h_r\circ c_{sr}^A=c_{sr}^B\circ h_s,
+\]</span> then <span class="math display">\[
+(h_r)_\#\mu_r^A=\mu_r^B.
+\]</span> For tracially pointed quantum quotients the corresponding
+equivalence is a trace-preserving quotient equivalence. It is invariant
+under unitary intertwiners preserving the gauge action and sector, and
+under inert trivial ancillas <span class="math inline">\(A\mapsto
+A\otimes I_{\rm anc}\)</span>. It is not invariant under arbitrary
+changes of gauge-representation multiplicities.</p>
+<p>If an implementation stores representatives, a representative-level
+law must be a conditional lift <span class="math display">\[
+\widetilde\mu_r(x)=\mu_r(\pi_r x)\kappa_r(x\mid \pi_r x),
+\qquad
+\sum_{x:\pi_r(x)=q}\kappa_r(x\mid q)=1.
+\]</span> Then <span
+class="math inline">\((\pi_r)_\#\widetilde\mu_r=\mu_r\)</span>. Uniform
+representative sampling yields orbit-size weights and is physical only
+if representative counting is the declared base measure.</p>
+<h4
+id="quotient-lumpable-kernels-and-sampler-correctness">Quotient-lumpable
+kernels and sampler correctness.</h4>
+<p>A representative kernel <span class="math inline">\(\widetilde
+P(x,y)\)</span> descends to <span class="math inline">\(Q_r\)</span>
+only when <span class="math display">\[
+P_Q(q,q&#39;)
+\mathrel{=}
+\sum_{y:\pi(y)=q&#39;}\widetilde P(x,y)
+\]</span> is independent of the chosen representative <span
+class="math inline">\(x\in\pi^{-1}(q)\)</span>. For <span
+class="math inline">\(w(q)=m(q)e^{-S(q)}\)</span> and proposal <span
+class="math inline">\(R(q,q&#39;)\)</span> with reciprocal support, the
+Metropolis–Hastings acceptance rule <span class="math display">\[
+a(q,q&#39;)=\min\left\{1,
+\frac{w(q&#39;)R(q&#39;,q)}{w(q)R(q,q&#39;)}
+\right\}
+\]</span> gives detailed balance <span class="math display">\[
+\mu(q)R(q,q&#39;)a(q,q&#39;)=\mu(q&#39;)R(q&#39;,q)a(q&#39;,q).
+\]</span> Repair-informed proposals must include the Hastings asymmetry
+term; otherwise the stationary law is generically changed.</p>
+<h4 id="repair-generators-are-not-selectors">Repair generators are not
+selectors.</h4>
+<p>A repair generator of the form <span class="math display">\[
+L_{\rm rep}=\sum_C c_C(I-E_C)
+\]</span> is a relaxation or sampling object after a law has been
+selected. Conditional expectations <span
+class="math inline">\(E_C\)</span> are defined on <span
+class="math inline">\(L^2(X_r,\pi_r)\)</span>, so the reference law
+<span class="math inline">\(\pi_r\)</span> is input. On overlapping
+collars the expectations need not commute. The correct finite gap
+certificate is the Poincare constant <span class="math display">\[
+\kappa_r
+\mathrel{=}
+\inf_{f\perp 1}
+\frac{\sum_C\|(I-E_C)f\|^2}{\|f\|^2}.
+\]</span> If local fiber rates have a positive lower bound <span
+class="math inline">\(\gamma_*\)</span>, then <span
+class="math display">\[
+L_{\rm rep}\ge \gamma_*\kappa_r(I-P_0).
+\]</span> Finite repair completeness gives <span
+class="math inline">\(\kappa_r&gt;0\)</span> at fixed regulator. A
+uniform refinement lower bound <span
+class="math inline">\(\inf_r\kappa_r&gt;0\)</span> is a separate theorem
+or receipt.</p>
+<h4 id="finite-evidence-accuracy">Finite evidence accuracy.</h4>
+<p>For bounded coarse observables <span
+class="math inline">\(O\)</span>, if <span class="math display">\[
+\|\widehat\mu_s-\mu_s\|_{\mathrm{TV}}\le\epsilon_{\rm samp}
+\]</span> and the refinement defects sum to <span
+class="math inline">\(\epsilon_{\rm ref}\)</span>, then <span
+class="math display">\[
+\left|\mathbb E_{\widehat\mu_s}[O\circ c_{sr}]-\mathbb
+E_{\mu_r}[O]\right|
+\le
+2\|O\|_\infty(\epsilon_{\rm samp}+\epsilon_{\rm ref}).
+\]</span> Continuum-facing observables require a realization map and
+correlation Cauchy bound in addition to a finite histogram.</p>
+<h4 id="vacuum-promotion-gate">Vacuum promotion gate.</h4>
+<p>A stationary sampler is not a physical vacuum. For any faithful
+target law one can build a positive transfer operator with that law as
+ground state, so positivity alone is not a selector. Vacuum promotion
+requires source Euclidean slab data <span class="math display">\[
+\mathfrak S_r^E=(Q_r,m_r^0,J_r,V_r,a_{t,r})
+\]</span> whose conductance <span
+class="math inline">\(J_r(q,q&#39;)=J_r(q&#39;,q)\ge0\)</span>, local
+potential <span class="math inline">\(V_r\)</span>, and slab thickness
+<span class="math inline">\(a_{t,r}\)</span> are derived without using
+the target law or sampler output. With connected event graph, <span
+class="math display">\[
+(H_r^Ef)(q)
+\mathrel{=}
+\frac{1}{m_r^0(q)}
+\sum_{q&#39;}J_r(q,q&#39;)\bigl(f(q)-f(q&#39;)\bigr)
++
+V_r(q)f(q)
+\]</span> is self-adjoint and bounded below on <span
+class="math inline">\(L^2(Q_r,m_r^0)\)</span>; its finite Feynman–Kac
+semigroup is positivity improving. Perron–Frobenius gives a unique
+positive normalized ground state <span
+class="math inline">\(\Omega_r\)</span>, and the finite vacuum law is
+<span class="math display">\[
+\mu_r^{\rm vac}(q)=|\Omega_r(q)|^2m_r^0(q).
+\]</span> For <span
+class="math inline">\(T_r=e^{-a_{t,r}(H_r^E-E_{0,r})}\)</span>, the Doob
+kernel is stochastic and detailed-balanced with <span
+class="math inline">\(\mu_r^{\rm vac}\)</span>. Continuum promotion
+additionally requires reflection positivity or equivalent reconstruction
+plus refinement compatibility of the transfer family.</p>
+<h4 id="primordial-and-cosmological-prediction-firewall">Primordial and
+cosmological prediction firewall.</h4>
+<p>A screen covariance is not automatically a primordial curvature
+spectrum. The map <span class="math display">\[
+C_\ell
+\mathrel{=}
+4\pi
+\int_0^\infty
+\frac{dk}{k}
+\Delta_\zeta^2(k)j_\ell^2(k\chi_\star)
+\]</span> has a null space unless a radial prior, finite parametric
+family, or source-stress bridge is declared. OPH primordial promotion
+requires the source-only stress, single-clock, entropy-repair,
+curvature-evolution, adiabatic-mode, phase-coherence,
+screen-to-radial-lift, radial-null-space, and forward-projection
+receipts. Observable CMB promotion further requires frozen source,
+solver, likelihood, no-data-use, pooled-reducer, and falsification-rule
+receipts.</p>
+<h4 id="claim-tiers-and-required-receipts">Claim tiers and required
+receipts.</h4>
+<p>Every ensemble-facing run records immutable ensemble id, claim tier,
+regulator id, representative schema hash, gauge action hash,
+canonicalizer hash, base measure, action coefficients, coarse maps,
+zero-mode projector, amplitude convention, sampler hash, smoothing
+policy, source provenance, and explicit nonclaims. The seed belongs to
+the run receipt, not to the ensemble definition. The claim tiers are
+<span class="math display">\[
+\begin{array}{ll}
+E0:&amp;\text{seed noise, proposal noise, repair jitter},\\
+E1:&amp;\text{conventional reference ensemble},\\
+E2:&amp;\text{OPH-native quotient ensemble},\\
+E3:&amp;\text{OPH vacuum},\\
+E4:&amp;\text{OPH primordial field},\\
+E5:&amp;\text{observable cosmological prediction}.
+\end{array}
+\]</span> The evidence bundle must keep separate receipts for
+stationary-law schedule invariance, detailed balance of the aggregate
+kernel, and pathwise partition invariance. Deterministic replay of
+semantic random streams or a canonical serial chain is useful, but it is
+not pathwise partition invariance. Smoothing must preserve raw
+coefficients, raw spectra, smoothing kernels, smoothed coefficients,
+smoothed spectra, and hashes of each stage; it is not part of <span
+class="math inline">\(S_r\)</span> unless explicitly declared.</p>
 <p><strong>Derived regulator realization.</strong> Choose a finite UV
 cellulation at scale <span
 class="math inline">\(\ell_{\mathrm{UV}}\)</span> and let <span
@@ -1207,6 +1562,430 @@ or finite parametric family is declared. Conventional free-scalar and
 lattice-gauge baselines may therefore be recorded, but those baselines
 carry closed OPH-native-vacuum and primordial-promotion receipts unless
 these gates are supplied.</p>
+<h3 id="source-only-primordial-bridge-theorem">Source-only primordial
+bridge theorem</h3>
+<p>The finite screen covariance theorem is a screen theorem. To read it
+as a source-only primordial curvature spectrum one must add the
+following bridge objects and receipts. The dependency chain is <span
+class="math display">\[
+\boxed{
+\operatorname{nf}(\mathcal Q_r)
+\to
+(\chi_r,u_r,h_r)
+\to
+\mathsf{BackgroundCurvatureStatus}_r
+\to
+(g,T_I)
+\to
+q_\zeta=\zeta_\rho
+\to
+\text{single clock}
+\to
+\text{freeze-out}
+\to
+\text{coherent growing mode}
+\to
+\Delta_\zeta^2(k).
+}
+\]</span> No successful fit of a screen <span
+class="math inline">\(C_\ell\)</span> or a TT spectrum may replace one
+of these hypotheses.</p>
+<p><strong>Definition (background curvature branch
+label).</strong><span id="def:background-curvature-branch-label" label="def:background-curvature-branch-label"></span>
+The primordial bridge carries a finite record <span
+class="math display">\[
+\mathsf{BackgroundCurvatureStatus}_r
+\mathrel{=}
+(\mathsf{BranchType},\kappa,I_K,I_{\Omega_K},\mathsf{Basis},\mathsf{Top})
+\]</span> where <span class="math display">\[
+\mathsf{BranchType}\in
+\{\textsc{FlatExact},\textsc{FlatAssumed},\textsc{OpenCurved},\textsc{ClosedCurved},\textsc{Unresolved}\}.
+\]</span> <span class="smallcaps">FlatExact</span> is allowed only after
+a direct theorem or conditional CMH receipt.
+<span class="smallcaps">FlatAssumed</span> may run flat kernels but its
+outputs remain assumption-conditioned.
+<span class="smallcaps">Unresolved</span> blocks physical promotion. The
+<span class="math inline">\(H^3\)</span> observer-facing atlas is not
+this record; this record comes from the clocked FLRW slice and its
+spatial Levi–Civita holonomy or declared branch input.</p>
+<p><strong>Definition (source stress
+readout).</strong><span id="def:oph-source-stress" label="def:oph-source-stress"></span>
+On a reconstructed branch with relational metric <span
+class="math inline">\(g_{ab}\)</span>, let <span class="math display">\[
+S_{\rm src}=\sum_I S_I[g,\Psi_I],
+\qquad
+T^I_{ab}=-\frac{2}{\sqrt{-g}}\frac{\delta S_I}{\delta g^{ab}},
+\qquad
+T^{\rm tot}_{ab}=\sum_I T^I_{ab},
+\]</span> where <span class="math inline">\(I\)</span> ranges over every
+active sector, including ordinary matter, radiation, neutrinos, OPH
+anomaly or repair sectors, and any auxiliary source kept in the run. At
+finite regulator this is a quotient-visible map <span
+class="math display">\[
+\mathsf{StressRead}_r:
+\operatorname{nf}(\mathcal Q_r)\longrightarrow \{T^I_{r,ab}\}_I .
+\]</span> All source stress components must be read from the same global
+normal form as the collar scalar.</p>
+<p><strong>Source-stress closure
+theorem.</strong><span id="thm:oph-source-stress-closure" label="thm:oph-source-stress-closure"></span>
+Assume each <span class="math inline">\(S_I\)</span> is relationally
+diffeomorphism invariant, the source equations hold, sector exchanges
+satisfy <span class="math display">\[
+\nabla_aT_I^{ab}=Q_I^b,\qquad \sum_I Q_I^b=0,
+\]</span> and <span class="math inline">\(\mathsf{StressRead}_r\)</span>
+descends to the physical quotient and converges. Then <span
+class="math display">\[
+\nabla_aT_{\rm tot}^{ab}=0.
+\]</span> On the recovered Einstein branch, <span
+class="math display">\[
+G_{ab}+\Lambda g_{ab}=8\pi G\,T^{\rm tot}_{ab}.
+\]</span> The evidence bundle must also report the non-circular
+comparison <span class="math display">\[
+E_T^{ab}=
+T_{\rm src}^{ab}
+\text{-}
+\frac{G^{ab}+\Lambda g^{ab}}{8\pi G};
+\]</span> using the geometric right-hand side alone is a geometry
+diagnostic, not a source-only primordial receipt.</p>
+<p><strong>Total-energy frame and curvature covector.</strong> When
+<span class="math inline">\(T^a{}_b\)</span> has a unique future
+timelike unit eigenvector <span class="math inline">\(u^a\)</span>,
+define <span class="math display">\[
+T^a{}_bu^b=-\rho u^a,\qquad
+h_{ab}=g_{ab}+u_au_b,
+\]</span> and decompose <span class="math display">\[
+T^{ab}=\rho u^au^b+p h^{ab}+\pi^{ab},
+\qquad
+u_a\pi^{ab}=0,\qquad \pi^a{}_a=0.
+\]</span> Let <span class="math inline">\(\Theta=\nabla_a u^a\)</span>
+and let <span class="math inline">\(\sigma_{ab}\)</span> be the shear.
+Total energy conservation gives <span class="math display">\[
+\dot\rho+\Theta(\rho+p)+\sigma_{ab}\pi^{ab}=0,
+\qquad
+\dot f:=u^a\nabla_a f.
+\]</span> On an expanding branch, define <span class="math display">\[
+p_{\rm eff}=p+\frac{\sigma_{ab}\pi^{ab}}{\Theta};
+\]</span> then <span class="math inline">\(\dot\rho+\Theta(\rho+p_{\rm
+eff})=0\)</span>.</p>
+<p><strong>Theorem (exact total-curvature
+evolution).</strong><span id="thm:oph-total-curvature-evolution" label="thm:oph-total-curvature-evolution"></span>
+Let <span class="math display">\[
+\dot\alpha=\Theta/3,\qquad
+\zeta_a=\nabla_a\alpha-\frac{\dot\alpha}{\dot\rho}\nabla_a\rho,
+\]</span> and <span class="math display">\[
+\Gamma^{\rm eff}_a=
+\nabla_a p_{\rm eff}
+\text{-}
+\frac{\dot p_{\rm eff}}{\dot\rho}\nabla_a\rho .
+\]</span> Then, exactly and without a long-wavelength approximation,
+<span class="math display">\[
+\mathcal L_u\zeta_a
+\mathrel{=}
+-\frac{\Theta}{3(\rho+p_{\rm eff})}\Gamma^{\rm eff}_a .
+\]</span> Hence a barotropic effective source, <span
+class="math inline">\(p_{\rm eff}=p_{\rm eff}(\rho)\)</span>, conserves
+<span class="math inline">\(\zeta_a\)</span>.</p>
+<p><strong>Collar scalar
+corollary.</strong><span id="cor:oph-collar-curvature" label="cor:oph-collar-curvature"></span>
+For relational rods Lie-dragged by the total-energy flow, the
+collar-volume Jacobian satisfies <span class="math display">\[
+J_X=\lambda\sqrt{\det\sigma_{AB}},
+\qquad
+\frac{d}{d\tau}\frac13\log J_X=\frac{\Theta}{3}.
+\]</span> Relative to a frozen background, <span class="math display">\[
+q_\zeta=\frac13\log\frac{J_X}{\bar J_X}.
+\]</span> On the uniform-total-density cut, <span
+class="math display">\[
+q_\zeta=\zeta_\rho+\hbox{constant}.
+\]</span> After removing the monopole and dipole, <span
+class="math display">\[
+q=\Pi_{\ell\ge2}q_\zeta=\Pi_{\ell\ge2}\zeta_\rho,
+\qquad
+Z_q=1.
+\]</span> This is the source-only quotient scalar on the OPH screen; by
+itself it has type <span class="smallcaps">ScreenCurvature</span>, not
+<span class="smallcaps">PrimordialCurvature</span>.</p>
+<p><strong>Definition (rank-one single-clock
+branch).</strong><span id="def:oph-single-clock" label="def:oph-single-clock"></span>
+Let <span class="math display">\[
+\mathcal F(x)=
+(\rho,p_{\rm eff},\{\rho_I,p_I,Q_I\}_{I=1}^N)
+\]</span> be the scalar source map on the source moduli space. A branch
+is rank-one single-clock when <span
+class="math inline">\(\operatorname{rank}d\mathcal F=1\)</span>, <span
+class="math inline">\(d\rho\ne0\)</span>, every level set of <span
+class="math inline">\(\rho\)</span> is connected, all sector velocities
+agree with <span class="math inline">\(u^a\)</span>, and orthogonal
+momentum transfer vanishes or is interval-bounded. At finite cutoff this
+requires a quotient-visible clock <span
+class="math inline">\(\chi_r\)</span> and a factorization <span
+class="math display">\[
+\mathcal F_r=\widehat{\mathcal F}_r\circ\chi_r .
+\]</span></p>
+<p><strong>Theorem (single-clock
+adiabaticity).</strong><span id="thm:oph-single-clock-adiabaticity" label="thm:oph-single-clock-adiabaticity"></span>
+On a rank-one single-clock branch, <span class="math display">\[
+p_{\rm eff}=p_{\rm eff}(\rho),\qquad
+S_a^{IJ}=3(\zeta_a^I-\zeta_a^J)=0,
+\]</span> and the intrinsic nonadiabatic pressure and transfer covectors
+obey <span class="math display">\[
+\Gamma_a^I=0,\qquad \Xi_a^I=0 .
+\]</span> Therefore <span class="math inline">\(\mathcal
+L_u\zeta_a=0\)</span>. The proof is the chain rule through the single
+clock: every source scalar is a function of the same <span
+class="math inline">\(\chi\)</span>, and connected <span
+class="math inline">\(\rho\)</span>-fibers remove residual branch
+labels.</p>
+<p><strong>Theorem (entropy repair
+gap).</strong><span id="thm:oph-entropy-repair-gap" label="thm:oph-entropy-repair-gap"></span>
+Let the linearized scalar repair/evolution block be <span
+class="math display">\[
+\delta Y_{n+1}=L_r\delta Y_n+\eta_n,
+\]</span> and let <span class="math inline">\(P_\perp\)</span> project
+away gauge directions, constrained zero modes, and the adiabatic growing
+direction. If there is a positive metric <span
+class="math inline">\(H_r\)</span> such that <span
+class="math display">\[
+\|P_\perp L_rP_\perp\|_{H_r}\le e^{-\gamma_r}&lt;1,
+\]</span> then <span class="math display">\[
+\|P_\perp\delta Y_n\|_{H_r}
+\le
+e^{-n\gamma_r}\|P_\perp\delta Y_0\|_{H_r}
++
+\sum_{j=0}^{n-1}e^{-(n-1-j)\gamma_r}\|P_\perp\eta_j\|_{H_r}.
+\]</span> In the unforced case the orthogonal entropy, decaying, and
+repair scalar modes vanish. Eigenvalues alone do not certify this
+theorem for nonnormal repair matrices; a norm bound or a discrete
+Lyapunov inequality <span class="math display">\[
+L_\perp^{\mathsf T}H L_\perp\preceq e^{-2\gamma}H
+\]</span> is required.</p>
+<p><strong>Theorem (growing-mode
+coherence).</strong><span id="thm:oph-growing-mode-coherence" label="thm:oph-growing-mode-coherence"></span>
+Let <span class="math inline">\(X(k)\)</span> collect the scalar
+initial-condition variables for curvature, radiation, baryons,
+CDM/anomaly, neutrinos, and repair-sector scalars, and let <span
+class="math inline">\(v_+(k)\)</span> be the normalized adiabatic
+growing vector. If the single-clock and repair-gap theorems hold through
+readout and no independent stochastic source acts afterward, then <span
+class="math display">\[
+X(k)=v_+(k)\zeta(k),
+\qquad
+\mathcal P_X(k)=\mathcal P_\zeta(k)v_+(k)v_+(k)^\dagger .
+\]</span> Thus <span class="math inline">\(\operatorname{rank}\mathcal
+P_X(k)=1\)</span>, source-side isocurvature fractions vanish, and all
+species share a deterministic growing-mode phase. Finite runs must
+report <span class="math inline">\(\lambda_2/\lambda_1\)</span>, <span
+class="math inline">\(\beta_{\rm iso}(k)\)</span>, decaying-mode
+fraction, and phase-convention defects as source diagnostics.</p>
+<p><strong>Theorem (screen-to-primordial
+bridge).</strong><span id="thm:oph-screen-to-primordial" label="thm:oph-screen-to-primordial"></span>
+Assume the geometric record and causal-area metric receipts, the collar
+identity <span class="math inline">\(q_\zeta=\zeta_\rho\)</span>,
+source-stress closure, rank-one normal form, positive repair gap,
+freeze-out, adiabatic growing-mode, isocurvature, and phase-coherence
+receipts all pass. Also assume the physical scale-bridge theorem: a
+source embedding with <code>source_embedding_hash</code>, a physical
+mode basis with <code>physical_mode_basis_id</code>, a calibrated
+comoving coordinate <span class="math inline">\(\chi\)</span>,
+mode-normalization and density-of-states receipts, and a
+no-post-hoc-calibration receipt, and a <span
+class="math inline">\(\mathsf{BackgroundCurvatureStatus}_r\)</span> that
+is not <span class="smallcaps">Unresolved</span>. Then the
+low-mode-removed OPH screen scalar is the source-only primordial
+curvature field restricted to the declared shell or radial window: <span
+class="math display">\[
+q(\hat n)=
+\Pi_{\ell_{\rm src}\ge2}\int d\chi\,W(\chi)\zeta_\star(\chi\hat n).
+\]</span> For a thin shell, <span class="math inline">\(q(\hat
+n)=\Pi_{\ell_{\rm src}\ge2}\zeta_\star(R_\star\hat n)\)</span>. The
+forward spectrum is exactly <span class="math display">\[
+C_\ell^q
+\mathrel{=}
+4\pi\int_0^\infty d\ln k\,
+\Delta_\zeta^2(k)|\Psi_\ell^{\mathsf{BranchType}}(k)|^2,
+\qquad
+\Psi_\ell^{\mathsf{BranchType}}(k)=
+\begin{cases}
+\int dr\,W(r)j_\ell(kr), &amp; \mathsf{BranchType}=\textsc{FlatExact}\
+\hbox{or}\ \textsc{FlatAssumed},\\
+\int dr\,W(r)\Phi^{(-)}_{\ell k}(r), &amp;
+\mathsf{BranchType}=\textsc{OpenCurved},\\
+\int dr\,W(r)\Phi^{(+)}_{\ell k}(r), &amp;
+\mathsf{BranchType}=\textsc{ClosedCurved},
+\end{cases}
+\]</span> and for a thin shell <span class="math display">\[
+C_\ell^q
+\mathrel{=}
+4\pi\int_0^\infty d\ln k\,
+\Delta_\zeta^2(k)
+\left|\Psi_\ell^{\mathsf{BranchType}}(k;R_\star)\right|^2 .
+\]</span> At finite regulator the continuum integral is represented by
+the finite spectral measure <span class="math display">\[
+d\nu_r(k)=\sum_j w_{rj}\delta(k-k_{rj}),
+\]</span> so the actual finite evidence receipt is <span
+class="math display">\[
+C_{\ell_{\rm src},r}^q
+=4\pi\sum_j w^{\log k}_{rj}\,
+\Delta_{\zeta,r}^2(k_{rj})
+|\Psi^{\mathsf{BranchType}}_{\ell_{\rm src},r}(k_{rj})|^2.
+\]</span> Every radial node, window, and mode bin is bound to the
+geometry hash, source-embedding hash, scale-certificate hash,
+boundary-condition hash, and mode-basis identifier, and the evidence
+bundle must emit
+<code>RADIAL_KERNEL_GEOMETRY_COMPATIBILITY_RECEIPT</code>. The observed
+multipole <span class="math inline">\(L_{\rm CMB}\)</span> is not <span
+class="math inline">\(\ell_{\rm src}\)</span>; it is the output index of
+the line-of-sight transfer solver. Cap eigenmodes, inverse cap-opening
+angles, and relabeled unit strings remain diagnostic by the dimensional,
+angular, cap-mode, and unit-string no-go propositions.</p>
+<p><strong>Physical scale dependency.</strong> The <span
+class="math inline">\(k_{rj}\)</span> grid in the preceding equation is
+not a free producer field. It is consumed only after <span
+class="math display">\[
+\texttt{PHYSICAL\_SPATIAL\_K\_RECEIPT}
+\]</span> recomputes the comoving <span
+class="math inline">\(k\)</span>-intervals from the physical geometry,
+scale certificate, scale factor, finite eigenvalues, normalization, and
+refinement residuals. The radial kernel and source-screen projection
+additionally require <span class="math display">\[
+\texttt{SCREEN\_TO\_PHYSICAL\_K\_ASSOCIATION\_RECEIPT}.
+\]</span> The source covariance is a finite positive operator on the
+common physical mode projectors: <span class="math display">\[
+C_{\zeta,r}\succeq0.
+\]</span> Homogeneity and isotropy on the safe band require <span
+class="math display">\[
+P_I C_{\zeta,r}P_I=\mathcal P_\zeta(k_I)P_I+E_I
+\]</span> with a declared residual bound, together with an off-diagonal
+leakage report <span class="math display">\[
+\sum_{I\ne J}|P_I C_{\zeta,r}P_J|^2.
+\]</span> The same physical projector family is used by primordial
+covariance and anomaly response: <span class="math display">\[
+\texttt{COMMON\_PRIMORDIAL\_ANOMALY\_MODE\_BASIS\_RECEIPT}.
+\]</span> Mode freezeout and common initial surface are separate gates:
+<span class="math display">\[
+\texttt{PHYSICAL\_MODE\_FREEZEOUT\_MAP\_RECEIPT},\qquad
+\texttt{PHYSICAL\_FREEZEOUT\_SURFACE\_RECEIPT}.
+\]</span> The latter contains initial data and normal derivatives on one
+common spacelike surface.</p>
+<p><strong>Radial prior, null space, and residual receipt.</strong> The
+map above is a forward projection, not a free inversion. With finite
+bins <span class="math inline">\(p_j\)</span> for <span
+class="math inline">\(\Delta_\zeta^2\)</span>, <span
+class="math display">\[
+A_{\ell j}=4\pi\int_{\hbox{\scriptsize bin }j}d\ln k\,
+b_j(k)|\Psi_\ell(k)|^2,
+\qquad
+C^q=Ap .
+\]</span> The evidence bundle must declare the basis, support, prior
+<span class="math inline">\(p_0,Q\)</span>, positivity conditions,
+singular spectrum of <span class="math inline">\(AQ^{-1/2}\)</span>,
+effective rank, null basis, resolution kernels, prior sensitivity, and
+every forward residual <span class="math display">\[
+r_\ell=C_\ell^q-\widehat C_\ell .
+\]</span> Only after the radial prior, null-space report, positivity
+test, source-only ancestry proof, finite mode-normalization receipt,
+common primordial/anomaly mode-basis receipt, and forward residual pass
+may the run emit <span class="math inline">\(A_s\)</span>, <span
+class="math inline">\(n_s\)</span>, and <span
+class="math inline">\(\alpha_s\)</span>. Otherwise the typed output is
+<span class="smallcaps">ScreenCurvature</span> or
+<span class="smallcaps">ConditionalRadialContinuation</span>. If the
+geometry packet is imported, the strongest possible claim tier is
+<code>CONDITIONAL_PHYSICAL</code>; <code>OPH_NATIVE_PHYSICAL</code>
+requires the native <span
+class="math inline">\(\mathsf{CosmoGeomRead}_r\)</span> theorem.</p>
+<p><span class="math display">\[
+\begin{array}{ll}
+\mbox{\texttt{TOTAL\_STRESS\_CLOSURE\_RECEIPT}} &amp;
+T_I^{ab},Q_I^a,E_T,\nabla_aT^{ab} \\
+\mbox{\texttt{SINGLE\_CLOCK\_NORMAL\_FORM\_RECEIPT}} &amp;
+\chi_r,\operatorname{rank}d\mathcal F,\hbox{ connected fibers} \\
+\mbox{\texttt{ENTROPY\_REPAIR\_GAP\_RECEIPT}} &amp;
+L_\perp,H,\gamma,\hbox{ forcing/refinement bounds} \\
+\mbox{\texttt{CURVATURE\_EVOLUTION\_RECEIPT}} &amp;
+\zeta_a,\Gamma_a^{\rm eff},\hbox{ evolution residual, freeze bound} \\
+\mbox{\texttt{ADIABATIC\_MODE\_RECEIPT}} &amp;
+S_{IJ},\Gamma_I,\Xi_I,\hbox{ growing-mode projection} \\
+\mbox{\texttt{ISOCURVATURE\_BOUND\_REPORT}} &amp; \beta_{\rm
+iso}(k)\hbox{ and source covariance} \\
+\mbox{\texttt{PRIMORDIAL\_PHASE\_COHERENCE\_RECEIPT}} &amp;
+\lambda_2/\lambda_1,\hbox{ phase and decaying-mode defects} \\
+\mbox{\texttt{SCREEN\_TO\_RADIAL\_LIFT\_RECEIPT}} &amp;
+W(r),R_\star,\Psi_\ell(k),\hbox{ source hashes} \\
+\mbox{\texttt{RADIAL\_NULL\_SPACE\_REPORT\_RECEIPT}} &amp;
+\hbox{singular values, null basis, resolution kernels} \\
+\mbox{\texttt{FORWARD\_PROJECTION\_RESIDUAL\_RECEIPT}} &amp;
+r_\ell,\hbox{ aggregate norms, quadrature and solver errors}.
+\end{array}
+\]</span></p>
+<p><strong>Source-provenance and pooled-reducer
+firewall.</strong><span id="par:source-provenance-firewall" label="par:source-provenance-firewall"></span>
+Let the source artifact DAG have parent-to-child edges and let <span
+class="math inline">\(M\)</span> be the set of measurement, residual,
+likelihood, posterior, fitted-parameter, or measurement-calibrated
+nodes. Define <span class="math display">\[
+\tau(v)=\mathbf 1_{v\in M}\lor
+\bigvee_{p\in\operatorname{Parents}(v)}\tau(p).
+\]</span> Then <span class="math inline">\(\tau(v)=1\)</span> exactly
+when <span class="math inline">\(v\)</span> has a forbidden measurement
+ancestor. The proof is induction over a topological ordering of the DAG.
+Every promoted source node for <span
+class="math inline">\(\eta_R,\Gamma_{\rm rec},A_\zeta,q_{\rm
+IR},\ell_{\rm IR}\)</span>, <span
+class="math inline">\(B_A(k,a)\)</span>, <span
+class="math inline">\(\rho_A(a)\)</span>, and <span
+class="math inline">\(N_{\rm CRC}\)</span> must have <span
+class="math inline">\(\tau=0\)</span>. Unknown source metadata fails
+closed.</p>
+<p>For nonlinear estimates, shards may not average nonlinear quantities.
+Each row must emit additive sufficient statistics in a commutative
+monoid <span class="math inline">\((\mathcal M,\oplus)\)</span>, for
+example <span class="math display">\[
+\sum w_i,\qquad \sum w_ix_i,\qquad \sum w_ix_ix_i^{\mathsf T}
+\]</span> or, for weighted response regression, <span
+class="math display">\[
+X^{\mathsf T}WX,\qquad X^{\mathsf T}Wy,\qquad y^{\mathsf T}Wy .
+\]</span> Associativity, commutativity, complete coverage, and duplicate
+removal make the pooled statistic partition-invariant; the deterministic
+estimator is then evaluated only after pooling.</p>
+<p><strong>Three-dimensional homogeneous
+lift.</strong><span id="par:three-d-lift" label="par:three-d-lift"></span>
+A rotationally invariant screen covariance about one observer is not a
+statistically homogeneous three-dimensional primordial field by itself.
+A frozen lift <span class="math display">\[
+\mathcal L_r:V_r^{\rm screen}\to\mathcal H_r^{(3)}
+\]</span> must define <span class="math display">\[
+\Sigma_r^{(3)}=\mathcal L_r\Sigma_r^{\rm screen}\mathcal L_r^\ast
+\]</span> and certify positivity, refinement convergence, rotation
+covariance, translation covariance or an equivalent multicenter
+consistency theorem, and explicit null-space treatment. If the limiting
+covariance commutes with translations and rotations, Fourier
+diagonalization gives <span class="math display">\[
+\langle \zeta_a(\mathbf k)\zeta_b^\ast(\mathbf k&#39;)\rangle
+=(2\pi)^3\delta^{(3)}(\mathbf k-\mathbf k&#39;)P_{ab}(|\mathbf k|),
+\]</span> with <span class="math inline">\(P_{ab}(k)\)</span> positive
+semidefinite.</p>
+<p><strong>Transfer-ready initial
+data.</strong><span id="par:transfer-ready-initial-data" label="par:transfer-ready-initial-data"></span>
+The source-to-transfer map must emit a complete initial state <span
+class="math display">\[
+Y(k,\eta_i)=\mathcal M_{\rm init}(k;\mathfrak B_{\rm src})\xi(k),
+\]</span> including metric, photon, polarization, baryon, neutrino,
+anomaly, recipient, and auxiliary response variables. Near a singular
+early-time point, regular Frobenius modes solve <span
+class="math display">\[
+Y&#39;=\left(\frac{M_{-1}}{\eta}+M_0+O(\eta)\right)Y,\qquad
+Y=\eta^s(v_0+v_1\eta+\cdots),\quad M_{-1}v_0=sv_0.
+\]</span> The branch must classify regular adiabatic growing modes,
+allowed isocurvature modes, decaying modes, gauge modes, and singular
+interaction modes. On the adiabatic branch, <span
+class="math display">\[
+S_{IJ}=3(\zeta_I-\zeta_J)=0
+\]</span> for all active sectors. The finite evidence receipt must bound
+the initial Hamiltonian and momentum constraints and the propagated
+residual <span class="math display">\[
+\epsilon_{\rm constraint}=\sup_{k,\eta}\|\mathcal C(k,\eta)Y(k,\eta)\|.
+\]</span></p>
 <p><strong>Receipt contract.</strong> Every ensemble run must record the
 immutable ensemble id, claim tier, regulator id, representative schema
 hash, gauge action hash, quotient canonicalizer hash, base measure
@@ -1352,19 +2131,26 @@ lemma and axiom provide the quantitative decay route used when the
 manuscript keeps the approximation explicit.</p>
 <blockquote>
 <p><strong>Lemma 2.6 (MaxEnt with local constraints implies local Gibbs
-form).</strong> Under the local MaxEnt branch of Axiom 3 and the
-finite-dimensional regulator realization above, the MaxEnt state has the
-Gibbs form</p>
+form).</strong> Under the local MaxEnt branch of Axiom 3, with its
+homogeneous global-sum constraints <span
+class="math inline">\(\langle\sum_x O_a(x)\rangle = C_a\)</span>, and
+the finite-dimensional regulator realization above, the MaxEnt state has
+the Gibbs form</p>
 <p><span class="math display">\[\omega =
 \frac{e^{-H_{\mathrm{eff}}}}{\mathrm{Tr}\,e^{-H_{\mathrm{eff}}}},
 \qquad
 H_{\mathrm{eff}} = \sum_x \sum_a \lambda_a O_a(x) + \text{(global
 terms)},\]</span></p>
 <p>where the sum runs over UV cells <span
-class="math inline">\(x\)</span> and constraint operators <span
-class="math inline">\(O_a\)</span>. The effective Hamiltonian <span
-class="math inline">\(H_{\mathrm{eff}}\)</span> is quasi-local with
-range <span class="math inline">\(O(\ell_{\mathrm{UV}})\)</span>.</p>
+class="math inline">\(x\)</span> and density labels <span
+class="math inline">\(a\)</span>, with one cell-independent multiplier
+<span class="math inline">\(\lambda_a\)</span> per label. The effective
+Hamiltonian <span class="math inline">\(H_{\mathrm{eff}}\)</span> is
+quasi-local with range <span
+class="math inline">\(O(\ell_{\mathrm{UV}})\)</span>, and the multiplier
+count matches the constraint count <span
+class="math inline">\(N_{\mathrm{con}}\)</span> plus the number of
+retained global terms on every lattice.</p>
 <p><strong>Proof.</strong> On a finite-dimensional algebra, the unique
 state maximizing <span class="math inline">\(S(\rho) = -\mathrm{Tr}(\rho
 \log \rho)\)</span> subject to linear constraints <span
@@ -1372,11 +2158,19 @@ class="math inline">\(\mathrm{Tr}(\rho O_i) = c_i\)</span> is given by
 Lagrange multipliers:</p>
 <p><span class="math display">\[\rho = \frac{e^{-\sum_i \lambda_i
 O_i}}{\mathrm{Tr}\,e^{-\sum_i \lambda_i O_i}}.\]</span></p>
-<p>Strict concavity of von Neumann entropy ensures uniqueness. When the
-constraints are "translated local" (the same <span
-class="math inline">\(O_a\)</span> at each cell <span
-class="math inline">\(x\)</span>), the exponent is a sum of local terms.
-QED.</p>
+<p>Strict concavity of von Neumann entropy ensures uniqueness. Here the
+constrained operators are the <span
+class="math inline">\(N_{\mathrm{con}}\)</span> global sums <span
+class="math inline">\(O_a := \sum_x O_a(x)\)</span> plus the finitely
+many global terms, so the exponent is <span class="math inline">\(\sum_a
+\lambda_a \sum_x O_a(x) + \text{(global terms)}\)</span>: a sum of local
+terms with one shared multiplier per density label. Had the constraints
+instead been imposed per cell, <span class="math inline">\(\langle
+O_a(x)\rangle = c_a(x)\)</span>, the multipliers would be cell-dependent
+fields <span class="math inline">\(\lambda_a(x)\)</span> and the family
+would grow with the lattice; that enlarged family belongs to the
+non-equilibrium approximation regime of the clarification above and is
+not the branch used in the refinement argument. QED.</p>
 </blockquote>
 <p><strong>Exponential mixing hypothesis.</strong> There exist constants
 <span class="math inline">\(c\)</span> and correlation length <span
@@ -1548,9 +2342,13 @@ rigidity gives the geometric cap automorphism.</p>
 constraint family <span class="math inline">\(\mathcal C\)</span> is
 generated by finitely many gauge-invariant local densities <span
 class="math inline">\(\{O_a(x)\}\)</span> of UV range <span
-class="math inline">\(O(\ell_{\mathrm{UV}})\)</span>, with the same
-finite label set retained under refinement. This clause unpacks the
-third OPH axiom at regulator level and adds no separate postulate.</p>
+class="math inline">\(O(\ell_{\mathrm{UV}})\)</span>, constrained
+through their homogeneous global sums <span
+class="math inline">\(\langle\sum_x O_a(x)\rangle = C_a\)</span>, with
+the same finite label set retained under refinement by the
+refinement-closure clause of the third OPH axiom. This clause unpacks
+that axiom at regulator level and adds no postulate beyond it; the
+closure clause itself is the substantive assumption.</p>
 <p><strong>Theorem 2.6 (Local constraints imply a local-Gibbs
 form).</strong> If the MaxEnt constraints are expectations of finitely
 many quasi-local operators <span class="math inline">\(\{O_a\}\)</span>
@@ -1593,16 +2391,19 @@ C_{\psi,\phi,I_{\max}}\,|I&#39;\Delta I|,
 propagation and endpoint-Lipschitz control are not external regularity
 selectors; they are the local-constraint MaxEnt branch written in
 dynamical form.</p>
-<p><strong>Refinement-stable multiplier branch.</strong> Because the
-same finite constraint family is preserved under coarse-graining, the
-regulator states lie in one common finite-dimensional multiplier family
-rather than in unrelated state spaces at different cutoffs. The
-“refinement-stable” language used later therefore means persistence
-along the stable or fixed branch of this multiplier family. This
-state-side notion is enough to compare realized states across cutoffs.
-The fixed-cutoff bosonic sector category is constructed in
-FixedCutoffBosonicSectorCategory, and the refinement functors plus
-finite bosonic fiber descent are constructed in
+<p><strong>Refinement-stable multiplier branch.</strong> By the
+refinement-closure clause of the third OPH axiom—a substantive
+renormalization condition, since coarse-graining a finite-range Gibbs
+family generically generates interactions outside any fixed finite
+density list—the same finite constraint family is preserved under
+coarse-graining, and the regulator states lie in one common
+finite-dimensional multiplier family rather than in unrelated state
+spaces at different cutoffs. The “refinement-stable” language used later
+therefore means persistence along the stable or fixed branch of this
+multiplier family. This state-side notion is enough to compare realized
+states across cutoffs. The fixed-cutoff bosonic sector category is
+constructed in FixedCutoffBosonicSectorCategory, and the refinement
+functors plus finite bosonic fiber descent are constructed in
 RefinementFunctorAndFiberDescent. The realized compact-gauge witness
 theorem supplies nonempty realized MAR-admissible witness data, but the
 Standard Model selection step is the later MAR application to sector
@@ -4594,70 +5395,223 @@ class="math inline">\(\times\)</span> 10<sup>-4</sup></p></li>
 <li><p>Binary pulsar radiative damping (PSR J0737-3039): 0.999963 <span
 class="math inline">\(\pm\)</span> 0.000063</p></li>
 </ul>
-<h3 id="theory-side-error-propagation-from-markov-bounds">Theory-side
-error propagation from Markov bounds</h3>
-<p>The framework provides exact-zero predictions and quantitative
-control over how well those predictions hold. The Markov/recovery
-machinery can be propagated through the entire GR emergence chain.</p>
+<h3
+id="stateobservable-error-propagation-and-the-dynamical-bridge">State–observable
+error propagation and the dynamical bridge</h3>
+<p>On the ideal derived Einstein branch, the framework states the
+equalities recorded in
+Section <a href="#513-precision-gravity-predictions-and-experimental-bounds" data-reference-type="ref" data-reference="513-precision-gravity-predictions-and-experimental-bounds">1.6.14</a>.
+Finite Markov/recovery control supplies a separate and more limited
+quantitative statement. This subsection therefore keeps two error
+ledgers separate. The <em>state–observable ledger</em> tracks
+expectation values of specified bounded local observables in a recovered
+state; the Markov/recovery machinery controls this ledger. The
+<em>dynamical-parameter ledger</em> tracks spectral and dispersion
+properties of an evolution generator—propagation speeds, graviton mass,
+and correlator poles. The trace-distance chain alone does <em>not</em>
+control that ledger.</p>
 <p><strong>The key quantitative hook.</strong> From Theorem 3.1, if the
 target state satisfies</p>
 <p><span class="math display">\[
 I(A_k : C_k \mid B_k) \le \varepsilon_k,
 \]</span></p>
-<p>then recovery maps exist with trace-distance error</p>
+<p>then, writing <span class="math inline">\(\rho\)</span> for the
+target state and <span class="math inline">\(\sigma\)</span> for its
+recovered comparison state, the recovery map gives the trace-norm
+bound</p>
 <p><span class="math display">\[
-\delta_k = 2\sqrt{\ln 2 \cdot \varepsilon_k}.
+\|\rho-\sigma\|_1\le \delta_k
+:=2\sqrt{\ln 2 \cdot \varepsilon_k}.
 \]</span></p>
-<p>Trace distance gives immediate bounds on observable errors. Using the
-standard dual norm inequality:</p>
+<p><strong>State–observable ledger.</strong> Trace distance gives
+immediate bounds on expectation-value errors for the declared operator
+class: bounded operators supported in the recovered region, compared at
+the time of recovery. Using the standard dual norm inequality:</p>
 <p><span class="math display">\[
 |\langle O \rangle_\rho - \langle O \rangle_\sigma|
 \le \|O\|_\infty \|\rho - \sigma\|_1 = 2 \|O\|_\infty D(\rho, \sigma),
 \]</span></p>
 <p>where <span class="math inline">\(D(\rho, \sigma) = \frac{1}{2}\|\rho
-- \sigma\|_1\)</span> is the trace distance.</p>
-<p><strong>Exponential decay from the mixing hypothesis.</strong> The
-mixing assumption (Section 2.3) provides:</p>
+- \sigma\|_1\)</span> is the trace distance. This inequality is exactly
+as strong as it looks and no stronger: the norm <span
+class="math inline">\(\|O\|_\infty\)</span> is the Lipschitz constant
+only for bounded <span class="math inline">\(O\)</span>, and the
+comparison is an equal-time statement about states.</p>
+<p><strong>Exponential decay from the mixing hypothesis.</strong>
+Writing <span class="math inline">\(w\)</span> for collar width, so it
+is not confused with the recovery error <span
+class="math inline">\(\delta_k\)</span>, the mixing assumption (Section
+2.3) provides</p>
 <p><span class="math display">\[
-I_\omega(A_\delta : D_\delta \mid B_\delta)
-\le c \cdot |\partial C|_{\mathrm{UV}} \cdot e^{-\delta/\xi}.
+I_\omega(A_w : D_w \mid B_w)
+\le C_{\mathrm{mix}} |\partial C|_{\mathrm{UV}} e^{-w/\xi}.
 \]</span></p>
-<p>Combining these gives an explicit precision dial:</p>
+<p>Combining these gives an explicit precision dial for bounded local
+observables:</p>
 <p><span class="math display">\[
-\delta_{\mathrm{step}} \lesssim 2\sqrt{\ln 2 \cdot c \cdot |\partial
-C|_{\mathrm{UV}}}
-\cdot e^{-\delta/(2\xi)}.
+\delta_{\mathrm{step}} \lesssim 2\sqrt{\ln 2 \cdot C_{\mathrm{mix}}
+|\partial C|_{\mathrm{UV}}}
+\cdot e^{-w/(2\xi)}.
 \]</span></p>
-<p><strong>What precision requires.</strong> To match the GW speed bound
-(<span class="math inline">\(\sim 10^{-15}\)</span> fractional
-accuracy), the recovery-map error must satisfy:</p>
+<p>For an operator normalized by <span
+class="math inline">\(\|O\|_\infty\le1\)</span>, an independently chosen
+absolute expectation-error target <span
+class="math inline">\(\tau_O\)</span> is guaranteed at one step if <span
+class="math inline">\(\delta_{\mathrm{step}}\le\tau_O\)</span>; the
+theorem therefore gives the sufficient CMI condition <span
+class="math inline">\(\varepsilon\le(\tau_O/2)^2/\ln2\)</span>. The
+target <span class="math inline">\(\tau_O\)</span> belongs only to the
+state–observable ledger and cannot be set by importing a
+gravitational-wave speed tolerance.</p>
+<p><strong>What the dial does not certify: dynamical
+parameters.</strong> The gravitational-wave propagation speed and the
+graviton mass are not bounded local observables. They are
+spectral/dispersion properties of the dynamical generator—poles of
+retarded correlators, or long-time wave-packet phase and group
+velocities—so the trace-distance inequality supplies neither their norm
+nor their Lipschitz constant. Two states can be close in trace distance
+at one time while being vacua of generators with different dispersion
+relations, and a small equal-time expectation error does not control
+phase accumulation over the <span class="math inline">\(\sim
+10^8\)</span>-year propagation baseline of GW170817. Consequently, <span
+class="math inline">\(\delta \lesssim 10^{-15}\)</span> is <em>not</em>
+a theory-side certificate for the multimessenger bound <span
+class="math inline">\(|c_{\mathrm{GW}}/c - 1| \lesssim 10^{-15}\)</span>
+of
+Section <a href="#513-precision-gravity-predictions-and-experimental-bounds" data-reference-type="ref" data-reference="513-precision-gravity-predictions-and-experimental-bounds">1.6.14</a>,
+and the recovery error must not be presented as the precision dial for
+that published bound. The ideal equalities <span
+class="math inline">\(m_g = 0\)</span>, <span
+class="math inline">\(c_{\mathrm{GW}} = c\)</span> belong to the exact
+derived-Einstein branch recorded there; stability of those equalities
+away from that branch is not a consequence of the trace-distance
+chain.</p>
+<p><strong>Required bridge (dynamical-parameter ledger; open).</strong>
+A sufficient acceptance gate can be stated precisely, but its hypotheses
+have not been derived from the Markov remainder in this paper. Let <span
+class="math inline">\(\mathcal B=[k_{\min},k_{\max}]\)</span>, with
+<span class="math inline">\(0&lt;k_{\min}&lt;k_{\max}\)</span>, be the
+declared experimental wave-number band. Suppose a future construction
+supplies, for each tensor helicity, a <span
+class="math inline">\(C^1\)</span> self-adjoint finite-regulator
+generator <span class="math inline">\(H_\nu^{\mathrm{TT}}(k)\)</span>
+and the GR reference generator <span
+class="math inline">\(H_0^{\mathrm{TT}}(k)\)</span>, expressed in
+angular-frequency units (<span class="math inline">\(\hbar=1\)</span>)
+on one specified common finite-dimensional helicity fiber or after a
+declared <span class="math inline">\(C^1\)</span> unitary identification
+of the two fibers. Assume that the reference graviton eigenvalue <span
+class="math inline">\(\omega_0(k)=ck\)</span> is simple in the helicity
+block and is separated from the rest of the spectrum by a uniform gap
+<span class="math inline">\(g_{\mathcal B}&gt;0\)</span>. Define</p>
 <p><span class="math display">\[
-\delta \lesssim 10^{-15}
-\quad \Rightarrow \quad
-\varepsilon \lesssim \frac{(\delta/2)^2}{\ln 2} \approx 3.6 \times
-10^{-31}.
+M_{\mathcal B}
+:=\frac{1}{c}\sup_{k\in\mathcal B}
+\left\|\partial_k H_0^{\mathrm{TT}}(k)\right\|_\infty
 \]</span></p>
-<p>This is extremely small, but achievable: with a macroscopic boundary
-(<span class="math inline">\(|\partial C|_{\mathrm{UV}} \sim
-10^{35}\)</span> for a meter-scale boundary at Planck UV scale), the
-exponential decay <span class="math inline">\(e^{-\delta/\xi}\)</span>
-with <span class="math inline">\(\delta/\xi \sim\)</span> a few hundred
-easily pushes below <span class="math inline">\(10^{-31}\)</span> once
-the prefactor is included.</p>
+<p>and the dimensionless dynamical error</p>
+<p><span class="math display">\[
+\eta_{\mathrm{dyn},\nu}
+:=\max\!\left\{
+\frac{1}{g_{\mathcal B}}\sup_{k\in\mathcal B}
+\left\|H_\nu^{\mathrm{TT}}(k)-H_0^{\mathrm{TT}}(k)\right\|_\infty,
+\frac{1}{c}\sup_{k\in\mathcal B}
+\left\|\partial_k H_\nu^{\mathrm{TT}}(k)-\partial_k
+H_0^{\mathrm{TT}}(k)\right\|_\infty
+\right\}.
+\]</span></p>
+<p>For <span
+class="math inline">\(\eta_{\mathrm{dyn},\nu}&lt;1/4\)</span>, let <span
+class="math inline">\(\omega_\nu(k)\)</span> be the continued isolated
+eigenvalue and define its group velocity by <span
+class="math inline">\(c_{\mathrm{GW},\nu}(k):=\partial_k\omega_\nu(k)\)</span>.
+The standard isolated-eigenvalue projector estimate and the
+Hellmann–Feynman formula then give, uniformly over <span
+class="math inline">\(\mathcal B\)</span>,</p>
+<p><span class="math display">\[
+\sup_{k\in\mathcal B}
+\left|\frac{c_{\mathrm{GW},\nu}(k)}{c}-1\right|
+\le L_{\mathcal B}\,\eta_{\mathrm{dyn},\nu},
+\qquad
+L_{\mathcal B}:=1+4M_{\mathcal B}.
+\]</span></p>
+<p>Indeed, if <span class="math inline">\(P_\nu(k)\)</span> and <span
+class="math inline">\(P_0(k)\)</span> are the rank-one spectral
+projectors, then <span
+class="math inline">\(\|P_\nu-P_0\|_\infty\le2\eta_{\mathrm{dyn},\nu}\)</span>,
+hence <span
+class="math inline">\(\|P_\nu-P_0\|_1\le4\eta_{\mathrm{dyn},\nu}\)</span>.
+Differentiating the isolated eigenvalue therefore bounds the
+group-velocity change by the derivative perturbation plus <span
+class="math inline">\(4M_{\mathcal
+B}c\,\eta_{\mathrm{dyn},\nu}\)</span>. This displays a dimensionless
+constant derived from a specified generator and uniform over the
+declared band. If <span class="math inline">\(q:=L_{\mathcal
+B}\eta_{\mathrm{dyn},\nu}&lt;1\)</span>, then stationary propagation at
+fixed group velocity over path length <span
+class="math inline">\(D\)</span> obeys the group-delay bound</p>
+<p><span class="math display">\[
+|\Delta t|\le \frac{D}{c}\frac{q}{1-q}.
+\]</span></p>
+<p>The same bound applies to varying propagation only if it holds
+pointwise along the entire path; on a cosmological path, the redshifted
+wave number must remain inside <span class="math inline">\(\mathcal
+B\)</span>. A wave-packet phase bound likewise requires uniform control
+of the inverse dispersion <span
+class="math inline">\(k_\nu(\omega)\)</span> on the corresponding
+frequency band. A graviton-mass bound is a separate spectral estimate at
+<span class="math inline">\(k=0\)</span>; it is not a corollary of the
+band-limited speed estimate.</p>
+<p>What remains open is the OPH-specific bridge. One must</p>
+<ol type="1">
+<li><p>construct <span
+class="math inline">\(H_\nu^{\mathrm{TT}}\)</span>, or an equivalent
+retarded two-point kernel, from the finite and scaling OPH
+dynamics;</p></li>
+<li><p>prove a norm-resolvent, quadratic-form, or correlator estimate of
+the form <span class="math inline">\(\eta_{\mathrm{dyn},\nu}\le
+C_{\mathcal B}r_N\)</span>, where <span
+class="math inline">\(r_N:=\min(2,\sum_{k=2}^N\delta_k)\)</span> is the
+accumulated trace-norm recovery bound of Theorem 3.1 for the associated
+<span class="math inline">\(N\)</span>-step construction and <span
+class="math inline">\(C_{\mathcal B}\)</span> is derived rather than
+assumed; and</p></li>
+<li><p>apply the resulting band-uniform dispersion estimate to the
+detector band and propagation baseline, including phase accumulation
+where used by the likelihood.</p></li>
+</ol>
+<p>Only after the second item is proved may one combine the estimates to
+obtain</p>
+<p><span class="math display">\[
+\sup_{k\in\mathcal B}
+\left|\frac{c_{\mathrm{GW},\nu}(k)}{c}-1\right|
+\le L_{\mathcal B}C_{\mathcal B}r_N.
+\]</span></p>
+<p>No estimate <span class="math inline">\(\eta_{\mathrm{dyn},\nu}\le
+C_{\mathcal B}r_N\)</span> is proved here. Substituting <span
+class="math inline">\(\delta_k\)</span>, <span
+class="math inline">\(\delta_{\mathrm{step}}\)</span>, or any equal-time
+trace-distance error for <span
+class="math inline">\(\eta_{\mathrm{dyn},\nu}\)</span> without that
+bridge is invalid.</p>
 <p><strong>Precision summary.</strong> The framework provides:</p>
 <ol type="1">
-<li><p>Exact-zero predictions (<span class="math inline">\(m_g =
-0\)</span>, <span class="math inline">\(c_{\mathrm{GW}} = c\)</span>)
-from symmetry protection.</p></li>
-<li><p>Translation of those zeros into the specific observables
-experiments constrain.</p></li>
-<li><p>Explicit bounds on how far derived geometric statements can
-drift, using the conditional mutual information <span
-class="math inline">\(\to\)</span> trace distance <span
-class="math inline">\(\to\)</span> observable error chain.</p></li>
+<li><p>The ideal derived-Einstein-branch statements <span
+class="math inline">\(m_g = 0\)</span> and <span
+class="math inline">\(c_{\mathrm{GW}} = c\)</span>.</p></li>
+<li><p>Translation of those ideal equalities into the specific
+observables experiments constrain
+(Section <a href="#513-precision-gravity-predictions-and-experimental-bounds" data-reference-type="ref" data-reference="513-precision-gravity-predictions-and-experimental-bounds">1.6.14</a>).</p></li>
+<li><p>Explicit bounds on how far expectation values of bounded local
+observables in the recovered state can drift, using the conditional
+mutual information <span class="math inline">\(\to\)</span> trace
+distance <span class="math inline">\(\to\)</span> observable error
+chain.</p></li>
 </ol>
-<p>This is the concrete path from "axioms about screens" to "precision
-GR predictions with quantitative error control."</p>
+<p>It therefore provides quantitative error control on recovered states
+and bounded observables, but no present theory-side certificate for the
+published GW-speed or graviton-mass bounds. Dynamical-parameter
+certification remains in the separate open ledger above.</p>
 <h3 id="dark-sector-response-from-the-modular-anomaly">Dark-sector
 response from the modular anomaly</h3>
 <p>This subsection records a D12 continuation benchmark obtained by
@@ -4858,6 +5812,130 @@ common-parent response pole certify a physical <span
 class="math inline">\(\Gamma_{\mathrm{rec}}\)</span>. Physical
 likelihood promotion additionally requires immutable source, solver, and
 likelihood hashes frozen before the data comparison.</p>
+<h4 id="canonical-finite-covariant-collar-packet-parent">Canonical
+finite covariant collar-packet parent.</h4>
+<p>For a regulator <span class="math inline">\(r\)</span> and background
+<span class="math inline">\((X,g)\)</span>, the source object is <span
+class="math display">\[
+\mathcal P_r[X,g]=
+(\mathcal C_r,g_r,e_r,U_r,Z_r,\omega_r,p_r,f_r,\Phi_r,\mathcal R_r,
+\mathcal G_r,\pi_r,\mathsf{Read}_r).
+\]</span> Here <span class="math inline">\(\mathcal C_r\)</span> is a
+finite causal cell complex with oriented faces, cell four-volumes,
+causal adjacency, and finite parallel transports <span
+class="math inline">\(U_{F\to c}\)</span>; <span
+class="math inline">\(e_r\)</span> is the tetrad/local-frame data; <span
+class="math inline">\(Z_r=\bigsqcup_s Z_{s,r}\)</span> is the packet
+state space for anomaly, recipient, radiation, standard matter, and any
+interaction sector; <span
+class="math inline">\(\omega_r,p_r,f_r\)</span> are invariant weights,
+local momenta, and occupations; <span
+class="math inline">\(\Phi_r\)</span> is the face flux; <span
+class="math inline">\(\mathcal R_r\)</span> is the reaction channel
+list; <span class="math inline">\(\mathcal G_r\)</span> is the finite
+gauge/quotient data; <span class="math inline">\(\pi_r\)</span> is the
+restriction/refinement map; and <span
+class="math inline">\(\mathsf{Read}_r\)</span> is the local observable
+readout. With signature <span class="math inline">\((-+++)\)</span>,
+every packet used in a kinetic stress branch must satisfy <span
+class="math inline">\(g_{ab}p_z^ap_z^b=-m_z^2\)</span>, <span
+class="math inline">\(p_z^0&gt;0\)</span>, and <span
+class="math inline">\(\omega_z f_{c,z}\ge0\)</span>, with the invariant
+measure convention declared explicitly.</p>
+<h4 id="scalar-to-stress-nonuniqueness">Scalar-to-stress
+nonuniqueness.</h4>
+<p>A scalar collar row, even a finite row for <span
+class="math inline">\(\rho_A(a)\)</span>, <span
+class="math inline">\(\rho_{A,\mathrm{eq}}(a)\)</span>, or <span
+class="math inline">\(B_A(k,a)\)</span>, does not determine a stress
+tensor. Many inequivalent packet parents can have the same scalar
+density while differing in pressure, sound speed, anisotropic stress,
+exchange current, gauge-invariant perturbation variables, and causal
+response. Therefore no evidence bundle may promote scalar rows to
+physical CMB, lensing, growth, or <span
+class="math inline">\(S_8\)</span> inputs unless the parent supplies the
+missing stress and response variables.</p>
+<h4 id="finite-maxent-lift">Finite MaxEnt lift.</h4>
+<p>When only finitely many one-cell source readings <span
+class="math inline">\(e_x(u_i)=T^A_{ab}(x)u_i^au_i^b\)</span> are
+available, a stress lift is not unique until the branch supplies a
+finite selection rule. The admissible MaxEnt lift minimizes no hidden
+observational residual: it maximizes the declared packet entropy subject
+to the source readings, mass shells, conserved charges, local frame
+covariance, and refinement restrictions. The lift is physical only when
+held-out timelike probes pass a quadraticity/tomography test and the
+variational stress agrees with the packet-moment stress in the
+predeclared norm.</p>
+<h4 id="packet-stress-and-exchange-closure">Packet stress and exchange
+closure.</h4>
+<p>For a kinetic parent, <span class="math display">\[
+T_{I,r}^{ab}(c)=
+\frac{1}{V_c}\sum_{z\in Z_{I,r}(c)}\omega_zf_{c,z}p_z^ap_z^b ,
+\qquad
+J_{I,r}^a(c)=
+\frac{1}{V_c}\sum_{z\in Z_{I,r}(c)}\omega_zf_{c,z}p_z^a .
+\]</span> More general packet parents may add an internal stress <span
+class="math inline">\(\Sigma_z^{ab}\)</span>, but then <span
+class="math inline">\(\Sigma_z^{ab}\)</span> is part of the primitive
+parent data and must obey the same local-frame and refinement checks.
+The finite transport/reaction equation must imply <span
+class="math display">\[
+\operatorname{Div}_r T_{I,r}^{ab}=Q_{I,r}^b,\qquad
+\sum_I Q_{I,r}^b=0.
+\]</span> If the repair exchange is nonzero, a row labelled “recipient”
+is not enough: the recipient stress <span
+class="math inline">\(T_R^{ab}\)</span>, exchange current <span
+class="math inline">\(Q_R^b\)</span>, and closure residual <span
+class="math inline">\(Q_A^b+Q_R^b\)</span> must be emitted and
+certified. If exchange is off, the parent instead emits a
+repair-exchange-off receipt.</p>
+<h4 id="response-rate-and-gauge-receipts">Response, rate, and gauge
+receipts.</h4>
+<p>The finite causal response must provide a finite domain of
+dependence, subluminal characteristic bound, retarded support residual,
+and response stability residual. The transition-matrix diagnostic may be
+called <span class="math inline">\(\gamma_{\mathrm{repair\
+step}}\)</span> until the active fiber, conserved-sector decomposition,
+physical clock <span
+class="math inline">\(\Delta\tau_{\mathrm{physical}}\)</span>, and
+common parent response pole are certified. Only then may one write <span
+class="math display">\[
+\Gamma_{\mathrm{rec}}=
+-\operatorname{Re}\lambda_{\mathrm{active}}/\Delta\tau_{\mathrm{physical}}
+.
+\]</span> Gauge checks must be stated in gauge-invariant or rest-frame
+variables; raw Newtonian/synchronous agreement is a diagnostic, not a
+gauge-independence receipt.</p>
+<h4 id="receipt-hierarchy">Receipt hierarchy.</h4>
+<p>The finite parent receipt is the conjunction of primitive evidence
+receipts, not a producer-declared boolean. The source-side conjunction
+includes <span class="math display">\[
+\begin{gathered}
+\texttt{SOURCE\_ROUTE},\ \texttt{ENTROPY\_UNIT},\
+\texttt{MODULAR\_NONADDITIVITY\_IDENTITY},\
+\texttt{SOURCE\_LOCALIZATION},\
+\texttt{STRESS\_TOMOGRAPHY},\\
+\texttt{FINITE\_PACKET\_KINEMATICS},\
+\texttt{PACKET\_MASS\_SHELL},\
+\texttt{TRANSPORT\_COVARIANCE},\
+\texttt{CHANNEL\_FOUR\_MOMENTUM},\
+\texttt{FINITE\_PACKET\_STRESS\_READOUT},\\
+\texttt{VARIATIONAL\_MOMENT\_STRESS\_AGREEMENT},\
+\texttt{LOCAL\_FRAME\_COVARIANCE},\
+\texttt{CARRIER\_QUOTIENT\_INVARIANCE},\\
+\texttt{TOTAL\_STRESS\_CLOSURE},\
+\texttt{EXCHANGE\_CURRENT\_CLOSURE},\
+\texttt{COSMOLOGICAL\_GAUGE\_INVARIANCE},\\
+\texttt{FINITE\_DOMAIN\_OF\_DEPENDENCE},\
+\texttt{SUBLUMINAL\_CHARACTERISTICS},\
+\texttt{RETARDED\_RESPONSE},\
+\texttt{RESPONSE\_STABILITY},\\
+\texttt{REFINEMENT\_CONVERGENCE},\
+\texttt{CDM\_LIMIT\_RECOVERY}.
+\end{gathered}
+\]</span> Frozen source, solver, likelihood, and data hashes are later
+promotion receipts. They do not belong to the parent theorem and cannot
+rescue a failed parent.</p>
 <p>The same firewall applies to the promoted CMB-source inputs <span
 class="math display">\[
 \eta_R,\quad \gamma_{\mathrm{repair\ step}}\hbox{ or certified
@@ -5839,11 +6917,16 @@ Ward-projected electromagnetic readout. QED.</p>
 id="refinement-stability-and-unprotected-relevant-operators">Refinement
 stability and unprotected relevant operators</h3>
 <p>The refinement-stability used later in the gauge branch is contained
-in the third OPH axiom. Because the same finite local constraint family
-is preserved across cutoffs, the realized UV states lie in one common
-finite-dimensional MaxEnt family rather than in a new coupling space at
-every refinement step. The selected stable branch of this family is
-therefore not an extra axiom beyond the MaxEnt branch itself.</p>
+in the third OPH axiom through its refinement-closure clause. By that
+clause the same finite local constraint family is preserved across
+cutoffs, so the realized UV states lie in one common finite-dimensional
+MaxEnt family rather than in a new coupling space at every refinement
+step. The selected stable branch of this family is therefore not an
+extra axiom beyond the MaxEnt branch itself, but the closure clause it
+relies on is a substantive renormalization condition: coarse-graining a
+finite-range Gibbs family generically generates interactions outside any
+fixed finite density list, and no closure/projection theorem with
+truncation errors is proved here.</p>
 <p>Concretely, if <span class="math display">\[
 \omega_\ell(\lambda)
 \mathrel{=}
@@ -5852,9 +6935,9 @@ Z_\ell(\lambda)^{-1}
 -\sum_x \sum_a \lambda_a O_a(x)-\sum_b \mu_b Q_b
 \right),
 \]</span> then any refinement channel <span
-class="math inline">\(\Phi_{\ell\to L}\)</span> compatible with Axiom 3
-acts on the realized branch by an induced finite-dimensional map <span
-class="math display">\[
+class="math inline">\(\Phi_{\ell\to L}\)</span> compatible with Axiom 3,
+including its refinement-closure clause, acts on the realized branch by
+an induced finite-dimensional map <span class="math display">\[
 \Phi_{\ell\to L}\bigl(\omega_\ell(\lambda)\bigr)
 \mathrel{=}
 \omega_L\!\bigl(R_{\ell\to L}(\lambda)\bigr).

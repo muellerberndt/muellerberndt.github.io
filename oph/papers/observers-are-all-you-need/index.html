@@ -32,7 +32,7 @@
   <meta name="citation_pdf_url" content="https://floatingpragma.io/oph/papers/observers-are-all-you-need/paper.pdf" />
   <meta name="citation_abstract_html_url" content="https://floatingpragma.io/oph/papers/observers-are-all-you-need/" />
   <meta name="citation_technical_report_institution" content="Pragma Research" />
-  <meta name="citation_technical_report_number" content="OPH r1531 observers_are_all_you_need" />
+  <meta name="citation_technical_report_number" content="OPH r1532 observers_are_all_you_need" />
   <meta name="DC.title" content="Observers Are All You Need" />
   <meta name="DC.creator" content="Bernhard Mueller" />
   <meta name="DC.creator" content="Alexander Osika" />
@@ -151,7 +151,7 @@
   ],
   "datePublished": "July 11, 2026",
   "dateModified": "July 11, 2026",
-  "version": "r1531",
+  "version": "r1532",
   "subjectOf": [
     {
       "@type": "BlogPosting",
@@ -254,14 +254,14 @@
             <p>OPH builds physics from finite public records on horizon-screen cuts. The paper presents the observer-first reconstruction of spacetime, gravity, Standard Model structure, cosmology, particles, records, and simulation-theory interpretation.</p>
           </div>
           <div class="paper-meta-line">
-            <span>r1531</span>
+            <span>r1532</span>
             <span>July 11, 2026</span>
             <span>papers</span>
           </div>
           <div class="cta-row">
             <a class="btn btn-primary" href="/oph/papers/observers-are-all-you-need/paper.pdf" target="_blank" rel="noopener noreferrer" data-track-link="paper-pdf-observers_are_all_you_need">Download PDF</a>
             <a class="btn btn-secondary" href="/oph/papers/" data-track-link="paper-index">All OPH papers</a>
-            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r1531" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
+            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r1532" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
             <a class="btn btn-secondary" href="https://challenge.floatingpragma.io/" data-track-link="paper-challenge">Challenge</a>
           </div>
 
@@ -291,7 +291,7 @@
         </header>
         <div class="paper-reader-grid">
           <div class="paper-body">
-<p><strong>Paper release:</strong> <code>r1531</code>
+<p><strong>Paper release:</strong> <code>r1532</code>
 <strong>Released:</strong> July 11, 2026</p>
 <p><strong>Author af f iliations:</strong> <sup>1</sup>Pragma Inc.,
 Washington, USA; <sup>2</sup>SNRGY Inc., Gothenburg, Sweden.</p>
@@ -1589,26 +1589,46 @@ the global state <span class="math inline">\(\omega\)</span> maximizes
 von Neumann entropy subject to:</p>
 <ol type="1">
 <li><p>A finite set <span class="math inline">\(\{O_a\}\)</span> of
-gauge-invariant local operators, each supported on a ball of radius
-<span class="math inline">\(\le r_0 =
+gauge-invariant local operator densities, each supported on a ball of
+radius <span class="math inline">\(\le r_0 =
 O(\ell_{\mathrm{UV}})\)</span>.</p></li>
-<li><p>Constraint equations <span class="math inline">\(\langle O_a(x)
-\rangle = c_a\)</span> for each cell <span
-class="math inline">\(x\)</span> in the UV lattice.</p></li>
+<li><p>Constraint equations <span class="math inline">\(\bigl\langle
+\sum_x O_a(x) \bigr\rangle = C_a\)</span>, one homogeneous global sum
+per density label <span class="math inline">\(a\)</span>, where <span
+class="math inline">\(x\)</span> runs over the cells of the UV lattice.
+The constraints are the <span
+class="math inline">\(N_{\mathrm{con}}\)</span> global sums, not one
+independent constraint per cell, so the number of independent
+constraints and of Lagrange multipliers is <span
+class="math inline">\(N_{\mathrm{con}}\)</span> (plus the optional
+global constraints below) on every lattice, independent of the cell
+count.</p></li>
 <li><p>Optionally, a finite number of global constraints (total energy,
 charge).</p></li>
 </ol>
 <p>This is the minimal specification needed to derive the local Gibbs
-form of Lemma 2.6 from Axiom 3.</p>
+form of Lemma 2.6 from Axiom 3 with a cutoff-independent multiplier
+count.</p>
 <p><strong>Clarification (MaxEnt <span
 class="math inline">\(\neq\)</span> thermal equilibrium).</strong>
 MaxEnt here is <strong>local state selection</strong> given constraints,
-not "the universe is in thermal equilibrium." The Lagrange multipliers
-(inverse temperatures) may vary slowly in space and time.
-Non-equilibrium physics appears as gradients in these multipliers and as
-controlled violations of exact Markov additivity under the explicit
-mixing hypotheses stated later in Section 2.3. Equilibrium is an
-approximation regime with explicit error terms.</p>
+not "the universe is in thermal equilibrium." Non-equilibrium physics is
+modeled in the enlarged <em>local-multiplier</em> family obtained by
+replacing the homogeneous multipliers <span
+class="math inline">\(\lambda_a\)</span> with slowly varying fields
+<span class="math inline">\(\lambda_a(x)\)</span>, equivalently by
+imposing per-cell constraints <span class="math inline">\(\langle
+O_a(x)\rangle = c_a(x)\)</span>. That enlarged family has dimension
+proportional to the number of UV cells, so it is a function-space
+approximation regime with gradient error terms, not the
+finite-dimensional family of the refinement argument: the
+refinement-stable branch and the induced maps <span
+class="math inline">\(R_{\ell\to L}\)</span> below are always statements
+about the homogeneous <span
+class="math inline">\(N_{\mathrm{con}}\)</span>-parameter branch.
+Controlled violations of exact Markov additivity appear under the
+explicit mixing hypotheses stated later in Section 2.3. Equilibrium is
+an approximation regime with explicit error terms.</p>
 <p><strong>Rotationally invariant constraint branch.</strong> Constraint
 sets are <span class="math inline">\(\mathrm{SO}(3)\)</span>-invariant
 on <span class="math inline">\(S^2\)</span>.</p>
@@ -1721,21 +1741,30 @@ package used in Theorem 4.2.</p>
 of coarse-graining channels <span class="math inline">\(\Phi_{\ell\to
 L}\)</span> between UV scale <span class="math inline">\(\ell\)</span>
 and IR scale <span class="math inline">\(L\)</span> that is compatible
-with the third OPH axiom. Then on the realized branch one may write</p>
+with the third OPH axiom, including its refinement-closure clause. Then
+on the realized branch one may write</p>
 <p><span class="math display">\[
 \Phi_{\ell\to
 L}\bigl(\omega_{\ell}(\lambda)\bigr)=\omega_{L}\!\bigl(R_{\ell\to
 L}(\lambda)\bigr),
 \]</span></p>
 <p>for an induced map <span class="math inline">\(R_{\ell\to L}\)</span>
-on one common finite-dimensional multiplier family. Because the same
-finite constraint family is preserved, the regulator states lie in that
-shared multiplier family rather than in unrelated state spaces at
-different cutoffs, and the realized branch is the persistent trajectory
-or invariant subset selected inside it under the induced refinement
-maps. This is a state-side persistence statement; it does not by itself
-upgrade fixed-cutoff edge labels to a transportable
-refinement-persistent sector colimit.</p>
+on the common finite-dimensional homogeneous multiplier family. The
+existence of <span class="math inline">\(R_{\ell\to L}\)</span> as a
+self-map of that same finite-dimensional family is exactly the closure
+clause, not a bookkeeping consequence of reusing the labels <span
+class="math inline">\(a\)</span>: coarse-graining a finite-range Gibbs
+family generically generates interactions outside the retained density
+list, and the axiom asserts that on the realized branch those generated
+directions vanish or are absorbed into the retained family; no
+closure/projection theorem with truncation errors is proved here.
+Granting closure, the regulator states lie in that shared multiplier
+family rather than in unrelated state spaces at different cutoffs, and
+the realized branch is the persistent trajectory or invariant subset
+selected inside it under the induced refinement maps. This is a
+state-side persistence statement; it does not by itself upgrade
+fixed-cutoff edge labels to a transportable refinement-persistent sector
+colimit.</p>
 <p><strong>Fixed-cutoff realized presentation.</strong> At a UV scale
 <span class="math inline">\(\ell_{\mathrm{UV}}\)</span>, local patch
 algebras are type-I with finite-dimensional Hilbert spaces, and
@@ -3159,19 +3188,26 @@ lemma and axiom provide the quantitative decay route used when the
 manuscript keeps the approximation explicit.</p>
 <blockquote>
 <p><strong>Lemma 2.6 (MaxEnt with local constraints implies local Gibbs
-form).</strong> Under the local MaxEnt branch of Axiom 3 and the
-finite-dimensional regulator realization above, the MaxEnt state has the
-Gibbs form</p>
+form).</strong> Under the local MaxEnt branch of Axiom 3, with its
+homogeneous global-sum constraints <span
+class="math inline">\(\langle\sum_x O_a(x)\rangle = C_a\)</span>, and
+the finite-dimensional regulator realization above, the MaxEnt state has
+the Gibbs form</p>
 <p><span class="math display">\[\omega =
 \frac{e^{-H_{\mathrm{eff}}}}{\mathrm{Tr}\,e^{-H_{\mathrm{eff}}}},
 \qquad
 H_{\mathrm{eff}} = \sum_x \sum_a \lambda_a O_a(x) + \text{(global
 terms)},\]</span></p>
 <p>where the sum runs over UV cells <span
-class="math inline">\(x\)</span> and constraint operators <span
-class="math inline">\(O_a\)</span>. The effective Hamiltonian <span
-class="math inline">\(H_{\mathrm{eff}}\)</span> is quasi-local with
-range <span class="math inline">\(O(\ell_{\mathrm{UV}})\)</span>.</p>
+class="math inline">\(x\)</span> and density labels <span
+class="math inline">\(a\)</span>, with one cell-independent multiplier
+<span class="math inline">\(\lambda_a\)</span> per label. The effective
+Hamiltonian <span class="math inline">\(H_{\mathrm{eff}}\)</span> is
+quasi-local with range <span
+class="math inline">\(O(\ell_{\mathrm{UV}})\)</span>, and the multiplier
+count matches the constraint count <span
+class="math inline">\(N_{\mathrm{con}}\)</span> plus the number of
+retained global terms on every lattice.</p>
 <p><strong>Proof.</strong> On a finite-dimensional algebra, the unique
 state maximizing <span class="math inline">\(S(\rho) = -\mathrm{Tr}(\rho
 \log \rho)\)</span> subject to linear constraints <span
@@ -3179,11 +3215,19 @@ class="math inline">\(\mathrm{Tr}(\rho O_i) = c_i\)</span> is given by
 Lagrange multipliers:</p>
 <p><span class="math display">\[\rho = \frac{e^{-\sum_i \lambda_i
 O_i}}{\mathrm{Tr}\,e^{-\sum_i \lambda_i O_i}}.\]</span></p>
-<p>Strict concavity of von Neumann entropy ensures uniqueness. When the
-constraints are "translated local" (the same <span
-class="math inline">\(O_a\)</span> at each cell <span
-class="math inline">\(x\)</span>), the exponent is a sum of local terms.
-QED.</p>
+<p>Strict concavity of von Neumann entropy ensures uniqueness. Here the
+constrained operators are the <span
+class="math inline">\(N_{\mathrm{con}}\)</span> global sums <span
+class="math inline">\(O_a := \sum_x O_a(x)\)</span> plus the finitely
+many global terms, so the exponent is <span class="math inline">\(\sum_a
+\lambda_a \sum_x O_a(x) + \text{(global terms)}\)</span>: a sum of local
+terms with one shared multiplier per density label. Had the constraints
+instead been imposed per cell, <span class="math inline">\(\langle
+O_a(x)\rangle = c_a(x)\)</span>, the multipliers would be cell-dependent
+fields <span class="math inline">\(\lambda_a(x)\)</span> and the family
+would grow with the lattice; that enlarged family belongs to the
+non-equilibrium approximation regime of the clarification above and is
+not the branch used in the refinement argument. QED.</p>
 </blockquote>
 <p><strong>Exponential mixing hypothesis.</strong> There exist constants
 <span class="math inline">\(c\)</span> and correlation length <span
@@ -3355,9 +3399,13 @@ rigidity gives the geometric cap automorphism.</p>
 constraint family <span class="math inline">\(\mathcal C\)</span> is
 generated by finitely many gauge-invariant local densities <span
 class="math inline">\(\{O_a(x)\}\)</span> of UV range <span
-class="math inline">\(O(\ell_{\mathrm{UV}})\)</span>, with the same
-finite label set retained under refinement. This clause unpacks the
-third OPH axiom at regulator level and adds no separate postulate.</p>
+class="math inline">\(O(\ell_{\mathrm{UV}})\)</span>, constrained
+through their homogeneous global sums <span
+class="math inline">\(\langle\sum_x O_a(x)\rangle = C_a\)</span>, with
+the same finite label set retained under refinement by the
+refinement-closure clause of the third OPH axiom. This clause unpacks
+that axiom at regulator level and adds no postulate beyond it; the
+closure clause itself is the substantive assumption.</p>
 <p><strong>Theorem 2.6 (Local constraints imply a local-Gibbs
 form).</strong> If the MaxEnt constraints are expectations of finitely
 many quasi-local operators <span class="math inline">\(\{O_a\}\)</span>
@@ -3400,16 +3448,19 @@ C_{\psi,\phi,I_{\max}}\,|I&#39;\Delta I|,
 propagation and endpoint-Lipschitz control are not external regularity
 selectors; they are the local-constraint MaxEnt branch written in
 dynamical form.</p>
-<p><strong>Refinement-stable multiplier branch.</strong> Because the
-same finite constraint family is preserved under coarse-graining, the
-regulator states lie in one common finite-dimensional multiplier family
-rather than in unrelated state spaces at different cutoffs. The
-“refinement-stable” language used later therefore means persistence
-along the stable or fixed branch of this multiplier family. This
-state-side notion is enough to compare realized states across cutoffs.
-The fixed-cutoff bosonic sector category is constructed in
-FixedCutoffBosonicSectorCategory, and the refinement functors plus
-finite bosonic fiber descent are constructed in
+<p><strong>Refinement-stable multiplier branch.</strong> By the
+refinement-closure clause of the third OPH axiom—a substantive
+renormalization condition, since coarse-graining a finite-range Gibbs
+family generically generates interactions outside any fixed finite
+density list—the same finite constraint family is preserved under
+coarse-graining, and the regulator states lie in one common
+finite-dimensional multiplier family rather than in unrelated state
+spaces at different cutoffs. The “refinement-stable” language used later
+therefore means persistence along the stable or fixed branch of this
+multiplier family. This state-side notion is enough to compare realized
+states across cutoffs. The fixed-cutoff bosonic sector category is
+constructed in FixedCutoffBosonicSectorCategory, and the refinement
+functors plus finite bosonic fiber descent are constructed in
 RefinementFunctorAndFiberDescent. The realized compact-gauge witness
 theorem supplies nonempty realized MAR-admissible witness data, but the
 Standard Model selection step is the later MAR application to sector
@@ -6401,70 +6452,223 @@ class="math inline">\(\times\)</span> 10<sup>-4</sup></p></li>
 <li><p>Binary pulsar radiative damping (PSR J0737-3039): 0.999963 <span
 class="math inline">\(\pm\)</span> 0.000063</p></li>
 </ul>
-<h3 id="theory-side-error-propagation-from-markov-bounds">Theory-side
-error propagation from Markov bounds</h3>
-<p>The framework provides exact-zero predictions and quantitative
-control over how well those predictions hold. The Markov/recovery
-machinery can be propagated through the entire GR emergence chain.</p>
+<h3
+id="stateobservable-error-propagation-and-the-dynamical-bridge">State–observable
+error propagation and the dynamical bridge</h3>
+<p>On the ideal derived Einstein branch, the framework states the
+equalities recorded in
+Section <a href="#513-precision-gravity-predictions-and-experimental-bounds" data-reference-type="ref" data-reference="513-precision-gravity-predictions-and-experimental-bounds">4.6.14</a>.
+Finite Markov/recovery control supplies a separate and more limited
+quantitative statement. This subsection therefore keeps two error
+ledgers separate. The <em>state–observable ledger</em> tracks
+expectation values of specified bounded local observables in a recovered
+state; the Markov/recovery machinery controls this ledger. The
+<em>dynamical-parameter ledger</em> tracks spectral and dispersion
+properties of an evolution generator—propagation speeds, graviton mass,
+and correlator poles. The trace-distance chain alone does <em>not</em>
+control that ledger.</p>
 <p><strong>The key quantitative hook.</strong> From Theorem 3.1, if the
 target state satisfies</p>
 <p><span class="math display">\[
 I(A_k : C_k \mid B_k) \le \varepsilon_k,
 \]</span></p>
-<p>then recovery maps exist with trace-distance error</p>
+<p>then, writing <span class="math inline">\(\rho\)</span> for the
+target state and <span class="math inline">\(\sigma\)</span> for its
+recovered comparison state, the recovery map gives the trace-norm
+bound</p>
 <p><span class="math display">\[
-\delta_k = 2\sqrt{\ln 2 \cdot \varepsilon_k}.
+\|\rho-\sigma\|_1\le \delta_k
+:=2\sqrt{\ln 2 \cdot \varepsilon_k}.
 \]</span></p>
-<p>Trace distance gives immediate bounds on observable errors. Using the
-standard dual norm inequality:</p>
+<p><strong>State–observable ledger.</strong> Trace distance gives
+immediate bounds on expectation-value errors for the declared operator
+class: bounded operators supported in the recovered region, compared at
+the time of recovery. Using the standard dual norm inequality:</p>
 <p><span class="math display">\[
 |\langle O \rangle_\rho - \langle O \rangle_\sigma|
 \le \|O\|_\infty \|\rho - \sigma\|_1 = 2 \|O\|_\infty D(\rho, \sigma),
 \]</span></p>
 <p>where <span class="math inline">\(D(\rho, \sigma) = \frac{1}{2}\|\rho
-- \sigma\|_1\)</span> is the trace distance.</p>
-<p><strong>Exponential decay from the mixing hypothesis.</strong> The
-mixing assumption (Section 2.3) provides:</p>
+- \sigma\|_1\)</span> is the trace distance. This inequality is exactly
+as strong as it looks and no stronger: the norm <span
+class="math inline">\(\|O\|_\infty\)</span> is the Lipschitz constant
+only for bounded <span class="math inline">\(O\)</span>, and the
+comparison is an equal-time statement about states.</p>
+<p><strong>Exponential decay from the mixing hypothesis.</strong>
+Writing <span class="math inline">\(w\)</span> for collar width, so it
+is not confused with the recovery error <span
+class="math inline">\(\delta_k\)</span>, the mixing assumption (Section
+2.3) provides</p>
 <p><span class="math display">\[
-I_\omega(A_\delta : D_\delta \mid B_\delta)
-\le c \cdot |\partial C|_{\mathrm{UV}} \cdot e^{-\delta/\xi}.
+I_\omega(A_w : D_w \mid B_w)
+\le C_{\mathrm{mix}} |\partial C|_{\mathrm{UV}} e^{-w/\xi}.
 \]</span></p>
-<p>Combining these gives an explicit precision dial:</p>
+<p>Combining these gives an explicit precision dial for bounded local
+observables:</p>
 <p><span class="math display">\[
-\delta_{\mathrm{step}} \lesssim 2\sqrt{\ln 2 \cdot c \cdot |\partial
-C|_{\mathrm{UV}}}
-\cdot e^{-\delta/(2\xi)}.
+\delta_{\mathrm{step}} \lesssim 2\sqrt{\ln 2 \cdot C_{\mathrm{mix}}
+|\partial C|_{\mathrm{UV}}}
+\cdot e^{-w/(2\xi)}.
 \]</span></p>
-<p><strong>What precision requires.</strong> To match the GW speed bound
-(<span class="math inline">\(\sim 10^{-15}\)</span> fractional
-accuracy), the recovery-map error must satisfy:</p>
+<p>For an operator normalized by <span
+class="math inline">\(\|O\|_\infty\le1\)</span>, an independently chosen
+absolute expectation-error target <span
+class="math inline">\(\tau_O\)</span> is guaranteed at one step if <span
+class="math inline">\(\delta_{\mathrm{step}}\le\tau_O\)</span>; the
+theorem therefore gives the sufficient CMI condition <span
+class="math inline">\(\varepsilon\le(\tau_O/2)^2/\ln2\)</span>. The
+target <span class="math inline">\(\tau_O\)</span> belongs only to the
+state–observable ledger and cannot be set by importing a
+gravitational-wave speed tolerance.</p>
+<p><strong>What the dial does not certify: dynamical
+parameters.</strong> The gravitational-wave propagation speed and the
+graviton mass are not bounded local observables. They are
+spectral/dispersion properties of the dynamical generator—poles of
+retarded correlators, or long-time wave-packet phase and group
+velocities—so the trace-distance inequality supplies neither their norm
+nor their Lipschitz constant. Two states can be close in trace distance
+at one time while being vacua of generators with different dispersion
+relations, and a small equal-time expectation error does not control
+phase accumulation over the <span class="math inline">\(\sim
+10^8\)</span>-year propagation baseline of GW170817. Consequently, <span
+class="math inline">\(\delta \lesssim 10^{-15}\)</span> is <em>not</em>
+a theory-side certificate for the multimessenger bound <span
+class="math inline">\(|c_{\mathrm{GW}}/c - 1| \lesssim 10^{-15}\)</span>
+of
+Section <a href="#513-precision-gravity-predictions-and-experimental-bounds" data-reference-type="ref" data-reference="513-precision-gravity-predictions-and-experimental-bounds">4.6.14</a>,
+and the recovery error must not be presented as the precision dial for
+that published bound. The ideal equalities <span
+class="math inline">\(m_g = 0\)</span>, <span
+class="math inline">\(c_{\mathrm{GW}} = c\)</span> belong to the exact
+derived-Einstein branch recorded there; stability of those equalities
+away from that branch is not a consequence of the trace-distance
+chain.</p>
+<p><strong>Required bridge (dynamical-parameter ledger; open).</strong>
+A sufficient acceptance gate can be stated precisely, but its hypotheses
+have not been derived from the Markov remainder in this paper. Let <span
+class="math inline">\(\mathcal B=[k_{\min},k_{\max}]\)</span>, with
+<span class="math inline">\(0&lt;k_{\min}&lt;k_{\max}\)</span>, be the
+declared experimental wave-number band. Suppose a future construction
+supplies, for each tensor helicity, a <span
+class="math inline">\(C^1\)</span> self-adjoint finite-regulator
+generator <span class="math inline">\(H_\nu^{\mathrm{TT}}(k)\)</span>
+and the GR reference generator <span
+class="math inline">\(H_0^{\mathrm{TT}}(k)\)</span>, expressed in
+angular-frequency units (<span class="math inline">\(\hbar=1\)</span>)
+on one specified common finite-dimensional helicity fiber or after a
+declared <span class="math inline">\(C^1\)</span> unitary identification
+of the two fibers. Assume that the reference graviton eigenvalue <span
+class="math inline">\(\omega_0(k)=ck\)</span> is simple in the helicity
+block and is separated from the rest of the spectrum by a uniform gap
+<span class="math inline">\(g_{\mathcal B}&gt;0\)</span>. Define</p>
 <p><span class="math display">\[
-\delta \lesssim 10^{-15}
-\quad \Rightarrow \quad
-\varepsilon \lesssim \frac{(\delta/2)^2}{\ln 2} \approx 3.6 \times
-10^{-31}.
+M_{\mathcal B}
+:=\frac{1}{c}\sup_{k\in\mathcal B}
+\left\|\partial_k H_0^{\mathrm{TT}}(k)\right\|_\infty
 \]</span></p>
-<p>This is extremely small, but achievable: with a macroscopic boundary
-(<span class="math inline">\(|\partial C|_{\mathrm{UV}} \sim
-10^{35}\)</span> for a meter-scale boundary at Planck UV scale), the
-exponential decay <span class="math inline">\(e^{-\delta/\xi}\)</span>
-with <span class="math inline">\(\delta/\xi \sim\)</span> a few hundred
-easily pushes below <span class="math inline">\(10^{-31}\)</span> once
-the prefactor is included.</p>
+<p>and the dimensionless dynamical error</p>
+<p><span class="math display">\[
+\eta_{\mathrm{dyn},\nu}
+:=\max\!\left\{
+\frac{1}{g_{\mathcal B}}\sup_{k\in\mathcal B}
+\left\|H_\nu^{\mathrm{TT}}(k)-H_0^{\mathrm{TT}}(k)\right\|_\infty,
+\frac{1}{c}\sup_{k\in\mathcal B}
+\left\|\partial_k H_\nu^{\mathrm{TT}}(k)-\partial_k
+H_0^{\mathrm{TT}}(k)\right\|_\infty
+\right\}.
+\]</span></p>
+<p>For <span
+class="math inline">\(\eta_{\mathrm{dyn},\nu}&lt;1/4\)</span>, let <span
+class="math inline">\(\omega_\nu(k)\)</span> be the continued isolated
+eigenvalue and define its group velocity by <span
+class="math inline">\(c_{\mathrm{GW},\nu}(k):=\partial_k\omega_\nu(k)\)</span>.
+The standard isolated-eigenvalue projector estimate and the
+Hellmann–Feynman formula then give, uniformly over <span
+class="math inline">\(\mathcal B\)</span>,</p>
+<p><span class="math display">\[
+\sup_{k\in\mathcal B}
+\left|\frac{c_{\mathrm{GW},\nu}(k)}{c}-1\right|
+\le L_{\mathcal B}\,\eta_{\mathrm{dyn},\nu},
+\qquad
+L_{\mathcal B}:=1+4M_{\mathcal B}.
+\]</span></p>
+<p>Indeed, if <span class="math inline">\(P_\nu(k)\)</span> and <span
+class="math inline">\(P_0(k)\)</span> are the rank-one spectral
+projectors, then <span
+class="math inline">\(\|P_\nu-P_0\|_\infty\le2\eta_{\mathrm{dyn},\nu}\)</span>,
+hence <span
+class="math inline">\(\|P_\nu-P_0\|_1\le4\eta_{\mathrm{dyn},\nu}\)</span>.
+Differentiating the isolated eigenvalue therefore bounds the
+group-velocity change by the derivative perturbation plus <span
+class="math inline">\(4M_{\mathcal
+B}c\,\eta_{\mathrm{dyn},\nu}\)</span>. This displays a dimensionless
+constant derived from a specified generator and uniform over the
+declared band. If <span class="math inline">\(q:=L_{\mathcal
+B}\eta_{\mathrm{dyn},\nu}&lt;1\)</span>, then stationary propagation at
+fixed group velocity over path length <span
+class="math inline">\(D\)</span> obeys the group-delay bound</p>
+<p><span class="math display">\[
+|\Delta t|\le \frac{D}{c}\frac{q}{1-q}.
+\]</span></p>
+<p>The same bound applies to varying propagation only if it holds
+pointwise along the entire path; on a cosmological path, the redshifted
+wave number must remain inside <span class="math inline">\(\mathcal
+B\)</span>. A wave-packet phase bound likewise requires uniform control
+of the inverse dispersion <span
+class="math inline">\(k_\nu(\omega)\)</span> on the corresponding
+frequency band. A graviton-mass bound is a separate spectral estimate at
+<span class="math inline">\(k=0\)</span>; it is not a corollary of the
+band-limited speed estimate.</p>
+<p>What remains open is the OPH-specific bridge. One must</p>
+<ol type="1">
+<li><p>construct <span
+class="math inline">\(H_\nu^{\mathrm{TT}}\)</span>, or an equivalent
+retarded two-point kernel, from the finite and scaling OPH
+dynamics;</p></li>
+<li><p>prove a norm-resolvent, quadratic-form, or correlator estimate of
+the form <span class="math inline">\(\eta_{\mathrm{dyn},\nu}\le
+C_{\mathcal B}r_N\)</span>, where <span
+class="math inline">\(r_N:=\min(2,\sum_{k=2}^N\delta_k)\)</span> is the
+accumulated trace-norm recovery bound of Theorem 3.1 for the associated
+<span class="math inline">\(N\)</span>-step construction and <span
+class="math inline">\(C_{\mathcal B}\)</span> is derived rather than
+assumed; and</p></li>
+<li><p>apply the resulting band-uniform dispersion estimate to the
+detector band and propagation baseline, including phase accumulation
+where used by the likelihood.</p></li>
+</ol>
+<p>Only after the second item is proved may one combine the estimates to
+obtain</p>
+<p><span class="math display">\[
+\sup_{k\in\mathcal B}
+\left|\frac{c_{\mathrm{GW},\nu}(k)}{c}-1\right|
+\le L_{\mathcal B}C_{\mathcal B}r_N.
+\]</span></p>
+<p>No estimate <span class="math inline">\(\eta_{\mathrm{dyn},\nu}\le
+C_{\mathcal B}r_N\)</span> is proved here. Substituting <span
+class="math inline">\(\delta_k\)</span>, <span
+class="math inline">\(\delta_{\mathrm{step}}\)</span>, or any equal-time
+trace-distance error for <span
+class="math inline">\(\eta_{\mathrm{dyn},\nu}\)</span> without that
+bridge is invalid.</p>
 <p><strong>Precision summary.</strong> The framework provides:</p>
 <ol type="1">
-<li><p>Exact-zero predictions (<span class="math inline">\(m_g =
-0\)</span>, <span class="math inline">\(c_{\mathrm{GW}} = c\)</span>)
-from symmetry protection.</p></li>
-<li><p>Translation of those zeros into the specific observables
-experiments constrain.</p></li>
-<li><p>Explicit bounds on how far derived geometric statements can
-drift, using the conditional mutual information <span
-class="math inline">\(\to\)</span> trace distance <span
-class="math inline">\(\to\)</span> observable error chain.</p></li>
+<li><p>The ideal derived-Einstein-branch statements <span
+class="math inline">\(m_g = 0\)</span> and <span
+class="math inline">\(c_{\mathrm{GW}} = c\)</span>.</p></li>
+<li><p>Translation of those ideal equalities into the specific
+observables experiments constrain
+(Section <a href="#513-precision-gravity-predictions-and-experimental-bounds" data-reference-type="ref" data-reference="513-precision-gravity-predictions-and-experimental-bounds">4.6.14</a>).</p></li>
+<li><p>Explicit bounds on how far expectation values of bounded local
+observables in the recovered state can drift, using the conditional
+mutual information <span class="math inline">\(\to\)</span> trace
+distance <span class="math inline">\(\to\)</span> observable error
+chain.</p></li>
 </ol>
-<p>This is the concrete path from "axioms about screens" to "precision
-GR predictions with quantitative error control."</p>
+<p>It therefore provides quantitative error control on recovered states
+and bounded observables, but no present theory-side certificate for the
+published GW-speed or graviton-mass bounds. Dynamical-parameter
+certification remains in the separate open ledger above.</p>
 <h3 id="dark-sector-response-from-the-modular-anomaly">Dark-sector
 response from the modular anomaly</h3>
 <p>This subsection records a D12 continuation benchmark obtained by
@@ -7771,11 +7975,16 @@ Ward-projected electromagnetic readout. QED.</p>
 id="refinement-stability-and-unprotected-relevant-operators">Refinement
 stability and unprotected relevant operators</h3>
 <p>The refinement-stability used later in the gauge branch is contained
-in the third OPH axiom. Because the same finite local constraint family
-is preserved across cutoffs, the realized UV states lie in one common
-finite-dimensional MaxEnt family rather than in a new coupling space at
-every refinement step. The selected stable branch of this family is
-therefore not an extra axiom beyond the MaxEnt branch itself.</p>
+in the third OPH axiom through its refinement-closure clause. By that
+clause the same finite local constraint family is preserved across
+cutoffs, so the realized UV states lie in one common finite-dimensional
+MaxEnt family rather than in a new coupling space at every refinement
+step. The selected stable branch of this family is therefore not an
+extra axiom beyond the MaxEnt branch itself, but the closure clause it
+relies on is a substantive renormalization condition: coarse-graining a
+finite-range Gibbs family generically generates interactions outside any
+fixed finite density list, and no closure/projection theorem with
+truncation errors is proved here.</p>
 <p>Concretely, if <span class="math display">\[
 \omega_\ell(\lambda)
 \mathrel{=}
@@ -7784,9 +7993,9 @@ Z_\ell(\lambda)^{-1}
 -\sum_x \sum_a \lambda_a O_a(x)-\sum_b \mu_b Q_b
 \right),
 \]</span> then any refinement channel <span
-class="math inline">\(\Phi_{\ell\to L}\)</span> compatible with Axiom 3
-acts on the realized branch by an induced finite-dimensional map <span
-class="math display">\[
+class="math inline">\(\Phi_{\ell\to L}\)</span> compatible with Axiom 3,
+including its refinement-closure clause, acts on the realized branch by
+an induced finite-dimensional map <span class="math display">\[
 \Phi_{\ell\to L}\bigl(\omega_\ell(\lambda)\bigr)
 \mathrel{=}
 \omega_L\!\bigl(R_{\ell\to L}(\lambda)\bigr).
