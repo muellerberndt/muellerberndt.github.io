@@ -26,7 +26,7 @@
   <meta name="citation_pdf_url" content="https://floatingpragma.io/oph/papers/reality-as-consensus-protocol/paper.pdf" />
   <meta name="citation_abstract_html_url" content="https://floatingpragma.io/oph/papers/reality-as-consensus-protocol/" />
   <meta name="citation_technical_report_institution" content="Pragma Research" />
-  <meta name="citation_technical_report_number" content="OPH r1530 reality_as_consensus_protocol" />
+  <meta name="citation_technical_report_number" content="OPH r1531 reality_as_consensus_protocol" />
   <meta name="DC.title" content="Reality as a Consensus Protocol" />
   <meta name="DC.creator" content="Bernhard Mueller" />
   <meta name="DC.creator" content="Kai Xue" />
@@ -119,7 +119,7 @@
   ],
   "datePublished": "July 11, 2026",
   "dateModified": "July 11, 2026",
-  "version": "r1530",
+  "version": "r1531",
   "subjectOf": [
     {
       "@type": "BlogPosting",
@@ -216,14 +216,14 @@
             <p>The OPH fixed-point consensus paper. It formulates observer patches, overlap-visible records, repair moves, Lyapunov descent, quotient normal forms, and obstruction classes.</p>
           </div>
           <div class="paper-meta-line">
-            <span>r1530</span>
+            <span>r1531</span>
             <span>July 11, 2026</span>
             <span>papers</span>
           </div>
           <div class="cta-row">
             <a class="btn btn-primary" href="/oph/papers/reality-as-consensus-protocol/paper.pdf" target="_blank" rel="noopener noreferrer" data-track-link="paper-pdf-reality_as_consensus_protocol">Download PDF</a>
             <a class="btn btn-secondary" href="/oph/papers/" data-track-link="paper-index">All OPH papers</a>
-            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r1530" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
+            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r1531" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
             <a class="btn btn-secondary" href="https://challenge.floatingpragma.io/" data-track-link="paper-challenge">Challenge</a>
           </div>
 
@@ -252,7 +252,7 @@
         </header>
         <div class="paper-reader-grid">
           <div class="paper-body">
-<p><strong>Paper release:</strong> <code>r1530</code>
+<p><strong>Paper release:</strong> <code>r1531</code>
 <strong>Released:</strong> July 11, 2026</p>
 <h1 id="what-this-paper-contributes">What This Paper Contributes</h1>
 <p>The mathematics of repair is old in the right places. Constraint
@@ -4859,22 +4859,29 @@ fixed-cutoff genuinely noncentral sectors.</em></p>
 
 <div class="corollary">
 
-<p><strong>Corollary 98</strong> (Exact Markov adds the state
-factorization). <em>On either the ordinary/central branch of the
-previous theorem or the genuinely noncentral higher-gauge branch, if in
-addition <span class="math display">\[
-I_\omega(A_\delta:D_\delta\mid B_\delta)=0,
-\]</span> or one passes to the explicitly stated idealized
-recoverability limit that reduces to exact Markovity, then <span
-class="math display">\[
+<p><strong>Corollary 98</strong> (Exact Markov plus split alignment adds
+the state factorization). <em>On either the ordinary/central branch of
+the previous theorem or the genuinely noncentral higher-gauge branch, if
+in addition <span class="math display">\[
+I_\omega(A_\delta:D_\delta\mid B_\delta)=0
+\]</span> <em>and</em> the state satisfies the Markov-split alignment
+hypothesis (its HJPW decomposition of <span
+class="math inline">\(\mathcal H_{B_\delta}\)</span> can be chosen to be
+the EC decomposition itself; see the main-text Section 2.3 and the
+compact paper’s alignment definition), or one passes to the explicitly
+stated idealized recoverability limit that supplies both conditions,
+then <span class="math display">\[
 \rho_{A_\delta B_\delta D_\delta}
 \mathrel{=}
 \bigoplus_\alpha p_\alpha
 \left(\rho_{A_\delta b_L^\alpha}\otimes \rho_{b_R^\alpha
 D_\delta}\right).
 \]</span> EC therefore gives the kinematic block decomposition, while
-exact Markovity is the extra state input that gives the HJPW normal
-form.</em></p>
+exact Markovity plus split alignment is the extra state input that gives
+the EC-aligned HJPW normal form. Exact Markovity alone yields the normal
+form only over a state-dependent HJPW split, which a Bell-pair example
+(main text, Section 2.3) shows can be transposed relative to the EC
+factors.</em></p>
 </div>
 
 <div id="prop:assocglue" class="proposition">
