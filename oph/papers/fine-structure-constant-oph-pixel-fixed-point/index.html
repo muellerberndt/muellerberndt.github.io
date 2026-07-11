@@ -22,7 +22,7 @@
   <meta name="citation_pdf_url" content="https://floatingpragma.io/oph/papers/fine-structure-constant-oph-pixel-fixed-point/paper.pdf" />
   <meta name="citation_abstract_html_url" content="https://floatingpragma.io/oph/papers/fine-structure-constant-oph-pixel-fixed-point/" />
   <meta name="citation_technical_report_institution" content="Pragma Research" />
-  <meta name="citation_technical_report_number" content="OPH r1524 fine_structure_constant_derivation" />
+  <meta name="citation_technical_report_number" content="OPH r1526 fine_structure_constant_derivation" />
   <meta name="DC.title" content="The Fine-Structure Constant as an OPH Pixel Fixed Point" />
   <meta name="DC.creator" content="Bernhard Mueller" />
   <meta name="DC.creator" content="Alexander Osika" />
@@ -99,7 +99,7 @@
   ],
   "datePublished": "July 11, 2026",
   "dateModified": "July 11, 2026",
-  "version": "r1524",
+  "version": "r1526",
   "subjectOf": [
     {
       "@type": "BlogPosting",
@@ -190,14 +190,14 @@
             <p>A focused OPH paper on the fine-structure constant, local screen-cell closure, hadronic endpoint transport, and the fixed-point status of alpha.</p>
           </div>
           <div class="paper-meta-line">
-            <span>r1524</span>
+            <span>r1526</span>
             <span>July 11, 2026</span>
             <span>extra papers</span>
           </div>
           <div class="cta-row">
             <a class="btn btn-primary" href="/oph/papers/fine-structure-constant-oph-pixel-fixed-point/paper.pdf" target="_blank" rel="noopener noreferrer" data-track-link="paper-pdf-fine_structure_constant_derivation">Download PDF</a>
             <a class="btn btn-secondary" href="/oph/papers/" data-track-link="paper-index">All OPH papers</a>
-            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r1524" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
+            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r1526" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
             <a class="btn btn-secondary" href="https://challenge.floatingpragma.io/" data-track-link="paper-challenge">Challenge</a>
           </div>
 
@@ -225,7 +225,7 @@
         </header>
         <div class="paper-reader-grid">
           <div class="paper-body">
-<p><strong>Paper release:</strong> <code>r1524</code>
+<p><strong>Paper release:</strong> <code>r1526</code>
 <strong>Released:</strong> July 11, 2026</p>
 <p><strong>Keywords:</strong> fine-structure constant, Observer-Patch
 Holography, pixel fixed point, electromagnetic coupling, Standard Model
@@ -263,21 +263,20 @@ calculation belongs to this broad search for structure, with one added
 requirement: the number must arise from a fixed-point map whose input
 and output are the same local screen cell.</p>
 <blockquote>
-<p><strong>Pure source calculation.</strong> The executable source map
-solves the OPH fixed point from screen-cell data alone. Its no-hadron
-output is the undressed source/root inverse coupling <span
+<p><strong>Source/root audit.</strong> The executable source map emits
+the undressed source/root inverse coupling <span
 class="math inline">\(\alpha^{-1}_{\mathrm{root}}=136.9948351646\ldots\)</span>.
-Adding the emitted finite-screen unified gauge-width contribution <span
-class="math inline">\(\alpha_U(P_\star)\)</span> gives the source-side
-no-hadron near-endpoint <span
-class="math inline">\(A_{\alpha_U}^{\mathrm{fp}}=137.0359595008\ldots\)</span>,
-close to the laboratory value.</p>
-<p><strong>CODATA/NIST measured endpoint.</strong> For comparison,
-CODATA/NIST reports <span
-class="math inline">\(\alpha^{-1}(0)=137.035999177(21)\)</span>. The gap
-from <span class="math inline">\(A_{\alpha_U}^{\mathrm{fp}}\)</span>
-identifies the remaining low-energy hadronic correction in the same
-electromagnetic convention as the source map.</p>
+Combining it with <span class="math inline">\(\alpha_U(P_{\mathrm
+C})\)</span>, evaluated at the CODATA-derived comparison pixel, gives
+the mixed-provenance no-hadron diagnostic <span
+class="math inline">\(A_{\alpha_U}^{\mathrm{fp}}=137.0359595008\ldots\)</span>.
+It is not a source-only prediction.</p>
+<p><strong>CODATA/NIST measured endpoint.</strong> CODATA/NIST reports
+<span class="math inline">\(\alpha^{-1}(0)=137.035999177(21)\)</span>.
+The difference from <span
+class="math inline">\(A_{\alpha_U}^{\mathrm{fp}}\)</span> is
+CODATA-minus-diagnostic bookkeeping; it is not the output of a
+same-scheme hadronic spectral calculation.</p>
 </blockquote>
 <h4 id="intuitive-picture-three-readings-of-one-pixel">Intuitive
 picture: three readings of one pixel.</h4>
@@ -303,31 +302,32 @@ low-energy charged vacuum is attached. The outside reading is the pixel
 detuning <span class="math inline">\((P-\varphi)/\sqrt\pi\)</span>; the
 inside reading is the electromagnetic observation strength on the same
 branch. The fixed point says those two readings must name one cell.</p>
-<p>The contribution <span
-class="math inline">\(\alpha_U(P_\star)\)</span> is the finite-screen
-unified gauge-width contribution. It is the main high-scale gauge-sector
-width carried by the same pixel: the weak and color representation
-content must fit the pixel budget <span
-class="math inline">\(P/4\)</span>, and the D10 heat-kernel closure
-supplies the executable certificate. Adding this width to the root gives
-the source-side no-hadron near-endpoint <span
+<p>The contribution <span class="math inline">\(\alpha_U(P_{\mathrm
+C})\)</span> is the finite-screen unified gauge-width evaluated at the
+CODATA-derived comparison pixel. It is the main high-scale gauge-sector
+width carried by that pixel: the weak and color representation content
+must fit the pixel budget <span class="math inline">\(P/4\)</span>, and
+the D10 heat-kernel closure supplies the executable certificate. Adding
+this comparison-pixel width to the source root gives the
+mixed-provenance no-hadron diagnostic <span
 class="math inline">\(A_{\alpha_U}^{\mathrm{fp}}\)</span>. It is close
 to the laboratory endpoint because it supplies almost all of the
 inverse-alpha gap from the naked source value.</p>
 <p>The factor <span class="math inline">\(C_{24,Q}\)</span> is the small
 endpoint dressing required after the gauge-width contribution is added.
-It is near one because <span
-class="math inline">\(\alpha_U(P_\star)\)</span> supplies the large part
-of the correction. Its excess <span
-class="math inline">\(\alpha_U(P_\star)(C_{24,Q}-1)\)</span> represents
-the remaining same-scheme low-energy hadronic endpoint transport. A
-zero-momentum laboratory photon does not probe an empty charged vacuum;
-it sees the Ward-projected <span class="math inline">\(\mathrm
-U(1)_Q\)</span> current after charged-lepton vacuum polarization,
-confined-quark/hadron spectral transport, and finite endpoint matching.
-In short, the observer measures the fully dressed low-energy coupling,
-while <span class="math inline">\(A_{\alpha_U}^{\mathrm{fp}}\)</span> is
-the no-hadron value before that dressing.</p>
+It is near one because <span class="math inline">\(\alpha_U(P_{\mathrm
+C})\)</span> supplies the large part of the correction. Its excess <span
+class="math inline">\(\alpha_U(P_{\mathrm C})(C_{24,Q}-1)\)</span> is a
+comparison residual with the numerical size required of the remaining
+same-scheme low-energy hadronic endpoint transport. It does not compute
+that transport. A zero-momentum laboratory photon does not probe an
+empty charged vacuum; it sees the Ward-projected <span
+class="math inline">\(\mathrm U(1)_Q\)</span> current after
+charged-lepton vacuum polarization, confined-quark/hadron spectral
+transport, and finite endpoint matching. In short, the observer measures
+the fully dressed low-energy coupling, while <span
+class="math inline">\(A_{\alpha_U}^{\mathrm{fp}}\)</span> is a
+mixed-provenance no-hadron diagnostic before that dressing.</p>
 <p>The OPH background used here is spread across three papers. The
 observer-overlap starting point is the synthesis paper . The source map
 and fixed-point branch are recorded in the compact overlap-consistency
@@ -474,10 +474,10 @@ calculation. <span
 class="math inline">\(\Delta_{\mathrm{H,cal}}^{\mathrm{fp}}\)</span>
 &amp; Root-to-CODATA bookkeeping difference &amp; The inverse-alpha
 amount between the naked root value and the CODATA/NIST central
-endpoint; it includes the emitted <span
-class="math inline">\(\alpha_U(P_\star)\)</span> contribution and is not
-the post-<span class="math inline">\(\alpha_U\)</span> hadronic gap.
-<span
+endpoint; it includes the comparison-pixel <span
+class="math inline">\(\alpha_U(P_{\mathrm C})\)</span> contribution and
+is not the post-<span class="math inline">\(\alpha_U\)</span> hadronic
+gap. <span
 class="math inline">\(\Delta_{\mathrm{H,req}}^{\mathrm{fp}}\)</span>
 &amp; Required hadronic endpoint correction after <span
 class="math inline">\(A_{\alpha_U}^{\mathrm{fp}}\)</span> &amp; The
@@ -487,9 +487,10 @@ class="math inline">\(R_Q(P)\)</span> &amp; <span
 class="math inline">\(A_{\mathrm{Th}}(P)-[A_Z(P)+\Delta_{\mathrm{calc}}(P)]\)</span>
 &amp; The remaining same-scheme hadronic endpoint contribution. <span
 class="math inline">\(A_{\alpha_U}^{\mathrm{fp}}\)</span> &amp; <span
-class="math inline">\(\alpha_{\mathrm{root}}^{-1}+\alpha_U(P_\star)\)</span>
-&amp; Source-side no-hadron prediction before the Ward-projected
-hadronic transport is supplied. <span
+class="math inline">\(\alpha_{\mathrm{root}}^{-1}+\alpha_U(P_{\mathrm
+C})\)</span> &amp; Mixed-provenance no-hadron comparison diagnostic; the
+root is source-side and <span class="math inline">\(P_{\mathrm
+C}\)</span> is CODATA-derived. <span
 class="math inline">\(J_{24,Q}(P),\omega_Q(P),\Xi_Q(P)\)</span> &amp;
 Source-side hadronic spectral objects required for a final endpoint
 theorem &amp; The Jacobi/Stieltjes spectral payload, normalization, and
@@ -1223,14 +1224,15 @@ A_{\mathrm{calc}}(P_{\mathrm{root}})
 \vcenter{\hbox{\parbox{0.68\linewidth}{\small\ttfamily\seqsplit{136.994835164621649457949994585787193262029}}}}.
 \label{eq:Acalcfp}
 \end{equation}
-\]</span> The finite-screen unified gauge-width contribution is <span
+\]</span> At the CODATA-derived comparison pixel, the finite-screen
+unified gauge-width contribution is <span class="math display">\[
+\alpha_U(P_{\mathrm C})=0.041124336195630495.
+\]</span> Combining that comparison-pixel gauge width with the
+source/root value gives the mixed-provenance no-hadron diagnostic <span
 class="math display">\[
-\alpha_U(P_\star)=0.041124336195630495.
-\]</span> Adding that emitted gauge-width contribution gives the current
-OPH no-hadron output <span class="math display">\[
 \begin{equation}
 A_{\alpha_U}^{\mathrm{fp}}
-=\alpha_{\mathrm{root}}^{-1}+\alpha_U(P_\star)
+=\alpha_{\mathrm{root}}^{-1}+\alpha_U(P_{\mathrm C})
 =137.035959500817279952949994585787\ldots,
 \label{eq:barealphaUaddition}
 \end{equation}
@@ -1242,10 +1244,13 @@ A_{\alpha_U}^{\mathrm{fp}}
 \label{eq:barealphaUalpha}
 \end{equation}
 \]</span> This <span
-class="math inline">\(A_{\alpha_U}^{\mathrm{fp}}\)</span> value is the
-numerical output of the OPH fine-structure calculation in this paper. It
-is the source-side prediction before the missing Ward-projected hadronic
-spectral transport is supplied.</p>
+class="math inline">\(A_{\alpha_U}^{\mathrm{fp}}\)</span> value is
+comparison bookkeeping, not a source-only prediction: <span
+class="math inline">\(\alpha_{\mathrm{root}}^{-1}\)</span> is evaluated
+on the source root, while <span
+class="math inline">\(\alpha_U(P_{\mathrm C})\)</span> inherits the
+measured endpoint through <span class="math inline">\(P_{\mathrm
+C}\)</span>.</p>
 <p>Compared with the CODATA/NIST central measured endpoint, <span
 class="math display">\[
 \begin{equation}
@@ -1253,7 +1258,7 @@ A_{\mathrm C}=137.035999177,
 \qquad
 \sigma_A=0.000000021,
 \end{equation}
-\]</span> the required same-scheme hadronic endpoint correction is <span
+\]</span> the CODATA-minus-diagnostic bookkeeping gap is <span
 class="math display">\[
 \begin{equation}
 \Delta_{\mathrm{H,req}}^{\mathrm{fp}}
@@ -1272,10 +1277,11 @@ A_{\mathrm C}-A_{\alpha_U}^{\mathrm{fp}}
 =2.89531\times10^{-7}.
 \label{eq:Dhadrequncertainty}
 \end{equation}
-\]</span> This is the inverse-alpha gap between the current OPH output
-and the CODATA/NIST central value. Its physical address is the
-low-energy QCD/hadronic vacuum-polarization and same-scheme transport of
-the Ward-projected electromagnetic current.</p>
+\]</span> This is the inverse-alpha gap between the mixed diagnostic and
+the CODATA/NIST central value. Its physical address is the low-energy
+QCD/hadronic vacuum-polarization and same-scheme transport of the
+Ward-projected electromagnetic current, but the subtraction does not
+calculate that transport.</p>
 <p>For bookkeeping, the full root-to-CODATA difference is <span
 class="math display">\[
 \begin{align}
@@ -1287,45 +1293,44 @@ A_{\mathrm C}-A_{\mathrm{calc}}(P_{\mathrm{root}})
 \vcenter{\hbox{\parbox{0.68\linewidth}{\small\ttfamily\seqsplit{0.041164012378350542050005414212806737971}}}}
 \nonumber\\
 &amp;=
-\alpha_U(P_\star)+\Delta_{\mathrm{H,req}}^{\mathrm{fp}}.
+\alpha_U(P_{\mathrm C})+\Delta_{\mathrm{H,req}}^{\mathrm{fp}}.
 \label{eq:rootcodatafp}
 \end{align}
-\]</span> This larger difference is bookkeeping: it contains both the
-emitted finite-screen unified gauge-width contribution and the remaining
-hadronic correction.</p>
+\]</span> This larger difference is bookkeeping: it contains the
+comparison-pixel unified gauge-width contribution and the
+CODATA-minus-diagnostic gap.</p>
 <p>Equivalently, the CODATA/NIST central value can be written as <span
 class="math display">\[
 \begin{equation}
 A_{\mathrm C}
 \mathrel{=}
-\alpha_{\mathrm{root}}^{-1}+\alpha_U(P_\star)\,C_{24,Q},
+\alpha_{\mathrm{root}}^{-1}+\alpha_U(P_{\mathrm C})\,C_{24,Q},
 \qquad
 C_{24,Q}=1.0009647859732326253849511140702475\ldots.
 \label{eq:c24qfactor}
 \end{equation}
-\]</span> The factor <span class="math inline">\(C_{24,Q}\)</span> is a
-compact accounting of the finite same-scheme hadronic endpoint transport
-needed for source-only closure. Equivalently, <span
-class="math inline">\(\Delta_{\mathrm{H,req}}^{\mathrm{fp}}=\alpha_U(P_\star)(C_{24,Q}-1)\)</span>.
-The 24-register argument emits <span
-class="math inline">\(\alpha_U(P_\star)\)</span>; the correction factor
-is the remaining hadronic/QCD payload.</p>
+\]</span> The factor <span class="math inline">\(C_{24,Q}\)</span> is
+compact comparison accounting for the finite same-scheme hadronic
+endpoint transport needed for source-only closure. Equivalently, <span
+class="math inline">\(\Delta_{\mathrm{H,req}}^{\mathrm{fp}}=\alpha_U(P_{\mathrm
+C})(C_{24,Q}-1)\)</span>. The factor is not a source-emitted
+hadronic/QCD payload.</p>
 <p>Here <span class="math inline">\(A_{\mathrm C}\)</span> is the
 CODATA/NIST 2022 inverse fine-structure constant . The source value
 <span
 class="math inline">\(A_{\mathrm{calc}}(P_{\mathrm{root}})=\alpha_{\mathrm{root}}^{-1}\)</span>
-and the source-plus-unified-gauge-width value <span
-class="math inline">\(A_{\alpha_U}^{\mathrm{fp}}\)</span> are
-reproducible OPH fixed-point outputs .
+is a reproducible source-root output ; <span
+class="math inline">\(A_{\alpha_U}^{\mathrm{fp}}\)</span> mixes that
+root with <span class="math inline">\(\alpha_U(P_{\mathrm C})\)</span>.
 Equation <a href="#eq:Dempfp" data-reference-type="eqref" data-reference="eq:Dempfp">[eq:Dempfp]</a>
 is the measured-comparison residual in inverse-alpha units.</p>
-<p>Informally: the OPH calculation outputs <span
-class="math inline">\(137.035959500817\ldots\)</span>. The CODATA/NIST
-measured value is <span
-class="math inline">\(137.035999177(21)\)</span>. The difference is a
-small number with a known physical meaning: the hadronic/QCD
-contribution in the same electromagnetic-current convention. The open
-task is to compute that hadronic piece from source data.</p>
+<p>Informally: the mixed comparison diagnostic is <span
+class="math inline">\(137.035959500817\ldots\)</span>, and the
+CODATA/NIST measured value is <span
+class="math inline">\(137.035999177(21)\)</span>. Their difference is
+the size required of the missing same-scheme endpoint contribution; the
+open source task is to compute that contribution from an OPH-QCD
+spectral backend.</p>
 <p>This marks the calculation boundary: additional digits require a
 source-derived hadronic spectral calculation.</p>
 <p>The endpoint decomposition is <span class="math display">\[
@@ -1845,15 +1850,15 @@ class="math display">\[
 \alpha^{-1}(0)=137.035999177(21),
 \]</span> with <span class="math display">\[
 P=1.630968209403959324879279847782648941\ldots.
-\]</span> Adding the emitted finite-screen unified gauge-width
-contribution gives the source-side no-hadron near-endpoint, <span
+\]</span> Combining the source root with the finite-screen unified
+gauge-width contribution evaluated at the CODATA-derived comparison
+pixel gives the mixed-provenance no-hadron diagnostic <span
 class="math display">\[
 A_{\alpha_U}^{\mathrm{fp}}=137.035959500817279952949994585787\ldots.
-\]</span> The remaining gap is a named low-energy hadronic and
-same-scheme electromagnetic contribution. The CODATA/NIST exact-value
-row is a measured comparison. The pure source theorem requires the
-Ward-projected hadronic spectral measure, the same-scheme bridge, and
-the interval-certificate step.</p>
+\]</span> The remaining gap is CODATA-minus-diagnostic bookkeeping, not
+an emitted low-energy hadronic calculation. The pure source theorem
+requires the Ward-projected hadronic spectral measure, the same-scheme
+bridge, and the interval-certificate step.</p>
 <h1 id="declarations">Declarations</h1>
 <p><strong>Funding declaration.</strong> No funding was received for
 this work.</p>

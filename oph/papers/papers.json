@@ -1,5 +1,5 @@
 {
-  "release_id": "r1524",
+  "release_id": "r1526",
   "released_at": "July 11, 2026",
   "collection_url": "https://floatingpragma.io/oph/papers/",
   "sitemap_url": "https://floatingpragma.io/oph/papers/sitemap.xml",
@@ -398,6 +398,37 @@
           "title": "Everything Clicks Into Place",
           "url": "https://blog.floatingpragma.io/everything-that-clicks-into-place",
           "description": "Unification as translation, repair, and stable agreement across domains."
+        }
+      ]
+    },
+    {
+      "id": "observable_normal_forms",
+      "title": "Observation-Determined Normal Forms: Stability, Obstructions, and Refinement in Constraint and Rewrite Systems",
+      "short_title": "Observation-determined normal forms",
+      "category": "Mathematical foundations",
+      "description": "A substrate-neutral mathematical paper separating same-source confluence, cross-source identification from protected observations, liveness, and local repairability, with quantitative stability and refinement criteria.",
+      "authors": [
+        "Bernhard Mueller",
+        "David Matscheko",
+        "Jonathan Hill"
+      ],
+      "keywords": [
+        "abstract rewriting",
+        "observation-determined normal forms",
+        "confluence",
+        "boundary reconstruction",
+        "conditional expectation",
+        "refinement stability",
+        "Lean 4"
+      ],
+      "html_url": "https://floatingpragma.io/oph/papers/observation-determined-normal-forms/",
+      "pdf_url": "https://floatingpragma.io/oph/papers/observation-determined-normal-forms/paper.pdf",
+      "central_pdf_url": "https://floatingpragma.io/oph/papers/pdf/observable_normal_forms.pdf",
+      "related_blog_posts": [
+        {
+          "title": "The Trigger",
+          "url": "https://blog.floatingpragma.io/the-trigger",
+          "description": "High-level public entry point for the OPH claim."
         }
       ]
     },

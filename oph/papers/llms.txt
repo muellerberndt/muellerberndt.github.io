@@ -1,6 +1,6 @@
 # Observer Patch Holography Papers
 
-Release: r1524
+Release: r1526
 Released: July 11, 2026
 
 This page lists the first-party HTML and PDF URLs for the OPH paper stack.
@@ -84,6 +84,14 @@ This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 - Authors: Bernhard Mueller, Alexander Osika
 - Category: Constants
 - Summary: A focused OPH paper on the fine-structure constant, local screen-cell closure, hadronic endpoint transport, and the fixed-point status of alpha.
+
+## Observation-Determined Normal Forms: Stability, Obstructions, and Refinement in Constraint and Rewrite Systems
+
+- HTML: https://floatingpragma.io/oph/papers/observation-determined-normal-forms/
+- PDF: https://floatingpragma.io/oph/papers/observation-determined-normal-forms/paper.pdf
+- Authors: Bernhard Mueller, David Matscheko, Jonathan Hill
+- Category: Mathematical foundations
+- Summary: A substrate-neutral mathematical paper separating same-source confluence, cross-source identification from protected observations, liveness, and local repairability, with quantitative stability and refinement criteria.
 
 ## Observer Patch Holography as a String-Vacuum Selector
 

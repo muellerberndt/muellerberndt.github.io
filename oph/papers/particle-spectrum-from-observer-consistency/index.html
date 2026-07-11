@@ -27,7 +27,7 @@
   <meta name="citation_pdf_url" content="https://floatingpragma.io/oph/papers/particle-spectrum-from-observer-consistency/paper.pdf" />
   <meta name="citation_abstract_html_url" content="https://floatingpragma.io/oph/papers/particle-spectrum-from-observer-consistency/" />
   <meta name="citation_technical_report_institution" content="Pragma Research" />
-  <meta name="citation_technical_report_number" content="OPH r1524 deriving_the_particle_zoo_from_observer_consistency" />
+  <meta name="citation_technical_report_number" content="OPH r1526 deriving_the_particle_zoo_from_observer_consistency" />
   <meta name="DC.title" content="Deriving the Particle Zoo from Observer Consistency" />
   <meta name="DC.creator" content="Bernhard Mueller" />
   <meta name="DC.creator" content="Alexander Osika" />
@@ -125,7 +125,7 @@
   ],
   "datePublished": "July 11, 2026",
   "dateModified": "July 11, 2026",
-  "version": "r1524",
+  "version": "r1526",
   "subjectOf": [
     {
       "@type": "BlogPosting",
@@ -222,14 +222,14 @@
             <p>The OPH particle-spectrum continuation. It treats fine-structure closure, electroweak transport, selected-class quarks, neutrino branches, and status-separated hadron checks.</p>
           </div>
           <div class="paper-meta-line">
-            <span>r1524</span>
+            <span>r1526</span>
             <span>July 11, 2026</span>
             <span>papers</span>
           </div>
           <div class="cta-row">
             <a class="btn btn-primary" href="/oph/papers/particle-spectrum-from-observer-consistency/paper.pdf" target="_blank" rel="noopener noreferrer" data-track-link="paper-pdf-deriving_the_particle_zoo_from_observer_consistency">Download PDF</a>
             <a class="btn btn-secondary" href="/oph/papers/" data-track-link="paper-index">All OPH papers</a>
-            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r1524" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
+            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r1526" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
             <a class="btn btn-secondary" href="https://challenge.floatingpragma.io/" data-track-link="paper-challenge">Challenge</a>
           </div>
 
@@ -258,7 +258,7 @@
         </header>
         <div class="paper-reader-grid">
           <div class="paper-body">
-<p><strong>Paper release:</strong> <code>r1524</code>
+<p><strong>Paper release:</strong> <code>r1526</code>
 <strong>Released:</strong> July 11, 2026</p>
 <h1 id="what-this-paper-contributes">What This Paper Contributes</h1>
 <p>The structural particle content is inherited from the compact SM/GR
@@ -308,7 +308,12 @@ class="math inline">\(N_c=3\)</span> and generation count <span
 class="math inline">\(N_g=3\)</span>. This paper uses those results as
 input and summarizes only the downstream particle-spectrum continuation.
 If that derivation is correct, it should also constrain the particle
-spectrum.</p>
+spectrum. The substrate-neutral normal-form framework of Ref.  isolates
+the same-source confluence, cross-source boundary-identification,
+liveness, and refinement criteria used upstream. It supplies no
+particle-sector selector or numerical particle output; every such claim
+below remains conditional on the compact-paper branch and the
+particle-specific receipts.</p>
 <p>The particle branch studied here is a one-fixed-point forward
 reconstruction problem with an explicit closure matrix. Instead of
 treating masses, mixings, and Yukawa parameters as independent inputs,
@@ -448,16 +453,18 @@ flavor transport and observer-facing readout enter.</p>
 <p>The quantitative particle side adds one local closure variable. The
 common pixel ratio <span class="math inline">\(P\)</span>, fixed on the
 synthesis paper’s outer/inner closure branch , feeds the forward
-electroweak map and its descendants. The public endpoint branch displays
-<span class="math display">\[
+electroweak map and its descendants. The public empirical comparison
+branch displays <span class="math display">\[
 \alpha^{-1}(0)=137.035999177(21),
 \qquad
 \alpha(0)\simeq0.00729735256433,
 \qquad
-P\simeq1.6309682094.
-\]</span> The computation has a fixed source order: golden-ratio entropy
-balance gives <span class="math inline">\(\varphi\)</span>, boundary
-Gaussian normalization supplies the <span
+P_C\simeq1.6309682094.
+\]</span> The comparison pixel <span class="math inline">\(P_C\)</span>
+is defined from the measured endpoint; it is not a source-root
+coordinate. The computation has a fixed source order: golden-ratio
+entropy balance gives <span class="math inline">\(\varphi\)</span>,
+boundary Gaussian normalization supplies the <span
 class="math inline">\(\sqrt{\pi}\)</span> width, a trial <span
 class="math inline">\(P\)</span> feeds the source map through
 unification, running, and electroweak anchoring, and Ward-projected
@@ -475,17 +482,18 @@ P&amp;=\vcenter{\hbox{\parbox{0.68\linewidth}{\small\ttfamily\seqsplit{1.6309720
 &amp;=\vcenter{\hbox{\parbox{0.68\linewidth}{\small\ttfamily\seqsplit{136.994835164621649457949994585787193262029}}}}.
 \end{aligned}
 \]</span> The approximately <span class="math inline">\(0.041\)</span>
-inverse-alpha gap to the public Thomson endpoint is the declared
-QCD/hadronic electromagnetic input. The endpoint row is therefore a
-public fixed-point result with empirical hadron closure records, while
-the QCD-free hierarchy witness is the cleaner first-principles stress
-test. Adding the emitted finite-screen unified gauge-width contribution
-<span class="math inline">\(\alpha_U(P_\star)\)</span> gives the
-source-side no-hadron near-endpoint, <span
+inverse-alpha difference to the public Thomson endpoint identifies the
+declared QCD/hadronic electromagnetic transport boundary; it is not a
+source-emitted correction. The QCD-free hierarchy witness is the cleaner
+first-principles stress test. Combining the source/root value with the
+finite-screen unified gauge-width contribution evaluated at the
+CODATA-derived comparison pixel, <span
+class="math inline">\(\alpha_U(P_C)\)</span>, gives the mixed-provenance
+no-hadron diagnostic <span
 class="math inline">\(A_{\alpha_U}^{\mathrm{fp}}=137.0359595008\ldots\)</span>,
-below the Thomson endpoint. This sum, not the root-only audit value, is
-the source-side fine-structure prediction displayed in the repository
-README. The detailed endpoint table appears in
+below the Thomson endpoint. It is comparison bookkeeping rather than a
+source-only fine-structure prediction. The detailed endpoint table
+appears in
 Section <a href="#sec:particle-input-ledger" data-reference-type="ref" data-reference="sec:particle-input-ledger">4</a>.
 The separate cosmic record-closure target <span
 class="math inline">\(N_{\mathrm{CRC}}=F(N_{\mathrm{CRC}})\)</span>,
@@ -738,8 +746,8 @@ class="math inline">\(\alpha_{\mathrm{root}}^{-1}=136.9948351646\ldots\)</span>;
 class="math inline">\(A_{\alpha_U}^{\mathrm{fp}}=137.0359595008\ldots\)</span>;
 endpoint <span
 class="math inline">\(\alpha^{-1}(0)=137.035999177(21)\)</span></td>
-<td style="text-align: left;">source-side no-hadron near-endpoint plus
-empirical endpoint closure</td>
+<td style="text-align: left;">source/root audit, mixed-provenance
+comparison diagnostic, and measured endpoint</td>
 </tr>
 <tr>
 <td style="text-align: left;">Structural massless carriers</td>
@@ -887,11 +895,11 @@ The determinant-line lift and algebraic mass readout apply only on theorem-level
 </tr>
 <tr>
 <td style="text-align: left;">Neutrinos</td>
-<td style="text-align: left;">continuation + emitted bridge invariant + auxiliary checks</td>
-<td style="text-align: left;">same-label scalar certificate <span class="math inline">→</span> weighted-cycle branch <span class="math inline">→</span> bridge rigidity <span class="math inline">→</span> absolute attachment <span class="math inline">→</span> shared-basis transport readout</td>
-<td style="text-align: left;">scale-free weighted-cycle branch, central splitting and PMNS/Majorana comparison rows; compare-only absolute mass attachments withheld from public prediction tables</td>
-<td style="text-align: left;">theorem-level only for the declared scale-free branch and emitted bridge invariant.<br />
-The exact positive-segment adapter, bridge corridor, correction check, and absolute attachments are diagnostics and do not feed back into theorem state</td>
+<td style="text-align: left;">target-informed continuation candidate + auxiliary checks</td>
+<td style="text-align: left;">template family transport <span class="math inline">→</span> same-label scalar certificate <span class="math inline">→</span> weighted-cycle candidate <span class="math inline">→</span> compare-only bridge and absolute attachment <span class="math inline">→</span> shared-basis identity</td>
+<td style="text-align: left;">frozen scale-free candidate and PMNS/Majorana comparison rows; absolute mass attachments withheld from public prediction tables</td>
+<td style="text-align: left;">exact linear algebra conditional on the declared template and selectors.<br />
+The candidate fails the NuFIT 6.1 correlated <span class="math inline">(sin<sup>2</sup><em>θ</em><sub>23</sub>, <em>δ</em><sub>CP</sub>)</span> profile, and neither the scale-free point nor the bridge invariant has prediction or theorem status <span class="citation" data-cites="nufit61"></span></td>
 </tr>
 <tr>
 <td style="text-align: left;">Hadrons</td>
@@ -1042,20 +1050,18 @@ stronger global classification of public quark frames is not emitted; no
 global classification of all quark frame classes is claimed</td>
 </tr>
 <tr>
-<td style="text-align: left;">Neutrino theorem branch</td>
-<td style="text-align: left;">scale-free branch plus comparison rows;
-compare-only absolute mass attachments withheld</td>
-<td style="text-align: left;">axioms <span
+<td style="text-align: left;">Neutrino candidate</td>
+<td style="text-align: left;">frozen scale-free comparison point;
+absolute mass attachments withheld</td>
+<td style="text-align: left;">template family transport <span
 class="math inline">\(\rightarrow\)</span> same-label scalar certificate
-<span class="math inline">\(\rightarrow\)</span> weighted-cycle branch
-<span class="math inline">\(\rightarrow\)</span> bridge-rigidity theorem
-<span class="math inline">\(\rightarrow\)</span> absolute-attachment
-candidate <span class="math inline">\(\rightarrow\)</span> shared-basis
-transport readout</td>
-<td style="text-align: left;">theorem-level on the declared scale-free
-weighted-cycle branch and emitted bridge invariant; exact
-positive-segment adapter, bridge-coordinate sidecars, and absolute
-attachments are diagnostics</td>
+<span class="math inline">\(\rightarrow\)</span> target-informed
+weighted-cycle law <span class="math inline">\(\rightarrow\)</span>
+compare-only bridge and absolute attachment <span
+class="math inline">\(\rightarrow\)</span> shared-basis identity</td>
+<td style="text-align: left;">rejected by the NuFIT 6.1 correlated
+profile; source closure, historical blindness, basis orientation, and
+absolute normalization all fail promotion gates </td>
 </tr>
 </tbody>
 </table></div>
@@ -1109,28 +1115,27 @@ class="math inline">\(\alpha(0)\)</span> displacement is localized to
 the Ward-projected Thomson residual. At the implemented fixed point the
 residual is <span class="math display">\[
 0.041164012378350542050005414212806738
-\]</span> inverse-alpha units. Adding the finite-screen unified
-gauge-width contribution <span
-class="math inline">\(\alpha_U(P_\star)\)</span> to the undressed
-source/root inverse coupling gives the source-side no-hadron
-near-endpoint <span class="math display">\[
+\]</span> inverse-alpha units. Combining the undressed source/root
+inverse coupling with the finite-screen unified gauge-width contribution
+evaluated at the CODATA-derived comparison pixel gives the
+mixed-provenance no-hadron diagnostic <span class="math display">\[
 A_{\alpha_U}^{\mathrm{fp}}
 =136.99483516462165\ldots
 +0.041124336195630495
 =137.03595950081728\ldots,
-\]</span> The sum <span
-class="math inline">\(\alpha_{\mathrm{root}}^{-1}+\alpha_U(P_\star)\)</span>,
-not <span class="math inline">\(\alpha_U(P_\star)\)</span> by itself, is
-the source-side no-hadron near-endpoint. It lands close to the Thomson
-endpoint and does not reach it. OPH source-only closure requires the
-Ward-projected hadronic spectral transport. The remaining inverse-alpha
-shortfall is <span class="math display">\[
+\]</span> The sum uses <span
+class="math inline">\(\alpha_U(P_C)\)</span>, while the root is emitted
+at <span class="math inline">\(P_{\mathrm{cand}}\)</span>. It lands
+close to the Thomson endpoint and does not reach it, but its mixed
+provenance prevents source-only promotion. OPH source-only closure
+requires the Ward-projected hadronic spectral transport. The remaining
+inverse-alpha shortfall is <span class="math display">\[
 137.035999177-A_{\alpha_U}^{\mathrm{fp}}
 =0.000039676182720047050005414212807\ldots.
 \]</span> Equivalently, the calibrated fixed-point residual can be
 written <span class="math display">\[
 \Delta^{\mathrm{fp}}_{\mathrm{H,cal}}
-=\alpha_U(P_\star)\,C_{24,Q},
+=\alpha_U(P_C)\,C_{24,Q},
 \qquad
 C_{24,Q}
 =1.0009647859732326253849511140702475\ldots.
@@ -1142,22 +1147,21 @@ P\simeq1.6309682094
 class="math display">\[
 \Delta_{\mathrm{source}}(P)=0.041465861005223389053448715357314044\ldots.
 \]</span> That scalar belongs to the source-side hadronic spectral
-transport and scheme-remainder map. The OPH plus empirical hadron
-closure surface supplies the display row through the measured Thomson
-endpoint while the <span
-class="math inline">\(e^+e^-\to\mathrm{hadrons}\)</span> input record
-carries the data-driven hadron path. The first-principles transport row
-excludes an inserted comparison endpoint. The electroweak support record
-names the residual map and the RG/matching/threshold/scheme packet. An
-observer inside the branch measures the dressed Thomson coupling, not
-the undressed source diagnostic <span
-class="math inline">\(1/136.994835\ldots\)</span>, because a
-zero-momentum electromagnetic measurement sees the Ward-projected <span
-class="math inline">\(\mathrm{U}(1)_Q\)</span> current after
-charged-lepton vacuum polarization, confined-quark/hadron spectral
-transport, and same-scheme finite endpoint matching have been included.
-The electroweak <span class="math inline">\(W/Z\)</span> row is
-therefore a benchmark check. Charged leptons carry a corpus-limited
+transport and scheme-remainder map. The declared empirical route would
+use a separately labeled <span
+class="math inline">\(e^+e^-\to\mathrm{hadrons}\)</span> spectral input.
+No same-scheme integrated endpoint payload is emitted here. The
+first-principles transport row excludes an inserted comparison endpoint.
+The electroweak support record names the residual map and the
+RG/matching/threshold/scheme packet. An observer inside the branch
+measures the dressed Thomson coupling, not the undressed source
+diagnostic <span class="math inline">\(1/136.994835\ldots\)</span>,
+because a zero-momentum electromagnetic measurement sees the
+Ward-projected <span class="math inline">\(\mathrm{U}(1)_Q\)</span>
+current after charged-lepton vacuum polarization, confined-quark/hadron
+spectral transport, and same-scheme finite endpoint matching have been
+included. The electroweak <span class="math inline">\(W/Z\)</span> row
+is therefore a benchmark check. Charged leptons carry a corpus-limited
 no-go because the determinant trace-lift attachment from the D10
 descendants of <span class="math inline">\(P\)</span> to physical
 charged data is absent. The auxiliary direct-top PDG row differs from
@@ -1468,56 +1472,44 @@ the physical identity-mode equalizer beneath the descended scalar</td>
 <td style="text-align: left;">Neutrinos</td>
 <td style="text-align: left;"><span
 class="math inline">\(\nu_e\)</span></td>
-<td style="text-align: left;">weighted-cycle theorem branch with
-compare-only absolute attachment</td>
+<td style="text-align: left;">rejected target-informed weighted-cycle
+candidate</td>
 <td style="text-align: left;">absolute mass withheld from public
-prediction table; the weighted-cycle branch emits <span
+prediction table; the frozen candidate gives <span
 class="math inline">\(\theta_{12}=34.2259^\circ\)</span>, <span
 class="math inline">\(\theta_{23}=49.7228^\circ\)</span>, <span
 class="math inline">\(\theta_{13}=8.68636^\circ\)</span>, <span
 class="math inline">\(\delta=305.581^\circ\)</span>, <span
-class="math inline">\(J=-0.02753\)</span>, <span
+class="math inline">\(J=-0.02753\)</span>, and <span
 class="math inline">\(\Delta m_{21}^2/\Delta
-m_{32}^2=0.03072111\)</span>, <span
-class="math inline">\(\alpha_{21}^{(\mathrm{Maj})}=153.618518^\circ\)</span>,
-<span
-class="math inline">\(\alpha_{31}^{(\mathrm{Maj})}=257.003241^\circ\)</span>,
-the bridge invariant <span
-class="math inline">\(C_\nu=0.9994295999075177\)</span>, the emitted
-proxy <span class="math inline">\(P_\nu=6.699825740519345\)</span>, the
-paper-facing amplitude <span
-class="math inline">\(B_\nu=6.696004159297337\)</span>, and <span
-class="math inline">\(\lambda_\nu=1.7237014208357415\)</span></td>
-<td style="text-align: left;">closed on the declared scale-free
-weighted-cycle branch; the absolute attachment, positive-segment
-adapter, bridge corridor, and bridge-coordinate sidecars are
-diagnostic-only and do not feed back into theorem state</td>
+m_{32}^2=0.03072111\)</span></td>
+<td style="text-align: left;">the upstream flavor kernel is a
+hand-written template; target-ranked selector development prevents
+historical-blindness status; the NuFIT 6.1 correlated profile rejects
+the point; Majorana and absolute-attachment values remain
+compare-only</td>
 </tr>
 <tr>
 <td style="text-align: left;">Neutrinos</td>
 <td style="text-align: left;"><span
 class="math inline">\(\nu_\mu\)</span></td>
-<td style="text-align: left;">weighted-cycle theorem branch with
-compare-only absolute attachment</td>
-<td style="text-align: left;">absolute mass withheld from public
-prediction table; same weighted-cycle theorem branch as the
-electron-neutrino row</td>
-<td style="text-align: left;">same bridge-invariant / induced-amplitude
-package and same diagnostic-only retirement rule for the absolute
-attachment, positive-segment adapter, and bridge corridor</td>
+<td style="text-align: left;">rejected target-informed weighted-cycle
+candidate</td>
+<td style="text-align: left;">absolute mass withheld; same frozen
+scale-free comparison point as the electron-neutrino row</td>
+<td style="text-align: left;">no source-only or public prediction
+row</td>
 </tr>
 <tr>
 <td style="text-align: left;">Neutrinos</td>
 <td style="text-align: left;"><span
 class="math inline">\(\nu_\tau\)</span></td>
-<td style="text-align: left;">weighted-cycle theorem branch with
-compare-only absolute attachment</td>
-<td style="text-align: left;">absolute mass withheld from public
-prediction table; same weighted-cycle theorem branch as the
-electron-neutrino row</td>
-<td style="text-align: left;">same bridge-invariant / induced-amplitude
-package and same diagnostic-only retirement rule for the absolute
-attachment, positive-segment adapter, and bridge corridor</td>
+<td style="text-align: left;">rejected target-informed weighted-cycle
+candidate</td>
+<td style="text-align: left;">absolute mass withheld; same frozen
+scale-free comparison point as the electron-neutrino row</td>
+<td style="text-align: left;">no source-only or public prediction
+row</td>
 </tr>
 <tr>
 <td style="text-align: left;">Hadrons</td>
@@ -1999,10 +1991,10 @@ D10 Branch and the Higgs/Top Critical Stage</h1>
 numerical rows and scoped non-emitted rows. The active bosonic stages
 are the electroweak D10 prediction stage and the Higgs/top critical
 stage, while charged-lepton rows carry their no-go boundary, the
-neutrino lane closes on a separate weighted-cycle theorem branch, and
-hadron rows are backend-gated. The bosonic numerical sector is therefore
-concentrated in two places: the D10 electroweak branch for the <span
-class="math inline">\(W\)</span> boson and <span
+neutrino lane contains a rejected weighted-cycle comparison candidate,
+and hadron rows are backend-gated. The bosonic numerical sector is
+therefore concentrated in two places: the D10 electroweak branch for the
+<span class="math inline">\(W\)</span> boson and <span
 class="math inline">\(Z\)</span> boson, and the Higgs/top critical stage
 for the Higgs boson together with the exact D11 split-theorem top
 value.</p>
@@ -3216,16 +3208,15 @@ gap is the determinant trace-lift attachment <span
 class="math inline">\(3\mu(r)=S_M(r)\)</span> on the charged determinant
 channel. The charged determinant channel has a corpus-limited no-go
 boundary: the uncentered trace lift is not emitted. The neutrino lane
-closes on the weighted-cycle bridge-rigidity surface above the emitted
-proxy <span class="math inline">\(P_\nu\)</span>, with induced
-paper-facing amplitude <span class="math inline">\(B_\nu\)</span> and a
-compare-only absolute attachment above the scale-free branch. The quark
-lane carries the internalized mass bridge together with a selected-class
-audit/support theorem on the public physical quark frame class <span
-class="math inline">\(f_P\)</span>. Its physical sigma datum is
-target-derived, so the running sextet is withheld from public prediction
-tables while the affine mean law, selected-frame support data, and exact
-forward Yukawas <span class="math inline">\(Y_u\)</span> and <span
+carries a target-informed weighted-cycle candidate above a template
+family kernel, with compare-only bridge and absolute-attachment
+diagnostics. The quark lane carries the internalized mass bridge
+together with a selected-class audit/support theorem on the public
+physical quark frame class <span class="math inline">\(f_P\)</span>. Its
+physical sigma datum is target-derived, so the running sextet is
+withheld from public prediction tables while the affine mean law,
+selected-frame support data, and exact forward Yukawas <span
+class="math inline">\(Y_u\)</span> and <span
 class="math inline">\(Y_d\)</span> remain recorded. A separate
 compare-only microphysical bridge records edge-statistics transport on a
 diagnostic surface. Together these boundaries mark where the flavor
@@ -3935,17 +3926,16 @@ then one affine-covariant absolute anchor <span
 class="math inline">\(A_{\mathrm{ch}}\)</span> that would turn that
 centered readback into public charged masses on the theorem lane.</p>
 <h1 id="neutrino-family-derivation">Neutrino Family Derivation</h1>
-<p>The neutrino derivation is the strongest positive flavor-side closure
-after the Higgs/top critical stage. The intrinsic isotropic branch is
-excluded exactly. On the declared weighted-cycle theorem branch, the
-PMNS/hierarchy shape lands in the observed regime, the bridge-rigidity
-theorem emits <span class="math inline">\(C_\nu\)</span>, absolute
-attachment fixes the paper-facing amplitude <span
-class="math inline">\(B_\nu\)</span> and <span
-class="math inline">\(\lambda_\nu\)</span>, and that branch emits the
-absolute eV-scale family. The legacy one- and two-parameter adapters are
-compare-only diagnostic continuations beneath that theorem branch.</p>
-<p>On that weighted-cycle theorem branch the paper emits <span
+<p>The neutrino lane contains one exact no-go and one failed comparison
+candidate. The intrinsic isotropic branch is excluded by its spectral
+cap. The weighted-cycle construction descends from two hand-written
+family-transport matrices and declared label, orientation, cycle, and
+exponent choices. Its exponent law was promoted after candidate laws had
+been ranked against the measured splitting ratio. The resulting point
+therefore has retrospective, target-informed template status. The bridge
+and absolute attachment use compare-only information and carry no
+prediction status.</p>
+<p>The frozen weighted-cycle candidate gives <span
 class="math display">\[
 \begin{aligned}
 \theta_{12}&amp;=34.225904631810025^\circ,\\
@@ -3963,28 +3953,74 @@ class="math display">\[
 \frac{\Delta m_{21}^2}{\Delta m_{32}^2}
 &amp;=0.030721110097966534.
 \end{aligned}
-\]</span> Once the repaired weighted-cycle Majorana matrix is
-transported explicitly through the closed shared same-label basis by
-<span class="math display">\[
+\]</span> The official NuFIT 6.1 normal-ordering profile gives <span
+class="math display">\[
+\Delta\chi^2_{23,\delta}=20.11955
+\quad\text{with the tabulated atmospheric likelihood},
+\qquad
+\Delta\chi^2_{23,\delta}=18.43528
+\quad\text{without it},
+\]</span> at <span
+class="math inline">\((\sin^2\theta_{23},\delta_{\mathrm{CP}})=(0.582056,-54.419^\circ)\)</span> .
+Both values exceed the two-parameter <span
+class="math inline">\(3\sigma\)</span> contour value <span
+class="math inline">\(11.83\)</span>. Separate marginal interval checks
+had hidden this correlation. The published profiles overlap and are not
+summed; their maximum is a lower bound on the unavailable full
+fixed-candidate <span class="math inline">\(\Delta\chi^2\)</span>.</p>
+<p>The historical shared-basis construction set <span
+class="math display">\[
 M_{\mathrm{shared}}=U_{e,\mathrm{left}}^*\,M_{\mathrm{wc}}\,U_{e,\mathrm{left}}^\dagger,
 \qquad
 U_{\nu,\mathrm{shared}}=U_{e,\mathrm{left}}\,U_{\mathrm{wc}},
-\]</span> the physical PMNS path is recovered on that anchored branch as
-<span class="math display">\[
-U_{\mathrm{PMNS}}=U_{e,\mathrm{left}}^\dagger
-U_{\nu,\mathrm{shared}}=U_{\mathrm{wc}}.
-\]</span> Canonical Takagi congruence of that transported symmetric
-matrix, with <span class="math display">\[
-U_{\mathrm{PMNS}}^T M_{\mathrm{shared}}
-U_{\mathrm{PMNS}}=\operatorname{diag}(m_i)\in\mathbb R_{&gt;0}
-\]</span> and the electron-row gauge <span
-class="math inline">\(U_{e1}\in\mathbb R_{&gt;0}\)</span>, therefore
-emits one physical Majorana pair on the declared weighted-cycle
-transport branch: <span class="math display">\[
+\]</span> the identity <span class="math display">\[
+U_{e,\mathrm{left}}^\dagger U_{\nu,\mathrm{shared}}=U_{\mathrm{wc}}.
+\]</span> This cancellation is a tautology because <span
+class="math inline">\(U_{\nu,\mathrm{shared}}\)</span> was defined as
+<span class="math inline">\(U_{e,\mathrm{left}}U_{\mathrm{wc}}\)</span>.
+It does not independently identify the physical charged-lepton basis or
+validate the PMNS point. No theorem in the current stack places the
+<span class="math inline">\(f\)</span>-labelled weighted-cycle operator
+in the charged-lepton mass basis.</p>
+<p>Taking the stored basis declarations literally gives a sharply
+different diagnostic. Reordering <span
+class="math inline">\(M_{\mathrm{wc}}\)</span> from <span
+class="math inline">\([f3,f1,f2]\)</span> to the independently declared
+shared basis <span class="math inline">\([f1,f2,f3]\)</span>, computing
+its Takagi matrix <span class="math inline">\(U_\nu^{(f)}\)</span>, and
+then forming <span class="math inline">\(U_{e,\mathrm{left}}^\dagger
+U_\nu^{(f)}\)</span> yields <span class="math display">\[
+\theta_{12}=38.6812^\circ,
+\qquad
+\theta_{23}=76.2759^\circ,
+\qquad
+\theta_{13}=44.8283^\circ,
+\]</span> with <span
+class="math inline">\(\delta=324.2140^\circ\)</span> and <span
+class="math inline">\(J=-0.0233164\)</span>. In particular, <span
+class="math inline">\(\sin^2\theta_{13}=0.4970\)</span> and <span
+class="math inline">\(\sin^2\theta_{23}=0.9437\)</span>, both outside
+the corresponding NuFIT 6.1 profile grids. This is a diagnostic
+conditional on the current stored matrices and label order. It is not a
+source-closed prediction because the charged basis and family kernel
+also descend from template-level inputs.</p>
+<p>The correct transported Takagi identity is <span
+class="math display">\[
+U_{\nu,\mathrm{shared}}^T M_{\mathrm{shared}} U_{\nu,\mathrm{shared}}
+=\operatorname{diag}(m_i)\in\mathbb R_{&gt;0}.
+\]</span> Equivalently, <span class="math inline">\(U_{\mathrm{wc}}^T
+M_{\mathrm{wc}}U_{\mathrm{wc}}\)</span> is diagonal in the basis where
+<span class="math inline">\(M_{\mathrm{wc}}\)</span> was declared. The
+earlier expression with <span class="math inline">\(U_{\mathrm{PMNS}}^T
+M_{\mathrm{shared}}U_{\mathrm{PMNS}}\)</span> was algebraically false.
+Canonical Takagi readout under the declared charged-basis assumption and
+the electron-row gauge <span class="math inline">\(U_{e1}\in\mathbb
+R_{&gt;0}\)</span> gives the comparison-only Majorana pair <span
+class="math display">\[
 \alpha_{21}^{(\mathrm{Maj})}=153.6185177794357^\circ,
 \qquad
 \alpha_{31}^{(\mathrm{Maj})}=257.0032408220805^\circ.
-\]</span> The exponent law is fixed by the positive transport-load
+\]</span> The declared exponent law uses the positive transport-load
 segment between <span class="math inline">\(\chi=1+\epsilon\)</span> and
 <span class="math inline">\(1+\gamma_{1/2}\)</span>: on a
 one-dimensional affine segment, the balanced selector and the
@@ -3994,10 +4030,14 @@ class="math display">\[
 D_\nu=\frac{\chi+(1+\gamma_{1/2})}{2},
 \qquad
 p=1+\gamma+\frac{\epsilon}{D_\nu}.
-\]</span> On the emitted positive selector segment there is a stronger
-compare-only two-parameter adapter: solving <span
-class="math inline">\(\tau_\nu\)</span> against the representative
-central ratio and then solving <span
+\]</span> The midpoint fact does not derive the segment endpoints, the
+exponent law, the cycle topology, or their application to neutrino
+transport. Git history records target-ranked model selection before this
+law was promoted. The formula is therefore part of the frozen candidate
+rather than a source-side consequence of OPH. On the emitted positive
+selector segment there is a stronger compare-only two-parameter adapter:
+solving <span class="math inline">\(\tau_\nu\)</span> against the
+representative central ratio and then solving <span
 class="math inline">\(\lambda_\nu\)</span> against <span
 class="math inline">\(\Delta m_{32}^2\)</span> gives <span
 class="math display">\[
@@ -4009,9 +4049,10 @@ class="math display">\[
 \Delta m_{31}^2&amp;=2.5129\times10^{-3}\ \mathrm{eV}^2,\\
 \Delta m_{32}^2&amp;=2.438\times10^{-3}\ \mathrm{eV}^2.
 \end{aligned}
-\]</span> These exact central numbers are compare-only because the
-proof-facing theorem lane is the weighted-cycle bridge-rigid branch with
-<span class="math display">\[
+\]</span> These exact central numbers are compare-only. The bridge audit
+also found target feedback in the reduced invariant, so the following
+values are retained only as diagnostic coordinates: <span
+class="math display">\[
 \begin{aligned}
 C_\nu&amp;=0.9994295999075177,\\
 P_\nu&amp;=6.699825740519345,\\
@@ -4024,16 +4065,10 @@ C_\nu=1.7237014208357415,
 m_i=\lambda_\nu \widehat m_i,
 \qquad
 \Delta m_{ij}^2=\lambda_\nu^2 \widehat{\Delta}_{ij}.
-\]</span> The normalized same-label overlap-defect weight section <span
-class="math inline">\(qbar_e\)</span> is closed beneath this step, and
-on the isotropic branch the same-label phase-cocycle theorem, the
-selector-centered common-refinement bundle descent, and the finite-angle
-centered edge-norm theorem are also closed, so the exact two-parameter
-positive-segment adapter, the bridge corridor, and the bridge-coordinate
-sidecars are diagnostic surfaces beneath the bridge-rigidity invariant
-<span class="math inline">\(C_\nu\)</span> and its induced paper-facing
-amplitude <span class="math inline">\(B_\nu\)</span> instead of
-proof-facing ingredients. <span class="math display">\[
+\]</span> The normalized same-label overlap-defect calculation is exact
+after the template and declared selectors are supplied. The
+positive-segment adapter, bridge corridor, and bridge-coordinate
+sidecars remain diagnostic surfaces. <span class="math display">\[
 C_\nu:=\frac{B_\nu}{I_\nu^{1/2}\,\widehat{\mathrm{ratio}}^{\,1/2}\,\mathrm{sum\_defect}^{-1}}
 \]</span> above the emitted proxy and closed normalizer. The attached
 stack also factors exactly through <span class="math inline">\(q_e =
@@ -4046,15 +4081,12 @@ class="math inline">\(q_e=\sqrt{g_e d_e}\)</span> together with the
 induced <span class="math inline">\(\mu_e\)</span> family, but that
 family sits below <span class="math inline">\(C_\nu\)</span> and the
 induced paper-facing amplitude <span
-class="math inline">\(B_\nu\)</span> instead of replacing them. The
-weighted-cycle branch fixes the PMNS data, the hierarchy ratio, and the
-scale-free mass normal form; on that branch the bridge-rigidity theorem
-fixes <span class="math inline">\(C_\nu\)</span> above the emitted proxy
-<span class="math inline">\(P_\nu\)</span>, and absolute attachment then
-emits the absolute eV-scale family.</p>
+class="math inline">\(B_\nu\)</span> instead of replacing them. No
+source-only PMNS, hierarchy, Majorana-phase, or absolute-mass prediction
+survives these gates.</p>
 <h4 id="cosmological-neutrino-pressure-surface">Cosmological-neutrino
 pressure surface.</h4>
-<p>The same weighted-cycle absolute-attachment branch implies <span
+<p>The compare-only absolute attachment displays <span
 class="math display">\[
 \sum_i m_{\nu_i}
 \mathrel{=}
@@ -4065,16 +4097,16 @@ cosmological-neutrino-background branch uses <span
 class="math display">\[
 N_{\mathrm{eff}}^{\mathrm{OPH}}=3.044,
 \]</span> with the usual broad, low-amplitude normal-ordering
-free-streaming imprint. This is a cosmological pressure surface for the
-weighted-cycle branch, not an input to its theorem proof. The emitted
-mass sum sits below the Planck+BAO <span
-class="math inline">\(0.12~\mathrm{eV}\)</span> bound  but is exposed to
-strict DESI DR2 <span class="math inline">\(\Lambda\)</span>CDM-style
-bounds near <span class="math inline">\(0.0642~\mathrm{eV}\)</span>
-under their model assumptions . A cosmological upper bound below the
-emitted value would directly pressure the weighted-cycle absolute-mass
-branch if it comes from a model class that also respects oscillation
-lower limits and the OPH background assumptions.</p>
+free-streaming imprint. This is a diagnostic cosmological pressure
+surface for the rejected candidate. The emitted mass sum sits below the
+Planck+BAO <span class="math inline">\(0.12~\mathrm{eV}\)</span> bound 
+but is exposed to strict DESI DR2 <span
+class="math inline">\(\Lambda\)</span>CDM-style bounds near <span
+class="math inline">\(0.0642~\mathrm{eV}\)</span> under their model
+assumptions . A cosmological upper bound below the emitted value would
+exclude the displayed absolute-mass continuation under a model class
+that also respects oscillation lower limits and the OPH background
+assumptions.</p>
 <p>On the same-label neutrino-only branch, the centered eta-class is
 exactly <span class="math inline">\(S_3\)</span>-isotropic, so the
 same-label data are edge-constant and the solar <span
@@ -4140,9 +4172,14 @@ basis.</em></p>
 <p><strong>Theorem 21</strong> (Exact principal-branch selector from the
 centered eta-class). <em>Fix the cycle sum <span class="math display">\[
 \Omega=\psi_{12}+\psi_{23}+\psi_{31},
-\qquad |\Omega|&lt;\frac{3\pi}{2},
 \]</span> and a positive weight family <span
-class="math inline">\(\mu_e\)</span>. On the principal branch <span
+class="math inline">\(\mu_e\)</span>. Define <span
+class="math display">\[
+\mu_{\min}=\min_e\mu_e,
+\qquad
+F_{\max}=\sum_e\arcsin\!\left(\frac{\mu_{\min}}{\mu_e}\right).
+\]</span> If <span class="math inline">\(|\Omega|&lt;F_{\max}\)</span>,
+then on the principal branch <span
 class="math inline">\(\psi_e\in(-\pi/2,\pi/2)\)</span>, the affine
 energy <span class="math display">\[
 A(\psi)=\sum_e \mu_e(1-\cos\psi_e)
@@ -4165,17 +4202,27 @@ branch the scalar function <span class="math display">\[
 F(\lambda)=\sum_e\arcsin(\lambda/\mu_e)
 \]</span> is strictly increasing because <span class="math display">\[
 F&#39;(\lambda)=\sum_e\frac{1}{\sqrt{\mu_e^2-\lambda^2}}&gt;0.
-\]</span> Its range is <span
-class="math inline">\((-3\pi/2,3\pi/2)\)</span>, so <span
-class="math inline">\(F(\lambda)=\Omega\)</span> has a unique solution.
-Strict convexity follows because the Hessian of <span
-class="math inline">\(A\)</span> is <span class="math display">\[
+\]</span> Its range on <span
+class="math inline">\((-\mu_{\min},\mu_{\min})\)</span> is <span
+class="math inline">\((-F_{\max},F_{\max})\)</span>, so <span
+class="math inline">\(F(\lambda)=\Omega\)</span> has a unique solution
+under the stated condition. Strict convexity follows because the Hessian
+of <span class="math inline">\(A\)</span> is <span
+class="math display">\[
 \nabla^2A=\mathrm{diag}(\mu_e\cos\psi_e),
 \]</span> which is positive definite on the principal branch and is
 positive definite after restriction to the affine plane <span
 class="math inline">\(\sum_e\psi_e=\Omega\)</span>. ◻</p>
 </div>
 
+<p>For the live normalized family <span class="math display">\[
+(\mu_{12},\mu_{23},\mu_{31})=(1.4497003,\ 0.9968526,\ 0.5534471),
+\]</span> one has <span
+class="math inline">\(F_{\max}=2.5511001\)</span>, <span
+class="math inline">\(|\Omega|=1.7561443\)</span>, and positive domain
+margin <span class="math inline">\(0.7949558\)</span>. The corrected
+theorem domain therefore leaves the stored numerical selector
+unchanged.</p>
 <p>Let <span class="math display">\[
 a=m_\star=\frac{v^2}{\mu_u},
 \qquad
@@ -4331,18 +4378,17 @@ rows.</p>
 <h2
 id="weighted-cycle-bridge-rigidity-and-absolute-attachment">Weighted-cycle
 bridge rigidity and absolute attachment</h2>
-<p>The weighted-cycle route closes the PMNS and hierarchy steps. On that
-lane the bridge-rigidity theorem fixes the reduced invariant <span
-class="math inline">\(C_\nu\)</span> above the emitted proxy <span
-class="math inline">\(P_\nu\)</span>, with <span
-class="math inline">\(B_\nu=P_\nu C_\nu\)</span> retained only as the
-paper-facing amplitude parameterization: <span class="math display">\[
+<p>The weighted-cycle route supplies a frozen PMNS/hierarchy candidate.
+The reduced invariant <span class="math inline">\(C_\nu\)</span> was
+selected on a compare-only correction surface, with <span
+class="math inline">\(B_\nu=P_\nu C_\nu\)</span> retained as a
+diagnostic amplitude parameterization: <span class="math display">\[
 \begin{aligned}
 C_\nu&amp;=G^2Q S^{-1/2}=0.9994295999075177,\\
 P_\nu&amp;=6.699825740519345,\\
 B_\nu&amp;=P_\nu C_\nu=6.696004159297337.
 \end{aligned}
-\]</span> The absolute-attachment theorem therefore emits <span
+\]</span> The blocked absolute attachment displays <span
 class="math display">\[
 \begin{aligned}
 \lambda_\nu&amp;=\frac{m_{\star,\mathrm{eV}}}{q_{\mathrm{mean}}^{p_\nu}}\,P_\nu
@@ -4350,12 +4396,13 @@ C_\nu=1.7237014208357415,\\
 m_i&amp;=\lambda_\nu \hat m_i,\\
 \Delta m_{ij}^2&amp;=\lambda_\nu^2\widehat{\Delta m_{ij}^2}.
 \end{aligned}
-\]</span> No hidden discrete branch is present on that lane. The
-one-parameter atmospheric-anchor slice and the stronger two-parameter
-positive-segment adapter are only diagnostic compare-only continuations
-beneath the bridge-rigidity invariant <span
-class="math inline">\(C_\nu\)</span> and its induced paper-facing
-amplitude <span class="math inline">\(B_\nu\)</span>.</p>
+\]</span> The basis permutation, holonomy orientation, and CP sign lack
+source-side selection. Exhaustive enumeration of both orientations and
+all row and mass-column permutations finds no normal-ordering-consistent
+convention that passes both NuFIT 6.1 correlated <span
+class="math inline">\(3\sigma\)</span> gates. The one-parameter
+atmospheric-anchor slice and the two-parameter positive-segment adapter
+remain compare-only continuations.</p>
 <h1 id="hadrons-qcd-and-the-emergence-of-ordinary-matter">Hadrons, QCD,
 and the Emergence of Ordinary Matter</h1>
 <p>The hadron derivation is the most operationally demanding part of the
@@ -4891,10 +4938,9 @@ nonpromoting component is the map from that intrinsic base to the named
 low-energy fermion families when the required sector bridge is not
 emitted. The quark derivation emits named rows because the forward
 branch is far enough along to support direct numerical comparison there;
-the charged-lepton derivation does not do so at theorem grade, and the
-neutrino derivation does so only on its weighted-cycle theorem branch.
-It does not close on a fully flavor-labeled surface, even though it uses
-the same downstream family machinery.</p>
+the charged-lepton derivation does not do so at theorem grade. The
+neutrino weighted-cycle construction remains a target-informed template
+candidate and does not close on a physical flavor-labeled surface.</p>
 <p>Accordingly, particle identity is a refinement-stable
 observer-accessible transport pattern whose named interpretation is
 inherited from the available dictionary and comparison surfaces. Where
@@ -5344,11 +5390,11 @@ Three generations are structurally recovered; the full flavor
 dictionary, excitation map, and CKM closure are not emitted on this
 theorem surface, while the charged source landing from <span
 class="math inline">\(P\)</span> to physical charged data is a
-corpus-limited no-go and the neutrino lane is closed only on its
-declared weighted-cycle theorem branch instead of on a fuller
-flavor-labeled closure surface. The flavor chapter and the later family
-chapters therefore spend substantial space on constructive object
-boundaries as well as final numbers.</p>
+corpus-limited no-go and the neutrino lane has no source-closed flavor
+prediction. Its weighted-cycle candidate fails the NuFIT 6.1 correlated
+profile . The flavor chapter and the later family chapters therefore
+spend substantial space on constructive object boundaries as well as
+final numbers.</p>
 <h2 id="ordinary-matter-and-the-hadron-backend-boundary">Ordinary matter
 and the hadron backend boundary</h2>
 <p>A second distinction belongs in discussion form instead of in the
@@ -5384,9 +5430,9 @@ validation row, the charged-lepton absolute-mass landing, and the hadron
 backend plus empirical closure split. The <span
 class="math inline">\(W/Z\)</span> row is a frozen compare-only adapter
 with its own public validation records. The Ward-projected Thomson lane
-records a source-side no-hadron value, the
-source-plus-unified-gauge-width prediction, and the empirical
-hadron-completed endpoint as separate rows on the declared <span
+records the source/root audit, the mixed-provenance
+root-plus-comparison-pixel diagnostic, and the measured endpoint as
+separate rows on the declared <span
 class="math inline">\(P\)</span>-closure surface. In the charged lane
 the theorem surface carries an exact same-family witness, a
 determinant-line lift, and an algebraic mass readout from theorem-grade
@@ -5394,9 +5440,9 @@ determinant-line lift, and an algebraic mass readout from theorem-grade
 source landing from the D10 quantitative descendants of <span
 class="math inline">\(P\)</span> to physical charged data is closed as a
 corpus-limited no-go. Source-only hadron masses require a working OPH
-hadron backend. Empirical hadron closure values use a separate <span
-class="math inline">\(e^+e^-\to\mathrm{hadrons}\)</span> payload
-class.</p>
+hadron backend. The declared empirical route would use a separate <span
+class="math inline">\(e^+e^-\to\mathrm{hadrons}\)</span> payload class;
+no integrated endpoint payload is emitted here.</p>
 <p>That accounting belongs on the page because it is part of the
 derivation. The paper puts the structural results, the fixed-point
 fine-structure value, the emitted quantitative rows, and the
@@ -5887,6 +5933,10 @@ Section <a href="#sec:h3-record-worldlines" data-reference-type="ref" data-refe
 <div class="thebibliography">
 
 <p>9</p>
+<p>B. Müller, D. Matscheko, and J. Hill, <em>Observation-Determined
+Normal Forms: Stability, Obstructions, and Refinement in Constraint and
+Rewrite Systems</em>, 2026. Available at <a
+href="https://github.com/FloatingPragma/observer-patch-holography/blob/main/extra/observable_normal_forms.pdf">https://github.com/FloatingPragma/observer-patch-holography/blob/main/extra/observable_normal_forms.pdf</a>.</p>
 <p>B. Müller, A. Osika, M. Poneder, K. Xue, B. Cassie, P. Nguyen,
 M. A. Visser, K. A. Anirudha, D. Matscheko, and J. Hill, <em>Observers
 Are All You Need</em>. GitHub PDF: <a
@@ -5914,6 +5964,12 @@ href="https://arxiv.org/abs/1807.06209">https://arxiv.org/abs/1807.06209</a></p>
 <p>DESI Collaboration, <em>Constraints on Neutrino Physics from DESI DR2
 BAO and DR1 Full Shape</em>, arXiv:2503.14744, 2025. <a
 href="https://arxiv.org/abs/2503.14744">https://arxiv.org/abs/2503.14744</a></p>
+<p>I. Esteban, M. C. Gonzalez-Garcia, M. Maltoni, I. Martinez-Soler, J.
+P. Pinheiro, and T. Schwetz, <em>NuFit-6.0: Updated global analysis of
+three-flavor neutrino oscillations</em>, JHEP <strong>12</strong> (2024)
+216, arXiv:2410.05380, with the NuFIT 6.1 (2025) profile-table release
+at <a
+href="https://www.nu-fit.org/?q=node/309">https://www.nu-fit.org/?q=node/309</a>.</p>
 </div>
 
           </div>
