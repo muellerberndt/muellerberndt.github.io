@@ -1,6 +1,6 @@
 {
-  "release_id": "r1534",
-  "released_at": "July 12, 2026",
+  "release_id": "r1535",
+  "released_at": "July 13, 2026",
   "collection_url": "https://floatingpragma.io/oph/papers/",
   "sitemap_url": "https://floatingpragma.io/oph/papers/sitemap.xml",
   "papers": [
@@ -9,7 +9,7 @@
       "title": "Deriving the Particle Zoo from Observer Consistency",
       "short_title": "Particle spectrum paper",
       "category": "Particles",
-      "description": "The OPH particle-spectrum continuation. It treats fine-structure closure, electroweak transport, selected-class quarks, neutrino branches, and status-separated hadron checks.",
+      "description": "The OPH particle-spectrum continuation. It treats fine-structure closure, electroweak transport, selected-class quarks, the exact icosahedral charged-family carrier and its target-informed completion conjecture, the engineered digital CFQ schema audit, the conditional nature/pole transport boundary, neutrino branches, and status-separated hadron checks.",
       "authors": [
         "Bernhard Mueller",
         "Alexander Osika",
@@ -188,7 +188,7 @@
       "title": "Recovering Relativity and Standard Model Structure from Observer Overlap Consistency",
       "short_title": "Compact OPH core",
       "category": "Unification",
-      "description": "The compact OPH route to Lorentz structure, the Einstein branch, receipt-conditional compact-gauge reconstruction, the Standard Model quotient, color, generations, hypercharge, and branch-scoped Yang-Mills statements.",
+      "description": "The compact OPH route to Lorentz structure, the Einstein branch, receipt-conditional compact-gauge reconstruction, the Standard Model quotient, color, generations, hypercharge, branch-scoped Yang-Mills statements, and the exact icosahedral face-carrier plus formal digital-CFQ boundary for charged-family continuations.",
       "authors": [
         "Bernhard Mueller",
         "Alexander Osika",
@@ -233,7 +233,7 @@
       "title": "Screen Microphysics and Observer Synchronization",
       "short_title": "Screen microphysics",
       "category": "Screen physics",
-      "description": "The fixed-cutoff OPH microphysics paper. It develops finite overlap-facing patch carriers, the twelve-port screen-sieve theorem, record algebras, measurement surfaces, observer backup, synchronization, and hardware-evidence rules.",
+      "description": "The fixed-cutoff OPH microphysics paper. It develops finite overlap-facing patch carriers, the twelve-port screen-sieve theorem, the A5/C3 face-corner bundle, the formal CFQ central-record model and its physical-selection boundary, measurement surfaces, observer backup, synchronization, and hardware-evidence rules.",
       "authors": [
         "Bernhard Mueller",
         "Alexander Osika",

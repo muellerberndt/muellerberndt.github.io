@@ -1,7 +1,7 @@
 # Observer Patch Holography Papers
 
-Release: r1534
-Released: July 12, 2026
+Release: r1535
+Released: July 13, 2026
 
 This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 
@@ -11,7 +11,7 @@ This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 - PDF: https://floatingpragma.io/oph/papers/particle-spectrum-from-observer-consistency/paper.pdf
 - Authors: Bernhard Mueller, Alexander Osika, Mario Poneder, Kai Xue, Maarten Antonie Visser, David Matscheko
 - Category: Particles
-- Summary: The OPH particle-spectrum continuation. It treats fine-structure closure, electroweak transport, selected-class quarks, neutrino branches, and status-separated hadron checks.
+- Summary: The OPH particle-spectrum continuation. It treats fine-structure closure, electroweak transport, selected-class quarks, the exact icosahedral charged-family carrier and its target-informed completion conjecture, the engineered digital CFQ schema audit, the conditional nature/pole transport boundary, neutrino branches, and status-separated hadron checks.
 
 ## Observers Are All You Need
 
@@ -43,7 +43,7 @@ This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 - PDF: https://floatingpragma.io/oph/papers/standard-model-gravity-unification/paper.pdf
 - Authors: Bernhard Mueller, Alexander Osika, Mario Poneder, Kai Xue, Peter Nguyen, Maarten Antonie Visser, David Matscheko
 - Category: Unification
-- Summary: The compact OPH route to Lorentz structure, the Einstein branch, receipt-conditional compact-gauge reconstruction, the Standard Model quotient, color, generations, hypercharge, and branch-scoped Yang-Mills statements.
+- Summary: The compact OPH route to Lorentz structure, the Einstein branch, receipt-conditional compact-gauge reconstruction, the Standard Model quotient, color, generations, hypercharge, branch-scoped Yang-Mills statements, and the exact icosahedral face-carrier plus formal digital-CFQ boundary for charged-family continuations.
 
 ## Screen Microphysics and Observer Synchronization
 
@@ -51,7 +51,7 @@ This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 - PDF: https://floatingpragma.io/oph/papers/screen-microphysics-and-observer-synchronization/paper.pdf
 - Authors: Bernhard Mueller, Alexander Osika, Kai Xue, Ben Cassie, Maarten Antonie Visser, David Matscheko
 - Category: Screen physics
-- Summary: The fixed-cutoff OPH microphysics paper. It develops finite overlap-facing patch carriers, the twelve-port screen-sieve theorem, record algebras, measurement surfaces, observer backup, synchronization, and hardware-evidence rules.
+- Summary: The fixed-cutoff OPH microphysics paper. It develops finite overlap-facing patch carriers, the twelve-port screen-sieve theorem, the A5/C3 face-corner bundle, the formal CFQ central-record model and its physical-selection boundary, measurement surfaces, observer backup, synchronization, and hardware-evidence rules.
 
 ## Photonic Fixed-Point Consensus for SHA-256d Proof of Work
 
