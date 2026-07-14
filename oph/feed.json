@@ -3,7 +3,7 @@
   "title": "Observer Patch Holography Updates",
   "home_page_url": "https://floatingpragma.io/oph/",
   "feed_url": "https://floatingpragma.io/oph/feed.json",
-  "description": "Public OPH links, with the zero-input two-fixed-point constants headline, OPH Textbooks, Reverse Engineering Reality, mini-universe simulation, Applications, paper summaries, physics unification, Standard Model plus gravity, cosmological constant, coherence, essays, lab, and challenge updates.",
+  "description": "Public OPH links, with the zero-dial two-fixed-point constants headline (zero dials; zero quantitative inputs at the theory layer; working borrows counted in the scorecard), OPH Textbooks, Reverse Engineering Reality, mini-universe simulation, Applications, paper summaries, physics unification, Standard Model plus gravity, cosmological constant, coherence, essays, lab, and challenge updates.",
   "language": "en",
   "authors": [
     {
@@ -16,7 +16,7 @@
       "url": "https://floatingpragma.io/oph/papers/",
       "title": "OPH Paper Summaries",
       "date_published": "2026-06-02T00:00:00Z",
-      "summary": "HTML summaries of the six-paper Observer Patch Holography stack and supporting papers, including the zero-input two-fixed-point constants headline, with links to the formal PDFs."
+      "summary": "HTML summaries of the six-paper Observer Patch Holography stack and supporting papers, including the zero-dial two-fixed-point constants headline (zero quantitative inputs at the theory layer; working borrows counted in the scorecard), with links to the formal PDFs."
     },
     {
       "id": "https://floatingpragma.io/oph/standard-model-gravity-unification/",
@@ -30,14 +30,14 @@
       "url": "https://floatingpragma.io/oph/cosmological-constant-derivation/",
       "title": "Cosmological Constant Derivation via OPH",
       "date_published": "2026-06-02T00:00:00Z",
-      "summary": "The OPH de Sitter screen-capacity route to the cosmological constant, with the zero-input cosmic record-capacity fixed point N_CRC = F(N_CRC) and Lambda_CRC = 3 pi / (G N_CRC)."
+      "summary": "The OPH de Sitter screen-capacity route to the cosmological constant, with the closure-defined cosmic record-capacity fixed point N_CRC = F(N_CRC) and Lambda_CRC = 3 pi / (G N_CRC)."
     },
     {
       "id": "https://floatingpragma.io/oph/physics-unification/",
       "url": "https://floatingpragma.io/oph/physics-unification/",
       "title": "Physics Unification via OPH",
       "date_published": "2026-05-21T00:00:00Z",
-      "summary": "The direct public entry page for OPH as a zero-input physics-unification framework connecting gravity, quantum theory, particles, records, observers, and simulation theory."
+      "summary": "The direct public entry page for OPH as a zero-dial physics-unification framework (zero quantitative inputs at the theory layer; working borrows counted in the scorecard) connecting gravity, quantum theory, particles, records, observers, and simulation theory."
     },
     {
       "id": "https://simulation.floatingpragma.io/",
