@@ -22,7 +22,7 @@
   <meta name="citation_pdf_url" content="https://floatingpragma.io/oph/papers/fine-structure-constant-oph-pixel-fixed-point/paper.pdf" />
   <meta name="citation_abstract_html_url" content="https://floatingpragma.io/oph/papers/fine-structure-constant-oph-pixel-fixed-point/" />
   <meta name="citation_technical_report_institution" content="Pragma Research" />
-  <meta name="citation_technical_report_number" content="OPH r1538 fine_structure_constant_derivation" />
+  <meta name="citation_technical_report_number" content="OPH r1539 fine_structure_constant_derivation" />
   <meta name="DC.title" content="The Fine-Structure Constant as an OPH Pixel Fixed Point" />
   <meta name="DC.creator" content="Bernhard Mueller" />
   <meta name="DC.creator" content="Alexander Osika" />
@@ -99,7 +99,7 @@
   ],
   "datePublished": "July 14, 2026",
   "dateModified": "July 14, 2026",
-  "version": "r1538",
+  "version": "r1539",
   "subjectOf": [
     {
       "@type": "BlogPosting",
@@ -190,14 +190,14 @@
             <p>A focused OPH paper on the fine-structure constant, local screen-cell closure, hadronic endpoint transport, and the fixed-point status of alpha.</p>
           </div>
           <div class="paper-meta-line">
-            <span>r1538</span>
+            <span>r1539</span>
             <span>July 14, 2026</span>
             <span>extra papers</span>
           </div>
           <div class="cta-row">
             <a class="btn btn-primary" href="/oph/papers/fine-structure-constant-oph-pixel-fixed-point/paper.pdf" target="_blank" rel="noopener noreferrer" data-track-link="paper-pdf-fine_structure_constant_derivation">Download PDF</a>
             <a class="btn btn-secondary" href="/oph/papers/" data-track-link="paper-index">All OPH papers</a>
-            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r1538" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
+            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r1539" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
             <a class="btn btn-secondary" href="https://challenge.floatingpragma.io/" data-track-link="paper-challenge">Challenge</a>
           </div>
 
@@ -225,7 +225,7 @@
         </header>
         <div class="paper-reader-grid">
           <div class="paper-body">
-<p><strong>Paper release:</strong> <code>r1538</code>
+<p><strong>Paper release:</strong> <code>r1539</code>
 <strong>Released:</strong> July 14, 2026</p>
 <p><strong>Keywords:</strong> fine-structure constant, Observer-Patch
 Holography, pixel fixed point, electromagnetic coupling, Standard Model
@@ -1941,10 +1941,12 @@ the gauge-width map. The certificate certifies the declared numerical
 map; it does not relate either fixed point to the measured constant, and
 the stage-3 landing verdict of the basin-then-contract protocol is
 unchanged (outside the SL-3 basin, rows CL-1 and CL-2). The global
-at-most-one statement on the full physical domain additionally requires
-monotonicity of <span class="math inline">\(A_{\mathrm{Th}}\)</span> in
-<span class="math inline">\(P\)</span>, which remains an open analytic
-item.</p>
+at-most-one statement is discharged on the declared physical domain
+(<span class="math inline">\(\alpha^{-1}\in[100,200]\)</span>): <span
+class="math inline">\(\sup|g&#39;|&lt;1\)</span> on all 256 certified
+pieces, both readout maps, zero exceptional set
+(<code>runtime/p_global_uniqueness_certificate_2026-07-14.json</code>),
+so each map has exactly one fixed point on the domain.</p>
 <p>The release gate for promoting this row from empirical endpoint
 comparison to source-only theorem is explicit. The packet must contain
 <span class="math display">\[
