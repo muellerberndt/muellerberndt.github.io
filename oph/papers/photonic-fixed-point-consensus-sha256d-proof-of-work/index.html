@@ -15,28 +15,28 @@
   <meta name="citation_title" content="Photonic Fixed-Point Consensus for SHA-256d Proof of Work" />
   <meta name="citation_author" content="Bernhard Mueller" />
   <meta name="citation_author" content="Alexander Osika" />
-  <meta name="citation_publication_date" content="2026/07/13" />
-  <meta name="citation_online_date" content="2026/07/13" />
+  <meta name="citation_publication_date" content="2026/07/14" />
+  <meta name="citation_online_date" content="2026/07/14" />
   <meta name="citation_language" content="en" />
   <meta name="citation_keywords" content="SHA-256d proof of work; Bitcoin mining; photonic computing; physical cryptanalysis; analog computing; fixed-point consensus; Observer Patch Holography" />
   <meta name="citation_pdf_url" content="https://floatingpragma.io/oph/papers/photonic-fixed-point-consensus-sha256d-proof-of-work/paper.pdf" />
   <meta name="citation_abstract_html_url" content="https://floatingpragma.io/oph/papers/photonic-fixed-point-consensus-sha256d-proof-of-work/" />
   <meta name="citation_technical_report_institution" content="Pragma Research" />
-  <meta name="citation_technical_report_number" content="OPH r1536 Photonic_fixed-point_consensus_for_SHA-256d_proof_of_work" />
+  <meta name="citation_technical_report_number" content="OPH r1537 Photonic_fixed-point_consensus_for_SHA-256d_proof_of_work" />
   <meta name="DC.title" content="Photonic Fixed-Point Consensus for SHA-256d Proof of Work" />
   <meta name="DC.creator" content="Bernhard Mueller" />
   <meta name="DC.creator" content="Alexander Osika" />
-  <meta name="DC.issued" content="2026/07/13" />
-  <meta name="DC.date" content="2026/07/13" />
+  <meta name="DC.issued" content="2026/07/14" />
+  <meta name="DC.date" content="2026/07/14" />
   <meta name="DC.type" content="Text" />
   <meta name="DC.format" content="text/html" />
   <meta name="DC.language" content="en" />
   <meta name="DC.publisher" content="Pragma Research" />
   <meta name="DC.identifier" content="https://floatingpragma.io/oph/papers/photonic-fixed-point-consensus-sha256d-proof-of-work/" />
   <meta name="DC.identifier" content="https://floatingpragma.io/oph/papers/photonic-fixed-point-consensus-sha256d-proof-of-work/paper.pdf" />
-  <meta name="article:published_time" content="2026-07-13T00:00:00Z" />
-  <meta name="article:modified_time" content="2026-07-13T00:00:00Z" />
-  <meta name="prism.publicationDate" content="2026/07/13" />
+  <meta name="article:published_time" content="2026-07-14T00:00:00Z" />
+  <meta name="article:modified_time" content="2026-07-14T00:00:00Z" />
+  <meta name="prism.publicationDate" content="2026/07/14" />
   <meta name="prism.publicationName" content="Observer Patch Holography Papers" />
   <meta name="prism.section" content="Physical computation" />
   <meta name="prism.url" content="https://floatingpragma.io/oph/papers/photonic-fixed-point-consensus-sha256d-proof-of-work/" />
@@ -98,9 +98,9 @@
     "fixed-point consensus",
     "Observer Patch Holography"
   ],
-  "datePublished": "July 13, 2026",
-  "dateModified": "July 13, 2026",
-  "version": "r1536",
+  "datePublished": "July 14, 2026",
+  "dateModified": "July 14, 2026",
+  "version": "r1537",
   "subjectOf": [
     {
       "@type": "BlogPosting",
@@ -191,14 +191,14 @@
             <p>An OPH-adjacent physical-computation paper on photonic fixed-point consensus, SHA-256d proof of work, analog constraint satisfaction, and verifier receipts.</p>
           </div>
           <div class="paper-meta-line">
-            <span>r1536</span>
-            <span>July 13, 2026</span>
+            <span>r1537</span>
+            <span>July 14, 2026</span>
             <span>extra papers</span>
           </div>
           <div class="cta-row">
             <a class="btn btn-primary" href="/oph/papers/photonic-fixed-point-consensus-sha256d-proof-of-work/paper.pdf" target="_blank" rel="noopener noreferrer" data-track-link="paper-pdf-Photonic_fixed-point_consensus_for_SHA-256d_proof_of_work">Download PDF</a>
             <a class="btn btn-secondary" href="/oph/papers/" data-track-link="paper-index">All OPH papers</a>
-            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r1536" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
+            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r1537" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
             <a class="btn btn-secondary" href="https://challenge.floatingpragma.io/" data-track-link="paper-challenge">Challenge</a>
           </div>
 
@@ -226,8 +226,8 @@
         </header>
         <div class="paper-reader-grid">
           <div class="paper-body">
-<p><strong>Paper release:</strong> <code>r1536</code>
-<strong>Released:</strong> July 13, 2026</p>
+<p><strong>Paper release:</strong> <code>r1537</code>
+<strong>Released:</strong> July 14, 2026</p>
 <h1 id="what-this-paper-contributes">What This Paper Contributes</h1>
 <p>Proof of work has an unusually clean judge: the digital verifier.
 This paper uses that fact to make an OPH hardware claim testable. The
@@ -1509,9 +1509,12 @@ class="math inline">\(\widehat\beta(12)=2{,}434\)</span>, meaning that
 <span class="math inline">\(\mathrm{lz}\ge12\)</span> candidates
 appeared <span class="math inline">\(2{,}434\)</span> times the
 uniform-random baseline in that selected stream. The boundary is
-important: this is a controlled candidate-enrichment result on the
-chord-promote output, not a final pool-rate or block-win result, and not
-evidence that the same slope continues to network difficulty.</p>
+important: this is a controlled candidate-enrichment result on
+shuffle-replay-selected chord-promote output — a post-selected stream —
+not a final pool-rate or block-win result, and not evidence that the
+same slope continues to network difficulty. Because the selection
+happens after the fact, the figure is an acceptance property of the
+selected stream; prospective per-event enrichment is unestablished.</p>
 <p>The same log also records the boundary conditions. A CPU pool
 baseline established the pool contract. During the optical acceptance
 run, CPU workers also contributed to wallet-level flow. A solo audit on
@@ -1595,16 +1598,20 @@ from a single module are excluded. A high bias loses value if settling
 is slow. The Kaspa comparison lane supplies one historical
 candidate-bias datum, <span
 class="math inline">\(\widehat\beta(12)=2{,}434\)</span>, measured on
-chord-promote output after shuffle-replay. Equivalently, for the <span
-class="math inline">\(k=12\)</span> exact-verifier predicate, the
+shuffle-replay-selected chord-promote output. Equivalently, for the
+<span class="math inline">\(k=12\)</span> exact-verifier predicate, the
 selected stream’s estimated success probability was <span
 class="math inline">\(2{,}434\times2^{-12}\)</span> instead of <span
-class="math inline">\(2^{-12}\)</span>. It does not by itself determine
-SHA-256d speedup, because the operator, route, packet size, settle time,
-and high-<span class="math inline">\(k\)</span> scaling must be
-remeasured under the SHA-256d scorebook. Against a classical verifier
-running at <span class="math inline">\(R_{\mathrm{hash}}\)</span>, the
-sampler wins only when <span class="math display">\[
+class="math inline">\(2^{-12}\)</span>. Feeding this number into the
+prospective throughput formula presumes a per-event bias that has not
+been measured: the datum is a post-selection acceptance property, and
+prospective per-event enrichment is unestablished. It also does not by
+itself determine SHA-256d speedup, because the operator, route, packet
+size, settle time, and high-<span class="math inline">\(k\)</span>
+scaling must be remeasured under the SHA-256d scorebook. Against a
+classical verifier running at <span
+class="math inline">\(R_{\mathrm{hash}}\)</span>, the sampler wins only
+when <span class="math display">\[
 m_{\mathrm{pkt}}\beta&gt;R_{\mathrm{hash}}T_{\mathrm{settle}}.
 \]</span> At <span
 class="math inline">\(R_{\mathrm{hash}}=4.73\times10^{14}\,\mathrm{H/s}\)</span>
@@ -1681,7 +1688,12 @@ class="math inline">\(T_{\mathrm{phys}}\)</span>, the ASIC-relative
 multiplier is <span
 class="math inline">\(T_{\mathrm{ASIC}}(k)/T_{\mathrm{phys}}\)</span>.
 The following table is a sensitivity calculation for proposed regimes,
-with no SHA-256d bench measurement attached.</p>
+with no SHA-256d bench measurement attached. One measured result bounds
+all of it: under a matched exact-verification budget, the bench
+prototype loses to random search — at equal verifier calls, the random
+candidate stream reached valid nonces at least as fast as the physical
+route. Every multiplier below is conditional on a prospective,
+matched-budget win that has not been measured.</p>
 <div class="center">
 
 <div class="minipage">
