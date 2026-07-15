@@ -1,5 +1,5 @@
 {
-  "release_id": "r1541",
+  "release_id": "r1542",
   "released_at": "July 15, 2026",
   "collection_url": "https://floatingpragma.io/oph/papers/",
   "sitemap_url": "https://floatingpragma.io/oph/papers/sitemap.xml",
@@ -398,6 +398,35 @@
           "title": "Everything Clicks Into Place",
           "url": "https://blog.floatingpragma.io/everything-that-clicks-into-place",
           "description": "Unification as translation, repair, and stable agreement across domains."
+        }
+      ]
+    },
+    {
+      "id": "machine_checked_finite_event_algebras",
+      "title": "Machine-Checked Finite Event Algebras for Observer-Patch Holography",
+      "short_title": "Machine-checked finite event algebras",
+      "category": "Mathematical foundations",
+      "description": "A machine-checked finite-event-algebra paper for OPH measurement surfaces, including Boolean event structure, traces, conditional expectations, and Born-Luders update rules.",
+      "authors": [
+        "Bernhard Mueller"
+      ],
+      "keywords": [
+        "finite event algebras",
+        "Lean 4",
+        "Born rule",
+        "Luders update",
+        "conditional expectation",
+        "machine checked mathematics",
+        "Observer Patch Holography"
+      ],
+      "html_url": "https://floatingpragma.io/oph/papers/machine-checked-finite-event-algebras/",
+      "pdf_url": "https://floatingpragma.io/oph/papers/machine-checked-finite-event-algebras/paper.pdf",
+      "central_pdf_url": "https://floatingpragma.io/oph/papers/pdf/machine_checked_finite_event_algebras.pdf",
+      "related_blog_posts": [
+        {
+          "title": "The Trigger",
+          "url": "https://blog.floatingpragma.io/the-trigger",
+          "description": "High-level public entry point for the OPH claim."
         }
       ]
     },

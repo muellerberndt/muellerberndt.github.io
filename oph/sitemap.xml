@@ -139,6 +139,12 @@
     <priority>0.82</priority>
   </url>
   <url>
+    <loc>https://floatingpragma.io/oph/papers/machine-checked-finite-event-algebras/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+  </url>
+  <url>
     <loc>https://floatingpragma.io/oph/papers/observation-determined-normal-forms/</loc>
     <lastmod>2026-07-15</lastmod>
     <changefreq>monthly</changefreq>

@@ -1,6 +1,6 @@
 # Observer Patch Holography Papers
 
-Release: r1541
+Release: r1542
 Released: July 15, 2026
 
 This page lists the first-party HTML and PDF URLs for the OPH paper stack.
@@ -84,6 +84,14 @@ This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 - Authors: Bernhard Mueller, Alexander Osika
 - Category: Constants
 - Summary: A focused OPH paper on the fine-structure constant, local screen-cell closure, hadronic endpoint transport, and the fixed-point status of alpha.
+
+## Machine-Checked Finite Event Algebras for Observer-Patch Holography
+
+- HTML: https://floatingpragma.io/oph/papers/machine-checked-finite-event-algebras/
+- PDF: https://floatingpragma.io/oph/papers/machine-checked-finite-event-algebras/paper.pdf
+- Authors: Bernhard Mueller
+- Category: Mathematical foundations
+- Summary: A machine-checked finite-event-algebra paper for OPH measurement surfaces, including Boolean event structure, traces, conditional expectations, and Born-Luders update rules.
 
 ## Observation-Determined Normal Forms: Stability, Obstructions, and Refinement in Constraint and Rewrite Systems
 

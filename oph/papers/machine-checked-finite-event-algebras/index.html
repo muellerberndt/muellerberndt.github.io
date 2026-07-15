@@ -1,0 +1,1582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Machine-Checked Finite Event Algebras for Observer-Patch Holography | OPH Paper</title>
+  <meta name="title" content="Machine-Checked Finite Event Algebras for Observer-Patch Holography | OPH Paper" />
+  <meta name="description" content="A machine-checked finite-event-algebra paper for OPH measurement surfaces, including Boolean event structure, traces, conditional expectations, and Born-Luders update rules." />
+  <meta name="keywords" content="finite event algebras, Lean 4, Born rule, Luders update, conditional expectation, machine checked mathematics, Observer Patch Holography" />
+  <meta name="author" content="Pragma" />
+  <link rel="canonical" href="https://floatingpragma.io/oph/papers/machine-checked-finite-event-algebras/" />
+  <link rel="related" href="https://blog.floatingpragma.io/the-trigger" title="The Trigger" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="citation_title" content="Machine-Checked Finite Event Algebras for Observer-Patch Holography" />
+  <meta name="citation_author" content="Bernhard Mueller" />
+  <meta name="citation_publication_date" content="2026/07/15" />
+  <meta name="citation_online_date" content="2026/07/15" />
+  <meta name="citation_language" content="en" />
+  <meta name="citation_keywords" content="finite event algebras; Lean 4; Born rule; Luders update; conditional expectation; machine checked mathematics; Observer Patch Holography" />
+  <meta name="citation_pdf_url" content="https://floatingpragma.io/oph/papers/machine-checked-finite-event-algebras/paper.pdf" />
+  <meta name="citation_abstract_html_url" content="https://floatingpragma.io/oph/papers/machine-checked-finite-event-algebras/" />
+  <meta name="citation_technical_report_institution" content="Pragma Research" />
+  <meta name="citation_technical_report_number" content="OPH r1542 machine_checked_finite_event_algebras" />
+  <meta name="DC.title" content="Machine-Checked Finite Event Algebras for Observer-Patch Holography" />
+  <meta name="DC.creator" content="Bernhard Mueller" />
+  <meta name="DC.issued" content="2026/07/15" />
+  <meta name="DC.date" content="2026/07/15" />
+  <meta name="DC.type" content="Text" />
+  <meta name="DC.format" content="text/html" />
+  <meta name="DC.language" content="en" />
+  <meta name="DC.publisher" content="Pragma Research" />
+  <meta name="DC.identifier" content="https://floatingpragma.io/oph/papers/machine-checked-finite-event-algebras/" />
+  <meta name="DC.identifier" content="https://floatingpragma.io/oph/papers/machine-checked-finite-event-algebras/paper.pdf" />
+  <meta name="article:published_time" content="2026-07-15T00:00:00Z" />
+  <meta name="article:modified_time" content="2026-07-15T00:00:00Z" />
+  <meta name="prism.publicationDate" content="2026/07/15" />
+  <meta name="prism.publicationName" content="Observer Patch Holography Papers" />
+  <meta name="prism.section" content="Mathematical foundations" />
+  <meta name="prism.url" content="https://floatingpragma.io/oph/papers/machine-checked-finite-event-algebras/" />
+  <meta name="prism.copyright" content="2026 Pragma Research" />
+  <link rel="alternate" type="application/pdf" href="https://floatingpragma.io/oph/papers/machine-checked-finite-event-algebras/paper.pdf" title="Machine-Checked Finite Event Algebras for Observer-Patch Holography PDF" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://floatingpragma.io/oph/papers/machine-checked-finite-event-algebras/" />
+  <meta property="og:title" content="Machine-Checked Finite Event Algebras for Observer-Patch Holography | OPH Paper" />
+  <meta property="og:description" content="A machine-checked finite-event-algebra paper for OPH measurement surfaces, including Boolean event structure, traces, conditional expectations, and Born-Luders update rules." />
+  <meta property="og:image" content="https://floatingpragma.io/oph/screen.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Machine-Checked Finite Event Algebras for Observer-Patch Holography | OPH Paper" />
+  <meta name="twitter:description" content="A machine-checked finite-event-algebra paper for OPH measurement surfaces, including Boolean event structure, traces, conditional expectations, and Born-Luders update rules." />
+  <meta name="twitter:image" content="https://floatingpragma.io/oph/screen.webp" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="stylesheet" href="/oph/styles.css" />
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['\\(', '\\)'], ['$', '$']], displayMath: [['\\[', '\\]']] },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Machine-Checked Finite Event Algebras for Observer-Patch Holography",
+  "name": "Machine-Checked Finite Event Algebras for Observer-Patch Holography",
+  "description": "A machine-checked finite-event-algebra paper for OPH measurement surfaces, including Boolean event structure, traces, conditional expectations, and Born-Luders update rules.",
+  "url": "https://floatingpragma.io/oph/papers/machine-checked-finite-event-algebras/",
+  "sameAs": "https://floatingpragma.io/oph/papers/machine-checked-finite-event-algebras/paper.pdf",
+  "encoding": {
+    "@type": "MediaObject",
+    "contentUrl": "https://floatingpragma.io/oph/papers/machine-checked-finite-event-algebras/paper.pdf",
+    "encodingFormat": "application/pdf"
+  },
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Bernhard Mueller"
+    }
+  ],
+  "isPartOf": {
+    "@type": "ResearchProject",
+    "name": "Observer Patch Holography",
+    "url": "https://floatingpragma.io/oph/"
+  },
+  "keywords": [
+    "finite event algebras",
+    "Lean 4",
+    "Born rule",
+    "Luders update",
+    "conditional expectation",
+    "machine checked mathematics",
+    "Observer Patch Holography"
+  ],
+  "datePublished": "July 15, 2026",
+  "dateModified": "July 15, 2026",
+  "version": "r1542",
+  "subjectOf": [
+    {
+      "@type": "BlogPosting",
+      "headline": "The Trigger",
+      "url": "https://blog.floatingpragma.io/the-trigger",
+      "description": "High-level public entry point for the OPH claim."
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Floating Pragma",
+      "item": "https://floatingpragma.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Observer Patch Holography",
+      "item": "https://floatingpragma.io/oph/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "OPH Papers",
+      "item": "https://floatingpragma.io/oph/papers/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Machine-Checked Finite Event Algebras for Observer-Patch Holography",
+      "item": "https://floatingpragma.io/oph/papers/machine-checked-finite-event-algebras/"
+    }
+  ]
+}
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HLGH209WMG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-HLGH209WMG', { cookie_domain: 'floatingpragma.io' });
+  </script>
+</head>
+<body class="oph-page paper-page">
+  <div class="site-grid"></div>
+  <div class="page-shell">
+    <header class="site-header reveal">
+      <a class="brand" href="/oph/">
+        <span class="brand-mark">
+          <img src="/pragma-cropped.jpg" alt="Pragma" />
+        </span>
+        <span class="brand-copy">
+          <strong>Pragma</strong>
+          <span>OPH Paper</span>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="OPH navigation">
+        <a href="/oph/" data-track-link="nav-hub">Hub</a>
+        <a href="/oph/papers/" data-track-link="nav-papers">Papers</a>
+        <a href="/oph/standard-model-gravity-unification/" data-track-link="nav-smg">SM + Gravity</a>
+        <a href="/oph/theory-of-everything/" data-track-link="nav-toe">Theory of Everything</a>
+        <a href="https://oph-lab.floatingpragma.io/" data-track-link="nav-lab">Lab</a>
+        <a href="https://challenge.floatingpragma.io/" data-track-link="nav-challenge">Challenge</a>
+      </nav>
+    </header>
+
+    <main>
+      <article class="paper-reader reveal">
+        <header class="paper-reader-header">
+          <div class="eyebrow">Mathematical foundations</div>
+          <h1 class="citation_title">Machine-Checked Finite Event Algebras for Observer-Patch Holography</h1>
+          <h3 class="citation_author">Author: Bernhard Mueller</h3>
+          <div class="paper-reader-abstract">
+            <strong>Abstract</strong>
+            <p>A machine-checked finite-event-algebra paper for OPH measurement surfaces, including Boolean event structure, traces, conditional expectations, and Born-Luders update rules.</p>
+          </div>
+          <div class="paper-meta-line">
+            <span>r1542</span>
+            <span>July 15, 2026</span>
+            <span>extra papers</span>
+          </div>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="/oph/papers/machine-checked-finite-event-algebras/paper.pdf" target="_blank" rel="noopener noreferrer" data-track-link="paper-pdf-machine_checked_finite_event_algebras">Download PDF</a>
+            <a class="btn btn-secondary" href="/oph/papers/" data-track-link="paper-index">All OPH papers</a>
+            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r1542" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
+            <a class="btn btn-secondary" href="https://challenge.floatingpragma.io/" data-track-link="paper-challenge">Challenge</a>
+          </div>
+
+          <nav class="paper-link-strip" aria-label="Related OPH essays">
+            <span>Related essays</span>
+            <a href="https://blog.floatingpragma.io/the-trigger" target="_blank" rel="noopener noreferrer" data-track-link="paper-blog-machine_checked_finite_event_algebras">The Trigger</a>
+          </nav>
+
+          <details class="paper-section-jump">
+            <summary>Section jump</summary>
+            <nav class="paper-toc" aria-label="Paper sections"><a href="#introduction">Introduction</a>
+<a href="#mathematical-setting">Mathematical setting</a>
+<a href="#the-formalization-architecture-and-conventions">The formalization: architecture and conventions</a>
+<a href="#modules">Modules</a>
+<a href="#scoped-instances">Scoped instances</a>
+<a href="#the-algebra-onlytrace-dependent-split">The algebra-only/trace-dependent split</a>
+<a href="#axiom-audit-and-build-discipline">Axiom audit and build discipline</a>
+<a href="#events-and-born-weights">Events and Born weights</a>
+<a href="#lüders-conditioning">Lüders conditioning</a>
+<a href="#the-expectation-functional">The expectation functional</a>
+<a href="#the-tsirelson-bound">The Tsirelson bound</a>
+<a href="#the-ring-identity">The ring identity</a></nav>
+          </details>
+        </header>
+        <div class="paper-reader-grid">
+          <div class="paper-body">
+<p><strong>Paper release:</strong> <code>r1542</code>
+<strong>Released:</strong> July 15, 2026</p>
+<p><strong>Keywords:</strong> quantum probability, event algebras, Born
+rule, Lüders conditioning, conditional expectation, Tsirelson bound,
+formalized mathematics, Lean 4, Mathlib</p>
+<p><strong>Mathematics Subject Classification (2020):</strong> Primary
+81P15, 68V20; Secondary 81P40, 46L53, 81P10.</p>
+<h1 id="introduction">Introduction</h1>
+<p>Finite-dimensional event algebras support a complete and elementary
+account of quantum probability. Over the matrix algebra <span
+class="math inline">\(\mathrm{M}_n(\mathbb C)\)</span>, events are
+orthogonal projections, states are density matrices, the Born weight of
+an event under a state is a trace pairing, conditioning is the Lüders
+update , classicality is captured by commutative subalgebras and
+coarse-graining onto a measurement context by a trace-preserving
+pinching, and the characteristic nonclassical phenomenon, the violation
+of the CHSH inequality up to Tsirelson’s bound , is already visible for
+<span class="math inline">\(4 \times 4\)</span> matrices. Every object
+in this list is finite-dimensional linear algebra; no unbounded
+operators, no measure theory, and no functional-analytic subtleties
+intervene. This elementary core is also where much of the current
+foundational discussion lives: the status and derivation of the Born
+rule , the relation between quantum phenomena and Kolmogorov probability
+, and the derivability of the von Neumann–Lüders measurement postulate
+remain active topics, including in this journal.</p>
+<p>Published treatments of this core, from von Neumann onward, leave the
+bookkeeping informal. Which statements require positivity of the state,
+which require only hermiticity, and which are identities of the trace
+calculus valid for arbitrary matrices? What exactly happens when one
+conditions on an event of weight zero? Is orthogonality of projections a
+symmetric hypothesis or a symmetric conclusion? Where, precisely, does
+the trace enter, and where does pure <span
+class="math inline">\(*\)</span>-algebra suffice? In informal
+mathematics these questions are resolved silently, case by case, by the
+reader. A proof assistant forces every such choice into the open and
+then certifies the result.</p>
+<p>To the author’s knowledge (search current as of July 2026), this is
+the first Lean 4 development to package this specific combination:
+finite projective-event closure lemmas, a Lüders fixed-point /
+one-step-retraction characterization, the partition-pinching expectation
+with its Hilbert–Schmidt characterization, and a norm-form
+CHSH/Tsirelson bound, under a per-declaration axiom audit. Concretely,
+the development delivers:</p>
+<ol type="1">
+<li><p>64 lemmas and 8 definitions, in Lean 4 over Mathlib , with no
+<code>sorry</code> placeholders and no axioms beyond Lean’s standard
+classical base;</p></li>
+<li><p>an axiom audit embedded in the source: every lemma is followed by
+a <code>#print axioms</code> command, so a complete per-declaration
+audit re-executes on every build; no theorem depends on axioms outside
+Lean and Mathlib’s standard classical base
+<code>[propext, Classical.choice, Quot.sound]</code>, and individual
+dependency sets are subsets of this base (for example, the CHSH ring
+identity <code>chshmulself</code> is choice-free, reporting
+<code>[propext, Quot.sound]</code>);</p></li>
+<li><p>a tagging discipline under which every lemma is classified in its
+documentation string as <em>algebra-only</em> (content provable in the
+<span class="math inline">\(*\)</span>-algebra, with norm structure
+where relevant) or <em>trace-dependent</em> (content passing through the
+trace pairing <span class="math inline">\((\rho,P) \mapsto
+\operatorname{Tr}(\rho P)\)</span>); trace-dependent statements divide
+further according to whether they additionally require positivity or
+state-normalization, which is visible in each statement’s
+hypotheses;</p></li>
+<li><p>the Lüders update packaged with repeatability, idempotence,
+composition on commuting events, the classical restriction, and a
+fixed-point characterization identifying the fixed states of
+conditioning with the states certain of the event;</p></li>
+<li><p>the trace-preserving pinching onto the block-diagonal commutant
+<span class="math inline">\(N\)</span> of a projective partition of
+unity, with a Hilbert–Schmidt characterization: projector,
+state-preserving, trace-selfadjoint, Pythagorean, contractive,
+trace-compatible, unique among commutant-valued trace-compatible maps,
+and compatible with Lüders conditioning on commutant events;</p></li>
+<li><p>the Tsirelson bound in operator-norm form, proved in an abstract
+unital C*-setting that assumes neither completeness nor any order
+structure, with the exact ring identity underlying it isolated as a
+standalone lemma, an instantiation to finite matrix algebras, and an
+interface lemma reusing Mathlib’s existing CHSH hypothesis
+bundle.</p></li>
+</ol>
+<p>The development builds with the toolchain
+<code>leanprover/lean4:v4.29.1</code> and the Mathlib version pinned to
+match; it imports Mathlib and nothing else.</p>
+<p>Three scope limitations should be stated at the outset. First, the
+novelty claim above is deliberately narrow and organizational.
+Formalizations of projective measurement, the Born rule for projective
+effects, and the CHSH/Tsirelson inequality already exist, in the
+Isabelle/HOL ecosystem (in particular the work of Echenim and Mhalla )
+and in the Lean ecosystem (Mathlib’s order-form CHSH bound and the
+Physlib/QuantumInfo project ); we make no claim of first formalization
+for any of those individual results. The contribution here is the
+organization of the finite core around a projective partition with its
+trace-preserving pinching onto the block-diagonal commutant, the
+lemma-by-lemma separation of algebra-only from trace-dependent content,
+the abstract C*-setting of the norm-form bound, and the prover
+ecosystem. Second, no attainment or tightness statement for the
+Tsirelson bound is formalized: the development ships the inequality
+only. Third, everything is finite-dimensional; extensions toward
+infinite dimensions are discussed as outlook in
+Section <a href="#sec:conclusion" data-reference-type="ref" data-reference="sec:conclusion">11</a>.</p>
+<p>Finite event algebras arise, for example, as the measurement cores of
+finite models of quantum theory. Beyond that single remark, this paper
+is self-contained:
+Section <a href="#sec:setting" data-reference-type="ref" data-reference="sec:setting">2</a>
+fixes the mathematical setting,
+Section <a href="#sec:arch" data-reference-type="ref" data-reference="sec:arch">3</a>
+describes the architecture and conventions of the formalization,
+Sections <a href="#sec:basic" data-reference-type="ref" data-reference="sec:basic">4</a>
+through
+<a href="#sec:tsirelson" data-reference-type="ref" data-reference="sec:tsirelson">8</a>
+walk through the five modules with the main statements as numbered
+propositions carrying their Lean names,
+Section <a href="#sec:gaps" data-reference-type="ref" data-reference="sec:gaps">9</a>
+documents Mathlib gaps and proof engineering,
+Section <a href="#sec:related" data-reference-type="ref" data-reference="sec:related">10</a>
+discusses related work, and
+Section <a href="#sec:conclusion" data-reference-type="ref" data-reference="sec:conclusion">11</a>
+concludes.</p>
+<h1 id="mathematical-setting">Mathematical setting</h1>
+<p>Throughout, <span class="math inline">\(n\)</span> and <span
+class="math inline">\(k\)</span> denote natural numbers and <span
+class="math inline">\(\mathrm{M}_n(\mathbb C)\)</span> denotes the <span
+class="math inline">\(*\)</span>-algebra of <span
+class="math inline">\(n \times n\)</span> complex matrices, with
+conjugate transpose <span class="math inline">\(X \mapsto
+X^{*}\)</span>, trace <span
+class="math inline">\(\operatorname{Tr}\)</span>, identity <span
+class="math inline">\(\mathbf 1\)</span>, and zero <span
+class="math inline">\(0\)</span>. All statements below are formalized
+for every <span class="math inline">\(n\)</span>, including the
+degenerate case <span class="math inline">\(n = 0\)</span>; only the
+matrix instantiation of the Tsirelson bound
+(Proposition <a href="#prop:tsirelson-instances" data-reference-type="ref" data-reference="prop:tsirelson-instances">20</a>)
+assumes <span class="math inline">\(n \neq 0\)</span>.</p>
+<p>The partial order on <span class="math inline">\(\mathbb C\)</span>
+is the one in which <span class="math inline">\(z \le w\)</span> exactly
+when <span class="math inline">\(\operatorname{Re} z \le
+\operatorname{Re} w\)</span> and <span
+class="math inline">\(\operatorname{Im} z = \operatorname{Im}
+w\)</span>; in particular <span class="math inline">\(0 \le z\)</span>
+asserts that <span class="math inline">\(z\)</span> is real and
+nonnegative. Nonnegativity and boundedness of Born weights are proved
+below in this partial order, which is strictly stronger than the
+corresponding assertions about real parts; real-part corollaries are
+provided alongside each such statement.</p>
+<div id="def:event" class="definition">
+
+<p><strong>Definition 1</strong> (Event). <em>An <em>event</em> of <span
+class="math inline">\(\mathrm{M}_n(\mathbb C)\)</span> is a Hermitian
+idempotent: a matrix <span class="math inline">\(P \in
+\mathrm{M}_n(\mathbb C)\)</span> with <span class="math inline">\(P^{*}
+= P\)</span> and <span class="math inline">\(P^2 = P\)</span>. Lean
+name: <code>IsEvent</code>.</em></p>
+</div>
+
+<p>Events are exactly the orthogonal projections, the sharp yes/no tests
+of the finite quantum formalism . The <em>subevent</em> relation is
+witnessed algebraically: <span class="math inline">\(P\)</span> is a
+subevent of <span class="math inline">\(Q\)</span> when <span
+class="math inline">\(PQ = P\)</span>.</p>
+<div id="def:state" class="definition">
+
+<p><strong>Definition 2</strong> (State). <em>A <em>state</em> on <span
+class="math inline">\(\mathrm{M}_n(\mathbb C)\)</span> is a density
+matrix: a positive-semidefinite <span class="math inline">\(\rho \in
+\mathrm{M}_n(\mathbb C)\)</span> with <span
+class="math inline">\(\operatorname{Tr}\rho = 1\)</span>. Lean name:
+<code>IsState</code>.</em></p>
+</div>
+
+<div id="def:bornweight" class="definition">
+
+<p><strong>Definition 3</strong> (Born weight). <em>The <em>Born
+weight</em> of <span class="math inline">\(P\)</span> under <span
+class="math inline">\(\rho\)</span> is the trace pairing <span
+class="math display">\[
+\mu_\rho(P) \coloneqq \operatorname{Tr}(\rho P) \in \mathbb C.
+\]</span> Lean name: <code>bornWeight</code>.</em></p>
+</div>
+
+<p>The weight is defined as a complex number for arbitrary matrix
+arguments; reality under hermiticity is a theorem
+(Proposition <a href="#prop:reality" data-reference-type="ref" data-reference="prop:reality">3</a>),
+and the probabilistic bounds hold under the appropriate positivity
+hypotheses
+(Proposition <a href="#prop:prob" data-reference-type="ref" data-reference="prop:prob">4</a>).</p>
+<div id="def:lueders" class="definition">
+
+<p><strong>Definition 4</strong> (Lüders update). <em>The <em>Lüders
+update</em> of <span class="math inline">\(\rho\)</span> by <span
+class="math inline">\(P\)</span> is the compressed and renormalized
+matrix <span class="math display">\[
+\mathcal L_P(\rho) \coloneqq \bigl(\mu_\rho(P)\bigr)^{-1}\, P \rho P .
+\]</span> Lean name: <code>luedersUpdate</code>.</em></p>
+</div>
+
+<p>The scalar inverse is taken in <span class="math inline">\(\mathbb
+C\)</span> with Lean’s convention <span class="math inline">\(0^{-1} =
+0\)</span>, so conditioning on an event of vanishing weight degenerates
+to the zero matrix; every substantive lemma about the update carries the
+explicit guard <span class="math inline">\(\mu_\rho(P) \neq 0\)</span>.
+The rule goes back to Lüders ; see Busch and Lahti for its place in the
+measurement literature.</p>
+<div id="def:partition" class="definition">
+
+<p><strong>Definition 5</strong> (Projective partition). <em>A
+<em>projective partition</em> of <span
+class="math inline">\(\mathrm{M}_n(\mathbb C)\)</span> is a finite
+family <span class="math inline">\(\pi = (P_i)_{i &lt; k}\)</span> of
+events that are pairwise orthogonal, <span class="math inline">\(P_i P_j
+= 0\)</span> for <span class="math inline">\(i \neq j\)</span>, and
+complete, <span class="math inline">\(\sum_{i &lt; k} P_i = \mathbf
+1\)</span>. Lean name: <code>ProjectivePartition</code>.</em></p>
+</div>
+
+<p>The members of a projective partition commute pairwise
+(Proposition <a href="#prop:partition-alg" data-reference-type="ref" data-reference="prop:partition-alg">11</a>),
+so they generate a commutative unital <span
+class="math inline">\(*\)</span>-subalgebra <span
+class="math display">\[
+D \coloneqq \operatorname{span}\{P_i : i &lt; k\} \subseteq
+\mathrm{M}_n(\mathbb C).
+\]</span> The associated <em>commutant</em> is the block-diagonal
+algebra <span class="math display">\[
+N \coloneqq \pi&#39; \coloneqq \{\, X \in \mathrm{M}_n(\mathbb C): X P_i
+= P_i X \text{ for all } i &lt; k \,\}
+\;\cong\; \bigoplus_{i &lt; k} \mathrm{M}_{\operatorname{rank}
+P_i}(\mathbb C),
+\]</span> which is in general noncommutative. The commutative algebra
+<span class="math inline">\(D\)</span> is exactly the center of the
+commutant, <span class="math inline">\(D = Z(N)\)</span>: the
+block-scalar matrices. This is the one precise sense in which a “center”
+figures here. As the next definition records, the pinching lands in
+<span class="math inline">\(N\)</span>, not in <span
+class="math inline">\(D\)</span>.</p>
+<div id="def:pinching" class="definition">
+
+<p><strong>Definition 6</strong> (Partition pinching). <em>The
+<em>partition pinching</em> attached to a projective partition <span
+class="math inline">\(\pi\)</span> is <span class="math display">\[
+\mathcal E_\pi(X) \coloneqq \sum_{i &lt; k} P_i X P_i .
+\]</span> Lean name: <code>pinchingExpectation</code>.</em></p>
+</div>
+
+<p>Section <a href="#sec:center" data-reference-type="ref" data-reference="sec:center">6</a>
+verifies that <span class="math inline">\(\mathcal E_\pi\)</span> is the
+trace-preserving conditional expectation onto the commutant <span
+class="math inline">\(\pi&#39;\)</span>, with the Hilbert–Schmidt
+characterization: it is a projector onto <span
+class="math inline">\(\pi&#39;\)</span>, maps states to states, is
+selfadjoint for the trace inner product <span
+class="math inline">\(\langle X,\,Y\rangle =
+\operatorname{Tr}(X^{*}Y)\)</span>, satisfies the Pythagorean identity,
+contracts the squared trace norm, is uniquely determined by trace
+compatibility, and commutes with Lüders conditioning on commutant
+events. When the partition is rank one, so that every <span
+class="math inline">\(P_i\)</span> has rank one, the commutant <span
+class="math inline">\(\pi&#39;\)</span> coincides with <span
+class="math inline">\(D\)</span> and <span
+class="math inline">\(\mathcal E_\pi\)</span> is the classical
+conditional expectation onto <span class="math inline">\(D\)</span>.</p>
+<p>Finally, the CHSH combination. In a unital C*-algebra <span
+class="math inline">\(A\)</span>, take selfadjoint involutions <span
+class="math inline">\(a_0, a_1, b_0, b_1\)</span> (each equal to its own
+star, each squaring to <span class="math inline">\(\mathbf 1\)</span>)
+such that every <span class="math inline">\(a_i\)</span> commutes with
+every <span class="math inline">\(b_j\)</span>, and form <span
+class="math display">\[
+S \coloneqq a_0 b_0 + a_0 b_1 + a_1 b_0 - a_1 b_1 .
+\]</span> Classically, dichotomic <span class="math inline">\(\pm
+1\)</span> observables obey <span class="math inline">\(\lvert \langle S
+\rangle \rvert \le 2\)</span> ; quantum mechanically the sharp bound is
+Tsirelson’s <span class="math inline">\(\lVert S\rVert \le
+2\sqrt{2}\)</span> . The bridge from the event layer to these hypotheses
+is the dichotomic observable <span class="math inline">\(\mathbf 1-
+2P\)</span> of an event <span class="math inline">\(P\)</span>, which is
+a selfadjoint involution
+(Proposition <a href="#prop:closure" data-reference-type="ref" data-reference="prop:closure">1</a>(ix)).</p>
+<h1 id="the-formalization-architecture-and-conventions">The
+formalization: architecture and conventions</h1>
+<h2 id="modules">Modules</h2>
+<p>The development consists of five modules under a single namespace,
+importing Mathlib and nothing else:</p>
+<div class="tabular">
+
+<p>@lL4.9cmL4.6cmc@ Module &amp; Content &amp; Definitions &amp; Lemmas
+<code>Basic</code> &amp; events, states, Born weights &amp;
+<code>IsEvent</code>, <code>IsState</code>, <code>bornWeight</code>
+&amp; 25 <code>Lueders</code> &amp; conditioning, certainty sets, fixed
+points &amp; <code>luedersUpdate</code>, <code>certainStates</code>
+&amp; 12 <code>CenterExpectation</code> &amp; partitions, pinching onto
+the commutant &amp; <code>ProjectivePartition</code>,
+<code>pinchingExpectation</code> &amp; 16 <code>StateFromTrace</code>
+&amp; the expectation functional of a state &amp;
+<code>expectation</code> &amp; 5 <code>Tsirelson</code> &amp; CHSH ring
+identity, norm-form Tsirelson bound &amp; (none) &amp; 6 Total &amp;
+&amp; 8 &amp; 64</p>
+</div>
+
+<p>The event and state layers are formalized over the concrete carrier
+<code>Matrix (Fin n) (Fin n) </code><span class="math inline">\(\mathbb
+C\)</span>. This choice trades generality for the density of Mathlib’s
+finite matrix API (positive semidefiniteness, trace calculus, spectral
+theorem), which carries most of the proofs. The Tsirelson module, whose
+content is norm-theoretic rather than matrix-theoretic, is instead
+stated over an abstract typeclass context and instantiated to matrices
+only at the end
+(Section <a href="#sec:tsirelson" data-reference-type="ref" data-reference="sec:tsirelson">8</a>).</p>
+<h2 id="scoped-instances">Scoped instances</h2>
+<p>Three pieces of structure that the development relies on are
+<em>scoped</em> in Mathlib rather than globally active, and must be
+opened explicitly:</p>
+<ul>
+<li><p><code>ComplexOrder</code>: the partial order on <span
+class="math inline">\(\mathbb C\)</span> of
+Section <a href="#sec:setting" data-reference-type="ref" data-reference="sec:setting">2</a>,
+together with the ordered-ring structure that makes products of
+nonnegative complex numbers nonnegative;</p></li>
+<li><p><code>MatrixOrder</code>: the Loewner order on matrices;</p></li>
+<li><p><code>Matrix.Norms.L2Operator</code>: the <span
+class="math inline">\(L^2\)</span> operator norm on <span
+class="math inline">\(\mathrm{M}_n(\mathbb C)\)</span> together with its
+normed-ring and C*-identity instances. There is no globally installed
+norm on the matrix type, so the matrix instantiation of the Tsirelson
+bound lives behind this scope.</p></li>
+</ul>
+<p>Section <a href="#sec:gaps" data-reference-type="ref" data-reference="sec:gaps">9</a>
+discusses the practical consequences of this scoping.</p>
+<h2 id="the-algebra-onlytrace-dependent-split">The
+algebra-only/trace-dependent split</h2>
+<p>Every lemma in the development carries one of two tags in its
+documentation string:</p>
+<ul>
+<li><p><strong>algebra-only</strong>: the content is pure <span
+class="math inline">\(*\)</span>-algebra (ring and star structure; in
+the Tsirelson module, also norm structure), consuming no state and no
+trace functional;</p></li>
+<li><p><strong>trace-dependent</strong>: the content passes through the
+trace pairing <span class="math inline">\((\rho, P) \mapsto
+\operatorname{Tr}(\rho P)\)</span>; trace-dependent statements divide
+further by whether they also require positivity or state-normalization,
+which is visible in each statement’s hypotheses.</p></li>
+</ul>
+<p>The split is a statement-classification discipline rather than an
+import boundary: it makes visible, lemma by lemma, exactly where
+probabilistic content enters the theory. All event-closure lemmas, the
+entire partition algebra, the projector laws of the pinching map, and
+the entire Tsirelson module are algebra-only; every statement about Born
+weights, updates of states, and trace inner products consumes the trace.
+In the propositions below, this classification is reproduced: statements
+in
+Sections <a href="#sec:basic" data-reference-type="ref" data-reference="sec:basic">4</a>
+through
+<a href="#sec:functional" data-reference-type="ref" data-reference="sec:functional">7</a>
+are tagged individually, and everything in
+Section <a href="#sec:tsirelson" data-reference-type="ref" data-reference="sec:tsirelson">8</a>
+is algebra-only.</p>
+<h2 id="axiom-audit-and-build-discipline">Axiom audit and build
+discipline</h2>
+<p>Each of the 64 lemmas is followed in the source by a
+<code>#print axioms</code> command, so the axiom audit is part of the
+source text and re-executes on every build. No result depends on any
+axiom outside Lean’s standard classical base <span
+class="math display">\[
+\texttt{[propext, Classical.choice, Quot.sound]}
+\]</span> (propositional extensionality, choice, and quotient
+soundness); individual dependency sets are subsets of this base. The
+ring identity <code>chshmulself</code> is choice-free, reporting only
+<code>[propext, Quot.sound]</code>. The complete
+declaration-by-declaration audit accompanies the artifact as
+<code>AXIOMAUDIT.txt</code>. The development contains no
+<code>sorry</code> placeholders, no custom axioms, and no unfinished
+obligations; the toolchain is <code>leanprover/lean4:v4.29.1</code> with
+Mathlib pinned at the matching version, and the project builds cleanly
+under <code>lake</code> (8254 jobs).</p>
+<p>Proofs in this paper are given as sketches only; the complete formal
+proofs constitute the accompanying development, and each proposition
+cites the corresponding Lean names in <code>typewriter</code> font.</p>
+<h1 id="events-and-born-weights">Events and Born weights</h1>
+<p>The first module establishes closure of the event set under the
+natural logical operations and the probabilistic behavior of the Born
+weight.</p>
+<div id="prop:closure" class="proposition">
+
+<p><strong>Proposition 1</strong> (Event closure; algebra-only). <em>Let
+<span class="math inline">\(P, Q \in \mathrm{M}_n(\mathbb C)\)</span> be
+events. Then:</em></p>
+<ol type="1">
+<li><p><em><span class="math inline">\(0\)</span> and <span
+class="math inline">\(\mathbf 1\)</span> are events
+(<code>isEventzero</code>, <code>isEventone</code>);</em></p></li>
+<li><p><em>the complement <span class="math inline">\(\mathbf 1-
+P\)</span> is an event (<code>IsEvent.compl</code>);</em></p></li>
+<li><p><em>orthogonality is symmetric: if <span class="math inline">\(PQ
+= 0\)</span> then <span class="math inline">\(QP = 0\)</span>
+(<code>IsEvent.orthogonalsymm</code>);</em></p></li>
+<li><p><em>if <span class="math inline">\(PQ = 0\)</span> then <span
+class="math inline">\(P + Q\)</span> is an event
+(<code>IsEvent.add</code>);</em></p></li>
+<li><p><em>if <span class="math inline">\(PQ = QP\)</span> then <span
+class="math inline">\(PQ\)</span> is an event
+(<code>IsEvent.mulofcommute</code>);</em></p></li>
+<li><p><em>subevent absorption: if <span class="math inline">\(PQ =
+P\)</span> then <span class="math inline">\(QP = P\)</span>
+(<code>IsEvent.absorbofle</code>);</em></p></li>
+<li><p><em>if <span class="math inline">\(PQ = P\)</span> then <span
+class="math inline">\(Q - P\)</span> is an event
+(<code>IsEvent.subofle</code>);</em></p></li>
+<li><p><em>every event is positive semidefinite
+(<code>IsEvent.posSemidef</code>);</em></p></li>
+<li><p><em><span class="math inline">\(\mathbf 1- 2P\)</span> is a
+selfadjoint involution: <span class="math inline">\((\mathbf 1- 2P)^{*}
+= \mathbf 1- 2P\)</span> and <span class="math inline">\((\mathbf 1-
+2P)^2 = \mathbf 1\)</span>
+(<code>IsEvent.onesubtwosmulinvolution</code>).</em></p></li>
+</ol>
+</div>
+
+<div class="proof">
+
+<p><em>Proof sketch.</em> All items are short computations in the <span
+class="math inline">\(*\)</span>-algebra. Symmetry of orthogonality
+(iii) and absorption (vi) take the conjugate transpose of the hypothesis
+and use hermiticity of both matrices; positive semidefiniteness (viii)
+exhibits <span class="math inline">\(P = P^{*}P\)</span> as a Gram
+matrix. ◻</p>
+</div>
+
+<p>Item (ix) is the bridge from events to the CHSH hypotheses of
+Section <a href="#sec:tsirelson" data-reference-type="ref" data-reference="sec:tsirelson">8</a>:
+each event answers a yes/no question, and <span
+class="math inline">\(\mathbf 1- 2P\)</span> is the associated <span
+class="math inline">\(\pm 1\)</span>-valued observable.</p>
+<div id="prop:pairing" class="proposition">
+
+<p><strong>Proposition 2</strong> (Trace-pairing calculus;
+trace-dependent). <em>For all <span class="math inline">\(\rho, P, Q \in
+\mathrm{M}_n(\mathbb C)\)</span>, all finite families <span
+class="math inline">\((P_i)_{i \in s}\)</span>, and all <span
+class="math inline">\(c \in \mathbb C\)</span>:</em></p>
+<ol type="1">
+<li><p><em><span class="math inline">\(\mu_\rho(P + Q) = \mu_\rho(P) +
+\mu_\rho(Q)\)</span> and <span class="math inline">\(\mu_\rho(P - Q) =
+\mu_\rho(P) - \mu_\rho(Q)\)</span> (<code>bornWeightadd</code>,
+<code>bornWeightsub</code>);</em></p></li>
+<li><p><em><span class="math inline">\(\mu_\rho\bigl(\sum_{i \in s}
+P_i\bigr) = \sum_{i \in s} \mu_\rho(P_i)\)</span>
+(<code>bornWeightsum</code>);</em></p></li>
+<li><p><em><span class="math inline">\(\mu_{c\rho}(P) = c\,
+\mu_\rho(P)\)</span> (<code>bornWeightsmul</code>);</em></p></li>
+<li><p><em>if <span class="math inline">\(P^2 = P\)</span> then <span
+class="math inline">\(\operatorname{Tr}(P \rho P) = \mu_\rho(P)\)</span>
+(<code>tracesandwich</code>).</em></p></li>
+</ol>
+</div>
+
+<p>Item (iv), the sandwich identity, requires only idempotence of <span
+class="math inline">\(P\)</span>; hermiticity is never used. It is the
+workhorse that lets positivity arguments compress the state by the event
+and is applied throughout the conditioning module.</p>
+<div id="prop:reality" class="proposition">
+
+<p><strong>Proposition 3</strong> (Reality; trace-dependent). <em>If
+<span class="math inline">\(\rho\)</span> and <span
+class="math inline">\(P\)</span> are Hermitian (neither positivity nor
+normalization is assumed), then <span
+class="math inline">\(\overline{\mu_\rho(P)} = \mu_\rho(P)\)</span>;
+equivalently, the weight equals its own real part
+(<code>starbornWeight</code>, <code>bornWeighteqre</code>).</em></p>
+</div>
+
+<div id="prop:prob" class="proposition">
+
+<p><strong>Proposition 4</strong> (Probabilistic bounds;
+trace-dependent). <em>Let <span class="math inline">\(P, Q\)</span> be
+events. Then, in the partial order of <span
+class="math inline">\(\mathbb C\)</span>:</em></p>
+<ol type="1">
+<li><p><em>if <span class="math inline">\(\rho\)</span> is positive
+semidefinite, then <span class="math inline">\(0 \le
+\mu_\rho(P)\)</span> (<code>bornWeightnonneg</code>), with real-part
+form <code>bornWeightrenonneg</code>;</em></p></li>
+<li><p><em>if <span class="math inline">\(\rho\)</span> is a state, then
+<span class="math inline">\(\mu_\rho(\mathbf 1) = 1\)</span>
+(<code>bornWeightone</code>);</em></p></li>
+<li><p><em>if <span class="math inline">\(PQ = 0\)</span>, then <span
+class="math inline">\(\mu_\rho(P + Q) = \mu_\rho(P) +
+\mu_\rho(Q)\)</span>
+(<code>bornWeightaddoforthogonal</code>);</em></p></li>
+<li><p><em>if <span class="math inline">\(\rho\)</span> is a state, then
+<span class="math inline">\(\mu_\rho(P) \le 1\)</span>
+(<code>bornWeightleone</code>), with real-part form
+<code>bornWeightreleone</code>;</em></p></li>
+<li><p><em>if <span class="math inline">\(\rho\)</span> is positive
+semidefinite and <span class="math inline">\(PQ = P\)</span>, then <span
+class="math inline">\(\mu_\rho(P) \le \mu_\rho(Q)\)</span>
+(<code>bornWeightmono</code>);</em></p></li>
+<li><p><em>if <span class="math inline">\(\rho\)</span> is positive
+semidefinite, then <span class="math inline">\(\mu_\rho(P) \neq
+0\)</span> exactly when <span class="math inline">\(0 &lt;
+\operatorname{Re} \mu_\rho(P)\)</span>
+(<code>bornWeightnezeroiffrepos</code>).</em></p></li>
+</ol>
+</div>
+
+<div class="proof">
+
+<p><em>Proof sketch.</em> For (i), compress: <span
+class="math inline">\(\mu_\rho(P) = \operatorname{Tr}(P \rho P)\)</span>
+by
+Proposition <a href="#prop:pairing" data-reference-type="ref" data-reference="prop:pairing">2</a>(iv),
+and <span class="math inline">\(P \rho P = P \rho P^{*}\)</span> is a
+positive-semidefinite sandwich, whose trace is nonnegative. The upper
+bound (iv) applies (i) to the complement <span
+class="math inline">\(\mathbf 1- P\)</span>; monotonicity (v) applies
+(i) to the difference event <span class="math inline">\(Q - P\)</span>
+of
+Proposition <a href="#prop:closure" data-reference-type="ref" data-reference="prop:closure">1</a>(vii). ◻</p>
+</div>
+
+<p>Together,
+Propositions <a href="#prop:closure" data-reference-type="ref" data-reference="prop:closure">1</a>
+and
+<a href="#prop:prob" data-reference-type="ref" data-reference="prop:prob">4</a>
+verify that <span class="math inline">\(P \mapsto \mu_\rho(P)\)</span>
+is a finitely additive, normalized, monotone probability assignment on
+events, with reality and the bounds stated in the strong (<span
+class="math inline">\(\mathbb C\)</span>-order) form. Item (vi) is the
+exact interface later needed by the conditioning guards.</p>
+<h1 id="lüders-conditioning">Lüders conditioning</h1>
+<p>The second module packages the Lüders update as a state transformer
+and proves its characteristic laws. A remark on hypothesis minimality is
+in order: because the formal statements register exactly what each proof
+uses, several conditioning identities below hold for an
+<em>arbitrary</em> matrix <span class="math inline">\(\rho\)</span>,
+with state hypotheses appearing only where positivity or normalization
+genuinely enters.</p>
+<div id="prop:update-state" class="proposition">
+
+<p><strong>Proposition 5</strong> (State property; trace-dependent).
+<em>Let <span class="math inline">\(P\)</span> be an event.</em></p>
+<ol type="1">
+<li><p><em>If <span class="math inline">\(\rho\)</span> is positive
+semidefinite, then <span class="math inline">\(\mathcal
+L_P(\rho)\)</span> is positive semidefinite, with no guard: in the
+degenerate case the update is the zero matrix
+(<code>luedersUpdateposSemidef</code>).</em></p></li>
+<li><p><em>If <span class="math inline">\(\mu_\rho(P) \neq 0\)</span>,
+then <span class="math inline">\(\operatorname{Tr}\mathcal L_P(\rho) =
+1\)</span> for arbitrary <span class="math inline">\(\rho\)</span>
+(<code>traceluedersUpdate</code>).</em></p></li>
+<li><p><em>If <span class="math inline">\(\rho\)</span> is a state and
+<span class="math inline">\(\mu_\rho(P) \neq 0\)</span>, then <span
+class="math inline">\(\mathcal L_P(\rho)\)</span> is a state
+(<code>luedersUpdateisState</code>).</em></p></li>
+</ol>
+</div>
+
+<p>By
+Proposition <a href="#prop:prob" data-reference-type="ref" data-reference="prop:prob">4</a>(vi),
+the guard <span class="math inline">\(\mu_\rho(P) \neq 0\)</span> is
+equivalent, for positive-semidefinite <span
+class="math inline">\(\rho\)</span>, to the weight having strictly
+positive real part.</p>
+<div id="prop:repeat" class="proposition">
+
+<p><strong>Proposition 6</strong> (Repeatability; trace-dependent).
+<em>Let <span class="math inline">\(P\)</span> be an event and <span
+class="math inline">\(\mu_\rho(P) \neq 0\)</span>. Then <span
+class="math display">\[
+\mu_{\mathcal L_P(\rho)}(P) = 1
+\qquad (\texttt{bornWeight\textunderscore\allowbreak
+luedersUpdate\textunderscore\allowbreak self}).
+\]</span></em></p>
+</div>
+
+<p>Neither positivity nor normalization of <span
+class="math inline">\(\rho\)</span> is used: repeatability is an
+identity of the trace calculus, valid for every matrix <span
+class="math inline">\(\rho\)</span> subject to the guard.</p>
+<div id="prop:idem" class="proposition">
+
+<p><strong>Proposition 7</strong> (Idempotence; trace-dependent).
+<em>Let <span class="math inline">\(P\)</span> be an event and <span
+class="math inline">\(\mu_\rho(P) \neq 0\)</span>. Then <span
+class="math display">\[
+\mathcal L_P\bigl(\mathcal L_P(\rho)\bigr) = \mathcal L_P(\rho)
+\qquad (\texttt{luedersUpdate\textunderscore\allowbreak idem}).
+\]</span></em></p>
+</div>
+
+<div id="prop:compose" class="proposition">
+
+<p><strong>Proposition 8</strong> (Commuting composition and order
+exchange; trace-dependent). <em>Let <span class="math inline">\(P,
+Q\)</span> be events with <span class="math inline">\(PQ =
+QP\)</span>.</em></p>
+<ol type="1">
+<li><p><em>If <span class="math inline">\(\mu_\rho(P) \neq 0\)</span>,
+then <span class="math inline">\(\mathcal L_Q\bigl(\mathcal
+L_P(\rho)\bigr) = \mathcal L_{PQ}(\rho)\)</span>
+(<code>luedersUpdateluedersUpdateofcommute</code>); the product <span
+class="math inline">\(PQ\)</span> is an event by
+Proposition <a href="#prop:closure" data-reference-type="ref" data-reference="prop:closure">1</a>(v).
+Only the first guard is needed: if the joint weight vanishes, both sides
+degenerate to zero together.</em></p></li>
+<li><p><em>If moreover <span class="math inline">\(\mu_\rho(Q) \neq
+0\)</span>, then conditioning is order-exchangeable: <span
+class="math inline">\(\mathcal L_Q\bigl(\mathcal L_P(\rho)\bigr) =
+\mathcal L_P\bigl(\mathcal L_Q(\rho)\bigr)\)</span>
+(<code>luedersUpdatecomm</code>).</em></p></li>
+</ol>
+</div>
+
+<div id="prop:classical" class="proposition">
+
+<p><strong>Proposition 9</strong> (Classical restriction;
+trace-dependent). <em>Let <span class="math inline">\(P\)</span> be an
+event and suppose the state matrix commutes with it, <span
+class="math inline">\(\rho P = P \rho\)</span>. Then <span
+class="math display">\[
+\mathcal L_P(\rho) = \bigl(\mu_\rho(P)\bigr)^{-1}\, \rho P
+\qquad (\texttt{luedersUpdate\textunderscore\allowbreak
+of\textunderscore\allowbreak commute}),
+\]</span> with no nonvanishing guard: the identity holds for arbitrary
+<span class="math inline">\(\rho\)</span> under the stated
+commutation.</em></p>
+</div>
+
+<p>In the commuting case the Lüders update is the normalized
+restriction, which is the formula of classical conditional probability;
+quantum conditioning strictly extends the classical rule.</p>
+<h2
+id="conditioning-as-a-one-step-retraction-onto-its-fixed-points">Conditioning
+as a one-step retraction onto its fixed points</h2>
+<p>Repeatability and idempotence assemble into a fixed-point description
+of measurement update.</p>
+<div id="def:certain" class="definition">
+
+<p><strong>Definition 7</strong> (Certainty set). <em>The <em>certainty
+set</em> of an event <span class="math inline">\(P\)</span> is <span
+class="math display">\[
+\mathcal C_P \coloneqq \{\, \sigma \in \mathrm{M}_n(\mathbb C): \sigma
+\text{ is a state and } \mu_\sigma(P) = 1 \,\}.
+\]</span> Lean name: <code>certainStates</code>.</em></p>
+</div>
+
+<div id="prop:fixed" class="proposition">
+
+<p><strong>Proposition 10</strong> (Fixed-point characterization;
+trace-dependent). <em>Let <span class="math inline">\(P\)</span> be an
+event.</em></p>
+<ol type="1">
+<li><p><em>If <span class="math inline">\(\rho\)</span> is a state with
+<span class="math inline">\(\mu_\rho(P) \neq 0\)</span>, then <span
+class="math inline">\(\mathcal L_P(\rho) \in \mathcal C_P\)</span>:
+conditioning lands in the certainty set in a single step
+(<code>luedersUpdatememcertainStates</code>).</em></p></li>
+<li><p><em>Support: if <span class="math inline">\(\sigma \in \mathcal
+C_P\)</span>, then <span class="math inline">\(\sigma P = \sigma = P
+\sigma\)</span> (<code>muleqselfofbornWeightone</code>).</em></p></li>
+<li><p><em>Every <span class="math inline">\(\sigma \in \mathcal
+C_P\)</span> is a fixed point: <span class="math inline">\(\mathcal
+L_P(\sigma) = \sigma\)</span>
+(<code>luedersUpdateeqselfofmemcertainStates</code>).</em></p></li>
+<li><p><em>Conversely, for a state <span
+class="math inline">\(\sigma\)</span> with <span
+class="math inline">\(\mu_\sigma(P) \neq 0\)</span>, <span
+class="math display">\[
+\mathcal L_P(\sigma) = \sigma \iff \sigma \in \mathcal C_P
+\qquad (\texttt{luedersUpdate\textunderscore\allowbreak
+eq\textunderscore\allowbreak self\textunderscore\allowbreak iff}).
+\]</span></em></p></li>
+</ol>
+</div>
+
+<div class="proof">
+
+<p><em>Proof sketch.</em> The substantive item is (ii). The complement
+<span class="math inline">\(Q = \mathbf 1- P\)</span> has weight zero
+under <span class="math inline">\(\sigma\)</span>, so the compression
+<span class="math inline">\(Q \sigma Q\)</span> is positive semidefinite
+with zero trace and hence vanishes. The Cauchy–Schwarz inequality for
+the quadratic form of <span class="math inline">\(\sigma\)</span> (in
+the form: if <span class="math inline">\(\langle x, \sigma x\rangle =
+0\)</span> for a positive-semidefinite <span
+class="math inline">\(\sigma\)</span> then <span
+class="math inline">\(\sigma x = 0\)</span>) then kills <span
+class="math inline">\(\sigma Q\)</span> itself, column by column. Items
+(iii) and (iv) unfold the update using (ii). ◻</p>
+</div>
+
+<div class="remark">
+
+<p><em>Remark 1</em>. Among the states assigning <span
+class="math inline">\(P\)</span> nonzero weight, conditioning on <span
+class="math inline">\(P\)</span> is a retraction onto its own
+fixed-point set <span class="math inline">\(\mathcal C_P\)</span>:
+measurement update reaches a fixed point in one step. The formalization
+thus supports the reading of the Lüders rule as a projection onto
+certainty rather than a dynamical process with transient behavior. For a
+state <span class="math inline">\(\sigma\)</span> the guard in the
+equivalence is automatic in one direction, since a zero-weight update is
+the zero matrix, which is never a state.</p>
+</div>
+
+<h1
+id="trace-preserving-pinching-onto-the-block-diagonal-commutant">Trace-preserving
+pinching onto the block-diagonal commutant</h1>
+<p>The third module is the organizational core of the development. A
+projective partition <span class="math inline">\(\pi =
+(P_i)_{i&lt;k}\)</span>
+(Definition <a href="#def:partition" data-reference-type="ref" data-reference="def:partition">5</a>)
+plays the role of a measurement context; the pinching <span
+class="math inline">\(\mathcal E_\pi\)</span>
+(Definition <a href="#def:pinching" data-reference-type="ref" data-reference="def:pinching">6</a>)
+is verified to be <em>the</em> trace-preserving conditional expectation
+onto the block-diagonal commutant <span
+class="math inline">\(\pi&#39;\)</span>, in the precise sense of the
+uniqueness statement below. The range <span
+class="math inline">\(\pi&#39;\)</span> is in general noncommutative, so
+<span class="math inline">\(\mathcal E_\pi\)</span> preserves quantum
+coherence within a degenerate block; it reduces to the classical
+conditional expectation onto <span class="math inline">\(D =
+\operatorname{span}\{P_i\}\)</span> exactly when the partition is rank
+one.</p>
+<div id="prop:partition-alg" class="proposition">
+
+<p><strong>Proposition 11</strong> (Partition algebra; algebra-only).
+<em>For a center partition <span class="math inline">\(\pi\)</span> and
+<span class="math inline">\(i, j &lt; k\)</span>:</em></p>
+<ol type="1">
+<li><p><em><span class="math inline">\(P_i P_j = \delta_{ij}
+P_i\)</span>
+(<code>ProjectivePartition.projmulproj</code>);</em></p></li>
+<li><p><em><span class="math inline">\(P_i P_j = P_j P_i\)</span>: the
+partition generates a commutative subalgebra
+(<code>ProjectivePartition.projcommute</code>).</em></p></li>
+</ol>
+</div>
+
+<div id="prop:projector" class="proposition">
+
+<p><strong>Proposition 12</strong> (Projector laws; algebra-only).
+<em>For every <span class="math inline">\(X \in \mathrm{M}_n(\mathbb
+C)\)</span> and <span class="math inline">\(i &lt; k\)</span>:</em></p>
+<ol type="1">
+<li><p><em>absorption: <span class="math inline">\(\mathcal E_\pi(X)\,
+P_i = P_i X P_i = P_i\, \mathcal E_\pi(X)\)</span>
+(<code>pinchingExpectationmulproj</code>,
+<code>projmulpinchingExpectation</code>);</em></p></li>
+<li><p><em><span class="math inline">\(\mathcal E_\pi(X) \in
+\pi&#39;\)</span>: the pinching is commutant-valued
+(<code>projcommutepinchingExpectation</code>);</em></p></li>
+<li><p><em><span class="math inline">\(\mathcal E_\pi\)</span> fixes
+<span class="math inline">\(\pi&#39;\)</span> pointwise: if <span
+class="math inline">\(X P_i = P_i X\)</span> for all <span
+class="math inline">\(i\)</span>, then <span
+class="math inline">\(\mathcal E_\pi(X) = X\)</span>
+(<code>pinchingExpectationfixes</code>);</em></p></li>
+<li><p><em><span class="math inline">\(\mathcal E_\pi \circ \mathcal
+E_\pi = \mathcal E_\pi\)</span>: the pinching is a projector
+(<code>pinchingExpectationidem</code>);</em></p></li>
+<li><p><em>star equivariance: <span class="math inline">\(\mathcal
+E_\pi(X)^{*} = \mathcal E_\pi(X^{*})\)</span>
+(<code>conjTransposepinchingExpectation</code>).</em></p></li>
+</ol>
+</div>
+
+<div id="prop:pinch-state" class="proposition">
+
+<p><strong>Proposition 13</strong> (State preservation;
+trace-dependent). <em>If <span class="math inline">\(\rho\)</span> is a
+state, then <span class="math inline">\(\mathcal E_\pi(\rho)\)</span> is
+a state (<code>pinchingExpectationisState</code>).</em></p>
+</div>
+
+<div id="prop:geometry" class="proposition">
+
+<p><strong>Proposition 14</strong> (Trace-inner-product geometry;
+trace-dependent). <em>Write <span class="math inline">\(\langle
+X,\,Y\rangle = \operatorname{Tr}(X^{*}Y)\)</span>. For all <span
+class="math inline">\(X, Y \in \mathrm{M}_n(\mathbb
+C)\)</span>:</em></p>
+<ol type="1">
+<li><p><em>selfadjointness: <span class="math inline">\(\langle \mathcal
+E_\pi(X),\,Y\rangle = \langle X,\,\mathcal E_\pi(Y)\rangle\)</span>
+(<code>traceconjTransposepinchingExpectationmul</code>);</em></p></li>
+<li><p><em>Pythagoras: <span class="math display">\[
+\langle X,\,X\rangle = \langle \mathcal E_\pi(X),\,\mathcal
+E_\pi(X)\rangle + \langle X - \mathcal E_\pi(X),\,X - \mathcal
+E_\pi(X)\rangle
+\]</span>
+(<code>tracepinchingExpectationpythagoras</code>);</em></p></li>
+<li><p><em>squared-<span class="math inline">\(L^2\)</span> contraction,
+in the partial order of <span class="math inline">\(\mathbb C\)</span>:
+<span class="math inline">\(\langle \mathcal E_\pi(X),\,\mathcal
+E_\pi(X)\rangle \le \langle X,\,X\rangle\)</span>
+(<code>tracepinchingExpectationcontraction</code>).</em></p></li>
+</ol>
+</div>
+
+<p>This is the quantum counterpart of the classical <span
+class="math inline">\(L^2\)</span> energy identity for conditional
+expectations: the pinching is the orthogonal projection, for the trace
+inner product, onto the commutant of the context.</p>
+<div id="prop:unique" class="proposition">
+
+<p><strong>Proposition 15</strong> (Trace compatibility and uniqueness;
+trace-dependent).</p>
+<ol type="1">
+<li><p><em>For every <span class="math inline">\(X \in
+\mathrm{M}_n(\mathbb C)\)</span> and every <span class="math inline">\(C
+\in \pi&#39;\)</span>, <span class="math display">\[
+\operatorname{Tr}\bigl(\mathcal E_\pi(X)\, C\bigr) = \operatorname{Tr}(X
+C)
+\qquad (\texttt{trace\textunderscore\allowbreak
+pinchingExpectation\textunderscore\allowbreak
+mul\textunderscore\allowbreak central}).
+\]</span></em></p></li>
+<li><p><em>Conversely, if <span class="math inline">\(Y \in
+\pi&#39;\)</span> satisfies <span
+class="math inline">\(\operatorname{Tr}(YC) =
+\operatorname{Tr}(XC)\)</span> for every <span class="math inline">\(C
+\in \pi&#39;\)</span>, then <span class="math inline">\(Y = \mathcal
+E_\pi(X)\)</span>
+(<code>pinchingExpectationunique</code>).</em></p></li>
+</ol>
+</div>
+
+<div class="proof">
+
+<p><em>Proof sketch.</em> Item (i) is a cyclic-trace computation using
+absorption. For (ii), set <span class="math inline">\(D = Y - \mathcal
+E_\pi(X)\)</span>, observe <span class="math inline">\(D \in
+\pi&#39;\)</span>, test the hypothesis and item (i) against <span
+class="math inline">\(C = D^{*}\)</span>, and conclude <span
+class="math inline">\(\operatorname{Tr}(D D^{*}) = 0\)</span>;
+faithfulness of the trace forces <span class="math inline">\(D =
+0\)</span>. ◻</p>
+</div>
+
+<p>Item (i) is the defining property of a conditional expectation, and
+(ii) says the pinching is the only commutant-valued map with that
+property: existence and uniqueness are both machine-checked.</p>
+<div id="prop:compat" class="proposition">
+
+<p><strong>Proposition 16</strong> (Compatibility with conditioning;
+trace-dependent). <em>Let <span class="math inline">\(P \in
+\pi&#39;\)</span> (an event commuting with every <span
+class="math inline">\(P_i\)</span>). For every <span
+class="math inline">\(\rho \in \mathrm{M}_n(\mathbb
+C)\)</span>:</em></p>
+<ol type="1">
+<li><p><em>Born-weight invariance: <span
+class="math inline">\(\mu_{\mathcal E_\pi(\rho)}(P) =
+\mu_\rho(P)\)</span>
+(<code>bornWeightpinchingExpectation</code>);</em></p></li>
+<li><p><em>conditioning commutes with the center expectation: <span
+class="math display">\[
+\mathcal E_\pi\bigl(\mathcal L_P(\rho)\bigr) = \mathcal
+L_P\bigl(\mathcal E_\pi(\rho)\bigr)
+\qquad (\texttt{pinchingExpectation\textunderscore\allowbreak
+luedersUpdate}).
+\]</span></em></p></li>
+</ol>
+</div>
+
+<p>Item (i) guarantees that the normalizing scalars on both sides of
+(ii) agree, so the exchange law holds at the level of matrices,
+degenerate cases included. Conditioning on commutant events therefore
+commutes with the pinching onto <span
+class="math inline">\(\pi&#39;\)</span>. In the rank-one case, where
+<span class="math inline">\(\pi&#39; = D\)</span> is commutative, this
+is exactly the classical statement that conditioning interacts with a
+sub-<span class="math inline">\(\sigma\)</span>-algebra through the
+conditional expectation; in general it is the block-diagonal refinement
+of that statement.</p>
+<h1 id="the-expectation-functional">The expectation functional</h1>
+<p>The fourth module attaches to each state its expectation functional
+on observables and proves that it is a positive normalized linear
+functional, strengthening Born-weight positivity from events to
+arbitrary positive-semidefinite observables.</p>
+<div id="def:expectation" class="definition">
+
+<p><strong>Definition 8</strong> (Expectation functional). <em>For <span
+class="math inline">\(\rho, M \in \mathrm{M}_n(\mathbb C)\)</span>,
+write <span class="math inline">\(\langle M \rangle_\rho \coloneqq
+\operatorname{Tr}(\rho M)\)</span>. Lean name:
+<code>expectation</code>.</em></p>
+</div>
+
+<div id="prop:functional" class="proposition">
+
+<p><strong>Proposition 17</strong> (Positive normalized functional;
+trace-dependent). <em>For all <span class="math inline">\(\rho, M, N \in
+\mathrm{M}_n(\mathbb C)\)</span> and <span class="math inline">\(c \in
+\mathbb C\)</span>:</em></p>
+<ol type="1">
+<li><p><em>the Born weight is the restriction of the functional to
+events: <span class="math inline">\(\mu_\rho(P) = \langle P
+\rangle_\rho\)</span>
+(<code>bornWeighteqexpectation</code>);</em></p></li>
+<li><p><em>additivity and homogeneity: <span
+class="math inline">\(\langle M + N \rangle_\rho = \langle M
+\rangle_\rho + \langle N \rangle_\rho\)</span> and <span
+class="math inline">\(\langle cM \rangle_\rho = c \langle M
+\rangle_\rho\)</span> (<code>expectationadd</code>,
+<code>expectationsmul</code>);</em></p></li>
+<li><p><em>normalization: <span class="math inline">\(\langle \mathbf
+1\rangle_\rho = 1\)</span> for a state <span
+class="math inline">\(\rho\)</span>
+(<code>expectationone</code>);</em></p></li>
+<li><p><em>positivity: if <span class="math inline">\(\rho\)</span> and
+<span class="math inline">\(M\)</span> are both positive semidefinite,
+then <span class="math inline">\(0 \le \langle M \rangle_\rho\)</span>
+in the partial order of <span class="math inline">\(\mathbb C\)</span>
+(<code>expectationnonneg</code>).</em></p></li>
+</ol>
+</div>
+
+<div class="proof">
+
+<p><em>Proof sketch.</em> Positivity no longer has an idempotent to
+compress with, so the proof decomposes <span
+class="math inline">\(M\)</span> spectrally: <span
+class="math inline">\(M = V D V^{*}\)</span> with <span
+class="math inline">\(V\)</span> unitary and <span
+class="math inline">\(D\)</span> a nonnegative diagonal, cycles the
+trace to <span class="math inline">\(\operatorname{Tr}\bigl((V^{*} \rho
+V) D\bigr)\)</span>, and sums termwise products of nonnegative diagonal
+entries of the sandwiched state against nonnegative eigenvalues.
+Section <a href="#sec:gaps" data-reference-type="ref" data-reference="sec:gaps">9</a>
+explains why this elementary route was chosen over the abstract
+Gram-factorization route. ◻</p>
+</div>
+
+<h1 id="the-tsirelson-bound">The Tsirelson bound</h1>
+<p>The fifth module is entirely algebra-only: no state and no trace
+appear anywhere in it. Its content splits into an exact ring identity,
+two C*-norm lemmas, the abstract bound, and interoperability
+statements.</p>
+<h2 id="the-ring-identity">The ring identity</h2>
+<div id="prop:ring-identity" class="proposition">
+
+<p><strong>Proposition 18</strong> (CHSH square identity; algebra-only).
+<em>Let <span class="math inline">\(R\)</span> be any ring and <span
+class="math inline">\(a_0, a_1, b_0, b_1 \in R\)</span> with <span
+class="math inline">\(a_i^2 = b_j^2 = 1\)</span> and <span
+class="math inline">\(a_i b_j = b_j a_i\)</span> for all <span
+class="math inline">\(i, j \in \{0,1\}\)</span>. With <span
+class="math inline">\(S = a_0 b_0 + a_0 b_1 + a_1 b_0 - a_1
+b_1\)</span>, <span class="math display">\[
+S^2 = 4 \cdot 1 - (a_0 a_1 - a_1 a_0)(b_0 b_1 - b_1 b_0)
+\qquad (\texttt{chsh\textunderscore\allowbreak
+mul\textunderscore\allowbreak self}).
+\]</span></em></p>
+</div>
+
+<p>The identity involves no star, no order, and no norm: it is the exact
+algebraic content of the Tsirelson bound, stated in a bare ring. The
+sign convention is that of commutators <span class="math inline">\([x,y]
+= xy - yx\)</span>, with the minus sign in front of the product of
+commutators. As noted in
+Section <a href="#sec:arch" data-reference-type="ref" data-reference="sec:arch">3</a>,
+this lemma’s axiom audit reports only
+<code>[propext, Quot.sound]</code>. Its proof engineering, a hand-rolled
+confluent rewrite system standing in for a missing noncommutative
+tactic, is described in
+Section <a href="#sec:gaps" data-reference-type="ref" data-reference="sec:gaps">9</a>.</p>
+<h2 id="the-norm-bound">The norm bound</h2>
+<p>The analytic half runs in an abstract typeclass context: a normed
+ring carrying a star-ring structure satisfying the C*-identity <span
+class="math inline">\(\lVert x^{*}x\rVert = \lVert x\rVert^2\)</span>,
+and nontrivial (so that <span class="math inline">\(\lVert \mathbf
+1\rVert = 1\)</span>). In Lean the hypotheses are the typeclasses <span
+class="math display">\[
+[\texttt{NormedRing } A]\ [\texttt{StarRing } A]\ [\texttt{CStarRing }
+A]\ [\texttt{Nontrivial } A].
+\]</span> Neither completeness nor any order structure on <span
+class="math inline">\(A\)</span> is assumed; in particular no ambient
+<code>CStarAlgebra</code> bundle is required.</p>
+<div id="prop:norm-lemmas" class="proposition">
+
+<p><strong>Proposition 19</strong> (Norm lemmas; algebra-only). <em>In
+the context above:</em></p>
+<ol type="1">
+<li><p><em>a selfadjoint involution has norm one: if <span
+class="math inline">\(a^{*} = a\)</span> and <span
+class="math inline">\(a^2 = \mathbf 1\)</span>, then <span
+class="math inline">\(\lVert a\rVert = 1\)</span>
+(<code>normeqoneofselfAdjointinvolution</code>);</em></p></li>
+<li><p><em>in any normed ring (star and C*-structure are dropped for
+this item), if <span class="math inline">\(\lVert a_0\rVert = \lVert
+a_1\rVert = 1\)</span>, then <span class="math inline">\(\lVert a_0 a_1
+- a_1 a_0\rVert \le 2\)</span>
+(<code>normcommutatorletwo</code>).</em></p></li>
+</ol>
+</div>
+
+<div id="thm:tsirelson" class="theorem">
+
+<p><strong>Theorem 1</strong> (Tsirelson bound, norm form;
+algebra-only). <em>Let <span class="math inline">\(A\)</span> be as
+above and let <span class="math inline">\(a_0, a_1, b_0, b_1 \in
+A\)</span> be selfadjoint involutions such that every <span
+class="math inline">\(a_i\)</span> commutes with every <span
+class="math inline">\(b_j\)</span>. Then <span class="math display">\[
+\lVert a_0 b_0 + a_0 b_1 + a_1 b_0 - a_1 b_1\rVert \le 2\sqrt{2}
+\qquad (\texttt{tsirelson\textunderscore\allowbreak bound}).
+\]</span></em></p>
+</div>
+
+<div class="proof">
+
+<p><em>Proof sketch.</em> The classical square trick, run entirely on
+the three preceding statements. By
+Proposition <a href="#prop:ring-identity" data-reference-type="ref" data-reference="prop:ring-identity">18</a>,
+<span class="math inline">\(S^2 = 4\cdot\mathbf 1-
+[a_0,a_1][b_0,b_1]\)</span>; by
+Proposition <a href="#prop:norm-lemmas" data-reference-type="ref" data-reference="prop:norm-lemmas">19</a>,
+each commutator has norm at most <span class="math inline">\(2\)</span>,
+so <span class="math inline">\(\lVert S^2\rVert \le 4 + 4 = 8\)</span>.
+The combination <span class="math inline">\(S\)</span> is selfadjoint,
+so the C*-identity gives <span class="math inline">\(\lVert S\rVert^2 =
+\lVert S^{*}S\rVert = \lVert S^2\rVert \le 8\)</span>, and <span
+class="math inline">\(\lVert S\rVert \le \sqrt 8 = 2\sqrt
+2\)</span>. ◻</p>
+</div>
+
+<p>No attainment or tightness statement is formalized anywhere in the
+module: the development ships the bound as an inequality, and nothing in
+it asserts that <span class="math inline">\(2\sqrt 2\)</span> is
+achieved.</p>
+<h2
+id="relation-to-mathlibs-chsh-file-and-the-matrix-instantiation">Relation
+to Mathlib’s CHSH file and the matrix instantiation</h2>
+<p>Mathlib already contains an order-theoretic form of the Tsirelson
+inequality: the file <code>Mathlib/Algebra/Star/CHSH</code> proves, in a
+star-ordered algebra over the reals, that the CHSH combination satisfies
+<span class="math inline">\(S \le 2\sqrt{2} \cdot \mathbf 1\)</span> in
+the algebra’s order, together with the hypothesis bundle
+<code>IsCHSHTuple</code> packaging selfadjointness, involutivity, and
+the cross commutations. The present development contributes the
+complementary <em>norm-form</em> statement in the C*-setting, with the
+underlying algebraic identity isolated as
+Proposition <a href="#prop:ring-identity" data-reference-type="ref" data-reference="prop:ring-identity">18</a>,
+and connects the two through the shared interface:</p>
+<div id="prop:tsirelson-instances" class="proposition">
+
+<p><strong>Proposition 20</strong> (Interoperability and instantiation;
+algebra-only).</p>
+<ol type="1">
+<li><p><em>The conclusion of
+Theorem <a href="#thm:tsirelson" data-reference-type="ref" data-reference="thm:tsirelson">1</a>
+holds for any tuple satisfying Mathlib’s <code>IsCHSHTuple</code>
+hypothesis bundle
+(<code>tsirelsonboundofisCHSHTuple</code>).</em></p></li>
+<li><p><em>For every <span class="math inline">\(n \neq 0\)</span>, the
+bound holds in <span class="math inline">\(\mathrm{M}_n(\mathbb
+C)\)</span> equipped with the <span class="math inline">\(L^2\)</span>
+operator norm, activated by the scoped instance set
+<code>Matrix.Norms.L2Operator</code>
+(<code>matrixtsirelsonbound</code>).</em></p></li>
+</ol>
+</div>
+
+<p>Item (ii) returns the abstract statement to the ambient algebra of
+the event-algebra modules; combined with
+Proposition <a href="#prop:closure" data-reference-type="ref" data-reference="prop:closure">1</a>(ix),
+any four events with the appropriate commutation pattern yield
+dichotomic observables to which the bound applies. Because the abstract
+theorem is typeclass-generic, the matrix case is an instantiation of a
+few lines rather than a separate proof; the only genuine work is a
+hand-constructed nontriviality instance for the matrix algebra
+(Section <a href="#sec:gaps" data-reference-type="ref" data-reference="sec:gaps">9</a>).</p>
+<h1 id="mathlib-gaps-and-proof-engineering">Mathlib gaps and proof
+engineering</h1>
+<p>This section reports the friction points and affordances encountered
+against the pinned Mathlib version, as raw material for library builders
+and for others formalizing quantum-probabilistic content.</p>
+<h2 id="scoped-instances-1">Scoped instances</h2>
+<p>Three layers of structure needed by this development are scoped. The
+partial order on <span class="math inline">\(\mathbb C\)</span> requires
+<code>open scoped ComplexOrder</code>; without it, goals mentioning
+<span class="math inline">\(0 \le z\)</span> or
+<code>Matrix.PosSemidef</code> over <span class="math inline">\(\mathbb
+C\)</span> fail to elaborate, with instance errors that do not point to
+the missing scope. The Loewner order on matrices is likewise scoped
+(<code>MatrixOrder</code>), as is the ordered-ring structure on <span
+class="math inline">\(\mathbb C\)</span> that supplies
+<code>mulnonneg</code> in the complex order. Most consequentially, there
+is no globally installed norm on the matrix type: the <span
+class="math inline">\(L^2\)</span> operator norm and its
+<code>NormedRing</code> and <code>CStarRing</code> instances activate
+only under <code>open scoped Matrix.Norms.L2Operator</code>, so the
+matrix instantiation of
+Theorem <a href="#thm:tsirelson" data-reference-type="ref" data-reference="thm:tsirelson">1</a>
+must live behind that scope. In the same corner, no
+<code>Nontrivial</code> instance fired for the matrix algebra, and
+nontriviality (needed for <span class="math inline">\(\lVert \mathbf
+1\rVert = 1\)</span>) had to be constructed by hand, entrywise, from
+<span class="math inline">\(n \neq 0\)</span>. The scoping policy is
+defensible library design, since competing orders and norms exist on the
+same types; downstream, it is a real usability tax, and the failure
+modes when a scope is missing are hard to diagnose.</p>
+<h2 id="positivity-of-the-trace-pairing">Positivity of the trace
+pairing</h2>
+<p>Mathlib provides <span class="math inline">\(\operatorname{Tr}M \ge
+0\)</span> for a single positive-semidefinite matrix and covers
+sandwiches <span class="math inline">\(B A B^{*}\)</span> of
+positive-semidefinite matrices, yet the bilinear statement, <span
+class="math inline">\(\operatorname{Tr}(AB) \ge 0\)</span> for
+positive-semidefinite <span class="math inline">\(A\)</span> and <span
+class="math inline">\(B\)</span>, is absent. For Born weights this is
+harmless: an event is idempotent, so <span
+class="math inline">\(\operatorname{Tr}(\rho P) = \operatorname{Tr}(P
+\rho P)\)</span> by cycling the trace, and the single-matrix lemma
+applies. For the expectation functional
+(Proposition <a href="#prop:functional" data-reference-type="ref" data-reference="prop:functional">17</a>(iv))
+there is no idempotent to compress with, and the natural abstract route
+failed in an instructive way. Mathlib’s Gram-factorization
+characterization of positivity,
+<code>CStarAlgebra.nonnegiffeqstarmulself</code> combined with the
+Loewner-order bridge <code>Matrix.PosSemidef.nonneg</code>, is gated
+behind the continuous functional calculus, and instance synthesis for
+two of its classes, <code>NonUnitalContinuousFunctionalCalculus</code>
+over <span class="math inline">\(\mathbb R\)</span> with the
+<code>IsSelfAdjoint</code> predicate and
+<code>NonnegSpectrumClass</code> over <span
+class="math inline">\(\mathbb R\)</span>, did not resolve for the matrix
+algebra carrying the Pi topology, even with the order scopes open.
+(Mathlib’s own matrix-order file uses the lemma successfully inside its
+own section context; the instance chain did not reproduce downstream for
+us.) The workaround is elementary and robust: decompose spectrally via
+<code>Matrix.IsHermitian.spectraltheorem</code>, extract nonnegative
+eigenvalues with <code>PosSemidef.eigenvaluesnonneg</code>, cycle the
+trace, and sum termwise; about a dozen lines.</p>
+<h2 id="no-noncommutative-linearcombination">No noncommutative
+<code>linearcombination</code></h2>
+<p>The CHSH square identity
+(Proposition <a href="#prop:ring-identity" data-reference-type="ref" data-reference="prop:ring-identity">18</a>)
+is pure noncommutative-ring algebra with side relations: involutivity of
+the four letters and the four cross commutations. Lean’s
+<code>linearcombination</code> tactic is commutative-only, and
+<code>noncommring</code> normalizes without consuming hypotheses, so
+neither closes the goal. The formal proof instead builds a small
+confluent rewrite system by hand: from each commutation hypothesis it
+derives the association-compatible, universally quantified form <span
+class="math inline">\(b\,(a\,x) = a\,(b\,x)\)</span>, and from each
+involution the cancellation form <span class="math inline">\(a\,(a\,x) =
+x\)</span>; running these as a <code>simp only</code> set over
+right-associated words moves every <span
+class="math inline">\(b\)</span> past every <span
+class="math inline">\(a\)</span> and cancels adjacent equal letters, and
+<code>abel</code> finishes the additive bookkeeping. The system
+terminates because each rewrite strictly decreases the number of letters
+out of normal order. A noncommutative analogue of
+<code>linearcombination</code>, even one restricted to rewriting modulo
+hypothesis-supplied commutation and involution relations, would compress
+this style of proof considerably.</p>
+<h2 id="occurrence-sensitive-rewriting">Occurrence-sensitive
+rewriting</h2>
+<p>A recurring low-level friction: on goals containing several syntactic
+occurrences of the same subterm, <code>rw</code> rewrites the first
+occurrence, which in conditioning goals is typically the normalizing
+scalar <span class="math inline">\((\mu_\rho(P))^{-1}\)</span> rather
+than the intended trace argument. The stable pattern was to isolate each
+trace identity as a standalone <code>have</code> with explicit arguments
+to <code>tracemulcomm</code> or <code>tracemulcycle</code>, and only
+then rewrite. A minor lexical note in the same spirit: the script
+capital letter often used for partitions in informal notation is outside
+Lean’s legal identifier alphabet in this toolchain, so partition
+variables are plain ASCII.</p>
+<h2 id="affordances">Affordances</h2>
+<p>Three parts of Mathlib made the development markedly shorter than a
+bespoke stack would be. First, the <code>Matrix.PosSemidef</code> API is
+definition-agnostic: sandwich closure in both directions
+(<code>PosSemidef.mulmulconjTransposesame</code>,
+<code>PosSemidef.conjTransposemulmulsame</code>), sums
+(<code>posSemidefsum</code>), scalar multiples
+(<code>PosSemidef.smul</code>, which accepts a complex scalar that is
+nonnegative in the complex order, so the Lüders normalization is a
+single application), diagonal nonnegativity, trace nonnegativity, the
+zero-trace criterion, and the Gram construction
+<code>posSemidefconjTransposemulself</code> covered every need without
+ever unfolding the definition. Second, trace faithfulness is in the box:
+<code>Matrix.tracemulconjTransposeselfeqzeroiff</code> powers the
+uniqueness of the center expectation, and
+<code>PosSemidef.traceeqzeroiff</code> together with
+<code>PosSemidef.dotProductmulVeczeroiff</code> powers the support lemma
+of
+Proposition <a href="#prop:fixed" data-reference-type="ref" data-reference="prop:fixed">10</a>(ii).
+Third, the C*-norm layer, <code>CStarRing.normstarmulself</code>,
+<code>IsSelfAdjoint.normmulself</code>, the norm-one instance for
+nontrivial C*-rings, and <code>normnsmulle</code>, reduces the analytic
+half of
+Theorem <a href="#thm:tsirelson" data-reference-type="ref" data-reference="thm:tsirelson">1</a>
+to roughly forty lines over the bare typeclass context, with no
+completeness assumption anywhere. Mathlib’s existing CHSH file was
+itself an affordance: its <code>IsCHSHTuple</code> bundle fixed the
+interface against which the norm-form result could be made interoperable
+from the start.</p>
+<h1 id="related-work">Related work</h1>
+<p><strong>The Isabelle/HOL line.</strong> The nearest prior art is the
+sequence of developments by Echenim and Mhalla. Echenim’s Archive of
+Formal Proofs entry on quantum projective measurements and the CHSH
+inequality formalizes projective measurements and the CHSH expectation
+in Isabelle/HOL; the journal treatment by Echenim and Mhalla presents a
+formalization of the CHSH inequality and Tsirelson’s upper bound, with
+the corresponding AFP entry ; a supporting AFP entry formalizes
+simultaneous diagonalization of pairwise commuting Hermitian matrices .
+Relative to that line, the present development differs on two axes.
+Organizationally, it is event-algebra-first: the theory is arranged
+around the closure algebra of Hermitian idempotents, the block-diagonal
+commutant with an explicit trace-preserving pinching carrying existence,
+uniqueness, and contractivity, and a lemma-by-lemma, machine-visible
+split between algebra-only and trace-dependent content; the Isabelle
+line is organized matrix-first over a concrete density-matrix and <span
+class="math inline">\(L^2\)</span>-norm stack, with the CHSH development
+as the target. On the prover axis, the ecosystems differ in a way that
+shows up in proof economy: in Lean/Mathlib the norm-form Tsirelson bound
+is proved abstractly for any nontrivial unital C*-ring, with the matrix
+case a short instantiation, and Born-weight positivity and boundedness
+live directly in the partial order of <span
+class="math inline">\(\mathbb C\)</span> with no bespoke real-part
+bookkeeping; conversely, the concrete Isabelle stack obtains from its
+own spectral toolbox some facts (such as Gram factorization of positive
+matrices) that are currently gated behind unresolved instance chains in
+Mathlib, as detailed in
+Section <a href="#sec:gaps" data-reference-type="ref" data-reference="sec:gaps">9</a>.
+The CHSH arithmetic itself is common ground; the organization is the
+delta.</p>
+<p><strong>Formalized quantum mathematics more broadly.</strong> Bordg,
+Lachnitt, and He verified quantum algorithms and information-theoretic
+results in Isabelle/HOL , with the accompanying Isabelle Marries Dirac
+library . In Lean/Mathlib, Dupuis, Lewis, and Macbeth developed
+formalized functional analysis with semilinear maps , infrastructure
+relevant to any future infinite-dimensional extension of the present
+work. Garrigue and Saikawa formalize typed compositional quantum
+computation with lenses . Reports on individual Mathlib formalization
+efforts, such as Nash on Engel’s theorem and Baanen and collaborators on
+Dedekind domains and class groups of global fields , document both the
+mathematics and the practice of folding formalization-driven
+contributions back into the library; the library itself is described in
+the Mathlib community paper , and the Lean 4 system in de Moura and
+Ullrich . Within Lean specifically, Mathlib already provides an
+order-form CHSH/Tsirelson inequality and the <code>IsCHSHTuple</code>
+interface used in
+Section <a href="#sec:tsirelson" data-reference-type="ref" data-reference="sec:tsirelson">8</a>,
+and the Physlib/QuantumInfo project formalizes finite mixed states as
+positive-semidefinite trace-one matrices, positive operator-valued
+measures, and a Born-rule measurement. Relative to these, the present
+development contributes the event-algebra organization, the commutant
+pinching with its Hilbert–Schmidt characterization, the Lüders
+fixed-point layer, and the norm-form CHSH bound, packaged together under
+a per-declaration axiom audit; the novelty claim of
+Section <a href="#sec:intro" data-reference-type="ref" data-reference="sec:intro">1</a>
+is exactly this specific combination.</p>
+<p><strong>Foundations context.</strong> The mathematical foundations of
+quantum probability remain under active discussion in this journal’s
+scope. Reddiger and Poirier examine the one-body Born rule in curved
+spacetime ; Reddiger analyzes the applicability of Kolmogorov’s
+probability theory to quantum phenomena ; Aharonov and Shushi revisit
+the derivation of the Born rule , and Beck surveys the textbook
+orthodoxy on measurement and state update . Arsiwalla, Chester, and
+Kauffman reconstruct expectation values from a pre-quantum operator
+algebra, treating classical and quantum wave functions as consequences
+of that operator layer ; Kumar and Pan study network nonlocality , and
+Held derives the Tsirelson bound from geometric-algebra assumptions .
+Goldstein bootstraps infinite-dimensional state spaces from finite ones,
+deriving the von Neumann–Lüders postulate for projective observables .
+The present paper contributes to that discussion at the level of
+certified bookkeeping: for the finite core, every hypothesis of every
+standard statement is now explicit and machine-audited, so debates about
+what follows from what can point to a checked artifact.</p>
+<h1 id="conclusion-and-outlook">Conclusion and outlook</h1>
+<p>The finite event-algebra core of quantum probability admits a
+complete machine-checked treatment at modest cost: 64 lemmas and 8
+definitions cover event closure, Born weights with reality and the
+probabilistic bounds in the strong complex-order form, repeatable Lüders
+conditioning with its fixed-point characterization, the trace-preserving
+pinching onto the block-diagonal commutant with its Hilbert–Schmidt
+characterization (projector, state-preserving, selfadjoint, Pythagorean,
+contractive, trace-compatible, unique among commutant-valued
+trace-compatible maps, and compatible with conditioning on commutant
+events), a positive normalized expectation functional, and the Tsirelson
+bound in an abstract C*-setting. The axiom audit is part of the source
+and re-executes on every build; the lemma-level split between
+algebra-only and state-consuming content gives the development a second,
+structural payload beyond the individual theorems: it is a
+machine-visible map of where probability enters the quantum
+formalism.</p>
+<p>Three extensions are natural. First, unsharp measurements: effects
+(<span class="math inline">\(0 \le E \le \mathbf 1\)</span> in the
+Loewner order) and instruments generalize events and the Lüders map, and
+the certainty-set and fixed-point interface of
+Section <a href="#sec:lueders" data-reference-type="ref" data-reference="sec:lueders">5</a>
+suggests the shape the generalized statements should take. Second,
+attainment: complementing
+Theorem <a href="#thm:tsirelson" data-reference-type="ref" data-reference="thm:tsirelson">1</a>
+with a formalized two-qubit witness achieving <span
+class="math inline">\(2\sqrt 2\)</span> would close the gap between the
+inequality and the bound’s sharpness, and is well within reach of the
+matrix instantiation already in place. Third, infinite dimensions: the
+finite development deliberately avoids completeness, so its Tsirelson
+theorem already applies to any nontrivial unital C*-ring, yet the
+event-and-state layer is genuinely finite. Goldstein’s bootstrap of
+infinite-dimensional state spaces from finite ones in this journal marks
+exactly the frontier a formal development would next confront: which
+parts of the finite bookkeeping survive the passage verbatim, and which
+require new analysis (normality of states, <span
+class="math inline">\(\sigma\)</span>-additivity, von Neumann algebras
+in place of matrix algebras). The conditional-expectation package of
+Section <a href="#sec:center" data-reference-type="ref" data-reference="sec:center">6</a>
+is the component we expect to generalize most cleanly, since its
+statements are already phrased against a commutant rather than against
+matrix entries.</p>
+<p>When the bookkeeping of a foundational formalism is mechanical and
+audited, discussion can concentrate on the questions that are actually
+open. For finite quantum event algebras, that state has now been
+reached.</p>
+<h1 id="declarations">Declarations</h1>
+<p><strong>Funding.</strong> No funding was received for this work.</p>
+<p><strong>Competing interests.</strong> The author declares no
+competing interests.</p>
+<p><strong>Author contributions.</strong> Bernhard Mueller is the sole
+author: he designed and wrote the Lean development, conducted the axiom
+audit, and wrote the manuscript.</p>
+<p><strong>Data availability.</strong> No data were generated or
+analyzed in this work.</p>
+<p><strong>Use of AI tools.</strong> The author used AI-assisted tools
+in drafting the Lean development and the manuscript. All formal
+statements and proofs were checked by the Lean 4 proof assistant, the
+axiom audits were machine-executed, and the author reviewed and takes
+full responsibility for the content.</p>
+<p><strong>Code availability.</strong> The complete Lean development
+accompanies the submission as a standalone Lake project with a pinned
+external Mathlib dependency; it does not vendor Mathlib. It builds free
+of <code>sorry</code> placeholders with the toolchain
+<code>leanprover/lean4:v4.29.1</code> and the Mathlib version pinned in
+the project manifest, and the complete per-declaration axiom audit
+re-executes as part of the build. A public release with a persistent
+identifier and an open-source license will accompany publication.</p>
+
+          </div>
+        </div>
+      </article>
+    </main>
+    <footer class="site-footer reveal">
+      <div>Pragma</div>
+      <div class="site-footer-links">
+        <a href="/oph/" data-track-link="footer-hub">Observer Patch Holography</a>
+        <a href="/oph/papers/" data-track-link="footer-papers">Papers</a>
+        <a href="/oph/standard-model-gravity-unification/" data-track-link="footer-smg">SM + Gravity</a>
+        <a href="/oph/theory-of-everything/" data-track-link="footer-toe">Theory of Everything</a>
+        <a href="/oph/simulation-theory/" data-track-link="footer-sim">Simulation Theory</a>
+        <a href="/oph/quantum-gravity/" data-track-link="footer-qg">Quantum Gravity</a>
+        <a href="https://oph-book.floatingpragma.io/" data-track-link="footer-book">Book</a>
+        <a href="https://challenge.floatingpragma.io/" data-track-link="footer-challenge">Challenge</a>
+      </div>
+    </footer>
+
+  </div>
+  <script src="/oph/app.js"></script>
+</body>
+</html>
