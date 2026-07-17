@@ -22,7 +22,7 @@
   <meta name="citation_pdf_url" content="https://floatingpragma.io/oph/papers/fine-structure-constant-oph-pixel-fixed-point/paper.pdf" />
   <meta name="citation_abstract_html_url" content="https://floatingpragma.io/oph/papers/fine-structure-constant-oph-pixel-fixed-point/" />
   <meta name="citation_technical_report_institution" content="Pragma Research" />
-  <meta name="citation_technical_report_number" content="OPH r1546 fine_structure_constant_derivation" />
+  <meta name="citation_technical_report_number" content="OPH r1547 fine_structure_constant_derivation" />
   <meta name="DC.title" content="The Fine-Structure Constant as an OPH Pixel Fixed Point" />
   <meta name="DC.creator" content="Bernhard Mueller" />
   <meta name="DC.creator" content="Alexander Osika" />
@@ -99,7 +99,7 @@
   ],
   "datePublished": "July 17, 2026",
   "dateModified": "July 17, 2026",
-  "version": "r1546",
+  "version": "r1547",
   "subjectOf": [
     {
       "@type": "BlogPosting",
@@ -190,14 +190,14 @@
             <p>A focused OPH paper on the fine-structure constant, local screen-cell closure, hadronic endpoint transport, and the fixed-point status of alpha.</p>
           </div>
           <div class="paper-meta-line">
-            <span>r1546</span>
+            <span>r1547</span>
             <span>July 17, 2026</span>
             <span>extra papers</span>
           </div>
           <div class="cta-row">
             <a class="btn btn-primary" href="/oph/papers/fine-structure-constant-oph-pixel-fixed-point/paper.pdf" target="_blank" rel="noopener noreferrer" data-track-link="paper-pdf-fine_structure_constant_derivation">Download PDF</a>
             <a class="btn btn-secondary" href="/oph/papers/" data-track-link="paper-index">All OPH papers</a>
-            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r1546" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
+            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r1547" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
             <a class="btn btn-secondary" href="https://challenge.floatingpragma.io/" data-track-link="paper-challenge">Challenge</a>
           </div>
 
@@ -225,7 +225,7 @@
         </header>
         <div class="paper-reader-grid">
           <div class="paper-body">
-<p><strong>Paper release:</strong> <code>r1545</code>
+<p><strong>Paper release:</strong> <code>r1546</code>
 <strong>Released:</strong> July 17, 2026</p>
 <p><strong>Keywords:</strong> fine-structure constant, Observer-Patch
 Holography, pixel fixed point, electromagnetic coupling, Standard Model
@@ -298,9 +298,9 @@ class="math inline">\(\alpha^{-1}_{\mathrm{root}}=136.994835177413\ldots\)</span
 the interval-certified unique fixed point of the declared map (interval
 certificate shipped with the code release ; enclosure width <span
 class="math inline">\(7.2\times10^{-24}\)</span>, <span
-class="math inline">\(L\le0.0724\)</span>). The earlier printed tail
-<span class="math inline">\(136.9948351646\ldots\)</span> came from an
-unconverged run and is superseded beyond digit 9 (ledger row CL-6,
+class="math inline">\(L\le0.0724\)</span>). The printed tail <span
+class="math inline">\(136.9948351646\ldots\)</span> is an
+unconverged-run artifact, superseded beyond digit 9 (ledger row CL-6,
 closed). The self-consistent map that adds the finite-screen unified
 gauge width <span class="math inline">\(\alpha_U(P)\)</span> inside the
 loop has the certified fixed point <span
@@ -308,7 +308,7 @@ class="math inline">\(137.035660136946577\ldots\)</span>; this is the
 current closure status of the loop (ledger row CL-2, <span
 class="math inline">\(2.5\times10^{-6}\)</span> relative, about <span
 class="math inline">\(1.6\times10^{4}\)</span> measurement sigma). The
-historically displayed combination <span
+combination <span
 class="math inline">\(A_{\alpha_U}^{\mathrm{fp}}=137.0359595008\ldots\)</span>
 mixes the source root with <span
 class="math inline">\(\alpha_U(P_{\mathrm C})\)</span> evaluated at the
@@ -813,8 +813,8 @@ class="math display">\[
 the one-loop MSSM beta-coefficient set. Its use is a declared structural
 selection: the Standard Model coefficient triple has no pixel-residual
 root in the declared scan, no supersymmetric threshold matching enters
-the map, and the convention’s status is a counted selection under the
-claim rules of the program scorecard.</p>
+the map, and the convention’s status is a counted structural
+selection.</p>
 <p>Informally: once <span class="math inline">\(\alpha_U\)</span> is
 guessed, all three gauge couplings at lower scales are fixed. The same
 high-scale coupling determines <span
@@ -1145,10 +1145,9 @@ and maximum error <span class="math inline">\(0.08347\%\)</span>. These
 numbers therefore document an accurate, but branch-sensitive, complete
 postdiction. They are not a prospective OPH prediction: reference masses
 are absent at runtime, but the frozen formula family has historical
-post-hoc ancestry. Moreover, no charged RG/threshold theorem maps this
-historical mass coordinate to the pole masses used for the ppm
-comparison. Its executable receipt is committed with the repository
-sources.</p>
+post-hoc ancestry. No charged RG/threshold theorem maps this historical
+mass coordinate to the pole masses used for the ppm comparison. Its
+executable receipt is committed with the repository sources.</p>
 <p>Informally: this section specifies a frozen continuation spectrum
 used by the transport diagnostic. The lepton vacuum-polarization kernel
 is an exact one-loop calculation conditional on those masses; that
@@ -2004,7 +2003,22 @@ at-most-one statement is discharged on the declared physical domain
 class="math inline">\(\sup|g&#39;|&lt;1\)</span> on all 256 certified
 pieces, both readout maps, zero exceptional set (domain-global
 uniqueness certificate in the same release), so each map has exactly one
-fixed point on the domain.</p>
+fixed point on the domain. A maximal-domain extension certificate closes
+the exterior. An envelope lemma built from the declared solver windows
+(the pixel scan window <span
+class="math inline">\(\alpha_U\in[0.02,0.08]\)</span> and the <span
+class="math inline">\(m_Z\)</span> log-grid window <span
+class="math inline">\(\ln(\mu_U/m_Z)\in[0,50]\)</span>) together with
+the <span class="math inline">\(m_Z\)</span>-closure identity certifies
+<span class="math inline">\(1/\alpha_3(m_Z)\ge 4\)</span> and a positive
+inverse-alpha readout floor on the whole analytic domain, and an
+interval sweep of the full pixel window certifies that every
+window-consistent fixed-point candidate of either readout map lies
+inside the declared physical interval (runtime artifact
+<code>p_global_uniqueness_extension_certificate_2026-07-17.json</code>).
+Each declared map therefore has exactly one fixed point on its maximal
+analytic domain, and the set of fixed points outside the declared
+interval is empty; the headline enclosures above are unchanged.</p>
 <p>The release gate for promoting this row from empirical endpoint
 comparison to source-only theorem is explicit. The packet must contain
 <span class="math display">\[

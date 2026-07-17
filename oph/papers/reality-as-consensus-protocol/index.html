@@ -26,7 +26,7 @@
   <meta name="citation_pdf_url" content="https://floatingpragma.io/oph/papers/reality-as-consensus-protocol/paper.pdf" />
   <meta name="citation_abstract_html_url" content="https://floatingpragma.io/oph/papers/reality-as-consensus-protocol/" />
   <meta name="citation_technical_report_institution" content="Pragma Research" />
-  <meta name="citation_technical_report_number" content="OPH r1546 reality_as_consensus_protocol" />
+  <meta name="citation_technical_report_number" content="OPH r1547 reality_as_consensus_protocol" />
   <meta name="DC.title" content="Reality as a Consensus Protocol" />
   <meta name="DC.creator" content="Bernhard Mueller" />
   <meta name="DC.creator" content="Kai Xue" />
@@ -119,7 +119,7 @@
   ],
   "datePublished": "July 17, 2026",
   "dateModified": "July 17, 2026",
-  "version": "r1546",
+  "version": "r1547",
   "subjectOf": [
     {
       "@type": "BlogPosting",
@@ -216,14 +216,14 @@
             <p>The OPH fixed-point consensus paper. It formulates observer patches, overlap-visible records, repair moves, Lyapunov descent, quotient normal forms, and obstruction classes.</p>
           </div>
           <div class="paper-meta-line">
-            <span>r1546</span>
+            <span>r1547</span>
             <span>July 17, 2026</span>
             <span>papers</span>
           </div>
           <div class="cta-row">
             <a class="btn btn-primary" href="/oph/papers/reality-as-consensus-protocol/paper.pdf" target="_blank" rel="noopener noreferrer" data-track-link="paper-pdf-reality_as_consensus_protocol">Download PDF</a>
             <a class="btn btn-secondary" href="/oph/papers/" data-track-link="paper-index">All OPH papers</a>
-            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r1546" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
+            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r1547" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
             <a class="btn btn-secondary" href="https://challenge.floatingpragma.io/" data-track-link="paper-challenge">Challenge</a>
           </div>
 
@@ -252,7 +252,7 @@
         </header>
         <div class="paper-reader-grid">
           <div class="paper-body">
-<p><strong>Paper release:</strong> <code>r1545</code>
+<p><strong>Paper release:</strong> <code>r1546</code>
 <strong>Released:</strong> July 17, 2026</p>
 <h1 id="what-this-paper-contributes">What This Paper Contributes</h1>
 <p>The mathematics of repair is old in the right places. Constraint
@@ -1408,7 +1408,7 @@ Proposition <a href="#prop:lyapunov-descent" data-reference-type="ref" data-ref
 gives <span class="math inline">\(\mu(t)\prec\mu(s)\)</span>. The
 measure order is well founded, so an infinite strictly descending chain
 is impossible. On the scalar-<span class="math inline">\(\Phi\)</span>
-branch this is the older finite-value argument on <span
+branch this is the finite-value argument on <span
 class="math inline">\(\Phi(\Sigma)\)</span>. ◻</p>
 </div>
 
@@ -1953,9 +1953,17 @@ cross-source endpoint agreement, modulo any declared silent equivalence,
 is equivalent to injectivity of the induced boundary map on the
 consistent quotient. Weak normalization and all-schedule liveness are
 separate obligations. The layered and functional carriers below
-establish the injectivity premise only on their named finite domains;
-same-source confluence alone does not establish it for an arbitrary
-physical boundary map.</p>
+establish the injectivity premise on their declared domains. On the
+verified rooted-tree packet-net domain of
+Definition <a href="#def:tree-packet-domain" data-reference-type="ref" data-reference="def:tree-packet-domain">19</a>,
+the declared boundary map is the root-packet readback, and its
+injectivity modulo hidden-label gauge on the consistent set is
+machine-checked class-wide in the released Lean development, together
+with the resulting cross-source endpoint form for the tree repair.
+Same-source confluence alone does not establish the injectivity premise
+for an arbitrary physical boundary map, and outside the declared domains
+it remains a named per-net hypothesis with machine-checked failure
+witnesses.</p>
 </div>
 
 <h2 id="a-multi-edge-finite-carrier-for-boundary-reconstruction">A
@@ -4221,8 +4229,9 @@ or higher-associator strictifiability together with at least one allowed
 strict <span class="math inline">\(1\)</span>-cocycle representative
 having trivial represented holonomy. This supplies receipt-conditional
 transport across cutoffs and classification. The cofinal realized
-witness uses the same receipt, and MAR plus the explicit one-Higgs
-matter package then selects the Standard Model quotient <span
+witness uses the same receipt, and the Minimal Admissible Realization
+rule (MAR) plus the explicit one-Higgs matter package then selects the
+Standard Model quotient <span
 class="math inline">\(\mathrm{SU}(3)\times\mathrm{SU}(2)\times\mathrm{U}(1)/\mathbb{Z}_6\)</span>
 together with the exact hypercharge lattice and the realized counts
 <span class="math inline">\(N_c=3\)</span>, <span
@@ -4312,13 +4321,12 @@ every accepted repair run has at most the number of distinct reachable
 <span class="math inline">\(\mu\)</span>-values below its start value
 minus one, because each accepted transaction strictly lowers the
 declared exact measure. On the scalar <span
-class="math inline">\(\Phi\)</span>-branch this specializes to the older
-<span class="math inline">\(|\Phi(\Sigma)|-1\le |\Sigma|-1\)</span>
-bound. Exact normal-form computation is therefore decidable by direct
-iteration of accepted aggregate transactions. This step bound is a
-termination statement; the schedule-independent answer depends on the
-atomic conflict-component local diamond and repair-completeness clauses
-of
+class="math inline">\(\Phi\)</span>-branch this specializes to the <span
+class="math inline">\(|\Phi(\Sigma)|-1\le |\Sigma|-1\)</span> bound.
+Exact normal-form computation is therefore decidable by direct iteration
+of accepted aggregate transactions. This step bound is a termination
+statement; the schedule-independent answer depends on the atomic
+conflict-component local diamond and repair-completeness clauses of
 Theorem <a href="#thm:confluence" data-reference-type="ref" data-reference="thm:confluence">28</a>.
 What this paper does <em>not</em> prove is a uniform polynomial-time
 bound, a sharper complexity-class placement for families of growing
@@ -4742,9 +4750,9 @@ class="math display">\[
 \operatorname{Tr}\rho_{ABD}(K_{AB}+K_{BD}-K_B-K_{ABD})
 \mathrel{=}
 I_\rho(A:D\mid B).
-\]</span> This does not identify raw CMI with a state-independent local
-stress source. Near a full-rank exact Markov state <span
-class="math inline">\(\sigma\)</span>, a perturbation <span
+\]</span> This does not identify raw conditional mutual information with
+a state-independent local stress source. Near a full-rank exact Markov
+state <span class="math inline">\(\sigma\)</span>, a perturbation <span
 class="math inline">\(\rho(t)=\sigma+tX+O(t^2)\)</span> has <span
 class="math display">\[
 \left.\frac{\mathrm d}{\mathrm d t}I_{\rho(t)}(A:D\mid
