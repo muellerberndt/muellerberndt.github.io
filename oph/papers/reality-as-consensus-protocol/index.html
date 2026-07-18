@@ -252,7 +252,7 @@
         </header>
         <div class="paper-reader-grid">
           <div class="paper-body">
-<p><strong>Paper release:</strong> <code>r1549</code>
+<p><strong>Paper release:</strong> <code>r1550</code>
 <strong>Released:</strong> July 18, 2026</p>
 <h1 id="what-this-paper-contributes">What This Paper Contributes</h1>
 <p>The mathematics of repair is old in the right places. Constraint
@@ -605,7 +605,7 @@ bare finite consensus reduct at regulator <span
 class="math inline">\(r\)</span> is <span class="math display">\[
 \mathsf{Cons}_r
 \mathrel{=}
-(\Sigma_r,\Gamma_r,Q_r,\Phi_r,\to_r,n_r,C_r),
+(\Sigma_r,\Gamma_r,Q_r,\Phi_r,\to_r,n_r,C_r,B_r),
 \]</span> where <span class="math inline">\(\Sigma_r\)</span> is the
 finite presentation space, <span class="math inline">\(\Gamma_r\)</span>
 is the presentation-redundancy groupoid, <span
@@ -615,7 +615,9 @@ functional, <span class="math inline">\(\to_r\)</span> is the accepted
 repair relation, <span class="math inline">\(n_r\)</span> is the
 quotient normal-form map, and <span class="math display">\[
 C_r=\Phi_r^{-1}(0)
-\]</span> is the globally overlap-consistent set.</em></p>
+\]</span> is the globally overlap-consistent set, and <span
+class="math inline">\(B_r\)</span> is its boundary-data
+readout.</em></p>
 </div>
 
 <div id="thm:bare-consensus-not-einstein-complete" class="theorem">
@@ -661,9 +663,8 @@ bare reduct. ◻</p>
 \boxed{
 \mathsf{Cons}_r\Rightarrow\text{quotient normal forms only.}
 }
-\]</span> The gravity theorem used elsewhere in OPH has a separate
-five-axiom recovered-core dependency spine: <span
-class="math display">\[
+\]</span> The gravity theorem used elsewhere in OPH has a separate typed
+dependency spine: <span class="math display">\[
 \boxed{
 \begin{gathered}
 \mathsf{RecoveredCore}_{5\mathrm{ax}}+\mathsf{GeomRead}
@@ -673,14 +674,20 @@ class="math display">\[
 +\mathsf{FixedCapStat}
 +\mathsf{SmallBallArea}\\
 +\mathsf{RemainderControl}
-+\mathsf{TimelikeCoverage}
++\mathsf{TimelikeCoverage}\\
++\mathsf{CommonSource}
++\mathsf{PhysicalIDs}\\
 +\mathsf{TensorUpgrade}
 \Rightarrow
 \mathsf{Einstein}.
 \end{gathered}
 }
-\]</span> That branch is carried by the compact SM/GR and microphysics
-papers, not by the bare constraint-code theorem above.</p>
+\]</span> The implication requires one source-derived common-domain
+tower, certified asymptotic tails, universal coupling, a source-derived
+vacuum reference, and independent physical scale readouts. Construction
+and certification of such a tower are work in progress. That branch is
+carried by the compact SM/GR and microphysics papers, not by the bare
+constraint-code theorem above.</p>
 <p>So <span class="math inline">\(\Phi\)</span> is the total
 disagreement energy of the universe. Consistent states have zero energy.
 Everything else is frustrated.</p>
@@ -2851,10 +2858,10 @@ obstruction maps <span class="math inline">\(h_s:Q_s\to\mathcal
 H_s\)</span> and <span class="math inline">\(h_r:Q_r\to\mathcal
 H_r\)</span>, a map <span class="math inline">\(\chi_{sr}:\mathcal
 H_s\to\mathcal H_r\)</span> is a <strong>holonomy cochain
-morphism</strong> when the edge, cycle, or crossed-module cochains used
-to compute <span class="math inline">\(h_s\)</span> restrict to the
-cochains used to compute <span class="math inline">\(h_r\)</span>,
-modulo the declared quotient identifications. Equivalently, <span
+morphism</strong> when the edge, cycle, or crossed-module cochains that
+compute <span class="math inline">\(h_s\)</span> restrict to the
+cochains that compute <span class="math inline">\(h_r\)</span>, modulo
+the declared quotient identifications. Equivalently, <span
 class="math display">\[
 \chi_{sr}\circ h_s=h_r\circ\rho_{sr}.
 \]</span></em></p>
@@ -4581,8 +4588,8 @@ measured under controls</td>
 <h1
 id="quantumalgebraic-lift-markov-collar-splice-theorem">Quantum/Algebraic
 Lift: Markov-Collar Splice Theorem</h1>
-<p>This appendix records the algebraic splice statement used to relate
-the finite patch-net model to the OPH collar formalism.</p>
+<p>This appendix records the algebraic splice statement relating the
+finite patch-net model to the OPH collar formalism.</p>
 <p>An observer is written as <span class="math display">\[
 O=(P,\mathcal{A}(P),\rho,R),
 \]</span> where <span class="math inline">\(P\)</span> is the screen

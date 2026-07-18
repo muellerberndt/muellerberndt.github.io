@@ -258,7 +258,7 @@
         </header>
         <div class="paper-reader-grid">
           <div class="paper-body">
-<p><strong>Paper release:</strong> <code>r1549</code>
+<p><strong>Paper release:</strong> <code>r1550</code>
 <strong>Released:</strong> July 18, 2026</p>
 <h1 id="what-this-paper-contributes">What This Paper Contributes</h1>
 <p>The rest of the OPH stack talks about observer patches, records,
@@ -382,7 +382,7 @@ when it preserves the visible interface and record process.</p>
 
 <p><strong>Definition 4</strong> (Algebraic audit instrument). <em>An
 algebraic audit instrument is an exact computable map on finite
-quotient-visible representation data. It is used to certify invariance,
+quotient-visible representation data. It certifies invariance,
 nonconjugacy, orbit structure, lattice preservation, or automorphism
 fusion inside a declared regulator chart. It is not a physical actuator
 unless a carrier implementation realizes the same visible map with a
@@ -570,9 +570,9 @@ C_r,\partial C_r,\mathbf c_r,\alpha_r,n_{C,r},
 class="math display">\[
 n_{C,r}=(\cot\alpha_r,\csc\alpha_r\,\mathbf c_r).
 \]</span> On a finite fitted branch the output is labeled <span
-class="math inline">\(\mathrm{APPROXIMATE\_ROUND\_CAP\_CHART}\)</span>
-until a separate round-cap rigidity/convergence certificate supplies a
-global bound; if the fit is not round it emits <span
+class="math inline">\(\mathrm{APPROXIMATE\_ROUND\_CAP\_CHART}\)</span>.
+A global bound requires a separate round-cap rigidity/convergence
+certificate; if the fit is not round it emits <span
 class="math inline">\(\mathrm{CAP\_NOT\_ROUND}\)</span>. The normal
 <span class="math inline">\(n_{C,r}\)</span> is support-chart data
 derived from the repaired quotient. It is not a microscopic carrier
@@ -1906,6 +1906,9 @@ class="math display">\[
 \mathsf{ScalarPrecisionRead}_r,\quad
 \mathsf{QuotientMeasureRead}_r,\quad
 \mathsf{ScalarReleaseEnergyRead}_r,\\
+\mathsf{PrimitiveCollarLedgerRead}_r,\quad
+\mathsf{ReserveGeneratorRead}_r,\quad
+\mathsf{OrientationHalfRead}_r,\\
 \mathsf{DiamondRead}_r,\quad
 \mathsf{ProperScaleRead}_r,\quad
 \mathsf{ModularRemainderRead}_r,\quad
@@ -1955,9 +1958,20 @@ used by <code>ANOMALY_ABUNDANCE_SOURCE_RECEIPT</code>. The source-bridge
 maps are instrumentation for the screen-to-radial theorem. They do not
 turn a screen covariance into a primordial spectrum unless the
 source-stress, single-clock, repair-gap, freeze-out,
-geometric-screen-scalar, scalar-precision, source-release-energy,
-refinement-tilt, radial-prior, null-space, finite-window, and
-forward-residual receipts also pass.</em></p>
+geometric-screen-scalar, scalar-precision, primitive-collar-law,
+source-release-energy, infinitesimal reserve-generator,
+orientation-half, refinement-tilt, radial-null, finite-window, and
+forward-residual receipts also pass. Radial uniqueness requires either a
+scale-labelled source-refinement orbit with a scale-natural physical
+embedding, source/physical covariance residual equality, strong
+finite-to-continuum convergence, and safe-band leakage control, or a
+cofinal radial cross-covariance family with spherical-Hankel convergence
+and held-out reconstruction. On the physical dilation branch the
+source-facing generator gives <span
+class="math inline">\(\theta=P_\star/48\)</span> and the continuum
+intertwiner restricts the radial power to a one-dimensional family. A
+concrete finite carrier satisfying the full receipt set is work in
+progress.</em></p>
 </div>
 
 <div id="thm:carrier-invariance-anomaly-load" class="theorem">
@@ -3170,22 +3184,23 @@ additionally requires reflection positivity or equivalent reconstruction
 plus refinement compatibility of the transfer family.</p>
 <h4 id="primordial-and-cosmological-prediction-firewall">Primordial and
 cosmological prediction firewall.</h4>
-<p>A screen covariance is not automatically a primordial curvature
-spectrum. The map <span class="math display">\[
+<p>A screen covariance contains incomplete radial information. The
+complete one-shell map <span class="math display">\[
 C_\ell
 \mathrel{=}
 4\pi
 \int_0^\infty
 \frac{dk}{k}
 \Delta_\zeta^2(k)j_\ell^2(k\chi_\star)
-\]</span> has a null space unless a radial prior, finite parametric
-family, or source-stress bridge is declared. OPH primordial promotion
-requires the source-only stress, single-clock, entropy-repair,
-curvature-evolution, adiabatic-mode, phase-coherence,
-screen-to-radial-lift, radial-null-space, and forward-projection
-receipts. Observable CMB comparison also requires declared source,
-solver, dataset, covariance, nuisance, data-use, and pooled-reducer
-provenance.</p>
+\]</span> has an infinite-dimensional kernel that persists under
+positivity. OPH primordial promotion requires the source-only stress,
+single-clock, entropy-repair, curvature-evolution, adiabatic-mode,
+phase-coherence, physical mode, radial-null-space, and
+forward-projection receipts together with a scale-natural physical
+dilation intertwiner or complete radial cross-covariance tomography. A
+finite radial prior produces a conditional continuation. Observable CMB
+comparison also requires declared source, solver, dataset, covariance,
+nuisance, data-use, and pooled-reducer provenance.</p>
 <h4 id="claim-tiers-and-required-receipts">Claim tiers and required
 receipts.</h4>
 <p>Every ensemble-facing run records its ensemble id, claim tier,
