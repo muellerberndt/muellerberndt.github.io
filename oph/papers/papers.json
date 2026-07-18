@@ -1,6 +1,6 @@
 {
-  "release_id": "r1548",
-  "released_at": "July 17, 2026",
+  "release_id": "r1549",
+  "released_at": "July 18, 2026",
   "collection_url": "https://floatingpragma.io/oph/papers/",
   "sitemap_url": "https://floatingpragma.io/oph/papers/sitemap.xml",
   "papers": [
@@ -496,41 +496,6 @@
           "title": "The Trigger",
           "url": "https://blog.floatingpragma.io/the-trigger",
           "description": "High-level public entry point for the OPH claim."
-        }
-      ]
-    },
-    {
-      "id": "oph_dark_matter_paper",
-      "title": "Observer Patch Holography and the Dark Matter Phenomenon",
-      "short_title": "Dark matter paper",
-      "category": "Dark matter",
-      "description": "The OPH dark-matter phenomenology paper. It connects finite observer-overlap collars, record-repair load, galaxy rotation laws, lensing, BTFR behavior, and cosmological caveats.",
-      "authors": [
-        "Bernhard Mueller",
-        "David Matscheko"
-      ],
-      "keywords": [
-        "dark matter",
-        "galaxy rotation curves",
-        "MOND",
-        "BTFR",
-        "gravitational lensing",
-        "dark-sector corrections",
-        "Observer Patch Holography"
-      ],
-      "html_url": "https://floatingpragma.io/oph/papers/observer-patch-holography-dark-matter/",
-      "pdf_url": "https://floatingpragma.io/oph/papers/observer-patch-holography-dark-matter/paper.pdf",
-      "central_pdf_url": "https://floatingpragma.io/oph/papers/pdf/oph_dark_matter_paper.pdf",
-      "related_blog_posts": [
-        {
-          "title": "Causality Is Repair",
-          "url": "https://blog.floatingpragma.io/causality-is-repair",
-          "description": "Causality as exposed mismatch, accepted repair, and record formation."
-        },
-        {
-          "title": "Everything Clicks Into Place",
-          "url": "https://blog.floatingpragma.io/everything-that-clicks-into-place",
-          "description": "Unification as translation, repair, and stable agreement across domains."
         }
       ]
     },

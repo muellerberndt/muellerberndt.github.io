@@ -1,7 +1,7 @@
 # Observer Patch Holography Papers
 
-Release: r1548
-Released: July 17, 2026
+Release: r1549
+Released: July 18, 2026
 
 This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 
@@ -108,14 +108,6 @@ This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 - Authors: Bernhard Mueller
 - Category: String theory
 - Summary: A bridge paper connecting the de Sitter observer problem, OPH edge-string effective language, and a heterotic Standard Model representative as a conditional string-vacuum selector.
-
-## Observer Patch Holography and the Dark Matter Phenomenon
-
-- HTML: https://floatingpragma.io/oph/papers/observer-patch-holography-dark-matter/
-- PDF: https://floatingpragma.io/oph/papers/observer-patch-holography-dark-matter/paper.pdf
-- Authors: Bernhard Mueller, David Matscheko
-- Category: Dark matter
-- Summary: The OPH dark-matter phenomenology paper. It connects finite observer-overlap collars, record-repair load, galaxy rotation laws, lensing, BTFR behavior, and cosmological caveats.
 
 ## Thinking as Patch-Net Fixed-Point Search
 
