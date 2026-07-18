@@ -22,7 +22,7 @@ The public OPH outreach packet is designed for criticism. The useful response is
 - What is a theory of everything?: https://floatingpragma.io/oph/what-is-a-theory-of-everything/
 - Physics Unification via OPH: https://floatingpragma.io/oph/physics-unification/
 - Standard Model unified with gravity via OPH: https://floatingpragma.io/oph/standard-model-gravity-unification/
-- Cosmological constant derivation via OPH: https://floatingpragma.io/oph/cosmological-constant-derivation/
+- Conditional cosmological-constant capacity target: https://floatingpragma.io/oph/cosmological-constant-derivation/
 - Stress-test OPH: https://floatingpragma.io/oph/stress-test/
 - OPH Coherence Map, the public graph surface for OPH concepts and overlaps: https://coherence.floatingpragma.io/
 - OPH Applications, the public applications page for hardware, compute, energy, AGI, lift, and optical chamber consensus: https://omega.floatingpragma.io/

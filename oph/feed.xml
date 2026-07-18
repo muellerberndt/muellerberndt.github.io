@@ -3,7 +3,7 @@
   <channel>
     <title>Observer Patch Holography Updates</title>
     <link>https://floatingpragma.io/oph/</link>
-    <description>Public OPH links, with the zero-dial two-fixed-point constants headline (zero dials; zero quantitative inputs at the theory layer; working borrows counted in the scorecard), OPH Textbooks, Reverse Engineering Reality, mini-universe simulation, Applications, paper summaries, physics unification, Standard Model plus gravity, cosmological constant, coherence, essays, lab, and challenge updates.</description>
+    <description>Public OPH links, with one certified incomplete-map root, one global fixed-point target, explicit open physical maps, OPH Textbooks, Reverse Engineering Reality, simulation, paper summaries, physics unification, cosmology, essays, lab, and challenge updates.</description>
     <language>en</language>
     <lastBuildDate>Wed, 08 Jul 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://floatingpragma.io/oph/feed.xml" rel="self" type="application/rss+xml" />
@@ -12,7 +12,7 @@
       <link>https://floatingpragma.io/oph/papers/</link>
       <guid isPermaLink="true">https://floatingpragma.io/oph/papers/</guid>
       <pubDate>Tue, 02 Jun 2026 00:00:00 GMT</pubDate>
-      <description>HTML summaries of the six-paper Observer Patch Holography stack and supporting papers, including the zero-dial two-fixed-point constants headline (zero quantitative inputs at the theory layer; working borrows counted in the scorecard), with links to the formal PDFs.</description>
+      <description>HTML summaries of the Observer Patch Holography paper stack, with claim-status boundaries and links to the formal PDFs.</description>
     </item>
     <item>
       <title>Standard Model Unified with Gravity via OPH</title>
@@ -22,11 +22,11 @@
       <description>The focused OPH entry page for the Standard Model unified with gravity, connecting the compact paper to the Lorentz/null-modular/Einstein branch, realized Standard Model quotient, and two closure-defined constants.</description>
     </item>
     <item>
-      <title>Cosmological Constant Derivation via OPH</title>
+      <title>Cosmological Constant Capacity Target via OPH</title>
       <link>https://floatingpragma.io/oph/cosmological-constant-derivation/</link>
       <guid isPermaLink="true">https://floatingpragma.io/oph/cosmological-constant-derivation/</guid>
       <pubDate>Tue, 02 Jun 2026 00:00:00 GMT</pubDate>
-      <description>The OPH de Sitter screen-capacity route to the cosmological constant, with the closure-defined cosmic record-capacity fixed point N_CRC = F(N_CRC) and Lambda_CRC = 3 pi / (G N_CRC).</description>
+      <description>The conditional OPH de Sitter screen-capacity route: measured Lambda locates the comparison coordinate, while the physical readback map and fixed-point certificate remain open.</description>
     </item>
     <item>
       <title>Physics Unification via OPH</title>
@@ -89,7 +89,7 @@
       <link>https://floatingpragma.io/oph/stress-test/</link>
       <guid isPermaLink="true">https://floatingpragma.io/oph/stress-test/</guid>
       <pubDate>Wed, 06 May 2026 10:35:00 GMT</pubDate>
-      <description>Use the OPH NotebookLM source notebook, public essays, OPH Lab, papers, repository, and public challenge to find the strongest failure mode, including the two fixed-point constants claim. Detailed objections should go to tom@floatingpragma.io.</description>
+      <description>Use the OPH NotebookLM source notebook, public essays, OPH Lab, papers, repository, and public challenge to test the incomplete local endpoint map, global capacity target, and observable-conversion contracts. Detailed objections should go to tom@floatingpragma.io.</description>
     </item>
     <item>
       <title>OPH License and Anti-Patent Covenant</title>
