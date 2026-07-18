@@ -22,7 +22,7 @@
   <meta name="citation_pdf_url" content="https://floatingpragma.io/oph/papers/observation-determined-normal-forms/paper.pdf" />
   <meta name="citation_abstract_html_url" content="https://floatingpragma.io/oph/papers/observation-determined-normal-forms/" />
   <meta name="citation_technical_report_institution" content="Pragma Research" />
-  <meta name="citation_technical_report_number" content="OPH r1550 observable_normal_forms" />
+  <meta name="citation_technical_report_number" content="OPH r1551 observable_normal_forms" />
   <meta name="DC.title" content="Observation-Determined Normal Forms: Stability, Obstructions, and Refinement in Constraint and Rewrite Systems" />
   <meta name="DC.creator" content="Bernhard Mueller" />
   <meta name="DC.creator" content="David Matscheko" />
@@ -105,7 +105,7 @@
   ],
   "datePublished": "July 18, 2026",
   "dateModified": "July 18, 2026",
-  "version": "r1550",
+  "version": "r1551",
   "subjectOf": [
     {
       "@type": "BlogPosting",
@@ -190,14 +190,14 @@
             <p>A substrate-neutral mathematical paper separating same-source confluence, cross-source identification from protected observations, liveness, and local repairability, with quantitative stability and refinement criteria.</p>
           </div>
           <div class="paper-meta-line">
-            <span>r1550</span>
+            <span>r1551</span>
             <span>July 18, 2026</span>
             <span>extra papers</span>
           </div>
           <div class="cta-row">
             <a class="btn btn-primary" href="/oph/papers/observation-determined-normal-forms/paper.pdf" target="_blank" rel="noopener noreferrer" data-track-link="paper-pdf-observable_normal_forms">Download PDF</a>
             <a class="btn btn-secondary" href="/oph/papers/" data-track-link="paper-index">All OPH papers</a>
-            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r1550" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
+            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r1551" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
             <a class="btn btn-secondary" href="https://challenge.floatingpragma.io/" data-track-link="paper-challenge">Challenge</a>
           </div>
 
@@ -224,7 +224,7 @@
         </header>
         <div class="paper-reader-grid">
           <div class="paper-body">
-<p><strong>Paper release:</strong> <code>r1550</code>
+<p><strong>Paper release:</strong> <code>r1551</code>
 <strong>Released:</strong> July 18, 2026</p>
 <p><strong>Author af f iliations:</strong> <sup>1</sup>Pragma Research
 Inc.</p>
@@ -375,12 +375,12 @@ intended venue</h2>
 <p>The exact theory overlaps several established areas. Abstract
 rewriting supplies Newman’s lemma, Church–Rosser properties, unique
 normal forms, and normalization theory . Rewriting modulo equivalence
-and confluence under invariants already address quotient and
-relevant-state restrictions . Quantitative rewriting enriches rewrite
-relations themselves and proves metric analogues of classical confluence
-theorems . Error bounds and inverse stability are mature subjects in
-variational analysis . Functoriality of rewriting is also established in
-categorical graph transformation .</p>
+and confluence under invariants address quotient and relevant-state
+restrictions . Quantitative rewriting enriches rewrite relations
+themselves and proves metric analogues of classical confluence theorems
+. Error bounds and inverse stability are mature subjects in variational
+analysis . Functoriality of rewriting is also established in categorical
+graph transformation .</p>
 <p>Accordingly, the paper makes no claim that a triangle inequality, an
 error bound, inverse continuity, a section criterion, or
 boundary-indexed unique normal forms are individually new. The
@@ -454,16 +454,16 @@ not the invention of approximate inverse systems.</p>
 reconstruction and functional observability</h2>
 <p>Control-theoretic observability reconstructs a state, or a prescribed
 function of state, from an output history. Linear observability and
-functional observability supply rank and conditioning tests; recent
-nonlinear work characterizes when a nonlinear functional can be
-reconstructed from measurements and studies the quality of the inverse
-map . This is the closest neighboring language for the map <span
+functional observability supply rank and conditioning tests; nonlinear
+work characterizes when a nonlinear functional can be reconstructed from
+measurements and studies the quality of the inverse map . This is the
+closest neighboring language for the map <span
 class="math inline">\(B|_C\)</span>. Our setting is nevertheless static
 at the theorem interface: <span class="math inline">\(C\)</span> is the
-already-settled consistent set, <span class="math inline">\(B\)</span>
-may be any protected quotient observation, and the new questions are how
-residual error and inverse conditioning control schedule disagreement
-and how these certificates propagate through refinement towers.</p>
+settled consistent set, <span class="math inline">\(B\)</span> may be
+any protected quotient observation, and the questions are how residual
+error and inverse conditioning control schedule disagreement and how
+these certificates propagate through refinement towers.</p>
 <h2 id="constraints-databases-and-global-sections">Constraints,
 databases, and global sections</h2>
 <p>Acyclic database schemes and positive-semiring relations provide
@@ -486,12 +486,12 @@ and obstruction output are explicit. They do not reprove those
 principles.</p>
 <h2 id="formalized-rewriting">Formalized rewriting</h2>
 <p>Formalized rewriting has established libraries such as CoLoR in Coq .
-Recent developments include a constructive Agda library for abstract
-rewriting , a Lean 4 framework for confluence and normalization of
-lambda calculi , and a Rocq library for adhesive-category graph
-rewriting . The accompanying standalone Lean artifact formalizes
-selected exact, stability, refinement, repair, ranked, and stochastic
-results from this paper; its coverage boundary is stated in
+Developments include a constructive Agda library for abstract rewriting
+, a Lean 4 framework for confluence and normalization of lambda calculi
+, and a Rocq library for adhesive-category graph rewriting . The
+accompanying standalone Lean artifact formalizes selected exact,
+stability, refinement, repair, ranked, and stochastic results from this
+paper; its coverage boundary is stated in
 <a href="#sec:lean" data-reference-type="ref+label" data-reference="sec:lean">11</a>.</p>
 <h1 id="exact-observable-fibers">Exact observable fibers</h1>
 <div class="definition">
@@ -706,7 +706,7 @@ confluence compares arms of a peak from one state;
 compares endpoints from all sources in one observation fiber. Weak
 normalization is a separate existence hypothesis ensuring that every
 source has at least one endpoint. Strong normalization, fairness, or
-another liveness argument is still needed to conclude that every allowed
+another liveness argument is needed to conclude that every allowed
 schedule settles. None of these three obligations may be substituted for
 either of the others.</p>
 </div>
@@ -764,7 +764,7 @@ t_x\in C
 C_{B(x)}\ne\varnothing.
 \]</span> Thus a realizable observation has a unique reachable terminal
 at its consistent extension, whereas an unrealizable observation can
-still have a unique reachable terminal, but only outside <span
+have a unique reachable terminal only outside <span
 class="math inline">\(C\)</span>. The theorem does not assert strong
 normalization of every execution.</em></p>
 </div>
@@ -1027,8 +1027,8 @@ class="math inline">\(\Theta_{\Phi,B}(1,0)=2s\)</span>. ◻</p>
 <p><em>Remark 21</em>. The theorem does not assert that every term in
 <a href="#eq:master-bound" data-reference-type="eqref" data-reference="eq:master-bound">[eq:master-bound]</a>
 can be attained simultaneously in every structured class. It states the
-correct universal boundary: the observation term is forced already on
-<span class="math inline">\(C\)</span>, and the coefficient <span
+correct universal boundary: the observation term is forced on <span
+class="math inline">\(C\)</span>, and the coefficient <span
 class="math inline">\(2\)</span> on two independent residual errors is
 globally sharp.</p>
 </div>
@@ -1215,8 +1215,8 @@ class="math inline">\(r\downarrow0\)</span>.</em></p>
 <p><em>Proof.</em> If <span class="math inline">\(\eta_\Phi(t)\)</span>
 did not tend to zero, there would be <span
 class="math inline">\(t_n\downarrow0\)</span> and <span
-class="math inline">\(x_n\)</span> with <span
-class="math inline">\(\Phi(x_n)\le t_n\)</span> but <span
+class="math inline">\(x_n\)</span> satisfying <span
+class="math inline">\(\Phi(x_n)\le t_n\)</span> and <span
 class="math inline">\(\operatorname{dist}(x_n,C)\ge a&gt;0\)</span>. A
 convergent subsequence has limit <span class="math inline">\(x\)</span>
 with <span class="math inline">\(\Phi(x)=0\)</span>, hence <span
@@ -1227,10 +1227,10 @@ class="math inline">\(B(C)\)</span> is a homeomorphism, whose inverse is
 uniformly continuous. ◻</p>
 </div>
 
-<p>Now let <span class="math inline">\(\{\mathfrak S_i\}_{i\in
-I}\)</span> be a nonempty family of compact or finite metric systems
-with a common Lipschitz bound <span class="math inline">\(L\)</span> for
-the maps <span class="math inline">\(B_i\)</span>. Define <span
+<p>Let <span class="math inline">\(\{\mathfrak S_i\}_{i\in I}\)</span>
+be a nonempty family of compact or finite metric systems with a common
+Lipschitz bound <span class="math inline">\(L\)</span> for the maps
+<span class="math inline">\(B_i\)</span>. Define <span
 class="math display">\[
 H(t):=\sup_i\eta_i(t),\qquad
 \Omega(r):=\sup_i\omega_i(r).
@@ -1948,7 +1948,7 @@ the pathwise summability condition. Thus raw receipt parameters alone
 are not enough: uniform conditioning and the amplified restriction
 factors remain load-bearing.</p>
 <h2 id="exact-inverse-limits">Exact inverse limits</h2>
-<p>Assume now that all one-step defects vanish and that <span
+<p>Assume that all one-step defects vanish and that <span
 class="math inline">\(\rho_{n+1,n}(C_{n+1})\subseteq C_n\)</span>. Let
 <span class="math display">\[
 Q_\infty:=\varprojlim Q_n
@@ -2005,9 +2005,9 @@ class="math inline">\(n\)</span>, hence agree at every coordinate. ◻</p>
 <div class="remark">
 
 <p><em>Remark 49</em> (What the theorem does not prove). The theorem
-supplies a normalizer on an already defined inverse system. It does not
-prove compactness, nonemptiness, a continuum dynamics, or adequacy of
-the chosen refinement maps. Those are separate mathematical or
+supplies a normalizer on a declared inverse system. It does not prove
+compactness, nonemptiness, a continuum dynamics, or adequacy of the
+chosen refinement maps. Those are separate mathematical or
 model-specific obligations.</p>
 </div>
 
@@ -2034,7 +2034,7 @@ every <span class="math inline">\((x,d)\)</span>;</p></li>
 <span class="math inline">\(r\in R\)</span>.</p></li>
 </ol>
 <p>Thus every local state is repaired, the collar is preserved, and
-already consistent states are fixed.</p>
+consistent states are fixed.</p>
 </div>
 
 <div id="thm:collar-section" class="theorem">
@@ -2165,8 +2165,8 @@ P_B^2=P_B,\qquad P_B^*=P_B,\qquad
 \]</span> and its fixed space is exactly <span class="math display">\[
 \mathcal M_B=\{f\in\mathbb R^Q:B(x)=B(y)\Rightarrow f(x)=f(y)\},
 \]</span> the observation-measurable functions.</em></p>
-<p><em>Moreover, a Markov matrix <span class="math inline">\(K\)</span>
-on <span class="math inline">\(Q\)</span> equals the matrix of <span
+<p><em>A Markov matrix <span class="math inline">\(K\)</span> on <span
+class="math inline">\(Q\)</span> equals the matrix of <span
 class="math inline">\(P_B\)</span> if and only if the following finite
 receipt holds: <span class="math display">\[
 \begin{align*}
@@ -2280,9 +2280,8 @@ probabilistic selector without additional structure.</p>
 
 <h1 id="ranked-functional-audit-systems">Ranked functional-audit
 systems</h1>
-<p>We now give a broad constructive class in which the partial
-normalizer, asynchronous dynamics, and obstruction output are all
-explicit.</p>
+<p>We give a broad constructive class in which the partial normalizer,
+asynchronous dynamics, and obstruction output are all explicit.</p>
 <div class="definition">
 
 <p><strong>Definition 60</strong> (Ranked functional-audit system). Let
@@ -2422,8 +2421,8 @@ class="math inline">\(k-1\)</span>, then every parent of a rank-<span
 class="math inline">\(k\)</span> site is correct, so its round-<span
 class="math inline">\(k\)</span> update evaluates the defining function
 at the same parent tuple as <span class="math inline">\(E(Bx)\)</span>.
-Sites of lower rank remain correct because their parents were already
-correct in the preceding round. ◻</p>
+Sites of lower rank remain correct because their parents were correct in
+the preceding round. ◻</p>
 </div>
 
 <div id="cor:boolean-circuit-compiler" class="corollary">
@@ -3027,9 +3026,9 @@ stable separation, not a list of stagewise singleton claims. This is the
 main stability requirement emphasized for refinement-sensitive
 applications.</p>
 <h2 id="limitations">Limitations</h2>
-<p>The theory assumes that a meaningful quotient, consistent set,
-residual, observation metric, and refinement map have already been
-declared. It does not select those objects. In particular:</p>
+<p>The theory assumes a declared meaningful quotient, consistent set,
+residual, observation metric, and refinement map. It does not select
+those objects. In particular:</p>
 <ul>
 <li><p>a normalizer is not a probability measure;</p></li>
 <li><p>an inverse-limit normalizer is not a continuum field

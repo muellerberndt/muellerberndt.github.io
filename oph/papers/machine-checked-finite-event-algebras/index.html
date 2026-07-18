@@ -20,7 +20,7 @@
   <meta name="citation_pdf_url" content="https://floatingpragma.io/oph/papers/machine-checked-finite-event-algebras/paper.pdf" />
   <meta name="citation_abstract_html_url" content="https://floatingpragma.io/oph/papers/machine-checked-finite-event-algebras/" />
   <meta name="citation_technical_report_institution" content="Pragma Research" />
-  <meta name="citation_technical_report_number" content="OPH r1550 machine_checked_finite_event_algebras" />
+  <meta name="citation_technical_report_number" content="OPH r1551 machine_checked_finite_event_algebras" />
   <meta name="DC.title" content="Machine-Checked Finite Event Algebras for Observer-Patch Holography" />
   <meta name="DC.creator" content="Bernhard Mueller" />
   <meta name="DC.issued" content="2026/07/18" />
@@ -93,7 +93,7 @@
   ],
   "datePublished": "July 18, 2026",
   "dateModified": "July 18, 2026",
-  "version": "r1550",
+  "version": "r1551",
   "subjectOf": [
     {
       "@type": "BlogPosting",
@@ -178,14 +178,14 @@
             <p>A machine-checked finite-event-algebra paper for OPH measurement surfaces, including Boolean event structure, traces, conditional expectations, and Born-Luders update rules.</p>
           </div>
           <div class="paper-meta-line">
-            <span>r1550</span>
+            <span>r1551</span>
             <span>July 18, 2026</span>
             <span>extra papers</span>
           </div>
           <div class="cta-row">
             <a class="btn btn-primary" href="/oph/papers/machine-checked-finite-event-algebras/paper.pdf" target="_blank" rel="noopener noreferrer" data-track-link="paper-pdf-machine_checked_finite_event_algebras">Download PDF</a>
             <a class="btn btn-secondary" href="/oph/papers/" data-track-link="paper-index">All OPH papers</a>
-            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r1550" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
+            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r1551" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
             <a class="btn btn-secondary" href="https://challenge.floatingpragma.io/" data-track-link="paper-challenge">Challenge</a>
           </div>
 
@@ -212,7 +212,7 @@
         </header>
         <div class="paper-reader-grid">
           <div class="paper-body">
-<p><strong>Paper release:</strong> <code>r1550</code>
+<p><strong>Paper release:</strong> <code>r1551</code>
 <strong>Released:</strong> July 18, 2026</p>
 <p><strong>Keywords:</strong> quantum probability, event algebras, Born
 rule, Lüders conditioning, conditional expectation, Tsirelson bound,
@@ -228,15 +228,15 @@ an event under a state is a trace pairing, conditioning is the Lüders
 update , classicality is captured by commutative subalgebras and
 coarse-graining onto a measurement context by a trace-preserving
 pinching, and the characteristic nonclassical phenomenon, the violation
-of the CHSH inequality up to Tsirelson’s bound , is already visible for
-<span class="math inline">\(4 \times 4\)</span> matrices. Every object
-in this list is finite-dimensional linear algebra; no unbounded
-operators, no measure theory, and no functional-analytic subtleties
-intervene. This elementary core is also where much of the current
-foundational discussion lives: the status and derivation of the Born
-rule , the relation between quantum phenomena and Kolmogorov probability
-, and the derivability of the von Neumann–Lüders measurement postulate
-remain active topics, including in this journal.</p>
+of the CHSH inequality up to Tsirelson’s bound , is visible for <span
+class="math inline">\(4 \times 4\)</span> matrices. Every object in this
+list is finite-dimensional linear algebra; no unbounded operators, no
+measure theory, and no functional-analytic subtleties intervene. This
+elementary core is also where much of the current foundational
+discussion lives: the status and derivation of the Born rule , the
+relation between quantum phenomena and Kolmogorov probability , and the
+derivability of the von Neumann–Lüders measurement postulate remain
+active topics, including in this journal.</p>
 <p>Published treatments of this core, from von Neumann onward, leave the
 bookkeeping informal. Which statements require positivity of the state,
 which require only hermiticity, and which are identities of the trace
@@ -299,9 +299,9 @@ match; it imports Mathlib and nothing else.</p>
 <p>Three scope limitations should be stated at the outset. First, the
 novelty claim above is deliberately narrow and organizational.
 Formalizations of projective measurement, the Born rule for projective
-effects, and the CHSH/Tsirelson inequality already exist, in the
-Isabelle/HOL ecosystem (in particular the work of Echenim and Mhalla )
-and in the Lean ecosystem (Mathlib’s order-form CHSH bound and the
+effects, and the CHSH/Tsirelson inequality exist, in the Isabelle/HOL
+ecosystem (in particular the work of Echenim and Mhalla ) and in the
+Lean ecosystem (Mathlib’s order-form CHSH bound and the
 Physlib/QuantumInfo project ); we make no claim of first formalization
 for any of those individual results. The contribution here is the
 organization of the finite core around a projective partition with its
@@ -1136,11 +1136,10 @@ in the partial order of <span class="math inline">\(\mathbb C\)</span>
 
 <div class="proof">
 
-<p><em>Proof sketch.</em> Positivity no longer has an idempotent to
-compress with, so the proof decomposes <span
-class="math inline">\(M\)</span> spectrally: <span
-class="math inline">\(M = V D V^{*}\)</span> with <span
-class="math inline">\(V\)</span> unitary and <span
+<p><em>Proof sketch.</em> Positivity has no idempotent to compress with,
+so the proof decomposes <span class="math inline">\(M\)</span>
+spectrally: <span class="math inline">\(M = V D V^{*}\)</span> with
+<span class="math inline">\(V\)</span> unitary and <span
 class="math inline">\(D\)</span> a nonnegative diagonal, cycles the
 trace to <span class="math inline">\(\operatorname{Tr}\bigl((V^{*} \rho
 V) D\bigr)\)</span>, and sums termwise products of nonnegative diagonal
@@ -1250,8 +1249,8 @@ achieved.</p>
 <h2
 id="relation-to-mathlibs-chsh-file-and-the-matrix-instantiation">Relation
 to Mathlib’s CHSH file and the matrix instantiation</h2>
-<p>Mathlib already contains an order-theoretic form of the Tsirelson
-inequality: the file <code>Mathlib/Algebra/Star/CHSH</code> proves, in a
+<p>Mathlib contains an order-theoretic form of the Tsirelson inequality:
+the file <code>Mathlib/Algebra/Star/CHSH</code> proves, in a
 star-ordered algebra over the reals, that the CHSH combination satisfies
 <span class="math inline">\(S \le 2\sqrt{2} \cdot \mathbf 1\)</span> in
 the algebra’s order, together with the hypothesis bundle
@@ -1441,8 +1440,8 @@ live directly in the partial order of <span
 class="math inline">\(\mathbb C\)</span> with no bespoke real-part
 bookkeeping; conversely, the concrete Isabelle stack obtains from its
 own spectral toolbox some facts (such as Gram factorization of positive
-matrices) that are currently gated behind unresolved instance chains in
-Mathlib, as detailed in
+matrices) that are gated behind unresolved instance chains in Mathlib,
+as detailed in
 Section <a href="#sec:gaps" data-reference-type="ref" data-reference="sec:gaps">9</a>.
 The CHSH arithmetic itself is common ground; the organization is the
 delta.</p>
@@ -1459,9 +1458,9 @@ Dedekind domains and class groups of global fields , document both the
 mathematics and the practice of folding formalization-driven
 contributions back into the library; the library itself is described in
 the Mathlib community paper , and the Lean 4 system in de Moura and
-Ullrich . Within Lean specifically, Mathlib already provides an
-order-form CHSH/Tsirelson inequality and the <code>IsCHSHTuple</code>
-interface used in
+Ullrich . Within Lean specifically, Mathlib provides an order-form
+CHSH/Tsirelson inequality and the <code>IsCHSHTuple</code> interface
+used in
 Section <a href="#sec:tsirelson" data-reference-type="ref" data-reference="sec:tsirelson">8</a>,
 and the Physlib/QuantumInfo project formalizes finite mixed states as
 positive-semidefinite trace-one matrices, positive operator-valued
@@ -1487,7 +1486,7 @@ Goldstein bootstraps infinite-dimensional state spaces from finite ones,
 deriving the von Neumann–Lüders postulate for projective observables .
 The present paper contributes to that discussion at the level of
 certified bookkeeping: for the finite core, every hypothesis of every
-standard statement is now explicit and machine-audited, so debates about
+standard statement is explicit and machine-audited, so debates about
 what follows from what can point to a checked artifact.</p>
 <h1 id="conclusion-and-outlook">Conclusion and outlook</h1>
 <p>The finite event-algebra core of quantum probability admits a
@@ -1517,24 +1516,23 @@ Theorem <a href="#thm:tsirelson" data-reference-type="ref" data-reference="thm:
 with a formalized two-qubit witness achieving <span
 class="math inline">\(2\sqrt 2\)</span> would close the gap between the
 inequality and the bound’s sharpness, and is well within reach of the
-matrix instantiation already in place. Third, infinite dimensions: the
-finite development deliberately avoids completeness, so its Tsirelson
-theorem already applies to any nontrivial unital C*-ring, yet the
-event-and-state layer is genuinely finite. Goldstein’s bootstrap of
-infinite-dimensional state spaces from finite ones in this journal marks
-exactly the frontier a formal development would next confront: which
-parts of the finite bookkeeping survive the passage verbatim, and which
-require new analysis (normality of states, <span
+matrix instantiation in place. Third, infinite dimensions: the finite
+development deliberately avoids completeness, so its Tsirelson theorem
+applies to any nontrivial unital C*-ring, yet the event-and-state layer
+is genuinely finite. Goldstein’s bootstrap of infinite-dimensional state
+spaces from finite ones in this journal marks exactly the frontier a
+formal development would next confront: which parts of the finite
+bookkeeping survive the passage verbatim, and which require new analysis
+(normality of states, <span
 class="math inline">\(\sigma\)</span>-additivity, von Neumann algebras
 in place of matrix algebras). The conditional-expectation package of
 Section <a href="#sec:center" data-reference-type="ref" data-reference="sec:center">6</a>
 is the component we expect to generalize most cleanly, since its
-statements are already phrased against a commutant rather than against
-matrix entries.</p>
+statements are phrased against a commutant rather than against matrix
+entries.</p>
 <p>When the bookkeeping of a foundational formalism is mechanical and
 audited, discussion can concentrate on the questions that are actually
-open. For finite quantum event algebras, that state has now been
-reached.</p>
+open. Finite quantum event algebras have reached that standard.</p>
 <h1 id="declarations">Declarations</h1>
 <p><strong>Funding.</strong> No funding was received for this work.</p>
 <p><strong>Competing interests.</strong> The author declares no
