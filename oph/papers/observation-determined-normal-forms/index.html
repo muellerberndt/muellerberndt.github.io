@@ -15,29 +15,29 @@
   <meta name="citation_author" content="Bernhard Mueller" />
   <meta name="citation_author" content="David Matscheko" />
   <meta name="citation_author" content="Jonathan Hill" />
-  <meta name="citation_publication_date" content="2026/07/18" />
-  <meta name="citation_online_date" content="2026/07/18" />
+  <meta name="citation_publication_date" content="2026/07/19" />
+  <meta name="citation_online_date" content="2026/07/19" />
   <meta name="citation_language" content="en" />
   <meta name="citation_keywords" content="abstract rewriting; observation-determined normal forms; confluence; boundary reconstruction; conditional expectation; refinement stability; Lean 4" />
   <meta name="citation_pdf_url" content="https://floatingpragma.io/oph/papers/observation-determined-normal-forms/paper.pdf" />
   <meta name="citation_abstract_html_url" content="https://floatingpragma.io/oph/papers/observation-determined-normal-forms/" />
   <meta name="citation_technical_report_institution" content="Pragma Research" />
-  <meta name="citation_technical_report_number" content="OPH r1551 observable_normal_forms" />
+  <meta name="citation_technical_report_number" content="OPH r1555 observable_normal_forms" />
   <meta name="DC.title" content="Observation-Determined Normal Forms: Stability, Obstructions, and Refinement in Constraint and Rewrite Systems" />
   <meta name="DC.creator" content="Bernhard Mueller" />
   <meta name="DC.creator" content="David Matscheko" />
   <meta name="DC.creator" content="Jonathan Hill" />
-  <meta name="DC.issued" content="2026/07/18" />
-  <meta name="DC.date" content="2026/07/18" />
+  <meta name="DC.issued" content="2026/07/19" />
+  <meta name="DC.date" content="2026/07/19" />
   <meta name="DC.type" content="Text" />
   <meta name="DC.format" content="text/html" />
   <meta name="DC.language" content="en" />
   <meta name="DC.publisher" content="Pragma Research" />
   <meta name="DC.identifier" content="https://floatingpragma.io/oph/papers/observation-determined-normal-forms/" />
   <meta name="DC.identifier" content="https://floatingpragma.io/oph/papers/observation-determined-normal-forms/paper.pdf" />
-  <meta name="article:published_time" content="2026-07-18T00:00:00Z" />
-  <meta name="article:modified_time" content="2026-07-18T00:00:00Z" />
-  <meta name="prism.publicationDate" content="2026/07/18" />
+  <meta name="article:published_time" content="2026-07-19T00:00:00Z" />
+  <meta name="article:modified_time" content="2026-07-19T00:00:00Z" />
+  <meta name="prism.publicationDate" content="2026/07/19" />
   <meta name="prism.publicationName" content="Observer Patch Holography Papers" />
   <meta name="prism.section" content="Mathematical foundations" />
   <meta name="prism.url" content="https://floatingpragma.io/oph/papers/observation-determined-normal-forms/" />
@@ -103,9 +103,9 @@
     "refinement stability",
     "Lean 4"
   ],
-  "datePublished": "July 18, 2026",
-  "dateModified": "July 18, 2026",
-  "version": "r1551",
+  "datePublished": "July 19, 2026",
+  "dateModified": "July 19, 2026",
+  "version": "r1555",
   "subjectOf": [
     {
       "@type": "BlogPosting",
@@ -190,14 +190,14 @@
             <p>A substrate-neutral mathematical paper separating same-source confluence, cross-source identification from protected observations, liveness, and local repairability, with quantitative stability and refinement criteria.</p>
           </div>
           <div class="paper-meta-line">
-            <span>r1551</span>
-            <span>July 18, 2026</span>
+            <span>r1555</span>
+            <span>July 19, 2026</span>
             <span>extra papers</span>
           </div>
           <div class="cta-row">
             <a class="btn btn-primary" href="/oph/papers/observation-determined-normal-forms/paper.pdf" target="_blank" rel="noopener noreferrer" data-track-link="paper-pdf-observable_normal_forms">Download PDF</a>
             <a class="btn btn-secondary" href="/oph/papers/" data-track-link="paper-index">All OPH papers</a>
-            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r1551" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
+            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r1555" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
             <a class="btn btn-secondary" href="https://challenge.floatingpragma.io/" data-track-link="paper-challenge">Challenge</a>
           </div>
 
@@ -224,8 +224,8 @@
         </header>
         <div class="paper-reader-grid">
           <div class="paper-body">
-<p><strong>Paper release:</strong> <code>r1551</code>
-<strong>Released:</strong> July 18, 2026</p>
+<p><strong>Paper release:</strong> <code>r1555</code>
+<strong>Released:</strong> July 19, 2026</p>
 <p><strong>Author af f iliations:</strong> <sup>1</sup>Pragma Research
 Inc.</p>
 <p><strong>Keywords:</strong> abstract rewriting, observation-determined
@@ -2995,6 +2995,63 @@ path-gain estimate, linear-algebraic certificates, and complexity
 classifications remain paper proofs. The status distinction is
 deliberate: only declarations listed in the proof index are claimed as
 machine checked.</p>
+<h1 id="application-set-valued-public-capacity-readback">Application:
+set-valued public-capacity readback</h1>
+<p>The empty/singleton/ambiguous fiber distinction has a direct
+application to finite observer-record capacity. This subsection records
+the application; it does not make capacity an implication of confluence.
+Fix a supplied positive carrier dimension <span
+class="math inline">\(D\)</span>, a trial system with terminal physical
+quotient fiber <span
+class="math inline">\(\widetilde\Omega_{r,D}\)</span>, and a separately
+constructed functional <span class="math display">\[
+M_\varepsilon:widetilde\Omega_{r,D}\longrightarrow\mathbb N_{&gt;0}.
+\]</span> In the OPH capacity application, <span
+class="math inline">\(M_0(q)\)</span> is the independence number of the
+compound confusability graph built from reachable compatible public
+record atoms and globally coupled checkpoint kernels. That construction,
+its publicness policy, and its physical carrier are external data for
+the present normal-form theorem.</p>
+<p>Define the capacity readback fiber <span class="math display">\[
+\mathfrak F_{r,\varepsilon}(D)=
+\{M_\varepsilon(q):q\in\widetilde\Omega_{r,D}\}.
+\]</span></p>
+<div id="prop:capacity-readback-trichotomy" class="proposition">
+
+<p><strong>Proposition 84</strong> (Capacity-readback trichotomy).
+<em>The readback is unavailable when the functional is undefined on any
+required terminal class or the terminal fiber is empty, scalar when
+<span class="math inline">\(\mathfrak
+F_{r,\varepsilon}(D)=\{m\}\)</span>, and ambiguous when <span
+class="math inline">\(|\mathfrak F_{r,\varepsilon}(D)|&gt;1\)</span>.
+Robust exact closure at <span class="math inline">\(D\)</span> is the
+singleton condition <span class="math display">\[
+\mathfrak F_{r,0}(D)=\{D\}.
+\]</span> Confluence from each fixed initial state does not imply this
+cross-source singleton condition.</em></p>
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> The first three statements are the image-set
+alternatives for the declared functional. Robust closure requires every
+admissible terminal source class to have full readback <span
+class="math inline">\(D\)</span>. Confluence identifies repair schedules
+from one initial class; it does not identify distinct source classes in
+the unclosed fiber. ◻</p>
+</div>
+
+<p>If an implementation isomorphism preserves observer lineage, record
+atoms, interface atom maps, reachable public sections, publicness
+policy, every global checkpoint kernel, and capacity-carrier projection
+ranks, then it transports the compound confusability graph and every
+approximate decoder. The functional <span
+class="math inline">\(M_\varepsilon\)</span> and the readback set are
+therefore invariant under that full packet isomorphism. A normal-form
+hash, stagewise singleton, or implementation relabeling alone supplies
+no such theorem. Refinement-limit promotion additionally requires
+uniform stable separation or an explicit capacity-packet naturality
+receipt, in accord with the general refinement results above.</p>
 <h1 id="discussion">Discussion</h1>
 <h2 id="why-the-factorization-is-useful">Why the factorization is
 useful</h2>
