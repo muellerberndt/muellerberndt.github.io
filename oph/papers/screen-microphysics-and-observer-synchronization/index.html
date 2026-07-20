@@ -20,14 +20,14 @@
   <meta name="citation_author" content="Ben Cassie" />
   <meta name="citation_author" content="Maarten Antonie Visser" />
   <meta name="citation_author" content="David Matscheko" />
-  <meta name="citation_publication_date" content="2026/07/19" />
-  <meta name="citation_online_date" content="2026/07/19" />
+  <meta name="citation_publication_date" content="2026/07/20" />
+  <meta name="citation_online_date" content="2026/07/20" />
   <meta name="citation_language" content="en" />
   <meta name="citation_keywords" content="screen microphysics; observer synchronization; Born rule; measurement problem; holographic screen; simulation hardware; Observer Patch Holography" />
   <meta name="citation_pdf_url" content="https://floatingpragma.io/oph/papers/screen-microphysics-and-observer-synchronization/paper.pdf" />
   <meta name="citation_abstract_html_url" content="https://floatingpragma.io/oph/papers/screen-microphysics-and-observer-synchronization/" />
   <meta name="citation_technical_report_institution" content="Pragma Research" />
-  <meta name="citation_technical_report_number" content="OPH r1556 screen_microphysics_and_observer_synchronization" />
+  <meta name="citation_technical_report_number" content="OPH r1565 screen_microphysics_and_observer_synchronization" />
   <meta name="DC.title" content="Screen Microphysics and Observer Synchronization" />
   <meta name="DC.creator" content="Bernhard Mueller" />
   <meta name="DC.creator" content="Alexander Osika" />
@@ -35,17 +35,17 @@
   <meta name="DC.creator" content="Ben Cassie" />
   <meta name="DC.creator" content="Maarten Antonie Visser" />
   <meta name="DC.creator" content="David Matscheko" />
-  <meta name="DC.issued" content="2026/07/19" />
-  <meta name="DC.date" content="2026/07/19" />
+  <meta name="DC.issued" content="2026/07/20" />
+  <meta name="DC.date" content="2026/07/20" />
   <meta name="DC.type" content="Text" />
   <meta name="DC.format" content="text/html" />
   <meta name="DC.language" content="en" />
   <meta name="DC.publisher" content="Pragma Research" />
   <meta name="DC.identifier" content="https://floatingpragma.io/oph/papers/screen-microphysics-and-observer-synchronization/" />
   <meta name="DC.identifier" content="https://floatingpragma.io/oph/papers/screen-microphysics-and-observer-synchronization/paper.pdf" />
-  <meta name="article:published_time" content="2026-07-19T00:00:00Z" />
-  <meta name="article:modified_time" content="2026-07-19T00:00:00Z" />
-  <meta name="prism.publicationDate" content="2026/07/19" />
+  <meta name="article:published_time" content="2026-07-20T00:00:00Z" />
+  <meta name="article:modified_time" content="2026-07-20T00:00:00Z" />
+  <meta name="prism.publicationDate" content="2026/07/20" />
   <meta name="prism.publicationName" content="Observer Patch Holography Papers" />
   <meta name="prism.section" content="Screen physics" />
   <meta name="prism.url" content="https://floatingpragma.io/oph/papers/screen-microphysics-and-observer-synchronization/" />
@@ -123,9 +123,9 @@
     "simulation hardware",
     "Observer Patch Holography"
   ],
-  "datePublished": "July 19, 2026",
-  "dateModified": "July 19, 2026",
-  "version": "r1556",
+  "datePublished": "July 20, 2026",
+  "dateModified": "July 20, 2026",
+  "version": "r1565",
   "subjectOf": [
     {
       "@type": "BlogPosting",
@@ -222,14 +222,14 @@
             <p>The fixed-cutoff OPH microphysics paper. It develops finite overlap-facing patch carriers, the twelve-port screen-sieve theorem, the A5/C3 face-corner bundle, the formal CFQ central-record model and its physical-selection boundary, measurement surfaces, observer backup, synchronization, and hardware-evidence rules.</p>
           </div>
           <div class="paper-meta-line">
-            <span>r1556</span>
-            <span>July 19, 2026</span>
+            <span>r1565</span>
+            <span>July 20, 2026</span>
             <span>papers</span>
           </div>
           <div class="cta-row">
             <a class="btn btn-primary" href="/oph/papers/screen-microphysics-and-observer-synchronization/paper.pdf" target="_blank" rel="noopener noreferrer" data-track-link="paper-pdf-screen_microphysics_and_observer_synchronization">Download PDF</a>
             <a class="btn btn-secondary" href="/oph/papers/" data-track-link="paper-index">All OPH papers</a>
-            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r1556" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
+            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r1565" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
             <a class="btn btn-secondary" href="https://challenge.floatingpragma.io/" data-track-link="paper-challenge">Challenge</a>
           </div>
 
@@ -242,40 +242,269 @@
 
           <details class="paper-section-jump">
             <summary>Section jump</summary>
-            <nav class="paper-toc" aria-label="Paper sections"><a href="#what-this-paper-contributes">What This Paper Contributes</a>
+            <nav class="paper-toc" aria-label="Paper sections"><a href="#one-carrier-stack-three-paper-surfaces">One carrier stack, three paper surfaces</a>
+<a href="#three-meanings-of-screen">Three meanings of screen</a>
+<a href="#the-common-finite-computation">The common finite computation</a>
+<a href="#two-downstream-projections-of-one-source">Two downstream projections of one source</a>
+<a href="#finite-controls-and-status-boundaries">Finite controls and status boundaries</a>
+<a href="#what-this-paper-contributes">What This Paper Contributes</a>
 <a href="#scope">Scope</a>
 <a href="#canonical-observer-patch-semantics">Canonical Observer-Patch Semantics</a>
 <a href="#claim-taxonomy">Claim Taxonomy</a>
 <a href="#the-public-evidence-rule">The Public Evidence Rule</a>
 <a href="#from-spherical-screens-to-federated-patch-carriers">From Spherical Screens to Federated Patch Carriers</a>
-<a href="#edge-center-scalar-slot-register">Edge-center scalar-slot register</a>
-<a href="#coherent-matter-scalar-source-forcing">Coherent-matter scalar-source forcing</a>
-<a href="#local-scalar-certificates-and-review-checks">Local scalar certificates and review checks</a>
-<a href="#canonical-multiresolution-regulator-chart">Canonical multiresolution regulator chart</a>
-<a href="#the-echosahedral-patch-object">The Echosahedral Patch Object</a>
-<a href="#toroidal-recurrence-is-local">Toroidal Recurrence Is Local</a></nav>
+<a href="#finite-modular-and-register-theorems">Finite modular and register theorems</a></nav>
           </details>
         </header>
         <div class="paper-reader-grid">
           <div class="paper-body">
-<p><strong>Paper release:</strong> <code>r1556</code>
-<strong>Released:</strong> July 19, 2026</p>
+<p><strong>Paper release:</strong> <code>r1565</code>
+<strong>Released:</strong> July 20, 2026</p>
+<h1 id="one-carrier-stack-three-paper-surfaces">One carrier stack, three
+paper surfaces</h1>
+<p>The microphysics, consensus, and compact SM/GR papers describe one
+typed construction. The microphysics paper owns the finite carrier and
+its public interfaces. The consensus paper owns accepted repair and the
+quotient public normal form. The compact paper owns the conditional maps
+from that public normal form into support geometry, gravity, compact
+currents, and matter. A claim may cross from one paper to another only
+through the exported object and premises named here.</p>
+<h2 id="three-meanings-of-screen">Three meanings of screen</h2>
+<p>The word “screen” is used for three related objects that must not be
+identified without a receipt.</p>
+<ol type="1">
+<li><p>The <em>local carrier boundary</em> is the twelve-port oriented
+interface of one Echosahedral carrier on the declared branch. Its
+incidence has <span
+class="math inline">\((V,E,F)=(12,30,20)\)</span>.</p></li>
+<li><p>The <em>federation screen</em> is the routed system of
+interfaces, records, repairs, and checkpoints of many carriers at finite
+cutoff.</p></li>
+<li><p>The <em>support screen</em> is the observer-facing geometric
+chart. On the spherical branch it is the refined conformal <span
+class="math inline">\(S^2\)</span> used for caps, collars, modular flow,
+and Lorentz reconstruction.</p></li>
+</ol>
+<p>Local icosahedral incidence does not determine the topology of the
+federation nerve. A federation of identical local carriers can be routed
+as a path, a cycle, a higher-genus complex, or a spherical complex. The
+map from routed carriers to a support-visible spherical nerve is
+therefore a physical bridge, not a change of notation.</p>
+<h2
+id="structure-sensitive-presentation-invariant-physics">Structure-sensitive,
+presentation-invariant physics</h2>
+<p>OPH is not neutral under arbitrary changes of substrate. It is
+invariant under changes of presentation that preserve the complete
+observer-visible carrier signature. On the Echosahedral branch that
+signature contains</p>
+<p><span class="math display">\[
+\mathcal C_{i,r}=
+\bigl(
+\mathcal A_{i,r},\rho_{i,r},P_{i,r},I_{i,r}^{\rm or},
+\mathcal R_{i,r},\mathcal U_{i,r},\mathsf{Chk}_{i,r},
+\mathsf{Resp}_{i,r},c_{sr}
+\bigr),
+\]</span></p>
+<p>where <span class="math inline">\(P_{i,r}\)</span> is the port set,
+<span class="math inline">\(I_{i,r}^{\rm or}\)</span> is oriented
+incidence, <span class="math inline">\(\mathcal R_{i,r}\)</span> is the
+record algebra, <span class="math inline">\(\mathcal U_{i,r}\)</span> is
+the repair or feedback interface, <span
+class="math inline">\(\mathsf{Resp}_{i,r}\)</span> is the visible
+response law, and <span class="math inline">\(c_{sr}\)</span> is the
+refinement lineage. Hidden coordinates, port names, worker partitions,
+materials, and wiring presentations are silent when an isomorphism
+preserves this whole tuple and its error model. A change in port number,
+incidence, orientation, accessible algebra, response, repair law, clock,
+or refinement lineage need not be silent. A cube and an icosahedron are
+therefore different carrier contracts even when both are built from the
+same material.</p>
+<p>A carrier body is not automatically an observer. It realizes an
+observer only when it supplies bounded access, self-readback, durable
+records, record-conditioned feedback, boundary prediction against
+controls, and checkpoint continuation. One carrier may pass that test. A
+connected subfederation may pass it instead. No theorem fixes primitive
+observer size by counting carrier bodies.</p>
+<h2 id="the-common-finite-computation">The common finite
+computation</h2>
+<p>At cutoff <span class="math inline">\(r\)</span>, source-bound
+carrier data are routed into an observer-patch federation. Accepted
+repair then acts on the physical quotient:</p>
+<p><span class="math display">\[
+\begin{aligned}
+\mathsf{SourceCarrierTower}_r
+&amp;\xrightarrow{\;\mathsf{realize/route}\;}
+\mathsf{ObserverFederation}_r\\
+&amp;\xrightarrow{\;\pi_r\;}
+\mathsf{PhysicalQuotient}_r
+\xrightarrow{\;\operatorname{Rep}_r\;}
+\mathsf{PublicNormalForm}_r.
+\end{aligned}
+\]</span></p>
+<p>The last arrow is the consensus result only under
+semantic-dependency-complete transactions, coherent union-collar
+payloads, repair completeness, local diamonds, protected records, and
+the stated endpoint conditions. A collection of oscillators with equal
+frequency does not supply those clauses.</p>
+<p>Physical phase locking can instantiate one synchronization layer. For
+a routed edge <span class="math inline">\(e=((i,a),(j,b))\)</span>, a
+source-produced phase record may certify frequency entrainment and a
+stable relative phase,</p>
+<p><span class="math display">\[
+\dot\theta_{i,a}-\dot\theta_{j,b}\longrightarrow0,
+\qquad
+d_{S^1}(\theta_{i,a}-\theta_{j,b},\delta_e)\le\varepsilon_e.
+\]</span></p>
+<p>That certificate becomes a consensus parent only when the phase
+record fixes a commensurability map for the exposed packets and is tied
+to the accepted repair ledger, semantic records, an independently
+calibrated clock, and the confluence premises. Phase locking can
+synchronize an interface. It does not by itself make the interface an
+observer, settle semantic disagreement, or produce physical time.</p>
+<h2 id="two-downstream-projections-of-one-source">Two downstream
+projections of one source</h2>
+<p>The public normal form has two separately typed projections:</p>
+<p><span class="math display">\[
+\begin{aligned}
+\mathsf{PublicNormalForm}_r
+&amp;\xrightarrow{\;\mathsf{carrier\text{-}to\text{-}support}\;}
+\bigl(\mathsf{Support}_{S^2,r},\mathsf{FiniteCapBWCertificate}_r\bigr),\\
+\left.
+\begin{gathered}
+\mathsf{FiniteCapBWCertificate}_r\\
+\mathsf{MGNS\text{-}1}_r\ \text{independently complete}
+\end{gathered}
+\right\}_{\text{same tower}}
+&amp;\longrightarrow \mathsf{BW/KMS}_r
+\longrightarrow \mathsf{Lorentz/H^3}_r\\
+&amp;\longrightarrow \mathsf{Events}_{3+1,r}
+\longrightarrow \mathsf{Einstein}_r ,
+\end{aligned}
+\]</span> <span class="math display">\[
+\begin{aligned}
+\mathsf{PublicNormalForm}_r
+&amp;\xrightarrow{\;\mathsf{port\text{-}response}\;}
+(\mathsf{A5Carrier}_r,J_r)\\
+&amp;\longrightarrow \mathsf{CompactCurrent}_r
+\longrightarrow \mathsf{SM}_{Q0,r}\\
+&amp;\longrightarrow \mathsf{Matter/QFT}_r .
+\end{aligned}
+\]</span></p>
+<p>The carrier-to-support leg requires full interface algebra
+homomorphisms, higher-overlap coherence, spherical incidence,
+refinement-natural mesh and cross-ratio data, and an independently
+normalized geometric <span class="math inline">\(2\pi\)</span>-KMS
+comparison. It emits the support <span
+class="math inline">\(S^2\)</span> and <span
+class="math inline">\(\mathsf{FiniteCapBWCertificate}\)</span>. The
+state tower, common-comparison maps, compatible state/vector data,
+modular controls, and cofinal modulus belong to the independently
+produced <span class="math inline">\(\mathsf{MGNS\text{-}1}\)</span>
+package. The BW theorem consumes both inputs on the same tower. Once the
+support leg produces a conformal <span
+class="math inline">\(S^2\)</span>, <span
+class="math inline">\(\operatorname{Conf}^+(S^2)\cong\operatorname{SO}^+(3,1)\)</span>
+and <span
+class="math inline">\(H^3=\operatorname{SO}^+(3,1)/\operatorname{SO}(3)\)</span>
+is exactly three-dimensional. <span class="math inline">\(H^3\)</span>
+is the observer-frame fiber. A <span
+class="math inline">\(3{+}1\)</span>-dimensional event manifold requires
+the population/realization, separation, rank-four affine-chart,
+overlap-cocycle, held-out quadratic-cone, and causal-reachability
+receipts <span class="math inline">\(\mathsf{(E1)}\)</span>–<span
+class="math inline">\(\mathsf{(E6)}\)</span>, together with the <span
+class="math inline">\(\mathsf{MI}\)</span>/assembly premise.
+Operational-clock gluing separately requires observer-readable
+transitions, event correspondence, affine calibration, cycle identity,
+and normal-form invariance. The Einstein relation additionally requires
+the common-domain stress, entropy, vacuum, coupling, scale, and
+remainder packet. Hidden Cartesian coordinates of a finite carrier are
+ineligible as support-screen, event, or Lorentz data.</p>
+<p>The second projection begins with an exact finite result on the
+certified Echosahedral lineage. The twelve-port module decomposes as</p>
+<p><span class="math display">\[
+P_{12}\cong_{A_5}\mathbf1\oplus\mathbf3\oplus\mathbf3&#39;\oplus\mathbf5.
+\]</span></p>
+<p>The source selector derives the twelve unit lines, antipodal pairing,
+proper <span class="math inline">\(A_5\)</span> action, and rank-three
+Gram frame. These register facts become gauge facts only after a
+source-produced, full-rank, compact, skew-adjoint, commutator-closed
+physical current lift carries the same inner <span
+class="math inline">\(A_5\)</span> action through refinement. Noncentral
+action of the five-dimensional block then selects the Standard-Model Lie
+type from the compact classification. Trace balance, Spin and deck
+descent, matter selection, exclusion of extra sectors, family
+attachment, and quantum-field construction remain separate maps.</p>
+<p>The compact sector-category and Minimal Admissible Realization route
+conditionally reconstructs an abstract Standard Model quotient of the
+same type by a logically independent route. Physical unification
+requires a source-bound commuting square identifying its reconstructed
+compact group with the group acting through the Echosahedral current
+response:</p>
+<p><span class="math display">\[
+\begin{array}{ccc}
+\mathsf{A5PortResponse}_r &amp; \longrightarrow &amp; G_r^{\rm screen}\\
+\downarrow &amp; &amp; \downarrow\scriptstyle{\simeq}\\
+\mathsf{TransportableSectorCategory}_r &amp; \longrightarrow &amp;
+G_r^{\rm DR/MAR}.
+\end{array}
+\]</span></p>
+<p>On those premises the abstract Lie-type agreement is exact. The
+physical vertical maps and the source identity of the two group actions
+are open. In the same way, the rank-three face band is a canonical
+candidate family carrier, while three physical generations require the
+complex rank-45 attachment and complement-complete refinement receipts.
+The value <span class="math inline">\(N_g=3\)</span> in the compact
+paper is the minimum of the declared economy class, not a consequence of
+the icosahedral graph alone.</p>
+<h2 id="finite-controls-and-status-boundaries">Finite controls and
+status boundaries</h2>
+<p>The finite <span class="math inline">\(A_5\)</span> evaluator control
+has <span class="math inline">\(60\)</span> reachable correctable public
+records on <span class="math inline">\(\mathcal
+H_k=\ell^2(A_5)\otimes\mathbb C^k\)</span>:</p>
+<p><span class="math display">\[
+M_0=60,\qquad D_{\rm raw}=60k,\qquad
+\Delta_{\rm raw}=60(k-1).
+\]</span></p>
+<p>Raw equality occurs only at <span class="math inline">\(k=1\)</span>.
+Publicly inert multiplicity makes <span class="math inline">\(D_{\rm
+raw}\)</span> implementation-dependent, so the result is an evaluator
+control rather than physical capacity closure.</p>
+<p>The unified claim has a precise scope. Consensus, geometry/gravity,
+and gauge/matter are composable branches of one source-bound
+self-reading carrier tower. Its full quotient-visible architecture can
+constrain both branches; local icosahedral incidence by itself
+constrains only the local carrier route. The physical maps that turn
+those constraints into one inhabited universe are named premises.
+Matching dimensions or symmetry labels does not supply them.</p>
 <h1 id="what-this-paper-contributes">What This Paper Contributes</h1>
 <p>The rest of the OPH stack talks about observer patches, records,
 repairs, and screen cuts. This paper gives those words a finite carrier.
 It separates the abstract observer patch from its geometric support
-chart and from any physical or digital implementation. That distinction
-is what prevents the theory from depending on a particular piece of
-hardware or a convenient drawing of a sphere.</p>
+chart and from its physical or digital implementation. The separation
+removes dependence on hidden coordinates, labels, materials, and wiring
+choices only when the complete observer-visible carrier signature is
+preserved. OPH is therefore presentation-invariant rather than
+carrier-neutral: quotient-visible port incidence, orientation, response,
+repair, clock, and refinement data can change the physical branch.</p>
 <p>The concrete contribution is the regulated screen architecture.
 Echosahedral carriers supply a twelve-port reference interface, edge
 sectors supply the heat-kernel/Casimir weights used by the quantitative
 branch, central records give the Born–Lüders event surface, Bell/CHSH
 records give the Tsirelson bound, and checkpoint restoration states what
-it means for an observer to continue after repair. Hardware claims are
-kept behind a public evidence rule: manifests, hashes, calibration
-records, raw or reduced traces, and exact verifier receipts carry the
-weight.</p>
+it means for an observer to continue after repair. The finite
+modular-gearing package keeps strict-descent normalization separate from
+reversible proposal rates, tests whether the oriented <span
+class="math inline">\(24\)</span>-slot register is an invariant channel
+space, and fixes only symmetry-protected degeneracies rather than
+numerical gaps or clock units. The finite echosahedral selector
+separately closes the unit-splitting and proper-<span
+class="math inline">\(A_5\)</span> source receipts on the declared
+carrier lineage, without using downstream particle or gauge targets.
+Hardware claims are kept behind a public evidence rule: manifests,
+hashes, calibration records, raw or reduced traces, and exact verifier
+receipts carry the weight.</p>
 <h1 id="scope">Scope</h1>
 <p>OPH microphysics uses finite observer patches with echosahedral
 interfaces. A spherical screen is a geometry chart for observer-visible
@@ -362,7 +591,9 @@ records, repair channels, and recurrent subchannels. The observer
 identity lives in the quotient data exposed by <span
 class="math inline">\(\mathsf O_i\)</span>, so a change of hidden
 coordinates, port labels, or substrate presentation is physically silent
-when it preserves the visible interface and record process.</p>
+when it preserves the visible interface, oriented incidence where
+declared, response, record, repair, checkpoint, and refinement
+processes.</p>
 <div class="definition">
 
 <p><strong>Definition 4</strong> (Algebraic audit instrument). <em>An
@@ -398,18 +629,23 @@ overlaps, refinement preservation of the cell type, and a proof that one
 cell or a fixed block of cells is the primitive carrier.</p>
 <div id="claim:implementation-invariance" class="claim">
 
-<p><strong>Claim 5</strong> (Implementation-invariance target). <em>Two
-carrier patches that induce isomorphic visible interface algebras,
-record statistics, repair maps, and checkpoint continuation are
-physically equivalent for all OPH observables in the declared
-quotient.</em></p>
+<p><strong>Claim 5</strong> (Presentation invariance and carrier
+sensitivity). <em>Two carrier patches are physically equivalent for the
+declared OPH observables when a quotient-visible isomorphism preserves
+their accessible algebras and states, interface algebras, record
+statistics, repair maps, checkpoint continuation, response laws, and
+refinement lineage. On the Echosahedral branch it must also preserve the
+twelve-port oriented incidence and its antipodal pairing. A material,
+coordinate, or wiring change satisfying this contract is silent. A
+change of the preserved carrier signature is outside the equivalence
+claim and may change the physical branch.</em></p>
 </div>
 
 <p>This claim is theorem-level only on a branch that supplies the
 required quotient isomorphism and error bound. It fails if a predicted
-OPH observable depends on hidden carrier coordinates after the visible
-algebra, record statistics, repair maps, and checkpoint data have been
-held fixed.</p>
+OPH observable depends on hidden carrier coordinates after the full
+visible signature has been held fixed. It says nothing about a cube and
+an icosahedron whose visible incidence structures differ.</p>
 <div id="def:operational-observer-test" class="definition">
 
 <p><strong>Definition 6</strong> (Operational observer test). <em>A
@@ -512,9 +748,78 @@ mismatch;</p></li>
 <li><p>a checkpoint interface that exposes enough observer-accessible
 data to define continuation.</p></li>
 </ol>
+<p>The abstract observer patch and its carrier realization are separate
+typed objects. Write <span class="math display">\[
+\mathsf O_i=
+\left(
+\mathcal A_i,\rho_i,\mathcal R_i,
+\{(\mathcal I_e,\pi_{i,e})\}_{e\ni i},
+\mathcal U_i,\mathsf{Chk}_i
+\right),
+\qquad
+\operatorname{Realize}_{\varepsilon}(H_i)\longrightarrow\mathsf O_i.
+\]</span> The elementary carrier <span
+class="math inline">\(H_i\)</span> may be an Echosahedron on the
+homogeneous reference branch. Its port names, body coordinates, and
+hardware details are absent from the abstract observer whenever they
+disappear under the physical quotient. A fixed-cutoff simulator is
+therefore typed as <span class="math display">\[
+\mathsf{Sim}_r=
+\bigl(
+G_r,\{\mathsf O_{i,r}\},\Sigma_r,\Gamma_r,Q_r,
+\mathsf{Prop}_r,\to_r^{\rm acc},\operatorname{Rep}_r,
+\pi_r^{\rm eq},L_r^{\rm eq},\mathsf{Chk}_r,c_{sr}
+\bigr).
+\]</span> Here <span class="math inline">\(\mathsf{Prop}_r\)</span> is a
+reversible proposal menu, <span class="math inline">\(\to_r^{\rm
+acc}\)</span> is the strict-descent accepted-repair relation, <span
+class="math inline">\(\operatorname{Rep}_r\)</span> is its normalizer,
+and <span class="math inline">\((\pi_r^{\rm eq},L_r^{\rm eq})\)</span>
+is a separate equilibrium law and reversible or Euclidean generator. The
+refinement maps are <span class="math inline">\(c_{sr}\)</span>.</p>
+<div id="def:typed-simulator-ledger" class="definition">
+
+<p><strong>Definition 7</strong> (Typed simulator ledger). <em>A
+simulator run has one immutable root manifest and seven typed
+ledgers:</em></p>
+<ol type="1">
+<li><p><em>the quotient/normalizer ledger owns presentation states,
+hidden-representative quotient, accepted transactions, semantic
+histories, normal forms, and checkpoint continuation;</em></p></li>
+<li><p><em>the source-ensemble ledger owns the base measure, source
+action, MaxEnt constraints, proposal and acceptance rates, stationary
+law, detailed balance, and cycle affinities;</em></p></li>
+<li><p><em>the quantum/modular ledger owns the noncommutative algebra,
+density matrices, spectral support, modular Hamiltonians,
+frequency-resolved jumps, conditional expectations, and mixed-GNS
+comparison data;</em></p></li>
+<li><p><em>the geometry/BW ledger owns support incidence, cap normals,
+held-out cross-ratios, geometric dilation, wrong-temperature controls,
+event-chart complexes, quadratic cones, and tetrads;</em></p></li>
+<li><p><em>the operational-history ledger owns semantic event
+identities, the observer registry groupoid, worldlines, event
+correspondences, instrument readings, and affine
+synchronization;</em></p></li>
+<li><p><em>the physical-current ledger owns reversible port
+perturbations, unitary response, commutators, <span
+class="math inline">\(A_5\)</span>-equivariance, and determinant, spin,
+and deck descent;</em></p></li>
+<li><p><em>the transport ledger owns free and collision kernels, first
+and second conditional moments, mass-shell data, phase-space measure,
+and stress transfer.</em></p></li>
+</ol>
+<p><em>The ledgers share source hashes and refinement identifiers
+through the root manifest. Their typed objects remain distinct. In
+particular, the accepted strict-descent relation is not reused as the
+equilibrium generator, a central register density emits trivial modular
+action, a finite register operator is not a physical current, and a
+deterministic transport claim requires a vanishing second-moment
+receipt.</em></p>
+</div>
+
 <div id="def:sphere-fold" class="definition">
 
-<p><strong>Definition 7</strong> (Sphere fold). <em>Fix a regulator
+<p><strong>Definition 8</strong> (Sphere fold). <em>Fix a regulator
 <span class="math inline">\(r\)</span>. Let <span
 class="math inline">\(\Sigma_r\)</span> be the finite presentation space
 of a patch federation, let <span class="math inline">\(\Gamma_r\)</span>
@@ -555,14 +860,14 @@ C_r,\partial C_r,\mathbf c_r,\alpha_r,n_{C,r},
 class="math display">\[
 n_{C,r}=(\cot\alpha_r,\csc\alpha_r\,\mathbf c_r).
 \]</span> On a finite fitted branch the output is labeled <span
-class="math inline">\(\mathrm{APPROXIMATE\_ROUND\_CAP\_CHART}\)</span>.
-A global bound requires a separate round-cap rigidity/convergence
+class="math inline">\(\text{approximate round cap chart}\)</span>. A
+global bound requires a separate round-cap rigidity/convergence
 certificate; if the fit is not round it emits <span
-class="math inline">\(\mathrm{CAP\_NOT\_ROUND}\)</span>. The normal
-<span class="math inline">\(n_{C,r}\)</span> is support-chart data
-derived from the repaired quotient. It is not a microscopic carrier
-coordinate, hidden port label, or new local degree of freedom. A cap
-normal determines a geodesic plane and half-space in <span
+class="math inline">\(\text{cap not round}\)</span>. The normal <span
+class="math inline">\(n_{C,r}\)</span> is support-chart data derived
+from the repaired quotient. It is not a microscopic carrier coordinate,
+hidden port label, or new local degree of freedom. A cap normal
+determines a geodesic plane and half-space in <span
 class="math inline">\(H^3\)</span>; selecting a particular observer
 point <span class="math inline">\(u\in H^3\)</span> requires a separate
 observer-frame, tetrad, or clock receipt. On the compact paper’s
@@ -572,11 +877,500 @@ spherical-incidence, mesh, cross-ratio, and <span
 class="math inline">\(2\pi\)</span>-normalization receipts, and the
 continuation from frame kinematics to an event base is the compact
 paper’s conditional event-manifold packet.</p>
+<div id="def:carrier-support-screen-bridge" class="definition">
+
+<p><strong>Definition 9</strong> (Carrier-to-support screen bridge).
+<em>A carrier-to-support screen bridge at cutoff <span
+class="math inline">\(r\)</span> consists of a source-bound map from
+routed carrier ports and seams to the support projections of the
+repaired observer-patch net, together with: (i) unital interface-algebra
+homomorphisms on every seam; (ii) coherent recovery maps on higher
+overlaps; (iii) a quotient-visible nerve whose support incidence is
+computed from the normal form; and (iv) refinement maps commuting with
+routing, quotienting, incidence, records, and support projection. A
+spherical bridge additionally certifies that the global nerve satisfies
+the spherical-incidence, cap-mesh, oriented cross-ratio, and
+normalization receipts consumed by the compact paper. Local carrier
+coordinates are excluded from the support output unless this map derives
+them as quotient-visible data.</em></p>
+</div>
+
+<div class="proposition">
+
+<p><strong>Proposition 10</strong> (Local Icosahedral incidence does not
+select the global support). <em>The certified twelve-port incidence of
+every local carrier does not determine the topology or conformal
+structure of the federation support.</em></p>
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> Fix one certified local carrier and make one copy at
+every vertex of an arbitrary finite graph. Route selected port pairs
+along that graph while leaving each local port algebra, oriented
+incidence, antipode, and <span class="math inline">\(A_5\)</span> action
+unchanged. A path, a cycle, a tree, and a cellulation of a closed
+surface therefore have identical local carrier certificates and
+different federation nerves. The local certificate cannot distinguish
+them. Full interface maps, higher-overlap coherence, and the global
+incidence/refinement receipt are necessary parents of a support-screen
+claim. ◻</p>
+</div>
+
 <p>The fold adds no independent dynamics. Repair is the finite patch
 operation that compares overlaps, updates records, and reaches the
 accepted normal form. Folding names the spherical chart presentation of
 that repaired quotient state. In plain language, sphere folding is what
 overlap repair looks like on the observer-facing screen.</p>
+<p>Strict descent prevents the accepted relation from serving as a
+reversible equilibrium law. If <span class="math inline">\(x\to_r^{\rm
+acc}y\)</span> lowers the well-founded repair measure, the reverse move
+cannot be another accepted descending step. The simulator consequently
+keeps three operators distinct: <span class="math display">\[
+\operatorname{Rep}_r,
+\qquad
+e^{-tL_r^{\rm eq}},
+\qquad
+\sigma_t^{\rho}.
+\]</span> They are, respectively, the irreversible normal-form map, an
+equilibrium or Euclidean relaxation, and the reversible modular
+automorphism group. A common local proposal menu may contribute data to
+all three constructions. This shared input does not identify the
+operators.</p>
+<div class="theorem">
+
+<p><strong>Theorem 11</strong> (Finite rate reconstruction on the
+reversible layer). <em>Let <span class="math inline">\(G=(X,E)\)</span>
+be a connected finite state graph with positive rates <span
+class="math inline">\(q_{u\to v}^{\rm eq}\)</span> in both directions of
+every edge. Define <span class="math display">\[
+a_{u\to v}:=\log\frac{q_{v\to u}^{\rm eq}}{q_{u\to v}^{\rm eq}}.
+\]</span> The following conditions are equivalent:</em></p>
+<ol type="1">
+<li><p><em>every oriented cycle has zero affinity;</em></p></li>
+<li><p><em>there is a potential <span
+class="math inline">\(K:X\to\mathbb R\)</span>, unique up to an additive
+constant, with <span class="math inline">\(a_{u\to
+v}=K_v-K_u\)</span>;</em></p></li>
+<li><p><em><span class="math inline">\(\pi_x\propto e^{-K_x}\)</span>
+satisfies detailed balance <span class="math inline">\(\pi_uq_{u\to
+v}^{\rm eq}=\pi_vq_{v\to u}^{\rm eq}\)</span>.</em></p></li>
+</ol>
+<p><em>The rates belong to the reversible equilibrium layer. They are
+not rates of the accepted strict-descent relation.</em></p>
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> Condition <span class="upright">(ii)</span>
+telescopes around every cycle. Under <span class="upright">(i)</span>,
+fix a root and define <span class="math inline">\(K_x\)</span> by
+summing <span class="math inline">\(a\)</span> along any path from the
+root to <span class="math inline">\(x\)</span>; zero cycle affinity
+gives path independence. Exponentiating <span
+class="math inline">\(K_v-K_u=a_{u\to v}\)</span> gives detailed
+balance, and taking logarithms of detailed balance gives
+<span class="upright">(ii)</span>. ◻</p>
+</div>
+
+<p><span class="math inline">\(K\)</span> in this theorem is a classical
+Gibbs potential. On the commutative state algebra its modular
+automorphism is trivial, so rate reconstruction does not create a
+nontrivial modular clock.</p>
+<h2 id="finite-modular-and-register-theorems">Finite modular and
+register theorems</h2>
+<p>The finite equilibrium layer supports several exact statements before
+any continuum or physical current interpretation is made. They also fix
+which information a simulator has to produce.</p>
+<div id="thm:exact-modular-coarse-graining" class="theorem">
+
+<p><strong>Theorem 12</strong> (Exact modular coarse graining). <em>Let
+<span class="math inline">\(c:X_s\to X_r\)</span> be a surjective
+coarse-graining map between finite sets and let <span
+class="math inline">\(\mu_s(x)&gt;0\)</span>. The pushed-forward law and
+its modular potential are <span class="math display">\[
+\mu_r(y)=\sum_{c(x)=y}\mu_s(x),
+\qquad
+K_r(y)=-\log\!\left(\sum_{c(x)=y}e^{-K_s(x)}\right),
+\qquad K_s=-\log\mu_s .
+\]</span> Thus modular potentials coarse-grain by a log-sum-exp rule, up
+to the common additive normalization convention. More generally, if
+<span class="math inline">\(\mu_s(x)=Z_s^{-1}m_s(x)e^{-S_s(x)}\)</span>
+and <span class="math inline">\(m_r(y)&gt;0\)</span> is the declared
+coarse reference weight, then <span class="math display">\[
+S_r^{\rm eff}(y)
+=-\log\!\left(\sum_{c(x)=y}m_s(x)e^{-S_s(x)}\right)+\log m_r(y)
+\]</span> gives the exact pushed-forward law. For a finite quantum
+channel <span class="math inline">\(\Phi_{sr}\)</span>, the
+corresponding statement is <span
+class="math inline">\(\rho_r=\Phi_{sr}(\rho_s)\)</span> and <span
+class="math inline">\(K_r=-\log\rho_r\)</span> whenever the output is
+faithful. An arithmetic average of <span
+class="math inline">\(K_s\)</span> is not the coarse modular potential
+in general.</em></p>
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> Both classical formulas follow by substituting <span
+class="math inline">\(\mu_s=e^{-K_s}\)</span> or <span
+class="math inline">\(\mu_s=Z_s^{-1}m_se^{-S_s}\)</span> into the
+definition of the pushforward. The quantum formula is the definition of
+the modular Hamiltonian of the pushed-forward faithful state. ◻</p>
+</div>
+
+<div id="prop:generator-underdetermination" class="proposition">
+
+<p><strong>Proposition 13</strong> (A faithful equilibrium law does not
+select its generator). <em>Let <span
+class="math inline">\(G=(X,E)\)</span> be a connected finite graph and
+let <span class="math inline">\(\mu_x&gt;0\)</span>. For every
+collection of positive symmetric edge conductances <span
+class="math inline">\(c_{xy}=c_{yx}\)</span>, <span
+class="math display">\[
+q_{x\to y}=\frac{c_{xy}}{\mu_x}
+\]</span> defines a continuous-time Markov generator that is reversible
+with stationary law <span class="math inline">\(\mu\)</span>. Distinct
+conductance families give distinct generators with the same state. A
+geometry, MaxEnt state, or repair normal form therefore selects no
+equilibrium dynamics unless an additional rate or conductance rule is
+supplied.</em></p>
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> The identity <span class="math inline">\(\mu_xq_{x\to
+y}=c_{xy}=\mu_yq_{y\to x}\)</span> is detailed balance. The diagonal
+entries are fixed by row-sum zero. Varying any conductance varies the
+generator while preserving the same stationary law. ◻</p>
+</div>
+
+<div id="thm:weighted-hodge-entropy" class="theorem">
+
+<p><strong>Theorem 14</strong> (Weighted graph Hodge split and entropy
+production). <em>Choose an orientation of a connected finite graph,
+positive vertex and edge weights, and let <span
+class="math inline">\(D\)</span> be the vertex-to-edge coboundary. Every
+real edge one-cochain has the unique orthogonal decomposition <span
+class="math display">\[
+a=DK+h,
+\qquad D^{*}h=0,
+\]</span> with <span class="math inline">\(K\)</span> unique up to an
+additive constant. For an irreducible stationary Markov law <span
+class="math inline">\(\pi\)</span>, define on each chosen edge <span
+class="math display">\[
+J_{xy}=\pi_xq_{x\to y}-\pi_yq_{y\to x},
+\qquad
+F_{xy}=\log\frac{\pi_xq_{x\to y}}{\pi_yq_{y\to x}} .
+\]</span> Then the steady entropy-production rate is <span
+class="math display">\[
+\sigma=\sum_{\{x,y\}\in E}J_{xy}F_{xy}\ge 0,
+\]</span> and it vanishes exactly when detailed balance holds on every
+edge. The bare logarithmic rate ratio omits the stationary weights and
+is therefore not, by itself, the thermodynamic force.</em></p>
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> Finite-dimensional orthogonal projection gives the
+Hodge split, since <span
+class="math inline">\((\operatorname{im}D)^{\perp}=\ker D^{*}\)</span>.
+Each entropy-production summand has the form <span
+class="math inline">\((A-B)\log(A/B)\ge0\)</span> for positive <span
+class="math inline">\(A,B\)</span>. Equality holds exactly when <span
+class="math inline">\(A=B\)</span> edge by edge. ◻</p>
+</div>
+
+<div id="thm:finite-kms-jump-generator" class="theorem">
+
+<p><strong>Theorem 15</strong> (Finite KMS-symmetric jump generator).
+<em>Let <span class="math inline">\(\rho=Z^{-1}e^{-K}\)</span> be
+faithful on a finite matrix algebra. Suppose a Heisenberg-picture
+Lindblad generator has jump operators <span
+class="math inline">\(V_{\omega,a}\)</span> satisfying <span
+class="math display">\[
+[K,V_{\omega,a}]=-\omega V_{\omega,a},
+\qquad V_{-\omega,a}=V_{\omega,a}^{*},
+\qquad \gamma_a(-\omega)=e^{-\omega}\gamma_a(\omega),
+\]</span> with positive Kossakowski matrices in every frequency sector.
+Suppose also that its Lamb-shift Hamiltonian commutes with <span
+class="math inline">\(K\)</span>, and that the generator is self-adjoint
+for the declared symmetric GNS inner product <span
+class="math display">\[
+\langle A,B\rangle_{\rho,1/2}
+=\operatorname{Tr}(\rho^{1/2}A^{*}\rho^{1/2}B).
+\]</span> Then the semigroup is completely positive and unital,
+preserves <span class="math inline">\(\rho\)</span>, commutes with the
+modular flow <span class="math inline">\(A\mapsto
+e^{itK}Ae^{-itK}\)</span>, and respects the displayed frequency-sector
+decomposition. The sign in the KMS rate relation is tied to the
+displayed commutator convention.</em></p>
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> Positive Kossakowski matrices give complete
+positivity. Unitality and GNS self-adjointness imply <span
+class="math inline">\(\operatorname{Tr}(\rho
+L(A))=\langle\mathbf1,L(A)\rangle_{\rho,1/2}
+=\langle L(\mathbf1),A\rangle_{\rho,1/2}=0\)</span>, hence stationarity.
+The eigenoperator relation, the paired KMS rates, and <span
+class="math inline">\([K,H_{\rm LS}]=0\)</span> make every term modular
+covariant and preserve its frequency sector. ◻</p>
+</div>
+
+<div class="remark">
+
+<p><em>Remark 16</em> (Finite modular receipt boundary). The
+source-ensemble ledger reports the pushed-forward laws or channels,
+independent conductances and rates, stationary weights, cycle-affinity
+residual, and the weighted Hodge remainder. The quantum/modular ledger
+reports the faithful density, modular spectrum, frequency projectors,
+Kossakowski positivity, KMS-pair residuals, GNS-symmetry residual, and
+modular-covariance residual. These finite data instantiate
+Theorems <a href="#thm:exact-modular-coarse-graining" data-reference-type="ref" data-reference="thm:exact-modular-coarse-graining">12</a>–
+<a href="#thm:finite-kms-jump-generator" data-reference-type="ref" data-reference="thm:finite-kms-jump-generator">15</a>;
+the theorems do not manufacture those data.</p>
+</div>
+
+<div id="thm:a5-register-commutant" class="theorem">
+
+<p><strong>Theorem 17</strong> (Exact <span
+class="math inline">\(A_5\times\mathbb Z_2\)</span> register commutant).
+<em>For the twelve-port permutation module, <span
+class="math display">\[
+\mathbb R[\mathsf P_{12}]
+\cong \mathbf1\oplus\mathbf3\oplus\mathbf3&#39;\oplus\mathbf5
+\]</span> is multiplicity-free. The icosahedral adjacency operator has
+the four distinct eigenvalues <span
+class="math inline">\(5,\sqrt5,-\sqrt5,-1\)</span> on these summands.
+Consequently its real <span class="math inline">\(A_5\)</span>-commutant
+is <span class="math inline">\(\mathbb R[A_{\rm ico}]\)</span>,
+represented by polynomials of degree at most three. On the oriented
+register <span class="math inline">\(\mathsf R_{24}=\mathbb R[\mathsf
+P_{12}]\otimes\mathbb R[\mathbb Z_2]\)</span>, every self-adjoint
+operator commuting with <span class="math inline">\(A_5\)</span> and
+orientation reversal is specified by one real scalar on each irreducible
+summand in each parity sector, eight scalars in total.</em></p>
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> Schur’s lemma gives one scalar on each real
+irreducible summand. The four distinct adjacency eigenvalues make the
+spectral projectors degree-three interpolation polynomials in <span
+class="math inline">\(A_{\rm ico}\)</span>. Diagonalizing the commuting
+reversal involution gives two parity copies of the same
+multiplicity-free decomposition. ◻</p>
+</div>
+
+<div id="prop:no-equivariant-24-cycle" class="proposition">
+
+<p><strong>Proposition 18</strong> (No equivariant directed 24-cycle).
+<em>Regard the oriented register as the transitive <span
+class="math inline">\((A_5\times\mathbb
+Z_2)/(C_5\times\{1\})\)</span>-set. It has no <span
+class="math inline">\(A_5\times\mathbb Z_2\)</span>-equivariant
+successor permutation that is a single directed 24-cycle.</em></p>
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> Its equivariant automorphism group is <span
+class="math display">\[
+N_{A_5\times\mathbb Z_2}(C_5\times\{1\})/(C_5\times\{1\})
+\cong\mathbb Z_2\times\mathbb Z_2,
+\]</span> because <span class="math inline">\(N_{A_5}(C_5)\cong
+D_{10}\)</span>. Every equivariant permutation therefore has order at
+most two, whereas a 24-cycle has order 24. ◻</p>
+</div>
+
+<div id="def:source-derived-channel-realization" class="definition">
+
+<p><strong>Definition 19</strong> (Source-derived oriented-channel
+realization). <em>Let <span class="math inline">\(E^{\rm or}\)</span> be
+the oriented transitions of the reversible quotient-state layer and set
+<span class="math display">\[
+\mathcal H_E=\ell^2(E^{\rm or}),
+\qquad F_E|e\rangle=a_e|e\rangle,
+\qquad a_e=\log\frac{q_{\bar e}^{\rm eq}}{q_e^{\rm eq}}.
+\]</span> A source-derived <span
+class="math inline">\(24\)</span>-channel realization is a full-rank map
+<span class="math display">\[
+C:\mathcal H_{24}:=
+\mathbb C[\mathsf P_{12}]\otimes\mathbb C^2_{\rm or}
+\longrightarrow\mathcal H_E
+\]</span> whose coefficients, aggregation rule, and provenance are
+emitted by the physical proposal ledger. After replacing <span
+class="math inline">\(C\)</span> by <span
+class="math inline">\(C(C^*C)^{-1/2}\)</span>, assume <span
+class="math inline">\(C^*C=\mathbf1\)</span>. Edge reversal is denoted
+<span class="math inline">\(R_E|e\rangle=|\bar e\rangle\)</span>, and
+register reversal by <span class="math inline">\(R_{24}\)</span>. The
+state set <span class="math inline">\(X\)</span>, transition set <span
+class="math inline">\(E^{\rm or}\)</span>, and label map into the <span
+class="math inline">\(24\)</span> channel types remain distinct
+objects.</em></p>
+</div>
+
+<div id="thm:oriented-register-modular-compression" class="theorem">
+
+<p><strong>Theorem 20</strong> (Oriented-register modular compression).
+<em>For a source-derived realization <span
+class="math inline">\(C\)</span>, the register is invariant under the
+edge modular grading exactly when <span class="math display">\[
+\epsilon_{\rm ch}
+:=\bigl\|(\mathbf1-CC^*)F_EC\bigr\|_{\rm HS}=0.
+\]</span> Equivalently, there is a unique operator <span
+class="math inline">\(\Omega_{24}\)</span> with <span
+class="math display">\[
+F_EC=C\Omega_{24},
+\qquad
+\Omega_{24}=C^*F_EC.
+\]</span> Suppose in addition that the edge rates are <span
+class="math inline">\(A_5\)</span>-equivariant, <span
+class="math inline">\(C\)</span> intertwines the edge and register
+actions of <span class="math inline">\(A_5\)</span> and reversal, and
+hence <span class="math inline">\(R_EF_ER_E=-F_E\)</span>. Then <span
+class="math display">\[
+\Omega_{24}
+\cong
+\bigoplus_{\lambda\in\{1,3,3&#39;,5\}}
+\mathbf1_{V_\lambda}\otimes M_\lambda,
+\qquad
+\operatorname{spec}(M_\lambda)=\{-\omega_\lambda,+\omega_\lambda\},
+\]</span> for four nonnegative source-derived values <span
+class="math inline">\(\omega_1,\omega_3,\omega_{3&#39;},
+\omega_5\)</span>. Thus the paired frequencies have degeneracies <span
+class="math inline">\(1,3,3,5\)</span>. The symmetry fixes this block
+pattern and these degeneracies, but not the four numerical
+values.</em></p>
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> The residual vanishes precisely when <span
+class="math inline">\(F_E\operatorname{im}C\subseteq
+\operatorname{im}C\)</span>. Since <span
+class="math inline">\(C\)</span> is isometric, restriction to this
+invariant subspace gives the unique compression <span
+class="math inline">\(\Omega_{24}=C^*F_EC\)</span>. <span
+class="math inline">\(A_5\)</span>-equivariance and Schur’s lemma give
+one Hermitian <span class="math inline">\(2\times2\)</span> orientation
+matrix <span class="math inline">\(M_\lambda\)</span> on each of the
+multiplicity-free summands <span
+class="math inline">\(1,3,3&#39;,5\)</span>. Reversal covariance gives
+<span
+class="math inline">\(R_{24}\Omega_{24}R_{24}=-\Omega_{24}\)</span>, so
+each orientation block is traceless and has eigenvalues <span
+class="math inline">\(\pm\omega_\lambda\)</span>. Tensoring with <span
+class="math inline">\(V_\lambda\)</span> gives the displayed
+degeneracies. ◻</p>
+</div>
+
+<div id="cor:raw-label-modular-eigenchannel" class="corollary">
+
+<p><strong>Corollary 21</strong> (Raw labels are modular eigenchannels
+only at equal affinity). <em>If each raw register slot is realized as a
+normalized sum of transitions with that label and distinct labels have
+disjoint edge support, exact channel closure requires <span
+class="math display">\[
+a_e=a_{e&#39;}
+\quad\text{whenever \(e\) and \(e&#39;\) carry the same raw label.}
+\]</span> Otherwise the raw slot basis is not a modular eigenbasis; any
+invariant <span class="math inline">\(24\)</span>-channel space must
+instead use source-derived linear combinations.</em></p>
+</div>
+
+<div id="prop:operator-frame-identification" class="proposition">
+
+<p><strong>Proposition 22</strong> (Operator-frame identification
+boundary). <em>Let <span class="math inline">\(V_a\in\mathcal A\subseteq
+B(\mathcal H)\)</span> be realized transition operators and let <span
+class="math inline">\(\omega_a\)</span> be source-derived frequencies.
+If self-adjoint <span class="math inline">\(K\)</span> and <span
+class="math inline">\(K&#39;\)</span> both solve <span
+class="math display">\[
+[K,V_a]=\omega_aV_a,
+\qquad
+[K&#39;,V_a]=\omega_aV_a
+\quad\text{for every \(a\)},
+\]</span> then <span class="math inline">\(K-K&#39;\)</span> lies in the
+commutant of the algebra generated by the <span
+class="math inline">\(V_a\)</span>. Hence the channel frame identifies a
+noncommutative modular Hamiltonian only modulo that commutant, and
+modulo the center when the operators generate the declared finite
+algebra.</em></p>
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> Subtracting the two commutator equations gives <span
+class="math inline">\([K-K&#39;,V_a]=0\)</span> for every <span
+class="math inline">\(a\)</span>; the generated-algebra statement
+follows. ◻</p>
+</div>
+
+<div class="remark">
+
+<p><em>Remark 23</em> (Rate scale, clock scale, and BW promotion).
+Multiplying every equilibrium rate by one constant leaves every
+affinity, the reconstructed stationary law, <span
+class="math inline">\(K\)</span>, and <span
+class="math inline">\(\Omega_{24}\)</span> unchanged, while rescaling
+the relaxation generator. Rate ratios therefore determine a
+dimensionless potential; rate magnitudes determine kinetics. Neither
+fixes a frequency in hertz. Operational time requires the independent
+clock instrument and affine calibration used later in this paper.
+Physical BW promotion further requires a refinement-natural comparison
+showing that the gear-derived state is the same support-visible cap
+state used by the geometric modular theorem, the independently complete
+<span class="math inline">\(\mathsf{MGNS\text{-}1}\)</span> package on
+that same tower, its regularized cutoff schedule, and the independent
+<span class="math inline">\(2\pi\)</span>-normalization receipt.</p>
+</div>
+
+<p>The register receipt reports the character-projector multiplicities,
+equivariance residual, within-irrep spectral spread, orientation-parity
+leakage, adjacency-polynomial residual, and the equivariant-permutation
+order. The modular-gearing receipt additionally reports the oriented
+rate ledger, quotient lumpability defect, fundamental-cycle affinities,
+stationary-law and detailed-balance residuals, <span
+class="math inline">\(C^*C\)</span>, <span
+class="math inline">\(\epsilon_{\rm ch}\)</span>, the four paired gaps,
+and the commutant dimension of any operator-valued lift. Exact data give
+Theorems <a href="#thm:a5-register-commutant" data-reference-type="ref" data-reference="thm:a5-register-commutant">17</a>
+and
+<a href="#thm:oriented-register-modular-compression" data-reference-type="ref" data-reference="thm:oriented-register-modular-compression">20</a>
+and
+Proposition <a href="#prop:no-equivariant-24-cycle" data-reference-type="ref" data-reference="prop:no-equivariant-24-cycle">18</a>;
+approximate data remain diagnostics with declared tolerances.</p>
+<p>These theorems classify finite register states and operators. They do
+not construct a physical gauge-current algebra. That step requires the
+separate full-rank, compact skew-adjoint, commutator-closed current
+lift, its inner <span class="math inline">\(A_5\)</span> action, and
+refinement-natural physical descent used by the compact and
+particle-sector papers.</p>
+<p>On the literal transitive twelve-port set <span
+class="math inline">\(\mathsf P_{12}=A_5/C_5\)</span>, an irreducible
+<span class="math inline">\(A_5\)</span>-equivariant rate law has a
+unique invariant equilibrium distribution, hence <span
+class="math inline">\(\pi_p=1/12\)</span> and constant <span
+class="math inline">\(K_p\)</span>. On <span
+class="math inline">\(\mathsf P_{12}\times\{+,-\}\)</span>, with <span
+class="math inline">\(A_5\)</span> acting on the port coordinate, an
+invariant potential has at most two values <span
+class="math inline">\(K_+\)</span> and <span
+class="math inline">\(K_-\)</span>. The geometry can therefore carry one
+orientation gap <span class="math inline">\(\Delta K=K_--K_+\)</span>.
+It cannot supply twenty-four independent energy levels. The state set
+<span class="math inline">\(X\)</span>, oriented transition set <span
+class="math inline">\(E^{\rm or}\)</span>, and channel label map <span
+class="math inline">\(\lambda:E^{\rm or}\to\mathsf R_{24}\)</span> are
+separate objects; <span class="math inline">\(\lambda\)</span> need not
+be a bijection. In particular, twenty-four oriented edge instances
+contain only twelve unoriented edges and cannot connect a graph on
+twenty-four states.</p>
 <p>The finite carrier vocabulary is compatible with the layered
 functional carrier of the consensus paper: the carrier is a
 quotient-visible finite implementation surface, and hidden port labels
@@ -603,7 +1397,7 @@ edge-center collar register, first-order scalar observables have only
 the canonical opportunity count as their nonconstant direction.</p>
 <div id="def:finite-scalar-slot-register" class="definition">
 
-<p><strong>Definition 8</strong> (Finite scalar-slot register). <em>Fix
+<p><strong>Definition 24</strong> (Finite scalar-slot register). <em>Fix
 a regulator <span class="math inline">\(r\)</span>, physical quotient
 <span class="math inline">\(Q_r=\Sigma_r/\Gamma_r\)</span>, and collar
 or local support region <span class="math inline">\(C\)</span>. Let
@@ -636,7 +1430,7 @@ are removed by the quotient before <span class="math inline">\(\mathcal
 N_{\nu,r,C}\)</span> is read.</p>
 <div id="thm:scalar-slot-completeness" class="theorem">
 
-<p><strong>Theorem 9</strong> (Rank-one scalar-slot completeness on the
+<p><strong>Theorem 25</strong> (Rank-one scalar-slot completeness on the
 quotient-edge branch). <em>Let <span class="math inline">\(G_C\)</span>
 be the quotient-preserving relabeling group of scalar slots in collar
 <span class="math inline">\(C\)</span>. Assume:</em></p>
@@ -726,7 +1520,7 @@ reciprocal quantity is <span
 class="math inline">\(\operatorname{Tr}^{\#}_q\)</span>.</p>
 <div id="def:physical-collar-edge-center-map" class="definition">
 
-<p><strong>Definition 10</strong> (Physical collar quotient and
+<p><strong>Definition 26</strong> (Physical collar quotient and
 edge-center map). <em>Fix a finite regulator <span
 class="math inline">\(r\)</span> and a connected collar cut <span
 class="math inline">\(C\)</span>. Let <span class="math display">\[
@@ -758,7 +1552,7 @@ projection for the same quotient-visible sector.</em></p>
 
 <div id="def:edge-center-quotient-algebra" class="definition">
 
-<p><strong>Definition 11</strong> (Edge-center quotient algebra).
+<p><strong>Definition 27</strong> (Edge-center quotient algebra).
 <em>The edge-center quotient algebra of the connected collar cut <span
 class="math inline">\(C\)</span> is <span class="math display">\[
 \boxed{
@@ -777,7 +1571,7 @@ Z(\mathcal A^{\rm phys}_{r,C}).
 
 <div id="thm:edge-center-quotient-algebra" class="theorem">
 
-<p><strong>Theorem 12</strong> (Edge-center quotient algebra). <em>On
+<p><strong>Theorem 28</strong> (Edge-center quotient algebra). <em>On
 the fixed-cutoff connected-collar branch, <span
 class="math inline">\(\mathcal E_{r,C}\)</span> is a finite commutative
 central subalgebra of <span class="math inline">\(\mathcal A^{\rm
@@ -806,7 +1600,7 @@ class="math inline">\(\ell^\infty(\Xi_{r,C})\)</span>. ◻</p>
 
 <div id="def:quotient-scalar-readout-algebra" class="definition">
 
-<p><strong>Definition 13</strong> (Quotient scalar readout algebra).
+<p><strong>Definition 29</strong> (Quotient scalar readout algebra).
 <em>Let <span class="math display">\[
 \mathsf{Scal}_{r,C}
 \subseteq
@@ -823,7 +1617,7 @@ scalar collar readouts of the connected cut.</em></p>
 
 <div id="ass:edge-center-scalar-completeness" class="assumption">
 
-<p><strong>Assumption 14</strong> (Edge-center scalar completeness).
+<p><strong>Assumption 30</strong> (Edge-center scalar completeness).
 <em>On the declared fixed-cutoff scalar branch, every quotient-local
 scalar collar readout on a connected cut is resolved by the edge-center
 sector map: <span class="math display">\[
@@ -838,7 +1632,7 @@ identifiers after the physical quotient has been taken.</em></p>
 
 <div id="def:scalar-activation-projector" class="definition">
 
-<p><strong>Definition 15</strong> (Scalar recoverability defect and
+<p><strong>Definition 31</strong> (Scalar recoverability defect and
 activation projector). <em>Let <span class="math display">\[
 R_{r,C}\in\mathsf{Scal}_{r,C,+}
 \]</span> be the quotient-local scalar recoverability defect on the
@@ -862,7 +1656,7 @@ S_{r,C}:=\Pi^{\rm scal}_{r,C}
 
 <div id="thm:scalar-activation-edge-center" class="theorem">
 
-<p><strong>Theorem 16</strong> (Scalar activation is an edge-center
+<p><strong>Theorem 32</strong> (Scalar activation is an edge-center
 event). <em>Assume edge-center scalar completeness. Then <span
 class="math display">\[
 \boxed{
@@ -878,7 +1672,7 @@ class="math inline">\(R_{r,C}\)</span> is a quotient-local scalar collar
 readout, hence <span class="math display">\[
 R_{r,C}\in\mathsf{Scal}_{r,C}.
 \]</span> By
-Assumption <a href="#ass:edge-center-scalar-completeness" data-reference-type="ref" data-reference="ass:edge-center-scalar-completeness">14</a>,
+Assumption <a href="#ass:edge-center-scalar-completeness" data-reference-type="ref" data-reference="ass:edge-center-scalar-completeness">30</a>,
 <span class="math display">\[
 \mathsf{Scal}_{r,C}=\mathcal E_{r,C}.
 \]</span> Therefore <span class="math inline">\(R_{r,C}\in\mathcal
@@ -896,7 +1690,7 @@ internal to <span class="math inline">\(\mathcal E_{r,C}\)</span>. Thus
 
 <div id="def:z6-reserve-projector" class="definition">
 
-<p><strong>Definition 17</strong> (Protected <span
+<p><strong>Definition 33</strong> (Protected <span
 class="math inline">\(Z_6\)</span> reserve projector). <em>Let the
 realized Standard Model quotient be <span class="math display">\[
 G_{\rm phys}
@@ -921,7 +1715,7 @@ Z_{6,r,C}\in\mathcal E_{r,C}.
 
 <div id="thm:scalar-z6-same-register-commute" class="theorem">
 
-<p><strong>Theorem 18</strong> (Same-register and commutation theorem).
+<p><strong>Theorem 34</strong> (Same-register and commutation theorem).
 <em>Assume edge-center scalar completeness and protected-center
 realization. Then <span class="math display">\[
 \boxed{
@@ -937,11 +1731,11 @@ realization. Then <span class="math display">\[
 <div class="proof">
 
 <p><em>Proof.</em>
-Theorem <a href="#thm:scalar-activation-edge-center" data-reference-type="ref" data-reference="thm:scalar-activation-edge-center">16</a>
+Theorem <a href="#thm:scalar-activation-edge-center" data-reference-type="ref" data-reference="thm:scalar-activation-edge-center">32</a>
 gives <span class="math display">\[
 \Pi^{\rm scal}_{r,C}\in\mathcal E_{r,C}.
 \]</span>
-Definition <a href="#def:z6-reserve-projector" data-reference-type="ref" data-reference="def:z6-reserve-projector">17</a>
+Definition <a href="#def:z6-reserve-projector" data-reference-type="ref" data-reference="def:z6-reserve-projector">33</a>
 gives <span class="math display">\[
 Z_{6,r,C}\in\mathcal E_{r,C}.
 \]</span> The algebra <span class="math inline">\(\mathcal
@@ -952,7 +1746,7 @@ class="math inline">\(\mathcal A^{\rm phys}_{r,C}\)</span>. ◻</p>
 
 <div id="ass:scalar-activation-channel-completeness" class="assumption">
 
-<p><strong>Assumption 19</strong> (Scalar activation channel
+<p><strong>Assumption 35</strong> (Scalar activation channel
 completeness). <em>The scalar activation channel on the connected collar
 cut is the quotient event algebra generated by the nonzero
 recoverability-defect event: <span class="math display">\[
@@ -969,7 +1763,7 @@ generator after the physical quotient has been taken.</em></p>
 
 <div id="thm:scalar-channel-exhaustion" class="theorem">
 
-<p><strong>Theorem 20</strong> (Scalar-channel exhaustion). <em>Assume
+<p><strong>Theorem 36</strong> (Scalar-channel exhaustion). <em>Assume
 edge-center scalar completeness, scalar activation channel completeness,
 and protected-center realization. Then the scalar activation channel is
 exhausted by <span class="math inline">\(\Pi^{\rm scal}_{r,C}\)</span>,
@@ -988,12 +1782,12 @@ second summand is the reserve-blocked scalar channel.</em></p>
 <div class="proof">
 
 <p><em>Proof.</em> By
-Assumption <a href="#ass:scalar-activation-channel-completeness" data-reference-type="ref" data-reference="ass:scalar-activation-channel-completeness">19</a>,
+Assumption <a href="#ass:scalar-activation-channel-completeness" data-reference-type="ref" data-reference="ass:scalar-activation-channel-completeness">35</a>,
 every scalar activation event is generated by <span
 class="math inline">\(\Pi^{\rm scal}_{r,C}\)</span>. Thus no scalar
 activation support exists outside this projector.</p>
 <p>By
-Theorem <a href="#thm:scalar-z6-same-register-commute" data-reference-type="ref" data-reference="thm:scalar-z6-same-register-commute">18</a>,
+Theorem <a href="#thm:scalar-z6-same-register-commute" data-reference-type="ref" data-reference="thm:scalar-z6-same-register-commute">34</a>,
 <span class="math inline">\(\Pi^{\rm scal}_{r,C}\)</span> and <span
 class="math inline">\(Z_{6,r,C}\)</span> commute. Therefore <span
 class="math display">\[
@@ -1015,7 +1809,7 @@ channel. ◻</p>
 
 <div id="thm:no-separate-scalar-carrier" class="theorem">
 
-<p><strong>Theorem 21</strong> (No separate scalar carrier). <em>Assume
+<p><strong>Theorem 37</strong> (No separate scalar carrier). <em>Assume
 edge-center scalar completeness. Let <span
 class="math inline">\(B\)</span> be any proposed alternative scalar
 activation projector, possibly represented on a bulk, screen-area,
@@ -1034,7 +1828,7 @@ carrier is inert.</em></p>
 
 <p><em>Proof.</em> A physical scalar activation event must be a
 quotient-local scalar observable. By
-Assumption <a href="#ass:edge-center-scalar-completeness" data-reference-type="ref" data-reference="ass:edge-center-scalar-completeness">14</a>,
+Assumption <a href="#ass:edge-center-scalar-completeness" data-reference-type="ref" data-reference="ass:edge-center-scalar-completeness">30</a>,
 every such observable factors through the edge-center sector map <span
 class="math display">\[
 \eta_{r,C}:Q_{r,C}\to\Xi_{r,C}.
@@ -1079,7 +1873,7 @@ quotient-visible coherent-material receipt with explicit readback and
 boundary-prediction closure.</p>
 <div id="def:oph-coherent-material-subfederation" class="definition">
 
-<p><strong>Definition 22</strong> (OPH-coherent material subfederation).
+<p><strong>Definition 38</strong> (OPH-coherent material subfederation).
 <em>Fix a screen collar <span class="math inline">\(C\)</span>, a finite
 material region <span class="math inline">\(U\subset C\)</span>, and a
 refinement scale <span class="math inline">\(r\)</span>. An OPH-coherent
@@ -1103,7 +1897,7 @@ class.</em></p>
 
 <div id="def:canonical-coherent-matter-scalar-source" class="definition">
 
-<p><strong>Definition 23</strong> (Canonical coherent-matter scalar
+<p><strong>Definition 39</strong> (Canonical coherent-matter scalar
 source). <em>For an OPH-coherent material subfederation <span
 class="math inline">\(\mathfrak M\)</span>, define the canonical scalar
 source readout <span class="math display">\[
@@ -1119,7 +1913,7 @@ definition.</em></p>
 
 <div id="lem:coherent-material-source-quotient-descent" class="claim">
 
-<p><strong>Claim 24</strong> (Quotient descent of coherent-material
+<p><strong>Claim 40</strong> (Quotient descent of coherent-material
 source). <em>The functional <span
 class="math inline">\(S_{\mathrm{coh}}^{\mathrm{can}}\)</span> descends
 to the screen quotient. It is invariant under relabelings of internal
@@ -1131,7 +1925,7 @@ C_U)\)</span> in the quotient.</em></p>
 <div class="proof">
 
 <p><em>Proof.</em> Each factor in
-Definition <a href="#def:canonical-coherent-matter-scalar-source" data-reference-type="ref" data-reference="def:canonical-coherent-matter-scalar-source">23</a>
+Definition <a href="#def:canonical-coherent-matter-scalar-source" data-reference-type="ref" data-reference="def:canonical-coherent-matter-scalar-source">39</a>
 is a screen-record observable: self-read existence is a boundary-stable
 record property, <span class="math inline">\(\mathsf R_U\)</span> is the
 internal record value, <span class="math inline">\(\mathsf P_U\)</span>
@@ -1144,7 +1938,7 @@ constant on quotient classes and descends. ◻</p>
 
 <div id="thm:nonzero-coherent-scalar-source" class="theorem">
 
-<p><strong>Theorem 25</strong> (Nonzero coherent scalar source).
+<p><strong>Theorem 41</strong> (Nonzero coherent scalar source).
 <em>Every nondegenerate OPH-coherent material subfederation has <span
 class="math display">\[
 S_{\mathrm{coh}}^{\mathrm{can}}(U,t;h)&gt;0 .
@@ -1156,16 +1950,16 @@ least one coherent-material receipt vanishes.</em></p>
 
 <p><em>Proof.</em> Nondegeneracy is the strict positivity of the product
 in
-Definition <a href="#def:oph-coherent-material-subfederation" data-reference-type="ref" data-reference="def:oph-coherent-material-subfederation">22</a>.
+Definition <a href="#def:oph-coherent-material-subfederation" data-reference-type="ref" data-reference="def:oph-coherent-material-subfederation">38</a>.
 The canonical source is that product. ◻</p>
 </div>
 
 <div id="thm:coherent-matter-same-channel-forcing" class="theorem">
 
-<p><strong>Theorem 26</strong> (Coherent-matter same-channel forcing).
+<p><strong>Theorem 42</strong> (Coherent-matter same-channel forcing).
 <em>Assume Scalar Edge-Center Exhaustion <span
-class="math inline">\(\mathrm{SCALAR\_EDGE\_CENTER\_EXHAUSTION}\)</span>,
-Theorem <a href="#thm:scalar-channel-exhaustion" data-reference-type="ref" data-reference="thm:scalar-channel-exhaustion">20</a>.
+class="math inline">\(\text{scalar edge center exhaustion}\)</span>,
+Theorem <a href="#thm:scalar-channel-exhaustion" data-reference-type="ref" data-reference="thm:scalar-channel-exhaustion">36</a>.
 For every nondegenerate OPH-coherent material subfederation on a collar
 <span class="math inline">\(C\)</span>, the source <span
 class="math display">\[
@@ -1180,7 +1974,7 @@ collar theorem.</em></p>
 <div class="proof">
 
 <p><em>Proof.</em> By
-Lemma <a href="#lem:coherent-material-source-quotient-descent" data-reference-type="ref" data-reference="lem:coherent-material-source-quotient-descent">24</a>,
+Lemma <a href="#lem:coherent-material-source-quotient-descent" data-reference-type="ref" data-reference="lem:coherent-material-source-quotient-descent">40</a>,
 <span class="math inline">\(S_{\mathrm{coh}}^{\mathrm{can}}\)</span> is
 a quotient-local scalar observable: it has no boundary direction, no
 spin frame, and no unscreened vector index. Scalar Edge-Center
@@ -1188,7 +1982,7 @@ Exhaustion states that every quotient-local scalar perturbation that can
 affect a collar record factors through <span
 class="math inline">\(\mathcal E_{r,C}\)</span>. The source therefore
 lies in <span class="math inline">\(\mathcal E_{r,C}\)</span>.
-Theorem <a href="#thm:scalar-z6-same-register-commute" data-reference-type="ref" data-reference="thm:scalar-z6-same-register-commute">18</a>
+Theorem <a href="#thm:scalar-z6-same-register-commute" data-reference-type="ref" data-reference="thm:scalar-z6-same-register-commute">34</a>
 identifies this register with the same edge-center scalar slot used by
 the <span class="math inline">\(Z_6\)</span> collar computation, so the
 channel identity follows. ◻</p>
@@ -1196,7 +1990,7 @@ channel identity follows. ◻</p>
 
 <div id="cor:finite-scalar-channel-bridge" class="corollary">
 
-<p><strong>Corollary 27</strong> (Finite scalar channel bridge). <em>On
+<p><strong>Corollary 43</strong> (Finite scalar channel bridge). <em>On
 the same branch, the coherent-material record slots and the <span
 class="math inline">\(Z_6\)</span> protected-reserve collar slices may
 be packaged as one finite indexed channel <span
@@ -1212,10 +2006,10 @@ numerical counters is insufficient.</em></p>
 <div class="proof">
 
 <p><em>Proof.</em>
-Theorem <a href="#thm:coherent-matter-same-channel-forcing" data-reference-type="ref" data-reference="thm:coherent-matter-same-channel-forcing">26</a>
+Theorem <a href="#thm:coherent-matter-same-channel-forcing" data-reference-type="ref" data-reference="thm:coherent-matter-same-channel-forcing">42</a>
 places the coherent-material source in <span
 class="math inline">\(\mathcal E_{r,C}\)</span>, while
-Theorem <a href="#thm:scalar-z6-same-register-commute" data-reference-type="ref" data-reference="thm:scalar-z6-same-register-commute">18</a>
+Theorem <a href="#thm:scalar-z6-same-register-commute" data-reference-type="ref" data-reference="thm:scalar-z6-same-register-commute">34</a>
 places the protected <span class="math inline">\(Z_6\)</span> reserve in
 the same edge-center scalar register. Choosing the scalar slots of <span
 class="math inline">\(\mathcal E_{r,C}\)</span> as the index family
@@ -1226,7 +2020,7 @@ bookkeeping ambiguity. ◻</p>
 
 <div id="thm:unique-scalar-linear-response" class="theorem">
 
-<p><strong>Theorem 28</strong> (Unique scalar linear response). <em>On
+<p><strong>Theorem 44</strong> (Unique scalar linear response). <em>On
 the weak-field branch, any infinitesimal frequency response to a
 nondegenerate OPH-coherent material source has the form <span
 class="math display">\[
@@ -1238,13 +2032,13 @@ class="math display">\[
 \]</span> where <span class="math inline">\(\eta_C\)</span> is the local
 edge-center test functional. No independent local scalar susceptibility
 can be added without violating
-Theorem <a href="#thm:scalar-channel-exhaustion" data-reference-type="ref" data-reference="thm:scalar-channel-exhaustion">20</a>.</em></p>
+Theorem <a href="#thm:scalar-channel-exhaustion" data-reference-type="ref" data-reference="thm:scalar-channel-exhaustion">36</a>.</em></p>
 </div>
 
 <div class="proof">
 
 <p><em>Proof.</em>
-Theorem <a href="#thm:unique-scalar-linear-response" data-reference-type="ref" data-reference="thm:unique-scalar-linear-response">28</a>
+Theorem <a href="#thm:unique-scalar-linear-response" data-reference-type="ref" data-reference="thm:unique-scalar-linear-response">44</a>
 places the perturbation in the unique scalar register <span
 class="math inline">\(\mathcal E_{r,C}\)</span>. Linearization of a
 one-register scalar perturbation gives a single edge-center test
@@ -1258,7 +2052,7 @@ scalar edge-center binding, nonzero activation, same-channel forcing,
 and the unique linear response proved above.</p>
 <div id="def:oriented-24-slot-register" class="definition">
 
-<p><strong>Definition 29</strong> (Oriented 24-slot repair register).
+<p><strong>Definition 45</strong> (Oriented 24-slot repair register).
 <em>On the twelve-port screen-sieve branch, let <span
 class="math display">\[
 \mathsf P_{12,r,C}
@@ -1280,18 +2074,42 @@ quotient-edge cut surface. It does not create an independent scalar
 carrier.</em></p>
 </div>
 
+<div class="proposition">
+
+<p><strong>Proposition 46</strong> (The oriented register carries no
+modular clock). <em>Every faithful state on <span
+class="math inline">\(\mathcal R^{\rm or}_{24,r,C}=\ell^\infty(\mathsf
+R_{24,r,C})\)</span> is tracial, so its modular automorphism group is
+trivial. The twenty-four slots can carry channel names, orientations,
+central event projectors, and orbit counts. They do not determine a
+modular Hamiltonian, a set of clock ticks, or a frequency. A nontrivial
+modular lift requires a noncommutative transition algebra, for example
+<span class="math inline">\(B(\ell^2X)\)</span> with operators <span
+class="math inline">\(V_{u\to v}=|v\rangle\langle u|\)</span>, together
+with a faithful physical state on that algebra.</em></p>
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> The algebra is finite and commutative. Its density
+operator is central in every faithful representation, hence <span
+class="math inline">\(\rho^{it}a\rho^{-it}=a\)</span> for all <span
+class="math inline">\(a\)</span> and <span
+class="math inline">\(t\)</span>. ◻</p>
+</div>
+
 <p>The shared-edge protected-reserve branch carries two named branch
 inputs: the shared cut entropy density <span
 class="math inline">\(\bar\ell_{\rm shared}=P/4\)</span> and the <span
 class="math inline">\(\mathbb Z_6\)</span> class equidistribution stated
 in
-Theorem <a href="#thm:z6-reserve-trace" data-reference-type="ref" data-reference="thm:z6-reserve-trace">30</a>
+Theorem <a href="#thm:z6-reserve-trace" data-reference-type="ref" data-reference="thm:z6-reserve-trace">47</a>
 are declared assumptions of the branch, not derived quantities. Every
 value downstream of the <span class="math inline">\(P/24\)</span>
 exponent inherits both inputs.</p>
 <div id="thm:z6-reserve-trace" class="theorem">
 
-<p><strong>Theorem 30</strong> (Protected reserve mean and reciprocal
+<p><strong>Theorem 47</strong> (Protected reserve mean and reciprocal
 trace). <em>On the shared-edge protected-reserve branch, with the
 declared branch input <span class="math inline">\(\bar\ell_{\rm
 shared}=P/4\)</span> and the declared <span
@@ -1314,7 +2132,7 @@ P=1.630968209403959,
 \]</span> <span class="math display">\[
 \frac{24}{P}=14.715185655746689,
 \]</span> and, under the presence reading of
-Lemma <a href="#lem:presence-reading-reserve" data-reference-type="ref" data-reference="lem:presence-reading-reserve">35</a>,
+Lemma <a href="#lem:presence-reading-reserve" data-reference-type="ref" data-reference="lem:presence-reading-reserve">52</a>,
 <span class="math display">\[
 1-\frac{P}{24}=0.9320429912748350.
 \]</span></em></p>
@@ -1354,9 +2172,9 @@ class="math display">\[
 
 <div class="remark">
 
-<p><em>Remark 31</em> (Oriented-register denominator coincidence). The
+<p><em>Remark 48</em> (Oriented-register denominator coincidence). The
 oriented <span class="math inline">\(24\)</span>-slot register of
-Definition <a href="#def:oriented-24-slot-register" data-reference-type="ref" data-reference="def:oriented-24-slot-register">29</a>
+Definition <a href="#def:oriented-24-slot-register" data-reference-type="ref" data-reference="def:oriented-24-slot-register">45</a>
 also displays the denominator <span class="math inline">\(24\)</span> on
 the local screen side. By that definition the register creates no
 independent scalar carrier, so the coincidence of denominators carries
@@ -1367,7 +2185,7 @@ declared branch inputs alone.</p>
 
 <div id="def:finite-thickness-scalar-profile" class="definition">
 
-<p><strong>Definition 32</strong> (Finite-thickness scalar opportunity
+<p><strong>Definition 49</strong> (Finite-thickness scalar opportunity
 profile). <em>Let <span class="math inline">\(Y_{r,C}\)</span> be the
 finite transverse collar-coordinate set at regulator <span
 class="math inline">\(r\)</span>. Let <span class="math display">\[
@@ -1463,7 +2281,7 @@ w_r(y)\to w(y),
 
 <div id="thm:finite-thickness-mean-reserve" class="theorem">
 
-<p><strong>Theorem 33</strong> (Finite-thickness mean reserve
+<p><strong>Theorem 50</strong> (Finite-thickness mean reserve
 disintegration). <em>At fixed regulator, <span class="math display">\[
 \boxed{
 \sum_{y\in Y_{r,C}}w_r(y)\epsilon_{\mathbb Z_6,r}(y)
@@ -1537,7 +2355,7 @@ disintegration. ◻</p>
 
 <div id="rem:unconditioned-trace-not-enough" class="remark">
 
-<p><em>Remark 34</em> (Unconditioned trace is not enough). The identity
+<p><em>Remark 51</em> (Unconditioned trace is not enough). The identity
 <span class="math display">\[
 \tau_q(Z_{6,r,C})=P/24
 \]</span> does not by itself imply <span class="math display">\[
@@ -1552,7 +2370,7 @@ alone is insufficient.</p>
 
 <div id="lem:presence-reading-reserve" class="lemma">
 
-<p><strong>Lemma 35</strong> (Presence reading of the reserve profile).
+<p><strong>Lemma 52</strong> (Presence reading of the reserve profile).
 <em><span class="math inline">\(Z_{6,r,C}\)</span> is a sum of sector
 projections, so the conditional reserve profile <span
 class="math inline">\(\epsilon_{\mathbb Z_6}(y)\)</span>, a ratio of
@@ -1579,16 +2397,16 @@ occupancy rather than as the presence probability, severs the link to
 the projection trace and consumes a scalar carrier beyond <span
 class="math inline">\(Z_{6,r,C}\)</span>, which the no-separate-carrier
 clause of
-Definition <a href="#def:oriented-24-slot-register" data-reference-type="ref" data-reference="def:oriented-24-slot-register">29</a>
+Definition <a href="#def:oriented-24-slot-register" data-reference-type="ref" data-reference="def:oriented-24-slot-register">45</a>
 excludes; its assumption-minimal consequence is recorded in
-Remark <a href="#rem:mean-count-markov-band" data-reference-type="ref" data-reference="rem:mean-count-markov-band">38</a>.</em></p>
+Remark <a href="#rem:mean-count-markov-band" data-reference-type="ref" data-reference="rem:mean-count-markov-band">55</a>.</em></p>
 </div>
 
 <div id="thm:finite-thickness-collar-survival" class="theorem">
 
-<p><strong>Theorem 36</strong> (Finite-thickness collar survival).
+<p><strong>Theorem 53</strong> (Finite-thickness collar survival).
 <em>Under the presence reading of
-Lemma <a href="#lem:presence-reading-reserve" data-reference-type="ref" data-reference="lem:presence-reading-reserve">35</a>,
+Lemma <a href="#lem:presence-reading-reserve" data-reference-type="ref" data-reference="lem:presence-reading-reserve">52</a>,
 the finite-thickness collar survival coefficient is <span
 class="math display">\[
 \boxed{
@@ -1612,7 +2430,7 @@ class="math display">\[
 <p><em>Proof.</em> The local survival factor at <span
 class="math inline">\(y\)</span> is <span
 class="math inline">\(1-\epsilon_{\mathbb Z_6}(y)\)</span> by
-Lemma <a href="#lem:presence-reading-reserve" data-reference-type="ref" data-reference="lem:presence-reading-reserve">35</a>.
+Lemma <a href="#lem:presence-reading-reserve" data-reference-type="ref" data-reference="lem:presence-reading-reserve">52</a>.
 Averaging over scalar opportunities with normalized profile <span
 class="math inline">\(w(y)\)</span> and using linearity of the integral
 gives the displayed formula. The finite-regulator formula is the
@@ -1621,7 +2439,7 @@ corresponding finite sum. ◻</p>
 
 <div id="cor:finite-thickness-jensen-band" class="corollary">
 
-<p><strong>Corollary 37</strong> (Exact finite-thickness coefficient
+<p><strong>Corollary 54</strong> (Exact finite-thickness coefficient
 from the scalar-weighted receipt). <em>If <span class="math display">\[
 \int dy\,w(y)\epsilon_{\mathbb Z_6}(y)=\frac{P}{24},
 \]</span> then <span class="math display">\[
@@ -1651,12 +2469,12 @@ class="math inline">\(\bar\epsilon_{\mathbb Z_6}^{\rm scal}\)</span>,
 
 <p><em>Proof.</em> Substitute the receipt value into the survival
 formula of
-Theorem <a href="#thm:finite-thickness-collar-survival" data-reference-type="ref" data-reference="thm:finite-thickness-collar-survival">36</a>. ◻</p>
+Theorem <a href="#thm:finite-thickness-collar-survival" data-reference-type="ref" data-reference="thm:finite-thickness-collar-survival">53</a>. ◻</p>
 </div>
 
 <div id="rem:mean-count-markov-band" class="remark">
 
-<p><em>Remark 38</em> (Mean-count reading and its Markov band). Under
+<p><em>Remark 55</em> (Mean-count reading and its Markov band). Under
 the mean-count reading, with <span
 class="math inline">\(\epsilon_{\mathbb Z_6}(y)\)</span> the expectation
 of an <span class="math inline">\(\mathbb N\)</span>-valued reserve
@@ -1676,7 +2494,7 @@ recorded there.</p>
 
 <div id="def:uniform-product-thickening-branch" class="definition">
 
-<p><strong>Definition 39</strong> (Uniform product-thickening branch).
+<p><strong>Definition 56</strong> (Uniform product-thickening branch).
 <em>The uniform product-thickening branch consists of the following
 clauses.</em></p>
 <ol type="1">
@@ -1728,10 +2546,10 @@ reserve-unbiased.</em></p>
 
 <div id="thm:exact-uniform-product-thickening-coefficient" class="theorem">
 
-<p><strong>Theorem 40</strong> (Exact uniform product-thickening
+<p><strong>Theorem 57</strong> (Exact uniform product-thickening
 coefficient). <em>On the uniform product-thickening branch, under the
 presence reading of
-Lemma <a href="#lem:presence-reading-reserve" data-reference-type="ref" data-reference="lem:presence-reading-reserve">35</a>,
+Lemma <a href="#lem:presence-reading-reserve" data-reference-type="ref" data-reference="lem:presence-reading-reserve">52</a>,
 <span class="math display">\[
 \boxed{
 \lambda_{\rm collar}=1-\frac{P}{24}.
@@ -1763,7 +2581,7 @@ class="math display">\[
 \lambda_{\rm collar}=1-\frac{P}{24}.
 \]</span> On this branch the coefficient coincides with the
 finite-thickness value of
-Corollary <a href="#cor:finite-thickness-jensen-band" data-reference-type="ref" data-reference="cor:finite-thickness-jensen-band">37</a>,
+Corollary <a href="#cor:finite-thickness-jensen-band" data-reference-type="ref" data-reference="cor:finite-thickness-jensen-band">54</a>,
 since the scalar-weighted receipt fixes it by linearity on its own; the
 uniform branch adds slice-wise constancy of the profile, which the exact
 value does not consume. ◻</p>
@@ -1771,7 +2589,7 @@ value does not consume. ◻</p>
 
 <div id="rem:exact-value-gate" class="remark">
 
-<p><em>Remark 41</em> (Exact value gate). The exact value <span
+<p><em>Remark 58</em> (Exact value gate). The exact value <span
 class="math inline">\(1-P/24\)</span> is licensed by the scalar-weighted
 <span class="math inline">\(P/24\)</span> receipt under the presence
 reading. Without that receipt the theorem-grade coefficient is <span
@@ -1780,7 +2598,7 @@ class="math display">\[
 \mathrel{=}
 1-\int dy\,w(y)\,\epsilon_{\mathbb Z_6}(y),
 \]</span> and under the mean-count reading of
-Remark <a href="#rem:mean-count-markov-band" data-reference-type="ref" data-reference="rem:mean-count-markov-band">38</a>
+Remark <a href="#rem:mean-count-markov-band" data-reference-type="ref" data-reference="rem:mean-count-markov-band">55</a>
 the available theorem-grade band is <span class="math display">\[
 1-\frac{P}{24}\le\lambda_{\rm collar}\le1.
 \]</span></p>
@@ -1793,7 +2611,7 @@ complete and exhaustive scalar channel, the oriented 24-slot register,
 the normalized <span class="math inline">\(\mathbb Z_6\)</span> trace,
 compatible scalar and reserve profiles through the finite thickness, and
 unbiased survival under disintegration. Under these conditions
-Theorem <a href="#thm:exact-uniform-product-thickening-coefficient" data-reference-type="ref" data-reference="thm:exact-uniform-product-thickening-coefficient">40</a>
+Theorem <a href="#thm:exact-uniform-product-thickening-coefficient" data-reference-type="ref" data-reference="thm:exact-uniform-product-thickening-coefficient">57</a>
 gives <span class="math inline">\(\lambda_{\rm collar}=1-P/24\)</span>.
 Without them the theorem-grade expression is <span
 class="math display">\[
@@ -1812,14 +2630,14 @@ class="math inline">\(24/P\)</span> must be renamed to <span
 class="math inline">\(\operatorname{Tr}^{\#}_q\)</span> or explicitly
 declared reciprocal; every exact <span
 class="math inline">\(1-P/24\)</span> coefficient claim must cite
-Theorem <a href="#thm:exact-uniform-product-thickening-coefficient" data-reference-type="ref" data-reference="thm:exact-uniform-product-thickening-coefficient">40</a>;
+Theorem <a href="#thm:exact-uniform-product-thickening-coefficient" data-reference-type="ref" data-reference="thm:exact-uniform-product-thickening-coefficient">57</a>;
 every Markov lower bound must cite the weighted-mean result; and every
 statement that the <span class="math inline">\(Z_6\)</span> reserve
 fixes scalar opportunities must cite the scalar-channel exhaustion
 theorem and its no-separate-carrier corollary.</p>
 <div id="def:finite-source-bridge-readouts" class="definition">
 
-<p><strong>Definition 42</strong> (Finite source-bridge readouts).
+<p><strong>Definition 59</strong> (Finite source-bridge readouts).
 <em>For cosmology runs that attempt a first-principles primordial
 bridge, the carrier must also expose quotient-visible maps <span
 class="math display">\[
@@ -1883,7 +2701,7 @@ energy counter. For anomaly abundance selection, the added release maps
 supply the release hypersurface, tetrad normal and physical cell
 volumes, FLRW zero-mode projector, finite anomaly load observable <span
 class="math inline">\(\mathsf L_{A,r}\)</span>, and no-data-use manifest
-used by <code>ANOMALY_ABUNDANCE_SOURCE_RECEIPT</code>. The source-bridge
+used by <em>anomaly abundance source receipt</em>. The source-bridge
 maps are instrumentation for the screen-to-radial theorem. They do not
 turn a screen covariance into a primordial spectrum unless the
 source-stress, single-clock, repair-gap, freeze-out,
@@ -1905,7 +2723,7 @@ progress.</em></p>
 
 <div id="thm:carrier-invariance-anomaly-load" class="theorem">
 
-<p><strong>Theorem 43</strong> (Carrier invariance of the anomaly load
+<p><strong>Theorem 60</strong> (Carrier invariance of the anomaly load
 readout). <em>If two carrier presentations induce the same quotient
 state in <span class="math inline">\(Q^{\rm rel}_{A,r}\)</span>, the
 same parent stress readout, the same release hypersurface, and the same
@@ -1928,7 +2746,7 @@ invariant. ◻</p>
 
 <div id="def:einstein-branch-geometry-readout" class="definition">
 
-<p><strong>Definition 44</strong> (Einstein-branch geometry readout).
+<p><strong>Definition 61</strong> (Einstein-branch geometry readout).
 <em>An Einstein-branch geometry readout is a cofinal family of maps
 <span class="math display">\[
 \mathsf{Geom}_r:Q_{r,\mathrm{nf}}\to \mathsf{GeoData}_r,
@@ -1962,9 +2780,9 @@ c^{\mathrm{geo}}_{sr}\circ \mathsf{Geom}_s
 
 <div id="claim:geometry-readout-factorization" class="theorem">
 
-<p><strong>Theorem 45</strong> (Geometry-readout quotient
+<p><strong>Theorem 62</strong> (Geometry-readout quotient
 factorization). <em>If the geometry-facing readouts of
-Definition <a href="#def:finite-source-bridge-readouts" data-reference-type="ref" data-reference="def:finite-source-bridge-readouts">42</a>
+Definition <a href="#def:finite-source-bridge-readouts" data-reference-type="ref" data-reference="def:finite-source-bridge-readouts">59</a>
 are packaged as an Einstein-branch geometry readout <span
 class="math inline">\(\mathsf{Geom}_r\)</span> that factors through
 <span class="math inline">\(Q_{r,\mathrm{nf}}\)</span>, then every
@@ -2033,7 +2851,7 @@ law lives on shared cuts, edge centers, and constrained overlap
 data.</p>
 <div class="definition">
 
-<p><strong>Definition 46</strong> (Federated patch carrier). <em>A
+<p><strong>Definition 63</strong> (Federated patch carrier). <em>A
 fixed-cutoff federated patch carrier is a tuple <span
 class="math display">\[
 \mathfrak F=(V,E,\{\mathcal A_i\}_{i\in V},\{\mathcal I_e\}_{e\in E},
@@ -2061,7 +2879,7 @@ may exist, but they are not directly physical.</p>
 multiresolution regulator chart</h2>
 <div id="def:microphysics-multiresolution-carrier" class="definition">
 
-<p><strong>Definition 47</strong> (Reference multiresolution carrier).
+<p><strong>Definition 64</strong> (Reference multiresolution carrier).
 <em>Choose the nested geodesic icosahedral subdivisions of <span
 class="math inline">\(S^2\)</span>. A regulator is <span
 class="math display">\[
@@ -2099,9 +2917,9 @@ state-preserving conditional expectation.</em></p>
 
 <div id="thm:microphysics-regulator-certificate" class="theorem">
 
-<p><strong>Theorem 48</strong> (Fixed-cutoff regulator certificate).
+<p><strong>Theorem 65</strong> (Fixed-cutoff regulator certificate).
 <em>The maps in
-Definition <a href="#def:microphysics-multiresolution-carrier" data-reference-type="ref" data-reference="def:microphysics-multiresolution-carrier">47</a>
+Definition <a href="#def:microphysics-multiresolution-carrier" data-reference-type="ref" data-reference="def:microphysics-multiresolution-carrier">64</a>
 are unital, completely positive, composition-compatible, and preserve
 the faithful reference states. The refinement embeddings are unital
 injective <span class="math inline">\(*\)</span>-homomorphisms, the
@@ -2125,7 +2943,7 @@ identities. ◻</p>
 
 <div class="remark">
 
-<p><em>Remark 49</em> (Reference state, ground state, and vacuum). The
+<p><em>Remark 66</em> (Reference state, ground state, and vacuum). The
 state <span class="math inline">\(\widehat\omega_r\)</span> is the
 finite-regulator reference state. It may be called a finite-volume
 ground state only after a positive self-adjoint transfer or Hamiltonian
@@ -2137,7 +2955,7 @@ superselection condition have been proved.</p>
 
 <div class="remark">
 
-<p><em>Remark 50</em> (Regulator promotion rule). A finite evidence
+<p><em>Remark 67</em> (Regulator promotion rule). A finite evidence
 bundle implements this regulator branch only when it exports the factor
 list, presentation circuit, refinement maps, conditional-expectation
 identities, transported state errors, renormalized observable tails, and
@@ -2148,7 +2966,7 @@ regulator-chart result.</p>
 
 <div id="def:clocked-spatial-readout-package" class="definition">
 
-<p><strong>Definition 51</strong> (Clocked spatial readout package).
+<p><strong>Definition 68</strong> (Clocked spatial readout package).
 <em>A finite cosmological run that claims FLRW spatial curvature must
 export the clock and spatial geometry readouts separately from
 screen/collar defect bookkeeping: <span class="math display">\[
@@ -2174,7 +2992,7 @@ microphysics. The term is architectural: a bounded observer patch with a
 highly symmetric multi-port interface.</p>
 <div class="definition">
 
-<p><strong>Definition 52</strong> (Echosahedral patch). <em>An
+<p><strong>Definition 69</strong> (Echosahedral patch). <em>An
 echosahedral patch is a finite patch object <span
 class="math display">\[
 \mathcal E=(\mathcal A,\{P_a\}_{a=0}^{11},\{\rho_a\}_{a=0}^{11},
@@ -2199,15 +3017,114 @@ arrangement.</em></p></li>
 </ol>
 </div>
 
+<div id="def:certified-echosahedral-lineage" class="definition">
+
+<p><strong>Definition 70</strong> (Certified echosahedral carrier
+lineage). <em>A certified local lineage augments the quotient-visible
+echosahedral patch by:</em></p>
+<ol type="1">
+<li><p><em>twelve primitive orthogonal port-center atoms <span
+class="math inline">\(e_{r,p}\)</span>, each of normalized trace <span
+class="math inline">\(1/12\)</span>;</em></p></li>
+<li><p><em>the oriented <span class="math inline">\(12\)</span>-vertex,
+<span class="math inline">\(30\)</span>-edge, <span
+class="math inline">\(20\)</span>-face triangular incidence packet, with
+degree-five vertices and five-cycle links;</em></p></li>
+<li><p><em>the integer total-charge fiber <span
+class="math inline">\(\mathcal Q_r=\{q\in\mathbb
+Z^{12}:\sum_pq_p=12\}\)</span> and the central readback cost <span
+class="math inline">\(H_r(q)=\sum_pq_p^2\)</span>;</em></p></li>
+<li><p><em>orientation-preserving incidence isomorphisms along
+refinement that preserve the port-center/readback packet and obey the
+refinement cocycle; and</em></p></li>
+<li><p><em>a source manifest that rejects Standard Model,
+product-adjoint, gauge, coupling, particle, measured-target, and
+fitted-coordinate fields.</em></p></li>
+</ol>
+</div>
+
+<div id="thm:echosahedral-source-selector-microphysics" class="theorem">
+
+<p><strong>Theorem 71</strong> (Echosahedral source-selector theorem).
+<em>On every lineage of
+Definition <a href="#def:certified-echosahedral-lineage" data-reference-type="ref" data-reference="def:certified-echosahedral-lineage">70</a>,
+the source packet canonically determines:</em></p>
+<ol type="1">
+<li><p><em>the twelve coefficient lines <span
+class="math inline">\(\mathbb R e_{r,p}\)</span> and the unique all-one
+defect allocation, with <span
+class="math inline">\(H_{\min}=12\)</span>, next floor <span
+class="math inline">\(14\)</span>, and exact gap <span
+class="math inline">\(2\)</span>;</em></p></li>
+<li><p><em>the unique fixed-point-free inverse pairing by graph distance
+three and the resulting six axes;</em></p></li>
+<li><p><em>the full incidence group <span
+class="math inline">\(A_5\times C_2\)</span> and its
+orientation-preserving subgroup <span
+class="math inline">\(A_5\)</span>;</em></p></li>
+<li><p><em>the exact incidence Gram matrix <span class="math display">\[
+G_{pq}\in\{1,1/\sqrt5,-1/\sqrt5,-1\}
+\quad\text{at distances }0,1,2,3,
+\]</span> with <span class="math display">\[
+G^2=4G,\qquad \operatorname{tr}G=12,\qquad \operatorname{rank}G=3,
+\]</span> whose oriented factorization is the regular six-axis
+icosahedral frame up to <span class="math inline">\(SO(3)\)</span>;
+and</em></p></li>
+<li><p><em>refinement naturality and arbitrary simultaneous
+port-relabeling equivariance of all these objects.</em></p></li>
+</ol>
+<p><em>Thus the finite <span
+class="math inline">\(\mathrm{UD12}\)</span> and <span
+class="math inline">\(\mathrm{RP\text{-}A5}\)</span> source receipts are
+closed on this carrier branch.</em></p>
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> Primitive central atoms give the intrinsic line
+family. On the total-charge fiber, <span class="math display">\[
+H(q)=12+\sum_p(q_p-1)^2,
+\]</span> so the all-one allocation is unique and the least nonzero
+integral zero-sum deviation has squared norm two. The exact incidence
+distance profile is <span class="math inline">\((1,5,5,1)\)</span>,
+giving a unique distance-three involution. Enumeration gives <span
+class="math inline">\(120\)</span> incidence automorphisms and <span
+class="math inline">\(60\)</span> orientation-preserving ones;
+conjugation on the five Klein-four subgroups identifies the latter
+faithfully with all even permutations of five objects, hence with <span
+class="math inline">\(A_5\)</span>. Exact multiplication in <span
+class="math inline">\(\mathbb Q(\sqrt5)\)</span> gives <span
+class="math inline">\(G^2=4G\)</span>, and the trace fixes rank three.
+Every declared refinement or complete relabeling preserves the source
+formulas. The exact implementation and countermodels are carried by the
+echosahedral selector certificate and its accompanying analysis. ◻</p>
+</div>
+
+<div class="remark">
+
+<p><em>Remark 72</em> (Load-bearing hypotheses). Without primitive atoms
+the line split is continuous; without equal trace or total charge twelve
+the all-unit minimizer is not unique; a linear cost has <span
+class="math inline">\(\binom{23}{11}\)</span> minimizers; twelve labels
+without incidence have <span class="math inline">\(10{,}395\)</span>
+fixed-point-free pairings; without orientation the selected group is
+<span class="math inline">\(A_5\times C_2\)</span>; and non-incidence or
+noncocyclic refinement maps fail naturality. The theorem derives the
+selector from the declared echosahedral-carrier packet. It does not
+prove that bare Euler incidence or every possible OPH carrier selects
+that packet, and it does not construct a physical gauge-current
+algebra.</p>
+</div>
+
 <div id="thm:icosahedral-screen-sieve" class="theorem">
 
-<p><strong>Theorem 53</strong> (Icosahedral screen-sieve theorem).
-<em>Assume the fixed-cutoff OPH screen branch is represented by a
-quantum-link triangulation of <span class="math inline">\(S^2\)</span>,
-with finite Hilbert spaces on links, Gauss constraints at vertices,
-boundary-gauge-invariant physical algebras, and a refinement-stable
-quotient ensemble locally six-valent away from curvature defects. Let
-<span class="math display">\[
+<p><strong>Theorem 73</strong> (Alternative variational icosahedral
+screen sieve). <em>Assume the fixed-cutoff OPH screen branch is
+represented by a quantum-link triangulation of <span
+class="math inline">\(S^2\)</span>, with finite Hilbert spaces on links,
+Gauss constraints at vertices, boundary-gauge-invariant physical
+algebras, and a refinement-stable quotient ensemble locally six-valent
+away from curvature defects. Let <span class="math display">\[
 q_v=6-\deg(v).
 \]</span> Assume integer charges, a feasible twelve-unit configuration,
 and an additive cost with <span class="math inline">\(h(0)=0\)</span>,
@@ -2269,7 +3186,7 @@ class="math inline">\(X/12\)</span>. ◻</p>
 
 <div class="remark">
 
-<p><em>Remark 54</em> (External identification of the load). The
+<p><em>Remark 74</em> (External identification of the load). The
 identification <span class="math inline">\(X=\log(N/\pi)\)</span> is
 imported from the D6 radius identity of the capacity lane; this paper
 does not construct that object. The theorem itself constrains only
@@ -2278,23 +3195,26 @@ invariant screen loads that are additive across the twelve ports.</p>
 
 <div class="remark">
 
-<p><em>Remark 55</em> (Source-selector boundary). The D-optimal
-vector/quadrupole functional is a branch premise. Its production from
-finite mismatch, readback, and repair is work in progress. A
-source-derived strictly completely monotonic pair cost is an alternative
-selector by universal optimality. Only the twelve-port load
-normalization follows from unit splitting and placement. The cell value
-<span class="math inline">\(\bar\ell_{\rm shared}=P/4\)</span> and the
-<span class="math inline">\(\mathbb Z_6\)</span> class equidistribution
-of
-Theorem <a href="#thm:z6-reserve-trace" data-reference-type="ref" data-reference="thm:z6-reserve-trace">30</a>
+<p><em>Remark 75</em> (Source-selector boundary). For
+Theorem <a href="#thm:icosahedral-screen-sieve" data-reference-type="ref" data-reference="thm:icosahedral-screen-sieve">73</a>,
+the D-optimal vector/quadrupole functional remains a branch premise, and
+a source-derived strictly completely monotonic pair cost is another
+sufficient selector by universal optimality. Neither is needed on the
+certified lineage of
+Theorem <a href="#thm:echosahedral-source-selector-microphysics" data-reference-type="ref" data-reference="thm:echosahedral-source-selector-microphysics">71</a>,
+where oriented incidence and central readback supply the selector
+directly. Only the twelve-port load normalization follows from unit
+splitting and placement. The cell value <span
+class="math inline">\(\bar\ell_{\rm shared}=P/4\)</span> and the <span
+class="math inline">\(\mathbb Z_6\)</span> class equidistribution of
+Theorem <a href="#thm:z6-reserve-trace" data-reference-type="ref" data-reference="thm:z6-reserve-trace">47</a>
 have separate premises; the port and slot counts do not imply either
 statement.</p>
 </div>
 
 <div id="thm:icosahedral-face-corner-bundle" class="theorem">
 
-<p><strong>Theorem 56</strong> (Icosahedral face-corner bundle). <em>On
+<p><strong>Theorem 76</strong> (Icosahedral face-corner bundle). <em>On
 the icosahedral screen-sieve branch, the twenty outward-oriented
 triangular faces form the homogeneous orbit <span
 class="math display">\[
@@ -2337,7 +3257,7 @@ presentation and again preserves the unordered real eigenvalues. ◻</p>
 
 <div class="remark">
 
-<p><em>Remark 57</em> (Face-carrier boundary). The theorem supplies
+<p><em>Remark 77</em> (Face-carrier boundary). The theorem supplies
 local geometric <span class="math inline">\(C_3\)</span> fibers, not one
 canonical global three-dimensional matter-family space. The sixty
 face-corner flags form a free transitive <span
@@ -2354,7 +3274,7 @@ charged-family phase, determinant normalization, or mass coordinate.</p>
 
 <div class="remark">
 
-<p><em>Remark 58</em> (Engineered charged face-quotient model at fixed
+<p><em>Remark 78</em> (Engineered charged face-quotient model at fixed
 cutoff). An auxiliary finite construction shows that a stipulated
 charged face-quotient packet is algebraically nonempty. Inside a bounded
 patch it realizes eight connected matrix-register graphs, <span
@@ -2393,17 +3313,35 @@ therefore adds a precise downstream certificate format without deriving
 either attachment from this screen model.</p>
 </div>
 
-<p>On its declared cost and selector branch, the screen-sieve theorem
-fixes the twelve-port carrier. It gives the reference patch enough
-boundary structure to support nontrivial overlap comparison, symmetry
-tests, verifier-shadow behavior, and cross-patch routing while remaining
-small enough for explicit evidence records. The theorem selects the
-exposed interface architecture. The dimension of the observer’s internal
-algebra belongs to a separate carrier theorem over ports, records,
-repair maps, and refinement.</p>
 <div class="remark">
 
-<p><em>Remark 59</em>. The word “echosahedral” is intentionally
+<p><em>Remark 79</em> (Hardware-to-QFT export boundary). A screen or
+hardware evidence bundle exports only the bounded observer-like object
+it actually instantiates: local state, ports and boundaries, readback,
+records, repair or feedback moves, and public evidence. Even a complete
+echosahedral selector receipt does not thereby export a source-selected
+<span class="math inline">\(G_6\)</span> action, chiral measure or
+constrained Hamiltonian, BV/ST restoration transcript, dressed-current
+amplitude, nonperturbative observable tower, or resonance sheet. The
+quantization-step implications for those typed inputs are proved in the
+compact and particle papers; construction of the inputs remains a
+separate producer problem.</p>
+</div>
+
+<p>On the certified echosahedral lineage, the source-selector theorem
+derives the unit lines, inverse pairs, proper <span
+class="math inline">\(A_5\)</span> action, and rank-three frame. On
+other declared cost/selector branches, the variational screen-sieve
+theorem provides a sufficient alternative. These results give the
+reference patch enough boundary structure to support nontrivial overlap
+comparison, symmetry tests, verifier-shadow behavior, and cross-patch
+routing while remaining small enough for explicit evidence records. The
+theorem selects the exposed interface architecture. The dimension of the
+observer’s internal algebra belongs to a separate carrier theorem over
+ports, records, repair maps, and refinement.</p>
+<div class="remark">
+
+<p><em>Remark 80</em>. The word “echosahedral” is intentionally
 implementation-facing. In a mathematical theorem, one uses the tuple
 above. In a public hardware evidence bundle, one may instantiate the
 tuple using a specific twelve-port body, wiring map, controller,
@@ -2432,6 +3370,37 @@ data are available;</p></li>
 host-side filtering;</p></li>
 <li><p>exact-verifier receipts for task-level claims.</p></li>
 </ol>
+<div class="proposition">
+
+<p><strong>Proposition 81</strong> (Conditional phase-lock
+synchronization bridge). <em>For every routed interface <span
+class="math inline">\(e=((i,a),(j,b))\)</span>, suppose a
+source-produced phase process provides an independently calibrated time
+parameter, frequency entrainment, a stable declared phase offset, and
+held-out controls. Suppose further that the locked phase selects a
+commensurability map for the exposed port packets and that every
+resulting write enters the consensus ledger through
+semantic-dependency-complete read sets, atomic revalidation, coherent
+union-collar payloads, and the quotient local-diamond and
+repair-completeness checks. Then the phase process supplies a physical
+synchronization parent for the federated consensus theorem.</em></p>
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> The phase certificate fixes when the two port
+readouts are commensurable. The remaining hypotheses are exactly the
+premises under which the accepted transaction relation terminates and
+has the declared schedule-independent quotient normal form. The phase
+process supplies the interface timing and comparison map; the consensus
+theorem supplies public agreement. ◻</p>
+</div>
+
+<p>Phase locking without the transaction, record, and clock packet is
+compatible with two oscillators that entrain while reporting different
+semantic records. It is therefore neither an observer test nor a
+consensus theorem by itself. No physical phase-lock receipt is asserted
+in this paper.</p>
 <p>The OPH interpretation is simple: toroidal recurrence supplies local
 memory and mode competition inside the patch federation. Echosahedral
 symmetry supplies a reference and consensus geometry. The universe, at
@@ -2465,19 +3434,21 @@ operation:</p>
 </ol>
 <div class="proposition">
 
-<p><strong>Proposition 60</strong> (Federated synchronization contract).
+<p><strong>Proposition 82</strong> (Federated synchronization contract).
 <em>Suppose a finite patch federation has a declared mismatch functional
 <span class="math inline">\(\Phi\)</span>, a finite repair menu, and an
 accepted-repair rule such that every accepted repair lowers <span
 class="math inline">\(\Phi\)</span> unless the touched visible datum is
 locally repaired. Then every repair sequence terminates at a visible
 local normal form. If the union-collar gluing and repair-completeness
-hypotheses of the OPH consensus theorem hold on the quotient-local
-carrier, the terminal physical observable state is schedule-independent
-on that carrier. The carrier is thereby a finite constraint-code
-implementation surface; no QECC distance, min-cut formula, spectral
-mixing rate, or wall-clock liveness bound follows unless the
-corresponding extra certificate is supplied.</em></p>
+hypotheses of the OPH consensus theorem hold together with
+protected-support-complete transactions, protected-conflict-complete
+dependencies, and an independently checked quotient local diamond, the
+terminal physical observable state is schedule-independent on that
+carrier. The carrier is thereby a finite constraint-code implementation
+surface; no QECC distance, min-cut formula, spectral mixing rate, or
+wall-clock liveness bound follows unless the corresponding extra
+certificate is supplied.</em></p>
 </div>
 
 <div class="proof">
@@ -2485,10 +3456,11 @@ corresponding extra certificate is supplied.</em></p>
 <p><em>Proof.</em> The first sentence is the finite Lyapunov argument:
 <span class="math inline">\(\Phi\)</span> takes values in a finite
 ordered set of declared mismatch scores and strictly decreases on
-nontrivial accepted repairs. The second sentence is not reproved here;
-it is exactly the quotient-local confluence package supplied by the OPH
-consensus theorem. This paper supplies the federated carrier and visible
-interface on which that theorem is read. ◻</p>
+nontrivial accepted repairs. The second sentence consumes the
+quotient-local confluence package of the OPH consensus theorem. Atomic
+commits alone do not supply its protected-support, coherent-payload, or
+local-diamond receipts. This paper supplies the federated carrier and
+visible interface on which that theorem is read. ◻</p>
 </div>
 
 <p>The schedule-independent conclusion above is a same-source statement.
@@ -2513,7 +3485,7 @@ probabilities.</p></li>
 </ol>
 <div class="definition">
 
-<p><strong>Definition 61</strong> (Federated observer checkpoint).
+<p><strong>Definition 83</strong> (Federated observer checkpoint).
 <em>For an observer-supporting patch subfederation <span
 class="math inline">\(O\)</span>, a checkpoint at semantic cut <span
 class="math inline">\(D\)</span> is <span class="math display">\[
@@ -2544,7 +3516,7 @@ time.</em></p>
 
 <div class="theorem">
 
-<p><strong>Theorem 62</strong> (Checkpoint continuation at fixed
+<p><strong>Theorem 84</strong> (Checkpoint continuation at fixed
 cutoff). <em>If two federated observer checkpoints agree exactly on
 <span class="math inline">\(\mathcal R_O(D)\)</span>, <span
 class="math inline">\(\rho_O^{\mathrm{acc}}(D)\)</span>, <span
@@ -2570,7 +3542,7 @@ trace-preserving maps gives the stated total-variation bound. ◻</p>
 
 <div id="def:public-checkpoint-capacity-interface" class="definition">
 
-<p><strong>Definition 63</strong> (Public checkpoint capacity
+<p><strong>Definition 85</strong> (Public checkpoint capacity
 interface). <em>For a finite federated checkpoint family, the
 capacity-facing export is the packet <span class="math display">\[
 \mathsf{PubChk}_{r,D}=
@@ -2642,7 +3614,7 @@ operational measurement rule is: <span class="math display">\[
 \]</span></p>
 <div class="theorem">
 
-<p><strong>Theorem 64</strong> (Federated central-record measurement).
+<p><strong>Theorem 86</strong> (Federated central-record measurement).
 <em>On a fixed-cutoff federated patch carrier, once a completed
 write/verify slice exposes a finite commutative central record algebra
 <span class="math inline">\(\mathcal Z_{\mathrm{rec}}(t)\)</span>, the
@@ -2683,8 +3655,8 @@ class="math inline">\(M_{C,0,O}\)</span> be the declared cap-response
 probe observable and set <span class="math display">\[
 M_{C,t,O}:=\sigma_t^{C,O}(M_{C,0,O}),\qquad
 R_i(C,t,O):=\omega_{i,O}(M_{C,t,O}).
-\]</span> On the support-visible geometric branch, the modular-clock
-convention is the same <span
+\]</span> On the support-visible geometric branch, the dimensionless
+modular-parameter convention is the same <span
 class="math inline">\(2\pi\)</span>-normalized cap flow used by the
 compact paper: <span class="math display">\[
 \sigma_t^{C,O}=\alpha_{\lambda_C(2\pi t)}.
@@ -2708,8 +3680,8 @@ class="math inline">\(\sigma_{\mathrm{record}}\)</span> used by the
 compact localization theorem.</p>
 <p>Two carrier presentations that induce the same quotient-visible
 record token, conditioned record state, cap probe, cap geometry,
-modular-clock calibration, and response calibration must produce the
-same calibrated response vector and the same <span
+modular-parameter normalization, and response calibration must produce
+the same calibrated response vector and the same <span
 class="math inline">\(H^3\)</span> localization ball. A fitted point
 that does not clear held-out cap residuals, mixture controls, and the
 declared error bound is a failed or approximate point-source branch, not
@@ -2732,7 +3704,7 @@ Peter–Weyl lift belongs to the companion D10/compact-gauge handoff
 instead of hardware evidence.</p>
 <div class="theorem">
 
-<p><strong>Theorem 65</strong> (Fixed-cutoff edge-sector handoff).
+<p><strong>Theorem 87</strong> (Fixed-cutoff edge-sector handoff).
 <em>If a declared finite overlap collar has sector labels <span
 class="math inline">\(\alpha\)</span>, degeneracies <span
 class="math inline">\(d_\alpha\)</span>, and a local
@@ -3223,6 +4195,16 @@ supply local recurrence and winding-sensitive dynamics. The mathematical
 exports are fixed-cutoff patch-net embedding, edge-sector Casimir
 handoff, central-record measurement, Bell/CHSH event surfaces, and
 checkpoint/restoration.</p>
+<p>The carrier architecture is physical data up to its declared
+quotient. Hidden labels and material presentations may vary, while the
+visible incidence, response, repair, record, clock, and refinement
+signature may not be discarded. The local twelve-port theorem constrains
+the <span class="math inline">\(A_5\)</span>-current branch. A separate
+carrier-to-support bridge constrains the spherical Lorentz/Einstein
+branch. The consensus normal form is their common finite hinge.
+Operational observer promotion requires readback, durable records,
+feedback or repair, prediction/control, and checkpoint continuation. The
+physical support and current bridges are open.</p>
 <p>The claim discipline is the main point. Hardware can guide the
 architecture and supply public evidence through hash-stable evidence
 bundles. The theorem surface stands on finite algebras and declared OPH

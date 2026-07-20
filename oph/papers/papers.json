@@ -1,6 +1,6 @@
 {
-  "release_id": "r1556",
-  "released_at": "July 19, 2026",
+  "release_id": "r1565",
+  "released_at": "July 20, 2026",
   "collection_url": "https://floatingpragma.io/oph/papers/",
   "sitemap_url": "https://floatingpragma.io/oph/papers/sitemap.xml",
   "papers": [
@@ -222,9 +222,9 @@
           "description": "Causality as exposed mismatch, accepted repair, and record formation."
         },
         {
-          "title": "The Right String Theory",
+          "title": "The String Theory OPH Tests",
           "url": "https://blog.floatingpragma.io/the-right-string-theory",
-          "description": "OPH as a selector for the physically correct string-vacuum representative."
+          "description": "Why the Bouchard-Donagi one-Higgs row fails the OPH moduli-rank gate."
         }
       ]
     },
@@ -483,9 +483,9 @@
       "central_pdf_url": "https://floatingpragma.io/oph/papers/pdf/observer_patch_holography_as_string_vacuum_selector.pdf",
       "related_blog_posts": [
         {
-          "title": "The Right String Theory",
+          "title": "The String Theory OPH Tests",
           "url": "https://blog.floatingpragma.io/the-right-string-theory",
-          "description": "OPH as a selector for the physically correct string-vacuum representative."
+          "description": "Why the Bouchard-Donagi one-Higgs row fails the OPH moduli-rank gate."
         },
         {
           "title": "Everything Clicks Into Place",

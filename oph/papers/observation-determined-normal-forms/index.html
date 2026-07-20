@@ -15,29 +15,29 @@
   <meta name="citation_author" content="Bernhard Mueller" />
   <meta name="citation_author" content="David Matscheko" />
   <meta name="citation_author" content="Jonathan Hill" />
-  <meta name="citation_publication_date" content="2026/07/19" />
-  <meta name="citation_online_date" content="2026/07/19" />
+  <meta name="citation_publication_date" content="2026/07/20" />
+  <meta name="citation_online_date" content="2026/07/20" />
   <meta name="citation_language" content="en" />
   <meta name="citation_keywords" content="abstract rewriting; observation-determined normal forms; confluence; boundary reconstruction; conditional expectation; refinement stability; Lean 4" />
   <meta name="citation_pdf_url" content="https://floatingpragma.io/oph/papers/observation-determined-normal-forms/paper.pdf" />
   <meta name="citation_abstract_html_url" content="https://floatingpragma.io/oph/papers/observation-determined-normal-forms/" />
   <meta name="citation_technical_report_institution" content="Pragma Research" />
-  <meta name="citation_technical_report_number" content="OPH r1556 observable_normal_forms" />
+  <meta name="citation_technical_report_number" content="OPH r1565 observable_normal_forms" />
   <meta name="DC.title" content="Observation-Determined Normal Forms: Stability, Obstructions, and Refinement in Constraint and Rewrite Systems" />
   <meta name="DC.creator" content="Bernhard Mueller" />
   <meta name="DC.creator" content="David Matscheko" />
   <meta name="DC.creator" content="Jonathan Hill" />
-  <meta name="DC.issued" content="2026/07/19" />
-  <meta name="DC.date" content="2026/07/19" />
+  <meta name="DC.issued" content="2026/07/20" />
+  <meta name="DC.date" content="2026/07/20" />
   <meta name="DC.type" content="Text" />
   <meta name="DC.format" content="text/html" />
   <meta name="DC.language" content="en" />
   <meta name="DC.publisher" content="Pragma Research" />
   <meta name="DC.identifier" content="https://floatingpragma.io/oph/papers/observation-determined-normal-forms/" />
   <meta name="DC.identifier" content="https://floatingpragma.io/oph/papers/observation-determined-normal-forms/paper.pdf" />
-  <meta name="article:published_time" content="2026-07-19T00:00:00Z" />
-  <meta name="article:modified_time" content="2026-07-19T00:00:00Z" />
-  <meta name="prism.publicationDate" content="2026/07/19" />
+  <meta name="article:published_time" content="2026-07-20T00:00:00Z" />
+  <meta name="article:modified_time" content="2026-07-20T00:00:00Z" />
+  <meta name="prism.publicationDate" content="2026/07/20" />
   <meta name="prism.publicationName" content="Observer Patch Holography Papers" />
   <meta name="prism.section" content="Mathematical foundations" />
   <meta name="prism.url" content="https://floatingpragma.io/oph/papers/observation-determined-normal-forms/" />
@@ -103,9 +103,9 @@
     "refinement stability",
     "Lean 4"
   ],
-  "datePublished": "July 19, 2026",
-  "dateModified": "July 19, 2026",
-  "version": "r1556",
+  "datePublished": "July 20, 2026",
+  "dateModified": "July 20, 2026",
+  "version": "r1565",
   "subjectOf": [
     {
       "@type": "BlogPosting",
@@ -190,14 +190,14 @@
             <p>A substrate-neutral mathematical paper separating same-source confluence, cross-source identification from protected observations, liveness, and local repairability, with quantitative stability and refinement criteria.</p>
           </div>
           <div class="paper-meta-line">
-            <span>r1556</span>
-            <span>July 19, 2026</span>
+            <span>r1565</span>
+            <span>July 20, 2026</span>
             <span>extra papers</span>
           </div>
           <div class="cta-row">
             <a class="btn btn-primary" href="/oph/papers/observation-determined-normal-forms/paper.pdf" target="_blank" rel="noopener noreferrer" data-track-link="paper-pdf-observable_normal_forms">Download PDF</a>
             <a class="btn btn-secondary" href="/oph/papers/" data-track-link="paper-index">All OPH papers</a>
-            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r1556" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
+            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r1565" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
             <a class="btn btn-secondary" href="https://challenge.floatingpragma.io/" data-track-link="paper-challenge">Challenge</a>
           </div>
 
@@ -219,20 +219,19 @@
 <a href="#static-reconstruction-and-functional-observability">Static reconstruction and functional observability</a>
 <a href="#constraints-databases-and-global-sections">Constraints, databases, and global sections</a>
 <a href="#asynchronous-functional-networks">Asynchronous functional networks</a>
-<a href="#formalized-rewriting">Formalized rewriting</a></nav>
+<a href="#exact-observable-fibers">Exact observable fibers</a></nav>
           </details>
         </header>
         <div class="paper-reader-grid">
           <div class="paper-body">
-<p><strong>Paper release:</strong> <code>r1556</code>
-<strong>Released:</strong> July 19, 2026</p>
+<p><strong>Paper release:</strong> <code>r1565</code>
+<strong>Released:</strong> July 20, 2026</p>
 <p><strong>Author af f iliations:</strong> <sup>1</sup>Pragma Research
 Inc.</p>
 <p><strong>Keywords:</strong> abstract rewriting, observation-determined
 normal forms, observational confluence, error bounds, metric
-subregularity, boundary reconstruction, refinement towers, local repair,
-formalized mathematics, interactive theorem proving, Lean 4,
-Mathlib.</p>
+subregularity, boundary reconstruction, refinement towers, local
+repair.</p>
 <p><strong>Mathematics Subject Classification (2020):</strong> Primary
 68Q42; Secondary 49J53, 68Q25, 68Q85, 94B05.</p>
 <p><strong>ACM CCS (2012):</strong> Theory of computation <span
@@ -354,21 +353,14 @@ tests and singular-value bounds that instantiate
 <a href="#eq:intro-master" data-reference-type="eqref" data-reference="eq:intro-master">[eq:intro-master]</a>;
 finite linear dynamics yield the usual observability matrix as a special
 case.</p></li>
-<li><p><strong>Receipts, complexity, and a machine-checked
-development.</strong> A standard finite Markov drift lemma turns a
-row-wise kernel inequality into endpoint, stationary, and
-expected-occupation receipts, without asserting infinite-horizon
-confinement under persistent noise. For succinct Boolean systems, we
-record tight coNP- and <span
+<li><p><strong>Receipts and complexity.</strong> A standard finite
+Markov drift lemma turns a row-wise kernel inequality into endpoint,
+stationary, and expected-occupation receipts, without asserting
+infinite-horizon confinement under persistent noise. For succinct
+Boolean systems, we record tight coNP- and <span
 class="math inline">\(\Pi_2^P\)</span>-completeness classifications in
 this formulation; these supporting results are not part of the principal
-novelty claim. The finite exact, stability, refinement, repair,
-resampling, ranked, and stochastic cores are formalized in a standalone
-Lean 4 development that pins Lean and Mathlib, contains no
-<code>sorry</code> or <code>admit</code>, and carries a per-theorem
-<code>#print axioms</code> audit reporting only standard Mathlib axioms.
-We state exactly which results are machine checked and which remain
-paper proofs.</p></li>
+novelty claim.</p></li>
 </ol>
 <h2 id="novelty-boundary-and-intended-venue">Novelty boundary and
 intended venue</h2>
@@ -392,14 +384,9 @@ classical. Approximate inverse-system theory is important neighboring
 prior art, and the displayed estimate itself is elementary; we therefore
 claim an organizing synthesis, not priority for approximate
 commutativity or inverse limits. External specialist review remains
-necessary. The intended contribution belongs to automated reasoning and
-the formalization of mathematics, with the rewriting, semantics, and
-interactive-theorem-proving communities as the primary audience. The
-machine-checked development is advanced as a first-class part of the
-contribution: the exact interface, the two-modulus stability estimate,
-and the refinement cores are available as audited Lean 4 theorems, so
-that a reader can rerun the axiom audit and rebuild the checked subset
-from a pinned toolchain.</p>
+necessary. The intended contribution belongs to automated reasoning,
+rewriting, and semantics, with the corresponding mathematical
+communities as the primary audience.</p>
 <h1 id="relation-to-existing-theories">Relation to existing
 theories</h1>
 <h2 id="rewriting-invariants-and-quotients">Rewriting, invariants, and
@@ -484,15 +471,6 @@ finite terminating special case with residual audits. Their purpose is
 to give a class in which the exact boundary hypotheses, update bound,
 and obstruction output are explicit. They do not reprove those
 principles.</p>
-<h2 id="formalized-rewriting">Formalized rewriting</h2>
-<p>Formalized rewriting has established libraries such as CoLoR in Coq .
-Developments include a constructive Agda library for abstract rewriting
-, a Lean 4 framework for confluence and normalization of lambda calculi
-, and a Rocq library for adhesive-category graph rewriting . The
-accompanying standalone Lean artifact formalizes selected exact,
-stability, refinement, repair, ranked, and stochastic results from this
-paper; its coverage boundary is stated in
-<a href="#sec:lean" data-reference-type="ref+label" data-reference="sec:lean">11</a>.</p>
 <h1 id="exact-observable-fibers">Exact observable fibers</h1>
 <div class="definition">
 
@@ -845,8 +823,8 @@ class="math inline">\(r\downarrow0\)</span>.</p>
 
 <p><strong>Proposition 16</strong> (Minimality of the intrinsic moduli).
 <em>The functions <span class="math inline">\(\eta_\Phi\)</span> and
-<span class="math inline">\(\omega_B\)</span> are nondecreasing.
-Moreover:</em></p>
+<span class="math inline">\(\omega_B\)</span> are nondecreasing. The
+following also hold:</em></p>
 <ol type="1">
 <li><p><em><span
 class="math inline">\(\eta_\Phi(0)=0\)</span>;</em></p></li>
@@ -2080,9 +2058,9 @@ nonempty <span class="math inline">\(X_W\)</span>, a single collar value
 total exact repair preserving that collar exists.</em></p>
 </div>
 
-<div id="prop:robust-no-repair" class="proposition">
+<div id="prop:stable-no-repair" class="proposition">
 
-<p><strong>Proposition 53</strong> (Robust no-repair margin).
+<p><strong>Proposition 53</strong> (Stable no-repair margin).
 <em>Suppose <span class="math inline">\(X_W\)</span> and <span
 class="math inline">\(X_D\)</span> are metric spaces, <span
 class="math inline">\(\varnothing\ne R\subseteq X_W\times X_D\)</span>,
@@ -2893,108 +2871,8 @@ for example <span class="math inline">\((0,0,1)\)</span> is not in the
 image. ◻</p>
 </div>
 
-<p>The accompanying standalone Lean artifact proves these exact
-width-three statements and includes theorem-level axiom-audit commands.
-Rule 90 is a regression test, not a rule selected by the theory or a
-load-bearing assumption.</p>
-<h1 id="formal-artifact-and-coverage">Formal artifact and coverage</h1>
-<p>The accompanying <code>ObservableNormalForms</code> directory is a
-standalone Lean 4 project. It pins Lean and Mathlib at version 4.29.1,
-includes a pinned, checksummed Lake manifest, and builds both on its own
-and as a library of the parent formalization repository. Its
-theorem-bearing files contain no <code>sorry</code> or
-<code>admit</code>. The recorded <code>#print axioms</code> reports
-contain only standard Mathlib axioms (<code>propext</code>,
-<code>Classical.choice</code>, and <code>Quot.sound</code> where
-required) and no <code>sorryAx</code>.</p>
-<div class="center">
-
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th style="text-align: left;"><strong>Module</strong></th>
-<th style="text-align: left;"><strong>Machine-checked
-coverage</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><code>Exact</code></td>
-<td style="text-align: left;">Proof-carrying partial normalizers, the
-(a)<span class="math inline">\(\Leftrightarrow\)</span>(b)
-partial-normalizer equivalence, reachable observable fibers, the
-empty/singleton alternatives, audited terminals, and the
-observation-leak counterexample.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>ObserverConfluence</code></td>
-<td style="text-align: left;">The equivalence in
-<a href="#thm:cross-source-modulo" data-reference-type="ref+label" data-reference="thm:cross-source-modulo">8</a>,
-weak-normalization endpoint existence, the matching two-bit positive
-system, and a coarse-sensor counterexample separating same-source
-confluence from cross-source endpoint uniqueness.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>Stability</code></td>
-<td style="text-align: left;">The heterogeneous and symmetric output
-estimates, approximate schedule independence, and a sensor-enrichment
-certificate.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>Refinement</code></td>
-<td style="text-align: left;">One-step and exact naturality,
-arbitrary-depth metric telescoping, same-level agreement without a tower
-term, fine-to-coarse comparison, and the anchored and nested metric
-cores.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>Repair</code></td>
-<td style="text-align: left;">The collar-section criterion, no-repair
-and robust-margin certificates, and counterexamples showing why the
-nonempty-domain hypotheses are necessary.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>ConditionalResampling</code></td>
-<td style="text-align: left;">The finite algebraic characterization of
-the weighted fiber kernel in
-<a href="#thm:fiber-conditional-expectation" data-reference-type="ref+label" data-reference="thm:fiber-conditional-expectation">55</a>,
-observation-measurable fixed space, idempotence, weighted
-self-adjointness, a Pythagorean identity, and weighted <span
-class="math inline">\(L^2\)</span> contraction, together with the exact
-R1–R3 matrix-recognition equivalence.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>Functional</code></td>
-<td style="text-align: left;">Synchronous settling through dependency
-rank, fixed-point behavior, and generated-extension uniqueness.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>Stochastic</code></td>
-<td style="text-align: left;">Finite Markov affine-drift iteration and
-the corresponding one-time finite-state tail estimate.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>Examples/Rule90</code></td>
-<td style="text-align: left;">Exact width-three kernel, image,
-information-boundary, deficient-boundary, and reverse-repair obstruction
-results.</td>
-</tr>
-</tbody>
-</table></div>
-</div>
-
-<p>The artifact’s proof index gives theorem-level names and labels; its
-build receipt records the parent and standalone commands, tool versions,
-and axiom audit. This is substantial coverage of the finite core, but it
-is not a complete mechanization of the manuscript. In particular, the
-intrinsic-modulus minimality and sharpness results, compact and uniform
-extensions, probability-event and occupation wrappers, the Hausdorff
-perturbation wrapper, dependent cofinal and inverse-limit constructions,
-equivariant sections, the circuit-specialization wrapper, asynchronous
-path-gain estimate, linear-algebraic certificates, and complexity
-classifications remain paper proofs. The status distinction is
-deliberate: only declarations listed in the proof index are claimed as
-machine checked.</p>
+<p>The width-three example is a regression test, not a rule selected by
+the theory or a load-bearing assumption.</p>
 <h1 id="application-set-valued-public-capacity-readback">Application:
 set-valued public-capacity readback</h1>
 <p>The empty/singleton/ambiguous fiber distinction has a direct
@@ -3024,7 +2902,7 @@ required terminal class or the terminal fiber is empty, scalar when
 <span class="math inline">\(\mathfrak
 F_{r,\varepsilon}(D)=\{m\}\)</span>, and ambiguous when <span
 class="math inline">\(|\mathfrak F_{r,\varepsilon}(D)|&gt;1\)</span>.
-Robust exact closure at <span class="math inline">\(D\)</span> is the
+Stable exact closure at <span class="math inline">\(D\)</span> is the
 singleton condition <span class="math display">\[
 \mathfrak F_{r,0}(D)=\{D\}.
 \]</span> Confluence from each fixed initial state does not imply this
@@ -3034,7 +2912,7 @@ cross-source singleton condition.</em></p>
 <div class="proof">
 
 <p><em>Proof.</em> The first three statements are the image-set
-alternatives for the declared functional. Robust closure requires every
+alternatives for the declared functional. Stable closure requires every
 admissible terminal source class to have full readback <span
 class="math inline">\(D\)</span>. Confluence identifies repair schedules
 from one initial class; it does not identify distinct source classes in
@@ -3099,17 +2977,11 @@ universality or generality.</p></li>
 </ul>
 <p>These exclusions are necessary for both mathematical correctness and
 journal review.</p>
-<h1 id="artifact-and-data-availability">Artifact and data
-availability</h1>
-<p>The repository artifact contains the PDF, LaTeX source, bibliography,
-and the standalone <code>ObservableNormalForms</code> Lean project. The
-formal directory includes a pinned toolchain and dependency manifest,
-theorem-to-source index, axiom audit, reproducible build receipt,
-archive manifest, and SHA-256 checksums. The mathematical proofs in this
-manuscript are self-contained; the Lean artifact checks the subset
-stated in
-<a href="#sec:lean" data-reference-type="ref+label" data-reference="sec:lean">11</a>.
-No empirical dataset is used.</p>
+<h1 id="data-availability">Data availability</h1>
+<p>The repository contains the PDF, LaTeX source, bibliography,
+reproducible build receipt, archive manifest, and SHA-256 checksums. The
+mathematical proofs in this manuscript are self-contained. No empirical
+dataset is used.</p>
 <h1 id="conclusion">Conclusion</h1>
 <p>Confluence is about paths from one state. Observable normalization is
 about what partial data determine after consistency is enforced. Their
@@ -3118,18 +2990,18 @@ observation preservation and <span
 class="math inline">\(\operatorname{NF}(\to)=C\)</span>, identification
 modulo any silent equivalence is equivalent to agreement of normal
 endpoints across all sources with the same observation. This does not by
-itself provide normalization or all-schedule settlement. Their robust
+itself provide normalization or all-schedule settlement. Their stable
 intersection is governed by two analytic objects: an error bound to the
 consistent set and an inverse modulus for the observation map on that
 set.</p>
 <p>The resulting estimate is universal and sharp in its two unavoidable
-components. More importantly, it survives refinement: one-step defects
-telescope, same-level solver agreement needs no tower term, and
-compatible cross-level computations differ by their receipt errors and
-the intervening normalizer-defect tail. For a compatible admissible
-input in complete spaces, nonexpansive restrictions, vanishing receipt
-errors, and summable pathwise tails give a common projective limit;
-exact compatibility recovers the inverse-limit normalizer. On finite
+components. It survives refinement: one-step defects telescope,
+same-level solver agreement needs no tower term, and compatible
+cross-level computations differ by their receipt errors and the
+intervening normalizer-defect tail. For a compatible admissible input in
+complete spaces, nonexpansive restrictions, vanishing receipt errors,
+and summable pathwise tails give a common projective limit; exact
+compatibility recovers the inverse-limit normalizer. On finite
 probability spaces, fiber averaging supplies the canonical
 conditional-expectation projector, while its matrix receipt keeps that
 averaging distinct from representative selection or a spectral-gap
@@ -3160,25 +3032,17 @@ applicable.</p>
 <p><strong>Consent to Publish declaration:</strong> not applicable.</p>
 <p><strong>Author Contribution declaration:</strong> Bernhard Mueller
 developed the observation-determined normal-form framework, the
-stability, refinement, repair, and complexity results, the manuscript
-text, and the accompanying Lean artifact. David Matscheko and Jonathan
-Hill contributed proof review, checking of the exact and stability
-results, and consistency review of the formal artifact and manuscript.
-All authors reviewed and approved the manuscript.</p>
+stability, refinement, repair, and complexity results and the manuscript
+text. David Matscheko and Jonathan Hill contributed proof review,
+checking of the exact and stability results, and consistency review of
+the manuscript. All authors reviewed and approved the manuscript.</p>
 <p><strong>Correspondence declaration:</strong> Correspondence should be
 addressed to Bernhard Mueller, <a
 href="mailto:bernhard@floatingpragma.ai"><code>bernhard@floatingpragma.ai</code></a>.</p>
 <p><strong>Data Availability declaration:</strong> No empirical dataset
-is used in this work. The LaTeX source, bibliography, and the standalone
-<code>ObservableNormalForms</code> Lean 4 project, with a pinned
-toolchain and dependency manifest, a theorem-to-source index, an axiom
-audit, a reproducible build receipt, and SHA-256 checksums, are
-available through the project repository.</p>
-<p><strong>Code Availability declaration:</strong> The standalone
-<code>ObservableNormalForms</code> Lean 4 project and its build sources
-are maintained in the project repository, together with a source bundle
-so that the manuscript and the formal artifact can be rebuilt without
-relying on private local paths.</p>
+is used in this work. The LaTeX source, bibliography, reproducible build
+receipt, and SHA-256 checksums are available through the project
+repository.</p>
 <p><strong>Ethics declaration:</strong> not applicable.</p>
 <p><strong>Competing Interests declaration:</strong> The authors declare
 no competing financial or non-financial interests for this
