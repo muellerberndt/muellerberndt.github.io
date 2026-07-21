@@ -26,7 +26,7 @@
   <meta name="citation_pdf_url" content="https://floatingpragma.io/oph/papers/reality-as-consensus-protocol/paper.pdf" />
   <meta name="citation_abstract_html_url" content="https://floatingpragma.io/oph/papers/reality-as-consensus-protocol/" />
   <meta name="citation_technical_report_institution" content="Pragma Research" />
-  <meta name="citation_technical_report_number" content="OPH r1572 reality_as_consensus_protocol" />
+  <meta name="citation_technical_report_number" content="OPH r1573 reality_as_consensus_protocol" />
   <meta name="DC.title" content="Reality as a Consensus Protocol" />
   <meta name="DC.creator" content="Bernhard Mueller" />
   <meta name="DC.creator" content="Kai Xue" />
@@ -119,7 +119,7 @@
   ],
   "datePublished": "July 21, 2026",
   "dateModified": "July 21, 2026",
-  "version": "r1572",
+  "version": "r1573",
   "subjectOf": [
     {
       "@type": "BlogPosting",
@@ -216,14 +216,14 @@
             <p>The OPH fixed-point consensus paper. It formulates observer patches, overlap-visible records, repair moves, Lyapunov descent, quotient normal forms, and obstruction classes.</p>
           </div>
           <div class="paper-meta-line">
-            <span>r1572</span>
+            <span>r1573</span>
             <span>July 21, 2026</span>
             <span>papers</span>
           </div>
           <div class="cta-row">
             <a class="btn btn-primary" href="/oph/papers/reality-as-consensus-protocol/paper.pdf" target="_blank" rel="noopener noreferrer" data-track-link="paper-pdf-reality_as_consensus_protocol">Download PDF</a>
             <a class="btn btn-secondary" href="/oph/papers/" data-track-link="paper-index">All OPH papers</a>
-            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r1572" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
+            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r1573" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
             <a class="btn btn-secondary" href="https://challenge.floatingpragma.io/" data-track-link="paper-challenge">Challenge</a>
           </div>
 
@@ -252,7 +252,7 @@
         </header>
         <div class="paper-reader-grid">
           <div class="paper-body">
-<p><strong>Paper release:</strong> <code>r1572</code>
+<p><strong>Paper release:</strong> <code>r1573</code>
 <strong>Released:</strong> July 21, 2026</p>
 <h1 id="downstream-physical-boundary">Downstream physical boundary</h1>
 <p>The fixed-cutoff consensus theorem supplies a finite observer-like
@@ -3374,7 +3374,14 @@ class="math display">\[
 of <span class="math inline">\(\mathcal A_t^{\mathrm{acc}}\)</span>,
 they generate a finite commutative central algebra. Finite-dimensional
 projective measurement on that commuting algebra gives the Born trace
-and the Lüders conditioned state, proving (1) and (2).</p>
+and the Lüders conditioned state, proving (1) and (2). The finite-matrix
+steps behind (1) and (2) are machine-checked in the companion Lean 4
+event-algebra development : the commutative span of a projective
+partition and its containment in the center of the partition commutant,
+the trace-preserving expectation onto that span, preservation of the
+partition Born statistics, the Lüders fixed-point law, and the collapse
+of conditioning on a partition member to its normalized projector are
+theorem-level exports with declaration-level axiom audits.</p>
 <p>If no accepted repair touches the support of <span
 class="math inline">\(\widehat P_E(t)\)</span>, then the next completed
 read is performed on the same central projector surface. After
@@ -5989,6 +5996,10 @@ protocol-style extensions.</p></li>
 Normal Forms: Stability, Obstructions, and Refinement in Constraint and
 Rewrite Systems</em>, 2026. Available at <a
 href="https://github.com/FloatingPragma/observer-patch-holography/blob/main/extra/observable_normal_forms.pdf">https://github.com/FloatingPragma/observer-patch-holography/blob/main/extra/observable_normal_forms.pdf</a>.</p>
+<p>B. Müller, <em>Verified Projection-Event Calculus in Lean 4: Bundled
+Arbitrary-Partition Pinching, Lüders Retractions, and CHSH
+Interoperability</em>, 2026. Available at <a
+href="https://github.com/FloatingPragma/observer-patch-holography/blob/main/extra/machine_checked_finite_event_algebras.pdf">https://github.com/FloatingPragma/observer-patch-holography/blob/main/extra/machine_checked_finite_event_algebras.pdf</a>.</p>
 <p>B. Müller, A. Osika, M. Poneder, K. Xue, B. Cassie, P. Nguyen,
 M. A. Visser, K. A. Anirudha, D. Matscheko, and J. Hill, <em>Observers
 Are All You Need</em>, 2026. Available at <a

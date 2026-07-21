@@ -20,7 +20,7 @@
   <meta name="citation_pdf_url" content="https://floatingpragma.io/oph/papers/machine-checked-finite-event-algebras/paper.pdf" />
   <meta name="citation_abstract_html_url" content="https://floatingpragma.io/oph/papers/machine-checked-finite-event-algebras/" />
   <meta name="citation_technical_report_institution" content="Pragma Research" />
-  <meta name="citation_technical_report_number" content="OPH r1572 machine_checked_finite_event_algebras" />
+  <meta name="citation_technical_report_number" content="OPH r1573 machine_checked_finite_event_algebras" />
   <meta name="DC.title" content="Machine-Checked Finite Event Algebras for Observer-Patch Holography" />
   <meta name="DC.creator" content="Bernhard Mueller" />
   <meta name="DC.issued" content="2026/07/21" />
@@ -93,7 +93,7 @@
   ],
   "datePublished": "July 21, 2026",
   "dateModified": "July 21, 2026",
-  "version": "r1572",
+  "version": "r1573",
   "subjectOf": [
     {
       "@type": "BlogPosting",
@@ -178,14 +178,14 @@
             <p>A machine-checked finite-event-algebra paper for OPH measurement surfaces, including Boolean event structure, traces, conditional expectations, and Born-Luders update rules.</p>
           </div>
           <div class="paper-meta-line">
-            <span>r1572</span>
+            <span>r1573</span>
             <span>July 21, 2026</span>
             <span>extra papers</span>
           </div>
           <div class="cta-row">
             <a class="btn btn-primary" href="/oph/papers/machine-checked-finite-event-algebras/paper.pdf" target="_blank" rel="noopener noreferrer" data-track-link="paper-pdf-machine_checked_finite_event_algebras">Download PDF</a>
             <a class="btn btn-secondary" href="/oph/papers/" data-track-link="paper-index">All OPH papers</a>
-            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r1572" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
+            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r1573" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
             <a class="btn btn-secondary" href="https://challenge.floatingpragma.io/" data-track-link="paper-challenge">Challenge</a>
           </div>
 
@@ -202,38 +202,70 @@
 <a href="#lüders-update-as-a-partial-state-interface">Lüders update as a partial state interface</a>
 <a href="#bundled-arbitrary-partition-pinching">Bundled arbitrary-partition pinching</a>
 <a href="#lüders-naturality">Lüders naturality</a>
+<a href="#averaging-on-the-partition-span">Averaging on the partition span</a>
 <a href="#the-bundled-state-expectation">The bundled state expectation</a>
 <a href="#chsh-interoperability-as-a-client">CHSH interoperability as a client</a>
-<a href="#artifact-evaluation-and-proof-audit">Artifact evaluation and proof audit</a>
-<a href="#feature-level-comparison">Feature-level comparison</a>
-<a href="#limitations-and-conclusion">Limitations and conclusion</a>
-<a href="#declarations">Declarations</a></nav>
+<a href="#the-state-level-corollary">The state-level corollary</a>
+<a href="#working-over-mathlib-scopes-gaps-and-affordances">Working over Mathlib: scopes, gaps, and affordances</a>
+<a href="#scoped-instances">Scoped instances</a></nav>
           </details>
         </header>
         <div class="paper-reader-grid">
           <div class="paper-body">
-<p><strong>Paper release:</strong> <code>r1572</code>
+<p><strong>Paper release:</strong> <code>r1573</code>
 <strong>Released:</strong> July 21, 2026</p>
 <p><strong>Keywords:</strong> formal verification, Lean 4, projective
 measurement, partition pinching, Lüders update, CHSH</p>
 <p><strong>Mathematics Subject Classification (2020):</strong> Primary
-68V20; Secondary 81P15, 81P40, 46L53.</p>
+68V20; Secondary 68V15, 81P15, 81P40, 46L53.</p>
 <h1 id="introduction">Introduction</h1>
 <p>Finite quantum measurement is short on paper. A proof calls a matrix
 a state, inserts a projection, normalizes the result, and moves on. Lean
 asks for every condition skipped in that sentence. The matrix must be
 positive and have unit trace. The projection must be Hermitian and
 idempotent. Normalization needs a nonzero denominator. Later norm
-estimates require yet another set of instances.</p>
-<p>The library packages these conditions into a finite projection-event
-API. Its main input is an arbitrary projective partition of the
-identity. The associated pinching deletes off-block terms and maps the
-matrix algebra onto the partition commutant. The same event definitions
-feed the Lüders update and the CHSH adapter. This keeps algebraic
-identities separate from results that use trace, positivity, or state
+estimates require a further set of instances.</p>
+<p>Machine-checked quantum information is an active area, spread over
+several systems and several design philosophies. Mathlib , the central
+mathematics library of Lean 4 , contains an order-form CHSH/Tsirelson
+theorem and the <code>IsCHSHTuple</code> interface . Physlib’s
+<code>QuantumInfo.Finite.Pinching</code> constructs the spectral
+pinching of a state as a completely positive trace-preserving map and
+proves commutation, fixed-point, Pythagorean, and pinching-bound results
+. Lean-Quantum provides basis-independent infrastructure for states,
+channels, tensor products, Choi and Kraus representations, and trace
+inequalities ; Lean-QIT develops a compositional infrastructure for
+quantum-information theory . Zhao and Yu formalize CHSH rigidity in
+Lean 4 . Isabelle/HOL developments cover projective measurement, quantum
+computation, and the CHSH upper bound . These developments choose
+different carriers for states and different bundling conventions, and
+results proved in one seldom apply verbatim in another. The engineering
+question underneath is interface design: which objects stay bare
+predicates, which get bundled, and how finished results are handed to
+the interfaces a large library expects. We make no priority claim for
+projective measurement, pinching, or Tsirelson’s inequality.</p>
+<p>The library described here packages the side conditions of finite
+projective measurement into a projection-event API over Mathlib
+matrices. Its main input is an arbitrary projective partition of the
+identity. The partition induces two canonical expectations: the
+pinching, which deletes off-block terms and maps the matrix algebra onto
+the partition commutant, and the average, which projects further onto
+the commutative span of the partition. The same event definitions feed
+the Lüders update and the CHSH adapter. This keeps algebraic identities
+separate from results that use trace, positivity, or state
 normalization.</p>
+<p>The mathematics is classical: Lüders introduced the selective update
+rule ; pinching by a family of orthogonal projections is a standard
+averaging operation in matrix analysis and in quantum information ; the
+bimodule and trace-duality laws proved here are the finite-matrix forms
+of the defining properties of conditional expectations onto subalgebras
+; and the CHSH combination with its quantum bound goes back to Clauser,
+Horne, Shimony, and Holt and to Tsirelson . The contribution of the
+library is the checked interface: definitions bundled the way Mathlib
+expects, exact range and uniqueness theorems for both expectations, and
+adapters into existing Mathlib results.</p>
 <p>Lean declaration identifiers are printed throughout in monospaced
-type, for example <code>partitionPinchingrange</code>; the underscore is
+type, for example <code>partitionPinchingidem</code>; the underscore is
 part of the identifier. To locate a declaration, search for the exact
 printed identifier, after removing only TeX’s protective backslash
 before each underscore, in the <code>EventAlgebra/*.lean</code> files.
@@ -243,44 +275,42 @@ standalone artifact they are under
 <code>event-algebra-lean/EventAlgebra/</code>.
 Table <a href="#tab:modules" data-reference-type="ref" data-reference="tab:modules">[tab:modules]</a>
 maps each module name to its subject matter, and the top-level
-<code>EventAlgebra.lean</code> file imports all five modules.</p>
-<p>The library builds on existing formal work. Mathlib contains an
-order-form CHSH/Tsirelson theorem and the <code>IsCHSHTuple</code>
-interface . Physlib’s <code>QuantumInfo.Finite.Pinching</code>
-constructs the spectral pinching of a state as a completely positive
-trace-preserving map and proves commutation, fixed-point, Pythagorean,
-and pinching-bound results . Lean-Quantum provides basis-independent
-infrastructure for states, channels, tensor products, Choi and Kraus
-representations, and trace inequalities ; Lean-QIT develops a
-compositional infrastructure for quantum-information theory . Zhao and
-Yu formalize CHSH rigidity in Lean 4 . Isabelle/HOL developments cover
-projective measurement and the CHSH upper bound . We make no priority
-claim for projective measurement, pinching, or Tsirelson’s
-inequality.</p>
-<p>The submitted code adds five pieces:</p>
+<code>EventAlgebra.lean</code> file imports all seven modules.</p>
+<p>The submitted code adds seven pieces:</p>
 <ol type="1">
 <li><p>an arbitrary supplied projective partition, independent of a
-selected state or spectral resolution, together with its commutant
-bundled as a <code>StarSubalgebra</code>;</p></li>
+selected state or spectral resolution, with its commutant bundled as a
+<code>StarSubalgebra</code> and its span bundled with multiplication,
+star, commutativity, and centrality theorems;</p></li>
 <li><p>partition pinching bundled as a complex <code>LinearMap</code>,
 with exact range and fixed-point theorems, positivity, unitality, trace
 preservation, the commutant bimodule law, Hilbert–Schmidt geometry, and
 map-level uniqueness;</p></li>
-<li><p>a typed nonzero-weight Lüders state update, an unguarded
-fixed-point characterization for states, and naturality of that typed
-update under partition pinching for commutant events;</p></li>
+<li><p>partition averaging bundled as a complex <code>LinearMap</code>
+onto the span, with exact range, trace duality, map-level uniqueness,
+tower laws against the pinching, preservation of partition Born
+statistics, and a classical-conditioning collapse theorem;</p></li>
+<li><p>a typed nonzero-weight Lüders state update, a support theorem and
+an unguarded fixed-point characterization that exhibit conditioning as a
+retraction onto its certainty set, and naturality of the typed update
+under partition pinching for commutant events;</p></li>
 <li><p>an event-to-observable CHSH client that discharges
 Mathlib-compatible selfadjointness, involutivity, and cross-commutation
-hypotheses before applying a complementary norm-form bound; and</p></li>
+hypotheses before applying a complementary norm-form bound;</p></li>
+<li><p>a checked state-expectation bound that converts the norm-form
+theorem into a state-level CHSH bound; and</p></li>
 <li><p>a reproducible, version-pinned artifact with per-declaration
-axiom output and no proof placeholders.</p></li>
+axiom output, no proof placeholders, and a documented catalog of the
+Mathlib gaps, scoped-instance hazards, and workarounds met during
+construction
+(Section <a href="#sec:mathlib" data-reference-type="ref" data-reference="sec:mathlib">9</a>).</p></li>
 </ol>
-<p>Four results are outside the current library. The pinching map is not
+<p>Four results are outside the current library. Neither expectation is
 bundled as a completely positive trace-preserving channel. No theorem
 identifies an arbitrary partition with Physlib’s spectral partition.
-There is no rank-one classical-representation theorem. The CHSH client
-proves an operator-norm upper bound; it contains no state-expectation
-bound or sharpness witness.</p>
+There is no rank-one classical-representation theorem. The CHSH bounds
+carry no sharpness witness: nothing asserts that <span
+class="math inline">\(2\sqrt2\)</span> is attained.</p>
 <p>Section <a href="#sec:setting" data-reference-type="ref" data-reference="sec:setting">2</a>
 fixes the mathematical and Lean interfaces.
 Sections <a href="#sec:events" data-reference-type="ref" data-reference="sec:events">3</a>
@@ -288,14 +318,18 @@ and
 <a href="#sec:lueders" data-reference-type="ref" data-reference="sec:lueders">4</a>
 treat projection events and selective update.
 Section <a href="#sec:pinching" data-reference-type="ref" data-reference="sec:pinching">5</a>
-gives the bundled partition construction and its geometry.
-Sections <a href="#sec:functional" data-reference-type="ref" data-reference="sec:functional">6</a>
+gives the bundled partition pinching and its geometry, and
+Section <a href="#sec:average" data-reference-type="ref" data-reference="sec:average">6</a>
+the averaging expectation and the two-level structure.
+Sections <a href="#sec:functional" data-reference-type="ref" data-reference="sec:functional">7</a>
 and
-<a href="#sec:chsh" data-reference-type="ref" data-reference="sec:chsh">7</a>
-describe the state functional and CHSH client.
-Section <a href="#sec:evaluation" data-reference-type="ref" data-reference="sec:evaluation">8</a>
+<a href="#sec:chsh" data-reference-type="ref" data-reference="sec:chsh">8</a>
+describe the state functional and the CHSH clients.
+Section <a href="#sec:mathlib" data-reference-type="ref" data-reference="sec:mathlib">9</a>
+records the Mathlib engagement.
+Section <a href="#sec:evaluation" data-reference-type="ref" data-reference="sec:evaluation">10</a>
 reports the audit methodology, and
-Section <a href="#sec:comparison" data-reference-type="ref" data-reference="sec:comparison">9</a>
+Section <a href="#sec:comparison" data-reference-type="ref" data-reference="sec:comparison">11</a>
 positions the development feature by feature.</p>
 <h1 id="mathematical-and-formal-setting">Mathematical and formal
 setting</h1>
@@ -304,12 +338,12 @@ the complex <span class="math inline">\(n\times n\)</span> matrices,
 with conjugate transpose <span class="math inline">\(X\mapsto
 X^*\)</span>, trace <span
 class="math inline">\(\operatorname{Tr}\)</span>, and identity <span
-class="math inline">\(\mathbf 1\)</span>. A projection event is a
-Hermitian idempotent <span class="math inline">\(P=P^*=P^2\)</span>. A
-state is a positive-semidefinite matrix <span
-class="math inline">\(\rho\)</span> with <span
-class="math inline">\(\operatorname{Tr}(\rho)=1\)</span>, and the trace
-pairing is <span
+class="math inline">\(\mathbf 1\)</span>. Following the standard
+finite-dimensional setting , a projection event is a Hermitian
+idempotent <span class="math inline">\(P=P^*=P^2\)</span>, a state is a
+positive-semidefinite matrix <span class="math inline">\(\rho\)</span>
+with <span class="math inline">\(\operatorname{Tr}(\rho)=1\)</span>, and
+the trace pairing is <span
 class="math inline">\(\mu_\rho(M)=\operatorname{Tr}(\rho
 M)\)</span>.</p>
 <p>Lean represents these interfaces as predicates over Mathlib matrices:
@@ -322,7 +356,7 @@ and <code>StateMatrix n</code>. The split is practical. Algebraic lemmas
 use raw matrices. A function advertised as a state update returns a
 value whose type carries the state conditions.</p>
 <p>Table <a href="#tab:modules" data-reference-type="ref" data-reference="tab:modules">[tab:modules]</a>
-lists the five source modules. The comparison in this work concerns
+lists the seven source modules. The comparison in this work concerns
 their compiled interfaces and uses, not the number of declarations in
 each file.</p>
 <div class="tabular">
@@ -330,13 +364,18 @@ each file.</p>
 <p>@L3.0cmL9.2cm@ Module &amp; Principal interface <code>Basic</code>
 &amp; projection events, states, trace pairing, closure and Born weight
 bounds <code>Lueders</code> &amp; totalized matrix formula, typed state
-update, repeatability, composition, and fixed points
+update, repeatability, composition, support, and fixed points
 <code>PartitionPinching</code> &amp; projective partitions, bundled
 commutant, bundled linear pinching, exact range, geometry, bimodule law,
-and naturality <code>StateExpectation</code> &amp; trace pairing bundled
-as a complex-linear functional, normalization and positivity
+and naturality <code>PartitionAverage</code> &amp; partition span with
+closure, commutativity, and centrality; bundled averaging expectation
+with exact range, uniqueness, tower laws, statistics preservation, and
+classical conditioning <code>StateExpectation</code> &amp; trace pairing
+bundled as a complex-linear functional, normalization and positivity
 <code>Tsirelson</code> &amp; CHSH ring identity, norm theorem, Mathlib
-interoperability, and event-level matrix client</p>
+interoperability, and event-level matrix client
+<code>ExpectationBound</code> &amp; state-expectation operator-norm
+bound and the state-level CHSH corollary</p>
 </div>
 
 <p>Three Mathlib scopes affect compilation. <code>ComplexOrder</code>
@@ -345,9 +384,11 @@ order in which <span class="math inline">\(0\le z\)</span> means that
 <span class="math inline">\(z\)</span> is real and nonnegative.
 <code>MatrixOrder</code> supplies the Loewner order.
 <code>Matrix.Norms.L2Operator</code> activates the finite-matrix
-operator norm and C*-ring instances used by the matrix CHSH theorem.
+operator norm and C*-ring instances used by the matrix CHSH theorems.
 Without the right scope, Lean may report an instance problem even though
-the required theorem is in scope.</p>
+the required theorem is in scope;
+Section <a href="#sec:mathlib" data-reference-type="ref" data-reference="sec:mathlib">9</a>
+describes the failure modes.</p>
 <p>Documentation tags classify results as <em>algebra-only</em> or
 <em>trace-dependent</em>. These tags do not define an import hierarchy.
 They record whether a proof uses ring, star, and norm structure alone,
@@ -363,7 +404,7 @@ event is positive semidefinite. The declaration
 <code>IsEvent.onesubtwosmulinvolution</code> proves that <span
 class="math inline">\(\mathbf 1-2P\)</span> is a selfadjoint involution.
 The CHSH adapter in
-Section <a href="#sec:chsh" data-reference-type="ref" data-reference="sec:chsh">7</a>
+Section <a href="#sec:chsh" data-reference-type="ref" data-reference="sec:chsh">8</a>
 uses this result.</p>
 <p>The trace pairing is additive, homogeneous, compatible with finite
 sums, and obeys the sandwich identity <span class="math display">\[
@@ -375,25 +416,27 @@ Positivity of <span class="math inline">\(\rho\)</span> and the event
 property imply <span class="math inline">\(0\le\mu_\rho(P)\)</span> in
 Mathlib’s order on <span class="math inline">\(\mathbb C\)</span>; for a
 state the upper bound is <span class="math inline">\(\mu_\rho(P)\le
-1\)</span>.</p>
+1\)</span>. The order-form statements are strictly stronger than their
+real-part corollaries, and both forms are provided.</p>
 <p>The declaration <code>isEventaddandbornWeightaddoforthogonal</code>
 returns two facts: the orthogonal sum is an event, and its Born weight
-is the sum of the two Born weights. Each orthogonality hypothesis is
-used to prove the first fact.</p>
+is the sum of the two Born weights. The event and orthogonality
+hypotheses carry the first conjunct; the weight identity is linear and
+uses none of them.</p>
 <h1 id="lüders-update-as-a-partial-state-interface">Lüders update as a
 partial state interface</h1>
 <p>For raw matrices, the library uses the totalized formula <span
 class="math display">\[
-\mathcal L_P(\rho)=\mu_\rho(P)^{-1}P\rho P,
-\]</span> Lean’s field inverse maps zero to zero. The formula therefore
-covers algebraic identities in the zero-weight case. Its return type is
-a raw matrix and carries no state guarantee. The typed operation is
-<span class="math display">\[
-\begin{gathered}
-\texttt{luedersStateUpdate} :
+\mathcal L_P(\rho)=\mu_\rho(P)^{-1}P\rho P.
+\]</span> Lean’s field inverse maps zero to zero, so the formula is
+total and covers algebraic identities in the zero-weight case. Its
+return type is a raw matrix and carries no state guarantee. The typed
+operation is <span class="math display">\[
+\begin{aligned}
+\texttt{luedersStateUpdate}:\quad&amp;
 \texttt{StateMatrix n}\to\texttt{ProjectionEvent n}\\
-\to(\mu_\rho(P)\ne0)\to\texttt{StateMatrix n}.
-\end{gathered}
+&amp;\to(\mu_\rho(P)\ne0)\to\texttt{StateMatrix n}.
+\end{aligned}
 \]</span> This operation assumes <code>NeZero n</code>. The unique <span
 class="math inline">\(0\times0\)</span> matrix cannot have unit trace,
 so a state-returning function must exclude that dimension.</p>
@@ -412,7 +455,11 @@ class="math inline">\(P\)</span>
 (<code>luedersUpdateidem</code>);</em></p></li>
 <li><p><em>updates by commuting events compose and commute
 (<code>luedersUpdateluedersUpdateofcommute</code> and
-<code>luedersUpdatecomm</code>); and</em></p></li>
+<code>luedersUpdatecomm</code>);</em></p></li>
+<li><p><em>when the state commutes with the event, the update is the
+normalized block restriction <span
+class="math inline">\(\mu_\rho(P)^{-1}\rho P\)</span>
+(<code>luedersUpdateofcommute</code>); and</em></p></li>
 <li><p><em>the fixed-state equivalence <span class="math display">\[
 \mathcal L_P(\rho)=\rho \quad\Longleftrightarrow\quad \mu_\rho(P)=1
 \]</span> holds without a separate nonzero-weight hypothesis
@@ -424,6 +471,23 @@ class="math inline">\(P\)</span>
 by a zero-weight totalized update would equal the zero matrix, which has
 the wrong trace. The raw function covers the zero-weight case; the state
 theorem does not carry a redundant premise.</p>
+<p>The module assembles these results into a fixed-point description of
+conditioning. The set <code>certainStates</code> collects the states
+that assign weight one to <span class="math inline">\(P\)</span>.
+Conditioning any state of nonzero weight lands in that set in a single
+step (<code>luedersUpdatememcertainStates</code>), acts on the set as
+the identity, and, among states, fixes exactly its elements.
+Conditioning on <span class="math inline">\(P\)</span> is therefore a
+retraction of the nonzero-weight states onto its own fixed-point set.
+The identity case rests on a support theorem,
+<code>muleqselfofbornWeightone</code>: a state certain of <span
+class="math inline">\(P\)</span> absorbs the event on both sides, <span
+class="math inline">\(\sigma P=P\sigma=\sigma\)</span>. The checked
+proof compresses <span class="math inline">\(\sigma\)</span> by the
+complement event, whose weight vanishes; positive semidefiniteness
+forces the zero-trace compression to vanish; and the Cauchy–Schwarz
+property of the state’s quadratic form eliminates <span
+class="math inline">\(\sigma(\mathbf 1-P)\)</span> itself.</p>
 <h1 id="bundled-arbitrary-partition-pinching">Bundled
 arbitrary-partition pinching</h1>
 <p>A <code>ProjectivePartition n k</code> consists of projections <span
@@ -441,10 +505,11 @@ bundles <span class="math inline">\(\mathcal E_\pi\)</span> as
 <code>memcommutantiff</code> reduces membership to the pointwise
 commutation equation.</p>
 <p>The range is a block-diagonal commutant and need not be commutative.
-For this reason, we do not call it a “classical algebra”. The library
-has no theorem identifying the algebra generated by the partition with
-the center of the commutant. It also has no rank-one
-classical-representation theorem.</p>
+For this reason, we do not call it a “classical algebra”; the classical
+layer is the span of
+Section <a href="#sec:average" data-reference-type="ref" data-reference="sec:average">6</a>.
+The library has no theorem identifying the span with the center of the
+commutant, and no rank-one classical-representation theorem.</p>
 <div id="thm:pinching-range" class="theorem">
 
 <p><strong>Theorem 1</strong> (Bundled retraction and exact range).
@@ -490,12 +555,16 @@ every commutant element equals
 <code>partitionPinchingbimodule</code>,
 <code>traceconjTransposepartitionPinchingmul</code>,
 <code>tracepartitionPinchingpythagoras</code>,
-<code>tracepartitionPinchingcontraction</code>, and
+<code>tracepartitionPinchingcontraction</code>,
+<code>tracepartitionPinchingmulcommutant</code>, and
 <code>partitionPinchingLinearMapunique</code>. Together they make the
 map a positive, unital, trace-preserving linear projection with a
-bimodule law. The library does not instantiate an operator-algebra
-conditional expectation or a channel interface because complete
-positivity is not proved.</p>
+bimodule law and a trace-duality characterization; these are the
+identities that characterize the trace-preserving conditional
+expectation onto a subalgebra in the operator-algebra literature . The
+library proves the identities directly for this map. It does not
+instantiate an operator-algebra conditional-expectation or channel
+interface because complete positivity is not proved.</p>
 <h2 id="lüders-naturality">Lüders naturality</h2>
 <p>If <span class="math inline">\(P\in N_\pi\)</span>, compression
 commutes with pinching. After normalization, trace preservation against
@@ -510,6 +579,99 @@ naturality for <code>StateMatrix n</code> and
 nonzero-weight proof is transported by
 <code>bornWeightpartitionPinching</code>. This checks the same operation
 through the bundled state and event interfaces.</p>
+<h1 id="averaging-on-the-partition-span">Averaging on the partition
+span</h1>
+<p>The same partition carries a second canonical expectation. The
+<em>partition span</em> <span class="math display">\[
+D_\pi=\operatorname{span}\{P_i\}
+\]</span> is bundled as <code>ProjectivePartition.span</code>. Its
+closure package is proved by span induction.</p>
+<div id="prop:span" class="proposition">
+
+<p><strong>Proposition 2</strong> (The commutative layer). <em><span
+class="math inline">\(D_\pi\)</span> contains every projector and the
+identity, and is closed under multiplication and conjugate transposition
+(<code>projmemspan</code>, <code>onememspan</code>,
+<code>mulmemspan</code>, <code>conjTransposememspan</code>). It is
+commutative (<code>spanmulcomm</code>). It is contained in the commutant
+(<code>spanlecommutant</code>), and every element of <span
+class="math inline">\(D_\pi\)</span> commutes with every element of
+<span class="math inline">\(N_\pi\)</span>
+(<code>mulcommofmemspanofmemcommutant</code>): the span lies in the
+center of the commutant.</em></p>
+</div>
+
+<p>Only the inclusion into the center is proved; the library does not
+claim the reverse inclusion, which fails in the presence of zero
+projectors. The averaging map is <span class="math display">\[
+\mathcal
+A_\pi(X)=\sum_i\frac{\operatorname{Tr}(XP_i)}{\operatorname{Tr}(P_i)}\,P_i,
+\]</span> bundled as <code>partitionAverageLinearMap</code>. Lean’s
+zero-totalized inverse makes the terms of zero projectors vanish, so no
+nonzero-block hypothesis appears anywhere in the module: a zero
+projector contributes zero to both sides of every identity below.</p>
+<div id="thm:average" class="theorem">
+
+<p><strong>Theorem 3</strong> (Averaging expectation and exact range).
+<em>For every projective partition <span
+class="math inline">\(\pi\)</span>, the map <span
+class="math inline">\(\mathcal A_\pi\)</span> is complex linear, unital,
+positive, trace preserving, and idempotent. It lands in <span
+class="math inline">\(D_\pi\)</span>, fixes <span
+class="math inline">\(D_\pi\)</span> pointwise, and <span
+class="math display">\[
+\mathcal A_\pi(X)=X \Longleftrightarrow X\in D_\pi,
+\qquad
+\operatorname{range}(\mathcal A_\pi)=D_\pi.
+\]</span> Against every <span class="math inline">\(C\in D_\pi\)</span>
+the average is invisible to the trace pairing, <span
+class="math inline">\(\operatorname{Tr}(\mathcal
+A_\pi(X)\,C)=\operatorname{Tr}(XC)\)</span>, and any <span
+class="math inline">\(D_\pi\)</span>-valued complex-linear map with this
+property equals the bundled average.</em></p>
+</div>
+
+<p>The corresponding declarations are
+<code>partitionAverageunital</code>,
+<code>partitionAverageposSemidef</code>,
+<code>tracepartitionAverage</code>, <code>partitionAverageidem</code>,
+<code>partitionAverageeqselfiffmemspan</code>,
+<code>rangepartitionAverageLinearMap</code>,
+<code>tracepartitionAveragemulofmem</code>, and
+<code>partitionAverageLinearMapunique</code>; state preservation is
+<code>partitionAverageisState</code>. The uniqueness proof mirrors the
+pinching case: the difference lies in the star-closed span, is
+trace-orthogonal to its own conjugate transpose, and vanishes by
+faithfulness of the trace.</p>
+<div id="thm:two-level" class="theorem">
+
+<p><strong>Theorem 4</strong> (Two-level structure). <em>The two
+expectations compose as a tower, <span class="math display">\[
+\mathcal A_\pi\circ\mathcal E_\pi=\mathcal A_\pi=\mathcal
+E_\pi\circ\mathcal A_\pi ,
+\]</span> (<code>partitionAveragepartitionPinching</code>,
+<code>partitionPinchingpartitionAverage</code>). The average preserves
+the Born statistics of the partition, <span
+class="math inline">\(\mu_{\mathcal
+A_\pi(\rho)}(P_j)=\mu_\rho(P_j)\)</span> for every <span
+class="math inline">\(j\)</span>
+(<code>bornWeightpartitionAverage</code>). For a partition member <span
+class="math inline">\(P_j\)</span> of nonzero weight, averaging commutes
+with Lüders conditioning, and both composites collapse to the normalized
+projector: <span class="math display">\[
+\mathcal A_\pi(\mathcal L_{P_j}(\rho))
+=\mathcal L_{P_j}(\mathcal A_\pi(\rho))
+=\operatorname{Tr}(P_j)^{-1}\,P_j
+\]</span> (<code>partitionAverageluedersUpdate</code>,
+<code>partitionAverageluedersUpdateproj</code>,
+<code>luedersUpdatepartitionAverageproj</code>).</em></p>
+</div>
+
+<p>The collapse identity is the finite-matrix form of classical
+conditioning: on the commutative layer, conditioning on an observed
+partition member replaces the averaged state by the indicator of that
+member, normalized. The identity is stated for raw matrices; the only
+hypothesis is the nonzero outcome weight.</p>
 <h1 id="the-bundled-state-expectation">The bundled state
 expectation</h1>
 <p>For a matrix <span class="math inline">\(\rho\)</span>,
@@ -522,9 +684,11 @@ class="math inline">\(M\)</span> are positive semidefinite, then the
 expectation is nonnegative. The proof of <code>expectationnonneg</code>
 uses a finite spectral decomposition of <span
 class="math inline">\(M\)</span>, cycles the trace, and reduces the
-result to a sum of products of nonnegative diagonal entries. Additivity
-and homogeneity come from the bundled <code>LinearMap</code> interface
-and are not repeated as pointwise lemmas.</p>
+result to a sum of products of nonnegative diagonal entries;
+Section <a href="#sec:mathlib" data-reference-type="ref" data-reference="sec:mathlib">9</a>
+explains why this elementary route was chosen. Additivity and
+homogeneity come from the bundled <code>LinearMap</code> interface and
+are not repeated as pointwise lemmas.</p>
 <h1 id="chsh-interoperability-as-a-client">CHSH interoperability as a
 client</h1>
 <p>For selfadjoint involutions <span
@@ -536,22 +700,154 @@ class="math display">\[
 S^2=4\mathbf 1-(a_0a_1-a_1a_0)(b_0b_1-b_1b_0)
 \]</span> (<code>chshmulself</code>). In a nontrivial unital C*-ring
 this yields the operator-norm bound <span class="math inline">\(\lVert
-S\rVert\le2\sqrt2\)</span> (<code>tsirelsonbound</code>). The precise
-Mathlib structure is a <code>NormedRing</code>, <code>StarRing</code>,
+S\rVert\le2\sqrt2\)</span> (<code>tsirelsonbound</code>), the norm form
+of Tsirelson’s inequality for the CHSH combination . The analytic half
+is short: selfadjoint involutions have norm one by the C*-identity
+(<code>normeqoneofselfAdjointinvolution</code>), commutators of norm-one
+elements have norm at most two (<code>normcommutatorletwo</code>), and
+the square identity converts these bounds into <span
+class="math inline">\(\lVert S\rVert^2\le8\)</span>. The precise Mathlib
+structure is a <code>NormedRing</code>, <code>StarRing</code>,
 <code>CStarRing</code>, and <code>Nontrivial</code>. The result is
 stated for a unital C*-ring.</p>
 <p>The theorem <code>tsirelsonboundofisCHSHTuple</code> accepts
-Mathlib’s <code>IsCHSHTuple</code>. The matrix theorem activates
-Mathlib’s scoped operator norm. The declaration
-<code>matrixtsirelsonboundofevents</code> accepts four projection events
-plus the four cross-commutation equations, constructs the dichotomic
-observables <span class="math inline">\(\mathbf 1-2P\)</span>, and
-returns the norm bound. This gives the event layer a compiled path into
-the CHSH theorem.</p>
+Mathlib’s <code>IsCHSHTuple</code>. The matrix instantiation,
+<code>matrixtsirelsonbound</code>, activates Mathlib’s scoped operator
+norm. The declaration <code>matrixtsirelsonboundofevents</code> accepts
+four projection events plus the four cross-commutation equations,
+constructs the dichotomic observables <span
+class="math inline">\(\mathbf 1-2P\)</span>, and returns the norm bound.
+This gives the event layer a compiled path into the CHSH theorem.</p>
 <p>Mathlib’s <code>tsirelsoninequality</code> is an order inequality in
-a star-ordered real algebra . The theorem in this artifact is an
-operator-norm bound. It takes no state expectation and provides no
+a star-ordered real algebra . The theorems in this artifact are an
+operator-norm bound and its state-level corollary below; they provide no
 equality witness.</p>
+<h2 id="the-state-level-corollary">The state-level corollary</h2>
+<p>The bridge from norms to states is the checked bound <span
+class="math display">\[
+\lvert\operatorname{Tr}(\rho M)\rvert\le\lVert M\rVert
+\]</span> for every state <span class="math inline">\(\rho\)</span> and
+observable <span class="math inline">\(M\)</span>
+(<code>normexpectationlel2opNorm</code>). The proof diagonalizes the
+state, cycles the trace to <span
+class="math inline">\(\operatorname{Tr}\!\bigl(D\,(V^*MV)\bigr)\)</span>,
+dominates every diagonal entry of the conjugated observable by the
+operator norm (<code>normdiagentrylel2opNorm</code>, by testing against
+a standard basis vector), uses that unitary conjugation does not
+increase the norm (<code>normeqoneofmemunitaryGroup</code> with
+submultiplicativity), and sums the nonnegative eigenvalues to one.
+Composing with the event-level norm bound gives the state-level CHSH
+corollary (<code>matrixstatetsirelsonboundofevents</code>): for a state
+and four projection events with cross-party commutation, <span
+class="math display">\[
+\bigl\lvert\operatorname{Tr}(\rho S)\bigr\rvert\le2\sqrt2
+\]</span> for the CHSH combination <span
+class="math inline">\(S\)</span> of the dichotomic observables <span
+class="math inline">\(\mathbf 1-2P\)</span>. The pairing <span
+class="math inline">\(\operatorname{Tr}(\rho S)\)</span> is real by
+<code>starbornWeight</code>, since <span
+class="math inline">\(S\)</span> is selfadjoint, so the modulus bound is
+a two-sided real bound. No sharpness witness is claimed.</p>
+<h1 id="working-over-mathlib-scopes-gaps-and-affordances">Working over
+Mathlib: scopes, gaps, and affordances</h1>
+<p>This section records what the construction consumed from Mathlib,
+where the library resisted, and which workarounds closed the gaps. The
+artifact repeats the catalog in the notes file
+<code>MATHLIBNOTES.md</code>.</p>
+<h2 id="scoped-instances">Scoped instances</h2>
+<p>The three scopes of
+Section <a href="#sec:setting" data-reference-type="ref" data-reference="sec:setting">2</a>
+share a failure mode. The partial order on <span
+class="math inline">\(\mathbb C\)</span> and the Loewner order are
+scoped instances; every <span class="math inline">\(0\le z\)</span> goal
+and every positive-semidefiniteness statement over <span
+class="math inline">\(\mathbb C\)</span> elaborates only when the scope
+is open, and a missing scope surfaces as an instance-resolution error
+far from its cause. <code>ComplexOrder</code> also carries the scoped
+ordered-ring structure on <span class="math inline">\(\mathbb C\)</span>
+that supplies multiplicativity of nonnegativity inside the complex
+order. There is no global norm on Mathlib matrices; the operator norm,
+the <code>NormedRing</code> structure, and the <code>CStarRing</code>
+instance arrive only under <code>Matrix.Norms.L2Operator</code>, so the
+entire Tsirelson section lives behind that scope. The
+<code>Nontrivial</code> instance for <span class="math inline">\(n\times
+n\)</span> complex matrices with <span
+class="math inline">\(n\ne0\)</span> did not synthesize and is
+constructed by hand, entrywise. The matrix unitary group is a submonoid
+distinct from Mathlib’s <code>unitary</code> bundle, so its norm-one
+property is also proved by hand from the C*-identity.</p>
+<h2 id="gaps-and-workarounds">Gaps and workarounds</h2>
+<p><em>Bilinear trace positivity.</em> Mathlib proves <span
+class="math inline">\(0\le\operatorname{Tr}(A)\)</span> for a single
+positive-semidefinite matrix and covers sandwich forms <span
+class="math inline">\(BAB^*\)</span>. The bilinear statement <span
+class="math inline">\(0\le\operatorname{Tr}(AB)\)</span> for two
+positive-semidefinite factors is absent. For Born weights the gap costs
+nothing, because <span class="math inline">\(\operatorname{Tr}(\rho
+P)=\operatorname{Tr}(P\rho P)\)</span> for idempotent <span
+class="math inline">\(P\)</span>. For <code>expectationnonneg</code> the
+natural route, the C*-order equivalence between nonnegativity and Gram
+factorization, fails to elaborate: two continuous-functional-calculus
+instances are not synthesized for the matrix algebra under its product
+topology. The proof takes the elementary route instead, a spectral
+decomposition of the observable followed by a trace cycle and termwise
+nonnegativity, in about a dozen lines.</p>
+<p><em>The ring identity.</em> The square identity behind the Tsirelson
+bound is pure noncommutative ring algebra under side relations: four
+involutivity equations and four cross commutations. Lean has no
+noncommutative analogue of <code>linearcombination</code>, and
+<code>noncommring</code> does not use hypotheses. The checked proof
+builds a small confluent rewrite system. Each commutation hypothesis is
+recast as a universally quantified, association-compatible form <span
+class="math inline">\(b(ax)=a(bx)\)</span>, and each involution as <span
+class="math inline">\(a(ax)=x\)</span>; applied through
+<code>simp only</code>, these rules move every <span
+class="math inline">\(b\)</span> past every <span
+class="math inline">\(a\)</span> in right-associated words and cancel
+adjacent equal letters. Every rewrite strictly decreases the number of
+letter pairs out of normal order, so the system terminates, and
+<code>abel</code> closes the remaining additive goal.</p>
+<p><em>Higher-order motives.</em> Two steps needed their motives spelled
+out. The binary span-induction principle behind the closure package of
+Proposition <a href="#prop:span" data-reference-type="ref" data-reference="prop:span">2</a>
+does not infer its motive from the goal; the predicate is passed
+explicitly. Rewriting with the unit-trace equation inside a hypothesis
+whose proof term mentions the bundled state predicate fails the motive
+typecheck, because the state predicate itself contains the trace being
+abstracted; a term-level chain through injectivity of the real embedding
+replaces the rewrite.</p>
+<p><em>Rewriting discipline.</em> Unfolding the definition of the Born
+weight rewrites the first syntactic occurrence, which in normalized
+expressions is often the normalizing scalar <span
+class="math inline">\(\mu_\rho(P)^{-1}\)</span> instead of the intended
+trace argument. The affected proofs isolate each trace identity as a
+standalone step with explicit arguments to the trace commutation and
+cycling lemmas.</p>
+<h2 id="affordances">Affordances</h2>
+<p>The <code>Matrix.PosSemidef</code> API is complete enough that the
+development never unfolds the definition of positive semidefiniteness:
+sandwich closure, sums, scalar multiples, diagonal nonnegativity, trace
+nonnegativity, and the Gram construction cover every need, and the
+scalar lemma accepts a complex scalar that is nonnegative in the complex
+order, which makes the Lüders normalization a single application. Trace
+faithfulness is available in two forms: the conjugate-transpose
+criterion powers the uniqueness theorems of both expectations, and the
+zero-trace criterion together with the Cauchy–Schwarz property of
+positive matrices powers the support theorem of
+Section <a href="#sec:lueders" data-reference-type="ref" data-reference="sec:lueders">4</a>.
+On the analytic side, the C*-identity, the norm-one property of the
+unit, and submultiplicativity reduce the norm half of the Tsirelson
+bound to about forty lines over the four-typeclass signature, and the
+matrix case is a two-line instantiation behind the norm scope. The
+state-expectation bound of
+Section <a href="#subsec:statechsh" data-reference-type="ref" data-reference="subsec:statechsh">8.1</a>
+rests on the scoped norm being definitionally the Euclidean operator
+norm: the type synonym is identity-transparent, so a <code>show</code>
+converts Euclidean-space statements to raw matrix-vector algebra, and
+the basis-vector, submultiplicativity, and eigenvalue-trace lemmas
+finish the proof in about sixty lines. Mathlib’s CHSH file supplied the
+<code>IsCHSHTuple</code> bundle, so interoperability with the order-form
+theorem cost one conversion theorem.</p>
 <h1 id="artifact-evaluation-and-proof-audit">Artifact evaluation and
 proof audit</h1>
 <p>The source is a Lake project. Its toolchain pins
@@ -565,24 +861,97 @@ with</p>
 
 <p>The canonical Lean modules are publicly available in the Observer
 Patch Holography repository at commit
-<code>da9ff3a551e7c635370ec885d972c9527de173b0</code>. The manuscript
+<code>49ee36e01eb245d4d508e82c9b08fd47f7a85243</code>. The manuscript
 source accompanies the submission. It includes a standalone archive with
 a byte-identical copy of those modules.</p>
+<p>Table <a href="#tab:scale" data-reference-type="ref" data-reference="tab:scale">1</a>
+describes the scale of the development. The counts are descriptive; the
+comparison in
+Section <a href="#sec:comparison" data-reference-type="ref" data-reference="sec:comparison">11</a>
+concerns interfaces, not counts.</p>
+<div id="tab:scale">
+
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th style="text-align: left;">Module</th>
+<th style="text-align: right;">Lines</th>
+<th style="text-align: right;">Audited declarations</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>Basic</code></td>
+<td style="text-align: right;">302</td>
+<td style="text-align: right;">25</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Lueders</code></td>
+<td style="text-align: right;">294</td>
+<td style="text-align: right;">14</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>PartitionPinching</code></td>
+<td style="text-align: right;">474</td>
+<td style="text-align: right;">27</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>PartitionAverage</code></td>
+<td style="text-align: right;">513</td>
+<td style="text-align: right;">30</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>StateExpectation</code></td>
+<td style="text-align: right;">105</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Tsirelson</code></td>
+<td style="text-align: right;">275</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ExpectationBound</code></td>
+<td style="text-align: right;">174</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>EventAlgebra</code> (root)</td>
+<td style="text-align: right;">41</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;">Total</td>
+<td style="text-align: right;">2178</td>
+<td style="text-align: right;">112</td>
+</tr>
+</tbody>
+</table></div>
+<p>Source lines and per-module counts of declarations covered by the
+generated axiom audit.</p>
+</div>
+
 <p>Every public result discussed in the paper appears under its Lean
 name. The modules end with <code>#print axioms</code> commands for the
-principal declarations. Their output lists propositional extensionality,
-quotient soundness, classical choice, and other standard Lean/Mathlib
-axioms. No declaration reports <code>sorryAx</code>. A source scan finds
-no <code>sorry</code> placeholder in the submitted modules.</p>
+principal declarations, and the artifact stores the generated output. Of
+the 112 audited declarations, 110 report exactly propositional
+extensionality, classical choice, and quotient soundness, the standard
+Lean/Mathlib base. The CHSH ring identity and the event-commutation
+adapter report propositional extensionality and quotient soundness
+alone; the bare ring algebra needs no classical choice. No declaration
+reports <code>sorryAx</code>, and a source scan finds no
+<code>sorry</code> placeholder in the submitted modules.</p>
 <p>The submitted API uses every orthogonality hypothesis in its
 orthogonal-sum theorem. The sequential-update theorem has no unused
 event premise. State update is typed and excludes dimension zero. The
-fixed-point equivalence has no nonzero-weight guard. The commutant and
-pinching map are bundled, and the CHSH adapter is a client of the event
-definitions.</p>
+fixed-point equivalence has no nonzero-weight guard, and the averaging
+module carries no nonzero-block hypotheses. The commutant, span, and
+both expectations are bundled, and the CHSH adapters are clients of the
+event definitions.</p>
 <p>The release archive contains the toolchain, Lake manifest, source
-modules, build command, checksums, and captured axiom output. It has no
-public release tag or persistent archive identifier.</p>
+modules, build command, checksums, captured axiom output, and a Creative
+Commons BY-NC-SA 4.0 license. It has no public release tag or persistent
+archive identifier.</p>
 <h1 id="feature-level-comparison">Feature-level comparison</h1>
 <p>Table <a href="#tab:comparison" data-reference-type="ref" data-reference="tab:comparison">[tab:comparison]</a>
 compares compiled features. It does not treat a count of elementary
@@ -593,24 +962,28 @@ lemmas as a research contribution.</p>
 &amp; This artifact Projective measurement &amp; Isabelle/HOL
 projective-measurement developments; state/measurement interfaces in
 current Lean libraries &amp; finite matrix event predicate, typed
-event/state subtypes, closure and trace-pairing lemmas; prerequisite
-result with no priority claim Pinching &amp; Physlib spectral pinching
+event/state subtypes, closure and trace-pairing lemmas; treated as
+prerequisite; no priority claim Pinching &amp; Physlib spectral pinching
 is a state-selected bundled CPTP map with fixed-point and geometric
 results &amp; arbitrary supplied projective partition; bundled linear
 map and commutant; no CPTP or Physlib correspondence theorem Retraction
 structure &amp; operator-algebra conditional expectations and channel
 interfaces &amp; exact range/fixed points,
 positive/unital/trace-preserving, bimodule, Hilbert–Schmidt geometry,
-map-level trace-duality uniqueness Lüders update &amp; Isabelle
-projective measurement and general channel infrastructure &amp; raw
-formula plus typed partial state API, unguarded state fixed-point
+map-level trace-duality uniqueness Commutative layer &amp; conditional
+expectations onto commutative subalgebras in operator-algebra practice
+&amp; bundled averaging expectation onto the partition span, exact range
+and uniqueness, tower laws with pinching, Born-statistics preservation,
+classical-conditioning collapse Lüders update &amp; Isabelle projective
+measurement and general channel infrastructure &amp; raw formula plus
+typed partial state API, support theorem, unguarded state fixed-point
 equivalence, typed naturality with arbitrary-partition pinching
 CHSH/Tsirelson &amp; Mathlib order theorem; Isabelle upper bound; Lean
-CHSH rigidity &amp; complementary norm theorem and event-level client;
-no state-level bound or tightness claim Reproducibility &amp; public CI
-and archived releases are common best practice &amp; pinned
+CHSH rigidity &amp; complementary norm theorem, event-level client, and
+state-expectation corollary; no tightness claim Reproducibility &amp;
+public CI and archived releases are common best practice &amp; pinned
 Lean/Mathlib, clean artifact build instructions, checksums and static
-axiom audit; no DOI claim before deposit</p>
+axiom audit; no DOI claim</p>
 </div>
 
 <p>Physlib provides more channel structure: its spectral pinching is a
@@ -619,27 +992,37 @@ need not come from the spectrum of a state. The two APIs therefore have
 different inputs, and no correspondence theorem connects them.</p>
 <p>Lean-Quantum and Lean-QIT cover a larger part of quantum information
 . Here, the scope is limited to connections among projections,
-commutants, pinching, selective update, and Mathlib’s CHSH
-interface.</p>
+commutants, spans, the two expectations, selective update, and Mathlib’s
+CHSH interface.</p>
 <h1 id="limitations-and-conclusion">Limitations and conclusion</h1>
 <p>The library connects projection events, Born weights, a typed Lüders
-update, arbitrary projective partitions, block pinching, and an
-event-level CHSH norm bound. The pinching map has the bundled commutant
-as its exact range. It obeys the bimodule law and commutes with typed
-Lüders update for commutant events. Each statement in the paper points
-to a declaration in the submitted source.</p>
-<p>Complete positivity is not established, so the pinching map is not a
-quantum channel in the library. There is no theorem connecting it to
-Physlib’s spectral pinching and no rank-one classical specialization.
-The CHSH client stops at the operator norm. It has no state-expectation
-corollary or sharpness witness. The entire development is
-finite-dimensional and says nothing about normal maps on
-infinite-dimensional von Neumann algebras.</p>
+update, arbitrary projective partitions, the two expectations of a
+partition, and event-level CHSH bounds in norm and state form. The
+pinching has the bundled commutant as its exact range and the average
+has the bundled span; each map is the unique trace-dual projection onto
+its range, the two compose as a tower, and both interact with Lüders
+conditioning by checked theorems. Each statement in the paper points to
+a declaration in the submitted source.</p>
+<p>The construction follows one pattern: state algebraic content as
+predicates over raw matrices, move to subtypes exactly where an API
+promises a state, bundle the carrier and the projection so that range
+and uniqueness theorems are exact, and hand finished objects to Mathlib
+interfaces through small adapters. The pattern is independent of
+measurement theory and applies to other finite-dimensional
+operator-algebra developments over Mathlib.</p>
+<p>Complete positivity is not established, so neither expectation is a
+quantum channel in the library. There is no theorem connecting the
+supplied partition to Physlib’s spectral pinching and no rank-one
+classical specialization. The CHSH bounds have no sharpness witness. The
+entire development is finite-dimensional and says nothing about normal
+maps on infinite-dimensional von Neumann algebras.</p>
 <p>Open work consists of four items: prove complete positivity, bundle
-the map as a CPTP channel, connect spectral partitions to Physlib, and
-add a state-level CHSH client. The present artifact provides the
-arbitrary-partition map, its exact range and bimodule law, and typed
-Lüders naturality.</p>
+the maps as CPTP channels, connect spectral partitions to Physlib, and
+add a two-qubit sharpness witness for the CHSH bounds. The present
+artifact provides the arbitrary-partition pinching with its exact range
+and bimodule law, the averaging expectation with its tower and
+classical-conditioning laws, typed Lüders naturality, and the
+state-level CHSH corollary.</p>
 <h1 id="declarations">Declarations</h1>
 <p><strong>Funding.</strong> No funding was received for this work.</p>
 <p><strong>Competing interests.</strong> The author declares no
@@ -648,9 +1031,12 @@ competing interests.</p>
 author, designed the study, reviewed the formal development, and takes
 responsibility for the manuscript and artifact.</p>
 <p><strong>Data and code availability.</strong> No empirical data were
-generated. The Lean source, pinned dependency files, build instructions,
-axiom report, and checksums accompany the submission. No persistent
-archive identifier is claimed.</p>
+generated. The canonical Lean source is available in the Observer Patch
+Holography repository at commit
+<code>49ee36e01eb245d4d508e82c9b08fd47f7a85243</code>. The Lean source,
+pinned dependency files, build instructions, axiom report, and checksums
+also accompany the submission , under a Creative Commons BY-NC-SA 4.0
+license. No persistent archive identifier is claimed.</p>
 
           </div>
         </div>
