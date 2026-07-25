@@ -1,7 +1,7 @@
 # Observer Patch Holography Papers
 
-Release: r1577
-Released: July 23, 2026
+Release: r1578
+Released: July 25, 2026
 
 This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 
@@ -77,6 +77,14 @@ This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 - Category: OPH paper
 - Summary: First-party HTML and PDF publication page for Compact Proof Of Oph in the OPH paper stack.
 
+## De Sitter Time Advance Sign From Fixed Screen Capacity
+
+- HTML: https://floatingpragma.io/oph/papers/de-sitter-time-advance-sign-from-fixed-screen-capacity/
+- PDF: https://floatingpragma.io/oph/papers/de-sitter-time-advance-sign-from-fixed-screen-capacity/paper.pdf
+- Authors: Bernhard Mueller
+- Category: OPH paper
+- Summary: First-party HTML and PDF publication page for De Sitter Time Advance Sign From Fixed Screen Capacity in the OPH paper stack.
+
 ## The Fine-Structure Constant as an OPH Pixel Fixed Point
 
 - HTML: https://floatingpragma.io/oph/papers/fine-structure-constant-oph-pixel-fixed-point/
@@ -84,6 +92,14 @@ This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 - Authors: Bernhard Mueller, Alexander Osika
 - Category: Constants
 - Summary: A focused OPH paper on the fine-structure constant, local screen-cell closure, hadronic endpoint transport, and the fixed-point status of alpha.
+
+## Koide Identity From Positive C3 Face Circulants
+
+- HTML: https://floatingpragma.io/oph/papers/koide-identity-from-positive-c3-face-circulants/
+- PDF: https://floatingpragma.io/oph/papers/koide-identity-from-positive-c3-face-circulants/paper.pdf
+- Authors: Bernhard Mueller
+- Category: OPH paper
+- Summary: First-party HTML and PDF publication page for Koide Identity From Positive C3 Face Circulants in the OPH paper stack.
 
 ## Machine-Checked Finite Event Algebras for Observer-Patch Holography
 

@@ -1,6 +1,6 @@
 {
-  "release_id": "r1577",
-  "released_at": "July 23, 2026",
+  "release_id": "r1578",
+  "released_at": "July 25, 2026",
   "collection_url": "https://floatingpragma.io/oph/papers/",
   "sitemap_url": "https://floatingpragma.io/oph/papers/sitemap.xml",
   "papers": [
@@ -368,6 +368,32 @@
       ]
     },
     {
+      "id": "de_sitter_time_advance_sign_from_fixed_screen_capacity",
+      "title": "De Sitter Time Advance Sign From Fixed Screen Capacity",
+      "short_title": "De Sitter Time Advance Sign From Fixed Screen Capacity",
+      "category": "OPH paper",
+      "description": "First-party HTML and PDF publication page for De Sitter Time Advance Sign From Fixed Screen Capacity in the OPH paper stack.",
+      "authors": [
+        "Bernhard Mueller"
+      ],
+      "keywords": [
+        "Observer Patch Holography",
+        "OPH",
+        "physics",
+        "theory of everything"
+      ],
+      "html_url": "https://floatingpragma.io/oph/papers/de-sitter-time-advance-sign-from-fixed-screen-capacity/",
+      "pdf_url": "https://floatingpragma.io/oph/papers/de-sitter-time-advance-sign-from-fixed-screen-capacity/paper.pdf",
+      "central_pdf_url": "https://floatingpragma.io/oph/papers/pdf/de_sitter_time_advance_sign_from_fixed_screen_capacity.pdf",
+      "related_blog_posts": [
+        {
+          "title": "The Trigger",
+          "url": "https://blog.floatingpragma.io/the-trigger",
+          "description": "High-level public entry point for the OPH claim."
+        }
+      ]
+    },
+    {
       "id": "fine_structure_constant_derivation",
       "title": "The Fine-Structure Constant as an OPH Pixel Fixed Point",
       "short_title": "Fine-structure constant",
@@ -398,6 +424,32 @@
           "title": "Everything Clicks Into Place",
           "url": "https://blog.floatingpragma.io/everything-that-clicks-into-place",
           "description": "Unification as translation, repair, and stable agreement across domains."
+        }
+      ]
+    },
+    {
+      "id": "koide_identity_from_positive_c3_face_circulants",
+      "title": "Koide Identity From Positive C3 Face Circulants",
+      "short_title": "Koide Identity From Positive C3 Face Circulants",
+      "category": "OPH paper",
+      "description": "First-party HTML and PDF publication page for Koide Identity From Positive C3 Face Circulants in the OPH paper stack.",
+      "authors": [
+        "Bernhard Mueller"
+      ],
+      "keywords": [
+        "Observer Patch Holography",
+        "OPH",
+        "physics",
+        "theory of everything"
+      ],
+      "html_url": "https://floatingpragma.io/oph/papers/koide-identity-from-positive-c3-face-circulants/",
+      "pdf_url": "https://floatingpragma.io/oph/papers/koide-identity-from-positive-c3-face-circulants/paper.pdf",
+      "central_pdf_url": "https://floatingpragma.io/oph/papers/pdf/koide_identity_from_positive_c3_face_circulants.pdf",
+      "related_blog_posts": [
+        {
+          "title": "The Trigger",
+          "url": "https://blog.floatingpragma.io/the-trigger",
+          "description": "High-level public entry point for the OPH claim."
         }
       ]
     },

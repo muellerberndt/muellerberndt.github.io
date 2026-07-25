@@ -19,31 +19,31 @@
   <meta name="citation_author" content="Kale Arnav Anirudha" />
   <meta name="citation_author" content="David Matscheko" />
   <meta name="citation_author" content="Jonathan Hill" />
-  <meta name="citation_publication_date" content="2026/07/23" />
-  <meta name="citation_online_date" content="2026/07/23" />
+  <meta name="citation_publication_date" content="2026/07/25" />
+  <meta name="citation_online_date" content="2026/07/25" />
   <meta name="citation_language" content="en" />
   <meta name="citation_keywords" content="simulation theory; consensus protocol; fixed-point computation; observer patches; records; consciousness-first theories; Observer Patch Holography" />
   <meta name="citation_pdf_url" content="https://floatingpragma.io/oph/papers/reality-as-consensus-protocol/paper.pdf" />
   <meta name="citation_abstract_html_url" content="https://floatingpragma.io/oph/papers/reality-as-consensus-protocol/" />
   <meta name="citation_technical_report_institution" content="Pragma Research" />
-  <meta name="citation_technical_report_number" content="OPH r1577 reality_as_consensus_protocol" />
+  <meta name="citation_technical_report_number" content="OPH r1578 reality_as_consensus_protocol" />
   <meta name="DC.title" content="Reality as a Consensus Protocol" />
   <meta name="DC.creator" content="Bernhard Mueller" />
   <meta name="DC.creator" content="Kai Xue" />
   <meta name="DC.creator" content="Kale Arnav Anirudha" />
   <meta name="DC.creator" content="David Matscheko" />
   <meta name="DC.creator" content="Jonathan Hill" />
-  <meta name="DC.issued" content="2026/07/23" />
-  <meta name="DC.date" content="2026/07/23" />
+  <meta name="DC.issued" content="2026/07/25" />
+  <meta name="DC.date" content="2026/07/25" />
   <meta name="DC.type" content="Text" />
   <meta name="DC.format" content="text/html" />
   <meta name="DC.language" content="en" />
   <meta name="DC.publisher" content="Pragma Research" />
   <meta name="DC.identifier" content="https://floatingpragma.io/oph/papers/reality-as-consensus-protocol/" />
   <meta name="DC.identifier" content="https://floatingpragma.io/oph/papers/reality-as-consensus-protocol/paper.pdf" />
-  <meta name="article:published_time" content="2026-07-23T00:00:00Z" />
-  <meta name="article:modified_time" content="2026-07-23T00:00:00Z" />
-  <meta name="prism.publicationDate" content="2026/07/23" />
+  <meta name="article:published_time" content="2026-07-25T00:00:00Z" />
+  <meta name="article:modified_time" content="2026-07-25T00:00:00Z" />
+  <meta name="prism.publicationDate" content="2026/07/25" />
   <meta name="prism.publicationName" content="Observer Patch Holography Papers" />
   <meta name="prism.section" content="Simulation theory" />
   <meta name="prism.url" content="https://floatingpragma.io/oph/papers/reality-as-consensus-protocol/" />
@@ -117,9 +117,9 @@
     "consciousness-first theories",
     "Observer Patch Holography"
   ],
-  "datePublished": "July 23, 2026",
-  "dateModified": "July 23, 2026",
-  "version": "r1577",
+  "datePublished": "July 25, 2026",
+  "dateModified": "July 25, 2026",
+  "version": "r1578",
   "subjectOf": [
     {
       "@type": "BlogPosting",
@@ -216,14 +216,14 @@
             <p>The OPH fixed-point consensus paper. It formulates observer patches, overlap-visible records, repair moves, Lyapunov descent, quotient normal forms, and obstruction classes.</p>
           </div>
           <div class="paper-meta-line">
-            <span>r1577</span>
-            <span>July 23, 2026</span>
+            <span>r1578</span>
+            <span>July 25, 2026</span>
             <span>papers</span>
           </div>
           <div class="cta-row">
             <a class="btn btn-primary" href="/oph/papers/reality-as-consensus-protocol/paper.pdf" target="_blank" rel="noopener noreferrer" data-track-link="paper-pdf-reality_as_consensus_protocol">Download PDF</a>
             <a class="btn btn-secondary" href="/oph/papers/" data-track-link="paper-index">All OPH papers</a>
-            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r1577" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
+            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r1578" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
             <a class="btn btn-secondary" href="https://challenge.floatingpragma.io/" data-track-link="paper-challenge">Challenge</a>
           </div>
 
@@ -252,8 +252,8 @@
         </header>
         <div class="paper-reader-grid">
           <div class="paper-body">
-<p><strong>Paper release:</strong> <code>r1577</code>
-<strong>Released:</strong> July 23, 2026</p>
+<p><strong>Paper release:</strong> <code>r1578</code>
+<strong>Released:</strong> July 25, 2026</p>
 <h1 id="downstream-physical-boundary">Downstream physical boundary</h1>
 <p>The fixed-cutoff consensus theorem supplies a finite observer-like
 self-reading system only on the declared recovery, record, feedback,
@@ -1119,10 +1119,21 @@ W_\sigma\cap(R_\tau\cup W_\tau)\ne\varnothing .
 \]</span> Each connected conflict component <span
 class="math inline">\(K\)</span> is replaced by exactly one canonical
 aggregate transaction <span class="math inline">\(\tau_K\)</span>,
-computed on the union-collar or conflict-component support. Primitive
-members of <span class="math inline">\(K\)</span> never commit
-separately. Write <span class="math inline">\(x\to y\)</span> for a
-successful aggregate transaction commit, and let <span
+computed on the union-collar or conflict-component support, with final
+declared supports <span class="math inline">\(R_K,W_K\)</span>
+satisfying <span class="math inline">\(R_K\supseteq D_{\mathcal
+F}(W_K)\)</span>. If aggregation or collar completion expands either
+support, conflicts are recomputed on the final aggregate supports and
+components are merged again until a fixed point is reached; distinct
+fixed-point aggregates are pairwise nonconflicting. These fixed-point
+components form a prepared source batch. After one component commits,
+another source-batch aggregate whose snapshot remains current and whose
+acceptance functionals revalidate remains admissible before
+later-enabled proposals are batched. Equivalently, an implementation may
+recompute immediately only if it certifies this surviving-component
+property. Primitive members of <span class="math inline">\(K\)</span>
+never commit separately. Write <span class="math inline">\(x\to
+y\)</span> for a successful aggregate transaction commit, and let <span
 class="math inline">\(\to^*\)</span> be its reflexive-transitive
 closure. A state is a <strong>normal form</strong> when no aggregate
 transaction is enabled.</em></p>
@@ -1758,6 +1769,9 @@ assume semantic-dependency-complete read sets and revalidation, payload
 determination from the read snapshot, and a coherent canonical aggregate
 union-collar payload from
 Proposition <a href="#prop:assocglue" data-reference-type="ref" data-reference="prop:assocglue">100</a>.
+Assume additionally the aggregate-support fixed-point closure and
+surviving prepared-component rule of
+Definition <a href="#def:transactional-repair" data-reference-type="ref" data-reference="def:transactional-repair">10</a>.
 Then every one-step quotient peak <span class="math display">\[
 t\longleftarrow s\longrightarrow u
 \]</span> admits a quotient state <span class="math inline">\(v\)</span>
@@ -1766,9 +1780,10 @@ transactional repair relation is locally confluent. The finite
 implementation receipt <span
 class="math inline">\(\mathsf{TXN\text{-}DIAMOND\text{-}1}\)</span>
 exports the functional supports, dependency closures, read/write sets,
-conflict components, aggregate payload hashes, and pre/post protected,
-semantic-parent, checkpoint, and descent values needed to check that the
-concrete engine realizes these premises.</em></p>
+support-closed conflict components, aggregate payload hashes, finite
+state transitions, and recomputed protected-record and descent checks
+needed to check that its concrete reference engine realizes these
+premises.</em></p>
 </div>
 
 <div class="proof">
@@ -1776,9 +1791,9 @@ concrete engine realizes these premises.</em></p>
 <p><em>Proof.</em> A one-step peak cannot choose two different payloads
 from one conflict component because that component has one canonical
 aggregate transaction. Its two steps therefore come from distinct
-components, say <span class="math inline">\(\tau\)</span> and <span
-class="math inline">\(\sigma\)</span>. By the conflict definition, <span
-class="math display">\[
+support-closed components, say <span class="math inline">\(\tau\)</span>
+and <span class="math inline">\(\sigma\)</span>. By the fixed-point
+conflict definition, <span class="math display">\[
 W_\tau\cap(R_\sigma\cup W_\sigma)=\varnothing,
 \qquad
 W_\sigma\cap(R_\tau\cup W_\tau)=\varnothing.
@@ -1790,14 +1805,27 @@ class="math inline">\(\sigma\)</span> leaves that functional’s input
 unchanged. Thus <span class="math inline">\(\tau\)</span>’s enablement,
 descent comparison, protected-data check, semantic parents, checkpoint
 continuation, and payload remain valid after <span
-class="math inline">\(\sigma\)</span>, and conversely. Both second
-commits are legal. Since their writes are disjoint and their payloads
-are determined by unchanged snapshots, <span class="math display">\[
+class="math inline">\(\sigma\)</span>, and conversely. The surviving
+prepared-component rule prevents a later-enabled proposal from absorbing
+either old component before its second commit. Both second commits are
+legal. Since their writes are disjoint and their payloads are determined
+by unchanged snapshots, <span class="math display">\[
 \operatorname{Apply}_\sigma\operatorname{Apply}_\tau(s)
 =\operatorname{Apply}_\tau\operatorname{Apply}_\sigma(s)=v.
 \]</span> This is the local diamond on the physical quotient. ◻</p>
 </div>
 
+<h4 id="finite-premise-receipt">Finite premise receipt.</h4>
+<p>The executable <span
+class="math inline">\(\mathsf{TXN\text{-}DIAMOND\text{-}1}\)</span>
+receipt is generated by and stored in . It enumerates all states and
+one-step peaks of a finite conflict-component reference engine and
+recomputes separate countermodels for semantic closure, atomic component
+commits, canonical aggregate coherence, aggregate-support reclosure,
+surviving prepared components, snapshot-determined payloads, strict
+descent, repair completeness, and protected-record preservation. It
+verifies a concrete realization of the proposition’s premises; it does
+not infer those premises for an arbitrary engine.</p>
 <div class="remark">
 
 <p><em>Remark 28</em> (Atomic commits do not prove the local diamond).
@@ -4016,13 +4044,20 @@ maps descends uniquely to partial maps <span
 class="math inline">\(F_c:Q_{\mathrm{vis}}\dashrightarrow Z_c\)</span>.
 Therefore, on the complete channel domain <span class="math display">\[
 Q_\star=\{x:F_c(x)\ \text{exists for every }c\in\mathcal C_\star\},
-\]</span> the product formula <span class="math display">\[
+\]</span> fix <span class="math inline">\(p\ge1\)</span> and assume that
+<span class="math inline">\(\mathcal C_\star\)</span> is finite. More
+generally, an infinite declared channel set is admitted only if <span
+class="math display">\[
+\sum_{c\in\mathcal C_\star}
+w_c\,d_c(F_c(x),F_c(y))^p&lt;\infty
+\qquad\text{for every }x,y\in Q_\star.
+\]</span> The product formula <span class="math display">\[
 d_{\mathrm{neu}}(x,y)
 \mathrel{=}
 \left(\sum_{c\in\mathcal C_\star}w_c\,d_c(F_c(x),F_c(y))^p\right)^{1/p}
-\]</span> is a well-defined pseudometric. It is a metric only after
-quotienting by zero-distance feature collisions, or after proving that
-the declared channel family separates points.</em></p>
+\]</span> is then a finite-valued pseudometric. It is a metric only
+after quotienting by zero-distance feature collisions, or after proving
+that the declared channel family separates points.</em></p>
 </div>
 
 <div class="proof">
@@ -4030,9 +4065,10 @@ the declared channel family separates points.</em></p>
 <p><em>Proof.</em> Identity, inverse, and cocycle laws give reflexivity,
 symmetry, and transitivity. The transport compatibility of local
 features is exactly the universal-property condition for descent through
-the quotient. The weighted product distance is then independent of the
-representative. Its triangle inequality is Minkowski’s inequality
-applied to the channel metrics. The only possible failure of identity of
+the quotient. The weighted product distance is independent of the
+representative and finite by the finite-channel or pairwise-summability
+premise. Its triangle inequality is Minkowski’s inequality applied to
+the channel metrics. The only possible failure of identity of
 indiscernibles is equality of all declared feature values, which is
 removed by quotienting feature-collision classes or by a
 joint-separation proof. ◻</p>
@@ -4043,8 +4079,10 @@ joint-separation proof. ◻</p>
 different pairs can share different channels and violate the triangle
 inequality. A neutral-geometry run must therefore use complete cases, a
 fixed missing symbol whose mask is quotient-visible, or train-only
-imputation labelled as an imputed-representation metric. Presentation
-invariance requires a bijection of <span
+imputation labelled as an imputed-representation metric. The run also
+records a finite channel list or a pairwise weighted-<span
+class="math inline">\(\ell^p\)</span> summability certificate.
+Presentation invariance requires a bijection of <span
 class="math inline">\(Q_{\mathrm{vis}}\)</span> and channel isometries,
 so gauge changes, port relabelings, observer order, repair schedule, and
 shard partition changes are checked on distance matrices, not on
@@ -4810,11 +4848,16 @@ analogies to classical and quantum distributed Byzantine agreement.
 Observer patches correspond to protocol nodes, overlap repair
 corresponds to a quorum vote, and the repair fixed-point corresponds to
 a consensus state. Under explicit structural assumptions (partial
-synchrony, one-vote-per-view, certificate semantics, authentication, and
-quorum overlap: either the classical exact sizing <span
+synchrony with an effective phase bound, one-value-per-view and
+monotone-view participation, finalisation only on a valid
+prepared-backed decision certificate, authenticated prepared-certificate
+locks, highest-certificate new-view selection, post-stabilisation
+nonfaulty proposal/prepare/commit/relay progress, and quorum overlap:
+either the classical exact sizing <span
 class="math inline">\(n=3f+1,q=2f+1\)</span> or a general threshold
 <span class="math inline">\(q\)</span> with <span
-class="math inline">\(2q\ge n+f+1\)</span>), a
+class="math inline">\(2q\ge n+f+1\)</span>; liveness additionally
+requires <span class="math inline">\(q\le n-f\)</span>), a
 <span class="roman">QBFT</span>-style interpretation of
 <span class="roman">OPH</span> repair satisfies safety and liveness
 (Appendix <a href="#app:bft-qecc" data-reference-type="ref" data-reference="app:bft-qecc">17</a>,
@@ -4918,11 +4961,18 @@ class="math inline">\((\lambda,\varepsilon,A,\beta,L)\)</span> for
 distance to the exact quotient normal-form set</td>
 </tr>
 <tr>
-<td style="text-align: left;">Wall-clock BFT liveness</td>
-<td style="text-align: left;">partial synchrony, quorum certificates,
-authentication, and quorum-overlap sizing: <span
+<td style="text-align: left;">Cross-view BFT safety and wall-clock
+liveness</td>
+<td style="text-align: left;">valid prepared-backed decision
+certificates, one-value and monotone-view participation, monotone
+prepared locks, authenticated quorum-overlap sizing <span
 class="math inline">\(n=3f+1,q=2f+1\)</span> or <span
-class="math inline">\(2q\ge n+f+1\)</span></td>
+class="math inline">\(2q\ge n+f+1\)</span>; liveness from timeout-bound
+activation also needs <span class="math inline">\(q\le n-f\)</span>, an
+effective post-<span class="roman">GST</span> phase bound <span
+class="math inline">\(\Theta\)</span>, fair terminating view change,
+highest-certificate proposal selection, and nonfaulty
+proposal/prepare/commit/relay progress</td>
 </tr>
 <tr>
 <td style="text-align: left;">Hardware search work reduction</td>
@@ -5436,37 +5486,113 @@ Bound</h2>
 
 <p><strong>Definition 103</strong> (QBFT-style protocol). <em>A
 consensus protocol is <em>QBFT-style</em> in this analysis if it
-satisfies the following three structural properties. The safety proof of
-Theorem <a href="#thm:qbft-safety" data-reference-type="ref" data-reference="thm:qbft-safety">104</a>
-uses all three; the theorem does not hold for protocols lacking any of
-them without a compensating change to the argument.</em></p>
+satisfies the following five structural properties. Same-view safety
+uses (P1)–(P2), cross-view safety additionally uses the lock and
+monotone-view parts of (P1) and (P4), and the liveness clause uses
+(P3)–(P5) together with the timing and connectivity assumptions
+below.</em></p>
 <ol type="1">
-<li><p><em><strong>One-vote-per-view.</strong> Each nonfaulty node casts
-at most one vote per view number. A node that has voted in view <span
-class="math inline">\(v\)</span> ignores any later request to vote in
-view <span class="math inline">\(v\)</span>.</em></p></li>
-<li><p><em><strong>Certificate semantics.</strong> A decision requires a
-valid quorum certificate: in the classical exact-size case used below,
-<span class="math inline">\(q=2f+1\)</span> distinct, unforgeable,
-authenticated votes for the same value in the same view. For larger
-validator sets at fixed fault budget, the quorum threshold must be
-scaled so that the overlap condition in (A6) remains true.</em></p></li>
+<li><p><em><strong>One-vote-per-view.</strong> Each nonfaulty node
+supports at most one value per view number. If the protocol has prepare,
+prepared-certificate acceptance, and commit phases, its messages in all
+three phases refer to that same value. A node that has supported a value
+in view <span class="math inline">\(v\)</span> ignores any later
+conflicting request in view <span class="math inline">\(v\)</span>. View
+participation is monotone: after entering view <span
+class="math inline">\(w\)</span>, a nonfaulty node never signs a
+prepare, prepared-certificate acceptance, or commit message for <span
+class="math inline">\(v&lt;w\)</span>, and never adopts a durable
+lower-view lock.</em></p></li>
+<li><p><em><strong>Certificate semantics.</strong> A raw prepared
+certificate <span class="math inline">\(\operatorname{PC}(v,x)\)</span>
+contains <span class="math inline">\(q\)</span> distinct, unforgeable,
+authenticated prepare votes for value <span
+class="math inline">\(x\)</span> in view <span
+class="math inline">\(v\)</span>. A lock certificate <span
+class="math inline">\(\operatorname{LC}(v,x)\)</span> contains that
+<span class="math inline">\(\operatorname{PC}(v,x)\)</span> together
+with <span class="math inline">\(q\)</span> distinct authenticated
+acceptance acknowledgements. These acknowledgements are provisional:
+they do not change the acceptor’s voting lock. A raw prepared
+certificate without <span class="math inline">\(q\)</span> acceptance
+acknowledgements cannot justify a new view or a commit vote. A nonfaulty
+validator that receives the assembled <span
+class="math inline">\(\operatorname{LC}(v,x)\)</span> verifies it and
+records the durable lock <span class="math inline">\((v,x)\)</span>
+before signing a commit vote. A decision certificate contains <span
+class="math inline">\(q\)</span> distinct authenticated commit votes,
+each referring to the same valid <span
+class="math inline">\(\operatorname{LC}(v,x)\)</span>. In the classical
+exact-size case <span class="math inline">\(q=2f+1\)</span>. For larger
+validator sets at fixed fault budget, the threshold must scale so that
+(A6) holds. A nonfaulty observer finalises a value only after accepting
+such a valid decision certificate.</em></p></li>
 <li><p><em><strong>DLS-style view-change.</strong> If no certificate is
 produced within a timeout, every nonfaulty node increments the view
-number by one and a new leader is selected by a fixed deterministic
-rule. At <span class="roman">GST</span>, timeouts fire correctly and the
-view-change terminates in bounded rounds.</em></p></li>
+number by one and a new leader is selected by a fixed fair deterministic
+rule. Once the post-<span class="roman">GST</span> timeout bound of (A1)
+is active, the pacemaker brings all nonfaulty nodes through successive
+views and reaches a nonfaulty leader within at most <span
+class="math inline">\(f+1\)</span> consecutive views.</em></p></li>
+<li><p><em><strong>Prepared-certificate dissemination, commit lock, and
+justified new view.</strong> The assembler disseminates a valid <span
+class="math inline">\(\operatorname{PC}(v,x)\)</span> and obtains the
+<span class="math inline">\(q\)</span> authenticated acceptance
+acknowledgements of <span
+class="math inline">\(\operatorname{LC}(v,x)\)</span>, then disseminates
+the assembled lock certificate before collecting commits. Each
+validator’s authenticated view-change message carries its highest valid
+lock certificate, if any. A new leader collects <span
+class="math inline">\(q\)</span> such messages. If it issues a proposal,
+that proposal carries the value of their highest-view lock certificate;
+it may carry a fresh value only if none is present. The proposal carries
+the complete new-view justification. Every nonfaulty validator verifies
+the signatures, quorum size, and highest-certificate selection. An
+unlocked validator may support a fresh proposal only when the verified
+justification contains no lock certificate. Otherwise it votes only for
+its current lock value, except that the value selected by a valid <span
+class="math inline">\(q\)</span>-message new-view justification
+supersedes its local assembled-lock-certificate lock. This authorizes
+the prepare vote without adopting a lower-view durable lock; receipt of
+the assembled current-view lock certificate records the replacement
+before commit. This rule applies without a local test for whether an
+earlier commit set reached <span class="math inline">\(q\)</span>: it
+reconciles every predecision lock, while the proof below shows that
+quorum intersection makes the selected value compatible whenever a
+decision certificate exists.</em></p></li>
+<li><p><em><strong>Post-<span class="roman">GST</span> nonfaulty
+progress.</strong> In a sufficiently long
+post-<span class="roman">GST</span> view led by a nonfaulty node, that
+leader collects the required new-view messages and emits the proposal
+selected by (P4). Every nonfaulty validator that receives a valid
+proposal promptly sends its prepare vote. The nonfaulty leader
+disseminates the resulting valid prepared certificate; every nonfaulty
+validator verifies it and returns a provisional acceptance
+acknowledgement. After assembling the lock certificate, the leader
+disseminates it; every nonfaulty recipient verifies it, records or
+advances its durable lock, and sends its commit vote. After accepting a
+valid decision certificate it finalises and relays that certificate.
+Each of these fixed protocol phases completes within <span
+class="math inline">\(O(\Theta)\)</span>, with <span
+class="math inline">\(\Theta\)</span> defined in (A1).</em></p></li>
 </ol>
-<p><em>The Istanbul BFT / QBFT protocol family satisfies (P1)–(P3) and
-is the intended instance.</em></p>
+<p><em>The Istanbul BFT / QBFT protocol family motivates this pattern;
+(P1)–(P5), including their exact certificate, pacemaker, lock, and
+progress semantics, must be checked against an implementation rather
+than inferred from the family name.</em></p>
 </div>
 
 <h4 id="assumptions-a1a6">Assumptions A1–A6.</h4>
 <ol type="1">
 <li><p><strong>Partial synchrony (DLS).</strong> Fixed but initially
-unknown bounds <span class="math inline">\(\Delta\)</span> (message
-delay) and <span class="math inline">\(\Phi\)</span> (processing rates).
-<em>Safety</em> holds without extra timing assumptions;
+unknown bounds <span class="math inline">\(\Delta\)</span> (per-edge
+message delay) and <span class="math inline">\(\Phi\)</span> (local
+processing time) hold after <span class="roman">GST</span>. Together
+with the certified routes of (A4), they supply an effective end-to-end
+protocol-phase bound <span class="math inline">\(\Theta\)</span> that
+includes route length, processing, and the fixed number of message steps
+in one phase. Pacemaker timeouts eventually exceed the corresponding
+per-view bound. <em>Safety</em> holds without extra timing assumptions;
 <em>liveness</em> holds after the Global Stabilisation Time
 (<span class="roman">GST</span>).</p></li>
 <li><p><strong>Byzantine fault model.</strong> At most <span
@@ -5502,8 +5628,10 @@ class="math inline">\(q=2f+1\)</span> this is guaranteed by the exact
 sizing <span class="math inline">\(n=3f+1\)</span> in (A3); for general
 <span class="math inline">\(n\)</span> it is the separate threshold
 condition <span class="math inline">\(2q\ge n+f+1\)</span>, not a
-consequence of <span class="math inline">\(n\ge3f+1\)</span>
-alone.</p></li>
+consequence of <span class="math inline">\(n\ge3f+1\)</span> alone. The
+liveness clause additionally requires <span class="math inline">\(q\le
+n-f\)</span>, so a certificate can be formed without Byzantine
+participation.</p></li>
 </ol>
 <p>D. Matscheko’s review of this appendix covers the finite
 quorum-overlap core and records the same boundary caveat: at fixed <span
@@ -5512,63 +5640,216 @@ class="math inline">\(q=2f+1\)</span>, the overlap step is exact-size
 separately.</p>
 <div id="thm:qbft-safety" class="theorem">
 
-<p><strong>Theorem 104</strong> (QBFT Safety Bound [Same-view case
-established under A1–A6; cross-view safety conditional on a (P4) locking
-rule]). <em>Under assumptions (A1)–(A6), any consensus protocol
-satisfying (P1)–(P3) of
+<p><strong>Theorem 104</strong> (QBFT Safety Bound [Cross-view safety
+established under the stated certificate, acceptance, overlap,
+authentication, and lock rules]). <em>Under (A1), (A2), and (A4)–(A6),
+any consensus protocol satisfying (P1)–(P5) of
 Definition <a href="#def:qbft-style" data-reference-type="ref" data-reference="def:qbft-style">103</a>
 and run over the <span class="roman">OPH</span> observer graph
 satisfies:</em></p>
 <ol type="1">
-<li><p><em><strong>Same-view safety.</strong> No two nonfaulty observers
-finalise conflicting patch states in the same view.</em></p></li>
-<li><p><em><strong>Liveness.</strong> After
-<span class="roman">GST</span>, every nonfaulty observer finalises
-within <span class="math inline">\(O(f\cdot\Delta)\)</span> wall-clock
-time.</em></p></li>
-<li><p><em><strong>Optimality.</strong> The bound <span
-class="math inline">\(f&lt;n/3\)</span> is tight.</em></p></li>
+<li><p><em><strong>Cross-view safety.</strong> No two nonfaulty
+observers finalise conflicting patch states, whether in the same view or
+in different views.</em></p></li>
+<li><p><em><strong>Liveness.</strong> From the first
+post-<span class="roman">GST</span> view in which the pacemaker timeout
+bound is active, every nonfaulty observer finalises within <span
+class="math inline">\(O((f+1)\Theta)\)</span> wall-clock time, provided
+<span class="math inline">\(q\le n-f\)</span>. No bound from
+<span class="roman">GST</span> to timeout activation is
+claimed.</em></p></li>
+<li><p><em><strong>Certificate-contract threshold.</strong> Joint
+feasibility of the safety threshold <span class="math inline">\(2q\ge
+n+f+1\)</span> and Byzantine-independent liveness threshold <span
+class="math inline">\(q\le n-f\)</span> forces <span
+class="math inline">\(n\ge3f+1\)</span>; the exact-size choice <span
+class="math inline">\(n=3f+1,q=2f+1\)</span> attains both.</em></p></li>
 </ol>
 </div>
 
-<h4 id="cross-view-boundary">Cross-view boundary.</h4>
-<p>Clause (i) is stated for same-view finalisation because the argument
-below covers exactly that case. Cross-view safety in the IBFT/QBFT
-protocol family uses an additional prepared-certificate locking
-property, an explicit (P4) hypothesis under which a nonfaulty node votes
-in a later view only for a value carried by the highest prepared
-certificate it has received. (P1)–(P3) alone do not exclude finalisation
-of conflicting values across views; a cross-view extension of this
-theorem requires (P4) and its accompanying view-change justification
-argument. On its stated assumptions, this finalisation theorem gives
-record permanence: no two nonfaulty observers finalise conflicting patch
-states. Record permanence enters as a consistency requirement on the
-observer net, not as an added postulate.</p>
+<h4 id="sizing-and-status-boundary">Sizing and status boundary.</h4>
+<p>Assumption (A3) is the classical exact-size way to discharge (A6),
+not an additional independent premise: when <span
+class="math inline">\(n=3f+1\)</span> and <span
+class="math inline">\(q=2f+1\)</span>, the required overlap is
+automatic. For general <span class="math inline">\(n\)</span>, (A6) must
+instead be checked directly. The prepared-lock rule proves safety only
+for the protocol just defined; it is not inferred from the word “QBFT.”
+On those stated assumptions the theorem gives record permanence: no two
+nonfaulty observers finalise conflicting patch states. Record permanence
+enters as a consistency requirement on the observer net, not as an added
+postulate.</p>
 <div class="proof">
 
-<p><em>Proof sketch.</em> <em>Safety.</em> Suppose <span
+<p><em>Proof.</em> <em>Same-view safety.</em> Suppose <span
 class="math inline">\(O_a\)</span> and <span
 class="math inline">\(O_b\)</span> finalise <span
-class="math inline">\(s_a\neq s_b\)</span> in the same view. By (P2),
-each required a certificate of <span class="math inline">\(q\)</span>
-votes: sets <span class="math inline">\(Q_a,Q_b\)</span>. By (A6), <span
+class="math inline">\(s_a\neq s_b\)</span> in one view. By (P2), each
+required a certificate of <span class="math inline">\(q\)</span> votes:
+sets <span class="math inline">\(Q_a,Q_b\)</span>. By (A6), <span
 class="math inline">\(|Q_a\cap Q_b|\geq f+1\)</span>. In the classical
 exact-size case this is the inclusion-exclusion calculation <span
 class="math inline">\(|Q_a\cap
 Q_b|\geq(2f+1)+(2f+1)-(3f+1)=f+1\)</span>. By (A2), at most <span
 class="math inline">\(f\)</span> are Byzantine, so <span
 class="math inline">\(Q_a\cap Q_b\)</span> contains a nonfaulty <span
-class="math inline">\(O^*\)</span>. By (A4), <span
-class="math inline">\(O^*\)</span>’s signed vote is path-reachable
-within both quorums. By (P1), <span class="math inline">\(O^*\)</span>
-voted for at most one value. Contradiction.</p>
-<p><em>Liveness and Optimality</em> follow from (Thm. 4.4) and , cited
-directly.</p>
+class="math inline">\(O^*\)</span>. By (P1), <span
+class="math inline">\(O^*\)</span> voted for at most one value.
+Contradiction. The identical overlap argument applies to two prepared
+certificates in the same view, using their prepare-vote quorums.</p>
+<p><em>Cross-view safety.</em> Suppose <span
+class="math inline">\(\operatorname{DC}(v,x)\)</span> and <span
+class="math inline">\(\operatorname{DC}(w,y)\)</span> are conflicting
+decision certificates with <span class="math inline">\(v&lt;w\)</span>.
+The first certificate refers to a valid <span
+class="math inline">\(\operatorname{LC}(v,x)\)</span>. Let <span
+class="math inline">\(C_x\)</span> be its <span
+class="math inline">\(q\)</span> committers. The nonfaulty subset <span
+class="math inline">\(L_x\subseteq C_x\)</span> has size at least <span
+class="math inline">\(q-f\)</span>, and every member of <span
+class="math inline">\(L_x\)</span> received the assembled lock
+certificate and recorded <span class="math inline">\((v,x)\)</span>
+before committing. Every size-<span class="math inline">\(q\)</span>
+prepare or view-change quorum <span class="math inline">\(P\)</span>
+intersects that actual lock set because <span class="math display">\[
+|L_x\cap P|
+\ge (q-f)+q-n
+=2q-n-f
+\ge1
+\]</span> by (A6).</p>
+<p>Assume for contradiction that a raw prepared certificate for a value
+different from <span class="math inline">\(x\)</span> exists above view
+<span class="math inline">\(v\)</span>, and choose one with least view
+<span class="math inline">\(r&gt;v\)</span>. Its proposal carries a
+valid <span class="math inline">\(q\)</span>-message new-view
+justification <span class="math inline">\(J_r\)</span>. Since <span
+class="math inline">\(|L_x|\ge q-f\)</span> and <span
+class="math inline">\(|J_r|=q\)</span>, choose a nonfaulty <span
+class="math inline">\(O^*\in L_x\cap J_r\)</span>. Validator <span
+class="math inline">\(O^*\)</span> signed a commit for <span
+class="math inline">\(\operatorname{LC}(v,x)\)</span>, and later sent
+its authenticated view-<span class="math inline">\(r\)</span> change.
+Monotone view participation in (P1) orders its view-<span
+class="math inline">\(v\)</span> lock and commit before that view-<span
+class="math inline">\(r\)</span> message: it cannot send a view-<span
+class="math inline">\(r\)</span> change and subsequently return to
+commit in view <span class="math inline">\(v\)</span>. Its view-change
+message therefore reports <span
+class="math inline">\(\operatorname{LC}(v,x)\)</span>, or a later valid
+lock certificate. By minimality of <span
+class="math inline">\(r\)</span>, every raw prepared certificate
+underlying such a later reported lock certificate below view <span
+class="math inline">\(r\)</span> carries <span
+class="math inline">\(x\)</span>. Hence <span
+class="math inline">\(O^*\)</span>’s report carries <span
+class="math inline">\(x\)</span>.</p>
+<p>The justification <span class="math inline">\(J_r\)</span> therefore
+cannot be certificate-free. It also cannot contain a conflicting highest
+lock certificate, because that certificate contains a conflicting raw
+prepared certificate in a view below <span
+class="math inline">\(r\)</span>, contradicting the minimality of <span
+class="math inline">\(r\)</span>. Rule (P4) consequently selects <span
+class="math inline">\(x\)</span>, so nonfaulty validators do not prepare
+the alleged conflicting value in view <span
+class="math inline">\(r\)</span>. Thus no higher conflicting prepared
+certificate exists, and (P2) excludes the alleged <span
+class="math inline">\(\operatorname{DC}(w,y)\)</span>.</p>
+<p>This induction is also the lock-transfer invariant for view change.
+Every valid <span class="math inline">\(q\)</span>-message new-view
+justification after a decision contains a nonfaulty report from the
+decision’s <span class="math inline">\(q-f\)</span> commit-lock set, and
+its highest valid report carries the decided value.</p>
+<p><em>Liveness and certificate threshold.</em> From the first
+post-<span class="roman">GST</span> view whose pacemaker timeout is
+active, (A1) makes every failed-view timeout and every fixed protocol
+phase <span class="math inline">\(O(\Theta)\)</span>. Rule (P3) reaches
+a nonfaulty leader within at most <span
+class="math inline">\(f+1\)</span> consecutive views. Since <span
+class="math inline">\(q\le n-f\)</span>, nonfaulty validators can supply
+all <span class="math inline">\(q\)</span> new-view, prepare,
+prepared-certificate acceptance, and commit messages without Byzantine
+participation.</p>
+<p>Consider the valid <span class="math inline">\(q\)</span>-message
+justification used by the successful new view. If it contains no lock
+certificate, (P4) selects a fresh value. Otherwise it selects its unique
+highest-view lock certificate; same-view uniqueness follows from the
+prepare-quorum overlap. Every nonfaulty validator may replace a local
+assembled-lock-certificate predecision lock with that valid selection,
+including a lock whose local commit set never reached a decision
+certificate. If a decision certificate exists, the <span
+class="math inline">\(q-f\)</span> nonfaulty commit-lock set proved
+above intersects the <span class="math inline">\(q\)</span>-message
+justification. Its report forces the selected lock certificate to carry
+the decided value, since the safety induction excludes a conflicting
+certificate. Thus at least <span class="math inline">\(q\)</span>
+nonfaulty validators can support the selected proposal in either case,
+even when some of their orphan locks were omitted from the new-view
+messages.</p>
+<p>Rule (P5) executes the proposal, prepare, provisional acceptance,
+lock-certificate dissemination, commit, and decision-relay phases, so
+every nonfaulty observer finalises within <span
+class="math inline">\(O((f+1)\Theta)\)</span> from that activation
+point. Eventual timeout activation yields eventual liveness, but the
+theorem does not bound its delay after
+<span class="roman">GST</span>.</p>
+<p>Finally, <span class="math inline">\(q\le n-f\)</span> and <span
+class="math inline">\(2q\ge n+f+1\)</span> imply <span
+class="math display">\[
+2(n-f)\ge n+f+1,
+\]</span> hence <span class="math inline">\(n\ge3f+1\)</span> (with the
+integer convention specified in (A6)). At <span
+class="math inline">\(n=3f+1\)</span>, <span
+class="math inline">\(q=2f+1\)</span> attains both inequalities. This is
+a threshold statement for the declared certificate contract, not a
+universal resilience claim for every authenticated protocol model.</p>
 <p><em>Note on FLP.</em> Fischer, Lynch, Paterson  is an impossibility
 result for fully asynchronous systems; it does not bear on achievability
 under partial synchrony (A1). ◻</p>
 </div>
 
+<h4 id="executable-receipt-and-negative-controls">Executable receipt and
+negative controls.</h4>
+<p>The finite <span
+class="math inline">\(\mathsf{BFT\text{-}LOCK\text{-}1}\)</span> receipt
+in , generated by , exhausts all certificate and new-view quorum pairs
+for <span
+class="math inline">\((n,f,q)=(1,0,1),(4,1,3),(6,1,4),(7,2,5)\)</span>.
+The first, second, and fourth are exact-size points; the third checks
+the general threshold with <span
+class="math inline">\(q&lt;n-f\)</span>. It checks both the nonfaulty
+certificate-overlap witness, independent prepare-signer,
+provisional-acceptor, and committer quorums, the <span
+class="math inline">\(q-f\)</span> lower bound on actual nonfaulty
+commit locks in a decision certificate, and transfer of at least one
+such lock into every new-view quorum. It also executes the next-view
+lock transition against every candidate prepare quorum at those
+parameter points, derives local validator states from lock-certificate
+delivery and partial commits, constructs the new-view reports, selects
+the proposal, computes the eligible voters, and determines recovery or
+deadlock. These traces include an omitted higher orphan lock at the
+general-threshold point. The receipt also runs finite
+post-<span class="roman">GST</span>
+proposal/prepare/acceptance/commit/relay traces for every nonfaulty
+reference leader. The arbitrary-view induction and wall-clock proof
+remain the mathematical argument above; the receipt is not a general
+protocol-model checker.</p>
+<p>Separate finite traces remove one-vote, monotone-view participation,
+finalise-only-on-valid-certificate semantics, quorum overlap, the fault
+bound, authentication, prepared locking, quorum-certified
+prepared-certificate acceptance and dissemination, provisional
+pre-certificate acknowledgements, new-view supersession of local
+partial-commit locks, highest-certificate leader selection, partial
+synchrony, quorum availability, quorum connectivity, terminating view
+change, nonfaulty-leader proposal progress, and nonfaulty-validator
+prepare/commit/relay progress. Validator justification checking has a
+separate malformed-proof conformance witness; with the retained lock
+rule it is defence in depth rather than an independent safety premise.
+The lock-free <span class="math inline">\(n=4,f=1,q=3\)</span> trace
+decides <span class="math inline">\(x\)</span> from <span
+class="math inline">\(\{B,N_1,N_2\}\)</span> in view zero and <span
+class="math inline">\(y\ne x\)</span> from <span
+class="math inline">\(\{B,N_2,N_3\}\)</span> in view one while
+respecting one-value-per-validator in each individual view.</p>
 <h2 id="b2theorem-2-convergence-of-the-oph-repair-map">B.2Theorem 2:
 Convergence of the OPH Repair Map</h2>
 <div id="def:oph-repair-map" class="definition">
@@ -5925,8 +6206,8 @@ Bounded wall-clock liveness requires partial synchrony and quorum
 assumptions. The <span class="roman">FLP</span> impossibility result 
 confirms that fairness is insufficient for bounded-time consensus in a
 fully asynchronous system.</p>
-<h4 id="additional-assumptions-for-a-quantitative-bound">Additional
-assumptions for a quantitative bound.</h4>
+<h4 id="a-commonly-used-shorthand-is-insufficient">A commonly used
+shorthand is insufficient.</h4>
 <ol type="1">
 <li><p>Finite known bound <span class="math inline">\(\Delta\)</span> on
 message delay after <span class="roman">GST</span>.</p></li>
@@ -5934,6 +6215,9 @@ message delay after <span class="roman">GST</span>.</p></li>
 processing rates.</p></li>
 <li><p><span class="math inline">\(f &lt; n/3\)</span>.</p></li>
 </ol>
+<p>These three facts alone do not define a protocol that proposes,
+votes, forms certificates, changes views, or relays a decision.
+Consequently they do not imply a wall-clock consensus bound.</p>
 <div id="thm:eventual-convergence" class="theorem">
 
 <p><strong>Theorem 118</strong> (Eventual finite repair termination
@@ -5954,15 +6238,17 @@ a wall-clock liveness theorem.</em></p>
 
 <div id="thm:quantitative-convergence" class="theorem">
 
-<p><strong>Theorem 119</strong> (Quantitative Convergence [Assuming
-(B1)–(B3)]). <em>In a partially synchronous
-<span class="roman">OPH</span> observer network satisfying (B1)–(B3),
-after <span class="roman">GST</span> every nonfaulty observer reaches
-consensus within <span class="math inline">\(T=O(f\cdot\Delta)\)</span>
-wall-clock time (by applying the <span class="roman">DLS</span>
-framework , Thm. 4.4, to the <span class="roman">OPH</span> repair
-protocol; requires (B1) and (B2) explicitly and does not follow from
-fairness alone).</em></p>
+<p><strong>Theorem 119</strong> (Quantitative BFT liveness [Restatement
+under the complete B.1 contract]). <em>Under (A1), (A2), (A4)–(A6),
+<span class="math inline">\(q\le n-f\)</span>, and protocol rules
+(P1)–(P5) of
+Definition <a href="#def:qbft-style" data-reference-type="ref" data-reference="def:qbft-style">103</a>,
+every nonfaulty observer finalises within <span
+class="math inline">\(O((f+1)\Theta)\)</span> wall-clock time measured
+from the first post-<span class="roman">GST</span> view whose pacemaker
+timeout bound is active. This is exactly the liveness clause proved in
+Theorem <a href="#thm:qbft-safety" data-reference-type="ref" data-reference="thm:qbft-safety">104</a>;
+it does not follow from (B1)–(B3).</em></p>
 </div>
 
 <h2 id="b5extension-boundaries">B.5Extension Boundaries</h2>
