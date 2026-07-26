@@ -1,9 +1,17 @@
 # Observer Patch Holography Papers
 
-Release: r1578
-Released: July 25, 2026
+Release: r1583
+Released: July 26, 2026
 
 This page lists the first-party HTML and PDF URLs for the OPH paper stack.
+
+## Deriving Standard Model Gauge Structure from Observer Overlap Consistency
+
+- HTML: https://floatingpragma.io/oph/papers/standard-model-gauge-structure/
+- PDF: https://floatingpragma.io/oph/papers/standard-model-gauge-structure/paper.pdf
+- Authors: Bernhard Mueller, Alexander Osika, Mario Poneder, Kai Xue, Peter Nguyen, Maarten Antonie Visser, David Matscheko
+- Category: Gauge structure
+- Summary: Two OPH gauge routes with distinct proof boundaries: categorical reconstruction from transported edge sectors and an incidence-derived finite current algebra with conditional Standard Model charges and tensor kernel. Physical global-form selection remains open.
 
 ## Deriving the Particle Zoo from Observer Consistency
 
@@ -37,13 +45,13 @@ This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 - Category: Simulation theory
 - Summary: The OPH fixed-point consensus paper. It formulates observer patches, overlap-visible records, repair moves, Lyapunov descent, quotient normal forms, and obstruction classes.
 
-## Recovering Relativity and Standard Model Structure from Observer Overlap Consistency
+## Recovering Observer Spacetime and Einstein Dynamics from Overlap Consistency
 
-- HTML: https://floatingpragma.io/oph/papers/standard-model-gravity-unification/
-- PDF: https://floatingpragma.io/oph/papers/standard-model-gravity-unification/paper.pdf
+- HTML: https://floatingpragma.io/oph/papers/observer-spacetime-einstein-dynamics/
+- PDF: https://floatingpragma.io/oph/papers/observer-spacetime-einstein-dynamics/paper.pdf
 - Authors: Bernhard Mueller, Alexander Osika, Mario Poneder, Kai Xue, Peter Nguyen, Maarten Antonie Visser, David Matscheko
-- Category: Unification
-- Summary: The compact OPH route to Lorentz structure, the Einstein branch, receipt-conditional compact-gauge reconstruction, the Standard Model quotient, color, generations, hypercharge, branch-scoped Yang-Mills statements, and the exact icosahedral face-carrier plus formal digital-CFQ boundary for charged-family continuations.
+- Category: Gravity
+- Summary: The full OPH derivation chain from finite overlap records through the celestial screen, modular Lorentz kinematics, a conditional four-dimensional event manifold, local stress reconstruction, and the conditional Einstein equation.
 
 ## Screen Microphysics and Observer Synchronization
 

@@ -1,9 +1,54 @@
 {
-  "release_id": "r1578",
-  "released_at": "July 25, 2026",
+  "release_id": "r1583",
+  "released_at": "July 26, 2026",
   "collection_url": "https://floatingpragma.io/oph/papers/",
   "sitemap_url": "https://floatingpragma.io/oph/papers/sitemap.xml",
   "papers": [
+    {
+      "id": "deriving_standard_model_gauge_structure_from_observer_overlap_consistency",
+      "title": "Deriving Standard Model Gauge Structure from Observer Overlap Consistency",
+      "short_title": "Standard Model gauge paper",
+      "category": "Gauge structure",
+      "description": "Two OPH gauge routes with distinct proof boundaries: categorical reconstruction from transported edge sectors and an incidence-derived finite current algebra with conditional Standard Model charges and tensor kernel. Physical global-form selection remains open.",
+      "authors": [
+        "Bernhard Mueller",
+        "Alexander Osika",
+        "Mario Poneder",
+        "Kai Xue",
+        "Peter Nguyen",
+        "Maarten Antonie Visser",
+        "David Matscheko"
+      ],
+      "keywords": [
+        "Standard Model gauge group",
+        "gauge reconstruction",
+        "icosahedral symmetry",
+        "Tannaka reconstruction",
+        "hypercharge",
+        "Z6 quotient",
+        "Observer Patch Holography"
+      ],
+      "html_url": "https://floatingpragma.io/oph/papers/standard-model-gauge-structure/",
+      "pdf_url": "https://floatingpragma.io/oph/papers/standard-model-gauge-structure/paper.pdf",
+      "central_pdf_url": "https://floatingpragma.io/oph/papers/pdf/deriving_standard_model_gauge_structure_from_observer_overlap_consistency.pdf",
+      "related_blog_posts": [
+        {
+          "title": "Everything Clicks Into Place",
+          "url": "https://blog.floatingpragma.io/everything-that-clicks-into-place",
+          "description": "Unification as translation, repair, and stable agreement across domains."
+        },
+        {
+          "title": "Causality Is Repair",
+          "url": "https://blog.floatingpragma.io/causality-is-repair",
+          "description": "Causality as exposed mismatch, accepted repair, and record formation."
+        },
+        {
+          "title": "The String Theory OPH Tests",
+          "url": "https://blog.floatingpragma.io/the-right-string-theory",
+          "description": "Why the Bouchard-Donagi one-Higgs row fails the OPH moduli-rank gate."
+        }
+      ]
+    },
     {
       "id": "deriving_the_particle_zoo_from_observer_consistency",
       "title": "Deriving the Particle Zoo from Observer Consistency",
@@ -184,11 +229,11 @@
       ]
     },
     {
-      "id": "recovering_relativity_and_standard_model_structure_from_observer_overlap_consistency_compact",
-      "title": "Recovering Relativity and Standard Model Structure from Observer Overlap Consistency",
-      "short_title": "Compact OPH core",
-      "category": "Unification",
-      "description": "The compact OPH route to Lorentz structure, the Einstein branch, receipt-conditional compact-gauge reconstruction, the Standard Model quotient, color, generations, hypercharge, branch-scoped Yang-Mills statements, and the exact icosahedral face-carrier plus formal digital-CFQ boundary for charged-family continuations.",
+      "id": "recovering_observer_spacetime_and_einstein_dynamics_from_overlap_consistency",
+      "title": "Recovering Observer Spacetime and Einstein Dynamics from Overlap Consistency",
+      "short_title": "Spacetime and Einstein paper",
+      "category": "Gravity",
+      "description": "The full OPH derivation chain from finite overlap records through the celestial screen, modular Lorentz kinematics, a conditional four-dimensional event manifold, local stress reconstruction, and the conditional Einstein equation.",
       "authors": [
         "Bernhard Mueller",
         "Alexander Osika",
@@ -199,17 +244,17 @@
         "David Matscheko"
       ],
       "keywords": [
-        "Standard Model unified with gravity",
         "quantum gravity",
-        "physics unification",
+        "observer spacetime",
         "Lorentz symmetry",
         "Einstein gravity",
-        "gauge reconstruction",
+        "event manifold",
+        "modular flow",
         "Observer Patch Holography"
       ],
-      "html_url": "https://floatingpragma.io/oph/papers/standard-model-gravity-unification/",
-      "pdf_url": "https://floatingpragma.io/oph/papers/standard-model-gravity-unification/paper.pdf",
-      "central_pdf_url": "https://floatingpragma.io/oph/papers/pdf/recovering_relativity_and_standard_model_structure_from_observer_overlap_consistency_compact.pdf",
+      "html_url": "https://floatingpragma.io/oph/papers/observer-spacetime-einstein-dynamics/",
+      "pdf_url": "https://floatingpragma.io/oph/papers/observer-spacetime-einstein-dynamics/paper.pdf",
+      "central_pdf_url": "https://floatingpragma.io/oph/papers/pdf/recovering_observer_spacetime_and_einstein_dynamics_from_overlap_consistency.pdf",
       "related_blog_posts": [
         {
           "title": "Everything Clicks Into Place",
