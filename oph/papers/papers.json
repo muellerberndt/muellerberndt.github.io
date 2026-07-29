@@ -1,6 +1,6 @@
 {
-  "release_id": "r2002",
-  "released_at": "July 28, 2026",
+  "release_id": "r2003",
+  "released_at": "July 29, 2026",
   "collection_url": "https://floatingpragma.io/oph/papers/",
   "sitemap_url": "https://floatingpragma.io/oph/papers/sitemap.xml",
   "papers": [
@@ -637,12 +637,13 @@
     },
     {
       "id": "yang_mills_gap_clay_problem",
-      "title": "Explaining the Yang-Mills Mass Gap in Observer Patch Holography",
+      "title": "Explaining the Yang-Mills Mass Gap with Observer-Patch Repair Dynamics",
       "short_title": "Yang-Mills gap",
       "category": "Mathematical physics",
       "description": "A branch-scoped OPH paper on the Yang-Mills mass gap, support-visible compact-gauge extraction, Euclidean consensus, repair completeness, and the exact repair gap.",
       "authors": [
-        "Bernhard Mueller"
+        "Bernhard Mueller",
+        "Jonathan Hill"
       ],
       "keywords": [
         "Yang-Mills mass gap",

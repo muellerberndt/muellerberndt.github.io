@@ -1,7 +1,7 @@
 # Observer Patch Holography Papers
 
-Release: r2002
-Released: July 28, 2026
+Release: r2003
+Released: July 29, 2026
 
 This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 
@@ -141,10 +141,10 @@ This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 - Category: Consciousness
 - Summary: An OPH paper on brains as biological fixed-point consensus systems, self-reading observer patches, recurrent repair, qualia, and AGI architecture.
 
-## Explaining the Yang-Mills Mass Gap in Observer Patch Holography
+## Explaining the Yang-Mills Mass Gap with Observer-Patch Repair Dynamics
 
 - HTML: https://floatingpragma.io/oph/papers/yang-mills-mass-gap-observer-patch-holography/
 - PDF: https://floatingpragma.io/oph/papers/yang-mills-mass-gap-observer-patch-holography/paper.pdf
-- Authors: Bernhard Mueller
+- Authors: Bernhard Mueller, Jonathan Hill
 - Category: Mathematical physics
 - Summary: A branch-scoped OPH paper on the Yang-Mills mass gap, support-visible compact-gauge extraction, Euclidean consensus, repair completeness, and the exact repair gap.
