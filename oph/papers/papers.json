@@ -94,6 +94,43 @@
       ]
     },
     {
+      "id": "from_observer_consensus_to_standard_physics",
+      "title": "From Observer Consensus to Standard Physics",
+      "short_title": "Flagship OPH paper",
+      "category": "Flagship introduction",
+      "description": "A standalone introduction to Observer Patch Holography: finite self-reading patches, public quantum records, Lorentzian geometry, Einstein dynamics, and Standard Model structure.",
+      "authors": [
+        "Bernhard Mueller",
+        "Alexander Osika",
+        "Mario Poneder",
+        "Kai Xue",
+        "Ben Cassie",
+        "Peter Nguyen",
+        "Maarten Antonie Visser",
+        "Kale Arnav Anirudha",
+        "David Matscheko",
+        "Jonathan Hill"
+      ],
+      "keywords": [
+        "Observer Patch Holography",
+        "OPH",
+        "quantum gravity",
+        "Standard Model",
+        "Einstein equation",
+        "observer-first physics"
+      ],
+      "html_url": "https://floatingpragma.io/oph/papers/from-observer-consensus-to-standard-physics/",
+      "pdf_url": "https://floatingpragma.io/oph/papers/from-observer-consensus-to-standard-physics/paper.pdf",
+      "central_pdf_url": "https://floatingpragma.io/oph/papers/pdf/from_observer_consensus_to_standard_physics.pdf",
+      "related_blog_posts": [
+        {
+          "title": "The Trigger",
+          "url": "https://blog.floatingpragma.io/the-trigger",
+          "description": "High-level public entry point for the OPH claim."
+        }
+      ]
+    },
+    {
       "id": "observers_are_all_you_need",
       "title": "Observers Are All You Need",
       "short_title": "Main OPH paper",
@@ -318,75 +355,6 @@
       ]
     },
     {
-      "id": "Photonic_fixed-point_consensus_for_SHA-256d_proof_of_work",
-      "title": "Photonic Fixed-Point Consensus for SHA-256d Proof of Work",
-      "short_title": "Photonic proof of work",
-      "category": "Physical computation",
-      "description": "An OPH-adjacent physical-computation paper on photonic fixed-point consensus, SHA-256d proof of work, analog constraint satisfaction, and verifier receipts.",
-      "authors": [
-        "Bernhard Mueller",
-        "Alexander Osika"
-      ],
-      "keywords": [
-        "SHA-256d proof of work",
-        "Bitcoin mining",
-        "photonic computing",
-        "physical cryptanalysis",
-        "analog computing",
-        "fixed-point consensus",
-        "Observer Patch Holography"
-      ],
-      "html_url": "https://floatingpragma.io/oph/papers/photonic-fixed-point-consensus-sha256d-proof-of-work/",
-      "pdf_url": "https://floatingpragma.io/oph/papers/photonic-fixed-point-consensus-sha256d-proof-of-work/paper.pdf",
-      "central_pdf_url": "https://floatingpragma.io/oph/papers/pdf/Photonic_fixed-point_consensus_for_SHA-256d_proof_of_work.pdf",
-      "related_blog_posts": [
-        {
-          "title": "P = NP on the Observer Screen",
-          "url": "https://blog.floatingpragma.io/p-equals-np-on-the-observer-screen",
-          "description": "Search, verification, proof of work, and local repair on observer screens."
-        },
-        {
-          "title": "Causality Is Repair",
-          "url": "https://blog.floatingpragma.io/causality-is-repair",
-          "description": "Causality as exposed mismatch, accepted repair, and record formation."
-        }
-      ]
-    },
-    {
-      "id": "chi_nu_susceptibility_bounds",
-      "title": "Theoretical Bounds on Chi-Nu Susceptibility in Observer Patch Holography",
-      "short_title": "Chi-nu bounds",
-      "category": "Gravity engineering",
-      "description": "A branch-scoped OPH calculation for chi-nu susceptibility bounds, coherent scalar sourcing, quotient-edge response, and engineering chart values.",
-      "authors": [
-        "Bernhard Mueller, Alex Osika,",
-        "David Matscheko"
-      ],
-      "keywords": [
-        "chi-nu susceptibility",
-        "local gravity response",
-        "dark-sector scalar",
-        "gravity engineering",
-        "coherent matter",
-        "Observer Patch Holography"
-      ],
-      "html_url": "https://floatingpragma.io/oph/papers/chi-nu-susceptibility-bounds/",
-      "pdf_url": "https://floatingpragma.io/oph/papers/chi-nu-susceptibility-bounds/paper.pdf",
-      "central_pdf_url": "https://floatingpragma.io/oph/papers/pdf/chi_nu_susceptibility_bounds.pdf",
-      "related_blog_posts": [
-        {
-          "title": "Causality Is Repair",
-          "url": "https://blog.floatingpragma.io/causality-is-repair",
-          "description": "Causality as exposed mismatch, accepted repair, and record formation."
-        },
-        {
-          "title": "Everything Clicks Into Place",
-          "url": "https://blog.floatingpragma.io/everything-that-clicks-into-place",
-          "description": "Unification as translation, repair, and stable agreement across domains."
-        }
-      ]
-    },
-    {
       "id": "compact_proof_of_oph",
       "title": "Compact Proof Of Oph",
       "short_title": "Compact Proof Of Oph",
@@ -409,263 +377,6 @@
           "title": "The Trigger",
           "url": "https://blog.floatingpragma.io/the-trigger",
           "description": "High-level public entry point for the OPH claim."
-        }
-      ]
-    },
-    {
-      "id": "de_sitter_time_advance_sign_from_fixed_screen_capacity",
-      "title": "De Sitter Time Advance Sign From Fixed Screen Capacity",
-      "short_title": "De Sitter Time Advance Sign From Fixed Screen Capacity",
-      "category": "OPH paper",
-      "description": "First-party HTML and PDF publication page for De Sitter Time Advance Sign From Fixed Screen Capacity in the OPH paper stack.",
-      "authors": [
-        "Bernhard Mueller"
-      ],
-      "keywords": [
-        "Observer Patch Holography",
-        "OPH",
-        "physics",
-        "theory of everything"
-      ],
-      "html_url": "https://floatingpragma.io/oph/papers/de-sitter-time-advance-sign-from-fixed-screen-capacity/",
-      "pdf_url": "https://floatingpragma.io/oph/papers/de-sitter-time-advance-sign-from-fixed-screen-capacity/paper.pdf",
-      "central_pdf_url": "https://floatingpragma.io/oph/papers/pdf/de_sitter_time_advance_sign_from_fixed_screen_capacity.pdf",
-      "related_blog_posts": [
-        {
-          "title": "The Trigger",
-          "url": "https://blog.floatingpragma.io/the-trigger",
-          "description": "High-level public entry point for the OPH claim."
-        }
-      ]
-    },
-    {
-      "id": "fine_structure_constant_derivation",
-      "title": "The Fine-Structure Constant as an OPH Pixel Fixed Point",
-      "short_title": "Fine-structure constant",
-      "category": "Constants",
-      "description": "A focused OPH paper on the fine-structure constant, local screen-cell closure, hadronic endpoint transport, and the fixed-point status of alpha.",
-      "authors": [
-        "Bernhard Mueller",
-        "Alexander Osika"
-      ],
-      "keywords": [
-        "fine-structure constant",
-        "alpha 1 over 137",
-        "fundamental constants",
-        "pixel fixed point",
-        "Standard Model constants",
-        "Observer Patch Holography"
-      ],
-      "html_url": "https://floatingpragma.io/oph/papers/fine-structure-constant-oph-pixel-fixed-point/",
-      "pdf_url": "https://floatingpragma.io/oph/papers/fine-structure-constant-oph-pixel-fixed-point/paper.pdf",
-      "central_pdf_url": "https://floatingpragma.io/oph/papers/pdf/fine_structure_constant_derivation.pdf",
-      "related_blog_posts": [
-        {
-          "title": "Fine-Structure Constant from First Principles",
-          "url": "https://blog.floatingpragma.io/fine-structure-constant-from-first-principles",
-          "description": "Public route into the OPH fine-structure constant calculation."
-        },
-        {
-          "title": "Everything Clicks Into Place",
-          "url": "https://blog.floatingpragma.io/everything-that-clicks-into-place",
-          "description": "Unification as translation, repair, and stable agreement across domains."
-        }
-      ]
-    },
-    {
-      "id": "koide_identity_from_positive_c3_face_circulants",
-      "title": "Koide Identity From Positive C3 Face Circulants",
-      "short_title": "Koide Identity From Positive C3 Face Circulants",
-      "category": "OPH paper",
-      "description": "First-party HTML and PDF publication page for Koide Identity From Positive C3 Face Circulants in the OPH paper stack.",
-      "authors": [
-        "Bernhard Mueller"
-      ],
-      "keywords": [
-        "Observer Patch Holography",
-        "OPH",
-        "physics",
-        "theory of everything"
-      ],
-      "html_url": "https://floatingpragma.io/oph/papers/koide-identity-from-positive-c3-face-circulants/",
-      "pdf_url": "https://floatingpragma.io/oph/papers/koide-identity-from-positive-c3-face-circulants/paper.pdf",
-      "central_pdf_url": "https://floatingpragma.io/oph/papers/pdf/koide_identity_from_positive_c3_face_circulants.pdf",
-      "related_blog_posts": [
-        {
-          "title": "The Trigger",
-          "url": "https://blog.floatingpragma.io/the-trigger",
-          "description": "High-level public entry point for the OPH claim."
-        }
-      ]
-    },
-    {
-      "id": "machine_checked_finite_event_algebras",
-      "title": "Machine-Checked Finite Event Algebras for Observer-Patch Holography",
-      "short_title": "Machine-checked finite event algebras",
-      "category": "Mathematical foundations",
-      "description": "A machine-checked finite-event-algebra paper for OPH measurement surfaces, including Boolean event structure, traces, conditional expectations, and Born-Luders update rules.",
-      "authors": [
-        "Bernhard Mueller"
-      ],
-      "keywords": [
-        "finite event algebras",
-        "Lean 4",
-        "Born rule",
-        "Luders update",
-        "conditional expectation",
-        "machine checked mathematics",
-        "Observer Patch Holography"
-      ],
-      "html_url": "https://floatingpragma.io/oph/papers/machine-checked-finite-event-algebras/",
-      "pdf_url": "https://floatingpragma.io/oph/papers/machine-checked-finite-event-algebras/paper.pdf",
-      "central_pdf_url": "https://floatingpragma.io/oph/papers/pdf/machine_checked_finite_event_algebras.pdf",
-      "related_blog_posts": [
-        {
-          "title": "The Trigger",
-          "url": "https://blog.floatingpragma.io/the-trigger",
-          "description": "High-level public entry point for the OPH claim."
-        }
-      ]
-    },
-    {
-      "id": "observable_normal_forms",
-      "title": "Observation-Determined Normal Forms: Stability, Obstructions, and Refinement in Constraint and Rewrite Systems",
-      "short_title": "Observation-determined normal forms",
-      "category": "Mathematical foundations",
-      "description": "A substrate-neutral mathematical paper separating same-source confluence, cross-source identification from protected observations, liveness, and local repairability, with quantitative stability and refinement criteria.",
-      "authors": [
-        "Bernhard Mueller",
-        "David Matscheko",
-        "Jonathan Hill"
-      ],
-      "keywords": [
-        "abstract rewriting",
-        "observation-determined normal forms",
-        "confluence",
-        "boundary reconstruction",
-        "conditional expectation",
-        "refinement stability",
-        "Lean 4"
-      ],
-      "html_url": "https://floatingpragma.io/oph/papers/observation-determined-normal-forms/",
-      "pdf_url": "https://floatingpragma.io/oph/papers/observation-determined-normal-forms/paper.pdf",
-      "central_pdf_url": "https://floatingpragma.io/oph/papers/pdf/observable_normal_forms.pdf",
-      "related_blog_posts": [
-        {
-          "title": "The Trigger",
-          "url": "https://blog.floatingpragma.io/the-trigger",
-          "description": "High-level public entry point for the OPH claim."
-        }
-      ]
-    },
-    {
-      "id": "observer_patch_holography_as_string_vacuum_selector",
-      "title": "Observer Patch Holography as a String-Vacuum Selector",
-      "short_title": "String-vacuum selector",
-      "category": "String theory",
-      "description": "A bridge paper connecting the de Sitter observer problem, OPH edge-string effective language, and a heterotic Standard Model representative as a conditional string-vacuum selector.",
-      "authors": [
-        "Bernhard Mueller"
-      ],
-      "keywords": [
-        "string vacuum selector",
-        "string theory landscape",
-        "de Sitter observer problem",
-        "heterotic Standard Model",
-        "Bouchard Donagi",
-        "Observer Patch Holography"
-      ],
-      "html_url": "https://floatingpragma.io/oph/papers/observer-patch-holography-string-vacuum-selector/",
-      "pdf_url": "https://floatingpragma.io/oph/papers/observer-patch-holography-string-vacuum-selector/paper.pdf",
-      "central_pdf_url": "https://floatingpragma.io/oph/papers/pdf/observer_patch_holography_as_string_vacuum_selector.pdf",
-      "related_blog_posts": [
-        {
-          "title": "The String Theory OPH Tests",
-          "url": "https://blog.floatingpragma.io/the-right-string-theory",
-          "description": "Why the Bouchard-Donagi one-Higgs row fails the OPH moduli-rank gate."
-        },
-        {
-          "title": "Everything Clicks Into Place",
-          "url": "https://blog.floatingpragma.io/everything-that-clicks-into-place",
-          "description": "Unification as translation, repair, and stable agreement across domains."
-        },
-        {
-          "title": "The Trigger",
-          "url": "https://blog.floatingpragma.io/the-trigger",
-          "description": "High-level public entry point for the OPH claim."
-        }
-      ]
-    },
-    {
-      "id": "thinking_as_patch_net_fixed_point_search",
-      "title": "Thinking as Patch-Net Fixed-Point Search",
-      "short_title": "Thinking as patch net",
-      "category": "Consciousness",
-      "description": "An OPH paper on brains as biological fixed-point consensus systems, self-reading observer patches, recurrent repair, qualia, and AGI architecture.",
-      "authors": [
-        "Bernhard Mueller"
-      ],
-      "keywords": [
-        "consciousness-first theories",
-        "consciousness",
-        "AGI",
-        "fixed-point search",
-        "brain computation",
-        "qualia",
-        "Observer Patch Holography"
-      ],
-      "html_url": "https://floatingpragma.io/oph/papers/thinking-as-patch-net-fixed-point-search/",
-      "pdf_url": "https://floatingpragma.io/oph/papers/thinking-as-patch-net-fixed-point-search/paper.pdf",
-      "central_pdf_url": "https://floatingpragma.io/oph/papers/pdf/thinking_as_patch_net_fixed_point_search.pdf",
-      "related_blog_posts": [
-        {
-          "title": "Semiotics and the Physics of Meaning",
-          "url": "https://blog.floatingpragma.io/semiotics-and-the-physics-of-meaning",
-          "description": "Meaning, signs, interpretation, and observer overlap as one physical language."
-        },
-        {
-          "title": "Causality Is Repair",
-          "url": "https://blog.floatingpragma.io/causality-is-repair",
-          "description": "Causality as exposed mismatch, accepted repair, and record formation."
-        },
-        {
-          "title": "Everything Clicks Into Place",
-          "url": "https://blog.floatingpragma.io/everything-that-clicks-into-place",
-          "description": "Unification as translation, repair, and stable agreement across domains."
-        }
-      ]
-    },
-    {
-      "id": "yang_mills_gap_clay_problem",
-      "title": "Explaining the Yang-Mills Mass Gap with Observer-Patch Repair Dynamics",
-      "short_title": "Yang-Mills gap",
-      "category": "Mathematical physics",
-      "description": "A branch-scoped OPH paper on the Yang-Mills mass gap, support-visible compact-gauge extraction, Euclidean consensus, repair completeness, and the exact repair gap.",
-      "authors": [
-        "Bernhard Mueller",
-        "Jonathan Hill"
-      ],
-      "keywords": [
-        "Yang-Mills mass gap",
-        "Clay Millennium problem",
-        "quantum Yang-Mills theory",
-        "compact gauge theory",
-        "mass gap",
-        "Observer Patch Holography"
-      ],
-      "html_url": "https://floatingpragma.io/oph/papers/yang-mills-mass-gap-observer-patch-holography/",
-      "pdf_url": "https://floatingpragma.io/oph/papers/yang-mills-mass-gap-observer-patch-holography/paper.pdf",
-      "central_pdf_url": "https://floatingpragma.io/oph/papers/pdf/yang_mills_gap_clay_problem.pdf",
-      "related_blog_posts": [
-        {
-          "title": "Causality Is Repair",
-          "url": "https://blog.floatingpragma.io/causality-is-repair",
-          "description": "Causality as exposed mismatch, accepted repair, and record formation."
-        },
-        {
-          "title": "Everything Clicks Into Place",
-          "url": "https://blog.floatingpragma.io/everything-that-clicks-into-place",
-          "description": "Unification as translation, repair, and stable agreement across domains."
         }
       ]
     }

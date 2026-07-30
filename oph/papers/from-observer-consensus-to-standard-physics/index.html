@@ -1,0 +1,1554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>From Observer Consensus to Standard Physics | OPH Paper</title>
+  <meta name="title" content="From Observer Consensus to Standard Physics | OPH Paper" />
+  <meta name="description" content="A standalone introduction to Observer Patch Holography: finite self-reading patches, public quantum records, Lorentzian geometry, Einstein dynamics, and Standard Model structure." />
+  <meta name="keywords" content="Observer Patch Holography, OPH, quantum gravity, Standard Model, Einstein equation, observer-first physics" />
+  <meta name="author" content="Pragma" />
+  <link rel="canonical" href="https://floatingpragma.io/oph/papers/from-observer-consensus-to-standard-physics/" />
+  <link rel="related" href="https://blog.floatingpragma.io/the-trigger" title="The Trigger" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="citation_title" content="From Observer Consensus to Standard Physics" />
+  <meta name="citation_author" content="Bernhard Mueller" />
+  <meta name="citation_author" content="Alexander Osika" />
+  <meta name="citation_author" content="Mario Poneder" />
+  <meta name="citation_author" content="Kai Xue" />
+  <meta name="citation_author" content="Ben Cassie" />
+  <meta name="citation_author" content="Peter Nguyen" />
+  <meta name="citation_author" content="Maarten Antonie Visser" />
+  <meta name="citation_author" content="Kale Arnav Anirudha" />
+  <meta name="citation_author" content="David Matscheko" />
+  <meta name="citation_author" content="Jonathan Hill" />
+  <meta name="citation_publication_date" content="2026/07/29" />
+  <meta name="citation_online_date" content="2026/07/29" />
+  <meta name="citation_language" content="en" />
+  <meta name="citation_keywords" content="Observer Patch Holography; OPH; quantum gravity; Standard Model; Einstein equation; observer-first physics" />
+  <meta name="citation_pdf_url" content="https://floatingpragma.io/oph/papers/from-observer-consensus-to-standard-physics/paper.pdf" />
+  <meta name="citation_abstract_html_url" content="https://floatingpragma.io/oph/papers/from-observer-consensus-to-standard-physics/" />
+  <meta name="citation_technical_report_institution" content="Pragma Research" />
+  <meta name="citation_technical_report_number" content="OPH r2003 from_observer_consensus_to_standard_physics" />
+  <meta name="DC.title" content="From Observer Consensus to Standard Physics" />
+  <meta name="DC.creator" content="Bernhard Mueller" />
+  <meta name="DC.creator" content="Alexander Osika" />
+  <meta name="DC.creator" content="Mario Poneder" />
+  <meta name="DC.creator" content="Kai Xue" />
+  <meta name="DC.creator" content="Ben Cassie" />
+  <meta name="DC.creator" content="Peter Nguyen" />
+  <meta name="DC.creator" content="Maarten Antonie Visser" />
+  <meta name="DC.creator" content="Kale Arnav Anirudha" />
+  <meta name="DC.creator" content="David Matscheko" />
+  <meta name="DC.creator" content="Jonathan Hill" />
+  <meta name="DC.issued" content="2026/07/29" />
+  <meta name="DC.date" content="2026/07/29" />
+  <meta name="DC.type" content="Text" />
+  <meta name="DC.format" content="text/html" />
+  <meta name="DC.language" content="en" />
+  <meta name="DC.publisher" content="Pragma Research" />
+  <meta name="DC.identifier" content="https://floatingpragma.io/oph/papers/from-observer-consensus-to-standard-physics/" />
+  <meta name="DC.identifier" content="https://floatingpragma.io/oph/papers/from-observer-consensus-to-standard-physics/paper.pdf" />
+  <meta name="article:published_time" content="2026-07-29T00:00:00Z" />
+  <meta name="article:modified_time" content="2026-07-29T00:00:00Z" />
+  <meta name="prism.publicationDate" content="2026/07/29" />
+  <meta name="prism.publicationName" content="Observer Patch Holography Papers" />
+  <meta name="prism.section" content="Flagship introduction" />
+  <meta name="prism.url" content="https://floatingpragma.io/oph/papers/from-observer-consensus-to-standard-physics/" />
+  <meta name="prism.copyright" content="2026 Pragma Research" />
+  <link rel="alternate" type="application/pdf" href="https://floatingpragma.io/oph/papers/from-observer-consensus-to-standard-physics/paper.pdf" title="From Observer Consensus to Standard Physics PDF" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://floatingpragma.io/oph/papers/from-observer-consensus-to-standard-physics/" />
+  <meta property="og:title" content="From Observer Consensus to Standard Physics | OPH Paper" />
+  <meta property="og:description" content="A standalone introduction to Observer Patch Holography: finite self-reading patches, public quantum records, Lorentzian geometry, Einstein dynamics, and Standard Model structure." />
+  <meta property="og:image" content="https://floatingpragma.io/oph/screen.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="From Observer Consensus to Standard Physics | OPH Paper" />
+  <meta name="twitter:description" content="A standalone introduction to Observer Patch Holography: finite self-reading patches, public quantum records, Lorentzian geometry, Einstein dynamics, and Standard Model structure." />
+  <meta name="twitter:image" content="https://floatingpragma.io/oph/screen.webp" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="stylesheet" href="/oph/styles.css" />
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['\\(', '\\)'], ['$', '$']], displayMath: [['\\[', '\\]']] },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "From Observer Consensus to Standard Physics",
+  "name": "From Observer Consensus to Standard Physics",
+  "description": "A standalone introduction to Observer Patch Holography: finite self-reading patches, public quantum records, Lorentzian geometry, Einstein dynamics, and Standard Model structure.",
+  "url": "https://floatingpragma.io/oph/papers/from-observer-consensus-to-standard-physics/",
+  "sameAs": "https://floatingpragma.io/oph/papers/from-observer-consensus-to-standard-physics/paper.pdf",
+  "encoding": {
+    "@type": "MediaObject",
+    "contentUrl": "https://floatingpragma.io/oph/papers/from-observer-consensus-to-standard-physics/paper.pdf",
+    "encodingFormat": "application/pdf"
+  },
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Bernhard Mueller"
+    },
+    {
+      "@type": "Person",
+      "name": "Alexander Osika"
+    },
+    {
+      "@type": "Person",
+      "name": "Mario Poneder"
+    },
+    {
+      "@type": "Person",
+      "name": "Kai Xue"
+    },
+    {
+      "@type": "Person",
+      "name": "Ben Cassie"
+    },
+    {
+      "@type": "Person",
+      "name": "Peter Nguyen"
+    },
+    {
+      "@type": "Person",
+      "name": "Maarten Antonie Visser"
+    },
+    {
+      "@type": "Person",
+      "name": "Kale Arnav Anirudha"
+    },
+    {
+      "@type": "Person",
+      "name": "David Matscheko"
+    },
+    {
+      "@type": "Person",
+      "name": "Jonathan Hill"
+    }
+  ],
+  "isPartOf": {
+    "@type": "ResearchProject",
+    "name": "Observer Patch Holography",
+    "url": "https://floatingpragma.io/oph/"
+  },
+  "keywords": [
+    "Observer Patch Holography",
+    "OPH",
+    "quantum gravity",
+    "Standard Model",
+    "Einstein equation",
+    "observer-first physics"
+  ],
+  "datePublished": "July 29, 2026",
+  "dateModified": "July 29, 2026",
+  "version": "r2003",
+  "subjectOf": [
+    {
+      "@type": "BlogPosting",
+      "headline": "The Trigger",
+      "url": "https://blog.floatingpragma.io/the-trigger",
+      "description": "High-level public entry point for the OPH claim."
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Floating Pragma",
+      "item": "https://floatingpragma.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Observer Patch Holography",
+      "item": "https://floatingpragma.io/oph/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "OPH Papers",
+      "item": "https://floatingpragma.io/oph/papers/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "From Observer Consensus to Standard Physics",
+      "item": "https://floatingpragma.io/oph/papers/from-observer-consensus-to-standard-physics/"
+    }
+  ]
+}
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HLGH209WMG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-HLGH209WMG', { cookie_domain: 'floatingpragma.io' });
+  </script>
+</head>
+<body class="oph-page paper-page">
+  <div class="site-grid"></div>
+  <div class="page-shell">
+    <header class="site-header reveal">
+      <a class="brand" href="/oph/">
+        <span class="brand-mark">
+          <img src="/pragma-cropped.jpg" alt="Pragma" />
+        </span>
+        <span class="brand-copy">
+          <strong>Pragma</strong>
+          <span>OPH Paper</span>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="OPH navigation">
+        <a href="/oph/" data-track-link="nav-hub">Hub</a>
+        <a href="/oph/papers/" data-track-link="nav-papers">Papers</a>
+        <a href="/oph/standard-model-gravity-unification/" data-track-link="nav-smg">SM + Gravity</a>
+        <a href="/oph/theory-of-everything/" data-track-link="nav-toe">Theory of Everything</a>
+        <a href="https://oph-lab.floatingpragma.io/" data-track-link="nav-lab">Lab</a>
+        <a href="https://challenge.floatingpragma.io/" data-track-link="nav-challenge">Challenge</a>
+      </nav>
+    </header>
+
+    <main>
+      <article class="paper-reader reveal">
+        <header class="paper-reader-header">
+          <div class="eyebrow">Flagship introduction</div>
+          <h1 class="citation_title">From Observer Consensus to Standard Physics</h1>
+          <h3 class="citation_author">Authors: Bernhard Mueller, Alexander Osika, Mario Poneder, Kai Xue, Ben Cassie, Peter Nguyen, Maarten Antonie Visser, Kale Arnav Anirudha, David Matscheko, Jonathan Hill</h3>
+          <div class="paper-reader-abstract">
+            <strong>Abstract</strong>
+            <p>A standalone introduction to Observer Patch Holography: finite self-reading patches, public quantum records, Lorentzian geometry, Einstein dynamics, and Standard Model structure.</p>
+          </div>
+          <div class="paper-meta-line">
+            <span>r2003</span>
+            <span>July 29, 2026</span>
+            <span>papers</span>
+          </div>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="/oph/papers/from-observer-consensus-to-standard-physics/paper.pdf" target="_blank" rel="noopener noreferrer" data-track-link="paper-pdf-from_observer_consensus_to_standard_physics">Download PDF</a>
+            <a class="btn btn-secondary" href="/oph/papers/" data-track-link="paper-index">All OPH papers</a>
+            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r2003" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
+            <a class="btn btn-secondary" href="https://challenge.floatingpragma.io/" data-track-link="paper-challenge">Challenge</a>
+          </div>
+
+          <nav class="paper-link-strip" aria-label="Related OPH essays">
+            <span>Related essays</span>
+            <a href="https://blog.floatingpragma.io/the-trigger" target="_blank" rel="noopener noreferrer" data-track-link="paper-blog-from_observer_consensus_to_standard_physics">The Trigger</a>
+          </nav>
+
+          <details class="paper-section-jump">
+            <summary>Section jump</summary>
+            <nav class="paper-toc" aria-label="Paper sections"><a href="#introduction-and-claim-boundary">Introduction and claim boundary</a>
+<a href="#the-three-axioms">The three axioms</a>
+<a href="#the-theorem-chain">The theorem chain</a>
+<a href="#the-primitive-finite-architecture">The primitive finite architecture</a>
+<a href="#the-fixed-point-consensus-theorem">The fixed-point consensus theorem</a>
+<a href="#from-observer-frames-to-events-and-spacetime">From observer frames to events and spacetime</a>
+<a href="#exact-kinematics-of-the-spherical-support">Exact kinematics of the spherical support</a>
+<a href="#a-measured-finite-lorentzian-signature">A measured finite Lorentzian signature</a>
+<a href="#a-target-clean-source-inhabits-the-finite-local-domain">A target-clean source inhabits the finite local domain</a>
+<a href="#einstein-reconstruction">Einstein reconstruction</a>
+<a href="#gauge-structure-and-a-one-generation-matter-witness">Gauge structure and a one-generation matter witness</a>
+<a href="#the-coefficient-algebra">The coefficient algebra</a></nav>
+          </details>
+        </header>
+        <div class="paper-reader-grid">
+          <div class="paper-body">
+<p><strong>Paper release:</strong> <code>r2003</code>
+<strong>Released:</strong> July 29, 2026</p>
+<p><strong>Author af f iliations:</strong> <sup>1</sup>Pragma Inc.,
+Washington, USA; <sup>2</sup>SNRGY Inc., Gothenburg, Sweden.
+<strong>Keywords:</strong> foundations of physics; observers;
+reconstruction theorems; quantum probability; emergent spacetime; gauge
+structure; formal verification; falsifiability.</p>
+<h1 id="introduction-and-claim-boundary">Introduction and claim
+boundary</h1>
+<p>Physical theory ordinarily postulates its deepest structures
+separately. Quantum theory posits a Hilbert space and the Born rule;
+relativity posits a Lorentzian manifold; the Standard Model posits a
+gauge group and matter representations. Reconstruction programs ask
+whether some of these postulates are theorems of something smaller. This
+paper presents one such program, Observer Patch Holography (OPH). Its
+primitive is a finite society of observers that keep records, compare
+them where they overlap, and repair disagreement.</p>
+<p>The central question is operational:</p>
+<blockquote>
+<p><em>Can operational consistency among finite observers reconstruct
+the mathematical structures ordinarily postulated separately in quantum
+theory, spacetime geometry, and gauge physics?</em></p>
+</blockquote>
+<p>Our answer is a structured partial yes, and the structure is the
+point. Some reconstructions are finite theorems with machine-checked
+proofs. Some are exact computations with executable certificates. Some
+are conditional compositions whose physical antecedents are stated as
+named premises. Some require physical producers that are open
+obligations. This paper never mixes those classes. Every result below
+carries one of four labels:</p>
+<div class="center">
+
+<div class="table-scroll"><table>
+<tbody>
+<tr>
+<td style="text-align: center;"><span class="sans-serif">T</span></td>
+<td style="text-align: left;">proved finite theorem (formal or
+exact-arithmetic proof)</td>
+</tr>
+<tr>
+<td style="text-align: center;"><span class="sans-serif">W</span></td>
+<td style="text-align: left;">machine-certified finite witness
+(executable certificate, controls)</td>
+</tr>
+<tr>
+<td style="text-align: center;"><span class="sans-serif">C</span></td>
+<td style="text-align: left;">conditional reconstruction theorem (exact,
+with named premises)</td>
+</tr>
+<tr>
+<td style="text-align: center;"><span class="sans-serif">O</span></td>
+<td style="text-align: left;">open physical producer (required
+attachment, no construction on record)</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+<p>The discipline matters because reconstruction programs fail most
+often by silently promoting an interpretation into a theorem. We regard
+the maintained separation, enforced by fail-closed machine-readable
+receipts, as a contribution of the program independent of any single
+result.</p>
+<div class="boundary">
+
+<p><em>Boundary 1</em>. This paper claims no completed derivation of
+particle masses, no source-only determination of the fine-structure
+constant, no completed cosmology, and no claim that formal verification
+establishes physical truth. Quantitative surfaces that consume measured
+values are labeled diagnostics and are never counted as predictions.
+Section <a href="#sec:empirical" data-reference-type="ref" data-reference="sec:empirical">12</a>
+lists the decisive open gates.</p>
+</div>
+
+<h2 id="the-three-axioms">The three axioms</h2>
+<div class="description">
+
+<p>There is an observer patch net on an oriented spherical screen: at
+every finite resolution each local carrier exposes twelve primitive
+boundary ports forming the vertices of an oriented icosahedral boundary
+packet with <span class="math inline">\(30\)</span> edges and <span
+class="math inline">\(20\)</span> faces; carriers join through typed
+seams with coherent triple overlaps, refine to an oriented spherical
+support, and expose local state, readback, records, repair moves, and
+checkpoints.</p>
+<p>Public meaning is natural: the interpretation map commutes with every
+visible overlap restriction, recharting, seam translation,
+higher-overlap map, federation map, and refinement map on accepted
+public data.</p>
+<p>The realized state is the information projection of an exact
+reference family onto the convex set of local state families compatible
+with the finite observer-visible constraints; the observer cover is
+state-determining on that feasible set with strictly positive exact
+weights.</p>
+</div>
+
+<p>None of the axioms contains a gauge group, a particle list, a
+spacetime dimension, or a recovery law. Everything below is an attempt
+to earn those structures, and the paper reports where the attempt
+succeeds, where it is conditional, and where it stops.</p>
+<h2 id="the-theorem-chain">The theorem chain</h2>
+<p>The results form one connected chain: <span class="math display">\[
+\begin{aligned}
+&amp;\text{finite carriers and records}
+\;\longrightarrow\;
+\text{overlap consistency}
+\;\longrightarrow\;
+\text{confluent fixed-point repair}\\
+&amp;\;\longrightarrow\;
+\text{observable event algebra}
+\;\longrightarrow\;
+\text{quantum probability}
+\;\longrightarrow\;
+\text{observer and event geometry}\\
+&amp;\;\longrightarrow\;
+\text{local Lorentzian structure}
+\;\longrightarrow\;
+\text{Einstein dynamics}\\
+&amp;\;\longrightarrow\;
+\text{finite gauge and matter algebra}.
+\end{aligned}
+\]</span> Sections
+<a href="#sec:architecture" data-reference-type="ref" data-reference="sec:architecture">2</a>
+through
+<a href="#sec:gauge" data-reference-type="ref" data-reference="sec:gauge">7</a>
+follow this chain.
+Section <a href="#sec:verification" data-reference-type="ref" data-reference="sec:verification">11</a>
+describes the verification stack.
+Section <a href="#sec:empirical" data-reference-type="ref" data-reference="sec:empirical">12</a>
+states the falsification architecture and the open obligations.
+Section <a href="#sec:discussion" data-reference-type="ref" data-reference="sec:discussion">13</a>
+compares the program with neighboring approaches.</p>
+<h1 id="the-primitive-finite-architecture">The primitive finite
+architecture</h1>
+<div class="definition">
+
+<p><strong>Definition 2</strong> (Observer patch). <em>An observer patch
+is a finite object with local state, an observable boundary map, durable
+records, readback, and a set of authorized repair moves. A patch sees a
+fragment of the world: its own state and the boundary data of its
+authorized overlaps.</em></p>
+</div>
+
+<div class="definition">
+
+<p><strong>Definition 3</strong> (Overlap and repair). <em>For patches
+<span class="math inline">\(x_i\)</span>, <span
+class="math inline">\(x_j\)</span> with an authorized overlap <span
+class="math inline">\(e=(i,j)\)</span>, both induced boundary records
+must agree for the pair to hold public data. A repair move changes local
+state while preserving protected readout. A configuration is a normal
+form when no authorized repair applies.</em></p>
+</div>
+
+<p>The carrier realization used throughout is the twelve-port
+echosahedral architecture of A1: each carrier’s boundary packet is
+combinatorially the oriented icosahedron boundary <span
+class="math inline">\((P,E,F,o)\)</span> with <span
+class="math inline">\(|P|=12\)</span>, <span
+class="math inline">\(|E|=30\)</span>, <span
+class="math inline">\(|F|=20\)</span>; carriers federate through typed
+seam algebras with coherent triple-overlap cocycles into a nerve
+carrying a degree-one bridge to the oriented spherical support. This is
+the declared source architecture. We do not claim a uniqueness theorem
+selecting it among all possible carriers; where results depend on it,
+the dependence is displayed.</p>
+<p>Two exact features of this architecture do heavy work later. First,
+the proper rotation group of the icosahedral packet is the alternating
+group <span class="math inline">\(A_{5}\)</span>, with sixty rotations
+acting on the twelve ports; the real port-coefficient space decomposes
+as <span class="math display">\[
+\begin{equation}
+P_{12}\;\cong_{A_5}\;\mathbf 1\oplus\mathbf 3\oplus\mathbf
+3&#39;\oplus\mathbf 5,
+\label{eq:bands}
+\end{equation}
+\]</span> an exact multiplicity-free decomposition with certified
+projectors (<span class="sans-serif">T</span>). Second, record keeping
+is integer valued: a write appends <span
+class="math inline">\(+1\)</span>, a retraction appends <span
+class="math inline">\(-1\)</span>, and readback sums atomic events per
+port; a conservative repair transfers one unit across a seam whenever
+the oriented mismatch has magnitude at least two. With <span
+class="math inline">\(V(N)=\sum_i N_i^{2}\)</span>, each such repair
+strictly decreases <span class="math inline">\(V\)</span> by <span
+class="math inline">\(2(d-1)\)</span> for mismatch <span
+class="math inline">\(d\ge 2\)</span>, so repair terminates
+(<span class="sans-serif">T</span>). Divisibility of total load by
+twelve is a necessary consensus condition, settled constructively on the
+declared packet by an explicit witness schedule
+(<span class="sans-serif">W</span>).</p>
+<h1 id="the-fixed-point-consensus-theorem">The fixed-point consensus
+theorem</h1>
+<p>The world, in this program, is a fixed point: <span
+class="math display">\[
+\begin{equation}
+T(\mathfrak U)=\mathfrak U,
+\end{equation}
+\]</span> where <span class="math inline">\(T\)</span> is the composite
+repair-and-agreement dynamics. The mathematical content is that the
+fixed point is well defined and schedule independent on the declared
+carrier class.</p>
+<div id="thm:confluence" class="theorem">
+
+<p><strong>Theorem 4</strong> (Consensus normal form;
+<span class="sans-serif">T</span>/<span class="sans-serif">W</span>).
+<em>On a terminating, frustration-free carrier with a confluent accepted
+repair relation, every repair schedule reaches the same quotient normal
+form. On the reference twelve-port carrier, exact code exhausts all six
+declared overlap schedules and returns the identical normal form;
+termination follows from the exact quadratic descent of
+Section <a href="#sec:architecture" data-reference-type="ref" data-reference="sec:architecture">2</a>.</em></p>
+</div>
+
+<div class="boundary">
+
+<p><em>Boundary 5</em>. Confluence is part of the carrier contract, not
+a free consequence of locality: arbitrary local repair does not imply
+it, and countermodels with non-confluent repair are retained in the
+formal library. The theorem is finite; no continuum limit is
+asserted.</p>
+</div>
+
+<p>Three structural properties accompany the theorem on the declared
+class: gauge compatibility (repair commutes with local relabeling),
+idempotence of the completed dynamics, and refinement compatibility
+where proved, each with its formal statement and, where the hypothesis
+fails, its countermodel. The value of the fixed point is not
+metaphysical: it is the object on which records become public, and every
+later structure is read off it.</p>
+<p>The architecture sits close to distributed agreement in the tradition
+of Lamport, Shostak, and Pease : patches play the role of protocol
+nodes, overlap repair of a quorum vote, and the completed fixed point of
+the decided state. A component paper of the stack proves safety and
+liveness for a Byzantine-tolerant reading of repair under explicit
+quorum and partial-synchrony assumptions; the impossibility boundary of
+Fischer, Lynch, and Paterson is the reason those assumptions are named
+and are stated explicitly.</p>
+<h1
+id="observable-normal-forms-and-finite-quantum-probability">Observable
+normal forms and finite quantum probability</h1>
+<p>Once a compare, write, and verify slice has completed, its accessible
+events generate a finite central record algebra. The following
+identities are finite theorems on that surface, developed in an audited
+event-algebra library of more than one hundred declarations
+(<span class="sans-serif">T</span>).</p>
+<div id="thm:born" class="theorem">
+
+<p><strong>Theorem 6</strong> (Finite quantum record arithmetic;
+<span class="sans-serif">T</span>). <em>Let <span
+class="math inline">\(P_E\)</span> be the projector of a completed
+public event <span class="math inline">\(E\)</span> and <span
+class="math inline">\(\rho\)</span> the normalized state of the
+completed record surface. Then the probability and update rules <span
+class="math display">\[
+\begin{equation}
+\Pr(E)=\operatorname{Tr}(\rho P_E),
+\qquad
+\rho\,|\,E=\frac{P_E\,\rho\,P_E}{\operatorname{Tr}(\rho P_E)}
+\end{equation}
+\]</span> hold, and for the finite bipartite correlation surface the
+Clauser–Horne–Shimony–Holt parameter obeys <span class="math display">\[
+\begin{equation}
+|S_{\mathrm{CHSH}}|\le 2\sqrt 2 .
+\end{equation}
+\]</span></em></p>
+</div>
+
+<p>The first identity is the Born rule on this finite surface; the
+second is Lüders conditioning; the third is the Tsirelson bound for the
+Clauser–Horne–Shimony–Holt combination at fixed cutoff. Compatibility
+structure for commuting events follows the standard finite operational
+pattern within the same library.</p>
+<div class="boundary">
+
+<p><em>Boundary 7</em>. This is finite operational quantum structure
+derived from public observability. It is not a continuum interacting
+quantum field theory, and no claim of that kind is made anywhere in this
+paper. Its role in the chain is specific: the probability and update
+rules that later physical branches require arise from the consensus
+architecture.</p>
+</div>
+
+<h1 id="from-observer-frames-to-events-and-spacetime">From observer
+frames to events and spacetime</h1>
+<h2 id="exact-kinematics-of-the-spherical-support">Exact kinematics of
+the spherical support</h2>
+<p>The oriented conformal spherical support carries <span
+class="math display">\[
+\begin{equation}
+\mathrm{Conf}^{+}(S^{2})\;\cong\;\mathrm{PSL}(2,\mathbb C)\;\cong\;
+\mathrm{SO}^{+}(3,1),
+\qquad
+H^{3}\;\cong\;\frac{\mathrm{SO}^{+}(3,1)}{\mathrm{SO}(3)},
+\qquad
+\dim H^{3}=3 .
+\label{eq:lorentz}
+\end{equation}
+\]</span> These are classical isomorphisms of conformal geometry,
+consumed as exact mathematics. The Lorentz group and the
+three-dimensional space of unit timelike observer frames are exact
+kinematic consequences of the support branch.</p>
+<div class="boundary">
+
+<p><em>Boundary 8</em>. Observer-frame geometry and populated event
+geometry are distinct objects, and the program keeps them distinct. A
+populated four-dimensional event base requires record separation, local
+charts, an open-image condition, affine transition data, a quadratic
+cone, and causal reachability; these are producer obligations, not
+corollaries of
+<a href="#eq:lorentz" data-reference-type="eqref" data-reference="eq:lorentz">[eq:lorentz]</a>.
+The frame space <span class="math inline">\(H^{3}\)</span> and event
+localization are typed as separate constructions, and no inference
+passes from one to the other without a certificate.</p>
+</div>
+
+<h2 id="a-measured-finite-lorentzian-signature">A measured finite
+Lorentzian signature</h2>
+<p>The simulation branch measures the event form. Repair dynamics on
+federated carriers emits semantic events with ancestry; a declared chart
+combines one ancestry-depth coordinate with three spectral coordinates;
+a quadratic event form is fitted on a declared training half of the
+event pairs and evaluated on the held-out half. The signature is
+therefore held out from the update rule
+(<span class="sans-serif">W</span>).</p>
+<p>On the selected support-adjusted path with (carrier count, observer
+count, support width) equal to <span
+class="math inline">\((16{,}384,128,96)\)</span>, <span
+class="math inline">\((65{,}536,256,96)\)</span>, and <span
+class="math inline">\((262{,}144,512,384)\)</span>, the held-out event
+form has inertia <span class="math inline">\((1,3)\)</span> at every
+rung, with cone margins <span class="math display">\[
+\begin{equation}
+-5.6,\qquad -3.2,\qquad -1.4
+\end{equation}
+\]</span> whose magnitudes shrink along the path. The mechanism control
+is decisive for interpretation: at <span
+class="math inline">\(262{,}144\)</span> carriers the same-size
+support-width-<span class="math inline">\(96\)</span> control has <span
+class="math inline">\(312\)</span> cross-observer edges and inertia
+<span class="math inline">\((2,2)\)</span>, while the
+support-width-<span class="math inline">\(384\)</span> row has <span
+class="math inline">\(1{,}062\)</span> edges and inertia <span
+class="math inline">\((1,3)\)</span>. The signature tracks
+cross-observer coupling, not the fitting machinery.</p>
+<div class="boundary">
+
+<p><em>Boundary 9</em>. The chart allocates four coordinates by
+declaration; the instrument tests signature and full rank on that chart
+and does not derive the number of spacetime dimensions. The negative
+cone margins, one Euclidean local fit in the finite source domain below,
+closed neighborhoods in place of open charts, and the absence of a
+certified refinement limit prevent promotion of any finite object in
+this section to a continuum Lorentzian manifold. These conditions are
+recorded machine-readably in the receipts
+(<span class="sans-serif">O</span>for the continuum attachment).</p>
+</div>
+
+<h2 id="a-target-clean-source-inhabits-the-finite-local-domain">A
+target-clean source inhabits the finite local domain</h2>
+<p>One deterministic capture at <span
+class="math inline">\(16{,}384\)</span> carriers supplies: a finite
+causal complex of <span class="math inline">\(2{,}304\)</span> events
+with exact acyclicity and a strict time function; a certified
+four-column chart, nondegenerate on the sample, whose global held-out
+form has inertia <span class="math inline">\((1,3)\)</span>; six closed
+observer-visibility neighborhoods with exact induced affine transitions,
+cocycles, orientation, and time orientation; an observer-visible seam
+complex of <span class="math inline">\(8{,}662\)</span> carriers and
+<span class="math inline">\(11{,}816\)</span> seams whose <span
+class="math inline">\(38\)</span> triangles are all frustrated under the
+declared orientation-reversing seam transport, with lift-ambiguity rank
+<span class="math inline">\(3{,}117\)</span> over <span
+class="math inline">\(\mathbb F_{2}\)</span>; typed scalar, chiral, and
+gauge sections with a sign-twisted local derivative whose adjoint,
+kinetic, covariance, gluing, refinement, and boundary identities are
+verified by exact integer evaluation; and a signed-graph rank theorem
+giving a zero twisted kernel, hence an exactly positive dimensionless
+spectral gap for the declared local operator
+(<span class="sans-serif">W</span>, with the rank and positivity
+statements <span class="sans-serif">T</span>).</p>
+<p>One target-clean provenance graph binds the construction; an isolated
+rerun reproduces canonical receipt content byte for byte. The receipts
+record, fail closed, that this finite domain does not promote to a
+continuum spacetime, a physical clock, or a physical mass scale.</p>
+<h1 id="einstein-reconstruction">Einstein reconstruction</h1>
+<p>The gravitational branch is a composition theorem with every
+antecedent visible:</p>
+<div id="thm:einstein" class="theorem">
+
+<p><strong>Theorem 10</strong> (Einstein composition;
+<span class="sans-serif">C</span>). <em>On one common algebra-state
+tower, the typed premises <span class="math display">\[
+\mathrm{Event}+\mathrm{Modular}+\mathrm{Stress}+\mathrm{Entropy}
++\mathrm{SmallDiamond}+\mathrm{Scale}
+\]</span> compose to <span class="math display">\[
+\begin{equation}
+G_{ab}+\Lambda g_{ab}=8\pi G\,\langle T_{ab}\rangle .
+\end{equation}
+\]</span> Normalized modular flow supplies the local clock; half-sided
+modular inclusions supply positive null translations; null tomography
+assembles local stress; generalized-entropy stationarity on small causal
+diamonds supplies the field equation.</em></p>
+</div>
+
+<p>The formal library proves the typed algebraic composition. The
+inventory of what stands where: the composition itself is exact
+(<span class="sans-serif">C</span>); the finite instruments that would
+populate its premises on a source tower exist and are adversarially
+tested (<span class="sans-serif">W</span>); a single source-derived
+physical tower satisfying all premises simultaneously, the continuum
+limit, and the physical identification maps are open producers
+(<span class="sans-serif">O</span>). The signature measurement of
+Section <a href="#sec:signature" data-reference-type="ref" data-reference="sec:signature">5.2</a>
+is evidence that the source dynamics generates the causal-geometric raw
+material the premises require; it is not a substitute for them.</p>
+<p>This structure is the opposite of an emergence slogan: it is a
+contract. It states exactly which receipts a physical carrier must
+supply for the Einstein relation to hold on it, and the program’s
+simulation branch measures progress against that contract.</p>
+<h1 id="gauge-structure-and-a-one-generation-matter-witness">Gauge
+structure and a one-generation matter witness</h1>
+<h2 id="the-coefficient-algebra">The coefficient algebra</h2>
+<p>Fix the twelve-port packet with its six antipodal axes <span
+class="math inline">\(u_i\)</span> and projectors <span
+class="math inline">\(P_i=u_iu_i^{\mathsf T}\)</span>. Target-blind port
+impulses with local recurrence readback derive the inverse response
+<span class="math inline">\(R=-J\)</span> with <span
+class="math inline">\(J=(A^{3}-4A^{2}-5A+10I)/10\)</span> in the
+adjacency algebra, and the face orientation fixes the companion
+three-dimensional map. Pulling the block commutator back through the
+resulting equivariant isomorphism yields <span class="math display">\[
+\begin{equation}
+(P_{12},[\,\cdot\,,\cdot\,]_{\Theta})\;\cong\;
+\mathfrak u(3)\oplus\mathfrak{so}(3)\;=\;
+\mathfrak u(1)\oplus\mathfrak{su}(3)\oplus\mathfrak{su}(2)
+\label{eq:liealgebra}
+\end{equation}
+\]</span> as an exact finite computation: the map is injective, its
+image closed under commutators, the five-band noncentral, the derived
+algebra eleven-dimensional, the center the uniform line, and the action
+natural along declared refinements
+(<span class="sans-serif">T</span>/<span class="sans-serif">W</span>).
+The derivation consumes no target data: the readback protocol is fixed
+before any comparison with Standard Model structure.</p>
+<h2 id="global-form">Global form</h2>
+<p>Trace balancing extends the block construction to <span
+class="math inline">\(\mathfrak s(\mathfrak u(3)\oplus\mathfrak
+u(2))\)</span>, whose connected group is <span class="math display">\[
+\begin{equation}
+S(U(3)\times U(2))\;\cong\;
+\frac{\mathrm{SU}(3)\times\mathrm{SU}(2)\times\mathrm U(1)}{\mathbb
+Z_{6}} .
+\label{eq:globalform}
+\end{equation}
+\]</span> The six-element kernel is exact, as is the independent lattice
+quotient with Smith invariants <span
+class="math inline">\((1,1,1,1,1,6)\)</span>
+(<span class="sans-serif">T</span>). A measured transport artifact
+supplies the non-split deck cover with its unique central implementation
+of the odd-Weyl grading, and the measured finite flux-sector menu
+selects the <span class="math inline">\(\mathbb Z_{6}\)</span> quotient
+on the declared carrier (<span class="sans-serif">W</span>).</p>
+<h2 id="one-generation-of-matter-exactly">One generation of matter,
+exactly</h2>
+<p>The trace-balanced block <span class="math inline">\(V=\mathbb
+C^{3}\oplus\mathbb C^{2}\)</span> with hypercharges <span
+class="math inline">\((-\tfrac13,\tfrac12)\)</span> has the exterior
+branching <span class="math display">\[
+\begin{equation}
+\Lambda^{2}V\oplus\Lambda^{4}V
+\;=\;Q\oplus u^{c}\oplus e^{c}\oplus d^{c}\oplus L :
+\label{eq:generation}
+\end{equation}
+\]</span> fifteen states carrying the Standard Model hypercharges of one
+generation, the expected invariant lines, cancelled gauge, mixed, and
+gravitational anomalies, and exactly four weak doublets, hence even
+Witten parity (<span class="sans-serif">T</span>). An exhaustive scan of
+all <span class="math inline">\(1{,}024\)</span> exterior subsets
+classifies the alternatives: the anomaly-free chiral survivors are
+exactly the unordered charge-conjugate pair of this configuration
+(<span class="sans-serif">W</span>).</p>
+<h2 id="family-band-selection">Family-band selection</h2>
+<p>Within the screen coefficient module
+<a href="#eq:bands" data-reference-type="eqref" data-reference="eq:bands">[eq:bands]</a>,
+restricting to single complete faithful band objects in the
+independently bounded window <span class="math inline">\(3\le N_g\le
+5\)</span>, the exact operational Laplacian costs <span
+class="math inline">\(5-\sqrt5&lt;6&lt;5+\sqrt5\)</span> select the
+rank-three band uniquely, and the declared unitary simulator realizes
+that projector at its lowest positive generator frequency
+(<span class="sans-serif">C</span>for the selection under its named
+interface; <span class="sans-serif">W</span>for the realization).
+Tensoring with the generation table gives a conditional complex
+rank-<span class="math inline">\(45\)</span> candidate.</p>
+<h2 id="massless-carrier-statements">Massless carrier statements</h2>
+<p>The breaking pattern encoded in
+<a href="#eq:globalform" data-reference-type="eqref" data-reference="eq:globalform">[eq:globalform]</a>
+makes three carrier statements available, each exact at its own level
+and each bounded by a named constraint.</p>
+<p><em>The photon.</em> On the finite one-loop electroweak stack built
+over the canonical action, two facts are machine checked: the
+longitudinal part of the photon self-energy vanishes identically on the
+minimum-restored surface, including finite parts, and the photon
+direction annihilates every generator of the rotated neutral mass
+matrix, so the photon mass term is exactly zero in the finite
+calculation (<span class="sans-serif">W</span>). Charge universality
+holds in the same stack through the certified combination <span
+class="math inline">\(\delta Z_{e}=-\tfrac12\delta
+Z_{AA}-\tfrac{s_w}{2c_w}\delta Z_{ZA}\)</span>, which is gauge
+independent and reproduces the census beta coefficients. The constraint:
+these are statements of the validated external-consumer calculation on a
+declared synthetic fixture; the physical photon pole verdict
+additionally requires the physical current attachment of the boundary
+above.</p>
+<p><em>The gluon.</em> The color factor <span
+class="math inline">\(\mathfrak{su}(3)\)</span> in
+<a href="#eq:liealgebra" data-reference-type="eqref" data-reference="eq:liealgebra">[eq:liealgebra]</a>
+lies in the unbroken subalgebra of the global form: no scalar direction
+in the realized matter and descent structure carries color, so color
+symmetry is exact and the finite gluon mass term is zero
+(<span class="sans-serif">T</span>at the algebra level). The constraint
+is stated with equal weight: confinement, the physical gluon spectrum,
+and any statement about hadrons belong to strong-coupling dynamics that
+the program deliberately does not simulate; the corresponding physical
+row closes as not evaluable under the declared no-QCD resource boundary
+and carries no physical spectrum claim.</p>
+<p><em>The graviton.</em> The Einstein branch of
+Theorem <a href="#thm:einstein" data-reference-type="ref" data-reference="thm:einstein">10</a>
+carries a massless spin-two carrier exactly as far as the composition
+carries the field equation: linearizing the composed relation about a
+vacuum yields the standard massless graviton kinematics, conditional on
+the same premise vector, and inheriting its openness
+(<span class="sans-serif">C</span>). No independent graviton claim is
+made beyond the composition.</p>
+<p>These three statements illustrate the program’s division of labor at
+its best: exact finite masslessness where the algebra forces it,
+machine-checked cancellation where a calculation certifies it, and
+explicit refusal where dynamics outruns the declared resources.</p>
+<div class="boundary">
+
+<p><em>Boundary 11</em>. The following are open producers
+(<span class="sans-serif">O</span>), stated with the same prominence as
+the results: laboratory current attachment; identity of the response
+current with the independently reconstructed categorical current;
+physical matter identification and matter-pole structure; exclusion of
+extra light sectors; physical seam-action selection; a certified bridge
+between the twelve-port spin packet and the local operator domain; three
+physical families as a source-selected fact; Yukawa couplings, mixing,
+and masses. The program’s own identifiability audits prove that several
+of these cannot be extracted from the registered source interface, so
+they are listed as producers.</p>
+</div>
+
+<h1 id="quantitative-closure-surfaces">Quantitative closure
+surfaces</h1>
+<p>Three quantitative surfaces show that the architecture engages
+measured physics. Each is stated with its epistemic class; none is a
+source-only prediction of a dimensionful constant.</p>
+<h2 id="interval-certified-fixed-points">Interval-certified fixed
+points</h2>
+<p>The local screen cell is asked to reproduce its readable
+electromagnetic width through the closure <span
+class="math inline">\(P=\varphi+\sqrt\pi/A_T(P)\)</span> with <span
+class="math inline">\(\varphi=(1+\sqrt5)/2\)</span>. For each declared
+map, outward-rounded interval certificates prove existence and local
+uniqueness of the root and exclude a second root across the analytic
+domain (<span class="sans-serif">W</span>). The gauge-width map’s
+certified root sits at relative separation <span
+class="math inline">\(2.5\times10^{-6}\)</span> from the measured
+inverse fine-structure constant .</p>
+<div class="boundary">
+
+<p><em>Boundary 12</em>. The physical interpretation requires a
+source-derived same-scheme hadronic transport that does not exist; the
+comparison is a diagnostic. The certified roots do not constitute an
+independent determination of the fine-structure constant, and the
+program’s fail-closed ledgers prevent any such promotion.</p>
+</div>
+
+<h2
+id="the-positive-chamber-koide-theorem-and-a-registered-falsification-window">The
+positive-chamber Koide theorem and a registered falsification
+window</h2>
+<p>The charged-lepton combination <span class="math inline">\(Q\)</span>
+below is the one identified by Koide ; the theorem locates its value in
+an exact positivity chamber, not from a fit.</p>
+<div class="theorem">
+
+<p><strong>Theorem 13</strong> (Positive-chamber circulant identity;
+<span class="sans-serif">T</span>). <em>For the Hermitian three-cycle
+response <span class="math inline">\(C=aI+bR+\bar bR^{2}\)</span> with
+<span class="math inline">\(R^{3}=I\)</span> and nonnegative eigenvalues
+read as square-root masses, <span class="math display">\[
+\begin{equation}
+Q=\frac{\sum_i m_i}{\bigl(\sum_i\sqrt{m_i}\bigr)^{2}}
+=\frac13+\frac23\Bigl(\frac{|b|}{a}\Bigr)^{2},
+\qquad\text{so}\qquad
+Q=\frac23\iff\frac{|b|}{a}=\frac1{\sqrt2}.
+\end{equation}
+\]</span> Equal rank-two event blocks in the finite tracial packet
+supply the balance exactly.</em></p>
+</div>
+
+<p>Under the balance and mass-ordering premises, the measured electron
+and muon masses determine the tau mass inside an outward-rounded <span
+class="math inline">\(72\)</span>-eV enclosure, <span
+class="math inline">\([1776.968991,\,1776.969063]\)</span> MeV, sitting
+<span class="math inline">\(0.43\sigma\)</span> from the measured tau
+mass . The premise ancestry is declared: the balance premise is target
+informed, so this is a conditional postdiction with a registered
+falsification protocol, precision floor <span
+class="math inline">\(0.045\)</span> MeV, and a kill band fixed before
+comparison (<span class="sans-serif">W</span>for the enclosure;
+<span class="sans-serif">C</span>for the physical reading). A qualifying
+future measurement outside the window refutes the balanced-circulant
+premise.</p>
+<h2 id="finite-de-sitter-capacity-identities">Finite de Sitter capacity
+identities</h2>
+<p>For sector dimensions <span class="math inline">\(d_i\)</span> with
+total <span class="math inline">\(M\)</span> and probabilities <span
+class="math inline">\(p_i\)</span>, <span class="math display">\[
+\begin{equation}
+S_{\mathrm{gen}}(p,d)=\log M-D_{\mathrm{rel}}(p\,\Vert\,d/M),
+\end{equation}
+\]</span> so the maximum <span class="math inline">\(\log M\)</span> is
+attained exactly at <span class="math inline">\(p_i=d_i/M\)</span>; and
+under uniform depletion with transferred fraction <span
+class="math inline">\(f\)</span>, every admissible transfer obeys <span
+class="math inline">\(\Delta
+S^{\max}_{\mathrm{gen}}=\log(1-f)&lt;0\)</span>, strictly decreasing and
+concave (<span class="sans-serif">T</span>). In pure de Sitter space the
+radius cancels from the shock normalization, <span
+class="math inline">\(\mu^{2}=d-2=\lambda_{\ell=1}(S^{d-2})\)</span>,
+with the <span class="math inline">\(\ell=1\)</span> modes exactly the
+isometry gauge kernel (<span class="sans-serif">T</span>). Identifying
+capacity with horizon area and the finite operator with the
+gravitational shock would supply a time-advance mechanism; the
+identification maps are open producers
+(<span class="sans-serif">O</span>), and a related static-patch trace
+proposal is excluded by the obstruction of Chen, Stanford, Tang, and
+Yang , which the finite identities above do not contradict.</p>
+<h1 id="proof-bearing-finite-construction">Proof-bearing finite
+construction</h1>
+<p>This section records the mathematical core in more detail than the
+overview above. It is included so that the logical load does not reside
+only in a repository citation. Each result remains scoped to the finite
+carrier and to the hypotheses displayed with it.</p>
+<h2 id="descent-local-diamonds-and-a-unique-public-record">Descent,
+local diamonds, and a unique public record</h2>
+<p>Let <span class="math inline">\(q=(q_p)_{p\in P}\)</span> be the
+integer readback vector on a twelve-port carrier. For an oriented seam
+<span class="math inline">\(p\to p&#39;\)</span> with <span
+class="math inline">\(q_p-q_{p&#39;}=d\geq2\)</span>, the elementary
+repair sends <span class="math inline">\((q_p,q_{p&#39;})\)</span> to
+<span class="math inline">\((q_p-1,q_{p&#39;}+1)\)</span>. The quadratic
+record cost is <span class="math inline">\(V(q)=\sum_{p\in
+P}q_p^2\)</span>. Direct expansion gives <span class="math display">\[
+\begin{equation}
+V(q&#39;)-V(q)=(q_p-1)^2+(q_{p&#39;}+1)^2-q_p^2-q_{p&#39;}^2
+=-2(d-1)&lt;0.
+\label{eq:descent}
+\end{equation}
+\]</span> The total load is preserved. Since <span
+class="math inline">\(V\)</span> is a nonnegative integer, no repair
+trajectory is infinite.</p>
+<div id="lem:termination" class="lemma">
+
+<p><strong>Lemma 14</strong> (Finite termination). <em>Every trajectory
+generated by the declared conservative repair moves ends in a normal
+form.</em></p>
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em>
+Equation <a href="#eq:descent" data-reference-type="eqref" data-reference="eq:descent">[eq:descent]</a>
+decreases <span class="math inline">\(V\)</span> by at least two at each
+step. A strictly decreasing sequence of nonnegative integers is
+finite. ◻</p>
+</div>
+
+<p>Termination alone does not identify the endpoint. The carrier
+contract therefore supplies a local diamond: whenever two accepted
+repairs start from one configuration, their outputs have a common repair
+successor that preserves the protected readout. This is the finite
+rewrite hypothesis used in the normal-form theorem. It has the same
+formal role as the local confluence assumption in Newman’s lemma ; the
+exact carrier proof checks the permitted overlaps and retains failed
+mutations as counterexamples.</p>
+<div id="thm:protected-normal-form" class="theorem">
+
+<p><strong>Theorem 15</strong> (Protected consensus normal form;
+<span class="sans-serif">T</span>). <em>On a terminating carrier
+satisfying the declared local diamond and protected readback clauses,
+every accepted repair schedule has one quotient normal form. The induced
+record is independent of the schedule.</em></p>
+</div>
+
+<div class="proof">
+
+<p><em>Proof.</em> The local diamond and
+Lemma <a href="#lem:termination" data-reference-type="ref" data-reference="lem:termination">14</a>
+give confluence by the standard induction on the sum of the two
+remaining descent lengths. Two terminal descendants of one state have a
+common descendant by confluence and are therefore equal in the quotient.
+Protected readback is invariant along each edge of the repair relation,
+so it descends to that quotient. ◻</p>
+</div>
+
+<p>The theorem identifies the exact point at which private writes become
+public: the public object is the schedule-independent quotient record,
+not an arbitrary intermediate configuration. The result has a
+distributed-systems analogue in Byzantine agreement ; its assumptions
+are necessary because asynchronous agreement with faults has the
+Fischer–Lynch– Paterson obstruction .</p>
+<h2 id="finite-event-algebra">Finite event algebra</h2>
+<p>The completed record is represented by a finite-dimensional <span
+class="math inline">\(*\)</span>-algebra <span
+class="math inline">\(\mathcal A=\bigoplus_j M_{n_j}(\mathbb C)\)</span>
+with a normalized positive functional <span
+class="math inline">\(\omega(A)=\operatorname{Tr}(\rho A)\)</span>. A
+completed event is a projector <span
+class="math inline">\(P_E=P_E^*=P_E^2\)</span>. Positivity and
+normalization give <span class="math display">\[
+\begin{equation}
+0\leq\operatorname{Tr}(\rho P_E)\leq1,
+\qquad \sum_k\operatorname{Tr}(\rho P_{E_k})=1
+\label{eq:eventprobability}
+\end{equation}
+\]</span> for every complete orthogonal event partition <span
+class="math inline">\((P_{E_k})\)</span>. Thus the Born probability is a
+theorem of the record surface once its state and event projectors have
+been constructed. Conditioning on an event of nonzero probability gives
+the unique normalized positive functional supported on the post-event
+corner, <span class="math display">\[
+\begin{equation}
+\rho_E=\frac{P_E\rho P_E}{\operatorname{Tr}(\rho P_E)}.
+\label{eq:ludersdetail}
+\end{equation}
+\]</span></p>
+<p>For self-adjoint contractions <span
+class="math inline">\(A_0,A_1,B_0,B_1\)</span> in two commuting record
+subalgebras, set <span
+class="math inline">\(S=A_0(B_0+B_1)+A_1(B_0-B_1)\)</span>. The
+commuting-subalgebra calculation gives <span class="math display">\[
+\begin{equation}
+S^2=4I-[A_0,A_1][B_0,B_1],\qquad \|S\|\leq2\sqrt2.
+\label{eq:tsirelsondetail}
+\end{equation}
+\]</span> The last inequality follows from <span
+class="math inline">\(\|[A_0,A_1]\|,\|[B_0,B_1]\|\leq2\)</span>. Taking
+the state expectation proves the finite Tsirelson inequality. The
+original Bell–CHSH question and the quantum bound are due to Clauser,
+Horne, Shimony, and Holt and Cirel’son . The OPH statement concerns the
+constructed finite record algebra, with no assertion that this
+establishes an interacting continuum quantum field theory.</p>
+<h2 id="the-geometry-to-dynamics-composition">The geometry-to-dynamics
+composition</h2>
+<p>The spherical support supplies a group-theoretic kinematic datum:
+<span class="math display">\[
+\begin{equation}
+\mathrm{Conf}^+(S^2)\cong\mathrm{PSL}(2,\mathbb C)
+\cong\mathrm{SO}^+(3,1).
+\label{eq:mobius-lorentz}
+\end{equation}
+\]</span> Its stabilizer of a unit future timelike vector is <span
+class="math inline">\(\mathrm{SO}(3)\)</span>, so the observer-frame
+quotient has dimension <span class="math inline">\(6-3=3\)</span>. This
+fact gives the local Lorentz group on the support; it does not construct
+an event manifold. The event construction carries separate finite
+receipts for causal order, chart rank, affine overlaps, orientation, and
+time orientation.</p>
+<p>The Einstein result is a typed implication. Let <span
+class="math inline">\(\mathcal D\)</span> denote a common domain with a
+state, modular generator, null-translation structure, stress tomography,
+and generalized entropy functional. The premise contract is <span
+class="math display">\[
+\begin{align}
+\delta K&amp;=\delta\langle H_{\rm mod}\rangle,
+&amp;\text{(modular first law)},\\
+\delta S_{\rm gen}&amp;=0,
+&amp;\text{(small-diamond stationarity)},\\
+\delta\langle H_{\rm mod}\rangle&amp;\propto
+\int \xi^a\delta\langle T_{ab}\rangle d\Sigma^b,
+&amp;\text{(stress tomography)}.
+\label{eq:einstein-premises}
+\end{align}
+\]</span> With the stated normalization and scale maps, the first
+variation is the Einstein relation in
+Theorem <a href="#thm:einstein" data-reference-type="ref" data-reference="thm:einstein">10</a>.
+This architecture is close to the thermodynamic route developed by
+Jacobson and uses modular ingredients studied by Bisognano and Wichmann
+and Wiesbrock . The paper’s claim is the finite, typed composition of
+the premises. A physical tower realizing the whole premise vector
+remains an open producer.</p>
+<h2 id="gauge-algebra-and-anomaly-arithmetic">Gauge algebra and anomaly
+arithmetic</h2>
+<p>The twelve-port coefficient space has the exact alternating-group
+split <span class="math display">\[
+\begin{equation}
+P_{12}\cong\mathbf1\oplus\mathbf3\oplus\mathbf3&#39;\oplus\mathbf5.
+\label{eq:a5detail}
+\end{equation}
+\]</span> Six antipodal axes give rank-one projectors <span
+class="math inline">\(P_i=u_i u_i^{\mathsf T}\)</span>. The response map
+constructed from target-blind port impulses identifies the noncentral
+coefficient blocks with a trace-balanced <span
+class="math inline">\(3\oplus2\)</span> block system. The commutator is
+therefore <span class="math display">\[
+\begin{equation}
+[\Theta(x),\Theta(y)]=\Theta([x,y]_\Theta),\qquad
+(P_{12},[\ ,\ ]_\Theta)\cong
+\mathfrak u(1)\oplus\mathfrak{su}(2)\oplus\mathfrak{su}(3).
+\label{eq:gaugedetail}
+\end{equation}
+\]</span> Injectivity, closure, the eleven-dimensional derived algebra,
+and the one-dimensional center are finite checks of the map <span
+class="math inline">\(\Theta\)</span>. The global trace condition gives
+<span class="math inline">\(S(U(3)\times U(2))\)</span>, with common
+kernel <span class="math inline">\(\mathbb Z_6\)</span>. This
+representation-theoretic route is compared with the Doplicher–Roberts
+reconstruction framework and with the standard grand-unification
+embedding of Georgi and Glashow ; it is not an assertion that either
+external framework proves the OPH carrier map.</p>
+<p>For <span class="math inline">\(V=\mathbb C^3\oplus\mathbb
+C^2\)</span> with charges <span
+class="math inline">\((-1/3,1/2)\)</span>, the exterior package <span
+class="math display">\[
+\begin{equation}
+\Lambda^2V\oplus\Lambda^4V=Q\oplus u^c\oplus e^c\oplus d^c\oplus L
+\label{eq:exteriordetail}
+\end{equation}
+\]</span> contains fifteen chiral states. The finite anomaly checks
+evaluate the cubic color, cubic weak, mixed gauge, and gravitational
+sums on this table; each vanishes, while the number of weak doublets is
+four and hence has even Witten parity . The arithmetic selects a
+representation witness. Physical matter identification, Yukawa
+couplings, and the observed mass spectrum require additional physical
+maps.</p>
+<h1 id="physics-questions-fixed-by-a-physical-oph-realization">Physics
+questions fixed by a physical OPH realization</h1>
+<p>The theory contains results with different antecedents. The phrase
+“solved if OPH holds” has a precise meaning here: if a physical carrier
+realizes the stated source object and the named interpretation maps, the
+corresponding conclusion follows without an additional phenomenological
+postulate. The table separates those consequences from problems that
+remain outside the stated result.</p>
+<div class="center">
+
+<div class="longtable">
+
+<p>@L0.22L0.38L0.32@ <strong>Physics question</strong> &amp;
+<strong>Consequence of the stated realization</strong> &amp;
+<strong>Boundary</strong> Why do completed observations obey quantum
+probability? &amp; Public event projectors obey
+<a href="#eq:eventprobability" data-reference-type="eqref" data-reference="eq:eventprobability">[eq:eventprobability]</a>;
+completed-event conditioning is
+<a href="#eq:ludersdetail" data-reference-type="eqref" data-reference="eq:ludersdetail">[eq:ludersdetail]</a>;
+bipartite record correlations obey
+<a href="#eq:tsirelsondetail" data-reference-type="eqref" data-reference="eq:tsirelsondetail">[eq:tsirelsondetail]</a>.
+&amp; The theorem is finite and does not construct a continuum field
+theory. Why is local kinematics Lorentzian? &amp; The spherical support
+has the connected Lorentz symmetry
+<a href="#eq:mobius-lorentz" data-reference-type="eqref" data-reference="eq:mobius-lorentz">[eq:mobius-lorentz]</a>;
+the event instrument measures inertia <span
+class="math inline">\((1,3)\)</span> on its declared finite path. &amp;
+A physical continuum event manifold and refinement limit require their
+own receipts. What equation governs gravity? &amp; A common physical
+realization of the premise contract
+<a href="#eq:einstein-premises" data-reference-type="eqref" data-reference="eq:einstein-premises">[eq:einstein-premises]</a>
+satisfies the Einstein relation. &amp; The common physical tower,
+normalization, and clock identification are open. Why this compact gauge
+Lie type? &amp; The port response bracket fixes <span
+class="math inline">\(\mathfrak
+u(1)\oplus\mathfrak{su}(2)\oplus\mathfrak{su}(3)\)</span> and the
+trace-balanced quotient fixes the <span class="math inline">\(\mathbb
+Z_6\)</span> kernel. &amp; Laboratory-current attachment and the link to
+the categorical current are open. Why one anomaly-free generation table?
+&amp; The exterior package
+<a href="#eq:exteriordetail" data-reference-type="eqref" data-reference="eq:exteriordetail">[eq:exteriordetail]</a>
+gives the fifteen-state chiral table with anomaly cancellation. &amp; It
+does not select physical matter fields or their masses. Why a massless
+photon, gluon, and graviton description? &amp; The finite Ward
+calculation cancels the photon mass term, unbroken color has no finite
+mass term, and linearization of the Einstein branch gives massless
+spin-two kinematics. &amp; Physical poles, confinement, and a physical
+graviton require their respective continuum and attachment records. What
+fixes horizon entropy transfer? &amp; The finite capacity theorem gives
+the unique entropy maximum and the sign <span
+class="math inline">\(\Delta S_{\rm gen}^{\max}&lt;0\)</span> for a
+declared transfer. &amp; Horizon-area and shock dictionaries are
+physical identification maps.</p>
+</div>
+
+</div>
+
+<h2 id="how-gravity-emerges">How gravity emerges</h2>
+<p>OPH begins with finite observer patches instead of a metric field.
+Each patch has local state, a boundary, protected records, readback, and
+repair moves. Confluent repair turns compatible overlap records into a
+public quotient record. The oriented support of that record construction
+carries the connected conformal group of the two-sphere, which is the
+proper Lorentz group. This supplies the kinematic arena and the local
+observer-frame space. A separate event producer turns record separation
+and causal ancestry into finite event data with chart, cone, transition,
+and causal-order certificates.</p>
+<p>The dynamical step uses one common algebra-state tower. Its modular
+flow defines the local time generator; half-sided inclusions provide the
+positive-null translation structure; stress tomography connects the flow
+to local energy data; generalized-entropy stationarity on small causal
+diamonds then gives the Einstein relation with the normalization carried
+by the same tower. This is the end-to-end claim: finite self-reading
+patches supply public records, public records supply the support and
+event inputs, and the completed modular-entropy package supplies
+gravity. The finite signature instrument measures the expected <span
+class="math inline">\((1,3)\)</span> event form on its declared path.
+The outstanding task is a physical construction of the common tower, its
+continuum refinement, and its clock and stress identifications.</p>
+<h4 id="intuition">Intuition.</h4>
+<p>Gravity is the rule that keeps local observer accounts mutually
+compatible as their records are extended, compared, and repaired. The
+metric is the geometrical description of the stable large-scale relation
+among those repaired records. Modular flow tracks how a local observer
+reads change, and entropy stationarity fixes the gravitational response
+required for that reading to remain consistent.</p>
+<h2 id="what-unifies-gravity-and-the-standard-model">What unifies
+gravity and the Standard Model</h2>
+<p>The unifying object is not a conventional grand-unified gauge group
+added to an independent gravitational sector. It is the observer-patch
+architecture itself. Its overlap, record, and repair structure feeds the
+geometry branch, while its twelve-port incidence, response map, and
+trace-balanced coefficient blocks feed the gauge branch. The same finite
+carrier therefore supplies both the data from which local Lorentzian
+geometry is assembled and the data from which the compact gauge algebra
+and its global quotient are calculated.</p>
+<p>This is a unification by common construction and common evidence
+boundary. It does not identify gravity with a gauge boson or claim that
+every physical coupling follows from the finite coefficient calculation.
+If one physical carrier realizes both branches with their named maps,
+the Einstein relation, the Standard Model Lie type, the <span
+class="math inline">\(\mathbb Z_6\)</span> global form, and the
+one-generation anomaly-free representation package are consequences of
+the same observer-first source. Matter poles, scalar dynamics, family
+attachment, and laboratory-current identification remain separate
+physical questions.</p>
+<h4 id="intuition-1">Intuition.</h4>
+<p>One object is doing two jobs. Its overlap structure organizes the
+event and gravity route, while its finite boundary response organizes
+the charge route. Unification means that spacetime and gauge structure
+are two readouts of the same self-reading carrier, with neither branch
+inserted as an independent starting ingredient.</p>
+<h2 id="why-quantum-measurement-has-a-physical-location">Why quantum
+measurement has a physical location</h2>
+<p>The measurement problem is addressed at the record level. An
+observation is not represented by an external observer selecting an
+outcome; it is a completed public record that survives the authorized
+overlap checks. The event projector, its probability, and the update of
+the record state are defined on that completed surface. This supplies
+the Born and Lüders rules for the finite construction and places the
+distinction between an unfinished private process and a settled public
+event in the repair dynamics. A physical realization would have to show
+that its durable records and readback maps instantiate this finite
+construction. The result does not settle every interpretive question
+about continuum quantum field theory.</p>
+<h4 id="intuition-2">Intuition.</h4>
+<p>A measurement becomes objective when its record has survived every
+authorized comparison and no repair can change it. Probability describes
+the completed record surface; collapse is the update from one public
+record class to the next. The construction locates observation in the
+physical bookkeeping that patches perform on their shared
+boundaries.</p>
+<h2 id="why-string-theory-can-be-an-effective-description">Why string
+theory can be an effective description</h2>
+<p>The screen construction has boundary degrees of freedom, seam
+transport, edge observables, and a regulated refinement structure. Those
+are the features from which a string-like edge description can arise as
+an effective language. In this role, string variables encode the
+carrier’s boundary transport and consistency conditions; their validity
+is assessed by whether they preserve the observer-record, current,
+clock, and refinement receipts. The string-vacuum analysis in the OPH
+stack uses these gates to classify candidate effective edge descriptions
+.</p>
+<p>This claim does not derive a unique critical string theory, select a
+vacuum, or establish a fundamental worldsheet ontology. It states a
+direction of explanation: if the observer carrier is fundamental, a
+string description can be useful because it captures organized boundary
+transport on that carrier. The physical selection of a string-effective
+regime requires its own carrier and spectrum receipts.</p>
+<h4 id="intuition-3">Intuition.</h4>
+<p>Strings are useful here as organized boundary motion. A patch carrier
+has edges, seams, and transport around closed boundary circuits. When
+those degrees of freedom admit a string description, the string records
+their collective propagation. The observer carrier remains the
+underlying object whose records and repair rules decide whether that
+description is admissible.</p>
+<h2 id="what-becomes-of-cosmological-and-horizon-questions">What becomes
+of cosmological and horizon questions</h2>
+<p>The capacity branch identifies a precise finite question: how much
+public record capacity is available across a declared screen partition,
+and how does its entropy respond to a transfer? The exact answer is the
+unique relative-entropy maximum and the negative transfer sign in the
+table above. With a physical horizon-area dictionary and a
+shock-operator dictionary, this becomes a statement about de Sitter
+entropy transfer and a time-advance mechanism. The finite theorem does
+not provide those dictionaries. It therefore fixes the mathematical
+response law while leaving its physical attachment open.</p>
+<h4 id="intuition-4">Intuition.</h4>
+<p>The screen has limited room for jointly readable records. Moving a
+share of that room changes the entropy available to the remaining
+observer horizon. The finite theorem fixes the sign and curvature of
+this accounting. A physical horizon interpretation would turn that
+accounting rule into a gravitational response law.</p>
+<h1 id="machine-verification-and-reproducibility">Machine verification
+and reproducibility</h1>
+<p>Every labeled result maps to an artifact class:</p>
+<ul>
+<li><p>a sorry-free Lean library exceeding one thousand theorem and
+lemma declarations, whose count deliberately includes premise boundaries
+and countermodels, because exposing assumptions is the purpose of the
+formalization;</p></li>
+<li><p>exact-arithmetic code receipts: integer and rational
+computations, interval certificates with outward rounding, and <span
+class="math inline">\(\mathbb F_{2}\)</span> rank computations, each
+emitting a canonical hashed payload;</p></li>
+<li><p>simulation receipts pinning source commit, configuration, seeds,
+grids, tolerances, and output hashes, with deterministic reserialization
+distinguished from fresh source replay;</p></li>
+<li><p>fail-closed verifiers that recompute verdicts from clause vectors
+and refuse receipts whose stored verdict disagrees, so a truth flag can
+never be asserted by a caller;</p></li>
+<li><p>adversarial negative controls: every certificate ships with
+mutations that must be detected, and a control that cannot fail is
+treated as a defect of the certificate, not as support;</p></li>
+<li><p>no-target-ancestry rules: machine-readable ledgers classify every
+quantitative row as source result, conditional composition, diagnostic,
+or rejected candidate, and forbid promotion by prose, issue state, or
+numerical proximity.</p></li>
+</ul>
+<p>The repository, receipts, schemas, and rebuild instructions are
+public . The verification stack does not prove OPH physically true; it
+proves that the stated theorems hold and that the stated boundaries are
+the ones actually enforced.</p>
+<h2 id="artifact-map">Artifact map</h2>
+<p>Each labeled result of this paper resolves to named artifacts. The
+formal library counts <span class="math inline">\(1{,}008\)</span>
+public theorem and lemma declarations at the pinned release, with a
+continuous-integration floor of <span
+class="math inline">\(1{,}000\)</span>.</p>
+<div class="center">
+
+<div class="tabular">
+
+<p>@L0.44L0.50@ <strong>Result</strong> &amp; <strong>Principal
+artifacts</strong> Consensus normal form; schedule exhaustion &amp;
+<code>Lean/ObservableNormalForms/…/</code>
+<code>ObserverConfluence.lean</code>; exact schedule code receipts Event
+algebra, Born, Lüders, Tsirelson &amp; <code>Lean/EventAlgebra/</code>
+(<code>Basic</code>, <code>Lueders</code>, <code>Tsirelson</code>,
+<code>ExpectationBound</code>, partition and state modules); per-module
+axiom audits Port action, commutant, coefficient algebra &amp;
+<code>Lean/Screen/A5PortAction.lean</code>,
+<code>A5Commutant.lean</code>, <code>A5OPH.lean</code>,
+<code>A5IncidenceResponse.lean</code> Global form and <span
+class="math inline">\(\mathbb Z_{6}\)</span> kernel &amp;
+<code>Lean/Screen/Z6Exact.lean</code>; exterior scan in
+<code>ExteriorSelection.lean</code> Family-band selection &amp;
+<code>Lean/Screen/A5FamilyBand.lean</code>; band-attachment certificate
+and pole-residue artifact in <code>code/a5_closure/</code> Equal state
+weights (A3 forcing) &amp;
+<code>Lean/Screen/EqualStateWeights.lean</code> Einstein composition
+&amp; <code>Lean/ObserverPatchHolography/EinsteinBranch</code> Signature
+ladder and control &amp; <code>evidence/einstein_convergence/</code>
+(four-row manifest, hashed arrays; regeneration script in the simulator
+repository) Finite local source domain &amp; staged receipts under
+<code>data/local_domain/</code> and the bundle verifier under
+<code>oph_fpe/local_domain/</code> in the simulator repository Interval
+fixed points; lepton intervals; Koide window &amp; interval certificates
+and custody records under <code>code/</code> and <code>claims/</code>
+Photon cancellation and charge universality &amp; one-loop stack
+receipts under <code>code/particles/</code>
+<code>calibration/wz_upstream_completion/</code></p>
+</div>
+
+</div>
+
+<h1 id="empirical-meaning-falsifiability-and-open-obligations">Empirical
+meaning, falsifiability, and open obligations</h1>
+<p>The program maintains a preregistration architecture: custody-bound
+target definitions, kill bands, precision floors, and decision rules
+fixed before comparison, with falsifications retained at the same
+prominence as confirmations . Standing registered items include the
+conditional tau window above and a ringdown comb stance re-tested
+against each sufficiently loud gravitational-wave ringdown. Candidate
+hypotheses that failed their predeclared comparisons are retained in a
+negative ledger and contribute nothing to the case made here.</p>
+<p>The program’s empirical case rests on three decisive gates:</p>
+<ol type="1">
+<li><p><strong>Physical realization of the common refinement
+tower.</strong> The Einstein composition of
+Theorem <a href="#thm:einstein" data-reference-type="ref" data-reference="thm:einstein">10</a>
+needs one source-derived tower satisfying its premises jointly; the
+signature instrument and its controls measure progress toward exactly
+this object.</p></li>
+<li><p><strong>A source-only current and continuum producer.</strong>
+The gauge and matter results of
+Section <a href="#sec:gauge" data-reference-type="ref" data-reference="sec:gauge">7</a>
+await laboratory current attachment and a continuum operator limit;
+identifiability audits delimit which attachments the registered source
+interface cannot supply. This gate requires source-visible observables
+beyond that interface.</p></li>
+<li><p><strong>One preregistered quantitative forecast not used in
+architecture selection.</strong> A sealed machine-readable prediction
+contract fixes the comparison custody. The first source-visible
+candidate is scored once; a complete negative inventory is an acceptable
+published outcome.</p></li>
+</ol>
+<p>Each gate can fail, and the second one can fail provably. The program
+treats a rigorous non-identifiability theorem as a result of equal
+standing with a positive construction, because it tells the theory where
+additional observable structure must come from.</p>
+<h1 id="discussion-and-comparison">Discussion and comparison</h1>
+<p>The components of OPH have recognizable neighbors. Operational
+reconstructions of quantum theory derive Hilbert-space structure from
+information-theoretic postulates; OPH’s
+Section <a href="#sec:quantum" data-reference-type="ref" data-reference="sec:quantum">4</a>
+differs by deriving the finite record calculus from a consensus fixed
+point rather than from axioms about state spaces. Algebraic and modular
+approaches to quantum gravity use Tomita–Takesaki flow as intrinsic
+time; OPH’s Einstein branch consumes modular structure the same way but
+insists on a finite, producer-typed route to the premises. Holographic
+and tensor-network programs relate bulk geometry to boundary
+entanglement; OPH’s screen is a boundary object throughout, and its
+capacity identities are finite-algebra statements at finite cutoff.
+Thermodynamic derivations of the Einstein equation from entropy
+stationarity are the closest relatives of
+Theorem <a href="#thm:einstein" data-reference-type="ref" data-reference="thm:einstein">10</a>;
+the program’s contribution there is the typed decomposition into
+separately certifiable premises with executable instruments.
+Distributed-computation views of physical consensus, quantum error
+correction, and relational interpretations each anticipate one
+ingredient; none, to our knowledge, combines finite observer
+consistency, confluent repair with formal certificates, measured
+signature instruments with mechanism controls, and an exact finite route
+to the Standard Model coefficient algebra and global form.</p>
+<p>The novelty claim is therefore compositional. No single ingredient is
+unprecedented; the maintained chain from three observer axioms to the
+labeled structures above, under a verification and falsification
+discipline that a hostile auditor can execute, is the contribution
+offered for evaluation.</p>
+<p>Two methodological positions are worth stating for a
+philosophy-of-physics readership. First, the program treats
+<em>evidence-class separation</em> as part of the theory’s content: a
+reconstruction whose conditional joints are hidden is a different,
+weaker object than the same mathematics with its joints displayed, and
+machine-enforced receipts require the display. Second, the program
+treats <em>observer consistency as prior to state</em>: A3 selects
+states from agreement constraints, reversing the usual order in which
+states are fundamental and intersubjective agreement is emergent.
+Whether that reversal ultimately earns the physics is exactly what the
+open gates of
+Section <a href="#sec:empirical" data-reference-type="ref" data-reference="sec:empirical">12</a>
+will decide.</p>
+<h2 id="what-this-paper-does-not-claim">What this paper does not
+claim</h2>
+<p>For maximal clarity: no completed prediction of the fine-structure
+constant; no derivation of the particle mass spectrum; no completed
+cosmology or dark-sector claim; no claim that the simulator outputs our
+universe; no claim that formal verification establishes physical truth;
+no probabilistic certainty language. Downstream research programs
+exploring such directions exist within the project and are deliberately
+excluded from the case made here.</p>
+<h1 id="reproducibility-statement">Reproducibility statement</h1>
+<p>All theorems, certificates, simulation configurations, receipts, and
+the formal library are public in the project repositories , pinned by
+content hash and rebuildable from clean checkouts. The claim ledgers and
+the frozen prediction register are machine readable . The paper stack
+from which this synthesis draws, including the component papers on
+consensus, spacetime and Einstein dynamics, gauge structure, screen
+microphysics, the particle surfaces, the fixed-point certificates, the
+Koide identity, and the de Sitter capacity mechanism, is available at
+the same location .</p>
+<h1 id="author-contributions-and-declarations">Author contributions and
+declarations</h1>
+<p>Author roles, correspondence, data availability, code availability,
+ethics, competing interests, and AI-assistance declarations follow the
+synthesis paper of the project stack and apply to this condensation
+unchanged. AI-assisted tools were used for language editing, drafting
+assistance, and formatting; the authors reviewed and are responsible for
+all scientific content, claims, references, and declarations.</p>
+<div class="thebibliography">
+
+<p>99</p>
+<p>Mueller, B., Osika, A., Poneder, M., Xue, K., Cassie, B., Nguyen, P.,
+Visser, M. A., Anirudha, K. A., Matscheko, D., and Hill, J. (2026).
+“Observers Are All You Need” and the Observer Patch Holography paper
+stack. <a
+href="https://github.com/FloatingPragma/observer-patch-holography/tree/main/paper">https://github.com/FloatingPragma/observer-patch-holography/tree/main/paper</a></p>
+<p>FloatingPragma (2026). Observer Patch Holography: Lean library, exact
+code receipts, interval certificates, and claim ledgers. <a
+href="https://github.com/FloatingPragma/observer-patch-holography">https://github.com/FloatingPragma/observer-patch-holography</a></p>
+<p>Mueller, B. (2026). OPH physics simulator and reproduction source. <a
+href="https://github.com/muellerberndt/oph-physics-sim">https://github.com/muellerberndt/oph-physics-sim</a></p>
+<p>FloatingPragma (2026). Precommitted comparison certificates, custody
+records, and the frozen prediction register. <a
+href="https://github.com/FloatingPragma/observer-patch-holography/blob/main/claims/frozen_prediction_register.json">https://github.com/FloatingPragma/observer-patch-holography/blob/main/claims/frozen_prediction_register.json</a></p>
+<p>Müller, B. (2026). <em>Observer-Patch Holography as a String-Vacuum
+Selector: Observers, Clocks, Edge Strings, and the Bouchard–Donagi
+Witness.</em> <a
+href="https://github.com/FloatingPragma/observer-patch-holography/blob/main/extra/observer_patch_holography_as_string_vacuum_selector.pdf">https://github.com/FloatingPragma/observer-patch-holography/blob/main/extra/observer_patch_holography_as_string_vacuum_selector.pdf</a></p>
+<p>Clauser, J. F., Horne, M. A., Shimony, A., and Holt, R. A. (1969).
+“Proposed experiment to test local hidden-variable theories.”
+<em>Physical Review Letters</em> <strong>23</strong>(15), 880–884.</p>
+<p>Cirel’son, B. S. (1980). “Quantum generalizations of Bell’s
+inequality.” <em>Letters in Mathematical Physics</em>
+<strong>4</strong>(2), 93–100.</p>
+<p>Lamport, L., Shostak, R., and Pease, M. (1982). “The Byzantine
+generals problem.” <em>ACM Transactions on Programming Languages and
+Systems</em> <strong>4</strong>(3), 382–401.</p>
+<p>Koide, Y. (1983). “New view of quark and lepton mass hierarchy.”
+<em>Physical Review D</em> <strong>28</strong>, 252.</p>
+<p>Fischer, M. J., Lynch, N. A., and Paterson, M. S. (1985).
+“Impossibility of distributed consensus with one faulty process.”
+<em>Journal of the ACM</em> <strong>32</strong>(2), 374–382.</p>
+<p>CODATA Task Group on Fundamental Constants (2024). “2022 CODATA
+Recommended Values of the Fundamental Physical Constants.” <a
+href="https://physics.nist.gov/cuu/pdf/wall_2022.pdf">https://physics.nist.gov/cuu/pdf/wall_2022.pdf</a></p>
+<p>Particle Data Group (2026). <em>Review of Particle Physics: 2026
+particle listings.</em> <a
+href="https://pdg.lbl.gov/2026/listings/particle_properties.html">https://pdg.lbl.gov/2026/listings/particle_properties.html</a></p>
+<p>Chen, Y., Stanford, D., Tang, H., and Yang, Z. (2026). “Negative
+Shocks versus Static Patch Holography.” arXiv:2607.14042. <a
+href="https://arxiv.org/abs/2607.14042">https://arxiv.org/abs/2607.14042</a></p>
+<p>Newman, M. H. A. (1942). “On theories with a combinatorial definition
+of equivalence.” <em>Annals of Mathematics</em> <strong>43</strong>(2),
+223–243.</p>
+<p>Bisognano, J. J., and Wichmann, E. H. (1975). “On the duality
+condition for a Hermitian scalar field.” <em>Journal of Mathematical
+Physics</em> <strong>16</strong>, 985–1007.</p>
+<p>Bisognano, J. J., and Wichmann, E. H. (1976). “On the duality
+condition for quantum fields.” <em>Journal of Mathematical Physics</em>
+<strong>17</strong>, 303–321.</p>
+<p>Wiesbrock, H.-W. (1993). “Half-sided modular inclusions of von
+Neumann algebras.” <em>Communications in Mathematical Physics</em>
+<strong>157</strong>, 83–92.</p>
+<p>Jacobson, T. (1995). “Thermodynamics of spacetime: The Einstein
+equation of state.” <em>Physical Review Letters</em>
+<strong>75</strong>, 1260–1263.</p>
+<p>Jacobson, T. (2016). “Entanglement equilibrium and the Einstein
+equation.” <em>Physical Review Letters</em> <strong>116</strong>,
+201101.</p>
+<p>Doplicher, S., and Roberts, J. E. (1989). “A new duality theory for
+compact groups.” <em>Inventiones Mathematicae</em> <strong>98</strong>,
+157–218.</p>
+<p>Doplicher, S., and Roberts, J. E. (1990). “Why there is a field
+algebra with a compact gauge group describing the superselection
+structure in particle physics.” <em>Communications in Mathematical
+Physics</em> <strong>131</strong>, 51–107.</p>
+<p>Georgi, H., and Glashow, S. L. (1974). “Unity of all
+elementary-particle forces.” <em>Physical Review Letters</em>
+<strong>32</strong>, 438–441.</p>
+<p>Witten, E. (1982). “An SU(2) anomaly.” <em>Physics Letters B</em>
+<strong>117</strong>, 324–328.</p>
+</div>
+
+          </div>
+        </div>
+      </article>
+    </main>
+    <footer class="site-footer reveal">
+      <div>Pragma</div>
+      <div class="site-footer-links">
+        <a href="/oph/" data-track-link="footer-hub">Observer Patch Holography</a>
+        <a href="/oph/papers/" data-track-link="footer-papers">Papers</a>
+        <a href="/oph/standard-model-gravity-unification/" data-track-link="footer-smg">SM + Gravity</a>
+        <a href="/oph/theory-of-everything/" data-track-link="footer-toe">Theory of Everything</a>
+        <a href="/oph/simulation-theory/" data-track-link="footer-sim">Simulation Theory</a>
+        <a href="/oph/quantum-gravity/" data-track-link="footer-qg">Quantum Gravity</a>
+        <a href="https://oph-book.floatingpragma.io/" data-track-link="footer-book">Book</a>
+        <a href="https://challenge.floatingpragma.io/" data-track-link="footer-challenge">Challenge</a>
+      </div>
+    </footer>
+
+  </div>
+  <script src="/oph/app.js"></script>
+</body>
+</html>

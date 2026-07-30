@@ -21,6 +21,14 @@ This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 - Category: Particles
 - Summary: The OPH particle-spectrum continuation. It treats fine-structure closure, electroweak transport, selected-class quarks, the exact icosahedral charged-family carrier and its target-informed completion conjecture, the engineered digital CFQ schema audit, the conditional nature/pole transport boundary, neutrino branches, and status-separated hadron checks.
 
+## From Observer Consensus to Standard Physics
+
+- HTML: https://floatingpragma.io/oph/papers/from-observer-consensus-to-standard-physics/
+- PDF: https://floatingpragma.io/oph/papers/from-observer-consensus-to-standard-physics/paper.pdf
+- Authors: Bernhard Mueller, Alexander Osika, Mario Poneder, Kai Xue, Ben Cassie, Peter Nguyen, Maarten Antonie Visser, Kale Arnav Anirudha, David Matscheko, Jonathan Hill
+- Category: Flagship introduction
+- Summary: A standalone introduction to Observer Patch Holography: finite self-reading patches, public quantum records, Lorentzian geometry, Einstein dynamics, and Standard Model structure.
+
 ## Observers Are All You Need
 
 - HTML: https://floatingpragma.io/oph/papers/observers-are-all-you-need/
@@ -61,22 +69,6 @@ This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 - Category: Screen physics
 - Summary: The fixed-cutoff OPH microphysics paper. It develops finite overlap-facing patch carriers, the twelve-port screen-sieve theorem, the A5/C3 face-corner bundle, the formal CFQ central-record model and its physical-selection boundary, measurement surfaces, observer backup, synchronization, and hardware-evidence rules.
 
-## Photonic Fixed-Point Consensus for SHA-256d Proof of Work
-
-- HTML: https://floatingpragma.io/oph/papers/photonic-fixed-point-consensus-sha256d-proof-of-work/
-- PDF: https://floatingpragma.io/oph/papers/photonic-fixed-point-consensus-sha256d-proof-of-work/paper.pdf
-- Authors: Bernhard Mueller, Alexander Osika
-- Category: Physical computation
-- Summary: An OPH-adjacent physical-computation paper on photonic fixed-point consensus, SHA-256d proof of work, analog constraint satisfaction, and verifier receipts.
-
-## Theoretical Bounds on Chi-Nu Susceptibility in Observer Patch Holography
-
-- HTML: https://floatingpragma.io/oph/papers/chi-nu-susceptibility-bounds/
-- PDF: https://floatingpragma.io/oph/papers/chi-nu-susceptibility-bounds/paper.pdf
-- Authors: Bernhard Mueller, Alex Osika,, David Matscheko
-- Category: Gravity engineering
-- Summary: A branch-scoped OPH calculation for chi-nu susceptibility bounds, coherent scalar sourcing, quotient-edge response, and engineering chart values.
-
 ## Compact Proof Of Oph
 
 - HTML: https://floatingpragma.io/oph/papers/compact-proof-of-oph/
@@ -84,67 +76,3 @@ This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 - Authors: Bernhard Mueller
 - Category: OPH paper
 - Summary: First-party HTML and PDF publication page for Compact Proof Of Oph in the OPH paper stack.
-
-## De Sitter Time Advance Sign From Fixed Screen Capacity
-
-- HTML: https://floatingpragma.io/oph/papers/de-sitter-time-advance-sign-from-fixed-screen-capacity/
-- PDF: https://floatingpragma.io/oph/papers/de-sitter-time-advance-sign-from-fixed-screen-capacity/paper.pdf
-- Authors: Bernhard Mueller
-- Category: OPH paper
-- Summary: First-party HTML and PDF publication page for De Sitter Time Advance Sign From Fixed Screen Capacity in the OPH paper stack.
-
-## The Fine-Structure Constant as an OPH Pixel Fixed Point
-
-- HTML: https://floatingpragma.io/oph/papers/fine-structure-constant-oph-pixel-fixed-point/
-- PDF: https://floatingpragma.io/oph/papers/fine-structure-constant-oph-pixel-fixed-point/paper.pdf
-- Authors: Bernhard Mueller, Alexander Osika
-- Category: Constants
-- Summary: A focused OPH paper on the fine-structure constant, local screen-cell closure, hadronic endpoint transport, and the fixed-point status of alpha.
-
-## Koide Identity From Positive C3 Face Circulants
-
-- HTML: https://floatingpragma.io/oph/papers/koide-identity-from-positive-c3-face-circulants/
-- PDF: https://floatingpragma.io/oph/papers/koide-identity-from-positive-c3-face-circulants/paper.pdf
-- Authors: Bernhard Mueller
-- Category: OPH paper
-- Summary: First-party HTML and PDF publication page for Koide Identity From Positive C3 Face Circulants in the OPH paper stack.
-
-## Machine-Checked Finite Event Algebras for Observer-Patch Holography
-
-- HTML: https://floatingpragma.io/oph/papers/machine-checked-finite-event-algebras/
-- PDF: https://floatingpragma.io/oph/papers/machine-checked-finite-event-algebras/paper.pdf
-- Authors: Bernhard Mueller
-- Category: Mathematical foundations
-- Summary: A machine-checked finite-event-algebra paper for OPH measurement surfaces, including Boolean event structure, traces, conditional expectations, and Born-Luders update rules.
-
-## Observation-Determined Normal Forms: Stability, Obstructions, and Refinement in Constraint and Rewrite Systems
-
-- HTML: https://floatingpragma.io/oph/papers/observation-determined-normal-forms/
-- PDF: https://floatingpragma.io/oph/papers/observation-determined-normal-forms/paper.pdf
-- Authors: Bernhard Mueller, David Matscheko, Jonathan Hill
-- Category: Mathematical foundations
-- Summary: A substrate-neutral mathematical paper separating same-source confluence, cross-source identification from protected observations, liveness, and local repairability, with quantitative stability and refinement criteria.
-
-## Observer Patch Holography as a String-Vacuum Selector
-
-- HTML: https://floatingpragma.io/oph/papers/observer-patch-holography-string-vacuum-selector/
-- PDF: https://floatingpragma.io/oph/papers/observer-patch-holography-string-vacuum-selector/paper.pdf
-- Authors: Bernhard Mueller
-- Category: String theory
-- Summary: A bridge paper connecting the de Sitter observer problem, OPH edge-string effective language, and a heterotic Standard Model representative as a conditional string-vacuum selector.
-
-## Thinking as Patch-Net Fixed-Point Search
-
-- HTML: https://floatingpragma.io/oph/papers/thinking-as-patch-net-fixed-point-search/
-- PDF: https://floatingpragma.io/oph/papers/thinking-as-patch-net-fixed-point-search/paper.pdf
-- Authors: Bernhard Mueller
-- Category: Consciousness
-- Summary: An OPH paper on brains as biological fixed-point consensus systems, self-reading observer patches, recurrent repair, qualia, and AGI architecture.
-
-## Explaining the Yang-Mills Mass Gap with Observer-Patch Repair Dynamics
-
-- HTML: https://floatingpragma.io/oph/papers/yang-mills-mass-gap-observer-patch-holography/
-- PDF: https://floatingpragma.io/oph/papers/yang-mills-mass-gap-observer-patch-holography/paper.pdf
-- Authors: Bernhard Mueller, Jonathan Hill
-- Category: Mathematical physics
-- Summary: A branch-scoped OPH paper on the Yang-Mills mass gap, support-visible compact-gauge extraction, Euclidean consensus, repair completeness, and the exact repair gap.
