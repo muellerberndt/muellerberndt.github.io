@@ -1,7 +1,7 @@
 # Observer Patch Holography Papers
 
-Release: r2003
-Released: July 29, 2026
+Release: r2004
+Released: July 30, 2026
 
 This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 
@@ -25,7 +25,7 @@ This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 
 - HTML: https://floatingpragma.io/oph/papers/from-observer-consensus-to-standard-physics/
 - PDF: https://floatingpragma.io/oph/papers/from-observer-consensus-to-standard-physics/paper.pdf
-- Authors: Bernhard Mueller, Alexander Osika, Mario Poneder, Kai Xue, Ben Cassie, Peter Nguyen, Maarten Antonie Visser, Kale Arnav Anirudha, David Matscheko, Jonathan Hill
+- Authors: Bernhard Mueller Alexander Osika Mario Poneder
 - Category: Flagship introduction
 - Summary: A standalone introduction to Observer Patch Holography: finite self-reading patches, public quantum records, Lorentzian geometry, Einstein dynamics, and Standard Model structure.
 
