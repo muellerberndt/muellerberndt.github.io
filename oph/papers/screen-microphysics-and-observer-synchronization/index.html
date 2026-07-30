@@ -27,7 +27,7 @@
   <meta name="citation_pdf_url" content="https://floatingpragma.io/oph/papers/screen-microphysics-and-observer-synchronization/paper.pdf" />
   <meta name="citation_abstract_html_url" content="https://floatingpragma.io/oph/papers/screen-microphysics-and-observer-synchronization/" />
   <meta name="citation_technical_report_institution" content="Pragma Research" />
-  <meta name="citation_technical_report_number" content="OPH r2004 screen_microphysics_and_observer_synchronization" />
+  <meta name="citation_technical_report_number" content="OPH r2005 screen_microphysics_and_observer_synchronization" />
   <meta name="DC.title" content="Screen Microphysics and Observer Synchronization" />
   <meta name="DC.creator" content="Bernhard Mueller" />
   <meta name="DC.creator" content="Alexander Osika" />
@@ -125,7 +125,7 @@
   ],
   "datePublished": "July 30, 2026",
   "dateModified": "July 30, 2026",
-  "version": "r2004",
+  "version": "r2005",
   "subjectOf": [
     {
       "@type": "BlogPosting",
@@ -222,14 +222,14 @@
             <p>The fixed-cutoff OPH microphysics paper. It develops finite overlap-facing patch carriers, the twelve-port screen-sieve theorem, the A5/C3 face-corner bundle, the formal CFQ central-record model and its physical-selection boundary, measurement surfaces, observer backup, synchronization, and hardware-evidence rules.</p>
           </div>
           <div class="paper-meta-line">
-            <span>r2004</span>
+            <span>r2005</span>
             <span>July 30, 2026</span>
             <span>papers</span>
           </div>
           <div class="cta-row">
             <a class="btn btn-primary" href="/oph/papers/screen-microphysics-and-observer-synchronization/paper.pdf" target="_blank" rel="noopener noreferrer" data-track-link="paper-pdf-screen_microphysics_and_observer_synchronization">Download PDF</a>
             <a class="btn btn-secondary" href="/oph/papers/" data-track-link="paper-index">All OPH papers</a>
-            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r2004" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
+            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r2005" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
             <a class="btn btn-secondary" href="https://challenge.floatingpragma.io/" data-track-link="paper-challenge">Challenge</a>
           </div>
 
@@ -242,7 +242,7 @@
 
           <details class="paper-section-jump">
             <summary>Section jump</summary>
-            <nav class="paper-toc" aria-label="Paper sections"><a href="#one-source-bound-construction">One source-bound construction</a>
+            <nav class="paper-toc" aria-label="Paper sections"><a href="#one-typed-construction-and-its-source-gates">One typed construction and its source gates</a>
 <a href="#three-meanings-of-screen">Three meanings of screen</a>
 <a href="#the-common-finite-computation">The common finite computation</a>
 <a href="#two-downstream-projections-of-one-source">Two downstream projections of one source</a>
@@ -258,17 +258,18 @@
         </header>
         <div class="paper-reader-grid">
           <div class="paper-body">
-<p><strong>Paper release:</strong> <code>r2003</code>
-<strong>Released:</strong> July 29, 2026</p>
-<h1 id="one-source-bound-construction">One source-bound
-construction</h1>
+<p><strong>Paper release:</strong> <code>r2005</code>
+<strong>Released:</strong> July 30, 2026</p>
+<h1 id="one-typed-construction-and-its-source-gates">One typed
+construction and its source gates</h1>
 <p>The finite carrier, accepted repair, support geometry, gravity,
-compact currents, and conditional matter form one typed construction.
-Accepted repair produces the quotient-visible normal form. Separate
-conditional maps read support geometry and gravity from that normal
-form, while categorical and finite-carrier maps produce compact currents
-and conditional matter. Each composition uses the objects and premises
-displayed here.</p>
+abstract compact current, and conditional matter belong to one typed
+construction. Accepted repair produces the quotient-visible normal form.
+A1’s complete twelve-port response and A2’s endogenous holonomy force
+the abstract local Standard Model gauge Lie algebra. A declared matrix
+current and matter packet provide conditional realizations, while the
+source producer derives only the inverse-port response. Each composition
+uses the objects and premises displayed here.</p>
 <h2 id="three-meanings-of-screen">Three meanings of screen</h2>
 <p>The word “screen” is used for three related objects that must not be
 identified without a receipt.</p>
@@ -382,14 +383,20 @@ projections of one source</h2>
 \end{aligned}
 \]</span> <span class="math display">\[
 \begin{aligned}
-\mathsf{PublicNormalForm}_r
-&amp;\xrightarrow{\;\mathsf{response\ contract}\;}
-(\mathsf{A5Carrier}_r,J_r)\\
-&amp;\longrightarrow \mathsf{CompactCurrent}_r
-\longrightarrow \mathsf{FiniteStandardModelCurrent}_r\\
-&amp;\longrightarrow \mathsf{Matter/QFT}_r .
+\left.
+\begin{gathered}
+\mathsf{CompleteResponse}_{12}\\
+\mathsf{EndogenousHolonomy}_{A_5}
+\end{gathered}
+\right\}
+&amp;\longrightarrow
+\mathfrak u(1)\oplus\mathfrak{su}(2)\oplus\mathfrak{su}(3)\\
+&amp;\xrightarrow{\;\text{conditional matrix and matter packet}\;}
+\mathsf{MaximalFaithfulMatterImage}\\
+&amp;\dashrightarrow \mathsf{PhysicalGauge/QFT}.
 \end{aligned}
-\]</span></p>
+\]</span> The dashed arrow is the open source and laboratory
+attachment.</p>
 <p>The finite carrier-to-support leg is constructed from one oriented
 icosahedral incidence nerve: twelve carrier charts, thirty seam
 algebras, and twenty nonvacuous triple restrictions. The same bound
@@ -438,30 +445,28 @@ together, so it is a units convention on the same move graph. Oriented
 incidence independently gives the antipodal pairing, proper <span
 class="math inline">\(A_5\)</span> action, and rank-three Gram frame,
 and determines the antipode <span class="math inline">\(J\)</span>.
-Under the explicit finite response-admissibility contract, the signed
-central involutive inverse-port responses are exactly <span
-class="math inline">\(\pm J\)</span>, with common sign conventional.
-Conditional also on the rank-15 matter contract with its unique
-charge-conjugate projector pair, the port-current, anomaly, Spin, and
-tensor-descent certificates imply the Standard Model Lie type,
-hypercharge lattice, and conjugation-insensitive <span
-class="math inline">\(\mathbb Z_6\)</span> global form from those
-premises alone. The measured non-split deck cover and exhaustive matter
-scan select the odd-Weyl Spin typing at finite source-model scope. The
-scalar scan fixes compatible charges and Yukawa channels, not scalar
-multiplicity. The finite response has a source-derived target-blind
-producer. Separate band premises select the rank-three response.
-Tensoring it with the declared generation table gives a conditional
-rank-<span class="math inline">\(45\)</span> candidate whose chirality
-and diagonal <span class="math inline">\(\mathbb Z_6\)</span> action
-come from that table. A distinct local-domain receipt checks the
-declared tensor-identity operator and conditional gap inheritance
-without source-selecting the matter action or transporting the
-twelve-port Spin packet. Laboratory identification of the finite matter
-carriers, current, and line sectors, exclusion of extra light sectors,
-physical matter-pole and continuum family identification, scalar
-attachment and dynamics, and quantum-field construction require separate
-maps.</p>
+Complete reversible response and endogenous overlap transport force the
+abstract Standard Model compact Lie type. Under the explicit
+inverse-port contract, the signed central involutive responses are
+exactly <span class="math inline">\(\pm J\)</span>, with common sign
+conventional. Conditional also on the matrix current and rank-15 matter
+contract with its unique charge-conjugate projector pair, anomaly and
+tensor-descent certificates give the hypercharge lattice, common <span
+class="math inline">\(\mathbb Z_6\)</span> kernel, and maximal faithful
+matter image. The scalar scan fixes compatible charges and Yukawa
+channels, not scalar multiplicity. The target-blind producer derives the
+inverse-port response, without selecting the matrix current. Separate
+band premises select the rank-three response. Tensoring it with the
+declared generation table gives a conditional rank-<span
+class="math inline">\(45\)</span> candidate whose chirality and diagonal
+<span class="math inline">\(\mathbb Z_6\)</span> action come from that
+table. A distinct local-domain receipt checks the declared
+tensor-identity operator and conditional gap inheritance without
+source-selecting the matter action or transporting the twelve-port Spin
+packet. Laboratory identification of the finite matter carriers,
+current, and line sectors, exclusion of extra light sectors, physical
+matter-pole and continuum family identification, scalar attachment and
+dynamics, and quantum-field construction require separate maps.</p>
 <p>The compact sector-category/Tannaka route conditionally reconstructs
 a compact group by a logically independent route. Physical family
 identification and extra-sector exclusion require separate
@@ -502,12 +507,14 @@ M_0=60,\qquad D_{\rm raw}=60k,\qquad
 Publicly inert multiplicity makes <span class="math inline">\(D_{\rm
 raw}\)</span> implementation-dependent, so the result is an evaluator
 control rather than physical capacity closure.</p>
-<p>The unified claim has a precise scope. Consensus, geometry/gravity,
-and gauge/matter are composable branches of one source-bound
-self-reading carrier tower. Its full quotient-visible architecture can
-constrain both branches; local icosahedral incidence by itself
-constrains only the local carrier route. The physical maps that turn
-those constraints into one inhabited universe are named premises.
+<p>The unified claim has a precise scope. Consensus and geometry/gravity
+are composable branches of one source-bound self-reading carrier tower.
+The finite gauge branch uses the same carrier architecture, and A1–A2
+force its abstract local Standard Model gauge Lie algebra. The released
+matrix current and matter action are conditional realizations until a
+same-source bridge joins them to that tower. Local icosahedral incidence
+by itself constrains only the carrier module. The physical maps that
+turn these constraints into one inhabited universe are named premises.
 Matching dimensions or symmetry labels does not supply them.</p>
 <h1 id="what-this-paper-contributes">What This Paper Contributes</h1>
 <p>The companion OPH papers use observer patches, records, repairs, and
@@ -537,19 +544,23 @@ quadratic descent. Their minimum move count is natural under rotations
 and the declared refinements. Oriented incidence separately gives the
 proper-<span class="math inline">\(A_5\)</span> result without using
 downstream particle or gauge targets. Incidence and target-blind port
-readback derive the finite response, compact current, and refinement
-maps. Under the declared fermionic Spin category, the anomaly and
-descent certificates imply the Standard Model charge lattice and common
-<span class="math inline">\(\mathbb Z_6\)</span> tensor kernel from the
-stated premises alone. The corresponding quotient is the maximal
-faithful matter image. The finite source model fixes the matter typing
-and quotient on the declared carrier. Laboratory identification, the
-physical seam mechanism, scalar multiplicity, and equality with the
-distinct Tannaka current are work in progress. The generation-count,
-extra-sector, charged-lepton, and quantitative selector/gap branches
-carry their own declared completions. Hardware claims are kept behind a
-public evidence rule: manifests, hashes, calibration records, raw or
-reduced traces, and exact verifier receipts carry the weight.</p>
+readback derive the inverse-port response and refinement maps. The
+complete-response and endogenous-transport clauses force the abstract
+local Standard Model gauge Lie algebra, while the released matrix
+current is a conditional realization. Under the declared fermionic Spin
+category, the anomaly and descent certificates imply the Standard Model
+charge lattice and common <span class="math inline">\(\mathbb
+Z_6\)</span> tensor kernel from the stated premises alone. The
+corresponding quotient is the maximal faithful matter image on the
+declared tensors. Source reconstruction of the matter action and
+physical global-form selection are work in progress, along with
+laboratory identification, the physical seam mechanism, scalar
+multiplicity, and equality with the distinct Tannaka current. The
+generation-count, extra-sector, charged-lepton, and quantitative
+selector/gap branches carry their own declared completions. Hardware
+claims are kept behind a public evidence rule: manifests, hashes,
+calibration records, raw or reduced traces, and exact verifier receipts
+carry the weight.</p>
 <h1 id="scope">Scope</h1>
 <p>OPH microphysics uses finite observer patches with echosahedral
 interfaces. A spherical screen is a geometry chart for observer-visible
@@ -2274,9 +2285,9 @@ Lemma <a href="#lem:presence-reading-reserve" data-reference-type="ref" data-re
 <p><em>Proof.</em> The shared cut entropy density on this branch is the
 declared branch input <span class="math display">\[
 \bar\ell_{\rm shared}=\frac{P}{4}.
-\]</span> The protected reserve is the realized <span
-class="math inline">\(\mathbb Z_6\)</span> center quotient reserve. By
-the declared <span class="math inline">\(\mathbb Z_6\)</span>
+\]</span> The protected reserve is the declared <span
+class="math inline">\(\mathbb Z_6\)</span> center-class reserve. By the
+declared <span class="math inline">\(\mathbb Z_6\)</span>
 class-equidistribution hypothesis, splitting the shared-edge reserve
 uniformly over the six protected center classes gives <span
 class="math display">\[
@@ -4408,17 +4419,17 @@ section spaces, and finite operator identities. Its negative cone
 margins, one local <span class="math inline">\((0,4)\)</span> fit, and
 absent continuum identification prevent it from supplying the
 event-manifold, BW/KMS, physical-scale, or laboratory bridges. Those
-bridges are work in progress. The finite current implication is exact
-under the explicit response and matter contracts. The measured non-split
-deck cover forces the odd-Weyl Spin typing, and the measured finite
-flux-sector menu selects the <span class="math inline">\(\mathbb
-Z_6\)</span> quotient on the declared carrier. Laboratory current and
-flux identification, equality with the distinct Tannaka current,
-four-dimensional topological normalization, scalar multiplicity,
-physical matter-pole attachment of the exact finite rank-three response
-candidate and declared generation table, cross-domain Spin transport,
-selection of the local matter action, and continuum quantum field
-realization are work in progress.</p>
+bridges are work in progress. Complete reversible port response and
+endogenous overlap transport force the local Standard Model gauge Lie
+algebra. The released matrix current and matter action are conditional.
+Their common <span class="math inline">\(\mathbb Z_6\)</span> kernel is
+exact, while physical global-form selection is work in progress.
+Laboratory current and flux identification, equality with the distinct
+Tannaka current, four-dimensional topological normalization, scalar
+multiplicity, physical matter-pole attachment of the exact finite
+rank-three response candidate and declared generation table,
+cross-domain Spin transport, selection of the local matter action, and
+continuum quantum field realization are work in progress.</p>
 <p>Hardware can guide the architecture and supply public evidence
 through hash-stable evidence bundles. The mathematical conclusions stand
 on finite algebras and their declared branch assumptions.</p>

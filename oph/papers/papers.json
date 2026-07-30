@@ -1,5 +1,5 @@
 {
-  "release_id": "r2004",
+  "release_id": "r2005",
   "released_at": "July 30, 2026",
   "collection_url": "https://floatingpragma.io/oph/papers/",
   "sitemap_url": "https://floatingpragma.io/oph/papers/sitemap.xml",
@@ -100,7 +100,17 @@
       "category": "Flagship introduction",
       "description": "A standalone introduction to Observer Patch Holography: finite self-reading patches, public quantum records, Lorentzian geometry, Einstein dynamics, and Standard Model structure.",
       "authors": [
-        "Bernhard Mueller Alexander Osika Mario Poneder"
+        "Bernhard Mueller",
+        "Alexander Osika",
+        "Mario Poneder",
+        "Kai Xue",
+        "Ben Cassie",
+        "Peter Nguyen",
+        "Maarten Antonie Visser",
+        "Kale Arnav Anirudha",
+        "David Matscheko",
+        "Jonathan Hill",
+        "William T. Glynn"
       ],
       "keywords": [
         "Observer Patch Holography",
@@ -137,7 +147,8 @@
         "Maarten Antonie Visser",
         "Kale Arnav Anirudha",
         "David Matscheko",
-        "Jonathan Hill"
+        "Jonathan Hill",
+        "William T. Glynn"
       ],
       "keywords": [
         "Observer Patch Holography",

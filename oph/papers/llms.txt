@@ -1,6 +1,6 @@
 # Observer Patch Holography Papers
 
-Release: r2004
+Release: r2005
 Released: July 30, 2026
 
 This page lists the first-party HTML and PDF URLs for the OPH paper stack.
@@ -25,7 +25,7 @@ This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 
 - HTML: https://floatingpragma.io/oph/papers/from-observer-consensus-to-standard-physics/
 - PDF: https://floatingpragma.io/oph/papers/from-observer-consensus-to-standard-physics/paper.pdf
-- Authors: Bernhard Mueller Alexander Osika Mario Poneder
+- Authors: Bernhard Mueller, Alexander Osika, Mario Poneder, Kai Xue, Ben Cassie, Peter Nguyen, Maarten Antonie Visser, Kale Arnav Anirudha, David Matscheko, Jonathan Hill, William T. Glynn
 - Category: Flagship introduction
 - Summary: A standalone introduction to Observer Patch Holography: finite self-reading patches, public quantum records, Lorentzian geometry, Einstein dynamics, and Standard Model structure.
 
@@ -33,7 +33,7 @@ This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 
 - HTML: https://floatingpragma.io/oph/papers/observers-are-all-you-need/
 - PDF: https://floatingpragma.io/oph/papers/observers-are-all-you-need/paper.pdf
-- Authors: Bernhard Mueller, Alexander Osika, Mario Poneder, Kai Xue, Ben Cassie, Peter Nguyen, Maarten Antonie Visser, Kale Arnav Anirudha, David Matscheko, Jonathan Hill
+- Authors: Bernhard Mueller, Alexander Osika, Mario Poneder, Kai Xue, Ben Cassie, Peter Nguyen, Maarten Antonie Visser, Kale Arnav Anirudha, David Matscheko, Jonathan Hill, William T. Glynn
 - Category: Theory of everything
 - Summary: OPH builds physics from finite public records on horizon-screen cuts. The paper presents the observer-first reconstruction of spacetime, gravity, Standard Model structure, cosmology, particles, records, and simulation-theory interpretation.
 
