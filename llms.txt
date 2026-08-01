@@ -38,7 +38,7 @@ Floating Pragma hosts Observer Patch Holography (OPH), a proof-driven reconstruc
 
 ## OPH Paper Pages
 
-- Observers Are All You Need: https://floatingpragma.io/oph/papers/observers-are-all-you-need/
+- From Observer Consensus to Standard Physics: https://wkaxfdgxoqmghwgshymt.supabase.co/storage/v1/object/public/papers/from_observer_consensus_to_standard_physics.pdf
 - Recovering Observer Spacetime and Einstein Dynamics from Overlap Consistency: https://floatingpragma.io/oph/papers/observer-spacetime-einstein-dynamics/
 - Deriving Standard Model Gauge Structure from Observer Overlap Consistency: https://floatingpragma.io/oph/papers/standard-model-gauge-structure/
 - Deriving the Particle Zoo from Observer Consistency: https://floatingpragma.io/oph/papers/particle-spectrum-from-observer-consistency/

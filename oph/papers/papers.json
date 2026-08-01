@@ -1,6 +1,6 @@
 {
-  "release_id": "r2010",
-  "released_at": "August 1, 2026",
+  "release_id": "r2009",
+  "released_at": "July 31, 2026",
   "collection_url": "https://floatingpragma.io/oph/papers/",
   "sitemap_url": "https://floatingpragma.io/oph/papers/sitemap.xml",
   "papers": [
@@ -123,46 +123,6 @@
       "html_url": "https://floatingpragma.io/oph/papers/from-observer-consensus-to-standard-physics/",
       "pdf_url": "https://floatingpragma.io/oph/papers/from-observer-consensus-to-standard-physics/paper.pdf",
       "central_pdf_url": "https://floatingpragma.io/oph/papers/pdf/from_observer_consensus_to_standard_physics.pdf",
-      "related_blog_posts": [
-        {
-          "title": "The Trigger",
-          "url": "https://blog.floatingpragma.io/the-trigger",
-          "description": "High-level public entry point for the OPH claim."
-        }
-      ]
-    },
-    {
-      "id": "observers_are_all_you_need",
-      "title": "Observers Are All You Need",
-      "short_title": "Main OPH paper",
-      "category": "Theory of everything",
-      "description": "OPH builds physics from finite public records on horizon-screen cuts. The paper presents the observer-first reconstruction of spacetime, gravity, Standard Model structure, cosmology, particles, records, and simulation-theory interpretation.",
-      "authors": [
-        "Bernhard Mueller",
-        "Alexander Osika",
-        "Mario Poneder",
-        "Kai Xue",
-        "Ben Cassie",
-        "Peter Nguyen",
-        "Maarten Antoine Visser",
-        "Kale Arnav Anirudha",
-        "David Matscheko",
-        "Jonathan Hill",
-        "William T. Glynn"
-      ],
-      "keywords": [
-        "Observer Patch Holography",
-        "OPH",
-        "theory of everything",
-        "observer-first physics",
-        "consciousness-first physical theory",
-        "quantum gravity",
-        "Standard Model unification",
-        "simulation theory"
-      ],
-      "html_url": "https://floatingpragma.io/oph/papers/observers-are-all-you-need/",
-      "pdf_url": "https://floatingpragma.io/oph/papers/observers-are-all-you-need/paper.pdf",
-      "central_pdf_url": "https://floatingpragma.io/oph/papers/pdf/observers_are_all_you_need.pdf",
       "related_blog_posts": [
         {
           "title": "The Trigger",
