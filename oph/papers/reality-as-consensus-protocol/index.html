@@ -19,6 +19,7 @@
   <meta name="citation_author" content="Kale Arnav Anirudha" />
   <meta name="citation_author" content="David Matscheko" />
   <meta name="citation_author" content="Jonathan Hill" />
+  <meta name="citation_author_institution" content="Pragma Research Inc." />
   <meta name="citation_publication_date" content="2026/08/11" />
   <meta name="citation_online_date" content="2026/08/11" />
   <meta name="citation_language" content="en" />
@@ -84,7 +85,11 @@
   "author": [
     {
       "@type": "Person",
-      "name": "Bernhard Mueller"
+      "name": "Bernhard Mueller",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Pragma Research Inc."
+      }
     },
     {
       "@type": "Person",
@@ -211,6 +216,7 @@
           <div class="eyebrow">Simulation theory</div>
           <h1 class="citation_title">Reality as a Consensus Protocol</h1>
           <h3 class="citation_author">Authors: Bernhard Mueller, Kai Xue, Kale Arnav Anirudha, David Matscheko, Jonathan Hill</h3>
+          <p class="paper-reader-affiliations"><strong>Affiliations:</strong> Bernhard Mueller, Pragma Research Inc.</p>
           <div class="paper-reader-abstract">
             <strong>Abstract</strong>
             <p>The OPH fixed-point consensus paper. It formulates observer patches, overlap-visible records, repair moves, Lyapunov descent, quotient normal forms, and obstruction classes.</p>
@@ -254,6 +260,8 @@
           <div class="paper-body">
 <p><strong>Paper release:</strong> <code>r2018</code>
 <strong>Released:</strong> August 11, 2026</p>
+<p><strong>Author affiliation:</strong> Bernhard Mueller, Pragma
+Research Inc.</p>
 <h1 id="downstream-physical-boundary">Downstream physical boundary</h1>
 <p>The fixed-cutoff consensus theorem supplies a finite observer-like
 self-reading system only on the declared recovery, record, feedback,
@@ -2013,11 +2021,22 @@ equal throughout that set. The statement is machine checked for the
 repository repair map . ◻</p>
 </div>
 
-<p>This support upper bound is uniform over fixed exogenous schedule
-words. It does not cover an adaptive scheduler whose next site depends
-on the current global record. It supplies no converse, minimal cone,
-graph metric, propagation speed, or claim that influence reaches the
-boundary of <span class="math inline">\(B_n(S)\)</span>.</p>
+<p>This fixed-word bound has an exact conditional adaptive extension. If
+the next-site scheduler is supplied together with a region <span
+class="math inline">\(R\)</span> on which its choice depends, then
+agreement on <span class="math inline">\(B_n(S\cup R)\)</span> forces
+the two <span class="math inline">\(n\)</span>-step runs to agree on
+<span class="math inline">\(S\cup R\)</span>; equivalently, a change
+outside both <span class="math inline">\(B_n(S)\)</span> and <span
+class="math inline">\(B_n(R)\)</span> cannot alter the probe readout.
+Fixed words embed as record-blind schedulers, while a two-cell
+countermodel proves that the consultation-region term cannot be dropped.
+Naturality also follows under the laws of a separately declared
+refinement structure. These results do not produce the scheduler,
+consultation region, channel, or refinement maps from the source.
+Neither theorem supplies a converse, minimal cone, physical graph
+metric, propagation speed, or claim that influence reaches the cone
+boundary.</p>
 <div id="prop:bipartite-marginal-invariance" class="proposition">
 
 <p><strong>Proposition 33</strong> (Bipartite marginal invariance).
@@ -4151,24 +4170,27 @@ an arbitrary habitat-level state-and-law space, and it does not remove
 the branch and record hypotheses stated in the theorem.</p>
 </div>
 
-<h4 id="an-executed-preregistered-witness-chain">An executed
-preregistered witness chain.</h4>
+<h4 id="an-executed-locally-frozen-witness-chain">An executed locally
+frozen witness chain.</h4>
 <p>The certificate discipline above has one executed finite instance
 running from a source run to kernel-checked literals. A bounded run of
-the companion simulation engine was preregistered: its gate contract was
-committed before execution and pins a nonconstant protected record,
+the companion simulation engine was locally pre-specified and
+hash-pinned before execution, but it has no independent public
+pre-result timestamp: the contract and result first enter repository
+history together. The contract pins a nonconstant protected record,
 separate state and transition tables, an exact recognizer, stationarity,
-and contraction. The executed run passed those data-extraction checks.
-It did not earn the typed equality that its provisional “common
-reference” label suggested: the transition stationary law and the
-empirical state-side reference are distinct objects. In fact their exact
+and contraction. The executed run passed those extraction checks; this
+is not a prospectively validated or publicly preregistered result. It
+did not earn the typed equality that its provisional “common reference”
+label suggested: the transition stationary law and the empirical
+state-side reference are distinct objects. In fact their exact
 denominator mismatch and the nonprojector transition eigenmode rule out
 deterministic pushforward and nondegenerate intertwining with the
 idempotent state-side resampling action on this artifact. A declared
 extraction script froze the run’s finite payload, and the payload
 integers are mirrored verbatim in as literals whose receipts are
-kernel-decided, inhabiting an earned instance of the observer access-cut
-interface of
+kernel-decided, inhabiting a declared payload-attached instance of the
+observer access-cut interface of
 Section <a href="#sec:operational-observer-layer" data-reference-type="ref" data-reference="sec:operational-observer-layer">7.1</a>.
 Where the truncated payload cannot support a receipt, the collapse is
 stated as a theorem instead of being repaired by synthetic data: on

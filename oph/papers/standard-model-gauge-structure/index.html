@@ -21,6 +21,8 @@
   <meta name="citation_author" content="Peter Nguyen" />
   <meta name="citation_author" content="Maarten Antoine Visser" />
   <meta name="citation_author" content="David Matscheko" />
+  <meta name="citation_author_institution" content="Pragma Research Inc." />
+  <meta name="citation_author_institution" content="Asimov Labs" />
   <meta name="citation_publication_date" content="2026/08/11" />
   <meta name="citation_online_date" content="2026/08/11" />
   <meta name="citation_language" content="en" />
@@ -88,11 +90,19 @@
   "author": [
     {
       "@type": "Person",
-      "name": "Bernhard Mueller"
+      "name": "Bernhard Mueller",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Pragma Research Inc."
+      }
     },
     {
       "@type": "Person",
-      "name": "Alexander Osika"
+      "name": "Alexander Osika",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Asimov Labs"
+      }
     },
     {
       "@type": "Person",
@@ -223,6 +233,7 @@
           <div class="eyebrow">Gauge structure</div>
           <h1 class="citation_title">Deriving Standard Model Gauge Structure from Observer Overlap Consistency</h1>
           <h3 class="citation_author">Authors: Bernhard Mueller, Alexander Osika, Mario Poneder, Kai Xue, Peter Nguyen, Maarten Antoine Visser, David Matscheko</h3>
+          <p class="paper-reader-affiliations"><strong>Affiliations:</strong> Bernhard Mueller, Pragma Research Inc.; Alexander Osika, Asimov Labs</p>
           <div class="paper-reader-abstract">
             <strong>Abstract</strong>
             <p>Two OPH gauge routes with distinct proof boundaries: categorical reconstruction from transported edge sectors and an incidence-derived finite current algebra with conditional Standard Model charges and tensor kernel. Physical global-form selection remains open.</p>
@@ -266,6 +277,8 @@
           <div class="paper-body">
 <p><strong>Paper release:</strong> <code>r2018</code>
 <strong>Released:</strong> August 11, 2026</p>
+<p><strong>Author affiliations:</strong> Bernhard Mueller, Pragma
+Research Inc.; Alexander Osika, Asimov Labs.</p>
 <h1 id="two-reconstruction-routes">Two reconstruction routes</h1>
 <p><span id="ass:matter-typing" label="ass:matter-typing"></span>
 <span id="thm:global-form-boundary" label="thm:global-form-boundary"></span></p>
@@ -439,24 +452,27 @@ class="math inline">\(\beta/\delta\in[1/50,6]\)</span> the family <span
 class="math inline">\(G\)</span> stays uniquely nearest for all <span
 class="math inline">\(\gamma\)</span> and <span
 class="math inline">\(\delta\)</span>. The mirror family <span
-class="math inline">\(F\)</span> genuinely takes over past the exact tie
-surface, with witness <span
+class="math inline">\(F\)</span> genuinely takes over on the <span
+class="math inline">\(d_F^2&lt;d_G^2\)</span> side of the exact
+three-scale tie surface, with witness <span
 class="math inline">\((\beta,\gamma,\delta)=(8,1,1)\)</span>.
 Conjugating <span class="math inline">\(\sqrt5\)</span> and swapping
 <span class="math inline">\(\beta\leftrightarrow\gamma\)</span> maps
 <span class="math inline">\(d_G\)</span> to <span
 class="math inline">\(d_F\)</span> exactly: the <span
 class="math inline">\(F/G\)</span> asymmetry is the Galois image of the
-sector swap, and the face orientation selects the branch with the
-smaller conjugate at every balanced point. A channel-diagonal invariant
-metric on the bracket space that is not carrier-induced reverses the
-balanced-point selection, so the carrier-induced restriction is
-load-bearing. The exact replay derives the closed forms from the pinned
-tensors and replays six sample metrics through raw normal equations; the
-Lean companion proves the exclusion, balanced, box, and witness
-statements as quantified real theorems over the closed forms. The
-nearest-point law and the carrier-induced class remain declared
-discriminator choices.</p>
+sector swap. Reversing every face orientation negates <span
+class="math inline">\(B_{\rm face}\)</span> but leaves these distances
+unchanged, because the compared compact families are centrally
+symmetric; orientation therefore does not select the branch. A
+channel-diagonal invariant metric on the bracket space that is not
+carrier-induced reverses the balanced-point selection, so the
+carrier-induced restriction is load-bearing. The exact replay derives
+the closed forms from the pinned tensors and replays six sample metrics
+through raw normal equations; the Lean companion proves the exclusion,
+balanced, box, and witness statements as quantified real theorems over
+the closed forms. The nearest-point law and the carrier-induced class
+remain declared discriminator choices.</p>
 <p>Over the supplied certified brackets, ad-invariance fixes the kinetic
 shape block-diagonally with exactly zero cross terms. On
 carrier-projector forms the restriction is stronger and exact: families

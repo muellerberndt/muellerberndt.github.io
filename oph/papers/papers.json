@@ -19,6 +19,16 @@
         "Maarten Antoine Visser",
         "David Matscheko"
       ],
+      "affiliations": [
+        {
+          "author": "Bernhard Mueller",
+          "organization": "Pragma Research Inc."
+        },
+        {
+          "author": "Alexander Osika",
+          "organization": "Asimov Labs"
+        }
+      ],
       "keywords": [
         "Standard Model gauge group",
         "gauge reconstruction",
@@ -62,6 +72,16 @@
         "Kai Xue",
         "Maarten Antoine Visser",
         "David Matscheko"
+      ],
+      "affiliations": [
+        {
+          "author": "Bernhard Mueller",
+          "organization": "Pragma Research Inc."
+        },
+        {
+          "author": "Alexander Osika",
+          "organization": "Asimov Labs"
+        }
       ],
       "keywords": [
         "particle spectrum derivation",
@@ -112,6 +132,16 @@
         "Jonathan Hill",
         "William T. Glynn"
       ],
+      "affiliations": [
+        {
+          "author": "Bernhard Mueller",
+          "organization": "Pragma Research Inc."
+        },
+        {
+          "author": "Alexander Osika",
+          "organization": "Asimov Labs"
+        }
+      ],
       "keywords": [
         "Observer Patch Holography",
         "OPH",
@@ -155,6 +185,12 @@
       "authors": [
         "Bernhard Mueller"
       ],
+      "affiliations": [
+        {
+          "author": "Bernhard Mueller",
+          "organization": "Pragma Research Inc."
+        }
+      ],
       "keywords": [
         "observer continuation",
         "consciousness-first theories",
@@ -196,6 +232,12 @@
         "Kale Arnav Anirudha",
         "David Matscheko",
         "Jonathan Hill"
+      ],
+      "affiliations": [
+        {
+          "author": "Bernhard Mueller",
+          "organization": "Pragma Research Inc."
+        }
       ],
       "keywords": [
         "simulation theory",
@@ -242,6 +284,16 @@
         "Maarten Antoine Visser",
         "David Matscheko"
       ],
+      "affiliations": [
+        {
+          "author": "Bernhard Mueller",
+          "organization": "Pragma Research Inc."
+        },
+        {
+          "author": "Alexander Osika",
+          "organization": "Asimov Labs"
+        }
+      ],
       "keywords": [
         "quantum gravity",
         "observer spacetime",
@@ -286,6 +338,16 @@
         "Maarten Antoine Visser",
         "David Matscheko"
       ],
+      "affiliations": [
+        {
+          "author": "Bernhard Mueller",
+          "organization": "Pragma Research Inc."
+        },
+        {
+          "author": "Alexander Osika",
+          "organization": "Asimov Labs"
+        }
+      ],
       "keywords": [
         "screen microphysics",
         "observer synchronization",
@@ -324,6 +386,12 @@
       "description": "First-party HTML and PDF publication page for Compact Proof Of Oph in the OPH paper stack.",
       "authors": [
         "Bernhard Mueller"
+      ],
+      "affiliations": [
+        {
+          "author": "Bernhard Mueller",
+          "organization": "Pragma Research Inc."
+        }
       ],
       "keywords": [
         "Observer Patch Holography",

@@ -10,6 +10,7 @@ This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 - HTML: https://floatingpragma.io/oph/papers/standard-model-gauge-structure/
 - PDF: https://floatingpragma.io/oph/papers/standard-model-gauge-structure/paper.pdf
 - Authors: Bernhard Mueller, Alexander Osika, Mario Poneder, Kai Xue, Peter Nguyen, Maarten Antoine Visser, David Matscheko
+- Affiliations: Bernhard Mueller, Pragma Research Inc.; Alexander Osika, Asimov Labs
 - Category: Gauge structure
 - Summary: Two OPH gauge routes with distinct proof boundaries: categorical reconstruction from transported edge sectors and an incidence-derived finite current algebra with conditional Standard Model charges and tensor kernel. Physical global-form selection remains open.
 
@@ -18,6 +19,7 @@ This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 - HTML: https://floatingpragma.io/oph/papers/particle-spectrum-from-observer-consistency/
 - PDF: https://floatingpragma.io/oph/papers/particle-spectrum-from-observer-consistency/paper.pdf
 - Authors: Bernhard Mueller, Alexander Osika, Mario Poneder, Kai Xue, Maarten Antoine Visser, David Matscheko
+- Affiliations: Bernhard Mueller, Pragma Research Inc.; Alexander Osika, Asimov Labs
 - Category: Particles
 - Summary: The OPH particle-spectrum continuation. It treats fine-structure closure, electroweak transport, selected-class quarks, the exact icosahedral charged-family carrier and its target-informed completion conjecture, the engineered digital CFQ schema audit, the conditional nature/pole transport boundary, neutrino branches, and status-separated hadron checks.
 
@@ -26,6 +28,7 @@ This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 - HTML: https://floatingpragma.io/oph/papers/from-observer-consensus-to-standard-physics/
 - PDF: https://floatingpragma.io/oph/papers/from-observer-consensus-to-standard-physics/paper.pdf
 - Authors: Bernhard Mueller, Alexander Osika, Mario Poneder, Kai Xue, Ben Cassie, Peter Nguyen, Maarten Antoine Visser, Kale Arnav Anirudha, David Matscheko, Jonathan Hill, William T. Glynn
+- Affiliations: Bernhard Mueller, Pragma Research Inc.; Alexander Osika, Asimov Labs
 - Category: Flagship introduction
 - Summary: A standalone introduction to Observer Patch Holography: finite self-reading patches, public quantum records, Lorentzian geometry, Einstein dynamics, and Standard Model structure.
 
@@ -34,6 +37,7 @@ This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 - HTML: https://floatingpragma.io/oph/papers/paradise-as-fixed-point-consensus/
 - PDF: https://floatingpragma.io/oph/papers/paradise-as-fixed-point-consensus/paper.pdf
 - Authors: Bernhard Mueller
+- Affiliations: Bernhard Mueller, Pragma Research Inc.
 - Category: Observer continuation
 - Summary: The OPH continuation and meaning paper. It reads existence, observer continuation, record consistency, justice, resurrection, and paradise through fixed-point consensus.
 
@@ -42,6 +46,7 @@ This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 - HTML: https://floatingpragma.io/oph/papers/reality-as-consensus-protocol/
 - PDF: https://floatingpragma.io/oph/papers/reality-as-consensus-protocol/paper.pdf
 - Authors: Bernhard Mueller, Kai Xue, Kale Arnav Anirudha, David Matscheko, Jonathan Hill
+- Affiliations: Bernhard Mueller, Pragma Research Inc.
 - Category: Simulation theory
 - Summary: The OPH fixed-point consensus paper. It formulates observer patches, overlap-visible records, repair moves, Lyapunov descent, quotient normal forms, and obstruction classes.
 
@@ -50,6 +55,7 @@ This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 - HTML: https://floatingpragma.io/oph/papers/observer-spacetime-einstein-dynamics/
 - PDF: https://floatingpragma.io/oph/papers/observer-spacetime-einstein-dynamics/paper.pdf
 - Authors: Bernhard Mueller, Alexander Osika, Mario Poneder, Kai Xue, Peter Nguyen, Maarten Antoine Visser, David Matscheko
+- Affiliations: Bernhard Mueller, Pragma Research Inc.; Alexander Osika, Asimov Labs
 - Category: Gravity
 - Summary: The full OPH derivation chain from finite overlap records through the celestial screen, modular Lorentz kinematics, a conditional four-dimensional event manifold, local stress reconstruction, and the conditional Einstein equation.
 
@@ -58,6 +64,7 @@ This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 - HTML: https://floatingpragma.io/oph/papers/screen-microphysics-and-observer-synchronization/
 - PDF: https://floatingpragma.io/oph/papers/screen-microphysics-and-observer-synchronization/paper.pdf
 - Authors: Bernhard Mueller, Alexander Osika, Kai Xue, Ben Cassie, Maarten Antoine Visser, David Matscheko
+- Affiliations: Bernhard Mueller, Pragma Research Inc.; Alexander Osika, Asimov Labs
 - Category: Screen physics
 - Summary: The fixed-cutoff OPH microphysics paper. It develops finite overlap-facing patch carriers, the twelve-port screen-sieve theorem, the A5/C3 face-corner bundle, the formal CFQ central-record model and its physical-selection boundary, measurement surfaces, observer backup, synchronization, and hardware-evidence rules.
 
@@ -66,5 +73,6 @@ This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 - HTML: https://floatingpragma.io/oph/papers/compact-proof-of-oph/
 - PDF: https://floatingpragma.io/oph/papers/compact-proof-of-oph/paper.pdf
 - Authors: Bernhard Mueller
+- Affiliations: Bernhard Mueller, Pragma Research Inc.
 - Category: OPH paper
 - Summary: First-party HTML and PDF publication page for Compact Proof Of Oph in the OPH paper stack.
