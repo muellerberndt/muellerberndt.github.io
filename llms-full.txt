@@ -11,7 +11,7 @@ The public OPH outreach packet is designed for criticism. The useful response is
 ## Primary URLs
 
 - OPH Textbooks, the best guided study surface: https://learn.floatingpragma.io/
-- Reverse Engineering Reality, the book-length route: https://oph-book.floatingpragma.io/
+- Flagship OPH paper: https://floatingpragma.io/oph/papers/from-observer-consensus-to-standard-physics/
 - OPH hub: https://floatingpragma.io/oph/
 - OPH paper stack, crawlable first-party HTML and PDFs: https://floatingpragma.io/oph/papers/
 - OPH paper machine-readable inventory: https://floatingpragma.io/oph/papers/papers.json

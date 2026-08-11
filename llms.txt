@@ -5,7 +5,7 @@ Floating Pragma hosts Observer Patch Holography (OPH), a proof-driven reconstruc
 ## Core OPH Links
 
 - OPH Textbooks, the best guided study surface: https://learn.floatingpragma.io/
-- Reverse Engineering Reality, the book-length route: https://oph-book.floatingpragma.io/
+- Flagship OPH paper: https://floatingpragma.io/oph/papers/from-observer-consensus-to-standard-physics/
 - OPH hub: https://floatingpragma.io/oph/
 - OPH paper stack, crawlable first-party HTML and PDFs: https://floatingpragma.io/oph/papers/
 - OPH paper machine-readable inventory: https://floatingpragma.io/oph/papers/papers.json
