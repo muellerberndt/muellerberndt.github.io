@@ -1715,16 +1715,12 @@ h3 {
 .hub-hero-layout {
   position: relative;
   z-index: 1;
-  display: grid;
-  grid-template-columns: minmax(0, 0.92fr) minmax(520px, 1.08fr);
-  gap: 28px;
-  align-items: center;
 }
 
 .oph-paradise-home .hub-hero .hero-copy {
   display: block;
   min-height: auto;
-  padding: 56px 0 56px 56px;
+  padding: 56px;
 }
 
 .oph-paradise-home .hub-hero .hero-copy h1 {
@@ -1746,22 +1742,6 @@ h3 {
 .oph-paradise-home .application-band p {
   font-size: 0.98rem;
   line-height: 1.7;
-}
-
-.hub-diagram {
-  margin: 0;
-  padding: 32px 36px 32px 0;
-  min-width: 0;
-}
-
-.hub-diagram img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: var(--radius);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  background: rgba(0, 0, 0, 0.28);
-  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.36);
 }
 
 .oph-paradise-home .section-head h2,
@@ -2040,7 +2020,6 @@ h3 {
 }
 
 @media (max-width: 1180px) {
-  .hub-hero-layout,
   .split-panel,
   .application-band,
   .conversion-grid {
@@ -2048,11 +2027,7 @@ h3 {
   }
 
   .oph-paradise-home .hub-hero .hero-copy {
-    padding: 46px 46px 0;
-  }
-
-  .hub-diagram {
-    padding: 0 36px 36px;
+    padding: 46px;
   }
 
   .step-grid {
@@ -2065,18 +2040,12 @@ h3 {
     width: min(100% - 24px, 1440px);
   }
 
-  .oph-paradise-home .hub-hero .hero-copy {
-    padding: 30px 24px 0;
-  }
+  .oph-paradise-home .hub-hero .hero-copy { padding: 30px 24px; }
 
   .oph-paradise-home .hub-hero .hero-copy h1 {
     max-width: none;
     font-size: 3.35rem;
     line-height: 1;
-  }
-
-  .hub-diagram {
-    padding: 0 18px 24px;
   }
 
   .oph-paradise-home .section-head h2,
