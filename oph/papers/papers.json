@@ -9,7 +9,7 @@
       "title": "Deriving Standard Model Gauge Structure from Observer Overlap Consistency",
       "short_title": "Standard Model gauge paper",
       "category": "Gauge structure",
-      "description": "Two OPH gauge routes with distinct proof boundaries: categorical reconstruction from transported edge sectors and an incidence-derived finite current algebra with conditional Standard Model charges and tensor kernel. Physical global-form selection remains open.",
+      "description": "Examines two mathematical routes from observer overlap to the symmetry structure used by the Standard Model. The physical identification of that structure is an open question.",
       "authors": [
         "Bernhard Mueller",
         "Alexander Osika",
@@ -64,7 +64,7 @@
       "title": "Deriving the Particle Zoo from Observer Consistency",
       "short_title": "Particle spectrum paper",
       "category": "Particles",
-      "description": "The OPH particle-spectrum continuation. It treats fine-structure closure, electroweak transport, selected-class quarks, the exact icosahedral charged-family carrier and its target-informed completion conjecture, the engineered digital CFQ schema audit, the conditional nature/pole transport boundary, neutrino branches, and status-separated hadron checks.",
+      "description": "Explores whether the observer-consistency framework can account for particles and physical constants. Several comparisons are mathematical or conditional, and their connection to measured physics remains open.",
       "authors": [
         "Bernhard Mueller",
         "Alexander Osika",
@@ -118,7 +118,7 @@
       "title": "From Observer Consensus to Standard Physics",
       "short_title": "Flagship OPH paper",
       "category": "Flagship introduction",
-      "description": "A standalone introduction to Observer Patch Holography: finite self-reading patches, public quantum records, Lorentzian geometry, Einstein dynamics, and Standard Model structure.",
+      "description": "An introduction to Observer Patch Holography. It asks whether limited systems that compare records and repair disagreement can explain parts of quantum theory, gravity, and particle physics.",
       "authors": [
         "Bernhard Mueller",
         "Alexander Osika",
@@ -225,7 +225,7 @@
       "title": "Reality as a Consensus Protocol",
       "short_title": "Consensus paper",
       "category": "Simulation theory",
-      "description": "The OPH fixed-point consensus paper. It formulates observer patches, overlap-visible records, repair moves, Lyapunov descent, quotient normal forms, and obstruction classes.",
+      "description": "Develops the mathematics of shared records, disagreement repair, and stable outcomes among limited observers.",
       "authors": [
         "Bernhard Mueller",
         "Kai Xue",
@@ -274,7 +274,7 @@
       "title": "Recovering Observer Spacetime and Einstein Dynamics from Overlap Consistency",
       "short_title": "Spacetime and Einstein paper",
       "category": "Gravity",
-      "description": "The full OPH derivation chain from finite overlap records through the celestial screen, modular Lorentz kinematics, a conditional four-dimensional event manifold, local stress reconstruction, and the conditional Einstein equation.",
+      "description": "Explores how shared observer records could lead to spacetime and gravity. The paper states the mathematical results and the conditions needed to connect them to physical gravity.",
       "authors": [
         "Bernhard Mueller",
         "Alexander Osika",
@@ -329,7 +329,7 @@
       "title": "Screen Microphysics and Observer Synchronization",
       "short_title": "Screen microphysics",
       "category": "Screen physics",
-      "description": "The fixed-cutoff OPH microphysics paper. It develops finite overlap-facing patch carriers, the twelve-port screen-sieve theorem, the A5/C3 face-corner bundle, the formal CFQ central-record model and its physical-selection boundary, measurement surfaces, observer backup, synchronization, and hardware-evidence rules.",
+      "description": "Studies a finite observer model with records, synchronization, measurement, and possible hardware evidence. It separates mathematical results from open questions about their physical realization.",
       "authors": [
         "Bernhard Mueller",
         "Alexander Osika",
@@ -381,9 +381,9 @@
     {
       "id": "compact_proof_of_oph",
       "title": "Compact Proof Of Oph",
-      "short_title": "Compact Proof Of Oph",
-      "category": "OPH paper",
-      "description": "First-party HTML and PDF publication page for Compact Proof Of Oph in the OPH paper stack.",
+      "short_title": "Compact OPH overview",
+      "category": "OPH overview",
+      "description": "A short guide to the main idea behind Observer Patch Holography, its mathematical results, and the physical questions that remain open.",
       "authors": [
         "Bernhard Mueller"
       ],

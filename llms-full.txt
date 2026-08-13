@@ -4,7 +4,7 @@ This file is intended for AI crawlers, research assistants, feed readers, and in
 
 ## Summary
 
-Observer Patch Holography (OPH) is a proof-driven reconstruction program. It starts from finite observers, local patches, overlap constraints, mismatch syndromes, repair moves, and stable public records. It asks whether physics can be reconstructed from the requirement that local observers agree where their accessible worlds overlap.
+Observer Patch Holography (OPH) asks whether a shared physical world can grow from limited systems that keep records, compare partial views, and repair disagreement. The public pages explain the idea in plain language, while the papers state the mathematics and claim boundaries.
 
 The public OPH outreach packet is designed for criticism. The useful response is precise: a hidden assumption, a broken derivation, a conflict with established physics, an overclaim in public explanation, or an empirical target that fails.
 
@@ -22,7 +22,7 @@ The public OPH outreach packet is designed for criticism. The useful response is
 - What is a theory of everything?: https://floatingpragma.io/oph/what-is-a-theory-of-everything/
 - Physics Unification via OPH: https://floatingpragma.io/oph/physics-unification/
 - Standard Model unified with gravity via OPH: https://floatingpragma.io/oph/standard-model-gravity-unification/
-- Conditional cosmological-constant capacity target: https://floatingpragma.io/oph/cosmological-constant-derivation/
+- Cosmological-constant research route, with its open status: https://floatingpragma.io/oph/cosmological-constant-derivation/
 - Stress-test OPH: https://floatingpragma.io/oph/stress-test/
 - OPH Coherence Map, the public graph surface for OPH concepts and overlaps: https://coherence.floatingpragma.io/
 - OPH Applications, the public applications page for hardware, compute, energy, AGI, lift, and optical chamber consensus: https://omega.floatingpragma.io/

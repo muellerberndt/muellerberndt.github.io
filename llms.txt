@@ -1,6 +1,6 @@
 # Floating Pragma / Observer Patch Holography
 
-Floating Pragma hosts Observer Patch Holography (OPH), a proof-driven reconstruction program that starts from finite observers, local patches, overlaps, repair moves, and stable public records.
+Floating Pragma hosts Observer Patch Holography (OPH), a research program that asks whether a shared physical world can grow from limited systems that keep records, compare partial views, and repair disagreement.
 
 ## Core OPH Links
 
@@ -16,7 +16,7 @@ Floating Pragma hosts Observer Patch Holography (OPH), a proof-driven reconstruc
 - What is a theory of everything?: https://floatingpragma.io/oph/what-is-a-theory-of-everything/
 - Physics Unification via OPH: https://floatingpragma.io/oph/physics-unification/
 - Standard Model unified with gravity via OPH: https://floatingpragma.io/oph/standard-model-gravity-unification/
-- Conditional cosmological-constant capacity target: https://floatingpragma.io/oph/cosmological-constant-derivation/
+- Cosmological-constant research route, with its open status: https://floatingpragma.io/oph/cosmological-constant-derivation/
 - OPH stress-test packet: https://floatingpragma.io/oph/stress-test/
 - OPH Coherence Map, the public graph surface for OPH concepts and overlaps: https://coherence.floatingpragma.io/
 - OPH Applications, the public applications page for hardware, compute, energy, AGI, lift, and optical chamber consensus: https://omega.floatingpragma.io/

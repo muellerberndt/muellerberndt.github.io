@@ -3,7 +3,7 @@
   <channel>
     <title>Observer Patch Holography Updates</title>
     <link>https://floatingpragma.io/oph/</link>
-    <description>Public OPH links, with one certified local-map root, a non-evaluable direct global-capacity closure, two conditional reserve candidates, explicit physical bridges, OPH Textbooks, Reverse Engineering Reality, simulations, papers, essays, and challenge routes.</description>
+    <description>Public routes into Observer Patch Holography: plain-language introductions, formal papers, simulations, essays, and ways to test the claim.</description>
     <language>en</language>
     <lastBuildDate>Wed, 08 Jul 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://floatingpragma.io/oph/feed.xml" rel="self" type="application/rss+xml" />
@@ -12,28 +12,28 @@
       <link>https://floatingpragma.io/oph/papers/</link>
       <guid isPermaLink="true">https://floatingpragma.io/oph/papers/</guid>
       <pubDate>Tue, 02 Jun 2026 00:00:00 GMT</pubDate>
-      <description>HTML summaries of the Observer Patch Holography paper stack, with claim-status boundaries and links to the formal PDFs.</description>
+      <description>Readable introductions and formal PDFs for the Observer Patch Holography papers.</description>
     </item>
     <item>
       <title>Standard Model Unified with Gravity via OPH</title>
       <link>https://floatingpragma.io/oph/standard-model-gravity-unification/</link>
       <guid isPermaLink="true">https://floatingpragma.io/oph/standard-model-gravity-unification/</guid>
       <pubDate>Tue, 02 Jun 2026 00:00:00 GMT</pubDate>
-      <description>The focused OPH entry page connecting the complete spacetime and Einstein derivation with the complete Standard Model gauge derivation.</description>
+      <description>A plain-language entry point for OPH's proposed connection between gravity and particle physics.</description>
     </item>
     <item>
       <title>Cosmological Constant Capacity Target via OPH</title>
       <link>https://floatingpragma.io/oph/cosmological-constant-derivation/</link>
       <guid isPermaLink="true">https://floatingpragma.io/oph/cosmological-constant-derivation/</guid>
       <pubDate>Tue, 02 Jun 2026 00:00:00 GMT</pubDate>
-      <description>The OPH global-capacity route: self-reference forces equality after a typed same-invariant bridge, direct N is not evaluable, and finite-presence and Poisson values are conditional retrospective comparisons.</description>
+      <description>OPH's proposed link between the universe's information capacity and the cosmological constant. It does not yield a prediction.</description>
     </item>
     <item>
       <title>Physics Unification via OPH</title>
       <link>https://floatingpragma.io/oph/physics-unification/</link>
       <guid isPermaLink="true">https://floatingpragma.io/oph/physics-unification/</guid>
       <pubDate>Thu, 21 May 2026 00:00:00 GMT</pubDate>
-      <description>The direct public entry page for OPH as a zero-dial physics-unification framework (zero quantitative inputs at the theory layer; working borrows counted in the scorecard) connecting gravity, quantum theory, particles, records, observers, and simulation theory.</description>
+      <description>A plain-language introduction to OPH's attempt to connect quantum theory, gravity, particles, records, and observers.</description>
     </item>
     <item>
       <title>OPH Mini-Universe Simulation</title>
@@ -82,7 +82,7 @@
       <link>https://floatingpragma.io/oph/stress-test/</link>
       <guid isPermaLink="true">https://floatingpragma.io/oph/stress-test/</guid>
       <pubDate>Wed, 06 May 2026 10:35:00 GMT</pubDate>
-      <description>Use the OPH NotebookLM source notebook, public essays, OPH Lab, papers, repository, and public challenge to test the incomplete local endpoint map, non-evaluable direct capacity closure, conditional reserve candidates, physical bridges, and observable conversions. Detailed objections should go to tom@floatingpragma.io.</description>
+      <description>Use the papers, simulations, source code, and public challenge to find a precise error or overclaim.</description>
     </item>
     <item>
       <title>OPH License and Anti-Patent Covenant</title>
