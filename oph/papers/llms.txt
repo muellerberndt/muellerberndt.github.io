@@ -1,7 +1,7 @@
 # Observer Patch Holography Papers
 
-Release: r2019
-Released: August 13, 2026
+Release: r2020
+Released: August 15, 2026
 
 This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 
@@ -9,7 +9,7 @@ This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 
 - HTML: https://floatingpragma.io/oph/papers/standard-model-gauge-structure/
 - PDF: https://floatingpragma.io/oph/papers/standard-model-gauge-structure/paper.pdf
-- Authors: Bernhard Mueller, Alexander Osika, Mario Poneder, Kai Xue, Peter Nguyen, Maarten Antoine Visser, David Matscheko
+- Authors: Bernhard Mueller, Alexander Osika, Mario Poneder, Kai Xue, Peter Nguyen, David Matscheko
 - Affiliations: Bernhard Mueller, Pragma Research Inc.; Alexander Osika, Asimov Labs
 - Category: Gauge structure
 - Summary: Examines two mathematical routes from observer overlap to the symmetry structure used by the Standard Model. The physical identification of that structure is an open question.
@@ -18,7 +18,7 @@ This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 
 - HTML: https://floatingpragma.io/oph/papers/particle-spectrum-from-observer-consistency/
 - PDF: https://floatingpragma.io/oph/papers/particle-spectrum-from-observer-consistency/paper.pdf
-- Authors: Bernhard Mueller, Alexander Osika, Mario Poneder, Kai Xue, Maarten Antoine Visser, David Matscheko
+- Authors: Bernhard Mueller, Alexander Osika, Mario Poneder, Kai Xue
 - Affiliations: Bernhard Mueller, Pragma Research Inc.; Alexander Osika, Asimov Labs
 - Category: Particles
 - Summary: Explores whether the observer-consistency framework can account for particles and physical constants. Several comparisons are mathematical or conditional, and their connection to measured physics remains open.
@@ -27,8 +27,7 @@ This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 
 - HTML: https://floatingpragma.io/oph/papers/from-observer-consensus-to-standard-physics/
 - PDF: https://floatingpragma.io/oph/papers/from-observer-consensus-to-standard-physics/paper.pdf
-- Authors: Bernhard Mueller, Alexander Osika, Mario Poneder, Kai Xue, Ben Cassie, Peter Nguyen, Maarten Antoine Visser, Kale Arnav Anirudha, David Matscheko, Jonathan Hill, William T. Glynn
-- Affiliations: Bernhard Mueller, Pragma Research Inc.; Alexander Osika, Asimov Labs
+- Authors: % Bernhard Mueller Alexander Osika Mario Poneder Kai Xue
 - Category: Flagship introduction
 - Summary: An introduction to Observer Patch Holography. It asks whether limited systems that compare records and repair disagreement can explain parts of quantum theory, gravity, and particle physics.
 
@@ -45,7 +44,7 @@ This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 
 - HTML: https://floatingpragma.io/oph/papers/reality-as-consensus-protocol/
 - PDF: https://floatingpragma.io/oph/papers/reality-as-consensus-protocol/paper.pdf
-- Authors: Bernhard Mueller, Kai Xue, Kale Arnav Anirudha, David Matscheko, Jonathan Hill
+- Authors: Bernhard Mueller, Kai Xue, Jinwook Kim, Kale Arnav Anirudha, David Matscheko, Jonathan Hill
 - Affiliations: Bernhard Mueller, Pragma Research Inc.
 - Category: Simulation theory
 - Summary: Develops the mathematics of shared records, disagreement repair, and stable outcomes among limited observers.
@@ -63,7 +62,7 @@ This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 
 - HTML: https://floatingpragma.io/oph/papers/screen-microphysics-and-observer-synchronization/
 - PDF: https://floatingpragma.io/oph/papers/screen-microphysics-and-observer-synchronization/paper.pdf
-- Authors: Bernhard Mueller, Alexander Osika, Kai Xue, Ben Cassie, Maarten Antoine Visser, David Matscheko
+- Authors: Bernhard Mueller, Alexander Osika, Kai Xue, Ben Cassie
 - Affiliations: Bernhard Mueller, Pragma Research Inc.; Alexander Osika, Asimov Labs
 - Category: Screen physics
 - Summary: Studies a finite observer model with records, synchronization, measurement, and possible hardware evidence. It separates mathematical results from open questions about their physical realization.

@@ -1,6 +1,6 @@
 {
-  "release_id": "r2019",
-  "released_at": "August 13, 2026",
+  "release_id": "r2020",
+  "released_at": "August 15, 2026",
   "collection_url": "https://floatingpragma.io/oph/papers/",
   "sitemap_url": "https://floatingpragma.io/oph/papers/sitemap.xml",
   "papers": [
@@ -16,7 +16,6 @@
         "Mario Poneder",
         "Kai Xue",
         "Peter Nguyen",
-        "Maarten Antoine Visser",
         "David Matscheko"
       ],
       "affiliations": [
@@ -69,9 +68,7 @@
         "Bernhard Mueller",
         "Alexander Osika",
         "Mario Poneder",
-        "Kai Xue",
-        "Maarten Antoine Visser",
-        "David Matscheko"
+        "Kai Xue"
       ],
       "affiliations": [
         {
@@ -120,28 +117,9 @@
       "category": "Flagship introduction",
       "description": "An introduction to Observer Patch Holography. It asks whether limited systems that compare records and repair disagreement can explain parts of quantum theory, gravity, and particle physics.",
       "authors": [
-        "Bernhard Mueller",
-        "Alexander Osika",
-        "Mario Poneder",
-        "Kai Xue",
-        "Ben Cassie",
-        "Peter Nguyen",
-        "Maarten Antoine Visser",
-        "Kale Arnav Anirudha",
-        "David Matscheko",
-        "Jonathan Hill",
-        "William T. Glynn"
+        "% Bernhard Mueller Alexander Osika Mario Poneder Kai Xue"
       ],
-      "affiliations": [
-        {
-          "author": "Bernhard Mueller",
-          "organization": "Pragma Research Inc."
-        },
-        {
-          "author": "Alexander Osika",
-          "organization": "Asimov Labs"
-        }
-      ],
+      "affiliations": [],
       "keywords": [
         "Observer Patch Holography",
         "OPH",
@@ -229,6 +207,7 @@
       "authors": [
         "Bernhard Mueller",
         "Kai Xue",
+        "Jinwook Kim",
         "Kale Arnav Anirudha",
         "David Matscheko",
         "Jonathan Hill"
@@ -334,9 +313,7 @@
         "Bernhard Mueller",
         "Alexander Osika",
         "Kai Xue",
-        "Ben Cassie",
-        "Maarten Antoine Visser",
-        "David Matscheko"
+        "Ben Cassie"
       ],
       "affiliations": [
         {
