@@ -23,14 +23,14 @@
   <meta name="citation_author" content="David Matscheko" />
   <meta name="citation_author_institution" content="Pragma Research Inc." />
   <meta name="citation_author_institution" content="Asimov Labs" />
-  <meta name="citation_publication_date" content="2026/08/15" />
-  <meta name="citation_online_date" content="2026/08/15" />
+  <meta name="citation_publication_date" content="2026/08/19" />
+  <meta name="citation_online_date" content="2026/08/19" />
   <meta name="citation_language" content="en" />
   <meta name="citation_keywords" content="quantum gravity; observer spacetime; Lorentz symmetry; Einstein gravity; event manifold; modular flow; Observer Patch Holography" />
   <meta name="citation_pdf_url" content="https://floatingpragma.io/oph/papers/observer-spacetime-einstein-dynamics/paper.pdf" />
   <meta name="citation_abstract_html_url" content="https://floatingpragma.io/oph/papers/observer-spacetime-einstein-dynamics/" />
   <meta name="citation_technical_report_institution" content="Pragma Research" />
-  <meta name="citation_technical_report_number" content="OPH r2020 recovering_observer_spacetime_and_einstein_dynamics_from_overlap_consistency" />
+  <meta name="citation_technical_report_number" content="OPH r2021 recovering_observer_spacetime_and_einstein_dynamics_from_overlap_consistency" />
   <meta name="DC.title" content="Recovering Observer Spacetime and Einstein Dynamics from Overlap Consistency" />
   <meta name="DC.creator" content="Bernhard Mueller" />
   <meta name="DC.creator" content="Alexander Osika" />
@@ -39,17 +39,17 @@
   <meta name="DC.creator" content="Peter Nguyen" />
   <meta name="DC.creator" content="Maarten Antoine Visser" />
   <meta name="DC.creator" content="David Matscheko" />
-  <meta name="DC.issued" content="2026/08/15" />
-  <meta name="DC.date" content="2026/08/15" />
+  <meta name="DC.issued" content="2026/08/19" />
+  <meta name="DC.date" content="2026/08/19" />
   <meta name="DC.type" content="Text" />
   <meta name="DC.format" content="text/html" />
   <meta name="DC.language" content="en" />
   <meta name="DC.publisher" content="Pragma Research" />
   <meta name="DC.identifier" content="https://floatingpragma.io/oph/papers/observer-spacetime-einstein-dynamics/" />
   <meta name="DC.identifier" content="https://floatingpragma.io/oph/papers/observer-spacetime-einstein-dynamics/paper.pdf" />
-  <meta name="article:published_time" content="2026-08-15T00:00:00Z" />
-  <meta name="article:modified_time" content="2026-08-15T00:00:00Z" />
-  <meta name="prism.publicationDate" content="2026/08/15" />
+  <meta name="article:published_time" content="2026-08-19T00:00:00Z" />
+  <meta name="article:modified_time" content="2026-08-19T00:00:00Z" />
+  <meta name="prism.publicationDate" content="2026/08/19" />
   <meta name="prism.publicationName" content="Observer Patch Holography Papers" />
   <meta name="prism.section" content="Gravity" />
   <meta name="prism.url" content="https://floatingpragma.io/oph/papers/observer-spacetime-einstein-dynamics/" />
@@ -139,9 +139,9 @@
     "modular flow",
     "Observer Patch Holography"
   ],
-  "datePublished": "August 15, 2026",
-  "dateModified": "August 15, 2026",
-  "version": "r2020",
+  "datePublished": "August 19, 2026",
+  "dateModified": "August 19, 2026",
+  "version": "r2021",
   "subjectOf": [
     {
       "@type": "BlogPosting",
@@ -239,14 +239,14 @@
             <p>Explores how shared observer records could lead to spacetime and gravity. The paper states the mathematical results and the conditions needed to connect them to physical gravity.</p>
           </div>
           <div class="paper-meta-line">
-            <span>r2020</span>
-            <span>August 15, 2026</span>
+            <span>r2021</span>
+            <span>August 19, 2026</span>
             <span>papers</span>
           </div>
           <div class="cta-row">
             <a class="btn btn-primary" href="/oph/papers/observer-spacetime-einstein-dynamics/paper.pdf" target="_blank" rel="noopener noreferrer" data-track-link="paper-pdf-recovering_observer_spacetime_and_einstein_dynamics_from_overlap_consistency">Download PDF</a>
             <a class="btn btn-secondary" href="/oph/papers/" data-track-link="paper-index">All OPH papers</a>
-            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r2020" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
+            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r2021" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
             <a class="btn btn-secondary" href="https://challenge.floatingpragma.io/" data-track-link="paper-challenge">Challenge</a>
           </div>
 
@@ -275,8 +275,8 @@
         </header>
         <div class="paper-reader-grid">
           <div class="paper-body">
-<p><strong>Paper release:</strong> <code>r2020</code>
-<strong>Released:</strong> August 15, 2026</p>
+<p><strong>Paper release:</strong> <code>r2021</code>
+<strong>Released:</strong> August 19, 2026</p>
 <p><strong>Author affiliations:</strong> Bernhard Mueller, Pragma
 Research Inc.; Alexander Osika, Loki Labs.</p>
 <h1 id="derivation-map">Derivation map</h1>
@@ -391,6 +391,54 @@ physical clock pair on one calibrated geometry. A separate three-record,
 two-chart witness inhabits the geometric interface. The formal package
 does not produce the history, a coherent network of three or more
 clocks, the calibration from the OPH source tower, or an SI clock.</p>
+<p>A kinematic mass-shell packet is machine-checked on the declared
+Hermitian Lorentz module
+(<code>Lean/Geometry/MassShellKinematics.lean</code>). For one declared
+mass parameter <span class="math inline">\(m\)</span> and any future
+unit-timelike frame <span class="math inline">\(u\)</span>, the scaled
+vector <span class="math inline">\(p = m\,u\)</span> has Lorentz square
+exactly <span class="math inline">\(m^{2}\)</span>, and its scalar
+coordinate obeys <span class="math inline">\(p_{0}^{2} = m^{2} +
+\lvert\mathbf{p}\rvert^{2}\)</span>. For positive <span
+class="math inline">\(m\)</span> the scalar coordinate dominates <span
+class="math inline">\(m\)</span>, with equality exactly when the spatial
+coordinates vanish, and at the standard frame it equals <span
+class="math inline">\(m\)</span>. Every oriented Lorentz map carries the
+construction to the transported frame with the same Lorentz square, so
+the shell identity holds in every oriented chart, and a future null
+vector satisfies the zero-mass identity <span
+class="math inline">\(v_{0}^{2} = \lvert\mathbf{v}\rvert^{2}\)</span>.
+The mass parameter is a declared hypothesis on the declared module,
+stated in its dimensionless convention with unit invariant speed. The
+packet identifies no coordinate with a physical energy readout and makes
+no physical rest-energy claim: the clock and energy calibration anchors
+and the observer-to-physical-spacetime attachment are open rows of the
+audited premise register, and the packet is registered under the
+spacetime gate with those rows open.</p>
+<p>The committed finite causal orders compose into the declared cone ().
+The determinant quadratic form orders the declared Hermitian module: one
+coordinate precedes another when their difference has nonnegative
+Lorentz square and nonnegative scalar coordinate, and this relation is a
+partial order whose transitivity is the reverse triangle inequality,
+proved from the three-coordinate Lagrange identity. A declared vertex
+assignment places the six-element region lattice of the rich-fibre
+observer net inside the module so that the committed region order agrees
+with the cone order of the images, in both directions on the whole
+carrier. The assignment is injective, the image contains two
+timelike-related and two spacelike-unrelated pairs, declared
+disjointness of regions lands in spacelike separation, and composing
+with any oriented Lorentz map, or with any affine overlap transition,
+preserves the equivalence; both invariances are clauses of the single
+composed receipt. The two-site partition net composes through a label
+map with the same receipts; its four-element carrier has exactly one
+incomparable pair, with both directions machine-checked: the pair of
+singletons is incomparable, and every incomparable pair is that one,
+which bounds the spacelike content any faithful placement of that
+carrier can show. The vertex assignment is a declared witness: a second
+distinct assignment satisfies the same equivalence, so the committed
+data does not force the embedding. No physical causal order, spacetime,
+clock, or observer frame is attached; those identifications remain
+registered open premises.</p>
 <p>A separate finite-graph precursor makes the discrete inverse-square
 route premise-complete. For a supplied integer layering, steady source
 law, shell equidistribution, and shell count <span
@@ -7273,6 +7321,28 @@ and the join of this shell law to the composed Einstein branch is open
 on the screen-carrier-to-physical-position attachment. The weak-field
 reduction above otherwise remains a standard prose derivation without a
 finite receipt.</p>
+<p>This shell law lands on the rest space of every declared observer
+frame. For each future unit-timelike frame of the declared Hermitian
+Lorentz module, an explicit boost-shear map is a machine-checked linear
+equivalence from the completion carrier onto the frame's
+Lorentz-orthogonal rest space, and the pullback of the positive-definite
+rest metric along it is exactly the Euclidean coordinate form; at the
+standard frame the map reduces to the candidate bridge that places the
+source Gram quotient in the standard rest fiber
+(<code>Lean/Geometry/RestFiberShellTransport.lean</code>). Under the
+same two declared premises the radial readout pulled back through the
+equivalence is the carrier norm, the strength at a nonzero rest vector
+is <span class="math inline">\(Q/(4\pi r^{2})\)</span> with <span
+class="math inline">\(r\)</span> the rest radius, the exponent reads as
+the rest-space dimension minus one with the dimension proved through the
+transport equivalence, and every oriented Lorentz chart transport
+carries the strength field exactly. One composed identity carries the
+screen chain into the fiber: the finite source Gram of two integer
+record controls equals the rest metric of their transported difference
+at every declared frame. The frame is a declared choice and no
+uniqueness of the identification is claimed; the attachment of the rest
+fiber to physical position is the same open register row that keeps the
+Einstein-branch join open.</p>
 <p><strong>Precision classical predictions.</strong> Once the field
 equation is fixed to Einstein form, the framework inherits the standard
 GR precision toolbox (post-Newtonian expansion, lensing, time delay,
@@ -9233,8 +9303,20 @@ class="math inline">\(A\)</span>, and the exact charge operator <span
 class="math inline">\(Q=T_3+Y\)</span>. The mixing angle, <span
 class="math inline">\(v\)</span>, and numerical <span
 class="math inline">\(W/Z\)</span> masses belong to the running and
-matching surface rather than to this finite structural corollary.
-QED.</p>
+matching surface rather than to this finite structural corollary. A
+machine-checked composition on the committed doublet carrier
+(<code>Lean/Screen/ElectroweakBreakingComposition.lean</code>) proves
+the corresponding exact breaking package for declared constants <span
+class="math inline">\(\lambda,v,g,g&#39;&gt;0\)</span> and Yukawa
+coefficient <span class="math inline">\(y\)</span>: minimizer shell
+<span class="math inline">\(|h|^2=v^2\)</span>, one unbroken line with
+three Goldstone directions, normalized broken-direction mass values
+<span class="math inline">\(g^2v^2/4\)</span> and <span
+class="math inline">\((g^2+g&#39;^2)v^2/4\)</span> with tree ratio <span
+class="math inline">\(g^2/(g^2+g&#39;^2)\)</span>, and a Yukawa bilinear
+of exact coefficient <span class="math inline">\(yv\)</span>; the five
+constants are declared bundle parameters and no source action or
+physical vacuum is supplied. QED.</p>
 <p><strong>Corollary 6.6d (conditional Maxwell sector on the realized
 electromagnetic branch).</strong> On the conditional, separately
 declared one-Higgs branch of Corollary 6.6c, assume the finite current
