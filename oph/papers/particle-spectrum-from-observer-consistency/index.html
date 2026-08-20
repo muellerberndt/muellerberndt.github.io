@@ -33,7 +33,7 @@
   <meta name="citation_pdf_url" content="https://floatingpragma.io/oph/papers/particle-spectrum-from-observer-consistency/paper.pdf" />
   <meta name="citation_abstract_html_url" content="https://floatingpragma.io/oph/papers/particle-spectrum-from-observer-consistency/" />
   <meta name="citation_technical_report_institution" content="Pragma Research" />
-  <meta name="citation_technical_report_number" content="OPH r2022 deriving_the_particle_zoo_from_observer_consistency" />
+  <meta name="citation_technical_report_number" content="OPH r2023 deriving_the_particle_zoo_from_observer_consistency" />
   <meta name="DC.title" content="Deriving the Particle Zoo from Observer Consistency" />
   <meta name="DC.creator" content="Bernhard Mueller" />
   <meta name="DC.creator" content="Alexander Osika" />
@@ -133,7 +133,7 @@
   ],
   "datePublished": "August 20, 2026",
   "dateModified": "August 20, 2026",
-  "version": "r2022",
+  "version": "r2023",
   "subjectOf": [
     {
       "@type": "BlogPosting",
@@ -232,14 +232,14 @@
             <p>Explores whether the observer-consistency framework can account for particles and physical constants. Several comparisons are mathematical or conditional, and their connection to measured physics remains open.</p>
           </div>
           <div class="paper-meta-line">
-            <span>r2022</span>
+            <span>r2023</span>
             <span>August 20, 2026</span>
             <span>papers</span>
           </div>
           <div class="cta-row">
             <a class="btn btn-primary" href="/oph/papers/particle-spectrum-from-observer-consistency/paper.pdf" target="_blank" rel="noopener noreferrer" data-track-link="paper-pdf-deriving_the_particle_zoo_from_observer_consistency">Download PDF</a>
             <a class="btn btn-secondary" href="/oph/papers/" data-track-link="paper-index">All OPH papers</a>
-            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r2022" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
+            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r2023" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
             <a class="btn btn-secondary" href="https://challenge.floatingpragma.io/" data-track-link="paper-challenge">Challenge</a>
           </div>
 
@@ -270,7 +270,7 @@
           <div class="paper-body">
 <div class="center">
 <p><strong>Paper release:</strong>
-<code>r2022</code><strong>Released:</strong> August 20, 2026</p>
+<code>r2023</code><strong>Released:</strong> August 20, 2026</p>
 </div>
 <div class="center">
 <p><strong>Author affiliations:</strong> Bernhard Mueller, Pragma
@@ -543,7 +543,7 @@ hierarchy/naturality closure are the OPH quantitative branch.</p>
 composition
 (<code>Lean/Screen/ElectroweakBreakingComposition.lean</code>). One
 typed premise bundle extends the committed structure premises by five
-declared finite constants under PR-67–PR-69: a quartic coupling <span
+declared finite constants: a quartic coupling <span
 class="math inline">\(\lambda&gt;0\)</span>, a model-shell radius <span
 class="math inline">\(r&gt;0\)</span>, two coupling constants <span
 class="math inline">\(g,g&#39;&gt;0\)</span>, and one Yukawa coefficient
@@ -586,8 +586,8 @@ separate branches described in their own sections. If the finite minimum
 is identified with the conventional vector displayed above, then <span
 class="math inline">\(r=v_{\rm SM}/\sqrt2\)</span>. Translating the
 finite coefficients into physical mass formulae additionally requires
-the open scalar kinetic and generator normalizations of PR-48 and the
-physical vacuum attachment PR-49.</p>
+the scalar kinetic and generator normalizations and a physical vacuum
+attachment, neither of which is supplied here.</p>
 <p>The neutral sector of that composition carries a machine-checked
 coupling dictionary
 (<code>Lean/Screen/NeutralCurrentDictionary.lean</code>). A weak slot is
@@ -621,9 +621,9 @@ parity sector the zero-charge component of the colorless doublet row has
 photon coupling exactly zero and Z coupling exactly <span
 class="math inline">\(\pm(g^2+g&#39;^2)/2\)</span>. The dictionary is
 exact tree-level algebra on the committed grammar: it supplies no
-physical current operator, no source action, no measured mixing angle,
-no running, and no decay amplitude, and the chirality and source-action
-attachments stay open register rows.</p>
+physical current operator, source action, mixing angle, or decay
+amplitude, and the chirality and source-action attachments stay
+open.</p>
 <p>The charged sector of the same composition carries the companion
 machine-checked dictionary
 (<code>Lean/Screen/ChargedCurrentDictionary.lean</code>). The two
@@ -658,10 +658,9 @@ raising/lowering commutator is <span class="math inline">\(2gi\)</span>
 times the third-weak action. These joins are exact operator-commutator
 identities of the committed action on the scalar-row carrier; no
 abstract bracket on the direction space is committed. The dictionary
-supplies no physical current operator, no source action, no W
-propagator, no decay amplitude, no Fermi limit, and no flavor or
-mixing-matrix content, and the same chirality and source-action
-attachments stay open register rows.</p>
+supplies no physical current operator, propagator, decay amplitude, or
+flavor content, and the same chirality and source-action attachments
+stay open.</p>
 <p>A kinematic internal-clock packet is machine-checked on the same
 declared Hermitian Lorentz module that carries the mass-shell receipts
 (<code>Lean/Geometry/InternalClockRestFrequency.lean</code>). For one
@@ -2913,14 +2912,13 @@ has an exact all-momentum bound. Its nonnegative auxiliary root <span
 class="math inline">\(\Omega\)</span> obeys <span
 class="math display">\[|\Omega(k)-\Omega(p)|\le |k-p|\]</span> in the
 selected Euclidean carrier chart. This is a carrier-coordinate
-contraction. It supplies no physical position, frequency, clock, field,
-wave-packet, frame, scale, or detector map. If the seam symbol is
-physical photon frequency squared, its complete cosine form is bounded
-above by <span class="math inline">\(|k|^2\)</span>. Positive-mass
-charged leptons with Lorentz-invariant positive-energy dispersion then
-exclude photon decay into an electron-positron pair under additive
-conservation. With the soft background photon Lorentz invariant at
-leading order, use <span
+contraction. It supplies no physical position, scale, or detector map.
+If the seam symbol is physical photon frequency squared, its complete
+cosine form is bounded above by <span
+class="math inline">\(|k|^2\)</span>. Positive-mass charged leptons with
+Lorentz-invariant positive-energy dispersion then exclude photon decay
+into an electron-positron pair under additive conservation. With the
+soft background photon Lorentz invariant at leading order, use <span
 class="math inline">\(E_i^2=p_i^2+m_i^2+\delta_{i,2}E_i^4\)</span>, with
 <span class="math inline">\(i\in\{\gamma,+,-\}\)</span>, <span
 class="math inline">\(m_\gamma=0\)</span>, and <span

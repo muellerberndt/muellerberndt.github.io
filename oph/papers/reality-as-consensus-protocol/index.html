@@ -34,7 +34,7 @@
   <meta name="citation_pdf_url" content="https://floatingpragma.io/oph/papers/reality-as-consensus-protocol/paper.pdf" />
   <meta name="citation_abstract_html_url" content="https://floatingpragma.io/oph/papers/reality-as-consensus-protocol/" />
   <meta name="citation_technical_report_institution" content="Pragma Research" />
-  <meta name="citation_technical_report_number" content="OPH r2022 reality_as_consensus_protocol" />
+  <meta name="citation_technical_report_number" content="OPH r2023 reality_as_consensus_protocol" />
   <meta name="DC.title" content="Reality as a Consensus Protocol" />
   <meta name="DC.creator" content="Bernhard Mueller" />
   <meta name="DC.creator" content="Kai Xue" />
@@ -140,7 +140,7 @@
   ],
   "datePublished": "August 20, 2026",
   "dateModified": "August 20, 2026",
-  "version": "r2022",
+  "version": "r2023",
   "subjectOf": [
     {
       "@type": "BlogPosting",
@@ -239,14 +239,14 @@
             <p>Develops the mathematics of shared records, disagreement repair, and stable outcomes among limited observers.</p>
           </div>
           <div class="paper-meta-line">
-            <span>r2022</span>
+            <span>r2023</span>
             <span>August 20, 2026</span>
             <span>papers</span>
           </div>
           <div class="cta-row">
             <a class="btn btn-primary" href="/oph/papers/reality-as-consensus-protocol/paper.pdf" target="_blank" rel="noopener noreferrer" data-track-link="paper-pdf-reality_as_consensus_protocol">Download PDF</a>
             <a class="btn btn-secondary" href="/oph/papers/" data-track-link="paper-index">All OPH papers</a>
-            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r2022" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
+            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r2023" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
             <a class="btn btn-secondary" href="https://challenge.floatingpragma.io/" data-track-link="paper-challenge">Challenge</a>
           </div>
 
@@ -277,7 +277,7 @@
           <div class="paper-body">
 <div class="center">
 <p><strong>Paper release:</strong>
-<code>r2022</code><strong>Released:</strong> August 20, 2026</p>
+<code>r2023</code><strong>Released:</strong> August 20, 2026</p>
 </div>
 <div class="center">
 <p><strong>Author affiliation:</strong> Bernhard Mueller, Pragma
@@ -1923,7 +1923,7 @@ closed incident-edge neighborhood. Induction on the schedule word gives
 the displayed implication. A one-site update outside <span
 class="math inline">\(B_n(S)\)</span> leaves the two initial records
 equal throughout that set. The statement is machine checked for the
-repository repair map <span class="paper-citation" title="Citation: ophrepo">[source]</span>. ◻</p>
+committed repair map <span class="paper-citation" title="Citation: ophrepo">[source]</span>. ◻</p>
 </div>
 <p>This fixed-word bound has an exact conditional adaptive extension. If
 the next-site scheduler is supplied together with a region <span
@@ -3304,8 +3304,8 @@ algebra and whether the same control survives refinement and
 continuation.</p>
 <h3 id="sec:operational-observer-layer">Operational observers, event
 worlds, and coexisting regional algebras</h3>
-<p>The record-algebra layer extends upward, in the repository Lean
-development <span class="paper-citation" title="Citation: ophrepo">[source]</span>, to a
+<p>The record-algebra layer extends upward, in the accompanying Lean
+development <span class="paper-citation" title="Citation: ophrepo">[source]</span>, to a
 machine-checked interface family in which the observer itself is a typed
 object. The base object is a consensus tower: a regulator-indexed family
 of finite matrix models carrying observer and record fibres,
@@ -3699,7 +3699,7 @@ the pair states alone do not. The marginal maps are not used as
 multiplicative algebra maps, no completely-positive interface is
 claimed, and neither regional net nor independently declared uniform
 tower state is transported by this theorem.</p>
-<p>The registered PR-58 direction is approached in by a finite
+<p>The time-slice direction is approached in by a finite
 <em>one-step</em> interface. The structure
 <code>TimeIndexedNetEvolution</code> carries a finite index and
 successor, a region family, per-step ambient star-automorphisms mapping
@@ -3723,10 +3723,10 @@ possible inhabitant. The natural single-projector walk candidate remains
 a useful negative control: its evolved singleton is the next diagonal
 walk projector and cannot generate the top regional algebra
 (<code>walkSlice_evolved_generation_fails</code>).</p>
-<p>This corrected interface and the triple coupling do not discharge
-PR-58. They have no multi-step cocycle or group-action law, Cauchy
-geometry, clock, physical time, or source selection. The common carrier
-joins the committed state/path/checkpoint data but supplies no
+<p>This corrected interface and the triple coupling do not supply a
+time-slice theorem. They have no multi-step cocycle or group-action law,
+Cauchy geometry, clock, physical time, or source selection. The common
+carrier joins the committed state/path/checkpoint data but supplies no
 regional-net or tower morphism. The withdrawn raw-generation argument
 does not show that a new noninjective net shape is necessary. Viable
 routes include an evolution that transports admitted data between
@@ -3834,6 +3834,41 @@ theorem does not classify complete positivity, idempotence,
 bimodularity, nonlinear maps, different targets, or enriched categorical
 structures. Net-to-net and tower morphism structure at the operator
 layer stays open.</p>
+<h5 id="the-normed-completion-of-the-colimit.">The normed completion of
+the colimit.</h5>
+<p>The consensus tower supplies a directed family of finite matrix
+observable algebras whose connecting maps are star algebra
+homomorphisms, and its filtered colimit carries an inductive-limit
+seminorm: the value at a class is the infimum, over the declared
+refinements of one representative, of the stage norm of the refined
+representative. Contractivity of the connecting maps makes that value
+independent of the chosen representative. The stage norms of one
+representative form a subset of a finite set determined by the spectrum
+of the product of the representative with its adjoint, so the infimum is
+attained at a declared refinement and every class has a representative
+whose stage norm no declared refinement changes. Attainment converts the
+seminorm into an exact kernel statement: a class has seminorm zero
+exactly when some declared refinement annihilates its representative,
+which is the refinement-null kernel of the colimit itself. The seminorm
+is therefore a norm, the colimit is a normed star algebra satisfying the
+C*-identity for it, and its uniform completion is a C*-algebra: it
+carries a star ring structure extended from the dense image together
+with an isometric star and the C*-identity. The regional structure
+transports to the completion: the closures of the images of the limit
+local algebras are isotone, independent of the regulator at which a
+region is presented, elementwise commuting for declared-disjoint
+regions, and equal along the order-theoretic Cauchy embeddings of the
+tower, and each of those four statements is instantiated on a committed
+witness net whose top region carries an element of norm one. Two
+controls fix the boundary of the construction: a tower whose connecting
+map annihilates the unit carries a nonzero stage element of stage norm
+one whose limit seminorm is zero, and a conjugation of the two-by-two
+stage by a diagonal scaling increases the norm of a matrix unit, so the
+star clause of the connecting maps is the clause the contractivity step
+consumes. The construction is algebraic and order-theoretic throughout,
+and the equality it transports along Cauchy embeddings is the
+order-theoretic equality of the tower, and the time-indexed evolution
+interface and every physical attachment are open premises. ().</p>
 <h5 id="region-families-of-the-corrected-one-step-interface.">Region
 families of the corrected one-step interface.</h5>
 <p>The same module settles the region-family freedom of
