@@ -25,7 +25,7 @@
         },
         {
           "author": "Alexander Osika",
-          "organization": "Asimov Labs"
+          "organization": "EtherWorks"
         }
       ],
       "keywords": [
@@ -77,7 +77,7 @@
         },
         {
           "author": "Alexander Osika",
-          "organization": "Asimov Labs"
+          "organization": "EtherWorks"
         }
       ],
       "keywords": [
@@ -112,14 +112,34 @@
     },
     {
       "id": "from_observer_consensus_to_standard_physics",
-      "title": "From Observer Consensus to Standard Physics",
-      "short_title": "Flagship OPH paper",
-      "category": "Flagship introduction",
-      "description": "An introduction to Observer Patch Holography. It asks whether limited systems that compare records and repair disagreement can explain parts of quantum theory, gravity, and particle physics.",
+      "title": "Finite Observer Consensus as a Reconstruction Principle: Normal Forms, the Standard Model Lie Type, and a Route to the Einstein Field Equation",
+      "short_title": "Flagship reconstruction paper",
+      "category": "Flagship reconstruction paper",
+      "description": "The flagship technical account of Observer Patch Holography. It develops finite consensus normal forms, Standard Model Lie-type reconstruction, and a conditional route to the Einstein field equation, with the physical identification steps stated separately.",
       "authors": [
-        "% Bernhard Mueller Alexander Osika Mario Poneder Kai Xue"
+        "Bernhard Mueller",
+        "Alexander Osika",
+        "Mario Poneder",
+        "Kai Xue",
+        "Ben Cassie",
+        "Peter Nguyen",
+        "Jinwook Kim",
+        "David Matscheko",
+        "Jonathan Hill",
+        "William T. Glynn",
+        "Maarten Antoine Visser",
+        "Kale Arnav Anirudha"
       ],
-      "affiliations": [],
+      "affiliations": [
+        {
+          "author": "Bernhard Mueller",
+          "organization": "Pragma Research Inc."
+        },
+        {
+          "author": "Alexander Osika",
+          "organization": "EtherWorks"
+        }
+      ],
       "keywords": [
         "Observer Patch Holography",
         "OPH",
@@ -270,7 +290,7 @@
         },
         {
           "author": "Alexander Osika",
-          "organization": "Asimov Labs"
+          "organization": "EtherWorks"
         }
       ],
       "keywords": [
@@ -322,7 +342,7 @@
         },
         {
           "author": "Alexander Osika",
-          "organization": "Asimov Labs"
+          "organization": "EtherWorks"
         }
       ],
       "keywords": [

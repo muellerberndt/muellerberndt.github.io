@@ -1,80 +1,69 @@
-# Floating Pragma / OPH Machine-Readable Research Packet
+# Floating Pragma / Observer Patch Holography Research Packet
 
-This file is intended for AI crawlers, research assistants, feed readers, and indexing systems.
+This file provides a compact machine-readable map for research assistants, indexing systems, and readers who need the source hierarchy.
 
 ## Summary
 
-Observer Patch Holography (OPH) asks whether a shared physical world can grow from limited systems that keep records, compare partial views, and repair disagreement. The public pages explain the idea in plain language, while the papers state the mathematics and claim boundaries.
+Floating Pragma develops Observer Patch Holography (OPH), scientific simulations, verifiable computation, and security research. OPH asks whether bounded observers can form a shared physical account from local records, overlap comparison, and repair.
 
-The public OPH outreach packet is designed for criticism. The useful response is precise: a hidden assumption, a broken derivation, a conflict with established physics, an overclaim in public explanation, or an empirical target that fails.
+An OPH technology surface instantiates observer-like self-reading structure: a bounded physical or software patch has local state, ports or a boundary, readback, records, feedback or repair moves, and an evidence bundle that another party can inspect.
 
-## Primary URLs
+The public research distinguishes exact finite mathematics from physical interpretation. A finite theorem does not by itself establish that its objects are laboratory events, fields, currents, clocks, or scales. Simulations provide reproducible evidence about the stated finite models; exploratory lanes are not physical derivations.
 
-- OPH Textbooks, the best guided study surface: https://learn.floatingpragma.io/
-- Flagship OPH paper: https://floatingpragma.io/oph/papers/from-observer-consensus-to-standard-physics/
-- OPH hub: https://floatingpragma.io/oph/
-- OPH paper stack, crawlable first-party HTML and PDFs: https://floatingpragma.io/oph/papers/
-- OPH paper machine-readable inventory: https://floatingpragma.io/oph/papers/papers.json
-- OPH paper LLM index: https://floatingpragma.io/oph/papers/llms.txt
-- OPH paper sitemap: https://floatingpragma.io/oph/papers/sitemap.xml
-- OPH Mini-Universe Simulation, the interactive observer-patch visualization surface: https://simulation.floatingpragma.io/
-- What is simulation theory in physics?: https://floatingpragma.io/oph/what-is-simulation-theory/
-- What is a theory of everything?: https://floatingpragma.io/oph/what-is-a-theory-of-everything/
-- Physics Unification via OPH: https://floatingpragma.io/oph/physics-unification/
-- Standard Model unified with gravity via OPH: https://floatingpragma.io/oph/standard-model-gravity-unification/
-- Cosmological-constant research route, with its open status: https://floatingpragma.io/oph/cosmological-constant-derivation/
-- Stress-test OPH: https://floatingpragma.io/oph/stress-test/
-- OPH Coherence Map, the public graph surface for OPH concepts and overlaps: https://coherence.floatingpragma.io/
-- OPH Applications, the public applications page for hardware, compute, energy, AGI, lift, and optical chamber consensus: https://omega.floatingpragma.io/
-- Three-body problem OPH demo, an extra simulator/proof walk-through for the OPH three-body problem solution: https://3body.floatingpragma.io/
-- Floating Pragma Blog, public essays and entry points for OPH: https://blog.floatingpragma.io/
-- OPH NotebookLM notebook: https://notebooklm.google.com/notebook/d5249760-6ce8-44a0-927b-ccf90402711a
-- OPH Lab: https://oph-lab.floatingpragma.io/
-- Main repository: https://github.com/FloatingPragma/observer-patch-holography
-- License and anti-patent covenant: https://github.com/FloatingPragma/observer-patch-holography/blob/main/LICENSE
-- Patent policy copy/paste notices: https://github.com/FloatingPragma/observer-patch-holography/blob/main/PATENTS.md
-- Challenge site: https://challenge.floatingpragma.io/
+## Canonical Public Network
 
-## Essays
+1. Website and OPH overview: https://floatingpragma.io/oph/
+2. Textbooks and guided learning: https://learn.floatingpragma.io/
+3. Interactive OPH Lab: https://oph-lab.floatingpragma.io/
+4. Papers, proofs, code, and evidence: https://github.com/FloatingPragma/observer-patch-holography/
+5. Mini-universe simulation: https://simulation.floatingpragma.io/
+6. OPH Webbook v2, in preparation: https://oph-book.floatingpragma.io/
 
-- Semiotics and the Physics of Meaning: https://blog.floatingpragma.io/semiotics-and-the-physics-of-meaning
-- P = NP on the Observer Screen: https://blog.floatingpragma.io/p-equals-np-on-the-observer-screen
-- The Trigger: https://blog.floatingpragma.io/the-trigger
+The first-party paper mirror is https://floatingpragma.io/oph/papers/. It provides crawlable HTML, per-paper PDFs, scholarly metadata, JSON inventory, and dedicated sitemaps.
 
-## OPH Paper Pages
+## Release r2022
 
-- From Observer Consensus to Standard Physics: https://wkaxfdgxoqmghwgshymt.supabase.co/storage/v1/object/public/papers/from_observer_consensus_to_standard_physics.pdf
-- Recovering Observer Spacetime and Einstein Dynamics from Overlap Consistency: https://floatingpragma.io/oph/papers/observer-spacetime-einstein-dynamics/
-- Deriving Standard Model Gauge Structure from Observer Overlap Consistency: https://floatingpragma.io/oph/papers/standard-model-gauge-structure/
-- Deriving the Particle Zoo from Observer Consistency: https://floatingpragma.io/oph/papers/particle-spectrum-from-observer-consistency/
-- Reality as a Consensus Protocol: https://floatingpragma.io/oph/papers/reality-as-consensus-protocol/
-- Screen Microphysics and Observer Synchronization: https://floatingpragma.io/oph/papers/screen-microphysics-and-observer-synchronization/
-- Paradise as Fixed-Point Consensus: https://floatingpragma.io/oph/papers/paradise-as-fixed-point-consensus/
-- Photonic Fixed-Point Consensus for SHA-256d Proof of Work: https://floatingpragma.io/oph/papers/photonic-fixed-point-consensus-sha256d-proof-of-work/
-- Theoretical Bounds on Chi-Nu Susceptibility in Observer Patch Holography: https://floatingpragma.io/oph/papers/chi-nu-susceptibility-bounds/
-- The Fine-Structure Constant as an OPH Pixel Fixed Point: https://floatingpragma.io/oph/papers/fine-structure-constant-oph-pixel-fixed-point/
-- Observer Patch Holography as a String-Vacuum Selector: https://floatingpragma.io/oph/papers/observer-patch-holography-string-vacuum-selector/
-- Observer Patch Holography and the Dark Matter Phenomenon: https://floatingpragma.io/oph/papers/observer-patch-holography-dark-matter/
-- Thinking as Patch-Net Fixed-Point Search: https://floatingpragma.io/oph/papers/thinking-as-patch-net-fixed-point-search/
-- Explaining the Yang-Mills Mass Gap in Observer Patch Holography: https://floatingpragma.io/oph/papers/yang-mills-mass-gap-observer-patch-holography/
+Release date: 20 August 2026.
 
-## Feeds
+The flagship paper is "Finite Observer Consensus as a Reconstruction Principle: Normal Forms, the Standard Model Lie Type, and a Route to the Einstein Field Equation."
+
+- HTML: https://floatingpragma.io/oph/papers/from-observer-consensus-to-standard-physics/
+- PDF: https://floatingpragma.io/oph/papers/from-observer-consensus-to-standard-physics/paper.pdf
+- Release source: https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r2022
+
+The formal library contains more than 6,600 public Lean theorem and lemma declarations. The repository and paper release are the sources for exact counts, theorem statements, assumptions, and artifacts.
+
+## Paper Stack
+
+- Flagship reconstruction paper: https://floatingpragma.io/oph/papers/from-observer-consensus-to-standard-physics/
+- Compact OPH overview: https://floatingpragma.io/oph/papers/compact-proof-of-oph/
+- Observer spacetime and Einstein dynamics: https://floatingpragma.io/oph/papers/observer-spacetime-einstein-dynamics/
+- Standard Model gauge structure: https://floatingpragma.io/oph/papers/standard-model-gauge-structure/
+- Particle spectrum: https://floatingpragma.io/oph/papers/particle-spectrum-from-observer-consistency/
+- Reality as a consensus protocol: https://floatingpragma.io/oph/papers/reality-as-consensus-protocol/
+- Screen microphysics and observer synchronization: https://floatingpragma.io/oph/papers/screen-microphysics-and-observer-synchronization/
+- Observer continuation and fixed-point consensus: https://floatingpragma.io/oph/papers/paradise-as-fixed-point-consensus/
+
+Machine-readable paper data:
+
+- Inventory: https://floatingpragma.io/oph/papers/papers.json
+- Paper LLM index: https://floatingpragma.io/oph/papers/llms.txt
+- Paper sitemap: https://floatingpragma.io/oph/papers/sitemap.xml
+
+## Interpretation Boundary
+
+The finite framework proves and computes results under displayed premises. Several bridges from finite objects to observed physics remain open or conditional. Diagnostic numerical agreements are not predictions when measured targets enter the construction or selection. The papers and scientific registers give the binding classification.
+
+## Additional Public Routes
+
+- Open challenge and objections: https://challenge.floatingpragma.io/
+- Research blog: https://blog.floatingpragma.io/
+- Coherence map: https://coherence.floatingpragma.io/
+- Applications: https://omega.floatingpragma.io/
+- Three-body demonstration: https://3body.floatingpragma.io/
+
+## Feeds and Contact
 
 - RSS: https://floatingpragma.io/oph/feed.xml
 - JSON Feed: https://floatingpragma.io/oph/feed.json
-
-## Suggested Questions For Critical Review
-
-- Which OPH derivation depends on an unstated premise?
-- Where does observer-overlap consistency fail to recover the claimed physical structure?
-- Which empirical pressure test would most likely break the framework?
-- Does the public wording overclaim relative to the paper status?
-- Does the observer-screen computation essay blur the boundary between OPH primitives and classical complexity theory?
-
-## Contact
-
-Tom: tom@floatingpragma.io
-
-## Caveat
-
-"P = NP on the Observer Screen" is not a claim to solve the classical Clay problem. It is a physics/computation essay about OPH primitives: verification, mismatch detection, local repair, and stable record formation.
+- Contact: tom@floatingpragma.io

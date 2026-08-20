@@ -1,55 +1,40 @@
-# Floating Pragma / Observer Patch Holography
+# Floating Pragma
 
-Floating Pragma hosts Observer Patch Holography (OPH), a research program that asks whether a shared physical world can grow from limited systems that keep records, compare partial views, and repair disagreement.
+Floating Pragma is an independent research studio for observer-first physics, scientific simulation, verifiable computation, and security research.
 
-## Core OPH Links
+## Canonical OPH Surfaces
 
-- OPH Textbooks, the best guided study surface: https://learn.floatingpragma.io/
-- Flagship OPH paper: https://floatingpragma.io/oph/papers/from-observer-consensus-to-standard-physics/
-- OPH hub: https://floatingpragma.io/oph/
-- OPH paper stack, crawlable first-party HTML and PDFs: https://floatingpragma.io/oph/papers/
-- OPH paper machine-readable inventory: https://floatingpragma.io/oph/papers/papers.json
-- OPH paper LLM index: https://floatingpragma.io/oph/papers/llms.txt
-- OPH paper sitemap: https://floatingpragma.io/oph/papers/sitemap.xml
-- OPH Mini-Universe Simulation, the interactive observer-patch visualization surface: https://simulation.floatingpragma.io/
-- What is simulation theory in physics?: https://floatingpragma.io/oph/what-is-simulation-theory/
-- What is a theory of everything?: https://floatingpragma.io/oph/what-is-a-theory-of-everything/
-- Physics Unification via OPH: https://floatingpragma.io/oph/physics-unification/
-- Standard Model unified with gravity via OPH: https://floatingpragma.io/oph/standard-model-gravity-unification/
-- Cosmological-constant research route, with its open status: https://floatingpragma.io/oph/cosmological-constant-derivation/
-- OPH stress-test packet: https://floatingpragma.io/oph/stress-test/
-- OPH Coherence Map, the public graph surface for OPH concepts and overlaps: https://coherence.floatingpragma.io/
-- OPH Applications, the public applications page for hardware, compute, energy, AGI, lift, and optical chamber consensus: https://omega.floatingpragma.io/
-- Three-body problem OPH demo, an extra simulator/proof walk-through for the OPH three-body problem solution: https://3body.floatingpragma.io/
-- Floating Pragma Blog, public essays and entry points for OPH: https://blog.floatingpragma.io/
-- OPH NotebookLM notebook: https://notebooklm.google.com/notebook/d5249760-6ce8-44a0-927b-ccf90402711a
-- OPH Lab: https://oph-lab.floatingpragma.io/
-- OPH repository: https://github.com/FloatingPragma/observer-patch-holography
-- OPH license and anti-patent covenant: https://github.com/FloatingPragma/observer-patch-holography/blob/main/LICENSE
-- OPH patent policy copy: https://github.com/FloatingPragma/observer-patch-holography/blob/main/PATENTS.md
-- OPH RSS feed: https://floatingpragma.io/oph/feed.xml
-- OPH JSON feed: https://floatingpragma.io/oph/feed.json
+- Website and research overview: https://floatingpragma.io/oph/
+- Textbooks and guided learning: https://learn.floatingpragma.io/
+- Interactive OPH Lab: https://oph-lab.floatingpragma.io/
+- Public source repository: https://github.com/FloatingPragma/observer-patch-holography/
+- Mini-universe simulation: https://simulation.floatingpragma.io/
+- OPH Webbook v2, in preparation: https://oph-book.floatingpragma.io/
 
-## Public Essays
+## Research Record
 
-- Semiotics and the Physics of Meaning: https://blog.floatingpragma.io/semiotics-and-the-physics-of-meaning
-- P = NP on the Observer Screen: https://blog.floatingpragma.io/p-equals-np-on-the-observer-screen
-- The Trigger: https://blog.floatingpragma.io/the-trigger
+- Paper release: r2022, 20 August 2026
+- Paper index with first-party HTML and PDF editions: https://floatingpragma.io/oph/papers/
+- Flagship reconstruction paper: https://floatingpragma.io/oph/papers/from-observer-consensus-to-standard-physics/
+- Machine-readable paper inventory: https://floatingpragma.io/oph/papers/papers.json
+- Paper-specific LLM index: https://floatingpragma.io/oph/papers/llms.txt
+- Paper sitemap: https://floatingpragma.io/oph/papers/sitemap.xml
 
-## OPH Paper Pages
+Observer Patch Holography studies bounded, self-reading systems with local state, ports or boundaries, readback, records, feedback, and repair. Exact finite results, conditional reconstruction results, simulations, diagnostics, and open physical identification steps are classified separately.
 
-- From Observer Consensus to Standard Physics: https://wkaxfdgxoqmghwgshymt.supabase.co/storage/v1/object/public/papers/from_observer_consensus_to_standard_physics.pdf
-- Recovering Observer Spacetime and Einstein Dynamics from Overlap Consistency: https://floatingpragma.io/oph/papers/observer-spacetime-einstein-dynamics/
-- Deriving Standard Model Gauge Structure from Observer Overlap Consistency: https://floatingpragma.io/oph/papers/standard-model-gauge-structure/
-- Deriving the Particle Zoo from Observer Consistency: https://floatingpragma.io/oph/papers/particle-spectrum-from-observer-consistency/
-- Reality as a Consensus Protocol: https://floatingpragma.io/oph/papers/reality-as-consensus-protocol/
-- Screen Microphysics and Observer Synchronization: https://floatingpragma.io/oph/papers/screen-microphysics-and-observer-synchronization/
-- Paradise as Fixed-Point Consensus: https://floatingpragma.io/oph/papers/paradise-as-fixed-point-consensus/
+## Reader Routes
 
-## Review Contact
+- Plain-language introduction: https://floatingpragma.io/oph/
+- Technical papers: https://floatingpragma.io/oph/papers/
+- Physics unification overview: https://floatingpragma.io/oph/physics-unification/
+- Standard Model and gravity overview: https://floatingpragma.io/oph/standard-model-gravity-unification/
+- Quantum gravity overview: https://floatingpragma.io/oph/quantum-gravity/
+- Simulation theory overview: https://floatingpragma.io/oph/simulation-theory/
+- Stress-test packet: https://floatingpragma.io/oph/stress-test/
 
-For detailed objections, collaboration requests, and serious review notes, contact Tom at tom@floatingpragma.io.
+## Feeds and Review
 
-## Important Caveat
-
-The essay "P = NP on the Observer Screen" does not claim a classical proof of P = NP. It describes an OPH computational primitive: verification, mismatch detection, repair, and stable record formation on observer screens.
+- RSS: https://floatingpragma.io/oph/feed.xml
+- JSON Feed: https://floatingpragma.io/oph/feed.json
+- Open challenge: https://challenge.floatingpragma.io/
+- Contact: tom@floatingpragma.io

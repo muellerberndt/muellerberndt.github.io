@@ -12,6 +12,27 @@
   ],
   "items": [
     {
+      "id": "oph-paper-release-r2022",
+      "url": "https://floatingpragma.io/oph/papers/",
+      "title": "Observer Patch Holography r2022",
+      "date_published": "2026-08-20T00:00:00Z",
+      "summary": "The r2022 paper stack, with first-party HTML, PDFs, scholarly metadata, and explicit physical interpretation boundaries."
+    },
+    {
+      "id": "https://oph-lab.floatingpragma.io/",
+      "url": "https://oph-lab.floatingpragma.io/",
+      "title": "OPH Lab",
+      "date_published": "2026-08-20T00:00:00Z",
+      "summary": "Interactive experiments for observer overlap, records, repair, geometry, and observer dynamics."
+    },
+    {
+      "id": "https://oph-book.floatingpragma.io/",
+      "url": "https://oph-book.floatingpragma.io/",
+      "title": "OPH Webbook v2",
+      "date_published": "2026-08-20T00:00:00Z",
+      "summary": "The OPH Webbook v2 surface is in preparation. The learning library is the textbook entry point."
+    },
+    {
       "id": "https://floatingpragma.io/oph/papers/",
       "url": "https://floatingpragma.io/oph/papers/",
       "title": "OPH Paper Summaries",

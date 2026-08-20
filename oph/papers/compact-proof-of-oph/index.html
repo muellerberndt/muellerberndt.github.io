@@ -9,6 +9,12 @@
   <meta name="keywords" content="Observer Patch Holography, OPH, physics, theory of everything" />
   <meta name="author" content="Pragma" />
   <link rel="canonical" href="https://floatingpragma.io/oph/papers/compact-proof-of-oph/" />
+  <link rel="related" href="https://floatingpragma.io/oph/" title="Observer Patch Holography" />
+  <link rel="related" href="https://learn.floatingpragma.io/" title="OPH Learning Library" />
+  <link rel="related" href="https://oph-lab.floatingpragma.io/" title="OPH Lab" />
+  <link rel="related" href="https://simulation.floatingpragma.io/" title="OPH Simulation" />
+  <link rel="related" href="https://github.com/FloatingPragma/observer-patch-holography/" title="OPH Source Repository" />
+  <link rel="related" href="https://oph-book.floatingpragma.io/" title="OPH Webbook v2" />
   <link rel="related" href="https://blog.floatingpragma.io/the-trigger" title="The Trigger" />
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
   <meta name="citation_title" content="Compact Proof Of Oph" />
@@ -44,11 +50,15 @@
   <meta property="og:url" content="https://floatingpragma.io/oph/papers/compact-proof-of-oph/" />
   <meta property="og:title" content="Compact Proof Of Oph | OPH Paper" />
   <meta property="og:description" content="A short guide to the main idea behind Observer Patch Holography, its mathematical results, and the physical questions that remain open." />
-  <meta property="og:image" content="https://floatingpragma.io/oph/screen.webp" />
+  <meta property="og:image" content="https://floatingpragma.io/og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Floating Pragma research for self-reading systems" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Compact Proof Of Oph | OPH Paper" />
   <meta name="twitter:description" content="A short guide to the main idea behind Observer Patch Holography, its mathematical results, and the physical questions that remain open." />
-  <meta name="twitter:image" content="https://floatingpragma.io/oph/screen.webp" />
+  <meta name="twitter:image" content="https://floatingpragma.io/og.png" />
+  <meta name="twitter:image:alt" content="Floating Pragma research for self-reading systems" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="stylesheet" href="/oph/styles.css" />
   <script>
@@ -155,17 +165,18 @@
           <img src="/pragma-cropped.jpg" alt="Pragma" />
         </span>
         <span class="brand-copy">
-          <strong>Pragma</strong>
+          <strong>Floating Pragma</strong>
           <span>OPH Paper</span>
         </span>
       </a>
       <nav class="site-nav" aria-label="OPH navigation">
-        <a href="/oph/" data-track-link="nav-hub">Hub</a>
+        <a href="/oph/" data-track-link="nav-hub">Research</a>
         <a href="/oph/papers/" data-track-link="nav-papers">Papers</a>
-        <a href="/oph/standard-model-gravity-unification/" data-track-link="nav-smg">SM + Gravity</a>
-        <a href="/oph/theory-of-everything/" data-track-link="nav-toe">Theory of Everything</a>
+        <a href="https://learn.floatingpragma.io/" data-track-link="nav-learn">Learn</a>
         <a href="https://oph-lab.floatingpragma.io/" data-track-link="nav-lab">Lab</a>
-        <a href="https://challenge.floatingpragma.io/" data-track-link="nav-challenge">Challenge</a>
+        <a href="https://simulation.floatingpragma.io/" data-track-link="nav-simulation">Simulation</a>
+        <a href="https://github.com/FloatingPragma/observer-patch-holography/" data-track-link="nav-github">GitHub</a>
+        <a href="https://oph-book.floatingpragma.io/" data-track-link="nav-webbook">Webbook v2</a>
       </nav>
     </header>
 
@@ -197,24 +208,22 @@
             <a href="https://blog.floatingpragma.io/the-trigger" target="_blank" rel="noopener noreferrer" data-track-link="paper-blog-compact_proof_of_oph">The Trigger</a>
           </nav>
 
-          <details class="paper-section-jump">
-            <summary>Section jump</summary>
-            <nav class="paper-toc" aria-label="Paper sections"><a href="#ai-assistance-disclosure">AI Assistance Disclosure</a></nav>
-          </details>
         </header>
         <div class="paper-reader-grid">
           <div class="paper-body">
-<p><strong>Paper release:</strong> <code>r2022</code>
-<strong>Released:</strong> August 20, 2026</p>
-<p><strong>Observer Patch Holography</strong> <strong>A Compact Case for
-an Observer-First Unification Program</strong> OPH asks whether physics
-can be reconstructed from the minimum machinery required for a public
-world. A patch has local state, a boundary, records, readback, and
-repair moves. Each patch sees a fragment. Agreement across shared
-boundaries turns private descriptions into public facts. The selected
-world is a stable normal form, <span class="math display">\[
-T(\mathfrak U)=\mathfrak U .
-\]</span> The theory rests on three core axioms.</p>
+<p><span><strong>Observer Patch Holography</strong></span></p>
+<p><span><strong>A Compact Case for an Observer-First Unification
+Program</strong></span></p>
+<p><span>Paper release: <code>r2022</code>Released: August 20,
+2026</span></p>
+<p>OPH asks whether physics can be reconstructed from the minimum
+machinery required for a public world. A patch has local state, a
+boundary, records, readback, and repair moves. Each patch sees a
+fragment. Agreement across shared boundaries turns private descriptions
+into public facts. The selected world is a stable normal form, <span
+class="math display">\[T(\mathfrak U)=\mathfrak U .\]</span> The theory
+rests on three core axioms.</p>
+<p><span> </span></p>
 <p>One global closure principle sits beside the axioms without joining
 them. The framework models the universe as a self-referential fixed
 point: the simulating and the simulated description are one system. Once
@@ -263,27 +272,23 @@ class="math inline">\(0.39\)</span> percent offsets from the Planck
 base-<span class="math inline">\(\Lambda\)</span>CDM comparison
 coordinate are retrospective and carry no predictive weight. On the
 source-forward branch the three numerical coordinates are <span
-class="math display">\[
-N_0=3.5321315434\ldots\times10^{122},\quad
+class="math display">\[N_0=3.5321315434\ldots\times10^{122},\quad
 N_{\rm pres}=3.2920978773\ldots\times10^{122},\quad
-N_{\rm Pois}=3.3000722254\ldots\times10^{122},
-\]</span> against the weighted Planck comparison coordinate <span
+N_{\rm Pois}=3.3000722254\ldots\times10^{122},\]</span> against the
+weighted Planck comparison coordinate <span
 class="math inline">\(3.3129270981\ldots\times10^{122}\)</span>.</p>
 <p>The proposal earns attention because several familiar structures
 arise from this small basis. They also arrive with different evidence
 types. Exact theorems, interval certificates, conditional physical
 compositions, and simulation measurements occupy separate evidence
 classes throughout this paper.</p>
+<p><span> </span></p>
 <p>The following count contains the strongest independent pieces of
 evidence. Every row states its boundary in the same breath as its
 result.</p>
 <div class="center">
-
-<div class="longtable">
-
-<p>@L0.035L0.265L0.455L0.205@ &amp; <strong>Receipt</strong> &amp;
-<strong>Result and boundary</strong> &amp; <strong>Evidence</strong>
-&amp; Public records and finite event algebra &amp; Terminating repair
+<div class="table-scroll"><table class="paper-tex-table"><tbody><tr><td></td><td><strong>Receipt</strong></td><td><strong>Result and
+boundary</strong></td><td><strong>Evidence</strong></td></tr><tr><td></td><td>Public records and finite event algebra</td><td>Terminating repair
 gives protected normal forms on the declared confluent carrier class. On
 a separately declared finite algebra-state representation, the public
 projector span is exactly star-isomorphic to functions on its nonzero
@@ -293,16 +298,14 @@ sharply copy two distinct alternatives only when they are orthogonal.
 The general mixed-state no-broadcasting implication remains a separate
 adapter. Consensus does not derive the quantum representation. On the
 twelve-port carrier, atomic signed record events generate integer loads
-and conservative repairs terminate by exact quadratic descent. &amp;
-Lean and exact finite code [1,2,10] 2 &amp; Four laws of thermodynamics
-from conditional repair &amp; Axiom 3 on states gives the Gibbs family
-by the exact information-projection Pythagorean identity. On transition
-distributions over the repaired visible fibre it gives weighted
-conditional resampling from the same reference, the observation-fibre
-projector of the consensus construction. That kernel is stochastic,
-idempotent, reversible, stationary, and fixes fibre-measurable charges,
-and relative entropy to the reference contracts under it: the second law
-is data processing for repair, with the modular form <span
+and conservative repairs terminate by exact quadratic descent.</td><td>Lean and exact finite code [1,2,10]</td></tr><tr><td>2</td><td>Four laws of thermodynamics from conditional repair</td><td>Axiom 3 on states gives the Gibbs family by the exact
+information-projection Pythagorean identity. On transition distributions
+over the repaired visible fibre it gives weighted conditional resampling
+from the same reference, the observation-fibre projector of the
+consensus construction. That kernel is stochastic, idempotent,
+reversible, stationary, and fixes fibre-measurable charges, and relative
+entropy to the reference contracts under it: the second law is data
+processing for repair, with the modular form <span
 class="math inline">\(\Delta S\ge\Delta\langle K\rangle\)</span> and the
 Landauer bound as corollaries. On one nondegenerate finite spectrum,
 equality of Gibbs distributions identifies the inverse temperature; no
@@ -336,11 +339,7 @@ recurrent class. The state table/reference was locally pre-specified and
 hash-pinned, while the recurrent transition chain was extracted post hoc
 from retained run data. They have two exact direct-binding obstructions:
 the state-side resampling action is idempotent, whereas the transition
-action has a nonconstant eigenmode with</p>
-<p><span class="math display">\[
-\lambda=\frac{665437}{726948}\in(0,1).
-\]</span></p>
-<p>Every intertwiner into an idempotent action therefore kills that
+action has a nonconstant eigenmode with</td><td></td></tr><tr><td>Every intertwiner into an idempotent action therefore kills that
 mode. In addition, the chain stationary mass <span
 class="math inline">\(7155/61511\)</span> lies strictly between <span
 class="math inline">\(1905/16384\)</span> and <span
@@ -357,22 +356,20 @@ covered constant-field cases carry only the fixed-space conclusion, so
 that grammar protects only constants, and the recorded continuations are
 an enriched export or a dilated construction. Nonlinear,
 reverse-direction, and enriched-source routes stay open, and none of
-this discharges the physical premises of the conditional package. &amp;
-Lean and exact rational code [1,9] 3 &amp; Forced dynamics, forced Born
-weights, and a derived action &amp; On the finite private algebra every
-pointwise-continuous symmetry flow is blockwise unitary conjugation
-generated by one time-independent self-adjoint Hamiltonian per block,
-unique up to a real scalar: the Schrödinger form is a theorem, and its
-single continuity premise is displayed. On the same finite surface every
-nonnegative normalized valuation additive on coexisting effects is the
-trace against one density matrix, in every finite dimension including
-two, so Born weights are derived without a continuity axiom; sharp
-two-outcome webs admit an explicit non-Born valuation. One unsharp
-three-effect context excludes that valuation, but the declared finite
-battery admits a different planar cubic response and therefore does not
-supply the full coexistent-effect additivity hypothesis. The phase lift
-obtained by subtracting the normalized complex commutator of two
-source-attached algebraic projector candidates from <span
+this discharges the physical premises of the conditional package.</td><td>Lean and exact rational code [1,9]</td><td></td><td></td></tr><tr><td>3</td><td>Forced dynamics, forced Born weights, and a derived action</td><td>On the finite private algebra every pointwise-continuous symmetry flow
+is blockwise unitary conjugation generated by one time-independent
+self-adjoint Hamiltonian per block, unique up to a real scalar: the
+Schrödinger form is a theorem, and its single continuity premise is
+displayed. On the same finite surface every nonnegative normalized
+valuation additive on coexisting effects is the trace against one
+density matrix, in every finite dimension including two, so Born weights
+are derived without a continuity axiom; sharp two-outcome webs admit an
+explicit non-Born valuation. One unsharp three-effect context excludes
+that valuation, but the declared finite battery admits a different
+planar cubic response and therefore does not supply the full
+coexistent-effect additivity hypothesis. The phase lift obtained by
+subtracting the normalized complex commutator of two source-attached
+algebraic projector candidates from <span
 class="math inline">\(I/2\)</span> is exactly the missing Pauli-<span
 class="math inline">\(Y\)</span> projector and completes fixed-trace
 operator tomography, while every effect in a generous phase-free
@@ -461,9 +458,9 @@ class="math inline">\(P\)</span> factors and the full color-bearing
 <span class="math inline">\(F\)</span> family. Equality of such kernels
 leaves only common scaling, so the relative coefficient is identifiable
 but not selected. No independent source kernel, physical unit, clock, or
-continuum field is constructed. &amp; Lean and exact kernel receipts
-[9,15] 4 &amp; A continuous local three-dimensional carrier and Lorentz
-kinematics &amp; On the certified spherical support branch, <span
+continuum field is constructed.</td><td>Lean and exact kernel receipts
+[9,15]</td></tr><tr><td>4</td><td>A continuous local three-dimensional carrier and Lorentz
+kinematics</td><td>On the certified spherical support branch, <span
 class="math inline">\(\mathrm{Conf}^+(S^2)\cong\mathrm{SO}^+(3,1)\)</span>
 and <span
 class="math inline">\(\dim[\mathrm{SO}^+(3,1)/\mathrm{SO}(3)]=3\)</span>.
@@ -476,14 +473,14 @@ kernel, embeds densely in the resulting quotient, and completes to an
 abstract continuous local Euclidean translation carrier. Finite-step
 completion gives a different object. Selection of the repair law and
 readback topology, isometric carrier action, overlap gluing, scale, and
-physical-space identification are open. &amp; Theorem chain, Lean, exact
-code [1,3,10] 5 &amp; Einstein composition and a finite signature test
-&amp; The typed modular, null-stress, entropy, and small-ball premises
-compose to the Einstein relation. On a declared chart with one ancestry
-coordinate and three spectral coordinates, a support-adjusted three-rung
-path measures inertia <span class="math inline">\((1,3)\)</span> with
-cone margins <span class="math inline">\(-5.62,-3.22,-1.41\)</span>. A
-same-size support-width control changes the inertia to <span
+physical-space identification are open.</td><td>Theorem chain, Lean, exact
+code [1,3,10]</td></tr><tr><td>5</td><td>Einstein composition and a finite signature test</td><td>The typed
+modular, null-stress, entropy, and small-ball premises compose to the
+Einstein relation. On a declared chart with one ancestry coordinate and
+three spectral coordinates, a support-adjusted three-rung path measures
+inertia <span class="math inline">\((1,3)\)</span> with cone margins
+<span class="math inline">\(-5.62,-3.22,-1.41\)</span>. A same-size
+support-width control changes the inertia to <span
 class="math inline">\((2,2)\)</span>. A preregistered fresh-seed
 replication reproduces <span class="math inline">\((1,3)\)</span> at the
 <span class="math inline">\(65{,}536\)</span>-carrier rung on five of
@@ -496,9 +493,7 @@ does not select the chart dimension. One target-clean finite source also
 inhabits exact causal, atlas, seam-transport, and local operator
 domains. Its six local fits include one <span
 class="math inline">\((0,4)\)</span> chart, and its cone margins are
-negative. &amp; Lean implication, instruments, simulation [3,11] 6 &amp;
-Standard Model local gauge algebra without a chosen gauge group &amp;
-The complete reversible port response in A1 and endogenous overlap
+negative.</td><td>Lean implication, instruments, simulation [3,11]</td></tr><tr><td>6</td><td>Standard Model local gauge algebra without a chosen gauge group</td><td>The complete reversible port response in A1 and endogenous overlap
 transport in A2 imply an injective compact commutator-closed
 twelve-dimensional current with inner <span
 class="math inline">\(A_5\)</span> action. Its one-dimensional fixed
@@ -509,15 +504,13 @@ Lie group, factor dimension, or matrix current is inserted. The
 finite-source simulator derives the carrier module and <span
 class="math inline">\(R=-J\)</span>. The source contains no ordered
 current tomography or same-current holonomy; the current identification
-consumes both as premises. &amp; Lean, compact classification, exact
-controls [3,10] 7 &amp; Global quotient and one-generation
-representation witness &amp; For the declared tensor representation,
-trace balance gives <span class="math inline">\(S(U(3)\times
-U(2))\)</span>, the common action kernel is <span
-class="math inline">\(\mathbb Z_6\)</span>, and an exterior algebra
-branches into one fifteen-state Standard Model generation with the
-anomaly arithmetic. The physical global quotient requires a
-source-derived complete character category and a same-source
+consumes both as premises.</td><td>Lean, compact classification, exact
+controls [3,10]</td></tr><tr><td>7</td><td>Global quotient and one-generation representation witness</td><td>For the declared tensor representation, trace balance gives <span
+class="math inline">\(S(U(3)\times U(2))\)</span>, the common action
+kernel is <span class="math inline">\(\mathbb Z_6\)</span>, and an
+exterior algebra branches into one fifteen-state Standard Model
+generation with the anomaly arithmetic. The physical global quotient
+requires a source-derived complete character category and a same-source
 loop-to-kernel identity. Among the single complete faithful screen bands
 in <span class="math inline">\(3\leq N_g\leq5\)</span>, the exact
 Laplacian cost selects rank three, and the declared unitary simulator
@@ -533,32 +526,32 @@ packet and the <span class="math inline">\(8{,}662\)</span>-node local
 domain have no certified source, domain, or transport bridge.
 Matter-pole identification, continuum Spin/locality, physical seam
 selection, and laboratory attachment are premises of any physical
-reading. &amp; Lean and exact code [3,10] 8 &amp; Strict W/Z analytic
-checks &amp; A strict one-loop consumer maps a complete renormalized
-packet to charged and neutral scalar pole coordinates. Interval receipts
-exclude zeros on the declared principal-sheet boxes and isolate, for
-each of <span class="math inline">\(W\)</span> and <span
+reading.</td><td>Lean and exact code [3,10]</td></tr><tr><td>8</td><td>Strict W/Z analytic checks</td><td>A strict one-loop consumer maps
+a complete renormalized packet to charged and neutral scalar pole
+coordinates. Interval receipts exclude zeros on the declared
+principal-sheet boxes and isolate, for each of <span
+class="math inline">\(W\)</span> and <span
 class="math inline">\(Z\)</span>, one simple scalar zero with derivative
 and scalar-residue balls in its declared lower-half pole box on a
 channel-specific algebraic chart. They identify neither chart with the
 physical resonance sheet and prove no unique continuation, sign bridge,
 full-matrix Laurent residue, physical current amplitude, or independent
 numerical replay. The external fixture is not composed with the OPH
-electroweak chart. &amp; Conditional analytic receipts, exact code
-[1,6,9] 9 &amp; Pixel fixed-point arithmetic &amp; Outward-rounded
-interval certificates prove existence and uniqueness for each declared
-pixel map and exclude a second root across its analytic domain. The
-fine-structure comparison is diagnostic because the physical transport
-map, map selection, and same-quantity bridge are incomplete. &amp;
-Interval arithmetic [5,10] 10 &amp; Charged-lepton interval diagnostic
-&amp; The measured electron, muon, and tau masses lie inside
-outward-rounded transport enclosures. Their logarithmic half-width is
-<span class="math inline">\(1.732\%\)</span>, giving one-sided
-multiplicative widths of <span class="math inline">\(-1.72\%\)</span>
-and <span class="math inline">\(+1.75\%\)</span>. Target-anchored ratios
-and empirical transport make this a closure diagnostic. &amp; Interval
-certificate [6,10] 11 &amp; Positive-chamber Koide theorem &amp; A
-Hermitian three-cycle response obeys <span
+electroweak chart.</td><td>Conditional analytic receipts, exact code
+[1,6,9]</td></tr><tr><td>9</td><td>Pixel fixed-point arithmetic</td><td>Outward-rounded interval
+certificates prove existence and uniqueness for each declared pixel map
+and exclude a second root across its analytic domain. The fine-structure
+comparison is diagnostic because the physical transport map, map
+selection, and same-quantity bridge are incomplete.</td><td>Interval
+arithmetic [5,10]</td></tr><tr><td>10</td><td>Charged-lepton interval diagnostic</td><td>The measured electron,
+muon, and tau masses lie inside outward-rounded transport enclosures.
+Their logarithmic half-width is <span
+class="math inline">\(1.732\%\)</span>, giving one-sided multiplicative
+widths of <span class="math inline">\(-1.72\%\)</span> and <span
+class="math inline">\(+1.75\%\)</span>. Target-anchored ratios and
+empirical transport make this a closure diagnostic.</td><td>Interval
+certificate [6,10]</td></tr><tr><td>11</td><td>Positive-chamber Koide theorem</td><td>A Hermitian three-cycle
+response obeys <span
 class="math inline">\(Q=\frac13+\frac23(|b|/a)^2\)</span>. Hence <span
 class="math inline">\(Q=2/3\)</span> exactly at <span
 class="math inline">\(|b|/a=1/\sqrt2\)</span>. Equal finite event blocks
@@ -567,13 +560,12 @@ and ordering premises the measured electron and muon masses fix the tau
 mass inside a <span class="math inline">\(72\)</span>-eV enclosure,
 <span class="math inline">\(0.43\sigma\)</span> from measurement. The
 conditional test has a fixed precision floor and rejection rule. No
-phase selection or physical family attachment is claimed. &amp; Lean and
-exact code [7,9,13] 12 &amp; Finite de Sitter identities &amp; Pure de
-Sitter normalization, the finite entropy maximum, the exact capacity
-transfer law, its analytic curvature, and the port/edge line-graph
-identity are exact. The gravitational shock sign requires the stated
-horizon and observer dictionaries. &amp; Lean and exact code [8,10] 13
-&amp; Frozen carrier-ray propagation predictions &amp; On the real
+phase selection or physical family attachment is claimed.</td><td>Lean and
+exact code [7,9,13]</td></tr><tr><td>12</td><td>Finite de Sitter identities</td><td>Pure de Sitter normalization,
+the finite entropy maximum, the exact capacity transfer law, its
+analytic curvature, and the port/edge line-graph identity are exact. The
+gravitational shock sign requires the stated horizon and observer
+dictionaries.</td><td>Lean and exact code [8,10]</td></tr><tr><td>13</td><td>Frozen carrier-ray propagation predictions</td><td>On the real
 reciprocal finite-range cosine branch whose sole hop support is the
 complete twelve-port orbit, with no independent kinetic term through the
 displayed order, carrier covariance forces equal weights. Continuum
@@ -635,12 +627,9 @@ control, and readout are not supplied. Exact synthetic enumeration
 rejects a zero leading coefficient in every replica of the declared
 finite stress law; its nominal 95 percent intervals cover the injected
 value in 3904 of 4096 replicas. The linked higher-order pair remains
-unresolved. &amp; Lean arithmetic, exact code, custody records
-[9,13]</p>
+unresolved.</td><td>Lean arithmetic, exact code, custody records
+[9,13]</td></tr></tbody></table></div>
 </div>
-
-</div>
-
 <p>The accompanying Lean library contains more than 6600 theorem and
 lemma declarations. The count includes positive results, premise
 boundaries, and countermodels. It is useful because the formal
@@ -666,67 +655,63 @@ representation and its trace pairing are explicit inputs. Consensus
 determines which records are public; it does not derive the quantum
 representation. If <span class="math inline">\(P_E\)</span> is the
 projector for a public event <span class="math inline">\(E\)</span>,
-then <span class="math display">\[
-\Pr(E)=\operatorname{Tr}(\rho P_E),\qquad
-\rho\mid E=
-\frac{P_E\rho P_E}{\operatorname{Tr}(\rho P_E)}.
-\]</span> The first expression is the Born probability on the declared
-algebra-state surface. The second is Lüders conditioning. For dichotomic
-observables in commuting wing algebras, the corresponding
-Clauser–Horne–Shimony–Holt (CHSH) parameter satisfies <span
-class="math display">\[
-|S_{\mathrm{CHSH}}|\leq 2\sqrt2 .
-\]</span> The bound is attained exactly: a declared maximally entangled
-state with two Pauli settings on one wing and two quarter-rotated
-settings on the other reaches <span
-class="math inline">\(|S_{\mathrm{CHSH}}|=2\sqrt2\)</span> on the
-committed split interface, while every fixed record-diagonal state with
-four settings diagonal in the same basis obeys the classical bound <span
-class="math inline">\(|S_{\mathrm{CHSH}}|\leq 2\)</span>, so the counted
-classical record surface cannot attain the quantum value through those
-jointly diagonal readouts. The attaining state and settings are entirely
-real; the theorem isolates entanglement, non-diagonal coherence, and
-noncommutativity, not a necessary genuinely complex phase effect, and it
-does not cover arbitrary context-dependent classical instruments. On the
-declared binary-icosahedral spinor branch, one incidence-defined setting
-family realizes <span class="math inline">\(\lvert
-S_{\mathrm{CHSH}}\rvert=1+3/\sqrt5\)</span> exactly. The exhaustive
-twelve-port census contains (960) maximizing quadruples, so this family
-is not unique. The saturating state and settings are declared data;
-source-selected settings and a completed-record two-wing instrument are
-absent. These identities belong to an audited finite event-algebra
-development [1,10]. The theorem applies standard finite quantum
-probability and conditioning to the public-record surface selected by
-the observer contract. It does not derive the algebra-state pair, the
-Born rule from pre-quantum repair records, a source-produced CHSH
-violation, or an arbitrary continuum quantum field theory.</p>
+then <span class="math display">\[\Pr(E)=\operatorname{Tr}(\rho
+P_E),\qquad
+  \rho\mid E=
+  \frac{P_E\rho P_E}{\operatorname{Tr}(\rho P_E)}.\]</span> The first
+expression is the Born probability on the declared algebra-state
+surface. The second is Lüders conditioning. For dichotomic observables
+in commuting wing algebras, the corresponding Clauser–Horne–Shimony–Holt
+(CHSH) parameter satisfies <span
+class="math display">\[|S_{\mathrm{CHSH}}|\leq 2\sqrt2 .\]</span> The
+bound is attained exactly: a declared maximally entangled state with two
+Pauli settings on one wing and two quarter-rotated settings on the other
+reaches <span class="math inline">\(|S_{\mathrm{CHSH}}|=2\sqrt2\)</span>
+on the committed split interface, while every fixed record-diagonal
+state with four settings diagonal in the same basis obeys the classical
+bound <span class="math inline">\(|S_{\mathrm{CHSH}}|\leq 2\)</span>, so
+the counted classical record surface cannot attain the quantum value
+through those jointly diagonal readouts. The attaining state and
+settings are entirely real; the theorem isolates entanglement,
+non-diagonal coherence, and noncommutativity, not a necessary genuinely
+complex phase effect, and it does not cover arbitrary context-dependent
+classical instruments. On the declared binary-icosahedral spinor branch,
+one incidence-defined setting family realizes <span
+class="math inline">\(\lvert S_{\mathrm{CHSH}}\rvert=1+3/\sqrt5\)</span>
+exactly. The exhaustive twelve-port census contains (960) maximizing
+quadruples, so this family is not unique. The saturating state and
+settings are declared data; source-selected settings and a
+completed-record two-wing instrument are absent. These identities belong
+to an audited finite event-algebra development [1,10]. The theorem
+applies standard finite quantum probability and conditioning to the
+public-record surface selected by the observer contract. It does not
+derive the algebra-state pair, the Born rule from pre-quantum repair
+records, a source-produced CHSH violation, or an arbitrary continuum
+quantum field theory.</p>
 <p>An oriented conformal spherical support has the connected symmetry
-<span class="math display">\[
-\mathrm{Conf}^+(S^2)
+<span class="math display">\[\mathrm{Conf}^+(S^2)
 \cong \mathrm{PSL}(2,\mathbb C)
-\cong \mathrm{SO}^+(3,1).
-\]</span> The space of unit timelike observer frames is <span
-class="math display">\[
-H^3\cong
+\cong \mathrm{SO}^+(3,1).\]</span> The space of unit timelike observer
+frames is <span class="math display">\[H^3\cong
 \frac{\mathrm{SO}^+(3,1)}{\mathrm{SO}(3)},\qquad
-\dim H^3=6-3=3.
-\]</span> This is an exact kinematic result on the spherical support
-branch. Local icosahedral carrier geometry, the federation nerve, and
-the global <span class="math inline">\(S^2\)</span> support are distinct
-objects. A populated four-dimensional event base requires record
-separation, local charts, an open-image condition, affine transition
-data, a quadratic cone, and causal reachability [3].</p>
+\dim H^3=6-3=3.\]</span> This is an exact kinematic result on the
+spherical support branch. Local icosahedral carrier geometry, the
+federation nerve, and the global <span
+class="math inline">\(S^2\)</span> support are distinct objects. A
+populated four-dimensional event base requires record separation, local
+charts, an open-image condition, affine transition data, a quadratic
+cone, and causal reachability [3].</p>
 <p>On one common algebra-state tower, normalized modular flow supplies a
 local one-parameter ordering. A physical clock requires an
 observer-readable transition process and an explicit calibration.
 Half-sided modular inclusions supply positive null translations, null
 tomography assembles local stress, and generalized-entropy stationarity
-with small-ball geometry gives <span class="math display">\[
-G_{ab}+\Lambda g_{ab}
-=8\pi G_{\mathrm{geom}}\langle T_{ab}\rangle .
-\]</span> The Lean development proves the typed algebraic composition. A
-source-derived physical tower, the continuum limit, and the physical
-identification maps are premises [3,10].</p>
+with small-ball geometry gives <span
+class="math display">\[G_{ab}+\Lambda g_{ab}
+=8\pi G_{\mathrm{geom}}\langle T_{ab}\rangle .\]</span> The Lean
+development proves the typed algebraic composition. A source-derived
+physical tower, the continuum limit, and the physical identification
+maps are premises [3,10].</p>
 <p>The simulation branch fits an event form to coordinates and causal
 labels produced by repair dynamics; its coefficients are not inserted
 into the readout. The selected path uses <span
@@ -735,9 +720,8 @@ class="math inline">\((65{,}536,256,96)\)</span>, and <span
 class="math inline">\((262{,}144,512,384)\)</span> for carrier count,
 observer count, and support width. The held-out event form has inertia
 <span class="math inline">\((1,3)\)</span> at every selected rung. Its
-cone margin moves through <span class="math display">\[
--5.6,\qquad -3.2,\qquad -1.4.
-\]</span> Coupling spread decreases beside it. At <span
+cone margin moves through <span class="math display">\[-5.6,\qquad
+-3.2,\qquad -1.4.\]</span> Coupling spread decreases beside it. At <span
 class="math inline">\(262{,}144\)</span> carriers, the support-width
 <span class="math inline">\(96\)</span> control has 312 cross-observer
 edges and inertia <span class="math inline">\((2,2)\)</span>; the
@@ -779,25 +763,26 @@ canonical receipt content [10].</p>
 a common typed domain. It does not supply open manifold charts, a
 positive cone margin, continuum Stiefel–Whitney identification, physical
 field selection, or a continuum operator limit.</p>
+<p><span> </span></p>
 <p>The declared carrier lineage realizes the twelve ports with equal
 algebra traces, a realization property rather than axiom content, with
 oriented icosahedral incidence. Its proper rotation group is the
 alternating group <span class="math inline">\(A_5\)</span>. Exact finite
 calculations give the distance profile, the antipodal pairing, the sixty
 proper rotations, the rank-three Gram frame, and the decomposition of
-the real port-coefficient space <span class="math display">\[
-P_{12}\cong_{A_5}
-\mathbf1\oplus\mathbf3\oplus\mathbf3&#39;\oplus\mathbf5 .
-\]</span> Complete reversible port response in A1 supplies an injective
+the real port-coefficient space <span
+class="math display">\[P_{12}\cong_{A_5}
+\mathbf1\oplus\mathbf3\oplus\mathbf3&#39;\oplus\mathbf5 .\]</span>
+Complete reversible port response in A1 supplies an injective
 commutator-closed map <span class="math inline">\(D:P_{12}\to\mathfrak
 u(H)\)</span>. Endogenous overlap transport in A2 implements every
 proper carrier recharting inside the response-generated group. The image
 is a compact twelve-dimensional Lie algebra with a one-dimensional <span
 class="math inline">\(A_5\)</span>-fixed space. Compact classification
-then gives <span class="math display">\[
-\operatorname{im}D
-\cong\mathfrak u(1)\oplus\mathfrak{su}(2)\oplus\mathfrak{su}(3).
-\]</span> The centreless alternative is <span
+then gives <span class="math display">\[\operatorname{im}D
+\cong\mathfrak
+u(1)\oplus\mathfrak{su}(2)\oplus\mathfrak{su}(3).\]</span> The
+centreless alternative is <span
 class="math inline">\(\mathfrak{su}(2)^4\)</span>. An inner <span
 class="math inline">\(A_5\)</span> action preserves every simple factor.
 Since <span class="math inline">\(A_5\)</span> is simple, each
@@ -805,15 +790,16 @@ restricted action is trivial or faithful and has fixed dimension three
 or zero. The total cannot equal one. The surviving centre has dimension
 one and the semisimple part has dimensions <span
 class="math inline">\(3+8\)</span> [3,10].</p>
+<p><span> </span></p>
 <p>Target-blind port impulses and local recurrence readback derive <span
 class="math inline">\(R=-J\)</span> and its four band signs. The
 charged-double-triplet matrices give an exact conditional realization
-<span class="math display">\[
-\mathfrak u(3)\oplus\mathfrak{so}(3)
-\cong\mathfrak u(1)\oplus\mathfrak{su}(3)\oplus\mathfrak{su}(2).
-\]</span> The source contains no ordered reversible current tomography
-or closed overlap words tied to that same current. Matrix realization,
-coupling normalization, laboratory attachment, and identity with the
+<span class="math display">\[\mathfrak u(3)\oplus\mathfrak{so}(3)
+\cong\mathfrak
+u(1)\oplus\mathfrak{su}(3)\oplus\mathfrak{su}(2).\]</span> The source
+contains no ordered reversible current tomography or closed overlap
+words tied to that same current. Matrix realization, coupling
+normalization, laboratory attachment, and identity with the
 independently reconstructed categorical current are premises of any
 physical identification.</p>
 <p>The registered adjacency recurrence and inverse-port readback
@@ -864,35 +850,32 @@ source bracket selection, reconstruction, and same-current holonomy
 remain undischarged [9,10].</p>
 <p>Trace balancing extends the same block construction to <span
 class="math inline">\(\mathfrak s(\mathfrak u(3)\oplus\mathfrak
-u(2))\)</span>. Its connected group is <span class="math display">\[
-S(U(3)\times U(2))
+u(2))\)</span>. Its connected group is <span
+class="math display">\[S(U(3)\times U(2))
 \cong
 \frac{\mathrm{SU}(3)\times\mathrm{SU}(2)\times\mathrm U(1)}
-{\mathbb Z_6}.
-\]</span> The six-element kernel is exact for the declared tensor table.
-The independent axis calculation has Smith invariants <span
-class="math inline">\((1,1,1,1,1,6)\)</span> after diagonal and zero-sum
-axis relations are declared. The carrier measures the six axes and their
-deck action. It does not select those relations. Equality of the two
-group orders and an isomorphism between chosen generators therefore give
-a conditional algebraic match, not a physical global-form selection. A
-source-derived complete character category, a same-source loop-to-kernel
-identity, four-dimensional instanton normalization, and laboratory flux
-attachment are premises of that selection.</p>
+{\mathbb Z_6}.\]</span> The six-element kernel is exact for the declared
+tensor table. The independent axis calculation has Smith invariants
+<span class="math inline">\((1,1,1,1,1,6)\)</span> after diagonal and
+zero-sum axis relations are declared. The carrier measures the six axes
+and their deck action. It does not select those relations. Equality of
+the two group orders and an isomorphism between chosen generators
+therefore give a conditional algebraic match, not a physical global-form
+selection. A source-derived complete character category, a same-source
+loop-to-kernel identity, four-dimensional instanton normalization, and
+laboratory flux attachment are premises of that selection.</p>
 <p>The trace-balanced block <span class="math inline">\(V=\mathbb
 C^3\oplus\mathbb C^2\)</span>, with hypercharges <span
 class="math inline">\((-1/3,1/2)\)</span>, has the exterior branching
-<span class="math display">\[
-\Lambda^2V\oplus\Lambda^4V
-=Q\oplus u^c\oplus e^c\oplus d^c\oplus L .
-\]</span> It contains fifteen states, the Standard Model hypercharges
-for one generation, the expected three one-Higgs invariant lines,
-cancelled gauge and mixed anomalies, and exactly four weak doublets.
-This is a precise representation witness. The finite response source
-does not select the charged-double-triplet current or this matter
-action. Laboratory matter identification, exclusion of extra light
-sectors, and attachment of three physical families require separate
-source receipts [3].</p>
+<span class="math display">\[\Lambda^2V\oplus\Lambda^4V
+=Q\oplus u^c\oplus e^c\oplus d^c\oplus L .\]</span> It contains fifteen
+states, the Standard Model hypercharges for one generation, the expected
+three one-Higgs invariant lines, cancelled gauge and mixed anomalies,
+and exactly four weak doublets. This is a precise representation
+witness. The finite response source does not select the
+charged-double-triplet current or this matter action. Laboratory matter
+identification, exclusion of extra light sectors, and attachment of
+three physical families require separate source receipts [3].</p>
 <p>The screen coefficient module also gives an exact family-band
 selection under its named premises. Its four bands have ranks <span
 class="math inline">\(1,3,3,5\)</span>. Restricting to single complete
@@ -939,21 +922,19 @@ Identity of the two current objects on one physical source is a separate
 premise.</p>
 <p>The declared local map relates an outer detuning coordinate to an
 electromagnetic endpoint returned at the same trial input: <span
-class="math display">\[
-P=\varphi+\frac{\sqrt\pi}{A_T(P)},\qquad
-\varphi=\frac{1+\sqrt5}{2}.
-\]</span> Here <span class="math inline">\(A_T(P)\)</span> is the
-inverse electromagnetic coupling returned by the declared Thomson-limit
-map. For each declared map, outward-rounded interval Banach certificates
-prove existence and local uniqueness. A 256-piece derivative enclosure
-proves global at-most-one across the analytic domain, with an empty
-exceptional set [5,10]. The gauge-width map has the certified root <span
-class="math display">\[
-\alpha^{-1}=137.035660136946577\ldots
-\]</span> beside the 2022 Committee on Data of the International Science
-Council (CODATA) value <span
-class="math inline">\(137.035999177(21)\)</span> [11]. The relative
-separation is <span class="math inline">\(2.5\times10^{-6}\)</span>.</p>
+class="math display">\[P=\varphi+\frac{\sqrt\pi}{A_T(P)},\qquad
+\varphi=\frac{1+\sqrt5}{2}.\]</span> Here <span
+class="math inline">\(A_T(P)\)</span> is the inverse electromagnetic
+coupling returned by the declared Thomson-limit map. For each declared
+map, outward-rounded interval Banach certificates prove existence and
+local uniqueness. A 256-piece derivative enclosure proves global
+at-most-one across the analytic domain, with an empty exceptional set
+[5,10]. The gauge-width map has the certified root <span
+class="math display">\[\alpha^{-1}=137.035660136946577\ldots\]</span>
+beside the 2022 Committee on Data of the International Science Council
+(CODATA) value <span class="math inline">\(137.035999177(21)\)</span>
+[11]. The relative separation is <span
+class="math inline">\(2.5\times10^{-6}\)</span>.</p>
 <p>Neither source fixed-point solve imports the measured Thomson value.
 Their physical interpretation requires the missing source-derived,
 same-scheme hadronic transport, target-independent map selection, and a
@@ -964,19 +945,16 @@ quantity is a comparison, not a source-only prediction. The certified
 roots do not constitute an independent determination of the physical
 fine-structure constant.</p>
 <p>The source-side branch emits the electroweak chart coordinates <span
-class="math display">\[
-(M_W,M_Z)=(80.330,\,91.119)~\mathrm{GeV}.
-\]</span> Writing <span class="math inline">\(S=gv_F/2\)</span>, <span
+class="math display">\[(M_W,M_Z)=(80.330,\,91.119)~\mathrm{GeV}.\]</span>
+Writing <span class="math inline">\(S=gv_F/2\)</span>, <span
 class="math inline">\(t=g&#39;/g\)</span>, <span
 class="math inline">\(w=S^2\)</span>, and <span
 class="math inline">\(z=S^2(1+t^2)\)</span>, on the declared domain
 <span class="math inline">\(S\ne0\)</span>, <span
 class="math inline">\(1+t^2\ne0\)</span>, and <span
 class="math inline">\(1+d_Z\ne0\)</span>, the strict one-loop consumer
-has the exact factorization <span class="math display">\[
-\frac{s_W}{s_Z}
-=\frac{1+d_W}{(1+t^2)(1+d_Z)},
-\]</span> where <span
+has the exact factorization <span class="math display">\[\frac{s_W}{s_Z}
+=\frac{1+d_W}{(1+t^2)(1+d_Z)},\]</span> where <span
 class="math inline">\(d_W=\Delta_{WW}(w)/w\)</span> and <span
 class="math inline">\(d_Z=\Delta_{ZZ}(z)/z\)</span>. This is the exact
 quotient of the one-loop-truncated pole coordinates. Its strict one-loop
@@ -1015,23 +993,21 @@ test surface without claiming a source-only mass prediction. A physical
 charged determinant line, an absolute clock, and a source-emitted
 transport bridge are required for an endpoint prediction.</p>
 <p>Let <span class="math inline">\(R^3=I\)</span> and consider the
-Hermitian three-cycle response <span class="math display">\[
-C=aI+bR+\overline bR^2.
-\]</span> When its three eigenvalues are nonnegative and are read as
-square-root masses, the normalized mass coordinate satisfies <span
-class="math display">\[
-Q=\frac{\sum_i m_i}{\left(\sum_i\sqrt{m_i}\right)^2}
-=\frac13+\frac23\left(\frac{|b|}{a}\right)^2 .
-\]</span> Consequently, <span class="math display">\[
-Q=\frac23\quad\Longleftrightarrow\quad
-\frac{|b|}{a}=\frac1{\sqrt2}.
-\]</span> The phase cancels from <span class="math inline">\(Q\)</span>
-and jointly controls the two mass ratios. Equal rank-two event blocks in
-the finite tracial Gelfand–Naimark–Segal packet give the required
-modulus balance exactly [7,10]. Lean checks the circulant identity and
-equivalence. No physical chiral-family attachment or phase selection is
-claimed, so the theorem is independent of the charged-lepton diagnostic
-above.</p>
+Hermitian three-cycle response <span
+class="math display">\[C=aI+bR+\overline bR^2.\]</span> When its three
+eigenvalues are nonnegative and are read as square-root masses, the
+normalized mass coordinate satisfies <span
+class="math display">\[Q=\frac{\sum_i
+m_i}{\left(\sum_i\sqrt{m_i}\right)^2}
+=\frac13+\frac23\left(\frac{|b|}{a}\right)^2 .\]</span> Consequently,
+<span class="math display">\[Q=\frac23\quad\Longleftrightarrow\quad
+\frac{|b|}{a}=\frac1{\sqrt2}.\]</span> The phase cancels from <span
+class="math inline">\(Q\)</span> and jointly controls the two mass
+ratios. Equal rank-two event blocks in the finite tracial
+Gelfand–Naimark–Segal packet give the required modulus balance exactly
+[7,10]. Lean checks the circulant identity and equivalence. No physical
+chiral-family attachment or phase selection is claimed, so the theorem
+is independent of the charged-lepton diagnostic above.</p>
 <p>Under the balance and mass-ordering premises, the measured electron
 and muon masses determine the tau mass through one quadratic. The
 outward-rounded enclosure is <span
@@ -1055,36 +1031,32 @@ finite-range cosine kinetic symbol. The complete primitive orbit is its
 sole hop support through sixth derivative order, with no independent
 isotropic or directional term through that order. Proper carrier
 covariance makes every port weight equal. Normalizing the quadratic
-continuum term fixes <span class="math display">\[
-\omega^2(k,n)=\frac{1}{2a^2}\sum_{i=1}^{12}
-\left[1-\cos\!\left(ak\,u_i\!\cdot n\right)\right].
-\]</span> Its exact long-wavelength expansion is <span
-class="math display">\[
-\omega^2=k^2-\frac{a^2}{20}k^4+\frac{a^4}{840}k^6
-+\frac{2a^4}{7875}k^6 I_6(n)+O(a^6k^8),
-\]</span> where <span
+continuum term fixes <span
+class="math display">\[\omega^2(k,n)=\frac{1}{2a^2}\sum_{i=1}^{12}
+\left[1-\cos\!\left(ak\,u_i\!\cdot n\right)\right].\]</span> Its exact
+long-wavelength expansion is <span
+class="math display">\[\omega^2=k^2-\frac{a^2}{20}k^4+\frac{a^4}{840}k^6
++\frac{2a^4}{7875}k^6 I_6(n)+O(a^6k^8),\]</span> where <span
 class="math inline">\(I_6=(25/132)\sum_iP_6(u_i\cdot n)\)</span> is
 normalized to one on a vertex direction. “Spin six” means
 spherical-harmonic rank six, unrelated to particle spin. The coefficient
-vector obeys <span class="math display">\[
-\frac{B_6}{C_4^2}=\frac{32}{315},\qquad
+vector obeys <span
+class="math display">\[\frac{B_6}{C_4^2}=\frac{32}{315},\qquad
 \frac{B_0}{C_4^2}=\frac{10}{21},\qquad
-\frac{B_6}{B_0}=\frac{16}{75}.
-\]</span> For the declared equal-weight cosine kernel, put <span
-class="math inline">\(x=|ak|\)</span>. On <span
+\frac{B_6}{B_0}=\frac{16}{75}.\]</span> For the declared equal-weight
+cosine kernel, put <span class="math inline">\(x=|ak|\)</span>. On <span
 class="math inline">\(0&lt;x\le1\)</span>, its angular part through
-eighth order is <span class="math display">\[
-A(x)I_6(n),\qquad A(x)=\frac{2x^6(30-x^2)}{118125}&gt;0.
-\]</span> After division by <span class="math inline">\(A(x)\)</span>,
-the complete <span class="math inline">\(x^{10}\)</span>-and-higher tail
-<span class="math inline">\(E_x\)</span> obeys the exact bounds <span
-class="math display">\[
-\|\nabla E_x\|\le\frac{6875}{101152}&lt;\frac7{100},\qquad
+eighth order is <span class="math display">\[A(x)I_6(n),\qquad
+A(x)=\frac{2x^6(30-x^2)}{118125}&gt;0.\]</span> After division by <span
+class="math inline">\(A(x)\)</span>, the complete <span
+class="math inline">\(x^{10}\)</span>-and-higher tail <span
+class="math inline">\(E_x\)</span> obeys the exact bounds <span
+class="math display">\[\|\nabla
+E_x\|\le\frac{6875}{101152}&lt;\frac7{100},\qquad
 \|\operatorname{Hess}_{S^2}E_x\|
-\le\frac{383125}{562658}&lt;\frac7{10}.
-\]</span> The 62 critical directions of <span
-class="math inline">\(I_6\)</span> form 31 projective axes with exact
-minimum separation <span
+\le\frac{383125}{562658}&lt;\frac7{10}.\]</span> The 62 critical
+directions of <span class="math inline">\(I_6\)</span> form 31
+projective axes with exact minimum separation <span
 class="math inline">\(\sin^2\theta=1/2-\sqrt5/6\)</span>. An exact
 three-chart interval cover and local singular-value bounds prove that
 the full kernel has exactly these 62 stationary directions for every
@@ -1107,29 +1079,24 @@ plus an A3 unique-minimizer premise, every directed seam has weight
 positivity and is reversible for counting measure. Its generator <span
 class="math inline">\(L=I-P\)</span> satisfies the positive maximum
 principle, is diagonalized by plane waves, and obeys <span
-class="math display">\[
-2fLf-L(f^2)=\frac1{60}\sum_e
-\bigl(f(x+v_e)-f(x)\bigr)^2\geq0.
-\]</span> A seam event has squared norm <span
-class="math inline">\(4\)</span> in the raw moment chart and <span
+class="math display">\[2fLf-L(f^2)=\frac1{60}\sum_e
+\bigl(f(x+v_e)-f(x)\bigr)^2\geq0.\]</span> A seam event has squared norm
+<span class="math inline">\(4\)</span> in the raw moment chart and <span
 class="math inline">\(a_{\rm edge}^2=2-2/\sqrt5\)</span> in the
 unit-diagonal response completion. The latter is an exact internal
 dimensionless scale rather than a physical length. The exact internal
-character is <span class="math display">\[
-\Lambda_{\rm int}(\mathbf k):=
-\frac6{a_{\rm edge}^2}\lambda_L(\mathbf k).
-\]</span> The algebraic phase lift <span
-class="math inline">\((q,p)\mapsto(p,-Lq)\)</span> obeys <span
-class="math inline">\(q&#39;&#39;+Lq=0\)</span> and <span
+character is <span class="math display">\[\Lambda_{\rm int}(\mathbf k):=
+\frac6{a_{\rm edge}^2}\lambda_L(\mathbf k).\]</span> The algebraic phase
+lift <span class="math inline">\((q,p)\mapsto(p,-Lq)\)</span> obeys
+<span class="math inline">\(q&#39;&#39;+Lq=0\)</span> and <span
 class="math inline">\(\omega_{\rm aux}^2=\lambda_L\)</span>. Its second
 component and spectral root are auxiliary algebraic objects; they
 construct no trajectory, clock, energy, or physical field equation. A
 physical dilation that maps the internal step to a length <span
 class="math inline">\(a\)</span> would instead give <span
-class="math display">\[
-\Lambda_a(k,n)=\frac6{a^2}\lambda_L\!\left(
-\frac{a}{a_{\rm edge}}k n\right),
-\]</span> where <span class="math inline">\(\mathbf k=kn\)</span>, <span
+class="math display">\[\Lambda_a(k,n)=\frac6{a^2}\lambda_L\!\left(
+\frac{a}{a_{\rm edge}}k n\right),\]</span> where <span
+class="math inline">\(\mathbf k=kn\)</span>, <span
 class="math inline">\(k=|\mathbf k|\)</span>, and <span
 class="math inline">\(|n|=1\)</span>. The dilation and the
 identification <span class="math inline">\(\Lambda_a=\omega_{\rm
@@ -1137,56 +1104,50 @@ phys}^2\)</span> are separate physical premises.</p>
 <p>If these currents act as one homogeneous physical position law, form
 the sole equal-weight support of one scalar or polarization-independent
 sector, glue across charts and refinement, and share one physical scale
-and frame, the spatial symbol is <span class="math display">\[
-\Lambda_a(k,n)=\frac{1}{5a^2}\sum_{j=1}^{30}
-\left[1-\cos\!\left(ak\,w_j\!\cdot n\right)\right].
-\]</span> Its exact coefficients are <span class="math display">\[
-C_4=-\frac{a^2}{20},\qquad B_0=\frac{a^4}{840},\qquad
-B_6=-\frac{a^4}{12600},
-\]</span> with <span class="math inline">\(B_0/C_4^2=10/21\)</span>,
-<span class="math inline">\(B_6/C_4^2=-2/63\)</span>, and <span
+and frame, the spatial symbol is <span
+class="math display">\[\Lambda_a(k,n)=\frac{1}{5a^2}\sum_{j=1}^{30}
+\left[1-\cos\!\left(ak\,w_j\!\cdot n\right)\right].\]</span> Its exact
+coefficients are <span class="math display">\[C_4=-\frac{a^2}{20},\qquad
+B_0=\frac{a^4}{840},\qquad
+B_6=-\frac{a^4}{12600},\]</span> with <span
+class="math inline">\(B_0/C_4^2=10/21\)</span>, <span
+class="math inline">\(B_6/C_4^2=-2/63\)</span>, and <span
 class="math inline">\(B_6/B_0=-1/15\)</span>. Writing <span
 class="math inline">\(q=ak\)</span>, define <span
-class="math display">\[
-\widehat\Lambda(q,n)=\frac15\sum_{e=1}^{30}
-[1-\cos(q\,w_e\mathbin{\cdot}n)].
-\]</span> The exact eighth moment is <span
-class="math inline">\(M_8=10/3-(8/15)I_6(n)\)</span>. For <span
-class="math display">\[
-P_6=q^2-\frac{q^4}{20}
-+\left(\frac1{840}-\frac{I_6}{12600}\right)q^6,
+class="math display">\[\widehat\Lambda(q,n)=\frac15\sum_{e=1}^{30}
+   [1-\cos(q\,w_e\mathbin{\cdot}n)].\]</span> The exact eighth moment is
+<span class="math inline">\(M_8=10/3-(8/15)I_6(n)\)</span>. For <span
+class="math display">\[P_6=q^2-\frac{q^4}{20}
+   +\left(\frac1{840}-\frac{I_6}{12600}\right)q^6,
 \quad
-P_8=P_6+\left(-\frac1{60480}+\frac{I_6}{378000}\right)q^8,
-\]</span> alternating cosine bounds and <span
-class="math inline">\(-5/9\le I_6\le1\)</span> give, for <span
-class="math inline">\(0\le q\le1\)</span>, <span class="math display">\[
-|\widehat\Lambda-P_6|\le\frac7{388800}q^8,
+P_8=P_6+\left(-\frac1{60480}+\frac{I_6}{378000}\right)q^8,\]</span>
+alternating cosine bounds and <span class="math inline">\(-5/9\le
+I_6\le1\)</span> give, for <span class="math inline">\(0\le
+q\le1\)</span>, <span
+class="math display">\[|\widehat\Lambda-P_6|\le\frac7{388800}q^8,
 \quad 0\le\widehat\Lambda-P_8\le\frac7{34992000}q^{10},
-\quad \frac{19}{20}q^2\le\widehat\Lambda\le q^2.
-\]</span> This target-free result controls the finite spatial symbol. If
-<span class="math inline">\(\Lambda_a\)</span> is identified with
-physical <span class="math inline">\(\omega_{\rm phys}^2\)</span>, its
-positive formal branch gives <span class="math display">\[
-\omega=k-\frac{a^2}{40}k^3
+\quad \frac{19}{20}q^2\le\widehat\Lambda\le q^2.\]</span> This
+target-free result controls the finite spatial symbol. If <span
+class="math inline">\(\Lambda_a\)</span> is identified with physical
+<span class="math inline">\(\omega_{\rm phys}^2\)</span>, its positive
+formal branch gives <span
+class="math display">\[\omega=k-\frac{a^2}{40}k^3
 +a^4\left(\frac{19}{67200}-\frac{I_6}{25200}\right)k^5
-+O(a^6k^7),
-\]</span> and <span class="math display">\[
-\frac{\partial\omega}{\partial k}=1-\frac{3a^2}{40}k^2
++O(a^6k^7),\]</span> and <span
+class="math display">\[\frac{\partial\omega}{\partial
+k}=1-\frac{3a^2}{40}k^2
 +a^4\left(\frac{19}{13440}-\frac{I_6}{5040}\right)k^4
-+O(a^6k^6).
-\]</span> The transverse group-velocity term is <span
-class="math display">\[
-\mathbf v_\perp:=\frac1k\nabla_{S^2}\omega
-=-\frac{a^4k^4}{25200}\nabla_{S^2}I_6+O(a^6k^6).
-\]</span> These series are derived without comparison data. They require
-an analytic remainder for the physical-frequency branch and physical
-position, field, clock, gluing, scale, frame, readout, and nuisance
-maps. The vertex and edge rays carry opposite rank-six signs and cannot
-be combined or selected after exposure. On a branch selected without
-using comparison data, a resolved negative <span
-class="math inline">\(C_4\)</span> fixes the carrier scale and that
-branch’s two sixth-order amplitudes. The residual freedom is one
-three-parameter orientation class in <span
++O(a^6k^6).\]</span> The transverse group-velocity term is <span
+class="math display">\[\mathbf v_\perp:=\frac1k\nabla_{S^2}\omega
+=-\frac{a^4k^4}{25200}\nabla_{S^2}I_6+O(a^6k^6).\]</span> These series
+are derived without comparison data. They require an analytic remainder
+for the physical-frequency branch and physical position, field, clock,
+gluing, scale, frame, readout, and nuisance maps. The vertex and edge
+rays carry opposite rank-six signs and cannot be combined or selected
+after exposure. On a branch selected without using comparison data, a
+resolved negative <span class="math inline">\(C_4\)</span> fixes the
+carrier scale and that branch’s two sixth-order amplitudes. The residual
+freedom is one three-parameter orientation class in <span
 class="math inline">\(\mathrm{SO}(3)/A_5\)</span>. Intrinsic angular
 ranks one through five vanish, and binary refinement reduces <span
 class="math inline">\(B_6\)</span> by sixteen.</p>
@@ -1261,11 +1222,11 @@ class="math inline">\(\epsilon\)</span> the soft-photon energy. Taking
 the soft background photon to be Lorentz invariant at leading order,
 independent charged-lepton coefficients and a fixed positron energy
 share <span class="math inline">\(0&lt;x&lt;1\)</span> give the leading
-head-on, collinear threshold equation <span class="math display">\[
-\left[\delta_{\gamma,2}-x^3\delta_{+,2}
+head-on, collinear threshold equation <span
+class="math display">\[\left[\delta_{\gamma,2}-x^3\delta_{+,2}
 -(1-x)^3\delta_{-,2}\right]E^4
-+4\epsilon E-\frac{m_e^2}{x(1-x)}=0.
-\]</span> At equal sharing, only <span
++4\epsilon E-\frac{m_e^2}{x(1-x)}=0.\]</span> At equal sharing, only
+<span
 class="math inline">\(\delta_{\gamma,2}-(\delta_{+,2}+\delta_{-,2})/8\)</span>
 is visible. The coefficient map has a two-dimensional fiber, so a
 photon-only scale bound requires the published Lorentz-invariant-lepton
@@ -1276,59 +1237,55 @@ alternative source scenario containing a subdominant proton component up
 to <span class="math inline">\(10^{20}\,\mathrm{eV}\)</span> reports
 <span
 class="math inline">\(\delta_{\gamma,2}&gt;-10^{-58}\,\mathrm{eV}^{-2}\)</span>,
-which implies <span class="math display">\[
-a&lt;8.825\times10^{-36}\,\mathrm m=0.546\,\ell_P.
-\]</span> The reference source scenarios yield no electromagnetic
-constraint, and the direct bound has no stated confidence level. The
-Auger calculation also neglects direct Lorentz-violating changes of the
-Breit–Wheeler cross section and depends on source, propagation,
-atmospheric-shower, detector-response, and frame attachments absent from
-the finite source theorem. The translation is a conditional upper bound
-on an open scale and carries no OPH verdict or evidence weight
-[9,11,14].</p>
+which implies <span
+class="math display">\[a&lt;8.825\times10^{-36}\,\mathrm
+m=0.546\,\ell_P.\]</span> The reference source scenarios yield no
+electromagnetic constraint, and the direct bound has no stated
+confidence level. The Auger calculation also neglects direct
+Lorentz-violating changes of the Breit–Wheeler cross section and depends
+on source, propagation, atmospheric-shower, detector-response, and frame
+attachments absent from the finite source theorem. The translation is a
+conditional upper bound on an open scale and carries no OPH verdict or
+evidence weight [9,11,14].</p>
 <p>For pure de Sitter space of radius <span
 class="math inline">\(L\)</span> in spacetime dimension <span
-class="math inline">\(d\)</span>, <span class="math display">\[
-r_c=L,\qquad \kappa=L^{-1},\qquad
+class="math inline">\(d\)</span>, <span
+class="math display">\[r_c=L,\qquad \kappa=L^{-1},\qquad
 \mu^2=(d-2)\kappa r_c=d-2
-=\lambda_{\ell=1}(S^{d-2}).
-\]</span> The radius and cosmological constant cancel. The smooth <span
-class="math inline">\(\ell=1\)</span> modes are generated by de Sitter
-isometries and form the gauge kernel of the imported shock operator
-[8,13].</p>
+=\lambda_{\ell=1}(S^{d-2}).\]</span> The radius and cosmological
+constant cancel. The smooth <span class="math inline">\(\ell=1\)</span>
+modes are generated by de Sitter isometries and form the gauge kernel of
+the imported shock operator [8,13].</p>
 <p>For finite sector dimensions <span
 class="math inline">\(d_i\)</span>, total dimension <span
 class="math inline">\(M=\sum_i d_i\)</span>, and sector probabilities
-<span class="math inline">\(p_i\)</span>, <span class="math display">\[
-S_{\mathrm{gen}}(p,d)
+<span class="math inline">\(p_i\)</span>, <span
+class="math display">\[S_{\mathrm{gen}}(p,d)
 =-\sum_i p_i\log p_i+\sum_i p_i\log d_i
-=\log M-D_{\mathrm{rel}}(p\Vert d/M),
-\]</span> where <span class="math inline">\(D_{\mathrm{rel}}\)</span> is
-relative entropy. Thus <span class="math inline">\(p_i=d_i/M\)</span>
-gives the exact maximum <span
-class="math inline">\(S_{\mathrm{gen}}^{\max}=\log M\)</span>. If an
-observer receives a fraction <span class="math inline">\(f\)</span> of a
-fixed horizon-observer capacity and the horizon sectors deplete
-uniformly, every admissible integer transfer obeys <span
-class="math display">\[
-\Delta S_{\mathrm{gen}}^{\max}=\log(1-f)&lt;0.
-\]</span> The positive-real interpolation is strictly decreasing and
-concave. Its zero-transfer point is a one-sided boundary maximum.</p>
+=\log M-D_{\mathrm{rel}}(p\Vert d/M),\]</span> where <span
+class="math inline">\(D_{\mathrm{rel}}\)</span> is relative entropy.
+Thus <span class="math inline">\(p_i=d_i/M\)</span> gives the exact
+maximum <span class="math inline">\(S_{\mathrm{gen}}^{\max}=\log
+M\)</span>. If an observer receives a fraction <span
+class="math inline">\(f\)</span> of a fixed horizon-observer capacity
+and the horizon sectors deplete uniformly, every admissible integer
+transfer obeys <span class="math display">\[\Delta
+S_{\mathrm{gen}}^{\max}=\log(1-f)&lt;0.\]</span> The positive-real
+interpolation is strictly decreasing and concave. Its zero-transfer
+point is a one-sided boundary maximum.</p>
 <p>The associated logarithmic sector observable has symmetric-point
-Hessian <span class="math display">\[
-\operatorname{Hess}\mathcal A
-=\frac1{nd^2}\left(I-\frac2nJ\right).
-\]</span> Its fixed-total tangent curvature is positive, its homogeneous
-curvature is negative, and its symmetric-point gradient is nonzero. The
-one-sided capacity transfer carries the sign; an interior fixed-capacity
-extremum is excluded [8,10].</p>
+Hessian <span class="math display">\[\operatorname{Hess}\mathcal A
+=\frac1{nd^2}\left(I-\frac2nJ\right).\]</span> Its fixed-total tangent
+curvature is positive, its homogeneous curvature is negative, and its
+symmetric-point gradient is nonzero. The one-sided capacity transfer
+carries the sign; an interior fixed-capacity extremum is excluded
+[8,10].</p>
 <p>On the twelve-port icosahedral graph, the raw Laplacian spectrum and
 regular line-graph identity are exact. If the rotation triplet is an
 exact gauge sector and the physical shock kinetic term is the scaled
 nearest-neighbour port or edge Laplacian, normalization at that triplet
-gives <span class="math display">\[
-\{-2,\ 0,\ 1+3/\sqrt5,\ 1+\sqrt5\}.
-\]</span> The edge carrier adds only eigenvalue <span
+gives <span class="math display">\[\{-2,\ 0,\ 1+3/\sqrt5,\
+1+\sqrt5\}.\]</span> The edge carrier adds only eigenvalue <span
 class="math inline">\(10\)</span> with multiplicity <span
 class="math inline">\(18\)</span>. Identifying capacity with horizon
 area, the transfer coordinate with observer mass, and the finite
@@ -1374,9 +1331,9 @@ arithmetic closures, strict electroweak scalar analytic checks, and
 explicit physical attachments that can succeed or fail. That combination
 supports a serious observer-first route toward unification. It does not
 amount to a completed physical theory of everything.</p>
+<p><span> </span></p>
 <div class="multicols">
-
-<p>2</p>
+<p><span>2</span></p>
 <p><strong>[1]</strong> Mueller, B., et al. (2026). <a
 href="https://wkaxfdgxoqmghwgshymt.supabase.co/storage/v1/object/public/papers/from_observer_consensus_to_standard_physics.pdf">“From
 Observer Consensus to Standard Physics.”</a></p>
@@ -1385,7 +1342,8 @@ href="https://github.com/FloatingPragma/observer-patch-holography/blob/main/pape
 as a Consensus Protocol.”</a></p>
 <p><strong>[3]</strong> Müller, B., et al. (2026). <a
 href="https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/recovering_observer_spacetime_and_einstein_dynamics_from_overlap_consistency.pdf">“Recovering
-Observer Spacetime and Einstein Dynamics from Overlap Consistency.”</a>
+Observer Spacetime and Einstein Dynamics from Overlap
+Consistency.”</a><br />
 <a
 href="https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/deriving_standard_model_gauge_structure_from_observer_overlap_consistency.pdf">“Deriving
 Standard Model Gauge Structure from Observer Overlap
@@ -1440,8 +1398,8 @@ the Pierre Auger Observatory,” JCAP 01 (2022) 023</a>.</p>
 href="https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/observers_are_all_you_need.pdf">“Observers
 Are All You Need.”</a></p>
 </div>
-
-<h1 id="ai-assistance-disclosure">AI Assistance Disclosure</h1>
+<h2 class="unnumbered" id="ai-assistance-disclosure">AI Assistance
+Disclosure</h2>
 <p>This research project used research-grade commercial models,
 including Anthropic’s Fable and OpenAI’s GPT-5.6-Sol, for research
 support, software development, editing, and synthesis. The authors are
@@ -1452,15 +1410,15 @@ responsible for the paper’s claims, methods, and final text.</p>
       </article>
     </main>
     <footer class="site-footer reveal">
-      <div>Pragma</div>
+      <div>Floating Pragma</div>
       <div class="site-footer-links">
-        <a href="/oph/" data-track-link="footer-hub">Observer Patch Holography</a>
+        <a href="/oph/" data-track-link="footer-hub">Research</a>
         <a href="/oph/papers/" data-track-link="footer-papers">Papers</a>
-        <a href="/oph/standard-model-gravity-unification/" data-track-link="footer-smg">SM + Gravity</a>
-        <a href="/oph/theory-of-everything/" data-track-link="footer-toe">Theory of Everything</a>
-        <a href="/oph/simulation-theory/" data-track-link="footer-sim">Simulation Theory</a>
-        <a href="/oph/quantum-gravity/" data-track-link="footer-qg">Quantum Gravity</a>
-        <a href="https://challenge.floatingpragma.io/" data-track-link="footer-challenge">Challenge</a>
+        <a href="https://learn.floatingpragma.io/" data-track-link="footer-learn">Learn</a>
+        <a href="https://oph-lab.floatingpragma.io/" data-track-link="footer-lab">Lab</a>
+        <a href="https://simulation.floatingpragma.io/" data-track-link="footer-simulation">Simulation</a>
+        <a href="https://github.com/FloatingPragma/observer-patch-holography/" data-track-link="footer-github">GitHub</a>
+        <a href="https://oph-book.floatingpragma.io/" data-track-link="footer-webbook">Webbook v2</a>
       </div>
     </footer>
 

@@ -10,7 +10,7 @@ This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 - HTML: https://floatingpragma.io/oph/papers/standard-model-gauge-structure/
 - PDF: https://floatingpragma.io/oph/papers/standard-model-gauge-structure/paper.pdf
 - Authors: Bernhard Mueller, Alexander Osika, Mario Poneder, Kai Xue, Peter Nguyen, David Matscheko
-- Affiliations: Bernhard Mueller, Pragma Research Inc.; Alexander Osika, Asimov Labs
+- Affiliations: Bernhard Mueller, Pragma Research Inc.; Alexander Osika, EtherWorks
 - Category: Gauge structure
 - Summary: Examines two mathematical routes from observer overlap to the symmetry structure used by the Standard Model. The physical identification of that structure is an open question.
 
@@ -19,17 +19,18 @@ This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 - HTML: https://floatingpragma.io/oph/papers/particle-spectrum-from-observer-consistency/
 - PDF: https://floatingpragma.io/oph/papers/particle-spectrum-from-observer-consistency/paper.pdf
 - Authors: Bernhard Mueller, Alexander Osika, Mario Poneder, Kai Xue
-- Affiliations: Bernhard Mueller, Pragma Research Inc.; Alexander Osika, Asimov Labs
+- Affiliations: Bernhard Mueller, Pragma Research Inc.; Alexander Osika, EtherWorks
 - Category: Particles
 - Summary: Explores whether the observer-consistency framework can account for particles and physical constants. Several comparisons are mathematical or conditional, and their connection to measured physics remains open.
 
-## From Observer Consensus to Standard Physics
+## Finite Observer Consensus as a Reconstruction Principle: Normal Forms, the Standard Model Lie Type, and a Route to the Einstein Field Equation
 
 - HTML: https://floatingpragma.io/oph/papers/from-observer-consensus-to-standard-physics/
 - PDF: https://floatingpragma.io/oph/papers/from-observer-consensus-to-standard-physics/paper.pdf
-- Authors: % Bernhard Mueller Alexander Osika Mario Poneder Kai Xue
-- Category: Flagship introduction
-- Summary: An introduction to Observer Patch Holography. It asks whether limited systems that compare records and repair disagreement can explain parts of quantum theory, gravity, and particle physics.
+- Authors: Bernhard Mueller, Alexander Osika, Mario Poneder, Kai Xue, Ben Cassie, Peter Nguyen, Jinwook Kim, David Matscheko, Jonathan Hill, William T. Glynn, Maarten Antoine Visser, Kale Arnav Anirudha
+- Affiliations: Bernhard Mueller, Pragma Research Inc.; Alexander Osika, EtherWorks
+- Category: Flagship reconstruction paper
+- Summary: The flagship technical account of Observer Patch Holography. It develops finite consensus normal forms, Standard Model Lie-type reconstruction, and a conditional route to the Einstein field equation, with the physical identification steps stated separately.
 
 ## Paradise as Fixed-Point Consensus
 
@@ -54,7 +55,7 @@ This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 - HTML: https://floatingpragma.io/oph/papers/observer-spacetime-einstein-dynamics/
 - PDF: https://floatingpragma.io/oph/papers/observer-spacetime-einstein-dynamics/paper.pdf
 - Authors: Bernhard Mueller, Alexander Osika, Mario Poneder, Kai Xue, Peter Nguyen, Maarten Antoine Visser, David Matscheko
-- Affiliations: Bernhard Mueller, Pragma Research Inc.; Alexander Osika, Asimov Labs
+- Affiliations: Bernhard Mueller, Pragma Research Inc.; Alexander Osika, EtherWorks
 - Category: Gravity
 - Summary: Explores how shared observer records could lead to spacetime and gravity. The paper states the mathematical results and the conditions needed to connect them to physical gravity.
 
@@ -63,7 +64,7 @@ This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 - HTML: https://floatingpragma.io/oph/papers/screen-microphysics-and-observer-synchronization/
 - PDF: https://floatingpragma.io/oph/papers/screen-microphysics-and-observer-synchronization/paper.pdf
 - Authors: Bernhard Mueller, Alexander Osika, Kai Xue, Ben Cassie
-- Affiliations: Bernhard Mueller, Pragma Research Inc.; Alexander Osika, Asimov Labs
+- Affiliations: Bernhard Mueller, Pragma Research Inc.; Alexander Osika, EtherWorks
 - Category: Screen physics
 - Summary: Studies a finite observer model with records, synchronization, measurement, and possible hardware evidence. It separates mathematical results from open questions about their physical realization.
 

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=Space+Grotesk:wght@400;500;700&display=swap");
 
 :root {
   --bg: #040609;
@@ -196,14 +196,15 @@ a {
 }
 
 .primary-resource-strip {
-  margin: 10px 0 32px;
-  padding: 10px;
-  display: grid;
-  grid-template-columns: auto repeat(3, minmax(200px, 1fr));
-  gap: 8px;
-  align-items: stretch;
+  margin: 8px 0 20px;
+  padding: 8px;
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  overflow-x: auto;
+  scrollbar-width: thin;
   border: 1px solid rgba(228, 200, 118, 0.22);
-  border-radius: var(--radius);
+  border-radius: var(--radius-sm);
   background:
     linear-gradient(135deg, rgba(228, 200, 118, 0.095), rgba(78, 231, 255, 0.045)),
     rgba(255, 255, 255, 0.02);
@@ -212,7 +213,7 @@ a {
 }
 
 .primary-resource-label {
-  align-self: center;
+  flex: 0 0 auto;
   color: var(--gold);
   font-family: "JetBrains Mono", monospace;
   font-size: 0.58rem;
@@ -223,12 +224,14 @@ a {
 }
 
 .primary-resource-link {
-  min-height: 68px;
+  min-width: 160px;
+  min-height: 0;
+  flex: 1 1 190px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 5px;
-  padding: 13px 15px;
+  padding: 9px 11px;
   border: 1px solid rgba(255, 255, 255, 0.085);
   border-radius: calc(var(--radius) - 8px);
   background:
@@ -270,7 +273,6 @@ a {
 }
 
 .compact-resource-strip {
-  grid-template-columns: auto repeat(3, minmax(140px, 1fr));
   padding: 9px;
   gap: 8px;
 }
@@ -1027,8 +1029,8 @@ h3 {
 
 .paper-reader-header h1 {
   max-width: 980px;
-  font-size: clamp(2.25rem, 5.2vw, 5.15rem);
-  line-height: 0.95;
+  font-size: clamp(2.15rem, 4.5vw, 4.35rem);
+  line-height: 1.01;
   margin-bottom: 18px;
   letter-spacing: -0.055em;
 }
@@ -1232,9 +1234,9 @@ h3 {
   margin: 0 auto;
   padding: clamp(30px, 5vw, 58px) clamp(24px, 5.3vw, 64px) 76px;
   color: #f8fafc;
-  font-family: "Space Grotesk", sans-serif;
-  font-size: clamp(1.12rem, 1.16vw, 1.2rem);
-  line-height: 1.78;
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: clamp(1.08rem, 1.12vw, 1.18rem);
+  line-height: 1.76;
 }
 
 .paper-body h1,
@@ -1245,6 +1247,13 @@ h3 {
   color: #ffffff;
   line-height: 1.06;
   letter-spacing: -0.035em;
+}
+
+.paper-body h1,
+.paper-body h2,
+.paper-body h3,
+.paper-body h4 {
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .paper-body h1 {
@@ -1270,7 +1279,7 @@ h3 {
 .paper-body p,
 .paper-body li,
 .paper-body dd {
-  max-width: 86ch;
+  max-width: 76ch;
   color: #eaf0f7;
 }
 
@@ -1285,7 +1294,7 @@ h3 {
 
 .paper-body ul,
 .paper-body ol {
-  max-width: 86ch;
+  max-width: 76ch;
   padding-left: 24px;
   margin: 0 0 20px;
 }
@@ -1295,7 +1304,7 @@ h3 {
 }
 
 .paper-body blockquote {
-  max-width: 86ch;
+  max-width: 76ch;
   margin: 26px 0;
   padding: 18px 20px;
   border-left: 3px solid rgba(78, 231, 255, 0.5);
@@ -1349,6 +1358,43 @@ h3 {
 .paper-body th {
   color: #ffffff;
   background: rgba(78, 231, 255, 0.09);
+  font-family: "Space Grotesk", sans-serif;
+  text-align: left;
+  line-height: 1.4;
+}
+
+.paper-body tbody tr:nth-child(even) td,
+.paper-body tbody tr:nth-child(even) th[scope="row"] {
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.paper-body a[data-reference-type] {
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.55em;
+  padding: 0 0.34em;
+  border: 1px solid rgba(78, 231, 255, 0.22);
+  border-radius: 0.35em;
+  background: rgba(78, 231, 255, 0.055);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.74em;
+  line-height: 1;
+}
+
+.paper-body .paper-citation {
+  white-space: nowrap;
+  color: var(--gold);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.7em;
+  letter-spacing: 0.02em;
+}
+
+.paper-body .paper-cross-reference {
+  white-space: nowrap;
+  color: var(--cyan);
+  border-bottom: 1px dotted rgba(78, 231, 255, 0.4);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.72em;
 }
 
 .paper-body .math {
@@ -1383,7 +1429,10 @@ h3 {
 .paper-body .theorem,
 .paper-body .proof,
 .paper-body .corollary,
-.paper-body .remark {
+.paper-body .remark,
+.paper-body .boundary,
+.paper-body .example,
+.paper-body .problem {
   max-width: 92ch;
   margin: 28px 0;
   padding: 20px 22px;
@@ -1410,7 +1459,10 @@ h3 {
 .paper-body .theorem > :last-child,
 .paper-body .proof > :last-child,
 .paper-body .corollary > :last-child,
-.paper-body .remark > :last-child {
+.paper-body .remark > :last-child,
+.paper-body .boundary > :last-child,
+.paper-body .example > :last-child,
+.paper-body .problem > :last-child {
   margin-bottom: 0;
 }
 
@@ -1520,21 +1572,17 @@ h3 {
   }
 
   .primary-resource-strip {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    overflow: visible;
+    display: flex;
+    overflow-x: auto;
   }
 
   .primary-resource-label {
-    grid-column: 1 / -1;
-    white-space: normal;
-    display: flex;
-    align-items: center;
-    max-width: 82px;
+    white-space: nowrap;
   }
 
   .primary-resource-link {
-    min-height: 62px;
+    min-width: 170px;
+    min-height: 0;
   }
 
   .site-header {
