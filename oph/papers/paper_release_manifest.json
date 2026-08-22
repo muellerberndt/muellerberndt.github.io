@@ -5,13 +5,7 @@
     "sha256": "0b9140e22af6d4543cf3b1ed1e796b083eef3d7469a7a6102755c355ae91be3d",
     "size_bytes": 1914057
   },
-  "extra_papers": {
-    "compact_proof_of_oph": {
-      "pdf_path": "extra/compact_proof_of_oph.pdf",
-      "sha256": "107356baab689a8b7867ab2068a05ee847da88eb5a0ae1e549c70acdf7069a05",
-      "size_bytes": 173174
-    }
-  },
+  "extra_papers": {},
   "generated_at": "2026-08-22T00:00:00Z",
   "papers": {
     "deriving_standard_model_gauge_structure_from_observer_overlap_consistency": {
@@ -36,8 +30,8 @@
     },
     "reality_as_consensus_protocol": {
       "pdf_path": "paper/reality_as_consensus_protocol.pdf",
-      "sha256": "740407753e7c8ea515982ceb37c3d7b87be5688e1776df16d3accf5d67a173e6",
-      "size_bytes": 461477
+      "sha256": "0e20a219d5cbde2fef4c97d509b9c98a98b2088131b06ac1031e4d11ea3489e3",
+      "size_bytes": 464542
     },
     "recovering_observer_spacetime_and_einstein_dynamics_from_overlap_consistency": {
       "pdf_path": "paper/recovering_observer_spacetime_and_einstein_dynamics_from_overlap_consistency.pdf",

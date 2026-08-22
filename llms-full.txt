@@ -36,7 +36,6 @@ The formal library contains more than 6,600 public Lean theorem and lemma declar
 ## Paper Stack
 
 - Flagship reconstruction paper: https://floatingpragma.io/oph/papers/from-observer-consensus-to-standard-physics/
-- Compact OPH overview: https://floatingpragma.io/oph/papers/compact-proof-of-oph/
 - Observer spacetime and Einstein dynamics: https://floatingpragma.io/oph/papers/observer-spacetime-einstein-dynamics/
 - Standard Model gauge structure: https://floatingpragma.io/oph/papers/standard-model-gauge-structure/
 - Particle spectrum: https://floatingpragma.io/oph/papers/particle-spectrum-from-observer-consistency/

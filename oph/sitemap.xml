@@ -120,10 +120,4 @@
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
-  <url>
-    <loc>https://floatingpragma.io/oph/papers/compact-proof-of-oph/</loc>
-    <lastmod>2026-08-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
-  </url>
 </urlset>
