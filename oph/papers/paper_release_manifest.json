@@ -1,50 +1,50 @@
 {
   "book": {
-    "built_for_release_id": "r2029",
+    "built_for_release_id": "r2030",
     "pdf_path": "book/reverse-engineering-reality-book.pdf",
-    "sha256": "2045d16a2f1537dc3738b9ce556944d85f98c86246dc02d272c22e85faf891e9",
+    "sha256": "23609fd8dac453754b6019a36d0170550424aa0da7a2c5b5bff0a295f9afd506",
     "size_bytes": 1326140
   },
   "extra_papers": {},
-  "generated_at": "2026-08-26T00:00:00Z",
+  "generated_at": "2026-08-27T00:00:00Z",
   "papers": {
     "deriving_standard_model_gauge_structure_from_observer_overlap_consistency": {
       "pdf_path": "paper/deriving_standard_model_gauge_structure_from_observer_overlap_consistency.pdf",
-      "sha256": "c45af1029570de03d4e6ada833bba2cddb96d2f86271665b0314de3c35df203a",
-      "size_bytes": 608060
+      "sha256": "1455182f5d3143bdc19266abbab3b2fd030ea10d599c9a7f719eecff518126d9",
+      "size_bytes": 617404
     },
     "deriving_the_particle_zoo_from_observer_consistency": {
       "pdf_path": "paper/deriving_the_particle_zoo_from_observer_consistency.pdf",
-      "sha256": "bbda67927524bac998820756ec66a048523af3a729e8c17a42106c46367d9217",
-      "size_bytes": 658071
+      "sha256": "b383ac679f84cab6535bd3e3a4f3862d945a34b3e1b062f136f53cdd9a92a6d6",
+      "size_bytes": 670782
     },
     "from_observer_consensus_to_standard_physics": {
       "pdf_path": "flagship/from_observer_consensus_to_standard_physics.pdf",
-      "sha256": "3c979707bc9a762007ad53bff06e7967abef1ac4b35fee88777cc2cb03e12ff8",
-      "size_bytes": 382724
+      "sha256": "059ab7cf5c0484622f54a6195d4e6bb52ec39ee94d2bd160dc499392c92605ea",
+      "size_bytes": 410725
     },
     "paradise_as_fixed_point_consensus": {
       "pdf_path": "paper/paradise_as_fixed_point_consensus.pdf",
-      "sha256": "8420b14cd92fc61418d7f0d568b56912fe18a4bfe3f176f8c8c77db6cfd76f67",
-      "size_bytes": 170890
+      "sha256": "3f5eae8956169f20d16b44e1b9e97e93550b6539189f38d8e1f7c7777f9cb1c6",
+      "size_bytes": 170995
     },
     "reality_as_consensus_protocol": {
       "pdf_path": "paper/reality_as_consensus_protocol.pdf",
-      "sha256": "721ca75ac29e7ef27e2b83ff7afbcd6b5d2ed201eaae027c956da3e9628e0980",
-      "size_bytes": 468109
+      "sha256": "a684c89a873b5720f7c2821fb75853a4fe9cfa38d55a659d422ed427c7d6e2a8",
+      "size_bytes": 471796
     },
     "recovering_observer_spacetime_and_einstein_dynamics_from_overlap_consistency": {
       "pdf_path": "paper/recovering_observer_spacetime_and_einstein_dynamics_from_overlap_consistency.pdf",
-      "sha256": "ab002909ce1e77a28d9e0c58fb48cfb09e4afcfe76301ee2d406ac5aa3094b9d",
-      "size_bytes": 589833
+      "sha256": "7e68f1cee165e774005788de4ce23a16da7f3c96eaf880c75c6ad60a0c43dab1",
+      "size_bytes": 609560
     },
     "screen_microphysics_and_observer_synchronization": {
       "pdf_path": "paper/screen_microphysics_and_observer_synchronization.pdf",
-      "sha256": "f8569608f336cf9663818b68bc8969be75427f4335bf6e5210c65b54b47f7a5c",
-      "size_bytes": 397669
+      "sha256": "1eb1d963c222afb6bd1bff9992f2ed6037b783add2300069ed355ab3e3585189",
+      "size_bytes": 403930
     }
   },
-  "release_id": "r2029",
-  "released_at": "August 26, 2026",
+  "release_id": "r2030",
+  "released_at": "August 27, 2026",
   "supplemental_papers": {}
 }
