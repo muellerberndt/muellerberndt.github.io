@@ -1,7 +1,7 @@
 # Observer Patch Holography Papers
 
-Release: r2031
-Released: August 27, 2026
+Release: r2033
+Released: August 30, 2026
 
 This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 
