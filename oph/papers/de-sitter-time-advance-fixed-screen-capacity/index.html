@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The de Sitter Time-Advance Sign from a Finite Screen with Fixed Capacity | OPH Paper</title>
+  <meta name="title" content="The de Sitter Time-Advance Sign from a Finite Screen with Fixed Capacity | OPH Paper" />
+  <meta name="description" content="Derives finite entropy, capacity-transfer, analytic-curvature, and graph-spectrum identities that conditionally reproduce the de Sitter time-advance sign. The gravitational shock dictionary and coefficient remain separate physical inputs." />
+  <meta name="keywords" content="de Sitter horizon, time advance, finite screen capacity, generalized entropy, horizon shock, icosahedral graph, Observer Patch Holography" />
+  <meta name="author" content="Pragma" />
+  <link rel="canonical" href="https://floatingpragma.io/oph/papers/de-sitter-time-advance-fixed-screen-capacity/" />
+  <link rel="related" href="https://floatingpragma.io/oph/" title="Observer Patch Holography" />
+  <link rel="related" href="https://learn.floatingpragma.io/" title="OPH Learning Library" />
+  <link rel="related" href="https://oph-lab.floatingpragma.io/" title="OPH Lab" />
+  <link rel="related" href="https://simulation.floatingpragma.io/" title="OPH Simulation" />
+  <link rel="related" href="https://github.com/FloatingPragma/observer-patch-holography/" title="OPH Source Repository" />
+  <link rel="related" href="https://oph-book.floatingpragma.io/" title="OPH Webbook v2" />
+  <link rel="related" href="https://blog.floatingpragma.io/the-trigger" title="The Trigger" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="citation_title" content="The de Sitter Time-Advance Sign from a Finite Screen with Fixed Capacity" />
+  <meta name="citation_author" content="Bernhard Mueller" />
+  <meta name="citation_author_institution" content="Pragma Research Inc." />
+  <meta name="citation_publication_date" content="2026/08/30" />
+  <meta name="citation_online_date" content="2026/08/30" />
+  <meta name="citation_language" content="en" />
+  <meta name="citation_keywords" content="de Sitter horizon; time advance; finite screen capacity; generalized entropy; horizon shock; icosahedral graph; Observer Patch Holography" />
+  <meta name="citation_pdf_url" content="https://floatingpragma.io/oph/papers/de-sitter-time-advance-fixed-screen-capacity/paper.pdf" />
+  <meta name="citation_abstract_html_url" content="https://floatingpragma.io/oph/papers/de-sitter-time-advance-fixed-screen-capacity/" />
+  <meta name="citation_technical_report_institution" content="Pragma Research" />
+  <meta name="citation_technical_report_number" content="OPH r2033 de_sitter_time_advance_sign_from_fixed_screen_capacity" />
+  <meta name="DC.title" content="The de Sitter Time-Advance Sign from a Finite Screen with Fixed Capacity" />
+  <meta name="DC.creator" content="Bernhard Mueller" />
+  <meta name="DC.issued" content="2026/08/30" />
+  <meta name="DC.date" content="2026/08/30" />
+  <meta name="DC.type" content="Text" />
+  <meta name="DC.format" content="text/html" />
+  <meta name="DC.language" content="en" />
+  <meta name="DC.publisher" content="Pragma Research" />
+  <meta name="DC.identifier" content="https://floatingpragma.io/oph/papers/de-sitter-time-advance-fixed-screen-capacity/" />
+  <meta name="DC.identifier" content="https://floatingpragma.io/oph/papers/de-sitter-time-advance-fixed-screen-capacity/paper.pdf" />
+  <meta name="article:published_time" content="2026-08-30T00:00:00Z" />
+  <meta name="article:modified_time" content="2026-08-30T00:00:00Z" />
+  <meta name="prism.publicationDate" content="2026/08/30" />
+  <meta name="prism.publicationName" content="Observer Patch Holography Papers" />
+  <meta name="prism.section" content="de Sitter physics" />
+  <meta name="prism.url" content="https://floatingpragma.io/oph/papers/de-sitter-time-advance-fixed-screen-capacity/" />
+  <meta name="prism.copyright" content="2026 Pragma Research" />
+  <link rel="alternate" type="application/pdf" href="https://floatingpragma.io/oph/papers/de-sitter-time-advance-fixed-screen-capacity/paper.pdf" title="The de Sitter Time-Advance Sign from a Finite Screen with Fixed Capacity PDF" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://floatingpragma.io/oph/papers/de-sitter-time-advance-fixed-screen-capacity/" />
+  <meta property="og:title" content="The de Sitter Time-Advance Sign from a Finite Screen with Fixed Capacity | OPH Paper" />
+  <meta property="og:description" content="Derives finite entropy, capacity-transfer, analytic-curvature, and graph-spectrum identities that conditionally reproduce the de Sitter time-advance sign. The gravitational shock dictionary and coefficient remain separate physical inputs." />
+  <meta property="og:image" content="https://floatingpragma.io/og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Floating Pragma research for self-reading systems" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="The de Sitter Time-Advance Sign from a Finite Screen with Fixed Capacity | OPH Paper" />
+  <meta name="twitter:description" content="Derives finite entropy, capacity-transfer, analytic-curvature, and graph-spectrum identities that conditionally reproduce the de Sitter time-advance sign. The gravitational shock dictionary and coefficient remain separate physical inputs." />
+  <meta name="twitter:image" content="https://floatingpragma.io/og.png" />
+  <meta name="twitter:image:alt" content="Floating Pragma research for self-reading systems" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="stylesheet" href="/oph/styles.css" />
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['\\(', '\\)'], ['$', '$']], displayMath: [['\\[', '\\]']] },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "The de Sitter Time-Advance Sign from a Finite Screen with Fixed Capacity",
+  "name": "The de Sitter Time-Advance Sign from a Finite Screen with Fixed Capacity",
+  "description": "Derives finite entropy, capacity-transfer, analytic-curvature, and graph-spectrum identities that conditionally reproduce the de Sitter time-advance sign. The gravitational shock dictionary and coefficient remain separate physical inputs.",
+  "url": "https://floatingpragma.io/oph/papers/de-sitter-time-advance-fixed-screen-capacity/",
+  "sameAs": "https://floatingpragma.io/oph/papers/de-sitter-time-advance-fixed-screen-capacity/paper.pdf",
+  "encoding": {
+    "@type": "MediaObject",
+    "contentUrl": "https://floatingpragma.io/oph/papers/de-sitter-time-advance-fixed-screen-capacity/paper.pdf",
+    "encodingFormat": "application/pdf"
+  },
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Bernhard Mueller",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Pragma Research Inc."
+      }
+    }
+  ],
+  "isPartOf": {
+    "@type": "ResearchProject",
+    "name": "Observer Patch Holography",
+    "url": "https://floatingpragma.io/oph/"
+  },
+  "keywords": [
+    "de Sitter horizon",
+    "time advance",
+    "finite screen capacity",
+    "generalized entropy",
+    "horizon shock",
+    "icosahedral graph",
+    "Observer Patch Holography"
+  ],
+  "datePublished": "August 30, 2026",
+  "dateModified": "August 30, 2026",
+  "version": "r2033",
+  "subjectOf": [
+    {
+      "@type": "BlogPosting",
+      "headline": "The Trigger",
+      "url": "https://blog.floatingpragma.io/the-trigger",
+      "description": "High-level public entry point for the OPH claim."
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Floating Pragma",
+      "item": "https://floatingpragma.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Observer Patch Holography",
+      "item": "https://floatingpragma.io/oph/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "OPH Papers",
+      "item": "https://floatingpragma.io/oph/papers/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "The de Sitter Time-Advance Sign from a Finite Screen with Fixed Capacity",
+      "item": "https://floatingpragma.io/oph/papers/de-sitter-time-advance-fixed-screen-capacity/"
+    }
+  ]
+}
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HLGH209WMG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-HLGH209WMG', { cookie_domain: 'floatingpragma.io' });
+  </script>
+</head>
+<body class="oph-page paper-page">
+  <div class="site-grid"></div>
+  <div class="page-shell">
+    <header class="site-header reveal">
+      <a class="brand" href="/oph/">
+        <span class="brand-mark">
+          <img src="/pragma-cropped.jpg" alt="Pragma" />
+        </span>
+        <span class="brand-copy">
+          <strong>Floating Pragma</strong>
+          <span>OPH Paper</span>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="OPH navigation">
+        <a href="/oph/" data-track-link="nav-hub">Research</a>
+        <a href="/oph/papers/" data-track-link="nav-papers">Papers</a>
+        <a href="https://learn.floatingpragma.io/" data-track-link="nav-learn">Learn</a>
+        <a href="https://oph-lab.floatingpragma.io/" data-track-link="nav-lab">Lab</a>
+        <a href="https://simulation.floatingpragma.io/" data-track-link="nav-simulation">Simulation</a>
+        <a href="https://github.com/FloatingPragma/observer-patch-holography/" data-track-link="nav-github">GitHub</a>
+        <a href="https://oph-book.floatingpragma.io/" data-track-link="nav-webbook">Webbook v2</a>
+      </nav>
+    </header>
+
+    <main>
+      <article class="paper-reader reveal">
+        <header class="paper-reader-header">
+          <div class="eyebrow">de Sitter physics</div>
+          <h1 class="citation_title">The de Sitter Time-Advance Sign from a Finite Screen with Fixed Capacity</h1>
+          <h3 class="citation_author">Author: Bernhard Mueller</h3>
+          <p class="paper-reader-affiliations"><strong>Affiliations:</strong> Bernhard Mueller, Pragma Research Inc.</p>
+          <div class="paper-reader-abstract">
+            <strong>Abstract</strong>
+            <p>Derives finite entropy, capacity-transfer, analytic-curvature, and graph-spectrum identities that conditionally reproduce the de Sitter time-advance sign. The gravitational shock dictionary and coefficient remain separate physical inputs.</p>
+          </div>
+          <div class="paper-meta-line">
+            <span>r2033</span>
+            <span>August 30, 2026</span>
+            <span>extra papers</span>
+          </div>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="/oph/papers/de-sitter-time-advance-fixed-screen-capacity/paper.pdf" target="_blank" rel="noopener noreferrer" data-track-link="paper-pdf-de_sitter_time_advance_sign_from_fixed_screen_capacity">Download PDF</a>
+            <a class="btn btn-secondary" href="/oph/papers/" data-track-link="paper-index">All OPH papers</a>
+            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r2033" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
+            <a class="btn btn-secondary" href="https://challenge.floatingpragma.io/" data-track-link="paper-challenge">Challenge</a>
+          </div>
+
+          <nav class="paper-link-strip" aria-label="Related OPH essays">
+            <span>Related essays</span>
+            <a href="https://blog.floatingpragma.io/the-trigger" target="_blank" rel="noopener noreferrer" data-track-link="paper-blog-de_sitter_time_advance_sign_from_fixed_screen_capacity">The Trigger</a>
+          </nav>
+
+          <details class="paper-section-jump">
+            <summary>Section jump</summary>
+            <nav class="paper-toc" aria-label="Paper sections"><a href="#the-sign-problem">The sign problem</a>
+<a href="#the-smooth-de-sitter-normalization">The smooth de Sitter normalization</a>
+<a href="#finite-entropy-and-the-capacity-transfer-direction">Finite entropy and the capacity-transfer direction</a>
+<a href="#sec:spectrum">Conditional icosahedral spectrum</a>
+<a href="#the-repair-generator-has-a-different-domain">The repair generator has a different domain</a>
+<a href="#the-fixed-capacity-equation-of-state">The fixed-capacity equation of state</a>
+<a href="#claim-boundary">Claim boundary</a>
+<a href="#conclusion">Conclusion</a></nav>
+          </details>
+        </header>
+        <div class="paper-reader-grid">
+          <div class="paper-body">
+<div class="center">
+<p><strong>Paper release:</strong>
+<code>r2033</code><strong>Released:</strong> August 30, 2026</p>
+</div>
+<div class="center">
+<p><strong>Author affiliation:</strong> Bernhard Mueller, Pragma
+Research Inc.</p>
+</div>
+<p><strong>Keywords:</strong> de Sitter horizon, shock wave, static
+patch, finite screen, generalized entropy, icosahedral graph</p>
+<h2 id="the-sign-problem">The sign problem</h2>
+<p>Chen, Stanford, Tang, and Yang study a static-patch proposal in which
+a Euclidean gravitational path integral with an observer worldline
+computes a Hilbert-space trace <span class="paper-citation" title="Citation: chenStanfordTangYang2026">[source]</span>. Their shock-wave
+calculation includes observer recoil and gravitational backreaction. The
+resulting out-of-time-ordered correlator conflicts with cyclicity and
+positivity: its leading regularized contribution increases.
+Geometrically, the negative shock advances the signal.</p>
+<p>The finite-screen calculation below isolates a capacity mechanism for
+this sign. Three levels are kept separate throughout:</p>
+<ol>
+<li><p>exact entropy and graph identities for a finite sector
+model;</p></li>
+<li><p>an analytic relaxation of integer sector dimensions for stating
+gradients and curvatures;</p></li>
+<li><p>the physical dictionary identifying screen capacity transfer with
+a gravitational horizon shock.</p></li>
+</ol>
+<p>The first two levels are mathematical statements. The third is a
+conditional attachment. In particular, a finite capacity premise does
+not evade the trace obstruction in Ref. <span class="paper-citation" title="Citation: chenStanfordTangYang2026">[source]</span>. Finite-dimensionality is
+part of the premise tested there.</p>
+<h2 id="the-smooth-de-sitter-normalization">The smooth de Sitter
+normalization</h2>
+<p>Write the horizon shock equation in spacetime dimension <span
+class="math inline">\(d\)</span> as <span
+class="math display">\[\begin{equation}
+\left(-\nabla^2_{S^{d-2}}-\mu^2\right)X^+
+=8\pi G\,T^-,
+\qquad
+\mu^2=\frac{d-2}{2}|f&#39;(r_c)|r_c=(d-2)\kappa r_c .
+\label{eq:shock}
+\end{equation}\]</span> For pure de Sitter space of radius <span
+class="math inline">\(L\)</span>, <span
+class="math display">\[f(r)=1-\frac{r^2}{L^2},
+\qquad
+r_c=L,
+\qquad
+\kappa=\frac1L.\]</span></p>
+<div id="lem:mu2" class="lemma">
+<p><strong>Lemma 1</strong> (Radius-independent shock mass). <em>For
+pure de Sitter space, <span
+class="math display">\[\mu^2=d-2=\lambda_{\ell=1}\!\left(S^{d-2}\right).\]</span>
+Consequently, <span class="math inline">\(\mu^2\)</span> is independent
+of <span class="math inline">\(L\)</span> and of the cosmological
+constant.</em></p>
+</div>
+<div class="proof">
+<p><em>Proof.</em> The product <span class="math inline">\(\kappa
+r_c\)</span> equals one. Equation <span class="paper-cross-reference" title="Source reference: eq:shock">eq:shock</span>
+therefore gives <span class="math inline">\(\mu^2=d-2\)</span>. Scalar
+spherical harmonics on <span class="math inline">\(S^{d-2}\)</span> have
+<span class="math display">\[\lambda_\ell=\ell(\ell+d-3),\]</span> so
+<span class="math inline">\(\lambda_1=d-2\)</span>. ◻</p>
+</div>
+<p>The smooth <span class="math inline">\(\ell=1\)</span> shock is
+generated by a de Sitter isometry and is pure gauge, with the
+corresponding source component removed by the gravitational
+constraint <span class="paper-citation" title="Citation: chenStanfordTangYang2026">[source]</span>. This explains the zero of
+the operator in Eq. <span class="paper-cross-reference" title="Source reference: eq:shock">eq:shock</span>. Transferring that
+normalization to a discrete screen requires a separate premise, stated
+in Section <a href="#sec:spectrum" data-reference-type="ref"
+data-reference="sec:spectrum">4</a>.</p>
+<h2 id="finite-entropy-and-the-capacity-transfer-direction">Finite
+entropy and the capacity-transfer direction</h2>
+<h3 id="the-exact-entropy-maximum">The exact entropy maximum</h3>
+<p>Let a finite screen have positive integer sector dimensions <span
+class="math inline">\(d_1,\ldots,d_n\)</span>, and let <span
+class="math inline">\(p_i\)</span> be a probability distribution over
+the sectors. Set <span class="math display">\[M=\sum_{i=1}^n d_i,
+\qquad
+S_{\mathrm{gen}}(p,d)
+=-\sum_{i=1}^n p_i\log p_i+\sum_{i=1}^n p_i\log d_i.\]</span></p>
+<div id="prop:entropymax" class="proposition">
+<p><strong>Proposition 2</strong> (Finite sector entropy maximum).
+<em>For fixed <span class="math inline">\(d_i\)</span>, <span
+class="math display">\[p_i^\star=\frac{d_i}{M},
+\qquad
+\max_p S_{\mathrm{gen}}(p,d)=\log M.\]</span></em></p>
+</div>
+<div class="proof">
+<p><em>Proof.</em> With <span class="math inline">\(q_i=d_i/M\)</span>,
+<span class="math display">\[S_{\mathrm{gen}}(p,d)
+=\log M-\sum_i p_i\log\frac{p_i}{q_i}
+=\log M-D_{\mathrm{KL}}(p\Vert q).\]</span> Nonnegativity of relative
+entropy proves the result. ◻</p>
+</div>
+<p>Thus a logarithmic capacity <span class="math inline">\(N=\log
+M_0\)</span> agrees exactly with the extremal generalized entropy when
+the closed screen carries total dimension <span
+class="math inline">\(M_0\)</span>. This is a maximization over <span
+class="math inline">\(p\)</span>, with the sector dimensions held fixed.
+It does not classify extrema with respect to the <span
+class="math inline">\(d_i\)</span>.</p>
+<h3 id="exact-gradient-and-hessian">Exact gradient and Hessian</h3>
+<p>At the maximizing distribution, the expectation of the logarithmic
+sector operator is <span class="math display">\[\begin{equation}
+\mathcal A(d)
+:=\sum_{i=1}^n\frac{d_i}{M}\log d_i .
+\label{eq:areaobservable}
+\end{equation}\]</span> The dimensions are integers in the finite model.
+Extend them to positive real variables solely for the following
+differential calculation.</p>
+<div id="prop:hessian" class="proposition">
+<p><strong>Proposition 3</strong> (Analytic curvature of the sector
+observable). <em>The exact gradient of Eq. <span class="paper-cross-reference" title="Source reference: eq:areaobservable">eq:areaobservable</span> is <span
+class="math display">\[\begin{equation}
+\frac{\partial\mathcal A}{\partial d_i}
+=\frac{\log d_i+1-\mathcal A}{M}.
+\label{eq:gradient}
+\end{equation}\]</span> Writing <span
+class="math inline">\(g_i=\partial_i\mathcal A\)</span>, its Hessian is
+<span class="math display">\[\begin{equation}
+\frac{\partial^2\mathcal A}{\partial d_i\partial d_j}
+=\frac{\delta_{ij}}{M d_i}-\frac{g_i+g_j}{M}.
+\label{eq:hessiangeneral}
+\end{equation}\]</span> At the symmetric point <span
+class="math inline">\(d_i=d\)</span>, <span
+class="math display">\[\begin{equation}
+\operatorname{Hess}\mathcal A
+=\frac1{n d^2}\left(I-\frac2nJ\right),
+\label{eq:hessiansymmetric}
+\end{equation}\]</span> where <span class="math inline">\(J=\mathbf
+1\mathbf 1^T\)</span>. Its eigenvalue on <span
+class="math inline">\(\mathbf 1\)</span> is <span
+class="math inline">\(-1/(nd^2)\)</span>, and every vector orthogonal to
+<span class="math inline">\(\mathbf 1\)</span> has eigenvalue <span
+class="math inline">\(+1/(nd^2)\)</span>.</em></p>
+</div>
+<div class="proof">
+<p><em>Proof.</em> Differentiate <span class="math inline">\(\mathcal
+A=M^{-1}\sum_i d_i\log d_i\)</span> to obtain Eq. <span class="paper-cross-reference" title="Source reference: eq:gradient">eq:gradient</span>. A second derivative
+gives Eq. <span class="paper-cross-reference" title="Source reference: eq:hessiangeneral">eq:hessiangeneral</span>. At <span
+class="math inline">\(d_i=d\)</span>, one has <span
+class="math inline">\(M=nd\)</span>, <span
+class="math inline">\(\mathcal A=\log d\)</span>, and <span
+class="math inline">\(g_i=1/(nd)\)</span>, which yields Eq. <span class="paper-cross-reference" title="Source reference: eq:hessiansymmetric">eq:hessiansymmetric</span>. ◻</p>
+</div>
+<p>Two consequences prevent a false extremum statement. First, <span
+class="math inline">\(\nabla\mathcal A=\mathbf 1/(nd)\)</span> at the
+symmetric point, so the point is not stationary in the full positive
+orthant. Second, a fixed-horizon-capacity variation obeys <span
+class="math inline">\(\mathbf 1^T\delta d=0\)</span>, and hence <span
+class="math display">\[\delta d^T(\operatorname{Hess}\mathcal A)\delta d
+=\frac{\|\delta d\|^2}{nd^2}&gt;0\]</span> for every nonzero tangent
+variation. The symmetric point is locally minimizing along the
+fixed-<span class="math inline">\(M\)</span> redistribution directions.
+The negative eigenvalue belongs to the homogeneous direction, which
+changes <span class="math inline">\(M\)</span>.</p>
+<h3 id="the-one-sided-budget-maximum">The one-sided budget maximum</h3>
+<p>The de Sitter sign concerns transfer between the horizon and the
+observer, rather than redistribution among horizon sectors. Let the
+closed total capacity be <span class="math inline">\(M_0\)</span>.
+Assign <span class="math inline">\(c_{\mathrm{obs}}\geq0\)</span> units
+in the finite capacity ledger to the observer, leaving <span
+class="math display">\[M_h=M_0-c_{\mathrm{obs}}\]</span> on the horizon.
+Suppose the transfer depletes every horizon sector by the same factor
+<span class="math inline">\(1-f\)</span>, where <span
+class="math inline">\(f=c_{\mathrm{obs}}/M_0\)</span>. For integer
+dimensions, restrict to values for which the depleted dimensions remain
+integers. Then <span class="math display">\[\begin{equation}
+S_{\mathrm{gen},h}^{\max}(f)-S_{\mathrm{gen},h}^{\max}(0)
+=\log(1-f),
+\label{eq:entropydrop}
+\end{equation}\]</span> and <span
+class="math display">\[\begin{equation}
+\mathcal A((1-f)d)-\mathcal A(d)
+=\log(1-f).
+\label{eq:areadrop}
+\end{equation}\]</span> Both relations are exact.</p>
+<div id="thm:transfersign" class="theorem">
+<p><strong>Theorem 4</strong> (Finite transfer law and analytic
+one-sided maximum). <em>Every admissible positive integer transfer has a
+smaller horizon entropy maximum and uniformly depleted area observable
+than the zero-transfer allocation. On the positive-real interpolation
+<span class="math inline">\(0\leq c_{\mathrm{obs}}&lt;M_0\)</span>, the
+change is strictly decreasing and concave: <span
+class="math display">\[\frac{d}{dc_{\mathrm{obs}}}\log(M_0-c_{\mathrm{obs}})
+=-\frac1{M_0-c_{\mathrm{obs}}}&lt;0,
+\qquad
+\frac{d^2}{dc_{\mathrm{obs}}^2}\log(M_0-c_{\mathrm{obs}})
+=-\frac1{(M_0-c_{\mathrm{obs}})^2}&lt;0.\]</span> The allocation <span
+class="math inline">\(c_{\mathrm{obs}}=0\)</span> is a one-sided
+boundary maximum on both the admissible finite transfers and the
+analytic transfer path.</em></p>
+</div>
+<p>For transfers of <span class="math inline">\(2\%\)</span>, <span
+class="math inline">\(5\%\)</span>, and <span
+class="math inline">\(10\%\)</span>, <span
+class="math display">\[\log(0.98)=-0.020203\ldots,\qquad
+\log(0.95)=-0.051293\ldots,\qquad
+\log(0.90)=-0.105361\ldots.\]</span> The exact finite order and its
+analytic interpolation are the budget statements relevant to the shock
+sign. Proposition <a href="#prop:hessian" data-reference-type="ref"
+data-reference="prop:hessian">3</a> supplies compatible negative
+homogeneous curvature, while also showing why the transfer result cannot
+be described as an interior maximum at fixed horizon <span
+class="math inline">\(M\)</span>.</p>
+<h3 id="conditional-gravitational-interpretation">Conditional
+gravitational interpretation</h3>
+<p>In the horizon coordinates used in Ref. <span class="paper-citation" title="Citation: chenStanfordTangYang2026">[source]</span>, the constant term of the
+shock operator carries the sign of <span
+class="math inline">\(B&#39;(0)/B(0)=2r&#39;(0)/r_c\)</span>. For a
+cosmological horizon, the transverse area decreases from the horizon
+toward the observer, and the shock has the time-advance sign. Under the
+two physical identifications <span class="math display">\[\text{closed
+screen capacity}=\text{fixed horizon--observer budget},
+\qquad
+\mathcal A=\frac{A_{\mathrm{horizon}}}{4G},\]</span> Theorem <a
+href="#thm:transfersign" data-reference-type="ref"
+data-reference="thm:transfersign">4</a> supplies the corresponding
+conditional sign mechanism. Identifying the capacity coordinate <span
+class="math inline">\(c_{\mathrm{obs}}\)</span> with the observer mass
+used in the gravitational shock calculation is an additional physical
+dictionary. The finite entropy theorem and transfer law establish none
+of these identifications.</p>
+<h2 id="sec:spectrum">Conditional icosahedral spectrum</h2>
+<p>Consider the graph Laplacian of the twelve vertices of the
+icosahedron. Its eigenspaces decompose under the alternating group <span
+class="math inline">\(A_5\)</span> on five letters as <span
+class="math display">\[\mathbb
+R^{12}\simeq\mathbf1\oplus\mathbf3\oplus\mathbf5\oplus\mathbf3&#39;,\]</span>
+with raw Laplacian eigenvalues <span class="math display">\[0,\qquad
+5-\sqrt5,\qquad 6,\qquad 5+\sqrt5,\]</span> respectively.</p>
+<div id="ass:dsgauge" class="assumption">
+<p><strong>Assumption 5</strong> (Discrete gauge transport <span
+class="math inline">\(\mathsf{DS\text{-}GAUGE}\)</span>). <em>The <span
+class="math inline">\(\mathbf3\)</span> generated by the screen
+isometries consists of exact gauge zero modes of the discrete shock
+operator, in direct analogy with the smooth <span
+class="math inline">\(\ell=1\)</span> isometry modes.</em></p>
+</div>
+<div id="ass:dslaplacian" class="assumption">
+<p><strong>Assumption 6</strong> (Nearest-neighbour kinetic
+identification <span
+class="math inline">\(\mathsf{DS\text{-}LAPLACIAN}\)</span>). <em>The
+discrete shock kinetic operator is the nearest-neighbour combinatorial
+Laplacian on the port graph, or its edge-sector line graph, with one
+positive overall scale.</em></p>
+</div>
+<p>These two assumptions are independent. Assumption <a
+href="#ass:dsgauge" data-reference-type="ref"
+data-reference="ass:dsgauge">5</a> fixes the scale by placing the <span
+class="math inline">\(\mathbf3\)</span> at the smooth value <span
+class="math inline">\(2\)</span>. Assumption <a href="#ass:dslaplacian"
+data-reference-type="ref" data-reference="ass:dslaplacian">6</a> selects
+the finite operator whose remaining eigenvalues are being compared.</p>
+<div id="prop:spectrum" class="proposition">
+<p><strong>Proposition 7</strong> (Conditional normalized shock
+spectrum). <em>Under Assumptions <a href="#ass:dsgauge"
+data-reference-type="ref" data-reference="ass:dsgauge">5</a> and <a
+href="#ass:dslaplacian" data-reference-type="ref"
+data-reference="ass:dslaplacian">6</a>, the normalized port Laplacian
+and shock spectra are <span
+class="math display">\[\begin{array}{c@{\qquad}c@{\qquad}c@{\qquad}c}
+A_5\text{ block} &amp; \text{multiplicity} &amp;
+\lambda_{\mathrm{norm}} &amp; \lambda_{\mathrm{shock}}\\
+\hline
+\mathbf1 &amp; 1 &amp; 0 &amp; -2\\
+\mathbf3 &amp; 3 &amp; 2 &amp; 0\\
+\mathbf5 &amp; 5 &amp; 3+\dfrac3{\sqrt5} &amp; 1+\dfrac3{\sqrt5}\\[3pt]
+\mathbf3&#39; &amp; 3 &amp; 3+\sqrt5 &amp; 1+\sqrt5
+\end{array}\]</span> The invariant mode agrees exactly with the smooth
+value <span class="math inline">\(-2\)</span>. The <span
+class="math inline">\(\mathbf5\)</span> shock eigenvalue is <span
+class="math inline">\(1+3/\sqrt5=2.341640\ldots\)</span>, and the
+additional <span class="math inline">\(\mathbf3&#39;\)</span> triplet
+lies at <span
+class="math inline">\(1+\sqrt5=2\varphi=3.236067\ldots\)</span>.</em></p>
+</div>
+<div class="proof">
+<p><em>Proof.</em> Multiply the graph Laplacian by <span
+class="math inline">\(2/(5-\sqrt5)\)</span>, then subtract <span
+class="math inline">\(\mu^2=2\)</span>. Direct simplification gives the
+displayed values. ◻</p>
+</div>
+<p>The value <span class="math inline">\(-2\)</span> carries no
+enhancement relative to the continuum invariant mode. Any different
+comparison obtained by leaving the graph scale unfixed is a
+normalization artifact.</p>
+<h3 id="ports-and-edge-sectors">Ports and edge sectors</h3>
+<p>The logarithmic sector operator naturally suggests an edge carrier.
+The low-lying spectrum is unchanged by this choice.</p>
+<div id="lem:linegraph" class="lemma">
+<p><strong>Lemma 8</strong> (Regular line-graph spectrum). <em>Let <span
+class="math inline">\(G\)</span> be a <span
+class="math inline">\(k\)</span>-regular graph with <span
+class="math inline">\(k\geq2\)</span>, <span
+class="math inline">\(n\)</span> vertices, and <span
+class="math inline">\(m\)</span> edges. The line graph <span
+class="math inline">\(L(G)\)</span> has the Laplacian spectrum of <span
+class="math inline">\(G\)</span>, together with the eigenvalue <span
+class="math inline">\(2k\)</span> repeated <span
+class="math inline">\(m-n\)</span> times.</em></p>
+</div>
+<div class="proof">
+<p><em>Proof.</em> Let <span class="math inline">\(B\)</span> be the
+unoriented vertex-edge incidence matrix. Then <span
+class="math display">\[BB^T=A_G+kI,
+\qquad
+B^TB=A_{L(G)}+2I.\]</span> The nonzero spectra of <span
+class="math inline">\(BB^T\)</span> and <span
+class="math inline">\(B^TB\)</span> agree, and the spectrum of the <span
+class="math inline">\(m\times m\)</span> matrix <span
+class="math inline">\(B^TB\)</span> contains <span
+class="math inline">\(m-n\)</span> additional zeros relative to the
+spectrum of the <span class="math inline">\(n\times n\)</span> matrix
+<span class="math inline">\(BB^T\)</span>, counted with multiplicity.
+Since <span class="math inline">\(L(G)\)</span> is <span
+class="math inline">\((2k-2)\)</span>-regular, converting adjacency
+eigenvalues to Laplacian eigenvalues gives the claim. ◻</p>
+</div>
+<p>For the icosahedron, <span class="math inline">\(k=5\)</span>, <span
+class="math inline">\(n=12\)</span>, and <span
+class="math inline">\(m=30\)</span>. The edge-sector spectrum is
+therefore <span
+class="math display">\[\{0^1,(5-\sqrt5)^3,6^5,(5+\sqrt5)^3,10^{18}\}.\]</span>
+It contains the full port spectrum plus a high block at <span
+class="math inline">\(10\)</span>. In particular, the normalization-free
+ratio between the <span class="math inline">\(\mathbf5\)</span> and
+rotation-triplet Laplacian eigenvalues is <span
+class="math display">\[\frac{\lambda_{\mathbf5}}{\lambda_{\mathbf3}}
+=\frac6{5-\sqrt5}
+=\frac{3(5+\sqrt5)}{10}
+=2.170820\ldots\]</span> on both carriers. The dodecahedral face graph
+gives <span class="math inline">\(\varphi^2=2.618033\ldots\)</span>,
+while the smooth <span
+class="math inline">\(\lambda_{\ell=2}/\lambda_{\ell=1}\)</span> ratio
+is <span class="math inline">\(3\)</span>.</p>
+<p>Lemma <a href="#lem:linegraph" data-reference-type="ref"
+data-reference="lem:linegraph">8</a> closes the port-versus-edge
+ambiguity once the nearest-neighbour Laplacian premise is accepted. It
+does not establish that premise.</p>
+<h2 id="the-repair-generator-has-a-different-domain">The repair
+generator has a different domain</h2>
+<p>Let <span class="math inline">\(X_r\)</span> be the configuration
+space at fixed sector structure, with measure <span
+class="math inline">\(\pi_r\)</span>, and let <span
+class="math inline">\(P_v\)</span> be the single-site heat-bath
+conditional expectation. The repair generator <span
+class="math display">\[L^{\mathrm{rep}}=\sum_v(I-P_v)\]</span> acts on
+<span class="math display">\[K_r=L^2(X_r,\pi_r).\]</span> Since each
+<span class="math inline">\(P_v\)</span> is an orthogonal projection,
+<span class="math display">\[\langle f,L^{\mathrm{rep}}f\rangle
+=\sum_v\|(I-P_v)f\|^2.\]</span> Consequently, <span
+class="math display">\[\ker
+L^{\mathrm{rep}}=\bigcap_v\operatorname{Ran}P_v.\]</span> Reducing this
+intersection to the constants requires a separate irreducibility or
+intersection proof and is unnecessary for the scope statement here.</p>
+<p>A horizon shock changes the sector dimensions <span
+class="math inline">\(d_\alpha\)</span> in <span
+class="math display">\[L_C=\sum_\alpha(\log d_\alpha)P_\alpha .\]</span>
+Such a change deforms the configuration space and lies outside <span
+class="math inline">\(L^2(X_r,\pi_r)\)</span> at fixed sector structure.
+The repair generator therefore does not act on the sector-dimension
+shock. Its spectral gap neither excludes nor supplies the time-advance
+mode. The capacity-transfer law in Theorem <a href="#thm:transfersign"
+data-reference-type="ref" data-reference="thm:transfersign">4</a> is a
+response input on the enlarged sector-dimension space; no dynamical
+generator on that space is supplied.</p>
+<h2 id="the-fixed-capacity-equation-of-state">The fixed-capacity
+equation of state</h2>
+<p>The capacity reading of the vacuum term supplies a conditional
+model-discrimination test through the equation of state of dark energy,
+and its algebraic law is machine-checked. Read the dark-energy density
+through the capacity relation as <span class="math inline">\(\rho_{\rm
+DE}(a)=\kappa/N(a)\)</span>, with <span
+class="math inline">\(\kappa\)</span> the single positive constant
+packaging <span class="math inline">\(c^4\,3\pi/(8\pi
+G\,l_P^2)\)</span>, and define the effective equation of state through
+the FRW continuity relation, <span
+class="math inline">\(w(a)=-1-\tfrac13\,\mathrm d\ln\rho_{\rm
+DE}/\mathrm d\ln a\)</span>, which is the effective-fluid quantity
+projected by a <span class="math inline">\(w_0w_a\mathrm{CDM}\)</span>
+analysis within its chosen cosmological likelihood. Three exact
+conditional statements follow, each proved in
+<code>FixedCapacityWLaw</code> of the Lean corpus with the capacity
+value cancelling throughout.</p>
+<p>First, on the fixed-capacity branch, constant <span
+class="math inline">\(N\)</span>, the equation of state is <span
+class="math inline">\(w(a)=-1\)</span> identically, and the CPL
+representation is forced to <span
+class="math inline">\((w_0,w_a)=(-1,0)\)</span> exactly, with zero
+continuous freedom within that branch. This is the immediate consequence
+of the assumed <span class="math inline">\(\rho_{\rm
+DE}=\kappa/N\)</span> identification and the continuity definition of
+<span class="math inline">\(w\)</span>; it does not derive fixed
+capacity, the density identification, or a closed dark sector. Second,
+the exact converse holds on the drift branch: <span
+class="math inline">\(w(a)=-1+\tfrac13\,\mathrm d\ln N/\mathrm d\ln
+a\)</span>, so any measured departure from <span
+class="math inline">\(-1\)</span> is a capacity-drift readback only
+conditional on those same identifications; the power law <span
+class="math inline">\(N\propto a^{\varepsilon}\)</span> gives the exact
+line <span class="math inline">\(w=-1+\varepsilon/3\)</span>. Third, if
+the record capacity is monotone nondecreasing, then <span
+class="math inline">\(w(a)\ge-1\)</span> at every epoch: this
+conditional branch forbids a phantom equation of state, and an
+established <span class="math inline">\(w(a_0)&lt;-1\)</span> forces
+capacity loss at <span class="math inline">\(a_0\)</span> through the
+strict readback.</p>
+<p>A prospective test would require the dataset combination, redshift
+range, statistic, thresholds, fallbacks, and direction-neutral
+systematics policy to be fixed before exposure. The comparisons below
+are retrospective diagnostics and carry no prospective score. Exclusion
+of <span class="math inline">\((-1,0)\)</span> in any direction
+conflicts with the fixed branch; a posterior-mean quadrant is not a
+valid extra gate. Conversely, compatibility with <span
+class="math inline">\((-1,0)\)</span> does not validate fixed capacity
+or OPH because that point is also the standard <span
+class="math inline">\(\Lambda\)</span>CDM null. No comparison is frozen
+or armed by this paper.</p>
+<p>For a seen-data diagnostic, a script checked the official SHA-256
+values for four DESI DR2 chains in each of four <span
+class="math inline">\(w_0w_a\)</span>CDM combinations. It then applied
+the exact CPL endpoint condition <span
+class="math inline">\(w_0\ge-1\)</span> and <span
+class="math inline">\(w_0+(2/3)w_a\ge-1\)</span> on <span
+class="math inline">\(0\le z\le2\)</span>. The posterior-weight
+fractions in that conditional monotone subset are <span
+class="math inline">\(0.00705\%\)</span>, <span
+class="math inline">\(0.1125\%\)</span>, <span
+class="math inline">\(0.01206\%\)</span>, and <span
+class="math inline">\(0.02054\%\)</span> for BAO+CMB and its Pantheon+,
+Union3, and DESY5 combinations, respectively <span class="paper-citation" title="Citation: desidr2">[source]</span>. Two combinations have at least one chain
+with no raw sample in the rare subset. The respective raw tail counts
+are 6, 126, 15, and 11. Union3 is represented in all four chains but
+remains sparse. These seen-data fractions depend on the collaboration’s
+model, likelihood, and priors; they are not model evidences, frequentist
+exclusions, direct capacity measurements, or a prediction score.</p>
+<p>Four separately authenticated official DESI DR2 BAO+CMB base-<span
+class="math inline">\(\Lambda\)</span>CDM chains give, under a direct
+samplewise nonlinear transform, <span
+class="math display">\[\Lambda\ell_P^2=(2.96770\mathbin{\pm}0.03978)\times10^{-122},\]</span>
+with weighted 2.5–97.5 percent interval <span
+class="math inline">\([2.88997,3.04530]\times10^{-122}\)</span>. This
+automatically retains the sampled <span
+class="math inline">\(H_0\)</span>–<span
+class="math inline">\(\Omega_\Lambda\)</span> covariance. It is a
+target-informed retrospective <span
+class="math inline">\(\Lambda\)</span>CDM posterior display, not an OPH
+likelihood or theory uncertainty <span class="paper-citation" title="Citation: desidr2, ophrepo">[sources]</span>.</p>
+<p>A second conditional diagnostic composes the capacity law with the
+local electroweak-closure tangent. It requires three extra physical
+premises: (B1) the closure capacity is the same physical <span
+class="math inline">\(N\)</span>; (B2) the finite closure relation is an
+epochwise physical law; and (B3) physical evolution selects the
+committed root branch and co-variation convention while the local clock
+reads the same homogeneous cosmological <span
+class="math inline">\(\alpha\)</span> with the required time map. The
+mathematical derivative is interval-certified independently of those
+physical premises. An outward-rounded implicit-function calculation
+proves the selected declared root branch continuously differentiable for
+<span
+class="math inline">\(\lvert\Delta\ln\alpha\rvert\le10^{-5}\)</span>,
+with <span class="math display">\[\frac{\mathrm d\ln N}{\mathrm
+d\ln\alpha}
+\in[-0.214173865,-0.206176031],\qquad
+\frac{\mathrm d\ln\alpha}{\mathrm d\ln N}
+\in[-4.850224325,-4.669103775].\]</span> The reciprocal is formed only
+after zero is excluded. Using the conservative slope bound and <span
+class="math inline">\(H_0=67.4\,\mathrm{km\,s^{-1}\,Mpc^{-1}}\)</span>,
+all three physical premises together let the optical-clock drift limit
+imply <span
+class="math inline">\(\lvert1+w_0\rvert\le6.94\times10^{-10}\)</span> <span class="paper-citation" title="Citation: filzinger2023">[source]</span>. The static closure
+solver does not select the physical cosmic branch, and its certified
+local domain cannot be extrapolated over the order-one changes suggested
+by some CPL histories. The diagnostic restricts but does not empty the
+monotone branch.</p>
+<h2 id="claim-boundary">Claim boundary</h2>
+<div class="center">
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th style="text-align: left;">Statement</th>
+<th style="text-align: left;">Scope</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span
+class="math inline">\(\mu^2=d-2=\lambda_{\ell=1}\)</span> in pure de
+Sitter</td>
+<td style="text-align: left;">exact smooth-geometry identity</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span
+class="math inline">\(S_{\mathrm{gen}}^{\max}=\log M\)</span></td>
+<td style="text-align: left;">exact finite entropy maximum over sector
+probabilities</td>
+</tr>
+<tr>
+<td style="text-align: left;">Uniform-depletion drop <span
+class="math inline">\(\log(1-f)\)</span></td>
+<td style="text-align: left;">exact finite law for admissible integer
+dimensions</td>
+</tr>
+<tr>
+<td style="text-align: left;">Gradient and Hessian of <span
+class="math inline">\(\mathcal A(d)\)</span></td>
+<td style="text-align: left;">exact analytic-relaxation identity</td>
+</tr>
+<tr>
+<td style="text-align: left;">One-sided horizon-budget maximum</td>
+<td style="text-align: left;">exact order on admissible finite transfers
+and exact analytic interpolation; gravitational reading conditional</td>
+</tr>
+<tr>
+<td style="text-align: left;">Port/edge low-spectrum equality</td>
+<td style="text-align: left;">exact regular line-graph theorem</td>
+</tr>
+<tr>
+<td style="text-align: left;">Icosahedral shock spectrum</td>
+<td style="text-align: left;">conditional on exact discrete gauge
+transport and the scaled nearest-neighbour Laplacian identification</td>
+</tr>
+<tr>
+<td style="text-align: left;">Shock coefficient and physical screen
+attachment</td>
+<td style="text-align: left;">not derived</td>
+</tr>
+<tr>
+<td style="text-align: left;">Static-patch trace representation</td>
+<td style="text-align: left;">excluded from the claim; the cited trace
+obstruction stands</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>The coefficient multiplying the shock response requires a
+generalized-entropy normalization and a physical horizon-area dictionary
+on one common domain. The finite calculation fixes neither. It also
+gives no Hilbert-space trace whose correlators satisfy the conditions
+tested in Ref. <span class="paper-citation" title="Citation: chenStanfordTangYang2026">[source]</span>.</p>
+<h3 class="unnumbered"
+id="closed-tested-classes-and-surviving-alternatives">Closed tested
+classes and surviving alternatives</h3>
+<p>The external trace obstruction concerns the proposal tested in
+Ref. <span class="paper-citation" title="Citation: chenStanfordTangYang2026">[source]</span>: a Euclidean static-patch
+path integral with an observer worldline interpreted as a positive
+cyclic Hilbert-space trace for the stated correlators. Horizon-screen
+descriptions without that trace interpretation are outside the tested
+class.</p>
+<p>The repair-domain statement concerns the declared fixed-sector <span
+class="math inline">\(L^{\mathrm{rep}}\)</span> on <span
+class="math inline">\(L^2(X_r,\pi_r)\)</span>. A separately constructed
+dimension-changing generator is not excluded. The graph-spectrum
+statement concerns the scaled nearest-neighbour icosahedral port
+Laplacian and its line graph under exact gauge transport. Weighted,
+longer-range, refinement-limit, and other source-derived kinetic
+operators are possible and require their own spectra.</p>
+<p>None of these boundaries disproves Observer-Patch Holography. They
+delimit one trace interpretation, one fixed-sector generator, and one
+conditional finite kinetic operator. The exact finite entropy, transfer,
+and line-graph identities survive independently of those physical
+attachments.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>A closed capacity budget has a distinguished transfer direction.
+Moving capacity from a horizon screen to its observer changes the
+extremal entropy and the uniformly normalized logarithmic area
+observable by <span class="math inline">\(\log(1-f)\)</span>. The sign
+is negative for every allowed positive finite transfer and throughout
+the positive-real interpolation, so the zero-observer allocation is a
+one-sided boundary maximum. The analytic Hessian supports a negative
+homogeneous curvature and a positive fixed-horizon-capacity tangent
+curvature. Keeping both facts visible avoids an incorrect
+interior-maximum argument.</p>
+<p>The pure de Sitter normalization <span
+class="math inline">\(\mu^2=\lambda_{\ell=1}\)</span> is exact. An
+icosahedral spectrum follows only after exact discrete gauge transport
+and a nearest-neighbour kinetic operator are assumed. The regular
+line-graph identity then makes its low spectrum independent of choosing
+ports or edge sectors. These results supply a conditional finite-screen
+mechanism for the time-advance sign, with the ledger-to-mass map,
+coefficient, gravitational attachment, and sector-dimension dynamics as
+separate premises. The exact identities remain valid if those
+attachments fail; such a failure would reject the corresponding physical
+interpretation inside its stated class.</p>
+<div class="thebibliography">
+<p><span>9</span></p>
+<p>Y. Chen, D. Stanford, H. Tang, and Z. Yang, <em>Negative shocks
+versus static patch holography</em>, arXiv:2607.14042 [hep-th], 2026. <a
+href="https://arxiv.org/abs/2607.14042"
+class="uri">https://arxiv.org/abs/2607.14042</a></p>
+<p>DESI Collaboration, <em>DESI DR2 Results II: Measurements of Baryon
+Acoustic Oscillations and Cosmological Constraints</em>,
+arXiv:2503.14738, 2025. <a href="https://arxiv.org/abs/2503.14738"
+class="uri">https://arxiv.org/abs/2503.14738</a>. Official chains and
+checksum manifest: <a
+href="https://data.desi.lbl.gov/public/papers/y3/bao-cosmo-params/README.html"
+class="uri">https://data.desi.lbl.gov/public/papers/y3/bao-cosmo-params/README.html</a>.
+Manifest authenticated by the replay: <a
+href="https://data.desi.lbl.gov/public/papers/y3/bao-cosmo-params/dr2_vac_dr2_bao-cosmo-params_v1.0.sha256sum"
+class="uri">https://data.desi.lbl.gov/public/papers/y3/bao-cosmo-params/dr2_vac_dr2_bao-cosmo-params_v1.0.sha256sum</a></p>
+<p>B. Müller et al., <em>Observer-Patch Holography: formal proofs and
+executable receipts</em>, 2026. <a
+href="https://github.com/FloatingPragma/observer-patch-holography/tree/main/code/cosmology/fixed_capacity_wlaw"
+class="uri">https://github.com/FloatingPragma/observer-patch-holography/tree/main/code/cosmology/fixed_capacity_wlaw</a></p>
+<p>M. Filzinger et al., <em>Improved Limits on the Coupling of
+Ultralight Bosonic Dark Matter to Photons from Optical Atomic Clock
+Comparisons</em>, Phys. Rev. Lett. <strong>130</strong>, 253001 (2023).
+<a href="https://doi.org/10.1103/PhysRevLett.130.253001"
+class="uri">https://doi.org/10.1103/PhysRevLett.130.253001</a></p>
+</div>
+<h2 class="unnumbered" id="ai-assistance-disclosure">AI Assistance
+Disclosure</h2>
+<p>This research project used research-grade commercial models,
+including Anthropic’s Fable and OpenAI’s GPT-5.6-Sol, for research
+support, software development, editing, and synthesis. The authors are
+responsible for the paper’s claims, methods, and final text.</p>
+
+          </div>
+        </div>
+      </article>
+    </main>
+    <footer class="site-footer reveal">
+      <div>Floating Pragma</div>
+      <div class="site-footer-links">
+        <a href="/oph/" data-track-link="footer-hub">Research</a>
+        <a href="/oph/papers/" data-track-link="footer-papers">Papers</a>
+        <a href="https://learn.floatingpragma.io/" data-track-link="footer-learn">Learn</a>
+        <a href="https://oph-lab.floatingpragma.io/" data-track-link="footer-lab">Lab</a>
+        <a href="https://simulation.floatingpragma.io/" data-track-link="footer-simulation">Simulation</a>
+        <a href="https://github.com/FloatingPragma/observer-patch-holography/" data-track-link="footer-github">GitHub</a>
+        <a href="https://oph-book.floatingpragma.io/" data-track-link="footer-webbook">Webbook v2</a>
+      </div>
+    </footer>
+
+  </div>
+  <script src="/oph/app.js"></script>
+</body>
+</html>

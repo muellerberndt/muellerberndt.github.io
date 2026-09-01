@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Positive-Chamber Koide Identity for Icosahedral Face Circulants | OPH Paper</title>
+  <meta name="title" content="The Positive-Chamber Koide Identity for Icosahedral Face Circulants | OPH Paper" />
+  <meta name="description" content="Proves the exact Koide invariant for positive Hermitian C3 face circulants and isolates the balance condition that yields Q = 2/3. The finite GNS implication and tau-mass window are conditional; no physical lepton-family attachment or source-only mass prediction is claimed." />
+  <meta name="keywords" content="Koide identity, circulant matrices, C3 symmetry, icosahedral symmetry, finite event algebra, lepton masses, Observer Patch Holography" />
+  <meta name="author" content="Pragma" />
+  <link rel="canonical" href="https://floatingpragma.io/oph/papers/positive-chamber-koide-icosahedral-face-circulants/" />
+  <link rel="related" href="https://floatingpragma.io/oph/" title="Observer Patch Holography" />
+  <link rel="related" href="https://learn.floatingpragma.io/" title="OPH Learning Library" />
+  <link rel="related" href="https://oph-lab.floatingpragma.io/" title="OPH Lab" />
+  <link rel="related" href="https://simulation.floatingpragma.io/" title="OPH Simulation" />
+  <link rel="related" href="https://github.com/FloatingPragma/observer-patch-holography/" title="OPH Source Repository" />
+  <link rel="related" href="https://oph-book.floatingpragma.io/" title="OPH Webbook v2" />
+  <link rel="related" href="https://blog.floatingpragma.io/the-trigger" title="The Trigger" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="citation_title" content="The Positive-Chamber Koide Identity for Icosahedral Face Circulants" />
+  <meta name="citation_author" content="Bernhard Mueller" />
+  <meta name="citation_author_institution" content="Pragma Research Inc." />
+  <meta name="citation_publication_date" content="2026/08/30" />
+  <meta name="citation_online_date" content="2026/08/30" />
+  <meta name="citation_language" content="en" />
+  <meta name="citation_keywords" content="Koide identity; circulant matrices; C3 symmetry; icosahedral symmetry; finite event algebra; lepton masses; Observer Patch Holography" />
+  <meta name="citation_pdf_url" content="https://floatingpragma.io/oph/papers/positive-chamber-koide-icosahedral-face-circulants/paper.pdf" />
+  <meta name="citation_abstract_html_url" content="https://floatingpragma.io/oph/papers/positive-chamber-koide-icosahedral-face-circulants/" />
+  <meta name="citation_technical_report_institution" content="Pragma Research" />
+  <meta name="citation_technical_report_number" content="OPH r2033 koide_identity_from_positive_c3_face_circulants" />
+  <meta name="DC.title" content="The Positive-Chamber Koide Identity for Icosahedral Face Circulants" />
+  <meta name="DC.creator" content="Bernhard Mueller" />
+  <meta name="DC.issued" content="2026/08/30" />
+  <meta name="DC.date" content="2026/08/30" />
+  <meta name="DC.type" content="Text" />
+  <meta name="DC.format" content="text/html" />
+  <meta name="DC.language" content="en" />
+  <meta name="DC.publisher" content="Pragma Research" />
+  <meta name="DC.identifier" content="https://floatingpragma.io/oph/papers/positive-chamber-koide-icosahedral-face-circulants/" />
+  <meta name="DC.identifier" content="https://floatingpragma.io/oph/papers/positive-chamber-koide-icosahedral-face-circulants/paper.pdf" />
+  <meta name="article:published_time" content="2026-08-30T00:00:00Z" />
+  <meta name="article:modified_time" content="2026-08-30T00:00:00Z" />
+  <meta name="prism.publicationDate" content="2026/08/30" />
+  <meta name="prism.publicationName" content="Observer Patch Holography Papers" />
+  <meta name="prism.section" content="Flavor structure" />
+  <meta name="prism.url" content="https://floatingpragma.io/oph/papers/positive-chamber-koide-icosahedral-face-circulants/" />
+  <meta name="prism.copyright" content="2026 Pragma Research" />
+  <link rel="alternate" type="application/pdf" href="https://floatingpragma.io/oph/papers/positive-chamber-koide-icosahedral-face-circulants/paper.pdf" title="The Positive-Chamber Koide Identity for Icosahedral Face Circulants PDF" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://floatingpragma.io/oph/papers/positive-chamber-koide-icosahedral-face-circulants/" />
+  <meta property="og:title" content="The Positive-Chamber Koide Identity for Icosahedral Face Circulants | OPH Paper" />
+  <meta property="og:description" content="Proves the exact Koide invariant for positive Hermitian C3 face circulants and isolates the balance condition that yields Q = 2/3. The finite GNS implication and tau-mass window are conditional; no physical lepton-family attachment or source-only mass prediction is claimed." />
+  <meta property="og:image" content="https://floatingpragma.io/og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Floating Pragma research for self-reading systems" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="The Positive-Chamber Koide Identity for Icosahedral Face Circulants | OPH Paper" />
+  <meta name="twitter:description" content="Proves the exact Koide invariant for positive Hermitian C3 face circulants and isolates the balance condition that yields Q = 2/3. The finite GNS implication and tau-mass window are conditional; no physical lepton-family attachment or source-only mass prediction is claimed." />
+  <meta name="twitter:image" content="https://floatingpragma.io/og.png" />
+  <meta name="twitter:image:alt" content="Floating Pragma research for self-reading systems" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="stylesheet" href="/oph/styles.css" />
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['\\(', '\\)'], ['$', '$']], displayMath: [['\\[', '\\]']] },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "The Positive-Chamber Koide Identity for Icosahedral Face Circulants",
+  "name": "The Positive-Chamber Koide Identity for Icosahedral Face Circulants",
+  "description": "Proves the exact Koide invariant for positive Hermitian C3 face circulants and isolates the balance condition that yields Q = 2/3. The finite GNS implication and tau-mass window are conditional; no physical lepton-family attachment or source-only mass prediction is claimed.",
+  "url": "https://floatingpragma.io/oph/papers/positive-chamber-koide-icosahedral-face-circulants/",
+  "sameAs": "https://floatingpragma.io/oph/papers/positive-chamber-koide-icosahedral-face-circulants/paper.pdf",
+  "encoding": {
+    "@type": "MediaObject",
+    "contentUrl": "https://floatingpragma.io/oph/papers/positive-chamber-koide-icosahedral-face-circulants/paper.pdf",
+    "encodingFormat": "application/pdf"
+  },
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Bernhard Mueller",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Pragma Research Inc."
+      }
+    }
+  ],
+  "isPartOf": {
+    "@type": "ResearchProject",
+    "name": "Observer Patch Holography",
+    "url": "https://floatingpragma.io/oph/"
+  },
+  "keywords": [
+    "Koide identity",
+    "circulant matrices",
+    "C3 symmetry",
+    "icosahedral symmetry",
+    "finite event algebra",
+    "lepton masses",
+    "Observer Patch Holography"
+  ],
+  "datePublished": "August 30, 2026",
+  "dateModified": "August 30, 2026",
+  "version": "r2033",
+  "subjectOf": [
+    {
+      "@type": "BlogPosting",
+      "headline": "The Trigger",
+      "url": "https://blog.floatingpragma.io/the-trigger",
+      "description": "High-level public entry point for the OPH claim."
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Floating Pragma",
+      "item": "https://floatingpragma.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Observer Patch Holography",
+      "item": "https://floatingpragma.io/oph/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "OPH Papers",
+      "item": "https://floatingpragma.io/oph/papers/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "The Positive-Chamber Koide Identity for Icosahedral Face Circulants",
+      "item": "https://floatingpragma.io/oph/papers/positive-chamber-koide-icosahedral-face-circulants/"
+    }
+  ]
+}
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HLGH209WMG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-HLGH209WMG', { cookie_domain: 'floatingpragma.io' });
+  </script>
+</head>
+<body class="oph-page paper-page">
+  <div class="site-grid"></div>
+  <div class="page-shell">
+    <header class="site-header reveal">
+      <a class="brand" href="/oph/">
+        <span class="brand-mark">
+          <img src="/pragma-cropped.jpg" alt="Pragma" />
+        </span>
+        <span class="brand-copy">
+          <strong>Floating Pragma</strong>
+          <span>OPH Paper</span>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="OPH navigation">
+        <a href="/oph/" data-track-link="nav-hub">Research</a>
+        <a href="/oph/papers/" data-track-link="nav-papers">Papers</a>
+        <a href="https://learn.floatingpragma.io/" data-track-link="nav-learn">Learn</a>
+        <a href="https://oph-lab.floatingpragma.io/" data-track-link="nav-lab">Lab</a>
+        <a href="https://simulation.floatingpragma.io/" data-track-link="nav-simulation">Simulation</a>
+        <a href="https://github.com/FloatingPragma/observer-patch-holography/" data-track-link="nav-github">GitHub</a>
+        <a href="https://oph-book.floatingpragma.io/" data-track-link="nav-webbook">Webbook v2</a>
+      </nav>
+    </header>
+
+    <main>
+      <article class="paper-reader reveal">
+        <header class="paper-reader-header">
+          <div class="eyebrow">Flavor structure</div>
+          <h1 class="citation_title">The Positive-Chamber Koide Identity for Icosahedral Face Circulants</h1>
+          <h3 class="citation_author">Author: Bernhard Mueller</h3>
+          <p class="paper-reader-affiliations"><strong>Affiliations:</strong> Bernhard Mueller, Pragma Research Inc.</p>
+          <div class="paper-reader-abstract">
+            <strong>Abstract</strong>
+            <p>Proves the exact Koide invariant for positive Hermitian C3 face circulants and isolates the balance condition that yields Q = 2/3. The finite GNS implication and tau-mass window are conditional; no physical lepton-family attachment or source-only mass prediction is claimed.</p>
+          </div>
+          <div class="paper-meta-line">
+            <span>r2033</span>
+            <span>August 30, 2026</span>
+            <span>extra papers</span>
+          </div>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="/oph/papers/positive-chamber-koide-icosahedral-face-circulants/paper.pdf" target="_blank" rel="noopener noreferrer" data-track-link="paper-pdf-koide_identity_from_positive_c3_face_circulants">Download PDF</a>
+            <a class="btn btn-secondary" href="/oph/papers/" data-track-link="paper-index">All OPH papers</a>
+            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r2033" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
+            <a class="btn btn-secondary" href="https://challenge.floatingpragma.io/" data-track-link="paper-challenge">Challenge</a>
+          </div>
+
+          <nav class="paper-link-strip" aria-label="Related OPH essays">
+            <span>Related essays</span>
+            <a href="https://blog.floatingpragma.io/the-trigger" target="_blank" rel="noopener noreferrer" data-track-link="paper-blog-koide_identity_from_positive_c3_face_circulants">The Trigger</a>
+          </nav>
+
+          <details class="paper-section-jump">
+            <summary>Section jump</summary>
+            <nav class="paper-toc" aria-label="Paper sections"><a href="#the-face-corner-carrier">The face-corner carrier</a>
+<a href="#the-positive-chamber-identity">The positive-chamber identity</a>
+<a href="#conditional-finite-tracial-balance">Conditional finite tracial balance</a>
+<a href="#sec:tauwindow">The conditional tau-mass window</a>
+<a href="#numerical-diagnostic-and-provenance">Numerical diagnostic and provenance</a>
+<a href="#why-residual-symmetry-does-not-finish-the-ratios">Why residual symmetry does not finish the ratios</a>
+<a href="#formal-proof-boundary">Formal proof boundary</a>
+<a href="#conclusion">Conclusion</a></nav>
+          </details>
+        </header>
+        <div class="paper-reader-grid">
+          <div class="paper-body">
+<div class="center">
+<p><strong>Paper release:</strong>
+<code>r2033</code><strong>Released:</strong> August 30, 2026</p>
+</div>
+<div class="center">
+<p><strong>Author affiliation:</strong> Bernhard Mueller, Pragma
+Research Inc.</p>
+</div>
+<p><strong>Keywords:</strong> Koide relation, circulant matrices, cyclic
+symmetry, icosahedral symmetry, finite event algebra, GNS
+representation</p>
+<h2 id="the-face-corner-carrier">The face-corner carrier</h2>
+<p>Koide’s charged-lepton relation <span class="paper-citation" title="Citation: koide1983">[source]</span> is usually written in terms of the three
+positive square-root masses. The construction below identifies the exact
+condition it imposes on a cyclic Hermitian response.</p>
+<p>Let <span class="math inline">\(G=A_5\)</span>, the alternating group
+on five letters, act by proper rotations on the icosahedron. The twenty
+outward oriented faces form the transitive orbit <span
+class="math inline">\(G/C_3\)</span>. The stabilizer of one face
+cyclically permutes its three corners, so every face carries a local
+copy of the regular <span class="math inline">\(C_3\)</span>
+representation. If <span class="math inline">\(R\)</span> denotes the
+cyclic shift, then <span class="math display">\[R^3=I,\qquad
+R^\dagger=R^2.\]</span> The commutant of this regular action is the
+three-dimensional circulant algebra <span
+class="math display">\[\{x_0I+x_1R+x_2R^2:x_j\in\mathbb C\}.\]</span>
+Hermiticity restricts a response to <span
+class="math display">\[\begin{equation}
+C=aI+bR+\overline bR^2,\qquad a\in\mathbb R,\quad b\in\mathbb C.
+\label{eq:circulant}
+\end{equation}\]</span> Write <span class="math inline">\(b=\rho
+e^{i\delta}\)</span>, with <span
+class="math inline">\(\rho=|b|\geq0\)</span>. Fourier diagonalization
+gives <span class="math display">\[\begin{equation}
+\lambda_k=a+2\rho\cos\left(\delta+\frac{2\pi k}{3}\right),
+\qquad k=0,1,2.
+\label{eq:eigenvalues}
+\end{equation}\]</span> The unordered spectrum is independent of the
+chosen face representative. This is a local bundle statement. The sixty
+face-corner flags form the regular <span
+class="math inline">\(A_5\)</span> torsor; the geometry alone supplies
+no canonical global three-dimensional physical family space.</p>
+<h2 id="the-positive-chamber-identity">The positive-chamber
+identity</h2>
+<div id="thm:koide" class="theorem">
+<p><strong>Theorem 1</strong> (Positive-chamber Koide identity). <em>Let
+<span class="math inline">\(C\)</span> be the Hermitian circulant in
+Eq. <span class="paper-cross-reference" title="Source reference: eq:circulant">eq:circulant</span>, with <span
+class="math inline">\(a&gt;0\)</span>. Suppose its three eigenvalues in
+Eq. <span class="paper-cross-reference" title="Source reference: eq:eigenvalues">eq:eigenvalues</span> are nonnegative
+and, for one <span class="math inline">\(s&gt;0\)</span>, <span
+class="math display">\[\sqrt{m_k}=\sqrt{s}\lambda_k.\]</span> Then <span
+class="math display">\[\begin{equation}
+Q:=\frac{\sum_{k=0}^2m_k}
+{\left(\sum_{k=0}^2\sqrt{m_k}\right)^2}
+=\frac13+\frac23\left(\frac{\rho}{a}\right)^2.
+\label{eq:koideformula}
+\end{equation}\]</span> Consequently, <span
+class="math display">\[\begin{equation}
+Q=\frac23
+\quad\Longleftrightarrow\quad
+\frac{\rho}{a}=\frac1{\sqrt2}.
+\label{eq:balance}
+\end{equation}\]</span></em></p>
+</div>
+<div class="proof">
+<p><em>Proof.</em> Set <span class="math inline">\(c_k=\cos(\delta+2\pi
+k/3)\)</span>. The roots-of-unity identities give <span
+class="math display">\[\sum_{k=0}^2c_k=0,
+\qquad
+\sum_{k=0}^2c_k^2=\frac32.\]</span> It follows that <span
+class="math display">\[\sum_k\lambda_k=3a,
+\qquad
+\sum_k\lambda_k^2=3a^2+6\rho^2.\]</span> The scale <span
+class="math inline">\(s\)</span> cancels from <span
+class="math inline">\(Q\)</span>, yielding Eq. <span class="paper-cross-reference" title="Source reference: eq:koideformula">eq:koideformula</span>. Since <span
+class="math inline">\(\rho/a\geq0\)</span>, Eq. <span class="paper-cross-reference" title="Source reference: eq:koideformula">eq:koideformula</span> equals <span
+class="math inline">\(2/3\)</span> exactly at <span
+class="math inline">\(\rho/a=1/\sqrt2\)</span>. ◻</p>
+</div>
+<div class="remark">
+<p><em>Remark 2</em> (The chamber is part of the theorem). The signed
+trace calculation holds algebraically for every <span
+class="math inline">\(\delta\)</span>. Physical square roots use <span
+class="math inline">\(|\lambda_k|\)</span> when an eigenvalue is
+negative, and then the denominator is not the signed trace. At <span
+class="math inline">\(\rho/a=1/\sqrt2\)</span>, the positive chamber is
+<span
+class="math display">\[|\delta|\leq\frac{\pi}{12}\pmod{\frac{2\pi}{3}}.\]</span>
+Theorem <a href="#thm:koide" data-reference-type="ref"
+data-reference="thm:koide">1</a> makes no physical Koide statement
+outside that chamber.</p>
+</div>
+<div class="remark">
+<p><em>Remark 3</em> (What the phase contains). Inside the positive
+chamber, <span class="math inline">\(Q\)</span> is independent of <span
+class="math inline">\(\delta\)</span>. The three eigenvalues, and hence
+the two reported mass ratios, vary with <span
+class="math inline">\(\delta\)</span>. The balance condition removes one
+scale-free degree of freedom from a three-mass spectrum. It does not
+determine the ratios.</p>
+</div>
+<h2 id="conditional-finite-tracial-balance">Conditional finite tracial
+balance</h2>
+<p>The balance condition in Eq. <span class="paper-cross-reference" title="Source reference: eq:balance">eq:balance</span>
+can arise exactly from a finite event packet. This subsection states the
+packet as an independent conditional theorem.</p>
+<p>Let <span class="math display">\[\mathcal V=\mathbf
+1\oplus\chi\oplus\overline\chi,
+\qquad
+\mathcal H_{\mathrm{or}}=\mathbb C^2,
+\qquad
+\mathcal A=B(\mathcal V\otimes\mathcal H_{\mathrm{or}})
+\simeq M_6(\mathbb C).\]</span> Here <span class="math inline">\(\mathbf
+1\)</span> is the neutral cyclic mode, <span
+class="math inline">\(\chi\oplus\overline\chi\)</span> is the
+two-dimensional charged plane, and <span class="math inline">\(\mathcal
+H_{\mathrm{or}}\)</span> is a two-state orientation record. Let <span
+class="math inline">\(P_0\)</span> and <span
+class="math inline">\(P_c\)</span> project onto the neutral line and
+charged plane. For a rank-one oriented event <span
+class="math inline">\(q_+\)</span>, define <span
+class="math display">\[Z_0=P_0\otimes I_{\mathrm{or}},
+\qquad
+Z_c=P_c\otimes q_+,
+\qquad
+E_+=Z_0+Z_c.\]</span> Both <span class="math inline">\(Z_0\)</span> and
+<span class="math inline">\(Z_c\)</span> have rank two.</p>
+<div id="thm:gns" class="theorem">
+<p><strong>Theorem 4</strong> (Conditional finite tracial-GNS balance).
+<em>Condition the normalized trace state <span
+class="math inline">\(I_6/6\)</span> on <span
+class="math inline">\(E_+\)</span>. Map the orthonormal cyclic basis of
+the resulting square-root amplitude to <span
+class="math inline">\((I,R,R^2)\)</span> in <span
+class="math inline">\(L^2(M_3(\mathbb C),\tau_3)\)</span>. Then <span
+class="math display">\[p_0=p_c=\frac12,
+\qquad
+a=\sqrt{p_0},
+\qquad
+\rho=\sqrt{\frac{p_c}{2}},\]</span> and therefore <span
+class="math display">\[\frac{\rho}{a}=\frac1{\sqrt2},
+\qquad
+Q=\frac23\]</span> whenever the positive square-root-mass reading of
+Theorem <a href="#thm:koide" data-reference-type="ref"
+data-reference="thm:koide">1</a> is supplied.</em></p>
+</div>
+<div class="proof">
+<p><em>Proof.</em> Normalized-trace conditioning assigns probability
+proportional to block rank. Both accepted blocks have rank two, so <span
+class="math inline">\(p_0=p_c=1/2\)</span>. In <span
+class="math inline">\(L^2(M_3(\mathbb C),\tau_3)\)</span>, the operators
+<span class="math inline">\(I,R,R^2\)</span> are orthonormal. The
+canonical square-root vector therefore has neutral coefficient <span
+class="math inline">\(\sqrt{p_0}\)</span> and two charged coefficients
+of modulus <span class="math inline">\(\sqrt{p_c/2}\)</span>. Their
+ratio is <span class="math inline">\(1/\sqrt2\)</span>. Theorem <a
+href="#thm:koide" data-reference-type="ref"
+data-reference="thm:koide">1</a> then gives <span
+class="math inline">\(Q=2/3\)</span> on the positive chamber. ◻</p>
+</div>
+<p>Theorem <a href="#thm:gns" data-reference-type="ref"
+data-reference="thm:gns">4</a> is finite and exact. Its event algebra,
+block choice, conditioned trace, and cyclic response map are premises. A
+physical charged-lepton statement additionally requires a
+quotient-visible map from the local face bundle to one chiral
+three-family response, preservation of the relevant block powers, and a
+mass readout. Those objects are absent from the theorem.</p>
+<h2 id="sec:tauwindow">The conditional tau-mass window</h2>
+<p>Fixing <span class="math inline">\(Q=2/3\)</span> in Eq. <span class="paper-cross-reference" title="Source reference: eq:koideformula">eq:koideformula</span> and inserting the
+measured electron and muon masses turns the Koide coordinate into one
+quadratic in <span class="math inline">\(\sqrt{m_\tau}\)</span>. The
+mass-ordering premise <span
+class="math inline">\(m_\tau&gt;m_\mu\)</span> selects the physical
+root; the excluded second root sits at <span
+class="math inline">\(3.317\)</span> MeV, below the muon mass.
+Propagating the one-sigma corners of the measured <span
+class="math inline">\((m_e,m_\mu)\)</span> inputs <span class="paper-citation" title="Citation: pdg2026">[source]</span> with outward rounding encloses the selected
+root in <span class="math display">\[\begin{equation}
+m_\tau\in[1776.968991,\ 1776.969063]\ \mathrm{MeV},
+\label{eq:tauwindow}
+\end{equation}\]</span> a 72-eV window with center <span
+class="math inline">\(1776.969027\)</span> MeV. The center sits <span
+class="math inline">\(0.43\)</span> standard uncertainties from the
+measured <span class="math inline">\(1776.93\pm0.09\)</span> MeV, and
+the window is three orders of magnitude narrower than that measurement
+uncertainty.</p>
+<p>The comparison is governed by a registered conditional test whose
+target definition and decision rule were fixed in a frozen prediction
+record <span class="paper-citation" title="Citation: ophregister">[source]</span>: a
+world-average or dedicated-measurement central value more than three
+standard uncertainties from <span
+class="math inline">\(1776.969027\)</span> MeV refutes the
+balanced-circulant premise; compatibility requires agreement within two
+standard uncertainties at a measurement uncertainty of at most <span
+class="math inline">\(0.045\)</span> MeV; every other outcome carries no
+verdict. The premise ancestry is declared: the balance condition was
+first abstracted from the measured charged-lepton triple, so the window
+is a target-informed conditional postdiction whose evidential weight
+lies in the kill direction. Improving tau-mass averages test the
+balanced-circulant premise directly.</p>
+<h2 id="numerical-diagnostic-and-provenance">Numerical diagnostic and
+provenance</h2>
+<p>Using the Particle Data Group 2026 central masses <span class="paper-citation" title="Citation: pdg2026">[source]</span>, <span
+class="math display">\[(m_e,m_\mu,m_\tau)
+=(0.51099895069,\ 105.6583755,\ 1776.93)\ {\rm MeV},\]</span> gives
+<span
+class="math display">\[Q_{\mathrm{PDG}}=0.6666644634026367.\]</span> The
+declared minimal complete public response model gives <span
+class="math display">\[\begin{aligned}
+Q_{\mathrm{MCPR}}&amp;=0.6666644634090389,\\
+\rho/a&amp;=0.7071044442750720,\\
+\frac{\rho/a-1/\sqrt2}{1/\sqrt2}
+&amp;=-3.3049\times10^{-6}.
+\end{aligned}\]</span> The response dimensions, path table, amplitude,
+phase, and determinant exponent are target-informed inputs. The
+numerical response is therefore neither blind nor source-derived. The
+proximity of the two displayed <span class="math inline">\(Q\)</span>
+values carries no significance or predictive weight.</p>
+<div class="center">
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th style="text-align: left;">Statement</th>
+<th style="text-align: left;">Scope</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Eq. <span class="paper-cross-reference" title="Source reference: eq:koideformula">eq:koideformula</span></td>
+<td style="text-align: left;">exact algebra in the
+nonnegative-eigenvalue chamber</td>
+</tr>
+<tr>
+<td style="text-align: left;">Theorem <a href="#thm:gns"
+data-reference-type="ref" data-reference="thm:gns">4</a></td>
+<td style="text-align: left;">exact implication conditional on the
+declared finite event packet</td>
+</tr>
+<tr>
+<td style="text-align: left;">Icosahedral face fiber</td>
+<td style="text-align: left;">exact local <span
+class="math inline">\(A_5/C_3\)</span> bundle and unordered
+spectrum</td>
+</tr>
+<tr>
+<td style="text-align: left;">Tau window, Eq. <span class="paper-cross-reference" title="Source reference: eq:tauwindow">eq:tauwindow</span></td>
+<td style="text-align: left;">exact quadratic consequence of the balance
+and ordering premises; registered decision rule</td>
+</tr>
+<tr>
+<td style="text-align: left;">Physical family attachment</td>
+<td style="text-align: left;">absent from the theorems; a premise of any
+physical reading</td>
+</tr>
+<tr>
+<td style="text-align: left;">Phase and numerical ratios</td>
+<td style="text-align: left;">undetermined by the balance condition; two
+free chamber coordinates</td>
+</tr>
+<tr>
+<td style="text-align: left;">MCPR numerical proximity</td>
+<td style="text-align: left;">target-informed comparison-only
+diagnostic</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<h2 id="why-residual-symmetry-does-not-finish-the-ratios">Why residual
+symmetry does not finish the ratios</h2>
+<p>The family-shape problem can be stated in the real five-dimensional
+representation <span
+class="math display">\[W_5\simeq\operatorname{Sym}^2_0(\mathbb
+R^3),\]</span> the traceless symmetric <span
+class="math inline">\(3\times3\)</span> matrices with action <span
+class="math inline">\(A\mapsto gAg^T\)</span>.</p>
+<div class="proposition">
+<p><strong>Proposition 5</strong> (Residual-stabilizer boundary).
+<em>Invariance under a threefold or fivefold rotation about an axis
+<span class="math inline">\(n\)</span> forces <span
+class="math display">\[A=\alpha(nn^T-I/3),\]</span> which has a double
+eigenvalue. Invariance under a twofold rotation has a three-dimensional
+linear fixed locus, hence two projective parameters, and that locus
+admits simple spectrum.</em></p>
+</div>
+<div class="proof">
+<p><em>Proof.</em> Choose the rotation axis as the third coordinate.
+Decompose a traceless symmetric matrix into a planar scalar, planar
+spin-two anisotropy, transverse vector, and axial entry. Rotation by
+<span class="math inline">\(\theta\)</span> acts on the anisotropy by
+<span class="math inline">\(2\theta\)</span> and on the transverse
+vector by <span class="math inline">\(\theta\)</span>. For <span
+class="math inline">\(\theta=2\pi/3\)</span> or <span
+class="math inline">\(2\pi/5\)</span>, neither block has a nonzero fixed
+vector, so only the axial combination remains. For <span
+class="math inline">\(\theta=\pi\)</span>, the planar symmetric block
+survives: <span class="math display">\[A=\begin{pmatrix}
+u&amp;v&amp;0\\
+v&amp;w&amp;0\\
+0&amp;0&amp;-u-w
+\end{pmatrix}.\]</span> This space has dimension three and contains
+matrices with three distinct eigenvalues. ◻</p>
+</div>
+<p>Threefold and fivefold symmetry cannot produce three distinct masses.
+Twofold symmetry leaves two scale-free coordinates, exactly enough to
+carry the two mass ratios without selecting them. A numerical spectrum
+therefore requires a specific invariant potential derived from the
+screen dynamics. This proposition locates the missing input; it supplies
+no replacement fit.</p>
+<h2 id="formal-proof-boundary">Formal proof boundary</h2>
+<p>The algebraic core has a Lean 4 formalization. It proves the root
+sum, square sum, quotient formula, reciprocal-square-root identity, and
+the nonnegative-modulus equivalence <span
+class="math display">\[\frac13+\frac23r^2=\frac23
+\quad\Longleftrightarrow\quad
+r=\frac1{\sqrt2}.\]</span> The formal module deliberately does not
+identify signed eigenvalues with physical square roots. Positivity of
+all three eigenvalues, the phase selection, and the
+source-to-charged-family attachment are outside its statement. This
+division matches Theorem <a href="#thm:koide" data-reference-type="ref"
+data-reference="thm:koide">1</a>: the checked algebra is exact, and the
+physical reading is a separate premise.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>The regular three-corner face carrier turns the Koide relation into
+one transparent modulus condition. In the positive chamber, <span
+class="math display">\[Q=\frac23
+\quad\Longleftrightarrow\quad
+\rho/a=\frac1{\sqrt2}.\]</span> The finite tracial event packet supplies
+this balance conditionally through equal block weights and the canonical
+square-root representation. Under the balance and mass-ordering premises
+the measured electron and muon masses fix the tau mass inside the 72-eV
+window of Eq. <span class="paper-cross-reference" title="Source reference: eq:tauwindow">eq:tauwindow</span>, and a registered
+decision rule fixes what refutes the balanced-circulant premise. The
+result does not determine the phase or mass ratios and does not attach
+the local face fiber to physical charged leptons. Its durable content is
+an exact circulant identity, an exact finite conditional balance
+theorem, a conditional tau-mass window with a registered decision rule,
+and a sharp boundary between the checked algebra and the physical
+attachment premises.</p>
+<div class="thebibliography">
+<p><span>9</span></p>
+<p>Y. Koide, <em>New View of Quark and Lepton Mass Hierarchy</em>,
+Physical Review D <strong>28</strong>, 252 (1983). <a
+href="https://doi.org/10.1103/PhysRevD.28.252"
+class="uri">https://doi.org/10.1103/PhysRevD.28.252</a></p>
+<p>Particle Data Group, <em>Review of Particle Physics: 2026 particle
+listings</em>, 2026. <a
+href="https://pdg.lbl.gov/2026/listings/particle_properties.html"
+class="uri">https://pdg.lbl.gov/2026/listings/particle_properties.html</a></p>
+<p>FloatingPragma, <em>Frozen prediction register and precommitted
+comparison certificates</em>, 2026. <a
+href="https://github.com/FloatingPragma/observer-patch-holography/blob/main/claims/frozen_prediction_register.json"
+class="uri">https://github.com/FloatingPragma/observer-patch-holography/blob/main/claims/frozen_prediction_register.json</a></p>
+</div>
+<h2 class="unnumbered" id="ai-assistance-disclosure">AI Assistance
+Disclosure</h2>
+<p>This research project used research-grade commercial models,
+including Anthropic’s Fable and OpenAI’s GPT-5.6-Sol, for research
+support, software development, editing, and synthesis. The authors are
+responsible for the paper’s claims, methods, and final text.</p>
+
+          </div>
+        </div>
+      </article>
+    </main>
+    <footer class="site-footer reveal">
+      <div>Floating Pragma</div>
+      <div class="site-footer-links">
+        <a href="/oph/" data-track-link="footer-hub">Research</a>
+        <a href="/oph/papers/" data-track-link="footer-papers">Papers</a>
+        <a href="https://learn.floatingpragma.io/" data-track-link="footer-learn">Learn</a>
+        <a href="https://oph-lab.floatingpragma.io/" data-track-link="footer-lab">Lab</a>
+        <a href="https://simulation.floatingpragma.io/" data-track-link="footer-simulation">Simulation</a>
+        <a href="https://github.com/FloatingPragma/observer-patch-holography/" data-track-link="footer-github">GitHub</a>
+        <a href="https://oph-book.floatingpragma.io/" data-track-link="footer-webbook">Webbook v2</a>
+      </div>
+    </footer>
+
+  </div>
+  <script src="/oph/app.js"></script>
+</body>
+</html>

@@ -97,6 +97,12 @@
     <priority>0.82</priority>
   </url>
   <url>
+    <loc>https://floatingpragma.io/oph/papers/observers-are-all-you-need/</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+  </url>
+  <url>
     <loc>https://floatingpragma.io/oph/papers/paradise-as-fixed-point-consensus/</loc>
     <lastmod>2026-08-30</lastmod>
     <changefreq>monthly</changefreq>
@@ -116,6 +122,60 @@
   </url>
   <url>
     <loc>https://floatingpragma.io/oph/papers/screen-microphysics-and-observer-synchronization/</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+  </url>
+  <url>
+    <loc>https://floatingpragma.io/oph/papers/photonic-fixed-point-consensus-sha256d-proof-of-work/</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+  </url>
+  <url>
+    <loc>https://floatingpragma.io/oph/papers/de-sitter-time-advance-fixed-screen-capacity/</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+  </url>
+  <url>
+    <loc>https://floatingpragma.io/oph/papers/fine-structure-constant-oph-pixel-fixed-point/</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+  </url>
+  <url>
+    <loc>https://floatingpragma.io/oph/papers/positive-chamber-koide-icosahedral-face-circulants/</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+  </url>
+  <url>
+    <loc>https://floatingpragma.io/oph/papers/machine-checked-finite-event-algebras/</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+  </url>
+  <url>
+    <loc>https://floatingpragma.io/oph/papers/observation-determined-normal-forms/</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+  </url>
+  <url>
+    <loc>https://floatingpragma.io/oph/papers/observer-patch-holography-string-vacuum-selector/</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+  </url>
+  <url>
+    <loc>https://floatingpragma.io/oph/papers/thinking-as-patch-net-fixed-point-search/</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+  </url>
+  <url>
+    <loc>https://floatingpragma.io/oph/papers/yang-mills-mass-gap-observer-patch-holography/</loc>
     <lastmod>2026-08-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
