@@ -1,7 +1,7 @@
 # Observer Patch Holography Papers
 
-Release: r2034
-Released: September 2, 2026
+Release: r2035
+Released: September 3, 2026
 
 This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 
@@ -27,7 +27,7 @@ This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 
 - HTML: https://floatingpragma.io/oph/papers/from-observer-consensus-to-standard-physics/
 - PDF: https://floatingpragma.io/oph/papers/from-observer-consensus-to-standard-physics/paper.pdf
-- Authors: Bernhard Mueller, Alexander Osika, Mario Poneder, Kai Xue, Ben Cassie, Peter Nguyen, Jinwook Kim, David Matscheko, Jonathan Hill, William T. Glynn, Maarten Antoine Visser, Kale Arnav Anirudha
+- Authors: Bernhard Mueller, Alexander Osika, Mario Poneder, Kai Xue, Ben Cassie, Peter Nguyen, Jinwook Kim, David Matscheko, Jonathan Hill, William T. Glynn, Maarten Antoine Visser, Kale Arnav Anirudha, Brieuc de La Fourni`ere
 - Affiliations: Bernhard Mueller, Pragma Research Inc.; Alexander Osika, EtherWorks
 - Category: Flagship reconstruction paper
 - Summary: The flagship technical account of Observer Patch Holography. It develops finite consensus normal forms, Standard Model Lie-type reconstruction, and a conditional route to the Einstein field equation, with the physical identification steps stated separately.
@@ -63,7 +63,7 @@ This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 
 - HTML: https://floatingpragma.io/oph/papers/observer-spacetime-einstein-dynamics/
 - PDF: https://floatingpragma.io/oph/papers/observer-spacetime-einstein-dynamics/paper.pdf
-- Authors: Bernhard Mueller, Alexander Osika, Mario Poneder, Kai Xue, Peter Nguyen, Maarten Antoine Visser, David Matscheko
+- Authors: Bernhard Mueller, Alexander Osika, Mario Poneder, Kai Xue, Peter Nguyen, Maarten Antoine Visser, David Matscheko, Brieuc de La Fourni`ere
 - Affiliations: Bernhard Mueller, Pragma Research Inc.; Alexander Osika, EtherWorks
 - Category: Gravity
 - Summary: Explores how shared observer records could lead to spacetime and gravity. The paper states the mathematical results and the conditions needed to connect them to physical gravity.
@@ -72,7 +72,7 @@ This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 
 - HTML: https://floatingpragma.io/oph/papers/screen-microphysics-and-observer-synchronization/
 - PDF: https://floatingpragma.io/oph/papers/screen-microphysics-and-observer-synchronization/paper.pdf
-- Authors: Bernhard Mueller, Alexander Osika, Kai Xue, Ben Cassie
+- Authors: Bernhard Mueller, Alexander Osika, Kai Xue, Ben Cassie, Brieuc de La Fourni`ere
 - Affiliations: Bernhard Mueller, Pragma Research Inc.; Alexander Osika, EtherWorks
 - Category: Screen physics
 - Summary: Studies a finite observer model with records, synchronization, measurement, and possible hardware evidence. It separates mathematical results from open questions about their physical realization.
@@ -108,7 +108,7 @@ This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 
 - HTML: https://floatingpragma.io/oph/papers/positive-chamber-koide-icosahedral-face-circulants/
 - PDF: https://floatingpragma.io/oph/papers/positive-chamber-koide-icosahedral-face-circulants/paper.pdf
-- Authors: Bernhard Mueller
+- Authors: Bernhard Mueller, Brieuc de La Fourni`ere
 - Affiliations: Bernhard Mueller, Pragma Research Inc.
 - Category: Flavor structure
 - Summary: Proves the exact Koide invariant for positive Hermitian C3 face circulants and isolates the balance condition that yields Q = 2/3. The finite GNS implication and tau-mass window are conditional; no physical lepton-family attachment or source-only mass prediction is claimed.

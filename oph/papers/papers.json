@@ -1,6 +1,6 @@
 {
-  "release_id": "r2034",
-  "released_at": "September 2, 2026",
+  "release_id": "r2035",
+  "released_at": "September 3, 2026",
   "collection_url": "https://floatingpragma.io/oph/papers/",
   "sitemap_url": "https://floatingpragma.io/oph/papers/sitemap.xml",
   "papers": [
@@ -128,7 +128,8 @@
         "Jonathan Hill",
         "William T. Glynn",
         "Maarten Antoine Visser",
-        "Kale Arnav Anirudha"
+        "Kale Arnav Anirudha",
+        "Brieuc de La Fourni`ere"
       ],
       "affiliations": [
         {
@@ -325,7 +326,8 @@
         "Kai Xue",
         "Peter Nguyen",
         "Maarten Antoine Visser",
-        "David Matscheko"
+        "David Matscheko",
+        "Brieuc de La Fourni`ere"
       ],
       "affiliations": [
         {
@@ -379,7 +381,8 @@
         "Bernhard Mueller",
         "Alexander Osika",
         "Kai Xue",
-        "Ben Cassie"
+        "Ben Cassie",
+        "Brieuc de La Fourni`ere"
       ],
       "affiliations": [
         {
@@ -552,7 +555,8 @@
       "category": "Flavor structure",
       "description": "Proves the exact Koide invariant for positive Hermitian C3 face circulants and isolates the balance condition that yields Q = 2/3. The finite GNS implication and tau-mass window are conditional; no physical lepton-family attachment or source-only mass prediction is claimed.",
       "authors": [
-        "Bernhard Mueller"
+        "Bernhard Mueller",
+        "Brieuc de La Fourni`ere"
       ],
       "affiliations": [
         {
