@@ -27,7 +27,7 @@ This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 
 - HTML: https://floatingpragma.io/oph/papers/from-observer-consensus-to-standard-physics/
 - PDF: https://floatingpragma.io/oph/papers/from-observer-consensus-to-standard-physics/paper.pdf
-- Authors: Bernhard Mueller, Alexander Osika, Mario Poneder, Kai Xue, Ben Cassie, Peter Nguyen, Jinwook Kim, David Matscheko, Jonathan Hill, William T. Glynn, Maarten Antoine Visser, Kale Arnav Anirudha, Brieuc de La Fourni`ere
+- Authors: Bernhard Mueller, Alexander Osika, Mario Poneder, Kai Xue, Ben Cassie, Peter Nguyen, Jinwook Kim, David Matscheko, Jonathan Hill, William T. Glynn, Maarten Antonie Visser, Kale Arnav Anirudha, Brieuc de La Fourni`ere
 - Affiliations: Bernhard Mueller, Pragma Research Inc.; Alexander Osika, EtherWorks
 - Category: Flagship reconstruction paper
 - Summary: The flagship technical account of Observer Patch Holography. It develops finite consensus normal forms, Standard Model Lie-type reconstruction, and a conditional route to the Einstein field equation, with the physical identification steps stated separately.
@@ -63,7 +63,7 @@ This page lists the first-party HTML and PDF URLs for the OPH paper stack.
 
 - HTML: https://floatingpragma.io/oph/papers/observer-spacetime-einstein-dynamics/
 - PDF: https://floatingpragma.io/oph/papers/observer-spacetime-einstein-dynamics/paper.pdf
-- Authors: Bernhard Mueller, Alexander Osika, Mario Poneder, Kai Xue, Peter Nguyen, Maarten Antoine Visser, David Matscheko, Brieuc de La Fourni`ere
+- Authors: Bernhard Mueller, Alexander Osika, Mario Poneder, Kai Xue, Peter Nguyen, Maarten Antonie Visser, David Matscheko, Brieuc de La Fourni`ere
 - Affiliations: Bernhard Mueller, Pragma Research Inc.; Alexander Osika, EtherWorks
 - Category: Gravity
 - Summary: Explores how shared observer records could lead to spacetime and gravity. The paper states the mathematical results and the conditions needed to connect them to physical gravity.
