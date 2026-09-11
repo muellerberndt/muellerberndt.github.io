@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Recovering Observer Spacetime and Einstein Dynamics from Overlap Consistency | OPH Paper</title>
-  <meta name="title" content="Recovering Observer Spacetime and Einstein Dynamics from Overlap Consistency | OPH Paper" />
+  <title>Recovering Observer Spacetime and Einstein Dynamics from Overlap Consistency | Pragma Research</title>
+  <meta name="title" content="Recovering Observer Spacetime and Einstein Dynamics from Overlap Consistency | Pragma Research" />
   <meta name="description" content="Explores how shared observer records could lead to spacetime and gravity. The paper states the mathematical results and the conditions needed to connect them to physical gravity." />
   <meta name="keywords" content="quantum gravity, observer spacetime, source-derived causal poset, causal sets, Lorentz symmetry, Einstein gravity, Lorentzian continuum, modular flow, Observer Patch Holography" />
-  <meta name="author" content="Pragma" />
+  <meta name="author" content="Pragma Research" />
+  <meta name="theme-color" content="#05070b" />
   <link rel="canonical" href="https://floatingpragma.io/oph/papers/observer-spacetime-einstein-dynamics/" />
-  <link rel="related" href="https://floatingpragma.io/oph/" title="Observer Patch Holography" />
+  <link rel="related" href="https://floatingpragma.io/physics/" title="Observer Patch Holography" />
   <link rel="related" href="https://learn.floatingpragma.io/" title="OPH Learning Library" />
   <link rel="related" href="https://oph-lab.floatingpragma.io/" title="OPH Lab" />
   <link rel="related" href="https://simulation.floatingpragma.io/" title="OPH Simulation" />
@@ -65,19 +66,24 @@
   <link rel="alternate" type="application/pdf" href="https://floatingpragma.io/oph/papers/observer-spacetime-einstein-dynamics/paper.pdf" title="Recovering Observer Spacetime and Einstein Dynamics from Overlap Consistency PDF" />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="https://floatingpragma.io/oph/papers/observer-spacetime-einstein-dynamics/" />
-  <meta property="og:title" content="Recovering Observer Spacetime and Einstein Dynamics from Overlap Consistency | OPH Paper" />
+  <meta property="og:site_name" content="Pragma Research" />
+  <meta property="og:title" content="Recovering Observer Spacetime and Einstein Dynamics from Overlap Consistency | Pragma Research" />
   <meta property="og:description" content="Explores how shared observer records could lead to spacetime and gravity. The paper states the mathematical results and the conditions needed to connect them to physical gravity." />
-  <meta property="og:image" content="https://floatingpragma.io/og.png" />
+  <meta property="og:image" content="https://floatingpragma.io/og-physics.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="Floating Pragma research for self-reading systems" />
+  <meta property="og:image:alt" content="Observer Patch Holography, the fundamental physics program at Pragma Research" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Recovering Observer Spacetime and Einstein Dynamics from Overlap Consistency | OPH Paper" />
+  <meta name="twitter:title" content="Recovering Observer Spacetime and Einstein Dynamics from Overlap Consistency | Pragma Research" />
   <meta name="twitter:description" content="Explores how shared observer records could lead to spacetime and gravity. The paper states the mathematical results and the conditions needed to connect them to physical gravity." />
-  <meta name="twitter:image" content="https://floatingpragma.io/og.png" />
-  <meta name="twitter:image:alt" content="Floating Pragma research for self-reading systems" />
+  <meta name="twitter:image" content="https://floatingpragma.io/og-physics.png" />
+  <meta name="twitter:image:alt" content="Observer Patch Holography, the fundamental physics program at Pragma Research" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <link rel="stylesheet" href="/oph/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" />
+  <link rel="stylesheet" href="/assets/pragma.css?v=1" />
+  <link rel="stylesheet" href="/assets/papers.css?v=1" />
   <script>
     window.MathJax = {
       tex: { inlineMath: [['\\(', '\\)'], ['$', '$']], displayMath: [['\\[', '\\]']] },
@@ -141,10 +147,15 @@
       "name": "Brieuc de La Fournière"
     }
   ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Pragma Research",
+    "url": "https://floatingpragma.io/"
+  },
   "isPartOf": {
     "@type": "ResearchProject",
     "name": "Observer Patch Holography",
-    "url": "https://floatingpragma.io/oph/"
+    "url": "https://floatingpragma.io/physics/"
   },
   "keywords": [
     "quantum gravity",
@@ -190,19 +201,19 @@
     {
       "@type": "ListItem",
       "position": 1,
-      "name": "Floating Pragma",
+      "name": "Pragma Research",
       "item": "https://floatingpragma.io/"
     },
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "Observer Patch Holography",
-      "item": "https://floatingpragma.io/oph/"
+      "name": "Physics",
+      "item": "https://floatingpragma.io/physics/"
     },
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "OPH Papers",
+      "name": "Papers",
       "item": "https://floatingpragma.io/oph/papers/"
     },
     {
@@ -222,68 +233,39 @@
     gtag('config', 'G-HLGH209WMG', { cookie_domain: 'floatingpragma.io' });
   </script>
 </head>
-<body class="oph-page paper-page">
-  <div class="site-grid"></div>
-  <div class="page-shell">
-    <header class="site-header reveal">
-      <a class="brand" href="/oph/">
-        <span class="brand-mark">
-          <img src="/pragma-cropped.jpg" alt="Pragma" />
-        </span>
-        <span class="brand-copy">
-          <strong>Floating Pragma</strong>
-          <span>OPH Paper</span>
-        </span>
-      </a>
-      <nav class="site-nav" aria-label="OPH navigation">
-        <a href="/oph/" data-track-link="nav-hub">Research</a>
-        <a href="/oph/papers/" data-track-link="nav-papers">Papers</a>
-        <a href="https://learn.floatingpragma.io/" data-track-link="nav-learn">Learn</a>
-        <a href="https://oph-lab.floatingpragma.io/" data-track-link="nav-lab">Lab</a>
-        <a href="https://simulation.floatingpragma.io/" data-track-link="nav-simulation">Simulation</a>
-        <a href="https://github.com/FloatingPragma/observer-patch-holography/" data-track-link="nav-github">GitHub</a>
-        <a href="https://oph-book.floatingpragma.io/" data-track-link="nav-webbook">Webbook v2</a>
-      </nav>
-    </header>
+<body class="theme-phys paper-page">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="shell">
+      <a class="brand" href="/" aria-label="Pragma Research home"><img src="/pragma-cropped.jpg" alt="" width="34" height="34" /><span><b>Pragma Research</b><small>Mathematics frontier research</small></span></a>
+      <nav class="nav" aria-label="Primary"><a href="/physics/">Physics</a><a href="/cadence/">Cadence</a><a href="/oph/papers/" aria-current="page">Papers</a><a href="/selected-works/">Chief Hacking Officer</a><a class="cta" href="mailto:tom@floatingpragma.io">Contact</a></nav>
+    </div>
+  </header>
 
-    <main>
-      <article class="paper-reader reveal">
-        <header class="paper-reader-header">
-          <div class="eyebrow">Gravity</div>
-          <h1 class="citation_title">Recovering Observer Spacetime and Einstein Dynamics from Overlap Consistency</h1>
-          <h3 class="citation_author">Authors: Bernhard Mueller, Alexander Osika, Mario Poneder, Kai Xue, Peter Nguyen, Maarten Antonie Visser, David Matscheko, Brieuc de La Fournière</h3>
-          <p class="paper-reader-affiliations"><strong>Affiliations:</strong> Bernhard Mueller, Pragma Research Inc.; Alexander Osika, EtherWorks</p>
-          <div class="paper-reader-abstract">
-            <strong>Abstract</strong>
-            <p>Explores how shared observer records could lead to spacetime and gravity. The paper states the mathematical results and the conditions needed to connect them to physical gravity.</p>
-          </div>
-          <div class="paper-meta-line">
-            <span>r2042</span>
-            <span>September 10, 2026</span>
-            <span>papers</span>
-          </div>
-          <div class="cta-row">
-            <a class="btn btn-primary" href="/oph/papers/observer-spacetime-einstein-dynamics/paper.pdf" target="_blank" rel="noopener noreferrer" data-track-link="paper-pdf-recovering_observer_spacetime_and_einstein_dynamics_from_overlap_consistency">Download PDF</a>
-            <a class="btn btn-secondary" href="/oph/papers/" data-track-link="paper-index">All OPH papers</a>
-            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r2042" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
-            <a class="btn btn-secondary" href="https://challenge.floatingpragma.io/" data-track-link="paper-challenge">Challenge</a>
-          </div>
-
-          <nav class="paper-link-strip" aria-label="Related OPH essays">
-            <span>Related essays</span>
-            <a href="https://blog.floatingpragma.io/everything-that-clicks-into-place" target="_blank" rel="noopener noreferrer" data-track-link="paper-blog-recovering_observer_spacetime_and_einstein_dynamics_from_overlap_consistency">Everything Clicks Into Place</a>
-            <a href="https://blog.floatingpragma.io/causality-is-repair" target="_blank" rel="noopener noreferrer" data-track-link="paper-blog-recovering_observer_spacetime_and_einstein_dynamics_from_overlap_consistency">Causality Is Repair</a>
-            <a href="https://blog.floatingpragma.io/the-right-string-theory" target="_blank" rel="noopener noreferrer" data-track-link="paper-blog-recovering_observer_spacetime_and_einstein_dynamics_from_overlap_consistency">The String Theory OPH Tests</a>
-          </nav>
-
-          <details class="paper-section-jump">
-            <summary>Section jump</summary>
-            <nav class="paper-toc" aria-label="Paper sections"><a href="#observer-patch-holography">Recovered Core: Foundations and Structural Branches</a>
+  <main id="main">
+    <article class="shell">
+      <header class="paper-hero">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="/physics/">Physics</a><span aria-hidden="true">/</span><a href="/oph/papers/">Papers</a><span aria-hidden="true">/</span><span aria-current="page">Core paper</span></nav>
+        <span class="eyebrow">Gravity</span>
+        <h1 class="citation_title">Recovering Observer Spacetime and Einstein Dynamics from Overlap Consistency</h1>
+        <div class="byline">
+          <div class="citation_author">Bernhard Mueller, Alexander Osika, Mario Poneder, Kai Xue, Peter Nguyen, Maarten Antonie Visser, David Matscheko, Brieuc de La Fournière</div>
+          <p class="aff">Bernhard Mueller, Pragma Research Inc.; Alexander Osika, EtherWorks</p>
+        </div>
+        <div class="paper-chips"><span>r2042</span><span>September 10, 2026</span><span>Core paper</span><span>HTML &amp; PDF</span></div>
+        <div class="actions">
+          <a class="btn btn-phys" href="/oph/papers/observer-spacetime-einstein-dynamics/paper.pdf" target="_blank" rel="noopener noreferrer" data-track-link="paper-pdf-recovering_observer_spacetime_and_einstein_dynamics_from_overlap_consistency">Download PDF <span class="arr">&rarr;</span></a>
+          <a class="btn" href="/oph/papers/" data-track-link="paper-index">All papers</a>
+          <a class="btn" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r2042" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
+        </div>
+        <div class="abstract"><div class="k">Abstract</div><p>Explores how shared observer records could lead to spacetime and gravity. The paper states the mathematical results and the conditions needed to connect them to physical gravity.</p></div>
+          <nav class="strip" aria-label="Related essays"><span>Related essays</span><a href="https://blog.floatingpragma.io/everything-that-clicks-into-place" target="_blank" rel="noopener noreferrer" data-track-link="paper-blog-recovering_observer_spacetime_and_einstein_dynamics_from_overlap_consistency">Everything Clicks Into Place</a><a href="https://blog.floatingpragma.io/causality-is-repair" target="_blank" rel="noopener noreferrer" data-track-link="paper-blog-recovering_observer_spacetime_and_einstein_dynamics_from_overlap_consistency">Causality Is Repair</a><a href="https://blog.floatingpragma.io/the-right-string-theory" target="_blank" rel="noopener noreferrer" data-track-link="paper-blog-recovering_observer_spacetime_and_einstein_dynamics_from_overlap_consistency">The String Theory OPH Tests</a></nav>
+      </header>
+      <div class="paper-layout">
+        <div>
+          <details class="toc-mobile"><summary>Contents</summary><nav class="paper-toc" aria-label="Paper sections"><a href="#observer-patch-holography">Recovered Core: Foundations and Structural Branches</a>
 <a href="#sec:screen-spectrum-theorems">Finite Screen Spectrum Theorem Package</a>
-<a href="#app:derivation-technical-port">Technical Details for the Specialist Derivations</a></nav>
-          </details>
-        </header>
-        <div class="paper-reader-grid">
+<a href="#app:derivation-technical-port">Technical Details for the Specialist Derivations</a></nav></details>
           <div class="paper-body">
 <div class="center">
 <p><strong>Paper release:</strong>
@@ -16801,23 +16783,69 @@ support, software development, editing, and synthesis. The authors are
 responsible for the paper’s claims, methods, and final text.</p>
 
           </div>
+          <div class="paper-end">
+            <div><h2>Keep <em class="t-phys">reading.</em></h2><p>Sixteen papers carry the argument from observer consensus to spacetime, gauge structure and matter, each with its own proof boundary.</p></div>
+            <div class="actions"><a class="btn btn-phys" href="/oph/papers/">All papers <span class="arr">&rarr;</span></a><a class="btn" href="/physics/">The physics program</a></div>
+          </div>
         </div>
-      </article>
-    </main>
-    <footer class="site-footer reveal">
-      <div>Floating Pragma</div>
-      <div class="site-footer-links">
-        <a href="/oph/" data-track-link="footer-hub">Research</a>
-        <a href="/oph/papers/" data-track-link="footer-papers">Papers</a>
-        <a href="https://learn.floatingpragma.io/" data-track-link="footer-learn">Learn</a>
-        <a href="https://oph-lab.floatingpragma.io/" data-track-link="footer-lab">Lab</a>
-        <a href="https://simulation.floatingpragma.io/" data-track-link="footer-simulation">Simulation</a>
-        <a href="https://github.com/FloatingPragma/observer-patch-holography/" data-track-link="footer-github">GitHub</a>
-        <a href="https://oph-book.floatingpragma.io/" data-track-link="footer-webbook">Webbook v2</a>
+        <aside class="paper-aside" aria-label="Paper navigation">
+          <div class="k">Contents</div><nav class="paper-toc" aria-label="Paper sections"><a href="#observer-patch-holography">Recovered Core: Foundations and Structural Branches</a>
+<a href="#sec:screen-spectrum-theorems">Finite Screen Spectrum Theorem Package</a>
+<a href="#app:derivation-technical-port">Technical Details for the Specialist Derivations</a></nav>
+          <a class="btn btn-phys" href="/oph/papers/observer-spacetime-einstein-dynamics/paper.pdf" target="_blank" rel="noopener noreferrer">Download PDF</a>
+        </aside>
       </div>
-    </footer>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="shell">
+      <div class="cols">
+        <div class="about">
+          <a class="brand" href="/"><img src="/pragma-cropped.jpg" alt="" width="34" height="34" /><span><b>Pragma Research</b><small>Mathematics frontier research</small></span></a>
+          <p>New mathematics for the fundamental laws of physics and for machines that learn like brains.</p>
+        </div>
+        <div><h4>Physics</h4><ul>
+          <li><a href="/physics/">Observer Patch Holography</a></li>
+          <li><a href="/oph/papers/">Papers</a></li>
+          <li><a href="https://philpapers.org/rec/MUEFOC" target="_blank" rel="noopener">Preprint</a></li>
+          <li><a href="https://oph-book.floatingpragma.io/">Book</a></li>
+          <li><a href="https://learn.floatingpragma.io/">Learn</a></li>
+          <li><a href="https://github.com/FloatingPragma/observer-patch-holography/">GitHub</a></li>
+        </ul></div>
+        <div><h4>Machine learning</h4><ul>
+          <li><a href="/cadence/">Cadence</a></li>
+          <li><a href="https://github.com/muellerberndt/cadence">Library</a></li>
+          <li><a href="https://github.com/muellerberndt/cadence-examples">Examples</a></li>
+          <li><a href="https://pypi.org/project/cadence-net/">PyPI</a></li>
+        </ul></div>
+        <div><h4>Company</h4><ul>
+          <li><a href="/selected-works/">Chief Hacking Officer</a></li>
+          <li><a href="https://blog.floatingpragma.io/">Blog</a></li>
+          <li><a href="mailto:tom@floatingpragma.io">Contact</a></li>
+        </ul></div>
+      </div>
+      <div class="legal"><span>&copy; 2026 Pragma Research Inc.</span><span>floatingpragma.io</span></div>
+    </div>
+  </footer>
 
-  </div>
-  <script src="/oph/app.js"></script>
+  <script src="/assets/pragma.js?v=1" defer></script>
+  <script>
+    (function () {
+      var links = document.querySelectorAll('.paper-aside .paper-toc a');
+      if (!links.length || !('IntersectionObserver' in window)) return;
+      var byId = {};
+      links.forEach(function (a) { byId[a.getAttribute('href').slice(1)] = a; });
+      var heads = [].slice.call(document.querySelectorAll('.paper-body h1[id], .paper-body h2[id]')).filter(function (h) { return byId[h.id]; });
+      var current = null;
+      function mark(id) {
+        if (current === id) return; current = id;
+        links.forEach(function (a) { a.classList.toggle('on', a.getAttribute('href') === '#' + id); });
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) { if (e.isIntersecting) mark(e.target.id); });
+      }, { rootMargin: '-10% 0px -75% 0px' });
+      heads.forEach(function (h) { io.observe(h); });
+    })();
+  </script>
 </body>
 </html>

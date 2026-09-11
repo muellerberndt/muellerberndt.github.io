@@ -8,7 +8,9 @@ OPH is a research program for a unified theory of quantum mechanics and gravity.
 
 - Program overview: https://floatingpragma.io/physics/
 - Preprint (PhilPapers): https://philpapers.org/rec/MUEFOC
-- Research site: https://floatingpragma.io/oph/
+- Paper library with HTML and PDF editions: https://floatingpragma.io/oph/papers/
+- Machine-readable paper inventory: https://floatingpragma.io/oph/papers/papers.json
+- Paper LLM index: https://floatingpragma.io/oph/papers/llms.txt
 - Textbooks and guided learning: https://learn.floatingpragma.io/
 - Book for general readers: https://oph-book.floatingpragma.io/
 - Collaborative source repository: https://github.com/FloatingPragma/observer-patch-holography/

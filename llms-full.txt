@@ -14,7 +14,7 @@ The public research distinguishes exact finite mathematics from physical interpr
 
 ## Canonical Public Network
 
-1. Website and OPH overview: https://floatingpragma.io/oph/
+1. Physics program overview: https://floatingpragma.io/physics/
 2. Textbooks and guided learning: https://learn.floatingpragma.io/
 3. Interactive OPH Lab: https://oph-lab.floatingpragma.io/
 4. Papers, proofs, code, and evidence: https://github.com/FloatingPragma/observer-patch-holography/
@@ -65,6 +65,4 @@ The finite framework proves and computes results under displayed premises. Sever
 
 ## Feeds and Contact
 
-- RSS: https://floatingpragma.io/oph/feed.xml
-- JSON Feed: https://floatingpragma.io/oph/feed.json
 - Contact: tom@floatingpragma.io
