@@ -1,40 +1,35 @@
-# Floating Pragma
+# Pragma Research
 
-Floating Pragma is an independent research studio for observer-first physics, scientific simulation, verifiable computation, and security research.
+Pragma Research is a mathematics frontier research company with two focus areas: fundamental physics and machine learning. Both programs build on one mathematical idea. Many bounded parts, each with a partial view, reach a shared state by comparing overlapping views and repairing disagreement.
 
-## Canonical OPH Surfaces
+## Fundamental physics: Observer Patch Holography (OPH)
 
-- Website and research overview: https://floatingpragma.io/oph/
-- Textbooks and guided learning: https://learn.floatingpragma.io/
-- Interactive OPH Lab: https://oph-lab.floatingpragma.io/
-- Public source repository: https://github.com/FloatingPragma/observer-patch-holography/
-- Mini-universe simulation: https://simulation.floatingpragma.io/
-- OPH Webbook v2, in preparation: https://oph-book.floatingpragma.io/
+OPH is a research program for a unified theory of quantum mechanics and gravity. It starts from bounded observers that keep local records, compare overlapping views and repair disagreement. The papers classify results separately as exact finite theorems, results conditional on named premises, and comparisons with measurement.
 
-## Research Record
-
-- Paper release: r2022, 20 August 2026
-- Paper index with first-party HTML and PDF editions: https://floatingpragma.io/oph/papers/
-- Flagship reconstruction paper: https://floatingpragma.io/oph/papers/from-observer-consensus-to-standard-physics/
+- Program overview: https://floatingpragma.io/physics/
+- Preprint (PhilPapers): https://philpapers.org/rec/MUEFOC
+- Research site: https://floatingpragma.io/oph/
+- Paper index with HTML and PDF editions: https://floatingpragma.io/oph/papers/
 - Machine-readable paper inventory: https://floatingpragma.io/oph/papers/papers.json
-- Paper-specific LLM index: https://floatingpragma.io/oph/papers/llms.txt
-- Paper sitemap: https://floatingpragma.io/oph/papers/sitemap.xml
+- Paper LLM index: https://floatingpragma.io/oph/papers/llms.txt
+- Textbooks and guided learning: https://learn.floatingpragma.io/
+- Book for general readers: https://oph-book.floatingpragma.io/
+- Collaborative source repository: https://github.com/FloatingPragma/observer-patch-holography/
+- Interactive lab: https://oph-lab.floatingpragma.io/
+- Mini-universe simulation: https://simulation.floatingpragma.io/
 
-Observer Patch Holography studies bounded, self-reading systems with local state, ports or boundaries, readback, records, feedback, and repair. Exact finite results, conditional reconstruction results, simulations, diagnostics, and open physical identification steps are classified separately.
+## Machine learning: Cadence
 
-## Reader Routes
+Cadence is an open-source (MIT) Python library for patch nets. Every unit repairs its own state from its neighbours until the network settles, and the rest state is the answer. Learning is the same settlement nudged toward a target, followed by a strictly local update in the equilibrium-propagation family. There is no backward pass.
 
-- Plain-language introduction: https://floatingpragma.io/oph/
-- Technical papers: https://floatingpragma.io/oph/papers/
-- Physics unification overview: https://floatingpragma.io/oph/physics-unification/
-- Standard Model and gravity overview: https://floatingpragma.io/oph/standard-model-gravity-unification/
-- Quantum gravity overview: https://floatingpragma.io/oph/quantum-gravity/
-- Simulation theory overview: https://floatingpragma.io/oph/simulation-theory/
-- Stress-test packet: https://floatingpragma.io/oph/stress-test/
+- Program overview: https://floatingpragma.io/cadence/
+- Library: https://github.com/muellerberndt/cadence
+- Examples ladder: https://github.com/muellerberndt/cadence-examples
+- Package: https://pypi.org/project/cadence-net/ (pip install cadence-net)
 
-## Feeds and Review
+## Company
 
-- RSS: https://floatingpragma.io/oph/feed.xml
-- JSON Feed: https://floatingpragma.io/oph/feed.json
-- Open challenge: https://challenge.floatingpragma.io/
+- Chief Hacking Officer, Bernhard Mueller, selected works: https://floatingpragma.io/selected-works/
+- Blog: https://blog.floatingpragma.io/
 - Contact: tom@floatingpragma.io
+- Extended research packet: https://floatingpragma.io/llms-full.txt

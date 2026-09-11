@@ -1,10 +1,12 @@
-# Floating Pragma / Observer Patch Holography Research Packet
+# Pragma Research Packet
 
 This file provides a compact machine-readable map for research assistants, indexing systems, and readers who need the source hierarchy.
 
 ## Summary
 
-Floating Pragma develops Observer Patch Holography (OPH), scientific simulations, verifiable computation, and security research. OPH asks whether bounded observers can form a shared physical account from local records, overlap comparison, and repair.
+Pragma Research is a mathematics frontier research company with two focus areas. The fundamental physics program develops Observer Patch Holography (OPH), a research program for a unified theory of quantum mechanics and gravity: https://floatingpragma.io/physics/. The machine learning program develops Cadence, an open-source library of brain-like patch nets that answer and learn by local settlement with no backward pass: https://floatingpragma.io/cadence/.
+
+OPH asks whether bounded observers can form a shared physical account from local records, overlap comparison, and repair. The flagship preprint is on PhilPapers: https://philpapers.org/rec/MUEFOC.
 
 An OPH technology surface instantiates observer-like self-reading structure: a bounded physical or software patch has local state, ports or a boundary, readback, records, feedback or repair moves, and an evidence bundle that another party can inspect.
 
