@@ -130,7 +130,7 @@
       </div>
       <p class="field-caption">Live field &middot; local repair with no global clock</p>
     </section>
-    <div class="ticker" aria-hidden="true"><div class="ticker-track"><div class="ticker-group"><span><b class="p">3</b> axioms</span><span><b class="p">0</b> fitted constants</span><span><b class="p">10,800+</b> Lean theorems</span><span><b class="p">12</b> ports &middot; 30 edges &middot; 20 faces</span><span><b class="p">2</b> of 1,024 matter contents survive</span><span>&alpha;<sup>&minus;1</sup> fixed point <b class="p">137.035660</b></span><span><b class="p">17</b> open papers</span><span>Predictions <b class="p">frozen</b> before the data</span></div><div class="ticker-group"><span><b class="p">3</b> axioms</span><span><b class="p">0</b> fitted constants</span><span><b class="p">10,800+</b> Lean theorems</span><span><b class="p">12</b> ports &middot; 30 edges &middot; 20 faces</span><span><b class="p">2</b> of 1,024 matter contents survive</span><span>&alpha;<sup>&minus;1</sup> fixed point <b class="p">137.035660</b></span><span><b class="p">17</b> open papers</span><span>Predictions <b class="p">frozen</b> before the data</span></div></div></div>
+    <div class="ticker" aria-hidden="true"><div class="ticker-track"><div class="ticker-group"><span><b class="p">3</b> axioms</span><span><b class="p">0</b> fitted constants</span><span><b class="p">10,700+</b> Lean theorems</span><span><b class="p">12</b> ports &middot; 30 edges &middot; 20 faces</span><span><b class="p">2</b> of 1,024 matter contents survive</span><span>&alpha;<sup>&minus;1</sup> fixed point <b class="p">137.035660</b></span><span><b class="p">16</b> open papers</span><span>Predictions <b class="p">frozen</b> before the data</span></div><div class="ticker-group"><span><b class="p">3</b> axioms</span><span><b class="p">0</b> fitted constants</span><span><b class="p">10,700+</b> Lean theorems</span><span><b class="p">12</b> ports &middot; 30 edges &middot; 20 faces</span><span><b class="p">2</b> of 1,024 matter contents survive</span><span>&alpha;<sup>&minus;1</sup> fixed point <b class="p">137.035660</b></span><span><b class="p">16</b> open papers</span><span>Predictions <b class="p">frozen</b> before the data</span></div></div></div>
 
     <section class="section">
       <div class="shell split top">
@@ -162,6 +162,64 @@
           <blockquote class="quote">&ldquo;Reality is the stable public world reconstructed by finite, self-reading observers that compare their overlaps and repair disagreement.&rdquo;</blockquote>
           <figcaption class="quote-by">The central thesis of Observer Patch Holography</figcaption>
         </figure>
+      </div>
+    </section>
+
+    <section class="section rule" id="emergence">
+      <div class="shell">
+        <div class="section-head reveal">
+          <span class="eyebrow">Watch it happen</span>
+          <h2>A universe, <em>assembled from agreement.</em></h2>
+          <p>Every patch below starts with a private state, its own rhythm, and no idea that the others exist. Nothing is added from outside the picture. Local comparison and repair are enough to produce a shared geometry, a common rhythm and one public record.</p>
+        </div>
+        <figure class="viz reveal">
+          <div class="viz-stage"><canvas data-emergence data-steps="#emergence-steps" role="img" aria-label="An animation of scattered observer patches that keep records, compare them where their views overlap, repair the disagreement, and settle into one shared lattice with a common rhythm"></canvas></div>
+          <ol class="viz-steps" id="emergence-steps">
+            <li class="on"><b>Scattered patches</b><span>Private states, no shared clock</span></li>
+            <li><b>Local records</b><span>Each patch writes down what it sees</span></li>
+            <li><b>Overlaps</b><span>Neighbours compare where their views meet</span></li>
+            <li><b>Repair</b><span>Warm links mark disagreement, local moves settle it</span></li>
+            <li><b>One world</b><span>Shared geometry, one rhythm, a public record</span></li>
+          </ol>
+          <figcaption class="viz-cap">A simplified picture of the reconstruction argument. In the papers each step is a theorem: local records, comparison on overlaps, a repair relation, and a consensus theorem that makes the result independent of the order the repairs happen in.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section rule" id="detuning">
+      <div class="shell split top">
+        <div class="reveal" style="display:grid;gap:20px">
+          <span class="eyebrow">The breaking point</span>
+          <h2>Detune the observers and <em>the world dissolves.</em></h2>
+          <p>Each patch runs at its own natural rhythm. Repair absorbs a small spread and the patches lock into one account that all of them hold. Widen the spread far enough and repair loses. The patches drift apart, the shared rhythm goes, and no public record forms at all.</p>
+          <p>Drag the handle to set how far apart the rhythms are. The wheel carries the phase of every patch, the arrow is how much they agree, and the tiles are the patches themselves.</p>
+          <p class="fine">Distributed systems hit the same wall when clocks drift faster than the protocol reconciles them. Physics inherits the consequence: a set of observers shares a world only while repair keeps up with how much they differ.</p>
+        </div>
+        <div class="viz reveal">
+          <div class="viz-stage"><canvas data-detune role="img" aria-label="Interactive: a phase wheel and a row of observer patches that lock together or scatter as the spread of their natural rhythms changes"></canvas></div>
+          <div class="viz-controls">
+            <label for="detune-range">Spread of natural rhythms</label>
+            <input id="detune-range" class="slider" type="range" min="0" max="200" value="30" data-detune-input aria-describedby="detune-state" />
+            <div class="slider-scale"><span>Identical</span><span>Repair keeps up</span><span>Too far apart</span></div>
+            <div class="readouts">
+              <span class="readout">Spread<b data-detune-out="d">0.30</b></span>
+              <span class="readout">Agreement<b data-detune-out="r">1.00</b></span>
+              <span class="state" id="detune-state" data-detune-out="state">Consensus holds</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tight">
+      <div class="shell">
+        <div class="band reveal">
+          <div>
+            <h2>One mathematics, <em class="t-mind">two programs.</em></h2>
+            <p>Distributed consensus, local repair and fixed points carry both halves of this company. The physics program asks what those rules build when the parts are observers. Cadence, our machine learning program, builds learning machines from the same rules and reads the settled state as an answer.</p>
+          </div>
+          <div class="actions"><a class="btn btn-mind" href="/cadence/">See Cadence <span class="arr">&rarr;</span></a></div>
+        </div>
       </div>
     </section>
 
@@ -205,7 +263,7 @@
           <h2>What the mathematics <em>delivers.</em></h2>
         </div>
         <div class="results">
-          <div class="result spot reveal"><div class="v" data-count>10,800+</div><span class="vs">Lean theorems &middot; zero admitted proofs</span><h3>A formal foundation</h3><p>The core mathematics is checked by machine down to the proof kernel.</p></div>
+          <div class="result spot reveal"><div class="v" data-count>10,700+</div><span class="vs">Lean theorems &middot; zero admitted proofs</span><h3>A formal foundation</h3><p>The core mathematics is checked by machine down to the proof kernel.</p></div>
           <div class="result spot reveal"><div class="v">1 of 1.35M</div><span class="vs">exhaustive screen audit</span><h3>A unique resting state</h3><p>All 1,352,078 states of the twelve-port screen were checked. The repair law leaves exactly one place to come to rest.</p></div>
           <div class="result spot reveal"><div class="v">2 of 1,024</div><span class="vs">candidate matter contents</span><h3>Matter by elimination</h3><p>Every candidate matter content was tested. Exactly two survive, they are mirror images, and fermion statistics come out as an output.</p></div>
           <div class="result spot reveal"><div class="v sm">su(3) &oplus; su(2) &oplus; u(1)</div><span class="vs">Standard Model gauge type</span><h3>Forces from consistency</h3><p>A classification theorem forces the Lie type of the Standard Model from the screen's reversible response.</p></div>
@@ -243,7 +301,7 @@
         </div>
         <div class="cards four">
           <a class="card spot reveal" href="/cadence/"><span class="tag live">Running today</span><h3>Machine learning</h3><p>The patch-net mathematics behind OPH powers Cadence, our brain-like learning system.</p><span class="go">Explore Cadence &rarr;</span></a>
-          <div class="card spot reveal"><span class="tag phys">Research</span><h3>Computation</h3><p>Consensus repair is a model of physical computation. A photonic proof-of-work design and a blinded self-repair experiment on IBM quantum hardware explore it.</p></div>
+          <div class="card spot reveal"><span class="tag phys">Research</span><h3>Computation</h3><p>Consensus repair is a model of physical computation. A blinded self-repair experiment on IBM quantum hardware explores it.</p></div>
           <div class="card spot reveal"><span class="tag">Horizon</span><h3>Materials</h3><p>Superconductors, magnets and quantum Hall states are collective orders that emerge from local agreement. OPH's repair mathematics is built for that kind of emergence, which makes materials design a natural target.</p></div>
           <div class="card spot reveal"><span class="tag">Horizon</span><h3>Propulsion</h3><p>If gravity and inertia follow from deeper principles, they could become design parameters. Propulsion that engages spacetime directly is the long-range goal of this line of work.</p></div>
         </div>
@@ -261,7 +319,7 @@
           <a class="card spot reveal" href="https://oph-book.floatingpragma.io/"><span class="k">Book</span><h3>Reverse Engineering Reality</h3><p>The whole argument for general readers, with no mathematics required.</p><span class="go">Read the book &rarr;</span></a>
           <a class="card spot reveal" href="https://learn.floatingpragma.io/"><span class="k">Textbooks</span><h3>Learn OPH</h3><p>Guided derivations, diagrams and reading paths for readers with a physics or computer science background.</p><span class="go">Open the library &rarr;</span></a>
           <a class="card spot reveal" href="https://github.com/FloatingPragma/observer-patch-holography/"><span class="k">Repository &middot; GitHub</span><h3>Collaborate on the theory</h3><p>Papers, TeX sources, Lean proofs, executable derivations and evidence packages. Every open problem is an issue you can pick up.</p><span class="go">Open the repository &rarr;</span></a>
-          <a class="card spot reveal" href="/oph/papers/"><span class="k">Papers</span><h3>The research library</h3><p>Seventeen papers with first-party HTML and PDF editions, from the foundations to the particle spectrum.</p><span class="go">Browse the papers &rarr;</span></a>
+          <a class="card spot reveal" href="/oph/papers/"><span class="k">Papers</span><h3>The research library</h3><p>Sixteen papers with first-party HTML and PDF editions, from the foundations to the particle spectrum.</p><span class="go">Browse the papers &rarr;</span></a>
           <a class="card spot reveal" href="https://oph-lab.floatingpragma.io/"><span class="k">Lab &amp; simulation</span><h3>Run it yourself</h3><p>Interactive experiments with records, overlap and repair, plus a <span style="white-space:nowrap">mini-universe</span> that runs in the browser.</p><span class="go">Enter the lab &rarr;</span></a>
         </div>
       </div>

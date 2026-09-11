@@ -305,3 +305,202 @@
     var lw = size.w; window.addEventListener('resize', function () { var nw = canvas.getBoundingClientRect().width; if (Math.abs(nw - lw) > 2) { lw = nw; reset(); for (var w = 0; w < L; w++) step(); draw(); } });
   });
 })();
+
+/* ---- OPH visualisations: universe emergence, observer patch detuning ---- */
+(function () {
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var CY = [127, 231, 255], WARM = [255, 138, 110];
+  function rgba(c, a) { return 'rgba(' + (c[0] | 0) + ',' + (c[1] | 0) + ',' + (c[2] | 0) + ',' + (a < 0 ? 0 : a > 1 ? 1 : a).toFixed(3) + ')'; }
+  function mix(a, b, t) { return [a[0] + (b[0] - a[0]) * t, a[1] + (b[1] - a[1]) * t, a[2] + (b[2] - a[2]) * t]; }
+  function ramp(a, b, t) { var u = (t - a) / (b - a); u = u < 0 ? 0 : u > 1 ? 1 : u; return u * u * (3 - 2 * u); }
+  function fit(canvas, ctx) {
+    var r = canvas.getBoundingClientRect(), dpr = Math.min(2, window.devicePixelRatio || 1);
+    canvas.width = Math.max(1, Math.round(r.width * dpr)); canvas.height = Math.max(1, Math.round(r.height * dpr));
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0); return { w: r.width, h: r.height };
+  }
+  function whenVisible(el, on, off) {
+    if (!('IntersectionObserver' in window)) { on(); return; }
+    new IntersectionObserver(function (es) { es[0].isIntersecting ? on() : off(); }, { rootMargin: '80px' }).observe(el);
+  }
+
+  /* Universe emergence: scattered patches -> records -> overlaps -> repair -> one shared world */
+  document.querySelectorAll('canvas[data-emergence]').forEach(function (canvas) {
+    var ctx = canvas.getContext('2d');
+    var steps = canvas.getAttribute('data-steps') ? document.querySelector(canvas.getAttribute('data-steps')) : null;
+    var W = 0, H = 0, nodes = [], edges = [], waves = [], raf = 0, running = false, last = 0, u = 0, stage = -1, nextWave = 0;
+    var DUR = 27;
+
+    function scatter(n) { n.x = W / 2 + (Math.random() - 0.5) * W * 0.92; n.y = H / 2 + (Math.random() - 0.5) * H * 0.86; n.th = Math.random() * Math.PI * 2; }
+
+    function build() {
+      var r = fit(canvas, ctx); W = r.w; H = r.h;
+      var gap = W < 620 ? 50 : 60;
+      var cols = Math.max(4, Math.floor((W - 46) / gap)), rows = Math.max(3, Math.floor((H - 46) / (gap * 0.87)));
+      var ox = (W - ((cols - 1) * gap + gap * 0.5)) / 2, oy = (H - (rows - 1) * gap * 0.87) / 2;
+      nodes = []; edges = []; waves = [];
+      for (var j = 0; j < rows; j++) for (var i = 0; i < cols; i++) {
+        var n = { tx: ox + i * gap + (j % 2 ? gap * 0.5 : 0), ty: oy + j * gap * 0.87, w: 1.05 + (Math.random() - 0.5) * 0.7, nb: [] };
+        scatter(n); nodes.push(n);
+      }
+      var R2 = Math.pow(gap * 1.12, 2);
+      for (var a = 0; a < nodes.length; a++) for (var b = a + 1; b < nodes.length; b++) {
+        var dx = nodes[a].tx - nodes[b].tx, dy = nodes[a].ty - nodes[b].ty;
+        if (dx * dx + dy * dy < R2) { nodes[a].nb.push(b); nodes[b].nb.push(a); edges.push(a, b); }
+      }
+    }
+
+    function setStage(s) {
+      if (s === stage) return; stage = s;
+      if (!steps) return;
+      var li = steps.children;
+      for (var i = 0; i < li.length; i++) li[i].className = i === s ? 'on' : '';
+    }
+
+    function step(dt) {
+      var spring = ramp(0.34, 0.62, u) * 3.0, K = 3.4 * ramp(0.54, 0.80, u);
+      for (var i = 0; i < nodes.length; i++) {
+        var n = nodes[i];
+        n.x += (n.tx - n.x) * Math.min(1, spring * dt);
+        n.y += (n.ty - n.y) * Math.min(1, spring * dt);
+        var s = 0;
+        for (var k = 0; k < n.nb.length; k++) s += Math.sin(nodes[n.nb[k]].th - n.th);
+        n.d = n.w + (n.nb.length ? K * s / n.nb.length : 0);
+      }
+      for (var m = 0; m < nodes.length; m++) nodes[m].th += nodes[m].d * dt;
+    }
+
+    function draw() {
+      var rec = ramp(0.15, 0.30, u), eA = ramp(0.36, 0.56, u), world = ramp(0.80, 0.95, u), out = 1 - ramp(0.965, 1, u);
+      ctx.clearRect(0, 0, W, H);
+      if (world > 0.02) {
+        var g = ctx.createRadialGradient(W / 2, H / 2, 10, W / 2, H / 2, Math.max(W, H) * 0.6);
+        g.addColorStop(0, rgba(CY, 0.10 * world * out)); g.addColorStop(1, rgba(CY, 0));
+        ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+      }
+      for (var q = waves.length - 1; q >= 0; q--) {
+        var wv = waves[q], age = (performance.now() - wv.t0) / 1000, rr = age * 190;
+        if (age > 2.6) { waves.splice(q, 1); continue; }
+        ctx.strokeStyle = rgba(CY, 0.22 * (1 - age / 2.6) * world * out); ctx.lineWidth = 1;
+        ctx.beginPath(); ctx.arc(wv.x, wv.y, rr, 0, Math.PI * 2); ctx.stroke();
+      }
+      ctx.lineWidth = 1;
+      for (var e = 0; e < edges.length; e += 2) {
+        var a = nodes[edges[e]], b = nodes[edges[e + 1]];
+        var agree = (1 + Math.cos(a.th - b.th)) / 2;
+        var c = mix(WARM, CY, agree);
+        ctx.strokeStyle = rgba(c, eA * out * (0.13 + 0.30 * agree));
+        ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke();
+      }
+      for (var i = 0; i < nodes.length; i++) {
+        var n = nodes[i], p = (1 + Math.sin(n.th)) / 2;
+        if (rec > 0.02) {
+          ctx.strokeStyle = rgba(CY, rec * out * (0.10 + 0.22 * p)); ctx.lineWidth = 1;
+          ctx.beginPath(); ctx.arc(n.x, n.y, 7 + 2 * p, 0, Math.PI * 2); ctx.stroke();
+        }
+        ctx.fillStyle = rgba(CY, out * (0.25 + 0.7 * p));
+        ctx.beginPath(); ctx.arc(n.x, n.y, 1.5 + 2.2 * p, 0, Math.PI * 2); ctx.fill();
+      }
+    }
+
+    function frame(now) {
+      var dt = Math.min(0.05, (now - last) / 1000); last = now;
+      var prev = u; u += dt / DUR;
+      if (u >= 1) { u -= 1; for (var i = 0; i < nodes.length; i++) scatter(nodes[i]); waves = []; }
+      if (u > 0.82 && now > nextWave) { var n = nodes[(Math.random() * nodes.length) | 0]; waves.push({ x: n.x, y: n.y, t0: now }); nextWave = now + 2000; }
+      step(dt); draw();
+      setStage(u < 0.15 ? 0 : u < 0.32 ? 1 : u < 0.54 ? 2 : u < 0.80 ? 3 : 4);
+      raf = requestAnimationFrame(frame);
+    }
+    function start() { if (running || reduce) return; running = true; last = performance.now(); raf = requestAnimationFrame(frame); }
+    function stop() { running = false; cancelAnimationFrame(raf); }
+
+    build();
+    if (reduce) { u = 0.9; for (var i = 0; i < 900; i++) step(0.03); draw(); setStage(4); } else start();
+    whenVisible(canvas, start, stop);
+    var lw = W;
+    window.addEventListener('resize', function () {
+      var nw = canvas.getBoundingClientRect().width;
+      if (Math.abs(nw - lw) < 2) return; lw = nw; build();
+      if (reduce) { for (var i = 0; i < 900; i++) step(0.03); draw(); }
+    });
+  });
+
+  /* Observer patch detuning: mean-field Kuramoto with a spread the reader controls */
+  document.querySelectorAll('canvas[data-detune]').forEach(function (canvas) {
+    var ctx = canvas.getContext('2d');
+    var host = canvas.closest('.viz') || document;
+    var input = host.querySelector('[data-detune-input]');
+    var outD = host.querySelector('[data-detune-out="d"]'), outR = host.querySelector('[data-detune-out="r"]'), outS = host.querySelector('[data-detune-out="state"]');
+    var N = 28, th = [], base = [], D = 0.3, K = 1.0, W = 0, H = 0, raf = 0, running = false, last = 0, rs = 1;
+    for (var i = 0; i < N; i++) { base[i] = ((i + 0.5) / N) * 2 - 1; th[i] = Math.random() * Math.PI * 2; }
+    for (var s = N - 1; s > 0; s--) { var j = (Math.random() * (s + 1)) | 0, t = base[s]; base[s] = base[j]; base[j] = t; }
+
+    function order() {
+      var sx = 0, sy = 0;
+      for (var i = 0; i < N; i++) { sx += Math.cos(th[i]); sy += Math.sin(th[i]); }
+      return { r: Math.sqrt(sx * sx + sy * sy) / N, psi: Math.atan2(sy, sx) };
+    }
+    function step(dt) {
+      var o = order();
+      for (var i = 0; i < N; i++) th[i] += (1 + base[i] * D + K * o.r * Math.sin(o.psi - th[i])) * dt;
+      rs += (o.r - rs) * Math.min(1, dt * 2.4);
+      return o;
+    }
+    function readout() {
+      if (outD) outD.textContent = D.toFixed(2);
+      if (outR) outR.textContent = rs.toFixed(2);
+      if (outS) {
+        var s = rs > 0.62 ? ['Consensus holds', ''] : rs > 0.3 ? ['Consensus fraying', ' mid'] : ['Consensus breaks', ' warn'];
+        outS.textContent = s[0]; outS.className = 'state' + s[1];
+      }
+    }
+    function draw() {
+      var o = order(), R = Math.min(W * 0.30, H * 0.30), cx = W / 2, cy = H * 0.42;
+      ctx.clearRect(0, 0, W, H);
+      ctx.strokeStyle = rgba(CY, 0.18); ctx.lineWidth = 1;
+      ctx.beginPath(); ctx.arc(cx, cy, R, 0, Math.PI * 2); ctx.stroke();
+      ctx.setLineDash([2, 6]); ctx.strokeStyle = rgba(CY, 0.10);
+      ctx.beginPath(); ctx.arc(cx, cy, R * 0.62, 0, Math.PI * 2); ctx.stroke(); ctx.setLineDash([]);
+      for (var i = 0; i < N; i++) {
+        var a = th[i], near = (1 + Math.cos(a - o.psi)) / 2, c = mix(WARM, CY, near);
+        var x = cx + Math.cos(a) * R, y = cy + Math.sin(a) * R;
+        ctx.fillStyle = rgba(c, 0.45 + 0.5 * near);
+        ctx.beginPath(); ctx.arc(x, y, 3.6, 0, Math.PI * 2); ctx.fill();
+      }
+      var ax = cx + Math.cos(o.psi) * R * o.r, ay = cy + Math.sin(o.psi) * R * o.r;
+      var ac = mix(WARM, CY, Math.min(1, o.r * 1.4));
+      ctx.strokeStyle = rgba(ac, 0.85); ctx.lineWidth = 2;
+      ctx.beginPath(); ctx.moveTo(cx, cy); ctx.lineTo(ax, ay); ctx.stroke();
+      ctx.fillStyle = rgba(ac, 0.95);
+      ctx.beginPath(); ctx.arc(ax, ay, 4.2, 0, Math.PI * 2); ctx.fill();
+      ctx.fillStyle = rgba([150, 163, 180], 0.75); ctx.font = '500 9px "JetBrains Mono",monospace'; ctx.textAlign = 'center';
+      ctx.fillText('PHASE OF EACH PATCH', cx, cy - R - 14);
+      var bw = Math.min(W - 44, N * 22), x0 = (W - bw) / 2, tw = bw / N, by = H - 46;
+      for (var k = 0; k < N; k++) {
+        var p = (1 + Math.sin(th[k])) / 2, cc = mix(WARM, CY, Math.min(1, o.r * 1.4));
+        ctx.fillStyle = rgba(cc, 0.12 + 0.78 * p);
+        ctx.fillRect(x0 + k * tw + 1.5, by, tw - 3, 26);
+      }
+      ctx.fillStyle = rgba([150, 163, 180], 0.75);
+      ctx.fillText('THE PATCHES, PULSING', cx, by + 44);
+    }
+    function frame(now) { var dt = Math.min(0.05, (now - last) / 1000); last = now; step(dt); draw(); readout(); raf = requestAnimationFrame(frame); }
+    function start() { if (running || reduce) return; running = true; last = performance.now(); raf = requestAnimationFrame(frame); }
+    function stop() { running = false; cancelAnimationFrame(raf); }
+    function settle() { for (var i = 0; i < 600; i++) step(0.03); rs = order().r; draw(); readout(); }
+
+    var r0 = fit(canvas, ctx); W = r0.w; H = r0.h;
+    if (input) {
+      D = parseInt(input.value, 10) / 100;
+      input.addEventListener('input', function () { D = parseInt(input.value, 10) / 100; if (reduce) settle(); });
+    }
+    settle();
+    if (!reduce) start();
+    whenVisible(canvas, start, stop);
+    var lw = W;
+    window.addEventListener('resize', function () {
+      var nw = canvas.getBoundingClientRect().width;
+      if (Math.abs(nw - lw) < 2) return; lw = nw; var r = fit(canvas, ctx); W = r.w; H = r.h; draw();
+    });
+  });
+})();
