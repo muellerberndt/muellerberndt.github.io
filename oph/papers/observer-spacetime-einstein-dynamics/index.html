@@ -37,7 +37,7 @@
   <meta name="citation_pdf_url" content="https://floatingpragma.io/oph/papers/observer-spacetime-einstein-dynamics/paper.pdf" />
   <meta name="citation_abstract_html_url" content="https://floatingpragma.io/oph/papers/observer-spacetime-einstein-dynamics/" />
   <meta name="citation_technical_report_institution" content="Pragma Research" />
-  <meta name="citation_technical_report_number" content="OPH r2041 recovering_observer_spacetime_and_einstein_dynamics_from_overlap_consistency" />
+  <meta name="citation_technical_report_number" content="OPH r2042 recovering_observer_spacetime_and_einstein_dynamics_from_overlap_consistency" />
   <meta name="DC.title" content="Recovering Observer Spacetime and Einstein Dynamics from Overlap Consistency" />
   <meta name="DC.creator" content="Bernhard Mueller" />
   <meta name="DC.creator" content="Alexander Osika" />
@@ -159,7 +159,7 @@
   ],
   "datePublished": "September 10, 2026",
   "dateModified": "September 10, 2026",
-  "version": "r2041",
+  "version": "r2042",
   "subjectOf": [
     {
       "@type": "BlogPosting",
@@ -258,14 +258,14 @@
             <p>Explores how shared observer records could lead to spacetime and gravity. The paper states the mathematical results and the conditions needed to connect them to physical gravity.</p>
           </div>
           <div class="paper-meta-line">
-            <span>r2041</span>
+            <span>r2042</span>
             <span>September 10, 2026</span>
             <span>papers</span>
           </div>
           <div class="cta-row">
             <a class="btn btn-primary" href="/oph/papers/observer-spacetime-einstein-dynamics/paper.pdf" target="_blank" rel="noopener noreferrer" data-track-link="paper-pdf-recovering_observer_spacetime_and_einstein_dynamics_from_overlap_consistency">Download PDF</a>
             <a class="btn btn-secondary" href="/oph/papers/" data-track-link="paper-index">All OPH papers</a>
-            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r2041" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
+            <a class="btn btn-secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r2042" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
             <a class="btn btn-secondary" href="https://challenge.floatingpragma.io/" data-track-link="paper-challenge">Challenge</a>
           </div>
 
@@ -287,7 +287,7 @@
           <div class="paper-body">
 <div class="center">
 <p><strong>Paper release:</strong>
-<code>r2041</code><strong>Released:</strong> September 10, 2026</p>
+<code>r2042</code><strong>Released:</strong> September 10, 2026</p>
 </div>
 <div class="center">
 <p><strong>Author affiliations:</strong> Bernhard Mueller, Pragma
@@ -15552,6 +15552,254 @@ time. It does not select these inputs from native repair, identify
 physical clock units, prove an interacting or charged continuum, or
 identify Hamiltonian substeps with the retained causal-count
 history.</p>
+<h3 id="sec:source-scalar-time-refinement">Time refinement of the same
+compact scalar detector</h3>
+<p>The golden tensor action admits a convergent local time
+discretization as well as the spatial comparison above. This statement
+concerns the mathematical trajectories of that action at each
+refinement. It does not assert that their complete observer event
+histories have been executed. Use the dimensionless coordinates, time
+and <span class="math inline">\(\hbar=1\)</span> of <a href="#eq:common-scalar-action" class="paper-cross-reference" data-reference="eq:common-scalar-action">the displayed equation</a>.
+All norms below are in its mass inner product, or equivalently in the
+mass-whitened coordinates.</p>
+<div id="prop:source-scalar-time-refinement" class="proposition">
+<p><strong>Proposition 84</strong> (Full-spectrum displacement and
+detector estimate). <em>Let <span class="math inline">\(A\)</span> be a
+finite positive self-adjoint operator, <span class="math inline">\(A\ge
+I\)</span>, and use the canonical kick–drift–kick evolution with step
+<span class="math inline">\(\tau&gt;0\)</span>, initial mean position
+zero and initial mean momentum <span class="math inline">\(v\)</span>.
+Let <span class="math inline">\(r=\tau^2\|A\|\le r_0&lt;4\)</span>,
+<span class="math inline">\(s_0=\sqrt{1-r_0/4}\)</span> and <span
+class="math inline">\(d_0=s_0(1+s_0)\)</span>. At every integer <span
+class="math inline">\(n\ge0\)</span> with <span
+class="math inline">\(n\tau\le T\)</span>, <span id="eq:source-scalar-time-displacement" class="paper-equation-anchor"></span><span
+class="math display">\[\begin{equation}
+\|u_n-A^{-1/2}\sin(n\tau\sqrt A)v\|
+\le\tau^2\left[
+\frac{\|A^{1/2}v\|}{4d_0}+\frac{T\|Av\|}{12d_0}\right].
+\label{eq:source-scalar-time-displacement}
+\end{equation}\]</span> Prepare the original action vacuum with coherent
+momentum displacement <span class="math inline">\(v\)</span>, and
+consider <span class="math inline">\(E_g=(I+\sin\Phi(g))/2\)</span>. The
+probability difference between this split evolution and continuous
+evolution of the same finite action is at most <span id="eq:source-scalar-time-probability" class="paper-equation-anchor"></span><span
+class="math display">\[\begin{equation}
+\frac{\|g\|}{2}\tau^2\left[
+\frac{\|A^{1/2}v\|}{4d_0}+\frac{T\|Av\|}{12d_0}\right]
++\frac{\tau^2\sqrt{G_0G_1}}{32(1-r_0/4)},
+\quad G_0=\|g\|^2,\quad G_1=\langle g,Ag\rangle.
+\label{eq:source-scalar-time-probability}
+\end{equation}\]</span> Every mode is retained, including the split
+evolution of the original vacuum covariance.</em></p>
+</div>
+<div class="proof">
+<p><em>Proof.</em> For an eigenfrequency <span
+class="math inline">\(\omega&gt;0\)</span>, put <span
+class="math inline">\(z=\tau\omega/2\)</span>, <span
+class="math inline">\(s=\sqrt{1-z^2}\)</span> and <span
+class="math inline">\(\theta=2\arcsin z\)</span>. The local canonical
+gates give the position recurrence <span
+class="math inline">\(u_{n+1}=2u_n-u_{n-1}-\tau^2Au_n\)</span>, with
+<span class="math inline">\(u_0=0\)</span>, <span
+class="math inline">\(u_1=\tau v\)</span>. In this mode its solution is
+<span class="math inline">\(u_n=\sin(n\theta)v/(\omega s)\)</span>.
+Split its difference from the continuous solution into amplitude and
+phase errors. Since <span
+class="math display">\[\frac{1/s-1}{\omega}=\frac{\tau^2\omega}{4s(1+s)},\qquad
+\theta-\tau\omega
+=2\int_0^z\frac{a^2\,da}{\sqrt{1-a^2}(1+\sqrt{1-a^2})}
+\le\frac{\tau^3\omega^3}{12d_0},\]</span> the scalar error is at most
+<span
+class="math inline">\(\tau^2[\omega/(4d_0)+T\omega^2/(12d_0)]|v|\)</span>.
+Functional calculus and the norm triangle inequality prove <a href="#eq:source-scalar-time-displacement" class="paper-cross-reference" data-reference="eq:source-scalar-time-displacement">the displayed equation</a>.</p>
+<p>In the original vacuum the mode variances are <span
+class="math inline">\(1/(2\omega)\)</span> and <span
+class="math inline">\(\omega/2\)</span>. The <span
+class="math inline">\(n\)</span>-step canonical matrix has position row
+<span class="math inline">\((\cos(n\theta),\sin(n\theta)/(\omega
+s))\)</span>. Its extra position variance is <span
+class="math display">\[\delta V_n(\omega)=
+\frac{\tau^2\omega\sin^2(n\theta)}{8(1-\tau^2\omega^2/4)}\ge0.\]</span>
+Therefore the smeared variance increase is at most <span
+class="math inline">\(\tau^2\langle
+g,A^{1/2}g\rangle/[8(1-r_0/4)]\)</span> and hence at most <span
+class="math inline">\(\tau^2\sqrt{G_0G_1}/[8(1-r_0/4)]\)</span>. For
+mean <span class="math inline">\(m\)</span> and variance <span
+class="math inline">\(V\)</span>, the effect probability is <span
+class="math inline">\([1+e^{-V/2}\sin m]/2\)</span>. Its change is
+bounded by <span class="math inline">\(|\delta m|/2+|\delta
+V|/4\)</span>; Cauchy–Schwarz bounds the mean change by <span
+class="math inline">\(\|g\|\)</span> times <a href="#eq:source-scalar-time-displacement" class="paper-cross-reference" data-reference="eq:source-scalar-time-displacement">the displayed equation</a>.
+This uses the original vacuum, not the invariant vacuum of a modified
+discrete Hamiltonian. ◻</p>
+</div>
+<h5 id="a-same-action-continuum-limit.">A same-action continuum
+limit.</h5>
+<p>Let <span class="math inline">\(h=\min_i(x_{i+1}-x_i)\)</span> be the
+<em>minimum</em> adjacent golden coordinate gap, including the fixed
+Dirichlet endpoint. The one-dimensional edge form satisfies <span
+class="math display">\[z^*Kz=\sum_i\frac{|z_{i+1}-z_i|^2}{h_i}
+\le\frac4h\sum_{i=1}^{q-1}|z_i|^2,
+\qquad z^*Wz\ge h\sum_{i=1}^{q-1}|z_i|^2.\]</span> Consequently <span
+class="math inline">\(\|A_q\|\le\Lambda_q:=1+12/h^2\)</span>. For
+bounded mass norms of <span class="math inline">\(v_q,g_q\)</span>, the
+displacement and probability bounds vanish if <span
+class="math inline">\(\tau_q=o(h)\)</span>. Indeed, <span
+class="math inline">\(\|A_q^{1/2}v_q\|\le\sqrt{\Lambda_q}\|v_q\|\)</span>,
+<span class="math inline">\(\|A_qv_q\|\le\Lambda_q\|v_q\|\)</span> and
+<span
+class="math inline">\(\sqrt{G_0G_1}\le\sqrt{\Lambda_q}\|g_q\|^2\)</span>.
+This requires no uniform derivative norm of a discontinuous compact
+smearing. A concrete choice is the largest dyadic <span
+class="math inline">\(\tau_q\le h^2\)</span>. For <span
+class="math inline">\(h\le1/4\)</span>, it gives <span
+class="math inline">\(\tau_q^2\Lambda_q\le h^4+12h^2&lt;1\)</span>.</p>
+<p>Use exactly the sampled <span class="math inline">\(f_c,g_c\)</span>
+of Theorem <a href="#thm:source-common-scalar-response"
+data-reference-type="ref"
+data-reference="thm:source-common-scalar-response">83</a>, the same
+original vacuum, and <span class="math inline">\(v_q=4f_c|_S\)</span>.
+The parent Gram bound <span class="math inline">\(\|G-I\|\le
+d_q\)</span> and positive mass weights imply <span
+class="math display">\[\|g_c|_S\|^2\le1+d_q,\qquad
+\|v_q\|^2\le16(1+d_q).\]</span> Multiplication by either slab indicator
+cannot increase these norms. For <span
+class="math inline">\(r_0=1\)</span>, <span
+class="math inline">\(d_0\ge3/2\)</span>. On <span
+class="math inline">\(0\le n\tau_q\le1\)</span>, the temporal
+probability bound is therefore <span id="eq:source-scalar-time-compact-bound" class="paper-equation-anchor"></span><span
+class="math display">\[\begin{equation}
+\mathcal E_{q,\mathrm{time}}
+\le\tau_q^2(1+d_q)
+       \left[\frac38\sqrt{\Lambda_q}+\frac19\Lambda_q\right].
+\label{eq:source-scalar-time-compact-bound}
+\end{equation}\]</span> Combined with Proposition <a
+href="#prop:common-scalar-continuum-limit" data-reference-type="ref"
+data-reference="prop:common-scalar-continuum-limit">82</a>, this proves
+convergence of the same compact displacement response and bounded
+smeared field effect for the chosen space–time refinement. Bounded,
+piecewise-continuous smearings whose products are Riemann integrable
+satisfy the spatial hypothesis. No velocity-norm convergence, full-Fock
+state-norm convergence across the growing lattice, or interacting field
+limit is inferred from this estimate.</p>
+<div id="prop:source-scalar-time-resolved" class="proposition">
+<p><strong>Proposition 85</strong> (A resolved fully time-discrete
+comparison). <em>For the same <span class="math inline">\(q=233\)</span>
+source population, action, preparation and detector, the exact minimum
+gap is <span class="math inline">\(233-144\phi\)</span> and the declared
+dyadic step is <span class="math inline">\(\tau=2^{-17}\)</span>. At
+every grid time <span class="math inline">\(19/20\le n\tau\le1\)</span>,
+the mathematical split evolution satisfies <span
+class="math display">\[|P^{\mathrm{split}}_{233,c}(n\tau)-P_c(n\tau)|&lt;0.050063,
+\qquad
+|P^{\mathrm{split}}_{233,c}(n\tau)-\tfrac12|&gt;0.137746.\]</span> For
+every reference time <span class="math inline">\(t\in[19/20,1]\)</span>,
+define the step readout by <span
+class="math display">\[k_0=\lceil(19/20)/\tau\rceil,\quad
+k_1=1/\tau,\quad
+k(t)=\min\{k_1,\max\{k_0,\lfloor t/\tau+1/2\rfloor\}\},\]</span> <span
+class="math display">\[P^{\mathrm{step}}_{233,c}(t)=P^{\mathrm{split}}_{233,c}(k(t)\tau).\]</span>
+This is the nearest update inside the window, with upward ties. Then
+<span class="math inline">\(k(t)\tau\in[19/20,1]\)</span>, <span
+class="math inline">\(|k(t)\tau-t|\le\tau\)</span>, and <span
+class="math display">\[|P^{\mathrm{step}}_{233,c}(t)-P_c(t)|&lt;0.050078,\qquad
+|P^{\mathrm{step}}_{233,c}(t)-\tfrac12|&gt;0.137746.\]</span> This
+readout selects a defined discrete state; it introduces no state at an
+intermediate time.</em></p>
+</div>
+<div class="proof">
+<p><em>Proof.</em> The separate exact certificate reconstructs the
+ordered golden coordinates and minimum gap, verifies the dyadic step and
+stability inequality, and replays the immutable spatial comparison. It
+bounds <a href="#eq:source-scalar-time-compact-bound" class="paper-cross-reference" data-reference="eq:source-scalar-time-compact-bound">the displayed equation</a>
+by <span class="math inline">\(0.000008071512\)</span>. Adding this to
+the spatial error and subtracting it from the spatial response gives the
+grid-time assertions. In the continuum the vacuum variance is stationary
+and <span
+class="math inline">\(|P_c&#39;(t)|\le\|g_c\|\|4f_c\|/2\le2\)</span>.
+Rounding selects a nearest grid point before imposing the window, with
+distance at most <span class="math inline">\(\tau/2\)</span>. The upper
+endpoint <span class="math inline">\(1\)</span> is itself a grid point,
+so upper clipping cannot occur for these <span
+class="math inline">\(t\)</span>. If rounding falls below <span
+class="math inline">\(k_0\)</span>, clipping chooses <span
+class="math inline">\(k_0\tau\)</span>, and <span
+class="math inline">\((k_0-1)\tau&lt;19/20\le t\le k_0\tau\)</span>
+gives distance less than <span class="math inline">\(\tau\)</span>. Thus
+the selected point stays inside the window, also at its endpoints. The
+extra comparison error is at most <span
+class="math inline">\(2\tau\)</span>, and the discrete response lower
+bound is unchanged. ◻</p>
+</div>
+<div id="prop:source-scalar-prearrival" class="proposition">
+<p><strong>Proposition 86</strong> (Pre-arrival detector limit). <em>Use
+the same massive Dirichlet action on the cube, zero initial mean
+position, original vacuum, and coherent momentum <span
+class="math inline">\(af\)</span>, with fixed real <span
+class="math inline">\(a\)</span>. Let <span
+class="math inline">\(f,g\)</span> be bounded, compactly supported <span
+class="math inline">\(L^2\)</span> functions satisfying the sampling
+hypotheses of Proposition <a href="#prop:common-scalar-continuum-limit"
+data-reference-type="ref"
+data-reference="prop:common-scalar-continuum-limit">82</a>. Suppose
+their support distance is <span class="math inline">\(d&gt;0\)</span>.
+For every <span class="math inline">\(T&lt;d\)</span>, the corresponding
+local split trajectories with <span
+class="math inline">\(\tau_q=o(h_q)\)</span> satisfy <span
+class="math display">\[\sup_{0\le n\tau_q\le T}
+\left|P^{\mathrm{split}}_{q,g}(n\tau_q)-\tfrac12\right|\longrightarrow0.\]</span>
+The same conclusion holds for the step readout <span
+class="math inline">\(P^{\mathrm{split}}_{q,g}(\lceil
+t/\tau_q\rceil\tau_q)\)</span>, uniformly for <span
+class="math inline">\(0\le t\le T\)</span>.</em></p>
+</div>
+<div class="proof">
+<p><em>Proof.</em> The continuum mean solves <span
+class="math inline">\(u_{tt}-\Delta u+u=0\)</span>, with <span
+class="math inline">\(u(0)=0\)</span>, <span
+class="math inline">\(u_t(0)=af\)</span>. Its finite propagation speed
+is one. Indeed the local energy <span
+class="math inline">\(e=(|u_t|^2+|\nabla u|^2+|u|^2)/2\)</span>
+satisfies <span class="math inline">\(\partial_t
+e=\nabla\!\cdot(u_t\nabla u)\)</span> and <span
+class="math inline">\(|u_t\nabla u\cdot n|\le e\)</span> on each unit
+normal <span class="math inline">\(n\)</span>. Integrating over a
+shrinking backward light cone gives zero energy when its initial base
+misses the preparation. The fixed Dirichlet boundary has zero energy
+flux; smooth approximation in the energy norm extends the argument to
+these <span class="math inline">\(L^2\)</span> momentum data. Thus <span
+class="math inline">\(\langle g,u(t)\rangle=0\)</span> for <span
+class="math inline">\(t&lt;d\)</span>. The stationary continuum vacuum
+covariance then gives the sine-effect probability exactly <span
+class="math inline">\(1/2\)</span> there.</p>
+<p>The parent spatial comparison is uniform on every fixed finite time
+interval. Positive Riemann mass quadrature bounds the sampled norms, so
+<a href="#eq:source-scalar-time-probability" class="paper-cross-reference" data-reference="eq:source-scalar-time-probability">the displayed equation</a>
+makes the additional split error vanish uniformly on that interval. This
+proves the grid assertion. For the ceiling readout choose <span
+class="math inline">\(T&lt;T&#39;&lt;d\)</span>; eventually <span
+class="math inline">\(\lceil t/\tau_q\rceil\tau_q\le
+T+\tau_q&lt;T&#39;\)</span> for all <span class="math inline">\(t\le
+T\)</span>, and apply the same uniform estimate on <span
+class="math inline">\([0,T&#39;]\)</span>. ◻</p>
+</div>
+<p>This is a limit of operational detector responses for the declared
+preparation class. It does not identify microscopic read ancestry with
+continuum causal order or establish a point-event count law. The
+pre-arrival assertion is asymptotic; the finite error certificate above
+concerns only its stated comparison window and preparation.</p>
+<p>The finite local canonical gates define these trajectories and
+full-Fock states for each fixed <span class="math inline">\(q\)</span>
+and finite number of steps. The certificate uses source gaps, scalar
+norm bounds and the spatial comparison, not a stored <span
+class="math inline">\(232^3\)</span>-oscillator history. It does not
+import the separate <span class="math inline">\(q=5\)</span>
+preparation, clock-error envelope or observer event receipt. The time
+refinement, protected population, routing, action, boundary and
+quantization remain declared. Native acceptance, a physical clock,
+outcome attestation and a count-volume interpretation of substeps are
+separate requirements.</p>
 <h3 id="sec:source-scalar-execution">An authenticated execution of the
 golden scalar action</h3>
 <p>A small execution retains the field reads that realize the tensor
@@ -15601,7 +15849,7 @@ data-reference-type="ref"
 data-reference="thm:source-common-scalar-response">83</a>; its numerical
 accuracy is not transferred to this coarser population.</p>
 <div id="prop:source-scalar-execution-energy" class="proposition">
-<p><strong>Proposition 84</strong> (Stable exact execution and preserved
+<p><strong>Proposition 87</strong> (Stable exact execution and preserved
 energy). <em>For this action, <span
 class="math inline">\(\tau^2\|\mathsf A\|_M&lt;3&lt;4\)</span>. Every
 step of <a href="#eq:source-scalar-executed-update" class="paper-cross-reference" data-reference="eq:source-scalar-executed-update">the displayed equation</a>
@@ -15726,6 +15974,195 @@ event or operational readout map with its intervention, order and volume
 errors. The present trace supplies the inputs for that comparison; it
 does not identify native time, primitive word costs or laboratory
 seconds.</p>
+<h3 id="sec:source-scalar-clock">A clock reconstructed from the scalar
+records</h3>
+<p>The finite execution also determines an action-time readout without
+using the recorded step labels to assign its configuration layers. This
+construction retains the supplied positive mass inner product, operator
+<span class="math inline">\(\mathsf A\)</span>, resource-to-site map and
+action normalization. It concerns one duration shared by an entire
+configuration layer, not independent lapses at each site.</p>
+<h5 id="recovering-the-layers.">Recovering the layers.</h5>
+<p>Authenticate each immutable write and every consumed resource,
+version, writer and value. Draw directed edges from consumed writers to
+their readers. The serial audit parent remains authenticated but is not
+a field input in this action. Define roots to have height zero and every
+other vertex to have height one plus its greatest parent height. An
+update reads its own field two layers earlier and the nonempty current
+stencil, including itself. Induction therefore gives height <span
+class="math inline">\(j\)</span> to every update of <span
+class="math inline">\(u_j\)</span>, <span class="math inline">\(1\le
+j\le21\)</span>. No event identifier component or grouping of serialized
+positions enters this definition.</p>
+<p>Both seed configurations have height zero. Their roles are
+distinguished in this particular graph by their numbers of height-one
+children: every older-memory root has one, whereas each current-field
+root has four, five, six or seven. The respective counts are <span
+class="math inline">\(64,8,24,24,8\)</span>. With the declared
+resource-to-site map, each recovered layer contains exactly one write
+per site; the verifier checks alternating buffers, consecutive versions
+and the full adjacent-layer action stencil. Thus all <span
+class="math inline">\(23\)</span> layers are recovered in each trace.
+The two root sets remain causally incomparable; the older seed is
+integrator memory, not a negative-time physical interval. The complete
+retained read graph is required. For two symmetric roots feeding a
+single update, graph symmetry prevents this seed-role distinction.</p>
+<div id="prop:source-scalar-clock-unique" class="proposition">
+<p><strong>Proposition 88</strong> (Unique positive action durations).
+<em>Let <span class="math inline">\(\mathsf A\)</span> be positive and
+self-adjoint in the supplied <span class="math inline">\(M\)</span>
+inner product. For fixed endpoints consider the
+configuration-stationarity equations of <span id="eq:source-scalar-clock-action" class="paper-equation-anchor"></span><span
+class="math display">\[\begin{equation}
+\mathcal S_h[u]=\sum_{j=0}^{20}\left[
+  \frac{\|u_{j+1}-u_j\|_M^2}{2h_j}
+  -\frac{h_j}{4}\bigl(E(u_j)+E(u_{j+1})\bigr)\right],
+\qquad E(u)=\langle u,\mathsf A u\rangle_M,
+\label{eq:source-scalar-clock-action}
+\end{equation}\]</span> where the <span
+class="math inline">\(h_j&gt;0\)</span> are fixed but unknown
+parameters. At an interior center put <span
+class="math inline">\(x=u_j-u_{j-1}\)</span>, <span
+class="math inline">\(y=\mathsf A u_j\)</span>, <span
+class="math inline">\(z=u_{j+1}-u_j\)</span> and suppose <span
+class="math display">\[D=\langle x,x\rangle_M\langle y,y\rangle_M
+       -\langle x,y\rangle_M^2&gt;0.\]</span> If the full vector
+equation <span class="math inline">\(z=\alpha x+\beta y\)</span> holds,
+positive adjacent durations exist exactly when <span
+class="math inline">\(\alpha&gt;0\)</span> and <span
+class="math inline">\(\beta&lt;0\)</span>. They are unique: <span id="eq:source-scalar-clock-duration" class="paper-equation-anchor"></span><span
+class="math display">\[\begin{equation}
+h_{j-1}^2=\frac{-2\beta}{\alpha(\alpha+1)},\qquad
+h_j=\alpha h_{j-1}.
+\label{eq:source-scalar-clock-duration}
+\end{equation}\]</span> If every actual center <span
+class="math inline">\(j=1,\ldots,20\)</span> has <span
+class="math inline">\(\alpha=1\)</span>, <span
+class="math inline">\(\beta=-s\)</span> with <span
+class="math inline">\(s&gt;0\)</span>, all <span
+class="math inline">\(21\)</span> positive durations equal <span
+class="math inline">\(\sqrt{s}\)</span>.</em></p>
+</div>
+<div class="proof">
+<p><em>Proof.</em> The discrete variational framework is supplied <span class="paper-citation" title="Citation: marsdenWest">[source]</span>. Positive Gram
+determinant implies independence of <span
+class="math inline">\(x,y\)</span>. Configuration variation in <a href="#eq:source-scalar-clock-action" class="paper-cross-reference" data-reference="eq:source-scalar-clock-action">the displayed equation</a>
+gives <span
+class="math display">\[z/h_j-x/h_{j-1}+(h_j+h_{j-1})y/2=0.\]</span> Its
+independent coefficients imply <span
+class="math inline">\(h_j/h_{j-1}=\alpha\)</span> and <span
+class="math inline">\(\beta=-h_j(h_j+h_{j-1})/2\)</span>, proving
+necessity and uniqueness. Substitution proves sufficiency. Shared
+intervals must agree between adjacent centers; for the stated uniform
+coefficients they do, including the endpoint intervals determined by
+centers <span class="math inline">\(1\)</span> and <span
+class="math inline">\(20\)</span>. ◻</p>
+</div>
+<p>The coefficients are obtained by the inverse Gram matrix, and their
+full vector residual is separately checked; projection alone would miss
+a component orthogonal to <span class="math inline">\(x,y\)</span>.
+Exact replay of both intervention schedules gives <span
+class="math inline">\(40\)</span> positive determinants, all exceeding
+<span class="math inline">\(2083218601/10^{12}\)</span>, and <span
+class="math inline">\((\alpha,\beta)=(1,-1/245)\)</span>. Hence the
+positive tick is <span class="math inline">\(\sqrt5/35\)</span> and the
+elapsed time from an assigned origin is <span
+class="math inline">\(3/\sqrt5\)</span>. The zero baseline has no
+independent pair and defines no such clock. Six Lean lemmas formalize
+coefficient extraction, duration uniqueness and the Gram bridge; an
+additional theorem composes these implications. The variation and the
+actual finite-record values are established analytically and by exact
+replay.</p>
+<p>At equal <span class="math inline">\(h_j=\tau\)</span>, <a href="#eq:source-scalar-clock-action" class="paper-cross-reference" data-reference="eq:source-scalar-clock-action">the displayed equation</a>
+differs from the left-endpoint action yielding <a href="#eq:source-scalar-executed-update" class="paper-cross-reference" data-reference="eq:source-scalar-executed-update">the displayed equation</a>
+by the endpoint term <span
+class="math inline">\(\tau(E(u_0)-E(u_{21}))/4\)</span>, leaving
+fixed-endpoint stationarity unchanged. Its variable-duration extension
+is a supplied quadrature choice. Durations are not varied in deriving
+the configuration equation: unconstrained variation in <span
+class="math inline">\(h_j\)</span> would give the additional, generally
+nonzero derivative <span
+class="math inline">\(-\|u_{j+1}-u_j\|_M^2/(2h_j^2)-(E(u_j)+E(u_{j+1}))/4\)</span>.</p>
+<div id="prop:source-scalar-clock-stability" class="proposition">
+<p><strong>Proposition 89</strong> (Stable duration identification).
+<em>In the same real Hilbert space let <span
+class="math inline">\(F_0=[x\ y]\)</span>, <span
+class="math inline">\(z=F_0c_0\)</span>, <span
+class="math inline">\(c_0=(\alpha_0,\beta_0)\)</span>, and <span
+class="math inline">\(D&gt;0\)</span>. Choose positive bounds <span
+class="math display">\[\ell_\alpha\ge\sqrt{\langle
+y,y\rangle_M/D},\qquad
+\ell_\beta\ge\sqrt{\langle x,x\rangle_M/D}.\]</span> For perturbed data
+suppose the full equation <span class="math inline">\(z+e_z=(F_0+[e_x\
+e_y])c+r\)</span> holds, where <span
+class="math inline">\(\|e_x\|_M\le\epsilon_x\)</span>, <span
+class="math inline">\(\|e_y\|_M\le\epsilon_y\)</span>, <span
+class="math inline">\(\|e_z\|_M\le\epsilon_z\)</span>, <span
+class="math inline">\(\|r\|_M\le\rho\)</span> and all budgets are
+nonnegative. If <span
+class="math inline">\(q=\epsilon_x\ell_\alpha+\epsilon_y\ell_\beta&lt;1\)</span>,
+put <span
+class="math display">\[B=\frac{\epsilon_z+\rho+\epsilon_x|\alpha_0|
+                    +\epsilon_y|\beta_0|}{1-q}.\]</span> Then <span
+class="math inline">\(|\alpha-\alpha_0|\le\ell_\alpha B\)</span> and
+<span class="math inline">\(|\beta-\beta_0|\le\ell_\beta B\)</span>, and
+the perturbed columns remain independent. If these bounds give <span
+class="math inline">\(0&lt;a_L\le\alpha\le a_U\)</span> and <span
+class="math inline">\(0&lt;b_L\le-\beta\le b_U\)</span>, define the
+associated positive durations by <a href="#eq:source-scalar-clock-duration" class="paper-cross-reference" data-reference="eq:source-scalar-clock-duration">the displayed equation</a>.
+They obey <span id="eq:source-scalar-clock-stable-duration" class="paper-equation-anchor"></span><span class="math display">\[\begin{align}
+\frac{2b_L}{a_U(a_U+1)}&amp;\le h_{j-1}^2
+       \le\frac{2b_U}{a_L(a_L+1)},\notag\\
+\frac{2b_La_L}{a_L+1}&amp;\le h_j^2
+       \le\frac{2b_Ua_U}{a_U+1}.
+\label{eq:source-scalar-clock-stable-duration}
+\end{align}\]</span></em></p>
+</div>
+<div class="proof">
+<p><em>Proof.</em> The two rows of <span
+class="math inline">\((F_0^*F_0)^{-1}F_0^*\)</span> have the stated norm
+bounds. Applying them to the perturbed equation bounds each coefficient
+error by its <span class="math inline">\(\ell\)</span> times <span
+class="math inline">\(b=\epsilon_z+\rho+\epsilon_x|\alpha|+
+\epsilon_y|\beta|\)</span>. Substitution gives <span
+class="math inline">\(b\le(1-q)B+qb\)</span>, hence <span
+class="math inline">\(b\le B\)</span>. In the coefficient norm <span
+class="math inline">\(\max(|c_1|/\ell_\alpha,|c_2|/\ell_\beta)\)</span>,
+the left-inverse times <span class="math inline">\([e_x\ e_y]\)</span>
+has norm at most <span class="math inline">\(q&lt;1\)</span>; a vector
+in the perturbed kernel must vanish. Formula <a href="#eq:source-scalar-clock-stable-duration" class="paper-cross-reference" data-reference="eq:source-scalar-clock-stable-duration">the displayed equation</a>
+follows by monotonicity from <a href="#eq:source-scalar-clock-duration" class="paper-cross-reference" data-reference="eq:source-scalar-clock-duration">the displayed equation</a>. ◻</p>
+</div>
+<p>For the actual record, <span class="math inline">\(\|\mathsf
+A\|_M&lt;614\)</span>. A hypothetical error at most <span
+class="math inline">\(\epsilon=10^{-8}\)</span> in each complete
+configuration therefore permits <span
+class="math inline">\(\epsilon_x=\epsilon_z=2\epsilon\)</span>, <span
+class="math inline">\(\epsilon_y=614\epsilon\)</span> and <span
+class="math inline">\(\rho=0\)</span> for a hidden exactly
+configuration-stationary history. Every <span
+class="math inline">\(q&lt;7.64\,10^{-6}\)</span> and the coefficient
+sign margins stay positive. Intersecting bounds on shared intervals and
+summing all <span class="math inline">\(21\)</span> durations gives, in
+either schedule, the exact rational enclosure <span
+class="math display">\[1.341635903357\le
+t_{21}-t_0\le1.341645669638.\]</span> These are conditional stability
+bounds, not measured noise. Nonempty interval intersections do not by
+themselves establish existence of an arbitrary noisy stationary history.
+A nonzero residual of the configuration Euler equation must be
+multiplied by <span class="math inline">\(h_j\)</span> before it is
+bounded by <span class="math inline">\(\rho\)</span>; the residual units
+cannot be identified without that factor.</p>
+<p>The code independently authenticates all <span
+class="math inline">\(5{,}888\)</span> events and <span
+class="math inline">\(34{,}944\)</span> reads, reconstructs the graph
+layers, and checks the Gram and stability calculations with exact
+rational and quadratic-field arithmetic. The same reconstructed values
+agree across the two schedules. This finite action clock selects neither
+physical seconds nor native dynamics, regional time-slice generation, a
+count-volume interpretation or a quantum clock. Resource pairing, the
+action, its quadrature, orientation and relative normalization remain
+explicit inputs.</p>
 <h3 id="sec:source-scalar-quantum">A bounded quantum probability of the
 same finite action</h3>
 <p>The canonical commutator of the preceding execution is state
@@ -15761,7 +16198,7 @@ class="math inline">\(e^{-itH}\)</span> on the same preparations. The
 reference baseline is stationary; the split baseline is generally
 squeezed. No modified-Hamiltonian vacuum is substituted.</p>
 <div id="prop:source-scalar-quantum-probability" class="proposition">
-<p><strong>Proposition 85</strong> (Original-vacuum probability
+<p><strong>Proposition 90</strong> (Original-vacuum probability
 comparison). <em>Write <span
 class="math inline">\(r_*=30049/12005&lt;3\)</span>, <span
 class="math inline">\(\tau^2=1/245\)</span>, <span
@@ -15853,6 +16290,104 @@ finite-action times. They do not attest observed outcomes, a quantum
 state encoded by the classical registers, a spatial continuum error,
 intermediate-time accuracy, an interacting quantum field, native time or
 laboratory units.</p>
+<h3 id="sec:source-scalar-clock-quantum">The same quantum detector with
+reconstructed action-time uncertainty</h3>
+<p>The original-vacuum probability comparison extends to the
+elapsed-time intervals obtained from Proposition <a
+href="#prop:source-scalar-clock-stability" data-reference-type="ref"
+data-reference="prop:source-scalar-clock-stability">89</a> on the same
+authenticated scalar records. Fix the positive <span
+class="math inline">\(64\)</span>-mode action, mass metric, original
+vacuum, coherent momentum preparation <span
+class="math inline">\(v\)</span>, and detector <span
+class="math inline">\(g\)</span> of Proposition <a
+href="#prop:source-scalar-quantum-probability" data-reference-type="ref"
+data-reference="prop:source-scalar-quantum-probability">90</a>. The
+quantum state and operator are kept fixed throughout this comparison.
+Uncertain record-based timing is the additional input. The extension
+covers reference probabilities inside each time interval; it does not
+define a continuous trajectory for the split evolution.</p>
+<div id="prop:source-scalar-clock-probability" class="proposition">
+<p><strong>Proposition 91</strong> (Probability comparison on a
+recovered time interval). <em>Let <span
+class="math inline">\(p_j\)</span> be the intervention probability of
+<span class="math inline">\(E_g=(I+\sin\Phi(g))/2\)</span> after <span
+class="math inline">\(j\)</span> executed symmetric gates, and let <span
+class="math inline">\(p(t)\)</span> be its continuous finite-action
+probability on the same preparation. Suppose <span
+class="math inline">\(|p_j-p(t_j)|\le\epsilon_j\)</span>, where <span
+class="math inline">\(t_j=j\tau\)</span> is the nominal action time. For
+any closed interval <span class="math inline">\(I_j=[a_j,b_j]\)</span>,
+set <span class="math display">\[L_g=\tfrac12\|g\|_M\|v\|_M,\qquad
+\delta_j=\max\{|a_j-t_j|,|b_j-t_j|\}.\]</span> Then, simultaneously for
+every <span class="math inline">\(t\in I_j\)</span>, <span id="eq:source-scalar-clock-probability-bound" class="paper-equation-anchor"></span><span
+class="math display">\[\begin{equation}
+|p_j-p(t)|\le \epsilon_j+L_g\delta_j.
+\label{eq:source-scalar-clock-probability-bound}
+\end{equation}\]</span> Both baseline probabilities are <span
+class="math inline">\(1/2\)</span>, so this also bounds the difference
+of the corresponding intervention responses. If a certified signed split
+response has magnitude at least <span
+class="math inline">\(s_j&gt;\epsilon_j+L_g\delta_j\)</span>, the
+continuous response has that same sign throughout <span
+class="math inline">\(I_j\)</span>, with magnitude at least <span
+class="math inline">\(s_j-\epsilon_j-L_g\delta_j\)</span>.</em></p>
+</div>
+<div class="proof">
+<p><em>Proof.</em> The original vacuum is stationary under the
+continuous Hamiltonian. Its detector variance <span
+class="math inline">\(V_0\)</span> is constant and the coherent field
+mean is <span class="math display">\[m(t)=\langle g,\mathsf
+A^{-1/2}\sin(t\sqrt{\mathsf A})v\rangle_M,
+\qquad
+m&#39;(t)=\langle g,\cos(t\sqrt{\mathsf A})v\rangle_M.\]</span>
+Self-adjoint spectral calculus gives <span
+class="math inline">\(\|\cos(t\sqrt{\mathsf A})\|_M\le1\)</span> for
+every real <span class="math inline">\(t\)</span>. The
+finite-dimensional mean is differentiable, and <span
+class="math inline">\(p(t)=(1+e^{-V_0/2}\sin m(t))/2\)</span> therefore
+obeys <span class="math inline">\(|p&#39;(t)|\le
+e^{-V_0/2}\|g\|_M\|v\|_M/2\le L_g\)</span>. The mean-value bound and
+triangle inequality prove <a href="#eq:source-scalar-clock-probability-bound" class="paper-cross-reference" data-reference="eq:source-scalar-clock-probability-bound">the displayed equation</a>.
+The split probability belongs only to its executed layer; no split
+evolution at unexecuted times is introduced by this argument. ◻</p>
+</div>
+<h5 id="exact-comparison-on-all-retained-intervals.">Exact comparison on
+all retained intervals.</h5>
+<p>The two execution schedules have identical reconstructed field layers
+and elapsed-time enclosures. The conditional clock budget is <span
+class="math inline">\(10^{-8}\)</span> per configuration in the <span
+class="math inline">\(M\)</span> norm, with a common hidden history
+stationary for the same supplied trapezoidal action and one positive
+duration per complete configuration interval. Exact source moments give
+<span class="math inline">\(L_g\le0.092011181733\)</span>. Outward
+rational arithmetic composes all <span class="math inline">\(21\)</span>
+original probability rows with all <span
+class="math inline">\(21\)</span> positive elapsed-time intervals,
+retaining every unresolved row. The additional timing error is at most
+<span class="math inline">\(0.000000449304\)</span>. The same <span
+class="math inline">\(15\)</span> responses are resolved uniformly over
+their respective nonzero intervals.</p>
+<p>For the sixteenth completed update, the recovered interval is <span
+class="math display">\[I_{16}=[1.022198489136,\,1.022206518861].\]</span>
+The split probability remains in <span
+class="math inline">\([0.490342191369,0.490493790733]\)</span>, and for
+every <span class="math inline">\(t\in I_{16}\)</span>, <span
+class="math display">\[|p_{16}-p(t)|\le0.000811258283,\qquad
+p(t)-\tfrac12\le-0.008694950984.\]</span> These are interval-wide
+predictions of the same finite quantum action. The source, state,
+covariance and detector are unchanged.</p>
+<p>The record-error budget conditions the clock inverse problem; it is
+not an error bound for a perturbed quantum preparation, field
+trajectory, Hamiltonian or detector. Existence of one common hidden
+stationary history is a hypothesis and does not follow from intersecting
+duration intervals. The graph reconstruction supplies complete
+configurations for this finite record, not a regional quantum time-slice
+theorem. The action normalization, variable-duration quadrature,
+orientation, vacuum and canonical quantization remain declared. No
+count-volume identification, physical seconds, quantum clock
+measurement, observed outcomes or spatial-continuum error is inferred
+from the timing comparison.</p>
 <div class="thebibliography">
 <p><span>99</span></p>
 <p>L. Bombelli, J. Lee, D. Meyer, and R. D. Sorkin, <em>Space-time as a

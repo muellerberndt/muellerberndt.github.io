@@ -1,5 +1,5 @@
 {
-  "release_id": "r2041",
+  "release_id": "r2042",
   "released_at": "September 10, 2026",
   "collection_url": "https://floatingpragma.io/oph/papers/",
   "sitemap_url": "https://floatingpragma.io/oph/papers/sitemap.xml",
@@ -421,51 +421,6 @@
           "title": "Semiotics and the Physics of Meaning",
           "url": "https://blog.floatingpragma.io/semiotics-and-the-physics-of-meaning",
           "description": "Meaning, signs, interpretation, and observer overlap as one physical language."
-        }
-      ]
-    },
-    {
-      "id": "Photonic_fixed-point_consensus_for_SHA-256d_proof_of_work",
-      "title": "Photonic Fixed-Point Consensus for SHA-256d Proof of Work",
-      "short_title": "Photonic proof of work",
-      "category": "Physical computation",
-      "description": "An OPH-adjacent physical-computation paper on photonic fixed-point consensus, SHA-256d proof of work, analog constraint satisfaction, and verifier receipts.",
-      "authors": [
-        "Bernhard Mueller",
-        "Alexander Osika"
-      ],
-      "affiliations": [
-        {
-          "author": "Bernhard Mueller",
-          "organization": "Pragma Research Inc."
-        },
-        {
-          "author": "Alexander Osika",
-          "organization": "EtherWorks"
-        }
-      ],
-      "keywords": [
-        "SHA-256d proof of work",
-        "Bitcoin mining",
-        "photonic computing",
-        "physical cryptanalysis",
-        "analog computing",
-        "fixed-point consensus",
-        "Observer Patch Holography"
-      ],
-      "html_url": "https://floatingpragma.io/oph/papers/photonic-fixed-point-consensus-sha256d-proof-of-work/",
-      "pdf_url": "https://floatingpragma.io/oph/papers/photonic-fixed-point-consensus-sha256d-proof-of-work/paper.pdf",
-      "central_pdf_url": "https://floatingpragma.io/oph/papers/pdf/Photonic_fixed-point_consensus_for_SHA-256d_proof_of_work.pdf",
-      "related_blog_posts": [
-        {
-          "title": "P = NP on the Observer Screen",
-          "url": "https://blog.floatingpragma.io/p-equals-np-on-the-observer-screen",
-          "description": "Search, verification, proof of work, and local repair on observer screens."
-        },
-        {
-          "title": "Causality Is Repair",
-          "url": "https://blog.floatingpragma.io/causality-is-repair",
-          "description": "Causality as exposed mismatch, accepted repair, and record formation."
         }
       ]
     },
