@@ -59,8 +59,6 @@ The finite framework proves and computes results under displayed premises. Sever
 
 - Open challenge and objections: https://challenge.floatingpragma.io/
 - Research blog: https://blog.floatingpragma.io/
-- Coherence map: https://coherence.floatingpragma.io/
-- Three-body demonstration: https://3body.floatingpragma.io/
 
 ## Feeds and Contact
 

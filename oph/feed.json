@@ -75,20 +75,6 @@
       "summary": "Public OPH essays and entry points connecting observer consistency to meaning, computation, semiotics, and broader physics interpretation."
     },
     {
-      "id": "https://coherence.floatingpragma.io/",
-      "url": "https://coherence.floatingpragma.io/",
-      "title": "OPH Coherence Map",
-      "date_published": "2026-05-21T00:00:00Z",
-      "summary": "The public graph surface for OPH concepts, overlaps, and cross-domain routes."
-    },
-    {
-      "id": "https://3body.floatingpragma.io/",
-      "url": "https://3body.floatingpragma.io/",
-      "title": "Three-Body Problem OPH Demo",
-      "date_published": "2026-05-15T12:45:00Z",
-      "summary": "An extra simulator and proof walk-through for the OPH three-body problem solution, framed as a loop holonomy gluing example."
-    },
-    {
       "id": "https://learn.floatingpragma.io/",
       "url": "https://learn.floatingpragma.io/",
       "title": "OPH Textbooks",
