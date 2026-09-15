@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cadence | Brain-like Machine Learning | Pragma Research</title>
-  <meta name="description" content="Cadence is Pragma Research's brain-like machine learning library. Networks settle to an answer and learn with one local rule, with no backward pass. Open source, MIT licensed." />
+  <meta name="description" content="Cadence is Pragma Research's brain-like machine learning library. One ongoing loop observes, remembers, predicts, acts and learns from the outcome, with no backward pass and no training switch. Open source, MIT licensed." />
   <meta name="author" content="Pragma Research" />
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
   <meta name="theme-color" content="#05070b" />
@@ -14,13 +14,13 @@
   <meta property="og:url" content="https://floatingpragma.io/cadence/" />
   <meta property="og:site_name" content="Pragma Research" />
   <meta property="og:title" content="Cadence | Brain-like Machine Learning | Pragma Research" />
-  <meta property="og:description" content="Cadence is Pragma Research's brain-like machine learning library. Networks settle to an answer and learn with one local rule, with no backward pass. Open source, MIT licensed." />
+  <meta property="og:description" content="Cadence is Pragma Research's brain-like machine learning library. One ongoing loop observes, remembers, predicts, acts and learns from the outcome, with no backward pass and no training switch. Open source, MIT licensed." />
   <meta property="og:image" content="https://floatingpragma.io/og-cadence.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Cadence | Brain-like Machine Learning | Pragma Research" />
-  <meta name="twitter:description" content="Cadence is Pragma Research's brain-like machine learning library. Networks settle to an answer and learn with one local rule, with no backward pass. Open source, MIT licensed." />
+  <meta name="twitter:description" content="Cadence is Pragma Research's brain-like machine learning library. One ongoing loop observes, remembers, predicts, acts and learns from the outcome, with no backward pass and no training switch. Open source, MIT licensed." />
   <meta name="twitter:image" content="https://floatingpragma.io/og-cadence.png" />
   <script type="application/ld+json">
 {
@@ -71,7 +71,7 @@
       "author": {
         "@id": "https://floatingpragma.io/#organization"
       },
-      "description": "An open-source library for patch nets: brain-like neural networks that answer and learn by local settlement, with no backward pass.",
+      "description": "An open-source library for brains that learn from one ongoing stream of experience: records hold what followed each reading, settled regions complete it, and every synapse changes from the activity of its own two neurons.",
       "sameAs": [
         "https://pypi.org/project/cadence-net/",
         "https://github.com/muellerberndt/cadence-examples"
@@ -103,6 +103,27 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" />
   <link rel="stylesheet" href="/assets/pragma.css?v=1" />
+  <style>
+    /* page-local: the measured line on an example card */
+    .measured{margin-top:2px;padding-top:15px;border-top:1px dashed var(--line2)}
+    .measured span{display:block;margin-bottom:7px;font:500 10px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--accent)}
+    .measured code{font:500 12px/1.75 var(--mono);color:var(--soft);letter-spacing:.01em}
+    @media (max-width:640px){
+      .copy{border-radius:16px;align-items:flex-start}
+      .copy span:first-child{overflow-wrap:break-word;min-width:0}
+      /* the comparison reads as stacked cards rather than a sideways scroll */
+      .table-wrap{overflow-x:visible;border:0;background:transparent;border-radius:0}
+      table{min-width:0;display:block;font-size:.95rem}
+      thead{display:none}
+      tbody,tbody tr,tbody th,tbody td{display:block;width:auto}
+      tbody tr{border:1px solid var(--line);border-radius:var(--r);background:var(--panel);margin-bottom:12px;padding:6px 4px}
+      tbody th{border-bottom:0;padding:16px 18px 4px}
+      tbody td{border-bottom:0;padding:8px 18px 14px;background:none}
+      tbody td::before{content:attr(data-label);display:block;margin-bottom:5px;font:500 10px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--dim)}
+      tbody td.hl{color:var(--text)}
+      tbody td.hl::before{color:var(--accent)}
+    }
+  </style>
 </head>
 <body class="theme-mind">
   <a class="skip" href="#main">Skip to content</a>
@@ -120,16 +141,16 @@
         <div class="hero-copy">
           <span class="eyebrow">Machine learning &middot; Cadence</span>
           <h1 class="display">Machines that learn the way <em class="t-mind">brains</em> do.</h1>
-          <p class="lead">Cadence is a new kind of neural network. There is no forward pass and no backward pass. Each unit repairs its own state from its neighbours until the network comes to rest. The resting state is the answer, and learning is the same process nudged toward a goal.</p>
+          <p class="lead">Cadence builds a brain together with its learning life. One ongoing loop takes in an observation and the outcome of the last action, writes what it witnessed into its records, settles its regions into a joint state and chooses what to do next. The same brain acts and learns for as long as it runs.</p>
           <div class="actions">
-            <button class="copy" type="button" data-copy="pip install cadence-net" aria-label="Copy install command"><span>$ pip install cadence-net</span><span class="lbl">Copy</span></button>
+            <button class="copy" type="button" data-copy="pip install git+https://github.com/muellerberndt/cadence" aria-label="Copy install command"><span>$ pip install git+https://github.com/<wbr />muellerberndt/cadence</span><span class="lbl">Copy</span></button>
             <a class="btn btn-mind" href="https://github.com/muellerberndt/cadence">View on GitHub <span class="arr">&rarr;</span></a>
           </div>
         </div>
       </div>
       <p class="field-caption">Live field &middot; units settling with no global clock</p>
     </section>
-    <div class="ticker" aria-hidden="true"><div class="ticker-track"><div class="ticker-group"><span><b class="m">One</b> local rule</span><span><b class="m">Zero</b> backward passes</span><span>Cart-pole in <b class="m">40k</b> steps</span><span><b class="m">1,716</b> parameters</span><span><b class="m">85%</b> of damage repaired</span><span><b class="m">16.6</b> bits per Bach chord</span><span><b class="m">161,827</b> neurons settled</span><span><b class="m">MIT</b> licensed</span></div><div class="ticker-group"><span><b class="m">One</b> local rule</span><span><b class="m">Zero</b> backward passes</span><span>Cart-pole in <b class="m">40k</b> steps</span><span><b class="m">1,716</b> parameters</span><span><b class="m">85%</b> of damage repaired</span><span><b class="m">16.6</b> bits per Bach chord</span><span><b class="m">161,827</b> neurons settled</span><span><b class="m">MIT</b> licensed</span></div></div></div>
+    <div class="ticker" aria-hidden="true"><div class="ticker-track"><div class="ticker-group"><span><b class="m">One</b> ongoing loop</span><span><b class="m">No</b> backward pass</span><span><b class="m">No</b> training switch</span><span><b class="m">No</b> frozen weights</span><span><b class="m">No</b> replay ring</span><span>Records hold <b class="m">what followed</b></span><span>Regions settle to a <b class="m">joint state</b></span><span><b class="m">MIT</b> licensed</span></div><div class="ticker-group"><span><b class="m">One</b> ongoing loop</span><span><b class="m">No</b> backward pass</span><span><b class="m">No</b> training switch</span><span><b class="m">No</b> frozen weights</span><span><b class="m">No</b> replay ring</span><span>Records hold <b class="m">what followed</b></span><span>Regions settle to a <b class="m">joint state</b></span><span><b class="m">MIT</b> licensed</span></div></div></div>
 
     <section class="section">
       <div class="shell">
@@ -143,19 +164,141 @@
     <section class="section rule">
       <div class="shell">
         <div class="section-head reveal">
-          <span class="eyebrow">The regime problem</span>
-          <h2>Brains and transformers live in <em>different worlds.</em></h2>
-          <p>A transformer is trained in a regime no brain has ever been in: a static corpus, a global gradient, a freeze, then a window of recent tokens as the only memory. A brain lives in the other one. Cadence is built for that other regime.</p>
+          <span class="eyebrow">The loop</span>
+          <h2>Observe, remember, predict, <em>act, learn.</em></h2>
+          <p>Every Cadence brain lives in one mode. Each step takes in the current observation and the outcome of the previous action, updates its memories and its synapses, and issues the next action. There is one mode. No switch separates learning from use, and no point arrives at which learning has to stop.</p>
+        </div>
+        <ol class="ladder reveal">
+          <li><span class="n">01</span><b>Observe</b><span class="d">A reading arrives: the sensor fields, a flag for each field the senses left out, the action just taken and the reads of the brain's stores.</span></li>
+          <li><span class="n">02</span><b>Remember</b><span class="d">The reading selects the cells that will hold its outcome, and the stores keep the witnessed evidence the application declares.</span></li>
+          <li><span class="n">03</span><b>Predict</b><span class="d">An imagined consequence is a read of the records, so a supplied search can compare many candidate actions at the cost of a vector product each.</span></li>
+          <li><span class="n">04</span><b>Act</b><span class="d">The brain issues one action or one word and holds it pending. A clock tick alone is not feedback, so the pending action waits for its real outcome.</span></li>
+          <li><span class="n">05</span><b>Learn from the outcome</b><span class="d">The witnessed outcome is written into exactly the records that reading touched, and the settled regions change their synapses from their own neurons' activity and one broadcast error.</span></li>
+        </ol>
+        <div class="split top" style="margin-top:34px">
+          <p class="muted reveal">Thinking reads the current state. Observations, rewards and corrections are what change the memories and the synapses, and an imagined outcome never becomes a witnessed fact. The application decides when each event arrives.</p>
+          <div class="actions reveal"><a class="btn btn-mind" href="https://github.com/muellerberndt/cadence/blob/main/docs/quickstart.md">Read the quickstart <span class="arr">&rarr;</span></a><a class="btn" href="https://github.com/muellerberndt/cadence/blob/main/docs/index.md">All docs</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section rule">
+      <div class="shell">
+        <div class="section-head reveal">
+          <span class="eyebrow">Memory and settling</span>
+          <h2>Records hold what followed. <em>Settling completes it.</em></h2>
+          <p>Two kinds of memory sit side by side. A records cortex learns what follows a reading with one read and one write per outcome. The settled regions hold the work that needs a fixed point.</p>
+        </div>
+        <div class="cards two">
+          <div class="card spot reveal">
+            <span class="k">Records cortex</span>
+            <h3>What followed this reading</h3>
+            <ul class="ticks">
+              <li>A mean-free reading. Each input unit's running mean is subtracted, so the code follows what deviates from the usual reading and a small cue can move it.</li>
+              <li>A fixed sparse expansion. The reading maps onto many cells, the cells with the strongest drive keep it, the rest are inhibited to zero, and the expansion is never learned.</li>
+              <li>One record table per predicted field. The prediction is the activity-weighted sum of the records the reading touches, and the witnessed outcome is written into exactly those.</li>
+              <li>Two rates. A slow rate for consequences, so a regularity averages over many outcomes, and a fast rate for reward, so one exposure writes.</li>
+              <li>One stream in its own order, with no replay ring. Reading and writing a record need no settling.</li>
+            </ul>
+          </div>
+          <div class="card spot reveal">
+            <span class="k">Settled regions</span>
+            <h3>What the fixed point is for</h3>
+            <ul class="ticks">
+              <li>Completion. A reading that arrives in part settles into a state consistent with the rest of the brain.</li>
+              <li>Context across a delay. A cue seen earlier is carried in the settled state until the decision that needs it.</li>
+              <li>The policy, where credit arrives after other decisions have already been made. Eligibility traces hold the decision until its reward lands.</li>
+              <li>Every neuron reads its own potential, its synaptic input and its drive, and moves toward their sum. Transport follows the declared synapses.</li>
+              <li>A residual reports the remaining equation error, so a step cap stays a work limit and the fixed-point equations decide.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="settle-stage reveal"><div class="settle-canvas"><canvas data-settle="#ffb36b" role="img" aria-label="Units relaxing to rest, then settling again when a new input arrives"></canvas></div><div class="stage-cap"><span>Live settlement</span><span>Units relax to rest. Every few seconds a new input arrives and they settle again.</span></div></div>
+        <div class="split top" style="margin-top:28px">
+          <div class="formula reveal">&Delta;w<sub>ij</sub> = &eta; &middot; (s<sup>+</sup><sub>i</sub> s<sup>+</sup><sub>j</sub> &minus; s<sup>&minus;</sup><sub>i</sub> s<sup>&minus;</sup><sub>j</sub>) / 2&beta;<small>The free and nudged rule that moves the synapses of the settled regions. A connection reads the activity of its own two neurons, and no backward computation graph is stored through the brain.</small></div>
+          <div class="reveal" style="display:grid;gap:16px">
+            <p class="muted">Cadence builds on equilibrium propagation, on the sparse expansion with a local delta-rule readout that Marr and Albus described for the cerebellum, and on the observer consensus mathematics of our physics program. Each region declares its ports, every update reads a neighbourhood, and a real connectome loads as plain data.</p>
+            <div class="chips"><span class="chip"><b>Equilibrium propagation</b> &middot; Scellier &amp; Bengio</span><span class="chip"><b>Sparse expansion, local readout</b> &middot; Marr &amp; Albus</span><span class="chip"><b>Three-factor plasticity</b></span><span class="chip"><b>Distributed consensus</b></span><span class="chip"><b>Connectomes as plain data</b></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section rule">
+      <div class="shell">
+        <div class="section-head reveal">
+          <span class="eyebrow">Evidence</span>
+          <h2>Every example ships <em>its receipt.</em></h2>
+          <p>A run binds its outcomes to the code and the logs that produced them. The claim and the means to check it travel together.</p>
+        </div>
+        <div class="map reveal">
+          <div class="step"><span class="n">01</span><h3>Predicates</h3><p>The receipt lists each acceptance predicate with its value, its threshold, how it was aggregated over seeds and whether it passed.</p></div>
+          <div class="step"><span class="n">02</span><h3>Event logs</h3><p>Every decision and outcome of the life is written to an event log. The receipt carries the sha256 of each log, the library's commit and the hashes of the stage sources.</p></div>
+          <div class="step"><span class="n">03</span><h3>An independent verifier</h3><p>A separate program reads the event logs and recomputes the receipt from them. Running it is how a reader checks the run without taking our word for it.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section rule">
+      <div class="shell">
+        <div class="section-head reveal">
+          <span class="eyebrow">Examples</span>
+          <h2>Two lives you can <em>open and watch.</em></h2>
+          <p>Each one runs the loop above. Both learn from one stream with no replay ring, the world model in each is a records cortex, and each ships a page that continues a life in the browser, an acceptance receipt and the verifier that recomputes it.</p>
+        </div>
+        <div class="focus-grid">
+          <article class="focus mind spot reveal">
+            <span class="kicker">01 &middot; Arm</span>
+            <h3>A body learned from <em>babbling.</em></h3>
+            <p>A two-link arm moves at random and learns its own body from what follows each motor command. To copy what the visitor draws, it searches over the consequences it has recorded and takes the command whose predicted displacement follows the line.</p>
+            <ul class="ticks">
+              <li>The forward model is a records cortex, written one witnessed transition at a time.</li>
+              <li>A longer upper link changes the body. The arm adapts to it with no reset, then returns to its original body.</li>
+              <li>The page continues one life in the browser with the whole brain live beside the arm.</li>
+            </ul>
+            <p class="measured"><span>Measured</span><code>Held-out reaching 99%; the online MLP on the same stream without replay 3%.</code></p>
+            <div class="actions">
+              <a class="btn btn-mind" href="https://floatingpragma.io/cadence-examples/arm/">Open the arm <span class="arr">&rarr;</span></a>
+              <a class="btn" href="https://github.com/muellerberndt/cadence-examples/blob/main/arm/receipt.json">Receipt</a>
+              <a class="btn" href="https://github.com/muellerberndt/cadence-examples">Gallery</a>
+            </div>
+          </article>
+          <article class="focus mind spot reveal">
+            <span class="kicker">02 &middot; World</span>
+            <h3>A world that must be <em>remembered.</em></h3>
+            <p>A 6 by 6 world of walls, doors, objects, colours and words, seen one cell at a time. One life learns what follows its actions, remembers where it saw an object, corrects that memory when the object moves in view, holds a cue across a delay and grounds words in objects.</p>
+            <ul class="ticks">
+              <li>A request names an object and begins in a distant cell under a deadline, so a remembered place is what makes it reachable in time.</li>
+              <li>Four stores keep witnessed evidence: object to place, cell to its passages, the last word seen, and word to referent.</li>
+              <li>Controls run beside the life: erased place records, shuffled action pairing, a reward-shifted cue, and the same architecture frozen from birth.</li>
+            </ul>
+            <p class="measured"><span>Measured</span><code>Requests fulfilled 100% with memory, 18% with the memory erased.</code></p>
+            <div class="actions">
+              <a class="btn btn-mind" href="https://floatingpragma.io/cadence-examples/world/">Open the world <span class="arr">&rarr;</span></a>
+              <a class="btn" href="https://github.com/muellerberndt/cadence-examples/blob/main/world/receipt.json">Receipt</a>
+              <a class="btn" href="https://github.com/muellerberndt/cadence-examples">Gallery</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section rule">
+      <div class="shell">
+        <div class="section-head reveal">
+          <span class="eyebrow">Two regimes</span>
+          <h2>A corpus and a freeze, or <em>one ongoing stream.</em></h2>
+          <p>A transformer is trained in a regime no animal is ever in: a static corpus in shuffled batches, a global gradient, a freeze, then a window of recent tokens as the only memory. Cadence is built for the other regime. Every cell below describes a mechanism.</p>
         </div>
         <div class="table-wrap reveal">
           <table>
-            <thead><tr><th scope="col"></th><th scope="col">Transformer</th><th scope="col">Brain</th><th scope="col" class="hl">Cadence</th></tr></thead>
+            <thead><tr><th scope="col"></th><th scope="col">Transformer</th><th scope="col" class="hl">Cadence</th></tr></thead>
             <tbody>
-              <tr><th scope="row">Learning signal</th><td>A global gradient, sent backwards through every layer</td><td>Local, at each synapse</td><td class="hl">Local at each connection, and certified local by a reference engine</td></tr>
-              <tr><th scope="row">Memory</th><td>A context window of recent tokens</td><td>Synaptic strengths</td><td class="hl">Connection strengths, with no window</td></tr>
-              <tr><th scope="row">Lifetime</th><td>Train once, then freeze</td><td>Plastic every moment</td><td class="hl">Plastic for life, with consolidation, pruning and sprouting</td></tr>
-              <tr><th scope="row">Inference</th><td>One pass through a fixed stack</td><td>Activity settles into a state</td><td class="hl">Activity settles into a state</td></tr>
-              <tr><th scope="row">After damage</th><td>Retrain</td><td>Recovers</td><td class="hl">Recovers under its own local rule</td></tr>
+              <tr><th scope="row">Learning signal</th><td data-label="Transformer">A global gradient, sent backwards through every layer of a stored computation graph</td><td class="hl" data-label="Cadence">Each synapse changes from the activity of its own two neurons and one broadcast error</td></tr>
+              <tr><th scope="row">The stream</th><td data-label="Transformer">A corpus in shuffled batches, replayed over many epochs</td><td class="hl" data-label="Cadence">One stream in the order it arrives, with the records confining each write to the cells the reading touched</td></tr>
+              <tr><th scope="row">Answering</th><td data-label="Transformer">One pass through a fixed stack of layers</td><td class="hl" data-label="Cadence">Neurons repair their own state until the regions reach a joint fixed point, checked by a residual</td></tr>
+              <tr><th scope="row">Memory across time</th><td data-label="Transformer">A context window of recent tokens</td><td class="hl" data-label="Cadence">Records written by the reading, stores of witnessed evidence, and settled regions that carry context across a delay</td></tr>
+              <tr><th scope="row">Lifetime</th><td data-label="Transformer">Train, freeze, deploy the frozen copy</td><td class="hl" data-label="Cadence">One mode. The same brain acts and learns from the moment it starts until it stops</td></tr>
             </tbody>
           </table>
         </div>
@@ -165,80 +308,15 @@
     <section class="section rule">
       <div class="shell">
         <div class="section-head reveal">
-          <span class="eyebrow">How it works</span>
-          <h2>One rule for answering <em>and learning.</em></h2>
+          <span class="eyebrow">Scope</span>
+          <h2>What the library <em>supplies.</em></h2>
+          <p>Cadence supplies the mechanism. The application supplies the world, its rules and the curriculum that a brain lives through.</p>
         </div>
-        <div class="map reveal">
-          <div class="step"><span class="n">01</span><h3>Settle</h3><p>Clamp the input and let every unit repair its own state from what its neighbours send. When nothing moves, read the answer.</p></div>
-          <div class="step"><span class="n">02</span><h3>Nudge</h3><p>Settle twice more with the output pulled gently toward the target, once each way. Labels, a teacher's moves and rewards all enter through this one door.</p></div>
-          <div class="step"><span class="n">03</span><h3>Update locally</h3><p>Each connection changes on the difference it saw between the two nudged states. A connection reads two activations, and a unit reads one.</p></div>
+        <div class="cards">
+          <div class="card dashed spot reveal"><span class="k">In the library</span><h3>Mechanism</h3><p>Neurons, synapses, declared ports, a records cortex, settled regions with checked convergence, reward eligibility, evolution over short lives, and receipts. Real connectomes load as plain data.</p></div>
+          <div class="card dashed spot reveal"><span class="k">In the application</span><h3>Goals and language</h3><p>Learned goals and language are wiring an application writes. Cadence makes no claim to reproduce human learning and ships no pretrained chatbot.</p></div>
+          <div class="card dashed spot reveal"><span class="k">On the reader</span><h3>Residuals and cost</h3><p>Check the equation residuals before calling a state an equilibrium, and measure task quality beside learning cost. Local updates on their own guarantee neither capability nor speed.</p></div>
         </div>
-        <div class="settle-stage reveal"><div class="settle-canvas"><canvas data-settle="#ffb36b" role="img" aria-label="Seven units relaxing to rest, then settling again when a new input arrives"></canvas></div><div class="stage-cap"><span>Live settlement</span><span>Seven units relax to rest. Every few seconds a new input arrives and they settle again.</span></div></div>
-        <div class="split top" style="margin-top:28px">
-          <div class="formula reveal">&Delta;w<sub>ij</sub> = &eta; &middot; (s<sup>+</sup><sub>i</sub> s<sup>+</sup><sub>j</sub> &minus; s<sup>&minus;</sup><sub>i</sub> s<sup>&minus;</sup><sub>j</sub>) / 2&beta;<small>The whole learning rule. Nothing global is computed, and a reference engine that settles one unit at a time with a message ledger certifies it.</small></div>
-          <div class="reveal" style="display:grid;gap:16px">
-            <p class="muted">Cadence builds on equilibrium propagation, on the link between modern Hopfield networks and attention, and on the observer consensus mathematics of our physics program. Attention turns out to be one settlement step of a Hebbian memory. The rest of the settlement, and a life for the connections, is what Cadence adds.</p>
-            <div class="chips"><span class="chip"><b>Equilibrium propagation</b> &middot; Scellier &amp; Bengio</span><span class="chip"><b>Modern Hopfield networks</b> &middot; Ramsauer et al.</span><span class="chip"><b>Distributed consensus</b></span><span class="chip"><b>Connectomics</b> &middot; worm and fly</span><span class="chip"><b>Three-factor plasticity</b></span></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section rule">
-      <div class="shell">
-        <div class="section-head reveal">
-          <span class="eyebrow">Results</span>
-          <h2>Measured, <em>with receipts.</em></h2>
-          <p>Every number below comes from a receipt that binds it to the exact code and data. Held-out data is read once, and the backprop baseline is trained in the same script.</p>
-        </div>
-        <div class="results">
-          <div class="result spot reveal"><div class="v" data-count>40k</div><span class="vs">steps to solve &middot; PPO 87k &middot; PPO-transformer 137k</span><h3>Learning from reward</h3><p>On cart-pole, Cadence reaches the solved threshold in under half the steps of a PPO network, with 1,716 parameters against 9,155.</p></div>
-          <div class="result spot reveal"><div class="v">3.3k</div><span class="vs">multiply-adds per decision &middot; PPO 8.9k</span><h3>Cheap decisions</h3><p>A trained policy decides in two warm settlement steps, a fraction of the compute of a PPO network and 20 times less than a PPO transformer.</p></div>
-          <div class="result spot reveal"><div class="v" data-count>100%</div><span class="vs">recall at every context length &middot; zero trained parameters</span><h3>Memory without a window</h3><p>Each key and value is stored as one Hebbian imprint. Recall stays perfect from 4 to 128 pairs, and one read takes two settlement steps.</p></div>
-          <div class="result spot reveal"><div class="v" data-count>85%</div><span class="vs">of lost accuracy regained &middot; Adam 50%</span><h3>Self-repair</h3><p>After half its input pixels go dark, Cadence wins back 85% of the lost accuracy in 100 updates under its own local rule.</p></div>
-          <div class="result spot reveal"><div class="v">16.6</div><span class="vs">bits per chord &middot; matched backprop net 24.7</span><h3>Bach chorales</h3><p>Continuing chorales chord by chord, Cadence beats the same-size backprop network on accuracy and on bits per chord.</p></div>
-          <div class="result spot reveal"><div class="v" data-count>161,827</div><span class="vs">neurons &middot; fly brain and nerve cord</span><h3>Connectome scale</h3><p>The same dynamics settle a complete fruit-fly nervous system read from published connectomes.</p></div>
-        </div>
-        <p class="fine reveal" style="margin-top:28px">Cart-pole, recall and repair results come from our forthcoming paper. Library benchmarks and the examples ladder are public, with receipts in the repositories.</p>
-      </div>
-    </section>
-
-    <section class="section rule">
-      <div class="shell">
-        <div class="section-head reveal">
-          <span class="eyebrow">Open frontier</span>
-          <h2>Where we push <em>next.</em></h2>
-          <p>The receipts also show where Cadence trails established methods. Those gaps set our research agenda.</p>
-        </div>
-        <div class="cards two">
-          <div class="card dashed spot reveal"><span class="k">Speed</span><h3>Built for new hardware</h3><p>A settlement takes tens of steps, so training on a CPU runs 10 to 100 times slower than backprop. Settlement is local and parallel, which suits neuromorphic and analog hardware that computes in place.</p></div>
-          <div class="card dashed spot reveal"><span class="k">Language</span><h3>Text modelling</h3><p>On next-character prediction Cadence reaches 3.33 bits per character, behind a small transformer at 3.08. Closing that gap is a priority.</p></div>
-          <div class="card dashed spot reveal"><span class="k">Credit over time</span><h3>Long-horizon reward</h3><p>The local update tracks the true policy gradient with a correlation of 0.95 to 0.98. Assigning credit across long episodes, as in Pong and Hopper, is work in progress.</p></div>
-          <div class="card dashed spot reveal"><span class="k">Lifelong learning</span><h3>Continual tasks</h3><p>Across 30 permuted-MNIST tasks seen once each, Cadence starts level with Adam and drifts three points by the end.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section rule">
-      <div class="shell">
-        <div class="section-head reveal">
-          <span class="eyebrow">Examples</span>
-          <h2>Ten rungs, from digits <em>to a composer.</em></h2>
-          <p>Each rung is a tutorial, a script and a receipt. Several ship with pages that run the same settlement in the browser that the receipt scored in Python.</p>
-        </div>
-        <ol class="ladder reveal">
-          <li><span class="n">01</span><b>Digits</b><span class="d">Handwritten 8&times;8 digits at 96% held-out accuracy in 20 epochs.</span></li>
-          <li><span class="n">02</span><b>Images</b><span class="d">MNIST at 97.4% in 10 epochs, with two independent backends agreeing on every prediction.</span></li>
-          <li><span class="n">03</span><b>Connect Four</b><span class="d">Imitates a depth-four search and plays in the browser with no lookahead.</span></li>
-          <li><span class="n">04</span><b>Pong</b><span class="d">A paddle that learns from raw pixels and reward.</span></li>
-          <li><span class="n">05</span><b>Text</b><span class="d">Next-character prediction on Shakespeare from a sixteen-character window.</span></li>
-          <li><span class="n">06</span><b>Sign writer</b><span class="d">Sees a sign and writes it with a two-joint arm, matching its teacher on unseen signs.</span></li>
-          <li><span class="n">07</span><b>Bach chorales</b><span class="d">Continues chorales chord by chord, ahead of the same-size backprop network.</span></li>
-          <li><span class="n">08</span><b>Cart-pole</b><span class="d">Classic control learned from reward.</span></li>
-          <li><span class="n">09</span><b>C. elegans</b><span class="d">The worm's published connectome under a declared protocol, tested against a shuffled control.</span></li>
-          <li><span class="n">10</span><b>Composer</b><span class="d">A plastic network that listens to a piano library for ten days, then composes from silence by imagining each phrase and scoring how it sounds.</span></li>
-        </ol>
-        <div class="actions reveal" style="margin-top:28px"><a class="btn btn-mind" href="https://github.com/muellerberndt/cadence-examples">Browse the examples <span class="arr">&rarr;</span></a></div>
       </div>
     </section>
 
@@ -247,29 +325,27 @@
         <div class="reveal" style="display:grid;gap:22px">
           <span class="eyebrow">Get started</span>
           <h2>Install it in <em>one line.</em></h2>
-          <p class="lead">NumPy only by default. Add the torch extra for CUDA and Apple silicon, or numba for fused CPU kernels. Python 3.11 or newer, MIT licensed, fully typed.</p>
+          <p class="lead">One line takes the library from its repository. NumPy is the only required dependency, and optional backends add Numba for fused CPU kernels, PyTorch for CUDA, and MLX for Apple silicon. Python 3.11 or newer, MIT licensed, fully typed.</p>
           <div class="actions">
             <a class="btn btn-mind" href="https://github.com/muellerberndt/cadence">GitHub <span class="arr">&rarr;</span></a>
             <a class="btn" href="https://pypi.org/project/cadence-net/">PyPI</a>
-            <a class="btn" href="https://github.com/muellerberndt/cadence/blob/main/docs/learning.md">How it learns</a>
+            <a class="btn" href="https://github.com/muellerberndt/cadence/blob/main/docs/quickstart.md">Quickstart</a>
+            <a class="btn" href="https://github.com/muellerberndt/cadence/blob/main/docs/index.md">Docs</a>
           </div>
         </div>
-        <pre class="code reveal"><span class="c"># install</span>
-<span class="k">$</span> pip install cadence-net
-<span class="k">$</span> pip install <span class="s">"cadence-net[accel]"</span>   <span class="c"># CUDA + Apple silicon</span>
+        <pre class="code reveal"><span class="c"># install the library</span>
+<span class="k">$</span> pip install git+https://github.com/muellerberndt/cadence
 
 <span class="k">import</span> cadence <span class="k">as</span> cd
 
-wiring  = cd.layered(<span class="p">64</span>, <span class="p">32</span>, <span class="p">10</span>, density=<span class="p">1.0</span>, seed=<span class="p">0</span>)
-learner = cd.Learner(
-    cd.Settlement(wiring, cd.learning_rule()),
-    wiring.sets[<span class="s">"output"</span>],
-    cd.LearnerConfig(eta=<span class="p">3.0</span>, beta=<span class="p">0.1</span>, temperature=<span class="p">0.1</span>))
+brain = cd.GenericBrain.build(<span class="p">2</span>, <span class="p">3</span>, hidden=<span class="p">16</span>, seed=<span class="p">0</span>)
+action = brain.step([[position, goal]])   <span class="c"># no outcome yet</span>
 
-<span class="k">for</span> idx <span class="k">in</span> batches:
-    learner.step(drive[idx], labels[idx])  <span class="c"># settle, nudge, update locally</span>
+<span class="k">while</span> alive:
+    position, reward = world.apply(action)
+    action = brain.step([[position, goal]], reward=[reward])
 
-learner.accuracy(drive_test, labels_test)  <span class="c"># 0.96 on 8x8 digits</span></pre>
+<span class="c"># observe, remember, predict, act, learn from the outcome</span></pre>
       </div>
     </section>
 
@@ -278,7 +354,7 @@ learner.accuracy(drive_test, labels_test)  <span class="c"># 0.96 on 8x8 digits<
         <div class="band reveal">
           <div>
             <h2>Born in <em class="t-phys">physics.</em></h2>
-            <p>Cadence grew out of our physics research. Observer Patch Holography describes the universe as observer patches reaching consensus, and Cadence builds learning machines from the same patch-net mathematics. Distributed consensus, local repair and fixed points are the rules underneath both programs. On the physics page they assemble a universe. Here they learn.</p>
+            <p>Cadence grew out of our physics research. Observer Patch Holography describes the universe as observer patches that keep records and repair their disagreement where their views overlap. A Cadence brain is assembled from the same parts: bounded local state, declared ports, readback, records and repair. On the physics page they assemble a universe. Here they learn.</p>
           </div>
           <div class="actions">
             <a class="btn btn-phys" href="/physics/">Explore the physics <span class="arr">&rarr;</span></a>
