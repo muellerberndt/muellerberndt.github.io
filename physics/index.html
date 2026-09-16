@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Observer Patch Holography | Pragma Research</title>
-  <meta name="description" content="Observer Patch Holography is Pragma Research's program for a unified theory of quantum mechanics and gravity, built from observers that agree. Machine-checked in Lean, falsifiable and open." />
+  <title>Observer Patch Holography | Simulation Theory, Proven | Pragma Research</title>
+  <meta name="description" content="Observer Patch Holography is a rigorously proven implementation of simulation theory. We reverse engineered the hardware and the software that generate our observations and the universe, checked it in 10,900+ Lean theorems, and run it in simulation." />
   <meta name="author" content="Pragma Research" />
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
   <meta name="theme-color" content="#05070b" />
@@ -13,14 +13,14 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://floatingpragma.io/physics/" />
   <meta property="og:site_name" content="Pragma Research" />
-  <meta property="og:title" content="Observer Patch Holography | Pragma Research" />
-  <meta property="og:description" content="Observer Patch Holography is Pragma Research's program for a unified theory of quantum mechanics and gravity, built from observers that agree. Machine-checked in Lean, falsifiable and open." />
+  <meta property="og:title" content="Observer Patch Holography | Simulation Theory, Proven" />
+  <meta property="og:description" content="We reverse engineered the hardware and the software that generate our observations and the universe, checked it in 10,900+ Lean theorems, and run it in simulation." />
   <meta property="og:image" content="https://floatingpragma.io/og-physics.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Observer Patch Holography | Pragma Research" />
-  <meta name="twitter:description" content="Observer Patch Holography is Pragma Research's program for a unified theory of quantum mechanics and gravity, built from observers that agree. Machine-checked in Lean, falsifiable and open." />
+  <meta name="twitter:title" content="Observer Patch Holography | Simulation Theory, Proven" />
+  <meta name="twitter:description" content="We reverse engineered the hardware and the software that generate our observations and the universe, checked it in 10,900+ Lean theorems, and run it in simulation." />
   <meta name="twitter:image" content="https://floatingpragma.io/og-physics.png" />
   <script type="application/ld+json">
 {
@@ -33,18 +33,11 @@
       "legalName": "Pragma Research Inc.",
       "url": "https://floatingpragma.io/",
       "logo": "https://floatingpragma.io/pragma.jpg",
-      "description": "A mathematics frontier research company working on fundamental physics and brain-like machine learning.",
-      "knowsAbout": [
-        "Quantum gravity",
-        "Fundamental physics",
-        "Observer Patch Holography",
-        "Machine learning",
-        "Neural networks",
-        "Equilibrium propagation",
-        "Lean theorem prover"
-      ],
+      "email": "bernhard@floatingpragma.ai",
+      "description": "A frontier mathematics company working on fundamental physics, artificial general intelligence and the physical engineering the mathematics opens.",
       "sameAs": [
         "https://github.com/FloatingPragma/observer-patch-holography/",
+        "https://github.com/muellerberndt/oph-physics-sim",
         "https://github.com/muellerberndt/cadence"
       ]
     },
@@ -69,10 +62,12 @@
       "funder": {
         "@id": "https://floatingpragma.io/#organization"
       },
-      "description": "A research program for a unified theory of quantum mechanics and gravity built from bounded observers that keep records, compare overlapping views and repair disagreement.",
+      "description": "A proven implementation of simulation theory: bounded observers with twelve-port screens keep records, compare overlapping views and repair disagreement, and the world they settle into is physics.",
       "sameAs": [
         "https://philpapers.org/rec/MUEFOC",
         "https://github.com/FloatingPragma/observer-patch-holography/",
+        "https://github.com/muellerberndt/oph-physics-sim",
+        "https://simulation.floatingpragma.io/",
         "https://learn.floatingpragma.io/",
         "https://oph-book.floatingpragma.io/"
       ]
@@ -102,14 +97,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" />
-  <link rel="stylesheet" href="/assets/pragma.css?v=1" />
+  <link rel="stylesheet" href="/assets/pragma.css?v=2" />
 </head>
 <body class="theme-phys">
   <a class="skip" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="shell">
-      <a class="brand" href="/" aria-label="Pragma Research home"><img src="/pragma-cropped.jpg" alt="" width="34" height="34" /><span><b>Pragma Research</b><small>Mathematics frontier research</small></span></a>
-      <nav class="nav" aria-label="Primary"><a href="/physics/" aria-current="page">Physics</a><a href="/cadence/">Cadence</a><a href="/oph/papers/">Papers</a><a href="/selected-works/">Chief Hacking Officer</a><a class="cta" href="mailto:tom@floatingpragma.io">Contact</a></nav>
+      <a class="brand" href="/" aria-label="Pragma Research home"><img src="/pragma-cropped.jpg" alt="" width="34" height="34" /><span><b>Pragma Research</b><small>Frontier mathematics</small></span></a>
+      <nav class="nav" aria-label="Primary"><a href="/physics/" aria-current="page">Physics</a><a href="/cadence/">Cadence</a><a href="/oph/papers/">Papers</a><a href="/#investors">Investors</a><a class="cta" href="mailto:bernhard@floatingpragma.ai">Contact</a></nav>
     </div>
   </header>
 
@@ -118,47 +113,73 @@
       <div class="hero-field" aria-hidden="true"><canvas data-field="phys"></canvas></div>
       <div class="shell">
         <div class="hero-copy">
-          <span class="eyebrow">Fundamental physics &middot; Observer Patch Holography</span>
-          <h1 class="display">Physics, rebuilt from <em class="t-phys">observers that agree.</em></h1>
-          <p class="lead">Quantum mechanics and general relativity are the two most successful theories ever written, and they contradict each other. Observer Patch Holography goes one step deeper. It starts from bounded observers, each with a partial view, and asks what the world must look like for all of those views to agree.</p>
+          <span class="eyebrow">Observer Patch Holography &middot; Proven</span>
+          <h1 class="display">Simulation theory, <em class="t-phys">implemented.</em></h1>
+          <p class="lead">We reverse engineered exactly how the hardware and the software work that generate our observations and the universe. The hardware is a network of twelve-port observer patches. The software is a repair protocol that makes their records agree. What they settle into is quantum mechanics, spacetime, the forces and the constants of nature. Every step is a theorem, checked by machine.</p>
           <div class="actions">
-            <a class="btn btn-phys" href="/oph/papers/">Read the papers <span class="arr">&rarr;</span></a>
+            <a class="btn btn-phys" href="https://simulation.floatingpragma.io/">Run the simulation <span class="arr">&rarr;</span></a>
             <a class="btn" href="https://philpapers.org/rec/MUEFOC" target="_blank" rel="noopener">Preprint &nearr;</a>
-            <a class="btn" href="https://learn.floatingpragma.io/">Start learning</a>
+            <a class="btn" href="https://github.com/FloatingPragma/observer-patch-holography/">Proofs on GitHub</a>
           </div>
         </div>
       </div>
       <p class="field-caption">Live field &middot; local repair with no global clock</p>
     </section>
-    <div class="ticker" aria-hidden="true"><div class="ticker-track"><div class="ticker-group"><span><b class="p">3</b> axioms</span><span><b class="p">0</b> fitted constants</span><span><b class="p">10,800+</b> Lean theorems</span><span><b class="p">12</b> ports &middot; 30 edges &middot; 20 faces</span><span><b class="p">2</b> of 1,024 matter contents survive</span><span><b class="p">16</b> papers online</span><span>&alpha;<sup>&minus;1</sup> fixed point <b class="p">137.035660</b></span><span>Predictions <b class="p">frozen</b> before the data</span></div><div class="ticker-group"><span><b class="p">3</b> axioms</span><span><b class="p">0</b> fitted constants</span><span><b class="p">10,800+</b> Lean theorems</span><span><b class="p">12</b> ports &middot; 30 edges &middot; 20 faces</span><span><b class="p">2</b> of 1,024 matter contents survive</span><span><b class="p">16</b> papers online</span><span>&alpha;<sup>&minus;1</sup> fixed point <b class="p">137.035660</b></span><span>Predictions <b class="p">frozen</b> before the data</span></div></div></div>
+    <div class="ticker" aria-hidden="true"><div class="ticker-track"><div class="ticker-group"><span><b class="p">3</b> axioms</span><span><b class="p">0</b> fitted constants</span><span><b class="p">10,900+</b> Lean theorems</span><span><b class="p">12</b> ports &middot; 30 edges &middot; 20 faces</span><span><b class="p">2</b> of 1,024 matter contents survive</span><span><b class="p">16</b> papers online</span><span>&alpha;<sup>&minus;1</sup> fixed point <b class="p">137.035660</b></span><span>Predictions <b class="p">frozen</b> on Bitcoin</span></div><div class="ticker-group"><span><b class="p">3</b> axioms</span><span><b class="p">0</b> fitted constants</span><span><b class="p">10,900+</b> Lean theorems</span><span><b class="p">12</b> ports &middot; 30 edges &middot; 20 faces</span><span><b class="p">2</b> of 1,024 matter contents survive</span><span><b class="p">16</b> papers online</span><span>&alpha;<sup>&minus;1</sup> fixed point <b class="p">137.035660</b></span><span>Predictions <b class="p">frozen</b> on Bitcoin</span></div></div></div>
 
     <section class="section">
       <div class="shell split top">
         <div class="section-head reveal" style="margin-bottom:0">
-          <span class="eyebrow">The problem</span>
-          <h2>Physics has two rulebooks. <em>We want one.</em></h2>
+          <span class="eyebrow">The claim</span>
+          <h2>The universe is a computation. <em>We found the machine.</em></h2>
         </div>
         <div class="prose reveal">
-          <p>Quantum theory describes the very small with probabilities and measurement. General relativity describes gravity as the shape of spacetime. Each passes every test in its own domain. Put them together inside a black hole or at the Big Bang and the mathematics breaks.</p>
-          <p>A century of attempts has tried to fix this by adding structure: extra dimensions, new particles, vibrating strings. OPH removes structure instead. It asks what the smallest system capable of having a world at all must look like, and then works out how much of known physics follows.</p>
+          <p>Simulation theory is usually a thought experiment: perhaps the world is a program. Observer Patch Holography turns it into a mathematical result. It asks what the smallest system capable of having a world at all must look like, and then proves how much of known physics follows from that system alone.</p>
+          <p>The answer has three layers. The hardware is a patch net of bounded observers, each with a twelve-port screen. The software is the protocol by which patches record what they see, compare records where their views overlap and repair the disagreement. The output is the public world every observer inside it shares. Quantum probability, thermodynamics, 3+1 spacetime, the Standard Model gauge structure and fixed-point equations for the constants come out of that loop. No gauge group, particle list or fitted constant goes in.</p>
+          <p>There is no programmer outside the machine. The universe is the fixed point of its own readback and repair, and observers inside it eventually build the hardware it runs on. The strange loop closes.</p>
         </div>
       </div>
     </section>
 
-    <section class="section rule">
+    <section class="section rule" id="machine">
       <div class="shell">
         <div class="section-head reveal">
-          <span class="eyebrow">The idea</span>
-          <h2>A fact is what survives <em>comparison.</em></h2>
-          <p>An observer patch is any bounded system with a local state, a boundary, a memory and a way to read its neighbours. A person, an instrument or a software process all qualify. No patch sees the whole universe.</p>
+          <span class="eyebrow">The machine</span>
+          <h2>Hardware, software, <em>output.</em></h2>
         </div>
-        <div class="map four reveal">
-          <div class="step"><span class="n">01</span><h3>Record</h3><p>Each patch keeps local records of what it sees.</p></div>
-          <div class="step"><span class="n">02</span><h3>Compare</h3><p>Where two patches overlap, their records are compared.</p></div>
-          <div class="step"><span class="n">03</span><h3>Repair</h3><p>Disagreements are repaired by local moves only.</p></div>
-          <div class="step"><span class="n">04</span><h3>Agree</h3><p>A consensus theorem guarantees that every repair order ends in the same public record. That record is the objective world.</p></div>
+        <div class="stack reveal">
+          <div class="layer">
+            <span class="k">01 &middot; Hardware</span>
+            <h3>Twelve-port observer patches</h3>
+            <p>Every observer is a bounded system with local state, a boundary, memory and a way to read its neighbours. Its screen has twelve ports wired as the corners of an icosahedron: degree five with spherical closure forces exactly 12 vertices, 30 edges and 20 faces. Patches join through typed seams into one net.</p>
+            <ul class="ticks">
+              <li>A person, an instrument or a software process all qualify</li>
+              <li>No patch sees the whole universe</li>
+              <li>All 1,352,078 states of the screen were checked: the repair law leaves exactly one resting state</li>
+            </ul>
+          </div>
+          <div class="layer">
+            <span class="k">02 &middot; Software</span>
+            <h3>Record, compare, repair, agree</h3>
+            <p>Each patch keeps records of what it sees. Where two patches overlap, their records are compared. Disagreements are repaired by local moves only. A consensus theorem guarantees that every repair order ends in the same public record, and whatever agreement leaves open is as random as possible.</p>
+            <ul class="ticks">
+              <li>Three axioms: the screen, agreement, maximum randomness</li>
+              <li>Zero adjustable numbers anywhere in the axioms</li>
+              <li>A distributed consensus protocol with no central authority and no global clock</li>
+            </ul>
+          </div>
+          <div class="layer">
+            <span class="k">03 &middot; Output</span>
+            <h3>The universe you observe</h3>
+            <p>The public record the patches settle into is the objective world. Its structure is forced: finite event algebras carry the Born rule, repair carries the four laws of thermodynamics, records between events carry time, the screen's reversible response carries the forces.</p>
+            <ul class="ticks">
+              <li>Born rule and quantum updating, proven on finite event algebras</li>
+              <li>3+1 spacetime and a route to the Einstein field equation</li>
+              <li>su(3) &oplus; su(2) &oplus; u(1), three colours, anomaly-free matter</li>
+            </ul>
+          </div>
         </div>
-        <figure class="reveal" style="margin:clamp(48px,6vw,72px) 0 0">
+        <figure class="reveal" style="margin:clamp(40px,5vw,60px) 0 0">
           <blockquote class="quote">&ldquo;Reality is the stable public world reconstructed by finite, self-reading observers that compare their overlaps and repair disagreement.&rdquo;</blockquote>
           <figcaption class="quote-by">The central thesis of Observer Patch Holography</figcaption>
         </figure>
@@ -170,7 +191,7 @@
         <div class="section-head reveal">
           <span class="eyebrow">Watch it happen</span>
           <h2>A universe, <em>assembled from agreement.</em></h2>
-          <p>Every patch below starts with a private state, its own rhythm, and no idea that the others exist. Nothing is added from outside the picture. Local comparison and repair are enough to produce a shared geometry, a common rhythm and one public record.</p>
+          <p>Every patch below starts with a private state, its own rhythm, and no idea that the others exist. Nothing is added from outside the picture. Local comparison and repair are enough to produce a shared geometry, a common rhythm and one public record. The full simulator does the same with 65,000 patches and 390,924 seams.</p>
         </div>
         <figure class="viz reveal">
           <div class="viz-stage"><canvas data-emergence data-steps="#emergence-steps" role="img" aria-label="An animation of scattered observer patches that keep records, compare them where their views overlap, repair the disagreement, and settle into one shared lattice with a common rhythm"></canvas></div>
@@ -183,6 +204,11 @@
           </ol>
           <figcaption class="viz-cap">A simplified picture of the reconstruction argument. In the papers each step is a theorem: local records, comparison on overlaps, a repair relation, and a consensus theorem that makes the result independent of the order the repairs happen in.</figcaption>
         </figure>
+        <div class="actions reveal" style="margin-top:26px">
+          <a class="btn btn-phys" href="https://simulation.floatingpragma.io/">Open the mini-universe <span class="arr">&rarr;</span></a>
+          <a class="btn" href="https://github.com/muellerberndt/oph-physics-sim">Simulator source</a>
+          <a class="btn" href="https://oph-lab.floatingpragma.io/">Interactive lab</a>
+        </div>
       </div>
     </section>
 
@@ -211,14 +237,43 @@
       </div>
     </section>
 
-    <section class="section tight">
+    <section class="section rule">
       <div class="shell">
-        <div class="band reveal">
-          <div>
-            <h2>One mathematics, <em class="t-mind">two programs.</em></h2>
-            <p>Distributed consensus, local repair and fixed points carry both halves of this company. The physics program asks what those rules build when the parts are observers. Cadence, our machine learning program, builds learning machines from the same rules and reads the settled state as an answer.</p>
+        <div class="section-head reveal">
+          <span class="eyebrow">Results</span>
+          <h2>What the mathematics <em>delivers.</em></h2>
+        </div>
+        <div class="results">
+          <div class="result spot reveal"><div class="v" data-count>10,944</div><span class="vs">Lean theorems &middot; zero admitted proofs</span><h3>A formal foundation</h3><p>The core mathematics is checked by machine down to the proof kernel. Clone the repository and run the checker yourself.</p></div>
+          <div class="result spot reveal"><div class="v sm">su(3) &oplus; su(2) &oplus; u(1)</div><span class="vs">Standard Model gauge type</span><h3>Forces from consistency</h3><p>A classification theorem forces the Lie type of the Standard Model from the screen's reversible response. No gauge group is chosen from a catalogue.</p></div>
+          <div class="result spot reveal"><div class="v">2 of 1,024</div><span class="vs">candidate matter contents</span><h3>Matter by elimination</h3><p>Every candidate matter content was tested. Exactly two survive, they are mirror images, and fermion statistics come out as an output.</p></div>
+          <div class="result spot reveal"><div class="v">2.5 ppm</div><span class="vs">137.035660 vs 137.035999</span><h3>The fine-structure constant</h3><p>A certified fixed point with no fitted inputs lands within 2.5 parts per million of the measured value.</p></div>
+          <div class="result spot reveal"><div class="v">4 laws</div><span class="vs">thermodynamics from repair</span><h3>Heat from disagreement</h3><p>One theorem package about how observers resample toward consensus yields all four laws, with the second law as data processing applied to repair and the Landauer bound as a corollary.</p></div>
+          <div class="result spot reveal"><div class="v">2&radic;2</div><span class="vs">Tsirelson bound attained</span><h3>Quantum from records</h3><p>Finite event algebras support Born representation, L&uuml;ders conditioning and an exact Bell-state construction that attains the quantum bound, all checked in Lean.</p></div>
+          <div class="result spot reveal"><div class="v">3+1</div><span class="vs">dimensions, derived</span><h3>Why space has three dimensions</h3><p>Repair acts as a low-pass filter on the observer screen, and the slowest surviving block has rank exactly three. Records between events recover elapsed time.</p></div>
+          <div class="result spot reveal"><div class="v">1 of 1.35M</div><span class="vs">exhaustive screen audit</span><h3>A unique resting state</h3><p>All 1,352,078 states of the twelve-port screen were checked. The repair law leaves exactly one place to come to rest.</p></div>
+          <div class="result spot reveal"><div class="v" data-count>65,000</div><span class="vs">patches &middot; 390,924 seams</span><h3>Consensus at scale</h3><p>In simulation, 65,536 observer patches reach one shared record using only their local neighbours, with disagreement falling monotonically to zero.</p></div>
+        </div>
+        <p class="fine reveal" style="margin-top:28px">The papers classify each result by type: exact finite theorems, results conditional on named premises, and comparisons with measurement. The physical identification steps that are work in progress are listed as open problems in the public repository.</p>
+      </div>
+    </section>
+
+    <section class="section rule" id="thinking">
+      <div class="shell split">
+        <div class="reveal" style="display:grid;gap:22px">
+          <span class="eyebrow">The same process generates thoughts</span>
+          <h2>Reality is a consensus. <em class="t-mind">So is a thought.</em></h2>
+          <p class="lead">The decentralised consensus process that produces the universe is the same one a nervous system runs. Neurons hold partial views, compare them across synapses and repair the disagreement until the brain settles. The settled state is the thought. A brain is a sub-federation of the universe's patch net, and consciousness is what that federation is like from inside.</p>
+          <p>That identification is why a physics company builds brains. Cadence, our AGI program, assembles machines from the same parts: bounded local state, declared ports, readback, records and repair. On this page they assemble a universe. On the next one they learn.</p>
+          <div class="actions">
+            <a class="btn btn-mind" href="/cadence/">See Cadence <span class="arr">&rarr;</span></a>
+            <a class="btn" href="/oph/papers/thinking-as-patch-net-fixed-point-search/">The paper on thinking</a>
           </div>
-          <div class="actions"><a class="btn btn-mind" href="/cadence/">See Cadence <span class="arr">&rarr;</span></a></div>
+        </div>
+        <div class="reveal" style="display:grid;gap:14px">
+          <a class="medium" href="https://medium.com/@muellerberndt/thinking-is-all-there-is-d7c72969bf8d" target="_blank" rel="noopener"><span class="m" aria-hidden="true">M</span><span class="body"><b>Thinking Is All There Is</b><span>Why anything exists, why it is the way it is, why we are conscious, and how to build AGI have one answer. An essay on Medium.</span></span><span class="go" style="font:500 12px/1 var(--mono);color:var(--accent)">Read &nearr;</span></a>
+          <a class="medium" href="/oph/papers/thinking-as-patch-net-fixed-point-search/"><span class="m" aria-hidden="true">&sect;</span><span class="body"><b>Thinking as Patch-Net Fixed-Point Search</b><span>Brains as biological fixed-point consensus systems: self-reading patches, recurrent repair, qualia and an AGI architecture.</span></span><span class="go" style="font:500 12px/1 var(--mono);color:var(--accent)">Paper &rarr;</span></a>
+          <a class="medium" href="/oph/papers/observers-are-all-you-need/"><span class="m" aria-hidden="true">&sect;</span><span class="body"><b>Observers Are All You Need</b><span>A compact synthesis of the whole program, from finite observer repair to Lorentzian gravity and Standard Model structure.</span></span><span class="go" style="font:500 12px/1 var(--mono);color:var(--accent)">Paper &rarr;</span></a>
         </div>
       </div>
     </section>
@@ -242,41 +297,6 @@
     <section class="section rule">
       <div class="shell">
         <div class="section-head reveal">
-          <span class="eyebrow">Open problems in reach</span>
-          <h2>The questions OPH <em>takes on.</em></h2>
-        </div>
-        <div class="problems reveal">
-          <div class="problem"><h3>Quantum gravity</h3><p>A route from shared records to Lorentzian spacetime and to the Einstein field equation.</p></div>
-          <div class="problem"><h3>The Standard Model</h3><p>A classification theorem forces the gauge structure su(3) &oplus; su(2) &oplus; u(1) from the screen's response, with three colours and an anomaly-free matter content.</p></div>
-          <div class="problem"><h3>Constants of nature</h3><p>Constants become fixed-point problems instead of inputs. The fine-structure fixed point lands at 137.035660, within 2.5 parts per million of the measured 137.035999.</p></div>
-          <div class="problem"><h3>Quantum probability</h3><p>Finite event algebras reproduce the Born rule and quantum updating, with the proofs checked in Lean.</p></div>
-          <div class="problem"><h3>Why three dimensions</h3><p>Repair acts as a low-pass filter on the observer screen, and the slowest surviving block has rank exactly three.</p></div>
-          <div class="problem"><h3>The Yang&ndash;Mills gap</h3><p>On the finite model the repair gap equals the transfer-Hamiltonian gap. The continuum construction is work in progress.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section rule">
-      <div class="shell">
-        <div class="section-head reveal">
-          <span class="eyebrow">Results</span>
-          <h2>What the mathematics <em>delivers.</em></h2>
-        </div>
-        <div class="results">
-          <div class="result spot reveal"><div class="v" data-count>10,800+</div><span class="vs">Lean theorems &middot; zero admitted proofs</span><h3>A formal foundation</h3><p>The core mathematics is checked by machine down to the proof kernel.</p></div>
-          <div class="result spot reveal"><div class="v">1 of 1.35M</div><span class="vs">exhaustive screen audit</span><h3>A unique resting state</h3><p>All 1,352,078 states of the twelve-port screen were checked. The repair law leaves exactly one place to come to rest.</p></div>
-          <div class="result spot reveal"><div class="v">2 of 1,024</div><span class="vs">candidate matter contents</span><h3>Matter by elimination</h3><p>Every candidate matter content was tested. Exactly two survive, they are mirror images, and fermion statistics come out as an output.</p></div>
-          <div class="result spot reveal"><div class="v sm">su(3) &oplus; su(2) &oplus; u(1)</div><span class="vs">Standard Model gauge type</span><h3>Forces from consistency</h3><p>A classification theorem forces the Lie type of the Standard Model from the screen's reversible response.</p></div>
-          <div class="result spot reveal"><div class="v">2.5 ppm</div><span class="vs">137.035660 vs 137.035999</span><h3>The fine-structure constant</h3><p>A certified fixed point with no fitted inputs lands within 2.5 parts per million of the measured value.</p></div>
-          <div class="result spot reveal"><div class="v" data-count>65,000</div><span class="vs">patches &middot; 390,924 seams</span><h3>Consensus at scale</h3><p>In simulation, about 65,000 observer patches reach one shared record using only their local neighbours.</p></div>
-        </div>
-        <p class="fine reveal" style="margin-top:28px">The papers classify each result by type: exact finite theorems, results conditional on named premises, and comparisons with measurement. Physical identification steps that are work in progress are listed as open problems in the public repository.</p>
-      </div>
-    </section>
-
-    <section class="section rule">
-      <div class="shell">
-        <div class="section-head reveal">
           <span class="eyebrow">Falsifiable</span>
           <h2>How to kill <em>this theory.</em></h2>
           <p>A theory that cannot lose cannot win. OPH freezes its predictions before the data arrives, and the first frozen set is time-stamped on the Bitcoin blockchain. Any of these observations would break it.</p>
@@ -292,18 +312,18 @@
       </div>
     </section>
 
-    <section class="section rule">
+    <section class="section rule" id="technology">
       <div class="shell">
         <div class="section-head reveal">
-          <span class="eyebrow">Why it matters</span>
+          <span class="eyebrow">What it opens</span>
           <h2>Every unification became <em>technology.</em></h2>
-          <p>Maxwell's unification of electricity and magnetism gave us radio. Quantum mechanics gave us the transistor and the laser. General relativity keeps satellite navigation accurate. A theory that joins quantum mechanics and gravity is the next entry on that list, and we intend to build on it.</p>
+          <p>Maxwell's unification gave us radio. Quantum mechanics gave us the transistor and the laser. Relativity keeps satellite navigation accurate. A theory that says physical law is a repair computation gives an engineering rule nobody had before: any medium that relaxes to a fixed point is a computer, and the repair equations are its design spec.</p>
         </div>
         <div class="cards four">
-          <a class="card spot reveal" href="/cadence/"><span class="tag live">Running today</span><h3>Machine learning</h3><p>The patch-net mathematics behind OPH powers Cadence, our brain-like learning system.</p><span class="go">Explore Cadence &rarr;</span></a>
-          <div class="card spot reveal"><span class="tag phys">Research</span><h3>Computation</h3><p>Consensus repair is a model of physical computation. A blinded self-repair experiment on IBM quantum hardware explores it.</p></div>
-          <div class="card spot reveal"><span class="tag">Horizon</span><h3>Materials</h3><p>Superconductors, magnets and quantum Hall states are collective orders that emerge from local agreement. OPH's repair mathematics is built for that kind of emergence, which makes materials design a natural target.</p></div>
-          <div class="card spot reveal"><span class="tag">Horizon</span><h3>Propulsion</h3><p>If gravity and inertia follow from deeper principles, they could become design parameters. Propulsion that engages spacetime directly is the long-range goal of this line of work.</p></div>
+          <a class="card spot reveal" href="/cadence/"><span class="status running">Running</span><h3>Brains</h3><p>The patch-net mathematics behind OPH powers Cadence, brains with a continuous stream of thought that learn by experience. Four are live in the browser.</p><span class="go">Explore Cadence &rarr;</span></a>
+          <div class="card spot reveal"><span class="status horizon">Horizon</span><h3>Optical compute</h3><p>A light field that settles is running the same fixed-point search a Cadence brain runs in software, at light speed, with no clock and no backward pass. The repair mathematics says how to wire it. Devices are work in progress.</p></div>
+          <div class="card spot reveal"><span class="status horizon">Horizon</span><h3>Materials</h3><p>Superconductors, magnets and quantum Hall states are collective orders that emerge from local agreement. OPH's repair mathematics is built for that kind of emergence, which makes materials design a natural target.</p></div>
+          <div class="card spot reveal"><span class="status horizon">Horizon</span><h3>Propulsion</h3><p>If gravity and inertia follow from deeper principles, they become design parameters. Propulsion that engages spacetime directly is the long-range goal of this line of work.</p></div>
         </div>
       </div>
     </section>
@@ -315,12 +335,25 @@
           <h2>Pick your <em>depth.</em></h2>
         </div>
         <div class="cards">
-          <a class="card spot reveal" href="https://philpapers.org/rec/MUEFOC" target="_blank" rel="noopener"><span class="k">Preprint &middot; PhilPapers</span><h3>Finite Observer Consensus as a Reconstruction Principle</h3><p>The flagship paper: normal forms, the Standard Model Lie type and a route to the Einstein field equation.</p><span class="go">Read the preprint &rarr;</span></a>
+          <a class="card spot reveal" href="https://simulation.floatingpragma.io/"><span class="k">Simulation</span><h3>The OPH mini-universe</h3><p>Seven chapters that walk a finite self-reading substrate from agreement to causal records, fields, matter, laws and the familiar output universe, rendered from real simulator data.</p><span class="go">Run it &rarr;</span></a>
+          <a class="card spot reveal" href="https://philpapers.org/rec/MUEFOC" target="_blank" rel="noopener"><span class="k">Preprint &middot; PhilPapers</span><h3>From Observer Consensus to Standard Physics</h3><p>The flagship paper: normal forms, the Standard Model Lie type and a route to the Einstein field equation.</p><span class="go">Read the preprint &nearr;</span></a>
           <a class="card spot reveal" href="/oph/papers/"><span class="k">Papers</span><h3>The research library</h3><p>Sixteen papers with first-party HTML and PDF editions, from the foundations to the particle spectrum, each with its own proof boundary.</p><span class="go">Browse the papers &rarr;</span></a>
           <a class="card spot reveal" href="https://oph-book.floatingpragma.io/"><span class="k">Book</span><h3>Reverse Engineering Reality</h3><p>The whole argument for general readers, with no mathematics required.</p><span class="go">Read the book &rarr;</span></a>
           <a class="card spot reveal" href="https://learn.floatingpragma.io/"><span class="k">Textbooks</span><h3>Learn OPH</h3><p>Guided derivations, diagrams and reading paths for readers with a physics or computer science background.</p><span class="go">Open the library &rarr;</span></a>
-          <a class="card spot reveal" href="https://github.com/FloatingPragma/observer-patch-holography/"><span class="k">Repository &middot; GitHub</span><h3>Collaborate on the theory</h3><p>Papers, TeX sources, Lean proofs, executable derivations and evidence packages. Every open problem is an issue you can pick up.</p><span class="go">Open the repository &rarr;</span></a>
-          <a class="card spot reveal" href="https://oph-lab.floatingpragma.io/"><span class="k">Lab &amp; simulation</span><h3>Run it yourself</h3><p>Interactive experiments with records, overlap and repair, plus a <span style="white-space:nowrap">mini-universe</span> that runs in the browser.</p><span class="go">Enter the lab &rarr;</span></a>
+          <a class="card spot reveal" href="https://medium.com/@muellerberndt/thinking-is-all-there-is-d7c72969bf8d" target="_blank" rel="noopener"><span class="k">Essay &middot; Medium</span><h3>Thinking Is All There Is</h3><p>The whole picture in one essay: why the universe, consciousness and AGI have one answer.</p><span class="go">Read on Medium &nearr;</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section rule">
+      <div class="shell">
+        <div class="section-head reveal">
+          <span class="eyebrow">Open source</span>
+          <h2>The theory and the machine, <em>on GitHub.</em></h2>
+        </div>
+        <div class="repos reveal">
+          <a class="repo" href="https://github.com/FloatingPragma/observer-patch-holography/"><span class="gh" aria-hidden="true"><svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg></span><span class="body"><span class="path">FloatingPragma/observer-patch-holography</span><span class="what">The theory. Sixteen papers with TeX sources, the Lean library with 10,900+ theorems and zero admitted proofs, executable derivations, the claim registry and the frozen-prediction ladder. Every open problem is an issue.</span><span class="meta"><span><b>Lean 4</b></span><span>Apache-2.0 code</span><span>CC BY-NC-SA papers</span></span></span></a>
+          <a class="repo" href="https://github.com/muellerberndt/oph-physics-sim"><span class="gh" aria-hidden="true"><svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg></span><span class="body"><span class="path">muellerberndt/oph-physics-sim</span><span class="what">The simulator. Finite carriers of observer patches with local readback, overlap repair and a machine-readable receipt for every claim a run tests. The data behind the mini-universe at simulation.floatingpragma.io.</span><span class="meta"><span><b>Python</b></span><span>MIT</span><span>oph-fpe run</span></span></span></a>
         </div>
       </div>
     </section>
@@ -330,7 +363,7 @@
         <div class="band reveal">
           <div>
             <h2>The theory is open. <em class="t-phys">Help close it.</em></h2>
-            <p>The repository welcomes contributions from physicists, mathematicians and Lean developers. Find an open problem, send a proof, or try to break a result.</p>
+            <p>The repository welcomes contributions from physicists, mathematicians and Lean developers. Find an open problem, send a proof, or try to break a result. Investors who want to build on the physics: <a href="/#investors" style="color:var(--text);text-decoration:underline;text-underline-offset:3px">start here</a>.</p>
           </div>
           <div class="actions">
             <a class="btn btn-phys" href="https://github.com/FloatingPragma/observer-patch-holography/">Open the repository <span class="arr">&rarr;</span></a>
@@ -344,32 +377,36 @@
     <div class="shell">
       <div class="cols">
         <div class="about">
-          <a class="brand" href="/"><img src="/pragma-cropped.jpg" alt="" width="34" height="34" /><span><b>Pragma Research</b><small>Mathematics frontier research</small></span></a>
-          <p>New mathematics for the fundamental laws of physics and for machines that learn like brains.</p>
+          <a class="brand" href="/"><img src="/pragma-cropped.jpg" alt="" width="34" height="34" /><span><b>Pragma Research</b><small>Frontier mathematics</small></span></a>
+          <p>The mathematics of how a universe, a mind and a thinking machine come out of one consensus process.</p>
         </div>
         <div><h4>Physics</h4><ul>
           <li><a href="/physics/">Observer Patch Holography</a></li>
           <li><a href="/oph/papers/">Papers</a></li>
           <li><a href="https://philpapers.org/rec/MUEFOC" target="_blank" rel="noopener">Preprint</a></li>
+          <li><a href="https://simulation.floatingpragma.io/">Simulation</a></li>
           <li><a href="https://oph-book.floatingpragma.io/">Book</a></li>
           <li><a href="https://learn.floatingpragma.io/">Learn</a></li>
           <li><a href="https://github.com/FloatingPragma/observer-patch-holography/">GitHub</a></li>
         </ul></div>
-        <div><h4>Machine learning</h4><ul>
+        <div><h4>Cadence</h4><ul>
           <li><a href="/cadence/">Cadence</a></li>
+          <li><a href="https://floatingpragma.io/cadence-examples/">Live brains</a></li>
           <li><a href="https://github.com/muellerberndt/cadence">Library</a></li>
           <li><a href="https://github.com/muellerberndt/cadence-examples">Examples</a></li>
           <li><a href="https://pypi.org/project/cadence-net/">PyPI</a></li>
         </ul></div>
         <div><h4>Company</h4><ul>
+          <li><a href="/#investors">Investors</a></li>
           <li><a href="/selected-works/">Chief Hacking Officer</a></li>
+          <li><a href="https://medium.com/@muellerberndt" target="_blank" rel="noopener">Medium</a></li>
           <li><a href="https://blog.floatingpragma.io/">Blog</a></li>
-          <li><a href="mailto:tom@floatingpragma.io">Contact</a></li>
+          <li><a href="mailto:bernhard@floatingpragma.ai">Contact</a></li>
         </ul></div>
       </div>
       <div class="legal"><span>&copy; 2026 Pragma Research Inc.</span><span>floatingpragma.io</span></div>
     </div>
   </footer>
-  <script src="/assets/pragma.js?v=1" defer></script>
+  <script src="/assets/pragma.js?v=2" defer></script>
 </body>
 </html>

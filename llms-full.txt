@@ -4,7 +4,7 @@ This file provides a compact machine-readable map for research assistants, index
 
 ## Summary
 
-Pragma Research is a mathematics frontier research company with two focus areas. The fundamental physics program develops Observer Patch Holography (OPH), a research program for a unified theory of quantum mechanics and gravity: https://floatingpragma.io/physics/. The machine learning program develops Cadence, an open-source library of brain-like patch nets that answer and learn by local settlement with no backward pass: https://floatingpragma.io/cadence/.
+Pragma Research is a frontier mathematics company that works on physics, artificial general intelligence and the nature of reality. The physics program develops Observer Patch Holography (OPH), a proven implementation of simulation theory that reverse engineers the hardware and software generating our observations and the universe: https://floatingpragma.io/physics/. The AGI program develops Cadence, an open-source library for brains with a continuous stream of thought that learn by experience with no backward pass: https://floatingpragma.io/cadence/. Investors: https://floatingpragma.io/#investors.
 
 OPH asks whether bounded observers can form a shared physical account from local records, overlap comparison, and repair. The flagship preprint is on PhilPapers: https://philpapers.org/rec/MUEFOC.
 
@@ -62,4 +62,4 @@ The finite framework proves and computes results under displayed premises. Sever
 
 ## Feeds and Contact
 
-- Contact: tom@floatingpragma.io
+- Contact: bernhard@floatingpragma.ai
