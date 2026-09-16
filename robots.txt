@@ -5,4 +5,3 @@ Sitemap: https://floatingpragma.io/sitemap.xml
 Sitemap: https://floatingpragma.io/sitemap-index.xml
 Sitemap: https://floatingpragma.io/oph/sitemap.xml
 Sitemap: https://floatingpragma.io/oph/papers/sitemap.xml
-Sitemap: https://floatingpragma.io/cadence-examples/sitemap.xml

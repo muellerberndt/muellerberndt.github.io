@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cadence | Brains That Learn by Experience | Pragma Research</title>
-  <meta name="description" content="Cadence builds actual brains with a continuous stream of thought that learn by experience. No backward pass, no training switch, no frozen weights. The solution for embodied AGI: a robot learns its job on the job with a small local brain. Four brains live in the browser, open source under MIT." />
+  <meta name="description" content="Cadence builds actual brains with a continuous stream of thought that learn by experience. No backward pass, no training switch, no frozen weights. The solution for embodied AGI: a robot that keeps learning new tasks on the job with a small local brain. Open source under MIT." />
   <meta name="author" content="Pragma Research" />
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
   <meta name="theme-color" content="#05070b" />
@@ -14,13 +14,13 @@
   <meta property="og:url" content="https://floatingpragma.io/cadence/" />
   <meta property="og:site_name" content="Pragma Research" />
   <meta property="og:title" content="Cadence | Brains That Learn by Experience" />
-  <meta property="og:description" content="Actual brains with a continuous stream of thought that learn by experience. No backward pass, no training switch, no frozen weights. Four brains live in the browser, open source under MIT." />
+  <meta property="og:description" content="Actual brains with a continuous stream of thought that learn by experience. No backward pass, no training switch, no frozen weights. Robots that keep learning new tasks. Open source under MIT." />
   <meta property="og:image" content="https://floatingpragma.io/og-cadence.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Cadence | Brains That Learn by Experience" />
-  <meta name="twitter:description" content="Actual brains with a continuous stream of thought that learn by experience. No backward pass, no training switch, no frozen weights. Four brains live in the browser, open source under MIT." />
+  <meta name="twitter:description" content="Actual brains with a continuous stream of thought that learn by experience. No backward pass, no training switch, no frozen weights. Robots that keep learning new tasks. Open source under MIT." />
   <meta name="twitter:image" content="https://floatingpragma.io/og-cadence.png" />
   <script type="application/ld+json">
 {
@@ -37,8 +37,7 @@
       "description": "A frontier mathematics company working on fundamental physics, artificial general intelligence and the physical engineering the mathematics opens.",
       "sameAs": [
         "https://github.com/FloatingPragma/observer-patch-holography/",
-        "https://github.com/muellerberndt/cadence",
-        "https://github.com/muellerberndt/cadence-examples"
+        "https://github.com/muellerberndt/cadence"
       ]
     },
     {
@@ -66,9 +65,7 @@
       },
       "description": "An open-source library for brains that learn from one ongoing stream of experience: records hold what followed each reading, settled regions complete it, and every synapse changes from the activity of its own two neurons.",
       "sameAs": [
-        "https://pypi.org/project/cadence-net/",
-        "https://github.com/muellerberndt/cadence-examples",
-        "https://floatingpragma.io/cadence-examples/"
+        "https://pypi.org/project/cadence-net/"
       ]
     },
     {
@@ -98,26 +95,15 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" />
   <link rel="stylesheet" href="/assets/pragma.css?v=3" />
   <style>
-    /* page-local: the measured line on an example card */
-    .measured{margin-top:2px;padding-top:15px;border-top:1px dashed var(--line2)}
-    .measured span{display:block;margin-bottom:7px;font:500 10px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--accent)}
-    .measured code{font:500 12px/1.75 var(--mono);color:var(--soft);letter-spacing:.01em}
-    td.bad{color:#ff9a9a}
-    td.good{color:var(--text)}
-    @media (max-width:640px){
-      .copy{border-radius:16px;align-items:flex-start}
-      .copy span:first-child{overflow-wrap:break-word;min-width:0}
-      .table-wrap{overflow-x:visible;border:0;background:transparent;border-radius:0}
-      table{min-width:0;display:block;font-size:.95rem}
-      thead{display:none}
-      tbody,tbody tr,tbody th,tbody td{display:block;width:auto}
-      tbody tr{border:1px solid var(--line);border-radius:var(--r);background:var(--panel);margin-bottom:12px;padding:6px 4px}
-      tbody th{border-bottom:0;padding:16px 18px 4px}
-      tbody td{border-bottom:0;padding:8px 18px 14px;background:none}
-      tbody td::before{content:attr(data-label);display:block;margin-bottom:5px;font:500 10px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--dim)}
-      tbody td.hl{color:var(--text)}
-      tbody td.hl::before{color:var(--accent)}
-    }
+    /* page-local: brain scan figures */
+    .brains{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}
+    .brains figure{margin:0;display:grid;grid-template-rows:1fr auto;border:1px solid var(--line);border-radius:26px;overflow:hidden;background:#080e16;box-shadow:0 60px 140px -80px rgba(255,179,107,.45)}
+    .brains img{width:100%;height:100%;object-fit:contain;aspect-ratio:1244/878}
+    .brains figcaption{padding:16px 22px 20px;font-size:.9rem;line-height:1.55;color:var(--muted);border-top:1px solid var(--line)}
+    .brains figcaption span{display:block;margin-bottom:6px;font:500 10.5px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--mind)}
+    .copy span:first-child{overflow-wrap:break-word;min-width:0}
+    @media (max-width:760px){.brains{grid-template-columns:1fr}}
+    @media (max-width:640px){.copy{border-radius:16px;align-items:flex-start}}
   </style>
 </head>
 <body class="theme-mind">
@@ -136,9 +122,9 @@
         <div class="hero-copy">
           <span class="eyebrow">Cadence &middot; AGI</span>
           <h1 class="display">Actual brains. A continuous stream of <em class="t-mind">consciousness.</em></h1>
-          <p class="lead">Cadence builds brains that learn by experience. One ongoing loop observes, remembers, predicts, acts and learns from what follows, for as long as the brain runs. No backward pass, no training switch, no frozen weights. Four of them live in your browser, and you can watch every neuron while they think. The same brain fits inside a robot and learns its job on the job, with no datacenter behind it. The key came out of our physics.</p>
+          <p class="lead">Cadence builds brains that learn by experience. One ongoing loop observes, remembers, predicts, acts and learns from what follows, for as long as the brain runs. No backward pass, no training switch, no frozen weights. The same brain fits inside a robot and learns its job on the job, with no datacenter behind it. The key came out of our physics.</p>
           <div class="actions">
-            <a class="btn btn-mind" href="https://floatingpragma.io/cadence-examples/">Meet the brains <span class="arr">&rarr;</span></a>
+            <a class="btn btn-mind" href="#possible">What it makes possible <span class="arr">&rarr;</span></a>
             <a class="btn" href="https://github.com/muellerberndt/cadence">GitHub</a>
             <button class="copy" type="button" data-copy="pip install git+https://github.com/muellerberndt/cadence" aria-label="Copy install command"><span>$ pip install git+https://github.com/<wbr />muellerberndt/cadence</span><span class="lbl">Copy</span></button>
           </div>
@@ -196,109 +182,31 @@
       </div>
     </section>
 
-    <section class="section rule" id="embodied">
+    <section class="section rule" id="possible">
       <div class="shell">
         <div class="section-head reveal">
-          <span class="eyebrow">Embodied AGI</span>
-          <h2>A robot that learns its job <em>on the job.</em></h2>
-          <p>The datacenter model of AI puts a frozen network behind an API and streams the robot's senses to it. A Cadence brain sits inside the machine. It learns the body it has from what its motors do, keeps learning as the body wears and the task changes, and decides in tens of milliseconds on a CPU. No round trip, no retraining run, no fleet-wide update to teach one robot one new thing.</p>
+          <span class="eyebrow">What Cadence makes possible</span>
+          <h2>Machines that get better <em>by living.</em></h2>
+          <p>A frozen network is finished the day it ships. A Cadence brain starts learning the day it switches on and keeps going for as long as it runs. That changes what a machine can be.</p>
         </div>
         <div class="cards">
-          <div class="card spot reveal"><span class="k">Small local brain</span><h3>Runs in a browser tab</h3><p>Every brain on this page runs its whole life in JavaScript on your machine, decision for decision equal to the Python agent. Decision latency p95 is 52 ms for Connect Four and 75 ms for the artist. A robot controller needs no datacenter.</p></div>
-          <div class="card spot reveal"><span class="k">Learns the body it has</span><h3>Motor babbling to competence</h3><p>The arm learns its own kinematics from random movement and reaches 99% of held-out targets from one pass over its experience. Nobody wrote the body into it.</p></div>
-          <div class="card spot reveal"><span class="k">Adapts without a reset</span><h3>Wear, damage, new tools</h3><p>Lengthen the arm's upper link mid-life and it recovers to 99% with no reset, then returns to 99% on the original body. The artist keeps drawing when its body and its canvas change mid-drawing.</p></div>
+          <div class="card spot reveal"><span class="k">01 &middot; Flexible learners</span><h3>Learners that learn through experience</h3><p>An agent picks up a new tool, a new game or a new routine by using it. Every outcome it witnesses is written into memory the moment it happens, in the order life delivers it. There is no dataset to collect, no training run to schedule and no model release to wait for. Yesterday's lesson is available this morning.</p></div>
+          <div class="card spot reveal"><span class="k">02 &middot; Embodied AGI</span><h3>A brain that lives inside its body</h3><p>The brain runs on the machine's own processor and decides in milliseconds, with no datacenter and no network round trip. It learns the body it has from what its own motors do. When a joint wears, a link bends or a new tool is fitted, it relearns the body on the spot.</p></div>
+          <div class="card spot reveal"><span class="k">03 &middot; Lifelong robots</span><h3>A robot that keeps learning new tasks</h3><p>Show a robot a new job and it starts doing it. Every attempt makes it better at that job, and the new task never overwrites the old ones, because each lesson is stored in the memories its own situation touches. A warehouse robot takes on a new product line, a kitchen robot a new recipe, a field robot a new site, each improving with every shift.</p></div>
+        </div>
+        <div class="brains reveal">
+          <figure><img src="/assets/cadence-brain-arm.jpg" width="1244" height="878" loading="lazy" alt="A Cadence brain for a robot arm: sensory, dynamics, workspace, context, goal, prediction, efference and motor cortices joined by thousands of synapses" /><figcaption><span>Arm brain</span>Eight cortices, from the senses to the motors, learning a body from its own movement.</figcaption></figure>
+          <figure><img src="/assets/cadence-brain-connect-four.jpg" width="1412" height="990" loading="lazy" alt="A Cadence brain for a board game: a large sensory cortex feeding workspace, dynamics, context, goal, efference and motor cortices" /><figcaption><span>Game brain</span>The same architecture wired for a board game, with a wide sensory cortex for the board.</figcaption></figure>
         </div>
         <div class="band reveal" style="margin-top:14px">
           <div>
-            <h2>From four lives in a tab to <em class="t-mind">a fleet of bodies.</em></h2>
-            <p>The same loop that runs the arm runs a warehouse picker, an inspection drone or a surgical assistant: observe, remember, predict, act, learn from what followed. Each machine learns its own job, and each keeps its brain.</p>
+            <h2>From one body to <em class="t-mind">a fleet of learners.</em></h2>
+            <p>The same loop runs a warehouse picker, an inspection drone or a surgical assistant: observe, remember, predict, act, learn from what followed. Each machine learns its own job and keeps its own brain.</p>
           </div>
           <div class="actions">
-            <a class="btn btn-mind" href="https://floatingpragma.io/cadence-examples/arm/">Watch the arm learn <span class="arr">&rarr;</span></a>
-            <a class="btn" href="mailto:bernhard@floatingpragma.ai?subject=Cadence%20for%20robotics">Talk robotics</a>
+            <a class="btn btn-mind" href="mailto:bernhard@floatingpragma.ai?subject=Cadence%20for%20robotics">Talk robotics <span class="arr">&rarr;</span></a>
+            <a class="btn" href="https://github.com/muellerberndt/cadence">GitHub</a>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section rule" id="measured">
-      <div class="shell">
-        <div class="section-head reveal">
-          <span class="eyebrow">Measured</span>
-          <h2>Same life, same stream, <em>conventional network swapped in.</em></h2>
-          <p>The same lives, with the Cadence world model replaced by an online transformer or an online multilayer perceptron and everything else held fixed. Five seeds each, receipts and verifiers published.</p>
-        </div>
-        <div class="table-wrap reveal">
-          <table>
-            <thead><tr><th scope="col">Task</th><th scope="col">Online transformer</th><th scope="col">Online MLP</th><th scope="col" class="hl">Cadence records brain</th></tr></thead>
-            <tbody>
-              <tr><th scope="row">Arm: held-out reaching after one pass over the stream, no replay</th><td class="bad" data-label="Online transformer">40%</td><td class="bad" data-label="Online MLP">2%</td><td class="hl" data-label="Cadence">99%</td></tr>
-              <tr><th scope="row">World: choosing by a cue seen eight steps earlier</th><td class="bad" data-label="Online transformer">52% / 48% with ring</td><td class="bad" data-label="Online MLP">59% / 49% with ring</td><td class="hl" data-label="Cadence">100%</td></tr>
-              <tr><th scope="row">Artist: held-out figures drawn stroke by stroke, foreground F1</th><td data-label="Online transformer">not run</td><td class="bad" data-label="Online MLP">0.80 with a replay ring</td><td class="hl" data-label="Cadence">0.93</td></tr>
-              <tr><th scope="row">Connect Four: paired score against an AlphaZero trained with the published recipe</th><td colspan="2" data-label="AlphaZero (alpha-zero-general recipe)">0.055 / 0.010</td><td class="hl" data-label="Cadence">0.945 at 25 and 0.990 at 100 simulations per move</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <p class="fine reveal" style="margin-top:18px">With a replay ring and twice the updates a transformer catches up on reaching. On memory across a delay it fails with or without the ring. Cadence gets its numbers from one pass over one stream. Every number links to its receipt from the brain pages below.</p>
-      </div>
-    </section>
-
-    <section class="section rule" id="examples">
-      <div class="shell">
-        <div class="section-head reveal">
-          <span class="eyebrow">Live in the browser</span>
-          <h2>Four brains you can <em>open and watch.</em></h2>
-          <p>Each keeps learning while you interact with it, with the whole brain rendered live beside the task, neuron by neuron. Each ships its receipt and the verifier that recomputes it.</p>
-        </div>
-        <div class="focus-grid">
-          <article class="focus mind spot reveal">
-            <span class="kicker">01 &middot; Arm</span>
-            <h3>A body learned from <em>babbling.</em></h3>
-            <p>A two-link arm moves at random and learns its own body from what follows each motor command. To copy what you draw, it searches over the consequences it has recorded and takes the command whose predicted displacement follows the line.</p>
-            <p class="measured"><span>Measured</span><code>Held-out reaching 99%; the online MLP on the same stream without replay 2%; the online transformer 40%.</code></p>
-            <div class="actions">
-              <a class="btn btn-mind" href="https://floatingpragma.io/cadence-examples/arm/">Open the arm <span class="arr">&rarr;</span></a>
-              <a class="btn" href="https://github.com/muellerberndt/cadence-examples/tree/main/arm">Code</a>
-              <a class="btn" href="https://github.com/muellerberndt/cadence-examples/blob/main/arm/receipt.json">Receipt</a>
-            </div>
-          </article>
-          <article class="focus mind spot reveal">
-            <span class="kicker">02 &middot; World</span>
-            <h3>A world that must be <em>remembered.</em></h3>
-            <p>A 6 by 6 world of walls, doors, objects, colours and words, seen one cell at a time. One life learns what follows its actions, remembers where it saw an object, corrects that memory when the object moves, holds a cue across a delay and grounds words in objects.</p>
-            <p class="measured"><span>Measured</span><code>Requests fulfilled 100% with memory, 18% with the memory erased; cue at delay 8: 100% against 52% for the online transformer.</code></p>
-            <div class="actions">
-              <a class="btn btn-mind" href="https://floatingpragma.io/cadence-examples/world/">Open the world <span class="arr">&rarr;</span></a>
-              <a class="btn" href="https://github.com/muellerberndt/cadence-examples/tree/main/world">Code</a>
-              <a class="btn" href="https://github.com/muellerberndt/cadence-examples/blob/main/world/receipt.json">Receipt</a>
-            </div>
-          </article>
-          <article class="focus mind spot reveal">
-            <span class="kicker">03 &middot; Artist</span>
-            <h3>A figure shown, <em>a figure drawn.</em></h3>
-            <p>The arm holds a pen over a canvas. One life scribbles, learns what its strokes leave, and then draws figures it has never seen, replanning from its own canvas after every stroke. A longer link and an offset canvas change the body and the world mid-drawing, and it keeps drawing.</p>
-            <p class="measured"><span>Measured</span><code>Held-out foreground F1 0.93; the same architecture frozen from birth 0.00; an online MLP with a replay ring behind the same search 0.80.</code></p>
-            <div class="actions">
-              <a class="btn btn-mind" href="https://floatingpragma.io/cadence-examples/artist/">Open the artist <span class="arr">&rarr;</span></a>
-              <a class="btn" href="https://github.com/muellerberndt/cadence-examples/tree/main/artist">Code</a>
-              <a class="btn" href="https://github.com/muellerberndt/cadence-examples/blob/main/artist/receipt.json">Receipt</a>
-            </div>
-          </article>
-          <article class="focus mind spot reveal">
-            <span class="kicker">04 &middot; Connect Four</span>
-            <h3>The rules, learned <em>by watching.</em></h3>
-            <p>One life learns what a dropped stone does and which windows of four cells are completed lines from the games it plays, and chooses its moves by searching over the boards it imagines from those records. No rules, no terminal oracle, no minimax labels reach the brain. Play against it while it keeps learning from your game.</p>
-            <p class="measured"><span>Measured</span><code>Beats an AlphaZero trained with alpha-zero-general's recipe in 0.945 and 0.990 of 100 paired games; tactical suite 100%.</code></p>
-            <div class="actions">
-              <a class="btn btn-mind" href="https://floatingpragma.io/cadence-examples/connect_four/">Play Connect Four <span class="arr">&rarr;</span></a>
-              <a class="btn" href="https://github.com/muellerberndt/cadence-examples/tree/main/connect_four">Code</a>
-              <a class="btn" href="https://github.com/muellerberndt/cadence-examples/blob/main/connect_four/receipt.json">Receipt</a>
-            </div>
-          </article>
-        </div>
-        <div class="actions reveal" style="margin-top:26px">
-          <a class="btn btn-mind" href="https://floatingpragma.io/cadence-examples/">The whole gallery <span class="arr">&rarr;</span></a>
-          <a class="btn" href="https://github.com/muellerberndt/cadence-examples">Gallery source on GitHub</a>
         </div>
       </div>
     </section>
@@ -312,7 +220,6 @@
           <div class="actions">
             <a class="btn btn-mind" href="https://github.com/muellerberndt/cadence">GitHub <span class="arr">&rarr;</span></a>
             <a class="btn" href="https://pypi.org/project/cadence-net/">PyPI</a>
-            <a class="btn" href="https://github.com/muellerberndt/cadence-examples">Examples on GitHub</a>
           </div>
         </div>
         <pre class="code reveal"><span class="c"># install the library</span>
@@ -364,7 +271,6 @@ action = brain.step([[position, goal]])   <span class="c"># no outcome yet</span
         </ul></div>
         <div><h4>Cadence</h4><ul>
           <li><a href="/cadence/">Cadence</a></li>
-          <li><a href="https://floatingpragma.io/cadence-examples/">Live brains</a></li>
           <li><a href="https://github.com/muellerberndt/cadence">GitHub</a></li>
         </ul></div>
         <div><h4>Company</h4><ul>

@@ -21,12 +21,10 @@ OPH is a proven implementation of simulation theory. It reverse engineers the ha
 
 ## AGI: Cadence
 
-Cadence is an open-source (MIT) Python library for brains with a continuous stream of thought that learn by experience. One ongoing loop observes, remembers, predicts, acts and learns from the outcome; there is no backward pass, no training switch and no frozen weights. Four brains are live in the browser (arm, world, artist, Connect Four), each with a published acceptance receipt and verifier. Measured: the Connect Four brain beats an AlphaZero trained with alpha-zero-general's recipe in 0.945 and 0.990 of 100 paired games; the arm brain reaches 99% held-out reaching from one pass over its stream where an online transformer on the same stream reaches 40%.
+Cadence is an open-source (MIT) Python library for brains with a continuous stream of thought that learn by experience. One ongoing loop observes, remembers, predicts, acts and learns from the outcome; there is no backward pass, no training switch and no frozen weights. What it makes possible: flexible learners that learn through experience, embodied AGI with a small brain inside the machine, and robots that keep learning new tasks and improving at them on the job.
 
 - Program overview: https://floatingpragma.io/cadence/
 - Library: https://github.com/muellerberndt/cadence
-- Live brains: https://floatingpragma.io/cadence-examples/
-- Examples gallery source: https://github.com/muellerberndt/cadence-examples
 - Package: https://pypi.org/project/cadence-net/ (pip install cadence-net)
 
 ## Company
