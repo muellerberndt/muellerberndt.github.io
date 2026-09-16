@@ -234,6 +234,7 @@
             <tbody>
               <tr><th scope="row">Arm: held-out reaching after one pass over the stream, no replay</th><td class="bad" data-label="Online transformer">40%</td><td class="bad" data-label="Online MLP">2%</td><td class="hl" data-label="Cadence">99%</td></tr>
               <tr><th scope="row">World: choosing by a cue seen eight steps earlier</th><td class="bad" data-label="Online transformer">52% / 48% with ring</td><td class="bad" data-label="Online MLP">59% / 49% with ring</td><td class="hl" data-label="Cadence">100%</td></tr>
+              <tr><th scope="row">Artist: held-out figures drawn stroke by stroke, foreground F1</th><td data-label="Online transformer">not run</td><td class="bad" data-label="Online MLP">0.80 with a replay ring</td><td class="hl" data-label="Cadence">0.93</td></tr>
               <tr><th scope="row">Connect Four: paired score against an AlphaZero trained with the published recipe</th><td colspan="2" data-label="AlphaZero (alpha-zero-general recipe)">0.055 / 0.010</td><td class="hl" data-label="Cadence">0.945 at 25 and 0.990 at 100 simulations per move</td></tr>
             </tbody>
           </table>
@@ -273,18 +274,7 @@
             </div>
           </article>
           <article class="focus mind spot reveal">
-            <span class="kicker">03 &middot; Connect Four</span>
-            <h3>The rules, learned <em>by watching.</em></h3>
-            <p>One life learns what a dropped stone does and which windows of four cells are completed lines from the games it plays, and chooses its moves by searching over the boards it imagines from those records. No rules, no terminal oracle, no minimax labels reach the brain. Play against it while it keeps learning from your game.</p>
-            <p class="measured"><span>Measured</span><code>Beats an AlphaZero trained with alpha-zero-general's recipe in 0.945 and 0.990 of 100 paired games; tactical suite 100%.</code></p>
-            <div class="actions">
-              <a class="btn btn-mind" href="https://floatingpragma.io/cadence-examples/connect_four/">Play Connect Four <span class="arr">&rarr;</span></a>
-              <a class="btn" href="https://github.com/muellerberndt/cadence-examples/tree/main/connect_four">Code</a>
-              <a class="btn" href="https://github.com/muellerberndt/cadence-examples/blob/main/connect_four/receipt.json">Receipt</a>
-            </div>
-          </article>
-          <article class="focus mind spot reveal">
-            <span class="kicker">04 &middot; Artist</span>
+            <span class="kicker">03 &middot; Artist</span>
             <h3>A figure shown, <em>a figure drawn.</em></h3>
             <p>The arm holds a pen over a canvas. One life scribbles, learns what its strokes leave, and then draws figures it has never seen, replanning from its own canvas after every stroke. A longer link and an offset canvas change the body and the world mid-drawing, and it keeps drawing.</p>
             <p class="measured"><span>Measured</span><code>Held-out foreground F1 0.93; the same architecture frozen from birth 0.00; an online MLP with a replay ring behind the same search 0.80.</code></p>
@@ -292,6 +282,17 @@
               <a class="btn btn-mind" href="https://floatingpragma.io/cadence-examples/artist/">Open the artist <span class="arr">&rarr;</span></a>
               <a class="btn" href="https://github.com/muellerberndt/cadence-examples/tree/main/artist">Code</a>
               <a class="btn" href="https://github.com/muellerberndt/cadence-examples/blob/main/artist/receipt.json">Receipt</a>
+            </div>
+          </article>
+          <article class="focus mind spot reveal">
+            <span class="kicker">04 &middot; Connect Four</span>
+            <h3>The rules, learned <em>by watching.</em></h3>
+            <p>One life learns what a dropped stone does and which windows of four cells are completed lines from the games it plays, and chooses its moves by searching over the boards it imagines from those records. No rules, no terminal oracle, no minimax labels reach the brain. Play against it while it keeps learning from your game.</p>
+            <p class="measured"><span>Measured</span><code>Beats an AlphaZero trained with alpha-zero-general's recipe in 0.945 and 0.990 of 100 paired games; tactical suite 100%.</code></p>
+            <div class="actions">
+              <a class="btn btn-mind" href="https://floatingpragma.io/cadence-examples/connect_four/">Play Connect Four <span class="arr">&rarr;</span></a>
+              <a class="btn" href="https://github.com/muellerberndt/cadence-examples/tree/main/connect_four">Code</a>
+              <a class="btn" href="https://github.com/muellerberndt/cadence-examples/blob/main/connect_four/receipt.json">Receipt</a>
             </div>
           </article>
         </div>
