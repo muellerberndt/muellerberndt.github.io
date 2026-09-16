@@ -2,15 +2,15 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sitemap>
     <loc>https://floatingpragma.io/sitemap-root.xml</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-16</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://floatingpragma.io/oph/sitemap.xml</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-16</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://floatingpragma.io/oph/papers/sitemap.xml</loc>
-    <lastmod>2026-09-13</lastmod>
+    <lastmod>2026-09-16</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://floatingpragma.io/starklab/sitemap.xml</loc>
@@ -20,6 +20,9 @@
   </sitemap>
   <sitemap>
     <loc>https://floatingpragma.io/awesome-ai-security/sitemap.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://floatingpragma.io/cadence-examples/sitemap.xml</loc>
   </sitemap>
   <sitemap>
     <loc>https://floatingpragma.io/selected-works/sitemap.xml</loc>
