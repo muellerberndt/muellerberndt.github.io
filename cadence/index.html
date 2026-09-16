@@ -146,7 +146,6 @@
       </div>
       <p class="field-caption">Live field &middot; neurons settling with no global clock</p>
     </section>
-    <div class="ticker" aria-hidden="true"><div class="ticker-track"><div class="ticker-group"><span><b class="m">One</b> ongoing loop</span><span><b class="m">No</b> backward pass</span><span><b class="m">No</b> training switch</span><span><b class="m">No</b> frozen weights</span><span><b class="m">No</b> replay ring</span><span><b class="m">4</b> brains live in the browser</span><span>Beats AlphaZero <b class="m">0.945 / 0.990</b></span><span><b class="m">MIT</b> licensed</span></div><div class="ticker-group"><span><b class="m">One</b> ongoing loop</span><span><b class="m">No</b> backward pass</span><span><b class="m">No</b> training switch</span><span><b class="m">No</b> frozen weights</span><span><b class="m">No</b> replay ring</span><span><b class="m">4</b> brains live in the browser</span><span>Beats AlphaZero <b class="m">0.945 / 0.990</b></span><span><b class="m">MIT</b> licensed</span></div></div></div>
 
     <section class="section">
       <div class="shell">
@@ -162,15 +161,13 @@
         <div class="section-head reveal">
           <span class="eyebrow">Why transformers are a dead end</span>
           <h2>Scaling a frozen network <em>does not make a mind.</em></h2>
-          <p>A transformer is trained in a regime no animal is ever in: a static corpus in shuffled batches, a global gradient sent backwards through a stored computation graph, then a freeze. After that it never learns again. Every conversation starts from zero, its only memory is a window of recent tokens, and every fix is another round of training on more data with more compute. The industry's answer is to scale that up. Each tenfold increase in compute buys a few points on a benchmark, the training data of the internet is spent, and the one thing that would make the system intelligent, learning from its own life, is absent by construction. You cannot scale your way out of an architecture that has no way to remember what happened to it this morning.</p>
+          <p>A transformer is trained in a regime no animal is ever in: a static corpus in shuffled batches, a global gradient through a stored graph, then a freeze. After that it never learns again. The industry's answer is to scale it. Each tenfold increase in compute buys a few benchmark points, the internet's text is spent, and the one thing that would make the system intelligent, learning from its own life, is absent by construction. You cannot scale your way out of an architecture that cannot remember what happened to it this morning.</p>
         </div>
         <ul class="deadend reveal">
           <li><b>Train, freeze, deploy</b><span>Learning stops the day the model ships. Everything it meets in production is forgotten when the context window scrolls. No brain works that way.</span></li>
           <li><b>A global gradient through a stored graph</b><span>Backpropagation needs every layer's activity kept for the backward pass and a global error routed to every weight. No neuron does that, and it is why training costs what it does.</span></li>
-          <li><b>No stream of thought</b><span>The model runs in discrete invocations with no persistent state. It does not think between calls, and it has no body and no ongoing life to learn from.</span></li>
           <li><b>Replay instead of memory</b><span>Learning anything new means shuffled batches and replay buffers, because learning in the order life arrives makes it forget. Memory is bolted on outside the network.</span></li>
           <li><b>Imagined and witnessed are the same thing</b><span>A transformer has no distinction between what it generated and what it observed. That is where hallucination comes from, and no amount of scale removes it.</span></li>
-          <li><b>Logarithmic returns on exponential cost</b><span>Ten times the compute for a few benchmark points. Ten times the data, which does not exist. The scaling curve is a bill, and it is the wrong curve.</span></li>
         </ul>
       </div>
     </section>
@@ -188,13 +185,14 @@
           </div>
         </div>
         <ul class="fixes reveal">
-          <li><span><b>Learning never stops</b>There is one mode. Each step takes in an observation and the outcome of the last action, updates memories and synapses, and issues the next action. No switch between learning and use, no deployment copy.</span></li>
+          <li><span><b>Learning never stops</b>One ongoing loop. Each step takes in an observation and the outcome of the last action, updates memories and synapses, and issues the next action. Observations arrive while the brain is thinking, and thoughts linger.</span></li>
           <li><span><b>Local learning, no backward pass</b>Every synapse reads the activity of its own two neurons and one broadcast error. No computation graph is stored, so a brain the size of a connectome learns on ordinary hardware.</span></li>
-          <li><span><b>A continuous stream of thought</b>The brain is one ongoing loop. Observations and rewards arrive while it is thinking, settled regions carry context across a delay, and thoughts linger.</span></li>
           <li><span><b>Memory from one pass</b>A sparse reading touches few records, and the witnessed outcome is written into exactly those. One stream in the order it arrives, no replay ring, no shuffled batches.</span></li>
           <li><span><b>Imagined futures stay imagined</b>The brain settles each imagined future in isolation, compares the recorded consequences and acts on the best one. An imagined outcome never becomes a witnessed fact.</span></li>
-          <li><span><b>Built like biology</b>Neurons, synapses, cortices, a critic and an associative reward memory are the building blocks. A real connectome loads as plain data.</span></li>
         </ul>
+      </div>
+      <div class="shell" style="margin-top:clamp(36px,5vw,56px)">
+        <div class="settle-stage reveal"><div class="settle-canvas"><canvas data-settle="#ffb36b" role="img" aria-label="Units relaxing to rest, then settling again when a new input arrives"></canvas></div><div class="stage-cap"><span>Live settlement</span><span>Neurons relax to rest. Every few seconds a new input arrives and they settle again. The rest state is the thought.</span></div></div>
       </div>
     </section>
 
@@ -205,11 +203,10 @@
           <h2>A robot that learns its job <em>on the job.</em></h2>
           <p>The datacenter model of AI puts a frozen network behind an API and streams the robot's senses to it. A Cadence brain sits inside the machine. It learns the body it has from what its motors do, keeps learning as the body wears and the task changes, and decides in tens of milliseconds on a CPU. No round trip, no retraining run, no fleet-wide update to teach one robot one new thing.</p>
         </div>
-        <div class="cards four">
+        <div class="cards">
           <div class="card spot reveal"><span class="k">Small local brain</span><h3>Runs in a browser tab</h3><p>Every brain on this page runs its whole life in JavaScript on your machine, decision for decision equal to the Python agent. Decision latency p95 is 52 ms for Connect Four and 75 ms for the artist. A robot controller needs no datacenter.</p></div>
           <div class="card spot reveal"><span class="k">Learns the body it has</span><h3>Motor babbling to competence</h3><p>The arm learns its own kinematics from random movement and reaches 99% of held-out targets from one pass over its experience. Nobody wrote the body into it.</p></div>
           <div class="card spot reveal"><span class="k">Adapts without a reset</span><h3>Wear, damage, new tools</h3><p>Lengthen the arm's upper link mid-life and it recovers to 99% with no reset, then returns to 99% on the original body. The artist keeps drawing when its body and its canvas change mid-drawing.</p></div>
-          <div class="card spot reveal"><span class="k">Safe imagination</span><h3>Plans in its head, acts once</h3><p>Before it moves, the brain imagines candidate actions from its records and picks the best. Imagined outcomes never become witnessed facts, so a plan that fails in the head costs nothing in the world.</p></div>
         </div>
         <div class="band reveal" style="margin-top:14px">
           <div>
@@ -229,22 +226,19 @@
         <div class="section-head reveal">
           <span class="eyebrow">Measured</span>
           <h2>Same life, same stream, <em>conventional network swapped in.</em></h2>
-          <p>The gallery's comparison runners put an online multilayer perceptron and an online transformer into the same lives as the Cadence brain, with everything except the world model held fixed. Each ran with and without a replay ring. Five seeds each, receipts and verifiers published.</p>
+          <p>The same lives, with the Cadence world model replaced by an online transformer or an online multilayer perceptron and everything else held fixed. Five seeds each, receipts and verifiers published.</p>
         </div>
         <div class="table-wrap reveal">
           <table>
             <thead><tr><th scope="col">Task</th><th scope="col">Online transformer</th><th scope="col">Online MLP</th><th scope="col" class="hl">Cadence records brain</th></tr></thead>
             <tbody>
               <tr><th scope="row">Arm: held-out reaching after one pass over the stream, no replay</th><td class="bad" data-label="Online transformer">40%</td><td class="bad" data-label="Online MLP">2%</td><td class="hl" data-label="Cadence">99%</td></tr>
-              <tr><th scope="row">Arm: the same, with a replay ring and two updates per transition</th><td data-label="Online transformer">100%</td><td data-label="Online MLP">98%</td><td class="hl" data-label="Cadence">99% with no ring</td></tr>
               <tr><th scope="row">World: choosing by a cue seen eight steps earlier</th><td class="bad" data-label="Online transformer">52% / 48% with ring</td><td class="bad" data-label="Online MLP">59% / 49% with ring</td><td class="hl" data-label="Cadence">100%</td></tr>
-              <tr><th scope="row">World: consequence accuracy on held-out transitions</th><td data-label="Online transformer">93% / 95% with ring</td><td data-label="Online MLP">95% / 95% with ring</td><td class="hl" data-label="Cadence">98%</td></tr>
-              <tr><th scope="row">Artist: held-out drawing quality, foreground F1</th><td data-label="Online transformer">&mdash;</td><td data-label="Online MLP">0.80 with ring</td><td class="hl" data-label="Cadence">0.93, no ring</td></tr>
               <tr><th scope="row">Connect Four: paired score against an AlphaZero trained with the published recipe</th><td colspan="2" data-label="AlphaZero (alpha-zero-general recipe)">0.055 / 0.010</td><td class="hl" data-label="Cadence">0.945 at 25 and 0.990 at 100 simulations per move</td></tr>
             </tbody>
           </table>
         </div>
-        <p class="fine reveal" style="margin-top:18px">Reading: with a replay ring and twice the updates, a transformer catches up on reaching. On memory across a delay it fails with or without the ring, because a context window is a poor substitute for a memory that is written once and read when needed. Cadence gets its numbers from one pass over one stream. Receipts: <a href="https://github.com/muellerberndt/cadence-examples/blob/main/comparisons/arm/receipt.json" style="color:var(--soft);text-decoration:underline;text-underline-offset:3px">arm</a>, <a href="https://github.com/muellerberndt/cadence-examples/blob/main/comparisons/world/receipt.json" style="color:var(--soft);text-decoration:underline;text-underline-offset:3px">world</a>, <a href="https://github.com/muellerberndt/cadence-examples/blob/main/artist/receipt.json" style="color:var(--soft);text-decoration:underline;text-underline-offset:3px">artist</a>, <a href="https://github.com/muellerberndt/cadence-examples/tree/main/connect_four/bench/receipts" style="color:var(--soft);text-decoration:underline;text-underline-offset:3px">Connect Four bench</a>.</p>
+        <p class="fine reveal" style="margin-top:18px">With a replay ring and twice the updates a transformer catches up on reaching. On memory across a delay it fails with or without the ring. Cadence gets its numbers from one pass over one stream. Every number links to its receipt from the brain pages below.</p>
       </div>
     </section>
 
@@ -253,18 +247,13 @@
         <div class="section-head reveal">
           <span class="eyebrow">Live in the browser</span>
           <h2>Four brains you can <em>open and watch.</em></h2>
-          <p>Each one runs the loop above and keeps learning while you interact with it. The whole brain is rendered live beside the task, neuron by neuron. Each ships its acceptance receipt and the verifier that recomputes the receipt from the event logs.</p>
+          <p>Each keeps learning while you interact with it, with the whole brain rendered live beside the task, neuron by neuron. Each ships its receipt and the verifier that recomputes it.</p>
         </div>
         <div class="focus-grid">
           <article class="focus mind spot reveal">
             <span class="kicker">01 &middot; Arm</span>
             <h3>A body learned from <em>babbling.</em></h3>
             <p>A two-link arm moves at random and learns its own body from what follows each motor command. To copy what you draw, it searches over the consequences it has recorded and takes the command whose predicted displacement follows the line.</p>
-            <ul class="ticks">
-              <li>The forward model is a records cortex, written one witnessed transition at a time.</li>
-              <li>A longer upper link changes the body. The arm adapts with no reset, then returns to its original body.</li>
-              <li>The page continues one life in the browser with the whole brain live beside the arm.</li>
-            </ul>
             <p class="measured"><span>Measured</span><code>Held-out reaching 99%; the online MLP on the same stream without replay 2%; the online transformer 40%.</code></p>
             <div class="actions">
               <a class="btn btn-mind" href="https://floatingpragma.io/cadence-examples/arm/">Open the arm <span class="arr">&rarr;</span></a>
@@ -276,11 +265,6 @@
             <span class="kicker">02 &middot; World</span>
             <h3>A world that must be <em>remembered.</em></h3>
             <p>A 6 by 6 world of walls, doors, objects, colours and words, seen one cell at a time. One life learns what follows its actions, remembers where it saw an object, corrects that memory when the object moves, holds a cue across a delay and grounds words in objects.</p>
-            <ul class="ticks">
-              <li>A request names an object and begins in a distant cell under a deadline, so a remembered place is what makes it reachable in time.</li>
-              <li>Four stores keep witnessed evidence: object to place, cell to its passages, the last word seen, and word to referent.</li>
-              <li>Controls run beside the life: erased memory, shuffled action pairing, a reward-shifted cue, and the same architecture frozen from birth.</li>
-            </ul>
             <p class="measured"><span>Measured</span><code>Requests fulfilled 100% with memory, 18% with the memory erased; cue at delay 8: 100% against 52% for the online transformer.</code></p>
             <div class="actions">
               <a class="btn btn-mind" href="https://floatingpragma.io/cadence-examples/world/">Open the world <span class="arr">&rarr;</span></a>
@@ -292,11 +276,6 @@
             <span class="kicker">03 &middot; Connect Four</span>
             <h3>The rules, learned <em>by watching.</em></h3>
             <p>One life learns what a dropped stone does and which windows of four cells are completed lines from the games it plays, and chooses its moves by searching over the boards it imagines from those records. No rules, no terminal oracle, no minimax labels reach the brain. Play against it while it keeps learning from your game.</p>
-            <ul class="ticks">
-              <li>Two record cortices: one reads a column and holds where a stone lands, the other reads a window of four cells and holds whether it is a finished line and how the games that held it ended.</li>
-              <li>The deployed brain trained against a perfect solver at graded strengths and plays its records at eight plies.</li>
-              <li>Its model card states the training, the bench against the solver and against AlphaZero, and what it cannot do.</li>
-            </ul>
             <p class="measured"><span>Measured</span><code>Beats an AlphaZero trained with alpha-zero-general's recipe in 0.945 and 0.990 of 100 paired games; tactical suite 100%.</code></p>
             <div class="actions">
               <a class="btn btn-mind" href="https://floatingpragma.io/cadence-examples/connect_four/">Play Connect Four <span class="arr">&rarr;</span></a>
@@ -308,11 +287,6 @@
             <span class="kicker">04 &middot; Artist</span>
             <h3>A figure shown, <em>a figure drawn.</em></h3>
             <p>The arm holds a pen over a canvas. One life scribbles, learns what its strokes leave, and then draws figures it has never seen, replanning from its own canvas after every stroke. A longer link and an offset canvas change the body and the world mid-drawing, and it keeps drawing.</p>
-            <ul class="ticks">
-              <li>The records hold the body's consequences and the marks the pen leaves in the window around it; a stroke is chosen by imagining those marks.</li>
-              <li>You draw a figure; the artist draws it stroke by stroke with the whole brain live beside the canvas.</li>
-              <li>Controls run beside the life: the same architecture frozen from birth, random scribbling, the supplied path oracle and an online MLP with a replay ring behind the same search.</li>
-            </ul>
             <p class="measured"><span>Measured</span><code>Held-out foreground F1 0.93; the same architecture frozen from birth 0.00; an online MLP with a replay ring behind the same search 0.80.</code></p>
             <div class="actions">
               <a class="btn btn-mind" href="https://floatingpragma.io/cadence-examples/artist/">Open the artist <span class="arr">&rarr;</span></a>
@@ -328,47 +302,7 @@
       </div>
     </section>
 
-    <section class="section rule">
-      <div class="shell">
-        <div class="section-head reveal">
-          <span class="eyebrow">The loop</span>
-          <h2>Observe, remember, predict, <em>act, learn.</em></h2>
-          <p>Every Cadence brain lives in one mode. Each step takes in the current observation and the outcome of the previous action, updates its memories and its synapses, and issues the next action. No switch separates learning from use, and no point arrives at which learning has to stop.</p>
-        </div>
-        <ol class="ladder reveal">
-          <li><span class="n">01</span><b>Observe</b><span class="d">A reading arrives: the sensor fields, a flag for each field the senses left out, the action just taken and the reads of the brain's stores.</span></li>
-          <li><span class="n">02</span><b>Remember</b><span class="d">The reading selects the cells that will hold its outcome, and the stores keep the witnessed evidence the application declares.</span></li>
-          <li><span class="n">03</span><b>Predict</b><span class="d">An imagined consequence is a read of the records, so a supplied search can compare many candidate actions at the cost of a vector product each.</span></li>
-          <li><span class="n">04</span><b>Act</b><span class="d">The brain issues one action and holds it pending. A clock tick alone is not feedback, so the pending action waits for its real outcome.</span></li>
-          <li><span class="n">05</span><b>Learn from the outcome</b><span class="d">The witnessed outcome is written into exactly the records that reading touched, and the settled regions change their synapses from their own neurons' activity and one broadcast error.</span></li>
-        </ol>
-        <div class="settle-stage reveal" style="margin-top:34px"><div class="settle-canvas"><canvas data-settle="#ffb36b" role="img" aria-label="Units relaxing to rest, then settling again when a new input arrives"></canvas></div><div class="stage-cap"><span>Live settlement</span><span>Neurons relax to rest. Every few seconds a new input arrives and they settle again. The rest state is the thought.</span></div></div>
-        <div class="split top" style="margin-top:28px">
-          <div class="formula reveal">&Delta;w<sub>ij</sub> = &eta; &middot; (s<sup>+</sup><sub>i</sub> s<sup>+</sup><sub>j</sub> &minus; s<sup>&minus;</sup><sub>i</sub> s<sup>&minus;</sup><sub>j</sub>) / 2&beta;<small>The free and nudged rule that moves the synapses of the settled regions. A connection reads the activity of its own two neurons, and no backward computation graph is stored through the brain.</small></div>
-          <div class="reveal" style="display:grid;gap:16px">
-            <p class="muted">Cadence builds on equilibrium propagation, on the sparse expansion with a local delta-rule readout that Marr and Albus described for the cerebellum, and on the observer consensus mathematics of our physics program. Each cortex declares its ports, every update reads a neighbourhood, and a real connectome loads as plain data.</p>
-            <div class="chips"><span class="chip"><b>Equilibrium propagation</b> &middot; Scellier &amp; Bengio</span><span class="chip"><b>Sparse expansion, local readout</b> &middot; Marr &amp; Albus</span><span class="chip"><b>Three-factor plasticity</b></span><span class="chip"><b>Observer consensus</b> &middot; OPH</span><span class="chip"><b>Connectomes as plain data</b></span></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section rule">
-      <div class="shell">
-        <div class="section-head reveal">
-          <span class="eyebrow">Evidence</span>
-          <h2>Every brain ships <em>its receipt.</em></h2>
-          <p>A run binds its outcomes to the code and the logs that produced them. The claim and the means to check it travel together.</p>
-        </div>
-        <div class="map reveal">
-          <div class="step"><span class="n">01</span><h3>Predicates</h3><p>The receipt lists each acceptance predicate with its value, its threshold, how it was aggregated over seeds and whether it passed.</p></div>
-          <div class="step"><span class="n">02</span><h3>Event logs</h3><p>Every decision and outcome of the life is written to an event log. The receipt carries the sha256 of each log, the library's commit and the hashes of the stage sources.</p></div>
-          <div class="step"><span class="n">03</span><h3>An independent verifier</h3><p>A separate program reads the event logs and recomputes the receipt from them. Running it is how a reader checks the run without taking our word for it.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section rule">
+            <section class="section rule">
       <div class="shell split">
         <div class="reveal" style="display:grid;gap:22px">
           <span class="eyebrow">Get started</span>
@@ -377,8 +311,7 @@
           <div class="actions">
             <a class="btn btn-mind" href="https://github.com/muellerberndt/cadence">GitHub <span class="arr">&rarr;</span></a>
             <a class="btn" href="https://pypi.org/project/cadence-net/">PyPI</a>
-            <a class="btn" href="https://github.com/muellerberndt/cadence/blob/main/docs/quickstart.md">Quickstart</a>
-            <a class="btn" href="https://github.com/muellerberndt/cadence/blob/main/docs/index.md">Docs</a>
+            <a class="btn" href="https://github.com/muellerberndt/cadence-examples">Examples on GitHub</a>
           </div>
         </div>
         <pre class="code reveal"><span class="c"># install the library</span>
@@ -397,20 +330,7 @@ action = brain.step([[position, goal]])   <span class="c"># no outcome yet</span
       </div>
     </section>
 
-    <section class="section rule">
-      <div class="shell">
-        <div class="section-head reveal">
-          <span class="eyebrow">Open source</span>
-          <h2>The library and the brains, <em>on GitHub.</em></h2>
-        </div>
-        <div class="repos reveal">
-          <a class="repo" href="https://github.com/muellerberndt/cadence"><span class="gh" aria-hidden="true"><svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg></span><span class="body"><span class="path">muellerberndt/cadence</span><span class="what">The brain library. Neurons, synapses, records and settled regions that learn from one stream with no backward pass. NumPy only, with Numba, PyTorch and MLX backends. Docs teach the primitives and the three principles: local repair, convergence, equilibrium detuning.</span><span class="meta"><span><b>Python</b></span><span>MIT</span><span>pip install cadence-net</span></span></span></a>
-          <a class="repo" href="https://github.com/muellerberndt/cadence-examples"><span class="gh" aria-hidden="true"><svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg></span><span class="body"><span class="path">muellerberndt/cadence-examples</span><span class="what">The deployed brains. Arm, world, artist and Connect Four, each with its browser page, its acceptance receipt, the verifier and the comparison runners that put an online MLP and an online transformer into the same lives.</span><span class="meta"><span><b>Live</b></span><span>floatingpragma.io/cadence-examples</span></span></span></a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section tight">
+        <section class="section tight">
       <div class="shell">
         <div class="band reveal">
           <div>
