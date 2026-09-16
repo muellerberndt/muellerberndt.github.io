@@ -504,3 +504,44 @@
     });
   });
 })();
+
+/* ---- light field: interfering waves settling into a standing pattern (canvas[data-wave]) ---- */
+(function () {
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.querySelectorAll('canvas[data-wave]').forEach(function (canvas) {
+    var ctx = canvas.getContext('2d'), h = (canvas.getAttribute('data-wave') || '#e8cf86').replace('#', '');
+    var col = [parseInt(h.slice(0, 2), 16), parseInt(h.slice(2, 4), 16), parseInt(h.slice(4, 6), 16)];
+    var W = 0, H = 0, t = 0, raf = 0, running = false, src = [];
+    function fit() {
+      var r = canvas.getBoundingClientRect(), dpr = Math.min(2, window.devicePixelRatio || 1);
+      canvas.width = Math.max(1, Math.round(r.width * dpr)); canvas.height = Math.max(1, Math.round(r.height * dpr));
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0); W = r.width; H = r.height;
+      src = [[W * 0.2, H * 0.5], [W * 0.5, H * 0.24], [W * 0.8, H * 0.5], [W * 0.5, H * 0.78]];
+    }
+    function draw() {
+      ctx.clearRect(0, 0, W, H);
+      var step = 9, k, s, x, y, dx, dy, d, a;
+      for (y = step / 2; y < H; y += step) for (x = step / 2; x < W; x += step) {
+        s = 0;
+        for (k = 0; k < src.length; k++) {
+          dx = x - src[k][0]; dy = y - src[k][1]; d = Math.sqrt(dx * dx + dy * dy);
+          s += Math.cos(d * 0.115 - t * 1.5 + k * 0.8) * Math.exp(-d / (W * 0.6));
+        }
+        a = Math.max(0, s / src.length);
+        ctx.fillStyle = 'rgba(' + col[0] + ',' + col[1] + ',' + col[2] + ',' + (0.045 + 0.95 * a * a).toFixed(3) + ')';
+        ctx.beginPath(); ctx.arc(x, y, 0.7 + 2.8 * a, 0, Math.PI * 2); ctx.fill();
+      }
+      for (k = 0; k < src.length; k++) {
+        ctx.fillStyle = 'rgba(255,250,235,.9)'; ctx.beginPath(); ctx.arc(src[k][0], src[k][1], 2, 0, Math.PI * 2); ctx.fill();
+        ctx.fillStyle = 'rgba(' + col[0] + ',' + col[1] + ',' + col[2] + ',.18)'; ctx.beginPath(); ctx.arc(src[k][0], src[k][1], 9, 0, Math.PI * 2); ctx.fill();
+      }
+    }
+    function frame() { t += 0.016; draw(); raf = requestAnimationFrame(frame); }
+    function start() { if (running || reduce) return; running = true; raf = requestAnimationFrame(frame); }
+    function stop() { running = false; cancelAnimationFrame(raf); }
+    fit(); draw();
+    if ('IntersectionObserver' in window) new IntersectionObserver(function (es) { es[0].isIntersecting ? start() : stop(); }).observe(canvas); else start();
+    document.addEventListener('visibilitychange', function () { if (document.hidden) stop(); else start(); });
+    window.addEventListener('resize', function () { fit(); draw(); });
+  });
+})();

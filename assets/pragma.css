@@ -500,3 +500,33 @@ a.repo:hover{border-color:var(--line2);transform:translateY(-2px);background:var
 .thesis.three{grid-template-columns:repeat(3,1fr)}
 @media (max-width:1020px){.thesis.three{grid-template-columns:1fr 1fr}}
 @media (max-width:760px){.thesis.three{grid-template-columns:1fr}}
+
+/* ---- 2026-09-16 beauty pass: aurora, grain, live pillar art, glow dividers ---- */
+.hero::before{content:"";position:absolute;inset:-25% -10%;z-index:0;pointer-events:none;opacity:.7;filter:blur(70px);
+  background:radial-gradient(38% 42% at 78% 30%,rgba(127,231,255,.22),transparent 70%),radial-gradient(34% 40% at 92% 70%,rgba(255,179,107,.16),transparent 70%),radial-gradient(30% 34% at 60% 80%,rgba(232,207,134,.12),transparent 70%);
+  animation:aurora 22s ease-in-out infinite alternate}
+.theme-mind .hero::before{background:radial-gradient(38% 42% at 78% 30%,rgba(255,179,107,.22),transparent 70%),radial-gradient(34% 40% at 92% 70%,rgba(127,231,255,.12),transparent 70%),radial-gradient(30% 34% at 60% 80%,rgba(232,207,134,.12),transparent 70%)}
+@keyframes aurora{0%{transform:translate3d(0,0,0) scale(1)}50%{transform:translate3d(-4%,3%,0) scale(1.08)}100%{transform:translate3d(3%,-4%,0) scale(1.03)}}
+.hero{min-height:min(92vh,900px);padding:120px 0 110px}
+.hero-copy{max-width:800px;gap:30px}
+body::after{content:"";position:fixed;inset:0;z-index:999;pointer-events:none;opacity:.05;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.rule{position:relative}
+.rule::before{content:"";position:absolute;top:-1px;left:50%;transform:translateX(-50%);width:min(64%,640px);height:1px;pointer-events:none;
+  background:linear-gradient(90deg,transparent,color-mix(in srgb,var(--accent) 60%,transparent) 50%,transparent)}
+.pillar{transition:border-color .3s,box-shadow .3s,transform .3s}
+.pillar:hover{transform:translateY(-3px);border-color:color-mix(in srgb,var(--pc) 45%,transparent);box-shadow:0 40px 90px -50px color-mix(in srgb,var(--pc) 55%,transparent)}
+.pillar .art{position:relative;height:196px;margin:-14px -12px 0;border-radius:14px;overflow:hidden;background:radial-gradient(80% 90% at 50% 100%,color-mix(in srgb,var(--pc) 10%,transparent),transparent 70%),#070b11}
+.pillar .art::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,transparent 60%,var(--panel) 100%)}
+.pillar .art canvas{display:block;width:100%;height:100%}
+.thesis > div{overflow:hidden}
+.thesis > div::after{content:"0" counter(thesis);position:absolute;right:-4px;top:-26px;font:400 132px/1 var(--serif);color:rgba(232,207,134,.055);pointer-events:none;letter-spacing:-.04em}
+.viz-stage{box-shadow:0 60px 140px -70px color-mix(in srgb,var(--accent) 55%,transparent)}
+.icosa-stage,.settle-stage{box-shadow:0 60px 140px -80px color-mix(in srgb,var(--accent) 50%,transparent)}
+.problem{grid-template-columns:minmax(180px,.8fr) 2fr auto;align-items:start}
+.problem .status{margin-top:2px}
+.band.gold{box-shadow:0 60px 160px -80px rgba(232,207,134,.45)}
+.cho{box-shadow:0 60px 140px -90px rgba(232,207,134,.35)}
+@media (min-width:1280px){.display{font-size:6.9rem}h2{font-size:4.3rem}}
+@media (max-width:760px){.problem{grid-template-columns:1fr}.problem .status{order:-1}.thesis > div::after{font-size:96px;top:-18px}}
+@media (prefers-reduced-motion:reduce){.hero::before{animation:none}}
