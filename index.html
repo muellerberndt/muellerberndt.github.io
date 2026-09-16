@@ -88,7 +88,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" />
-  <link rel="stylesheet" href="/assets/pragma.css?v=3" />
+  <link rel="stylesheet" href="/assets/pragma.css?v=4" />
 </head>
 <body class="theme-phys">
   <a class="skip" href="#main">Skip to content</a>
@@ -203,37 +203,37 @@
         <div class="section-head reveal">
           <span class="eyebrow">For investors</span>
           <h2>A very large upside, <em class="t-gold">and a cheap way to check it.</em></h2>
-          <p>Every time physics was unified, a new industry followed. Maxwell's equations led to radio, quantum mechanics to the transistor, relativity to satellite navigation. We have a theory that unifies physics, and it has produced something usable: a new kind of AI that keeps learning after it is deployed. If the theory holds, the upside is measured in industries. Checking it does not depend on trusting us: the proofs run on a computer and the AI library is public.</p>
+          <p>Every deep advance in physics became an industry. Maxwell's equations led to radio, quantum mechanics to the transistor, relativity to satellite navigation. We have a theory that unifies physics, and it has produced something usable: a new kind of AI that keeps learning after it is deployed. If the theory holds, the upside is measured in industries. Checking it does not depend on trusting us: the proofs run on a computer and the AI library is public.</p>
         </div>
         <div class="thesis three">
           <div class="spot reveal">
             <h3>A theory of physics anyone can verify.</h3>
-            <p>New physics theories are usually debated by experts for decades before anyone knows whether they hold. We wrote every step of ours as a formal proof in Lean, a proof checker mathematicians use for exactly this purpose. It works like a compiler for mathematics: if any step is wrong or missing, the check fails. Anyone can download the proofs and rerun the check in a few hours.</p>
+            <p>New physics theories are usually debated by experts for decades before anyone knows whether they hold. We wrote every step of ours as a formal proof in Lean, a proof checker mathematicians use for exactly this purpose. It works like a compiler for mathematics: if any step is wrong or missing, the check fails. Anyone can download the proofs and rerun the check on their own computer.</p>
             <p>The proofs are public and the flagship paper is published as a preprint. Peer review and acceptance by the wider scientific community are work in progress. The theory also makes predictions that future measurements can confirm or break.</p>
             <p class="proof"><b>Evidence</b> &middot; 10,944 computer-checked theorems, none of them skipped or taken on faith. The first predictions were published before the measurements and time-stamped on the Bitcoin blockchain, so nobody, including us, can change them afterwards</p>
           </div>
           <div class="spot reveal">
             <h3>AI that keeps learning after it ships.</h3>
-            <p>Today's AI models, such as ChatGPT, learn once. A training run in a datacenter costs months and very large sums, then the model is frozen and served from the cloud. It learns nothing from its users, and teaching it something new means another training run. General intelligence means handling situations nobody prepared for, which a system that cannot learn after release is unable to do.</p>
+            <p>Today's AI models, such as ChatGPT, learn once. A training run in a datacenter costs months and very large sums, then the model is frozen and served from the cloud. The deployed model does not learn from what happens to it, and teaching it something new means another training run. General intelligence means handling situations nobody prepared for, which a system that cannot learn after release is unable to do.</p>
             <p>Cadence brains learn continuously from their own experience, the way animals do. Each connection updates from local activity, so there is no separate training run, and a brain is small enough to run on the chip inside a robot. A robot can learn a new task on the job without forgetting the old ones.</p>
             <p>The design came out of our physics, and it can be judged without the physics. The core library is open source so developers can adopt and test it. The brain designs we build on top of it for specific jobs, such as robot control, are proprietary.</p>
             <p class="proof"><b>Evidence</b> &middot; the open-source Cadence library on GitHub: brains that learn from one continuous stream of experience, with no retraining</p>
           </div>
           <div class="spot reveal">
-            <h3>Computers made of light. Long term.</h3>
-            <p>Some physical systems, such as light passing through optics, naturally settle into a stable state. If a problem is set up so that the stable state is the answer, the physics performs the computation, without the energy cost of shuffling numbers through a chip. Cadence brains compute exactly this way: they settle into an answer.</p>
+            <h3>Computers made of light.</h3>
+            <p>Some physical systems, such as light passing through optics, naturally settle into a stable state. If a problem is set up so that the stable state is the answer, the physics performs the computation, with far less of the energy a digital chip spends moving numbers around. Cadence brains compute exactly this way: they settle into an answer.</p>
             <p>Our mathematics describes computation by settling, so it gives the design equations for such hardware. The first target is an optical computer that runs a Cadence brain as a light field. New materials and, much further out, propulsion are long-range research directions.</p>
-            <p class="proof"><b>Stage</b> &middot; research. The mathematics exists, no device has been built. Hardware is the long-term part of the company</p>
+            <p class="proof"><b>Stage</b> &middot; long-term research. The mathematics exists and no device has been built</p>
           </div>
         </div>
-        <div class="table-wrap reveal" style="margin-top:14px">
+        <div class="table-wrap compare reveal" style="margin-top:14px">
           <table>
-            <thead><tr><th></th><th>Today's AI models</th><th class="hl">Cadence brains</th></tr></thead>
+            <thead><tr><th scope="col"></th><th scope="col">Today's AI models</th><th scope="col" class="hl">Cadence brains</th></tr></thead>
             <tbody>
-              <tr><th>When it learns</th><td>Once, before release. Frozen afterwards</td><td class="hl">Continuously, for as long as it runs</td></tr>
-              <tr><th>Teaching it something new</th><td>A new training run in a datacenter</td><td class="hl">Experience it on the job</td></tr>
-              <tr><th>Where it runs</th><td>Cloud servers, reached over the network</td><td class="hl">On the device itself, such as a robot's own chip</td></tr>
-              <tr><th>A new task</th><td>Retraining can overwrite what it knew</td><td class="hl">Stored alongside the old tasks</td></tr>
+              <tr><th scope="row">When it learns</th><td>Once, before release. Frozen afterwards</td><td class="hl">Continuously, for as long as it runs</td></tr>
+              <tr><th scope="row">Teaching it something new</th><td>A new training run in a datacenter</td><td class="hl">Doing the task on the job</td></tr>
+              <tr><th scope="row">Where it runs</th><td>Cloud servers, reached over the network</td><td class="hl">On the device itself, such as a robot's own chip</td></tr>
+              <tr><th scope="row">A new task</th><td>Retraining can overwrite what it knew</td><td class="hl">Stored alongside the old tasks</td></tr>
             </tbody>
           </table>
         </div>

@@ -530,3 +530,6 @@ body::after{content:"";position:fixed;inset:0;z-index:999;pointer-events:none;op
 @media (min-width:1280px){.display{font-size:6.9rem}h2{font-size:4.3rem}}
 @media (max-width:760px){.problem{grid-template-columns:1fr}.problem .status{order:-1}.thesis > div::after{font-size:96px;top:-18px}}
 @media (prefers-reduced-motion:reduce){.hero::before{animation:none}}
+
+/* investor comparison: all three columns visible on phones */
+@media (max-width:640px){.compare table{min-width:0;font-size:.84rem}.compare th,.compare td{padding:12px 10px}.compare tbody th{width:auto}.compare thead th{font-size:9.5px;letter-spacing:.08em}}
