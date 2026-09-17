@@ -104,6 +104,13 @@
     .copy span:first-child{overflow-wrap:break-word;min-width:0}
     @media (max-width:760px){.brains{grid-template-columns:1fr}}
     @media (max-width:640px){.copy{border-radius:16px;align-items:flex-start}}
+    .video{margin:0;display:grid;gap:14px}
+    .video-stage{position:relative;border:1px solid var(--line);border-radius:26px;overflow:hidden;background:#080e16;box-shadow:0 60px 140px -80px rgba(255,179,107,.45)}
+    .video-stage video{display:block;width:100%;height:auto;aspect-ratio:16/9;background:#080e16}
+    .video figcaption{font-size:.9rem;line-height:1.55;color:var(--muted)}
+    .video figcaption span{display:inline-flex;align-items:center;gap:9px;margin-right:12px;font:500 10.5px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--mind)}
+    .video figcaption a{color:var(--text)}
+    @media (max-width:640px){.video-stage{border-radius:16px}}
   </style>
 </head>
 <body class="theme-mind">
@@ -140,6 +147,25 @@
           <span class="eyebrow">Mission</span>
           <p class="quote" style="margin-top:22px">We are building artificial intelligence that works like animal and human brains. Local, continuous, plastic for its whole life, and able to repair itself. That is the road to general intelligence, and it is the same mathematics that produces the universe.</p>
         </div>
+      </div>
+    </section>
+
+    <section class="section rule" id="watch">
+      <div class="shell">
+        <div class="section-head reveal">
+          <span class="eyebrow">Watch</span>
+          <h2>Why feelings are <em class="t-mind">mathematically necessary.</em></h2>
+          <p>A 36-minute explainer on Cadence. Why a body on a battery cannot carry a transformer, how a brain settles instead of running a forward pass, why it needs a critic to stay alive, and the theorem that says a self-reading system must feel. Illustrated slides follow the narration.</p>
+        </div>
+        <figure class="video reveal">
+          <div class="video-stage">
+            <video controls preload="metadata" playsinline poster="/cadence/why-feelings-poster.jpg" width="1920" height="1080">
+              <source src="/cadence/why-feelings-are-mathematically-necessary.mp4" type="video/mp4" />
+              Your browser does not play MP4 video. <a href="/cadence/why-feelings-are-mathematically-necessary.mp4">Download the video</a>.
+            </video>
+          </div>
+          <figcaption><span>Explainer &middot; 36 min</span>From the embodiment problem to the qualia theorem, in 37 slides. <a href="/cadence/why-feelings-are-mathematically-necessary.mp4" download>Download (MP4)</a></figcaption>
+        </figure>
       </div>
     </section>
 
