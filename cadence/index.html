@@ -119,7 +119,7 @@
           <h1 class="display">Learning through <em class="t-mind">local repair.</em></h1>
           <p class="lead">A continuing network interprets observations, carries activity and changes its connections through experience. Cadence explores how much learning and memory can come from the same local operation: repair a mismatch, observe the response, adjust the relationship.</p>
           <div class="actions">
-            <a class="btn btn-mind" href="https://github.com/muellerberndt/cadence/blob/main/docs/patchnet.md">Start with PatchNet <span class="arr">&rarr;</span></a>
+            <a class="btn btn-mind" href="https://github.com/muellerberndt/cadence/blob/main/docs/architecture.md">Explore the architecture <span class="arr">&rarr;</span></a>
             <a class="btn" href="/cadence/paper.pdf" type="application/pdf">Read the paper (PDF)</a>
             <a class="btn" href="https://github.com/muellerberndt/cadence">GitHub</a>
           </div>
@@ -142,18 +142,18 @@
         <div class="reveal" style="display:grid;gap:22px">
           <span class="eyebrow">The common core</span>
           <h2>Local state. <em>Learned relationships.</em></h2>
-          <p class="lead">PatchNet connects bounded observer-like patches: each has local state, declared ports, readback and feedback. Neurons repair their coupled equations under sensed inputs. Observed outcomes gently detune the network; each connection learns from the change in its endpoints.</p>
-          <p class="muted">The interface wraps Cadence's nonlinear recurrent dynamics and local free/nudged learning rule. It needs no attached episodic store. The factory supplies reciprocal wiring; the caller supplies input and output meanings and the teaching objective.</p>
+          <p class="lead">Cadence connects bounded observer-like patches with local state, declared ports, readback and feedback. Overlap repair settles their relationships under observations. Equilibrium detuning changes learned connections; actual consequences provide evidence for the next repair.</p>
+          <p class="muted">TemporalPatchNet learns finite observed paths and carries context. TemporalMemory protects selected local responses during further learning. EquilibriumActor plans and repairs observations under a fixed linear body model. These interfaces share repair principles; their combination into a musical composer is an application-level research task.</p>
           <div class="actions">
-            <a class="btn btn-mind" href="https://github.com/muellerberndt/cadence/blob/main/docs/patchnet.md">The interaction contract <span class="arr">&rarr;</span></a>
+            <a class="btn btn-mind" href="https://github.com/muellerberndt/cadence/blob/main/docs/architecture.md">The interaction contract <span class="arr">&rarr;</span></a>
             <a class="btn" href="https://github.com/muellerberndt/cadence/blob/main/docs/index.md">Documentation</a>
           </div>
         </div>
         <ul class="fixes reveal">
-          <li><span><b>Repair under a shared boundary</b>Free and nudged phases use the same input and parameters. Optional temporal overlap holds previous free activity fixed throughout an event, so history enters the equations explicitly.</span></li>
-          <li><span><b>Learn from local contrasts</b>Connections change from their endpoints' activity in positive and negative nudges. Every required phase must meet the equation-residual tolerance before a learning update commits.</span></li>
-          <li><span><b>Retain different kinds of state</b>Activity continues between observations. Learned connections and optimizer state survive an activity reset. Saving a checkpoint preserves both kinds of state and the bounded evidence-ID window.</span></li>
-          <li><span><b>Keep predictions separate from evidence</b>Imagined continuations evolve private copies without changing the live network. Source IDs suppress duplicate delivery within a bounded window; they do not establish truth or independent evidence.</span></li>
+          <li><span><b>Repair under a shared boundary</b>Adjacent temporal patches share context while actual observations hold the boundary. Targets enter detuned teaching phases; imagined futures supply no observations.</span></li>
+          <li><span><b>Learn from local contrasts</b>Connections change from local positive and negative detuning contrasts. Required phases must satisfy their numerical checks before an update commits. Teaching precision is supplied explicitly.</span></li>
+          <li><span><b>Retain different kinds of state</b>Activity carries short-term context. Learned connections survive activity reset. Selected response constraints can preserve an acquired path while other directions learn; capacity and importance selection are explicit limits.</span></li>
+          <li><span><b>Keep predictions separate from evidence</b>Private continuations and action plans leave live state unchanged. The fixed-model actor admits actual readings once, and a changed goal cannot rewrite its factual past.</span></li>
         </ul>
       </div>
       <div class="shell" style="margin-top:clamp(36px,5vw,56px)">
@@ -166,15 +166,15 @@
         <div class="section-head reveal">
           <span class="eyebrow">What the tests establish</span>
           <h2>Memory is a behavior <em>to measure.</em></h2>
-          <p>Persisting a state is an implementation property. Remembering the right thing while learning something else is a capability. The paper reports the distinction, including unsuccessful tests and conventional controls.</p>
+          <p>The paper measures retained behavior during further learning, useful action under disturbance and the information a compressed boundary preserves. Each result includes its controls and assumptions.</p>
         </div>
         <div class="cards">
-          <div class="card spot reveal"><span class="k">01 &middot; Context</span><h3>A boundary can carry history</h3><p>In the small library comparison, temporal overlap preserved a cue distinction through one blank event, but the distinction nearly vanished after sixteen. A warm start alone did not retain it. The same temporal constraint also made immediate retrieval after reset less accurate.</p></div>
-          <div class="card spot reveal"><span class="k">02 &middot; Learning</span><h3>Connections outlive activity</h3><p>Learned associations can be retrieved after clearing activity, and continued presentation of a cue can recover an association missed on the first event. Further learning can interfere with earlier associations. Selective protection and forgetting are research questions.</p></div>
-          <div class="card spot reveal"><span class="k">03 &middot; Prediction</span><h3>Settled does not mean useful</h3><p>On the bounded recorded-audio feature test, autoregressive controls outperformed the tested networks. Neural forecast tails became constant even though their numerical phases converged. This test does not establish a musical controller.</p></div>
+          <div class="card spot reveal"><span class="k">01 &middot; Memory</span><h3>Retain one response while learning another</h3><p>In a bounded feature-prediction test, all three temporal models preserve one selected descriptor sequence while learning another. Local response constraints and supplied weighting support this result. Acquisition, retention and musical quality still need joint tests on performed sound; available rank alone does not guarantee usable learning capacity.</p></div>
+          <div class="card spot reveal"><span class="k">02 &middot; Action</span><h3>Repair a plan from actual consequences</h3><p>A body relation learned from position and action experience supports joint future-state and action repair. In a small control task, feedback improves recovery from disturbance over myopic control and an initial open-loop plan. The goal and physical coordinates are supplied.</p></div>
+          <div class="card spot reveal"><span class="k">03 &middot; Compression</span><h3>A smaller boundary can preserve a past</h3><p>Under fixed linear-Gaussian assumptions, one retained observation and a compressed prefix reproduce the estimates and actions of a longer window. The measured persistent payload falls from 272 to 208 bytes. Changing the model invalidates that summary.</p></div>
         </div>
         <div class="band reveal" style="margin-top:14px">
-          <div><h2>Read the results <em class="t-mind">with their assumptions.</em></h2><p>The paper separates the common core, mechanism diagnostics and legacy applications. Each measured result identifies its implementation, controls and evidence. Scores from another composition do not transfer automatically to PatchNet.</p></div>
+          <div><h2>Read the results <em class="t-mind">with their assumptions.</em></h2><p>The paper binds each result to its implementation, controls and evidence. Conditional memory and small-body planning do not establish a complete composer. A separate one-bar test learns the order of supplied recorded slices. Timing within each slice comes from the recording; accurate recall and audio replay do not establish original composition or musical quality.</p></div>
           <div class="actions"><a class="btn btn-mind" href="/cadence/paper.pdf" type="application/pdf">Paper and evidence map <span class="arr">&rarr;</span></a></div>
         </div>
       </div>
@@ -186,12 +186,12 @@
           <span class="eyebrow">Reproducible mathematics</span>
           <h2>Exact results. <em>Explicit conditions.</em></h2>
           <p class="lead">The library bundles Lean proofs of its mathematical building blocks and memory boundaries. The equations, hypotheses and proof checker are available with the implementation.</p>
-          <p class="muted">The default proof package has 141 theorems on the core and its boundaries. A separate optional record-algebra import adds 15. The audit rejects admissions and project-defined axioms. These proofs do not certify the complete Python implementation or establish intelligence.</p>
+          <p class="muted">The default proof package has 154 theorems on the core and its boundaries. A separate optional record-algebra import adds 15. The audit rejects admissions and project-defined axioms. These proofs do not certify the complete Python implementation or establish intelligence.</p>
           <div class="actions"><a class="btn btn-mind" href="https://github.com/muellerberndt/cadence/tree/main/lean">Read and check the proofs <span class="arr">&rarr;</span></a></div>
         </div>
         <div class="card reveal" style="display:grid;gap:26px;align-content:center">
-          <div class="proof-number">156<small>Machine-checked theorems &middot; Lean 4.29.1</small></div>
-          <p>Conditional convergence and error bounds. Local contrast identities. Limits on representation, causal-order memory, noise immunity and specialization. A scalar temporal-overlap example with geometric fading.</p>
+          <div class="proof-number">169<small>Machine-checked theorems &middot; Lean 4.29.1</small></div>
+          <p>Conditional convergence, local contrast identities and memory boundaries. Exact fixed-model quadratic compression and protected-path induction. The protected-path result assumes exact local map agreement; it does not prove learned importance or the numerical implementation.</p>
           <p class="muted">A causal graph records dependencies. Its shape alone cannot retain the values a future query needs. Memory needs sufficient content as well as a rule for updating it.</p>
         </div>
       </div>
@@ -203,7 +203,7 @@
           <span class="eyebrow">Get started</span>
           <h2>Observe, repair, <em>inspect.</em></h2>
           <p class="lead">Python 3.11 or newer, NumPy and an explicit teaching signal. Optional backends support Numba, PyTorch and MLX. The library is MIT licensed.</p>
-          <p class="muted">This small example exercises the interface. It does not demonstrate memory or task competence. Inspect whether learning committed and measure behavior on held-out observations.</p>
+          <p class="muted">This small PatchNet example exercises the graph interface. The architecture guide also covers temporal learning, response protection and action. Measure behavior on held-out observations; a successful call alone does not establish task competence.</p>
           <button class="copy" type="button" data-copy="pip install git+https://github.com/muellerberndt/cadence" aria-label="Copy install command"><span>$ pip install git+https://github.com/<wbr />muellerberndt/cadence</span><span class="lbl">Copy</span></button>
           <div class="actions"><a class="btn btn-mind" href="https://github.com/muellerberndt/cadence/blob/main/docs/patchnet.md">Full guide <span class="arr">&rarr;</span></a><a class="btn" href="https://pypi.org/project/cadence-net/">PyPI</a></div>
         </div>
