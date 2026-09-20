@@ -4,7 +4,7 @@ This file provides a compact machine-readable map for research assistants, index
 
 ## Summary
 
-Pragma Research is a frontier mathematics company that works on physics, artificial general intelligence and the nature of reality. The physics program develops Observer Patch Holography (OPH), a proven implementation of simulation theory that reverse engineers the hardware and software generating our observations and the universe: https://floatingpragma.io/physics/. The AGI program develops Cadence, an open-source library for brains with a continuous stream of thought that learn by experience with no backward pass: https://floatingpragma.io/cadence/. Investors: https://floatingpragma.io/#investors.
+Pragma Research is a frontier mathematics company that works on physics, artificial general intelligence and the nature of reality. The physics program develops Observer Patch Holography (OPH), a proven implementation of simulation theory that reverse engineers the hardware and software generating our observations and the universe: https://floatingpragma.io/physics/. The AGI program develops Cadence, an open-source library researching general intelligence through overlap consensus, equilibrium detuning and functional self-reflection, where learning runs on local activity contrasts with no backward pass: https://floatingpragma.io/cadence/. Investors: https://floatingpragma.io/#investors.
 
 OPH asks whether bounded observers can form a shared physical account from local records, overlap comparison, and repair. The flagship preprint is on PhilPapers: https://philpapers.org/rec/MUEFOC.
 
@@ -50,6 +50,19 @@ Machine-readable paper data:
 - Inventory: https://floatingpragma.io/oph/papers/papers.json
 - Paper LLM index: https://floatingpragma.io/oph/papers/llms.txt
 - Paper sitemap: https://floatingpragma.io/oph/papers/sitemap.xml
+
+## AGI: Cadence
+
+Cadence connects bounded observer-like patches with local state, declared ports, readback and repair. `TemporalPatchNet` learns observed paths by centered equilibrium detuning and carries context between observations. `TemporalMemory` protects selected acquired responses while learning continues in the remaining directions. The same learned model repairs continuous action proposals privately, and imagined continuations leave live activity, parameters and factual records unchanged. Retention capacity, importance selection and transfer between applications are bounded and stated with each result.
+
+- Program overview: https://floatingpragma.io/cadence/
+- Paper, with the controlled results and their assumptions: https://floatingpragma.io/cadence/paper.pdf
+- Library, MIT licensed: https://github.com/muellerberndt/cadence
+- Documentation: https://github.com/muellerberndt/cadence/blob/main/docs/index.md
+- Package: https://pypi.org/project/cadence-net/ (pip install cadence-net)
+- Bundled Lean proofs, 169 conditional theorems: https://github.com/muellerberndt/cadence/tree/main/lean
+
+The proofs cover mathematical components and their limits. They do not certify the Python implementation or establish intelligence.
 
 ## Interpretation Boundary
 
