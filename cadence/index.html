@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cadence | Brains That Learn by Experience | Pragma Research</title>
-  <meta name="description" content="Cadence builds actual brains with a continuous stream of thought that learn by experience. No backward pass, no training switch, no frozen weights. The solution for embodied AGI: a robot that keeps learning new tasks on the job with a small local brain. Open source under MIT." />
+  <title>Cadence | Learning Through Local Repair | Pragma Research</title>
+  <meta name="description" content="An experimental neural library for learning through local overlap repair and equilibrium detuning. Persistent activity, learned connections and isolated imagined continuations, with open code and conditional Lean proofs." />
   <meta name="author" content="Pragma Research" />
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
   <meta name="theme-color" content="#05070b" />
@@ -13,14 +13,14 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://floatingpragma.io/cadence/" />
   <meta property="og:site_name" content="Pragma Research" />
-  <meta property="og:title" content="Cadence | Brains That Learn by Experience" />
-  <meta property="og:description" content="Actual brains with a continuous stream of thought that learn by experience. No backward pass, no training switch, no frozen weights. Robots that keep learning new tasks. Open source under MIT." />
+  <meta property="og:title" content="Cadence | Learning Through Local Repair" />
+  <meta property="og:description" content="An experimental neural library for learning through local overlap repair and equilibrium detuning. Persistent activity, learned connections and isolated imagined continuations, with open code and conditional Lean proofs." />
   <meta property="og:image" content="https://floatingpragma.io/og-cadence.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Cadence | Brains That Learn by Experience" />
-  <meta name="twitter:description" content="Actual brains with a continuous stream of thought that learn by experience. No backward pass, no training switch, no frozen weights. Robots that keep learning new tasks. Open source under MIT." />
+  <meta name="twitter:title" content="Cadence | Learning Through Local Repair" />
+  <meta name="twitter:description" content="An experimental neural library for learning through local overlap repair and equilibrium detuning. Persistent activity, learned connections and isolated imagined continuations, with open code and conditional Lean proofs." />
   <meta name="twitter:image" content="https://floatingpragma.io/og-cadence.png" />
   <script type="application/ld+json">
 {
@@ -63,7 +63,7 @@
       "author": {
         "@id": "https://floatingpragma.io/#organization"
       },
-      "description": "An open-source library for brains that learn from one ongoing stream of experience: records hold what followed each reading, settled regions complete it, and every synapse changes from the activity of its own two neurons.",
+      "description": "An experimental neural library for learning through local overlap repair and equilibrium detuning. Persistent activity, learned connections and isolated imagined continuations, with open code and conditional Lean proofs.",
       "sameAs": [
         "https://pypi.org/project/cadence-net/"
       ]
@@ -95,22 +95,10 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" />
   <link rel="stylesheet" href="/assets/pragma.css?v=3" />
   <style>
-    /* page-local: brain scan figures */
-    .brains{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}
-    .brains figure{margin:0;display:grid;grid-template-rows:1fr auto;border:1px solid var(--line);border-radius:26px;overflow:hidden;background:#080e16;box-shadow:0 60px 140px -80px rgba(255,179,107,.45)}
-    .brains img{width:100%;height:100%;object-fit:contain;aspect-ratio:1244/878}
-    .brains figcaption{padding:16px 22px 20px;font-size:.9rem;line-height:1.55;color:var(--muted);border-top:1px solid var(--line)}
-    .brains figcaption span{display:block;margin-bottom:6px;font:500 10.5px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--mind)}
     .copy span:first-child{overflow-wrap:break-word;min-width:0}
-    @media (max-width:760px){.brains{grid-template-columns:1fr}}
+    .proof-number{font:400 clamp(3.5rem,7vw,6rem)/1 var(--serif);color:var(--mind)}
+    .proof-number small{display:block;margin-top:16px;font:500 11px/1.5 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
     @media (max-width:640px){.copy{border-radius:16px;align-items:flex-start}}
-    .video{margin:0;display:grid;gap:14px}
-    .video-stage{position:relative;border:1px solid var(--line);border-radius:26px;overflow:hidden;background:#080e16;box-shadow:0 60px 140px -80px rgba(255,179,107,.45)}
-    .video-stage video{display:block;width:100%;height:auto;aspect-ratio:16/9;background:#080e16}
-    .video figcaption{font-size:.9rem;line-height:1.55;color:var(--muted)}
-    .video figcaption span{display:inline-flex;align-items:center;gap:9px;margin-right:12px;font:500 10.5px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--mind)}
-    .video figcaption a{color:var(--text)}
-    @media (max-width:640px){.video-stage{border-radius:16px}}
   </style>
 </head>
 <body class="theme-mind">
@@ -127,155 +115,121 @@
       <div class="hero-field" aria-hidden="true"><canvas data-field="mind"></canvas></div>
       <div class="shell">
         <div class="hero-copy">
-          <span class="eyebrow">Cadence &middot; AGI</span>
-          <h1 class="display">Actual brains. A continuous stream of <em class="t-mind">consciousness.</em></h1>
-          <p class="lead">Cadence builds brains that learn by experience. One ongoing loop observes, remembers, predicts, acts and learns from what follows, for as long as the brain runs. No backward pass, no training switch, no frozen weights. The same brain fits inside a robot and learns its job on the job, with no datacenter behind it. The key came out of our physics.</p>
+          <span class="eyebrow">Cadence &middot; Experimental neural systems</span>
+          <h1 class="display">Learning through <em class="t-mind">local repair.</em></h1>
+          <p class="lead">A continuing network interprets observations, carries activity and changes its connections through experience. Cadence explores how much learning and memory can come from the same local operation: repair a mismatch, observe the response, adjust the relationship.</p>
           <div class="actions">
-            <a class="btn btn-mind" href="#possible">What it makes possible <span class="arr">&rarr;</span></a>
-            <a class="btn" href="/cadence/paper.pdf" type="application/pdf" download="cadence-paper.pdf">Download paper (PDF)</a>
+            <a class="btn btn-mind" href="https://github.com/muellerberndt/cadence/blob/main/docs/patchnet.md">Start with PatchNet <span class="arr">&rarr;</span></a>
+            <a class="btn" href="/cadence/paper.pdf" type="application/pdf">Read the paper (PDF)</a>
             <a class="btn" href="https://github.com/muellerberndt/cadence">GitHub</a>
-            <button class="copy" type="button" data-copy="pip install git+https://github.com/muellerberndt/cadence" aria-label="Copy install command"><span>$ pip install git+https://github.com/<wbr />muellerberndt/cadence</span><span class="lbl">Copy</span></button>
           </div>
         </div>
       </div>
-      <p class="field-caption">Live field &middot; neurons settling with no global clock</p>
+      <p class="field-caption">Illustration &middot; interacting local states</p>
     </section>
 
     <section class="section">
       <div class="shell">
         <div class="mission reveal">
-          <span class="eyebrow">Mission</span>
-          <p class="quote" style="margin-top:22px">We are building artificial intelligence that works like animal and human brains. Local, continuous, plastic for its whole life, and able to repair itself. That is the road to general intelligence, and it is the same mathematics that produces the universe.</p>
+          <span class="eyebrow">The hypothesis</span>
+          <p class="quote" style="margin-top:22px">Fewer mechanisms should support more of what a learner needs: remembering, revising, predicting and exploring. The ambition is an animal-inspired learning system. Biological equivalence and general lifelong memory require evidence beyond the implemented interface.</p>
         </div>
       </div>
     </section>
 
-    <section class="section rule" id="watch">
-      <div class="shell">
-        <div class="section-head reveal">
-          <span class="eyebrow">Watch</span>
-          <h2>Why feelings are <em class="t-mind">mathematically necessary.</em></h2>
-          <p>A 36-minute explainer on Cadence. Why a body on a battery cannot carry a transformer, how a brain settles instead of running a forward pass, why it needs a critic to stay alive, and the theorem that says a self-reading system must feel. Illustrated slides follow the narration.</p>
-        </div>
-        <figure class="video reveal">
-          <div class="video-stage">
-            <video controls preload="metadata" playsinline poster="/cadence/why-feelings-poster.jpg" width="1920" height="1080">
-              <source src="/cadence/why-feelings-are-mathematically-necessary.mp4" type="video/mp4" />
-              Your browser does not play MP4 video. <a href="/cadence/why-feelings-are-mathematically-necessary.mp4">Download the video</a>.
-            </video>
-          </div>
-          <figcaption><span>Explainer &middot; 36 min</span>From the embodiment problem to the qualia theorem, in 37 slides. <a href="/cadence/why-feelings-are-mathematically-necessary.mp4" download>Download (MP4)</a></figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <section class="section rule" id="deadend">
-      <div class="shell">
-        <div class="section-head reveal">
-          <span class="eyebrow">Why transformers are a dead end</span>
-          <h2>Scaling a frozen network <em>does not make a mind.</em></h2>
-          <p>A transformer is trained in a regime no animal is ever in: a static corpus in shuffled batches, a global gradient through a stored graph, then a freeze. After that it never learns again. The industry's answer is to scale it. Each tenfold increase in compute buys a few benchmark points, the internet's text is spent, and the one thing that would make the system intelligent, learning from its own life, is absent by construction. You cannot scale your way out of an architecture that cannot remember what happened to it this morning.</p>
-        </div>
-        <ul class="deadend reveal">
-          <li><b>Train, freeze, deploy</b><span>Learning stops the day the model ships. Everything it meets in production is forgotten when the context window scrolls. No brain works that way.</span></li>
-          <li><b>A global gradient through a stored graph</b><span>Backpropagation needs every layer's activity kept for the backward pass and a global error routed to every weight. No neuron does that, and it is why training costs what it does.</span></li>
-          <li><b>Replay instead of memory</b><span>Learning anything new means shuffled batches and replay buffers, because learning in the order life arrives makes it forget. Memory is bolted on outside the network.</span></li>
-          <li><b>Imagined and witnessed are the same thing</b><span>A transformer has no distinction between what it generated and what it observed. That is where hallucination comes from, and no amount of scale removes it.</span></li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section rule" id="solution">
+    <section class="section rule" id="architecture">
       <div class="shell split top">
         <div class="reveal" style="display:grid;gap:22px">
-          <span class="eyebrow">How Cadence solves it</span>
-          <h2>One brain. One mode. <em>One life.</em></h2>
-          <p class="lead">A Cadence brain is made of cortices that settle together into an equilibrium, where a transformer stacks feedforward layers. Each synapse changes from the activity of its own two neurons. Memory is written into the records the current reading touches, one witnessed outcome at a time. The same brain acts and learns from the moment it starts until it stops.</p>
-          <p class="muted">The design comes straight from our physics. An observer patch in Observer Patch Holography keeps records, reads its neighbours and repairs disagreement until the net settles. A Cadence cortex is that patch in software, and a thought is the state the brain settles into.</p>
+          <span class="eyebrow">The common core</span>
+          <h2>Local state. <em>Learned relationships.</em></h2>
+          <p class="lead">PatchNet connects bounded observer-like patches: each has local state, declared ports, readback and feedback. Neurons repair their coupled equations under sensed inputs. Observed outcomes gently detune the network; each connection learns from the change in its endpoints.</p>
+          <p class="muted">The interface wraps Cadence's nonlinear recurrent dynamics and local free/nudged learning rule. It needs no attached episodic store. The factory supplies reciprocal wiring; the caller supplies input and output meanings and the teaching objective.</p>
           <div class="actions">
-            <a class="btn btn-mind" href="https://github.com/muellerberndt/cadence/blob/main/docs/quickstart.md">Read the quickstart <span class="arr">&rarr;</span></a>
-            <a class="btn" href="https://github.com/muellerberndt/cadence/blob/main/docs/index.md">All docs</a>
+            <a class="btn btn-mind" href="https://github.com/muellerberndt/cadence/blob/main/docs/patchnet.md">The interaction contract <span class="arr">&rarr;</span></a>
+            <a class="btn" href="https://github.com/muellerberndt/cadence/blob/main/docs/index.md">Documentation</a>
           </div>
         </div>
         <ul class="fixes reveal">
-          <li><span><b>Learning never stops</b>One ongoing loop. Each step takes in an observation and the outcome of the last action, updates memories and synapses, and issues the next action. Observations arrive while the brain is thinking, and thoughts linger.</span></li>
-          <li><span><b>Local learning, no backward pass</b>Every synapse reads the activity of its own two neurons and one broadcast error. No computation graph is stored, so a brain the size of a connectome learns on ordinary hardware.</span></li>
-          <li><span><b>Memory from one pass</b>A sparse reading touches few records, and the witnessed outcome is written into exactly those. One stream in the order it arrives, no replay ring, no shuffled batches.</span></li>
-          <li><span><b>Imagined futures stay imagined</b>The brain settles each imagined future in isolation, compares the recorded consequences and acts on the best one. An imagined outcome never becomes a witnessed fact.</span></li>
+          <li><span><b>Repair under a shared boundary</b>Free and nudged phases use the same input and parameters. Optional temporal overlap holds previous free activity fixed throughout an event, so history enters the equations explicitly.</span></li>
+          <li><span><b>Learn from local contrasts</b>Connections change from their endpoints' activity in positive and negative nudges. Every required phase must meet the equation-residual tolerance before a learning update commits.</span></li>
+          <li><span><b>Retain different kinds of state</b>Activity continues between observations. Learned connections and optimizer state survive an activity reset. Saving a checkpoint preserves both kinds of state and the bounded evidence-ID window.</span></li>
+          <li><span><b>Keep predictions separate from evidence</b>Imagined continuations evolve private copies without changing the live network. Source IDs suppress duplicate delivery within a bounded window; they do not establish truth or independent evidence.</span></li>
         </ul>
       </div>
       <div class="shell" style="margin-top:clamp(36px,5vw,56px)">
-        <div class="settle-stage reveal"><div class="settle-canvas"><canvas data-settle="#ffb36b" role="img" aria-label="Units relaxing to rest, then settling again when a new input arrives"></canvas></div><div class="stage-cap"><span>Live settlement</span><span>Neurons relax to rest. Every few seconds a new input arrives and they settle again. The rest state is the thought.</span></div></div>
+        <div class="settle-stage reveal"><div class="settle-canvas"><canvas data-settle="#ffb36b" role="img" aria-label="Illustration of local activity relaxing after a changed input"></canvas></div><div class="stage-cap"><span>Illustrative settlement</span><span>This animation shows relaxation. Convergence alone does not establish a correct prediction, useful memory or a learned skill.</span></div></div>
       </div>
     </section>
 
-    <section class="section rule" id="possible">
+    <section class="section rule" id="evidence">
       <div class="shell">
         <div class="section-head reveal">
-          <span class="eyebrow">What Cadence makes possible</span>
-          <h2>Machines that get better <em>by living.</em></h2>
-          <p>A frozen network is finished the day it ships. A Cadence brain starts learning the day it switches on and keeps going for as long as it runs. That changes what a machine can be.</p>
+          <span class="eyebrow">What the tests establish</span>
+          <h2>Memory is a behavior <em>to measure.</em></h2>
+          <p>Persisting a state is an implementation property. Remembering the right thing while learning something else is a capability. The paper reports the distinction, including unsuccessful tests and conventional controls.</p>
         </div>
         <div class="cards">
-          <div class="card spot reveal"><span class="k">01 &middot; Flexible learners</span><h3>Learners that learn through experience</h3><p>An agent picks up a new tool, a new game or a new routine by using it. Every outcome it witnesses is written into memory the moment it happens, in the order life delivers it. There is no dataset to collect, no training run to schedule and no model release to wait for. Yesterday's lesson is available this morning.</p></div>
-          <div class="card spot reveal"><span class="k">02 &middot; Embodied AGI</span><h3>A brain that lives inside its body</h3><p>The brain runs on the machine's own processor and decides in milliseconds, with no datacenter and no network round trip. It learns the body it has from what its own motors do. When a joint wears, a link bends or a new tool is fitted, it relearns the body on the spot.</p></div>
-          <div class="card spot reveal"><span class="k">03 &middot; Lifelong robots</span><h3>A robot that keeps learning new tasks</h3><p>Show a robot a new job and it starts doing it. Every attempt makes it better at that job, and the new task never overwrites the old ones, because each lesson is stored in the memories its own situation touches. A warehouse robot takes on a new product line, a kitchen robot a new recipe, a field robot a new site, each improving with every shift.</p></div>
-        </div>
-        <div class="brains reveal">
-          <figure><img src="/assets/cadence-brain-arm.jpg" width="1244" height="878" loading="lazy" alt="A Cadence brain for a robot arm: sensory, dynamics, workspace, context, goal, prediction, efference and motor cortices joined by thousands of synapses" /><figcaption><span>Arm brain</span>Eight cortices, from the senses to the motors, learning a body from its own movement.</figcaption></figure>
-          <figure><img src="/assets/cadence-brain-connect-four.jpg" width="1412" height="990" loading="lazy" alt="A Cadence brain for a board game: a large sensory cortex feeding workspace, dynamics, context, goal, efference and motor cortices" /><figcaption><span>Game brain</span>The same architecture wired for a board game, with a wide sensory cortex for the board.</figcaption></figure>
+          <div class="card spot reveal"><span class="k">01 &middot; Context</span><h3>A boundary can carry history</h3><p>In the small library comparison, temporal overlap preserved a cue distinction through one blank event, but the distinction nearly vanished after sixteen. A warm start alone did not retain it. The same temporal constraint also made immediate retrieval after reset less accurate.</p></div>
+          <div class="card spot reveal"><span class="k">02 &middot; Learning</span><h3>Connections outlive activity</h3><p>Learned associations can be retrieved after clearing activity, and continued presentation of a cue can recover an association missed on the first event. Further learning can interfere with earlier associations. Selective protection and forgetting are research questions.</p></div>
+          <div class="card spot reveal"><span class="k">03 &middot; Prediction</span><h3>Settled does not mean useful</h3><p>On the bounded recorded-audio feature test, autoregressive controls outperformed the tested networks. Neural forecast tails became constant even though their numerical phases converged. This test does not establish a musical controller.</p></div>
         </div>
         <div class="band reveal" style="margin-top:14px">
-          <div>
-            <h2>From one body to <em class="t-mind">a fleet of learners.</em></h2>
-            <p>The same loop runs a warehouse picker, an inspection drone or a surgical assistant: observe, remember, predict, act, learn from what followed. Each machine learns its own job and keeps its own brain.</p>
-          </div>
-          <div class="actions">
-            <a class="btn btn-mind" href="mailto:bernhard@floatingpragma.ai?subject=Cadence%20for%20robotics">Talk robotics <span class="arr">&rarr;</span></a>
-            <a class="btn" href="https://github.com/muellerberndt/cadence">GitHub</a>
-          </div>
+          <div><h2>Read the results <em class="t-mind">with their assumptions.</em></h2><p>The paper separates the common core, mechanism diagnostics and legacy applications. Each measured result identifies its implementation, controls and evidence. Scores from another composition do not transfer automatically to PatchNet.</p></div>
+          <div class="actions"><a class="btn btn-mind" href="/cadence/paper.pdf" type="application/pdf">Paper and evidence map <span class="arr">&rarr;</span></a></div>
         </div>
       </div>
     </section>
 
-            <section class="section rule">
+    <section class="section rule" id="proofs">
+      <div class="shell split">
+        <div class="reveal" style="display:grid;gap:22px">
+          <span class="eyebrow">Reproducible mathematics</span>
+          <h2>Exact results. <em>Explicit conditions.</em></h2>
+          <p class="lead">The library bundles Lean proofs of its mathematical building blocks and memory boundaries. The equations, hypotheses and proof checker are available with the implementation.</p>
+          <p class="muted">The default proof package has 141 theorems on the core and its boundaries. A separate optional record-algebra import adds 15. The audit rejects admissions and project-defined axioms. These proofs do not certify the complete Python implementation or establish intelligence.</p>
+          <div class="actions"><a class="btn btn-mind" href="https://github.com/muellerberndt/cadence/tree/main/lean">Read and check the proofs <span class="arr">&rarr;</span></a></div>
+        </div>
+        <div class="card reveal" style="display:grid;gap:26px;align-content:center">
+          <div class="proof-number">156<small>Machine-checked theorems &middot; Lean 4.29.1</small></div>
+          <p>Conditional convergence and error bounds. Local contrast identities. Limits on representation, causal-order memory, noise immunity and specialization. A scalar temporal-overlap example with geometric fading.</p>
+          <p class="muted">A causal graph records dependencies. Its shape alone cannot retain the values a future query needs. Memory needs sufficient content as well as a rule for updating it.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section rule" id="start">
       <div class="shell split">
         <div class="reveal" style="display:grid;gap:22px">
           <span class="eyebrow">Get started</span>
-          <h2>Install it in <em>one line.</em></h2>
-          <p class="lead">One line takes the library from its repository. NumPy is the only required dependency, and optional backends add Numba for fused CPU kernels, PyTorch for CUDA, and MLX for Apple silicon. Python 3.11 or newer, MIT licensed, fully typed.</p>
-          <div class="actions">
-            <a class="btn btn-mind" href="https://github.com/muellerberndt/cadence">GitHub <span class="arr">&rarr;</span></a>
-            <a class="btn" href="https://pypi.org/project/cadence-net/">PyPI</a>
-          </div>
+          <h2>Observe, repair, <em>inspect.</em></h2>
+          <p class="lead">Python 3.11 or newer, NumPy and an explicit teaching signal. Optional backends support Numba, PyTorch and MLX. The library is MIT licensed.</p>
+          <p class="muted">This small example exercises the interface. It does not demonstrate memory or task competence. Inspect whether learning committed and measure behavior on held-out observations.</p>
+          <button class="copy" type="button" data-copy="pip install git+https://github.com/muellerberndt/cadence" aria-label="Copy install command"><span>$ pip install git+https://github.com/<wbr />muellerberndt/cadence</span><span class="lbl">Copy</span></button>
+          <div class="actions"><a class="btn btn-mind" href="https://github.com/muellerberndt/cadence/blob/main/docs/patchnet.md">Full guide <span class="arr">&rarr;</span></a><a class="btn" href="https://pypi.org/project/cadence-net/">PyPI</a></div>
         </div>
-        <pre class="code reveal"><span class="c"># install the library</span>
-<span class="k">$</span> pip install git+https://github.com/muellerberndt/cadence
-
+        <pre class="code reveal"><span class="k">import</span> numpy <span class="k">as</span> np
 <span class="k">import</span> cadence <span class="k">as</span> cd
 
-brain = cd.GenericBrain.build(<span class="p">2</span>, <span class="p">3</span>, hidden=<span class="p">16</span>, seed=<span class="p">0</span>)
-action = brain.step([[position, goal]])   <span class="c"># no outcome yet</span>
+net = cd.PatchNet.create(
+    inputs=<span class="p">2</span>, hidden=<span class="p">8</span>, outputs=<span class="p">1</span>, seed=<span class="p">7</span>,
+    steps=<span class="p">512</span>, tolerance=<span class="p">1e-5</span>,
+)
+drive = net.stimulus(np.array([[<span class="p">0.2</span>, <span class="p">0.8</span>]]))
+result = net.observe(
+    drive, np.array([[<span class="p">0.6</span>]]), source_id=<span class="s">"sensor:1"</span>
+)
+print(result.reason, net.read(result.free))
 
-<span class="k">while</span> alive:
-    position, reward = world.apply(action)
-    action = brain.step([[position, goal]], reward=[reward])
-
-<span class="c"># observe, remember, predict, act, learn from the outcome</span></pre>
+<span class="c"># Reset activity; preserve learned relationships.</span>
+net.reset()</pre>
       </div>
     </section>
 
-        <section class="section tight">
+    <section class="section tight">
       <div class="shell">
         <div class="band reveal">
-          <div>
-            <h2>Born in <em class="t-phys">physics.</em></h2>
-            <p>Cadence grew out of our physics research. Observer Patch Holography describes the universe as observer patches that keep records and repair their disagreement where their views overlap. A Cadence brain is assembled from the same parts. On the physics page they assemble a universe. Here they learn. Investors who want to fund the next stage: <a href="/#investors" style="color:var(--text);text-decoration:underline;text-underline-offset:3px">start here</a>.</p>
-          </div>
-          <div class="actions">
-            <a class="btn btn-phys" href="/physics/">Explore the physics <span class="arr">&rarr;</span></a>
-            <a class="btn" href="mailto:bernhard@floatingpragma.ai">Get in touch</a>
-          </div>
+          <div><h2>Inspired by <em class="t-phys">observer patches.</em></h2><p>Observer Patch Holography studies bounded, self-reading systems that exchange records and repair disagreement on shared interfaces. Cadence uses that structure as an engineering hypothesis. Its neural learning and memory claims are tested independently of the physical interpretation.</p></div>
+          <div class="actions"><a class="btn btn-phys" href="/physics/">Explore the physics <span class="arr">&rarr;</span></a><a class="btn" href="mailto:bernhard@floatingpragma.ai">Discuss the research</a></div>
         </div>
       </div>
     </section>
@@ -285,7 +239,7 @@ action = brain.step([[position, goal]])   <span class="c"># no outcome yet</span
       <div class="cols">
         <div class="about">
           <a class="brand" href="/"><img src="/pragma-cropped.jpg" alt="" width="34" height="34" /><span><b>Pragma Research</b><small>Frontier mathematics</small></span></a>
-          <p>The open problems of physics, solved in one architecture. The same solution is the key to AGI.</p>
+          <p>Research on observer-like systems, from fundamental physics to learning through local repair.</p>
         </div>
         <div><h4>Physics</h4><ul>
           <li><a href="/physics/">Observer Patch Holography</a></li>
@@ -298,6 +252,8 @@ action = brain.step([[position, goal]])   <span class="c"># no outcome yet</span
         </ul></div>
         <div><h4>Cadence</h4><ul>
           <li><a href="/cadence/">Cadence</a></li>
+          <li><a href="https://github.com/muellerberndt/cadence/blob/main/docs/patchnet.md">Documentation</a></li>
+          <li><a href="/cadence/paper.pdf">Research paper</a></li>
           <li><a href="https://github.com/muellerberndt/cadence">GitHub</a></li>
         </ul></div>
         <div><h4>Company</h4><ul>
