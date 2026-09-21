@@ -1,0 +1,549 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Cadence, minds that learn by living</title><meta name="description" content="Pragma Research is building embodied AGI: brains that keep learning while they run, on the robot's own chip. The investor deck."><link rel="canonical" href="https://floatingpragma.io/investors/deck/"><meta property="og:title" content="Cadence, minds that learn by living"><meta property="og:description" content="Embodied AGI: brains that keep learning while they run. The Pragma Research investor deck."><meta property="og:image" content="https://floatingpragma.io/og-investors.png"><meta property="og:url" content="https://floatingpragma.io/investors/deck/"><meta name="twitter:card" content="summary_large_image"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap"><style>
+@page { size: 13.333in 7.5in; margin: 0; }
+:root{
+  --bg:#05070b; --panel:#0b1017; --line:rgba(255,255,255,.10);
+  --line2:rgba(255,255,255,.18);
+  --text:#eef2f7; --soft:#c8d2dd; --muted:#98a5b6; --dim:#7d8896;
+  --phys:#7fe7ff; --gold:#e8cf86; --mind:#ffb36b;
+  --serif:"Instrument Serif",Georgia,"Times New Roman",serif;
+  --sans:"Inter",system-ui,-apple-system,"Helvetica Neue",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);
+     font-size:13.2pt;line-height:1.5;-webkit-font-smoothing:antialiased}
+
+.slide{position:relative;width:13.333in;height:7.5in;padding:0.72in 0.95in 0.62in;
+       background:var(--bg);overflow:hidden;page-break-after:always;break-after:page;
+       display:flex;flex-direction:column}
+.slide:last-child{page-break-after:auto;break-after:auto}
+.slide::before{content:"";position:absolute;inset:0 0 auto 0;height:3px;
+       background:linear-gradient(90deg,var(--phys),rgba(127,231,255,0) 62%)}
+
+.kicker{font-size:8.6pt;font-weight:600;letter-spacing:.16em;text-transform:uppercase;
+        color:var(--phys);margin:0 0 14px}
+h1{font-family:var(--serif);font-weight:400;font-size:34pt;line-height:1.1;
+   letter-spacing:-.005em;margin:0 0 20px;color:var(--text);max-width:11in}
+.body{flex:1;min-height:0}
+p{margin:0 0 12px;color:var(--soft);max-width:9.6in}
+strong{color:var(--text);font-weight:600}
+em{color:var(--gold);font-style:italic}
+ul,ol{margin:0 0 12px;padding-left:1.15em;color:var(--soft);max-width:9.6in}
+li{margin:0 0 7px}
+li::marker{color:var(--phys)}
+a{color:var(--phys);text-decoration:none}
+
+table{border-collapse:collapse;width:100%;margin:6px 0 14px;font-size:11.6pt}
+th,td{padding:8px 13px;border-bottom:1px solid var(--line);vertical-align:top;
+      text-align:left;color:var(--soft)}
+thead th{font-size:8.6pt;letter-spacing:.11em;text-transform:uppercase;color:var(--dim);
+         font-weight:600;border-bottom:1px solid var(--line2);padding-bottom:7px}
+tbody tr:last-child td{border-bottom:none}
+td strong{color:var(--gold);font-weight:600}
+thead th:not(:first-child){text-align:inherit}
+
+.foot{position:absolute;left:.95in;right:.95in;bottom:.34in;display:flex;
+      justify-content:space-between;font-size:8.2pt;letter-spacing:.06em;
+      color:var(--dim);text-transform:uppercase}
+
+/* ---- figures -------------------------------------------------------
+   Colour follows the dataviz validation run against THIS deck's surface
+   (#05070b), not a default one. Emphasis form throughout: accent for the
+   series that matters, #6b7788 for the rest. The three brand hues are
+   never used together to carry identity - they fail CVD separation.      */
+.figure{margin:8px 0 2px}
+.fig{display:block;width:100%;height:auto;max-height:3.10in;margin:0 auto}
+.figure[data-fig="local-repair"] .fig{max-height:2.20in}
+.figure[data-fig="settling"] .fig{max-height:2.30in}
+.figure[data-fig="carriers"] .fig{max-height:2.60in}
+.figure[data-fig="ladder"] .fig{max-height:2.90in}
+.figure[data-fig="echosahedron"] .fig{max-height:2.95in}
+.figure[data-fig="timeline"] .fig{max-height:3.05in}
+.figure[data-fig="budget"] .fig{max-height:3.75in}
+.f-acc{color:var(--phys)}
+.f-dim{color:#6b7788}
+.f-gold{color:var(--gold)}
+.f-grid{color:var(--line2)}
+.f-ink{fill:var(--text)}
+.f-sec{fill:var(--soft)}
+.f-mut{fill:var(--dim)}
+.f-gold-t{fill:var(--gold)}
+.f-lab{font-family:var(--sans);font-size:12.4px;letter-spacing:.005em}
+.tile-b{font-weight:600}
+
+/* stat-tile row: five headline numbers, not a five-hue bar chart */
+.kpi-row{display:grid;grid-template-columns:repeat(5,1fr);gap:20px;margin:14px 0 16px}
+.tile{display:flex;flex-direction:column;min-width:0}
+.tile-rule{height:3px;border-radius:2px;background:var(--phys);margin-bottom:13px}
+.tile-label{font-size:9.4pt;line-height:1.32;color:var(--dim);min-height:3.9em}
+.tile-value{font-family:var(--sans);font-size:31pt;font-weight:600;line-height:1;
+            color:var(--text);margin:2px 0 11px}
+.tile-sub{font-size:9.3pt;line-height:1.42;color:var(--soft)}
+
+/* density control: "class: tight" on a slide */
+.slide.tight{font-size:12.2pt}
+.slide.tight h1{font-size:30pt;margin-bottom:16px}
+.slide.tight table{font-size:10.6pt;margin:4px 0 10px}
+.slide.tight th,.slide.tight td{padding:6px 12px}
+.slide.tight p{margin:0 0 9px}
+
+/* title slide */
+.slide.title{justify-content:center;
+  background:radial-gradient(1100px 620px at 76% 26%,rgba(127,231,255,.15),transparent 62%),
+             radial-gradient(760px 520px at 12% 92%,rgba(232,207,134,.09),transparent 60%),
+             var(--bg)}
+.slide.title h1{font-size:56pt;line-height:1.04;margin-bottom:26px;max-width:9.6in}
+.slide.title p{font-size:15pt;color:var(--soft);max-width:8.2in}
+.slide.title .kicker{font-size:10pt;letter-spacing:.24em;margin-bottom:22px}
+.slide.title .foot{display:none}
+.slide.title .figure{position:absolute;right:-0.6in;top:50%;transform:translateY(-50%);
+  width:7.1in;margin:0;opacity:.62;pointer-events:none}
+.slide.title .fig-hero{max-height:none;width:100%;height:auto}
+.slide.title .body{position:static}
+.slide.title h1{max-width:7.0in}
+.slide.title .kicker,.slide.title p{position:relative;z-index:2;max-width:6.5in}
+
+/* the public edition carries a bar back to the site and a PDF link */
+.deckbar{display:none}
+@media screen{
+  .deckbar{display:flex;align-items:center;justify-content:space-between;gap:12px;
+    width:min(13.333in, calc(100vw - 28px));margin:0 auto 18px;padding:0 4px;
+    font-family:var(--sans);font-size:11pt}
+  .deckbar a{white-space:nowrap}
+  .deckbar a{color:var(--muted);text-decoration:none;padding:9px 0}
+  .deckbar a:hover{color:var(--text)}
+  .deckbar .db-dl{color:var(--phys);border:1px solid var(--line2);border-radius:999px;
+    padding:8px 18px}
+}
+@media print{.deckbar{display:none}}
+
+/* ---- on screen the same file reads as a web page -------------------- */
+@media screen{
+  html,body{max-width:100vw;overflow-x:hidden}
+  body{background:#000;padding:20px 0}
+  .slide{margin:0 auto 26px;border:1px solid var(--line);border-radius:8px;
+         box-shadow:0 16px 48px rgba(0,0,0,.55);overflow:hidden}
+}
+/* A slide is a fixed 13.333in box, so on a narrow screen it is scaled to fit.
+   Each step is chosen so 1280px x zoom still clears the widest viewport the
+   step covers; pinch-zoom stays enabled for reading a dense slide. */
+@media screen and (max-width:1360px){ .slide{zoom:.72} }
+@media screen and (max-width:1020px){ .slide{zoom:.56} }
+@media screen and (max-width:860px){  .slide{zoom:.46} }
+@media screen and (max-width:720px){  .slide{zoom:.38} }
+@media screen and (max-width:600px){
+  .slide{zoom:.33}
+  .deckbar{font-size:10pt}
+  .deckbar .db-dl{padding:7px 14px}
+}
+@media screen and (max-width:500px){  .slide{zoom:.27} }
+@media screen and (max-width:420px){  .slide{zoom:.23} }
+@media screen and (max-width:360px){  .slide{zoom:.20} }
+</style></head><body><nav class="deckbar"><a class="db-home" href="https://floatingpragma.io/">&larr; Pragma Research</a><a class="db-dl" href="Cadence_Investor_Deck.pdf" download>Download PDF</a></nav><section class="slide title"><div class="kicker">Pragma Research</div><h1>Minds that learn by living</h1><div class="body"><p>Every AI system in use today stops learning before it ships. It is
+trained once, its settings are locked, and after that it can only repeat
+what it already knows.</p>
+<p>Cadence brains keep learning the entire time they run, the way an
+animal does. They are small enough to sit inside a robot and learn that
+robot’s job while doing it.</p>
+<p><strong>Bernhard Mueller</strong> · floatingpragma.io · Seed round,
+$4,000,000 · September 2026</p>
+<div class="figure" data-fig="hero"><svg class="fig-hero" viewBox="0 0 900 440" preserveAspectRatio="xMidYMid meet" role="img" aria-label="A field of connected nodes settling into one state"><g class="f-acc" stroke="currentColor" stroke-width="1" fill="none"><line x1="75.2" y1="56.4" x2="131.4" y2="55.7" opacity="0.071"/><line x1="75.2" y1="56.4" x2="68.1" y2="133.6" opacity="0.071"/><line x1="131.4" y1="55.7" x2="131.4" y2="135.1" opacity="0.090"/><line x1="229.1" y1="59.0" x2="302.4" y2="50.4" opacity="0.103"/><line x1="229.1" y1="59.0" x2="222.6" y2="119.3" opacity="0.087"/><line x1="229.1" y1="59.0" x2="276.9" y2="108.4" opacity="0.127"/><line x1="302.4" y1="50.4" x2="360.0" y2="47.1" opacity="0.103"/><line x1="302.4" y1="50.4" x2="276.9" y2="108.4" opacity="0.103"/><line x1="360.0" y1="47.1" x2="365.8" y2="132.7" opacity="0.141"/><line x1="456.8" y1="61.3" x2="524.1" y2="50.8" opacity="0.141"/><line x1="456.8" y1="61.3" x2="426.1" y2="117.1" opacity="0.141"/><line x1="456.8" y1="61.3" x2="508.6" y2="112.5" opacity="0.141"/><line x1="524.1" y1="50.8" x2="576.8" y2="70.2" opacity="0.187"/><line x1="524.1" y1="50.8" x2="508.6" y2="112.5" opacity="0.160"/><line x1="576.8" y1="70.2" x2="645.7" y2="69.0" opacity="0.187"/><line x1="576.8" y1="70.2" x2="508.6" y2="112.5" opacity="0.160"/><line x1="576.8" y1="70.2" x2="588.4" y2="129.1" opacity="0.187"/><line x1="645.7" y1="69.0" x2="730.2" y2="53.3" opacity="0.202"/><line x1="645.7" y1="69.0" x2="588.4" y2="129.1" opacity="0.192"/><line x1="645.7" y1="69.0" x2="676.1" y2="131.3" opacity="0.195"/><line x1="730.2" y1="53.3" x2="796.0" y2="67.3" opacity="0.227"/><line x1="730.2" y1="53.3" x2="747.0" y2="117.3" opacity="0.229"/><line x1="796.0" y1="67.3" x2="747.0" y2="117.3" opacity="0.227"/><line x1="796.0" y1="67.3" x2="804.5" y2="115.5" opacity="0.227"/><line x1="68.1" y1="133.6" x2="131.4" y2="135.1" opacity="0.090"/><line x1="68.1" y1="133.6" x2="72.2" y2="194.2" opacity="0.065"/><line x1="131.4" y1="135.1" x2="72.2" y2="194.2" opacity="0.065"/><line x1="131.4" y1="135.1" x2="158.7" y2="184.5" opacity="0.090"/><line x1="222.6" y1="119.3" x2="276.9" y2="108.4" opacity="0.087"/><line x1="222.6" y1="119.3" x2="158.7" y2="184.5" opacity="0.087"/><line x1="222.6" y1="119.3" x2="225.3" y2="191.4" opacity="0.087"/><line x1="222.6" y1="119.3" x2="289.4" y2="171.8" opacity="0.087"/><line x1="276.9" y1="108.4" x2="289.4" y2="171.8" opacity="0.127"/><line x1="365.8" y1="132.7" x2="426.1" y2="117.1" opacity="0.143"/><line x1="365.8" y1="132.7" x2="289.4" y2="171.8" opacity="0.128"/><line x1="365.8" y1="132.7" x2="364.8" y2="193.4" opacity="0.119"/><line x1="365.8" y1="132.7" x2="430.0" y2="186.1" opacity="0.143"/><line x1="426.1" y1="117.1" x2="508.6" y2="112.5" opacity="0.160"/><line x1="426.1" y1="117.1" x2="430.0" y2="186.1" opacity="0.148"/><line x1="508.6" y1="112.5" x2="588.4" y2="129.1" opacity="0.160"/><line x1="508.6" y1="112.5" x2="512.2" y2="179.9" opacity="0.160"/><line x1="588.4" y1="129.1" x2="676.1" y2="131.3" opacity="0.192"/><line x1="588.4" y1="129.1" x2="512.2" y2="179.9" opacity="0.166"/><line x1="588.4" y1="129.1" x2="587.7" y2="194.7" opacity="0.192"/><line x1="588.4" y1="129.1" x2="661.8" y2="177.8" opacity="0.192"/><line x1="676.1" y1="131.3" x2="747.0" y2="117.3" opacity="0.195"/><line x1="676.1" y1="131.3" x2="661.8" y2="177.8" opacity="0.195"/><line x1="676.1" y1="131.3" x2="724.2" y2="193.9" opacity="0.195"/><line x1="747.0" y1="117.3" x2="804.5" y2="115.5" opacity="0.229"/><line x1="747.0" y1="117.3" x2="724.2" y2="193.9" opacity="0.207"/><line x1="747.0" y1="117.3" x2="809.1" y2="179.7" opacity="0.229"/><line x1="804.5" y1="115.5" x2="809.1" y2="179.7" opacity="0.237"/><line x1="72.2" y1="194.2" x2="158.7" y2="184.5" opacity="0.065"/><line x1="72.2" y1="194.2" x2="84.3" y2="234.4" opacity="0.065"/><line x1="72.2" y1="194.2" x2="142.4" y2="247.2" opacity="0.065"/><line x1="158.7" y1="184.5" x2="225.3" y2="191.4" opacity="0.117"/><line x1="158.7" y1="184.5" x2="84.3" y2="234.4" opacity="0.066"/><line x1="158.7" y1="184.5" x2="142.4" y2="247.2" opacity="0.086"/><line x1="225.3" y1="191.4" x2="289.4" y2="171.8" opacity="0.117"/><line x1="225.3" y1="191.4" x2="234.6" y2="241.8" opacity="0.117"/><line x1="289.4" y1="171.8" x2="364.8" y2="193.4" opacity="0.119"/><line x1="289.4" y1="171.8" x2="234.6" y2="241.8" opacity="0.128"/><line x1="289.4" y1="171.8" x2="288.5" y2="260.8" opacity="0.104"/><line x1="289.4" y1="171.8" x2="350.8" y2="233.3" opacity="0.128"/><line x1="364.8" y1="193.4" x2="430.0" y2="186.1" opacity="0.119"/><line x1="364.8" y1="193.4" x2="350.8" y2="233.3" opacity="0.119"/><line x1="430.0" y1="186.1" x2="512.2" y2="179.9" opacity="0.148"/><line x1="430.0" y1="186.1" x2="448.5" y2="259.0" opacity="0.145"/><line x1="430.0" y1="186.1" x2="501.6" y2="238.9" opacity="0.148"/><line x1="512.2" y1="179.9" x2="587.7" y2="194.7" opacity="0.166"/><line x1="512.2" y1="179.9" x2="501.6" y2="238.9" opacity="0.166"/><line x1="587.7" y1="194.7" x2="661.8" y2="177.8" opacity="0.216"/><line x1="587.7" y1="194.7" x2="572.2" y2="260.2" opacity="0.216"/><line x1="587.7" y1="194.7" x2="651.1" y2="241.9" opacity="0.216"/><line x1="661.8" y1="177.8" x2="724.2" y2="193.9" opacity="0.207"/><line x1="661.8" y1="177.8" x2="651.1" y2="241.9" opacity="0.223"/><line x1="724.2" y1="193.9" x2="809.1" y2="179.7" opacity="0.207"/><line x1="724.2" y1="193.9" x2="651.1" y2="241.9" opacity="0.207"/><line x1="724.2" y1="193.9" x2="741.5" y2="243.2" opacity="0.207"/><line x1="724.2" y1="193.9" x2="797.0" y2="247.9" opacity="0.207"/><line x1="809.1" y1="179.7" x2="797.0" y2="247.9" opacity="0.250"/><line x1="84.3" y1="234.4" x2="142.4" y2="247.2" opacity="0.066"/><line x1="84.3" y1="234.4" x2="69.0" y2="322.3" opacity="0.066"/><line x1="142.4" y1="247.2" x2="157.8" y2="315.1" opacity="0.086"/><line x1="234.6" y1="241.8" x2="288.5" y2="260.8" opacity="0.104"/><line x1="234.6" y1="241.8" x2="226.0" y2="302.0" opacity="0.129"/><line x1="288.5" y1="260.8" x2="350.8" y2="233.3" opacity="0.104"/><line x1="288.5" y1="260.8" x2="226.0" y2="302.0" opacity="0.104"/><line x1="288.5" y1="260.8" x2="297.0" y2="309.9" opacity="0.104"/><line x1="350.8" y1="233.3" x2="378.3" y2="312.1" opacity="0.128"/><line x1="448.5" y1="259.0" x2="501.6" y2="238.9" opacity="0.145"/><line x1="448.5" y1="259.0" x2="378.3" y2="312.1" opacity="0.137"/><line x1="448.5" y1="259.0" x2="435.2" y2="300.5" opacity="0.145"/><line x1="501.6" y1="238.9" x2="572.2" y2="260.2" opacity="0.205"/><line x1="501.6" y1="238.9" x2="435.2" y2="300.5" opacity="0.148"/><line x1="501.6" y1="238.9" x2="528.6" y2="306.4" opacity="0.173"/><line x1="572.2" y1="260.2" x2="651.1" y2="241.9" opacity="0.217"/><line x1="572.2" y1="260.2" x2="528.6" y2="306.4" opacity="0.173"/><line x1="572.2" y1="260.2" x2="572.0" y2="316.4" opacity="0.217"/><line x1="651.1" y1="241.9" x2="741.5" y2="243.2" opacity="0.223"/><line x1="651.1" y1="241.9" x2="654.1" y2="308.4" opacity="0.211"/><line x1="741.5" y1="243.2" x2="797.0" y2="247.9" opacity="0.250"/><line x1="741.5" y1="243.2" x2="722.1" y2="307.0" opacity="0.250"/><line x1="797.0" y1="247.9" x2="809.1" y2="322.4" opacity="0.245"/><line x1="69.0" y1="322.3" x2="157.8" y2="315.1" opacity="0.078"/><line x1="69.0" y1="322.3" x2="71.8" y2="383.6" opacity="0.078"/><line x1="69.0" y1="322.3" x2="137.8" y2="363.8" opacity="0.078"/><line x1="157.8" y1="315.1" x2="226.0" y2="302.0" opacity="0.117"/><line x1="157.8" y1="315.1" x2="137.8" y2="363.8" opacity="0.100"/><line x1="157.8" y1="315.1" x2="204.7" y2="359.2" opacity="0.108"/><line x1="226.0" y1="302.0" x2="297.0" y2="309.9" opacity="0.116"/><line x1="226.0" y1="302.0" x2="204.7" y2="359.2" opacity="0.108"/><line x1="226.0" y1="302.0" x2="276.0" y2="376.6" opacity="0.133"/><line x1="297.0" y1="309.9" x2="378.3" y2="312.1" opacity="0.116"/><line x1="297.0" y1="309.9" x2="276.0" y2="376.6" opacity="0.116"/><line x1="297.0" y1="309.9" x2="349.6" y2="360.4" opacity="0.116"/><line x1="378.3" y1="312.1" x2="435.2" y2="300.5" opacity="0.137"/><line x1="378.3" y1="312.1" x2="349.6" y2="360.4" opacity="0.122"/><line x1="435.2" y1="300.5" x2="456.0" y2="380.3" opacity="0.148"/><line x1="528.6" y1="306.4" x2="572.0" y2="316.4" opacity="0.173"/><line x1="528.6" y1="306.4" x2="528.7" y2="356.7" opacity="0.173"/><line x1="528.6" y1="306.4" x2="574.8" y2="371.3" opacity="0.173"/><line x1="572.0" y1="316.4" x2="654.1" y2="308.4" opacity="0.211"/><line x1="572.0" y1="316.4" x2="528.7" y2="356.7" opacity="0.180"/><line x1="572.0" y1="316.4" x2="574.8" y2="371.3" opacity="0.176"/><line x1="654.1" y1="308.4" x2="722.1" y2="307.0" opacity="0.211"/><line x1="654.1" y1="308.4" x2="646.6" y2="375.6" opacity="0.189"/><line x1="654.1" y1="308.4" x2="723.9" y2="363.4" opacity="0.211"/><line x1="722.1" y1="307.0" x2="809.1" y2="322.4" opacity="0.245"/><line x1="722.1" y1="307.0" x2="723.9" y2="363.4" opacity="0.246"/><line x1="809.1" y1="322.4" x2="796.5" y2="366.4" opacity="0.245"/><line x1="71.8" y1="383.6" x2="137.8" y2="363.8" opacity="0.090"/><line x1="137.8" y1="363.8" x2="204.7" y2="359.2" opacity="0.100"/><line x1="204.7" y1="359.2" x2="276.0" y2="376.6" opacity="0.108"/><line x1="276.0" y1="376.6" x2="349.6" y2="360.4" opacity="0.122"/><line x1="456.0" y1="380.3" x2="528.7" y2="356.7" opacity="0.175"/><line x1="528.7" y1="356.7" x2="574.8" y2="371.3" opacity="0.176"/><line x1="574.8" y1="371.3" x2="646.6" y2="375.6" opacity="0.176"/><line x1="646.6" y1="375.6" x2="723.9" y2="363.4" opacity="0.189"/><line x1="723.9" y1="363.4" x2="796.5" y2="366.4" opacity="0.246"/></g><g class="f-acc" fill="currentColor"><circle cx="75.2" cy="56.4" r="2.27" opacity="0.278"/><circle cx="131.4" cy="55.7" r="2.79" opacity="0.427"/><circle cx="229.1" cy="59.0" r="3.02" opacity="0.495"/><circle cx="302.4" cy="50.4" r="2.69" opacity="0.398"/><circle cx="360.0" cy="47.1" r="3.18" opacity="0.541"/><circle cx="456.8" cy="61.3" r="3.19" opacity="0.542"/><circle cx="524.1" cy="50.8" r="3.95" opacity="0.762"/><circle cx="576.8" cy="70.2" r="3.78" opacity="0.713"/><circle cx="645.7" cy="69.0" r="3.97" opacity="0.769"/><circle cx="730.2" cy="53.3" r="4.60" opacity="0.950"/><circle cx="796.0" cy="67.3" r="4.30" opacity="0.864"/><circle cx="68.1" cy="133.6" r="2.65" opacity="0.388"/><circle cx="131.4" cy="135.1" r="2.51" opacity="0.348"/><circle cx="222.6" cy="119.3" r="2.48" opacity="0.339"/><circle cx="276.9" cy="108.4" r="3.00" opacity="0.490"/><circle cx="365.8" cy="132.7" r="3.21" opacity="0.550"/><circle cx="426.1" cy="117.1" r="3.48" opacity="0.628"/><circle cx="508.6" cy="112.5" r="3.44" opacity="0.614"/><circle cx="588.4" cy="129.1" r="3.84" opacity="0.732"/><circle cx="676.1" cy="131.3" r="3.89" opacity="0.745"/><circle cx="747.0" cy="117.3" r="4.33" opacity="0.872"/><circle cx="804.5" cy="115.5" r="4.43" opacity="0.901"/><circle cx="72.2" cy="194.2" r="2.19" opacity="0.256"/><circle cx="158.7" cy="184.5" r="2.94" opacity="0.472"/><circle cx="225.3" cy="191.4" r="2.88" opacity="0.453"/><circle cx="289.4" cy="171.8" r="3.02" opacity="0.493"/><circle cx="364.8" cy="193.4" r="2.90" opacity="0.459"/><circle cx="430.0" cy="186.1" r="3.27" opacity="0.566"/><circle cx="512.2" cy="179.9" r="3.51" opacity="0.636"/><circle cx="587.7" cy="194.7" r="4.16" opacity="0.822"/><circle cx="661.8" cy="177.8" r="4.49" opacity="0.918"/><circle cx="724.2" cy="193.9" r="4.04" opacity="0.787"/><circle cx="809.1" cy="179.7" r="4.60" opacity="0.950"/><circle cx="84.3" cy="234.4" r="2.21" opacity="0.261"/><circle cx="142.4" cy="247.2" r="2.47" opacity="0.336"/><circle cx="234.6" cy="241.8" r="3.02" opacity="0.495"/><circle cx="288.5" cy="260.8" r="2.71" opacity="0.403"/><circle cx="350.8" cy="233.3" r="3.01" opacity="0.492"/><circle cx="448.5" cy="259.0" r="3.23" opacity="0.555"/><circle cx="501.6" cy="238.9" r="4.01" opacity="0.781"/><circle cx="572.2" cy="260.2" r="4.17" opacity="0.825"/><circle cx="651.1" cy="241.9" r="4.25" opacity="0.850"/><circle cx="741.5" cy="243.2" r="4.60" opacity="0.950"/><circle cx="797.0" cy="247.9" r="4.60" opacity="0.950"/><circle cx="69.0" cy="322.3" r="2.36" opacity="0.305"/><circle cx="157.8" cy="315.1" r="2.87" opacity="0.450"/><circle cx="226.0" cy="302.0" r="3.08" opacity="0.510"/><circle cx="297.0" cy="309.9" r="2.86" opacity="0.447"/><circle cx="378.3" cy="312.1" r="3.14" opacity="0.528"/><circle cx="435.2" cy="300.5" r="3.27" opacity="0.568"/><circle cx="528.6" cy="306.4" r="3.59" opacity="0.660"/><circle cx="572.0" cy="316.4" r="4.30" opacity="0.865"/><circle cx="654.1" cy="308.4" r="4.10" opacity="0.805"/><circle cx="722.1" cy="307.0" r="4.60" opacity="0.950"/><circle cx="809.1" cy="322.4" r="4.53" opacity="0.931"/><circle cx="71.8" cy="383.6" r="2.52" opacity="0.350"/><circle cx="137.8" cy="363.8" r="2.65" opacity="0.389"/><circle cx="204.7" cy="359.2" r="2.75" opacity="0.416"/><circle cx="276.0" cy="376.6" r="3.30" opacity="0.574"/><circle cx="349.6" cy="360.4" r="2.93" opacity="0.469"/><circle cx="456.0" cy="380.3" r="3.62" opacity="0.668"/><circle cx="528.7" cy="356.7" r="3.68" opacity="0.686"/><circle cx="574.8" cy="371.3" r="3.64" opacity="0.672"/><circle cx="646.6" cy="375.6" r="3.81" opacity="0.721"/><circle cx="723.9" cy="363.4" r="4.54" opacity="0.933"/><circle cx="796.5" cy="366.4" r="4.60" opacity="0.950"/></g></svg></div></div><div class="foot"><span>Cadence &middot; Pragma Research</span><span>1 / 20</span></div></section>
+<section class="slide"><div class="kicker">The thesis</div><h1>Intelligence is what a body does in a world</h1><div class="body"><p>No animal is trained and then switched on. It is born into a world,
+acts in it, is hurt by it, and changes because of it, every day, until
+it dies. There is no training phase and no moment when the learning
+stops.</p>
+<p>Everything we want from a general intelligence follows from that
+arrangement. Coping with a situation nobody prepared for. Picking up a
+new job without a team first collecting thousands of examples of it.
+Keeping yesterday’s skill while learning today’s. Working again after
+being damaged.</p>
+<p>A machine that cannot change after release does none of this. Making
+it bigger does not help, because the limit is in how it is built.</p>
+</div><div class="foot"><span>Cadence &middot; Pragma Research</span><span>2 / 20</span></div></section>
+<section class="slide"><div class="kicker">The gap</div><h1>What "frozen" costs</h1><div class="body"><p>Today’s AI is trained in a datacenter. Its settings are then locked
+and copied out to wherever it is used. Nothing that happens afterwards
+changes it.</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>What a living mind needs</th>
+<th>What today’s AI does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Learn while it acts</td>
+<td>Learns once, then the settings lock</td>
+</tr>
+<tr>
+<td>Learn from its own life, in order</td>
+<td>Learns from shuffled examples gathered in advance</td>
+</tr>
+<tr>
+<td>Keep yesterday’s skill</td>
+<td>Teaching it a new task can erase the old one</td>
+</tr>
+<tr>
+<td>Run inside the body</td>
+<td>Runs on rented servers, reached over a network</td>
+</tr>
+</tbody>
+</table>
+</div><div class="foot"><span>Cadence &middot; Pragma Research</span><span>3 / 20</span></div></section>
+<section class="slide"><div class="kicker">The gap</div><h1>What that costs in the field</h1><div class="body"><p>A robot arm goes into a factory with a locked-in controller. The
+grippers wear, the parts shift slightly, and the success rate slides.
+Fixing it means collecting fresh examples, shipping them to a
+datacenter, retraining, testing, and pushing an update to the fleet.</p>
+<div class="figure" data-fig="degradation"><svg class="fig" viewBox="0 0 900 300" role="img" aria-label="A frozen policy's success rate decaying and being restored by retraining"><g class="f-grid" stroke="currentColor" stroke-width="1"><line x1="92" y1="215.7" x2="880" y2="215.7"/><line x1="92" y1="172.8" x2="880" y2="172.8"/><line x1="92" y1="129.8" x2="880" y2="129.8"/><line x1="92" y1="86.9" x2="880" y2="86.9"/><line x1="92" y1="44.0" x2="880" y2="44.0"/></g><g class="f-acc" stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round" stroke-linecap="round"><polyline points="92.0,61.2 179.6,95.5 267.1,142.7 354.7,198.5"/><polyline points="354.7,65.5 442.2,104.1 529.8,155.6 617.3,202.8"/><polyline points="617.3,69.8 704.9,108.4 792.4,159.9 880.0,207.1"/></g><g class="f-gold" fill="currentColor"><path d="M 354.7 133.3 l 7 7 l -7 7 l -7 -7 z"/><path d="M 617.3 133.3 l 7 7 l -7 7 l -7 -7 z"/></g><g class="f-lab f-sec"><text x="354.7" y="119.3" text-anchor="middle">retrain</text><text x="617.3" y="119.3" text-anchor="middle">retrain</text></g><g class="f-lab f-mut"><text x="80" y="219.7" text-anchor="end">80%</text><text x="80" y="176.8" text-anchor="end">85%</text><text x="80" y="133.8" text-anchor="end">90%</text><text x="80" y="90.9" text-anchor="end">95%</text><text x="80" y="48.0" text-anchor="end">100%</text><text x="92.0" y="274" text-anchor="middle">month 0</text><text x="354.7" y="274" text-anchor="middle">month 6</text><text x="617.3" y="274" text-anchor="middle">month 12</text><text x="880.0" y="274" text-anchor="middle">month 18</text></g><text class="f-lab f-mut" x="880" y="298" text-anchor="end">Illustrative. Shape of the problem, not a measurement.</text></svg></div>
+<p>That repair cycle takes weeks, and the factory’s data has to leave
+the building. A Cadence brain adjusts during the shift, and nothing
+leaves the machine.</p>
+</div><div class="foot"><span>Cadence &middot; Pragma Research</span><span>4 / 20</span></div></section>
+<section class="slide tight"><div class="kicker">The rule</div><h1>Where the learning rule came from</h1><div class="body"><p>Cadence started from a physics question. If the universe is made of
+small regions that each keep their own records, compare them with their
+neighbours, and fix the disagreements they find, what does that produce?
+We derived that it produces one shared, consistent world, with nothing
+in charge of it.</p>
+<p>Turned into a learning rule, that says: each connection in the brain
+changes using only the activity of the two cells it joins, plus one
+broadcast signal saying whether things went well. Nothing ever looks at
+the whole network at once, so nothing has to store a trace of the
+computation and walk back through it. That is what removes the training
+phase.</p>
+<div class="figure" data-fig="local-repair"><svg class="fig" viewBox="0 0 900 300" role="img" aria-label="Backpropagation sweeps the whole network; Cadence changes one connection"><defs><marker id="ah-dim" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 z" fill="currentColor"/></marker></defs><g class="f-dim" stroke="currentColor" stroke-width="1" fill="none" opacity="0.5"><line x1="50" y1="66" x2="150" y2="40"/><line x1="50" y1="66" x2="150" y2="92"/><line x1="50" y1="66" x2="150" y2="144"/><line x1="50" y1="66" x2="150" y2="196"/><line x1="50" y1="118" x2="150" y2="40"/><line x1="50" y1="118" x2="150" y2="92"/><line x1="50" y1="118" x2="150" y2="144"/><line x1="50" y1="118" x2="150" y2="196"/><line x1="50" y1="170" x2="150" y2="40"/><line x1="50" y1="170" x2="150" y2="92"/><line x1="50" y1="170" x2="150" y2="144"/><line x1="50" y1="170" x2="150" y2="196"/><line x1="150" y1="40" x2="250" y2="40"/><line x1="150" y1="40" x2="250" y2="92"/><line x1="150" y1="40" x2="250" y2="144"/><line x1="150" y1="40" x2="250" y2="196"/><line x1="150" y1="92" x2="250" y2="40"/><line x1="150" y1="92" x2="250" y2="92"/><line x1="150" y1="92" x2="250" y2="144"/><line x1="150" y1="92" x2="250" y2="196"/><line x1="150" y1="144" x2="250" y2="40"/><line x1="150" y1="144" x2="250" y2="92"/><line x1="150" y1="144" x2="250" y2="144"/><line x1="150" y1="144" x2="250" y2="196"/><line x1="150" y1="196" x2="250" y2="40"/><line x1="150" y1="196" x2="250" y2="92"/><line x1="150" y1="196" x2="250" y2="144"/><line x1="150" y1="196" x2="250" y2="196"/><line x1="250" y1="40" x2="350" y2="92"/><line x1="250" y1="40" x2="350" y2="144"/><line x1="250" y1="92" x2="350" y2="92"/><line x1="250" y1="92" x2="350" y2="144"/><line x1="250" y1="144" x2="350" y2="92"/><line x1="250" y1="144" x2="350" y2="144"/><line x1="250" y1="196" x2="350" y2="92"/><line x1="250" y1="196" x2="350" y2="144"/></g><g class="f-dim" fill="currentColor"><circle cx="50" cy="66" r="6"/><circle cx="50" cy="118" r="6"/><circle cx="50" cy="170" r="6"/><circle cx="150" cy="40" r="6"/><circle cx="150" cy="92" r="6"/><circle cx="150" cy="144" r="6"/><circle cx="150" cy="196" r="6"/><circle cx="250" cy="40" r="6"/><circle cx="250" cy="92" r="6"/><circle cx="250" cy="144" r="6"/><circle cx="250" cy="196" r="6"/><circle cx="350" cy="92" r="6"/><circle cx="350" cy="144" r="6"/></g><path class="f-dim" d="M 370 210 C 260 248, 140 248, 55 210" stroke="currentColor" stroke-width="2" fill="none" marker-end="url(#ah-dim)"/><g class="f-dim" stroke="currentColor" stroke-width="1" fill="none" opacity="0.5"><line x1="510" y1="66" x2="610" y2="40"/><line x1="510" y1="66" x2="610" y2="92"/><line x1="510" y1="66" x2="610" y2="144"/><line x1="510" y1="66" x2="610" y2="196"/><line x1="510" y1="118" x2="610" y2="40"/><line x1="510" y1="118" x2="610" y2="92"/><line x1="510" y1="118" x2="610" y2="144"/><line x1="510" y1="118" x2="610" y2="196"/><line x1="510" y1="170" x2="610" y2="40"/><line x1="510" y1="170" x2="610" y2="92"/><line x1="510" y1="170" x2="610" y2="144"/><line x1="510" y1="170" x2="610" y2="196"/><line x1="610" y1="40" x2="710" y2="40"/><line x1="610" y1="40" x2="710" y2="92"/><line x1="610" y1="40" x2="710" y2="144"/><line x1="610" y1="40" x2="710" y2="196"/><line x1="610" y1="92" x2="710" y2="40"/><line x1="610" y1="92" x2="710" y2="92"/><line x1="610" y1="92" x2="710" y2="144"/><line x1="610" y1="92" x2="710" y2="196"/><line x1="610" y1="144" x2="710" y2="40"/><line x1="610" y1="144" x2="710" y2="92"/><line x1="610" y1="144" x2="710" y2="144"/><line x1="610" y1="144" x2="710" y2="196"/><line x1="610" y1="196" x2="710" y2="40"/><line x1="610" y1="196" x2="710" y2="92"/><line x1="610" y1="196" x2="710" y2="144"/><line x1="610" y1="196" x2="710" y2="196"/><line x1="710" y1="40" x2="810" y2="92"/><line x1="710" y1="40" x2="810" y2="144"/><line x1="710" y1="92" x2="810" y2="92"/><line x1="710" y1="92" x2="810" y2="144"/><line x1="710" y1="144" x2="810" y2="92"/><line x1="710" y1="144" x2="810" y2="144"/><line x1="710" y1="196" x2="810" y2="92"/><line x1="710" y1="196" x2="810" y2="144"/></g><g class="f-dim" fill="currentColor"><circle cx="510" cy="66" r="6"/><circle cx="510" cy="118" r="6"/><circle cx="510" cy="170" r="6"/><circle cx="610" cy="40" r="6"/><circle cx="610" cy="92" r="6"/><circle cx="610" cy="144" r="6"/><circle cx="610" cy="196" r="6"/><circle cx="710" cy="40" r="6"/><circle cx="710" cy="92" r="6"/><circle cx="710" cy="144" r="6"/><circle cx="710" cy="196" r="6"/><circle cx="810" cy="92" r="6"/><circle cx="810" cy="144" r="6"/></g><g class="f-acc"><line x1="610" y1="92" x2="710" y2="144" stroke="currentColor" stroke-width="3"/><circle cx="610" cy="92" r="7.5" fill="currentColor"/><circle cx="710" cy="144" r="7.5" fill="currentColor"/></g><g class="f-gold"><circle cx="855" cy="118" r="5.5" fill="currentColor"/><circle cx="855" cy="118" r="15" fill="none" stroke="currentColor" stroke-width="1" opacity="0.55"/><circle cx="855" cy="118" r="27" fill="none" stroke="currentColor" stroke-width="1" opacity="0.32"/><circle cx="855" cy="118" r="40" fill="none" stroke="currentColor" stroke-width="1" opacity="0.16"/><text class="f-lab f-gold-t" x="855" y="182" text-anchor="middle">broadcast</text></g><text class="f-lab f-sec" x="200" y="26" text-anchor="middle">Backpropagation</text><text class="f-lab f-mut" x="200" y="278" text-anchor="middle">one pass back through every layer, and the graph must be kept</text><text class="f-lab f-sec" x="660" y="26" text-anchor="middle">Cadence</text><text class="f-lab f-mut" x="640" y="278" text-anchor="middle">the two cells it joins, plus one broadcast signal</text><line class="f-grid" x1="450" y1="14" x2="450" y2="286" stroke="currentColor" stroke-width="1"/></svg></div>
+<p><strong>About the physics.</strong> It is formal proofs a computer
+checks step by step, like a compiler for mathematics, and more than
+10,900 of them pass. The physics community has not accepted it, and this
+deck does not ask you to. The rule is judged on what it does.</p>
+</div><div class="foot"><span>Cadence &middot; Pragma Research</span><span>5 / 20</span></div></section>
+<section class="slide tight"><div class="kicker">The object</div><h1>How a Cadence brain works</h1><div class="body"><p>A conventional network passes a signal through a stack of layers
+once, and an answer comes out the far end. A Cadence brain behaves more
+like a physical system. Its cells push on each other until they stop
+moving, and the state they come to rest in is the answer. We call that
+settling.</p>
+<div class="figure" data-fig="settling"><svg class="fig" viewBox="0 0 900 248" role="img" aria-label="A network relaxing from a scattered state into one at rest"><defs><marker id="ah-s" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 z" fill="currentColor"/></marker></defs><g class="f-dim" stroke="currentColor" stroke-width="1.5" fill="none" opacity="0.45"><line x1="212.4" y1="131.3" x2="152.8" y2="194.0"/><line x1="187.3" y1="182.2" x2="133.1" y2="188.3"/><line x1="152.8" y1="194.0" x2="83.3" y2="154.3"/><line x1="133.1" y1="188.3" x2="99.7" y2="101.5"/><line x1="83.3" y1="154.3" x2="118.8" y2="74.9"/><line x1="99.7" y1="101.5" x2="166.3" y2="79.8"/><line x1="118.8" y1="74.9" x2="212.3" y2="72.2"/><line x1="166.3" y1="79.8" x2="212.4" y2="131.3"/><line x1="212.3" y1="72.2" x2="187.3" y2="182.2"/></g><g class="f-dim" fill="currentColor"><circle cx="212.4" cy="131.3" r="5"/><circle cx="187.3" cy="182.2" r="5"/><circle cx="152.8" cy="194.0" r="5"/><circle cx="133.1" cy="188.3" r="5"/><circle cx="83.3" cy="154.3" r="5"/><circle cx="99.7" cy="101.5" r="5"/><circle cx="118.8" cy="74.9" r="5"/><circle cx="166.3" cy="79.8" r="5"/><circle cx="212.3" cy="72.2" r="5"/></g><text class="f-lab f-mut" x="148" y="232" text-anchor="middle">signals arrive</text><path class="f-dim" d="M 266 128 l 22 0" stroke="currentColor" stroke-width="2" fill="none" marker-end="url(#ah-s)"/><g class="f-dim" stroke="currentColor" stroke-width="1.5" fill="none" opacity="0.64"><line x1="499.6" y1="127.5" x2="452.1" y2="184.6"/><line x1="495.8" y1="169.9" x2="418.1" y2="186.3"/><line x1="452.1" y1="184.6" x2="380.4" y2="152.6"/><line x1="418.1" y1="186.3" x2="384.9" y2="109.6"/><line x1="380.4" y1="152.6" x2="417.1" y2="70.7"/><line x1="384.9" y1="109.6" x2="452.4" y2="69.3"/><line x1="417.1" y1="70.7" x2="485.7" y2="93.9"/><line x1="452.4" y1="69.3" x2="499.6" y2="127.5"/><line x1="485.7" y1="93.9" x2="495.8" y2="169.9"/></g><g class="f-dim" fill="currentColor"><circle cx="499.6" cy="127.5" r="5"/><circle cx="495.8" cy="169.9" r="5"/><circle cx="452.1" cy="184.6" r="5"/><circle cx="418.1" cy="186.3" r="5"/><circle cx="380.4" cy="152.6" r="5"/><circle cx="384.9" cy="109.6" r="5"/><circle cx="417.1" cy="70.7" r="5"/><circle cx="452.4" cy="69.3" r="5"/><circle cx="485.7" cy="93.9" r="5"/></g><text class="f-lab f-mut" x="444" y="232" text-anchor="middle">the cells push on each other</text><path class="f-dim" d="M 562 128 l 22 0" stroke="currentColor" stroke-width="2" fill="none" marker-end="url(#ah-s)"/><g class="f-acc" stroke="currentColor" stroke-width="1.5" fill="none" opacity="0.80"><line x1="802.0" y1="128.0" x2="750.8" y2="189.1"/><line x1="787.5" y1="167.9" x2="709.0" y2="181.7"/><line x1="750.8" y1="189.1" x2="681.7" y2="149.2"/><line x1="709.0" y1="181.7" x2="681.7" y2="106.8"/><line x1="681.7" y1="149.2" x2="709.0" y2="74.3"/><line x1="681.7" y1="106.8" x2="750.8" y2="66.9"/><line x1="709.0" y1="74.3" x2="787.5" y2="88.1"/><line x1="750.8" y1="66.9" x2="802.0" y2="128.0"/><line x1="787.5" y1="88.1" x2="787.5" y2="167.9"/></g><g class="f-acc" fill="currentColor"><circle cx="802.0" cy="128.0" r="5"/><circle cx="787.5" cy="167.9" r="5"/><circle cx="750.8" cy="189.1" r="5"/><circle cx="709.0" cy="181.7" r="5"/><circle cx="681.7" cy="149.2" r="5"/><circle cx="681.7" cy="106.8" r="5"/><circle cx="709.0" cy="74.3" r="5"/><circle cx="750.8" cy="66.9" r="5"/><circle cx="787.5" cy="88.1" r="5"/></g><text class="f-lab f-mut" x="740" y="232" text-anchor="middle">it comes to rest, and that state is the answer</text></svg></div>
+<ul>
+<li><strong>Settling is the thinking.</strong> Signals arrive, the
+network relaxes, and the resting state is the decision.</li>
+<li><strong>Memory is written once.</strong> Something that happens is
+recorded immediately into the few cells that were active when it
+happened, instead of being repeated hundreds of times until the network
+absorbs it.</li>
+<li><strong>Imagining is settling in private.</strong> The brain nudges
+itself, lets a possible future settle, reads off how it turned out, and
+discards it. Imagined outcomes are never recorded as things that
+happened.</li>
+<li><strong>The wiring can be evolved.</strong> The layout is inherited
+and mutated across generations rather than drawn by hand.</li>
+</ul>
+</div><div class="foot"><span>Cadence &middot; Pragma Research</span><span>6 / 20</span></div></section>
+<section class="slide"><div class="kicker">What exists</div><h1>Built, running, and open to inspection</h1><div class="body"><p>The library is public and installs in one line. Anyone can download
+it and check the claims.</p>
+<p><strong>Demonstrations that run in a browser</strong>, each showing
+the whole brain beside the task it is doing: a robot arm, a Connect Four
+player, a composer, an artist.</p>
+<p><strong>A Connect Four brain beats AlphaZero</strong>, the method
+that taught itself to beat the best chess and Go programs, trained here
+with its published recipe. Cadence wins 92 and 99 of 100 paired games
+against two configurations of it.</p>
+<p><strong>Brains built from real biological wiring.</strong> A map of a
+fruit fly’s brain containing 138,639 nerve cells, and the complete
+302-cell nervous system of the roundworm <em>C. elegans</em>, both
+loaded and run as Cadence brains. The worm learns to associate a smell
+with food.</p>
+<p>Every number in our paper is read out of a result file whose
+fingerprint is recorded, so a reader can trace it back. The paper also
+names ten things the design does badly.</p>
+<p>One person built all of this, self-funded, at $5,000 to $10,000 a
+month.</p>
+</div><div class="foot"><span>Cadence &middot; Pragma Research</span><span>7 / 20</span></div></section>
+<section class="slide"><div class="kicker">Evidence</div><h1>What it does better, and why that matters</h1><div class="body"><div class="figure" data-fig="wins"><div class="kpi-row"><div class="tile"><div class="tile-rule"></div><div class="tile-label">Arm reaching targets it was never shown</div><div class="tile-value">99.4%</div><div class="tile-sub">against 98.0% for the standard method, which needs a stored buffer of past attempts</div></div><div class="tile"><div class="tile-rule"></div><div class="tile-label">Choosing what to remember, four memory tasks</div><div class="tile-value">94.6%</div><div class="tile-sub">against 49.0% for a conventional model given more memory than Cadence had</div></div><div class="tile"><div class="tile-rule"></div><div class="tile-label">Updating a 138,639-cell brain after a small change</div><div class="tile-value">6.3&#215;</div><div class="tile-sub">faster than redoing the whole thing, because effort follows what changed</div></div><div class="tile"><div class="tile-rule"></div><div class="tile-label">Function recovered after part of the brain is destroyed</div><div class="tile-value">85%</div><div class="tile-sub">against 50%. The rule that learned the skill also repairs it</div></div><div class="tile"><div class="tile-rule"></div><div class="tile-label">Practice needed to learn to balance a pole</div><div class="tile-value">40k</div><div class="tile-sub">attempts against 137,000, for the same skill</div></div></div></div>
+<p>Every number here is read out of a result file in our paper whose
+fingerprint is recorded, so a reader can trace it back to the run that
+produced it.</p>
+</div><div class="foot"><span>Cadence &middot; Pragma Research</span><span>8 / 20</span></div></section>
+<section class="slide tight"><div class="kicker">Evidence</div><h1>What it does badly, and why we are showing you</h1><div class="body"><table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>What was measured</th>
+<th>Result</th>
+<th>What it means</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Time to make one decision</td>
+<td>13 milliseconds, against 1 for a conventional network</td>
+<td>Settling costs more than passing through layers. Too slow for a fast
+control loop today.</td>
+</tr>
+<tr>
+<td>Predicting the next character of text</td>
+<td>Behind a small transformer, the design behind ChatGPT, at every size
+tried</td>
+<td>Language is not where this design wins. We are not building a
+chatbot.</td>
+</tr>
+<tr>
+<td>Learning from a reward that arrives much later</td>
+<td>Well behind the standard method for learning by trial and error</td>
+<td>Long chains of cause and effect are unsolved here.</td>
+</tr>
+<tr>
+<td>Holding many separate skills at once</td>
+<td>Loses the older ones unless given a stored buffer</td>
+<td>The weakness most likely to sink the approach.</td>
+</tr>
+<tr>
+<td>Size of the largest brain built</td>
+<td>70 million connections</td>
+<td>A frontier language model is roughly 10,000 times larger. Nothing
+here shows this design scales that far.</td>
+</tr>
+</tbody>
+</table>
+<p>Each of these is named in our own paper with its measurement. Every
+work package in this plan attacks one of them. A company that showed you
+only the previous slide would not survive a technical review.</p>
+</div><div class="foot"><span>Cadence &middot; Pragma Research</span><span>9 / 20</span></div></section>
+<section class="slide"><div class="kicker">Embodiment</div><h1>The ladder of bodies, and what each rung tests</h1><div class="body"><div class="figure" data-fig="ladder"><svg class="fig" viewBox="0 0 900 300" role="img" aria-label="Four rungs of robot bodies, the arm rung already measured"><rect class="f-acc" x="22" y="204" width="200" height="44" rx="6" fill="currentColor" opacity="0.9"/><text class="f-lab f-ink tile-b" x="36" y="232">Robot arm</text><text class="f-lab f-mut" x="24" y="268">a second job learned while working, the first one kept</text><rect class="f-dim" x="240" y="150" width="200" height="44" rx="6" fill="currentColor" opacity="0.28"/><text class="f-lab f-ink tile-b" x="254" y="178">Dexterous hand</text><text class="f-lab f-mut" x="242" y="214">many fingers at once, learned from touch</text><rect class="f-dim" x="458" y="96" width="200" height="44" rx="6" fill="currentColor" opacity="0.28"/><text class="f-lab f-ink tile-b" x="472" y="124">Four legs</text><text class="f-lab f-mut" x="460" y="160">balance and recovery under a changing load</text><rect class="f-dim" x="676" y="42" width="200" height="44" rx="6" fill="currentColor" opacity="0.28"/><text class="f-lab f-ink tile-b" x="690" y="70">Full body</text><text class="f-lab f-mut" x="678" y="106">many limbs, and goals that take a room</text><text class="f-lab f-sec" x="22" y="20">Measured in simulation &#183; each rung above is a published result, including the rungs that fail</text></svg></div>
+<p>Ten cheap arms run in parallel, because what is being measured is
+what happens over a working lifetime, and one arm gives one lifetime at
+a time.</p>
+</div><div class="foot"><span>Cadence &middot; Pragma Research</span><span>10 / 20</span></div></section>
+<section class="slide"><div class="kicker">The hardware idea</div><h1>Why this design points at unusual hardware</h1><div class="body"><p>A Cadence brain thinks by letting a system relax until it stops
+changing. On a normal computer we have to <strong>imitate</strong> that
+relaxing, by grinding through arithmetic over and over until the numbers
+settle. That is the main reason one decision costs 13 milliseconds
+instead of 1.</p>
+<p>Some physical things relax by themselves. Light bouncing inside a
+shaped mirrored cavity falls into a stable pattern in the time it takes
+light to cross it, and no arithmetic happens at all.</p>
+<div class="figure" data-fig="carriers"><svg class="fig" viewBox="0 0 900 260" role="img" aria-label="Three carriers: a nerve cell, a chip, and an optical cavity"><g transform="translate(22,0)"><g class="f-dim" stroke="currentColor" stroke-width="2" fill="none" opacity="0.55"><path d="M 60 86 C 88 62, 128 66, 150 86 C 176 108, 176 132, 150 150"/><path d="M 60 86 l -22 -20 M 60 86 l -26 4 M 60 86 l -18 24"/><path d="M 150 150 l 24 14 M 150 150 l 6 28"/></g><circle class="f-dim" cx="104" cy="104" r="15" fill="currentColor" opacity="0.55"/><text class="f-lab f-sec tile-b" x="0" y="200">An animal</text><text class="f-lab f-mut" x="0" y="222">voltages across nerve cells</text><text class="f-lab f-mut" x="0" y="242">about 20 watts</text></g><g transform="translate(314,0)"><g class="f-dim" fill="currentColor" opacity="0.55"><rect x="62" y="66" width="14" height="14" rx="2"/><rect x="62" y="88" width="14" height="14" rx="2"/><rect x="62" y="110" width="14" height="14" rx="2"/><rect x="62" y="132" width="14" height="14" rx="2"/><rect x="84" y="66" width="14" height="14" rx="2"/><rect x="84" y="88" width="14" height="14" rx="2"/><rect x="84" y="110" width="14" height="14" rx="2"/><rect x="84" y="132" width="14" height="14" rx="2"/><rect x="106" y="66" width="14" height="14" rx="2"/><rect x="106" y="88" width="14" height="14" rx="2"/><rect x="106" y="110" width="14" height="14" rx="2"/><rect x="106" y="132" width="14" height="14" rx="2"/><rect x="128" y="66" width="14" height="14" rx="2"/><rect x="128" y="88" width="14" height="14" rx="2"/><rect x="128" y="110" width="14" height="14" rx="2"/><rect x="128" y="132" width="14" height="14" rx="2"/><rect x="150" y="66" width="14" height="14" rx="2"/><rect x="150" y="88" width="14" height="14" rx="2"/><rect x="150" y="110" width="14" height="14" rx="2"/><rect x="150" y="132" width="14" height="14" rx="2"/></g><g class="f-dim" stroke="currentColor" stroke-width="1.5" fill="none" opacity="0.55"><rect x="52" y="56" width="126" height="102" rx="6"/></g><text class="f-lab f-sec tile-b" x="0" y="200">A computer</text><text class="f-lab f-mut" x="0" y="222">numbers in memory, in a loop</text><text class="f-lab f-mut" x="0" y="242">arithmetic, and 13 ms</text></g><g transform="translate(606,0)"><polygon class="f-acc" points="115.0,52.0 143.0,59.5 163.5,80.0 171.0,108.0 163.5,136.0 143.0,156.5 115.0,164.0 87.0,156.5 66.5,136.0 59.0,108.0 66.5,80.0 87.0,59.5" fill="none" stroke="currentColor" stroke-width="2"/><g class="f-acc" stroke="currentColor" stroke-width="1.5" opacity="0.75"><line x1="115.0" y1="52.0" x2="143.0" y2="156.5"/><line x1="143.0" y1="156.5" x2="59.0" y2="108.0"/><line x1="59.0" y1="108.0" x2="163.5" y2="80.0"/><line x1="163.5" y1="80.0" x2="87.0" y2="156.5"/><line x1="87.0" y1="156.5" x2="87.0" y2="59.5"/></g><circle class="f-acc" cx="115.0" cy="52.0" r="4" fill="currentColor"/><circle class="f-acc" cx="143.0" cy="59.5" r="4" fill="currentColor"/><circle class="f-acc" cx="163.5" cy="80.0" r="4" fill="currentColor"/><circle class="f-acc" cx="171.0" cy="108.0" r="4" fill="currentColor"/><circle class="f-acc" cx="163.5" cy="136.0" r="4" fill="currentColor"/><circle class="f-acc" cx="143.0" cy="156.5" r="4" fill="currentColor"/><circle class="f-acc" cx="115.0" cy="164.0" r="4" fill="currentColor"/><circle class="f-acc" cx="87.0" cy="156.5" r="4" fill="currentColor"/><circle class="f-acc" cx="66.5" cy="136.0" r="4" fill="currentColor"/><circle class="f-acc" cx="59.0" cy="108.0" r="4" fill="currentColor"/><circle class="f-acc" cx="66.5" cy="80.0" r="4" fill="currentColor"/><circle class="f-acc" cx="87.0" cy="59.5" r="4" fill="currentColor"/><text class="f-lab f-sec tile-b" x="0" y="200">An optical cavity</text><text class="f-lab f-mut" x="0" y="222">a light field</text><text class="f-lab f-mut" x="0" y="242">the time light takes to cross</text></g><line class="f-grid" x1="300" y1="20" x2="300" y2="250" stroke="currentColor" stroke-width="1"/><line class="f-grid" x1="592" y1="20" x2="592" y2="250" stroke="currentColor" stroke-width="1"/></svg></div>
+<p>Our mathematics says which shapes settle into which computation. That
+is what connects the brain design to the hardware.</p>
+</div><div class="foot"><span>Cadence &middot; Pragma Research</span><span>11 / 20</span></div></section>
+<section class="slide"><div class="kicker">The hardware idea</div><h1>The Echosahedron</h1><div class="body"><div class="figure" data-fig="echosahedron"><svg class="fig" viewBox="0 0 900 300" role="img" aria-label="A twelve-port optical cavity with light bouncing inside"><polygon class="f-dim" points="300.0,38.0 356.0,53.0 397.0,94.0 412.0,150.0 397.0,206.0 356.0,247.0 300.0,262.0 244.0,247.0 203.0,206.0 188.0,150.0 203.0,94.0 244.0,53.0" fill="currentColor" opacity="0.10"/><polygon class="f-dim" points="300.0,38.0 356.0,53.0 397.0,94.0 412.0,150.0 397.0,206.0 356.0,247.0 300.0,262.0 244.0,247.0 203.0,206.0 188.0,150.0 203.0,94.0 244.0,53.0" fill="none" stroke="currentColor" stroke-width="2" opacity="0.8"/><g class="f-dim" stroke="currentColor" stroke-width="1" fill="none" opacity="0.38"><line x1="300.0" y1="38.0" x2="397.0" y2="206.0"/><line x1="397.0" y1="206.0" x2="203.0" y2="206.0"/><line x1="203.0" y1="206.0" x2="300.0" y2="38.0"/><line x1="397.0" y1="94.0" x2="300.0" y2="262.0"/><line x1="300.0" y1="262.0" x2="203.0" y2="94.0"/><line x1="203.0" y1="94.0" x2="397.0" y2="94.0"/></g><g class="f-acc" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.95"><line x1="356.0" y1="53.0" x2="300.0" y2="262.0"/><line x1="300.0" y1="262.0" x2="203.0" y2="94.0"/><line x1="203.0" y1="94.0" x2="412.0" y2="150.0"/><line x1="412.0" y1="150.0" x2="203.0" y2="206.0"/><line x1="203.0" y1="206.0" x2="300.0" y2="38.0"/></g><g class="f-acc"><circle cx="300.0" cy="38.0" r="7" fill="currentColor"/><circle cx="300.0" cy="38.0" r="11.5" fill="none" stroke="currentColor" stroke-width="1" opacity="0.45"/><circle cx="356.0" cy="53.0" r="7" fill="currentColor"/><circle cx="356.0" cy="53.0" r="11.5" fill="none" stroke="currentColor" stroke-width="1" opacity="0.45"/><circle cx="397.0" cy="94.0" r="7" fill="currentColor"/><circle cx="397.0" cy="94.0" r="11.5" fill="none" stroke="currentColor" stroke-width="1" opacity="0.45"/><circle cx="412.0" cy="150.0" r="7" fill="currentColor"/><circle cx="412.0" cy="150.0" r="11.5" fill="none" stroke="currentColor" stroke-width="1" opacity="0.45"/><circle cx="397.0" cy="206.0" r="7" fill="currentColor"/><circle cx="397.0" cy="206.0" r="11.5" fill="none" stroke="currentColor" stroke-width="1" opacity="0.45"/><circle cx="356.0" cy="247.0" r="7" fill="currentColor"/><circle cx="356.0" cy="247.0" r="11.5" fill="none" stroke="currentColor" stroke-width="1" opacity="0.45"/><circle cx="300.0" cy="262.0" r="7" fill="currentColor"/><circle cx="300.0" cy="262.0" r="11.5" fill="none" stroke="currentColor" stroke-width="1" opacity="0.45"/><circle cx="244.0" cy="247.0" r="7" fill="currentColor"/><circle cx="244.0" cy="247.0" r="11.5" fill="none" stroke="currentColor" stroke-width="1" opacity="0.45"/><circle cx="203.0" cy="206.0" r="7" fill="currentColor"/><circle cx="203.0" cy="206.0" r="11.5" fill="none" stroke="currentColor" stroke-width="1" opacity="0.45"/><circle cx="188.0" cy="150.0" r="7" fill="currentColor"/><circle cx="188.0" cy="150.0" r="11.5" fill="none" stroke="currentColor" stroke-width="1" opacity="0.45"/><circle cx="203.0" cy="94.0" r="7" fill="currentColor"/><circle cx="203.0" cy="94.0" r="11.5" fill="none" stroke="currentColor" stroke-width="1" opacity="0.45"/><circle cx="244.0" cy="53.0" r="7" fill="currentColor"/><circle cx="244.0" cy="53.0" r="11.5" fill="none" stroke="currentColor" stroke-width="1" opacity="0.45"/></g><line class="f-grid" x1="356.0" y1="53.0" x2="470" y2="44" stroke="currentColor" stroke-width="1"/><text class="f-lab f-sec tile-b" x="478" y="40">LED shining in</text><text class="f-lab f-mut" x="478" y="60">forward biased</text><line class="f-grid" x1="203.0" y1="206.0" x2="470" y2="238" stroke="currentColor" stroke-width="1"/><text class="f-lab f-sec tile-b" x="478" y="234">the same LED reading out</text><text class="f-lab f-mut" x="478" y="254">reverse biased, measuring the light</text><text class="f-lab f-sec tile-b" x="478" y="126">Twelve windows</text><text class="f-lab f-mut" x="478" y="146">one at each vertex, each one a port</text><text class="f-lab f-sec tile-b" x="478" y="176">A clear body</text><text class="f-lab f-mut" x="478" y="196">light bounces and settles into a pattern</text></svg></div>
+<p>A thing with a boundary, a set of ports, an inner state and a way to
+read it. Which is the same description as one region of a Cadence brain.
+Connect several bodies through their windows and the assembly is a brain
+running in light.</p>
+<p><strong>Status, stated plainly.</strong> The mathematics exists and
+the design exists. <strong>No device has been built.</strong> This plan
+prints the bodies, builds one chamber, and measures whether it computes
+anything useful, against control experiments designed to catch us
+fooling ourselves. If it does not, we publish that and continue with the
+software version, which is what the rest of the plan rests on.</p>
+</div><div class="foot"><span>Cadence &middot; Pragma Research</span><span>12 / 20</span></div></section>
+<section class="slide"><div class="kicker">The plan</div><h1>Eighteen months, and when each answer arrives</h1><div class="body"><div class="figure" data-fig="timeline"><svg class="fig" viewBox="0 0 900 340" role="img" aria-label="Six work packages across eighteen months with their gates"><line class="f-grid" x1="156.0" y1="36" x2="156.0" y2="296" stroke="currentColor" stroke-width="1"/><text class="f-lab f-mut" x="156.0" y="26" text-anchor="middle">0</text><line class="f-grid" x1="273.0" y1="36" x2="273.0" y2="296" stroke="currentColor" stroke-width="1"/><text class="f-lab f-mut" x="273.0" y="26" text-anchor="middle">3</text><line class="f-grid" x1="390.0" y1="36" x2="390.0" y2="296" stroke="currentColor" stroke-width="1"/><text class="f-lab f-mut" x="390.0" y="26" text-anchor="middle">6</text><line class="f-grid" x1="507.0" y1="36" x2="507.0" y2="296" stroke="currentColor" stroke-width="1"/><text class="f-lab f-mut" x="507.0" y="26" text-anchor="middle">9</text><line class="f-grid" x1="624.0" y1="36" x2="624.0" y2="296" stroke="currentColor" stroke-width="1"/><text class="f-lab f-mut" x="624.0" y="26" text-anchor="middle">12</text><line class="f-grid" x1="741.0" y1="36" x2="741.0" y2="296" stroke="currentColor" stroke-width="1"/><text class="f-lab f-mut" x="741.0" y="26" text-anchor="middle">15</text><line class="f-grid" x1="858.0" y1="36" x2="858.0" y2="296" stroke="currentColor" stroke-width="1"/><text class="f-lab f-mut" x="858.0" y="26" text-anchor="middle">18</text><text class="f-lab f-mut" x="140" y="26" text-anchor="end">months</text><text class="f-lab f-sec" x="140" y="65" text-anchor="end">1  Fast decisions</text><rect class="f-acc" x="195.0" y="52" width="312.0" height="18" rx="4" fill="currentColor" opacity="0.70"/><path class="f-gold" d="M 507.0 47 l 7 14.0 l -7 14.0 l -7 -14.0 z" fill="currentColor"/><text class="f-lab f-gold-t" x="507.0" y="86" text-anchor="middle">under 1 ms</text><text class="f-lab f-sec" x="140" y="109" text-anchor="end">2  A learner that climbs</text><rect class="f-acc" x="195.0" y="96" width="429.0" height="18" rx="4" fill="currentColor" opacity="0.70"/><path class="f-gold" d="M 624.0 91 l 7 14.0 l -7 14.0 l -7 -14.0 z" fill="currentColor"/><text class="f-lab f-gold-t" x="624.0" y="130" text-anchor="middle">rises with practice</text><text class="f-lab f-sec" x="140" y="153" text-anchor="end">3  Real bodies</text><rect class="f-acc" x="312.0" y="140" width="546.0" height="18" rx="4" fill="currentColor" opacity="0.70"/><path class="f-gold" d="M 624.0 135 l 7 14.0 l -7 14.0 l -7 -14.0 z" fill="currentColor"/><text class="f-lab f-gold-t" x="624.0" y="174" text-anchor="middle">arm</text><path class="f-gold" d="M 858.0 135 l 7 14.0 l -7 14.0 l -7 -14.0 z" fill="currentColor"/><text class="f-lab f-gold-t" x="852.0" y="174" text-anchor="end">three bodies</text><text class="f-lab f-sec" x="140" y="197" text-anchor="end">4  Optical carrier</text><rect class="f-acc" x="429.0" y="184" width="429.0" height="18" rx="4" fill="currentColor" opacity="0.70"/><path class="f-gold" d="M 624.0 179 l 7 14.0 l -7 14.0 l -7 -14.0 z" fill="currentColor"/><text class="f-lab f-gold-t" x="624.0" y="218" text-anchor="middle">operator</text><path class="f-gold" d="M 858.0 179 l 7 14.0 l -7 14.0 l -7 -14.0 z" fill="currentColor"/><text class="f-lab f-gold-t" x="852.0" y="218" text-anchor="end">one cortex in light</text><text class="f-lab f-sec" x="140" y="241" text-anchor="end">5  Wiring evolves</text><rect class="f-acc" x="195.0" y="228" width="546.0" height="18" rx="4" fill="currentColor" opacity="0.70"/><path class="f-gold" d="M 741.0 223 l 7 14.0 l -7 14.0 l -7 -14.0 z" fill="currentColor"/><text class="f-lab f-gold-t" x="741.0" y="262" text-anchor="middle">beats hand-drawn</text><text class="f-lab f-sec" x="140" y="285" text-anchor="end">6  Scale and proofs</text><rect class="f-acc" x="195.0" y="272" width="663.0" height="18" rx="4" fill="currentColor" opacity="0.70"/><path class="f-gold" d="M 858.0 267 l 7 14.0 l -7 14.0 l -7 -14.0 z" fill="currentColor"/><text class="f-lab f-gold-t" x="852.0" y="306" text-anchor="end">the curve</text><path class="f-gold" d="M 24 330 l 6 -6 l 6 6 l -6 6 z" fill="currentColor"/><text class="f-lab f-mut" x="40" y="334">a gold diamond is a gate, and every gate can fail</text></svg></div>
+<p>Nothing waits on everything else. The work that makes decisions fast
+runs first because every body depends on it, and the optical bench
+starts once its design is frozen.</p>
+</div><div class="foot"><span>Cadence &middot; Pragma Research</span><span>13 / 20</span></div></section>
+<section class="slide tight"><div class="kicker">The plan</div><h1>Six work packages, every one able to fail</h1><div class="body"><table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th></th>
+<th>Work package</th>
+<th>What “done” means</th>
+<th>If it fails</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1</strong></td>
+<td>Make decisions fast enough for real bodies</td>
+<td>One decision in under 1 millisecond, on a chip small enough to sit
+inside a robot</td>
+<td>Brains supervise a fast controller instead of being one</td>
+</tr>
+<tr>
+<td><strong>2</strong></td>
+<td>Make the brain keep improving as experience accumulates</td>
+<td>Performance rises with practice instead of flattening, measured over
+a million decisions</td>
+<td>Ship the one-shot memory alongside a small conventional learner, and
+say so</td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td>Put brains on real bodies</td>
+<td>An arm learns a second job during operation and keeps the first.
+Then a hand, then a legged robot</td>
+<td>Narrow the scope to arm and hand</td>
+</tr>
+<tr>
+<td><strong>4</strong></td>
+<td>Test the optical hardware</td>
+<td>A built chamber computes something repeatable and useful, against
+controls</td>
+<td>Publish the negative result. The software path does not depend on
+it</td>
+</tr>
+<tr>
+<td><strong>5</strong></td>
+<td>Let the wiring design itself</td>
+<td>A layout found by evolution beats our best hand-drawn one on a body
+it never saw</td>
+<td>Keep hand-drawn wiring and report the idea as unproven</td>
+</tr>
+<tr>
+<td><strong>6</strong></td>
+<td>Find out whether it scales</td>
+<td>Publish the curve from 70 million connections upward, whatever shape
+it has</td>
+<td>Publish the flat curve</td>
+</tr>
+</tbody>
+</table>
+</div><div class="foot"><span>Cadence &middot; Pragma Research</span><span>14 / 20</span></div></section>
+<section class="slide"><div class="kicker">The plan</div><h1>What exists after eighteen months</h1><div class="body"><ol type="1">
+<li><strong>A brain that learns on three real bodies.</strong> A robot
+arm, a dexterous hand and a legged robot, each picking up a new job
+while working and keeping the one it already had, with no retraining run
+and no data leaving the machine.</li>
+<li><strong>Software that robot makers can install</strong>, fast enough
+for a control loop, with a guaranteed worst-case decision time and a
+command that returns the robot to its original behaviour.</li>
+<li><strong>An answer on optical hardware.</strong> A chamber built and
+measured, and one brain region run in light and compared against the
+same region in software. A negative answer is published as readily as a
+positive one.</li>
+<li><strong>A wiring diagram found by evolution</strong> that beats the
+best one we drew by hand.</li>
+<li><strong>Version 1.0 of the open library</strong>, stable enough to
+build products on.</li>
+<li><strong>The papers and the proofs</strong>, with every number
+traceable to the file it came from.</li>
+</ol>
+</div><div class="foot"><span>Cadence &middot; Pragma Research</span><span>15 / 20</span></div></section>
+<section class="slide"><div class="kicker">Defensibility</div><h1>Why this is hard to copy</h1><div class="body"><p><strong>The learning rule was derived, not tuned.</strong> It fell
+out of an argument about consistency and was then checked by machine. It
+cannot be read off a results table and reproduced, because the reasoning
+is what produces it.</p>
+<p><strong>The optical path needs both halves.</strong> A photonics lab
+can build a cavity and has no theory saying what the cavity computes. An
+AI lab has the computers and will not build cavities. The theory that
+joins them is ours.</p>
+<p><strong>The open library is the distribution.</strong> It is already
+public, with the measurements and the proofs attached. Adoption
+compounds while the paid work sits on top of it.</p>
+<p><strong>Everything is checkable without trusting us.</strong> The
+proofs run on anyone’s computer. Predictions were published and
+time-stamped before the measurements arrived, so they cannot be quietly
+adjusted afterwards. Ten weaknesses are named in our own paper, and
+there is a public prize for disproving the framework.</p>
+</div><div class="foot"><span>Cadence &middot; Pragma Research</span><span>16 / 20</span></div></section>
+<section class="slide"><div class="kicker">Business</div><h1>Where the money comes from</h1><div class="body"><p><strong>The library stays free and open.</strong> It is how
+developers find us and how outsiders check the work. It is not the
+product.</p>
+<p><strong>The product is a finished brain for a particular
+job.</strong> A wiring diagram, a training curriculum and a tested
+runtime for, say, a warehouse picking arm. A robot maker licenses that
+per robot. Building one takes us months and would take them years, and
+that is what they are paying to skip.</p>
+<p><strong>The first paying use is fleets already installed.</strong> A
+robot whose success rate is drifting down as its hardware wears. Our
+brain rides on top of the maker’s existing controller and closes the gap
+during operation, without altering the controller that was already
+approved for safety.</p>
+<p><strong>Optical hardware is a second business</strong> and exists
+only if work package 4 returns a number.</p>
+<p>Roughly 4.66 million industrial robots are working worldwide, and
+about 542,000 new ones were installed in 2024. No revenue is assumed
+inside the 18 months.</p>
+</div><div class="foot"><span>Cadence &middot; Pragma Research</span><span>17 / 20</span></div></section>
+<section class="slide tight"><div class="kicker">Team</div><h1>Six hires, no managers, and a back office run by AI</h1><div class="body"><table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Role</th>
+<th>Starts</th>
+<th>Why then</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Principal investigator (B. Mueller)</td>
+<td>month 1</td>
+<td>Leads the research and writes code with the team</td>
+</tr>
+<tr>
+<td>GPU and systems engineer</td>
+<td>month 1</td>
+<td>Work package 1 gates every body that follows</td>
+</tr>
+<tr>
+<td>Machine-learning researcher</td>
+<td>month 1</td>
+<td>Work package 2 is the long pole</td>
+</tr>
+<tr>
+<td>Robotics researcher</td>
+<td>month 4</td>
+<td>Once there is a simulator to work against</td>
+</tr>
+<tr>
+<td>Photonics and hardware engineer</td>
+<td>month 7</td>
+<td>Once the chamber design is frozen</td>
+</tr>
+<tr>
+<td>Operations lead</td>
+<td>month 1</td>
+<td>Company setup, payroll and reporting, run with AI tools</td>
+</tr>
+<tr>
+<td>Marketing and developer relations</td>
+<td>month 7</td>
+<td>Once there is a robot to show</td>
+</tr>
+<tr>
+<td>Formal proofs, half time</td>
+<td>month 7</td>
+<td>Proofs follow the mechanism</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Bernhard Mueller.</strong> Pwnie award 2009, the security
+field’s research prize. Author of the OWASP MASVS, the mobile security
+standard Google Play’s independent app review certifies against. Built
+Mythril, the most widely used security analyser for Ethereum contracts.
+Speaker at DEF CON 27 and HITB. Thirty years of changing field every
+five years, from hardware to reverse engineering to mobile to neural
+networks to blockchains to physics.</p>
+</div><div class="foot"><span>Cadence &middot; Pragma Research</span><span>18 / 20</span></div></section>
+<section class="slide"><div class="kicker">Budget</div><h1>$3,739,232 over 18 months</h1><div class="body"><div class="figure" data-fig="budget"><svg class="fig" viewBox="0 0 900 320" role="img" aria-label="Budget by category, largest first"><text class="f-lab f-sec" x="242" y="40" text-anchor="end">Personnel</text><rect class="f-acc" x="258" y="26" width="442.0" height="20" rx="4" fill="currentColor" opacity="0.85"/><text class="f-lab f-ink tile-b" x="712.0" y="40">$1,595,000</text><text class="f-lab f-sec" x="242" y="71" text-anchor="end">Compute</text><rect class="f-acc" x="258" y="57" width="134.2" height="20" rx="4" fill="currentColor" opacity="0.85"/><text class="f-lab f-ink tile-b" x="404.2" y="71">$484,300</text><text class="f-lab f-sec" x="242" y="102" text-anchor="end">AI inference</text><rect class="f-acc" x="258" y="88" width="108.1" height="20" rx="4" fill="currentColor" opacity="0.85"/><text class="f-lab f-ink tile-b" x="378.1" y="102">$390,000</text><text class="f-lab f-sec" x="242" y="133" text-anchor="end">Robots and lab</text><rect class="f-acc" x="258" y="119" width="97.8" height="20" rx="4" fill="currentColor" opacity="0.85"/><text class="f-lab f-ink tile-b" x="367.8" y="133">$353,000</text><text class="f-lab f-sec" x="242" y="164" text-anchor="end">Operations</text><rect class="f-acc" x="258" y="150" width="56.2" height="20" rx="4" fill="currentColor" opacity="0.85"/><text class="f-lab f-ink tile-b" x="326.2" y="164">$202,800</text><text class="f-lab f-sec" x="242" y="195" text-anchor="end">Dissemination</text><rect class="f-acc" x="258" y="181" width="51.0" height="20" rx="4" fill="currentColor" opacity="0.85"/><text class="f-lab f-ink tile-b" x="321.0" y="195">$184,000</text><text class="f-lab f-sec" x="242" y="226" text-anchor="end">Fabrication and optics</text><rect class="f-acc" x="258" y="212" width="35.9" height="20" rx="4" fill="currentColor" opacity="0.85"/><text class="f-lab f-ink tile-b" x="305.9" y="226">$129,500</text><line class="f-grid" x1="48" y1="255" x2="850" y2="255" stroke="currentColor" stroke-width="1"/><text class="f-lab f-sec" x="242" y="281" text-anchor="end">Contingency, 12 per cent</text><text class="f-lab f-sec" x="270" y="281">$400,632</text><text class="f-lab f-gold-t tile-b" x="242" y="307" text-anchor="end">Total</text><text class="f-lab f-gold-t tile-b" x="270" y="307">$3,739,232</text></svg></div>
+<p>Every price was checked in September 2026 and carries its source. The
+3D printers are bought rather than outsourced because the print quality
+and surface finish of an optical chamber are part of what is being
+measured.</p>
+</div><div class="foot"><span>Cadence &middot; Pragma Research</span><span>19 / 20</span></div></section>
+<section class="slide"><div class="kicker">The ask</div><h1>$4,000,000 for 18 months</h1><div class="body"><p>Six hires, four robot bodies, the optical bench, and the six work
+packages on the previous pages. Smaller versions of the programme exist,
+and which work packages a smaller round buys is a conversation rather
+than a table.</p>
+<p>The code, the proofs, the data and the papers are released openly.
+The finished brains and the runtime are the company.</p>
+<p><strong>bernhard@floatingpragma.ai</strong> · floatingpragma.io ·
+github.com/muellerberndt/cadence</p>
+</div><div class="foot"><span>Cadence &middot; Pragma Research</span><span>20 / 20</span></div></section></body></html>
