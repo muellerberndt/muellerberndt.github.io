@@ -38,6 +38,7 @@
   h1 { font-family: var(--font-display); font-weight: 300; font-size: 30px; letter-spacing: -0.01em; margin: 0; font-variation-settings: "opsz" 72; }
   h1 em { font-style: italic; color: var(--sun); }
   header p { margin: 0; color: var(--ink-2); max-width: 70ch; }
+  header a, footer a { color: var(--sun); text-underline-offset: 3px; }
   .stage { display: grid; grid-template-columns: minmax(0, 1fr) 360px; gap: 18px; align-items: start; }
   .stage.inspecting { grid-template-columns: 1fr; }
   .left { display: grid; grid-template-columns: 1fr; gap: 10px; min-width: 0; }
@@ -87,6 +88,9 @@
   button.act:hover { border-color: var(--ink-2); }
   button.act[aria-pressed="true"] { border-color: var(--sun); color: var(--sun); }
   button.act.primary { border-color: var(--sun); }
+  @keyframes nudge { 0%, 100% { box-shadow: 0 0 0 0 rgba(240,197,106,0); } 50% { box-shadow: 0 0 0 6px rgba(240,197,106,0.28); } }
+  button.act.nudge { animation: nudge 1.6s ease-in-out 4; }
+  .chartnote { font-family: var(--font-mono); font-size: 11px; color: var(--ink-3); margin: 6px 0 0; }
   button:focus-visible, input:focus-visible { outline: 2px solid var(--sun); outline-offset: 2px; }
   .rate { font-family: var(--font-mono); font-size: 11px; color: var(--ink-2); display: inline-flex; gap: 2px; align-items: center; }
   .rate button { min-width: 34px; padding: 4px 6px; }
@@ -94,6 +98,7 @@
   details.board .card { font-size: 12.5px; color: var(--ink-2); max-width: 70ch; }
   details.board .card p { margin: 6px 0; }
   details.board .card b { color: var(--ink); font-weight: 500; }
+  details.board .card a { color: var(--sun); }
   .rulesbox { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 10px; font-size: 12px; margin: 6px 0; }
   .rulesbox label { white-space: nowrap; }
   footer { margin-top: 22px; color: var(--ink-3); font-family: var(--font-mono); font-size: 11px; }
@@ -103,25 +108,25 @@
   .cardtitle { display: none; } body.card .cardtitle { display: block; position: absolute; left: 56px; bottom: 52px; z-index: 3; text-shadow: 0 2px 18px #000, 0 0 4px #000; }
   .cardtitle b { display: block; font-family: var(--font-display); font-weight: 300; font-size: 84px; letter-spacing: -0.02em; line-height: 1; color: var(--ink); } .cardtitle b em { color: var(--sun); }
   .cardtitle span { display: block; margin-top: 14px; font-family: var(--font-body); font-size: 26px; color: var(--ink); max-width: 22em; line-height: 1.3; }
-  @media (max-width: 900px) { .stage, .left.inspecting { grid-template-columns: 1fr; } .view, .left.inspecting .view { height: 52vh; } body { padding-inline: 16px; } aside.inspecting { flex-direction: column; } }
+  @media (max-width: 900px) { #worldlegend, .hint { display: none; } .stage, .left.inspecting { grid-template-columns: 1fr; } .view, .left.inspecting .view { height: 52vh; } body { padding-inline: 16px; } aside.inspecting { flex-direction: column; } }
 </style>
 </head>
 <body>
 <header>
   <h1>Patch <em>World</em></h1>
-  <p>Soft bodies on a world that conserves its mass under one moving sun. Each inherits a shape, muscles and the slow weights of two record patches, learns records in its own life, and can plan its next moves through its own model of its body. Nothing tells them to crawl, eat or hunt; whatever you see, they found.</p>
+  <p>Soft bodies on a world that conserves its mass under one moving sun. Each inherits a shape, muscles and a small brain, learns during its own life, and can plan its next moves through its own model of its body. Every birth mutates body and brain. Nothing tells them to crawl, eat or hunt; whatever you see, they found. <a href="rules.html">The rules</a></p>
 </header>
 <div class="stage" id="stage">
   <div class="left" id="left">
     <div class="view" id="worldbox">
-      <canvas id="gl"></canvas>
+      <canvas id="gl" role="img" aria-label="The world in 3D: soft bodies crawling over soil, rock, mud and food under a moving sun"></canvas>
       <div class="legend" id="worldlegend"><span><i style="background:#9fd36a"></i>food, growing where the sun passes</span><span><i style="background:#6b7384;border-radius:2px"></i>rock</span><span><i style="background:#1f4a47;border-radius:2px"></i>mud, where every step slips</span><span><i style="background:#e08a3c"></i>a muscle contracting</span><span><i style="background:#4a9bd1"></i>a muscle extending</span></div>
       <div class="caption" id="caption">tick 0</div>
       <div class="hint">drag to orbit · shift-drag to pan · wheel to zoom<br>click a body to open its brain · Inspect shows every neuron<br>space pause · i inspect · f follow · d director</div>
       <div class="cardtitle"><b>Patch <em>World</em></b><span>Soft bodies evolve shapes, muscles and brains. Open any brain and watch it work.</span></div>
     </div>
     <div class="view" id="netbox" hidden>
-      <canvas id="net"></canvas>
+      <canvas id="net" role="img" aria-label="The chosen being's brain: every neuron, weight and record cell, lit by its activity this tick"></canvas>
       <div class="legend"><span><i style="background:#f0c56a"></i>senses</span><span><i style="background:#b6e264"></i>muscle strains</span><span><i style="background:#4a9bd1"></i>clock and context</span><span><i style="background:#e0679a"></i>motor</span><span><i style="background:#e08a3c"></i>prediction</span><span><i style="background:#ddd6c6"></i>records</span></div>
       <div class="caption" id="netcap">the two patches, live</div>
       <div class="hint">drag to turn the brain<br>lines shine with the signal they carry this tick</div>
@@ -129,8 +134,9 @@
     <div class="row wide">
       <span class="rate" id="rates"></span>
       <span class="rate" id="sizes"></span>
+      <span class="rate" id="colours"></span>
       <button class="act" id="pause">Pause</button>
-      <button class="act primary" id="inspect" aria-pressed="false">Inspect</button>
+      <button class="act primary nudge" id="inspect" aria-pressed="false" title="follow the chosen body beside its whole brain, live">Inspect</button>
       <button class="act" id="follow" aria-pressed="false">Follow</button>
       <button class="act" id="director" aria-pressed="true">Director</button>
       <button class="act" id="pickEldest">Eldest</button>
@@ -138,6 +144,7 @@
       <button class="act" id="pickBiggest">Biggest body</button>
       <button class="act" id="pickHunter">A hunter</button>
       <button class="act" id="export">Export chronicle</button>
+      <button class="act" id="share">Link to this world</button>
     </div>
     <div class="ticker wide" id="ticker"></div>
   </div>
@@ -153,6 +160,7 @@
       <h2>The world <small id="worldSub"></small></h2>
       <dl class="counters" id="counters"></dl>
       <canvas id="shares" width="336" height="90" title="the share of the population held by each lineage over time"></canvas>
+      <p class="chartnote">One lineage usually takes the world within 10,000 to 20,000 ticks. Set ticks/s to max to watch it happen, then export the chronicle to see why.</p>
       <div class="lineages" id="lineages"></div>
     </div>
     <details class="board">
@@ -167,12 +175,13 @@
         <p><b>Inherited.</b> The body graph with its grips, the clock's frequency, the split threshold, the drives, the size of the records, the learning rates, the planning horizon, and the slow weights of two record patches: a policy that proposes the motor from the reading, the clock and the previous motor, and a model that predicts the change of the reading and the energy change from the reading, the clock and the motor. A child is born with three nodes and grows the rest one unit of mass at a time. Every genome is mutated at birth: node positions, grips, nodes added or removed, muscles gained or lost, and small steps on the slow weights.</p>
         <p><b>Learned in one life.</b> The records of both patches: what the slow readout got wrong at each reading, written after every window of eight ticks. The slow weights move by the adjoint of the same window at the inherited rate, which may be zero. The planner repairs the motor ports of a private path under the model toward the drives, executes the first repaired motor, and the policy is taught that repair. Records are never inherited.</p>
         <p><b>Price.</b> A base rate, per node, per unit of muscle work, per unit read, per record cell, per write, per planning replay, and per slow weight while learning, each paid as the probability of losing one unit of mass to the soil. Nothing else selects.</p>
+        <p><b>More.</b> Every rule with its numbers is on <a href="rules.html">the rules page</a>.</p>
         <p><b>Brain.</b> The patches are the JavaScript twin of <code>cadence.RecordPatchNet</code>, checked against the library to 1e-15 on observation, windows, backtracking and planning. The records here use a sparse projection with eight inputs per cell; the library's dense projection is the reference. In the inspection view every line is a slow weight and shines with the signal it carries this tick; the grid is the record cells, the lit ones are the reading's code. The founders come from the gait lab, an explicit search outside the world that the world never sees again.</p>
       </div>
     </details>
   </aside>
 </div>
-<footer>A Cadence example. Everything runs in this page: the world, the bodies and every brain. MIT.</footer>
+<footer>A Cadence example. Everything runs in this page: the world, the bodies and every brain. MIT. <a href="rules.html">The rules of Patch World</a></footer>
 <script>
 /* RecordPatch: the JavaScript twin of cadence.RecordPatchNet, with online windows and action planning.
 
@@ -999,6 +1008,9 @@ setPopulation(worldSize); const MAXPOP = Math.max(SIZES.large, worldSize);
 const RATES = [0, 1, 4, 10, 30, 60, 120, 240, 'max'];
 const $ = id => document.getElementById(id);
 const hsl = (h, s, l) => new THREE.Color().setHSL(h, s, l);
+let colourBy = 'lineage';
+function shapeHue(b) { if (b._shapeHue === undefined) { const key = `${b.nGenome}/${b.g.springs.filter(x => x.muscle).length}/${b.g.springs.length}/${b.g.brain.policy.map(c => c.channels).join('.')}/${b.g.brain.model.map(c => c.channels).join('.')}`; let h = 2166136261; for (let i = 0; i < key.length; i++) { h ^= key.charCodeAt(i); h = Math.imul(h, 16777619); } b._shapeHue = ((h >>> 0) % 997) / 997; } return b._shapeHue; }
+const hueOf = b => colourBy === 'shape' ? shapeHue(b) : b.hue;
 
 // ---------- the 3D world ----------
 const glCanvas = $('gl'); let renderer;
@@ -1016,6 +1028,8 @@ const cx0 = CFG.w / 2 - 0.5, cz0 = CFG.h / 2 - 0.5;
 const groundGeo = new THREE.PlaneGeometry(CFG.w, CFG.h, CFG.w, CFG.h); groundGeo.rotateX(-Math.PI / 2); groundGeo.translate(cx0, 0, cz0);
 const groundCol = new Float32Array(groundGeo.attributes.position.count * 3); groundGeo.setAttribute('color', new THREE.BufferAttribute(groundCol, 3));
 const ground = new THREE.Mesh(groundGeo, new THREE.MeshStandardMaterial({ vertexColors: true, roughness: 0.92, metalness: 0.0 })); ground.receiveShadow = true; scene.add(ground);
+const skirt = new THREE.Mesh(new THREE.CircleGeometry(420, 48), new THREE.MeshStandardMaterial({ color: 0x05060a, roughness: 1 })); skirt.rotation.x = -Math.PI / 2; skirt.position.set(cx0, -0.12, cz0); skirt.receiveShadow = true; scene.add(skirt);
+const rim = new THREE.LineSegments(new THREE.EdgesGeometry(new THREE.BoxGeometry(CFG.w, 0.02, CFG.h)), new THREE.LineBasicMaterial({ color: 0x3a4152, transparent: true, opacity: 0.6 })); rim.position.set(cx0, 0.0, cz0); scene.add(rim);
 const rockMesh = new THREE.InstancedMesh(new THREE.BoxGeometry(1, 1, 1), new THREE.MeshStandardMaterial({ color: 0x4d5566, roughness: 0.8, flatShading: true }), N); rockMesh.castShadow = !LITE; rockMesh.receiveShadow = true; scene.add(rockMesh);
 const foodGeo = new THREE.ConeGeometry(0.13, 1, 5); foodGeo.translate(0, 0.5, 0);
 const foodMesh = new THREE.InstancedMesh(foodGeo, new THREE.MeshStandardMaterial({ roughness: 0.6, emissive: 0x1a3a10, emissiveIntensity: 0.5 }), N); foodMesh.instanceMatrix.setUsage(THREE.DynamicDrawUsage); foodMesh.castShadow = !LITE; scene.add(foodMesh);
@@ -1027,6 +1041,8 @@ const marker = new THREE.Mesh(new THREE.TorusGeometry(1.1, 0.06, 8, 40), new THR
 const ghosts = []; for (let i = 0; i < 8; i++) { const m = new THREE.Mesh(new THREE.SphereGeometry(0.13, 8, 6), new THREE.MeshBasicMaterial({ color: 0xf0c56a, transparent: true, opacity: 0.7 })); m.visible = false; scene.add(m); ghosts.push(m); }
 const puffs = []; for (let i = 0; i < 120; i++) { const m = new THREE.Mesh(new THREE.SphereGeometry(0.12, 6, 5), new THREE.MeshBasicMaterial({ color: 0xffffff, transparent: true, opacity: 0.9 })); m.visible = false; scene.add(m); puffs.push(m); }
 const rings = []; for (let i = 0; i < 40; i++) { const m = new THREE.Mesh(new THREE.RingGeometry(0.6, 0.8, 24), new THREE.MeshBasicMaterial({ color: 0xb6e264, transparent: true, opacity: 0.8, side: THREE.DoubleSide })); m.rotation.x = -Math.PI / 2; m.visible = false; scene.add(m); rings.push(m); }
+const TRAIL = 220, trailGeo = new THREE.BufferGeometry(); trailGeo.setAttribute('position', new THREE.BufferAttribute(new Float32Array(TRAIL * 3), 3)); trailGeo.setAttribute('color', new THREE.BufferAttribute(new Float32Array(TRAIL * 3), 3));
+const trailLine = new THREE.Line(trailGeo, new THREE.LineBasicMaterial({ vertexColors: true, transparent: true, opacity: 0.9, depthWrite: false })); trailLine.frustumCulled = false; scene.add(trailLine); let trail = [], trailFor = null, trailTick = -1;
 const sunBar = new THREE.Mesh(new THREE.PlaneGeometry(2.2, CFG.h), new THREE.MeshBasicMaterial({ color: 0xf0c56a, transparent: true, opacity: 0.12, depthWrite: false })); sunBar.rotation.x = -Math.PI / 2; sunBar.position.y = 0.02; scene.add(sunBar);
 const _m = new THREE.Matrix4(), _p = new THREE.Vector3(), _q = new THREE.Quaternion(), _s = new THREE.Vector3(), _c = new THREE.Color(), _z = new THREE.Vector3(0, 0, 1), _d = new THREE.Vector3();
 
@@ -1055,7 +1071,7 @@ addEventListener('resize', resize);
 // ---------- the clock ----------
 let sub, pop, seed = 0, paused = false, rate = Q.has('rate') ? (Q.get('rate') === 'max' ? 'max' : +Q.get('rate')) : 30, acc = 0, lastNow = performance.now(), chosen = null, mass0 = 0, frame = 0, inspecting = false;
 let tps = 0, tpsTicks = 0, tpsSince = performance.now(); // the achieved ticks per second
-const anims = [], ticker = []; let directorNext = 0;
+const anims = [], ticker = []; let directorNext = 0, firstWorld = true;
 function tick() {
   sub.step(); pop.step();
   for (const e of pop.events) {
@@ -1078,7 +1094,7 @@ function say(e) {
   $('ticker').innerHTML = ticker.map(t => `<div class="${t.cls}">${t.line}</div>`).join('');
 }
 function newWorld(rules) {
-  seed = Q.has('seed') ? +Q.get('seed') : (Math.random() * 1e9) | 0; sub = new Substrate(seed, rules); pop = new Population(sub, seed + 1, FOUNDER); mass0 = pop.mass; chosen = null; anims.length = 0; ticker.length = 0; $('ticker').innerHTML = '';
+  seed = (firstWorld && Q.has('seed')) ? +Q.get('seed') : (Math.random() * 1e9) | 0; firstWorld = false; sub = new Substrate(seed, rules); pop = new Population(sub, seed + 1, FOUNDER); mass0 = pop.mass; chosen = null; anims.length = 0; ticker.length = 0; $('ticker').innerHTML = '';
   buildRock(); paintGround(); directorNext = 0; netFor = null;
 }
 function buildRock() { let k = 0; const rng = new CB.Mulberry(seed); for (let i = 0; i < N; i++) { if (!sub.rock[i]) continue; const x = i % CFG.w, z = (i / CFG.w) | 0, h = 0.55 + rng.random() * 0.35; _m.compose(_p.set(x, h / 2 - 0.02, z), _q.identity(), _s.set(1, h, 1)); rockMesh.setMatrixAt(k++, _m); } rockMesh.count = k; rockMesh.instanceMatrix.needsUpdate = true; }
@@ -1092,8 +1108,11 @@ function paintGround() {
   }
   groundGeo.attributes.color.needsUpdate = true; pos.needsUpdate = true;
 }
+let slowFrames = 0, qualityDropped = LITE;
+function dropQuality() { qualityDropped = true; renderer.shadowMap.enabled = false; sunLight.castShadow = false; renderer.setPixelRatio(1); scene.traverse(o => { if (o.material) o.material.needsUpdate = true; }); resize(); }
 function render(now) {
   const dt = Math.min(0.1, (now - lastNow) / 1000); lastNow = now; frame++;
+  if (!qualityDropped && frame > 40 && frame < 400 && rate !== 'max') { if (dt > 0.034) slowFrames++; if (slowFrames > 45) dropQuality(); }
   if (!paused && rate !== 0) { // the budget of a frame given to the simulation grows with the rate; at max the page renders around ten times a second
     const max = rate === 'max', ms = max ? 90 : rate <= 60 ? 14 : rate <= 120 ? 28 : 55; if (!max) acc += dt * rate; let steps = 0; const budget = performance.now() + ms;
     while ((max || acc >= 1) && steps < 400 && performance.now() < budget) { tick(); if (!max) acc -= 1; steps++; tpsTicks++; } if (!max && acc > 4) acc = 0;
@@ -1107,7 +1126,7 @@ function render(now) {
   foodMesh.count = k; foodMesh.instanceMatrix.needsUpdate = true; if (foodMesh.instanceColor) foodMesh.instanceColor.needsUpdate = true;
   let nk = 0, sk = 0, hk = 0;
   for (const b of pop.beings) {
-    const hx = b.x[0], hy = b.y[0], hue = b.hue, n = b.n; const rx = x => hx + ddx(hx, x, CFG.w), rz = y => hy + ddx(hy, y, CFG.h);
+    const hx = b.x[0], hy = b.y[0], hue = hueOf(b), n = b.n; const rx = x => hx + ddx(hx, x, CFG.w), rz = y => hy + ddx(hy, y, CFG.h);
     for (let i = 0; i < n; i++) { const r = i === 0 ? 0.3 : 0.22; _m.compose(_p.set(rx(b.x[i]), r, rz(b.y[i])), _q.identity(), _s.set(r, r, r)); nodeMesh.setMatrixAt(nk, _m); nodeMesh.setColorAt(nk, _c.setHSL(hue, i === 0 ? 0.6 : 0.5, i === 0 ? 0.62 : 0.5)); nk++; }
     for (let s = 0; s < b.nS; s++) {
       const a = b.sa[s], c = b.sb[s]; if (a >= n || c >= n) continue;
@@ -1134,10 +1153,13 @@ function render(now) {
   if (cam.director && !inspecting) direct();
   if (chosen) {
     marker.visible = true; marker.position.set(chosen.x[0], 0.05, chosen.y[0]); marker.scale.setScalar(0.8 + 0.1 * chosen.n);
+    if (trailFor !== chosen) { trailFor = chosen; trail = []; } // where the chosen one has been: a fading line behind its head
+    if (sub.tick !== trailTick) { trailTick = sub.tick; const last = trail[trail.length - 1]; if (last && Math.hypot(last[0] - chosen.x[0], last[1] - chosen.y[0]) > 6) trail = []; trail.push([chosen.x[0], chosen.y[0]]); if (trail.length > TRAIL) trail.shift(); }
+    { const tp = trailGeo.attributes.position.array, tc = trailGeo.attributes.color.array, n = trail.length; for (let i = 0; i < n; i++) { tp[i * 3] = trail[i][0]; tp[i * 3 + 1] = 0.06; tp[i * 3 + 2] = trail[i][1]; const f = Math.pow((i + 1) / n, 2); tc[i * 3] = 0.94 * f; tc[i * 3 + 1] = 0.77 * f; tc[i * 3 + 2] = 0.42 * f; } trailGeo.setDrawRange(0, n); trailGeo.attributes.position.needsUpdate = true; trailGeo.attributes.color.needsUpdate = true; trailLine.visible = n > 1 && !CARD; }
     drawGhosts(chosen);
     if (cam.follow || inspecting) { const k = inspecting ? 0.15 : 0.08; cam.target.x += (chosen.x[0] - cam.target.x) * k; cam.target.z += (chosen.y[0] - cam.target.z) * k; }
     if (inspecting) { cam.dist += (9 - cam.dist) * 0.05; cam.pol += (1.05 - cam.pol) * 0.05; cam.az += 0.0025; }
-  } else { marker.visible = false; for (const g of ghosts) g.visible = false; }
+  } else { marker.visible = false; trailLine.visible = false; for (const g of ghosts) g.visible = false; }
   if (CARD) { marker.visible = false; for (const g of ghosts) g.visible = false; for (const r of rings) r.visible = false; }
   placeCamera(); renderer.render(scene, camera);
   if (inspecting) netRender();
@@ -1311,7 +1333,7 @@ function drawShares() { // the population as stacked shares of its eight largest
 }
 function beingPanel(b) {
   const g = b.g; $('beingSub').textContent = `#${b.id} · lineage ${b.lineage} · age ${b.age}`;
-  $('who').innerHTML = `<i style="background:${hsl(b.hue, 0.55, 0.55).getStyle()}"></i><span><b>#${b.id}</b> energy ${b.energy} · ${b.n} of ${b.nGenome} nodes · ${g.springs.filter(s => s.muscle).length} muscles · ate ${b.eats} · bit ${b.bites} · ${b.speed >= 0 ? 'ahead' : 'back'} ${Math.abs(b.speed).toFixed(3)}/tick</span>`;
+  $('who').innerHTML = `<i style="background:${hsl(hueOf(b), 0.55, 0.55).getStyle()}"></i><span><b>#${b.id}</b> energy ${b.energy} · ${b.n} of ${b.nGenome} nodes · ${g.springs.filter(s => s.muscle).length} muscles · ate ${b.eats} · bit ${b.bites} · ${b.speed >= 0 ? 'ahead' : 'back'} ${Math.abs(b.speed).toFixed(3)}/tick</span>`;
   $('genes').innerHTML = [['records', b.policy.D ? b.policy.D + ' cells' : 'none'], ['horizon', b.horizon], ['slow rate', b.slowRate], ['noise', b.noise], ['clock', G(g, 'freq')], ['split at', G(g, 'splitAt')], ['drives', `food ${G(g, 'dFood')} energy ${G(g, 'dEnergy')} pain ${G(g, 'dPain')} speed ${G(g, 'dSpeed')}`], ['plans', b.plans ? `${b.plans}, ${Math.round(100 * b.planAccepted / b.plans)}% repaired, ${Math.round(100 * b.planConfirmed / b.plans)}% confirmed by readback` : '0'], ['brain', `policy ${b.g.brain.policy.map(c => c.channels).join('+')} ch in ${b.g.brain.policy.length} · model ${b.g.brain.model.map(c => c.channels).join('+')} ch in ${b.g.brain.model.length}`], ['learned', `${b.model.updates + b.policy.updates} steps, ${b.model.writes + b.policy.writes} writes`]]
     .map(([k, v]) => `<span>${k} <b>${v}</b></span>`).join('');
   if (traceFor !== b) { traceFor = b; trace.pred.length = trace.actual.length = 0; }
@@ -1333,26 +1355,27 @@ function bars(c, x, y, w, h, vals, lo, hi, color, count, outline) { const n = co
 function drawBrain(b) {
   const c = brainCtx, W = 336, H = 420; c.clearRect(0, 0, W, H); c.fillStyle = '#0d1016'; c.fillRect(0, 0, W, H); c.font = '10px IBM Plex Mono';
   const label = (t, x, y, col) => { c.fillStyle = col || '#8d8a80'; c.fillText(t, x, y); };
-  label('reading: senses · strains · clock · last motor', 8, 12);
-  bars(c, 8, 16, 150, 22, b.sense, -1, 1, '#f0c56a', NS); bars(c, 162, 16, 70, 22, b.sense.subarray(NS), -1, 1, '#b6e264', MAXM); bars(c, 236, 16, 16, 22, b.pu.subarray(CLOCK), -1, 1, '#4a9bd1', 2); bars(c, 256, 16, 72, 22, b.prevCmd, -1, 1, '#e0679a', NM);
-  const patch = (net, y, title, outs, outLabel, actual, cortices) => { // one patch: the context, the record cells, the outputs; 74 px tall
-    label(title, 8, y + 10, '#ddd6c6'); label(`context, ${cortices.length} ${cortices.length === 1 ? 'cortex' : 'cortices'}`, 8, y + 22);
-    { let row = 0; const bw = 100 / net.H; cortices.forEach((cx, k) => { c.fillStyle = hsl(CORTEX_HUES[k % CORTEX_HUES.length], 0.55, 0.6).getStyle(); for (let i = 0; i < cx.channels; i++, row++) { const v = Math.max(-1, Math.min(1, net.h[row])), f = (v + 1) / 2; c.fillRect(8 + row * bw, y + 26 + 44 - f * 44, bw - 1, f * 44); } }); }
-    label(net.D ? `records ${net.D}` : 'records none', 116, y + 22);
-    if (net.D) { const side = Math.ceil(Math.sqrt(net.D)), cw = Math.min(4, 100 / side, 46 / side); const on = new Uint8Array(net.D); for (let a = 0; a < net.k; a++) on[net.ci[a]] = 1;
-      for (let i = 0; i < net.D; i++) { let mag = 0; for (let j = 0; j < net.O; j++) mag += Math.abs(net.table[i * net.O + j]); const l = Math.min(1, mag * 2); c.fillStyle = on[i] ? '#f0c56a' : `rgba(221,214,198,${0.08 + 0.6 * l})`; c.fillRect(116 + (i % side) * cw, y + 26 + Math.floor(i / side) * cw, cw - 1, cw - 1); } }
-    label(outLabel, 226, y + 22); bars(c, 226, y + 26, 102, 44, outs, -1, 1, '#e08a3c', outs.length); if (actual) bars(c, 226, y + 26, 102, 44, actual, -1, 1, '#ddd6c6', actual.length, true);
+  label('reading', 8, 12, '#ddd6c6'); label('senses', 8, 50); label('strains', 162, 50); label('clock', 226, 50); label('last motor', 268, 50);
+  bars(c, 8, 16, 150, 24, b.sense, -1, 1, '#f0c56a', NS); bars(c, 162, 16, 66, 24, b.sense.subarray(NS), -1, 1, '#b6e264', MAXM); bars(c, 232, 16, 22, 24, b.pu.subarray(CLOCK), -1, 1, '#4a9bd1', 2); bars(c, 262, 16, 66, 24, b.prevCmd, -1, 1, '#e0679a', NM);
+  const patch = (net, y, title, outs, outLabel, actual, cortices) => { // one patch: the context by cortex, the record cells, the outputs
+    label(`${title} · ${cortices.length} ${cortices.length === 1 ? 'cortex' : 'cortices'}`, 8, y + 10, '#ddd6c6');
+    label('context', 8, y + 24); label(net.D ? `records · ${net.D}` : 'no records', 122, y + 24); label(outLabel, 214, y + 24);
+    { let row = 0; const bw = 104 / net.H; cortices.forEach((cx, k) => { c.fillStyle = hsl(CORTEX_HUES[k % CORTEX_HUES.length], 0.55, 0.6).getStyle(); for (let i = 0; i < cx.channels; i++, row++) { const v = Math.max(-1, Math.min(1, net.h[row])), f = (v + 1) / 2; c.fillRect(8 + row * bw, y + 28 + 46 - f * 46, Math.max(1, bw - 1), f * 46); } }); }
+    if (net.D) { const side = Math.ceil(Math.sqrt(net.D)), cw = Math.min(4, 84 / side, 46 / side); const on = new Uint8Array(net.D); for (let a = 0; a < net.k; a++) on[net.ci[a]] = 1;
+      for (let i = 0; i < net.D; i++) { let mag = 0; for (let j = 0; j < net.O; j++) mag += Math.abs(net.table[i * net.O + j]); const l = Math.min(1, mag * 2); c.fillStyle = on[i] ? '#f0c56a' : `rgba(221,214,198,${0.08 + 0.6 * l})`; c.fillRect(122 + (i % side) * cw, y + 28 + Math.floor(i / side) * cw, cw - 1, cw - 1); } }
+    bars(c, 214, y + 28, 114, 46, outs, -1, 1, '#e08a3c', outs.length); if (actual) bars(c, 214, y + 28, 114, 46, actual, -1, 1, '#ddd6c6', actual.length, true);
   };
-  patch(b.policy, 44, 'policy: proposes the motor', b.prop, 'proposal · executed', b.cmd, b.g.brain.policy);
-  patch(b.model, 126, 'model: predicts the next reading', b.predNext, 'predicted · actual', b.sense, b.g.brain.model);
-  const y = 208; label(b.horizon > 0 ? `plan: horizon ${b.horizon} · ${b.plans ? Math.round(100 * b.planAccepted / b.plans) : 0}% repaired · ${b.plans ? Math.round(100 * b.planConfirmed / b.plans) : 0}% confirmed` : 'plan: none (horizon 0), the reflex acts', 8, y + 10, '#ddd6c6');
-  label('proposal (grey) · executed (amber)', 8, y + 22); bars(c, 8, y + 26, 160, 34, b.prop, -1, 1, '#5a5a58', MAXM); bars(c, 8, y + 26, 160, 34, b.cmd, -1, 1, '#f0c56a', MAXM, true);
-  label(`price ${(POP.base + POP.node * b.n + b.brainPrice).toFixed(3)}/tick · mouth ${b.cmd[MAXM].toFixed(2)}`, 176, y + 22); label(`model error ${b.lastErr !== undefined ? b.lastErr.toFixed(4) : '-'}`, 176, y + 36); label(`early ${b.nEarly ? (b.errEarly / b.nEarly).toFixed(4) : '-'} · late ${b.nLate ? (b.errLate / b.nLate).toFixed(4) : '-'}`, 176, y + 50);
-  const ty = 278; label('predicted speed (amber) against actual (white), last 90 ticks', 8, ty + 10);
-  c.strokeStyle = '#232833'; c.beginPath(); c.moveTo(8, ty + 60); c.lineTo(328, ty + 60); c.stroke();
-  const line = (arr, col) => { c.strokeStyle = col; c.beginPath(); arr.forEach((v, i) => { const x = 8 + i * 320 / 90, yy = ty + 60 - v * 40; if (i) c.lineTo(x, yy); else c.moveTo(x, yy); }); c.stroke(); };
+  patch(b.policy, 58, 'policy · proposes the motor', b.prop, 'proposal · executed', b.cmd, b.g.brain.policy);
+  patch(b.model, 142, 'model · predicts the next reading', b.predNext, 'predicted · actual', b.sense, b.g.brain.model);
+  const y = 228; label(b.horizon > 0 ? `plan · ${b.horizon} ${b.horizon === 1 ? 'tick' : 'ticks'} ahead · ${b.plans ? Math.round(100 * b.planAccepted / b.plans) : 0}% repaired · ${b.plans ? Math.round(100 * b.planConfirmed / b.plans) : 0}% confirmed` : 'plan · none, the reflex acts', 8, y + 10, '#ddd6c6');
+  label('motor: proposed (grey), executed (amber)', 8, y + 24); bars(c, 8, y + 28, 320, 30, b.prop, -1, 1, '#5a5a58', NM); bars(c, 8, y + 28, 320, 30, b.cmd, -1, 1, '#f0c56a', NM, true);
+  label(`price ${(POP.base + POP.node * b.n + b.brainPrice).toFixed(3)} per tick · model error ${b.lastErr !== undefined ? b.lastErr.toFixed(4) : '-'}`, 8, y + 74);
+  label(`error early in life ${b.nEarly ? (b.errEarly / b.nEarly).toFixed(4) : '-'} · later ${b.nLate ? (b.errLate / b.nLate).toFixed(4) : '-'}`, 8, y + 88);
+  const ty = 328; label('speed: predicted (amber), actual (white), last 90 ticks', 8, ty + 10);
+  c.strokeStyle = '#232833'; c.beginPath(); c.moveTo(8, ty + 52); c.lineTo(328, ty + 52); c.stroke();
+  const line = (arr, col) => { c.strokeStyle = col; c.lineWidth = 1.5; c.beginPath(); arr.forEach((v, i) => { const x = 8 + i * 320 / 90, yy = ty + 52 - v * 36; if (i) c.lineTo(x, yy); else c.moveTo(x, yy); }); c.stroke(); c.lineWidth = 1; };
   line(trace.pred, '#e08a3c'); line(trace.actual, '#ddd6c6');
-  label(`ate ${b.eats} · bitten ${b.bitten} · pain ${b.pain} · moved ${b.dist.toFixed(1)} cells`, 8, ty + 130);
+  label(`ate ${b.eats} · bitten ${b.bitten} · moved ${b.dist.toFixed(1)} cells`, 8, H - 8);
 }
 
 // ---------- controls ----------
@@ -1369,6 +1392,9 @@ $('pickEldest').addEventListener('click', () => pickBy(b => b.age));
 $('pickPlanner').addEventListener('click', () => pickBy(b => b.horizon * 1000 + b.planAccepted));
 $('pickBiggest').addEventListener('click', () => pickBy(b => b.n * 10 + b.g.springs.filter(s => s.muscle).length));
 $('pickHunter').addEventListener('click', () => pickBy(b => b.bites));
+$('colours').innerHTML = 'colour ' + ['lineage', 'shape'].map(k => `<button class="act" data-colour="${k}" aria-pressed="${k === colourBy}" title="${k === 'lineage' ? 'one hue per founder lineage' : 'one hue per layout of body and brain, so new body plans stand out'}">${k}</button>`).join('');
+$('colours').addEventListener('click', e => { const bt = e.target.closest('button'); if (!bt) return; colourBy = bt.dataset.colour; for (const x of $('colours').querySelectorAll('button')) x.setAttribute('aria-pressed', String(x.dataset.colour === colourBy)); });
+$('share').addEventListener('click', async () => { const url = `${location.origin}${location.pathname}?seed=${seed}`; try { await navigator.clipboard.writeText(url); $('share').textContent = 'Link copied'; } catch (e) { prompt('A link to this world:', url); } setTimeout(() => { $('share').textContent = 'Link to this world'; }, 1800); });
 $('export').addEventListener('click', () => { // the chronicle as a file: every lineage every hundred ticks, the events, genome samples, the largest lineages' full genomes
   const data = pop.chronicle.export(pop); data.meta.seed = seed; const blob = new Blob([JSON.stringify(data)], { type: 'application/json' });
   const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = `patch-world-bodies-seed${seed}-tick${sub.tick}.chronicle.json`; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 2000);
