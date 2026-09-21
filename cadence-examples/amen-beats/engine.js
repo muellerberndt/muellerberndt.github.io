@@ -80,7 +80,9 @@ const argmax = (a, s, e) => { let m = s; for (let i = s + 1; i < e; i++) if (a[i
 const clamp = (x, a, b) => Math.max(a, Math.min(b, x));
 
 // The event actually played from an output row. 'argmax' plays the highest-scoring slice; 'sample' draws a change
-// point with the predicted probability times `energy` and there makes a roll or a retrigger from the slice heard before.
+// point with the predicted probability times `energy` and there makes one of three moves from the slice heard before,
+// with equal probability: a roll (repeat it), a retrigger (restart the break at a bar start) or a bar jump (the same
+// position in another bar of the break); where a move has a choice, the brain's squared scores decide.
 // With `bassPower` set, a new bass note is drawn with probability proportional to its score to that power, the
 // brain's own spread over plausible notes; otherwise the highest-scoring note plays.
 export function executed(out, L, retriggers, mode, random, previous, energy = 1, bassPower = 0) {
@@ -90,12 +92,13 @@ export function executed(out, L, retriggers, mode, random, previous, energy = 1,
   for (let k = 0; k < L.texture_ports; k++) e[L.texture_start + k] = clamp(out[L.texture_start + k], 0, 1);
   if (out[L.drum_on] > 0.5) {
     const heard = previous && previous[L.drum_on] > 0.5; let crop;
-    if (mode === 'sample' && change && heard && random() < 0.5) crop = argmax(previous, 0, L.crops);
-    else if (mode === 'sample' && change) {
-      const w = retriggers.map(k => Math.pow(Math.max(out[k], 0), 2) + 1e-9), total = w.reduce((a, b) => a + b, 0); let draw = random() * total, pick = retriggers.length - 1;
-      for (let i = 0; i < w.length; i++) { draw -= w[i]; if (draw <= 0) { pick = i; break; } }
-      crop = retriggers[pick];
-    } else crop = argmax(out, 0, L.crops);
+    const pick = options => { const w = options.map(k => Math.pow(Math.max(out[k], 0), 2) + 1e-9), total = w.reduce((a, b) => a + b, 0); let draw = random() * total;
+      for (let i = 0; i < w.length; i++) { draw -= w[i]; if (draw <= 0) return options[i]; } return options[options.length - 1]; };
+    const move = mode === 'sample' && change ? random() : -1;
+    if (move >= 0 && heard && move < 1 / 3) crop = argmax(previous, 0, L.crops);
+    else if (move >= 0 && heard && move >= 2 / 3) { const next = (argmax(previous, 0, L.crops) + 1) % L.crops; crop = pick([8, 16, 24].map(d => (next + d) % L.crops)); }
+    else if (move >= 0) crop = pick(retriggers);
+    else crop = argmax(out, 0, L.crops);
     e[crop] = 1; e[L.drum_on] = 1; e[L.drum_gain] = clamp(out[L.drum_gain], 0, 1);
   }
   if (out[L.bass_on] > 0.5) {
