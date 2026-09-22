@@ -1,0 +1,143 @@
+{
+ "kind": "cadence-player/page-receipt/v1",
+ "build": "imitated brain of G1 (one day, one night), test seed 990001, 504 decisions, 3,050 points",
+ "controls_first_death_30_test_seeds": {
+  "fire": 333.3,
+  "random": 808.3,
+  "sweep": 3345.0
+ },
+ "g1": {
+  "moving_slow_alone_at_dawn": 0.0,
+  "moving_store_and_slow_at_bedtime": 0.012371134020618556,
+  "moving_store_and_slow_at_dawn": 0.0,
+  "all_rows_slow_alone_at_dawn": 0.9178333333333333,
+  "majority": 0.9191666666666667,
+  "margin": 0.012371134020618556,
+  "store_smaller_at_dawn": true,
+  "pass": false
+ },
+ "g1_arms": {
+  "two_phase": {
+   "bedtime": {
+    "rows": 6000.0,
+    "exact_store_and_slow": 0.8921666666666667,
+    "exact_slow_alone": 0.0,
+    "slot_store_and_slow": [
+     0.9238333333333333,
+     0.9263333333333333,
+     0.9995
+    ],
+    "slot_slow_alone": [
+     0.038,
+     0.768,
+     0.0003333333333333333
+    ],
+    "majority": 0.9191666666666667,
+    "moving_rows": 485.0,
+    "moving_exact_store_and_slow": 0.012371134020618556,
+    "moving_exact_slow_alone": 0.0
+   },
+   "dawn": {
+    "rows": 6000.0,
+    "exact_store_and_slow": 0.9143333333333333,
+    "exact_slow_alone": 0.9178333333333333,
+    "slot_store_and_slow": [
+     0.9368333333333333,
+     0.9396666666666667,
+     0.9995
+    ],
+    "slot_slow_alone": [
+     0.9398333333333333,
+     0.9396666666666667,
+     0.9995
+    ],
+    "majority": 0.9191666666666667,
+    "moving_rows": 485.0,
+    "moving_exact_store_and_slow": 0.0,
+    "moving_exact_slow_alone": 0.0
+   }
+  },
+  "no_night": {
+   "bedtime": {
+    "rows": 6000.0,
+    "exact_store_and_slow": 0.8921666666666667,
+    "exact_slow_alone": 0.0,
+    "slot_store_and_slow": [
+     0.9238333333333333,
+     0.9263333333333333,
+     0.9995
+    ],
+    "slot_slow_alone": [
+     0.038,
+     0.768,
+     0.0003333333333333333
+    ],
+    "majority": 0.9191666666666667,
+    "moving_rows": 485.0,
+    "moving_exact_store_and_slow": 0.012371134020618556,
+    "moving_exact_slow_alone": 0.0
+   }
+  },
+  "teacher_forced": {
+   "after": {
+    "rows": 6000.0,
+    "exact_store_and_slow": 0.9153333333333333,
+    "exact_slow_alone": 0.9153333333333333,
+    "slot_store_and_slow": [
+     0.9391666666666667,
+     0.9398333333333333,
+     0.9995
+    ],
+    "slot_slow_alone": [
+     0.9391666666666667,
+     0.9398333333333333,
+     0.9995
+    ],
+    "majority": 0.9191666666666667,
+    "moving_rows": 485.0,
+    "moving_exact_store_and_slow": 0.06391752577319587,
+    "moving_exact_slow_alone": 0.06391752577319587
+   }
+  }
+ },
+ "g2": {
+  "near_rise": 0.18774678339002976,
+  "far_rise": 0.027077050325174195,
+  "selectivity": 0.16066973306485557,
+  "shuffled_near_rise": 0.27735402823762156,
+  "shuffled_far_rise": 0.1819911891086588,
+  "shuffled_selectivity": 0.09536283912896276,
+  "pass": true,
+  "criterion": "selectivity (near rise minus far rise) above the shuffled control; re-derived from the arms after the criterion correction"
+ },
+ "g2_arms": {
+  "one_episode": {
+   "near_before": -0.049083169833424554,
+   "near_after": 0.1386636135566052,
+   "far_before": -0.031308904917084796,
+   "far_after": -0.0042318545919106006,
+   "near_rise": 0.18774678339002976,
+   "far_rise": 0.027077050325174195
+  },
+  "store_off": {
+   "near_before": -0.049083169833424554,
+   "near_after": -0.049083169833424554,
+   "far_before": -0.031308904917084796,
+   "far_after": -0.031308904917084796,
+   "near_rise": 0.0,
+   "far_rise": 0.0
+  },
+  "shuffled": {
+   "near_before": -0.049083169833424554,
+   "near_after": 0.228270858404197,
+   "far_before": -0.031308904917084796,
+   "far_after": 0.150682284191574,
+   "near_rise": 0.27735402823762156,
+   "far_rise": 0.1819911891086588
+  }
+ },
+ "files": {
+  "g1.json": "5ccbf2fd77c0bc8774e33881f3906fe11c11ae1a6319ca1ef0900c91ef70148e",
+  "g2.json": "5b5eb91311b3659858d2f7030157ce5c93a277285cbb5ddefc84ddbb511a789f"
+ }
+}
