@@ -201,5 +201,5 @@
    "training_cpu_seconds": 4360
   }
  ],
- "default": "three-corpora-0-12"
+ "default": "three-corpora"
 }
