@@ -1,104 +1,29 @@
 {
- "kind": "cadence-player/page-receipt/v1",
- "build": "imitated brain of G1 (one day, one night), test seed 990001, 504 decisions, 3,050 points",
+ "kind": "cadence-player/page-receipt/v2",
+ "shown_episode": "the imitated brain of G1 (one day, one night on ten teacher games; the still-and-fire store as run), test seed 990001: 504 decisions, 3,050 points; the same design over ten test seeds (born-frozen arm, seed 0): mean 700, median 400, interval 225 to 1,530",
  "controls_first_death_30_test_seeds": {
   "fire": 333.3,
   "random": 808.3,
   "sweep": 3345.0
  },
- "g1": {
-  "moving_slow_alone_at_dawn": 0.0,
-  "moving_store_and_slow_at_bedtime": 0.012371134020618556,
-  "moving_store_and_slow_at_dawn": 0.0,
-  "all_rows_slow_alone_at_dawn": 0.9178333333333333,
+ "g1_as_run": {
+  "held_out_moving_rows": 485,
+  "store_and_slow_bedtime_moving": 0.012371134020618556,
+  "slow_alone_dawn_moving": 0.0,
+  "slow_alone_dawn_all_rows": 0.9178333333333333,
   "majority": 0.9191666666666667,
-  "margin": 0.012371134020618556,
-  "store_smaller_at_dawn": true,
-  "pass": false
+  "teacher_forced_moving": 0.06391752577319587,
+  "pass": false,
+  "reading": "24,000 writes saturate a store of 2,048 cells; the night teaches the majority"
  },
- "g1_arms": {
-  "two_phase": {
-   "bedtime": {
-    "rows": 6000.0,
-    "exact_store_and_slow": 0.8921666666666667,
-    "exact_slow_alone": 0.0,
-    "slot_store_and_slow": [
-     0.9238333333333333,
-     0.9263333333333333,
-     0.9995
-    ],
-    "slot_slow_alone": [
-     0.038,
-     0.768,
-     0.0003333333333333333
-    ],
-    "majority": 0.9191666666666667,
-    "moving_rows": 485.0,
-    "moving_exact_store_and_slow": 0.012371134020618556,
-    "moving_exact_slow_alone": 0.0
-   },
-   "dawn": {
-    "rows": 6000.0,
-    "exact_store_and_slow": 0.9143333333333333,
-    "exact_slow_alone": 0.9178333333333333,
-    "slot_store_and_slow": [
-     0.9368333333333333,
-     0.9396666666666667,
-     0.9995
-    ],
-    "slot_slow_alone": [
-     0.9398333333333333,
-     0.9396666666666667,
-     0.9995
-    ],
-    "majority": 0.9191666666666667,
-    "moving_rows": 485.0,
-    "moving_exact_store_and_slow": 0.0,
-    "moving_exact_slow_alone": 0.0
-   }
-  },
-  "no_night": {
-   "bedtime": {
-    "rows": 6000.0,
-    "exact_store_and_slow": 0.8921666666666667,
-    "exact_slow_alone": 0.0,
-    "slot_store_and_slow": [
-     0.9238333333333333,
-     0.9263333333333333,
-     0.9995
-    ],
-    "slot_slow_alone": [
-     0.038,
-     0.768,
-     0.0003333333333333333
-    ],
-    "majority": 0.9191666666666667,
-    "moving_rows": 485.0,
-    "moving_exact_store_and_slow": 0.012371134020618556,
-    "moving_exact_slow_alone": 0.0
-   }
-  },
-  "teacher_forced": {
-   "after": {
-    "rows": 6000.0,
-    "exact_store_and_slow": 0.9153333333333333,
-    "exact_slow_alone": 0.9153333333333333,
-    "slot_store_and_slow": [
-     0.9391666666666667,
-     0.9398333333333333,
-     0.9995
-    ],
-    "slot_slow_alone": [
-     0.9391666666666667,
-     0.9398333333333333,
-     0.9995
-    ],
-    "majority": 0.9191666666666667,
-    "moving_rows": 485.0,
-    "moving_exact_store_and_slow": 0.06391752577319587,
-    "moving_exact_slow_alone": 0.06391752577319587
-   }
-  }
+ "g1_store_sized_to_what_the_pilot_notices": {
+  "still_share": 0.125,
+  "cells": 8192,
+  "bedtime_moving_store_and_slow": 0.24948453608247423,
+  "dawn_1_slow_alone_moving": 0.237,
+  "dawn_2_slow_alone_moving": 0.23711340206185566,
+  "dawn_3_slow_alone_moving": 0.09484536082474226,
+  "reading": "two-phase acquisition of the moving rows works after one night (0.237 held out by the slow weights alone, against 0.000 with the saturated store and 0.064 teacher-forced); later cycles do not improve it"
  },
  "g2": {
   "near_rise": 0.18774678339002976,
@@ -110,34 +35,442 @@
   "pass": true,
   "criterion": "selectivity (near rise minus far rise) above the shuffled control; re-derived from the arms after the criterion correction"
  },
- "g2_arms": {
-  "one_episode": {
-   "near_before": -0.049083169833424554,
-   "near_after": 0.1386636135566052,
-   "far_before": -0.031308904917084796,
-   "far_after": -0.0042318545919106006,
-   "near_rise": 0.18774678339002976,
-   "far_rise": 0.027077050325174195
+ "g3_test_seeds": [
+  {
+   "arm": "born_frozen",
+   "seed": 0,
+   "best_day": 0,
+   "test_mean": 700.0,
+   "test_median": 400.0,
+   "interval": [
+    225.0,
+    1530.1249999999993
+   ],
+   "decisions": 227.6,
+   "stage_cleared_episodes": 0,
+   "n": 10,
+   "day0_validation": 1200.0,
+   "last_validation": 1200.0
   },
-  "store_off": {
-   "near_before": -0.049083169833424554,
-   "near_after": -0.049083169833424554,
-   "far_before": -0.031308904917084796,
-   "far_after": -0.031308904917084796,
-   "near_rise": 0.0,
-   "far_rise": 0.0
+  {
+   "arm": "born_frozen",
+   "seed": 1,
+   "best_day": 0,
+   "test_mean": 450.0,
+   "test_median": 425.0,
+   "interval": [
+    305.0,
+    610.0
+   ],
+   "decisions": 248.7,
+   "stage_cleared_episodes": 0,
+   "n": 10,
+   "day0_validation": 387.5,
+   "last_validation": 387.5
   },
-  "shuffled": {
-   "near_before": -0.049083169833424554,
-   "near_after": 0.228270858404197,
-   "far_before": -0.031308904917084796,
-   "far_after": 0.150682284191574,
-   "near_rise": 0.27735402823762156,
-   "far_rise": 0.1819911891086588
+  {
+   "arm": "born_frozen",
+   "seed": 2,
+   "best_day": 0,
+   "test_mean": 1010.0,
+   "test_median": 475.0,
+   "interval": [
+    405.0,
+    1840.2499999999986
+   ],
+   "decisions": 282.0,
+   "stage_cleared_episodes": 0,
+   "n": 10,
+   "day0_validation": 993.75,
+   "last_validation": 993.75
+  },
+  {
+   "arm": "born_frozen",
+   "seed": 3,
+   "best_day": 0,
+   "test_mean": 510.0,
+   "test_median": 275.0,
+   "interval": [
+    189.875,
+    1025.0
+   ],
+   "decisions": 225.7,
+   "stage_cleared_episodes": 0,
+   "n": 10,
+   "day0_validation": 387.5,
+   "last_validation": 387.5
+  },
+  {
+   "arm": "born_frozen",
+   "seed": 4,
+   "best_day": 0,
+   "test_mean": 280.0,
+   "test_median": 250.0,
+   "interval": [
+    175.0,
+    390.0
+   ],
+   "decisions": 162.2,
+   "stage_cleared_episodes": 0,
+   "n": 10,
+   "day0_validation": 312.5,
+   "last_validation": 312.5
+  },
+  {
+   "arm": "fire",
+   "seed": 0,
+   "best_day": null,
+   "test_mean": 333.3333333333333,
+   "test_median": 200.0,
+   "interval": [
+    275.0,
+    396.6666666666667
+   ],
+   "decisions": 184.1,
+   "stage_cleared_episodes": 0,
+   "n": 30,
+   "day0_validation": null,
+   "last_validation": null
+  },
+  {
+   "arm": "no_night",
+   "seed": 0,
+   "best_day": 3,
+   "test_mean": 725.0,
+   "test_median": 350.0,
+   "interval": [
+    260.0,
+    1510.0
+   ],
+   "decisions": 241.7,
+   "stage_cleared_episodes": 0,
+   "n": 10,
+   "day0_validation": 1200.0,
+   "last_validation": 781.25
+  },
+  {
+   "arm": "no_night",
+   "seed": 1,
+   "best_day": 1,
+   "test_mean": 1115.0,
+   "test_median": 350.0,
+   "interval": [
+    365.0,
+    1950.1249999999993
+   ],
+   "decisions": 286.2,
+   "stage_cleared_episodes": 0,
+   "n": 10,
+   "day0_validation": 387.5,
+   "last_validation": 793.75
+  },
+  {
+   "arm": "no_night",
+   "seed": 2,
+   "best_day": 4,
+   "test_mean": 760.0,
+   "test_median": 200.0,
+   "interval": [
+    210.0,
+    1655.1249999999993
+   ],
+   "decisions": 241.9,
+   "stage_cleared_episodes": 0,
+   "n": 10,
+   "day0_validation": 993.75,
+   "last_validation": 343.75
+  },
+  {
+   "arm": "no_night",
+   "seed": 3,
+   "best_day": 6,
+   "test_mean": 1115.0,
+   "test_median": 425.0,
+   "interval": [
+    455.0,
+    1930.0
+   ],
+   "decisions": 329.9,
+   "stage_cleared_episodes": 0,
+   "n": 10,
+   "day0_validation": 387.5,
+   "last_validation": 306.25
+  },
+  {
+   "arm": "no_night",
+   "seed": 4,
+   "best_day": 3,
+   "test_mean": 1670.0,
+   "test_median": 575.0,
+   "interval": [
+    710.0,
+    2685.124999999999
+   ],
+   "decisions": 319.3,
+   "stage_cleared_episodes": 0,
+   "n": 10,
+   "day0_validation": 312.5,
+   "last_validation": 581.25
+  },
+  {
+   "arm": "random",
+   "seed": 0,
+   "best_day": null,
+   "test_mean": 808.3333333333334,
+   "test_median": 375.0,
+   "interval": [
+    453.3333333333333,
+    1258.3749999999998
+   ],
+   "decisions": 272.53333333333336,
+   "stage_cleared_episodes": 0,
+   "n": 30,
+   "day0_validation": null,
+   "last_validation": null
+  },
+  {
+   "arm": "slow_only",
+   "seed": 0,
+   "best_day": 1,
+   "test_mean": 470.0,
+   "test_median": 225.0,
+   "interval": [
+    145.0,
+    1040.0
+   ],
+   "decisions": 172.6,
+   "stage_cleared_episodes": 0,
+   "n": 10,
+   "day0_validation": 418.75,
+   "last_validation": 212.5
+  },
+  {
+   "arm": "slow_only",
+   "seed": 1,
+   "best_day": 0,
+   "test_mean": 900.0,
+   "test_median": 450.0,
+   "interval": [
+    325.0,
+    1590.2499999999986
+   ],
+   "decisions": 239.4,
+   "stage_cleared_episodes": 0,
+   "n": 10,
+   "day0_validation": 781.25,
+   "last_validation": 262.5
+  },
+  {
+   "arm": "slow_only",
+   "seed": 2,
+   "best_day": 5,
+   "test_mean": 340.0,
+   "test_median": 300.0,
+   "interval": [
+    195.0,
+    495.0
+   ],
+   "decisions": 181.8,
+   "stage_cleared_episodes": 0,
+   "n": 10,
+   "day0_validation": 656.25,
+   "last_validation": 618.75
+  },
+  {
+   "arm": "slow_only",
+   "seed": 3,
+   "best_day": 7,
+   "test_mean": 630.0,
+   "test_median": 250.0,
+   "interval": [
+    164.875,
+    1415.1249999999993
+   ],
+   "decisions": 177.7,
+   "stage_cleared_episodes": 0,
+   "n": 10,
+   "day0_validation": 475.0,
+   "last_validation": 1318.75
+  },
+  {
+   "arm": "slow_only",
+   "seed": 4,
+   "best_day": 1,
+   "test_mean": 470.0,
+   "test_median": 300.0,
+   "interval": [
+    200.0,
+    840.0
+   ],
+   "decisions": 196.6,
+   "stage_cleared_episodes": 0,
+   "n": 10,
+   "day0_validation": 781.25,
+   "last_validation": 518.75
+  },
+  {
+   "arm": "sweep",
+   "seed": 0,
+   "best_day": null,
+   "test_mean": 3345.0,
+   "test_median": 3350.0,
+   "interval": [
+    2941.625,
+    3716.6666666666665
+   ],
+   "decisions": 497.1666666666667,
+   "stage_cleared_episodes": 0,
+   "n": 30,
+   "day0_validation": null,
+   "last_validation": null
+  },
+  {
+   "arm": "two_phase",
+   "seed": 0,
+   "best_day": 0,
+   "test_mean": 700.0,
+   "test_median": 400.0,
+   "interval": [
+    225.0,
+    1530.1249999999993
+   ],
+   "decisions": 227.6,
+   "stage_cleared_episodes": 0,
+   "n": 10,
+   "day0_validation": 1200.0,
+   "last_validation": 443.75
+  },
+  {
+   "arm": "two_phase",
+   "seed": 1,
+   "best_day": 2,
+   "test_mean": 750.0,
+   "test_median": 200.0,
+   "interval": [
+    209.875,
+    1510.1249999999993
+   ],
+   "decisions": 249.0,
+   "stage_cleared_episodes": 0,
+   "n": 10,
+   "day0_validation": 387.5,
+   "last_validation": 487.5
+  },
+  {
+   "arm": "two_phase",
+   "seed": 2,
+   "best_day": 7,
+   "test_mean": 325.0,
+   "test_median": 250.0,
+   "interval": [
+    170.0,
+    490.0
+   ],
+   "decisions": 186.9,
+   "stage_cleared_episodes": 0,
+   "n": 10,
+   "day0_validation": 993.75,
+   "last_validation": 850.0
+  },
+  {
+   "arm": "two_phase",
+   "seed": 3,
+   "best_day": 1,
+   "test_mean": 235.0,
+   "test_median": 200.0,
+   "interval": [
+    155.0,
+    325.0
+   ],
+   "decisions": 172.0,
+   "stage_cleared_episodes": 0,
+   "n": 10,
+   "day0_validation": 387.5,
+   "last_validation": 206.25
+  },
+  {
+   "arm": "two_phase",
+   "seed": 4,
+   "best_day": 1,
+   "test_mean": 405.0,
+   "test_median": 350.0,
+   "interval": [
+    255.0,
+    575.0
+   ],
+   "decisions": 200.0,
+   "stage_cleared_episodes": 0,
+   "n": 10,
+   "day0_validation": 312.5,
+   "last_validation": 925.0
+  }
+ ],
+ "g3_reading": "no arm reaches the scripted sweep; no episode clears stage 1; play with records lifts the imitated brain (born-frozen 590) to 1,077 without nights and to 483 with nights",
+ "danger_probe": {
+  "imitated": {
+   "kind": "cadence-player/probe-danger/v1",
+   "player": "runs/g1/two_phase.npz",
+   "decisions": 1667,
+   "positives": 96,
+   "auc_executed_intent": 0.5071676745172926,
+   "auc_still_and_fire": 0.5171533524294505,
+   "mean_spread_over_candidates": 0.13453013561140106,
+   "mean_read_near_death": -0.04249601273167542,
+   "mean_read_far": -0.04449678017156942,
+   "share_chosen_least_dangerous": 0.052789442111577684
+  },
+  "two_phase_s0": {
+   "kind": "cadence-player/probe-danger/v1",
+   "player": "runs/g3/two_phase_s0/candidate.npz",
+   "decisions": 1036,
+   "positives": 96,
+   "auc_executed_intent": 0.7393395390070922,
+   "auc_still_and_fire": 0.7493351063829787,
+   "mean_spread_over_candidates": 0.3734397493491127,
+   "mean_read_near_death": 0.35366361754677555,
+   "mean_read_far": 0.12010276802528703,
+   "share_chosen_least_dangerous": 0.3088803088803089
+  },
+  "two_phase_s2": {
+   "kind": "cadence-player/probe-danger/v1",
+   "player": "runs/g3/two_phase_s2/candidate.npz",
+   "decisions": 1171,
+   "positives": 96,
+   "auc_executed_intent": 0.8653100775193798,
+   "auc_still_and_fire": 0.8691472868217054,
+   "mean_spread_over_candidates": 0.3816957746700696,
+   "mean_read_near_death": 0.527375719669329,
+   "mean_read_far": 0.16180129473363183,
+   "share_chosen_least_dangerous": 0.41588385994876176
+  },
+  "no_night_s0": {
+   "kind": "cadence-player/probe-danger/v1",
+   "player": "runs/g3/no_night_s0/candidate.npz",
+   "decisions": 1761,
+   "positives": 96,
+   "auc_executed_intent": 0.7428741241241241,
+   "auc_still_and_fire": 0.7141891891891892,
+   "mean_spread_over_candidates": 0.5485520704501923,
+   "mean_read_near_death": 0.7562984625382693,
+   "mean_read_far": 0.39941605157267135,
+   "share_chosen_least_dangerous": 0.24077228847245882
+  },
+  "slow_only_s0": {
+   "kind": "cadence-player/probe-danger/v1",
+   "player": "runs/g3/slow_only_s0/candidate.npz",
+   "decisions": 1129,
+   "positives": 96,
+   "auc_executed_intent": 0.6620482413681833,
+   "auc_still_and_fire": 0.6532147466924815,
+   "mean_spread_over_candidates": 0.08620560037392824,
+   "mean_read_near_death": 0.1829834323653865,
+   "mean_read_far": 0.14370909560780942,
+   "share_chosen_least_dangerous": 0.4419840566873339
   }
  },
  "files": {
   "g1.json": "5ccbf2fd77c0bc8774e33881f3906fe11c11ae1a6319ca1ef0900c91ef70148e",
-  "g2.json": "5b5eb91311b3659858d2f7030157ce5c93a277285cbb5ddefc84ddbb511a789f"
+  "g2.json": "5b5eb91311b3659858d2f7030157ce5c93a277285cbb5ddefc84ddbb511a789f",
+  "g3.json": "32b135fd74085be21e5d399ae4e4890a2d70f511a717a1cd318180ab55c4aa22"
  }
 }
