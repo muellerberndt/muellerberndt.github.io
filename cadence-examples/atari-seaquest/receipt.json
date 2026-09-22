@@ -1,0 +1,423 @@
+{
+ "kind": "cadence-atari/bundle/v1",
+ "game": "Seaquest",
+ "library_commit": "43c967d824f0e18a851231a6b83d58185c0c60d6",
+ "rung1": {
+  "kind": "cadence-atari/rung1/v1",
+  "device": "cuda",
+  "reward_coding": "clip",
+  "args": {
+   "train": "[PosixPath('data/seaquest/hold'), PosixPath('data/seaquest/random')]",
+   "held_out": "[PosixPath('data/seaquest/heldout')]",
+   "epochs": "20",
+   "length": "32",
+   "batch": "16",
+   "lr": "0.001",
+   "channels": "16",
+   "kernel": "8",
+   "stride": "4",
+   "belief": "256",
+   "iterations": "2",
+   "arms": "belief,convgru",
+   "field_weight": "50.0",
+   "imagine_horizon": "8",
+   "imagine_starts": "2",
+   "imagine_weight": "0.3",
+   "seed": "0",
+   "device": "",
+   "out": "runs/rung1_seaquest_im"
+  },
+  "train_chunks": 1743,
+  "held_chunks": 288,
+  "parameters": {
+   "belief": 3748498,
+   "convgru": 3425938
+  },
+  "final": {
+   "belief": {
+    "epoch": 20,
+    "train_loss": 0.0003838614842585142,
+    "train_imagined": 0.00045953047695840597,
+    "explained_changed": 0.2360768336802992,
+    "explained_all": 0.1785129169568932,
+    "mae_changed": 0.11384807563063679,
+    "mae_changed_persistence": 0.15247320616066257,
+    "changed_cells": 766616.0,
+    "reward_precision": 0.0,
+    "reward_recall": 0.0,
+    "reward_events": 69.0,
+    "penalty_precision": 0.0,
+    "penalty_recall": 0.0,
+    "penalty_events": 0.0,
+    "seconds": 339.35331520799997
+   },
+   "convgru": {
+    "epoch": 20,
+    "train_loss": 0.0002469523596438823,
+    "train_imagined": 0.0,
+    "explained_changed": 0.20766531826107515,
+    "explained_all": 0.14754883633346527,
+    "mae_changed": 0.11624132928431574,
+    "mae_changed_persistence": 0.15247320616066257,
+    "changed_cells": 766616.0,
+    "reward_precision": 0.0,
+    "reward_recall": 0.0,
+    "reward_events": 69.0,
+    "penalty_precision": 0.0,
+    "penalty_recall": 0.0,
+    "penalty_events": 0.0,
+    "seconds": 29.227782701000024
+   }
+  },
+  "verdict": {
+   "belief_best_explained_changed": 0.2360768336802992,
+   "convgru_best_explained_changed": 0.21762187356675355,
+   "belief_best_reward_recall": 0.0,
+   "imagination": {
+    "1": {
+     "n": 2271,
+     "explained_changed": 0.11826739704613498,
+     "beats": 0.9185380889476001
+    },
+    "2": {
+     "n": 2300,
+     "explained_changed": 0.19627810569075232,
+     "beats": 0.9478260869565217
+    },
+    "4": {
+     "n": 2300,
+     "explained_changed": 0.2840375828628682,
+     "beats": 0.9639130434782609
+    },
+    "8": {
+     "n": 2304,
+     "explained_changed": 0.3463744718128007,
+     "beats": 0.9739583333333334
+    }
+   }
+  }
+ },
+ "rung2": {
+  "kind": "cadence-atari/rung2/v1",
+  "game": "Seaquest",
+  "model": "runs/rung1_seaquest_im",
+  "model_receipt_verdict": {
+   "belief_best_explained_changed": 0.2360768336802992,
+   "convgru_best_explained_changed": 0.21762187356675355,
+   "belief_best_reward_recall": 0.0,
+   "imagination": {
+    "1": {
+     "n": 2271,
+     "explained_changed": 0.11826739704613498,
+     "beats": 0.9185380889476001
+    },
+    "2": {
+     "n": 2300,
+     "explained_changed": 0.19627810569075232,
+     "beats": 0.9478260869565217
+    },
+    "4": {
+     "n": 2300,
+     "explained_changed": 0.2840375828628682,
+     "beats": 0.9639130434782609
+    },
+    "8": {
+     "n": 2304,
+     "explained_changed": 0.3463744718128007,
+     "beats": 0.9739583333333334
+    }
+   }
+  },
+  "horizon": 8,
+  "warmup": 64,
+  "device": "cuda",
+  "contract": "every future input predicted; the rollout sees the actions only",
+  "grade": {
+   "moments": 200,
+   "moments_with_reward_difference": 59,
+   "reward_rank_correlation": 0.1340463294476452,
+   "reward_rank_correlation_shuffled": 0.013543402533987448,
+   "regret_of_preferred_action": 16.610169491525422,
+   "regret_of_random_action": 17.062146892655367,
+   "danger_auc": 0.996993746993747,
+   "danger_auc_shuffled": 0.5160778864482568,
+   "life_lost_share": 0.055,
+   "pass": true
+  },
+  "seconds": 109.34480657300014
+ },
+ "play": {
+  "kind": "cadence-atari/play/v1",
+  "game": "Seaquest",
+  "model": "runs/rung1_seaquest_im",
+  "model_receipt_verdict": {
+   "belief_best_explained_changed": 0.2360768336802992,
+   "convgru_best_explained_changed": 0.21762187356675355,
+   "belief_best_reward_recall": 0.0,
+   "imagination": {
+    "1": {
+     "n": 2271,
+     "explained_changed": 0.11826739704613498,
+     "beats": 0.9185380889476001
+    },
+    "2": {
+     "n": 2300,
+     "explained_changed": 0.19627810569075232,
+     "beats": 0.9478260869565217
+    },
+    "4": {
+     "n": 2300,
+     "explained_changed": 0.2840375828628682,
+     "beats": 0.9639130434782609
+    },
+    "8": {
+     "n": 2304,
+     "explained_changed": 0.3463744718128007,
+     "beats": 0.9739583333333334
+    }
+   }
+  },
+  "horizon": 8,
+  "danger_weight": 50.0,
+  "max_decisions": 2000,
+  "device": "cuda",
+  "contract": "the planner reads the belief and candidate actions only; every future input is imagined",
+  "verdict": {
+   "plan": {
+    "mean_score": 176.0,
+    "sd": 8.432740427115679,
+    "mean_decisions": 839.0
+   },
+   "hold": {
+    "mean_score": 56.0,
+    "sd": 29.514591494904874,
+    "mean_decisions": 467.9
+   },
+   "random": {
+    "mean_score": 92.0,
+    "sd": 42.37399621885521,
+    "mean_decisions": 581.0
+   },
+   "plan_beats_random": true
+  },
+  "seconds": 43.7530393479999,
+  "episodes": {
+   "plan": [
+    {
+     "seed": 7000,
+     "policy": "plan",
+     "score": 180.0,
+     "decisions": 837,
+     "ended": true
+    },
+    {
+     "seed": 7001,
+     "policy": "plan",
+     "score": 160.0,
+     "decisions": 796,
+     "ended": true
+    },
+    {
+     "seed": 7002,
+     "policy": "plan",
+     "score": 180.0,
+     "decisions": 854,
+     "ended": true
+    },
+    {
+     "seed": 7003,
+     "policy": "plan",
+     "score": 180.0,
+     "decisions": 853,
+     "ended": true
+    },
+    {
+     "seed": 7004,
+     "policy": "plan",
+     "score": 180.0,
+     "decisions": 856,
+     "ended": true
+    },
+    {
+     "seed": 7005,
+     "policy": "plan",
+     "score": 180.0,
+     "decisions": 855,
+     "ended": true
+    },
+    {
+     "seed": 7006,
+     "policy": "plan",
+     "score": 180.0,
+     "decisions": 846,
+     "ended": true
+    },
+    {
+     "seed": 7007,
+     "policy": "plan",
+     "score": 180.0,
+     "decisions": 844,
+     "ended": true
+    },
+    {
+     "seed": 7008,
+     "policy": "plan",
+     "score": 160.0,
+     "decisions": 796,
+     "ended": true
+    },
+    {
+     "seed": 7009,
+     "policy": "plan",
+     "score": 180.0,
+     "decisions": 853,
+     "ended": true
+    }
+   ],
+   "hold": [
+    {
+     "seed": 7000,
+     "policy": "hold",
+     "score": 80.0,
+     "decisions": 418,
+     "ended": true
+    },
+    {
+     "seed": 7001,
+     "policy": "hold",
+     "score": 120.0,
+     "decisions": 575,
+     "ended": true
+    },
+    {
+     "seed": 7002,
+     "policy": "hold",
+     "score": 40.0,
+     "decisions": 373,
+     "ended": true
+    },
+    {
+     "seed": 7003,
+     "policy": "hold",
+     "score": 60.0,
+     "decisions": 489,
+     "ended": true
+    },
+    {
+     "seed": 7004,
+     "policy": "hold",
+     "score": 40.0,
+     "decisions": 583,
+     "ended": true
+    },
+    {
+     "seed": 7005,
+     "policy": "hold",
+     "score": 20.0,
+     "decisions": 321,
+     "ended": true
+    },
+    {
+     "seed": 7006,
+     "policy": "hold",
+     "score": 40.0,
+     "decisions": 559,
+     "ended": true
+    },
+    {
+     "seed": 7007,
+     "policy": "hold",
+     "score": 80.0,
+     "decisions": 575,
+     "ended": true
+    },
+    {
+     "seed": 7008,
+     "policy": "hold",
+     "score": 40.0,
+     "decisions": 379,
+     "ended": true
+    },
+    {
+     "seed": 7009,
+     "policy": "hold",
+     "score": 40.0,
+     "decisions": 407,
+     "ended": true
+    }
+   ],
+   "random": [
+    {
+     "seed": 7000,
+     "policy": "random",
+     "score": 80.0,
+     "decisions": 588,
+     "ended": true
+    },
+    {
+     "seed": 7001,
+     "policy": "random",
+     "score": 20.0,
+     "decisions": 424,
+     "ended": true
+    },
+    {
+     "seed": 7002,
+     "policy": "random",
+     "score": 120.0,
+     "decisions": 690,
+     "ended": true
+    },
+    {
+     "seed": 7003,
+     "policy": "random",
+     "score": 160.0,
+     "decisions": 768,
+     "ended": true
+    },
+    {
+     "seed": 7004,
+     "policy": "random",
+     "score": 80.0,
+     "decisions": 574,
+     "ended": true
+    },
+    {
+     "seed": 7005,
+     "policy": "random",
+     "score": 80.0,
+     "decisions": 524,
+     "ended": true
+    },
+    {
+     "seed": 7006,
+     "policy": "random",
+     "score": 100.0,
+     "decisions": 599,
+     "ended": true
+    },
+    {
+     "seed": 7007,
+     "policy": "random",
+     "score": 140.0,
+     "decisions": 625,
+     "ended": true
+    },
+    {
+     "seed": 7008,
+     "policy": "random",
+     "score": 40.0,
+     "decisions": 383,
+     "ended": true
+    },
+    {
+     "seed": 7009,
+     "policy": "random",
+     "score": 100.0,
+     "decisions": 635,
+     "ended": true
+    }
+   ]
+  }
+ }
+}
