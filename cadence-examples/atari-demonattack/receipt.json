@@ -1,0 +1,423 @@
+{
+ "kind": "cadence-atari/bundle/v1",
+ "game": "DemonAttack",
+ "library_commit": "43c967d824f0e18a851231a6b83d58185c0c60d6",
+ "rung1": {
+  "kind": "cadence-atari/rung1/v1",
+  "device": "cuda",
+  "reward_coding": "clip",
+  "args": {
+   "train": "[PosixPath('data/demonattack/hold'), PosixPath('data/demonattack/random')]",
+   "held_out": "[PosixPath('data/demonattack/heldout')]",
+   "epochs": "20",
+   "length": "32",
+   "batch": "16",
+   "lr": "0.001",
+   "channels": "16",
+   "kernel": "8",
+   "stride": "4",
+   "belief": "256",
+   "iterations": "2",
+   "arms": "belief,convgru",
+   "field_weight": "50.0",
+   "imagine_horizon": "8",
+   "imagine_starts": "2",
+   "imagine_weight": "0.3",
+   "seed": "0",
+   "device": "",
+   "out": "runs/rung1_demonattack"
+  },
+  "train_chunks": 3040,
+  "held_chunks": 438,
+  "parameters": {
+   "belief": 3742354,
+   "convgru": 3421330
+  },
+  "final": {
+   "belief": {
+    "epoch": 20,
+    "train_loss": 0.002752050032875942,
+    "train_imagined": 0.003900979731636318,
+    "explained_changed": 0.2416300517300034,
+    "explained_all": 0.14292413267961268,
+    "mae_changed": 0.21404983877592107,
+    "mae_changed_persistence": 0.30858205000535743,
+    "changed_cells": 3092658.0,
+    "reward_precision": 0.0,
+    "reward_recall": 0.0,
+    "reward_events": 188.0,
+    "penalty_precision": 0.0,
+    "penalty_recall": 0.0,
+    "penalty_events": 0.0,
+    "seconds": 490.319416332
+   },
+   "convgru": {
+    "epoch": 20,
+    "train_loss": 0.00041429078770115186,
+    "train_imagined": 0.0,
+    "explained_changed": 0.2567002001432329,
+    "explained_all": 0.20654849292530064,
+    "mae_changed": 0.19736664692661823,
+    "mae_changed_persistence": 0.30858205000535743,
+    "changed_cells": 3092658.0,
+    "reward_precision": 0.0,
+    "reward_recall": 0.0,
+    "reward_events": 188.0,
+    "penalty_precision": 0.0,
+    "penalty_recall": 0.0,
+    "penalty_events": 0.0,
+    "seconds": 41.50744045800002
+   }
+  },
+  "verdict": {
+   "belief_best_explained_changed": 0.3158532483015538,
+   "convgru_best_explained_changed": 0.2620148790697844,
+   "belief_best_reward_recall": 0.0,
+   "imagination": {
+    "1": {
+     "n": 3500,
+     "explained_changed": 0.20166674360644976,
+     "beats": 0.8045714285714286
+    },
+    "2": {
+     "n": 3501,
+     "explained_changed": 0.2797209978371894,
+     "beats": 0.773207654955727
+    },
+    "4": {
+     "n": 3503,
+     "explained_changed": 0.23613374784690622,
+     "beats": 0.8415643733942335
+    },
+    "8": {
+     "n": 3504,
+     "explained_changed": 0.2534976303646669,
+     "beats": 0.8575913242009132
+    }
+   }
+  }
+ },
+ "rung2": {
+  "kind": "cadence-atari/rung2/v1",
+  "game": "DemonAttack",
+  "model": "runs/rung1_demonattack",
+  "model_receipt_verdict": {
+   "belief_best_explained_changed": 0.3158532483015538,
+   "convgru_best_explained_changed": 0.2620148790697844,
+   "belief_best_reward_recall": 0.0,
+   "imagination": {
+    "1": {
+     "n": 3500,
+     "explained_changed": 0.20166674360644976,
+     "beats": 0.8045714285714286
+    },
+    "2": {
+     "n": 3501,
+     "explained_changed": 0.2797209978371894,
+     "beats": 0.773207654955727
+    },
+    "4": {
+     "n": 3503,
+     "explained_changed": 0.23613374784690622,
+     "beats": 0.8415643733942335
+    },
+    "8": {
+     "n": 3504,
+     "explained_changed": 0.2534976303646669,
+     "beats": 0.8575913242009132
+    }
+   }
+  },
+  "horizon": 8,
+  "warmup": 64,
+  "device": "cuda",
+  "contract": "every future input predicted; the rollout sees the actions only",
+  "grade": {
+   "moments": 200,
+   "moments_with_reward_difference": 22,
+   "reward_rank_correlation": 0.5284934281049123,
+   "reward_rank_correlation_shuffled": -0.21194090369034543,
+   "regret_of_preferred_action": 3.1818181818181817,
+   "regret_of_random_action": 6.43939393939394,
+   "danger_auc": 0.9300142201538362,
+   "danger_auc_shuffled": 0.5214271863486523,
+   "life_lost_share": 0.045,
+   "pass": true
+  },
+  "seconds": 89.67743706500005
+ },
+ "play": {
+  "kind": "cadence-atari/play/v1",
+  "game": "DemonAttack",
+  "model": "runs/rung1_demonattack",
+  "model_receipt_verdict": {
+   "belief_best_explained_changed": 0.3158532483015538,
+   "convgru_best_explained_changed": 0.2620148790697844,
+   "belief_best_reward_recall": 0.0,
+   "imagination": {
+    "1": {
+     "n": 3500,
+     "explained_changed": 0.20166674360644976,
+     "beats": 0.8045714285714286
+    },
+    "2": {
+     "n": 3501,
+     "explained_changed": 0.2797209978371894,
+     "beats": 0.773207654955727
+    },
+    "4": {
+     "n": 3503,
+     "explained_changed": 0.23613374784690622,
+     "beats": 0.8415643733942335
+    },
+    "8": {
+     "n": 3504,
+     "explained_changed": 0.2534976303646669,
+     "beats": 0.8575913242009132
+    }
+   }
+  },
+  "horizon": 8,
+  "danger_weight": 50.0,
+  "max_decisions": 2000,
+  "device": "cuda",
+  "contract": "the planner reads the belief and candidate actions only; every future input is imagined",
+  "verdict": {
+   "plan": {
+    "mean_score": 603.0,
+    "sd": 401.18020334452643,
+    "mean_decisions": 1625.4
+   },
+   "hold": {
+    "mean_score": 112.5,
+    "sd": 56.1372326436643,
+    "mean_decisions": 844.1
+   },
+   "random": {
+    "mean_score": 161.5,
+    "sd": 105.19954583763395,
+    "mean_decisions": 988.6
+   },
+   "plan_beats_random": true
+  },
+  "seconds": 73.96841661799999,
+  "episodes": {
+   "plan": [
+    {
+     "seed": 7000,
+     "policy": "plan",
+     "score": 440.0,
+     "decisions": 1541,
+     "ended": true
+    },
+    {
+     "seed": 7001,
+     "policy": "plan",
+     "score": 1080.0,
+     "decisions": 2000,
+     "ended": false
+    },
+    {
+     "seed": 7002,
+     "policy": "plan",
+     "score": 640.0,
+     "decisions": 2000,
+     "ended": false
+    },
+    {
+     "seed": 7003,
+     "policy": "plan",
+     "score": 265.0,
+     "decisions": 924,
+     "ended": true
+    },
+    {
+     "seed": 7004,
+     "policy": "plan",
+     "score": 235.0,
+     "decisions": 1130,
+     "ended": true
+    },
+    {
+     "seed": 7005,
+     "policy": "plan",
+     "score": 1300.0,
+     "decisions": 2000,
+     "ended": false
+    },
+    {
+     "seed": 7006,
+     "policy": "plan",
+     "score": 370.0,
+     "decisions": 2000,
+     "ended": false
+    },
+    {
+     "seed": 7007,
+     "policy": "plan",
+     "score": 355.0,
+     "decisions": 1735,
+     "ended": true
+    },
+    {
+     "seed": 7008,
+     "policy": "plan",
+     "score": 1080.0,
+     "decisions": 2000,
+     "ended": false
+    },
+    {
+     "seed": 7009,
+     "policy": "plan",
+     "score": 265.0,
+     "decisions": 924,
+     "ended": true
+    }
+   ],
+   "hold": [
+    {
+     "seed": 7000,
+     "policy": "hold",
+     "score": 80.0,
+     "decisions": 789,
+     "ended": true
+    },
+    {
+     "seed": 7001,
+     "policy": "hold",
+     "score": 60.0,
+     "decisions": 719,
+     "ended": true
+    },
+    {
+     "seed": 7002,
+     "policy": "hold",
+     "score": 40.0,
+     "decisions": 375,
+     "ended": true
+    },
+    {
+     "seed": 7003,
+     "policy": "hold",
+     "score": 235.0,
+     "decisions": 1223,
+     "ended": true
+    },
+    {
+     "seed": 7004,
+     "policy": "hold",
+     "score": 120.0,
+     "decisions": 1541,
+     "ended": true
+    },
+    {
+     "seed": 7005,
+     "policy": "hold",
+     "score": 80.0,
+     "decisions": 653,
+     "ended": true
+    },
+    {
+     "seed": 7006,
+     "policy": "hold",
+     "score": 100.0,
+     "decisions": 708,
+     "ended": true
+    },
+    {
+     "seed": 7007,
+     "policy": "hold",
+     "score": 110.0,
+     "decisions": 758,
+     "ended": true
+    },
+    {
+     "seed": 7008,
+     "policy": "hold",
+     "score": 160.0,
+     "decisions": 781,
+     "ended": true
+    },
+    {
+     "seed": 7009,
+     "policy": "hold",
+     "score": 140.0,
+     "decisions": 894,
+     "ended": true
+    }
+   ],
+   "random": [
+    {
+     "seed": 7000,
+     "policy": "random",
+     "score": 110.0,
+     "decisions": 705,
+     "ended": true
+    },
+    {
+     "seed": 7001,
+     "policy": "random",
+     "score": 175.0,
+     "decisions": 782,
+     "ended": true
+    },
+    {
+     "seed": 7002,
+     "policy": "random",
+     "score": 70.0,
+     "decisions": 415,
+     "ended": true
+    },
+    {
+     "seed": 7003,
+     "policy": "random",
+     "score": 420.0,
+     "decisions": 2000,
+     "ended": false
+    },
+    {
+     "seed": 7004,
+     "policy": "random",
+     "score": 150.0,
+     "decisions": 1165,
+     "ended": true
+    },
+    {
+     "seed": 7005,
+     "policy": "random",
+     "score": 90.0,
+     "decisions": 488,
+     "ended": true
+    },
+    {
+     "seed": 7006,
+     "policy": "random",
+     "score": 80.0,
+     "decisions": 885,
+     "ended": true
+    },
+    {
+     "seed": 7007,
+     "policy": "random",
+     "score": 120.0,
+     "decisions": 1180,
+     "ended": true
+    },
+    {
+     "seed": 7008,
+     "policy": "random",
+     "score": 250.0,
+     "decisions": 1398,
+     "ended": true
+    },
+    {
+     "seed": 7009,
+     "policy": "random",
+     "score": 150.0,
+     "decisions": 868,
+     "ended": true
+    }
+   ]
+  }
+ }
+}
