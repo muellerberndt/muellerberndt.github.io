@@ -1,4 +1,4 @@
-import { Aiko, COLORS, MATERIALS, MIN_STRENGTH, SLOTS } from "./aiko.js";
+import { Aiko, COLORS, MATERIALS, MIN_STRENGTH, SLOTS, FORMANT_RATIO, PITCH_RATIO } from "./aiko.js";
 import { features } from "./ear.js";
 
 const RATE = 16000, HOP = 160;
@@ -170,6 +170,7 @@ function buildTrainer() {
   $("r_almost").onclick = () => reward(0.5);
   $("auto").onclick = autoTrain;
   $("sleep").onclick = night;
+  $("practice").onclick = practise;
   const mic = $("mic");
   mic.onpointerdown = (e) => { e.preventDefault(); startListening(); };
   mic.onpointerup = mic.onpointerleave = mic.onpointercancel = () => stopListening();
@@ -259,6 +260,20 @@ async function autoTrain() {
   setMood("awake");
   autoRunning = false; $("auto").disabled = false;
   renderRepertoire();
+}
+
+async function practise() {
+  if (speaking || sleeping || listening || autoRunning) return;
+  const words = aiko.memories.filter((m) => m.kind === "word" && m.hearings.length);
+  if (!words.length) { $("hint").textContent = "Teach Aiko a word first, or click one it arrived with after saying it to it."; return; }
+  autoRunning = true; $("practice").disabled = true;
+  for (const m of words) {
+    setMood("practising " + m.name);
+    for (let r = 0; r < 2; r++) { await new Promise((res) => setTimeout(res, 30)); aiko.practice(m); }
+    await speak(m, { practice: false });
+  }
+  $("hint").textContent = "Two rounds of practice on each word you taught: Aiko said it, heard itself, and kept the closer attempt.";
+  autoRunning = false; $("practice").disabled = false; setMood("awake");
 }
 
 function night() {
@@ -438,6 +453,7 @@ function drawScan() {
   const oy = 650, oh = 150;
   ctx.fillStyle = "#0e1b30"; ctx.fillRect(20, oy, W - 40, oh);
   const areas = (speaking && speaking.areas) || aiko.last.areas || organC.REST;
+  const remembered = speaking && !speaking.areas;
   const n = areas.length, sw = (W - 80) / n;
   let amp = 0, turb = 0;
   if (speaking && audioCtx) { const fr = Math.floor((audioCtx.currentTime - speaking.start) * 100); if (fr >= 0 && fr < speaking.score.length) { amp = speaking.trace[3 * fr + 1]; turb = speaking.trace[3 * fr + 2]; } }
@@ -449,7 +465,12 @@ function drawScan() {
   }
   ctx.fillStyle = heat(Math.min(1, amp / 2)); ctx.beginPath(); ctx.arc(40, oy + oh / 2, 8 + 10 * Math.min(1, amp / 2), 0, 7); ctx.fill();
   if (turb > 0.02) { ctx.fillStyle = "rgba(255,255,255,.7)"; for (let s = 0; s < 12 * turb; s++) ctx.fillRect(40 + Math.random() * (W - 80), oy + 10 + Math.random() * (oh - 20), 2, 2); }
-  ctx.fillStyle = "#7389a6"; ctx.font = "13px Inter"; ctx.fillText("area of each tube section, syrinx at the left, beak at the right · membrane glow · turbulence", 20, oy + oh + 18);
+  ctx.fillStyle = "#7389a6"; ctx.font = "13px Inter"; ctx.fillText(remembered ? "a word: the syrinx sounds, and the tract is a remembered envelope, drawn below" : "area of each tube section, syrinx at the left, beak at the right · membrane glow · turbulence", 20, oy + oh + 18);
+  if (remembered && audioCtx) {
+    const fr = Math.floor((audioCtx.currentTime - speaking.start) * 100);
+    const m = aiko.memories.find((x) => x.name === speaking.name);
+    if (m && m.envelope && fr >= 0 && fr < m.envelope.length) { const row = m.envelope[fr]; const bw = (W - 80) / 24; for (let k = 0; k < 24; k++) { const h = Math.max(2, (row[k] - 0.2) * (oh - 20)); ctx.fillStyle = heat(row[k]); ctx.fillRect(40 + k * bw, oy + oh - 4 - h, bw - 2, h); } }
+  }
   // 4 situations
   label("Situations · object and question to word", 20, 850);
   const sy = 870, sh = 260;
@@ -481,19 +502,19 @@ function drawScan() {
 function fillCard() {
   const m = spec.mirror, a = spec.association;
   $("cardbody").innerHTML = `
-  <p>Aiko is an African grey parrot in software. Its voice is a physical model: a membrane in the syrinx driven by air-sac pressure, a tube tract of ${organC.N} sections whose areas the tongue and beak set, turbulence at the narrowest constriction, and a nasal branch. Seven nerves per 10 ms drive it. Nothing in the organ or the brain knows a phone or a formant.</p>
-  <p>Two Cadence record patches learn. The <b>mirror</b> hears (24 bands, loudness, pitch, voicing) and proposes the nerves that would have made the sound; it learned from Aiko's own babbling, one record per moment, and slept. A word you say goes through the mirror and comes out as a nerve score; every further hearing averages a new proposal into it. The <b>situation</b> patch reads the object shown, the question, and what it has said, and values each thing it can say; your reward is written into its records in one step. A night dreams over the situations and moves what the store holds into the slow weights, which is where generalization to objects never shown comes from.</p>
+  <p>Aiko is an African grey parrot in software. Its chirps come from a physical tube organ: a membrane in the syrinx driven by air-sac pressure and a tract of ${organC.N} sections shaped by tongue and beak. Its words come from a hybrid organ: the same syrinx membrane as the source, and as the tract a spectral envelope Aiko remembers from what it heard, taken in a grey's proportions (formants raised by ${FORMANT_RATIO}, pitch by ${PITCH_RATIO}, measured against a real grey's recordings). Nothing in the organ or the brain knows a phone or a formant; the tract of a word is remembered, not articulated.</p>
+  <p>Two Cadence record patches learn. The <b>mirror</b> hears (24 bands, loudness, pitch, voicing) and proposes the source nerves, breath, tension and abduction, that would have made the sound; it learned from Aiko's own babbling, one record per moment, and slept. A word you say goes through the mirror and comes out as a nerve score with its envelope; every further hearing averages a new proposal into both, and practice (say it, hear yourself, keep the closer attempt) refines the nerves with Aiko's own ear as the judge. The <b>situation</b> patch reads the object shown, the question, and what it has said, and values each thing it can say; your reward is written into its records in one step. A night dreams over the situations and the babbles and moves what the stores hold into the slow weights, which is where generalization to objects never shown comes from.</p>
   <table>
   <tr><td>mirror</td><td>${m.inputs} features → ${m.hidden} context channels → ${m.outputs} nerves; ${m.cells} record cells, ${m.active} active; write rate ${m.record_rate}</td></tr>
   <tr><td>situations</td><td>${a.inputs} context units → ${a.hidden} channels → ${a.outputs} slots; ${a.cells} cells, ${a.active} active</td></tr>
   <tr><td>born with</td><td>${spec.memories.filter((x) => x.kind === "born").map((x) => x.name).join(", ")}</td></tr>
   <tr><td>arrived knowing</td><td>${spec.memories.filter((x) => x.kind === "word").map((x) => x.name).join(", ") || "no words"} (heard three times each from a synthetic trainer before the page was built)</td></tr>
   <tr><td>in the browser</td><td>the same organ, ear and patches in JavaScript, checked against the Python originals to 1e-14; the night runs here too</td></tr>
-  <tr><td>imitation</td><td>ear distance to the trainer after three hearings: 0.83 with the mirror's records, 0.61 after a night, 0.50 after ten rounds of private practice; a direct fit of the nerves to the trainer reaches 0.40 to 0.57. Whisper names 2 of the 10 hand-scored words and none of the imitations: the recognizer is a harsh judge of this voice, and the listening board carries the human verdict.</td></tr>
-  <tr><td>association</td><td>16 objects, three questions, four objects never shown, 400 rewarded trials, three seeds: greedy accuracy 0.69 to 0.92 on shown objects and 0.58 to 0.75 on the unseen ones; shuffled reward 0.06 to 0.10 and 0.00 to 0.08; an online GRU with one gradient step per trial on the same rewards 0.28 to 0.43 and 0.00 to 0.12.</td></tr>
+  <tr><td>imitation</td><td>ear distance to the parrot-warped trainer after three hearings: 0.72 with the mirror's records alone, 0.67 after a night, 0.57 after ten rounds of private practice; the mirror's error on its own babbling 0.138 without and 0.113 with the night. The old tube organ, which articulated with a tongue and beak, stayed at 0.50 by ear distance and was unrecognizable as words; the listening board carries the human verdict on this voice.</td></tr>
+  <tr><td>association</td><td>16 objects, three questions, four objects never shown, 400 rewarded trials, three seeds, the words taught by hearing: greedy accuracy 0.79 to 0.86 on shown objects and 0.50 to 0.67 on the unseen ones with the records alone, 0.82 to 0.88 and 0.67 to 0.92 with four nights; shuffled reward 0.03 to 0.08 on shown objects; an online GRU with one gradient step per trial on the same rewards 0.43 to 0.44 and 0.00 to 0.29.</td></tr>
   <tr><td>source</td><td>cadence-apollo (Pragma Research, 2026); library <a href="https://github.com/muellerberndt/cadence">cadence</a></td></tr>
   </table>
-  <p>Aiko is not Apollo, Alex or any living bird. The design follows Pepperberg's model/rival training and Beckers, Nelson and Suthers on lingual articulation in parrots. Whisper, a speech recognizer, is the intelligibility judge in the measurements; your ear is the judge here.</p>`;
+  <p>Aiko is not Apollo, Alex or any living bird. The design follows Pepperberg's model/rival training; the grey's proportions were measured against recordings by james11111 on Freesound (CC BY 3.0). Whisper, a speech recognizer, names one of six clips of that real grey, so your ear is the judge here.</p>`;
 }
 
 main();

@@ -92,7 +92,7 @@ export class Organ {
       const breath = muscle[0], gape = muscle[2];
       const omega = 2 * Math.PI * c.F0_LOW * Math.pow(c.F0_HIGH / c.F0_LOW, muscle[1]);
       const pressure = Math.max(breath - c.BREATH_THRESHOLD, 0) / (1 - c.BREATH_THRESHOLD);
-      const mu = c.DRIVE * pressure * (1 - 2 * gape);
+      const mu = c.DRIVE * omega * pressure * (1 - 2 * gape);
       const aspiration = 0.3 * breath * gape;
       const turbulence = 0.6 * breath * breath * Math.min(Math.max(1 - narrowArea / 0.12, 0), 1) * (narrowArea > 0.04 ? 1 : 0);
       const velum = muscle[6];

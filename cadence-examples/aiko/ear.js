@@ -1,7 +1,7 @@
 // The ear, a twin of apollo/ear.py: 40-band log-mel spectrum, loudness, a pitch track and the
 // 27 features the brain hears per 10 ms frame.
 const RATE = 16000, HOP = 160, WINDOW = 400, NFFT = 512, F_LO = 100, F_HI = 7000;
-const PITCH_LO = 100, PITCH_HI = 1400, PITCH_WINDOW = 640;
+const PITCH_LO = 100, PITCH_HI = 3600, PITCH_WINDOW = 640;
 const BANDS = 40, FEATURE_BANDS = 24;
 export const FEATURES = FEATURE_BANDS + 3;
 

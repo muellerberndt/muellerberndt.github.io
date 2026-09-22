@@ -2,6 +2,7 @@
 import { RecordPatch } from "./patch.js";
 import { Organ, mulberry, normals } from "./organ.js";
 import { features } from "./ear.js";
+import { HybridOrgan, warp } from "./hybrid.js";
 
 export const LATENCY = 2;
 export const COLORS = ["red", "blue", "green", "yellow"];
@@ -9,6 +10,8 @@ export const MATERIALS = ["wood", "metal", "paper", "glass"];
 export const SLOTS = 24;
 export const MIN_STRENGTH = 3;
 export const REST = [0, 0.2, 0, 0.5, 0, 0.4, 0];
+export const FORMANT_RATIO = 1.3, PITCH_RATIO = 1.6;
+export const FEATURE_WEIGHTS = Float64Array.from([...new Array(24).fill(1), 2, 3, 2]);
 const CONTEXT = COLORS.length + MATERIALS.length + 2 + 2 + SLOTS;
 
 export function resample(score, frames) {
@@ -31,7 +34,7 @@ export function dtw(a, b) {
     row.fill(Infinity);
     for (let j = 1; j <= m; j++) {
       let c = 0; const ai = a[i - 1], bj = b[j - 1];
-      for (let k = 0; k < ai.length; k++) { const d = ai[k] - bj[k]; c += d * d; }
+      for (let k = 0; k < ai.length; k++) { const d = (ai[k] - bj[k]) * FEATURE_WEIGHTS[k]; c += d * d; }
       row[j] = Math.sqrt(c) + Math.min(prev[j], prev[j - 1], row[j - 1]);
     }
     const t = prev; prev = row; row = t;
@@ -44,7 +47,8 @@ export class Aiko {
     this.mirror = new RecordPatch(spec.mirror);
     this.association = new RecordPatch(spec.association);
     this.organ = new Organ(organConstants);
-    this.memories = spec.memories.map((m) => ({ ...m, score: m.score.map((r) => Float64Array.from(r)), key: Float64Array.from(m.key), hearings: [] }));
+    this.hybrid = new HybridOrgan(organConstants);
+    this.memories = spec.memories.map((m) => ({ ...m, score: m.score.map((r) => Float64Array.from(r)), key: Float64Array.from(m.key), envelope: m.envelope ? m.envelope.map((r) => Float64Array.from(r)) : null, hearings: [] }));
     this.random = mulberry(seed);
     this.arousal = spec.arousal || 0;
     this.contexts = [];
@@ -55,16 +59,22 @@ export class Aiko {
   gauss() { return normals(this.random, 2)[0]; }
 
   // ------------------------------------------------------------ repertoire
-  addMemory(name, kind, score, key, strength = 1) {
+  render(memory) {
+    const seed = Math.floor(this.random() * 1e9);
+    if (!memory.envelope) return this.organ.render(memory.score, null, seed);
+    const audio = this.hybrid.render(memory.score, memory.envelope, null, seed);
+    return { audio, trace: new Float64Array(memory.score.length * 3), areas: null };
+  }
+  addMemory(name, kind, score, key, strength = 1, envelope = null) {
     if (this.memories.length >= SLOTS) {
       // a full repertoire forgets its weakest word
       const words = this.memories.filter((m) => m.kind === "word");
       const weakest = words.reduce((a, b) => (b.strength < a.strength || (b.strength === a.strength && b.reward < a.reward) ? b : a));
-      const m = { name, kind, score, key, strength, reward: 0, slot: weakest.slot, similarity: 0, hearings: [] };
+      const m = { name, kind, score, key, envelope, strength, reward: 0, slot: weakest.slot, similarity: 0, hearings: [] };
       this.memories[weakest.slot] = m;
       return m;
     }
-    const m = { name, kind, score, key, strength, reward: 0, slot: this.memories.length, similarity: 0, hearings: [] };
+    const m = { name, kind, score, key, envelope, strength, reward: 0, slot: this.memories.length, similarity: 0, hearings: [] };
     this.memories.push(m);
     return m;
   }
@@ -89,11 +99,22 @@ export class Aiko {
     for (let t = frames - 3; t < frames; t++) score[t].set(REST);
     return score;
   }
+  babbleEnvelope(frames) {
+    const knots = Math.max(Math.floor(frames / 8), 3);
+    const k = [];
+    for (let i = 0; i < knots; i++) k.push(Float64Array.from({ length: 24 }, () => 0.5 + 0.12 * this.gauss()));
+    const bumps = 1 + Math.floor(this.random() * 3);
+    for (let b = 0; b < bumps; b++) { const width = 1.5 + 2.5 * this.random(); for (const row of k) { const centre = 2 + 18 * this.random(); for (let j = 0; j < 24; j++) row[j] += 0.25 * Math.exp(-(((j - centre) / width) ** 2)); } }
+    for (const row of k) { let mean = 0; for (const v of row) mean += v / 24; for (let j = 0; j < 24; j++) row[j] = Math.min(Math.max(row[j] - mean + 0.5, 0), 1); }
+    const out = []; const n = k.length;
+    for (let t = 0; t < frames; t++) { const x = frames === 1 ? 0 : (t * (n - 1)) / (frames - 1); const i = Math.min(Math.floor(x), n - 1), j = Math.min(i + 1, n - 1), f = x - i; out.push(Float64Array.from({ length: 24 }, (_, q) => k[i][q] * (1 - f) + k[j][q] * f)); }
+    return out;
+  }
   babble(frames = 100) {
     const score = this.babbleScore(frames);
-    const r = this.organ.render(score, null, Math.floor(this.random() * 1e9));
-    this.learnOwn(score, r.audio);
-    return { score, audio: r.audio, trace: r.trace };
+    const audio = this.hybrid.render(score, this.babbleEnvelope(frames), null, Math.floor(this.random() * 1e9));
+    this.learnOwn(score, audio);
+    return { score, audio, trace: new Float64Array(frames * 3) };
   }
   pairs(score, audio) {
     const heard = features(audio);
@@ -123,7 +144,7 @@ export class Aiko {
     return score;
   }
   hear(audio, label) {
-    const heard = features(audio);
+    const heard = warp(features(audio), FORMANT_RATIO, PITCH_RATIO);
     const key = new Float64Array(heard[0].length);
     for (const row of heard) for (let k = 0; k < key.length; k++) key[k] += row[k] / heard.length;
     const attempt = this.propose(heard);
@@ -140,11 +161,14 @@ export class Aiko {
       if (best && best[0] < 0.9) match = best[1];
     }
     let memory;
-    if (!match) memory = this.addMemory(label || `word${this.memories.length}`, "word", attempt, key);
+    if (!match) memory = this.addMemory(label || `word${this.memories.length}`, "word", attempt, key, 1, heard.map((r) => Float64Array.from(r.subarray(0, 24))));
     else {
       memory = match;
       const re = resample(attempt, memory.score.length);
       for (let t = 0; t < memory.score.length; t++) for (let k = 0; k < 7; k++) memory.score[t][k] += 0.5 * (re[t][k] - memory.score[t][k]);
+      const env = heard.map((r) => Float64Array.from(r.subarray(0, 24)));
+      const n = memory.envelope.length;
+      for (let t = 0; t < n; t++) { const x = n === 1 ? 0 : (t * (env.length - 1)) / (n - 1); const i = Math.min(Math.floor(x), env.length - 1), j = Math.min(i + 1, env.length - 1), f = x - i; for (let k = 0; k < 24; k++) memory.envelope[t][k] += 0.5 * (env[i][k] * (1 - f) + env[j][k] * f - memory.envelope[t][k]); }
       for (let k = 0; k < key.length; k++) memory.key[k] += 0.5 * (key[k] - memory.key[k]);
       memory.strength += 1;
     }
@@ -156,7 +180,7 @@ export class Aiko {
 
   // ------------------------------------------------------------------ voice
   say(memory, practice = true) {
-    const r = this.organ.render(memory.score, null, Math.floor(this.random() * 1e9));
+    const r = this.render(memory);
     this.last.trace = r.trace; this.last.areas = r.areas; this.last.nerves = memory.score;
     if (practice) {
       this.learnOwn(memory.score, r.audio);
@@ -175,6 +199,28 @@ export class Aiko {
     let u = this.random() * total;
     for (let i = 0; i < pool.length; i++) { u -= w[i]; if (u <= 0) return pool[i]; }
     return pool[pool.length - 1];
+  }
+
+  // private practice: say it, hear yourself, keep what your own ear rates closer; one round per call
+  practice(memory, candidates = 6, spread = 0.12) {
+    if (!memory.hearings.length) return null;
+    const target = memory.hearings[memory.hearings.length - 1];
+    const proposal = resample(this.propose(target), memory.score.length);
+    const pool = [memory.score, proposal, memory.score.map((row, t) => row.map((v, k) => v + 0.5 * (proposal[t][k] - v)))];
+    while (pool.length < candidates) {
+      const noise = memory.score.map(() => Float64Array.from({ length: 7 }, (_, k) => this.gauss() * spread * (k === 1 ? 0.4 : 1)));
+      pool.push(memory.score.map((row, t) => { const out = new Float64Array(7); for (let k = 0; k < 7; k++) { let acc = 0, n = 0; for (let d = -2; d <= 2; d++) { const j = t + d; if (j >= 0 && j < noise.length) { acc += noise[j][k]; n++; } } out[k] = Math.min(Math.max(row[k] + acc / n, 0), 1); } return out; }));
+    }
+    let best = 0, bestD = Infinity;
+    for (let i = 0; i < pool.length; i++) {
+      const r = memory.envelope ? { audio: this.hybrid.render(pool[i], memory.envelope, null, Math.floor(this.random() * 1e9)) } : this.organ.render(pool[i], null, Math.floor(this.random() * 1e9));
+      const d = dtw(features(r.audio), target);
+      this.learnOwn(pool[i], r.audio);
+      if (d < bestD) { bestD = d; best = i; }
+    }
+    memory.score = pool[best].map((r) => Float64Array.from(r));
+    memory.similarity = -bestD;
+    return bestD;
   }
 
   // ------------------------------------------------------------ association
