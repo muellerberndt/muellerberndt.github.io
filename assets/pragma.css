@@ -533,3 +533,5 @@ body::after{content:"";position:fixed;inset:0;z-index:999;pointer-events:none;op
 
 /* investor comparison: all three columns visible on phones */
 @media (max-width:640px){.compare table{min-width:0;font-size:.84rem}.compare th,.compare td{padding:12px 10px}.compare tbody th{width:auto}.compare thead th{font-size:9.5px;letter-spacing:.08em}}
+
+.demo-shot{margin:26px 0 0;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:#000}.demo-shot img{display:block;width:100%;height:auto}.demo-shot figcaption{padding:12px 16px;color:var(--muted);font-size:.92rem;line-height:1.55}.demo-shot figcaption a{color:var(--accent)}
