@@ -56,7 +56,7 @@ Machine-readable paper data:
 Cadence connects bounded observer-like patches with local state, declared ports, readback and repair. `TemporalPatchNet` learns observed paths by centered equilibrium detuning and carries context between observations. `TemporalMemory` protects selected acquired responses while learning continues in the remaining directions. The same learned model repairs continuous action proposals privately, and imagined continuations leave live activity, parameters and factual records unchanged. Retention capacity, importance selection and transfer between applications are bounded and stated with each result.
 
 - Program overview: https://floatingpragma.io/cadence/
-- Paper, with the controlled results and their assumptions: https://floatingpragma.io/cadence/paper.pdf
+- Paper, with the controlled results and their assumptions (preprint on PhilPapers): https://philpapers.org/rec/MUECAP-2
 - Library, MIT licensed: https://github.com/muellerberndt/cadence
 - Documentation: https://github.com/muellerberndt/cadence/blob/main/docs/index.md
 - Package: https://pypi.org/project/cadence-net/ (pip install cadence-net)

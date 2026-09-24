@@ -28,7 +28,7 @@ Cadence is an open-source (MIT) Python library researching general intelligence 
 - Library: https://github.com/muellerberndt/cadence
 - Package: https://pypi.org/project/cadence-net/ (pip install cadence-net)
 - Documentation: https://github.com/muellerberndt/cadence/blob/main/docs/index.md
-- Paper, with the controlled results and their assumptions: https://floatingpragma.io/cadence/paper.pdf
+- Paper, with the controlled results and their assumptions (preprint on PhilPapers): https://philpapers.org/rec/MUECAP-2
 - Bundled Lean proofs, 169 conditional theorems: https://github.com/muellerberndt/cadence/tree/main/lean
 
 ## Company
