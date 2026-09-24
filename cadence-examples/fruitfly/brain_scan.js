@@ -1,5 +1,9 @@
 // Cadence brain scan: the standard whole-brain view.
 // Every neuron is a point, every synapse a line, laid out by the atlas the library exports.
+// Option `labelCount` (0: all) labels only the largest regions, for a small card.
+// Options `hot` and `cool` (RGB in 0..1) recolour the glow of neurons that changed and of
+// inhibitory messages; a page in another palette (green on black, say) sets them with the
+// region colours of its atlas.
 // The brain is drawn as a scan: a field of tissue in each region's colour whose brightness
 // is the activation, a hot glow where neurons changed in the last steps (the scan colour
 // map runs violet, magenta, orange, white), synapses that light up when their presynaptic
@@ -19,7 +23,7 @@
 // local density in three dimensions). `layoutAtlas({positions3: {'*': array}})` builds such
 // an atlas in the browser and the atlas exporter writes one; `decodeAtlas` reads both keys
 // when present, so every earlier payload still draws as before.
-export const VERSION = "cadence.brain-scan/v4";
+export const VERSION = "cadence.brain-scan/v4.1";  // v4.1: the glow colours (`hot`, `cool`) are options
 
 const TYPES = { f4: Float32Array, f8: Float64Array, u4: Uint32Array, i4: Int32Array, u2: Uint16Array, i2: Int16Array, u1: Uint8Array, i1: Int8Array };
 const FIT = 0.94; // world span shown at zoom 1
@@ -73,7 +77,7 @@ precision highp float; precision highp int;
 layout(location=0) in vec3 edge;
 uniform sampler2D layoutTex; uniform sampler2D colorTex; uniform sampler2D stateTex;
 uniform int pass; uniform float clock; uniform float baseAlpha; uniform float dpr; uniform vec3 camera; uniform vec2 aspect; uniform int mode;
-uniform float pixelsPerUnit; uniform float maxPoint; uniform float glow; uniform float fit; uniform vec3 frame; uniform float screenPPU; uniform int dust;
+uniform float pixelsPerUnit; uniform float maxPoint; uniform float glow; uniform float fit; uniform vec3 frame; uniform float screenPPU; uniform int dust; uniform vec3 hotColor; uniform vec3 coolColor;
 out vec4 color; out vec2 uv;
 vec4 item(sampler2D t,int id){return texelFetch(t,ivec2(id%512,id/512),0);}
 vec2 clip(vec2 p){return ((p-frame.xy)*frame.z*camera.z*fit+camera.xy)*aspect;}
@@ -87,7 +91,7 @@ void main(){
  vec4 sa=item(stateTex,a);
  vec3 ca=item(colorTex,a).rgb, cb=item(colorTex,b).rgb;
  float shown=mode==2?sa.w:sa.x; float heat=clamp(sa.y,0.0,1.0); float lev=level(sa); float msg=sa.z;
- vec3 hot=vec3(1.0,0.93,0.78);
+ vec3 hot=hotColor;
  vec2 p=la.xy;
  float along=dust==1?fract(float(gl_InstanceID)*0.6180339887):(gl_VertexID==0?0.0:1.0);
  if(pass==0){
@@ -423,7 +427,7 @@ const BRAIN_VERTEX = `#version 300 es
 precision highp float; precision highp int;
 layout(location=0) in vec3 edge; layout(location=1) in vec3 bow;
 uniform sampler2D posTex; uniform sampler2D colorTex; uniform sampler2D stateTex;
-uniform int pass; uniform int mode; uniform mat3 rot; uniform vec3 camera; uniform vec2 aspect; uniform vec2 viewport; uniform vec2 fogRange;
+uniform int pass; uniform int mode; uniform mat3 rot; uniform vec3 camera; uniform vec2 aspect; uniform vec2 viewport; uniform vec2 fogRange; uniform vec3 hotColor; uniform vec3 coolColor;
 uniform float dist; uniform float focal; uniform float clock; uniform float dpr; uniform float restAlpha; uniform float edgeGain; uniform float scale; uniform float fade; uniform float segments; uniform float pulseSegments; uniform float sizeScale; uniform float densityLaw;
 out vec4 color; out vec2 uv; out float across;
 vec4 item(sampler2D t,int id){return texelFetch(t,ivec2(id%512,id/512),0);}
@@ -434,7 +438,7 @@ float level(vec4 s){if(mode==2)return clamp(abs(s.w),0.0,1.0);if(mode==3)return 
 void main(){
  uv=vec2(0.0);across=0.0;color=vec4(0.0);gl_PointSize=1.0;
  if(pass>=18){uv=vec2(float((gl_VertexID<<1)&2),float(gl_VertexID&2));gl_Position=vec4(uv*2.0-1.0,0.0,1.0);return;}
- vec3 hot=vec3(1.0,0.93,0.78),cool=vec3(0.45,0.7,1.0);
+ vec3 hot=hotColor,cool=coolColor;
  float zoomSize=pow(camera.z,0.8)*sizeScale;
  if(pass==10||pass==11){
    vec3 v=rot*edge; vec3 nrm=normalize(rot*bow); vec3 pr=project(v);
@@ -529,7 +533,7 @@ void main(){
 export class BrainScan {
   constructor(canvas, atlas, options = {}) {
     this.canvas = canvas;
-    this.options = { style: "scan", particles: true, edges: true, field: true, glow: 2.2, heatDecay: 0.86, background: [0.03, 0.055, 0.085], mode: "activity", montageRows: 16, particleBudget: 300000, lineBudget: 400000, labelTop: 9, restAlpha: 0.025, bloom: 0.5, shell: true, spin: true, spinRate: 0.12, exposure: null, ...options };
+    this.options = { style: "scan", particles: true, edges: true, field: true, glow: 2.2, heatDecay: 0.86, background: [0.03, 0.055, 0.085], hot: [1.0, 0.93, 0.78], cool: [0.45, 0.7, 1.0], mode: "activity", montageRows: 16, particleBudget: 300000, lineBudget: 400000, labelTop: 9, labelCount: 0, restAlpha: 0.025, bloom: 0.5, shell: true, spin: true, spinRate: 0.12, exposure: null, ...options };
     this.given = options; // the options the page set itself: a measured anatomy drops the shell unless the page asked for it
     this.brain = this.options.style === "brain";
     this.anatomical = false; // set by setAtlas: the atlas carries measured positions
@@ -649,7 +653,7 @@ export class BrainScan {
     gl.linkProgram(this.program);
     if (!gl.getProgramParameter(this.program, gl.LINK_STATUS)) throw Error(gl.getProgramInfoLog(this.program));
     gl.useProgram(this.program);
-    const names = ["layoutTex", "colorTex", "stateTex", "cachedTex", "fieldTex", "pass", "clock", "baseAlpha", "dpr", "camera", "aspect", "mode", "background", "pixelsPerUnit", "maxPoint", "glow", "fit", "frame", "screenPPU", "dust", "edgeGain", "fieldGain", "heatGain"];
+    const names = ["layoutTex", "colorTex", "stateTex", "cachedTex", "fieldTex", "pass", "clock", "baseAlpha", "dpr", "camera", "aspect", "mode", "background", "pixelsPerUnit", "maxPoint", "glow", "fit", "frame", "screenPPU", "dust", "edgeGain", "fieldGain", "heatGain", "hotColor", "coolColor"];
     this.uniform = Object.fromEntries(names.map((k) => [k, gl.getUniformLocation(this.program, k)]));
     this.textures = [0, 1, 2].map((unit) => {
       const t = gl.createTexture();
@@ -1030,6 +1034,7 @@ export class BrainScan {
     gl.uniform1f(this.uniform.screenPPU, screenPPU);
     gl.uniform1i(this.uniform.mode, this.options.mode === "potential" ? 2 : this.options.mode === "change" ? 3 : 0);
     gl.uniform3f(this.uniform.background, ...this.options.background);
+    gl.uniform3f(this.uniform.hotColor, ...this.options.hot); gl.uniform3f(this.uniform.coolColor, ...this.options.cool);
     // the resting web: fainter on a brain with more synapses, and capped where the lines crowd into a small tissue area (a measured anatomy)
     const crossings = (this.lineLoad || 0) / Math.max(1e-6, screenPPU) * this.lineWeight; // line pixels per pixel of tissue at this zoom
     gl.uniform1f(this.uniform.baseAlpha, Math.max(this.floatCache ? 0.00005 : 0.008, Math.min(0.09 / Math.pow(Math.max(1, this.edges / 2000), 0.6), crossings > 0 ? 0.35 / crossings : 1)));
@@ -1098,7 +1103,7 @@ export class BrainScan {
     if (!gl.getProgramParameter(program, gl.LINK_STATUS)) throw Error(gl.getProgramInfoLog(program));
     this.brainProgram = program;
     gl.useProgram(program);
-    const names = ["posTex", "colorTex", "stateTex", "sceneTex", "bloomTex", "pass", "mode", "rot", "camera", "aspect", "viewport", "fogRange", "dist", "focal", "clock", "dpr", "restAlpha", "edgeGain", "scale", "fade", "segments", "pulseSegments", "sizeScale", "densityLaw", "background", "texel", "exposure", "bloomGain"];
+    const names = ["posTex", "colorTex", "stateTex", "sceneTex", "bloomTex", "pass", "mode", "rot", "camera", "aspect", "viewport", "fogRange", "dist", "focal", "clock", "dpr", "restAlpha", "edgeGain", "scale", "fade", "segments", "pulseSegments", "sizeScale", "densityLaw", "background", "texel", "exposure", "bloomGain", "hotColor", "coolColor"];
     this.brainUniform = Object.fromEntries(names.map((k) => [k, gl.getUniformLocation(program, k)]));
     gl.uniform1i(this.brainUniform.posTex, 5);
     gl.uniform1i(this.brainUniform.colorTex, 1);
@@ -1239,6 +1244,7 @@ export class BrainScan {
     gl.uniform1f(u.sizeScale, Math.max(0.7, Math.min(1.6, Math.min(width, height) / (600 * dpr))));
     gl.uniform1i(u.mode, this.options.mode === "potential" ? 2 : this.options.mode === "change" ? 3 : 0);
     gl.uniform3f(u.background, ...this.options.background);
+    gl.uniform3f(u.hotColor, ...this.options.hot); gl.uniform3f(u.coolColor, ...this.options.cool);
     gl.uniform1f(u.densityLaw, this.anatomical ? 0.5 : 1.0);
     gl.uniform1f(u.exposure, this.options.exposure ?? (this.anatomical ? 1.0 : 0.6)); // a measured anatomy has no shell to carry its shape: more light on the tissue
     gl.uniform1f(u.bloomGain, this.options.bloom);
@@ -1326,8 +1332,10 @@ export class BrainScan {
     };
     const order = this.atlas.regions.map((region, k) => ({ k, region, ...anchor(region, k) }))
       .sort((a, b) => b.region.count - a.region.count);
-    for (const { k, region, at, centre, depth } of order) {
-      const el = this.labelElements[k];
+    const shown = this.options.labelCount > 0 ? this.options.labelCount : order.length;  // a small card labels only its largest regions
+    order.forEach(({ k }, rank) => { if (rank >= shown) this.labelElements[k].style.display = "none"; });
+    for (const { k, region, at, centre, depth } of order.slice(0, shown)) {
+      const el = this.labelElements[k]; el.style.display = "";
       let [x, y] = at;
       const w = el.offsetWidth || 8 * (region.label ?? region.name).length, h = 14;
       // a label stays on the canvas: clamped to the edges, and only hidden when its region is off screen

@@ -25,7 +25,8 @@ export class FlyBrain {
     this.rowPtr = decodeArray(payload.arrays.row_ptr, Int32Array);
     this.pre = decodeArray(payload.arrays.pre, Int32Array);
     this.w = decodeArray(payload.arrays.weight, Float64Array);
-    this.w0 = payload.arrays.unsigned ? decodeArray(payload.arrays.unsigned, Float64Array) : null; // gain * count per synapse, for learned efficacies
+    this.count = payload.arrays.count ? decodeArray(payload.arrays.count, Uint16Array) : null;  // synapses per class, so learned efficacies can replace the sign
+    this.sign = payload.arrays.sign ? decodeArray(payload.arrays.sign, Int8Array) : null;
     this.bias = payload.arrays.bias ? decodeArray(payload.arrays.bias, Float64Array) : new Float64Array(this.n);
     this.members = payload.arrays.members ? decodeArray(payload.arrays.members, Int32Array) : null;
     this.sets = payload.populations;
@@ -69,6 +70,44 @@ export class FlyBrain {
       s[i] = this.activation(v[i]);
     }
     this.steps++;
+  }
+
+  /** Settle copies of the state for up to `steps` under the current drive with a cross-entropy nudge
+   *  on `outputs` toward the one-hot `target` (strength beta, softmax temperature T), stopping when no
+   *  activation moves by `tolerance` or more: the library's nudged phase, in its order of operations.
+   *  Returns { s, taken } without touching the live state. */
+  settleNudged(outputs, target, beta, T, steps, tolerance) {
+    const n = this.n, rowPtr = this.rowPtr, pre = this.pre, w = this.w, dt = this.dt, drive = this.drive, bias = this.bias;
+    const v = Float64Array.from(this.v), s = Float64Array.from(this.s), total = new Float64Array(n), prev = new Float64Array(n);
+    const m = outputs.length, p = new Float64Array(m);
+    let taken = 0;
+    for (let k = 0; k < steps; k++) {
+      let zmax = -Infinity;
+      for (let j = 0; j < m; j++) { const z = s[outputs[j]] / T; if (z > zmax) zmax = z; }
+      let sum = 0.0;
+      for (let j = 0; j < m; j++) { p[j] = Math.exp(s[outputs[j]] / T - zmax); sum += p[j]; }
+      for (let j = 0; j < m; j++) p[j] /= sum;
+      for (let i = 0; i < n; i++) {
+        let acc = 0.0;
+        for (let e = rowPtr[i], end = rowPtr[i + 1]; e < end; e++) acc += s[pre[e]] * w[e];
+        total[i] = acc;
+      }
+      for (let j = 0; j < m; j++) total[outputs[j]] += beta * (target[j] - p[j]);
+      prev.set(s);
+      let movement = 0.0;
+      for (let i = 0; i < n; i++) {
+        let t = total[i];
+        t += drive[i] + bias[i];
+        t -= v[i];
+        t *= dt;
+        v[i] += t;
+        s[i] = this.activation(v[i]);
+        const d = Math.abs(s[i] - prev[i]); if (d > movement) movement = d;
+      }
+      taken = k + 1;
+      if (tolerance !== undefined && tolerance !== null && movement < tolerance) break;
+    }
+    return { s, taken };
   }
 
   mean(name) { const idx = this.sets[name]; if (!idx || !idx.length) return 0; let t = 0; for (const i of idx) t += this.s[i]; return t / idx.length; }
