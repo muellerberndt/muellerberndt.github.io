@@ -26,7 +26,7 @@ Profitability and Cadence's scientific value are separate outcomes. A profitable
 
 ## 2. Capability audit and source authority
 
-The inspected library checkout identifies itself as **0.14.0**, commit `5eac5ee35cb461607fcdea611d75ed9df98be9ec`. This is an inspected source pin, not a claim about an installed wheel or deployed service. The library's [feature plan](https://github.com/muellerberndt/cadence/blob/5eac5ee35cb461607fcdea611d75ed9df98be9ec/docs/PLAN.md), [metacognition ladder](https://github.com/muellerberndt/cadence/blob/5eac5ee35cb461607fcdea611d75ed9df98be9ec/docs/METACOGNITION_LADDER.md), implementations and demo receipts govern integration. The flagship manifesto and the older planning-index status narrative include 0.11.0 descriptions; those descriptions are not the capability inventory for this design. Live issue state was checked in `muellerberndt/cadence` on the design date; a partially accepted demo does not close a broader issue.
+The inspected library checkout identifies itself as **0.14.0**, commit `5eac5ee35cb461607fcdea611d75ed9df98be9ec`. This is an inspected source pin, not a claim about an installed wheel or deployed service. The library's feature plan (maintained privately), metacognition ladder (maintained privately), implementations and demo receipts govern integration. The flagship manifesto and the older planning-index status narrative include 0.11.0 descriptions; those descriptions are not the capability inventory for this design. Live issue state was checked in `muellerberndt/cadence` on the design date; a partially accepted demo does not close a broader issue.
 
 | Capability | Inspected boundary | Markets use |
 | --- | --- | --- |
