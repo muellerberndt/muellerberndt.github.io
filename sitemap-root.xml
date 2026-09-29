@@ -36,5 +36,4 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url><loc>https://floatingpragma.io/cadence/demos/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>
