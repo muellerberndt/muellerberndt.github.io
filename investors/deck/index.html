@@ -290,8 +290,10 @@ produced it.</p>
 <tr>
 <td>Time to make one decision</td>
 <td>13 milliseconds, against 1 for a conventional network</td>
-<td>Settling costs more than passing through layers. Too slow for a fast
-control loop today.</td>
+<td>Settling costs more than passing through layers. A serial live
+controller in the library keeps a moving body under control while the
+brain settles; a decision under 1 millisecond is the open work
+package.</td>
 </tr>
 <tr>
 <td>Predicting the next character of text</td>
@@ -302,8 +304,10 @@ chatbot.</td>
 </tr>
 <tr>
 <td>Learning from a reward that arrives much later</td>
-<td>Well behind the standard method for learning by trial and error</td>
-<td>Long chains of cause and effect are unsolved here.</td>
+<td>Short delays are learned, and relearned when the rule flips; long
+delays are unmeasured</td>
+<td>Reward learning is in the library with its controls. Long chains of
+cause and effect are the open frontier.</td>
 </tr>
 <tr>
 <td>Holding many separate skills at once</td>
