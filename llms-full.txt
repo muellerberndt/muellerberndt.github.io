@@ -1,8 +1,8 @@
-# Pragma: company, product and research source map
+# Pragma Research: company, product and research source map
 
 ## Company
 
-Cadence is a deep real-time brain that learns from experience. Pragma's ambition is to supply brains for robots that keep improving throughout their working lives. Pragma builds the brains; robot manufacturers build the bodies.
+Cadence is a deep real-time brain that learns from experience. Pragma Research's ambition is to supply brains for robots that keep improving throughout their working lives. Pragma Research builds the brains; robot manufacturers build the bodies.
 
 The company is seeking robotics evaluation partners and investors. The proposed commercial path starts with a paid evaluation on a concrete adaptation or recovery task, followed by a supported runtime and embodiment license, and expansion across robots and tasks. The proposed financing target is $4 million over 18 months for physical proof, a paid evaluation and repeatable integration. These are plans rather than achieved customer or financing outcomes.
 

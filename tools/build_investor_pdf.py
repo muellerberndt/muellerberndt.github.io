@@ -123,9 +123,9 @@ class Renderer:
     def __init__(self, output: Path) -> None:
         self.canvas = canvas.Canvas(str(output), pagesize=(WIDTH, HEIGHT),
                                     invariant=1, pageCompression=1)
-        self.canvas.setTitle("Cadence | Pragma Investor Deck")
+        self.canvas.setTitle("Cadence | Pragma Research Investor Deck")
         self.canvas.setAuthor("Pragma Research")
-        self.canvas.setCreator("Pragma investor PDF builder")
+        self.canvas.setCreator("Pragma Research investor PDF builder")
         self.canvas.setSubject("A deep real-time brain that learns from experience")
         self.dark = False
 
@@ -251,7 +251,7 @@ class Renderer:
         c.line(MARGIN, FOOTER, WIDTH - MARGIN, FOOTER)
         c.setFont("Pragma", 8.2)
         c.setFillColor(HexColor("#c1c6bd") if self.dark else MUTED)
-        c.drawString(MARGIN, 23, "PRAGMA  /  CADENCE")
+        c.drawString(MARGIN, 23, "PRAGMA RESEARCH  /  CADENCE")
         c.drawRightString(WIDTH - MARGIN, 23, f"{index:02d} / {total:02d}")
         c.showPage()
         print(f"Slide {index}: {needed:.1f}pt used; {cursor - FOOTER:.1f}pt footer clearance; scale {scale:.2f}")

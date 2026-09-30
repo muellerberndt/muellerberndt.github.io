@@ -5,14 +5,14 @@ from html import escape
 import json
 ROOT = Path(__file__).resolve().parents[1]
 PAGES = {
- "home": ("index.html", "Pragma | Brains that learn", "Cadence is a deep real-time brain that learns from experience. Pragma is building the intelligence for robots that keep improving."),
+ "home": ("index.html", "Pragma Research | Brains that learn", "Cadence is a deep real-time brain that learns from experience. Pragma Research is building the intelligence for robots that keep improving."),
  "cadence": ("cadence/index.html", "Cadence | A deep real-time brain", "Explore Cadence: a recursive settling network that learns from experience. Architecture, working code and measured simulation results."),
- "robotics": ("robotics/index.html", "Robotics | Put a learning brain in your robot", "Partner with Pragma to evaluate Cadence on one robot and one measurable adaptation problem. We build the brains; you build the bodies."),
- "investors": ("investors/index.html", "Invest in Pragma | The brain company", "Pragma is building a reusable learning brain for robots. Explore our proposed $4 million seed round and 18-month physical deployment programme."),
- "deck": ("investors/deck/index.html", "Pragma | Investor deck", "The Cadence investment case: a deep real-time brain, measurable simulation learning, and a proposed $4 million round for physical deployment."),
+ "robotics": ("robotics/index.html", "Robotics | Put a learning brain in your robot", "Partner with Pragma Research to evaluate Cadence on one robot and one measurable adaptation problem. We build the brains; you build the bodies."),
+ "investors": ("investors/index.html", "Invest in Pragma Research | The brain company", "Pragma Research is building a reusable learning brain for robots. Explore our proposed $4 million seed round and 18-month physical deployment programme."),
+ "deck": ("investors/deck/index.html", "Pragma Research | Investor deck", "The Cadence investment case: a deep real-time brain, measurable simulation learning, and a proposed $4 million round for physical deployment."),
  "physics": ("physics/index.html", "Research | The ideas behind Cadence", "Observer Patch Holography connects local observers, shared records and repair. Explore the mathematical research that inspired Cadence."),
- "watch": ("watch/index.html", "Watch | The research behind Pragma", "Watch the Pragma research explainer: observer-based physics, self-reading systems and the ideas behind Cadence."),
- "not-found": ("404.html", "Page not found | Pragma", "Find Cadence, the Pragma research library, our robotics programme and investor materials."),
+ "watch": ("watch/index.html", "Watch | The research behind Pragma Research", "Watch the Pragma Research explainer: observer-based physics, self-reading systems and the ideas behind Cadence."),
+ "not-found": ("404.html", "Page not found | Pragma Research", "Find Cadence, the Pragma Research paper library, our robotics programme and investor materials."),
 }
 NAV = [("cadence", "/cadence/", "Cadence"), ("robotics", "/robotics/", "Robotics"), ("investors", "/investors/", "Investors"), ("physics", "/physics/", "Research")]
 def build():

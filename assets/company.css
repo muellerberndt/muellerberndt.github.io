@@ -9,3 +9,5 @@
 .step>.number{grid-row:1 / span 2}.step>h3,.step>p:not(.number){grid-column:2}.step>p:not(.number){margin-top:0}.grid-3+.small,.actions+.small{margin-top:26px}.split>.grid-2 .metric-value{font-size:clamp(2.8rem,5.5vw,5.5rem)}
 
 .split>*,.hero-grid>*,.founder-grid>*{min-width:0}
+
+.wordmark-text{display:flex;flex-direction:column;gap:4px;line-height:1}.wordmark-text small{font-size:9px;font-weight:600;letter-spacing:.47em;line-height:1.2}

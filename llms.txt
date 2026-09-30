@@ -1,8 +1,8 @@
-# Pragma
+# Pragma Research
 
 > Cadence is a deep real-time brain that learns from experience.
 
-Pragma is building the brains for robots that keep improving throughout their working lives. Robotics is the first proposed market. The product direction is a supported Cadence runtime and a brain prepared for a customer's embodiment, beginning with a paid evaluation on one adaptation or recovery task.
+Pragma Research is building the brains for robots that keep improving throughout their working lives. Robotics is the first proposed market. The product direction is a supported Cadence runtime and a brain prepared for a customer's embodiment, beginning with a paid evaluation on one adaptation or recovery task.
 
 Cadence uses recursively coupled populations that settle and learn together. Bounded observer-like, self-reading patches carry local state and records, communicate through ports, read represented activity and prediction errors, and participate in feedback and repair. Their jointly settled state supplies the answer.
 
