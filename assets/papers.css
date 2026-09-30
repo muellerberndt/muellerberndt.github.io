@@ -1,7 +1,7 @@
 /* Scientific article reader; extends the shared cream/lime company design. */
 .paper-page .paper-article{padding-bottom:100px}
 .paper-hero{padding:76px 0 48px}
-.paper-hero h1{font-size:clamp(2.2rem,4.5vw,4.1rem);max-width:28ch;line-height:1.1;letter-spacing:-.045em}
+.paper-hero h1{font-size:clamp(2.2rem,4.5vw,4.1rem);max-width:28ch;line-height:1.1;letter-spacing:-.045em;overflow-wrap:anywhere}
 .paper-hero .eyebrow{margin-bottom:22px}
 .crumbs{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-bottom:36px;font-size:11px;line-height:1.6;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}
 .crumbs a{text-decoration:none}
@@ -24,12 +24,13 @@
 .paper-aside>.k{margin:0;padding-bottom:12px;border-bottom:1px solid var(--line)}
 .paper-aside .button{font-size:12px;min-height:46px;padding:13px}
 .paper-toc{display:grid;gap:3px;max-height:calc(100vh - 300px);overflow:auto;scrollbar-width:thin}
-.paper-toc a{display:block;padding:7px 10px;border-left:2px solid transparent;font-size:12px;line-height:1.5;color:var(--muted);text-decoration:none}
+.paper-toc a{display:block;min-height:44px;padding:12px 10px;border-left:2px solid transparent;font-size:13px;line-height:1.5;color:var(--muted);text-decoration:none;overflow-wrap:anywhere}
 .paper-toc a:hover,.paper-toc a.on{color:var(--ink);background:#e9ecda;border-left-color:var(--ink)}
 .toc-mobile{display:none;margin:0 0 32px;border:1px solid var(--line)}
 .toc-mobile summary{padding:16px 18px;cursor:pointer;font-size:13px;font-weight:600}
 .toc-mobile[open] summary{border-bottom:1px solid var(--line)}
-.toc-mobile .paper-toc{padding:12px;max-height:55vh}
+.toc-mobile .paper-toc{padding:8px;max-height:55vh;max-height:55svh;overscroll-behavior-y:contain}
+.toc-mobile .paper-toc a{font-size:14px;min-height:44px;padding:12px 10px;overflow-wrap:anywhere}
 .paper-body{font-size:16px;line-height:1.8;min-width:0;overflow-wrap:anywhere}
 .paper-body>*{max-width:80ch}
 .paper-body h1,.paper-body h2,.paper-body h3,.paper-body h4{color:var(--ink);letter-spacing:-.03em;text-wrap:initial}
@@ -58,8 +59,8 @@
 .paper-body figure{margin:1.6em 0;max-width:100%}
 .paper-body figcaption{font-size:.87rem;color:var(--muted);margin-top:10px;line-height:1.6}
 .paper-body sup{font-size:.72em;line-height:0}
-.paper-body .math.display{display:block;max-width:100%;margin:1.5em 0;overflow-x:auto;overflow-y:hidden;padding:.35em 0}
-.paper-body .math.inline{display:inline-block;max-width:100%;overflow-x:auto;overflow-y:hidden;vertical-align:middle}
+.paper-body .math.display{display:block;max-width:100%;margin:1.5em 0;overflow-x:auto;overflow-y:hidden;overscroll-behavior-x:contain;padding:.35em 0}
+.paper-body .math.inline{display:inline-block;max-width:100%;overflow-x:auto;overflow-y:hidden;overscroll-behavior-x:contain;vertical-align:middle}
 .paper-body mjx-container[display="true"]{margin:0!important}
 .paper-body .paper-equation-anchor{display:block;position:relative;top:-110px;visibility:hidden}
 .paper-body .theorem,.paper-body .lemma,.paper-body .proposition,.paper-body .corollary,.paper-body .definition,.paper-body .remark,.paper-body .example,.paper-body .assumption,.paper-body .conjecture{margin:1.6em 0;padding:22px 25px;border:1px solid var(--line);border-left:3px solid #668029;background:#edf0e2}
@@ -69,8 +70,10 @@
 .paper-body .proof{margin:1.2em 0 1.8em;padding-left:22px;border-left:1px solid var(--line)}
 .paper-body .proof>p:last-child::after{content:"\25A1";float:right;margin-left:12px}
 .paper-body :is(.theorem,.lemma,.proposition,.corollary,.definition,.remark,.example,.assumption,.conjecture,.boundary,.proof)>p:last-child{margin-bottom:0}
-.paper-body .table-scroll{max-width:100%;margin:1.5em 0;overflow-x:auto;border:1px solid var(--line);background:var(--white)}
-.paper-body table{width:100%;border-collapse:collapse;font-size:.86rem}
+.paper-body .table-scroll{max-width:100%;margin:1.5em 0;overflow-x:auto;overscroll-behavior-x:contain;border:1px solid var(--line);background:var(--white)}
+.paper-body table{width:100%;min-width:32rem;border-collapse:collapse;font-size:.86rem;overflow-wrap:normal}
+.paper-body table:has(tr>:nth-child(5)){min-width:48rem}
+.paper-body table .math.inline{max-width:none;overflow:visible}
 .paper-body th,.paper-body td{padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top;line-height:1.6}
 .paper-body thead th{font-size:11px;letter-spacing:.06em;background:#e9ecda;width:auto}
 .paper-body tbody th{width:auto;font-weight:650}
@@ -86,6 +89,6 @@
 .paper-end .button{font-size:12px;padding:13px 16px;min-height:46px}
 .paper-end em{font-style:normal}
 @media(max-width:1100px){.paper-layout{gap:36px;grid-template-columns:minmax(0,1fr) 210px}}
-@media(max-width:900px){.paper-layout{grid-template-columns:minmax(0,1fr)}.paper-aside{display:none}.toc-mobile{display:block}.paper-hero{padding-top:48px}.paper-page .paper-article{padding-bottom:64px}}
-@media(max-width:600px){.paper-hero h1{font-size:2.3rem}.paper-hero .actions{gap:10px}.paper-hero .button{flex:1 1 auto}.crumbs{gap:9px;font-size:10px;margin-bottom:28px}.abstract{padding:22px}.abstract p{font-size:15px}.byline{font-size:13px}.paper-body{font-size:15px}.paper-body h1{font-size:1.75rem}.paper-body h2{font-size:1.5rem}.paper-body :is(.theorem,.lemma,.proposition,.corollary,.definition,.remark,.example,.assumption,.conjecture,.boundary){padding:18px}.paper-layout{padding-top:28px}}
-@media print{@page{size:A4 portrait;margin:18mm}.paper-page{background:#fff;color:#000}.paper-page .container{max-width:none;width:auto}.paper-page .paper-article{padding:0}.paper-hero{padding:0 0 24px}.paper-hero h1{font-size:24pt;max-width:none}.paper-aside,.toc-mobile,.paper-end,.paper-hero .actions,.paper-hero .strip,.crumbs{display:none!important}.paper-layout{display:block;padding-top:20px}.paper-body{font-size:10pt;line-height:1.65}.paper-body>*{max-width:none}.paper-body .table-scroll,.paper-body .math.display{overflow:visible}.paper-body a{color:inherit}.paper-body h1,.paper-body h2,.paper-body h3{break-after:avoid}}
+@media(max-width:900px),(max-height:500px){.paper-layout{grid-template-columns:minmax(0,1fr)}.paper-aside{display:none}.toc-mobile{display:block}.paper-hero{padding-top:48px}.paper-page .paper-article{padding-bottom:64px}.crumbs a,.strip a{display:inline-flex;align-items:center;min-height:44px}}
+@media(max-width:600px){.paper-hero h1{font-size:2.3rem}.paper-hero .actions{gap:10px}.paper-hero .button{flex:1 1 auto}.crumbs{gap:9px;font-size:10px;margin-bottom:28px}.abstract{padding:22px}.abstract p{font-size:16px}.byline{font-size:14px}.paper-body{font-size:16px}.paper-body h1{font-size:1.75rem}.paper-body h2{font-size:1.5rem}.paper-body :is(.theorem,.lemma,.proposition,.corollary,.definition,.remark,.example,.assumption,.conjecture,.boundary){padding:18px 16px}.paper-body .proof{padding-left:14px}.paper-layout{padding-top:28px}}
+@media print{@page{size:A4 portrait;margin:18mm}.paper-page{background:#fff;color:#000}.paper-page .container{max-width:none;width:auto}.paper-page .paper-article{padding:0}.paper-hero{padding:0 0 24px}.paper-hero h1{font-size:24pt;max-width:none}.paper-aside,.toc-mobile,.paper-end,.paper-hero .actions,.paper-hero .strip,.crumbs{display:none!important}.paper-layout{display:block;padding-top:20px}.paper-body{font-size:10pt;line-height:1.65}.paper-body>*{max-width:none}.paper-body .table-scroll,.paper-body .math.display{overflow:visible}.paper-body table,.paper-body table:has(tr>:nth-child(5)){min-width:0}.paper-body a{color:inherit}.paper-body h1,.paper-body h2,.paper-body h3{break-after:avoid}}

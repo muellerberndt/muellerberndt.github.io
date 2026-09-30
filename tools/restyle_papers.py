@@ -20,7 +20,7 @@ from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 
-PAPER_EXTRA = r'''<link rel="stylesheet" href="/assets/papers.css?v=2">
+PAPER_EXTRA = r'''<link rel="stylesheet" href="/assets/papers.css?v=3">
 <script>
 window.MathJax = {
   tex: { inlineMath: [['\\(', '\\)'], ['$', '$']], displayMath: [['\\[', '\\]']] },

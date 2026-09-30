@@ -169,7 +169,7 @@ def build():
             content = content.replace("@@PAPER_CATALOG@@", paper_catalog())
         extra = ""
         if name == "cadence":
-            extra = '<link rel="stylesheet" href="/assets/brain-explorer.css?v=2"><script src="/assets/brain-model.js?v=2" defer></script><script src="/assets/brain-explorer.js?v=2" defer></script>'
+            extra = '<link rel="stylesheet" href="/assets/brain-explorer.css?v=3"><script src="/assets/brain-model.js?v=2" defer></script><script src="/assets/brain-explorer.js?v=3" defer></script>'
         elif name == "research":
             extra = '<script src="/assets/research.js?v=1" defer></script>'
         elif name == "unsubscribe":

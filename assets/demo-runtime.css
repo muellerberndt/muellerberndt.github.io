@@ -6,3 +6,55 @@ body{font-family:Inter,Arial,sans-serif}.crumbs{display:none}a:focus-visible,but
 @media(max-width:600px){header{padding-inline:16px}main{padding-inline:14px}.stamp{transform:none;margin-left:0}.wip{flex-wrap:wrap}.knobs label{width:100%;flex-wrap:wrap}.knobs input[type=range]{max-width:150px;min-width:0;flex:1}.studio #cut{font-size:19px;padding:14px 18px;max-width:100%;transform:none}.bar,.side{flex-wrap:wrap}.bar{gap:12px}.brains button{max-width:100%;white-space:normal;line-height:1.4}p,#now{overflow-wrap:anywhere}}
 .studio #cut{background:var(--gold);color:#191d1c}section[data-tape="brain"]::before{color:#191d1c;background:var(--gold)}
 @media(max-width:600px){.stage,.deck{grid-template-columns:minmax(0,1fr)}.stage>*,.deck>*{min-width:0}.counters{overflow-wrap:anywhere}}
+
+/* Touch targets and readable controls apply inside the isolated demo documents. */
+button,select,summary{touch-action:manipulation}
+button,select{min-height:44px}
+input[type=range]{min-height:44px}
+select{font-size:16px!important}
+.demo-camera-controls{display:flex;flex-wrap:wrap;gap:8px}
+.demo-camera-controls .act{flex:1;min-width:76px;min-height:44px}
+.demo-world-console{display:grid;gap:10px}
+.demo-touch-hint{display:none;margin:0;color:var(--ink-2);font-size:12px;line-height:1.5}
+.demo-inspector-link{display:flex;align-items:center;min-height:44px;color:var(--sun);font-size:13px;text-decoration:underline;text-underline-offset:4px}
+#demo-creature-inspector{scroll-margin-top:14px}
+[data-demo="patch-world"] .rulesbox label{min-height:44px;white-space:normal}
+[data-demo="patch-world"] input[type=checkbox]{width:20px;height:20px;flex:none}
+[data-demo="patch-world"] .counters{grid-template-columns:minmax(0,1fr) auto}
+[data-demo="patch-world"] .controls .row>label{flex-wrap:wrap;min-width:0}
+[data-demo="patch-world"] .world canvas{touch-action:none}
+@media(max-width:1020px){
+ [data-demo="amen"] .deck{grid-template-columns:minmax(0,1fr)}
+ [data-demo="amen"] .left>section{order:3}
+ [data-demo="amen"] .left>.studiowrap{order:0}
+ [data-demo="amen"] #wave{order:1}
+ [data-demo="amen"] .right{position:static;order:2;z-index:auto}
+}
+@media(max-width:820px){
+ [data-demo="patch-world"] body{padding:12px 12px 28px}
+ [data-demo="patch-world"] header{padding:0}
+ [data-demo="patch-world"] header p{font-size:12px;line-height:1.5}
+ [data-demo="patch-world"] .world{height:clamp(230px,55svh,560px);min-height:230px}
+ .demo-world-console .views{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+ .demo-world-console .view{display:block;padding:10px 6px;min-width:0;min-height:48px;text-align:center}
+ .demo-world-console .view kbd,.demo-world-console .view small{display:none}
+ .demo-world-console .view b{font:600 12px/1.4 var(--font-body);overflow-wrap:anywhere}
+ .demo-world-console>.row{justify-content:space-between;gap:8px}
+ .demo-world-console>.row label{flex:1;justify-content:flex-end;flex-wrap:wrap}
+ .demo-world-console>.row input[type=range]{max-width:110px;flex:1;min-width:50px}
+ [data-demo="patch-world"] .hint{display:none}
+ .demo-touch-hint{display:block}
+}
+@media(max-width:600px){
+ [data-demo="amen"] h1{transform:none;font-size:clamp(34px,9vw,50px);line-height:1}
+ [data-demo="amen"] .studiowrap{padding-inline:12px}
+ [data-demo="amen"] .knobs{gap:4px}
+ [data-demo="amen"] .knobs label{display:grid;grid-template-columns:80px minmax(0,1fr) 40px;gap:8px;width:100%}
+ [data-demo="amen"] .knobs input[type=range]{width:100%;max-width:none;margin:0}
+ [data-demo="amen"] .knobs select{width:100%;min-width:58px}
+ [data-demo="amen"] .studio #cut{min-height:48px;letter-spacing:.08em}
+ [data-demo="amen"] #clips button{min-width:44px;min-height:44px}
+ [data-demo="amen"] details.card summary{min-height:44px;line-height:1.5}
+}
+@media(hover:none) and (pointer:coarse){.demo-touch-hint{display:block}[data-demo="patch-world"] .hint{display:none}}
+@media(prefers-reduced-motion:reduce){#status.busy{animation:none}}

@@ -1,7 +1,7 @@
 {
   "repository": "https://github.com/muellerberndt/cadence-demos",
   "commit": "3d14d481b2abf5fccc1eb0dbaa1d42b23e4d4c64",
-  "adaptation": "HTML metadata, archive presentation copy and shared CSS; application scripts, model and audio bytes unchanged.",
+  "adaptation": "HTML metadata, archive presentation copy, shared CSS and a separate touch/camera presentation adapter; original application scripts, model and audio bytes unchanged.",
   "files": [
     {
       "source": "amen/web/engine.js",
@@ -14,8 +14,8 @@
       "source": "amen/web/index.html",
       "path": "amen/index.html",
       "source_sha256": "eabed72121f0cff95ed9015b946d41006b2e27242f7a5a43e07d45c6dfe19cf7",
-      "published_sha256": "c386bbbb3194111f466fc9354d3319b2d93d0a1c0d72fe4f9ffdc3128a305a68",
-      "bytes": 61596
+      "published_sha256": "9bd5750bfebbbb061682f817b460f5bfc61ac1652cf7bba884bc3bd8084320ca",
+      "bytes": 61665
     },
     {
       "source": "amen/web/kit/bass.wav",
@@ -77,8 +77,8 @@
       "source": "patch-world/index.html",
       "path": "patch-world/index.html",
       "source_sha256": "3663c837fbffb2eb94229289d2807784a3d2e90bf459a39580ca2fcbe42406e9",
-      "published_sha256": "719c83fdc16d587e9e6ea5074323e79a51c96966c2adc04246b67a0873991b46",
-      "bytes": 84803
+      "published_sha256": "722564f147cb9fbc1515ea3b53c8c62bc012c1c4c8f4e011a5e9ead333bf1784",
+      "bytes": 84879
     }
   ]
 }

@@ -3,8 +3,8 @@
 
 The public demo repository remains the source. Read committed blobs only:
 uncommitted experiments, checkpoints and README edits cannot enter the site.
-The iframe documents receive website metadata, current presentation copy and a
-shared visual skin; application code, audio samples and model bytes are unchanged.
+The iframe documents receive website metadata, presentation copy and a shared
+visual/touch adapter; original application scripts, audio and models are unchanged.
 """
 import argparse
 import hashlib
@@ -35,10 +35,13 @@ def wrapper_metadata(content, demo):
                 f'<meta name="theme-color" content="#191d1c">\n'
                 f'<link rel="canonical" href="https://floatingpragma.io/demos/{demo}/">\n'
                 '<link rel="icon" href="/favicon.svg?v=5" type="image/svg+xml">\n'
-                '<link rel="stylesheet" href="/assets/demo-runtime.css?v=1">\n'
+                '<link rel="stylesheet" href="/assets/demo-runtime.css?v=2">\n'
                 '<base target="_top">\n')
     # Last stylesheet wins over the archived application's own CSS.
-    return text.replace('</head>', metadata + '</head>', 1).encode()
+    text = text.replace('<html lang="en">', f'<html lang="en" data-demo="{demo}">', 1)
+    text = text.replace('</head>', metadata + '</head>', 1)
+    text = text.replace('</body>', '<script src="/assets/demo-runtime.js?v=2"></script>\n</body>', 1)
+    return text.encode()
 
 
 def main():
@@ -63,7 +66,7 @@ def main():
                         'source_sha256': hashlib.sha256(original).hexdigest(),
                         'published_sha256': hashlib.sha256(content).hexdigest(), 'bytes': len(content)})
     manifest = {'repository': REPOSITORY, 'commit': COMMIT,
-                'adaptation': 'HTML metadata, archive presentation copy and shared CSS; application scripts, model and audio bytes unchanged.',
+                'adaptation': 'HTML metadata, archive presentation copy, shared CSS and a separate touch/camera presentation adapter; original application scripts, model and audio bytes unchanged.',
                 'files': entries}
     (output / 'manifest.json').write_text(json.dumps(manifest, indent=2) + '\n')
     print(f'Synced {len(entries)} files ({sum(f["bytes"] for f in entries):,} bytes) from {COMMIT}')

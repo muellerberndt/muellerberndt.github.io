@@ -174,7 +174,7 @@ def check_unified_surfaces(site, errors):
     for path in html_paths:
         source = path.read_text()
         label = str(path.relative_to(site))
-        for required in ('/assets/company.css?v=5', 'id="site-nav"', 'href="/research/"', 'href="/work/"', 'href="/demos/"', '/favicon.svg?v=5', '/favicon.ico?v=5', '/apple-touch-icon.png?v=5'):
+        for required in ('/assets/company.css?v=6', 'id="site-nav"', 'href="/research/"', 'href="/work/"', 'href="/demos/"', '/favicon.svg?v=5', '/favicon.ico?v=5', '/apple-touch-icon.png?v=5'):
             if required not in source:
                 errors.append(f"{label}: missing shared site element {required}")
         for stale in ('/assets/pragma.css', '/assets/pragma.js', '/oph/styles.css', 'Frontier mathematics'):
@@ -215,7 +215,7 @@ def check_browser_demos(site, errors):
             errors.append(f"Browser demos: application assets changed from source: {entry['path']}")
         if path.suffix == '.html':
             source = path.read_text()
-            for required in ('content="noindex"', '/assets/demo-runtime.css?v=1', '/favicon.svg?v=5'):
+            for required in ('content="noindex"', '/assets/demo-runtime.css?v=2', '/assets/demo-runtime.js?v=2', '/favicon.svg?v=5'):
                 if required not in source:
                     errors.append(f"Browser demos: {entry['path']} missing {required}")
             if 'cadence-examples/' in source or 'data:image/svg+xml' in source:

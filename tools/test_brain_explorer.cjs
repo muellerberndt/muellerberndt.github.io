@@ -363,7 +363,7 @@ assert.equal(settled.count(), 0, "zero-size converged response adds no phantom s
 
 // Reflow executes both drawing orientations at narrow and split-panel sizes.
 // These mocks validate numerical coordinates, not browser font metrics/layout.
-for (const [width, height] of [[238, 450], [278, 450], [335, 450], [371, 365], [419, 365], [420, 365], [620, 365]]) {
+for (const [width, height] of [[238, 450], [278, 450], [335, 450], [371, 365], [419, 365], [420, 365], [620, 365], [788, 320]]) {
  for (const mode of ['flat','composed','recursive']) {
   const resized = start({ width, height, mode });
   resized.observers.resize();
@@ -379,6 +379,34 @@ for (const [width, height] of [[238, 450], [278, 450], [335, 450], [371, 365], [
     }
   }
  }
+}
+
+// Rotation redraws the existing continuation. It must not restart settlement,
+// change the selected patch, or lose a scheduled continuation while running.
+for (const mode of ['flat','composed','recursive']) {
+  const rotated=start({mode,width:348,height:450});
+  rotated.click('brain-step');
+  rotated.get('brain-patch-buttons').children.at(-1).emit('click');
+  const saved=rotated.result(), selected=rotated.get('brain-patch-title').textContent;
+  const evaluations=rotated.trace.evaluations.length;
+  for(const id of ['brain-forward','brain-recursive']) {
+    rotated.get(id).bounds.width=788;
+    rotated.get(id).bounds.height=320;
+  }
+  rotated.observers.resize();
+  assert.deepEqual(rotated.result(),saved,'orientation preserves settled state');
+  assert.equal(rotated.get('brain-patch-title').textContent,selected);
+  assert.equal(rotated.trace.evaluations.length,evaluations,'resize is drawing, not another solve');
+  assert.equal(rotated.get('brain-recursive').width,1576);
+  assert.equal(rotated.get('brain-recursive').height,640);
+  rotated.click('brain-run');
+  const steps=rotated.count(), pending=rotated.pending.size;
+  rotated.get('brain-forward').bounds.width=348;
+  rotated.get('brain-recursive').bounds.width=348;
+  rotated.observers.resize();
+  assert.equal(rotated.count(),steps,'rotation adds no numerical steps');
+  assert.equal(rotated.pending.size,pending,'rotation preserves the scheduled animation');
+  rotated.drain();stopped(rotated);displayed(rotated);
 }
 assert.doesNotThrow(() => start({ missingRoot: true }));
 const noCanvas = start({ missingCanvas: true });

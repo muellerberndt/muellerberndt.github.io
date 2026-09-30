@@ -87,7 +87,7 @@
     const points = new Map();
     const layers = topology.levels + 1;
     const yStart = 48, yEnd = h-80;
-    const xStart = 45, xEnd = w-48;
+    const xStart = 55, xEnd = w-64;
     const pairGap = vertical ? Math.min(w*.20,70) : 54;
     const position = (layer,row) => {
       if(mode==='flat') {
@@ -99,11 +99,11 @@
       }
       return vertical
         ? {x:w/2+(row ? pairGap : -pairGap),y:yStart+layer*(yEnd-yStart)/(layers-1)}
-        : {x:xStart+layer*(xEnd-xStart)/(layers-1),y:row ? 224 : 116};
+        : {x:xStart+layer*(xEnd-xStart)/(layers-1),y:row ? Math.min(224,h*.60) : Math.min(116,h*.32)};
     };
     topology.inputs.forEach((item,index) => points.set(item.id,{...position(0,index),id:item.id,input:true}));
     topology.patches.forEach(patch => points.set(patch.id,{...position(patch.level+1,patch.row),...patch}));
-    ctx.font = '10px Inter, Arial, sans-serif';ctx.textAlign='center';ctx.fillStyle=muted;
+    ctx.font = '12px Inter, Arial, sans-serif';ctx.textAlign='center';ctx.fillStyle=muted;
     for (let layer=0; layer<layers; layer++) {
       const names = mode==='flat' ? ['Inputs','Independent patches']
         : mode==='composed' ? ['Inputs','Processing','Representation','Response']
@@ -130,7 +130,7 @@
           arrow(ctx,{x:w-35,y:a.y},{x:w-35,y:b.y},'#dcf664');
         } else {
           const a=position(level+1,1),b=position(level,1);
-          arrow(ctx,{x:a.x,y:284},{x:b.x,y:284},'#dcf664',false,30);
+          arrow(ctx,{x:a.x,y:h-65},{x:b.x,y:h-65},'#dcf664',false,24);
         }
       }
     }
@@ -141,12 +141,12 @@
       ctx.beginPath();ctx.arc(point.x,point.y,radius,0,Math.PI*2);
       ctx.fillStyle = point.input ? (coupled?'#353d34':'#e0e4d6') : (coupled?'#dcf664':'#191d1c');ctx.fill();
       ctx.fillStyle = point.input ? ink : (coupled?'#191d1c':'#f3f1e9');
-      ctx.font='600 11px Inter, Arial, sans-serif';ctx.fillText(point.input?(point.id==='signal'?'S':'B'):point.id,point.x,point.y+4);
-      ctx.fillStyle=muted;ctx.font='10px Inter, Arial, sans-serif';
+      ctx.font='600 12px Inter, Arial, sans-serif';ctx.fillText(point.input?(point.id==='signal'?'S':'B'):point.id,point.x,point.y+4);
+      ctx.fillStyle=muted;ctx.font='12px Inter, Arial, sans-serif';
       const value = point.input ? (point.id==='signal'?input:.2) : data.states[point.index];
       ctx.fillText(signed(value),point.x+(mode==='flat'&&!vertical&&!point.input?47:0),point.y+(point.input?33:mode==='flat'&&!vertical?4:40));
     }
-    ctx.fillStyle=muted;ctx.font='10px Inter, Arial, sans-serif';ctx.textAlign='center';
+    ctx.fillStyle=muted;ctx.font='11px Inter, Arial, sans-serif';ctx.textAlign='center';
     const note = coupled ? (mode==='recursive' && depth===0 ? 'No observers. Input-only control.' : patterns[mode].diagram) : 'Forward substitution; no joint repair.';
     ctx.fillText(note,w/2,h-15);
     if (coupled) lastPoints=[...points.values()].filter(p=>!p.input);
