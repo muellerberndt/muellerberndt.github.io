@@ -25,9 +25,7 @@ PAGES = {
 NAV = [
     ("cadence", "/cadence/", "Cadence"),
     ("demos", "/demos/", "Demos"),
-    ("robotics", "/robotics/", "Robotics"),
     ("research", "/research/", "Research"),
-    ("investors", "/investors/", "Investors"),
     ("work", "/work/", "Work"),
 ]
 REDIRECTS = {
