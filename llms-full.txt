@@ -65,10 +65,9 @@ The research develops explicit finite constructions and conditional mathematical
 - Research overview: https://floatingpragma.io/research/
 - Video explainer: https://floatingpragma.io/watch/
 - Flagship preprint: https://philpapers.org/rec/MUEFOC
-- Flagship HTML: https://floatingpragma.io/oph/papers/from-observer-consensus-to-standard-physics/
-- Full paper library: https://floatingpragma.io/research/#papers
-- Paper inventory and publication metadata: https://floatingpragma.io/oph/papers/papers.json
-- Paper index for machine readers: https://floatingpragma.io/oph/papers/llms.txt
+- Main preprints: https://floatingpragma.io/research/#preprints
+- Cadence preprint: https://philpapers.org/rec/MUECAP-2
+- Blog: https://blog.floatingpragma.io/
 - Scientific repository: https://github.com/FloatingPragma/observer-patch-holography/
 - Simulator source: https://github.com/muellerberndt/oph-physics-sim
 
@@ -78,7 +77,7 @@ Use the papers and scientific repository for theorem statements, hypotheses, pub
 
 Flat settlement reads supplied sensors; ordinary state-coupled settlement adds learned intermediate states; recursive observer settlement adds exact prediction-error readback. All three share the patch/repair law, learning API and final qualification. Useful functional analogies are practiced responses or muscle memory (flat), coordination and balance (state-coupled), and reflective reasoning (recursive). These are analogies for computational roles, not claims of biological equivalence. Choose a layout by measured task quality, query latency and learning cost; deeper is not automatically better or faster. Archived AMEN uses an earlier record-patch engine, not the current settlement solver.
 
-- Research and paper library: https://floatingpragma.io/research/
+- Research and preprints: https://floatingpragma.io/research/
 - Work in physics, mathematics, AI and security: https://floatingpragma.io/work/
 - Design patterns: https://github.com/muellerberndt/cadence/blob/main/docs/VARIANTS.md
 - Performance: https://floatingpragma.io/cadence/#design-patterns

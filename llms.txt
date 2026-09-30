@@ -37,7 +37,9 @@ Observer Patch Holography (OPH) asks whether bounded observers can build a share
 
 - [Research overview](https://floatingpragma.io/physics/).
 - [Research explainer](https://floatingpragma.io/watch/).
-- [Paper library](https://floatingpragma.io/research/#papers): HTML, PDFs and current publication metadata.
+- [Main preprints](https://floatingpragma.io/research/#preprints): links to the physics and Cadence preprints.
+- [Physics preprint](https://philpapers.org/rec/MUEFOC).
+- [Pragma Research Blog](https://blog.floatingpragma.io/).
 - [Scientific source](https://github.com/FloatingPragma/observer-patch-holography/).
 - [Extended source map](https://floatingpragma.io/llms-full.txt).
 
@@ -45,7 +47,7 @@ Observer Patch Holography (OPH) asks whether bounded observers can build a share
 
 Flat settlement reads supplied sensors; ordinary state-coupled settlement adds learned intermediate states; recursive observer settlement adds exact prediction-error readback. All three share the patch/repair law, learning API and final qualification. Useful functional analogies are practiced responses or muscle memory (flat), coordination and balance (state-coupled), and reflective reasoning (recursive). These are analogies for computational roles, not claims of biological equivalence. Choose a layout by measured task quality, query latency and learning cost; deeper is not automatically better or faster. Archived AMEN uses an earlier record-patch engine, not the current settlement solver.
 
-- Research and paper library: https://floatingpragma.io/research/
+- Research and preprints: https://floatingpragma.io/research/
 - Work in physics, mathematics, AI and security: https://floatingpragma.io/work/
 - Design patterns: https://github.com/muellerberndt/cadence/blob/main/docs/VARIANTS.md
 - Performance: https://floatingpragma.io/cadence/#design-patterns

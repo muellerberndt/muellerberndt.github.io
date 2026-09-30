@@ -1,0 +1,23 @@
+name: Website checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check the research publication boundary
+        run: python3 -m unittest discover -s tools -p 'test_research_publication.py'
+      - name: Verify generated pages are current
+        run: |
+          python3 tools/build_company_site.py
+          git diff --exit-code
+      - name: Check links and published evidence
+        run: python3 tools/check_company_site.py

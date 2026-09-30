@@ -12,10 +12,9 @@
 
 .wordmark-text{display:flex;flex-direction:column;gap:4px;line-height:1}.wordmark-text small{font-size:9px;font-weight:600;letter-spacing:.47em;line-height:1.2}
 
-/* Research library: the same editorial grid as the company pages. */
-[hidden]{display:none!important}.research-intro{margin-top:42px}.research-intro .lead{margin-top:0}.library-controls{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:20px}.library-filters{display:flex;flex-wrap:wrap;gap:8px}.library-filters button{border:1px solid var(--line);background:transparent;color:var(--ink);padding:12px 16px;font-size:13px;min-height:44px}.library-filters button[aria-pressed=true]{background:var(--ink);color:var(--paper);border-color:var(--ink)}.library-filters button:hover{background:var(--accent-soft);color:var(--ink)}.paper-search{display:grid;gap:8px;font-size:11px;font-weight:600;letter-spacing:.04em;min-width:250px}.paper-search input{border:1px solid var(--line);background:var(--white);color:var(--ink);padding:12px 14px;min-height:44px;width:100%;border-radius:0}.paper-search input:focus-visible{outline:2px solid var(--ink);outline-offset:3px}.library-count{margin-bottom:26px}.paper-entry{display:grid;grid-template-columns:180px minmax(0,1fr);gap:45px;padding:36px 0;border-top:1px solid var(--line)}.paper-entry-label{display:flex;flex-direction:column;gap:12px;align-items:start}.paper-entry h3{font-size:clamp(1.4rem,2.3vw,2rem);line-height:1.2;max-width:870px}.paper-entry h3 a{text-decoration:none}.paper-entry h3 a:hover{text-decoration:underline}.paper-entry p{max-width:810px;margin-top:16px;color:var(--muted)}.paper-entry .actions{margin-top:20px;gap:26px}.paper-entry-featured{background:var(--surface);padding:36px 28px;margin-bottom:18px;border:0}.library-empty{padding:30px 0;border-top:1px solid var(--line)}
-@media(max-width:1000px){#site-nav{gap:19px}.library-controls{align-items:stretch;flex-direction:column}.paper-search{max-width:450px}.paper-entry{grid-template-columns:145px minmax(0,1fr);gap:28px}}
-@media(max-width:760px){.research-intro{margin-top:28px}.paper-entry{grid-template-columns:1fr;gap:18px;padding:28px 0}.paper-entry-label{flex-direction:row;flex-wrap:wrap;gap:14px}.paper-entry-featured{padding:26px 22px}.paper-entry h3{font-size:1.65rem}.paper-search{max-width:none}.library-filters button{flex-grow:1}.library-controls{gap:22px}}
+/* Research overview; publication links use the shared cards. */
+[hidden]{display:none!important}.research-intro{margin-top:42px}.research-intro .lead{margin-top:0}
+@media(max-width:760px){.research-intro{margin-top:28px}}
 
 /* Browser demos stay inside the same navigation and visual identity. */
 .demo-player{padding-top:40px}.demo-player .actions{margin-top:0;margin-bottom:22px}.demo-embed{display:block;width:100%;height:85vh;height:85svh;max-height:900px;min-height:0;border:1px solid var(--line);background:var(--ink)}.demo-embed:fullscreen{height:100vh;max-height:none;border:0}.demo-player .small{margin-top:18px}.demo-player .lead{margin-bottom:24px}
@@ -25,7 +24,7 @@
 @media(max-width:760px){.demo-grid{grid-template-columns:1fr}.demo-player-intro{padding-top:36px;padding-bottom:32px}.demo-player-controls{align-items:start;flex-direction:column}}
 
 /* Keep navigation, text and controls usable on touch screens and in landscape. */
-h1,h2,h3,p,a,summary{overflow-wrap:anywhere}.paper-search input{font-size:16px}.film-player{margin:32px 0 0}.film-player figcaption{margin-top:12px}
+h1,h2,h3,p,a,summary{overflow-wrap:anywhere}.film-player{margin:32px 0 0}.film-player figcaption{margin-top:12px}
 @media(max-width:940px){.menu-toggle{min-width:76px;min-height:44px;justify-content:space-between}#site-nav{max-height:calc(100vh - 74px);max-height:calc(100dvh - 74px);overflow-y:auto;overscroll-behavior:contain;padding-bottom:max(24px,env(safe-area-inset-bottom))}.demo-embed{height:85vh;height:85svh;min-height:0;max-height:none}}
 @media(pointer:coarse),(max-width:940px){.visual-controls button{min-width:44px;min-height:44px;font-size:12px}.text-link{display:inline-flex;align-items:center;min-height:44px;padding-block:10px}.footer-bottom a{display:inline-flex;align-items:center;min-height:44px;font-size:12px}.footer-bottom>div{gap:8px 22px}.faq summary{min-height:44px}}
 @media screen and (max-width:600px){.grid-2{grid-template-columns:minmax(0,1fr)}.visual-label{flex-wrap:wrap}.visual-controls{flex-wrap:wrap}.deck-slide{padding:24px}.deck-slide h1{font-size:clamp(2.2rem,8.8vw,2.9rem)}.deck-slide h2{font-size:clamp(2rem,8vw,2.5rem)}}

@@ -2,41 +2,45 @@
  <div class="container">
   <p class="eyebrow">Pragma Research / Papers &amp; ideas</p>
   <h1 class="display">Physics. Mathematics.<br>Intelligence.</h1>
-  <div class="split research-intro"><p class="lead">One question connects our work: what can emerge when local systems observe one another and settle together?</p><div><p>We study that question in fundamental physics, make its mathematical assumptions explicit, and build learning machines from the same organizing idea.</p><div class="actions"><a class="button primary" href="#papers">Explore the papers ↓</a><a class="text-link" href="/work/">The work behind the research ↗</a></div></div></div>
- </div>
-</section>
-<section class="section dark">
- <div class="container">
-  <div class="section-heading"><p class="eyebrow">Three connected programmes</p><h2>From an account of the world<br>to a brain that acts in it.</h2></div>
-  <div class="grid-3">
-   <article class="card"><p class="number">01 / Physics</p><h3>Observer Patch Holography.</h3><p>Bounded, self-reading patches hold local state and records, compare what they share through their boundaries, and repair disagreements. OPH develops the physical structures supported by that observer architecture.</p><a class="text-link" href="/physics/">Explore the physics ↗</a></article>
-   <article class="card"><p class="number">02 / Mathematics</p><h3>Make the argument checkable.</h3><p>Finite consensus, normal forms and event algebras turn the observer idea into explicit constructions. Lean formalizations check stated implications; executable models connect the equations to reproducible experiments.</p><a class="text-link" href="#mathematics">Read the foundations ↓</a></article>
-   <article class="card"><p class="number">03 / AI</p><h3>Cadence.</h3><p>A deep real-time brain that learns from experience. Flat layouts read sensors, ordinary state-coupled layouts add intermediate representations, and recursive observers also read exact prediction errors. All three share the same patch, repair and qualification mechanism.</p><a class="text-link" href="/cadence/#design-patterns">Explore the brain ↗</a></article>
+  <div class="split research-intro">
+   <p class="lead">One question connects our work: what can emerge when local systems observe one another and settle together?</p>
+   <div><p>We study that question in fundamental physics, make its mathematical assumptions explicit, and build learning machines from the same organizing idea.</p><div class="actions"><a class="button primary" href="#preprints">Read the preprints ↓</a><a class="text-link" href="https://blog.floatingpragma.io/">Visit the blog ↗</a></div></div>
   </div>
  </div>
 </section>
-<section class="section" id="papers">
- <div class="container">
-  <div class="section-heading"><p class="eyebrow">The paper library</p><h2>Go straight to the work.</h2><p class="lead">Read the AI preprint and the physics and mathematics papers. Each paper gives its own assumptions, results and experimental scope.</p></div>
-  <div class="library-controls" data-library-controls hidden>
-   <div class="library-filters" role="group" aria-label="Filter papers by subject"><button type="button" data-filter="all" aria-pressed="true">All papers</button><button type="button" data-filter="physics" aria-pressed="false">Physics</button><button type="button" data-filter="mathematics" aria-pressed="false">Mathematics</button><button type="button" data-filter="ai" aria-pressed="false">AI &amp; intelligence</button></div>
-   <label class="paper-search">Search papers<input type="search" id="paper-search" placeholder="Title, topic or keyword" autocomplete="off"></label>
-  </div>
-  <p class="small muted library-count" data-paper-count role="status" aria-live="polite">17 papers</p>
-  <div class="paper-list">
-   <article class="paper-entry paper-entry-featured" data-paper data-category="ai" id="cadence-preprint">
-    <div class="paper-entry-label"><span class="label">AI / Preprint</span><span class="small muted">Cadence</span></div>
-    <div><h3><a href="https://philpapers.org/rec/MUECAP-2">Cadence: the research behind the brain.</a></h3><p>The Cadence preprint brings the patch-net approach to machine intelligence. Read the research alongside the executable library, layout guides and measured demonstrations.</p><div class="actions"><a class="button primary" href="https://philpapers.org/rec/MUECAP-2">Read the preprint ↗</a><a class="text-link" href="/cadence/">See how it works ↗</a></div></div>
+
+<section class="section" id="preprints">
+ <div class="container" id="papers">
+  <div class="section-heading"><p class="eyebrow">The main preprints</p><h2>Two ways to explore<br>one organizing idea.</h2><p class="lead">Read the physics and AI research on PhilPapers. Each preprint states its assumptions, results and experimental scope.</p></div>
+  <div class="grid-2">
+   <article class="card" id="physics-preprint">
+    <p class="label">Physics / Preprint</p>
+    <h3>Observer Patch Holography.</h3>
+    <p>Bounded, self-reading patches hold local state and records, compare what they share through their boundaries, and repair disagreements. OPH develops the physical structures supported by that observer architecture.</p>
+    <div class="actions"><a class="button primary" href="https://philpapers.org/rec/MUEFOC">Read the physics preprint ↗</a><a class="text-link" href="/physics/">Explore the idea ↗</a></div>
    </article>
-   @@PAPER_CATALOG@@
+   <article class="card" id="cadence-preprint">
+    <p class="label">AI / Preprint</p>
+    <h3>Cadence.</h3>
+    <p>The Cadence preprint brings the patch-net approach to machine intelligence. Read the research alongside the executable library, layout guides and measured demonstrations.</p>
+    <div class="actions"><a class="button primary" href="https://philpapers.org/rec/MUECAP-2">Read the Cadence preprint ↗</a><a class="text-link" href="/cadence/">See how it works ↗</a></div>
+   </article>
   </div>
-  <p class="library-empty" data-paper-empty hidden>No papers match this search. Try a different topic or choose all papers.</p>
  </div>
 </section>
-<section class="section accent" id="mathematics">
+
+<section class="section accent" id="blog">
  <div class="container split">
-  <div><p class="eyebrow">Mathematical foundations</p><h2 class="section-heading">An idea you can inspect.</h2></div>
-  <div><p class="lead">The formal development and the software are open to examination.</p><p>Machine-checked proofs establish consequences of their stated assumptions. Measurements determine whether a physical or computational model does the job. The source repositories provide the definitions, code and evidence needed to make that distinction concrete.</p><div class="actions"><a class="button primary" href="https://github.com/FloatingPragma/observer-patch-holography/">Physics &amp; proofs ↗</a><a class="button secondary" href="https://github.com/muellerberndt/cadence">Cadence source ↗</a></div><div class="actions"><a class="text-link" href="/oph/papers/observation-determined-normal-forms/">Consensus normal forms ↗</a><a class="text-link" href="/oph/papers/machine-checked-finite-event-algebras/">Finite event algebras ↗</a></div></div>
+  <div><p class="eyebrow">The Pragma Research blog</p><h2>Follow the ideas.</h2></div>
+  <div><p class="lead">Read the explanations and perspectives that connect the research.</p><p>The blog gives the ideas room for a more informal treatment, alongside the technical accounts in the preprints.</p><div class="actions"><a class="button primary" href="https://blog.floatingpragma.io/">Read the blog ↗</a><a class="text-link" href="/work/">The work behind the research ↗</a></div></div>
  </div>
 </section>
+
+<section class="section dark" id="mathematics">
+ <div class="container split">
+  <div><p class="eyebrow">Mathematical foundations</p><h2>An idea you can inspect.</h2></div>
+  <div><p class="lead">The formal development and the software are open to examination.</p><p>Machine-checked proofs establish consequences of their stated assumptions. Measurements determine whether a physical or computational model does the job. The source repositories provide the definitions, code and evidence needed to make that distinction concrete.</p><div class="actions"><a class="button secondary" href="https://github.com/FloatingPragma/observer-patch-holography/">Physics &amp; proofs ↗</a><a class="button secondary" href="https://github.com/muellerberndt/cadence">Cadence source ↗</a></div></div>
+ </div>
+</section>
+
 <section class="section"><div class="container split"><div><p class="eyebrow">Work with Pragma</p><h2>Turn the research<br>into a useful brain.</h2></div><div><p class="lead">Our first commercial direction is embodied AI: a brain that becomes more useful through experience in a physical world.</p><div class="actions"><a class="button primary" href="/robotics/">Robotics partnerships ↗</a><a class="text-link" href="/investors/">The investment case ↗</a></div></div></div></section>

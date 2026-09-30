@@ -168,13 +168,13 @@ def check_pages(site, errors):
 
 
 def check_unified_surfaces(site, errors):
-    """Every public page uses the company shell, including papers and redirects."""
+    """Every public page uses the company shell, including legacy redirects."""
     embedded = {site / "demos/runtime/amen/index.html", site / "demos/runtime/patch-world/index.html"}
     html_paths = [p for p in site.rglob("*.html") if p not in embedded and not any(part.startswith((".", "_")) for part in p.relative_to(site).parts)]
     for path in html_paths:
         source = path.read_text()
         label = str(path.relative_to(site))
-        for required in ('/assets/company.css?v=7', 'id="site-nav"', 'href="/research/"', 'href="/work/"', 'href="/demos/"', '/favicon.svg?v=6', '/favicon.ico?v=6', '/apple-touch-icon.png?v=6'):
+        for required in ('/assets/company.css?v=8', 'id="site-nav"', 'href="/research/"', 'href="/work/"', 'href="/demos/"', 'href="https://blog.floatingpragma.io/"', '/favicon.svg?v=6', '/favicon.ico?v=6', '/apple-touch-icon.png?v=6'):
             if required not in source:
                 errors.append(f"{label}: missing shared site element {required}")
         for stale in ('/assets/pragma.css', '/assets/pragma.js', '/oph/styles.css', 'Frontier mathematics'):
@@ -183,17 +183,43 @@ def check_unified_surfaces(site, errors):
         if label != 'work/index.html' and 'github.com/muellerberndt/cadence-examples' in source:
             errors.append(f"{label}: current demonstrations must link to cadence-demos")
     research = (site / "research/index.html").read_text()
-    inventory = json.loads((site / "oph/papers/papers.json").read_text())
-    if 'href="https://philpapers.org/rec/MUECAP-2"' not in research:
-        errors.append("Research: missing Cadence preprint")
-    for paper in inventory["papers"]:
-        if urlsplit(paper["html_url"]).path not in research:
-            errors.append(f"Research: missing paper {paper['id']}")
+    for link in ('https://philpapers.org/rec/MUEFOC', 'https://philpapers.org/rec/MUECAP-2', 'https://blog.floatingpragma.io/'):
+        if f'href="{link}"' not in research:
+            errors.append(f"Research: missing publication link {link}")
     work = Page((site / "work/index.html").read_text())
     for anchor in ('early', 'mobile', 'contracts', 'ai', 'writings', 'physics', 'platforms', 'mathematics'):
         if anchor not in work.ids:
             errors.append(f"Work history: missing retained section {anchor}")
     return len(html_paths)
+
+
+def check_research_publication(site, errors):
+    """Only external preprints and exact legacy redirects may be published."""
+    from build_company_site import RETIRED_PAPER_SLUGS, render_redirect
+    site = site.resolve()
+    paper_dir = site / "oph/papers"
+    expected = {Path('index.html'), *(Path(slug) / 'index.html' for slug in RETIRED_PAPER_SLUGS)}
+    actual = {p.relative_to(paper_dir) for p in paper_dir.rglob('*') if p.is_file()}
+    for path in sorted(actual - expected):
+        errors.append(f"Paper mirroring is retired: unexpected oph/papers/{path}")
+    for path in sorted(expected):
+        full_path = paper_dir / path
+        route = '/oph/papers/' + str(path).removesuffix('index.html')
+        expected_html = render_redirect(route, '/research/#preprints', site_root=site)
+        if not full_path.is_file() or full_path.read_text() != expected_html:
+            errors.append(f"Paper mirroring is retired: {route} must be a short preprint redirect")
+    for name in ('assets/papers.css', 'assets/research.js', 'tools/restyle_papers.py'):
+        if (site / name).exists():
+            errors.append(f"Retired paper-library asset or generator remains: {name}")
+    for name in ('sitemap.xml', 'sitemap-root.xml', 'sitemap-index.xml', 'oph/sitemap.xml', 'robots.txt', 'oph/feed.json', 'oph/feed.xml', 'llms.txt', 'llms-full.txt'):
+        path = site / name
+        if path.is_file() and '/oph/papers/' in path.read_text():
+            errors.append(f"{name}: still advertises retired paper mirrors")
+    for route in ROUTES:
+        path = route_file(site, route)
+        if path.is_file() and any(urlsplit(urljoin(ORIGIN, link)).path.startswith('/oph/papers/')
+                                  for link in Page(path.read_text()).links):
+            errors.append(f"{route}: links to a retired paper mirror")
 
 
 def check_browser_demos(site, errors):
@@ -358,6 +384,7 @@ def main():
     site = args.site_root.resolve()
     check_pages(site, errors)
     unified_pages = check_unified_surfaces(site, errors)
+    check_research_publication(site, errors)
     check_browser_demos(site, errors)
     try:
         sources = check_evidence(site, errors)
