@@ -12,6 +12,7 @@ import argparse
 import hashlib
 import json
 import re
+import struct
 from datetime import date
 from collections import Counter
 from html.parser import HTMLParser
@@ -130,6 +131,21 @@ def check_pages(site, errors):
         for name in ("og:title", "og:description", "twitter:card"):
             if not p.meta.get(name):
                 errors.append(f"{route}: missing {name}")
+        image_url = p.meta.get("og:image", "")
+        if p.meta.get("twitter:image") != image_url or not all(p.meta.get(key) for key in ("og:image:alt", "twitter:image:alt")):
+            errors.append(f"{route}: social image and accessible description must be shared")
+        if urlsplit(image_url).hostname == "floatingpragma.io":
+            image_path = route_file(site, urlsplit(image_url).path)
+            if image_path.is_file():
+                data = image_path.read_bytes()
+                if data[:8] != b'\x89PNG\r\n\x1a\n':
+                    errors.append(f"{route}: expected a PNG social image")
+                else:
+                    width, height = struct.unpack('>II', data[16:24])
+                    if [p.meta.get('og:image:width'), p.meta.get('og:image:height')] != [str(width), str(height)]:
+                        errors.append(f"{route}: social image dimensions do not match the file")
+                    if width < 1200 or height < 627 or len(data) > 5_000_000:
+                        errors.append(f"{route}: social image does not meet LinkedIn's size requirements")
         if route == "/404.html" and "noindex" not in p.meta.get("robots", ""):
             errors.append("404 page must carry noindex")
         for identifier, count in p.ids.items():
