@@ -2,26 +2,8 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sitemap>
     <loc>https://floatingpragma.io/sitemap-root.xml</loc>
-    <lastmod>2026-09-30</lastmod>
-  </sitemap>
-  <sitemap>
-    <loc>https://floatingpragma.io/oph/sitemap.xml</loc>
-    <lastmod>2026-09-25</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://floatingpragma.io/oph/papers/sitemap.xml</loc>
-    <lastmod>2026-09-25</lastmod>
-  </sitemap>
-  <sitemap>
-    <loc>https://floatingpragma.io/starklab/sitemap.xml</loc>
-  </sitemap>
-  <sitemap>
-    <loc>https://floatingpragma.io/awesome-zk-proofs/sitemap.xml</loc>
-  </sitemap>
-  <sitemap>
-    <loc>https://floatingpragma.io/awesome-ai-security/sitemap.xml</loc>
-  </sitemap>
-  <sitemap>
-    <loc>https://floatingpragma.io/selected-works/sitemap.xml</loc>
   </sitemap>
 </sitemapindex>

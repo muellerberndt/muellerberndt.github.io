@@ -1,120 +1,121 @@
 {
   "version": "https://jsonfeed.org/version/1.1",
-  "title": "Observer Patch Holography Updates",
-  "home_page_url": "https://floatingpragma.io/oph/",
+  "title": "Pragma Research papers",
+  "home_page_url": "https://floatingpragma.io/research/",
   "feed_url": "https://floatingpragma.io/oph/feed.json",
-  "description": "Public routes into Observer Patch Holography: plain-language introductions, formal papers, simulations, essays, and ways to test the claim.",
-  "language": "en",
-  "authors": [
-    {
-      "name": "Pragma"
-    }
-  ],
+  "description": "Published physics and mathematics papers from Pragma Research.",
   "items": [
     {
-      "id": "oph-paper-release-r2022",
-      "url": "https://floatingpragma.io/oph/papers/",
-      "title": "Observer Patch Holography r2022",
-      "date_published": "2026-08-20T00:00:00Z",
-      "summary": "The r2022 paper stack, with first-party HTML, PDFs, scholarly metadata, and explicit physical interpretation boundaries."
+      "id": "https://floatingpragma.io/oph/papers/standard-model-gauge-structure/",
+      "url": "https://floatingpragma.io/oph/papers/standard-model-gauge-structure/",
+      "title": "Deriving Standard Model Gauge Structure from Observer Overlap Consistency",
+      "content_text": "Examines two mathematical routes from observer overlap to the symmetry structure used by the Standard Model. The physical identification of that structure is an open question.",
+      "date_modified": "2026-09-25T00:00:00Z"
     },
     {
-      "id": "https://oph-lab.floatingpragma.io/",
-      "url": "https://oph-lab.floatingpragma.io/",
-      "title": "OPH Lab",
-      "date_published": "2026-08-20T00:00:00Z",
-      "summary": "Interactive experiments for observer overlap, records, repair, geometry, and observer dynamics."
+      "id": "https://floatingpragma.io/oph/papers/particle-spectrum-from-observer-consistency/",
+      "url": "https://floatingpragma.io/oph/papers/particle-spectrum-from-observer-consistency/",
+      "title": "Deriving the Particle Zoo from Observer Consistency",
+      "content_text": "Explores whether the observer-consistency framework can account for particles and physical constants. Several comparisons are mathematical or conditional, and their connection to measured physics remains open.",
+      "date_modified": "2026-09-25T00:00:00Z"
     },
     {
-      "id": "https://oph-book.floatingpragma.io/",
-      "url": "https://oph-book.floatingpragma.io/",
-      "title": "OPH Webbook v2",
-      "date_published": "2026-08-20T00:00:00Z",
-      "summary": "The OPH Webbook v2 surface is in preparation. The learning library is the textbook entry point."
+      "id": "https://floatingpragma.io/oph/papers/from-observer-consensus-to-standard-physics/",
+      "url": "https://floatingpragma.io/oph/papers/from-observer-consensus-to-standard-physics/",
+      "title": "Finite Observer Consensus as a Reconstruction Principle: Normal Forms, the Standard Model Lie Type, and a Route to the Einstein Field Equation",
+      "content_text": "The flagship technical account of Observer Patch Holography. It develops finite consensus normal forms, Standard Model Lie-type reconstruction, and a conditional route to the Einstein field equation, with the physical identification steps stated separately.",
+      "date_modified": "2026-09-25T00:00:00Z"
     },
     {
-      "id": "https://floatingpragma.io/oph/papers/",
-      "url": "https://floatingpragma.io/oph/papers/",
-      "title": "OPH Paper Summaries",
-      "date_published": "2026-06-02T00:00:00Z",
-      "summary": "Readable introductions and formal PDFs for the Observer Patch Holography papers."
+      "id": "https://floatingpragma.io/oph/papers/observers-are-all-you-need/",
+      "url": "https://floatingpragma.io/oph/papers/observers-are-all-you-need/",
+      "title": "Observers Are All You Need",
+      "content_text": "A compact synthesis of Observer Patch Holography: finite observer repair, a source-derived informational poset, the exact rank-three signed-record carrier, and conditional routes to Lorentzian gravity and Standard Model structure, with the remaining physical attachments stated explicitly.",
+      "date_modified": "2026-09-25T00:00:00Z"
     },
     {
-      "id": "https://floatingpragma.io/oph/standard-model-gravity-unification/",
-      "url": "https://floatingpragma.io/oph/standard-model-gravity-unification/",
-      "title": "Standard Model Unified with Gravity via OPH",
-      "date_published": "2026-06-02T00:00:00Z",
-      "summary": "A plain-language entry point for OPH's proposed connection between gravity and particle physics."
+      "id": "https://floatingpragma.io/oph/papers/paradise-as-fixed-point-consensus/",
+      "url": "https://floatingpragma.io/oph/papers/paradise-as-fixed-point-consensus/",
+      "title": "Paradise as Fixed-Point Consensus",
+      "content_text": "The OPH continuation and meaning paper. It reads existence, observer continuation, record consistency, justice, resurrection, and paradise through fixed-point consensus.",
+      "date_modified": "2026-09-25T00:00:00Z"
     },
     {
-      "id": "https://floatingpragma.io/oph/cosmological-constant-derivation/",
-      "url": "https://floatingpragma.io/oph/cosmological-constant-derivation/",
-      "title": "Cosmological Constant Capacity Target via OPH",
-      "date_published": "2026-06-02T00:00:00Z",
-      "summary": "OPH's proposed link between the universe's information capacity and the cosmological constant. It does not yield a prediction."
+      "id": "https://floatingpragma.io/oph/papers/reality-as-consensus-protocol/",
+      "url": "https://floatingpragma.io/oph/papers/reality-as-consensus-protocol/",
+      "title": "Reality as a Consensus Protocol",
+      "content_text": "Develops the mathematics of shared records, disagreement repair, and stable outcomes among limited observers.",
+      "date_modified": "2026-09-25T00:00:00Z"
     },
     {
-      "id": "https://floatingpragma.io/oph/physics-unification/",
-      "url": "https://floatingpragma.io/oph/physics-unification/",
-      "title": "Physics Unification via OPH",
-      "date_published": "2026-05-21T00:00:00Z",
-      "summary": "A plain-language introduction to OPH's attempt to connect quantum theory, gravity, particles, records, and observers."
+      "id": "https://floatingpragma.io/oph/papers/observer-spacetime-einstein-dynamics/",
+      "url": "https://floatingpragma.io/oph/papers/observer-spacetime-einstein-dynamics/",
+      "title": "Recovering Observer Spacetime and Einstein Dynamics from Overlap Consistency",
+      "content_text": "Explores how shared observer records could lead to spacetime and gravity. The paper states the mathematical results and the conditions needed to connect them to physical gravity.",
+      "date_modified": "2026-09-25T00:00:00Z"
     },
     {
-      "id": "https://simulation.floatingpragma.io/",
-      "url": "https://simulation.floatingpragma.io/",
-      "title": "OPH Mini-Universe Simulation",
-      "date_published": "2026-07-08T00:00:00Z",
-      "summary": "Interactive OPH mini-universe explorer showing observer patches, overlap readback, inconsistency repair, records, and emergent geometry."
+      "id": "https://floatingpragma.io/oph/papers/screen-microphysics-and-observer-synchronization/",
+      "url": "https://floatingpragma.io/oph/papers/screen-microphysics-and-observer-synchronization/",
+      "title": "Screen Microphysics and Observer Synchronization",
+      "content_text": "Studies a finite observer model with records, synchronization, measurement, and possible hardware evidence. It separates mathematical results from open questions about their physical realization.",
+      "date_modified": "2026-09-25T00:00:00Z"
     },
     {
-      "id": "https://blog.floatingpragma.io/",
-      "url": "https://blog.floatingpragma.io/",
-      "title": "Floating Pragma Blog",
-      "date_published": "2026-05-21T00:00:00Z",
-      "summary": "Public OPH essays and entry points connecting observer consistency to meaning, computation, semiotics, and broader physics interpretation."
+      "id": "https://floatingpragma.io/oph/papers/de-sitter-time-advance-fixed-screen-capacity/",
+      "url": "https://floatingpragma.io/oph/papers/de-sitter-time-advance-fixed-screen-capacity/",
+      "title": "The de Sitter Time-Advance Sign from a Finite Screen with Fixed Capacity",
+      "content_text": "Derives finite entropy, capacity-transfer, analytic-curvature, and graph-spectrum identities that conditionally reproduce the de Sitter time-advance sign. The gravitational shock dictionary and coefficient remain separate physical inputs.",
+      "date_modified": "2026-09-25T00:00:00Z"
     },
     {
-      "id": "https://learn.floatingpragma.io/",
-      "url": "https://learn.floatingpragma.io/",
-      "title": "OPH Textbooks",
-      "date_published": "2026-05-11T23:45:00Z",
-      "summary": "The guided study surface and the best structured route into the OPH derivations."
+      "id": "https://floatingpragma.io/oph/papers/fine-structure-constant-oph-pixel-fixed-point/",
+      "url": "https://floatingpragma.io/oph/papers/fine-structure-constant-oph-pixel-fixed-point/",
+      "title": "The Fine-Structure Constant as an OPH Pixel Fixed Point",
+      "content_text": "A focused OPH paper on the fine-structure constant, local screen-cell closure, hadronic endpoint transport, and the fixed-point status of alpha.",
+      "date_modified": "2026-09-25T00:00:00Z"
     },
     {
-      "id": "https://floatingpragma.io/oph/stress-test/",
-      "url": "https://floatingpragma.io/oph/stress-test/",
-      "title": "Stress-Test Observer Patch Holography",
-      "date_published": "2026-05-06T10:35:00Z",
-      "summary": "Use the papers, simulations, source code, and public challenge to find a precise error or overclaim."
+      "id": "https://floatingpragma.io/oph/papers/positive-chamber-koide-icosahedral-face-circulants/",
+      "url": "https://floatingpragma.io/oph/papers/positive-chamber-koide-icosahedral-face-circulants/",
+      "title": "The Positive-Chamber Koide Identity for Icosahedral Face Circulants",
+      "content_text": "Proves the exact Koide invariant for positive Hermitian C3 face circulants and isolates the balance condition that yields Q = 2/3. The finite GNS implication and tau-mass window are conditional; no physical lepton-family attachment or source-only mass prediction is claimed.",
+      "date_modified": "2026-09-25T00:00:00Z"
     },
     {
-      "id": "https://github.com/FloatingPragma/observer-patch-holography/blob/main/LICENSE",
-      "url": "https://github.com/FloatingPragma/observer-patch-holography/blob/main/LICENSE",
-      "title": "OPH License and Anti-Patent Covenant",
-      "date_published": "2026-05-26T00:00:00Z",
-      "summary": "The canonical repository license and OPH open-use anti-patent covenant, with PATENTS.md carrying copy/paste website notices."
+      "id": "https://floatingpragma.io/oph/papers/machine-checked-finite-event-algebras/",
+      "url": "https://floatingpragma.io/oph/papers/machine-checked-finite-event-algebras/",
+      "title": "Machine-Checked Finite Event Algebras for Observer-Patch Holography",
+      "content_text": "A machine-checked finite-event-algebra paper for OPH measurement surfaces, including Boolean event structure, traces, conditional expectations, and Born-Luders update rules.",
+      "date_modified": "2026-09-25T00:00:00Z"
     },
     {
-      "id": "https://notebooklm.google.com/notebook/d5249760-6ce8-44a0-927b-ccf90402711a",
-      "url": "https://notebooklm.google.com/notebook/d5249760-6ce8-44a0-927b-ccf90402711a",
-      "title": "OPH NotebookLM Source Notebook",
-      "date_published": "2026-05-06T10:35:00Z",
-      "summary": "Ask the source notebook for the strongest objection, the proof chain behind a claim, or the empirical pressure point most likely to break OPH."
+      "id": "https://floatingpragma.io/oph/papers/observation-determined-normal-forms/",
+      "url": "https://floatingpragma.io/oph/papers/observation-determined-normal-forms/",
+      "title": "Observation-Determined Normal Forms: Stability, Obstructions, and Refinement in Constraint and Rewrite Systems",
+      "content_text": "A substrate-neutral mathematical paper separating same-source confluence, cross-source identification from protected observations, liveness, and local repairability, with quantitative stability and refinement criteria.",
+      "date_modified": "2026-09-25T00:00:00Z"
     },
     {
-      "id": "https://blog.floatingpragma.io/semiotics-and-the-physics-of-meaning",
-      "url": "https://blog.floatingpragma.io/semiotics-and-the-physics-of-meaning",
-      "title": "Semiotics and the Physics of Meaning",
-      "date_published": "2026-05-06T10:35:00Z",
-      "summary": "The bridge from signs, interpretation, shared codes, and meaning to observer overlap and stable public records."
+      "id": "https://floatingpragma.io/oph/papers/observer-patch-holography-string-vacuum-selector/",
+      "url": "https://floatingpragma.io/oph/papers/observer-patch-holography-string-vacuum-selector/",
+      "title": "Observer Patch Holography as a String-Vacuum Selector",
+      "content_text": "A bridge paper connecting the de Sitter observer problem, OPH edge-string effective language, and a heterotic Standard Model representative as a conditional string-vacuum selector.",
+      "date_modified": "2026-09-25T00:00:00Z"
     },
     {
-      "id": "https://blog.floatingpragma.io/the-trigger",
-      "url": "https://blog.floatingpragma.io/the-trigger",
-      "title": "The Trigger",
-      "date_published": "2026-05-06T10:35:00Z",
-      "summary": "A public entry point into the OPH claim and its broader stakes."
+      "id": "https://floatingpragma.io/oph/papers/thinking-as-patch-net-fixed-point-search/",
+      "url": "https://floatingpragma.io/oph/papers/thinking-as-patch-net-fixed-point-search/",
+      "title": "Thinking as Patch-Net Fixed-Point Search",
+      "content_text": "An OPH paper on brains as biological fixed-point consensus systems, self-reading observer patches, recurrent repair, qualia, and AGI architecture.",
+      "date_modified": "2026-09-25T00:00:00Z"
+    },
+    {
+      "id": "https://floatingpragma.io/oph/papers/yang-mills-mass-gap-observer-patch-holography/",
+      "url": "https://floatingpragma.io/oph/papers/yang-mills-mass-gap-observer-patch-holography/",
+      "title": "Explaining the Yang-Mills Mass Gap with Observer-Patch Repair Dynamics",
+      "content_text": "A branch-scoped OPH paper on the Yang-Mills mass gap, support-visible compact-gauge extraction, Euclidean consensus, repair completeness, and the exact repair gap.",
+      "date_modified": "2026-09-25T00:00:00Z"
     }
   ]
 }

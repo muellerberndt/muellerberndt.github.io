@@ -1,206 +1,117 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Observation-Determined Normal Forms: Stability, Obstructions, and Refinement in Constraint and Rewrite Systems | Pragma Research</title>
-  <meta name="title" content="Observation-Determined Normal Forms: Stability, Obstructions, and Refinement in Constraint and Rewrite Systems | Pragma Research" />
-  <meta name="description" content="A substrate-neutral mathematical paper separating same-source confluence, cross-source identification from protected observations, liveness, and local repairability, with quantitative stability and refinement criteria." />
-  <meta name="keywords" content="abstract rewriting, observation-determined normal forms, confluence, boundary reconstruction, conditional expectation, refinement stability, Lean 4" />
-  <meta name="author" content="Pragma Research" />
-  <meta name="theme-color" content="#05070b" />
-  <link rel="canonical" href="https://floatingpragma.io/oph/papers/observation-determined-normal-forms/" />
-  <link rel="related" href="https://floatingpragma.io/physics/" title="Observer Patch Holography" />
-  <link rel="related" href="https://learn.floatingpragma.io/" title="OPH Learning Library" />
-  <link rel="related" href="https://oph-lab.floatingpragma.io/" title="OPH Lab" />
-  <link rel="related" href="https://simulation.floatingpragma.io/" title="OPH Simulation" />
-  <link rel="related" href="https://github.com/FloatingPragma/observer-patch-holography/" title="OPH Source Repository" />
-  <link rel="related" href="https://oph-book.floatingpragma.io/" title="OPH Webbook v2" />
-  <link rel="related" href="https://blog.floatingpragma.io/the-trigger" title="The Trigger" />
-  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-  <meta name="citation_title" content="Observation-Determined Normal Forms: Stability, Obstructions, and Refinement in Constraint and Rewrite Systems" />
-  <meta name="citation_author" content="Bernhard Mueller" />
-  <meta name="citation_author" content="Jinwook Kim" />
-  <meta name="citation_author" content="David Matscheko" />
-  <meta name="citation_author" content="Jonathan Hill" />
-  <meta name="citation_author_institution" content="Pragma Research Inc." />
-  <meta name="citation_publication_date" content="2026/09/25" />
-  <meta name="citation_online_date" content="2026/09/25" />
-  <meta name="citation_language" content="en" />
-  <meta name="citation_keywords" content="abstract rewriting; observation-determined normal forms; confluence; boundary reconstruction; conditional expectation; refinement stability; Lean 4" />
-  <meta name="citation_pdf_url" content="https://floatingpragma.io/oph/papers/observation-determined-normal-forms/paper.pdf" />
-  <meta name="citation_abstract_html_url" content="https://floatingpragma.io/oph/papers/observation-determined-normal-forms/" />
-  <meta name="citation_technical_report_institution" content="Pragma Research" />
-  <meta name="citation_technical_report_number" content="OPH r2046 observable_normal_forms" />
-  <meta name="DC.title" content="Observation-Determined Normal Forms: Stability, Obstructions, and Refinement in Constraint and Rewrite Systems" />
-  <meta name="DC.creator" content="Bernhard Mueller" />
-  <meta name="DC.creator" content="Jinwook Kim" />
-  <meta name="DC.creator" content="David Matscheko" />
-  <meta name="DC.creator" content="Jonathan Hill" />
-  <meta name="DC.issued" content="2026/09/25" />
-  <meta name="DC.date" content="2026/09/25" />
-  <meta name="DC.type" content="Text" />
-  <meta name="DC.format" content="text/html" />
-  <meta name="DC.language" content="en" />
-  <meta name="DC.publisher" content="Pragma Research" />
-  <meta name="DC.identifier" content="https://floatingpragma.io/oph/papers/observation-determined-normal-forms/" />
-  <meta name="DC.identifier" content="https://floatingpragma.io/oph/papers/observation-determined-normal-forms/paper.pdf" />
-  <meta name="article:published_time" content="2026-09-25T00:00:00Z" />
-  <meta name="article:modified_time" content="2026-09-25T00:00:00Z" />
-  <meta name="prism.publicationDate" content="2026/09/25" />
-  <meta name="prism.publicationName" content="Observer Patch Holography Papers" />
-  <meta name="prism.section" content="Mathematical foundations" />
-  <meta name="prism.url" content="https://floatingpragma.io/oph/papers/observation-determined-normal-forms/" />
-  <meta name="prism.copyright" content="2026 Pragma Research" />
-  <link rel="alternate" type="application/pdf" href="https://floatingpragma.io/oph/papers/observation-determined-normal-forms/paper.pdf" title="Observation-Determined Normal Forms: Stability, Obstructions, and Refinement in Constraint and Rewrite Systems PDF" />
-  <meta property="og:type" content="article" />
-  <meta property="og:url" content="https://floatingpragma.io/oph/papers/observation-determined-normal-forms/" />
-  <meta property="og:site_name" content="Pragma Research" />
-  <meta property="og:title" content="Observation-Determined Normal Forms: Stability, Obstructions, and Refinement in Constraint and Rewrite Systems | Pragma Research" />
-  <meta property="og:description" content="A substrate-neutral mathematical paper separating same-source confluence, cross-source identification from protected observations, liveness, and local repairability, with quantitative stability and refinement criteria." />
-  <meta property="og:image" content="https://floatingpragma.io/og-physics.png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="Observer Patch Holography, the fundamental physics program at Pragma Research" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Observation-Determined Normal Forms: Stability, Obstructions, and Refinement in Constraint and Rewrite Systems | Pragma Research" />
-  <meta name="twitter:description" content="A substrate-neutral mathematical paper separating same-source confluence, cross-source identification from protected observations, liveness, and local repairability, with quantitative stability and refinement criteria." />
-  <meta name="twitter:image" content="https://floatingpragma.io/og-physics.png" />
-  <meta name="twitter:image:alt" content="Observer Patch Holography, the fundamental physics program at Pragma Research" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" />
-  <link rel="stylesheet" href="/assets/pragma.css?v=1" />
-  <link rel="stylesheet" href="/assets/papers.css?v=1" />
-  <script>
-    window.MathJax = {
-      tex: { inlineMath: [['\\(', '\\)'], ['$', '$']], displayMath: [['\\[', '\\]']] },
-      svg: { fontCache: 'global' }
-    };
-  </script>
-  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ScholarlyArticle",
-  "headline": "Observation-Determined Normal Forms: Stability, Obstructions, and Refinement in Constraint and Rewrite Systems",
-  "name": "Observation-Determined Normal Forms: Stability, Obstructions, and Refinement in Constraint and Rewrite Systems",
-  "description": "A substrate-neutral mathematical paper separating same-source confluence, cross-source identification from protected observations, liveness, and local repairability, with quantitative stability and refinement criteria.",
-  "url": "https://floatingpragma.io/oph/papers/observation-determined-normal-forms/",
-  "sameAs": "https://floatingpragma.io/oph/papers/observation-determined-normal-forms/paper.pdf",
-  "encoding": {
-    "@type": "MediaObject",
-    "contentUrl": "https://floatingpragma.io/oph/papers/observation-determined-normal-forms/paper.pdf",
-    "encodingFormat": "application/pdf"
-  },
-  "author": [
-    {
-      "@type": "Person",
-      "name": "Bernhard Mueller",
-      "affiliation": {
-        "@type": "Organization",
-        "name": "Pragma Research Inc."
-      }
-    },
-    {
-      "@type": "Person",
-      "name": "Jinwook Kim"
-    },
-    {
-      "@type": "Person",
-      "name": "David Matscheko"
-    },
-    {
-      "@type": "Person",
-      "name": "Jonathan Hill"
-    }
-  ],
-  "publisher": {
-    "@type": "Organization",
-    "name": "Pragma Research",
-    "url": "https://floatingpragma.io/"
-  },
-  "isPartOf": {
-    "@type": "ResearchProject",
-    "name": "Observer Patch Holography",
-    "url": "https://floatingpragma.io/physics/"
-  },
-  "keywords": [
-    "abstract rewriting",
-    "observation-determined normal forms",
-    "confluence",
-    "boundary reconstruction",
-    "conditional expectation",
-    "refinement stability",
-    "Lean 4"
-  ],
-  "datePublished": "September 25, 2026",
-  "dateModified": "September 25, 2026",
-  "version": "r2046",
-  "subjectOf": [
-    {
-      "@type": "BlogPosting",
-      "headline": "The Trigger",
-      "url": "https://blog.floatingpragma.io/the-trigger",
-      "description": "High-level public entry point for the OPH claim."
-    }
-  ]
-}
-  </script>
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Pragma Research",
-      "item": "https://floatingpragma.io/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Physics",
-      "item": "https://floatingpragma.io/physics/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "Papers",
-      "item": "https://floatingpragma.io/oph/papers/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 4,
-      "name": "Observation-Determined Normal Forms: Stability, Obstructions, and Refinement in Constraint and Rewrite Systems",
-      "item": "https://floatingpragma.io/oph/papers/observation-determined-normal-forms/"
-    }
-  ]
-}
-  </script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HLGH209WMG"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-HLGH209WMG', { cookie_domain: 'floatingpragma.io' });
-  </script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Observation-Determined Normal Forms: Stability, Obstructions, and Refinement in Constraint and Rewrite Systems | Pragma Research</title>
+<meta name="description" content="A substrate-neutral mathematical paper separating same-source confluence, cross-source identification from protected observations, liveness, and local repairability, with quantitative stability and refinement criteria.">
+<meta name="theme-color" content="#f3f1e9">
+<link rel="canonical" href="https://floatingpragma.io/oph/papers/observation-determined-normal-forms/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Pragma Research">
+<meta property="og:title" content="Observation-Determined Normal Forms: Stability, Obstructions, and Refinement in Constraint and Rewrite Systems | Pragma Research">
+<meta property="og:description" content="A substrate-neutral mathematical paper separating same-source confluence, cross-source identification from protected observations, liveness, and local repairability, with quantitative stability and refinement criteria.">
+<meta property="og:url" content="https://floatingpragma.io/oph/papers/observation-determined-normal-forms/">
+<meta property="og:image" content="https://floatingpragma.io/assets/og-company-research.png">
+<meta property="og:image:alt" content="Pragma Research. Brains that learn. A recursive network of connected local models.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Observation-Determined Normal Forms: Stability, Obstructions, and Refinement in Constraint and Rewrite Systems | Pragma Research">
+<meta name="twitter:description" content="A substrate-neutral mathematical paper separating same-source confluence, cross-source identification from protected observations, liveness, and local repairability, with quantitative stability and refinement criteria.">
+<meta name="twitter:image" content="https://floatingpragma.io/assets/og-company-research.png">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;650;700;750;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/company.css?v=3">
+<script src="/assets/company.js?v=1" defer></script>
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "ScholarlyArticle", "headline": "Observation-Determined Normal Forms: Stability, Obstructions, and Refinement in Constraint and Rewrite Systems", "name": "Observation-Determined Normal Forms: Stability, Obstructions, and Refinement in Constraint and Rewrite Systems", "description": "A substrate-neutral mathematical paper separating same-source confluence, cross-source identification from protected observations, liveness, and local repairability, with quantitative stability and refinement criteria.", "url": "https://floatingpragma.io/oph/papers/observation-determined-normal-forms/", "sameAs": "https://floatingpragma.io/oph/papers/observation-determined-normal-forms/paper.pdf", "encoding": {"@type": "MediaObject", "contentUrl": "https://floatingpragma.io/oph/papers/observation-determined-normal-forms/paper.pdf", "encodingFormat": "application/pdf"}, "author": [{"@type": "Person", "name": "Bernhard Mueller", "affiliation": {"@type": "Organization", "name": "Pragma Research Inc."}}, {"@type": "Person", "name": "Jinwook Kim"}, {"@type": "Person", "name": "David Matscheko"}, {"@type": "Person", "name": "Jonathan Hill"}], "publisher": {"@type": "Organization", "name": "Pragma Research", "url": "https://floatingpragma.io/"}, "isPartOf": {"@type": "ResearchProject", "name": "Observer Patch Holography", "url": "https://floatingpragma.io/physics/"}, "keywords": ["abstract rewriting", "observation-determined normal forms", "confluence", "boundary reconstruction", "conditional expectation", "refinement stability", "Lean 4"], "datePublished": "September 25, 2026", "dateModified": "September 25, 2026", "version": "r2046", "subjectOf": [{"@type": "BlogPosting", "headline": "The Trigger", "url": "https://blog.floatingpragma.io/the-trigger", "description": "High-level public entry point for the OPH claim."}]}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Pragma Research", "item": "https://floatingpragma.io/"}, {"@type": "ListItem", "position": 2, "name": "Research", "item": "https://floatingpragma.io/research/"}, {"@type": "ListItem", "position": 3, "name": "Papers", "item": "https://floatingpragma.io/research/#papers"}, {"@type": "ListItem", "position": 4, "name": "Observation-Determined Normal Forms: Stability, Obstructions, and Refinement in Constraint and Rewrite Systems", "item": "https://floatingpragma.io/oph/papers/observation-determined-normal-forms/"}]}]</script>
+<link rel="stylesheet" href="/assets/papers.css?v=2">
+<script>
+window.MathJax = {
+  tex: { inlineMath: [['\\(', '\\)'], ['$', '$']], displayMath: [['\\[', '\\]']] },
+  svg: { fontCache: 'global' }
+};
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var links = Array.from(document.querySelectorAll('.paper-aside .paper-toc a'));
+  if (!links.length || !('IntersectionObserver' in window)) return;
+  var byId = new Map(links.map(function (a) { return [a.hash.slice(1), a]; }));
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (!entry.isIntersecting) return;
+      links.forEach(function (a) {
+        var selected = a.hash.slice(1) === entry.target.id;
+        a.classList.toggle('on', selected);
+        if (selected) a.setAttribute('aria-current', 'location');
+        else a.removeAttribute('aria-current');
+      });
+    });
+  }, { rootMargin: '-10% 0px -75% 0px' });
+  document.querySelectorAll('.paper-body h1[id], .paper-body h2[id]').forEach(function (heading) {
+    if (byId.has(heading.id)) observer.observe(heading);
+  });
+});
+</script>
+<meta name="keywords" content="abstract rewriting, observation-determined normal forms, confluence, boundary reconstruction, conditional expectation, refinement stability, Lean 4" />
+<meta name="author" content="Pragma Research" />
+<link rel="related" href="https://floatingpragma.io/physics/" title="Observer Patch Holography" />
+<link rel="related" href="https://learn.floatingpragma.io/" title="OPH Learning Library" />
+<link rel="related" href="https://oph-lab.floatingpragma.io/" title="OPH Lab" />
+<link rel="related" href="https://simulation.floatingpragma.io/" title="OPH Simulation" />
+<link rel="related" href="https://github.com/FloatingPragma/observer-patch-holography/" title="OPH Source Repository" />
+<link rel="related" href="https://oph-book.floatingpragma.io/" title="OPH Webbook v2" />
+<link rel="related" href="https://blog.floatingpragma.io/the-trigger" title="The Trigger" />
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+<meta name="citation_title" content="Observation-Determined Normal Forms: Stability, Obstructions, and Refinement in Constraint and Rewrite Systems" />
+<meta name="citation_author" content="Bernhard Mueller" />
+<meta name="citation_author" content="Jinwook Kim" />
+<meta name="citation_author" content="David Matscheko" />
+<meta name="citation_author" content="Jonathan Hill" />
+<meta name="citation_author_institution" content="Pragma Research Inc." />
+<meta name="citation_publication_date" content="2026/09/25" />
+<meta name="citation_online_date" content="2026/09/25" />
+<meta name="citation_language" content="en" />
+<meta name="citation_keywords" content="abstract rewriting; observation-determined normal forms; confluence; boundary reconstruction; conditional expectation; refinement stability; Lean 4" />
+<meta name="citation_pdf_url" content="https://floatingpragma.io/oph/papers/observation-determined-normal-forms/paper.pdf" />
+<meta name="citation_abstract_html_url" content="https://floatingpragma.io/oph/papers/observation-determined-normal-forms/" />
+<meta name="citation_technical_report_institution" content="Pragma Research" />
+<meta name="citation_technical_report_number" content="OPH r2046 observable_normal_forms" />
+<meta name="DC.title" content="Observation-Determined Normal Forms: Stability, Obstructions, and Refinement in Constraint and Rewrite Systems" />
+<meta name="DC.creator" content="Bernhard Mueller" />
+<meta name="DC.creator" content="Jinwook Kim" />
+<meta name="DC.creator" content="David Matscheko" />
+<meta name="DC.creator" content="Jonathan Hill" />
+<meta name="DC.issued" content="2026/09/25" />
+<meta name="DC.date" content="2026/09/25" />
+<meta name="DC.type" content="Text" />
+<meta name="DC.format" content="text/html" />
+<meta name="DC.language" content="en" />
+<meta name="DC.publisher" content="Pragma Research" />
+<meta name="DC.identifier" content="https://floatingpragma.io/oph/papers/observation-determined-normal-forms/" />
+<meta name="DC.identifier" content="https://floatingpragma.io/oph/papers/observation-determined-normal-forms/paper.pdf" />
+<meta name="article:published_time" content="2026-09-25T00:00:00Z" />
+<meta name="article:modified_time" content="2026-09-25T00:00:00Z" />
+<meta name="prism.publicationDate" content="2026/09/25" />
+<meta name="prism.publicationName" content="Observer Patch Holography Papers" />
+<meta name="prism.section" content="Mathematical foundations" />
+<meta name="prism.url" content="https://floatingpragma.io/oph/papers/observation-determined-normal-forms/" />
+<meta name="prism.copyright" content="2026 Pragma Research" />
+<link rel="alternate" type="application/pdf" href="https://floatingpragma.io/oph/papers/observation-determined-normal-forms/paper.pdf" title="Observation-Determined Normal Forms: Stability, Obstructions, and Refinement in Constraint and Rewrite Systems PDF" />
 </head>
-<body class="theme-phys paper-page">
-  <a class="skip" href="#main">Skip to content</a>
-  <header class="site-header">
-    <div class="shell">
-      <a class="brand" href="/" aria-label="Pragma Research home"><img src="/pragma-cropped.jpg" alt="" width="34" height="34" /><span><b>Pragma Research</b><small>Frontier mathematics</small></span></a>
-      <nav class="nav" aria-label="Primary"><a href="/physics/">Physics</a><a href="/cadence/">Cadence</a><a href="/#investors">Investors</a><a class="cta" href="mailto:bernhard@floatingpragma.ai">Contact</a></nav>
-    </div>
-  </header>
-
-  <main id="main">
-    <article class="shell">
+<body class="paper-page">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container nav-shell">
+    <a class="wordmark" href="/" aria-label="Pragma Research home"><span class="wordmark-text">PRAGMA<small>RESEARCH</small></span><span class="brand-dot" aria-hidden="true"></span></a>
+    <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false">Menu <span aria-hidden="true">+</span></button>
+    <nav id="site-nav" aria-label="Main navigation"><a href="/cadence/">Cadence</a><a href="/robotics/">Robotics</a><a href="/research/" aria-current="page">Research</a><a href="/investors/">Investors</a><a href="/work/">Work</a><a class="nav-contact" href="mailto:bernhard@floatingpragma.ai">Let's talk <span aria-hidden="true">↗</span></a></nav>
+  </div>
+</header>
+<main id="main"><article class="container paper-article">
       <header class="paper-hero">
-        <nav class="crumbs" aria-label="Breadcrumb"><a href="/physics/">Physics</a><span aria-hidden="true">/</span><span aria-hidden="true">/</span><span aria-current="page">Focused study</span></nav>
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="/research/">Research</a><span aria-hidden="true">/</span><a href="/research/#papers">Papers</a><span aria-hidden="true">/</span><span aria-current="page">Focused study</span></nav>
         <span class="eyebrow">Mathematical foundations</span>
         <h1 class="citation_title">Observation-Determined Normal Forms: Stability, Obstructions, and Refinement in Constraint and Rewrite Systems</h1>
         <div class="byline">
@@ -209,9 +120,9 @@
         </div>
         <div class="paper-chips"><span>r2046</span><span>September 25, 2026</span><span>Focused study</span><span>HTML &amp; PDF</span></div>
         <div class="actions">
-          <a class="btn btn-phys" href="/oph/papers/observation-determined-normal-forms/paper.pdf" target="_blank" rel="noopener noreferrer" data-track-link="paper-pdf-observable_normal_forms">Download PDF <span class="arr">&rarr;</span></a>
-          <a class="btn" href="/oph/papers/" data-track-link="paper-index">All papers</a>
-          <a class="btn" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r2046" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
+          <a class="button primary" href="/oph/papers/observation-determined-normal-forms/paper.pdf" target="_blank" rel="noopener noreferrer" data-track-link="paper-pdf-observable_normal_forms">Download PDF <span class="arr">&rarr;</span></a>
+          <a class="button secondary" href="/research/#papers" data-track-link="paper-index">All papers</a>
+          <a class="button secondary" href="https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r2046" target="_blank" rel="noopener noreferrer" data-track-link="paper-release">GitHub release</a>
         </div>
         <div class="abstract"><div class="k">Abstract</div><p>A substrate-neutral mathematical paper separating same-source confluence, cross-source identification from protected observations, liveness, and local repairability, with quantitative stability and refinement criteria.</p></div>
           <nav class="strip" aria-label="Related essays"><span>Related essays</span><a href="https://blog.floatingpragma.io/the-trigger" target="_blank" rel="noopener noreferrer" data-track-link="paper-blog-observable_normal_forms">The Trigger</a></nav>
@@ -3306,7 +3217,7 @@ responsible for the paper’s claims, methods, and final text.</p>
           </div>
           <div class="paper-end">
             <div><h2>Keep <em class="t-phys">reading.</em></h2><p>Sixteen papers carry the argument from observer consensus to spacetime, gauge structure and matter, each with its own proof boundary.</p></div>
-            <div class="actions"><a class="btn btn-phys" href="/oph/papers/">All papers <span class="arr">&rarr;</span></a><a class="btn" href="/physics/">The physics program</a></div>
+            <div class="actions"><a class="button primary" href="/research/#papers">All papers <span class="arr">&rarr;</span></a><a class="button secondary" href="/physics/">The physics program</a></div>
           </div>
         </div>
         <aside class="paper-aside" aria-label="Paper navigation">
@@ -3322,67 +3233,15 @@ responsible for the paper’s claims, methods, and final text.</p>
 <a href="#sec:examples">Examples and separation results</a>
 <a href="#sec:public-capacity-application">Application: set-valued public-capacity readback</a>
 <a href="#sec:discussion">Discussion</a></nav>
-          <a class="btn btn-phys" href="/oph/papers/observation-determined-normal-forms/paper.pdf" target="_blank" rel="noopener noreferrer">Download PDF</a>
+          <a class="button primary" href="/oph/papers/observation-determined-normal-forms/paper.pdf" target="_blank" rel="noopener noreferrer">Download PDF</a>
         </aside>
       </div>
-    </article>
-  </main>
-  <footer class="site-footer">
-    <div class="shell">
-      <div class="cols">
-        <div class="about">
-          <a class="brand" href="/"><img src="/pragma-cropped.jpg" alt="" width="34" height="34" /><span><b>Pragma Research</b><small>Frontier mathematics</small></span></a>
-          <p>The open problems of physics, solved in one architecture. The same solution is the key to AGI.</p>
-        </div>
-        <div><h4>Physics</h4><ul>
-          <li><a href="/physics/">Observer Patch Holography</a></li>
-          <li><a href="https://philpapers.org/rec/MUEFOC" target="_blank" rel="noopener">Preprint</a></li>
-          <li><a href="https://learn.floatingpragma.io/">Textbooks</a></li>
-          <li><a href="https://simulation.floatingpragma.io/">Simulation</a></li>
-          <li><a href="https://oph-book.floatingpragma.io/">Book</a></li>
-          <li><a href="https://oph-lab.floatingpragma.io/">Lab</a></li>
-          <li><a href="https://github.com/FloatingPragma/observer-patch-holography/">GitHub</a></li>
-        </ul></div>
-        <div><h4>Cadence</h4><ul>
-          <li><a href="/cadence/">Cadence</a></li>
-          <li><a href="https://github.com/muellerberndt/cadence/blob/main/docs/index.md">Documentation</a></li>
-          <li><a href="https://philpapers.org/rec/MUECAP-2" target="_blank" rel="noopener">Research paper</a></li>
-          <li><a href="https://github.com/muellerberndt/cadence">GitHub</a></li>
-        </ul></div>
-        <div><h4>Curated lists</h4><ul>
-          <li><a href="/awesome-zk-proofs/">Awesome ZK Proofs</a></li>
-          <li><a href="/awesome-ai-security/">Awesome AI Security</a></li>
-        </ul></div>
-        <div><h4>Company</h4><ul>
-          <li><a href="/#investors">Investors</a></li>
-          <li><a href="/selected-works/">Chief Hacking Officer</a></li>
-          <li><a href="https://blog.floatingpragma.io/">Blog</a></li>
-          <li><a href="https://medium.com/@muellerberndt" target="_blank" rel="noopener">Medium</a></li>
-          <li><a href="mailto:bernhard@floatingpragma.ai">Contact</a></li>
-        </ul></div>
-      </div>
-      <div class="legal"><span>&copy; 2026 Pragma Research Inc.</span><span>floatingpragma.io</span></div>
-    </div>
-  </footer>
-
-  <script src="/assets/pragma.js?v=1" defer></script>
-  <script>
-    (function () {
-      var links = document.querySelectorAll('.paper-aside .paper-toc a');
-      if (!links.length || !('IntersectionObserver' in window)) return;
-      var byId = {};
-      links.forEach(function (a) { byId[a.getAttribute('href').slice(1)] = a; });
-      var heads = [].slice.call(document.querySelectorAll('.paper-body h1[id], .paper-body h2[id]')).filter(function (h) { return byId[h.id]; });
-      var current = null;
-      function mark(id) {
-        if (current === id) return; current = id;
-        links.forEach(function (a) { a.classList.toggle('on', a.getAttribute('href') === '#' + id); });
-      }
-      var io = new IntersectionObserver(function (entries) {
-        entries.forEach(function (e) { if (e.isIntersecting) mark(e.target.id); });
-      }, { rootMargin: '-10% 0px -75% 0px' });
-      heads.forEach(function (h) { io.observe(h); });
-    })();
-  </script>
+    </article></main>
+<footer class="site-footer">
+ <div class="container">
+  <div class="footer-top"><a class="wordmark" href="/" aria-label="Pragma Research home"><span class="wordmark-text">PRAGMA<small>RESEARCH</small></span><span class="brand-dot" aria-hidden="true"></span></a><p>We build the brains.<br>You build the bodies.</p><a class="text-link" href="mailto:bernhard@floatingpragma.ai">Start a conversation ↗</a></div>
+  <div class="footer-bottom"><span>© 2026 Pragma Research</span><div><a href="https://github.com/muellerberndt/cadence">Code ↗</a><a href="/research/">Research library</a><a href="/investors/deck/">Investor deck</a><a href="/work/">Work &amp; founder</a></div></div>
+ </div>
+</footer>
 </body>
 </html>

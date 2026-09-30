@@ -20,7 +20,7 @@ from urllib.parse import unquote, urljoin, urlsplit
 ORIGIN = "https://floatingpragma.io"
 ROUTES = (
     "/", "/cadence/", "/robotics/", "/investors/", "/investors/deck/",
-    "/physics/", "/watch/", "/404.html",
+    "/physics/", "/research/", "/work/", "/watch/", "/oph/unsubscribe/", "/404.html",
 )
 EXTERNAL_PROJECTS = (
     "/selected-works/", "/awesome-ai-security/", "/awesome-zk-proofs/", "/starklab/",
@@ -167,6 +167,32 @@ def check_pages(site, errors):
                     errors.append(f"{route}: missing fragment {link}")
 
 
+def check_unified_surfaces(site, errors):
+    """Every public page uses the company shell, including papers and redirects."""
+    html_paths = [p for p in site.rglob("*.html") if not any(part.startswith((".", "_")) for part in p.relative_to(site).parts)]
+    for path in html_paths:
+        source = path.read_text()
+        label = str(path.relative_to(site))
+        for required in ('/assets/company.css?v=3', 'id="site-nav"', 'href="/research/"', 'href="/work/"'):
+            if required not in source:
+                errors.append(f"{label}: missing shared site element {required}")
+        for stale in ('/assets/pragma.css', '/assets/pragma.js', '/oph/styles.css', 'Frontier mathematics'):
+            if stale in source:
+                errors.append(f"{label}: stale site shell {stale}")
+    research = (site / "research/index.html").read_text()
+    inventory = json.loads((site / "oph/papers/papers.json").read_text())
+    if 'href="https://philpapers.org/rec/MUECAP-2"' not in research:
+        errors.append("Research: missing Cadence preprint")
+    for paper in inventory["papers"]:
+        if urlsplit(paper["html_url"]).path not in research:
+            errors.append(f"Research: missing paper {paper['id']}")
+    work = Page((site / "work/index.html").read_text())
+    for anchor in ('early', 'mobile', 'contracts', 'ai', 'writings', 'physics', 'platforms', 'mathematics'):
+        if anchor not in work.ids:
+            errors.append(f"Work history: missing retained section {anchor}")
+    return len(html_paths)
+
+
 def check_evidence(site, errors):
     meta = site.parent.parent
     files = ("doom-confirmations.json", "cartpole-confirmations.json")
@@ -296,6 +322,7 @@ def main():
     errors = []
     site = args.site_root.resolve()
     check_pages(site, errors)
+    unified_pages = check_unified_surfaces(site, errors)
     try:
         sources = check_evidence(site, errors)
     except (KeyError, TypeError, ValueError) as exc:
@@ -307,7 +334,7 @@ def main():
         print(f"Company site check failed: {len(errors)} issue(s).")
         return 1
     print(f"Company site checks passed: {len(ROUTES)} routes, 2 evidence excerpts, "
-          f"{sources} original source files checked.")
+          f"{sources} original source files checked; {unified_pages} pages share one design.")
     if not sources:
         print("Original workspace receipts unavailable; only published excerpt consistency checked.")
     return 0

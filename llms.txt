@@ -13,7 +13,7 @@ Cadence uses recursively coupled populations that settle and learn together. Bou
 - [Robotics](https://floatingpragma.io/robotics/): proposed evaluation programme and changed-wheel rover experiment.
 - [Investors](https://floatingpragma.io/investors/): proposed $4 million seed round over 18 months.
 - [Investor deck](https://floatingpragma.io/investors/deck/): eight-slide company presentation and PDF.
-- [Founder](https://floatingpragma.io/selected-works/): Bernhard Mueller's selected work.
+- [Founder](https://floatingpragma.io/work/): Bernhard Mueller's selected work.
 - Contact: bernhard@floatingpragma.ai
 
 ## Code and evidence
@@ -35,8 +35,15 @@ Observer Patch Holography (OPH) asks whether bounded observers can build a share
 
 - [Research overview](https://floatingpragma.io/physics/).
 - [Research explainer](https://floatingpragma.io/watch/).
-- [Paper library](https://floatingpragma.io/oph/papers/): HTML, PDFs and current publication metadata.
+- [Paper library](https://floatingpragma.io/research/#papers): HTML, PDFs and current publication metadata.
 - [Scientific source](https://github.com/FloatingPragma/observer-patch-holography/).
-- [Book](https://oph-book.floatingpragma.io/).
-- [Interactive lab](https://oph-lab.floatingpragma.io/).
 - [Extended source map](https://floatingpragma.io/llms-full.txt).
+
+## Three settlement design patterns
+
+Flat settlement reads supplied sensors; ordinary state-coupled settlement adds learned intermediate states; recursive observer settlement adds exact prediction-error readback. All three share the patch/repair law, learning API and final qualification. Choose a layout by measured task quality, query latency and learning cost.
+
+- Research and paper library: https://floatingpragma.io/research/
+- Work in physics, mathematics, AI and security: https://floatingpragma.io/work/
+- Design patterns: https://github.com/muellerberndt/cadence/blob/main/docs/VARIANTS.md
+- Performance: https://floatingpragma.io/cadence/#design-patterns

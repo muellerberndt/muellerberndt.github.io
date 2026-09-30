@@ -1,5 +1,5 @@
 <section class="section page-hero">
- <div class="container"><p class="eyebrow">The Cadence brain</p><h1 class="display">A deep real-time brain that learns from experience.</h1><p class="lead">Cadence connects local predictive models into a recursive settling network. Each model reads a part of its world. Together, they settle on what to do and learn from what happens.</p><div class="actions"><a class="button primary" href="/robotics/">Put Cadence to work ↗</a><a class="button secondary" href="#inside-the-brain">Explore the brain ↓</a></div></div>
+ <div class="container"><p class="eyebrow">The Cadence brain</p><h1 class="display">A deep real-time brain that learns from experience.</h1><p class="lead">Cadence connects local predictive models into a recursive settling network. Each model reads a part of its world. Together, they settle on what to do and learn from what happens.</p><div class="actions"><a class="button primary" href="/robotics/">Put Cadence to work ↗</a><a class="button secondary" href="#inside-the-brain">Explore the brain ↓</a><a class="text-link" href="https://philpapers.org/rec/MUECAP-2">Read the preprint ↗</a></div></div>
 </section>
 <section class="section dark" id="architecture">
  <div class="container"><div class="section-heading"><p class="eyebrow">The architecture</p><h2>Intelligence through recursive settlement.</h2><p class="lead">A Cadence brain is made of bounded, self-reading patches: local state, ports, records, error readback and feedback that can repair disagreement.</p></div>
@@ -10,6 +10,17 @@
   <div><p class="label">04 / Learn</p><h3>Experience persists</h3><p>Accepted teaching and experience update local models. Explicit learning and memory mechanisms support further practice.</p></div>
  </div>
  <div class="split" style="margin-top:40px"><p>Cadence's <code>Cortex</code> and <code>Brain</code> interfaces expose this shared mathematical substrate. Perception, error observation and learning are part of the same connected system.</p><div><p>The research takes inspiration from cooperating cortical models. The code tests a computational hypothesis about intelligence; biological identification is a separate question.</p><a class="text-link" href="https://github.com/muellerberndt/cadence/blob/main/docs/DRSN.md">Read the architecture guide ↗</a></div></div>
+ </div>
+</section>
+<section class="section" id="design-patterns">
+ <div class="container">
+  <div class="section-heading"><p class="eyebrow">Three design patterns / One patch rule</p><h2>Choose the brain<br>the task needs.</h2><p class="lead">Flat, state-coupled and recursive layouts all learn and settle through the same mathematical substrate.</p></div>
+  <div class="grid-3">
+   <article class="card"><p class="number">01</p><h3>Flat settlement.</h3><p>Patches read sensory inputs directly. A small, inexpensive starting point for simple prediction and control relations.</p></article>
+   <article class="card"><p class="number">02</p><h3>State-coupled settlement.</h3><p>Populations read other populations' live states. Learned intermediate representations take part in one joint settlement.</p></article>
+   <article class="card"><p class="number">03</p><h3>Recursive observer settlement.</h3><p>Observers read states and exact prediction errors, including those of other observers. Internal feedback becomes part of the answer.</p></article>
+  </div>
+  <div class="callout"><p>Start with the least expensive layout that learns the behavior. Add depth when its measured capability earns the extra settling and learning work. The runtime qualifies every answer using the same settlement contract.</p><div class="actions"><a class="text-link" href="https://github.com/muellerberndt/cadence/blob/main/docs/VARIANTS.md">Build each pattern ↗</a><a class="text-link" href="https://floatingpragma.io/cadence/#design-patterns">Compare capability and cost ↗</a></div></div>
  </div>
 </section>
 <section class="section" id="inside-the-brain" aria-labelledby="brain-title">
