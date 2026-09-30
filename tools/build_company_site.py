@@ -35,6 +35,8 @@ REDIRECTS = {
     "/oph/": "/physics/",
     "/oph/papers/": "/research/#papers",
     "/selected-works/": "/work/",
+    "/awesome-zk-proofs/": "/work/#platforms",
+    "/awesome-ai-security/": "/work/#platforms",
     "/cadence-markets/": "/cadence/",
     "/cadence-examples/amen-beats/": "/demos/amen/",
     "/oph/physics-unification/": "/physics/",

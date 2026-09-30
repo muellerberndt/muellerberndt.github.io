@@ -23,7 +23,7 @@ ROUTES = (
     "/physics/", "/research/", "/work/", "/watch/", "/oph/unsubscribe/", "/404.html",
 )
 EXTERNAL_PROJECTS = (
-    "/selected-works/", "/awesome-ai-security/", "/awesome-zk-proofs/", "/starklab/",
+    "/selected-works/", "/starklab/",
 )
 PRIVATE = re.compile(
     r"/Users/|/home/|/private/|ec2-user|amazonaws\.com|"
