@@ -34,7 +34,7 @@ def wrapper_metadata(content, demo):
     metadata = (f'<meta name="robots" content="noindex">\n'
                 f'<meta name="theme-color" content="#191d1c">\n'
                 f'<link rel="canonical" href="https://floatingpragma.io/demos/{demo}/">\n'
-                '<link rel="icon" href="/favicon.svg?v=4" type="image/svg+xml">\n'
+                '<link rel="icon" href="/favicon.svg?v=5" type="image/svg+xml">\n'
                 '<link rel="stylesheet" href="/assets/demo-runtime.css?v=1">\n'
                 '<base target="_top">\n')
     # Last stylesheet wins over the archived application's own CSS.

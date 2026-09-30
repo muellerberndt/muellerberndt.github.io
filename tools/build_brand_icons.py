@@ -25,9 +25,10 @@ def render(size):
             draw.rounded_rectangle((0, 0, float(element.get("width")) * scale,
                                     float(element.get("height")) * scale),
                                    radius=float(element.get("rx", "0")) * scale, fill=fill)
-        elif kind == "circle":
-            x, y, r = [float(element.get(k)) * scale for k in ("cx", "cy", "r")]
-            draw.ellipse((x - r, y - r, x + r, y + r), fill=fill)
+        elif kind == "polygon":
+            points = [tuple(float(c) * scale for c in pair.split(','))
+                      for pair in element.get("points").split()]
+            draw.polygon(points, fill=fill)
     return image.resize((size, size), Image.Resampling.LANCZOS)
 
 
@@ -38,7 +39,7 @@ def main():
     for size in (192, 512):
         name = f"assets/pragma-icon-{size}.png"
         render(size).save(ROOT / name)
-        icons.append({"src": "/" + name + "?v=4", "sizes": f"{size}x{size}", "type": "image/png"})
+        icons.append({"src": "/" + name + "?v=5", "sizes": f"{size}x{size}", "type": "image/png"})
     manifest = {"name": "Pragma Research", "short_name": "Pragma", "start_url": "/",
                 "display": "browser", "background_color": "#f3f1e9",
                 "theme_color": "#f3f1e9", "icons": icons}
