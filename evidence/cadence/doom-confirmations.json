@@ -1,0 +1,243 @@
+{
+  "schema": "pragma-cadence-doom-confirmation-excerpts/1",
+  "evidence_type": "Public excerpts of retained source receipts; not the full experiment bundles. Original-source hashes identify the unmodified sources, not these excerpts.",
+  "task": "ViZDoom Basic, one-room combat",
+  "method": "Finite demonstration bootstrap followed by simulator-assisted practice and selected candidate evaluation. Evaluation actions came from qualified unclamped Cadence settlements using visible pixels and executed-action history.",
+  "limits": [
+    "These are two selected candidates on separate reserved seed schedules, not general Doom mastery.",
+    "The second candidate used new experience and a changed replay ratio; it is not an exact repetition of the first learning recipe.",
+    "Each confirmation had 60 distinct initial images among 64 seeds; different seeds do not establish independent unseen hidden layouts.",
+    "The first confirmation establishes improved native return, not a statistically established win-rate improvement.",
+    "These results do not establish an advantage caused by recursive depth, guaranteed retention, or a physical-energy advantage.",
+    "Existing verification reports are reproduced below; this publication did not rerun training, gameplay or verification."
+  ],
+  "confirmations": [
+    {
+      "id": "final64_confirmation_02",
+      "candidate": "ad9",
+      "recipe_note": "First prospectively frozen H144 four-update candidate.",
+      "candidate_checkpoint_sha256": "ad9b330cd1c1c582a0bb135956f87a9f8e4c0f106d80c35bb60b39c0328ef2cc",
+      "founder_checkpoint_sha256": "3076041351210d5818df542b23c167278a76ce59d7ceae531b52e05398f80ad8",
+      "source_files": {
+        "summary.json": {
+          "sha256": "1fa597a393721ce7451d0ba11ef9862310c14cecc565abb3dd1cba4d3727885d",
+          "bytes": 133921
+        },
+        "freeze.json": {
+          "sha256": "85ca79572dbc39f3bae9ca52a769af32ef388ff57870e7863d137977cbc64327",
+          "bytes": 7412
+        },
+        "independent_verification.json": {
+          "sha256": "ceea12482cc2abed1b4c90a4a1f31bb3e0fae1ce24f35c3c89d12341ab14be22",
+          "bytes": 717
+        }
+      },
+      "outcomes": {
+        "candidate": {
+          "scheduled": 64,
+          "completed": 64,
+          "wins": 63,
+          "mean_native_return": -34.171875,
+          "qualified_queries": 1684,
+          "attempted_queries": 1684,
+          "fallback_actions": 0
+        },
+        "founder": {
+          "scheduled": 64,
+          "completed": 64,
+          "wins": 61,
+          "mean_native_return": -124.5625,
+          "qualified_queries": 2677,
+          "attempted_queries": 2677,
+          "fallback_actions": 0
+        }
+      },
+      "primary_metric": "Mean paired candidate-minus-founder native return",
+      "paired_bootstrap": {
+        "resample_indices_sha256": "49b77e2d8a46e9e9e28d17237d6f9086d83c592ffbc7b87e0fbf541df5a1bff7",
+        "return": {
+          "ci95": [
+            43.515625,
+            136.78125
+          ],
+          "mean_delta": 90.390625
+        },
+        "success_rate": {
+          "ci95": [
+            -0.03125,
+            0.09375
+          ],
+          "mean_delta": 0.03125
+        },
+        "tics": {
+          "ci95": [
+            -96.09375,
+            -27.53125
+          ],
+          "mean_delta": -61.84375
+        }
+      },
+      "paired_win_table": {
+        "both_win": 60,
+        "candidate_only": 3,
+        "founder_only": 1,
+        "neither_win": 0
+      },
+      "success_intervals_wilson95": {
+        "candidate": [
+          0.9166589839990573,
+          0.9972364580766624
+        ],
+        "founder": [
+          0.8710034625990631,
+          0.983930983213707
+        ]
+      },
+      "criteria": {
+        "all128complete": true,
+        "all_outcome_records_parse": true,
+        "all_processes_completed_without_cap": true,
+        "all_queries_qualified_and_no_fallback": true,
+        "candidate_wins_at_least58": true,
+        "primary_return_ci_lower_positive": true,
+        "sources_and_bundles_unchanged": true,
+        "success_rate_loss_at_most_05": true
+      },
+      "passed": true,
+      "source_and_bundle_unchanged": true,
+      "reported_independent_verification": {
+        "episode_records": 128,
+        "freeze_sha256": "85ca79572dbc39f3bae9ca52a769af32ef388ff57870e7863d137977cbc64327",
+        "independent_numpy_statistics_match": true,
+        "issues": [],
+        "native_confirmation_passed": true,
+        "native_tics": 17278,
+        "passed": true,
+        "producer_sha256": "7aac9ad54fa5f130b79477eec93914768c4f04c57a8a00689f27c3af541f0cce",
+        "qualified_queries": 4361,
+        "queries": 4361,
+        "schema": "doom-v3-independent-final64-verification/1",
+        "scope": "Independent full trace/hash/native outcome audit plus a separate NumPy recomputation of the frozen paired bootstrap. No additional gameplay or policy selection.",
+        "summary_sha256": "1fa597a393721ce7451d0ba11ef9862310c14cecc565abb3dd1cba4d3727885d",
+        "unique_initial_frames": {
+          "candidate": 60,
+          "founder": 60
+        }
+      }
+    },
+    {
+      "id": "second_confirmation_01",
+      "candidate": "9b97",
+      "recipe_note": "New autonomous experience with a selected replay-ratio change; ad9 is a secondary descriptive comparator.",
+      "candidate_checkpoint_sha256": "9b97de044740965b8cc103b38e04e0042301896466ccb5dd08f24023c362be07",
+      "founder_checkpoint_sha256": "3076041351210d5818df542b23c167278a76ce59d7ceae531b52e05398f80ad8",
+      "source_files": {
+        "summary.json": {
+          "sha256": "010a147a87e73a9a6048865489f83a2dbb65ca439ae97772ecc383c3f6b5f997",
+          "bytes": 135810
+        },
+        "freeze.json": {
+          "sha256": "a6ac1e4f2eb89c137b81c6a12ea3148ea17fe9b9a98b3fa496c198f2444caabc",
+          "bytes": 8321
+        },
+        "independent_verification.json": {
+          "sha256": "b32c3541127b6817998ef195c7dcdf4020ed80711ff309e268e19f4d5fddc33b",
+          "bytes": 816
+        }
+      },
+      "outcomes": {
+        "candidate": {
+          "scheduled": 64,
+          "completed": 64,
+          "wins": 64,
+          "mean_native_return": -47.578125,
+          "qualified_queries": 1825,
+          "attempted_queries": 1825,
+          "fallback_actions": 0
+        },
+        "founder": {
+          "scheduled": 64,
+          "completed": 64,
+          "wins": 53,
+          "mean_native_return": -141.0,
+          "qualified_queries": 2713,
+          "attempted_queries": 2713,
+          "fallback_actions": 0
+        }
+      },
+      "primary_metric": "Mean paired candidate-minus-founder native return",
+      "paired_bootstrap": {
+        "resample_indices_sha256": "49b77e2d8a46e9e9e28d17237d6f9086d83c592ffbc7b87e0fbf541df5a1bff7",
+        "return": {
+          "ci95": [
+            44.296875,
+            145.6875
+          ],
+          "mean_delta": 93.421875
+        },
+        "success_rate": {
+          "ci95": [
+            0.09375,
+            0.265625
+          ],
+          "mean_delta": 0.171875
+        },
+        "tics": {
+          "ci95": [
+            -90.734375,
+            -22.84375
+          ],
+          "mean_delta": -55.984375
+        }
+      },
+      "paired_win_table": {
+        "both_win": 53,
+        "candidate_only": 11,
+        "founder_only": 0,
+        "neither_win": 0
+      },
+      "success_intervals_wilson95": {
+        "candidate": [
+          0.9433759402071946,
+          1.0
+        ],
+        "founder": [
+          0.7178678837734179,
+          0.9012225769875536
+        ]
+      },
+      "criteria": {
+        "all128complete": true,
+        "all_outcome_records_parse": true,
+        "all_processes_completed_without_cap": true,
+        "all_queries_qualified_and_no_fallback": true,
+        "candidate_wins_at_least58": true,
+        "primary_return_ci_lower_positive": true,
+        "sources_and_bundles_unchanged": true,
+        "success_rate_loss_at_most_05": true
+      },
+      "passed": true,
+      "source_and_bundle_unchanged": true,
+      "reported_independent_verification": {
+        "episode_records": 192,
+        "freeze_sha256": "a6ac1e4f2eb89c137b81c6a12ea3148ea17fe9b9a98b3fa496c198f2444caabc",
+        "independent_numpy_statistics_match": true,
+        "issues": [],
+        "native_confirmation_passed": true,
+        "native_tics": 24486,
+        "passed": true,
+        "producer_sha256": "5d3a3f311b5d6302c7283a2ef25efd37ddeac411232aec5010b5b24dd969885f",
+        "qualified_queries": 6183,
+        "queries": 6183,
+        "schema": "doom-v3-independent-second-confirmation-verification/1",
+        "scope": "Independent full trace/hash/native outcome audit plus a separate NumPy recomputation of the frozen primary and secondary paired bootstrap. Secondary metrics cannot change the primary gate. No additional gameplay or policy selection.",
+        "summary_sha256": "010a147a87e73a9a6048865489f83a2dbb65ca439ae97772ecc383c3f6b5f997",
+        "unique_initial_frames": {
+          "candidate": 60,
+          "founder": 60,
+          "secondary": 60
+        }
+      }
+    }
+  ]
+}

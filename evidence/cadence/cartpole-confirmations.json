@@ -1,0 +1,1205 @@
+{
+  "schema": "pragma-cadence-cartpole-confirmation-excerpts/1",
+  "evidence_type": "Public excerpts of all nine retained confirmation receipts; not the full experiment bundles. Original-source hashes identify the unmodified sources, not these excerpts.",
+  "environment": "Gymnasium CartPole-v1, 500-step episode limit",
+  "method": "Supervised imitation from 128 supplied numerical-state teaching examples per model. Qualified settled output selects each action; no teacher acts during learned evaluation.",
+  "limits": [
+    "This is supplied-state supervised control, not reward-only policy discovery, learned pixel perception or real-robot deployment.",
+    "One processing patch already reaches the task ceiling; these results do not establish an advantage from recursive depth.",
+    "Zero refused evaluation actions does not mean zero refused teaching updates.",
+    "Aggregation is from existing source receipts; this publication did not rerun training or gameplay."
+  ],
+  "source_protocol_sha256": "65bc2b7a1a0d3b727f3d4e76db2a96de2d1ec3eb67870388ba86f6af89260bea",
+  "aggregate": {
+    "layouts": [
+      "flat1",
+      "flat6",
+      "observer4_2"
+    ],
+    "model_seeds": [
+      7,
+      17,
+      27
+    ],
+    "models": 9,
+    "episodes": 180,
+    "episodes_reaching_500": 180,
+    "evaluated_actions": 90000,
+    "refused_action_solves": 0,
+    "teaching_presentations": 1152,
+    "accepted_teaching_events": 1142,
+    "refused_teaching_events": 10
+  },
+  "confirmations": [
+    {
+      "source_file": "confirm_flat1_17_128.json",
+      "source_sha256": "c7242a0d950f3df1ddf3cc867eb62aa19b8ea65aa68bb4278d4e58c7c8a5df29",
+      "layout": "flat1",
+      "model_seed": 17,
+      "teaching_examples": 128,
+      "accepted_teaching_events": 128,
+      "refused_teaching_events": 0,
+      "episodes": [
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2000
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2001
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2002
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2003
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2004
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2005
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2006
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2007
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2008
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2009
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2010
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2011
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2012
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2013
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2014
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2015
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2016
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2017
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2018
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2019
+        }
+      ],
+      "refused_action_solves": 0,
+      "mean_reward": 500.0,
+      "minimum_reward": 500.0,
+      "source_provenance": {
+        "cadence_commit": "3f0f34ff8661711158d500e4c111b5889460dfa5",
+        "gymnasium": "1.2.3",
+        "platform": "macOS-15.3-arm64-arm-64bit-Mach-O",
+        "protocol_sha256": "65bc2b7a1a0d3b727f3d4e76db2a96de2d1ec3eb67870388ba86f6af89260bea",
+        "python": "3.13.0",
+        "runner_sha256": "9d251e54c66aea3790f0db7ab69ebe50d67f4eaa117d0921c1db8556dd9fbdb1"
+      },
+      "implementation_sha256": {
+        "_repair.py": "6038efd2c81e255ba8c27b9db49f410476e2a889444f02df32b9a3ef8fc17fc3",
+        "_validation.py": "40c4ae0abd65fa2a4e07d3027e9e9609dd90bd70be0c68190c75fafa710a965d",
+        "brain.py": "06394e6ed6b86b2acba9d75f11356ffa0a4591a2bc7dfda3453d7764a243896c",
+        "column.py": "d3752d27227ca34dfc03134d792cc046fc41d96ac181f19be852a193d1eee203",
+        "cortex.py": "832f1d262a5b22e2e0de39fdf9154c02031d62a6c10ae5173129f76a317732dc",
+        "ports.py": "ea0af151b3d661aecff0168f1804858f89299c28cd766a39aadf7e39741512f2"
+      }
+    },
+    {
+      "source_file": "confirm_flat1_27_128.json",
+      "source_sha256": "990b246109de55fc23917d743ea243afd999d4438846f7422393833faa6567b1",
+      "layout": "flat1",
+      "model_seed": 27,
+      "teaching_examples": 128,
+      "accepted_teaching_events": 128,
+      "refused_teaching_events": 0,
+      "episodes": [
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2000
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2001
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2002
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2003
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2004
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2005
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2006
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2007
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2008
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2009
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2010
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2011
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2012
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2013
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2014
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2015
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2016
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2017
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2018
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2019
+        }
+      ],
+      "refused_action_solves": 0,
+      "mean_reward": 500.0,
+      "minimum_reward": 500.0,
+      "source_provenance": {
+        "cadence_commit": "3f0f34ff8661711158d500e4c111b5889460dfa5",
+        "gymnasium": "1.2.3",
+        "platform": "macOS-15.3-arm64-arm-64bit-Mach-O",
+        "protocol_sha256": "65bc2b7a1a0d3b727f3d4e76db2a96de2d1ec3eb67870388ba86f6af89260bea",
+        "python": "3.13.0",
+        "runner_sha256": "9d251e54c66aea3790f0db7ab69ebe50d67f4eaa117d0921c1db8556dd9fbdb1"
+      },
+      "implementation_sha256": {
+        "_repair.py": "6038efd2c81e255ba8c27b9db49f410476e2a889444f02df32b9a3ef8fc17fc3",
+        "_validation.py": "40c4ae0abd65fa2a4e07d3027e9e9609dd90bd70be0c68190c75fafa710a965d",
+        "brain.py": "06394e6ed6b86b2acba9d75f11356ffa0a4591a2bc7dfda3453d7764a243896c",
+        "column.py": "d3752d27227ca34dfc03134d792cc046fc41d96ac181f19be852a193d1eee203",
+        "cortex.py": "832f1d262a5b22e2e0de39fdf9154c02031d62a6c10ae5173129f76a317732dc",
+        "ports.py": "ea0af151b3d661aecff0168f1804858f89299c28cd766a39aadf7e39741512f2"
+      }
+    },
+    {
+      "source_file": "confirm_flat1_7_128.json",
+      "source_sha256": "78ef04da17c02faaab65fee07e4876b26263c1814ed4908e2bea13ffeddfa6a7",
+      "layout": "flat1",
+      "model_seed": 7,
+      "teaching_examples": 128,
+      "accepted_teaching_events": 128,
+      "refused_teaching_events": 0,
+      "episodes": [
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2000
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2001
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2002
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2003
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2004
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2005
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2006
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2007
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2008
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2009
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2010
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2011
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2012
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2013
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2014
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2015
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2016
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2017
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2018
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2019
+        }
+      ],
+      "refused_action_solves": 0,
+      "mean_reward": 500.0,
+      "minimum_reward": 500.0,
+      "source_provenance": {
+        "cadence_commit": "3f0f34ff8661711158d500e4c111b5889460dfa5",
+        "gymnasium": "1.2.3",
+        "platform": "macOS-15.3-arm64-arm-64bit-Mach-O",
+        "protocol_sha256": "65bc2b7a1a0d3b727f3d4e76db2a96de2d1ec3eb67870388ba86f6af89260bea",
+        "python": "3.13.0",
+        "runner_sha256": "9d251e54c66aea3790f0db7ab69ebe50d67f4eaa117d0921c1db8556dd9fbdb1"
+      },
+      "implementation_sha256": {
+        "_repair.py": "6038efd2c81e255ba8c27b9db49f410476e2a889444f02df32b9a3ef8fc17fc3",
+        "_validation.py": "40c4ae0abd65fa2a4e07d3027e9e9609dd90bd70be0c68190c75fafa710a965d",
+        "brain.py": "06394e6ed6b86b2acba9d75f11356ffa0a4591a2bc7dfda3453d7764a243896c",
+        "column.py": "d3752d27227ca34dfc03134d792cc046fc41d96ac181f19be852a193d1eee203",
+        "cortex.py": "832f1d262a5b22e2e0de39fdf9154c02031d62a6c10ae5173129f76a317732dc",
+        "ports.py": "ea0af151b3d661aecff0168f1804858f89299c28cd766a39aadf7e39741512f2"
+      }
+    },
+    {
+      "source_file": "confirm_flat6_17_128.json",
+      "source_sha256": "c83539a22e31c633560985fe73fa7993523789a6ffbf02c30f60810af35cefaa",
+      "layout": "flat6",
+      "model_seed": 17,
+      "teaching_examples": 128,
+      "accepted_teaching_events": 127,
+      "refused_teaching_events": 1,
+      "episodes": [
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2000
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2001
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2002
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2003
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2004
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2005
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2006
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2007
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2008
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2009
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2010
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2011
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2012
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2013
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2014
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2015
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2016
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2017
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2018
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2019
+        }
+      ],
+      "refused_action_solves": 0,
+      "mean_reward": 500.0,
+      "minimum_reward": 500.0,
+      "source_provenance": {
+        "cadence_commit": "3f0f34ff8661711158d500e4c111b5889460dfa5",
+        "gymnasium": "1.2.3",
+        "platform": "macOS-15.3-arm64-arm-64bit-Mach-O",
+        "protocol_sha256": "65bc2b7a1a0d3b727f3d4e76db2a96de2d1ec3eb67870388ba86f6af89260bea",
+        "python": "3.13.0",
+        "runner_sha256": "9d251e54c66aea3790f0db7ab69ebe50d67f4eaa117d0921c1db8556dd9fbdb1"
+      },
+      "implementation_sha256": {
+        "_repair.py": "6038efd2c81e255ba8c27b9db49f410476e2a889444f02df32b9a3ef8fc17fc3",
+        "_validation.py": "40c4ae0abd65fa2a4e07d3027e9e9609dd90bd70be0c68190c75fafa710a965d",
+        "brain.py": "06394e6ed6b86b2acba9d75f11356ffa0a4591a2bc7dfda3453d7764a243896c",
+        "column.py": "d3752d27227ca34dfc03134d792cc046fc41d96ac181f19be852a193d1eee203",
+        "cortex.py": "832f1d262a5b22e2e0de39fdf9154c02031d62a6c10ae5173129f76a317732dc",
+        "ports.py": "ea0af151b3d661aecff0168f1804858f89299c28cd766a39aadf7e39741512f2"
+      }
+    },
+    {
+      "source_file": "confirm_flat6_27_128.json",
+      "source_sha256": "ea5cf40b3efe1d491167e362a777faf6dc082ab757481d13de382b1b34f4d9db",
+      "layout": "flat6",
+      "model_seed": 27,
+      "teaching_examples": 128,
+      "accepted_teaching_events": 128,
+      "refused_teaching_events": 0,
+      "episodes": [
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2000
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2001
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2002
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2003
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2004
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2005
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2006
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2007
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2008
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2009
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2010
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2011
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2012
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2013
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2014
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2015
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2016
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2017
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2018
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2019
+        }
+      ],
+      "refused_action_solves": 0,
+      "mean_reward": 500.0,
+      "minimum_reward": 500.0,
+      "source_provenance": {
+        "cadence_commit": "3f0f34ff8661711158d500e4c111b5889460dfa5",
+        "gymnasium": "1.2.3",
+        "platform": "macOS-15.3-arm64-arm-64bit-Mach-O",
+        "protocol_sha256": "65bc2b7a1a0d3b727f3d4e76db2a96de2d1ec3eb67870388ba86f6af89260bea",
+        "python": "3.13.0",
+        "runner_sha256": "9d251e54c66aea3790f0db7ab69ebe50d67f4eaa117d0921c1db8556dd9fbdb1"
+      },
+      "implementation_sha256": {
+        "_repair.py": "6038efd2c81e255ba8c27b9db49f410476e2a889444f02df32b9a3ef8fc17fc3",
+        "_validation.py": "40c4ae0abd65fa2a4e07d3027e9e9609dd90bd70be0c68190c75fafa710a965d",
+        "brain.py": "06394e6ed6b86b2acba9d75f11356ffa0a4591a2bc7dfda3453d7764a243896c",
+        "column.py": "d3752d27227ca34dfc03134d792cc046fc41d96ac181f19be852a193d1eee203",
+        "cortex.py": "832f1d262a5b22e2e0de39fdf9154c02031d62a6c10ae5173129f76a317732dc",
+        "ports.py": "ea0af151b3d661aecff0168f1804858f89299c28cd766a39aadf7e39741512f2"
+      }
+    },
+    {
+      "source_file": "confirm_flat6_7_128.json",
+      "source_sha256": "5fc11ca18c9c3dafe27e9a119ab7ae71b83041410a41bd7bc3e320183d892a25",
+      "layout": "flat6",
+      "model_seed": 7,
+      "teaching_examples": 128,
+      "accepted_teaching_events": 128,
+      "refused_teaching_events": 0,
+      "episodes": [
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2000
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2001
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2002
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2003
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2004
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2005
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2006
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2007
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2008
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2009
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2010
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2011
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2012
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2013
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2014
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2015
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2016
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2017
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2018
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2019
+        }
+      ],
+      "refused_action_solves": 0,
+      "mean_reward": 500.0,
+      "minimum_reward": 500.0,
+      "source_provenance": {
+        "cadence_commit": "3f0f34ff8661711158d500e4c111b5889460dfa5",
+        "gymnasium": "1.2.3",
+        "platform": "macOS-15.3-arm64-arm-64bit-Mach-O",
+        "protocol_sha256": "65bc2b7a1a0d3b727f3d4e76db2a96de2d1ec3eb67870388ba86f6af89260bea",
+        "python": "3.13.0",
+        "runner_sha256": "9d251e54c66aea3790f0db7ab69ebe50d67f4eaa117d0921c1db8556dd9fbdb1"
+      },
+      "implementation_sha256": {
+        "_repair.py": "6038efd2c81e255ba8c27b9db49f410476e2a889444f02df32b9a3ef8fc17fc3",
+        "_validation.py": "40c4ae0abd65fa2a4e07d3027e9e9609dd90bd70be0c68190c75fafa710a965d",
+        "brain.py": "06394e6ed6b86b2acba9d75f11356ffa0a4591a2bc7dfda3453d7764a243896c",
+        "column.py": "d3752d27227ca34dfc03134d792cc046fc41d96ac181f19be852a193d1eee203",
+        "cortex.py": "832f1d262a5b22e2e0de39fdf9154c02031d62a6c10ae5173129f76a317732dc",
+        "ports.py": "ea0af151b3d661aecff0168f1804858f89299c28cd766a39aadf7e39741512f2"
+      }
+    },
+    {
+      "source_file": "confirm_observer4_2_17_128.json",
+      "source_sha256": "21a9f0adc3d83897388ce9803de4f29def4cd84a2fcaa5af4edc8659b7cf390b",
+      "layout": "observer4_2",
+      "model_seed": 17,
+      "teaching_examples": 128,
+      "accepted_teaching_events": 126,
+      "refused_teaching_events": 2,
+      "episodes": [
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2000
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2001
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2002
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2003
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2004
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2005
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2006
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2007
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2008
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2009
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2010
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2011
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2012
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2013
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2014
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2015
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2016
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2017
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2018
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2019
+        }
+      ],
+      "refused_action_solves": 0,
+      "mean_reward": 500.0,
+      "minimum_reward": 500.0,
+      "source_provenance": {
+        "cadence_commit": "3f0f34ff8661711158d500e4c111b5889460dfa5",
+        "gymnasium": "1.2.3",
+        "platform": "macOS-15.3-arm64-arm-64bit-Mach-O",
+        "protocol_sha256": "65bc2b7a1a0d3b727f3d4e76db2a96de2d1ec3eb67870388ba86f6af89260bea",
+        "python": "3.13.0",
+        "runner_sha256": "9d251e54c66aea3790f0db7ab69ebe50d67f4eaa117d0921c1db8556dd9fbdb1"
+      },
+      "implementation_sha256": {
+        "_repair.py": "6038efd2c81e255ba8c27b9db49f410476e2a889444f02df32b9a3ef8fc17fc3",
+        "_validation.py": "40c4ae0abd65fa2a4e07d3027e9e9609dd90bd70be0c68190c75fafa710a965d",
+        "brain.py": "06394e6ed6b86b2acba9d75f11356ffa0a4591a2bc7dfda3453d7764a243896c",
+        "column.py": "d3752d27227ca34dfc03134d792cc046fc41d96ac181f19be852a193d1eee203",
+        "cortex.py": "832f1d262a5b22e2e0de39fdf9154c02031d62a6c10ae5173129f76a317732dc",
+        "ports.py": "ea0af151b3d661aecff0168f1804858f89299c28cd766a39aadf7e39741512f2"
+      }
+    },
+    {
+      "source_file": "confirm_observer4_2_27_128.json",
+      "source_sha256": "a656697a0cfb1781479bcca7dd66ad1316986834d16b1241dfce3fb3bd7d3514",
+      "layout": "observer4_2",
+      "model_seed": 27,
+      "teaching_examples": 128,
+      "accepted_teaching_events": 124,
+      "refused_teaching_events": 4,
+      "episodes": [
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2000
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2001
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2002
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2003
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2004
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2005
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2006
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2007
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2008
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2009
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2010
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2011
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2012
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2013
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2014
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2015
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2016
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2017
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2018
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2019
+        }
+      ],
+      "refused_action_solves": 0,
+      "mean_reward": 500.0,
+      "minimum_reward": 500.0,
+      "source_provenance": {
+        "cadence_commit": "3f0f34ff8661711158d500e4c111b5889460dfa5",
+        "gymnasium": "1.2.3",
+        "platform": "macOS-15.3-arm64-arm-64bit-Mach-O",
+        "protocol_sha256": "65bc2b7a1a0d3b727f3d4e76db2a96de2d1ec3eb67870388ba86f6af89260bea",
+        "python": "3.13.0",
+        "runner_sha256": "9d251e54c66aea3790f0db7ab69ebe50d67f4eaa117d0921c1db8556dd9fbdb1"
+      },
+      "implementation_sha256": {
+        "_repair.py": "6038efd2c81e255ba8c27b9db49f410476e2a889444f02df32b9a3ef8fc17fc3",
+        "_validation.py": "40c4ae0abd65fa2a4e07d3027e9e9609dd90bd70be0c68190c75fafa710a965d",
+        "brain.py": "06394e6ed6b86b2acba9d75f11356ffa0a4591a2bc7dfda3453d7764a243896c",
+        "column.py": "d3752d27227ca34dfc03134d792cc046fc41d96ac181f19be852a193d1eee203",
+        "cortex.py": "832f1d262a5b22e2e0de39fdf9154c02031d62a6c10ae5173129f76a317732dc",
+        "ports.py": "ea0af151b3d661aecff0168f1804858f89299c28cd766a39aadf7e39741512f2"
+      }
+    },
+    {
+      "source_file": "confirm_observer4_2_7_128.json",
+      "source_sha256": "3db853ceb11e267868c5bb25f1359a2de4254f6e56b1cfba11031e3a9a577a51",
+      "layout": "observer4_2",
+      "model_seed": 7,
+      "teaching_examples": 128,
+      "accepted_teaching_events": 125,
+      "refused_teaching_events": 3,
+      "episodes": [
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2000
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2001
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2002
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2003
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2004
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2005
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2006
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2007
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2008
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2009
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2010
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2011
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2012
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2013
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2014
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2015
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2016
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2017
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2018
+        },
+        {
+          "refused_actions": 0,
+          "reward": 500.0,
+          "seed": 2019
+        }
+      ],
+      "refused_action_solves": 0,
+      "mean_reward": 500.0,
+      "minimum_reward": 500.0,
+      "source_provenance": {
+        "cadence_commit": "3f0f34ff8661711158d500e4c111b5889460dfa5",
+        "gymnasium": "1.2.3",
+        "platform": "macOS-15.3-arm64-arm-64bit-Mach-O",
+        "protocol_sha256": "65bc2b7a1a0d3b727f3d4e76db2a96de2d1ec3eb67870388ba86f6af89260bea",
+        "python": "3.13.0",
+        "runner_sha256": "9d251e54c66aea3790f0db7ab69ebe50d67f4eaa117d0921c1db8556dd9fbdb1"
+      },
+      "implementation_sha256": {
+        "_repair.py": "6038efd2c81e255ba8c27b9db49f410476e2a889444f02df32b9a3ef8fc17fc3",
+        "_validation.py": "40c4ae0abd65fa2a4e07d3027e9e9609dd90bd70be0c68190c75fafa710a965d",
+        "brain.py": "06394e6ed6b86b2acba9d75f11356ffa0a4591a2bc7dfda3453d7764a243896c",
+        "column.py": "d3752d27227ca34dfc03134d792cc046fc41d96ac181f19be852a193d1eee203",
+        "cortex.py": "832f1d262a5b22e2e0de39fdf9154c02031d62a6c10ae5173129f76a317732dc",
+        "ports.py": "ea0af151b3d661aecff0168f1804858f89299c28cd766a39aadf7e39741512f2"
+      }
+    }
+  ]
+}

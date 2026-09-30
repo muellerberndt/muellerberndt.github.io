@@ -1,78 +1,74 @@
-# Pragma Research Packet
+# Pragma: company, product and research source map
 
-This file provides a compact machine-readable map for research assistants, indexing systems, and readers who need the source hierarchy.
+## Company
 
-## Summary
+Cadence is a deep real-time brain that learns from experience. Pragma's ambition is to supply brains for robots that keep improving throughout their working lives. Pragma builds the brains; robot manufacturers build the bodies.
 
-Pragma Research is a frontier mathematics company that works on physics, artificial general intelligence and the nature of reality. The physics program develops Observer Patch Holography (OPH), a proven implementation of simulation theory that reverse engineers the hardware and software generating our observations and the universe: https://floatingpragma.io/physics/. The AGI program develops Cadence, an open-source library researching general intelligence through overlap consensus, equilibrium detuning and functional self-reflection, where learning runs on local activity contrasts with no backward pass: https://floatingpragma.io/cadence/. Investors: https://floatingpragma.io/#investors.
+The company is seeking robotics evaluation partners and investors. The proposed commercial path starts with a paid evaluation on a concrete adaptation or recovery task, followed by a supported runtime and embodiment license, and expansion across robots and tasks. The proposed financing target is $4 million over 18 months for physical proof, a paid evaluation and repeatable integration. These are plans rather than achieved customer or financing outcomes.
 
-OPH asks whether bounded observers can form a shared physical account from local records, overlap comparison, and repair. The flagship preprint is on PhilPapers: https://philpapers.org/rec/MUEFOC.
-
-An OPH technology surface instantiates observer-like self-reading structure: a bounded physical or software patch has local state, ports or a boundary, readback, records, feedback or repair moves, and an evidence bundle that another party can inspect.
-
-The public research distinguishes exact finite mathematics from physical interpretation. A finite theorem does not by itself establish that its objects are laboratory events, fields, currents, clocks, or scales. Simulations provide reproducible evidence about the stated finite models; exploratory lanes are not physical derivations.
-
-## Canonical Public Network
-
-1. Physics program overview: https://floatingpragma.io/physics/
-2. Textbooks and guided learning: https://learn.floatingpragma.io/
-3. Interactive OPH Lab: https://oph-lab.floatingpragma.io/
-4. Papers, proofs, code, and evidence: https://github.com/FloatingPragma/observer-patch-holography/
-5. Mini-universe simulation: https://simulation.floatingpragma.io/
-6. OPH Webbook v2, in preparation: https://oph-book.floatingpragma.io/
-
-The first-party paper mirror is https://floatingpragma.io/oph/papers/. It provides crawlable HTML, per-paper PDFs, scholarly metadata, JSON inventory, and dedicated sitemaps.
-
-## Release r2022
-
-Release date: 20 August 2026.
-
-The flagship paper is "Finite Observer Consensus as a Reconstruction Principle: Normal Forms, the Standard Model Lie Type, and a Route to the Einstein Field Equation."
-
-- HTML: https://floatingpragma.io/oph/papers/from-observer-consensus-to-standard-physics/
-- PDF: https://floatingpragma.io/oph/papers/from-observer-consensus-to-standard-physics/paper.pdf
-- Release source: https://github.com/FloatingPragma/observer-patch-holography/releases/tag/r2022
-
-The formal library contains more than 6,600 public Lean theorem and lemma declarations. The repository and paper release are the sources for exact counts, theorem statements, assumptions, and artifacts.
-
-## Paper Stack
-
-- Flagship reconstruction paper: https://floatingpragma.io/oph/papers/from-observer-consensus-to-standard-physics/
-- Observer spacetime and Einstein dynamics: https://floatingpragma.io/oph/papers/observer-spacetime-einstein-dynamics/
-- Standard Model gauge structure: https://floatingpragma.io/oph/papers/standard-model-gauge-structure/
-- Particle spectrum: https://floatingpragma.io/oph/papers/particle-spectrum-from-observer-consistency/
-- Reality as a consensus protocol: https://floatingpragma.io/oph/papers/reality-as-consensus-protocol/
-- Screen microphysics and observer synchronization: https://floatingpragma.io/oph/papers/screen-microphysics-and-observer-synchronization/
-- Observer continuation and fixed-point consensus: https://floatingpragma.io/oph/papers/paradise-as-fixed-point-consensus/
-
-Machine-readable paper data:
-
-- Inventory: https://floatingpragma.io/oph/papers/papers.json
-- Paper LLM index: https://floatingpragma.io/oph/papers/llms.txt
-- Paper sitemap: https://floatingpragma.io/oph/papers/sitemap.xml
-
-## AGI: Cadence
-
-Cadence connects bounded observer-like patches with local state, declared ports, readback and repair. `TemporalPatchNet` learns observed paths by centered equilibrium detuning and carries context between observations. `TemporalMemory` protects selected acquired responses while learning continues in the remaining directions. The same learned model repairs continuous action proposals privately, and imagined continuations leave live activity, parameters and factual records unchanged. Retention capacity, importance selection and transfer between applications are bounded and stated with each result.
-
-- Program overview: https://floatingpragma.io/cadence/
-- Paper, with the controlled results and their assumptions (preprint on PhilPapers): https://philpapers.org/rec/MUECAP-2
-- Library, MIT licensed: https://github.com/muellerberndt/cadence
-- Documentation: https://github.com/muellerberndt/cadence/blob/main/docs/index.md
-- Package: https://pypi.org/project/cadence-net/ (pip install cadence-net)
-- Bundled Lean proofs, 169 conditional theorems: https://github.com/muellerberndt/cadence/tree/main/lean
-
-The proofs cover mathematical components and their limits. They do not certify the Python implementation or establish intelligence.
-
-## Interpretation Boundary
-
-The finite framework proves and computes results under displayed premises. Several bridges from finite objects to observed physics remain open or conditional. Diagnostic numerical agreements are not predictions when measured targets enter the construction or selection. The papers and scientific registers give the binding classification.
-
-## Additional Public Routes
-
-- Open challenge and objections: https://challenge.floatingpragma.io/
-- Research blog: https://blog.floatingpragma.io/
-
-## Feeds and Contact
-
+- Home: https://floatingpragma.io/
+- Product: https://floatingpragma.io/cadence/
+- Robotics programme: https://floatingpragma.io/robotics/
+- Investors: https://floatingpragma.io/investors/
+- Investor deck: https://floatingpragma.io/investors/deck/
+- Investor PDF: https://floatingpragma.io/investors/deck/Cadence_Investor_Deck.pdf
+- Founder, Bernhard Mueller: https://floatingpragma.io/selected-works/
 - Contact: bernhard@floatingpragma.ai
+
+## Cadence architecture
+
+The technical contribution is recursive state-and-error observation within one coupled settling and learning architecture. Bounded observer-like, self-reading software patches hold local state and records, communicate through ports, read states and prediction errors, and contribute feedback or repair. Observer populations can themselves be observed. The jointly settled state supplies the answer.
+
+Cortex and Brain expose a shared mathematical substrate. The runtime jointly settles represented state, recomputing exact prediction errors with analytic derivatives and a global energy check. Numerical settling energy is an objective function, not electrical energy in joules. The biological hypothesis is inspired by cortical cooperation; software behavior alone does not establish that a human cortical column implements these equations.
+
+Deep refers to recursively coupled processing and observer populations. Real-time describes participation in an ongoing observation/action loop, with decision rates measured for each body and workload. Hard deadlines, useful depth advantages and broad skill retention need their own evidence.
+
+The open-source core requires Python 3.11 or later, has no mandatory runtime dependencies and is licensed GPL-3.0-or-later. Optional accelerated paths have additional requirements. Consult the repository and package release for exact implementation details and licensing.
+
+- Repository: https://github.com/muellerberndt/cadence
+- Package: https://pypi.org/project/cadence-net/
+- Quickstart: https://github.com/muellerberndt/cadence/blob/main/docs/QUICKSTART.md
+- Architecture: https://github.com/muellerberndt/cadence/blob/main/docs/DRSN.md
+- Learning and memory: https://github.com/muellerberndt/cadence/blob/main/docs/LIVE.md
+- Preprint: https://philpapers.org/rec/MUECAP-2
+- Demo code: https://github.com/muellerberndt/cadence-demos/tree/main/doom-lab
+
+## Experimental evidence
+
+Two selected Cadence agents achieved 63/64 and 64/64 successes in separate reserved ViZDoom Basic evaluations, compared with original founder baselines of 61/64 and 53/64 respectively. Both improved native return. The first success-rate difference itself was not established. Each set of 64 seeds had 60 distinct initial frames. Training used finite teaching, simulator-assisted counterfactual practice, replay and candidate selection. The second candidate changed the replay setting as well as receiving further experience. These are single-room results, not evidence of general Doom play or a causal benefit from recursive depth.
+
+Doom evidence excerpt: https://floatingpragma.io/evidence/cadence/doom-confirmations.json
+
+CartPole evaluation covered three layouts and three model initializations. All 180 held-out episodes reached the 500-step limit; no actions were refused across 90,000 decisions. Training used 128 supplied state/action examples per model and full numerical observations. No teacher selected evaluation actions. A single patch also solved the task. The result establishes bounded supervised control rather than reward-only discovery or a depth advantage.
+
+CartPole evidence excerpt: https://floatingpragma.io/evidence/cadence/cartpole-confirmations.json
+
+The first-party JSON files are compact projections of source records. They preserve original source hashes, outcomes and experimental conditions. The Doom excerpt includes existing independent verification records. These excerpts do not include all checkpoints and are not complete reproduction bundles. The public demo-code repository is a separate code surface; do not assume its branch includes every local experimental artifact summarized here.
+
+## Proposed physical demonstration
+
+The first proposed robotics demonstration is a small rover compensating when one wheel's motion response changes. Ordinary odometry and action feedback supply the experience. Compare recovery with frozen Cadence and competent adaptive and neural baselines under matched information and resource budgets. Restore the original body condition to measure retained performance separately from relearning. Success has to be established before a physical pilot is claimed.
+
+The deployment programme measures useful task completion, interventions, recovery experience, retained behavior, end-to-end latency, learning cost and electrical energy. Broad robot competence, persistent skill retention and low-energy operation remain goals.
+
+## OPH research origin
+
+Observer Patch Holography explores whether bounded observers can form a shared physical account through local records, overlap comparison and repair. An observer-like self-reading system has bounded local state, ports or boundaries, readback, records, feedback or repair moves, and an inspectable evidence bundle.
+
+The research develops explicit finite constructions and conditional mathematical implications connecting record agreement to quantum probability, geometry, gauge structure and gravitational dynamics. Formal proofs establish consequences of the stated assumptions. Reproducible simulations test the declared models. Whether nature realizes those structures requires physical identification and discriminating measurements. Numerical matches using measured targets are diagnostics.
+
+- Research overview: https://floatingpragma.io/physics/
+- Video explainer: https://floatingpragma.io/watch/
+- Flagship preprint: https://philpapers.org/rec/MUEFOC
+- Flagship HTML: https://floatingpragma.io/oph/papers/from-observer-consensus-to-standard-physics/
+- Full paper library: https://floatingpragma.io/oph/papers/
+- Paper inventory and publication metadata: https://floatingpragma.io/oph/papers/papers.json
+- Paper index for machine readers: https://floatingpragma.io/oph/papers/llms.txt
+- Scientific repository: https://github.com/FloatingPragma/observer-patch-holography/
+- Book: https://oph-book.floatingpragma.io/
+- Textbooks: https://learn.floatingpragma.io/
+- Interactive lab: https://oph-lab.floatingpragma.io/
+- Simulation: https://simulation.floatingpragma.io/
+- Simulator source: https://github.com/muellerberndt/oph-physics-sim
+
+Use the papers and scientific repository for theorem statements, hypotheses, publication metadata and exact counts. Use source receipts for experiment conditions and outcomes. Company pages describe the product direction and proposed programme.
