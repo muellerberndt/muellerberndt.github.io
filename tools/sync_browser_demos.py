@@ -34,8 +34,8 @@ def wrapper_metadata(content, demo):
     metadata = (f'<meta name="robots" content="noindex">\n'
                 f'<meta name="theme-color" content="#191d1c">\n'
                 f'<link rel="canonical" href="https://floatingpragma.io/demos/{demo}/">\n'
-                '<link rel="icon" href="/favicon.svg?v=5" type="image/svg+xml">\n'
-                '<link rel="stylesheet" href="/assets/demo-runtime.css?v=2">\n'
+                '<link rel="icon" href="/favicon.svg?v=6" type="image/svg+xml">\n'
+                '<link rel="stylesheet" href="/assets/demo-runtime.css?v=3">\n'
                 '<base target="_top">\n')
     # Last stylesheet wins over the archived application's own CSS.
     text = text.replace('<html lang="en">', f'<html lang="en" data-demo="{demo}">', 1)

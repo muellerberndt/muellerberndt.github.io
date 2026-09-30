@@ -170,7 +170,7 @@ assert.equal(app.get("brain-patch-buttons").children.length, 6);
 assert.equal(app.get("brain-output-name").textContent, "R1");
 assert.equal(app.count(), 0);
 assert.equal(app.get("brain-forward-output").textContent, signed(model.feedForward(0.65, 2).output));
-const returnStrokes = app.get("brain-recursive").context.calls.filter(call => call.kind === "stroke" && call.color === "#dcf664" && call.path !== 'arc');
+const returnStrokes = app.get("brain-recursive").context.calls.filter(call => call.kind === "stroke" && call.color === "#8fb8e8" && call.path !== 'arc');
 assert.ok(returnStrokes.length > 0);
 assert.ok(returnStrokes.every(call => call.dash.length === 0), "returning influence uses the solid line shown in the legend");
 const initialEnergy = app.result().energy;
@@ -321,7 +321,7 @@ for (const mode of ['flat','composed','recursive']) {
   assert.equal(switching.get('brain-legend-return').hidden,mode==='flat');
   assert.equal(switching.get('brain-forward-output').textContent,
     signed(model.feedForward(-0.4,{mode,depth:1}).output));
-  const strokes=switching.get('brain-recursive').context.calls.filter(call=>call.kind==='stroke'&&call.color==='#dcf664'&&call.path!=='arc');
+  const strokes=switching.get('brain-recursive').context.calls.filter(call=>call.kind==='stroke'&&call.color==='#8fb8e8'&&call.path!=='arc');
   assert.equal(strokes.length>0,mode!=='flat','returning arrows require internal coupling');
   switching.get('brain-patch-buttons').children.at(-1).emit('click');
   assert.equal(switching.get('brain-patch-title').textContent,graph.patches.at(-1).name);

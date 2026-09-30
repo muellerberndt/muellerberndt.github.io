@@ -34,10 +34,12 @@ WIDTH, HEIGHT = 960, 540
 MARGIN, FOOTER = 54, 38
 IVORY = HexColor("#f3f1e9")
 INK = HexColor("#191d1c")
-LIME = HexColor("#dcf664")
-MUTED = HexColor("#626a64")
-LINE = HexColor("#cbd0c5")
-CARD = HexColor("#e9e9df")
+ACCENT_LIGHT = HexColor("#dce8f5")
+ACCENT_STRONG = HexColor("#315d8a")
+ACCENT_ON_DARK = HexColor("#8fb8e8")
+MUTED = HexColor("#586777")
+LINE = HexColor("#c3cdd7")
+CARD = HexColor("#e9eef3")
 WHITE = HexColor("#ffffff")
 VOID = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link",
         "meta", "param", "source", "track", "wbr"}
@@ -144,12 +146,12 @@ class Renderer:
             size, leading, gap, bold = 16.5, 21, 12, True
         elif "eyebrow" in classes:
             size, leading, gap, bold = 9.2, 13, 19, True
-            color = LIME if self.dark else MUTED
+            color = ACCENT_ON_DARK if self.dark else ACCENT_STRONG
         elif "lead" in classes:
             size, leading, gap = 17.5, 25, 21
         elif "small" in classes:
             size, leading, gap = 10, 15, 11
-            color = HexColor("#c1c6bd") if self.dark else MUTED
+            color = HexColor("#bcc8d5") if self.dark else MUTED
         elif "label" in classes or "number" in classes:
             size, leading, gap, bold = 9.2, 13, 12, True
             color = MUTED
@@ -208,7 +210,7 @@ class Renderer:
         painted_height = height - (18 if "callout" in node.classes else 0)
         previous_dark = self.dark
         if boxed:
-            fill = LIME if "callout" in node.classes or "metric" in node.classes else CARD
+            fill = ACCENT_LIGHT if "callout" in node.classes or "metric" in node.classes else CARD
             canvas_.setFillColor(fill)
             canvas_.rect(x, top - painted_height, width, painted_height, fill=1, stroke=0)
             canvas_.setFillColor(INK)
@@ -224,10 +226,10 @@ class Renderer:
     def slide(self, slide: Node, index: int, total: int) -> None:
         c = self.canvas
         self.dark = index == 1
-        background = INK if self.dark else (LIME if index == total else IVORY)
+        background = INK if self.dark else (ACCENT_LIGHT if index == total else IVORY)
         c.setFillColor(background)
         c.rect(0, 0, WIDTH, HEIGHT, fill=1, stroke=0)
-        c.setFillColor(LIME if self.dark else INK)
+        c.setFillColor(ACCENT_ON_DARK if self.dark else ACCENT_STRONG)
         c.rect(MARGIN, HEIGHT - 22, 38, 4, fill=1, stroke=0)
         available = HEIGHT - 44 - FOOTER - 19
         width = WIDTH - 2 * MARGIN
@@ -246,11 +248,11 @@ class Renderer:
             cursor = self.draw(node, MARGIN, cursor, width, scale=scale)
         if cursor < FOOTER + 19 - 0.1:
             raise ValueError(f"Slide {index} entered footer at {cursor:.1f}pt")
-        c.setStrokeColor(HexColor("#454c45") if self.dark else LINE)
+        c.setStrokeColor(HexColor("#425363") if self.dark else LINE)
         c.setLineWidth(0.5)
         c.line(MARGIN, FOOTER, WIDTH - MARGIN, FOOTER)
         c.setFont("Pragma", 8.2)
-        c.setFillColor(HexColor("#c1c6bd") if self.dark else MUTED)
+        c.setFillColor(HexColor("#bcc8d5") if self.dark else MUTED)
         c.drawString(MARGIN, 23, "PRAGMA RESEARCH  /  CADENCE")
         c.drawRightString(WIDTH - MARGIN, 23, f"{index:02d} / {total:02d}")
         c.showPage()

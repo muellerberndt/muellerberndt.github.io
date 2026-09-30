@@ -71,7 +71,7 @@
       for (let b = a+1; b < points.length; b++) {
         const p = points[a], q = points[b];
         if ((p.group === q.group && (p.hub || b === a+1)) || (p.hub && q.hub)) {
-          ctx.strokeStyle = p.group === q.group ? 'rgba(220,246,100,.28)' : 'rgba(243,241,233,.17)';
+          ctx.strokeStyle = p.group === q.group ? 'rgba(143,184,232,.28)' : 'rgba(243,241,233,.17)';
           ctx.lineWidth = .8;
           ctx.beginPath();ctx.moveTo(p.px,p.py);ctx.lineTo(q.px,q.py);ctx.stroke();
         }
@@ -79,8 +79,8 @@
     }
     points.forEach(p => {
       ctx.beginPath();ctx.arc(p.px,p.py,p.hub?5:2,0,Math.PI*2);
-      ctx.fillStyle=p.hub?'#dcf664':'#c7d0bc';ctx.fill();
-      if (p.hub) {ctx.beginPath();ctx.arc(p.px,p.py,12+Math.sin(phase+p.seed)*2,0,Math.PI*2);ctx.strokeStyle='rgba(220,246,100,.2)';ctx.stroke();}
+      ctx.fillStyle=p.hub?'#8fb8e8':'#bbcbdc';ctx.fill();
+      if (p.hub) {ctx.beginPath();ctx.arc(p.px,p.py,12+Math.sin(phase+p.seed)*2,0,Math.PI*2);ctx.strokeStyle='rgba(143,184,232,.2)';ctx.stroke();}
     });
   };
   const tick = time => {

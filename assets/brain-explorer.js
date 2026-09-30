@@ -83,7 +83,7 @@
     const {ctx,w,h} = prepare(canvas);
     const vertical = w < 420;
     const ink = coupled ? '#f3f1e9' : '#191d1c';
-    const muted = coupled ? '#a8b3a0' : '#59605a';
+    const muted = coupled ? '#b5c5d7' : '#59605a';
     const points = new Map();
     const layers = topology.levels + 1;
     const yStart = 48, yEnd = h-80;
@@ -121,25 +121,25 @@
       else if (edge.kind === 'error') previous.observed=true;
     });
     grouped.forEach(edge => arrow(ctx,points.get(edge.source),points.get(edge.target),
-      coupled ? 'rgba(207,218,197,.35)' : 'rgba(89,96,90,.4)',coupled && edge.observed));
+      coupled ? 'rgba(188,207,227,.35)' : 'rgba(89,96,90,.4)',coupled && edge.observed));
     if (coupled && topology.levels>1) {
       // A population-level guide to objective influence, not extra read edges.
       for (let level=topology.levels-1;level>=1;level--) {
         if (vertical) {
           const a=position(level+1,1),b=position(level,1);
-          arrow(ctx,{x:w-35,y:a.y},{x:w-35,y:b.y},'#dcf664');
+          arrow(ctx,{x:w-35,y:a.y},{x:w-35,y:b.y},'#8fb8e8');
         } else {
           const a=position(level+1,1),b=position(level,1);
-          arrow(ctx,{x:a.x,y:h-65},{x:b.x,y:h-65},'#dcf664',false,24);
+          arrow(ctx,{x:a.x,y:h-65},{x:b.x,y:h-65},'#8fb8e8',false,24);
         }
       }
     }
     for (const point of points.values()) {
       const isSelected = !point.input && point.index===selected && coupled;
       const radius = point.input ? 16 : mode==='flat' && !vertical ? 17 : 22;
-      if (isSelected) {ctx.beginPath();ctx.arc(point.x,point.y,29,0,Math.PI*2);ctx.strokeStyle='#dcf664';ctx.lineWidth=1;ctx.stroke();}
+      if (isSelected) {ctx.beginPath();ctx.arc(point.x,point.y,29,0,Math.PI*2);ctx.strokeStyle='#8fb8e8';ctx.lineWidth=1;ctx.stroke();}
       ctx.beginPath();ctx.arc(point.x,point.y,radius,0,Math.PI*2);
-      ctx.fillStyle = point.input ? (coupled?'#353d34':'#e0e4d6') : (coupled?'#dcf664':'#191d1c');ctx.fill();
+      ctx.fillStyle = point.input ? (coupled?'#2e3b4a':'#dce8f5') : (coupled?'#8fb8e8':'#191d1c');ctx.fill();
       ctx.fillStyle = point.input ? ink : (coupled?'#191d1c':'#f3f1e9');
       ctx.font='600 12px Inter, Arial, sans-serif';ctx.fillText(point.input?(point.id==='signal'?'S':'B'):point.id,point.x,point.y+4);
       ctx.fillStyle=muted;ctx.font='12px Inter, Arial, sans-serif';
@@ -155,7 +155,7 @@
   function drawTrace() {
     const {ctx,w,h}=prepare(trace),top=Math.max(...energies,1e-8),left=4,bottom=h-6;
     ctx.strokeStyle='#cccfc4';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(left,3);ctx.lineTo(left,bottom);ctx.lineTo(w-4,bottom);ctx.stroke();
-    ctx.strokeStyle='#526820';ctx.lineWidth=2;ctx.beginPath();
+    ctx.strokeStyle='#315d8a';ctx.lineWidth=2;ctx.beginPath();
     energies.forEach((value,index)=>{const x=left+index/Math.max(1,energies.length-1)*(w-10),y=bottom-value/top*(h-12);if(index)ctx.lineTo(x,y);else ctx.moveTo(x,y);});ctx.stroke();
     trace.setAttribute('aria-label',`Shared objective after ${count} steps: ${concise(result.energy)}. Starting objective: ${concise(energies[0])}.`);
   }

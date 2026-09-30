@@ -14,7 +14,7 @@
       "source": "amen/web/index.html",
       "path": "amen/index.html",
       "source_sha256": "eabed72121f0cff95ed9015b946d41006b2e27242f7a5a43e07d45c6dfe19cf7",
-      "published_sha256": "9bd5750bfebbbb061682f817b460f5bfc61ac1652cf7bba884bc3bd8084320ca",
+      "published_sha256": "931ad1f0239b85db38a215979054e553b5845aa8fca16117cd8495598fa0a9c8",
       "bytes": 61665
     },
     {
@@ -77,7 +77,7 @@
       "source": "patch-world/index.html",
       "path": "patch-world/index.html",
       "source_sha256": "3663c837fbffb2eb94229289d2807784a3d2e90bf459a39580ca2fcbe42406e9",
-      "published_sha256": "722564f147cb9fbc1515ea3b53c8c62bc012c1c4c8f4e011a5e9ead333bf1784",
+      "published_sha256": "f0e4fd96ce0c7dc3c58cbbb5bfdb9f4ba4243a920dcff16fd065fc51c18ec01f",
       "bytes": 84879
     }
   ]

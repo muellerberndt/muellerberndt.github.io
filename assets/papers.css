@@ -1,4 +1,4 @@
-/* Scientific article reader; extends the shared cream/lime company design. */
+/* Scientific article reader; extends the shared cream/blue company design. */
 .paper-page .paper-article{padding-bottom:100px}
 .paper-hero{padding:76px 0 48px}
 .paper-hero h1{font-size:clamp(2.2rem,4.5vw,4.1rem);max-width:28ch;line-height:1.1;letter-spacing:-.045em;overflow-wrap:anywhere}
@@ -13,7 +13,7 @@
 .paper-chips span{padding:7px 10px;border:1px solid var(--line);font-size:10px;line-height:1.4;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
 .paper-hero .actions{margin-top:28px}
 .paper-hero .button{font-size:13px;padding:14px 18px;min-height:48px}
-.abstract{margin-top:40px;padding:28px 30px;border-left:3px solid var(--ink);background:#e9ecda;max-width:960px}
+.abstract{margin-top:40px;padding:28px 30px;border-left:3px solid var(--accent);background:var(--accent-soft);max-width:960px}
 .abstract .k,.paper-aside>.k{font-size:11px;font-weight:650;line-height:1.5;letter-spacing:.14em;text-transform:uppercase;margin-bottom:12px}
 .abstract p{font-size:17px;line-height:1.7;max-width:75ch}
 .strip{margin-top:24px;display:flex;flex-wrap:wrap;gap:10px 18px;align-items:baseline;font-size:12px;line-height:1.6}
@@ -25,7 +25,7 @@
 .paper-aside .button{font-size:12px;min-height:46px;padding:13px}
 .paper-toc{display:grid;gap:3px;max-height:calc(100vh - 300px);overflow:auto;scrollbar-width:thin}
 .paper-toc a{display:block;min-height:44px;padding:12px 10px;border-left:2px solid transparent;font-size:13px;line-height:1.5;color:var(--muted);text-decoration:none;overflow-wrap:anywhere}
-.paper-toc a:hover,.paper-toc a.on{color:var(--ink);background:#e9ecda;border-left-color:var(--ink)}
+.paper-toc a:hover,.paper-toc a.on{color:var(--ink);background:var(--accent-soft);border-left-color:var(--accent)}
 .toc-mobile{display:none;margin:0 0 32px;border:1px solid var(--line)}
 .toc-mobile summary{padding:16px 18px;cursor:pointer;font-size:13px;font-weight:600}
 .toc-mobile[open] summary{border-bottom:1px solid var(--line)}
@@ -41,7 +41,7 @@
 .paper-body h4{font-size:1.08rem;line-height:1.45;margin:1.8em 0 .7em}
 .paper-body h5,.paper-body h6{font-size:1rem;line-height:1.5;margin:1.6em 0 .7em}
 .paper-body p{margin:0 0 1.15em;line-height:inherit}
-.paper-body a{color:#3a541d;text-decoration-thickness:1px}
+.paper-body a{color:var(--accent);text-decoration-thickness:1px}
 .paper-body a:hover{color:var(--ink);text-decoration-thickness:2px}
 .paper-body strong{font-weight:650}
 .paper-body ul,.paper-body ol{margin:0 0 1.2em;padding-left:1.5em;line-height:inherit}
@@ -52,7 +52,7 @@
 .paper-body dd{margin:.25em 0 0 1.2em}
 .paper-body blockquote{margin:1.5em 0;padding:4px 0 4px 22px;border-left:2px solid var(--line);color:var(--muted)}
 .paper-body hr{border:0;border-top:1px solid var(--line);margin:2.4em 0}
-.paper-body code{font:.87em/1.6 ui-monospace,SFMono-Regular,Consolas,monospace;padding:.12em .3em;background:#e5e8dc}
+.paper-body code{font:.87em/1.6 ui-monospace,SFMono-Regular,Consolas,monospace;padding:.12em .3em;background:var(--surface)}
 .paper-body pre{max-width:100%;margin:0 0 1.5em;padding:22px;border:1px solid var(--line);background:var(--white);overflow-x:auto;font:.88rem/1.65 ui-monospace,SFMono-Regular,Consolas,monospace}
 .paper-body pre code{padding:0;background:none}
 .paper-body img{display:block;max-width:100%;height:auto;margin:1.3em auto}
@@ -63,10 +63,10 @@
 .paper-body .math.inline{display:inline-block;max-width:100%;overflow-x:auto;overflow-y:hidden;overscroll-behavior-x:contain;vertical-align:middle}
 .paper-body mjx-container[display="true"]{margin:0!important}
 .paper-body .paper-equation-anchor{display:block;position:relative;top:-110px;visibility:hidden}
-.paper-body .theorem,.paper-body .lemma,.paper-body .proposition,.paper-body .corollary,.paper-body .definition,.paper-body .remark,.paper-body .example,.paper-body .assumption,.paper-body .conjecture{margin:1.6em 0;padding:22px 25px;border:1px solid var(--line);border-left:3px solid #668029;background:#edf0e2}
-.paper-body .definition{border-left-color:var(--ink);background:#e9ecda}
+.paper-body .theorem,.paper-body .lemma,.paper-body .proposition,.paper-body .corollary,.paper-body .definition,.paper-body .remark,.paper-body .example,.paper-body .assumption,.paper-body .conjecture{margin:1.6em 0;padding:22px 25px;border:1px solid var(--line);border-left:3px solid var(--accent);background:var(--surface)}
+.paper-body .definition{background:var(--accent-soft)}
 .paper-body .remark,.paper-body .example{background:transparent;border-left-color:var(--line)}
-.paper-body .boundary{margin:1.6em 0;padding:22px 25px;border:1px solid #c8bc91;border-left:3px solid #88712e;background:#eee9d8}
+.paper-body .boundary{margin:1.6em 0;padding:22px 25px;border:1px solid var(--line);border-left:3px solid var(--accent);background:var(--surface)}
 .paper-body .proof{margin:1.2em 0 1.8em;padding-left:22px;border-left:1px solid var(--line)}
 .paper-body .proof>p:last-child::after{content:"\25A1";float:right;margin-left:12px}
 .paper-body :is(.theorem,.lemma,.proposition,.corollary,.definition,.remark,.example,.assumption,.conjecture,.boundary,.proof)>p:last-child{margin-bottom:0}
@@ -75,7 +75,7 @@
 .paper-body table:has(tr>:nth-child(5)){min-width:48rem}
 .paper-body table .math.inline{max-width:none;overflow:visible}
 .paper-body th,.paper-body td{padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top;line-height:1.6}
-.paper-body thead th{font-size:11px;letter-spacing:.06em;background:#e9ecda;width:auto}
+.paper-body thead th{font-size:11px;letter-spacing:.06em;background:var(--accent-soft);width:auto}
 .paper-body tbody th{width:auto;font-weight:650}
 .paper-body tbody tr:last-child td,.paper-body tbody tr:last-child th{border-bottom:0}
 .paper-body caption{caption-side:bottom;padding:12px 14px;font-size:.83rem;color:var(--muted);text-align:left}
