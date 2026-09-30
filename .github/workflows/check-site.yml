@@ -13,8 +13,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Check the research publication boundary
-        run: python3 -m unittest discover -s tools -p 'test_research_publication.py'
+      - name: Check publication and indexing boundaries
+        run: python3 -m unittest discover -s tools -p 'test_*.py'
       - name: Verify generated pages are current
         run: |
           python3 tools/build_company_site.py

@@ -3,4 +3,7 @@
   <sitemap>
     <loc>https://floatingpragma.io/sitemap-root.xml</loc>
   </sitemap>
+  <sitemap>
+    <loc>https://floatingpragma.io/starklab/sitemap.xml</loc>
+  </sitemap>
 </sitemapindex>

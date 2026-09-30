@@ -12,6 +12,7 @@ import argparse
 import hashlib
 import json
 import re
+from datetime import date
 from collections import Counter
 from html.parser import HTMLParser
 from pathlib import Path
@@ -39,6 +40,7 @@ class Page(HTMLParser):
         self.ids = Counter()
         self.links = []
         self.meta = {}
+        self.meta_counts = Counter()
         self.canonical = []
         self.titles = []
         self.h1 = 0
@@ -59,7 +61,9 @@ class Page(HTMLParser):
         if tag == "title":
             self._title = []
         if tag == "meta":
-            self.meta[a.get("name") or a.get("property")] = a.get("content", "")
+            key = a.get("name") or a.get("property")
+            self.meta_counts[key] += 1
+            self.meta[key] = a.get("content", "")
         if tag == "link" and "canonical" in a.get("rel", "").split():
             self.canonical.append(a.get("href"))
         if tag == "script" and a.get("type") == "application/ld+json":
@@ -165,6 +169,53 @@ def check_pages(site, errors):
                     pages[dest] = Page(dest.read_text())
                 if unquote(target.fragment) not in pages[dest].ids:
                     errors.append(f"{route}: missing fragment {link}")
+
+
+def check_indexing(site, errors):
+    """Canonical, discoverable pages only; dates track published content."""
+    from xml.etree import ElementTree as ET
+    from build_company_site import REDIRECTS
+    ns = {"s": "http://www.sitemaps.org/schemas/sitemap/0.9"}
+    indexable = set(ROUTES) - {"/404.html", "/oph/unsubscribe/"}
+    record = json.loads((site / "_company/indexing.json").read_text())
+    for route in ROUTES:
+        page = Page(route_file(site, route).read_text())
+        robots = page.meta.get("robots", "")
+        if page.meta_counts["robots"] != 1:
+            errors.append(f"{route}: expected exactly one robots directive")
+        if route in indexable:
+            if "noindex" in robots or "max-image-preview:large" not in robots:
+                errors.append(f"{route}: public page is not indexable with large previews")
+            item = record.get(route, {})
+            if item.get("sha256") != sha(route_file(site, route)):
+                errors.append(f"{route}: indexing record does not match published content")
+        elif "noindex" not in robots:
+            errors.append(f"{route}: utility page must be noindex")
+        graphs = [json.loads(block).get("@graph", []) for block in page.ld]
+        ids = {node.get("@id") for graph in graphs for node in graph}
+        if not {ORIGIN + "/#organization", ORIGIN + "/#website", ORIGIN + route + "#webpage"}.issubset(ids):
+            errors.append(f"{route}: missing stable site and page identities")
+    for route in REDIRECTS:
+        page = Page(route_file(site, route).read_text())
+        if page.meta_counts["robots"] != 1 or "noindex" not in page.meta.get("robots", ""):
+            errors.append(f"{route}: legacy redirect must carry one noindex directive")
+    for name in ("sitemap.xml", "sitemap-root.xml"):
+        entries = ET.parse(site / name).findall("s:url", ns)
+        locations = [entry.findtext("s:loc", namespaces=ns) for entry in entries]
+        if len(locations) != len(set(locations)) or set(locations) != {ORIGIN + route for route in indexable}:
+            errors.append(f"{name}: must list each current indexable page exactly once")
+        for entry in entries:
+            route = entry.findtext("s:loc", default="", namespaces=ns).removeprefix(ORIGIN)
+            lastmod = entry.findtext("s:lastmod", default="", namespaces=ns)
+            try:
+                valid_date = date.fromisoformat(lastmod) <= date.today()
+            except ValueError:
+                valid_date = False
+            if not valid_date or lastmod != record.get(route, {}).get("lastmod"):
+                errors.append(f"{name}: invalid or mismatched lastmod for {route}")
+    maps = ET.parse(site / "sitemap-index.xml").findall("s:sitemap/s:loc", ns)
+    if {node.text for node in maps} != {ORIGIN + "/sitemap-root.xml", ORIGIN + "/starklab/sitemap.xml"}:
+        errors.append("Sitemap index must include the company site and STARK Lab")
 
 
 def check_unified_surfaces(site, errors):
@@ -383,6 +434,7 @@ def main():
     errors = []
     site = args.site_root.resolve()
     check_pages(site, errors)
+    check_indexing(site, errors)
     unified_pages = check_unified_surfaces(site, errors)
     check_research_publication(site, errors)
     check_browser_demos(site, errors)

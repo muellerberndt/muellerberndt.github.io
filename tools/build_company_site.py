@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Build Pragma Research pages, shared navigation and legacy entry points."""
 from html import escape
+from datetime import date
+import hashlib
 import json
 from pathlib import Path
 
@@ -78,7 +80,41 @@ RESEARCH_LINKS = (
 RESEARCH_LINKS_UPDATED = "2026-09-30T00:00:00Z"
 
 
-def render_shell(*, content, title, description, route, active="research", extra="", body_class="", schema=None, site_root=None):
+def page_schema(title, description, route):
+    """Stable identities shared by the visible company, founder and pages."""
+    canonical = ORIGIN + route
+    organization = {"@type": "Organization", "@id": ORIGIN + "/#organization",
+                    "name": "Pragma Research", "url": ORIGIN + "/",
+                    "logo": ORIGIN + "/apple-touch-icon.png",
+                    "founder": {"@id": ORIGIN + "/work/#person"}}
+    website = {"@type": "WebSite", "@id": ORIGIN + "/#website",
+               "name": "Pragma Research", "url": ORIGIN + "/",
+               "publisher": {"@id": organization["@id"]}, "inLanguage": "en"}
+    person = {"@type": "Person", "@id": ORIGIN + "/work/#person",
+              "name": "Bernhard Mueller", "url": ORIGIN + "/work/",
+              "sameAs": ["https://github.com/muellerberndt"]}
+    page_type = "ProfilePage" if route == "/work/" else "CollectionPage" if route in ("/research/", "/demos/") else "WebPage"
+    page = {"@type": page_type, "@id": canonical + "#webpage", "name": title,
+            "description": description, "url": canonical, "inLanguage": "en",
+            "isPartOf": {"@id": website["@id"]}, "publisher": {"@id": organization["@id"]}}
+    graph = [organization, website, person, page]
+    if route == "/work/":
+        page["mainEntity"] = {"@id": person["@id"]}
+    if route != "/":
+        crumbs = [{"@type": "ListItem", "position": 1, "name": "Pragma Research", "item": ORIGIN + "/"}]
+        parent = "/" + route.strip("/").split("/")[0] + "/"
+        if parent != route and parent in ("/demos/", "/investors/"):
+            crumbs.append({"@type": "ListItem", "position": 2, "name": parent.strip("/").title(), "item": ORIGIN + parent})
+        label = "Investor deck" if route == "/investors/deck/" else title.split(" | ")[0]
+        crumbs.append({"@type": "ListItem", "position": len(crumbs) + 1,
+                       "name": label, "item": canonical})
+        breadcrumb = {"@type": "BreadcrumbList", "@id": canonical + "#breadcrumb", "itemListElement": crumbs}
+        page["breadcrumb"] = {"@id": breadcrumb["@id"]}
+        graph.append(breadcrumb)
+    return {"@context": "https://schema.org", "@graph": graph}
+
+
+def render_shell(*, content, title, description, route, active="research", extra="", body_class="", schema=None, site_root=None, robots="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"):
     root = Path(site_root) if site_root else ROOT
     template = (root / "_company/layout.html").read_text()
     nav = "".join(
@@ -87,10 +123,11 @@ def render_shell(*, content, title, description, route, active="research", extra
     )
     canonical = ORIGIN + route
     if schema is None:
-        schema = {"@context": "https://schema.org", "@type": "WebPage", "name": title, "description": description, "url": canonical, "publisher": {"@type": "Organization", "name": "Pragma Research", "url": ORIGIN + "/", "founder": {"@type": "Person", "name": "Bernhard Mueller"}}}
+        schema = page_schema(title, description, route)
     values = {
         "TITLE": escape(title), "DESCRIPTION": escape(description, quote=True),
         "CANONICAL": escape(canonical, quote=True), "NAV": nav,
+        "ROBOTS": escape(robots, quote=True),
         "SCHEMA": json.dumps(schema, ensure_ascii=False).replace("<", "\\u003c"),
         "CONTENT": content, "BODYCLASS": escape(body_class, quote=True), "YEAR": "2026", "EXTRA": extra,
     }
@@ -103,9 +140,27 @@ def render_shell(*, content, title, description, route, active="research", extra
 
 
 def render_redirect(route, target, *, site_root=None):
-    script = f'<meta name="robots" content="noindex"><meta http-equiv="refresh" content="0;url={escape(target, quote=True)}"><script>location.replace({json.dumps(target)} + (location.hash && !{json.dumps(target)}.includes("#") ? location.hash : ""));</script>'
+    script = f'<meta http-equiv="refresh" content="0;url={escape(target, quote=True)}"><script>location.replace({json.dumps(target)} + (location.hash && !{json.dumps(target)}.includes("#") ? location.hash : ""));</script>'
     content = f'<section class="section page-hero"><div class="container"><p class="eyebrow">Pragma Research</p><h1 class="display">Continue exploring.</h1><p class="lead">This page is part of our unified research website.</p><div class="actions"><a class="button primary" href="{escape(target, quote=True)}">Continue ↗</a></div></div></section>'
-    return render_shell(content=content, title="Continue | Pragma Research", description="Continue to the Pragma Research website.", route=target.split("#")[0], extra=script, site_root=site_root)
+    return render_shell(content=content, title="Continue | Pragma Research", description="Continue to the Pragma Research website.", route=target.split("#")[0], extra=script, site_root=site_root, robots="noindex, follow")
+
+
+def publication_dates(root, paths, today=None):
+    """Retain lastmod on identical builds; advance only for changed page bytes.
+
+    The checked-in record makes local and CI builds deterministic. First entry
+    records this metadata publication, not a guessed historical publication date.
+    """
+    today = today or date.today().isoformat()
+    record = root / "_company/indexing.json"
+    previous = json.loads(record.read_text()) if record.exists() else {}
+    current = {}
+    for path in paths:
+        fingerprint = hashlib.sha256((root / path.lstrip("/") / "index.html").read_bytes()).hexdigest()
+        old = previous.get(path, {})
+        current[path] = {"sha256": fingerprint, "lastmod": old.get("lastmod", today) if old.get("sha256") == fingerprint else today}
+    record.write_text(json.dumps(current, indent=2) + "\n")
+    return {path: value["lastmod"] for path, value in current.items()}
 
 
 def build_sitemaps():
@@ -113,18 +168,20 @@ def build_sitemaps():
     namespace = "http://www.sitemaps.org/schemas/sitemap/0.9"
     ET.register_namespace("", namespace)
     paths = ["/" + dest.removesuffix("index.html") for key, (dest, *_rest) in PAGES.items() if key not in ("not-found", "unsubscribe")]
+    dates = publication_dates(ROOT, paths)
     def write_map(name, urls):
         tree = ET.Element(f"{{{namespace}}}urlset")
         for url in dict.fromkeys(urls):
             node = ET.SubElement(tree, f"{{{namespace}}}url")
             ET.SubElement(node, f"{{{namespace}}}loc").text = url
+            ET.SubElement(node, f"{{{namespace}}}lastmod").text = dates[url.removeprefix(ORIGIN)]
         ET.indent(tree, space="  ")
         (ROOT / name).write_text('<?xml version="1.0" encoding="UTF-8"?>\n' + ET.tostring(tree, encoding="unicode") + "\n")
     write_map("sitemap-root.xml", [ORIGIN + p for p in paths])
     write_map("oph/sitemap.xml", [ORIGIN + "/physics/", ORIGIN + "/research/"])
     write_map("sitemap.xml", [ORIGIN + p for p in paths])
     index = ET.Element(f"{{{namespace}}}sitemapindex")
-    for path in ("sitemap-root.xml",):
+    for path in ("sitemap-root.xml", "starklab/sitemap.xml"):
         entry = ET.SubElement(index, f"{{{namespace}}}sitemap")
         ET.SubElement(entry, f"{{{namespace}}}loc").text = ORIGIN + "/" + path
     ET.indent(index, space="  ")
@@ -168,13 +225,15 @@ def build():
             active = "demos"
         content = (ROOT / f"_company/pages/{name}.html").read_text()
         extra = ""
+        robots = "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
         if name == "cadence":
             extra = '<link rel="stylesheet" href="/assets/brain-explorer.css?v=4"><script src="/assets/brain-model.js?v=2" defer></script><script src="/assets/brain-explorer.js?v=4" defer></script>'
         elif name == "unsubscribe":
-            extra = '<meta name="robots" content="noindex, nofollow">'
+            robots = "noindex, nofollow"
         elif name == "not-found":
-            extra = r'<meta name="robots" content="noindex"><script>if(location.pathname.replace(/\/+$/, "") === "/cadence/paper.pdf") location.replace("https://philpapers.org/rec/MUECAP-2");else if(location.pathname.startsWith("/oph/papers/")) location.replace("/research/#preprints");</script>'
-        output = render_shell(content=content, title=title, description=description, route=route, active=active, extra=extra, body_class="deck-page" if name == "deck" else "")
+            robots = "noindex, follow"
+            extra = r'<script>if(location.pathname.replace(/\/+$/, "") === "/cadence/paper.pdf") location.replace("https://philpapers.org/rec/MUECAP-2");else if(location.pathname.startsWith("/oph/papers/")) location.replace("/research/#preprints");</script>'
+        output = render_shell(content=content, title=title, description=description, route=route, active=active, extra=extra, body_class="deck-page" if name == "deck" else "", robots=robots)
         path = ROOT / destination
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text(output)

@@ -1,0 +1,50 @@
+{
+  "/": {
+    "sha256": "6591c1aadbe55ccafc9e8a18ffca646a8e01c4b74ed9a2b12597af98c8448d2b",
+    "lastmod": "2026-09-30"
+  },
+  "/cadence/": {
+    "sha256": "4e1d09b524ba624f30204454d6e002558d6114a1d80b321a25a73fbf37f0ef27",
+    "lastmod": "2026-09-30"
+  },
+  "/demos/": {
+    "sha256": "b38e0f2e557703dd6fb7f7498e81cb275f6efb50bbc054caa11e751e0caa9c9e",
+    "lastmod": "2026-09-30"
+  },
+  "/demos/amen/": {
+    "sha256": "779e5ad94c4b93aef0551a717d59ab8a8fbc751745acd4c72d9da42c5fa96dc9",
+    "lastmod": "2026-09-30"
+  },
+  "/demos/patch-world/": {
+    "sha256": "15ce662e23a0f02fdef1344842f4e5735e5e9c69f4727c32afcd05ed5a119b5e",
+    "lastmod": "2026-09-30"
+  },
+  "/robotics/": {
+    "sha256": "7c0c95c554931f633409d3e33c559bcc6d8f7da49644a10d2de799f178d61cdd",
+    "lastmod": "2026-09-30"
+  },
+  "/investors/": {
+    "sha256": "f0c1d74e5ec32ebf09c090cbc5d98286234e7acb6b14e82d3b564019d258a902",
+    "lastmod": "2026-09-30"
+  },
+  "/investors/deck/": {
+    "sha256": "6e4a85b4f8326bf103d014896e6ea4b6d0def6aa2a073f55b21c9a9746903166",
+    "lastmod": "2026-09-30"
+  },
+  "/research/": {
+    "sha256": "4e6041e0a19fe89a3088ff11a96634b8c05b466f8337fef60a46407ab996b8b1",
+    "lastmod": "2026-09-30"
+  },
+  "/physics/": {
+    "sha256": "de31b8316110029e66873a8483e02c88890f61f239572c1c4dc3ef7dcffa0ddf",
+    "lastmod": "2026-09-30"
+  },
+  "/work/": {
+    "sha256": "9376e941d1decb710ca75ce8c5624fab23b5b3c0715c288a1905f5839aec44cb",
+    "lastmod": "2026-09-30"
+  },
+  "/watch/": {
+    "sha256": "7a63b2a7c3b74dd6dda249d53ea03346df103ce450cc87e4e594eef1490de672",
+    "lastmod": "2026-09-30"
+  }
+}
