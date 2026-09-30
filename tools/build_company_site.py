@@ -10,6 +10,9 @@ ORIGIN = "https://floatingpragma.io"
 PAGES = {
     "home": ("index.html", "Pragma Research | Brains that learn", "Cadence is a deep real-time brain that learns from experience. Pragma Research is building the intelligence for robots that keep improving."),
     "cadence": ("cadence/index.html", "Cadence | A deep real-time brain", "Explore Cadence: brains that settle and learn from experience. Three design patterns, working code and measured simulation results."),
+    "demos": ("demos/index.html", "Demonstrations | Cadence in action", "Explore Cadence demonstrations: music, games and learning in simulated worlds. Working software, interactive experiments and measured results from cadence-demos."),
+    "demo-amen": ("demos/amen/index.html", "AMEN | Play the Cadence music demo", "Generate and hear a jungle track in your browser. Explore the archived Cadence record-patch composer with its own engine and trained brain."),
+    "demo-patch-world": ("demos/patch-world/index.html", "Patch World | Explore a living simulation", "Explore creatures with recursive settling brains in a conserved-mass world. Inspect their observations, prediction errors and evolving body plans."),
     "robotics": ("robotics/index.html", "Robotics | Put a learning brain in your robot", "Partner with Pragma Research to evaluate Cadence on one robot and one measurable adaptation problem. We build the brains; you build the bodies."),
     "investors": ("investors/index.html", "Invest in Pragma Research | The brain company", "Pragma Research is building a reusable learning brain for robots. Explore our proposed $4 million seed round and 18-month physical deployment programme."),
     "deck": ("investors/deck/index.html", "Pragma Research | Investor deck", "The Cadence investment case: a deep real-time brain, measurable simulation learning, and a proposed $4 million round for physical deployment."),
@@ -22,6 +25,7 @@ PAGES = {
 }
 NAV = [
     ("cadence", "/cadence/", "Cadence"),
+    ("demos", "/demos/", "Demos"),
     ("robotics", "/robotics/", "Robotics"),
     ("research", "/research/", "Research"),
     ("investors", "/investors/", "Investors"),
@@ -32,6 +36,7 @@ REDIRECTS = {
     "/oph/papers/": "/research/#papers",
     "/selected-works/": "/work/",
     "/cadence-markets/": "/cadence/",
+    "/cadence-examples/amen-beats/": "/demos/amen/",
     "/oph/physics-unification/": "/physics/",
     "/oph/standard-model-gravity-unification/": "/physics/",
     "/oph/cosmological-constant-derivation/": "/research/#papers",
@@ -157,12 +162,14 @@ def build():
     for name, (destination, title, description) in PAGES.items():
         route = "/" + destination.removesuffix("index.html")
         active = "investors" if name == "deck" else "research" if name in ("physics", "watch") else name
+        if name.startswith("demo-"):
+            active = "demos"
         content = (ROOT / f"_company/pages/{name}.html").read_text()
         if name == "research":
             content = content.replace("@@PAPER_CATALOG@@", paper_catalog())
         extra = ""
         if name == "cadence":
-            extra = '<link rel="stylesheet" href="/assets/brain-explorer.css?v=1"><script src="/assets/brain-model.js?v=1" defer></script><script src="/assets/brain-explorer.js?v=1" defer></script>'
+            extra = '<link rel="stylesheet" href="/assets/brain-explorer.css?v=2"><script src="/assets/brain-model.js?v=2" defer></script><script src="/assets/brain-explorer.js?v=2" defer></script>'
         elif name == "research":
             extra = '<script src="/assets/research.js?v=1" defer></script>'
         elif name == "unsubscribe":

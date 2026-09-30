@@ -11,6 +11,14 @@
   nav?.addEventListener('click', event => { if (event.target.closest('a')) closeMenu(); });
   document.addEventListener('keydown', event => { if (event.key === 'Escape') { closeMenu(); } });
   document.querySelectorAll('[data-print]').forEach(button => button.addEventListener('click', () => window.print()));
+  document.querySelectorAll('[data-demo-fullscreen]').forEach(button => {
+    const player = document.getElementById(button.dataset.demoFullscreen);
+    if (!player?.requestFullscreen || !document.fullscreenEnabled) return;
+    button.hidden = false;
+    button.addEventListener('click', () => {
+      player.requestFullscreen().catch(() => { button.hidden = true; });
+    });
+  });
   const film = document.querySelector('#film');
   document.querySelectorAll('button[data-t]').forEach(button => button.addEventListener('click', () => {
     if (!film) return;

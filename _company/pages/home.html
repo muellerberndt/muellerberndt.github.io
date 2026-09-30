@@ -6,7 +6,7 @@
     <h1>Brains that learn.</h1>
     <p class="lead">Cadence is a deep real-time brain that learns from experience.</p>
     <p style="margin-top:18px;max-width:440px">We are building the intelligence for robots that keep improving throughout their working lives.</p>
-    <div class="actions"><a class="button primary" href="/cadence/">Meet Cadence <span aria-hidden="true">↗</span></a><a class="button secondary" href="/robotics/">Build with us <span aria-hidden="true">↗</span></a></div>
+    <div class="actions"><a class="button primary" href="/demos/">Try the demos <span aria-hidden="true">↗</span></a><a class="button secondary" href="/cadence/">Meet Cadence <span aria-hidden="true">↗</span></a></div>
    </div>
    <div class="hero-visual">
     <div class="visual-label"><span>Cadence / Recursive settling</span><span class="signal" id="network-state" aria-live="polite">Coupled models</span></div>
@@ -14,25 +14,36 @@
     <div class="visual-controls"><span>Architecture illustration</span><div><button type="button" data-network-perturb>Perturb</button> <button type="button" data-network-pause aria-pressed="false">Pause</button></div></div>
    </div>
   </div>
-  <div class="hero-note"><span>Working code. Measured learning. A path into physical robots.</span><a href="/cadence/#inside-the-brain">Explore the recursive brain ↗</a></div>
+  <div class="hero-note"><span>Working code. Measured learning. A path into physical robots.</span><a href="/cadence/#inside-the-brain">Explore the brain ↗</a></div>
  </div>
 </section>
 <section class="section">
  <div class="container">
   <p class="eyebrow">The ambition</p>
   <h2 class="big-statement">A robot should learn from what happens to it. <span>Every changed payload. Every unfamiliar surface. Every correction.</span></h2>
-  <div class="split" style="margin-top:44px"><p class="lead">Our goal is a brain that carries experience forward: adapting to its body, recovering when conditions change and becoming more useful with practice.</p><div><p>Cadence gives us a different way to pursue that goal. Local predictive models observe one another, settle together and learn within a single coupled system.</p><a class="text-link" href="/cadence/#inside-the-brain">Explore the recursive brain ↗</a></div></div>
+  <div class="split" style="margin-top:44px"><p class="lead">Our goal is a brain that carries experience forward: adapting to its body, recovering when conditions change and becoming more useful with practice.</p><div><p>Cadence builds that intelligence from local predictive patches. Each holds state and records, reads through its connections and learns from experience. The task determines how those patches connect.</p><a class="text-link" href="/cadence/#design-patterns">Explore the three design patterns ↗</a></div></div>
  </div>
 </section>
 <section class="section dark">
  <div class="container">
-  <div class="section-heading"><p class="eyebrow">A different architecture</p><h2>Many local models.<br>One working brain.</h2><p class="lead">Inspired by the cortex. Built from the mathematics of self-reading, cooperating observers.</p></div>
+  <div class="section-heading"><p class="eyebrow">Three design patterns / One patch rule</p><h2>A direct response.<br>A coordinated brain.<br>A view of its own errors.</h2><p class="lead">Nature offers useful intuition: practised responses, coordination and reflective checking. Cadence gives each a concrete computational form.</p></div>
   <div class="grid-3">
-   <article class="card"><p class="number">01</p><h3>Observe.</h3><p>Bounded patches hold local state and records. Ports connect each patch to what it can read: its world, its neighbors and its own errors.</p></article>
-   <article class="card"><p class="number">02</p><h3>Settle.</h3><p>Models exchange feedback and repair disagreement. Observer populations read activity and error within the same recursive settlement.</p></article>
-   <article class="card"><p class="number">03</p><h3>Learn.</h3><p>Experience changes the network. Measurements and evidence bundles let us trace what changed and test whether behavior improved.</p></article>
+   <article class="card"><p class="number">01</p><h3>Flat settlement.</h3><p class="label">Direct response</p><p>Patches read sensory inputs and settle their own states. A simple starting point for learning a response to the world.</p></article>
+   <article class="card"><p class="number">02</p><h3>State-coupled settlement.</h3><p class="label">Coordination</p><p>Populations also read one another's live states. Intermediate representations adjust together within a shared settlement.</p></article>
+   <article class="card"><p class="number">03</p><h3>Recursive observer settlement.</h3><p class="label">Internal feedback</p><p>Observers read states and exact prediction errors, including those of other observers. The brain's own activity becomes part of what it models.</p></article>
   </div>
-  <div class="actions"><a class="button primary" href="/cadence/#inside-the-brain">See how the brain settles ↗</a><a class="text-link" href="/physics/">The research origin ↗</a></div>
+  <p class="small muted">These are functional analogies. All three patterns use the same settlement and learning rule; the useful connections depend on the task.</p>
+  <div class="actions"><a class="button primary" href="/cadence/#inside-the-brain">Try all three patterns ↗</a><a class="text-link" href="/demos/">Explore the working demos ↗</a></div>
+ </div>
+</section>
+<section class="section">
+ <div class="container">
+  <div class="section-heading"><p class="eyebrow">Play with the research</p><h2>Make a dub.<br>Watch a world learn.</h2><p class="lead">Open a working experiment in your browser, then look inside the code.</p></div>
+  <div class="grid-2 demo-grid">
+   <article class="card"><p class="label">AMEN / Music</p><h3>A tiny trained composer.</h3><p>Generate a jungle dub with AMEN's learned record memory. Change the variation, listen to the result and cut another.</p><a class="button primary" href="/demos/amen/">Play AMEN ↗</a></article>
+   <article class="card"><p class="label">Patch World / Artificial life</p><h3>Learning has a cost.</h3><p>Creatures forage beneath a moving sun, learn from consequences and evolve their brain layouts. Select one to inspect what it sees and believes.</p><a class="button primary" href="/demos/patch-world/">Enter Patch World ↗</a></article>
+  </div>
+  <div class="actions"><a class="text-link" href="/demos/">All demos and source labs ↗</a></div>
  </div>
 </section>
 <section class="section" id="evidence">

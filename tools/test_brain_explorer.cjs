@@ -32,7 +32,7 @@ class Context {
     this.calls.push({ kind: "text", text, x, y, font: this.font, align: this.textAlign });
   }
   setLineDash(value) { this.dash = [...value]; }
-  stroke() { this.calls.push({ kind: "stroke", color: this.strokeStyle, dash: this.dash || [] }); }
+  stroke() { this.calls.push({ kind: "stroke", color: this.strokeStyle, dash: this.dash || [], path: this.calls.at(-1)?.kind }); }
 }
 for (const method of ["setTransform", "beginPath", "moveTo", "lineTo", "quadraticCurveTo", "closePath", "fill", "arc"]) {
   Context.prototype[method] = function (...args) { this.calls.push({ kind: method, args }); };
@@ -62,7 +62,7 @@ class Element extends Events {
   getContext(type) { assert.equal(type, "2d"); return this.context; }
 }
 
-function start({ reduced = false, depth = 2, signal = 0.65, width = 620, height = 365,
+function start({ reduced = false, mode = 'recursive', depth = 2, signal = 0.65, width = 620, height = 365,
                  stepOverride = null, missingRoot = false, missingCanvas = false } = {}) {
   const elements = new Map(ids.map(id => [id, new Element(id, width, height)]));
   const get = id => {
@@ -71,6 +71,7 @@ function start({ reduced = false, depth = 2, signal = 0.65, width = 620, height 
   };
   get("brain-signal").value = String(signal);
   get("brain-depth").value = String(depth);
+  get("brain-mode").value = mode;
   get("brain-run").textContent = "Run settlement";
   get("brain-energy-trace").bounds.height = 76;
   if (missingCanvas) get("brain-recursive").getContext = () => null;
@@ -130,6 +131,7 @@ function start({ reduced = false, depth = 2, signal = 0.65, width = 620, height 
     result: () => copy(trace.result),
     input: value => change("brain-signal", value, "input"),
     depth: value => change("brain-depth", value, "change"),
+    mode: value => change("brain-mode", value, "change"),
     motion(value) { motion.matches = value; motion.emit("change"); },
     hidden(value) { document.hidden = value; document.emit("visibilitychange"); },
     intersect(value) { observers.intersection([{ isIntersecting: value }]); },
@@ -160,7 +162,7 @@ const displayed = app => {
 
 // Initialization and a manual move use real model equations and actual handlers.
 const app = start();
-for (const id of ["brain-signal", "brain-depth", "brain-run", "brain-step", "brain-reset"]) {
+for (const id of ["brain-signal", "brain-mode", "brain-depth", "brain-run", "brain-step", "brain-reset"]) {
   assert.equal(app.get(id).disabled, false, `${id} enabled after successful initialization`);
 }
 stopped(app);
@@ -168,7 +170,7 @@ assert.equal(app.get("brain-patch-buttons").children.length, 6);
 assert.equal(app.get("brain-output-name").textContent, "R1");
 assert.equal(app.count(), 0);
 assert.equal(app.get("brain-forward-output").textContent, signed(model.feedForward(0.65, 2).output));
-const returnStrokes = app.get("brain-recursive").context.calls.filter(call => call.kind === "stroke" && call.color === "#dcf664");
+const returnStrokes = app.get("brain-recursive").context.calls.filter(call => call.kind === "stroke" && call.color === "#dcf664" && call.path !== 'arc');
 assert.ok(returnStrokes.length > 0);
 assert.ok(returnStrokes.every(call => call.dash.length === 0), "returning influence uses the solid line shown in the legend");
 const initialEnergy = app.result().energy;
@@ -278,10 +280,12 @@ app.drain();
 stopped(app);
 
 let runs = 0;
+const layouts = [{mode:'recursive',depth:0}, {mode:'recursive',depth:1},
+  {mode:'recursive',depth:2}, {mode:'flat',depth:2}, {mode:'composed',depth:2}];
 for (const reduced of [false, true]) {
-  for (const depth of [0, 1, 2]) {
+  for (const {mode,depth} of layouts) {
     for (const signal of [-1, -0.4, 0, 0.65, 1]) {
-      const run = start({ reduced, depth, signal });
+      const run = start({ reduced, mode, depth, signal });
       run.click("brain-run");
       if (reduced) assert.equal(run.pending.size, 0, "reduced motion never schedules an animation");
       run.drain();
@@ -295,6 +299,35 @@ for (const reduced of [false, true]) {
       runs += 1;
     }
   }
+}
+
+// Pattern selection changes real wiring and fixed-weight model results, stops
+// any animation, resets activity, and keeps the user's supplied signal.
+const switching = start();
+switching.depth(1);
+switching.input(-0.4);
+for (const mode of ['flat','composed','recursive']) {
+  switching.click('brain-run');
+  switching.mode(mode);
+  stopped(switching);
+  const graph=model.topology({mode,depth:1});
+  assert.equal(switching.result().mode,mode);
+  assert.equal(switching.result().input,-0.4);
+  assert.deepEqual(switching.result().states,Array(graph.patches.length).fill(0));
+  assert.equal(switching.get('brain-patch-buttons').children.length,graph.patches.length);
+  assert.equal(switching.get('brain-depth').disabled,mode!=='recursive');
+  assert.equal(switching.get('brain-depth').value,'1','observer preference survives other modes');
+  assert.equal(switching.get('brain-legend-observe').hidden,mode!=='recursive');
+  assert.equal(switching.get('brain-legend-return').hidden,mode==='flat');
+  assert.equal(switching.get('brain-forward-output').textContent,
+    signed(model.feedForward(-0.4,{mode,depth:1}).output));
+  const strokes=switching.get('brain-recursive').context.calls.filter(call=>call.kind==='stroke'&&call.color==='#dcf664'&&call.path!=='arc');
+  assert.equal(strokes.length>0,mode!=='flat','returning arrows require internal coupling');
+  switching.get('brain-patch-buttons').children.at(-1).emit('click');
+  assert.equal(switching.get('brain-patch-title').textContent,graph.patches.at(-1).name);
+  if(mode==='composed') assert.match(switching.get('brain-patch-description').textContent,/without reading their errors/);
+  if(mode==='flat') assert.match(switching.get('brain-patch-description').textContent,/supplied values stay fixed/);
+  if(mode==='recursive') assert.match(switching.get('brain-patch-description').textContent,/exact prediction errors/);
 }
 
 // Controlled numerical responses exercise terminal branches that a well-behaved
@@ -330,8 +363,9 @@ assert.equal(settled.count(), 0, "zero-size converged response adds no phantom s
 
 // Reflow executes both drawing orientations at narrow and split-panel sizes.
 // These mocks validate numerical coordinates, not browser font metrics/layout.
-for (const [width, height] of [[278, 450], [335, 450], [371, 365], [419, 365], [420, 365], [620, 365]]) {
-  const resized = start({ width, height });
+for (const [width, height] of [[238, 450], [278, 450], [335, 450], [371, 365], [419, 365], [420, 365], [620, 365]]) {
+ for (const mode of ['flat','composed','recursive']) {
+  const resized = start({ width, height, mode });
   resized.observers.resize();
   for (const id of ["brain-forward", "brain-recursive"]) {
     const item = resized.get(id);
@@ -344,9 +378,10 @@ for (const [width, height] of [[278, 450], [335, 450], [371, 365], [419, 365], [
       }
     }
   }
+ }
 }
 assert.doesNotThrow(() => start({ missingRoot: true }));
 const noCanvas = start({ missingCanvas: true });
 assert.equal(noCanvas.get("brain-run").disabled, true);
 
-console.log(`Brain explorer event checks passed: ${runs} full runs; input/state retention, manual repair, reset, all depths, inspector buttons/canvas selection, pause/resume, visibility, reduced motion, 240-step limit, refusal and responsive drawing coordinates.`);
+console.log(`Brain explorer event checks passed: ${runs} full runs; all three patterns and depth controls, real wiring changes, input/state retention, manual repair, reset, inspection, pause/resume, visibility, reduced motion, 240-step limit, refusal and responsive drawing coordinates.`);

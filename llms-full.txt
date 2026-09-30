@@ -8,6 +8,7 @@ The company is seeking robotics evaluation partners and investors. The proposed 
 
 - Home: https://floatingpragma.io/
 - Product: https://floatingpragma.io/cadence/
+- Demonstrations: https://floatingpragma.io/demos/
 - Robotics programme: https://floatingpragma.io/robotics/
 - Investors: https://floatingpragma.io/investors/
 - Investor deck: https://floatingpragma.io/investors/deck/
@@ -17,11 +18,11 @@ The company is seeking robotics evaluation partners and investors. The proposed 
 
 ## Cadence architecture
 
-The technical contribution is recursive state-and-error observation within one coupled settling and learning architecture. Bounded observer-like, self-reading software patches hold local state and records, communicate through ports, read states and prediction errors, and contribute feedback or repair. Observer populations can themselves be observed. The jointly settled state supplies the answer.
+Cadence offers three design patterns under one settling and learning architecture: flat input-only patches, ordinary state-coupled populations, and recursive observers. Bounded observer-like, self-reading software patches hold local state and records, communicate through ports, read back their activity and contribute feedback or repair. State-coupled populations read other populations' live states. Recursive observers also read exact prediction errors, and can themselves be observed. All three answer with a settled state.
 
 Cortex and Brain expose a shared mathematical substrate. The runtime jointly settles represented state, recomputing exact prediction errors with analytic derivatives and a global energy check. Numerical settling energy is an objective function, not electrical energy in joules. The biological hypothesis is inspired by cortical cooperation; software behavior alone does not establish that a human cortical column implements these equations.
 
-Deep refers to recursively coupled processing and observer populations. Real-time describes participation in an ongoing observation/action loop, with decision rates measured for each body and workload. Hard deadlines, useful depth advantages and broad skill retention need their own evidence.
+The deep form uses coupled processing and recursively observing populations; flat and ordinary state-coupled layouts remain supported choices. Real-time describes participation in an ongoing observation/action loop, with decision rates measured for each body and workload. Hard deadlines, useful depth advantages and broad skill retention need their own evidence.
 
 The open-source core requires Python 3.11 or later, has no mandatory runtime dependencies and is licensed GPL-3.0-or-later. Optional accelerated paths have additional requirements. Consult the repository and package release for exact implementation details and licensing.
 
@@ -31,11 +32,11 @@ The open-source core requires Python 3.11 or later, has no mandatory runtime dep
 - Architecture: https://github.com/muellerberndt/cadence/blob/main/docs/DRSN.md
 - Learning and memory: https://github.com/muellerberndt/cadence/blob/main/docs/LIVE.md
 - Preprint: https://philpapers.org/rec/MUECAP-2
-- Demo code: https://github.com/muellerberndt/cadence-demos/tree/main/doom-lab
+- Official demo code: https://github.com/muellerberndt/cadence-demos
 
 ## Interactive architecture illustration
 
-https://floatingpragma.io/cadence/#inside-the-brain lets visitors change a sensory signal, choose zero to two observer levels, inspect patch state/prediction/error, and step through a bounded settlement. Six scalar patches at maximum depth use fixed illustrative weights, exact error derivatives and a positive activity penalty. The forward reference uses the same relations by forward substitution. The illustration explains computation; it is not a trained brain, a performance benchmark or the full Cadence runtime. Query settlement changes activity; learning can also change relation parameters.
+https://floatingpragma.io/cadence/#inside-the-brain lets visitors change a sensory signal, choose flat, state-coupled or recursive settlement, vary recursive depth, inspect patch state/prediction/error, and step through a bounded settlement. Up to six scalar patches use fixed illustrative weights, exact error derivatives and a positive activity penalty. The forward reference uses the same relations by forward substitution. The illustration explains computation; it is not a trained brain, a performance benchmark or the full Cadence runtime. Query settlement changes activity; learning can also change relation parameters.
 
 ## Experimental evidence
 
@@ -75,9 +76,21 @@ Use the papers and scientific repository for theorem statements, hypotheses, pub
 
 ## Three settlement design patterns
 
-Flat settlement reads supplied sensors; ordinary state-coupled settlement adds learned intermediate states; recursive observer settlement adds exact prediction-error readback. All three share the patch/repair law, learning API and final qualification. Choose a layout by measured task quality, query latency and learning cost.
+Flat settlement reads supplied sensors; ordinary state-coupled settlement adds learned intermediate states; recursive observer settlement adds exact prediction-error readback. All three share the patch/repair law, learning API and final qualification. Useful functional analogies are practiced responses or muscle memory (flat), coordination and balance (state-coupled), and reflective reasoning (recursive). These are analogies for computational roles, not claims of biological equivalence. Choose a layout by measured task quality, query latency and learning cost; deeper is not automatically better or faster. Archived AMEN uses an earlier record-patch engine, not the current settlement solver.
 
 - Research and paper library: https://floatingpragma.io/research/
 - Work in physics, mathematics, AI and security: https://floatingpragma.io/work/
 - Design patterns: https://github.com/muellerberndt/cadence/blob/main/docs/VARIANTS.md
 - Performance: https://floatingpragma.io/cadence/#design-patterns
+
+## Public demonstrations
+
+The official demonstration source is https://github.com/muellerberndt/cadence-demos. The website showcase is https://floatingpragma.io/demos/.
+
+- AMEN: https://floatingpragma.io/demos/amen/ — a playable archived record-memory composer; fixed learned checkpoint, generated musical events and supplied instrument.
+- Patch World: https://floatingpragma.io/demos/patch-world/ — a playable JavaScript artificial-life simulation with recursive settling brains, learning and evolving layouts.
+- Doom Lab: https://github.com/muellerberndt/cadence-demos/tree/main/doom-lab — local ViZDoom application, confirmed Basic-scenario checkpoints, pinned runtime and deployment validation.
+- Rover Lab: https://github.com/muellerberndt/cadence-demos/tree/main/rover-lab — local simulated wheel-adaptation comparison; three four-patch layouts, with a supplied action selector and declared timing measurements.
+- Atari Arcade: https://github.com/muellerberndt/cadence-demos/tree/main/atari-arcade — local visual-control experiments with teaching and reward feedback.
+
+The embedded browser applications are copied from a pinned cadence-demos commit; their source and published file hashes are at https://floatingpragma.io/demos/runtime/manifest.json. Their engines differ, so the showcase identifies each mechanism and result separately.

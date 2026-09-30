@@ -4,12 +4,13 @@
 
 Pragma Research is building the brains for robots that keep improving throughout their working lives. Robotics is the first proposed market. The product direction is a supported Cadence runtime and a brain prepared for a customer's embodiment, beginning with a paid evaluation on one adaptation or recovery task.
 
-Cadence uses recursively coupled populations that settle and learn together. Bounded observer-like, self-reading patches carry local state and records, communicate through ports, read represented activity and prediction errors, and participate in feedback and repair. Their jointly settled state supplies the answer.
+Cadence supports flat, ordinary state-coupled and recursive observer layouts. All three settle through the same patch law and learn from experience. Bounded observer-like, self-reading patches carry local state and records, receive signals through ports, and repair prediction errors. State-coupled layouts read other patches' live states; recursive observers also read exact prediction errors. The settled state supplies the answer.
 
 ## Company and product
 
 - [Cadence](https://floatingpragma.io/cadence/): architecture, code and simulation evidence.
-- [Interactive brain](https://floatingpragma.io/cadence/#inside-the-brain): inspect recursive state/error observation and compare joint settlement with feed-forward inference.
+- [Demonstrations](https://floatingpragma.io/demos/): working applications and experiments from cadence-demos.
+- [Interactive brain](https://floatingpragma.io/cadence/#inside-the-brain): switch between all three patterns, inspect patch state and error, and compare settlement with a forward calculation.
 - [Robotics](https://floatingpragma.io/robotics/): proposed evaluation programme and changed-wheel rover experiment.
 - [Investors](https://floatingpragma.io/investors/): proposed $4 million seed round over 18 months.
 - [Investor deck](https://floatingpragma.io/investors/deck/): eight-slide company presentation and PDF.
@@ -18,6 +19,7 @@ Cadence uses recursively coupled populations that settle and learn together. Bou
 
 ## Code and evidence
 
+- [Official demonstrations](https://github.com/muellerberndt/cadence-demos): music, games and simulated worlds, with each application's engine and evidence described separately.
 - [Open-source core](https://github.com/muellerberndt/cadence): GPL-3.0-or-later Python package.
 - [Architecture](https://github.com/muellerberndt/cadence/blob/main/docs/DRSN.md): recursive state-and-error observation within one coupled settlement.
 - [Quickstart](https://github.com/muellerberndt/cadence/blob/main/docs/QUICKSTART.md): build a small brain.
@@ -41,9 +43,21 @@ Observer Patch Holography (OPH) asks whether bounded observers can build a share
 
 ## Three settlement design patterns
 
-Flat settlement reads supplied sensors; ordinary state-coupled settlement adds learned intermediate states; recursive observer settlement adds exact prediction-error readback. All three share the patch/repair law, learning API and final qualification. Choose a layout by measured task quality, query latency and learning cost.
+Flat settlement reads supplied sensors; ordinary state-coupled settlement adds learned intermediate states; recursive observer settlement adds exact prediction-error readback. All three share the patch/repair law, learning API and final qualification. Useful functional analogies are practiced responses or muscle memory (flat), coordination and balance (state-coupled), and reflective reasoning (recursive). These are analogies for computational roles, not claims of biological equivalence. Choose a layout by measured task quality, query latency and learning cost; deeper is not automatically better or faster. Archived AMEN uses an earlier record-patch engine, not the current settlement solver.
 
 - Research and paper library: https://floatingpragma.io/research/
 - Work in physics, mathematics, AI and security: https://floatingpragma.io/work/
 - Design patterns: https://github.com/muellerberndt/cadence/blob/main/docs/VARIANTS.md
 - Performance: https://floatingpragma.io/cadence/#design-patterns
+
+## Public demonstrations
+
+The official demonstration source is https://github.com/muellerberndt/cadence-demos. The website showcase is https://floatingpragma.io/demos/.
+
+- AMEN: https://floatingpragma.io/demos/amen/ — a playable archived record-memory composer; fixed learned checkpoint, generated musical events and supplied instrument.
+- Patch World: https://floatingpragma.io/demos/patch-world/ — a playable JavaScript artificial-life simulation with recursive settling brains, learning and evolving layouts.
+- Doom Lab: https://github.com/muellerberndt/cadence-demos/tree/main/doom-lab — local ViZDoom application, confirmed Basic-scenario checkpoints, pinned runtime and deployment validation.
+- Rover Lab: https://github.com/muellerberndt/cadence-demos/tree/main/rover-lab — local simulated wheel-adaptation comparison; three four-patch layouts, with a supplied action selector and declared timing measurements.
+- Atari Arcade: https://github.com/muellerberndt/cadence-demos/tree/main/atari-arcade — local visual-control experiments with teaching and reward feedback.
+
+The embedded browser applications are copied from a pinned cadence-demos commit; their source and published file hashes are at https://floatingpragma.io/demos/runtime/manifest.json. Their engines differ, so the showcase identifies each mechanism and result separately.

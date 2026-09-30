@@ -19,7 +19,7 @@ from urllib.parse import unquote, urljoin, urlsplit
 
 ORIGIN = "https://floatingpragma.io"
 ROUTES = (
-    "/", "/cadence/", "/robotics/", "/investors/", "/investors/deck/",
+    "/", "/cadence/", "/demos/", "/demos/amen/", "/demos/patch-world/", "/robotics/", "/investors/", "/investors/deck/",
     "/physics/", "/research/", "/work/", "/watch/", "/oph/unsubscribe/", "/404.html",
 )
 EXTERNAL_PROJECTS = (
@@ -169,16 +169,19 @@ def check_pages(site, errors):
 
 def check_unified_surfaces(site, errors):
     """Every public page uses the company shell, including papers and redirects."""
-    html_paths = [p for p in site.rglob("*.html") if not any(part.startswith((".", "_")) for part in p.relative_to(site).parts)]
+    embedded = {site / "demos/runtime/amen/index.html", site / "demos/runtime/patch-world/index.html"}
+    html_paths = [p for p in site.rglob("*.html") if p not in embedded and not any(part.startswith((".", "_")) for part in p.relative_to(site).parts)]
     for path in html_paths:
         source = path.read_text()
         label = str(path.relative_to(site))
-        for required in ('/assets/company.css?v=3', 'id="site-nav"', 'href="/research/"', 'href="/work/"'):
+        for required in ('/assets/company.css?v=4', 'id="site-nav"', 'href="/research/"', 'href="/work/"', 'href="/demos/"', '/favicon.svg?v=4', '/favicon.ico?v=4', '/apple-touch-icon.png?v=4'):
             if required not in source:
                 errors.append(f"{label}: missing shared site element {required}")
         for stale in ('/assets/pragma.css', '/assets/pragma.js', '/oph/styles.css', 'Frontier mathematics'):
             if stale in source:
                 errors.append(f"{label}: stale site shell {stale}")
+        if label != 'work/index.html' and 'github.com/muellerberndt/cadence-examples' in source:
+            errors.append(f"{label}: current demonstrations must link to cadence-demos")
     research = (site / "research/index.html").read_text()
     inventory = json.loads((site / "oph/papers/papers.json").read_text())
     if 'href="https://philpapers.org/rec/MUECAP-2"' not in research:
@@ -191,6 +194,38 @@ def check_unified_surfaces(site, errors):
         if anchor not in work.ids:
             errors.append(f"Work history: missing retained section {anchor}")
     return len(html_paths)
+
+
+def check_browser_demos(site, errors):
+    """Check the two embedded applications separately from their company shell."""
+    runtime = site / "demos/runtime"
+    manifest = json.loads((runtime / "manifest.json").read_text())
+    if manifest["repository"] != "https://github.com/muellerberndt/cadence-demos":
+        errors.append("Browser demos: expected official cadence-demos source")
+    if not re.fullmatch(r"[a-f0-9]{40}", manifest["commit"]):
+        errors.append("Browser demos: source commit is not pinned")
+    expected = {"manifest.json"}
+    for entry in manifest["files"]:
+        expected.add(entry["path"])
+        path = runtime / entry["path"]
+        if not path.is_file() or sha(path) != entry["published_sha256"]:
+            errors.append(f"Browser demos: missing or modified {entry['path']}")
+            continue
+        if path.suffix != '.html' and entry['source_sha256'] != entry['published_sha256']:
+            errors.append(f"Browser demos: application assets changed from source: {entry['path']}")
+        if path.suffix == '.html':
+            source = path.read_text()
+            for required in ('content="noindex"', '/assets/demo-runtime.css?v=1', '/favicon.svg?v=4'):
+                if required not in source:
+                    errors.append(f"Browser demos: {entry['path']} missing {required}")
+            if 'cadence-examples/' in source or 'data:image/svg+xml' in source:
+                errors.append(f"Browser demos: old metadata or icon in {entry['path']}")
+    actual = {str(p.relative_to(runtime)) for p in runtime.rglob('*') if p.is_file()}
+    if actual != expected:
+        errors.append("Browser demos: runtime has undeclared or missing files")
+    for path in ('favicon.svg', 'favicon.ico', 'apple-touch-icon.png', 'assets/pragma-icon-192.png', 'assets/pragma-icon-512.png', 'site.webmanifest'):
+        if not (site / path).is_file():
+            errors.append(f"Brand icon missing: {path}")
 
 
 def check_evidence(site, errors):
@@ -323,6 +358,7 @@ def main():
     site = args.site_root.resolve()
     check_pages(site, errors)
     unified_pages = check_unified_surfaces(site, errors)
+    check_browser_demos(site, errors)
     try:
         sources = check_evidence(site, errors)
     except (KeyError, TypeError, ValueError) as exc:

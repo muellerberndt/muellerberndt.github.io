@@ -1,0 +1,8 @@
+/* Presentation for the pinned applications inside the Pragma demo players. */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+:root{--bg:#191d1c;--ground:#191d1c;--panel:#242a27;--ink:#f3f1e9;--dim:#b9c1b5;--ink-2:#b9c1b5;--ink-3:#98a28e;--gold:#dcf664;--red:#bfc87b;--green:#91b56e;--cyan:#dbe6be;--line:#454b46;--sun:#dcf664;--leaf:#b9d57b;--bud:#85ab8b;--alert:#e1b99d;--slab:Inter,Arial,sans-serif;--font-display:Inter,Arial,sans-serif;--font-body:Inter,Arial,sans-serif;--mono:ui-monospace,SFMono-Regular,Menlo,monospace;color-scheme:dark}
+body{font-family:Inter,Arial,sans-serif}.crumbs{display:none}a:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid #dcf664;outline-offset:4px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media(max-width:600px){header{padding-inline:16px}main{padding-inline:14px}.stamp{transform:none;margin-left:0}.wip{flex-wrap:wrap}.knobs label{width:100%;flex-wrap:wrap}.knobs input[type=range]{max-width:150px;min-width:0;flex:1}.studio #cut{font-size:19px;padding:14px 18px;max-width:100%;transform:none}.bar,.side{flex-wrap:wrap}.bar{gap:12px}.brains button{max-width:100%;white-space:normal;line-height:1.4}p,#now{overflow-wrap:anywhere}}
+.studio #cut{background:var(--gold);color:#191d1c}section[data-tape="brain"]::before{color:#191d1c;background:var(--gold)}
+@media(max-width:600px){.stage,.deck{grid-template-columns:minmax(0,1fr)}.stage>*,.deck>*{min-width:0}.counters{overflow-wrap:anywhere}}

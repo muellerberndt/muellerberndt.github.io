@@ -36,18 +36,78 @@
     ["O0", "R1", "state", 0.4], ["O1", "R1", "state", 0.65],
     ["O0", "R1", "error", -0.3], ["O1", "R1", "error", 0.5]
   ];
-  var INDEX = Object.create(null);
-  PATCHES.forEach(function (patch, index) { INDEX[patch.id] = index; });
-  var INCOMING = PATCHES.map(function (patch) {
-    return EDGES.filter(function (edge) { return edge[1] === patch.id; });
-  });
-
   function depthValue(depth) {
     if (depth === undefined) return 2;
     if (!Number.isInteger(depth) || depth < 0 || depth > 2) {
       throw new RangeError("depth must be 0, 1 or 2");
     }
     return depth;
+  }
+
+  // Numeric depth remains shorthand for the original recursive illustration.
+  // Non-recursive modes have fixed six-patch layouts; observer depth applies
+  // only to the recursive mode. Counts are not matched-capability controls.
+  function configuration(options) {
+    if (options === undefined || typeof options === "number") {
+      return { mode: "recursive", depth: depthValue(options) };
+    }
+    if (!options || typeof options !== "object" || Array.isArray(options)) {
+      throw new TypeError("layout must be a depth or {mode, depth}");
+    }
+    var mode = options.mode === undefined ? "recursive" : options.mode;
+    if (!["flat", "composed", "recursive"].includes(mode)) {
+      throw new RangeError("mode must be flat, composed or recursive");
+    }
+    var depth = depthValue(options.depth);
+    return { mode: mode, depth: mode === "recursive" ? depth : 0 };
+  }
+
+  function graphFor(options) {
+    var config = configuration(options);
+    var count = config.mode === "recursive" ? 2 * (config.depth + 1) : 6;
+    var names = config.mode === "flat" ? ["Direct", "Direct", "Direct"]
+      : config.mode === "composed" ? ["Processing", "Representation", "Response"]
+        : ["Processing", "Observer", "Recursive observer"];
+    var identifiers = config.mode === "flat" ? ["P0", "P1", "P2", "P3", "P4", "P5"]
+      : config.mode === "composed" ? ["P0", "P1", "C0", "C1", "C2", "C3"]
+        : PATCHES.map(function (patch) { return patch.id; });
+    var aliases = Object.create(null);
+    PATCHES.forEach(function (patch, index) { aliases[patch.id] = identifiers[index]; });
+    var patches = PATCHES.slice(0, count).map(function (patch, index) {
+      var level = config.mode === "flat" ? 0 : patch.level;
+      return {
+        id: identifiers[index], name: names[patch.level] + " patch " + identifiers[index],
+        index: index, level: level, row: config.mode === "flat" ? index : index % 2,
+        bias: patch.bias
+      };
+    });
+    var edges;
+    if (config.mode === "flat") {
+      var signalWeights = [1.15, -0.8, 0.6, -0.45, 0.9, 0.35];
+      var bodyWeights = [0.3, 0.65, -0.4, 0.2, 0.55, -0.6];
+      edges = [];
+      patches.forEach(function (patch, i) {
+        edges.push(["signal", patch.id, "input", signalWeights[i]]);
+        edges.push(["body", patch.id, "input", bodyWeights[i]]);
+      });
+    } else {
+      edges = EDGES.filter(function (edge) {
+        return identifiers.indexOf(aliases[edge[1]]) < count &&
+          !(config.mode === "composed" && edge[2] === "error");
+      }).map(function (edge) {
+        return [aliases[edge[0]] || edge[0], aliases[edge[1]], edge[2], edge[3]];
+      });
+    }
+    var index = Object.create(null);
+    patches.forEach(function (patch, i) { index[patch.id] = i; });
+    return {
+      mode: config.mode, depth: config.depth, count: count,
+      levels: config.mode === "flat" ? 1 : count / 2,
+      patches: patches, edges: edges, index: index,
+      incoming: patches.map(function (patch) {
+        return edges.filter(function (edge) { return edge[1] === patch.id; });
+      })
+    };
   }
 
   function inputValue(input) {
@@ -60,38 +120,37 @@
   function bounded(value) { return Math.max(-1, Math.min(1, value)); }
   function zeros(length) { return Array(length).fill(0); }
 
-  function initialStates(depth) {
-    return zeros(2 * (depthValue(depth) + 1));
+  function initialStates(options) {
+    return zeros(graphFor(options).count);
   }
 
-  function topology(depth) {
-    depth = depthValue(depth);
-    var count = 2 * (depth + 1);
+  function topology(options) {
+    var graph = graphFor(options);
     return {
-      depth: depth,
+      mode: graph.mode,
+      depth: graph.depth,
+      levels: graph.levels,
       statePrior: STATE_PRIOR,
       tolerance: TOLERANCE,
       inputs: [
         { id: "signal", name: "Sensory signal", level: -1, clamped: true },
         { id: "body", name: "Body input", level: -1, clamped: true, value: BODY_INPUT }
       ],
-      patches: PATCHES.slice(0, count).map(function (patch, index) {
-        return { id: patch.id, name: patch.name, index: index, level: patch.level, bias: patch.bias };
-      }),
-      edges: EDGES.filter(function (edge) { return INDEX[edge[1]] < count; }).map(function (edge) {
+      patches: graph.patches,
+      edges: graph.edges.map(function (edge) {
         return { source: edge[0], target: edge[1], kind: edge[2], weight: edge[3] };
       }),
-      output: PATCHES[count - 1].id
+      output: graph.patches[graph.count - 1].id
     };
   }
 
   // Forward-mode analytic differentiation over acyclic error-read dependencies.
   // A derivative row records dependence on EVERY eligible state, not just the
   // patch's own state or a completed lower-population prediction.
-  function evaluate(states, input, depth) {
-    depth = depthValue(depth);
+  function evaluate(states, input, options) {
+    var graph = graphFor(options);
     input = inputValue(input);
-    var count = 2 * (depth + 1);
+    var count = graph.count;
     if (!Array.isArray(states) || states.length !== count || states.some(function (x) {
       return typeof x !== "number" || !Number.isFinite(x) || x < -1 || x > 1;
     })) throw new RangeError("states must contain " + count + " finite values in [-1, 1]");
@@ -102,14 +161,14 @@
     var gradient = x.map(function (value) { return STATE_PRIOR * value; });
     var energy = 0;
     for (var i = 0; i < count; i += 1) {
-      var drive = PATCHES[i].bias;
+      var drive = graph.patches[i].bias;
       var driveDerivative = zeros(count);
-      INCOMING[i].forEach(function (edge) {
+      graph.incoming[i].forEach(function (edge) {
         var source = edge[0], kind = edge[2], weight = edge[3];
         if (kind === "input") {
           drive += weight * (source === "signal" ? input : BODY_INPUT);
         } else {
-          var sourceIndex = INDEX[source];
+          var sourceIndex = graph.index[source];
           if (kind === "state") {
             drive += weight * x[sourceIndex];
             driveDerivative[sourceIndex] += weight;
@@ -137,31 +196,31 @@
     return {
       states: x, predictions: predictions, errors: errors, gradient: gradient,
       energy: energy, stationarity: stationarity, output: x[count - 1],
-      input: input, bodyInput: BODY_INPUT, depth: depth
+      input: input, bodyInput: BODY_INPUT, mode: graph.mode, depth: graph.depth
     };
   }
 
-  function feedForward(input, depth) {
-    depth = depthValue(depth);
+  function feedForward(input, options) {
+    var graph = graphFor(options);
     input = inputValue(input);
-    var states = initialStates(depth);
+    var states = zeros(graph.count);
     var errors = zeros(states.length);
     // This explicitly chooses prediction as state in declaration order. It is
     // the same illustrative relation graph, not a trained feed-forward rival.
     for (var i = 0; i < states.length; i += 1) {
-      var drive = PATCHES[i].bias;
-      INCOMING[i].forEach(function (edge) {
+      var drive = graph.patches[i].bias;
+      graph.incoming[i].forEach(function (edge) {
         var value = edge[2] === "input" ? (edge[0] === "signal" ? input : BODY_INPUT)
-          : edge[2] === "state" ? states[INDEX[edge[0]]] : errors[INDEX[edge[0]]];
+          : edge[2] === "state" ? states[graph.index[edge[0]]] : errors[graph.index[edge[0]]];
         drive += edge[3] * value;
       });
       states[i] = Math.tanh(drive);
     }
-    return evaluate(states, input, depth);
+    return evaluate(states, input, options);
   }
 
-  function step(states, input, depth) {
-    var current = evaluate(states, input, depth);
+  function step(states, input, options) {
+    var current = evaluate(states, input, options);
     if (current.stationarity <= TOLERANCE) {
       return Object.assign({}, current, {
         accepted: true, converged: true, stepSize: 0, backtracks: 0
@@ -175,7 +234,7 @@
       var direction = proposed.reduce(function (total, x, i) {
         return total + current.gradient[i] * (x - current.states[i]);
       }, 0);
-      var candidate = evaluate(proposed, input, current.depth);
+      var candidate = evaluate(proposed, input, { mode: current.mode, depth: current.depth });
       if (direction < 0 && candidate.energy <= current.energy + 1e-4 * direction) {
         return Object.assign({}, candidate, {
           accepted: true, converged: candidate.stationarity <= TOLERANCE,
