@@ -26,6 +26,7 @@ PAGES = {
 }
 NAV = [
     ("cadence", "/cadence/", "Cadence"),
+    ("code", "https://github.com/muellerberndt/cadence", "Code"),
     ("demos", "/demos/", "Demos"),
     ("research", "/research/", "Research"),
     ("work", "/work/", "Work"),

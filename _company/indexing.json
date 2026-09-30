@@ -1,50 +1,50 @@
 {
   "/": {
-    "sha256": "b76a3a2e1bc5df4013b9d02460983709c852dd6f5dc59d6021aaf7f51f4ad111",
+    "sha256": "05cb5ed8baa527e422f31d3fa4cf689d2dbb995644582d9db7746f7e6fc6e1e3",
     "lastmod": "2026-09-30"
   },
   "/cadence/": {
-    "sha256": "119b4f81f013e85b42ecdc013087fdf79864956003c2d10712730c3159c4661f",
+    "sha256": "9ab0c3e2c33ea0feb04b2932d78a321176b9b08a8724bd8fe1b54a4f798c42b0",
     "lastmod": "2026-09-30"
   },
   "/demos/": {
-    "sha256": "4df1e3a4202acd72d6317ed1b85e87aa633f960b46d6c29baef81eca6e380a43",
+    "sha256": "2102fb86b2688a8e46cea6a7bad2ea02ba7e5dc554f7bf3ce6ae35450ba866cc",
     "lastmod": "2026-09-30"
   },
   "/demos/amen/": {
-    "sha256": "bce614d15a6af22c4100e6ea6a385b5517e553b94e9906165254f3d9cd742b34",
+    "sha256": "67a96955b88675ebc73ffae8f5322a7c923bc51070238372979af75eaf3061aa",
     "lastmod": "2026-09-30"
   },
   "/demos/patch-world/": {
-    "sha256": "c34bb795ab884b864e83e95885ce54a03917a967359403ca64ad17d9f0c117e6",
+    "sha256": "e0373a3bc558b540c2dfe774cbea529ee50473a1e8e49151b4c1b7d7990bfe43",
     "lastmod": "2026-09-30"
   },
   "/robotics/": {
-    "sha256": "2268f0a71757fb2de074318fdc85878587eb5e891b2e51cc326ea79eba0ee308",
+    "sha256": "8819946e351c9ee30c89b3787284eb6cd372dc3ac1f0531a7d31bffca9ac8ddf",
     "lastmod": "2026-09-30"
   },
   "/investors/": {
-    "sha256": "4f26b6fd16d4940b175f556e5a72a2e37b3f008d47de46e2bcd8143c83546cb0",
+    "sha256": "687d06e4e984b2df805304a3808faf6d0fddc4c9c07cc954c0abdbe412129a38",
     "lastmod": "2026-09-30"
   },
   "/investors/deck/": {
-    "sha256": "20279e45166ce405428ce01034a2c1e11810760c34118db4398c15792a81ef63",
+    "sha256": "7a064b99dba956e7103324ad2b578f72f290ce08ff5f59fc8a7fd021a7ad2444",
     "lastmod": "2026-09-30"
   },
   "/research/": {
-    "sha256": "1c47176b699e9f3a804d1cb1254b835d00a941dcfcaa0d96accb04a0abd3beff",
+    "sha256": "a5ed33ea6a50892d3fee0ed91fea5389ead0a3b0e0aea5ca03661fe293abcb83",
     "lastmod": "2026-09-30"
   },
   "/physics/": {
-    "sha256": "1a813f21e25ad89b480e3c0dd9b89a972f01b3c16be78be46d8cb52c9ed3d84a",
+    "sha256": "881ff51073326f2895e95ad44bfda956191ebd587a1c117dc2a7c5d4d4944212",
     "lastmod": "2026-09-30"
   },
   "/work/": {
-    "sha256": "803d231499fe067df05ebc14172f6dfae5bcc1a444c2b4f74ebf3f08c22b78ee",
+    "sha256": "e06db569ddd7cc4b1bc3ae508fffaaddbf237f3570a1f5e26ebdf3852c5eeadc",
     "lastmod": "2026-09-30"
   },
   "/watch/": {
-    "sha256": "a1bcfb9620775b8b2b22f09f7ee2f03635f37446527ab1d64c5bee420ce8338d",
+    "sha256": "8c42c39521a23a08a1bcca8884396fc71ae1231a6dd5499f2fbde7fb8acccc96",
     "lastmod": "2026-09-30"
   }
 }
