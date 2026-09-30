@@ -33,6 +33,10 @@ The open-source core requires Python 3.11 or later, has no mandatory runtime dep
 - Preprint: https://philpapers.org/rec/MUECAP-2
 - Demo code: https://github.com/muellerberndt/cadence-demos/tree/main/doom-lab
 
+## Interactive architecture illustration
+
+https://floatingpragma.io/cadence/#inside-the-brain lets visitors change a sensory signal, choose zero to two observer levels, inspect patch state/prediction/error, and step through a bounded settlement. Six scalar patches at maximum depth use fixed illustrative weights, exact error derivatives and a positive activity penalty. The forward reference uses the same relations by forward substitution. The illustration explains computation; it is not a trained brain, a performance benchmark or the full Cadence runtime. Query settlement changes activity; learning can also change relation parameters.
+
 ## Experimental evidence
 
 Two selected Cadence agents achieved 63/64 and 64/64 successes in separate reserved ViZDoom Basic evaluations, compared with original founder baselines of 61/64 and 53/64 respectively. Both improved native return. The first success-rate difference itself was not established. Each set of 64 seeds had 60 distinct initial frames. Training used finite teaching, simulator-assisted counterfactual practice, replay and candidate selection. The second candidate changed the replay setting as well as receiving further experience. These are single-room results, not evidence of general Doom play or a causal benefit from recursive depth.

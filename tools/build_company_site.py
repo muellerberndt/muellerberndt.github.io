@@ -23,6 +23,8 @@ def build():
   nav = "".join(f'<a href="{url}"' + (' aria-current="page"' if key == active else '') + f'>{label}</a>' for key, url, label in NAV)
   schema = {"@context":"https://schema.org", "@type":"WebPage", "name":title, "description":description, "url":"https://floatingpragma.io" + route, "publisher":{"@type":"Organization", "name":"Pragma Research", "url":"https://floatingpragma.io/", "founder":{"@type":"Person", "name":"Bernhard Mueller"}}}
   values = {"TITLE":escape(title), "DESCRIPTION":escape(description, quote=True), "CANONICAL":"https://floatingpragma.io"+route, "NAV":nav, "SCHEMA":json.dumps(schema), "CONTENT":(ROOT/f"_company/pages/{name}.html").read_text(), "BODYCLASS":"deck-page" if name == "deck" else "", "YEAR":"2026", "EXTRA":""}
+  if name == "cadence":
+   values["EXTRA"] = '<link rel="stylesheet" href="/assets/brain-explorer.css?v=1"><script src="/assets/brain-model.js?v=1" defer></script><script src="/assets/brain-explorer.js?v=1" defer></script>'
   if name == "not-found":
    values["EXTRA"] = r'<meta name="robots" content="noindex"><script>if(location.pathname.replace(/\/+$/, "") === "/cadence/paper.pdf") location.replace("https://philpapers.org/rec/MUECAP-2");</script>'
   output=template

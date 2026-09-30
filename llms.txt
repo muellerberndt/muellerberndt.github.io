@@ -9,6 +9,7 @@ Cadence uses recursively coupled populations that settle and learn together. Bou
 ## Company and product
 
 - [Cadence](https://floatingpragma.io/cadence/): architecture, code and simulation evidence.
+- [Interactive brain](https://floatingpragma.io/cadence/#inside-the-brain): inspect recursive state/error observation and compare joint settlement with feed-forward inference.
 - [Robotics](https://floatingpragma.io/robotics/): proposed evaluation programme and changed-wheel rover experiment.
 - [Investors](https://floatingpragma.io/investors/): proposed $4 million seed round over 18 months.
 - [Investor deck](https://floatingpragma.io/investors/deck/): eight-slide company presentation and PDF.
