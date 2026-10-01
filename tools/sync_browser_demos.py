@@ -4,7 +4,9 @@
 The public demo repository remains the source. Read committed blobs only:
 uncommitted experiments, checkpoints and README edits cannot enter the site.
 The iframe documents receive website metadata, presentation copy and a shared
-visual/touch adapter; original application scripts, audio and models are unchanged.
+visual/touch adapter; original application scripts, audio, models, the emulator
+and the game ROMs are unchanged. The arcade publishes only its runtime files, not
+its parity fixtures, receipts, tools or emulator build directory.
 """
 import argparse
 import hashlib
@@ -14,8 +16,10 @@ import re
 import subprocess
 
 SITE = Path(__file__).resolve().parents[1]
-COMMIT = "3d14d481b2abf5fccc1eb0dbaa1d42b23e4d4c64"
+COMMIT = "192a099bcab7df2b9fa3ed3c505fa9c87b410215"
 REPOSITORY = "https://github.com/muellerberndt/cadence-demos"
+ARCADE_RUNTIME = ('index.html', 'arcade.js', 'cadence.js', 'emulator.js', 'brain_worker.js', 'emulator_worker.js',
+                  'roms/freeway.bin', 'roms/atlantis.bin')
 
 
 def git(repo, *args):
@@ -35,7 +39,7 @@ def wrapper_metadata(content, demo):
                 f'<meta name="theme-color" content="#191d1c">\n'
                 f'<link rel="canonical" href="https://floatingpragma.io/demos/{demo}/">\n'
                 '<link rel="icon" href="/favicon.svg?v=6" type="image/svg+xml">\n'
-                '<link rel="stylesheet" href="/assets/demo-runtime.css?v=3">\n'
+                '<link rel="stylesheet" href="/assets/demo-runtime.css?v=4">\n'
                 '<base target="_top">\n')
     # Last stylesheet wins over the archived application's own CSS.
     text = text.replace('<html lang="en">', f'<html lang="en" data-demo="{demo}">', 1)
@@ -49,15 +53,17 @@ def main():
     parser.add_argument('--source', type=Path, default=SITE.parents[1] / 'cadence-demos')
     args = parser.parse_args()
     paths = git(args.source, 'ls-tree', '-r', '--name-only', COMMIT,
-                'amen/web', 'patch-world/index.html').decode().splitlines()
-    expected = [p for p in paths if p != 'amen/web/card.png']
-    if not expected or 'patch-world/index.html' not in expected:
-        raise SystemExit('Pinned commit does not contain both browser demos')
+                'amen/web', 'patch-world/index.html', 'atari-arcade/web').decode().splitlines()
+    expected = [p for p in paths if p != 'amen/web/card.png'
+                and (not p.startswith('atari-arcade/web/') or p.removeprefix('atari-arcade/web/') in ARCADE_RUNTIME)]
+    arcade = [p for p in expected if p.startswith('atari-arcade/web/')]
+    if not expected or 'patch-world/index.html' not in expected or len(arcade) != len(ARCADE_RUNTIME):
+        raise SystemExit('Pinned commit does not contain all three browser demos')
     output = SITE / 'demos/runtime'
     entries = []
     for path in expected:
         original = git(args.source, 'show', f'{COMMIT}:{path}')
-        relative = path.replace('amen/web/', 'amen/', 1)
+        relative = path.replace('amen/web/', 'amen/', 1).replace('atari-arcade/web/', 'atari-arcade/', 1)
         content = wrapper_metadata(original, relative.split('/')[0]) if path.endswith('.html') else original
         destination = output / relative
         destination.parent.mkdir(parents=True, exist_ok=True)
@@ -66,7 +72,7 @@ def main():
                         'source_sha256': hashlib.sha256(original).hexdigest(),
                         'published_sha256': hashlib.sha256(content).hexdigest(), 'bytes': len(content)})
     manifest = {'repository': REPOSITORY, 'commit': COMMIT,
-                'adaptation': 'HTML metadata, archive presentation copy, shared CSS and a separate touch/camera presentation adapter; original application scripts, model and audio bytes unchanged.',
+                'adaptation': 'HTML metadata, archive presentation copy, shared CSS and a separate touch/camera presentation adapter; original application scripts, model, audio, emulator and ROM bytes unchanged.',
                 'files': entries}
     (output / 'manifest.json').write_text(json.dumps(manifest, indent=2) + '\n')
     print(f'Synced {len(entries)} files ({sum(f["bytes"] for f in entries):,} bytes) from {COMMIT}')

@@ -8,8 +8,8 @@
     "lastmod": "2026-09-30"
   },
   "/demos/": {
-    "sha256": "2102fb86b2688a8e46cea6a7bad2ea02ba7e5dc554f7bf3ce6ae35450ba866cc",
-    "lastmod": "2026-09-30"
+    "sha256": "d7fcbca535babe3455ac3d03565c62346204bcb768e05783fefd428cb2021ada",
+    "lastmod": "2026-10-01"
   },
   "/demos/amen/": {
     "sha256": "67a96955b88675ebc73ffae8f5322a7c923bc51070238372979af75eaf3061aa",
@@ -18,6 +18,10 @@
   "/demos/patch-world/": {
     "sha256": "e0373a3bc558b540c2dfe774cbea529ee50473a1e8e49151b4c1b7d7990bfe43",
     "lastmod": "2026-09-30"
+  },
+  "/demos/atari-arcade/": {
+    "sha256": "29dacfb4e852a66df7f73b4c0c04d42ddcc199b3115701872c3c9dff9fe5835a",
+    "lastmod": "2026-10-01"
   },
   "/robotics/": {
     "sha256": "8819946e351c9ee30c89b3787284eb6cd372dc3ac1f0531a7d31bffca9ac8ddf",
