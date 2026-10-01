@@ -14,7 +14,7 @@
       "source": "amen/web/index.html",
       "path": "amen/index.html",
       "source_sha256": "eabed72121f0cff95ed9015b946d41006b2e27242f7a5a43e07d45c6dfe19cf7",
-      "published_sha256": "6eda7e125f8c8bea00b8c2f94872acbd361840c7727e965167a4334c21c93b6d",
+      "published_sha256": "a1d0f3b5869c95b0dbb9c78af4238f9d1fa011bdf2ac8a8052aa6aeb488022eb",
       "bytes": 61665
     },
     {
@@ -112,7 +112,7 @@
       "source": "atari-arcade/web/index.html",
       "path": "atari-arcade/index.html",
       "source_sha256": "a2dfe76e5724a22f6e2e4acf8f597bacb02b08d96a2378d225663ec404f36935",
-      "published_sha256": "5e819e70280b43773c770b408a37fc56263ef4a0b4703e886a3b8ffae0ded9ff",
+      "published_sha256": "2762d48b57222d7cd6c0ce2d8279fbc6710c2dd1863d951250a77b5434880e90",
       "bytes": 27541
     },
     {
@@ -133,7 +133,7 @@
       "source": "patch-world/index.html",
       "path": "patch-world/index.html",
       "source_sha256": "3663c837fbffb2eb94229289d2807784a3d2e90bf459a39580ca2fcbe42406e9",
-      "published_sha256": "4a7470bad7fbd06ed3ff07d144b50864717a0b0a9ca22b5cc37f2a8b5878f89a",
+      "published_sha256": "6bc3553a5fa0d2d572c3e287b731622b503818ef857960b9afa6f60c4f2179cf",
       "bytes": 84879
     }
   ]

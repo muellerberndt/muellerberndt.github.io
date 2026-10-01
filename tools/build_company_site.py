@@ -230,6 +230,8 @@ def build():
         robots = "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
         if name == "cadence":
             extra = '<link rel="stylesheet" href="/assets/brain-explorer.css?v=4"><script src="/assets/brain-model.js?v=2" defer></script><script src="/assets/brain-explorer.js?v=4" defer></script>'
+        elif name.startswith("demo-"):
+            extra = '<script src="/assets/demo-player.js?v=1" defer></script>'
         elif name == "unsubscribe":
             robots = "noindex, nofollow"
         elif name == "not-found":

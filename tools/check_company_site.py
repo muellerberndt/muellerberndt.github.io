@@ -308,7 +308,7 @@ def check_browser_demos(site, errors):
             errors.append(f"Browser demos: application assets changed from source: {entry['path']}")
         if path.suffix == '.html':
             source = path.read_text()
-            for required in ('content="noindex"', '/assets/demo-runtime.css?v=4', '/assets/demo-runtime.js?v=2', '/favicon.svg?v=6'):
+            for required in ('content="noindex"', '/assets/demo-runtime.css?v=4', '/assets/demo-runtime.js?v=3', '/favicon.svg?v=6'):
                 if required not in source:
                     errors.append(f"Browser demos: {entry['path']} missing {required}")
             if 'cadence-examples/' in source or 'data:image/svg+xml' in source:

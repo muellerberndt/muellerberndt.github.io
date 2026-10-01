@@ -44,7 +44,7 @@ def wrapper_metadata(content, demo):
     # Last stylesheet wins over the archived application's own CSS.
     text = text.replace('<html lang="en">', f'<html lang="en" data-demo="{demo}">', 1)
     text = text.replace('</head>', metadata + '</head>', 1)
-    text = text.replace('</body>', '<script src="/assets/demo-runtime.js?v=2"></script>\n</body>', 1)
+    text = text.replace('</body>', '<script src="/assets/demo-runtime.js?v=3"></script>\n</body>', 1)
     return text.encode()
 
 

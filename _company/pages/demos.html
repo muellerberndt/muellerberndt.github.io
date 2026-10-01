@@ -2,14 +2,29 @@
  <div class="container">
   <p class="eyebrow">Cadence / Demos</p>
   <h1>Put the idea<br>in motion.</h1>
-  <p class="lead">Play AMEN, Patch World and the Atari Arcade in your browser. Run the Doom and Rover labs locally from cadence-demos.</p>
-  <div class="actions"><a class="text-link" href="#amen">Play in your browser ↓</a><a class="text-link" href="#game-labs">Run locally ↓</a></div>
+  <p class="lead">Play the Atari Arcade, AMEN and Patch World in your browser. Run the Doom and Rover labs locally from cadence-demos.</p>
+  <div class="actions"><a class="text-link" href="#atari-arcade">Play in your browser ↓</a><a class="text-link" href="#game-labs">Run locally ↓</a></div>
+ </div>
+</section>
+<section class="section accent" id="atari-arcade">
+ <div class="container split">
+  <div>
+   <p class="eyebrow">01 / Play in your browser</p>
+   <h2>Atari Arcade.</h2>
+   <p class="lead">Two brains born on page load.<br>Learning to play while you watch.</p>
+   <p>Each game runs on an Atari 2600 emulator in your browser. A fresh Cadence brain watches a scripted teacher play, takes the controls once its own decoded actions agree with the teacher often enough, and keeps learning from every reward.</p>
+   <p>Nine cortical columns read the 84 × 84 retina; recursive observers read their live states and exact prediction errors. Follow the teacher agreement, the witnesses admitted and the repair effort falling, then the score curve and the badge from noob to legend.</p>
+   <p>In recorded headless runs both brains reached expert: Freeway lived 17, 21, 16, 26, 21 and 21 against its teacher's 21; Atlantis 2000, 2000, 2000, 2000 and 2000 against 2000.</p>
+   <div class="actions"><a class="button primary" href="/demos/atari-arcade/">Enter the arcade ↗</a><a class="text-link" href="https://github.com/muellerberndt/cadence-demos/tree/main/atari-arcade">Source, parity checks and receipts ↗</a></div>
+   <p class="small muted">A JavaScript port of the Cadence 0.50 reference engine, checked against the library, on the 6502.ts emulator core. Two emulators and two brains use four worker threads; on phones the second game starts on request. Carnival and Space Invaders are left out because their brains degrade in self-play.</p>
+  </div>
+  <figure class="demo-shot"><a href="/demos/atari-arcade/" aria-label="Open the Atari Arcade"><img src="/assets/demo-atari-arcade.png?v=1" alt="Atari Arcade with the Freeway brain playing for itself beside its settling brain, and the Atlantis brain watching its teacher" loading="lazy" width="1440" height="1000"></a><figcaption class="small muted">The arcade in a browser: Freeway playing for itself, Atlantis still watching its teacher.</figcaption></figure>
  </div>
 </section>
 <section class="section" id="amen">
  <div class="container split">
   <div>
-   <p class="eyebrow">01 / Play in your browser</p>
+   <p class="eyebrow">02 / Play in your browser</p>
    <h2>AMEN.</h2>
    <p class="lead">A small learned brain.<br>A room full of jungle.</p>
    <p>Press <strong>CUT A DUB</strong>. AMEN composes a 16- or 32-bar track from its trained record memory, then renders the drums and bass for playback. Adjust the variation and cut another.</p>
@@ -23,7 +38,7 @@
 <section class="section dark" id="patch-world">
  <div class="container split">
   <div>
-   <p class="eyebrow">02 / Play in your browser</p>
+   <p class="eyebrow">03 / Play in your browser</p>
    <h2>Patch World.</h2>
    <p class="lead">A living experiment<br>in the cost of thought.</p>
    <p>A moving sun feeds a world with a fixed supply of mass. Creatures forage, reproduce and learn from the consequences of their actions. Every brain patch and settling sweep has a cost.</p>
@@ -35,21 +50,6 @@
    <article class="card"><p class="label">Across generations</p><h3>Evolution changes the layout.</h3><p>Offspring inherit mutated brain layouts and begin with fresh learned weights. Computation competes with movement and survival for the same resources.</p></article>
    <p class="small muted">A JavaScript implementation of the patch rule, with two published 6,000-tick runs preserving total mass. The experiment lets you inspect evolving brains; it does not establish an advantage from recursive depth.</p>
   </div>
- </div>
-</section>
-<section class="section accent" id="atari-arcade">
- <div class="container split">
-  <div>
-   <p class="eyebrow">03 / Play in your browser</p>
-   <h2>Atari Arcade.</h2>
-   <p class="lead">Two brains born on page load.<br>Learning to play while you watch.</p>
-   <p>Each game runs on an Atari 2600 emulator in your browser. A fresh Cadence brain watches a scripted teacher play, takes the controls once its own decoded actions agree with the teacher often enough, and keeps learning from every reward.</p>
-   <p>Nine cortical columns read the 84 × 84 retina; recursive observers read their live states and exact prediction errors. Follow the teacher agreement, the witnesses admitted and the repair effort falling, then the score curve and the badge from noob to legend.</p>
-   <p>In recorded headless runs both brains reached expert: Freeway lived 17, 21, 16, 26, 21 and 21 against its teacher's 21; Atlantis 2000, 2000, 2000, 2000 and 2000 against 2000.</p>
-   <div class="actions"><a class="button primary" href="/demos/atari-arcade/">Enter the arcade ↗</a><a class="text-link" href="https://github.com/muellerberndt/cadence-demos/tree/main/atari-arcade">Source, parity checks and receipts ↗</a></div>
-   <p class="small muted">A JavaScript port of the Cadence 0.50 reference engine, checked against the library, on the 6502.ts emulator core. Two emulators and two brains use four worker threads; on phones the second game starts on request. Carnival and Space Invaders are left out because their brains degrade in self-play.</p>
-  </div>
-  <figure class="demo-shot"><a href="/demos/atari-arcade/" aria-label="Open the Atari Arcade"><img src="/assets/demo-atari-arcade.png?v=1" alt="Atari Arcade with the Freeway brain playing for itself beside its settling brain, and the Atlantis brain watching its teacher" loading="lazy" width="1440" height="1000"></a><figcaption class="small muted">The arcade in a browser: Freeway playing for itself, Atlantis still watching its teacher.</figcaption></figure>
  </div>
 </section>
 <section class="section" id="game-labs">

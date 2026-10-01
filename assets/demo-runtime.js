@@ -10,6 +10,18 @@
     document.getElementById('play').setAttribute('aria-label', 'Play or pause the generated dub');
     return;
   }
+  if (demo === 'atari-arcade') {
+    // The site page sizes the frame to the whole arcade: report the content height whenever it changes.
+    if (window.parent === window) return;
+    const report = () => {
+      const height = Math.ceil(document.body.getBoundingClientRect().height);
+      if (height > 0) window.parent.postMessage({ type: 'demo-height', demo, height }, location.origin);
+    };
+    new ResizeObserver(report).observe(document.body);
+    window.addEventListener('load', report);
+    report();
+    return;
+  }
   if (demo !== 'patch-world' || typeof cam === 'undefined') return;
 
   const canvas = document.getElementById('gl');
