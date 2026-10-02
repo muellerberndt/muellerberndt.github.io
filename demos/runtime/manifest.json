@@ -1,6 +1,6 @@
 {
   "repository": "https://github.com/muellerberndt/cadence-demos",
-  "commit": "736cd899a0b22a2f325a5cf7cd242fcfad0af863",
+  "commit": "f364c0825ebdbe9632f4fa21969062fbf5af3e49",
   "adaptation": "HTML metadata, archive presentation copy, shared CSS and a separate touch/camera presentation adapter; original application scripts, model, audio, emulator and ROM bytes unchanged.",
   "files": [
     {
@@ -13,9 +13,9 @@
     {
       "source": "amen/web/index.html",
       "path": "amen/index.html",
-      "source_sha256": "eabed72121f0cff95ed9015b946d41006b2e27242f7a5a43e07d45c6dfe19cf7",
-      "published_sha256": "c984d0ac26be8b76c41c70fa9c4d2d6658e41cbbd1e73bfda42caf2e58809790",
-      "bytes": 61705
+      "source_sha256": "78c687c4e6209b1dc7ae9fa0b0dafc6448d102b4d0d964150b4500736f0a9eec",
+      "published_sha256": "b9a6e0ff088958e1ce7e638c010abd4be04cbf7488cb58d4ddd20340915e054e",
+      "bytes": 61675
     },
     {
       "source": "amen/web/kit/bass.wav",

@@ -16,7 +16,7 @@ import re
 import subprocess
 
 SITE = Path(__file__).resolve().parents[1]
-COMMIT = "736cd899a0b22a2f325a5cf7cd242fcfad0af863"
+COMMIT = "f364c0825ebdbe9632f4fa21969062fbf5af3e49"
 REPOSITORY = "https://github.com/muellerberndt/cadence-demos"
 ARCADE_RUNTIME = ('index.html', 'arcade.js', 'cadence.js', 'emulator.js', 'brain_worker.js', 'emulator_worker.js',
                   'roms/freeway.bin', 'roms/atlantis.bin')
@@ -33,7 +33,6 @@ def wrapper_metadata(content, demo):
     text = re.sub(r'^<(?:meta [^>]*(?:name="(?:theme-color|twitter:[^"]+)"|property="og:[^"]+")[^>]*|link rel="(?:icon|canonical)"[^>]*)>\s*\n', '', text, flags=re.M)
     if demo == 'amen':
         text = text.replace('Nothing here is recorded: the trained brain computes a track in your browser, from silence, while you watch it think. Then it plays.', 'The trained brain generates a new arrangement from silence, then a supplied instrument renders it for playback.')
-        text = text.replace('<b>Still training</b><span>This brain is a work in progress. It is still learning from more tracks, and the dubs will get more varied as it does. Every checkpoint in the selector can be trained further.</span>', '<b>Trained on Cadence 0.70</b><span>This record patch was trained from random parameters on a laptop. It generates new arrangements in your browser. Its parameters stay fixed here; the visualization replays its generation trace.</span>')
         text = text.replace('Nothing is recorded. The page loads', 'Each arrangement is generated here. The page loads')
     metadata = (f'<meta name="robots" content="noindex">\n'
                 f'<meta name="theme-color" content="#191d1c">\n'
