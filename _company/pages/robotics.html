@@ -11,6 +11,25 @@
   </div>
 </section>
 
+<section class="section" id="advantages">
+  <div class="container">
+    <div class="section-heading">
+      <p class="eyebrow">Why a learning brain</p>
+      <h2>Built like a brain. Made for a body.</h2>
+      <p class="lead">Animal and human brains learn from experience and not by backpropagation with gradient descent. Cadence is designed the same way: its connections change locally while the brain keeps running.</p>
+    </div>
+    <div class="grid-3">
+      <article class="card"><p class="label">On the job</p><h3>It learns while it works.</h3><p>The same brain acts and learns from every measured outcome. There is no training phase before deployment and no difference between training and inference.</p></article>
+      <article class="card"><p class="label">Changed conditions</p><h3>It adapts when the body changes.</h3><p>A worn actuator, a new payload or a different surface shows up in what the robot measures. The live brain adjusts from those measurements, without being told what changed.</p></article>
+      <article class="card"><p class="label">Local learning</p><h3>It learns the way brains do.</h3><p>Each connection changes from the activity of the two units it joins. There is no backward pass through the network, so learning can run on the robot itself.</p></article>
+      <article class="card"><p class="label">Memory</p><h3>It remembers.</h3><p>A working trace carries the recent past and an associative memory keeps what mattered. One experience is recorded, and the next decision in that situation reads it.</p></article>
+      <article class="card"><p class="label">Settled answers</p><h3>It acts only on a settled answer.</h3><p>Every action is the settled state of the whole brain. A brain that does not settle refuses to act, so a controller can fall back instead of executing a guess.</p></article>
+      <article class="card"><p class="label">Inspection</p><h3>It shows its work.</h3><p>The activity of every region can be read while the brain runs. Private imagination tests a response to a situation before the body commits to it.</p></article>
+    </div>
+    <p class="small">Shown in simulation today in Rover Lab, Patch World and the Atari Arcade. Cadence 0.70 is experimental research software, and a physical robot evaluation is the next test.</p>
+  </div>
+</section>
+
 <section class="section accent">
   <div class="container split">
     <div>
@@ -19,7 +38,7 @@
       <p class="lead">Weaken a simulated rover's right wheel and watch its model learn the changed response.</p>
     </div>
     <div>
-      <p>Cadence learns how wheel commands turn into motion, beside a frozen copy, an adaptive estimator and a small neural baseline. In a two-seed development screen, learning Cadence reached <strong>10/10 weakened-body targets</strong>, against 5/10 for its frozen copy. The adaptive estimator also reached 10/10.</p>
+      <p>Cadence learns how wheel commands turn into motion, beside a frozen copy, an adaptive estimator and a small neural baseline. In a two-seed development screen on Cadence 0.70, learning Cadence reached <strong>10/10 weakened-body targets</strong>, against 5/10 for its frozen copy. The adaptive estimator also reached 10/10.</p>
       <p class="small">The simulation uses four-patch body models with a supplied action selector. Physical robot evaluation is a proposed next test.</p>
       <div class="actions">
         <a class="button secondary" href="https://github.com/muellerberndt/cadence-demos/tree/main/rover-lab#run">Run Rover Lab &rarr;</a>
@@ -69,7 +88,7 @@
     </div>
     <div>
       <p class="lead">Tell us the robot, the recurring problem and how you measure success. We can demonstrate the software and scope a paid evaluation with your technical team.</p>
-      <p>Cadence is built from observer-like, self-reading software patches with local state, ports, records and feedback. Settlement repairs their activity; experience changes their retained relations.</p>
+      <p>Cadence is built from observer-like, self-reading software patches with local state, ports, records and feedback. Settlement repairs their activity; experience changes their retained relations. System 1 is the default brain. Optional System 2 observers add recursive feedback inside the same brain.</p>
       <div class="actions">
         <a class="button primary" href="mailto:bernhard@floatingpragma.ai?subject=Cadence%20robotics%20evaluation">Discuss your robot</a>
         <a class="text-link" href="/cadence/#design-patterns">How Cadence works &rarr;</a>

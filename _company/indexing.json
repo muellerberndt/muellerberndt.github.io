@@ -1,10 +1,10 @@
 {
   "/": {
-    "sha256": "4c185a297cb09bb6ff1f2ca931da0b6963423b295b2a2cd09c330ca1f4250fbd",
+    "sha256": "012c1cae1f63bb0970470b575acb2e1ed5e2cb81fdb422b66f0dbf26cecac5c4",
     "lastmod": "2026-10-02"
   },
   "/cadence/": {
-    "sha256": "26e5bbac955af5ff25fc3ad58ff003a761c82ff6f5dd1b8fc1c3290ce531b8c1",
+    "sha256": "8a42b72a3e43ade480928092e9ddd3a4d3809ce37b7301705ed0a6a5bf30e54b",
     "lastmod": "2026-10-02"
   },
   "/demos/": {
@@ -12,27 +12,27 @@
     "lastmod": "2026-10-02"
   },
   "/demos/amen/": {
-    "sha256": "8d5ad8b95b5c146f3daffcf1b9b2d7e8c79b332089f45a7e5dea99d1c367b512",
-    "lastmod": "2026-10-01"
+    "sha256": "4e7451c3d05561a3471e9efe14c65132300b4729b6f53d6fd0fc6359181175f3",
+    "lastmod": "2026-10-02"
   },
   "/demos/patch-world/": {
     "sha256": "b9d124139699f0b31a0cb35a1af72b1a0d0252beda6de2ec8da2309fa82e328f",
     "lastmod": "2026-10-02"
   },
   "/demos/atari-arcade/": {
-    "sha256": "f2fa9844ab6eb7a0cdf687318c6908cc42c166534ead4fef0a29d8466efcd8f9",
-    "lastmod": "2026-10-01"
+    "sha256": "0ecaf48251d13154857386e03047a5f2acaaf481d160a7cd9da0ca3c27e0adb9",
+    "lastmod": "2026-10-02"
   },
   "/robotics/": {
-    "sha256": "8819946e351c9ee30c89b3787284eb6cd372dc3ac1f0531a7d31bffca9ac8ddf",
-    "lastmod": "2026-09-30"
+    "sha256": "7098a2fc57fccfb626512cfc5d02cb78415523710d7d867d7a6fce154656a6b3",
+    "lastmod": "2026-10-02"
   },
   "/investors/": {
-    "sha256": "e37aadbf9fd7fe28607c78377d80792c66f0ba7601cd79945cff07633afb521a",
+    "sha256": "a3513ddadaedba5b3c416007a950a196aa23c3fab4f7c26066c692a1f89abf29",
     "lastmod": "2026-10-02"
   },
   "/investors/deck/": {
-    "sha256": "37d23efc73a6c2781fa1be358e20b1a83822070dae514c245b975ab55012356d",
+    "sha256": "77889995d671f6b9750eadbaf0eabc5a67755db4a56f68ba3d99c276ad037bb1",
     "lastmod": "2026-10-02"
   },
   "/research/": {
@@ -40,11 +40,11 @@
     "lastmod": "2026-09-30"
   },
   "/physics/": {
-    "sha256": "881ff51073326f2895e95ad44bfda956191ebd587a1c117dc2a7c5d4d4944212",
-    "lastmod": "2026-09-30"
+    "sha256": "5f613706fa495221b2f821e3c7886683b54544474c88018c44a147cf49e88fa0",
+    "lastmod": "2026-10-02"
   },
   "/work/": {
-    "sha256": "ea199c0eab9300efd57adff65cd2b17e2698770d14a9cedb1013f0e5d0c92101",
+    "sha256": "6d7ffb665aac6ac4c3a8bbd3d818f937b040fdeb8b1ebf53fc3f29a9e59fd92b",
     "lastmod": "2026-10-02"
   },
   "/watch/": {

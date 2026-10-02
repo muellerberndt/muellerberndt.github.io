@@ -73,6 +73,19 @@ The research develops explicit finite constructions and conditional mathematical
 
 Use the papers and scientific repository for theorem statements, hypotheses, publication metadata and exact counts. Use source receipts for experiment conditions and outcomes. Company pages describe the product direction and proposed programme.
 
+## Advantages for embodied AI
+
+Animal and human brains learn from experience and not by backpropagation with gradient descent. Cadence is designed the same way: its connections change locally while the brain keeps running. For a robot or another embodied system this gives:
+
+- Learning on the job: the same brain acts and learns from every measured outcome, with no training phase before deployment and no difference between training and inference.
+- Adaptation to changed conditions: a worn actuator, a new payload or a different surface shows up in what the robot measures, and the live brain adjusts without being told what changed.
+- Local learning: each connection changes from the activity of the two units it joins; the default brain keeps no backward computation graph, so learning can run on the robot itself.
+- Memory: a working trace carries the recent past and an associative memory keeps what mattered.
+- Settled answers: every action is the settled state of the whole brain, and a brain that does not settle refuses to act.
+- Inspection: the activity of every region can be read while the brain runs, and private imagination tests a response before the body commits to it.
+
+These properties are shown in simulation (Rover Lab, Patch World, Atari Arcade). Cadence 0.70 is experimental research software; a physical robot evaluation is the next test. Under idealized conditions the local learning contrast follows the gradient that backpropagation would compute; the comparison is of update mechanisms.
+
 ## Brain design: System 1 and optional System 2
 
 System 1 is the default brain, composed with Brain.compose; System 2 adds optional observers to the same brain. Every answer is the settled state of the whole brain, and a brain that does not settle refuses to act. Beside the main interface, Cadence 0.70.0 keeps advanced engines with their own contracts: the population solver, where populations of patches settle one joint energy and observers read exact prediction errors; record patches for event records and consolidation; and a temporal model for learned action consequences and planning. System 1 and System 2 name functional roles in software, not claims of biological equivalence. Choose observers by measured task quality, query latency and learning cost; deeper is not automatically better or faster. Archived AMEN uses a record-patch brain trained on an earlier release.
