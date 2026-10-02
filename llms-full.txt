@@ -2,7 +2,7 @@
 
 ## Company
 
-Cadence is a deep real-time brain that learns from experience. Pragma Research's ambition is to supply brains for robots that keep improving throughout their working lives. Pragma Research builds the brains; robot manufacturers build the bodies.
+Cadence is a novel real-time AI modeled after animal and human brains. It learns from live experience. Today's AI runs on transformers, which are completely feed-forward and whose attention matrices are frozen once pretraining ends; Cadence runs in real time and keeps learning from each action and its result. Pragma Research's ambition is to supply brains for robots that keep improving throughout their working lives. Pragma Research builds the brains; robot manufacturers build the bodies.
 
 The company is seeking robotics evaluation partners and investors. The proposed commercial path starts with a paid evaluation on a concrete adaptation or recovery task, followed by a supported runtime and embodiment license, and expansion across robots and tasks. The proposed financing target is $4 million over 18 months for physical proof, a paid evaluation and repeatable integration. These are plans rather than achieved customer or financing outcomes.
 
@@ -93,7 +93,7 @@ System 1 is the default brain, composed with Brain.compose; System 2 adds option
 - Research and preprints: https://floatingpragma.io/research/
 - Work in physics, mathematics, AI and security: https://floatingpragma.io/work/
 - Brain design: https://github.com/muellerberndt/cadence/blob/v0.70.0/docs/brain.md
-- Performance: https://floatingpragma.io/cadence/#design-patterns
+- How it works: https://floatingpragma.io/cadence/#how-it-works
 
 ## Public demonstrations
 

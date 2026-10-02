@@ -128,7 +128,7 @@ class Renderer:
         self.canvas.setTitle("Cadence | Pragma Research Investor Deck")
         self.canvas.setAuthor("Pragma Research")
         self.canvas.setCreator("Pragma Research investor PDF builder")
-        self.canvas.setSubject("A deep real-time brain that learns from experience")
+        self.canvas.setSubject("Real-time AI that learns from live experience")
         self.dark = False
 
     def paragraph(self, node: Node, width: float, *, card: bool = False,

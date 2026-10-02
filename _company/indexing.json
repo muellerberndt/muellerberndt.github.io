@@ -1,46 +1,46 @@
 {
   "/": {
-    "sha256": "ca1bf95e8624147086e41704f00ee0f989bb8e91b916ebd6700fce3353f0c20a",
+    "sha256": "a406acc5984ed455b056d5329058b9e1308cabf43620c567402c1d8ddce15008",
     "lastmod": "2026-10-02"
   },
   "/cadence/": {
-    "sha256": "3266355c8d1d234f2a8f8bf0e974c520a3bff38733f78022cdb32d8c4b3aae75",
+    "sha256": "f5f32c15fc6c6d87ca2cb73a76422d5c1fd58e22a3de261389c24ddb235f3698",
     "lastmod": "2026-10-02"
   },
   "/demos/": {
-    "sha256": "3984beda1c9706fef964e07fbbc6ad5f4184e55812731f4423f03cd19de8d8c0",
+    "sha256": "0179547aafbfd60c290f5ad3de5be48f197f405fd9c8f32e000dff07266f5cba",
     "lastmod": "2026-10-02"
   },
   "/demos/amen/": {
-    "sha256": "0d4e501521157fd7019a7a64479c5f983fed07f9ed828f101cec7a1370b40ad7",
+    "sha256": "83e3c897700f12c59d9e9707a382dda74f8f56b429319a360dce44f19c944bce",
     "lastmod": "2026-10-02"
   },
   "/demos/patch-world/": {
-    "sha256": "b9d124139699f0b31a0cb35a1af72b1a0d0252beda6de2ec8da2309fa82e328f",
+    "sha256": "4012c9328405635c4531020f159d4b8382b32cd47843c17ae0affd1eb7234c3f",
     "lastmod": "2026-10-02"
   },
   "/demos/atari-arcade/": {
-    "sha256": "fb1d87eda2e3ab617f6b2718993ea90f7b255e2b2bf32a2b7b6098cd4b7c8fc6",
+    "sha256": "782ed30bf1aad25ee69c0da70df9c327f00c9c2dbf6c2e33b5398102469ed9ab",
     "lastmod": "2026-10-02"
   },
   "/robotics/": {
-    "sha256": "7098a2fc57fccfb626512cfc5d02cb78415523710d7d867d7a6fce154656a6b3",
+    "sha256": "286c486d68ff475fc8b004a6f3e4c1b5884b118b95de2f24041ef547cbe0a07d",
     "lastmod": "2026-10-02"
   },
   "/investors/": {
-    "sha256": "a3513ddadaedba5b3c416007a950a196aa23c3fab4f7c26066c692a1f89abf29",
+    "sha256": "49346ec37a0552c2c47ed60c931afe07424c2ea9e775f481400a802b9d08ba19",
     "lastmod": "2026-10-02"
   },
   "/investors/deck/": {
-    "sha256": "77889995d671f6b9750eadbaf0eabc5a67755db4a56f68ba3d99c276ad037bb1",
+    "sha256": "a8dedb53d6636704f1128c16d492ce69f8461bccdbbe97deaf4c6f9953c25fcf",
     "lastmod": "2026-10-02"
   },
   "/research/": {
-    "sha256": "065ca180bd81cdeb2964536d0842087d1a349da155033ec852be69379b3e7455",
+    "sha256": "49e1c442ba60208fe83888b3f8015e98bbb97bae99556278016f69f7ad60d1bb",
     "lastmod": "2026-10-02"
   },
   "/physics/": {
-    "sha256": "5f613706fa495221b2f821e3c7886683b54544474c88018c44a147cf49e88fa0",
+    "sha256": "852f34598c4fb23f67c2bd8e0c8018329b99794f668fddc7d4e911bef3bb93a3",
     "lastmod": "2026-10-02"
   },
   "/work/": {

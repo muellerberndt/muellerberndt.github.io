@@ -1,15 +1,16 @@
 # Pragma Research
 
-> Cadence is a deep real-time brain that learns from experience.
+> Cadence is a novel real-time AI modeled after animal and human brains. It learns from live experience.
 
-Pragma Research is building the brains for robots that keep improving throughout their working lives. Robotics is the first proposed market. The product direction is a supported Cadence runtime and a brain prepared for a customer's embodiment, beginning with a paid evaluation on one adaptation or recovery task.
+Today's AI runs on transformers, which are completely feed-forward and whose attention matrices are frozen once pretraining ends. Cadence runs in real time and keeps learning from each action and its result. Pragma Research builds the brains for robots that keep improving throughout their working lives. Robotics is the first proposed market. The product direction is a supported Cadence runtime and a brain prepared for a customer's embodiment, beginning with a paid evaluation on one adaptation or recovery task.
 
 Cadence 0.70.0 builds one continuing brain. System 1 is the default: perception, plastic connections, a working trace, associative memory, action and private imagination, learning from the measured outcome of each action with no separate training mode. System 2 is optional: observing regions read the brain's own activity and return feedback inside the same settlement. Bounded observer-like, self-reading patches carry local state and records, receive signals through ports, and repair their disagreement together; the settled state supplies the answer. A layout whose patches never settle against one another does not build.
 
 ## Company and product
 
-- [Cadence](https://floatingpragma.io/cadence/): architecture, code and simulation evidence.
+- [Cadence](https://floatingpragma.io/cadence/): what it is, what a robot gains, how it works and the code.
 - [Demonstrations](https://floatingpragma.io/demos/): working applications and experiments from cadence-demos.
+- [How it works](https://floatingpragma.io/cadence/#how-it-works): small self-reading patches that settle on one answer and learn from experience.
 - [Interactive brain](https://floatingpragma.io/cadence/#inside-the-brain): switch between the default layout and one with observers, inspect patch state and error, and compare settlement with a forward calculation.
 - [Robotics](https://floatingpragma.io/robotics/): proposed evaluation programme and changed-wheel rover experiment.
 - [Investors](https://floatingpragma.io/investors/): proposed $4 million seed round over 18 months.
@@ -63,7 +64,7 @@ System 1 is the default brain, composed with Brain.compose; System 2 adds option
 - Research and preprints: https://floatingpragma.io/research/
 - Work in physics, mathematics, AI and security: https://floatingpragma.io/work/
 - Brain design: https://github.com/muellerberndt/cadence/blob/v0.70.0/docs/brain.md
-- Performance: https://floatingpragma.io/cadence/#design-patterns
+- How it works: https://floatingpragma.io/cadence/#how-it-works
 
 ## Public demonstrations
 
