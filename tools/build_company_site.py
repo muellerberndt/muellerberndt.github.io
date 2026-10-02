@@ -10,7 +10,7 @@ ROOT = Path(__file__).resolve().parents[1]
 ORIGIN = "https://floatingpragma.io"
 PAGES = {
     "home": ("index.html", "Pragma Research | Brains that learn", "Cadence is a deep real-time brain that learns from experience. Pragma Research is building the intelligence for robots that keep improving."),
-    "cadence": ("cadence/index.html", "Cadence | A deep real-time brain", "Explore Cadence: brains that settle and learn from experience. Three design patterns, working code and measured simulation results."),
+    "cadence": ("cadence/index.html", "Cadence | A deep real-time brain", "Explore Cadence: brains that settle and learn from experience. A default System 1 brain, optional System 2 observers, working code and measured results."),
     "demos": ("demos/index.html", "Demonstrations | Cadence in action", "Cadence demonstrations of live learning, brain evolution and adaptation to a changed body. Working software and interactive experiments from cadence-demos."),
     "demo-amen": ("demos/amen/index.html", "AMEN | Play the Cadence music demo", "Generate and hear a jungle track in your browser. Explore the archived Cadence record-patch composer with its own engine and trained brain."),
     "demo-patch-world": ("demos/patch-world/index.html", "Patch World | Explore a living simulation", "Watch creatures learn in your browser and evolve their brains in a conserved-mass world. Inspect their observations, prediction errors and inherited body plans."),
@@ -229,7 +229,7 @@ def build():
         extra = ""
         robots = "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
         if name == "cadence":
-            extra = '<link rel="stylesheet" href="/assets/brain-explorer.css?v=4"><script src="/assets/brain-model.js?v=2" defer></script><script src="/assets/brain-explorer.js?v=4" defer></script>'
+            extra = '<link rel="stylesheet" href="/assets/brain-explorer.css?v=4"><script src="/assets/brain-model.js?v=2" defer></script><script src="/assets/brain-explorer.js?v=5" defer></script>'
         elif name.startswith("demo-"):
             extra = '<script src="/assets/demo-player.js?v=1" defer></script>'
         elif name == "unsubscribe":

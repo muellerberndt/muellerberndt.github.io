@@ -18,25 +18,25 @@ The company is seeking robotics evaluation partners and investors. The proposed 
 
 ## Cadence architecture
 
-Cadence offers three design patterns under one settling and learning architecture: flat input-only patches, ordinary state-coupled populations, and recursive observers. Bounded observer-like, self-reading software patches hold local state and records, communicate through ports, read back their activity and contribute feedback or repair. State-coupled populations read other populations' live states. Recursive observers also read exact prediction errors, and can themselves be observed. All three answer with a settled state.
+Cadence 0.70.0 builds one continuing brain. System 1 is the default: perception, plastic connections, a working trace, associative memory, action and private imagination, learning from the measured outcome of each action with no separate training mode. System 2 is optional: observing regions read the brain's own activity and return feedback inside the same settlement. Bounded observer-like, self-reading patches carry local state and records, receive signals through ports, and repair their disagreement together; the settled state supplies the answer. A layout whose patches never settle against one another does not build.
 
 Cortex and Brain expose a shared mathematical substrate. The runtime jointly settles represented state, recomputing exact prediction errors with analytic derivatives and a global energy check. Numerical settling energy is an objective function, not electrical energy in joules. The biological hypothesis is inspired by cortical cooperation; software behavior alone does not establish that a human cortical column implements these equations.
 
-The deep form uses coupled processing and recursively observing populations; flat and ordinary state-coupled layouts remain supported choices. Real-time describes participation in an ongoing observation/action loop, with decision rates measured for each body and workload. Hard deadlines, useful depth advantages and broad skill retention need their own evidence.
+The base brain can already be deep and modular; observers are an optional addition. Real-time describes participation in an ongoing observation/action loop, with decision rates measured for each body and workload. Hard deadlines, useful depth advantages and broad skill retention need their own evidence.
 
 The open-source core requires Python 3.11 or later, has no mandatory runtime dependencies and is licensed GPL-3.0-or-later. Optional accelerated paths have additional requirements. Consult the repository and package release for exact implementation details and licensing.
 
 - Repository: https://github.com/muellerberndt/cadence
 - Package: https://pypi.org/project/cadence-net/
-- Quickstart: https://github.com/muellerberndt/cadence/blob/main/docs/QUICKSTART.md
-- Architecture: https://github.com/muellerberndt/cadence/blob/main/docs/DRSN.md
-- Learning and memory: https://github.com/muellerberndt/cadence/blob/main/docs/LIVE.md
+- Quickstart: https://github.com/muellerberndt/cadence/blob/v0.70.0/docs/quickstart.md
+- Architecture: https://github.com/muellerberndt/cadence/blob/v0.70.0/docs/equilibrium/DRSN.md
+- Learning and memory: https://github.com/muellerberndt/cadence/blob/v0.70.0/docs/continuous.md
 - Preprint: https://philpapers.org/rec/MUECAP-2
 - Official demo code: https://github.com/muellerberndt/cadence-demos
 
 ## Interactive architecture illustration
 
-https://floatingpragma.io/cadence/#inside-the-brain lets visitors change a sensory signal, choose flat, state-coupled or recursive settlement, vary recursive depth, inspect patch state/prediction/error, and step through a bounded settlement. Up to six scalar patches use fixed illustrative weights, exact error derivatives and a positive activity penalty. The forward reference uses the same relations by forward substitution. The illustration explains computation; it is not a trained brain, a performance benchmark or the full Cadence runtime. Query settlement changes activity; learning can also change relation parameters.
+https://floatingpragma.io/cadence/#inside-the-brain lets visitors change a sensory signal, choose the default state-coupled layout or one with observers, vary observer depth, inspect patch state/prediction/error, and step through a bounded settlement. Up to six scalar patches use fixed illustrative weights, exact error derivatives and a positive activity penalty. The forward reference uses the same relations by forward substitution. The illustration explains computation; it is not a trained brain, a performance benchmark or the full Cadence runtime. Query settlement changes activity; learning can also change relation parameters.
 
 ## Experimental evidence
 
@@ -73,13 +73,13 @@ The research develops explicit finite constructions and conditional mathematical
 
 Use the papers and scientific repository for theorem statements, hypotheses, publication metadata and exact counts. Use source receipts for experiment conditions and outcomes. Company pages describe the product direction and proposed programme.
 
-## Three settlement design patterns
+## Brain design: System 1 and optional System 2
 
-Flat settlement reads supplied sensors; ordinary state-coupled settlement adds learned intermediate states; recursive observer settlement adds exact prediction-error readback. All three share the patch/repair law, learning API and final qualification. Useful functional analogies are practiced responses or muscle memory (flat), coordination and balance (state-coupled), and reflective reasoning (recursive). These are analogies for computational roles, not claims of biological equivalence. Choose a layout by measured task quality, query latency and learning cost; deeper is not automatically better or faster. Archived AMEN uses an earlier record-patch engine, not the current settlement solver.
+System 1 is the default brain, composed with Brain.compose; System 2 adds optional observers to the same brain. Every answer is the settled state of the whole brain, and a brain that does not settle refuses to act. Beside the main interface, Cadence 0.70.0 keeps advanced engines with their own contracts: the population solver, where populations of patches settle one joint energy and observers read exact prediction errors; record patches for event records and consolidation; and a temporal model for learned action consequences and planning. System 1 and System 2 name functional roles in software, not claims of biological equivalence. Choose observers by measured task quality, query latency and learning cost; deeper is not automatically better or faster. Archived AMEN uses a record-patch brain trained on an earlier release.
 
 - Research and preprints: https://floatingpragma.io/research/
 - Work in physics, mathematics, AI and security: https://floatingpragma.io/work/
-- Design patterns: https://github.com/muellerberndt/cadence/blob/main/docs/VARIANTS.md
+- Brain design: https://github.com/muellerberndt/cadence/blob/v0.70.0/docs/brain.md
 - Performance: https://floatingpragma.io/cadence/#design-patterns
 
 ## Public demonstrations

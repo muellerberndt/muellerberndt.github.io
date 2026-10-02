@@ -211,7 +211,7 @@ assert.equal(app.count(), 0);
 assert.deepEqual(app.result().states, Array(6).fill(0));
 assert.equal(app.get("brain-patch-title").textContent, "Recursive observer patch R1");
 
-for (const depth of [0, 1, 2]) {
+for (const depth of [1, 2]) {
   app.depth(depth);
   stopped(app);
   assert.deepEqual(app.result().states, Array(2 * (depth + 1)).fill(0));
@@ -220,7 +220,7 @@ for (const depth of [0, 1, 2]) {
   assert.equal(app.get("brain-patch-buttons").children.length, 2 * (depth + 1));
   assert.equal(app.get("brain-output-name").textContent, ["P1", "O1", "R1"][depth]);
   assert.equal(app.get("brain-forward-output").textContent, signed(model.feedForward(-0.35, depth).output));
-  assert.equal(app.get("brain-patch-title").textContent, "Processing patch P1", "selection clamps to a surviving patch");
+  assert.equal(app.get("brain-patch-title").textContent, "Observer patch O1", "selection clamps to a surviving patch");
   assert.equal(app.get("brain-patch-buttons").children.filter(button => button.getAttribute("aria-pressed") === "true").length, 1);
   displayed(app);
 }
@@ -280,8 +280,8 @@ app.drain();
 stopped(app);
 
 let runs = 0;
-const layouts = [{mode:'recursive',depth:0}, {mode:'recursive',depth:1},
-  {mode:'recursive',depth:2}, {mode:'flat',depth:2}, {mode:'composed',depth:2}];
+const layouts = [{mode:'recursive',depth:1},
+  {mode:'recursive',depth:2}, {mode:'composed',depth:2}];
 for (const reduced of [false, true]) {
   for (const {mode,depth} of layouts) {
     for (const signal of [-1, -0.4, 0, 0.65, 1]) {
@@ -306,7 +306,7 @@ for (const reduced of [false, true]) {
 const switching = start();
 switching.depth(1);
 switching.input(-0.4);
-for (const mode of ['flat','composed','recursive']) {
+for (const mode of ['composed','recursive']) {
   switching.click('brain-run');
   switching.mode(mode);
   stopped(switching);
@@ -318,15 +318,14 @@ for (const mode of ['flat','composed','recursive']) {
   assert.equal(switching.get('brain-depth').disabled,mode!=='recursive');
   assert.equal(switching.get('brain-depth').value,'1','observer preference survives other modes');
   assert.equal(switching.get('brain-legend-observe').hidden,mode!=='recursive');
-  assert.equal(switching.get('brain-legend-return').hidden,mode==='flat');
+  assert.equal(switching.get('brain-legend-return').hidden,false);
   assert.equal(switching.get('brain-forward-output').textContent,
     signed(model.feedForward(-0.4,{mode,depth:1}).output));
   const strokes=switching.get('brain-recursive').context.calls.filter(call=>call.kind==='stroke'&&call.color==='#8fb8e8'&&call.path!=='arc');
-  assert.equal(strokes.length>0,mode!=='flat','returning arrows require internal coupling');
+  assert.ok(strokes.length>0,'every offered layout has internal coupling and returning arrows');
   switching.get('brain-patch-buttons').children.at(-1).emit('click');
   assert.equal(switching.get('brain-patch-title').textContent,graph.patches.at(-1).name);
   if(mode==='composed') assert.match(switching.get('brain-patch-description').textContent,/without reading their errors/);
-  if(mode==='flat') assert.match(switching.get('brain-patch-description').textContent,/supplied values stay fixed/);
   if(mode==='recursive') assert.match(switching.get('brain-patch-description').textContent,/exact prediction errors/);
 }
 
@@ -364,7 +363,7 @@ assert.equal(settled.count(), 0, "zero-size converged response adds no phantom s
 // Reflow executes both drawing orientations at narrow and split-panel sizes.
 // These mocks validate numerical coordinates, not browser font metrics/layout.
 for (const [width, height] of [[238, 450], [278, 450], [335, 450], [371, 365], [419, 365], [420, 365], [620, 365], [788, 320]]) {
- for (const mode of ['flat','composed','recursive']) {
+ for (const mode of ['composed','recursive']) {
   const resized = start({ width, height, mode });
   resized.observers.resize();
   for (const id of ["brain-forward", "brain-recursive"]) {
@@ -383,7 +382,7 @@ for (const [width, height] of [[238, 450], [278, 450], [335, 450], [371, 365], [
 
 // Rotation redraws the existing continuation. It must not restart settlement,
 // change the selected patch, or lose a scheduled continuation while running.
-for (const mode of ['flat','composed','recursive']) {
+for (const mode of ['composed','recursive']) {
   const rotated=start({mode,width:348,height:450});
   rotated.click('brain-step');
   rotated.get('brain-patch-buttons').children.at(-1).emit('click');
@@ -412,4 +411,4 @@ assert.doesNotThrow(() => start({ missingRoot: true }));
 const noCanvas = start({ missingCanvas: true });
 assert.equal(noCanvas.get("brain-run").disabled, true);
 
-console.log(`Brain explorer event checks passed: ${runs} full runs; all three patterns and depth controls, real wiring changes, input/state retention, manual repair, reset, inspection, pause/resume, visibility, reduced motion, 240-step limit, refusal and responsive drawing coordinates.`);
+console.log(`Brain explorer event checks passed: ${runs} full runs; both layouts and depth controls, real wiring changes, input/state retention, manual repair, reset, inspection, pause/resume, visibility, reduced motion, 240-step limit, refusal and responsive drawing coordinates.`);

@@ -18,25 +18,18 @@
   let topology = model.topology(settings()), states = model.initialStates(settings());
   let result = model.evaluate(states, input, settings()), reference = model.feedForward(input, settings());
   const patterns = {
-    flat: {
-      name: 'Flat settlement', title: 'A direct, practised response.',
-      description: 'Each patch reads the same fixed inputs and settles independently. No patch reads its neighbours.',
-      analogy: 'Think of a familiar movement becoming a practised response: a direct mapping from a situation to an action.',
-      note: 'Six input-only patches. Only P5 supplies the displayed output; the other patches do not act as a hidden layer.',
-      diagram: 'Independent states. One qualification.'
-    },
     composed: {
-      name: 'State-coupled settlement', title: 'Coordinate the whole response.',
-      description: 'Later populations read earlier live states. Their constraints can change those states while the whole system settles.',
+      name: 'The default brain', title: 'Settle the whole response together.',
+      description: 'Later populations read earlier live states. Their constraints can change those states while the whole brain settles.',
       analogy: 'Think of coordination and balance: several parts adjust together to find a consistent position.',
       note: 'Six patches in three populations, connected through states. There are no error-reading connections.',
       diagram: 'State connections. One coupled objective.'
     },
     recursive: {
-      name: 'Recursive observer settlement', title: 'Bring internal error into the answer.',
+      name: 'With observers', title: 'Bring internal error into the answer.',
       description: 'Observers read states and exact prediction errors. A further observer can read those observers in the same solve.',
       analogy: 'Think of reflective reasoning: considering an interpretation alongside where it fails to fit.',
-      note: 'Choose the number of observer levels. Zero is a two-patch input-only control; two levels include observers of observers.',
+      note: 'Choose the number of observer levels. Two levels include observers of observers.',
       diagram: 'State + error readback. One objective.'
     }
   };
@@ -90,13 +83,6 @@
     const xStart = 55, xEnd = w-64;
     const pairGap = vertical ? Math.min(w*.20,70) : 54;
     const position = (layer,row) => {
-      if(mode==='flat') {
-        if(vertical) return layer===0
-          ? {x:w/2+(row?pairGap:-pairGap),y:62}
-          : {x:w/2+(row%2?pairGap:-pairGap),y:154+Math.floor(row/2)*(h-236)/2};
-        return layer===0 ? {x:65,y:row?230:125}
-          : {x:w-80,y:78+row*(h-150)/5};
-      }
       return vertical
         ? {x:w/2+(row ? pairGap : -pairGap),y:yStart+layer*(yEnd-yStart)/(layers-1)}
         : {x:xStart+layer*(xEnd-xStart)/(layers-1),y:row ? Math.min(224,h*.60) : Math.min(116,h*.32)};
@@ -105,13 +91,12 @@
     topology.patches.forEach(patch => points.set(patch.id,{...position(patch.level+1,patch.row),...patch}));
     ctx.font = '12px Inter, Arial, sans-serif';ctx.textAlign='center';ctx.fillStyle=muted;
     for (let layer=0; layer<layers; layer++) {
-      const names = mode==='flat' ? ['Inputs','Independent patches']
-        : mode==='composed' ? ['Inputs','Processing','Representation','Response']
+      const names = mode==='composed' ? ['Inputs','Processing','Representation','Response']
           : ['Inputs','Processing','Observer','Observes observer'];
       const point = position(layer,0);
       if (vertical) {
         ctx.textAlign='left';ctx.fillText(names[layer],16,point.y-31);ctx.textAlign='center';
-      } else ctx.fillText(names[layer],point.x,mode==='flat'?34:52);
+      } else ctx.fillText(names[layer],point.x,52);
     }
     const grouped = new Map();
     topology.edges.forEach(edge => {
@@ -136,7 +121,7 @@
     }
     for (const point of points.values()) {
       const isSelected = !point.input && point.index===selected && coupled;
-      const radius = point.input ? 16 : mode==='flat' && !vertical ? 17 : 22;
+      const radius = point.input ? 16 : 22;
       if (isSelected) {ctx.beginPath();ctx.arc(point.x,point.y,29,0,Math.PI*2);ctx.strokeStyle='#8fb8e8';ctx.lineWidth=1;ctx.stroke();}
       ctx.beginPath();ctx.arc(point.x,point.y,radius,0,Math.PI*2);
       ctx.fillStyle = point.input ? (coupled?'#2e3b4a':'#dce8f5') : (coupled?'#8fb8e8':'#191d1c');ctx.fill();
@@ -144,10 +129,10 @@
       ctx.font='600 12px Inter, Arial, sans-serif';ctx.fillText(point.input?(point.id==='signal'?'S':'B'):point.id,point.x,point.y+4);
       ctx.fillStyle=muted;ctx.font='12px Inter, Arial, sans-serif';
       const value = point.input ? (point.id==='signal'?input:.2) : data.states[point.index];
-      ctx.fillText(signed(value),point.x+(mode==='flat'&&!vertical&&!point.input?47:0),point.y+(point.input?33:mode==='flat'&&!vertical?4:40));
+      ctx.fillText(signed(value),point.x,point.y+(point.input?33:40));
     }
     ctx.fillStyle=muted;ctx.font='11px Inter, Arial, sans-serif';ctx.textAlign='center';
-    const note = coupled ? (mode==='recursive' && depth===0 ? 'No observers. Input-only control.' : patterns[mode].diagram) : 'Forward substitution; no joint repair.';
+    const note = coupled ? patterns[mode].diagram : 'Forward substitution; no joint repair.';
     ctx.fillText(note,w/2,h-15);
     if (coupled) lastPoints=[...points.values()].filter(p=>!p.input);
     canvas.setAttribute('aria-label',`${coupled?patterns[mode].name:'Forward reference'}, ${topology.patches.length} patches, output ${topology.output} ${signed(data.output)}. ${coupled ? 'Inspect patch values with the buttons below.' : 'Directed forward computation.'}`);
@@ -177,15 +162,15 @@
   function render() {
     const pattern=patterns[mode];
     depthControl.disabled=mode!=='recursive';
-    el('brain-mode-name').textContent=mode==='recursive'&&depth===0?'Input-only control':pattern.name;
-    el('brain-mode-title').textContent=mode==='recursive'&&depth===0?'Settle without an observer.':pattern.title;
-    el('brain-mode-description').textContent=mode==='recursive'&&depth===0?patterns.flat.description:pattern.description;
-    el('brain-mode-analogy').textContent=mode==='recursive'&&depth===0?patterns.flat.analogy:pattern.analogy;
+    el('brain-mode-name').textContent=pattern.name;
+    el('brain-mode-title').textContent=pattern.title;
+    el('brain-mode-description').textContent=pattern.description;
+    el('brain-mode-analogy').textContent=pattern.analogy;
     el('brain-mode-note').textContent=pattern.note;
-    el('brain-depth-help').textContent=mode==='recursive'?'Depth changes the number of observer populations.':'Observer depth applies only to recursive mode.';
+    el('brain-depth-help').textContent=mode==='recursive'?'Depth changes the number of observer populations.':'Observer depth applies only with observers.';
     el('brain-legend-observe').hidden=!topology.edges.some(edge=>edge.kind==='error');
     el('brain-legend-return').hidden=topology.levels===1;
-    el('brain-legend-populations').textContent=mode==='flat'?'Six independent patches read the supplied inputs.':'Each pair is a population; all use the same patch rule.';
+    el('brain-legend-populations').textContent='Each pair is a population; all use the same patch rule.';
     el('brain-signal-value').textContent=signed(input);
     el('brain-forward-output').textContent=signed(reference.output);
     el('brain-recursive-output').textContent=signed(result.output);
@@ -246,5 +231,5 @@
   new ResizeObserver(()=>{diagram(forward,reference,false);diagram(recursive,result,true);drawTrace();}).observe(root);
   [signal,modeControl,run,stepButton,reset].forEach(control=>{control.disabled=false;});
   run.setAttribute('aria-pressed','false');buttons();
-  setStatus('Ready. Choose a pattern and run settlement. The forward reference uses the same example relations without joint repair.');render();
+  setStatus('Ready. Choose a layout and run settlement. The forward reference uses the same example relations without joint repair.');render();
 })();
