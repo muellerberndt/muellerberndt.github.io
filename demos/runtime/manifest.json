@@ -1,6 +1,6 @@
 {
   "repository": "https://github.com/muellerberndt/cadence-demos",
-  "commit": "e22bcb07623bb087bbc8de38941a252114e53381",
+  "commit": "736cd899a0b22a2f325a5cf7cd242fcfad0af863",
   "adaptation": "HTML metadata, archive presentation copy, shared CSS and a separate touch/camera presentation adapter; original application scripts, model, audio, emulator and ROM bytes unchanged.",
   "files": [
     {
@@ -14,8 +14,8 @@
       "source": "amen/web/index.html",
       "path": "amen/index.html",
       "source_sha256": "eabed72121f0cff95ed9015b946d41006b2e27242f7a5a43e07d45c6dfe19cf7",
-      "published_sha256": "a1d0f3b5869c95b0dbb9c78af4238f9d1fa011bdf2ac8a8052aa6aeb488022eb",
-      "bytes": 61665
+      "published_sha256": "c984d0ac26be8b76c41c70fa9c4d2d6658e41cbbd1e73bfda42caf2e58809790",
+      "bytes": 61705
     },
     {
       "source": "amen/web/kit/bass.wav",
@@ -41,15 +41,15 @@
     {
       "source": "amen/web/models/index.json",
       "path": "amen/models/index.json",
-      "source_sha256": "b8a50615567b7f157cdc11eb3202a2ea8b718c5867883cc4686abd135f699743",
-      "published_sha256": "b8a50615567b7f157cdc11eb3202a2ea8b718c5867883cc4686abd135f699743",
-      "bytes": 1104
+      "source_sha256": "2c154a5a84604947578851846dd38330c14451fd34acba8694eb1d53ce500ef7",
+      "published_sha256": "2c154a5a84604947578851846dd38330c14451fd34acba8694eb1d53ce500ef7",
+      "bytes": 1314
     },
     {
       "source": "amen/web/models/three-corpora/model.json",
       "path": "amen/models/three-corpora/model.json",
-      "source_sha256": "0917a691572df9e9817d9a1d9ec6f92a7d7de095c236e878d5045988ad5e1cde",
-      "published_sha256": "0917a691572df9e9817d9a1d9ec6f92a7d7de095c236e878d5045988ad5e1cde",
+      "source_sha256": "bf040a57a79ad8299feb40efa22c27d7c299d86df9b96831dbf0281de8825e9d",
+      "published_sha256": "bf040a57a79ad8299feb40efa22c27d7c299d86df9b96831dbf0281de8825e9d",
       "bytes": 1648
     },
     {
@@ -76,23 +76,23 @@
     {
       "source": "atari-arcade/web/arcade.js",
       "path": "atari-arcade/arcade.js",
-      "source_sha256": "79ce2d333b23452184d67010ddcef47b375d74228b7645cdcb8cf77d4d2d296c",
-      "published_sha256": "79ce2d333b23452184d67010ddcef47b375d74228b7645cdcb8cf77d4d2d296c",
-      "bytes": 17559
+      "source_sha256": "3cd53859911e0c641f2599d95be29bf351452f9ac62d6ed817afe5cdebd519b1",
+      "published_sha256": "3cd53859911e0c641f2599d95be29bf351452f9ac62d6ed817afe5cdebd519b1",
+      "bytes": 16300
     },
     {
       "source": "atari-arcade/web/brain_worker.js",
       "path": "atari-arcade/brain_worker.js",
-      "source_sha256": "f2b9c9efcc0e6e0025f2c104d3f026d5b00ca6a57c185011c49f0e9eb6195614",
-      "published_sha256": "f2b9c9efcc0e6e0025f2c104d3f026d5b00ca6a57c185011c49f0e9eb6195614",
-      "bytes": 2670
+      "source_sha256": "aedebb6745241a1720f35fd9d2b58868882f5e7c4b1cd5036e9e3b25e5be60ac",
+      "published_sha256": "aedebb6745241a1720f35fd9d2b58868882f5e7c4b1cd5036e9e3b25e5be60ac",
+      "bytes": 2537
     },
     {
       "source": "atari-arcade/web/cadence.js",
       "path": "atari-arcade/cadence.js",
-      "source_sha256": "a7f38a7df19f86705045657a506adff9dc5b0f6099b9f6a926784be13cc3a088",
-      "published_sha256": "a7f38a7df19f86705045657a506adff9dc5b0f6099b9f6a926784be13cc3a088",
-      "bytes": 44110
+      "source_sha256": "96e6c991363dd695578ecb7de23839a4433a2b8251c815a10a2a5a5dd4562320",
+      "published_sha256": "96e6c991363dd695578ecb7de23839a4433a2b8251c815a10a2a5a5dd4562320",
+      "bytes": 30667
     },
     {
       "source": "atari-arcade/web/emulator.js",
@@ -104,16 +104,16 @@
     {
       "source": "atari-arcade/web/emulator_worker.js",
       "path": "atari-arcade/emulator_worker.js",
-      "source_sha256": "260e43e96ab8dcecd67ed7dcdb82a1d58a3f97d2856cc0ca10b761dd88bf182f",
-      "published_sha256": "260e43e96ab8dcecd67ed7dcdb82a1d58a3f97d2856cc0ca10b761dd88bf182f",
-      "bytes": 2484
+      "source_sha256": "bc87ee8ffc04744b7a70736560c3dd38a57b45feb0ac58c75998956155b65f11",
+      "published_sha256": "bc87ee8ffc04744b7a70736560c3dd38a57b45feb0ac58c75998956155b65f11",
+      "bytes": 2552
     },
     {
       "source": "atari-arcade/web/index.html",
       "path": "atari-arcade/index.html",
-      "source_sha256": "a2dfe76e5724a22f6e2e4acf8f597bacb02b08d96a2378d225663ec404f36935",
-      "published_sha256": "2762d48b57222d7cd6c0ce2d8279fbc6710c2dd1863d951250a77b5434880e90",
-      "bytes": 27541
+      "source_sha256": "be55a712dedc0a05990a6ced361877876cf5a7ecf17bbc2da0bf34e45162ec86",
+      "published_sha256": "599c149d4e073ccca8793a4d99e8e97549bebb084ff587a7ceef954f2e017179",
+      "bytes": 27094
     },
     {
       "source": "atari-arcade/web/roms/atlantis.bin",

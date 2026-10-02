@@ -99,8 +99,8 @@ System 1 is the default brain, composed with Brain.compose; System 2 adds option
 
 The official demonstration source is https://github.com/muellerberndt/cadence-demos. The website showcase is https://floatingpragma.io/demos/.
 
-- Atari Arcade: https://floatingpragma.io/demos/atari-arcade/ — a playable browser edition in which fresh Cadence brains learn Freeway and Atlantis from a scripted teacher and rewards, on an Atari 2600 emulator with a JavaScript port of the reference engine; the Python server edition with four games is at https://github.com/muellerberndt/cadence-demos/tree/main/atari-arcade.
-- AMEN: https://floatingpragma.io/demos/amen/ — a playable archived record-memory composer; fixed learned checkpoint, generated musical events and supplied instrument.
+- Atari Arcade: https://floatingpragma.io/demos/atari-arcade/ — a playable browser edition in which fresh Cadence brains learn Freeway and Atlantis from a scripted teacher and rewards, on an Atari 2600 emulator with a JavaScript version of the Cadence 0.70 System 1 brain; the Python server edition with four games is at https://github.com/muellerberndt/cadence-demos/tree/main/atari-arcade.
+- AMEN: https://floatingpragma.io/demos/amen/ — a playable record-patch composer trained on Cadence 0.70; fixed learned checkpoint, generated musical events and supplied instrument.
 - Patch World: https://floatingpragma.io/demos/patch-world/ — a playable JavaScript artificial-life simulation on the Cadence 0.70 population solver: brains that learn in the browser and evolve their layouts, with observer stages as an optional gene.
 - Rover Lab: https://github.com/muellerberndt/cadence-demos/tree/main/rover-lab — local simulated rover on cadence-net 0.70.0 whose live body model adapts when a wheel weakens, with no separate training mode; a four-patch brain, an optional observer arm, a supplied action selector and declared timing measurements.
 
