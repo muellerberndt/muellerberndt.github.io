@@ -353,7 +353,7 @@ def check_evidence(site, errors):
     require(len(doom["confirmations"]) == 2, "Doom: expected both confirmations")
     for row in doom["confirmations"]:
         label = row["id"]
-        d = meta / "cadence-demos/doom-lab/evidence/run3" / label
+        d = meta / "cadence-doom-lab/evidence/run3" / label
         v = row["reported_independent_verification"]
         require(row["passed"] and v["passed"], f"{label}: confirmation/verification did not pass")
         for role, r in row["outcomes"].items():

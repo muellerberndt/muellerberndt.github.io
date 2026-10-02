@@ -1,6 +1,6 @@
 {
   "repository": "https://github.com/muellerberndt/cadence-demos",
-  "commit": "192a099bcab7df2b9fa3ed3c505fa9c87b410215",
+  "commit": "e22bcb07623bb087bbc8de38941a252114e53381",
   "adaptation": "HTML metadata, archive presentation copy, shared CSS and a separate touch/camera presentation adapter; original application scripts, model, audio, emulator and ROM bytes unchanged.",
   "files": [
     {
@@ -132,9 +132,9 @@
     {
       "source": "patch-world/index.html",
       "path": "patch-world/index.html",
-      "source_sha256": "3663c837fbffb2eb94229289d2807784a3d2e90bf459a39580ca2fcbe42406e9",
-      "published_sha256": "6bc3553a5fa0d2d572c3e287b731622b503818ef857960b9afa6f60c4f2179cf",
-      "bytes": 84879
+      "source_sha256": "0ba14ab21f5044ca6fac406e04414150c122615804531135c6fbfd88e12485ce",
+      "published_sha256": "3b571bb8b4e733b9228ec9d77b4459015eb97bdc7e6f8a72c2b8f686533f6b41",
+      "bytes": 91761
     }
   ]
 }

@@ -1,23 +1,23 @@
 {
   "/": {
-    "sha256": "05cb5ed8baa527e422f31d3fa4cf689d2dbb995644582d9db7746f7e6fc6e1e3",
-    "lastmod": "2026-09-30"
+    "sha256": "748dfd64d37fcb140dfbe9c393a8188f53deb508eb9242338c2caeb2acc45d61",
+    "lastmod": "2026-10-02"
   },
   "/cadence/": {
-    "sha256": "9ab0c3e2c33ea0feb04b2932d78a321176b9b08a8724bd8fe1b54a4f798c42b0",
-    "lastmod": "2026-09-30"
+    "sha256": "a63b85d593d0d80c0f50b62cdfc8bf68fbe3229952210d5db40acbc255753074",
+    "lastmod": "2026-10-02"
   },
   "/demos/": {
-    "sha256": "ffdcc86908a8b2e4752f118bb41f7892cb4076c64bfdc039a3ab78ebb7832e60",
-    "lastmod": "2026-10-01"
+    "sha256": "141e41bc306f47b6ddb630a41328428abbdb185430f382d71e0a0fd9924866f1",
+    "lastmod": "2026-10-02"
   },
   "/demos/amen/": {
     "sha256": "8d5ad8b95b5c146f3daffcf1b9b2d7e8c79b332089f45a7e5dea99d1c367b512",
     "lastmod": "2026-10-01"
   },
   "/demos/patch-world/": {
-    "sha256": "9d3522e7e31f644c470c74db5b868e9161a8624e296cd1a5e4087eb84a8961f4",
-    "lastmod": "2026-10-01"
+    "sha256": "b9d124139699f0b31a0cb35a1af72b1a0d0252beda6de2ec8da2309fa82e328f",
+    "lastmod": "2026-10-02"
   },
   "/demos/atari-arcade/": {
     "sha256": "f2fa9844ab6eb7a0cdf687318c6908cc42c166534ead4fef0a29d8466efcd8f9",

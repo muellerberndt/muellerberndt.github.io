@@ -88,8 +88,7 @@ The official demonstration source is https://github.com/muellerberndt/cadence-de
 
 - Atari Arcade: https://floatingpragma.io/demos/atari-arcade/ — a playable browser edition in which fresh Cadence brains learn Freeway and Atlantis from a scripted teacher and rewards, on an Atari 2600 emulator with a JavaScript port of the reference engine; the Python server edition with four games is at https://github.com/muellerberndt/cadence-demos/tree/main/atari-arcade.
 - AMEN: https://floatingpragma.io/demos/amen/ — a playable archived record-memory composer; fixed learned checkpoint, generated musical events and supplied instrument.
-- Patch World: https://floatingpragma.io/demos/patch-world/ — a playable JavaScript artificial-life simulation with recursive settling brains, learning and evolving layouts.
-- Doom Lab: https://github.com/muellerberndt/cadence-demos/tree/main/doom-lab — local ViZDoom application, confirmed Basic-scenario checkpoints, pinned runtime and deployment validation.
-- Rover Lab: https://github.com/muellerberndt/cadence-demos/tree/main/rover-lab — local simulated wheel-adaptation comparison; three four-patch layouts, with a supplied action selector and declared timing measurements.
+- Patch World: https://floatingpragma.io/demos/patch-world/ — a playable JavaScript artificial-life simulation on the Cadence 0.70 population solver: brains that learn in the browser and evolve their layouts, with observer stages as an optional gene.
+- Rover Lab: https://github.com/muellerberndt/cadence-demos/tree/main/rover-lab — local simulated rover on cadence-net 0.70.0 whose live body model adapts when a wheel weakens, with no separate training mode; a four-patch brain, an optional observer arm, a supplied action selector and declared timing measurements.
 
 The embedded browser applications are copied from a pinned cadence-demos commit; their source and published file hashes are at https://floatingpragma.io/demos/runtime/manifest.json. Their engines differ, so the showcase identifies each mechanism and result separately.
