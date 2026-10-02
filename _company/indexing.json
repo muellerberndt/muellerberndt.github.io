@@ -1,6 +1,6 @@
 {
   "/": {
-    "sha256": "a406acc5984ed455b056d5329058b9e1308cabf43620c567402c1d8ddce15008",
+    "sha256": "ac03077ff1fe6019edb07bd262a9b634324aa42011346ceba70786e4b0607da9",
     "lastmod": "2026-10-02"
   },
   "/cadence/": {
@@ -8,7 +8,7 @@
     "lastmod": "2026-10-02"
   },
   "/demos/": {
-    "sha256": "0179547aafbfd60c290f5ad3de5be48f197f405fd9c8f32e000dff07266f5cba",
+    "sha256": "34cbb9acd9a7f03d6ebbc71246d731a623cff1adf62ed30bcb2f044ebabb607b",
     "lastmod": "2026-10-02"
   },
   "/demos/amen/": {
@@ -23,8 +23,12 @@
     "sha256": "782ed30bf1aad25ee69c0da70df9c327f00c9c2dbf6c2e33b5398102469ed9ab",
     "lastmod": "2026-10-02"
   },
+  "/demos/rover-lab/": {
+    "sha256": "92a509e6d093f33cf3740345e6d6b5636cad4ecb2ae67a339ebc067c964a8bdc",
+    "lastmod": "2026-10-02"
+  },
   "/robotics/": {
-    "sha256": "286c486d68ff475fc8b004a6f3e4c1b5884b118b95de2f24041ef547cbe0a07d",
+    "sha256": "63c01342a1cb6c3e94457c3af318905d6f8b852ddc63af803b58ec46d9edce37",
     "lastmod": "2026-10-02"
   },
   "/investors/": {

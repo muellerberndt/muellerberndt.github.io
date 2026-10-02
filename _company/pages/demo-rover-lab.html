@@ -1,0 +1,22 @@
+<section class="page-hero demo-player-intro">
+ <div class="container">
+  <p class="eyebrow">Demos / Robotics</p>
+  <h1>Rover Lab.</h1>
+  <p class="lead">Weaken one wheel and watch the live brain relearn its body.</p>
+ </div>
+</section>
+<section class="demo-player">
+ <div class="container">
+  <div class="demo-player-controls">
+   <p class="small">Press <strong>Run automatic demo</strong>. It takes about a minute and a half: normal wheels, a weakened right wheel, then the wheel restored. Or drive the experiment yourself with <strong>Start</strong>, <strong>Weaken wheel</strong> and <strong>Restore</strong>.</p>
+   <div class="actions"><a class="text-link" href="/demos/">All demos ↗</a><button class="button secondary" type="button" data-demo-fullscreen="demo-rover-lab" hidden>Full screen</button><a class="text-link" href="https://github.com/muellerberndt/cadence-demos/tree/main/rover-lab">Source ↗</a></div>
+  </div>
+  <iframe class="demo-embed" id="demo-rover-lab" data-demo-autosize="rover-lab" scrolling="no" src="/demos/runtime/rover-lab/index.html" title="Rover Lab: a Cadence brain adapting to a weakened wheel" allow="fullscreen" allowfullscreen sandbox="allow-scripts allow-same-origin allow-popups allow-downloads"></iframe>
+ </div>
+</section>
+<section class="section">
+ <div class="container split">
+  <div><p class="eyebrow">Inside the lab</p><h2>It learns from<br>what the body did.</h2></div>
+  <div><p class="lead">Two rovers drive to the same targets with the same controller. One brain keeps learning. The other is a frozen copy of it.</p><p>Each brain predicts how a wheel command will move the rover, and the controller picks the command whose predicted motion points at the target. The brains receive only the commands that were executed and the motion that was measured. Wheel strength, the phase of the experiment and the change itself are hidden from them.</p><p>When the right wheel weakens, the live brain's predictions go wrong for a few steps and then follow the new body. In recorded runs it reached all five targets on the weakened body, and its frozen copy reached two or three. An adaptive estimator and a small neural network drive two more rovers for comparison.</p><p>The brain is four small patches. They read the wheel commands and one another's states, settle together on each prediction and repair their own connections from the motion the body reports. The page shows their states and errors while they run.</p><p>Everything runs in your browser at ten control steps per second, and every step is timed against a 100 ms deadline. The same lab runs in Python on the Cadence library, and the browser edition is checked against it.</p><p class="small muted">Rover Lab is a simulation. A physical robot evaluation is the next test.</p><div class="actions"><a class="text-link" href="https://github.com/muellerberndt/cadence-demos/tree/main/rover-lab#measurement-and-evidence">Source and measurements ↗</a><a class="text-link" href="/cadence/#how-it-works">How Cadence works ↗</a><a class="text-link" href="/robotics/">Explore a robotics partnership ↗</a></div></div>
+ </div>
+</section>

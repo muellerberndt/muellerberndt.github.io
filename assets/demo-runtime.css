@@ -64,3 +64,8 @@ select{font-size:16px!important}
 [data-demo="atari-arcade"] .about a{color:var(--sun)}
 [data-demo="atari-arcade"] input[type=range]{min-height:24px;vertical-align:middle}
 @media(max-width:600px){[data-demo="atari-arcade"] .stat{min-width:calc(50% - 10px)}[data-demo="atari-arcade"] header .pace{margin-left:0}}
+
+/* Rover Lab keeps its own panel and rule colours; its canvases draw on them. The frame takes the page's height. */
+[data-demo="rover-lab"]{--panel:#1d211f;--line:#343b36}
+[data-demo="rover-lab"] .button{min-height:44px}
+[data-demo="rover-lab"] .app-shell{padding-inline:clamp(14px,3vw,48px)}

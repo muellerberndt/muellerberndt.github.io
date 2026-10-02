@@ -1,6 +1,6 @@
 {
   "repository": "https://github.com/muellerberndt/cadence-demos",
-  "commit": "f364c0825ebdbe9632f4fa21969062fbf5af3e49",
+  "commit": "c78b9349e45510de04f9c6a8bb6b00b90736cc28",
   "adaptation": "HTML metadata, archive presentation copy, shared CSS and a separate touch/camera presentation adapter; original application scripts, model, audio, emulator and ROM bytes unchanged.",
   "files": [
     {
@@ -14,7 +14,7 @@
       "source": "amen/web/index.html",
       "path": "amen/index.html",
       "source_sha256": "78c687c4e6209b1dc7ae9fa0b0dafc6448d102b4d0d964150b4500736f0a9eec",
-      "published_sha256": "b9a6e0ff088958e1ce7e638c010abd4be04cbf7488cb58d4ddd20340915e054e",
+      "published_sha256": "52d8511cbf1066130887babfafc0b28483961a2433b5c881ec7e74b8e9f4a938",
       "bytes": 61675
     },
     {
@@ -112,7 +112,7 @@
       "source": "atari-arcade/web/index.html",
       "path": "atari-arcade/index.html",
       "source_sha256": "be55a712dedc0a05990a6ced361877876cf5a7ecf17bbc2da0bf34e45162ec86",
-      "published_sha256": "599c149d4e073ccca8793a4d99e8e97549bebb084ff587a7ceef954f2e017179",
+      "published_sha256": "9fb9b675f8d51d2b30533abc39c5fe9c2107cc1c12298ecd5bc73688f48c9435",
       "bytes": 27094
     },
     {
@@ -133,8 +133,57 @@
       "source": "patch-world/index.html",
       "path": "patch-world/index.html",
       "source_sha256": "0ba14ab21f5044ca6fac406e04414150c122615804531135c6fbfd88e12485ce",
-      "published_sha256": "3b571bb8b4e733b9228ec9d77b4459015eb97bdc7e6f8a72c2b8f686533f6b41",
+      "published_sha256": "4a7e4980d1fe8580a2cbce356bda4470eb678db2b8d65397eb12418f70b057d4",
       "bytes": 91761
+    },
+    {
+      "source": "rover-lab/web/app.js",
+      "path": "rover-lab/app.js",
+      "source_sha256": "06b00c4bce77e585b8d89a98271e88e4f6749c731d3968994328a318e487a31b",
+      "published_sha256": "06b00c4bce77e585b8d89a98271e88e4f6749c731d3968994328a318e487a31b",
+      "bytes": 22042
+    },
+    {
+      "source": "rover-lab/web/cadence.js",
+      "path": "rover-lab/cadence.js",
+      "source_sha256": "13337b6289e3cdcad2b70e0e30ce8d62ec96061689dc8a8dcb0f65038c297c2d",
+      "published_sha256": "13337b6289e3cdcad2b70e0e30ce8d62ec96061689dc8a8dcb0f65038c297c2d",
+      "bytes": 32991
+    },
+    {
+      "source": "rover-lab/web/index.html",
+      "path": "rover-lab/index.html",
+      "source_sha256": "7fbc7378f8988c4ce39c4581f7ab56c378424d6b144bf4da40e0752fb94ae150",
+      "published_sha256": "2348634a4622106651348a37a4219e9fceb3d86d9d1f318384ca03f511835ba4",
+      "bytes": 12088
+    },
+    {
+      "source": "rover-lab/web/models.js",
+      "path": "rover-lab/models.js",
+      "source_sha256": "a8ea8566f52b128865f287ca6618b35a4db22e46ae68c69db006072ab5b4cbe0",
+      "published_sha256": "a8ea8566f52b128865f287ca6618b35a4db22e46ae68c69db006072ab5b4cbe0",
+      "bytes": 17738
+    },
+    {
+      "source": "rover-lab/web/rover.js",
+      "path": "rover-lab/rover.js",
+      "source_sha256": "f4b2f29da14194c2665117b7b3dc06343268023e8e84a4960dce672e164ad2cf",
+      "published_sha256": "f4b2f29da14194c2665117b7b3dc06343268023e8e84a4960dce672e164ad2cf",
+      "bytes": 20514
+    },
+    {
+      "source": "rover-lab/web/style.css",
+      "path": "rover-lab/style.css",
+      "source_sha256": "6f4514e2731481cead159547ffd71f809d38c8f55d90b85c324037277344de60",
+      "published_sha256": "6f4514e2731481cead159547ffd71f809d38c8f55d90b85c324037277344de60",
+      "bytes": 18636
+    },
+    {
+      "source": "rover-lab/web/worker.js",
+      "path": "rover-lab/worker.js",
+      "source_sha256": "6a8136584b4b30eb30c31ed83de4f28992b23af41ca99bdeb2cb13da7add3295",
+      "published_sha256": "6a8136584b4b30eb30c31ed83de4f28992b23af41ca99bdeb2cb13da7add3295",
+      "bytes": 4537
     }
   ]
 }

@@ -11,6 +11,7 @@ Cadence 0.70.0 builds one continuing brain. System 1 is the default: perception,
 - [Cadence](https://floatingpragma.io/cadence/): what it is, what a robot gains, how it works and the code.
 - [Demonstrations](https://floatingpragma.io/demos/): working applications and experiments from cadence-demos.
 - [How it works](https://floatingpragma.io/cadence/#how-it-works): small self-reading patches that settle on one answer and learn from experience.
+- [Compared with deep learning](https://floatingpragma.io/cadence/#deep-networks): a settled equilibrium of the whole brain and local repair, beside a one-pass network trained by backpropagation.
 - [Interactive brain](https://floatingpragma.io/cadence/#inside-the-brain): switch between the default layout and one with observers, inspect patch state and error, and compare settlement with a forward calculation.
 - [Robotics](https://floatingpragma.io/robotics/): proposed evaluation programme and changed-wheel rover experiment.
 - [Investors](https://floatingpragma.io/investors/): proposed $4 million seed round over 18 months.
@@ -57,6 +58,10 @@ Animal and human brains learn from experience and not by backpropagation with gr
 
 These properties are shown in simulation (Rover Lab, Patch World, Atari Arcade). Cadence 0.70 is experimental research software; a physical robot evaluation is the next test. Under idealized conditions the local learning contrast follows the gradient that backpropagation would compute; the comparison is of update mechanisms.
 
+## Compared with a deep neural network
+
+A feed-forward deep network computes an answer in one pass from input to output and is trained by backpropagation, which carries an error measured at the output backwards through every layer. A Cadence brain reaches its answer by settling: its parts are connected in both directions, each patch repairs its own disagreement with its neighbours, and the equilibrium of the whole brain is the answer, a consensus reached through local repair alone. Learning is the same process: an outcome disturbs the equilibrium, the patches repair the disagreement, the connections involved change from local activity, and the brain settles into a new equilibrium. Cadence brains can be deep; more layers join the same settlement and the learning stays local. Full comparison: https://github.com/muellerberndt/cadence#how-a-cadence-brain-differs-from-a-feed-forward-network
+
 ## Brain design: System 1 and optional System 2
 
 System 1 is the default brain, composed with Brain.compose; System 2 adds optional observers to the same brain. Every answer is the settled state of the whole brain, and a brain that does not settle refuses to act. Beside the main interface, Cadence 0.70.0 keeps advanced engines with their own contracts: the population solver, where populations of patches settle one joint energy and observers read exact prediction errors; record patches for event records and consolidation; and a temporal model for learned action consequences and planning. System 1 and System 2 name functional roles in software, not claims of biological equivalence. Choose observers by measured task quality, query latency and learning cost; deeper is not automatically better or faster. Archived AMEN uses a record-patch brain trained on an earlier release.
@@ -65,6 +70,7 @@ System 1 is the default brain, composed with Brain.compose; System 2 adds option
 - Work in physics, mathematics, AI and security: https://floatingpragma.io/work/
 - Brain design: https://github.com/muellerberndt/cadence/blob/v0.70.0/docs/brain.md
 - How it works: https://floatingpragma.io/cadence/#how-it-works
+- Compared with deep learning: https://floatingpragma.io/cadence/#deep-networks
 
 ## Public demonstrations
 
@@ -73,6 +79,6 @@ The official demonstration source is https://github.com/muellerberndt/cadence-de
 - Atari Arcade: https://floatingpragma.io/demos/atari-arcade/ — a playable browser edition in which fresh Cadence brains learn Freeway and Atlantis from a scripted teacher and rewards, on an Atari 2600 emulator with a JavaScript version of the Cadence 0.70 System 1 brain; the Python server edition with four games is at https://github.com/muellerberndt/cadence-demos/tree/main/atari-arcade.
 - AMEN: https://floatingpragma.io/demos/amen/ — a playable record-patch composer trained on Cadence 0.70; fixed learned checkpoint, generated musical events and supplied instrument.
 - Patch World: https://floatingpragma.io/demos/patch-world/ — a playable JavaScript artificial-life simulation on the Cadence 0.70 population solver: brains that learn in the browser and evolve their layouts, with observer stages as an optional gene.
-- Rover Lab: https://github.com/muellerberndt/cadence-demos/tree/main/rover-lab — local simulated rover on cadence-net 0.70.0 whose live body model adapts when a wheel weakens, with no separate training mode; a four-patch brain, an optional observer arm, a supplied action selector and declared timing measurements.
+- Rover Lab: https://floatingpragma.io/demos/rover-lab/ — a playable browser edition of a simulated rover whose live body model adapts when a wheel weakens, with no separate training mode: a four-patch brain on a JavaScript version of the Cadence 0.70 population solver, a supplied action selector and declared timing measurements; the Python edition on cadence-net 0.70.0, with an optional observer arm, is at https://github.com/muellerberndt/cadence-demos/tree/main/rover-lab.
 
 The embedded browser applications are copied from a pinned cadence-demos commit; their source and published file hashes are at https://floatingpragma.io/demos/runtime/manifest.json. Their engines differ, so the showcase identifies each mechanism and result separately.
