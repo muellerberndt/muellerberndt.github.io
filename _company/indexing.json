@@ -1,10 +1,10 @@
 {
   "/": {
-    "sha256": "23132188903a9804931ad7e2c551b763e58236f602a5d56242a9b4eb7357ca03",
+    "sha256": "ca1bf95e8624147086e41704f00ee0f989bb8e91b916ebd6700fce3353f0c20a",
     "lastmod": "2026-10-02"
   },
   "/cadence/": {
-    "sha256": "8a42b72a3e43ade480928092e9ddd3a4d3809ce37b7301705ed0a6a5bf30e54b",
+    "sha256": "3266355c8d1d234f2a8f8bf0e974c520a3bff38733f78022cdb32d8c4b3aae75",
     "lastmod": "2026-10-02"
   },
   "/demos/": {
