@@ -2,7 +2,7 @@
 
 ## Company
 
-Cadence is a novel real-time AI modeled after animal and human brains. It learns from live experience. Most of today's AI runs on transformers, which are completely feed-forward and are typically deployed with their attention matrices and all other weights fixed once training ends; Cadence runs in real time and keeps learning from each action and its result. Pragma Research's ambition is to supply brains for robots that keep improving throughout their working lives. Pragma Research builds the brains; robot manufacturers build the bodies.
+Cadence is a novel real-time AI modeled after animal and human brains. It learns from live experience. A typical deployed transformer keeps its learned weights fixed during use. Cadence explores an equilibrium brain that retains knowledge and can repair it from witnessed outcomes. Pragma Research's ambition is to supply brains for robots that keep improving throughout their working lives. Pragma Research builds the brains; robot manufacturers build the bodies.
 
 The company is seeking robotics evaluation partners and investors. The proposed commercial path starts with a paid evaluation on a concrete adaptation or recovery task, followed by a supported runtime and embodiment license, and expansion across robots and tasks. The proposed financing target is $4 million over 18 months for physical proof, a paid evaluation and repeatable integration. These are plans rather than achieved customer or financing outcomes.
 
@@ -19,9 +19,11 @@ The company is seeking robotics evaluation partners and investors. The proposed 
 
 ## Cadence architecture
 
-Cadence 0.71.0 builds one continuing brain. System 1 is the default: perception, plastic connections, a working trace, associative memory, action and private imagination, learning from the measured outcome of each action with no separate training mode. System 2 is optional: observing regions read the brain's own activity and return feedback inside the same settlement. Bounded observer-like, self-reading patches carry local state and records, receive signals through ports, and repair their disagreement together; the settled state supplies the answer. A layout whose patches never settle against one another does not build.
+Cadence 0.71.1 supplies one continuing Brain.compose interface. Default System 1 contains reciprocal neural regions, plastic connections, a working trace, associative memory and private responses to supplied hypothetical observations. Optional System 2 adds observing regions inside that same settlement. Bounded observer-like patches carry local state and receive signals through ports; readback, retained records and local repair support the intended world model. Actual accepted outcomes or demonstrations can update it. The acquired brain persists through use.
 
-Cortex and Brain expose a shared mathematical substrate. The runtime jointly settles represented state, recomputing exact prediction errors with analytic derivatives and a global energy check. Numerical settling energy is an objective function, not electrical energy in joules. The biological hypothesis is inspired by cortical cooperation; software behavior alone does not establish that a human cortical column implements these equations.
+Its intended lifecycle is bootstrap, familiar operation, witnessed mismatch, local repair and retained correction. Familiar behavior should reuse acquired knowledge at low additional cost. Automatic failure detection, selective learning, integrated learned environmental dynamics and an efficiency advantage require their own tests. Numerical convergence does not establish correctness about the world, and mathematical energy is not electrical energy. Canonical guide: https://github.com/muellerberndt/cadence/blob/main/docs/world-model.md
+
+The separate advanced population solver jointly settles a prediction-error objective with analytic derivatives. This is distinct from the default Brain neural equations and optional state-feedback observers. Numerical settling energy is an objective function, not electrical energy in joules. Software behavior alone does not establish that a human cortical column implements these equations.
 
 The base brain can already be deep and modular; observers are an optional addition. Real-time describes participation in an ongoing observation/action loop, with decision rates measured for each body and workload. Hard deadlines, useful depth advantages and broad skill retention need their own evidence.
 
@@ -29,15 +31,15 @@ The open-source core requires Python 3.11 or later and NumPy, and is licensed GP
 
 - Repository: https://github.com/muellerberndt/cadence
 - Package: https://pypi.org/project/cadence-net/
-- Quickstart: https://github.com/muellerberndt/cadence/blob/v0.71.0/docs/quickstart.md
-- Architecture: https://github.com/muellerberndt/cadence/blob/v0.71.0/docs/equilibrium/DRSN.md
-- Learning and memory: https://github.com/muellerberndt/cadence/blob/v0.71.0/docs/continuous.md
+- Quickstart: https://github.com/muellerberndt/cadence/blob/v0.71.1/docs/quickstart.md
+- Architecture: https://github.com/muellerberndt/cadence/blob/v0.71.1/docs/equilibrium/DRSN.md
+- Learning and memory: https://github.com/muellerberndt/cadence/blob/v0.71.1/docs/continuous.md
 - Preprint: https://philpapers.org/rec/MUECAP-2
 - Official demo code: https://github.com/muellerberndt/cadence-demos
 
 ## Interactive architecture illustration
 
-https://floatingpragma.io/cadence/#inside-the-brain lets visitors change a sensory signal, choose the default state-coupled layout or one with observers, vary observer depth, inspect patch state/prediction/error, and step through a bounded settlement. Up to six scalar patches use fixed illustrative weights, exact error derivatives and a positive activity penalty. The forward reference uses the same relations by forward substitution. The illustration explains computation; it is not a trained brain, a performance benchmark or the full Cadence runtime. Query settlement changes activity; learning can also change relation parameters.
+https://floatingpragma.io/cadence/#inside-the-brain lets visitors change a sensory signal, choose state-coupled or observer layouts of the separate population solver, vary observer depth, inspect patch state/prediction/error, and step through a bounded settlement. Up to six scalar patches use fixed illustrative weights, exact error derivatives and a positive activity penalty. The forward reference uses the same relations by forward substitution. The illustration explains computation; it is not a trained brain, a performance benchmark or the full Cadence runtime. Query settlement changes activity; learning can also change relation parameters.
 
 ## Experimental evidence
 
@@ -76,34 +78,29 @@ Use the papers and scientific repository for theorem statements, hypotheses, pub
 
 ## Advantages for embodied AI
 
-Animal and human brains learn from experience and not by backpropagation with gradient descent. Cadence is designed the same way: its connections change locally while the brain keeps running. For a robot or another embodied system this gives:
+Cadence takes inspiration from continuing biological learning. Its local plasticity is a software mechanism, not a claim of biological equivalence. The embodied design includes:
 
-- Learning on the job: the same brain acts and learns from every measured outcome, with no training phase before deployment and no difference between training and inference.
-- Adaptation to changed conditions: a worn actuator, a new payload or a different surface shows up in what the robot measures, and the live brain adjusts without being told what changed.
+- Learning on the job: bootstrap useful skills, then keep the acquired brain alive during use and admit actual outcomes. Automatic selection of necessary updates requires its own test.
+- Adaptation to changed conditions: a worn actuator, a new payload or a different surface shows up in what the robot measures, and measured outcomes can support correction. Recovery and retained skills are separate tests.
 - Local learning: each connection changes from the activity of the two units it joins; the default brain keeps no backward computation graph, so learning can run on the robot itself.
 - Memory: a working trace carries the recent past and an associative memory keeps what mattered.
 - Settled answers: every action is the settled state of the whole brain, and a brain that does not settle refuses to act.
 - Inspection: the activity of every region can be read while the brain runs, and private imagination tests a response before the body commits to it.
 
-These properties are shown in simulation (Rover Lab, Patch World, Atari Arcade). Cadence 0.71 is experimental research software; a physical robot evaluation is the next test. Under idealized conditions the local learning contrast follows the gradient that backpropagation would compute; the comparison is of update mechanisms.
+The separate Rover Lab, Patch World and Atari Arcade engines demonstrate bounded parts of this design in simulation. Cadence 0.71 is experimental research software; a physical robot evaluation is the next test. Conditional gradient arguments do not establish task competence or an efficiency advantage.
 
 ## Compared with a deep neural network
 
-A feed-forward deep network computes an answer in one pass from input to output and is trained by backpropagation, which carries an error measured at the output backwards through every layer. A Cadence brain reaches its answer by settling: its parts are connected in both directions, each patch repairs its own disagreement with its neighbours, and the equilibrium of the whole brain is the answer, a consensus reached through local repair alone. Learning is the same process: an outcome disturbs the equilibrium, the patches repair the disagreement, the connections involved change from local activity, and the brain settles into a new equilibrium. Cadence brains can be deep; more layers join the same settlement and the learning stays local. Full comparison: https://github.com/muellerberndt/cadence#how-a-cadence-brain-differs-from-a-feed-forward-network
-
-## Compared with a deep neural network
-
-A feed-forward deep network computes an answer in one pass from input to output and is trained by backpropagation, which carries an error measured at the output backwards through every layer. A Cadence brain reaches its answer by settling: its parts are connected in both directions, each patch repairs its own disagreement with its neighbours, and the equilibrium of the whole brain is the answer, a consensus reached through local repair alone. Learning is the same process: an outcome disturbs the equilibrium, the patches repair the disagreement, the connections involved change from local activity, and the brain settles into a new equilibrium. Cadence brains can be deep; more layers join the same settlement and the learning stays local. Full comparison: https://github.com/muellerberndt/cadence#how-a-cadence-brain-differs-from-a-feed-forward-network
+A feed-forward reference computes outputs through directed layers. Cadence's default brain instead forms an answer by settling a reciprocal neural graph, then uses local free/nudged activity contrasts for learning. Finite teaching remains the default; qualified teaching explicitly checks every required phase, and reward eligibility has a separate finite-phase contract. Conditional gradient arguments retain their symmetry, stable-branch and small-nudge assumptions. Conventional systems can also be recurrent or learn online. Depth and local updates do not by themselves establish better acquisition or cheaper operation. Full comparison: https://github.com/muellerberndt/cadence#how-a-cadence-brain-differs-from-a-feed-forward-network
 
 ## Brain design: System 1 and optional System 2
 
-System 1 is the default brain, composed with Brain.compose; System 2 adds optional observers to the same brain. Every answer is the settled state of the whole brain, and a brain that does not settle refuses to act. Beside the main interface, Cadence 0.71.0 keeps advanced engines with their own contracts: the population solver, where populations of patches settle one joint energy and observers read exact prediction errors; record patches for event records and consolidation; and a temporal model for learned action consequences and planning. System 1 and System 2 name functional roles in software, not claims of biological equivalence. Choose observers by measured task quality, query latency and learning cost; deeper is not automatically better or faster. Archived AMEN uses a record-patch brain trained on an earlier release.
+System 1 is the default brain, composed with Brain.compose; System 2 adds optional observers to the same brain. Every answer is the settled state of the whole brain, and a brain that does not settle refuses to act. Beside the main interface, Cadence 0.71.1 keeps advanced engines with their own contracts: the population solver, where populations of patches settle one joint energy and observers read exact prediction errors; record patches for event records and consolidation; and a temporal model for learned action consequences and planning. System 1 and System 2 name functional roles in software, not claims of biological equivalence. Choose observers by measured task quality, query latency and learning cost; deeper is not automatically better or faster. Archived AMEN uses a record-patch brain trained on an earlier release.
 
 - Research and preprints: https://floatingpragma.io/research/
 - Work in physics, mathematics, AI and security: https://floatingpragma.io/work/
-- Brain design: https://github.com/muellerberndt/cadence/blob/v0.71.0/docs/brain.md
+- Brain design: https://github.com/muellerberndt/cadence/blob/v0.71.1/docs/brain.md
 - How it works: https://floatingpragma.io/cadence/#how-it-works
-- Compared with deep learning: https://floatingpragma.io/cadence/#deep-networks
 - Compared with deep learning: https://floatingpragma.io/cadence/#deep-networks
 
 ## Public demonstrations

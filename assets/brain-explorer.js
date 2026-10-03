@@ -19,7 +19,7 @@
   let result = model.evaluate(states, input, settings()), reference = model.feedForward(input, settings());
   const patterns = {
     composed: {
-      name: 'The default brain', title: 'Settle the whole response together.',
+      name: 'Population solver illustration', title: 'Settle the whole response together.',
       description: 'Later populations read earlier live states. Their constraints can change those states while the whole brain settles.',
       analogy: 'Think of coordination and balance: several parts adjust together to find a consistent position.',
       note: 'Six patches in three populations, connected through states. There are no error-reading connections.',

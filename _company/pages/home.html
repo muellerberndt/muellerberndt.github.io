@@ -21,7 +21,7 @@
 
 <section class="section dark" id="watch">
  <div class="container">
-  <div class="split" style="margin-bottom:48px"><div><p class="eyebrow">The film / 7 minutes</p><h2>See how Cadence<br>thinks and learns.</h2></div><div><p class="lead">The regions of the brain pass signals forward and back until the whole system agrees on one answer. The result of each action then changes the connections that produced it.</p></div></div>
+  <div class="split" style="margin-bottom:48px"><div><p class="eyebrow">The film / 7 minutes</p><h2>See how Cadence<br>thinks and learns.</h2></div><div><p class="lead">The regions of the brain pass signals forward and back until the whole system agrees on one answer. Witnessed outcomes can teach the same brain; the goal is to preserve familiar skills and repair failed expectations.</p></div></div>
   <figure class="film-player">
    <video id="cadence-film" controls preload="metadata" playsinline poster="/watch/cadence-explainer-poster.jpg" width="848" height="464" style="display:block;width:100%;height:auto;background:#0b1326">
     <source src="/watch/cadence-explainer.mp4" type="video/mp4">
@@ -35,7 +35,7 @@
 <section class="section" id="difference">
  <div class="container split">
   <div><p class="eyebrow">The difference</p><h2>Most AI stops learning<br>before it ships.</h2></div>
-  <div><p class="lead">Most of today's AI runs on transformers. A transformer is completely feed-forward, and in a typical deployed model its attention matrices and all other weights are fixed once training ends. What it meets in use does not change them.</p><p>A brain works differently. Its signals loop back on themselves, and it keeps learning for as long as it lives. Cadence is built the same way. It senses, decides and acts in real time, and every experience changes it a little.</p><p>That matters most for machines with bodies. A robot's world does not hold still.</p><div class="actions"><a class="text-link" href="/cadence/#how-it-works">How Cadence works ↗</a></div></div>
+  <div><p class="lead">A typical deployed transformer keeps its learned weights fixed during use. Cadence explores a continuing equilibrium brain that can retain context and learn from actual outcomes.</p><p>Signals in Cadence loop through a reciprocal graph until its parts settle. Initial experience can build useful knowledge; familiar behavior should reuse it, while witnessed mismatch drives local repair. Measuring that selective repair and its cost is part of the research.</p><p>That matters most for machines with bodies. A robot's world does not hold still.</p><div class="actions"><a class="text-link" href="/cadence/#how-it-works">How Cadence works ↗</a><a class="text-link" href="https://github.com/muellerberndt/cadence/blob/main/docs/world-model.md">The continuing world model ↗</a></div></div>
  </div>
 </section>
 
@@ -43,9 +43,9 @@
  <div class="container">
   <div class="section-heading"><p class="eyebrow">Made for a body</p><h2>What a robot gains.</h2><p class="lead">A robot meets wear, new loads and places nobody trained it for. A brain that learns from experience can keep up with them.</p></div>
   <div class="grid-3">
-   <article class="card"><p class="label">On the job</p><h3>It learns while it works.</h3><p>The same brain acts and learns from the result of every action. There is no training phase before deployment.</p></article>
-   <article class="card"><p class="label">Changed conditions</p><h3>It adapts when things change.</h3><p>A worn motor, a heavier load or a different floor shows up in what the robot senses. The brain adjusts from that, without being told what changed.</p></article>
-   <article class="card"><p class="label">On the machine</p><h3>It learns on the robot itself.</h3><p>Each connection changes based on the activity next to it, as in a biological brain. Learning needs no round trip to a data centre.</p></article>
+   <article class="card"><p class="label">On the job</p><h3>It learns while it works.</h3><p>A brain can acquire useful skills through initial experience, then keep those skills while it acts and learns from further outcomes.</p></article>
+   <article class="card"><p class="label">Changed conditions</p><h3>It adapts when things change.</h3><p>A worn motor, a heavier load or a different floor changes what the robot senses. The design goal is to repair the affected knowledge while retaining useful skills.</p></article>
+   <article class="card"><p class="label">On the machine</p><h3>It learns on the robot itself.</h3><p>Connections can change from local neural activity, without a backward computation graph. Whether learning fits a robot's compute budget is measured on that body.</p></article>
   </div>
   <div class="actions"><a class="text-link" href="/cadence/#advantages">All six advantages ↗</a><a class="text-link" href="/robotics/">Put a brain in your robot ↗</a></div>
   <p class="small">Shown in simulation today, in demos you can run yourself. A physical robot evaluation is the next test.</p>
@@ -54,7 +54,7 @@
 
 <section class="section dark" id="demos">
  <div class="container">
-  <div class="section-heading"><p class="eyebrow">Working demonstrations</p><h2>Watch a brain learn.</h2><p class="lead">These brains start untrained when the page opens. They learn in front of you.</p></div>
+  <div class="section-heading"><p class="eyebrow">Working demonstrations</p><h2>Watch a brain learn.</h2><p class="lead">These three demonstrations start fresh in the browser and learn from their declared teachers or actual consequences.</p></div>
   <div class="grid-3">
    <article class="card"><p class="label">Atari Arcade / Live learning</p><h3>Watch brains learn to play.</h3><p>Two brains are born when the page opens. They watch a teacher, take the controls and keep learning from every point they score.</p><div class="actions"><a class="button primary" href="/demos/atari-arcade/">Enter the arcade ↗</a></div></article>
    <article class="card"><p class="label">Patch World / Learning and evolution</p><h3>Watch brains learn and evolve.</h3><p>Creatures learn in your browser from the consequences of their actions, and evolution reshapes their brains across generations.</p><div class="actions"><a class="button primary" href="/demos/patch-world/">Enter Patch World ↗</a></div></article>
