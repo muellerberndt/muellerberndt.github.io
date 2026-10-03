@@ -9,6 +9,7 @@ The company is seeking robotics evaluation partners and investors. The proposed 
 - Home: https://floatingpragma.io/
 - Product: https://floatingpragma.io/cadence/
 - Demonstrations: https://floatingpragma.io/demos/
+- Cadence film (7 minutes): https://floatingpragma.io/#watch, MP4 at https://floatingpragma.io/watch/cadence-explainer.mp4
 - Robotics programme: https://floatingpragma.io/robotics/
 - Investors: https://floatingpragma.io/investors/
 - Investor deck: https://floatingpragma.io/investors/deck/

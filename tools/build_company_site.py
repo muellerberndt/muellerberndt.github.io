@@ -81,6 +81,17 @@ RESEARCH_LINKS = (
      "Essays, explanations and research updates."),
 )
 RESEARCH_LINKS_UPDATED = "2026-09-30T00:00:00Z"
+# The Cadence film plays on these pages; search engines index it from this node.
+CADENCE_FILM_PAGES = ("home", "cadence")
+CADENCE_FILM = {
+    "@type": "VideoObject", "@id": ORIGIN + "/watch/cadence-explainer.mp4#video",
+    "name": "Cadence: a settling neural architecture",
+    "description": "A seven-minute narrated tour of Cadence: regions that settle on one answer together, local learning from the result of each action, memory, optional observer regions and private imagination.",
+    "thumbnailUrl": ORIGIN + "/watch/cadence-explainer-poster.jpg",
+    "contentUrl": ORIGIN + "/watch/cadence-explainer.mp4",
+    "uploadDate": "2026-10-03", "duration": "PT6M48S", "inLanguage": "en",
+    "publisher": {"@id": ORIGIN + "/#organization"},
+}
 
 
 def page_schema(title, description, route):
@@ -238,7 +249,11 @@ def build():
         elif name == "not-found":
             robots = "noindex, follow"
             extra = r'<script>if(location.pathname.replace(/\/+$/, "") === "/cadence/paper.pdf") location.replace("https://philpapers.org/rec/MUECAP-2");else if(location.pathname.startsWith("/oph/papers/")) location.replace("/research/#preprints");</script>'
-        output = render_shell(content=content, title=title, description=description, route=route, active=active, extra=extra, body_class="deck-page" if name == "deck" else "", robots=robots)
+        schema = None
+        if name in CADENCE_FILM_PAGES:
+            schema = page_schema(title, description, route)
+            schema["@graph"].append(CADENCE_FILM)
+        output = render_shell(content=content, title=title, description=description, route=route, active=active, extra=extra, body_class="deck-page" if name == "deck" else "", robots=robots, schema=schema)
         path = ROOT / destination
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text(output)

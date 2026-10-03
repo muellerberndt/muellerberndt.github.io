@@ -10,8 +10,8 @@ Cadence 0.71.0 builds one continuing brain. System 1 is the default: perception,
 
 - [Cadence](https://floatingpragma.io/cadence/): what it is, what a robot gains, how it works and the code.
 - [Demonstrations](https://floatingpragma.io/demos/): working applications and experiments from cadence-demos.
+- [Cadence film](https://floatingpragma.io/#watch): seven-minute narrated explainer of settling, local learning, memory, optional observers and private imagination ([MP4](https://floatingpragma.io/watch/cadence-explainer.mp4)).
 - [How it works](https://floatingpragma.io/cadence/#how-it-works): small self-reading patches that settle on one answer and learn from experience.
-- [Compared with deep learning](https://floatingpragma.io/cadence/#deep-networks): a settled equilibrium of the whole brain and local repair, beside a one-pass network trained by backpropagation.
 - [Compared with deep learning](https://floatingpragma.io/cadence/#deep-networks): a settled equilibrium of the whole brain and local repair, beside a one-pass network trained by backpropagation.
 - [Interactive brain](https://floatingpragma.io/cadence/#inside-the-brain): switch between the default layout and one with observers, inspect patch state and error, and compare settlement with a forward calculation.
 - [Robotics](https://floatingpragma.io/robotics/): proposed evaluation programme and changed-wheel rover experiment.
