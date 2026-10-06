@@ -39,7 +39,7 @@ def main():
     for size in (192, 512):
         name = f"assets/pragma-icon-{size}.png"
         render(size).save(ROOT / name)
-        icons.append({"src": "/" + name + "?v=6", "sizes": f"{size}x{size}", "type": "image/png"})
+        icons.append({"src": "/" + name + "?v=7", "sizes": f"{size}x{size}", "type": "image/png"})
     manifest = {"name": "Pragma Research", "short_name": "Pragma", "start_url": "/",
                 "display": "browser", "background_color": "#f3f1e9",
                 "theme_color": "#f3f1e9", "icons": icons}
