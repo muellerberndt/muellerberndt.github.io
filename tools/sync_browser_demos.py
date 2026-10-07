@@ -19,7 +19,7 @@ import re
 import subprocess
 
 SITE = Path(__file__).resolve().parents[1]
-COMMIT = "9035d5685fd7d45cb8438f7ac38ae23dc5129806"
+COMMIT = "e584e38873f05507e5c279f883f504f8c0d64dfa"
 REPOSITORY = "https://github.com/muellerberndt/cadence-demos"
 ARCADE_RUNTIME = ('index.html', 'arcade.js', 'cadence.js', 'emulator.js', 'brain_worker.js', 'emulator_worker.js',
                   'roms/freeway.bin', 'roms/atlantis.bin')

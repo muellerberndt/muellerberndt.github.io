@@ -4,11 +4,11 @@
     "lastmod": "2026-10-06"
   },
   "/cadence/": {
-    "sha256": "c3b88c14fcc3a9ab7c0d48b95a593615316047f34ec2f08d4518fc243b64bd43",
+    "sha256": "96b68b11d88dfd0201e9c372b61c2ebac023d52211c2d8cbba69611c75bdb74b",
     "lastmod": "2026-10-07"
   },
   "/demos/": {
-    "sha256": "d0885a8e035a280295da648774c44cc98659b66c03535f70463afb5ba518daa4",
+    "sha256": "aeaf5470c48560719182f8d0db6ed8a6ef9421d61549ce01dc7ab68b38a1f560",
     "lastmod": "2026-10-07"
   },
   "/demos/amen/": {
@@ -28,7 +28,7 @@
     "lastmod": "2026-10-06"
   },
   "/demos/connectome/": {
-    "sha256": "66e5982164095e56e75bed57cfeaca07b92f1817bf6045cc39d3d3aa7577873f",
+    "sha256": "a8083dede2a0b6f8f4fc31eda3bb59de387556ff58db5a73b1a746a60189978a",
     "lastmod": "2026-10-07"
   },
   "/robotics/": {

@@ -1,6 +1,6 @@
 {
   "repository": "https://github.com/muellerberndt/cadence-demos",
-  "commit": "9035d5685fd7d45cb8438f7ac38ae23dc5129806",
+  "commit": "e584e38873f05507e5c279f883f504f8c0d64dfa",
   "adaptation": "HTML metadata, archive presentation copy, shared CSS and a separate touch/camera presentation adapter; original application scripts, model, audio, emulator and ROM bytes unchanged.",
   "files": [
     {
@@ -146,9 +146,9 @@
     {
       "source": "connectome/web/brain.js",
       "path": "connectome/brain.js",
-      "source_sha256": "6b7b9260b82a002686738e35f59466dacb695a41b148fe363fc575f88f25020b",
-      "published_sha256": "6b7b9260b82a002686738e35f59466dacb695a41b148fe363fc575f88f25020b",
-      "bytes": 21295
+      "source_sha256": "7d827247d6a3416f0bc4461ae49853bf79be3eadcdd256cc31c2a625cfde5c7e",
+      "published_sha256": "7d827247d6a3416f0bc4461ae49853bf79be3eadcdd256cc31c2a625cfde5c7e",
+      "bytes": 34487
     },
     {
       "source": "connectome/web/brain_view.js",
@@ -160,23 +160,23 @@
     {
       "source": "connectome/web/content/copy.js",
       "path": "connectome/content/copy.js",
-      "source_sha256": "f6983521bb00ec9f375d49cf26ed45458565a680b0d0a226a3c0f7f212184d0f",
-      "published_sha256": "f6983521bb00ec9f375d49cf26ed45458565a680b0d0a226a3c0f7f212184d0f",
-      "bytes": 10324
+      "source_sha256": "b9a73cb1fcfc33114d0e260891307fe2070a92d12c026909bfb56765deae6506",
+      "published_sha256": "b9a73cb1fcfc33114d0e260891307fe2070a92d12c026909bfb56765deae6506",
+      "bytes": 3798
     },
     {
       "source": "connectome/web/content/disclaimers.js",
       "path": "connectome/content/disclaimers.js",
-      "source_sha256": "d66612045174ca469a099589b9085df576e31d9f6cea930997392a0201c0321e",
-      "published_sha256": "d66612045174ca469a099589b9085df576e31d9f6cea930997392a0201c0321e",
-      "bytes": 11726
+      "source_sha256": "8a83513e5cb913bbf25f4d5ef4fae1f9cd577b33e482c34195c76d2ed009d6cc",
+      "published_sha256": "8a83513e5cb913bbf25f4d5ef4fae1f9cd577b33e482c34195c76d2ed009d6cc",
+      "bytes": 1470
     },
     {
       "source": "connectome/web/content/explain.js",
       "path": "connectome/content/explain.js",
-      "source_sha256": "d8650a894fd5b0e8850995859ca4f0eadc6b4d2d78e78250704333984dbbf6e1",
-      "published_sha256": "d8650a894fd5b0e8850995859ca4f0eadc6b4d2d78e78250704333984dbbf6e1",
-      "bytes": 9639
+      "source_sha256": "70f2de48d37ecf3ce9b5f298f4d45186cba584e7f44765556a81cd17bf8436a7",
+      "published_sha256": "70f2de48d37ecf3ce9b5f298f4d45186cba584e7f44765556a81cd17bf8436a7",
+      "bytes": 2522
     },
     {
       "source": "connectome/web/copy.html",
@@ -270,6 +270,20 @@
       "bytes": 2866380
     },
     {
+      "source": "connectome/web/data/learning_release.json",
+      "path": "connectome/data/learning_release.json",
+      "source_sha256": "8ef4853b58d0ac4c260291732fa4881a2c24f5ec0b12ea2dd846b40283a0d9ac",
+      "published_sha256": "8ef4853b58d0ac4c260291732fa4881a2c24f5ec0b12ea2dd846b40283a0d9ac",
+      "bytes": 262291
+    },
+    {
+      "source": "connectome/web/data/learning_reteach.json",
+      "path": "connectome/data/learning_reteach.json",
+      "source_sha256": "9fc08e2bb604dc5e14c4ecc8b1467eda1d660776e18aa3dd3a46d892ab6368ca",
+      "published_sha256": "9fc08e2bb604dc5e14c4ecc8b1467eda1d660776e18aa3dd3a46d892ab6368ca",
+      "bytes": 210497
+    },
+    {
       "source": "connectome/web/data/neuron_order.json",
       "path": "connectome/data/neuron_order.json",
       "source_sha256": "225c28f0b3598620995bfb0f0c2573d72f0d90961694c88cb585e87cba207b5e",
@@ -314,9 +328,9 @@
     {
       "source": "connectome/web/dictionary.js",
       "path": "connectome/dictionary.js",
-      "source_sha256": "70377cbaf76d131866c244298034c58bea9dcc8270b35a94161d1d01aa71f3a6",
-      "published_sha256": "70377cbaf76d131866c244298034c58bea9dcc8270b35a94161d1d01aa71f3a6",
-      "bytes": 4649
+      "source_sha256": "89e00809a47584cd36625c2790e408cbbd57b249fae980a899f8b86f1a78a44b",
+      "published_sha256": "89e00809a47584cd36625c2790e408cbbd57b249fae980a899f8b86f1a78a44b",
+      "bytes": 9277
     },
     {
       "source": "connectome/web/disclaimers.html",
@@ -328,9 +342,9 @@
     {
       "source": "connectome/web/disclaimers_page.js",
       "path": "connectome/disclaimers_page.js",
-      "source_sha256": "e00df5a0d8cdaf14e8a848cf0946cc092fb004ae28cbc77aff6a11918d7cd355",
-      "published_sha256": "e00df5a0d8cdaf14e8a848cf0946cc092fb004ae28cbc77aff6a11918d7cd355",
-      "bytes": 6455
+      "source_sha256": "63c0b151d6d67f668773749fb1c61eab86d0782926054c21f506ac3cadbd2b0c",
+      "published_sha256": "63c0b151d6d67f668773749fb1c61eab86d0782926054c21f506ac3cadbd2b0c",
+      "bytes": 895
     },
     {
       "source": "connectome/web/evidence.js",
@@ -349,16 +363,16 @@
     {
       "source": "connectome/web/explain_page.js",
       "path": "connectome/explain_page.js",
-      "source_sha256": "e0ef4f2c0c81339a6243dd9a9f843c7cf190d2ba2271950434f4c918b3cadcc8",
-      "published_sha256": "e0ef4f2c0c81339a6243dd9a9f843c7cf190d2ba2271950434f4c918b3cadcc8",
-      "bytes": 5491
+      "source_sha256": "e7760ebaabd1f1e4db02296175c3e8f776713d348bed21658addaee5592760b2",
+      "published_sha256": "e7760ebaabd1f1e4db02296175c3e8f776713d348bed21658addaee5592760b2",
+      "bytes": 1097
     },
     {
       "source": "connectome/web/fish.html",
       "path": "connectome/fish.html",
-      "source_sha256": "955d75f633c7f945a8d249a718ebdb30eb19a440a581a695e3227adc6981865b",
-      "published_sha256": "96f4e9202998be6749a299172303c842c71235f2fa00ca6bd662464d1ce0d676",
-      "bytes": 6314
+      "source_sha256": "83f44220c97fb1756fce95c8bc7ac5c4232b34636fb14cb2d258779fe6267be0",
+      "published_sha256": "1eff69d606e0c4c743d6a52cd28779531a4644a3dee7bad9c57f7581b37496ea",
+      "bytes": 10994
     },
     {
       "source": "connectome/web/fish.js",
@@ -370,9 +384,9 @@
     {
       "source": "connectome/web/fish_page.js",
       "path": "connectome/fish_page.js",
-      "source_sha256": "93247c3b21b08beb6310bd52c5495c34c321046ec9e77b19db522a3c96ee5ef8",
-      "published_sha256": "93247c3b21b08beb6310bd52c5495c34c321046ec9e77b19db522a3c96ee5ef8",
-      "bytes": 14355
+      "source_sha256": "3568acb8c8fd1ad95d35722e67a405ca51d2ef73a61b454db9358499ec0f2873",
+      "published_sha256": "3568acb8c8fd1ad95d35722e67a405ca51d2ef73a61b454db9358499ec0f2873",
+      "bytes": 19954
     },
     {
       "source": "connectome/web/index.html",
@@ -384,9 +398,9 @@
     {
       "source": "connectome/web/index_page.js",
       "path": "connectome/index_page.js",
-      "source_sha256": "51dc9cac2008b8021af4ebc31443671961203323e14c45cebdcd6458a4c93299",
-      "published_sha256": "51dc9cac2008b8021af4ebc31443671961203323e14c45cebdcd6458a4c93299",
-      "bytes": 14463
+      "source_sha256": "c4b6157325bb6cb5891d50d3bae6876fac703c63686b5e526ab033d36aead99f",
+      "published_sha256": "c4b6157325bb6cb5891d50d3bae6876fac703c63686b5e526ab033d36aead99f",
+      "bytes": 11589
     },
     {
       "source": "connectome/web/larva.js",
@@ -424,11 +438,25 @@
       "bytes": 5157
     },
     {
+      "source": "connectome/web/learning_probe.js",
+      "path": "connectome/learning_probe.js",
+      "source_sha256": "3bce2bdbedc7bd237a75615b9726ac23f454d9117d72ade8b94dba87d8897544",
+      "published_sha256": "3bce2bdbedc7bd237a75615b9726ac23f454d9117d72ade8b94dba87d8897544",
+      "bytes": 1502
+    },
+    {
+      "source": "connectome/web/learning_view.js",
+      "path": "connectome/learning_view.js",
+      "source_sha256": "16a3d928b2fc5a1d4e2f4ff2a4b5fc03b070ec8e954a7edf9e5190cb110050a5",
+      "published_sha256": "16a3d928b2fc5a1d4e2f4ff2a4b5fc03b070ec8e954a7edf9e5190cb110050a5",
+      "bytes": 1813
+    },
+    {
       "source": "connectome/web/life.js",
       "path": "connectome/life.js",
-      "source_sha256": "17a25763fb8eeaed259c1d796aa14ed50891c6286d10c6da2b5922105529e4d0",
-      "published_sha256": "17a25763fb8eeaed259c1d796aa14ed50891c6286d10c6da2b5922105529e4d0",
-      "bytes": 2674
+      "source_sha256": "aca47d4ab50dc6836d4794f1abd679abcf41dd3eec2ae46f0d5791f44af7b831",
+      "published_sha256": "aca47d4ab50dc6836d4794f1abd679abcf41dd3eec2ae46f0d5791f44af7b831",
+      "bytes": 9757
     },
     {
       "source": "connectome/web/limits.html",
@@ -510,9 +538,9 @@
     {
       "source": "connectome/web/site.js",
       "path": "connectome/site.js",
-      "source_sha256": "9003469ec67893a2a46a75b65b4e9ccd4cf6e133c8a7061d63293bda40a3731a",
-      "published_sha256": "9003469ec67893a2a46a75b65b4e9ccd4cf6e133c8a7061d63293bda40a3731a",
-      "bytes": 9177
+      "source_sha256": "9404236786b47d9aea4d8f78574493a3ee81ac38646294f4d91dcf82da343295",
+      "published_sha256": "9404236786b47d9aea4d8f78574493a3ee81ac38646294f4d91dcf82da343295",
+      "bytes": 9315
     },
     {
       "source": "connectome/web/spiking.js",
@@ -524,9 +552,9 @@
     {
       "source": "connectome/web/twin.js",
       "path": "connectome/twin.js",
-      "source_sha256": "bef93a1e3e212cc419818dc33181a3449348c50a8e10999a6f183a41d3a0d708",
-      "published_sha256": "bef93a1e3e212cc419818dc33181a3449348c50a8e10999a6f183a41d3a0d708",
-      "bytes": 1575
+      "source_sha256": "8964422caa447af1b50d8c76a433a0c3ff43664e316f440ce23cd80da8f4e4b9",
+      "published_sha256": "8964422caa447af1b50d8c76a433a0c3ff43664e316f440ce23cd80da8f4e4b9",
+      "bytes": 3736
     },
     {
       "source": "connectome/web/why.html",
