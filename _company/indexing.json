@@ -4,12 +4,12 @@
     "lastmod": "2026-10-06"
   },
   "/cadence/": {
-    "sha256": "2760bd3fd15b530be8839227ee8569e00e3a40bef3dc8383193501a1b7f01cde",
-    "lastmod": "2026-10-06"
+    "sha256": "c3b88c14fcc3a9ab7c0d48b95a593615316047f34ec2f08d4518fc243b64bd43",
+    "lastmod": "2026-10-07"
   },
   "/demos/": {
-    "sha256": "b2059d7d18f3cb6aa010fade78a328db7ec32619e914547c36b9ec066681e465",
-    "lastmod": "2026-10-06"
+    "sha256": "d0885a8e035a280295da648774c44cc98659b66c03535f70463afb5ba518daa4",
+    "lastmod": "2026-10-07"
   },
   "/demos/amen/": {
     "sha256": "edccb8d87e1b5c92350b65b598eb195aa7866e63fa74c10ecce54d47ac110e79",
@@ -26,6 +26,10 @@
   "/demos/rover-lab/": {
     "sha256": "7ba6c56f23c6ad6d42bfa21f058e1dcb4eac932e4bd323e5857ce0027de4fd2a",
     "lastmod": "2026-10-06"
+  },
+  "/demos/connectome/": {
+    "sha256": "4fd0497bc64ecef7f0ce074cdfb229796d57c3f490621d0b03876a4e9dd0c100",
+    "lastmod": "2026-10-07"
   },
   "/robotics/": {
     "sha256": "bd8b580ff2a47f90eeb7903adde16be5619a2937732d5db82742a2c1becf80ce",

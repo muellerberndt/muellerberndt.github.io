@@ -21,7 +21,7 @@ from urllib.parse import unquote, urljoin, urlsplit
 
 ORIGIN = "https://floatingpragma.io"
 ROUTES = (
-    "/", "/cadence/", "/demos/", "/demos/amen/", "/demos/patch-world/", "/demos/atari-arcade/", "/demos/rover-lab/", "/robotics/", "/investors/", "/investors/deck/",
+    "/", "/cadence/", "/demos/", "/demos/amen/", "/demos/patch-world/", "/demos/atari-arcade/", "/demos/rover-lab/", "/demos/connectome/", "/robotics/", "/investors/", "/investors/deck/",
     "/physics/", "/research/", "/work/", "/watch/", "/oph/unsubscribe/", "/404.html",
 )
 EXTERNAL_PROJECTS = (
@@ -236,7 +236,7 @@ def check_indexing(site, errors):
 
 def check_unified_surfaces(site, errors):
     """Every public page uses the company shell, including legacy redirects."""
-    embedded = {site / "demos/runtime/amen/index.html", site / "demos/runtime/patch-world/index.html", site / "demos/runtime/atari-arcade/index.html", site / "demos/runtime/rover-lab/index.html"}
+    embedded = {site / "demos/runtime/amen/index.html", site / "demos/runtime/patch-world/index.html", site / "demos/runtime/atari-arcade/index.html", site / "demos/runtime/rover-lab/index.html"} | set((site / "demos/runtime/connectome").rglob("*.html"))
     html_paths = [p for p in site.rglob("*.html") if p not in embedded and not any(part.startswith((".", "_")) for part in p.relative_to(site).parts)]
     for path in html_paths:
         source = path.read_text()
@@ -308,7 +308,7 @@ def check_browser_demos(site, errors):
             errors.append(f"Browser demos: application assets changed from source: {entry['path']}")
         if path.suffix == '.html':
             source = path.read_text()
-            for required in ('content="noindex"', '/assets/demo-runtime.css?v=5', '/assets/demo-runtime.js?v=4', '/favicon.svg?v=7'):
+            for required in ('content="noindex"', '/assets/demo-runtime.css?v=6', '/assets/demo-runtime.js?v=4', '/favicon.svg?v=7'):
                 if required not in source:
                     errors.append(f"Browser demos: {entry['path']} missing {required}")
             if 'cadence-examples/' in source or 'data:image/svg+xml' in source:

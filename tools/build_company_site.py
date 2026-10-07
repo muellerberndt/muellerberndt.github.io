@@ -16,6 +16,7 @@ PAGES = {
     "demo-patch-world": ("demos/patch-world/index.html", "Patch World | Explore a living simulation", "Watch creatures learn in your browser and evolve their brains in a conserved-mass world. Inspect their observations, prediction errors and inherited body plans."),
     "demo-atari-arcade": ("demos/atari-arcade/index.html", "Atari Arcade | Watch Cadence brains learn to play", "Watch two newborn Cadence brains learn Freeway and Atlantis live in your browser: animal-like brains that watch a teacher, take the controls and keep learning."),
     "demo-rover-lab": ("demos/rover-lab/index.html", "Rover Lab | Watch a Cadence brain adapt to a changed body", "Weaken a simulated rover's wheel and watch the live Cadence brain relearn its body in your browser, beside a frozen copy, an adaptive estimator and a small neural network."),
+    "demo-connectome": ("demos/connectome/index.html", "Fish in the Matrix | Compiling biological connectomes into Cadence patch nets", "Two animals' measured wiring compiled into Cadence patch nets that run in your browser: a Platynereis larva with its whole-body connectome in the loop and a zebrafish brainstem that holds its gaze, with receipts and the declared parts."),
     "robotics": ("robotics/index.html", "Robotics | Put a learning brain in your robot", "Partner with Pragma Research to evaluate Cadence on one robot and one measurable adaptation problem. We build the brains; you build the bodies."),
     "investors": ("investors/index.html", "Invest in Pragma Research | The brain company", "Pragma Research builds real-time AI modeled after animal and human brains, for robots that learn from live experience. Explore our proposed $4 million seed round."),
     "deck": ("investors/deck/index.html", "Pragma Research | Investor deck", "The Cadence investment case: real-time AI that learns from live experience, working software and demonstrations, and a proposed $4 million round for physical deployment."),
@@ -25,6 +26,12 @@ PAGES = {
     "watch": ("watch/index.html", "Watch | The research behind Pragma Research", "Watch the Pragma Research explainer: observer-based physics, self-reading systems and the ideas behind Cadence."),
     "unsubscribe": ("oph/unsubscribe/index.html", "Email preferences | Pragma Research", "Manage Pragma Research and OPH outreach emails."),
     "not-found": ("404.html", "Page not found | Pragma Research", "Find Cadence, the Pragma Research preprints, our robotics programme and investor materials."),
+}
+# Pages with a social card of their own; every other page shares the layout's default card.
+DEFAULT_SOCIAL_IMAGE = "https://floatingpragma.io/assets/pragma-settling-networks-2026-09.png"
+DEFAULT_SOCIAL_ALT = "Cadence. Brains that learn. Pragma Research caret and three connected patches with state, error and feedback on charcoal."
+SOCIAL_IMAGES = {
+    "demo-connectome": ("/assets/fish-in-the-matrix-2026-10.png", "Fish in the Matrix: a larval zebrafish in a Matrix-styled tank beside its compiled brainstem, a Cadence patch net lit by its activity. Compiling biological connectomes into Cadence patch nets."),
 }
 NAV = [
     ("cadence", "/cadence/", "Cadence"),
@@ -128,7 +135,7 @@ def page_schema(title, description, route):
     return {"@context": "https://schema.org", "@graph": graph}
 
 
-def render_shell(*, content, title, description, route, active="research", extra="", body_class="", schema=None, site_root=None, robots="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"):
+def render_shell(*, content, title, description, route, active="research", extra="", body_class="", schema=None, site_root=None, robots="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1", image=None):
     root = Path(site_root) if site_root else ROOT
     template = (root / "_company/layout.html").read_text()
     nav = "".join(
@@ -147,6 +154,8 @@ def render_shell(*, content, title, description, route, active="research", extra
     }
     for key, value in values.items():
         template = template.replace("@@" + key + "@@", value)
+    if image:
+        template = template.replace(DEFAULT_SOCIAL_IMAGE, ORIGIN + image[0]).replace(DEFAULT_SOCIAL_ALT, escape(image[1], quote=True))
     if "@@" in template:
         raise ValueError("Unexpanded template token")
     return template
@@ -253,7 +262,7 @@ def build():
         if name in CADENCE_FILM_PAGES:
             schema = page_schema(title, description, route)
             schema["@graph"].append(CADENCE_FILM)
-        output = render_shell(content=content, title=title, description=description, route=route, active=active, extra=extra, body_class="deck-page" if name == "deck" else "", robots=robots, schema=schema)
+        output = render_shell(content=content, title=title, description=description, route=route, active=active, extra=extra, body_class="deck-page" if name == "deck" else "", robots=robots, schema=schema, image=SOCIAL_IMAGES.get(name))
         path = ROOT / destination
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text(output)

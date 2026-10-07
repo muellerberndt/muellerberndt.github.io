@@ -7,6 +7,9 @@ The iframe documents receive website metadata, presentation copy and a shared
 visual/touch adapter; original application scripts, audio, models, the emulator
 and the game ROMs are unchanged. The arcade and the rover lab publish only their
 runtime files, not their parity fixtures, receipts, tests, tools or build directories.
+The connectome demo publishes its whole web/ directory (pages, engine, content and
+the compiled nets with their receipts); its pages keep their own navigation inside
+the frame and open outside links in a new tab, so they get no base target.
 """
 import argparse
 import hashlib
@@ -16,7 +19,7 @@ import re
 import subprocess
 
 SITE = Path(__file__).resolve().parents[1]
-COMMIT = "c78b9349e45510de04f9c6a8bb6b00b90736cc28"
+COMMIT = "684d310e512832fc2199449415b23db499893d2f"
 REPOSITORY = "https://github.com/muellerberndt/cadence-demos"
 ARCADE_RUNTIME = ('index.html', 'arcade.js', 'cadence.js', 'emulator.js', 'brain_worker.js', 'emulator_worker.js',
                   'roms/freeway.bin', 'roms/atlantis.bin')
@@ -39,8 +42,8 @@ def wrapper_metadata(content, demo):
                 f'<meta name="theme-color" content="#191d1c">\n'
                 f'<link rel="canonical" href="https://floatingpragma.io/demos/{demo}/">\n'
                 '<link rel="icon" href="/favicon.svg?v=7" type="image/svg+xml">\n'
-                '<link rel="stylesheet" href="/assets/demo-runtime.css?v=5">\n'
-                '<base target="_top">\n')
+                '<link rel="stylesheet" href="/assets/demo-runtime.css?v=6">\n'
+                + ('' if demo == 'connectome' else '<base target="_top">\n'))
     # Last stylesheet wins over the archived application's own CSS.
     text = text.replace('<html lang="en">', f'<html lang="en" data-demo="{demo}">', 1)
     text = text.replace('</head>', metadata + '</head>', 1)
@@ -53,21 +56,22 @@ def main():
     parser.add_argument('--source', type=Path, default=SITE.parents[1] / 'cadence-demos')
     args = parser.parse_args()
     paths = git(args.source, 'ls-tree', '-r', '--name-only', COMMIT,
-                'amen/web', 'patch-world/index.html', 'atari-arcade/web', 'rover-lab/web').decode().splitlines()
+                'amen/web', 'patch-world/index.html', 'atari-arcade/web', 'rover-lab/web', 'connectome/web').decode().splitlines()
     expected = [p for p in paths if p != 'amen/web/card.png'
                 and (not p.startswith('atari-arcade/web/') or p.removeprefix('atari-arcade/web/') in ARCADE_RUNTIME)
                 and (not p.startswith('rover-lab/web/') or p.removeprefix('rover-lab/web/') in ROVER_RUNTIME)]
     arcade = [p for p in expected if p.startswith('atari-arcade/web/')]
     rover = [p for p in expected if p.startswith('rover-lab/web/')]
     if (not expected or 'patch-world/index.html' not in expected or len(arcade) != len(ARCADE_RUNTIME)
-            or len(rover) != len(ROVER_RUNTIME)):
-        raise SystemExit('Pinned commit does not contain all four browser demos')
+            or len(rover) != len(ROVER_RUNTIME) or 'connectome/web/index.html' not in expected
+            or 'connectome/web/fish.html' not in expected or 'connectome/web/data/larva_brain.json' not in expected):
+        raise SystemExit('Pinned commit does not contain all five browser demos')
     output = SITE / 'demos/runtime'
     entries = []
     for path in expected:
         original = git(args.source, 'show', f'{COMMIT}:{path}')
         relative = (path.replace('amen/web/', 'amen/', 1).replace('atari-arcade/web/', 'atari-arcade/', 1)
-                    .replace('rover-lab/web/', 'rover-lab/', 1))
+                    .replace('rover-lab/web/', 'rover-lab/', 1).replace('connectome/web/', 'connectome/', 1))
         content = wrapper_metadata(original, relative.split('/')[0]) if path.endswith('.html') else original
         destination = output / relative
         destination.parent.mkdir(parents=True, exist_ok=True)

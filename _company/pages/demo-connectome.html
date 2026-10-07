@@ -1,0 +1,38 @@
+<section class="page-hero demo-player-intro">
+ <div class="container">
+  <p class="eyebrow">Demos / Compiled brains</p>
+  <h1>Fish in the Matrix.</h1>
+  <p class="lead">Compiling biological connectomes into Cadence patch nets.</p>
+ </div>
+</section>
+<section class="demo-player">
+ <div class="container">
+  <div class="demo-player-controls">
+   <p class="small">The larva opens first. <strong>Tap</strong> the glass, <strong>move the light</strong> or switch on the <strong>UV</strong> and watch the wave of gold repairs run through its net before it rests. <strong>The fish</strong> holds its gaze after a saccade. Hover any button for what it does to the animal and its brain; drag to orbit, wheel to zoom.</p>
+   <div class="actions"><a class="text-link" href="/demos/">All demos ↗</a><button class="button secondary" type="button" data-demo-fullscreen="demo-connectome" hidden>Full screen</button><a class="text-link" href="https://github.com/muellerberndt/cadence-demos/tree/main/connectome">Source ↗</a><a class="text-link" href="https://github.com/muellerberndt/cadence-connectome-compiler">The compiler ↗</a></div>
+  </div>
+  <iframe class="demo-embed" id="demo-connectome" scrolling="no" src="/demos/runtime/connectome/index.html" title="Fish in the Matrix: a Platynereis larva and a zebrafish with compiled connectomes" allow="fullscreen" allowfullscreen sandbox="allow-scripts allow-same-origin allow-popups allow-downloads"></iframe>
+ </div>
+</section>
+<section class="section">
+ <div class="container split">
+  <div><p class="eyebrow">Inside the tank</p><h2>Measured wiring,<br>running.</h2></div>
+  <div><p class="lead">A connectome is a wiring diagram measured in an animal: every cell, every synapse, how many contacts each connection carries. The compiler turns that table into a Cadence patch net without changing a number in it.</p><p>Every cell becomes a patch that holds one number. Every recorded connection becomes a relation weighted by its synapse count. Each patch keeps correcting its own number toward what its neighbours tell it until the whole net agrees, and that settled agreement is the answer the body reads. Push the net with a stimulus and the disagreement spreads and settles again: the gold flashes in the brain view are those local repairs.</p></div>
+ </div>
+</section>
+<section class="section dark">
+ <div class="container">
+  <div class="cards three">
+   <article class="card"><p class="label">The larva</p><h3>Every cell in the loop.</h3><p>The three-day Platynereis dumerilii of Verasztó et al. 2025: 25,609 traced cells, 2,664 of them neurons, and every synapse onto its muscles and ciliated cells. The lamp lands on its real photoreceptors, a tap on its collar receptors, and its cilia and muscles are read from the real effector cells.</p></article>
+   <article class="card"><p class="label">The fish</p><h3>A brainstem that holds its gaze.</h3><p>One side of a larval zebrafish hindbrain, 2,884 neurons and 75,195 synapses (Vishwanathan et al. 2024). After a saccade the compiled integrator holds the eyes on its own and lets them drift back over seconds, as the circuit does in the fish. The swim is a labelled pilot.</p></article>
+   <article class="card"><p class="label">Declared, and checked</p><h3>Nothing invented.</h3><p>Signs, gain, the neuron's response law, the senses, the body and the time scale are declared on the pages. Each animal's net passes five of five held-out circuit checks that shuffled wirings fail, and the receipts are linked on the disclaimers page.</p></article>
+  </div>
+  <p class="small muted">The nets are frozen: this demo compiles and runs measured wiring, it does not learn. The whole-fish release that exists today is a segmentation still being proofread by its community, and the disclaimers page says why it is not here.</p>
+ </div>
+</section>
+<section class="section">
+ <div class="container split">
+  <div><p class="eyebrow">The preprints</p><h2>Why a settling net<br>is the target.</h2></div>
+  <div><p class="lead">What a spiking network computes, once its rates have settled, is an equilibrium. A patch net rests exactly there, and reaches it without placing every spike.</p><div class="actions"><a class="button primary" href="https://philpapers.org/rec/MUEAAS-2">Agreement and Surprise ↗</a><a class="button secondary" href="https://philpapers.org/rec/MUECAP-2">Cadence: Learning Through Local Patch Settlement ↗</a><a class="text-link" href="/demos/runtime/connectome/explain.html">How it works, with the receipts ↗</a></div></div>
+ </div>
+</section>

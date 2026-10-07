@@ -69,3 +69,9 @@ select{font-size:16px!important}
 [data-demo="rover-lab"]{--panel:#1d211f;--line:#343b36}
 [data-demo="rover-lab"] .button{min-height:44px}
 [data-demo="rover-lab"] .app-shell{padding-inline:clamp(14px,3vw,48px)}
+
+/* The connectome demo brings its own Matrix palette, monospace type and compact toolbar; the shared presentation stays out of its way. */
+html[data-demo="connectome"]{--ink:#c8ffd8;--dim:#679774;--line:rgba(97,186,121,.25)}
+[data-demo="connectome"] body{font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace}
+[data-demo="connectome"] button,[data-demo="connectome"] select,[data-demo="connectome"] input[type=range]{min-height:0}
+[data-demo="connectome"] a:focus-visible,[data-demo="connectome"] button:focus-visible{outline:2px solid #91d8a3;outline-offset:3px}

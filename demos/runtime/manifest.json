@@ -1,6 +1,6 @@
 {
   "repository": "https://github.com/muellerberndt/cadence-demos",
-  "commit": "c78b9349e45510de04f9c6a8bb6b00b90736cc28",
+  "commit": "684d310e512832fc2199449415b23db499893d2f",
   "adaptation": "HTML metadata, archive presentation copy, shared CSS and a separate touch/camera presentation adapter; original application scripts, model, audio, emulator and ROM bytes unchanged.",
   "files": [
     {
@@ -14,7 +14,7 @@
       "source": "amen/web/index.html",
       "path": "amen/index.html",
       "source_sha256": "78c687c4e6209b1dc7ae9fa0b0dafc6448d102b4d0d964150b4500736f0a9eec",
-      "published_sha256": "00c2fe04265d7d76a0a85528560f7a601b829cf62d58cfd3e77f3a0d10d4ffc0",
+      "published_sha256": "202c66750f3ad4cf0505c9f5ee3de6ecfa4fe287644d3ac7ee4a3410387911ff",
       "bytes": 61675
     },
     {
@@ -76,9 +76,9 @@
     {
       "source": "atari-arcade/web/arcade.js",
       "path": "atari-arcade/arcade.js",
-      "source_sha256": "3cd53859911e0c641f2599d95be29bf351452f9ac62d6ed817afe5cdebd519b1",
-      "published_sha256": "3cd53859911e0c641f2599d95be29bf351452f9ac62d6ed817afe5cdebd519b1",
-      "bytes": 16300
+      "source_sha256": "e574ca6a87b6fffe99abd392b5a15d045c4fc5d3a8ad80fc8f4b0f3b772feebe",
+      "published_sha256": "e574ca6a87b6fffe99abd392b5a15d045c4fc5d3a8ad80fc8f4b0f3b772feebe",
+      "bytes": 16442
     },
     {
       "source": "atari-arcade/web/brain_worker.js",
@@ -111,9 +111,9 @@
     {
       "source": "atari-arcade/web/index.html",
       "path": "atari-arcade/index.html",
-      "source_sha256": "be55a712dedc0a05990a6ced361877876cf5a7ecf17bbc2da0bf34e45162ec86",
-      "published_sha256": "19eee1bde8a1a7833c95bb0ba9990fe3d6339d6d6ecf0370ed42858297f78220",
-      "bytes": 27094
+      "source_sha256": "c5dfd1b72e63a28a3d12b16fb7aefa6d95b400a8dc0bdee70e63b4acda24a19f",
+      "published_sha256": "7fab2c12557c71b38b6dd08526a1b1ce438a853ead6b3d7e3383f25dd0bce4a5",
+      "bytes": 27101
     },
     {
       "source": "atari-arcade/web/roms/atlantis.bin",
@@ -130,10 +130,409 @@
       "bytes": 2048
     },
     {
+      "source": "connectome/web/aquarium.js",
+      "path": "connectome/aquarium.js",
+      "source_sha256": "de7871907a5887724bbbd0523ad648c2f69296451ab5a81d0ff01bfdd2682576",
+      "published_sha256": "de7871907a5887724bbbd0523ad648c2f69296451ab5a81d0ff01bfdd2682576",
+      "bytes": 27961
+    },
+    {
+      "source": "connectome/web/body.js",
+      "path": "connectome/body.js",
+      "source_sha256": "988452b53e8edc5fd92460d1ab492f9b06ddb3ba2d8a7a9afaab1d6d5d342d49",
+      "published_sha256": "988452b53e8edc5fd92460d1ab492f9b06ddb3ba2d8a7a9afaab1d6d5d342d49",
+      "bytes": 20230
+    },
+    {
+      "source": "connectome/web/brain.js",
+      "path": "connectome/brain.js",
+      "source_sha256": "6b7b9260b82a002686738e35f59466dacb695a41b148fe363fc575f88f25020b",
+      "published_sha256": "6b7b9260b82a002686738e35f59466dacb695a41b148fe363fc575f88f25020b",
+      "bytes": 21295
+    },
+    {
+      "source": "connectome/web/brain_view.js",
+      "path": "connectome/brain_view.js",
+      "source_sha256": "deccecb65c6326c692660242a28f2ea07442220b51d04551f22d2359c175467d",
+      "published_sha256": "deccecb65c6326c692660242a28f2ea07442220b51d04551f22d2359c175467d",
+      "bytes": 29762
+    },
+    {
+      "source": "connectome/web/content/copy.js",
+      "path": "connectome/content/copy.js",
+      "source_sha256": "f6983521bb00ec9f375d49cf26ed45458565a680b0d0a226a3c0f7f212184d0f",
+      "published_sha256": "f6983521bb00ec9f375d49cf26ed45458565a680b0d0a226a3c0f7f212184d0f",
+      "bytes": 10324
+    },
+    {
+      "source": "connectome/web/content/disclaimers.js",
+      "path": "connectome/content/disclaimers.js",
+      "source_sha256": "80bd92f9d126831b450ade2784cd222194665158df65941a15e89fefd3dab2fd",
+      "published_sha256": "80bd92f9d126831b450ade2784cd222194665158df65941a15e89fefd3dab2fd",
+      "bytes": 11459
+    },
+    {
+      "source": "connectome/web/content/explain.js",
+      "path": "connectome/content/explain.js",
+      "source_sha256": "d8650a894fd5b0e8850995859ca4f0eadc6b4d2d78e78250704333984dbbf6e1",
+      "published_sha256": "d8650a894fd5b0e8850995859ca4f0eadc6b4d2d78e78250704333984dbbf6e1",
+      "bytes": 9639
+    },
+    {
+      "source": "connectome/web/copy.html",
+      "path": "connectome/copy.html",
+      "source_sha256": "cbd147a139f6b98deeaeb8cd58f7ef9c972e6c7f9d1a5ee2c13da50d5eb4de61",
+      "published_sha256": "e28b7cd58b38bc0105e1e2e8daba7d5e12a65ad9ca1d28bf18d3d036b9131d45",
+      "bytes": 4111
+    },
+    {
+      "source": "connectome/web/copy_page.js",
+      "path": "connectome/copy_page.js",
+      "source_sha256": "a9a12f2be0f886c8e81fbcb5d16335ee3cc4662b34a21f727e1d4d216b683714",
+      "published_sha256": "a9a12f2be0f886c8e81fbcb5d16335ee3cc4662b34a21f727e1d4d216b683714",
+      "bytes": 7443
+    },
+    {
+      "source": "connectome/web/data/brain.json",
+      "path": "connectome/data/brain.json",
+      "source_sha256": "2ac2885d67d1c25e18fe7f9dc2512544a2efd927ef0cb88df873612ba7db8ccb",
+      "published_sha256": "2ac2885d67d1c25e18fe7f9dc2512544a2efd927ef0cb88df873612ba7db8ccb",
+      "bytes": 1101452
+    },
+    {
+      "source": "connectome/web/data/brain_oculomotor.json",
+      "path": "connectome/data/brain_oculomotor.json",
+      "source_sha256": "20fefa10486b6547dcaafbf620318800dd79d4f9e06a5c064c32235ca5192a92",
+      "published_sha256": "20fefa10486b6547dcaafbf620318800dd79d4f9e06a5c064c32235ca5192a92",
+      "bytes": 143306
+    },
+    {
+      "source": "connectome/web/data/cost.json",
+      "path": "connectome/data/cost.json",
+      "source_sha256": "993b7afea93cf152d44b4e3146117642df2df3ecc3c6c8b9009ecec8e3812ee1",
+      "published_sha256": "993b7afea93cf152d44b4e3146117642df2df3ecc3c6c8b9009ecec8e3812ee1",
+      "bytes": 2698
+    },
+    {
+      "source": "connectome/web/data/feedforward.json",
+      "path": "connectome/data/feedforward.json",
+      "source_sha256": "8b0d0aaec8bc3ea1a71bd4da013b8add90ba744a4e3bc620725bc480fbfe9945",
+      "published_sha256": "8b0d0aaec8bc3ea1a71bd4da013b8add90ba744a4e3bc620725bc480fbfe9945",
+      "bytes": 1059
+    },
+    {
+      "source": "connectome/web/data/fish1_fragmentation.json",
+      "path": "connectome/data/fish1_fragmentation.json",
+      "source_sha256": "f6850ea1a3dd652b54d71e1b58ca887def7f7378f1fdd31ddd9ed354efae46dc",
+      "published_sha256": "f6850ea1a3dd652b54d71e1b58ca887def7f7378f1fdd31ddd9ed354efae46dc",
+      "bytes": 870
+    },
+    {
+      "source": "connectome/web/data/fish1_probe.json",
+      "path": "connectome/data/fish1_probe.json",
+      "source_sha256": "2bcc52cb06d663a3f3b33dddbe7345953d3ccb64bb6c90de5f4fe6757e74277a",
+      "published_sha256": "2bcc52cb06d663a3f3b33dddbe7345953d3ccb64bb6c90de5f4fe6757e74277a",
+      "bytes": 358
+    },
+    {
+      "source": "connectome/web/data/larva_brain.json",
+      "path": "connectome/data/larva_brain.json",
+      "source_sha256": "a1fb9564d3952bae24815523432e3d426065e9da58bf14fd8309756d754807b2",
+      "published_sha256": "a1fb9564d3952bae24815523432e3d426065e9da58bf14fd8309756d754807b2",
+      "bytes": 2712175
+    },
+    {
+      "source": "connectome/web/data/larva_census.json",
+      "path": "connectome/data/larva_census.json",
+      "source_sha256": "b28571fdf16a6269129b2593d032b897b9b08c2260fef7f0b202de6fa4015f3a",
+      "published_sha256": "b28571fdf16a6269129b2593d032b897b9b08c2260fef7f0b202de6fa4015f3a",
+      "bytes": 1555
+    },
+    {
+      "source": "connectome/web/data/larva_gain_scan.json",
+      "path": "connectome/data/larva_gain_scan.json",
+      "source_sha256": "0de9f2d60ec68b3a770e505e6e942706345aafb41b52e32a7aa1bd2fa6ade4b4",
+      "published_sha256": "0de9f2d60ec68b3a770e505e6e942706345aafb41b52e32a7aa1bd2fa6ade4b4",
+      "bytes": 971
+    },
+    {
+      "source": "connectome/web/data/larva_skeletons.json.gz",
+      "path": "connectome/data/larva_skeletons.json.gz",
+      "source_sha256": "6ad5b42c2c5980179a9fde55e7ccf2bd57cf962546f308f80b04443ea7b61d08",
+      "published_sha256": "6ad5b42c2c5980179a9fde55e7ccf2bd57cf962546f308f80b04443ea7b61d08",
+      "bytes": 2866380
+    },
+    {
+      "source": "connectome/web/data/neuron_order.json",
+      "path": "connectome/data/neuron_order.json",
+      "source_sha256": "225c28f0b3598620995bfb0f0c2573d72f0d90961694c88cb585e87cba207b5e",
+      "published_sha256": "225c28f0b3598620995bfb0f0c2573d72f0d90961694c88cb585e87cba207b5e",
+      "bytes": 59947
+    },
+    {
+      "source": "connectome/web/data/receipt_oculomotor.json",
+      "path": "connectome/data/receipt_oculomotor.json",
+      "source_sha256": "f1dd2ab7c4bd5d26cc420ddb921b25e292dfb0b6991ce7118ad3d1489360385c",
+      "published_sha256": "f1dd2ab7c4bd5d26cc420ddb921b25e292dfb0b6991ce7118ad3d1489360385c",
+      "bytes": 259651
+    },
+    {
+      "source": "connectome/web/data/receipt_platynereis.json",
+      "path": "connectome/data/receipt_platynereis.json",
+      "source_sha256": "96f5b1cde604ec0761d12a9aac1c307e9194d548ea0481d5d445ac0a43229ee7",
+      "published_sha256": "96f5b1cde604ec0761d12a9aac1c307e9194d548ea0481d5d445ac0a43229ee7",
+      "bytes": 192160
+    },
+    {
+      "source": "connectome/web/data/skeletons.json.gz",
+      "path": "connectome/data/skeletons.json.gz",
+      "source_sha256": "74d7a0110c82648d529f01ea60aa86a5f87cecc6d9f724e26e0c612bf77d6ee8",
+      "published_sha256": "74d7a0110c82648d529f01ea60aa86a5f87cecc6d9f724e26e0c612bf77d6ee8",
+      "bytes": 1622749
+    },
+    {
+      "source": "connectome/web/dictionary.js",
+      "path": "connectome/dictionary.js",
+      "source_sha256": "70377cbaf76d131866c244298034c58bea9dcc8270b35a94161d1d01aa71f3a6",
+      "published_sha256": "70377cbaf76d131866c244298034c58bea9dcc8270b35a94161d1d01aa71f3a6",
+      "bytes": 4649
+    },
+    {
+      "source": "connectome/web/disclaimers.html",
+      "path": "connectome/disclaimers.html",
+      "source_sha256": "65e19ee9f124bf6e11ed3572cffde6a621451cf9a172e7fd44dd80cb43bb72b9",
+      "published_sha256": "cd7f9cf726c982ffbb0985865eab1e223670bbeba589976f9585a2aa851678c7",
+      "bytes": 2667
+    },
+    {
+      "source": "connectome/web/disclaimers_page.js",
+      "path": "connectome/disclaimers_page.js",
+      "source_sha256": "6a10219920c8d45ad00e2e9b265868d43f36426a48e4954c870968bd0b7b6f9e",
+      "published_sha256": "6a10219920c8d45ad00e2e9b265868d43f36426a48e4954c870968bd0b7b6f9e",
+      "bytes": 6522
+    },
+    {
+      "source": "connectome/web/evidence.js",
+      "path": "connectome/evidence.js",
+      "source_sha256": "24fb92e1b49081d247a53463f9742c55d5d9a0c4b0a874af64ee2bf3e55a18fc",
+      "published_sha256": "24fb92e1b49081d247a53463f9742c55d5d9a0c4b0a874af64ee2bf3e55a18fc",
+      "bytes": 6986
+    },
+    {
+      "source": "connectome/web/explain.html",
+      "path": "connectome/explain.html",
+      "source_sha256": "32cff6addaad3de4249833989c9a2599c83e0c87bbf6f9a1df12f89830d58f40",
+      "published_sha256": "0d67d54a974ff591afa1e5318ddaf045175f990ca375c4b397ea58de915cea82",
+      "bytes": 2619
+    },
+    {
+      "source": "connectome/web/explain_page.js",
+      "path": "connectome/explain_page.js",
+      "source_sha256": "593ca9a840eafd2c96fc1a80bba668756251a1b9d664f2f3411c74245c96267c",
+      "published_sha256": "593ca9a840eafd2c96fc1a80bba668756251a1b9d664f2f3411c74245c96267c",
+      "bytes": 5530
+    },
+    {
+      "source": "connectome/web/fish.html",
+      "path": "connectome/fish.html",
+      "source_sha256": "955d75f633c7f945a8d249a718ebdb30eb19a440a581a695e3227adc6981865b",
+      "published_sha256": "96f4e9202998be6749a299172303c842c71235f2fa00ca6bd662464d1ce0d676",
+      "bytes": 6314
+    },
+    {
+      "source": "connectome/web/fish.js",
+      "path": "connectome/fish.js",
+      "source_sha256": "4080a644f4197c43a5e9d83972374ced5c303d52fe8faf179837d2b86ea0f1ff",
+      "published_sha256": "4080a644f4197c43a5e9d83972374ced5c303d52fe8faf179837d2b86ea0f1ff",
+      "bytes": 9702
+    },
+    {
+      "source": "connectome/web/fish_page.js",
+      "path": "connectome/fish_page.js",
+      "source_sha256": "93247c3b21b08beb6310bd52c5495c34c321046ec9e77b19db522a3c96ee5ef8",
+      "published_sha256": "93247c3b21b08beb6310bd52c5495c34c321046ec9e77b19db522a3c96ee5ef8",
+      "bytes": 14355
+    },
+    {
+      "source": "connectome/web/index.html",
+      "path": "connectome/index.html",
+      "source_sha256": "6aef479ce8e83a1aef0cef65e14e3198767af3db7d1aa7dd62f992029a2d1401",
+      "published_sha256": "8d34a3aa01d4b23548fa807625842cbc3190ba108f569439e1f2ef97a4f2c37b",
+      "bytes": 5691
+    },
+    {
+      "source": "connectome/web/index_page.js",
+      "path": "connectome/index_page.js",
+      "source_sha256": "51dc9cac2008b8021af4ebc31443671961203323e14c45cebdcd6458a4c93299",
+      "published_sha256": "51dc9cac2008b8021af4ebc31443671961203323e14c45cebdcd6458a4c93299",
+      "bytes": 14463
+    },
+    {
+      "source": "connectome/web/larva.js",
+      "path": "connectome/larva.js",
+      "source_sha256": "9ba1eececce1a6d7ba07557586e30abbeb32b5f2d6da4d26638fd3a3332e3c98",
+      "published_sha256": "9ba1eececce1a6d7ba07557586e30abbeb32b5f2d6da4d26638fd3a3332e3c98",
+      "bytes": 10556
+    },
+    {
+      "source": "connectome/web/larva_body.js",
+      "path": "connectome/larva_body.js",
+      "source_sha256": "22d58355a1fdf148c4bff5f24511a668a400fc4c82b08532859dd26adc090896",
+      "published_sha256": "22d58355a1fdf148c4bff5f24511a668a400fc4c82b08532859dd26adc090896",
+      "bytes": 13421
+    },
+    {
+      "source": "connectome/web/larva_dictionary.js",
+      "path": "connectome/larva_dictionary.js",
+      "source_sha256": "e6229e5b0ed4cadb3ec9e82f6da6866d39dd3ed9b56f07d23aa246a8ea9b19ed",
+      "published_sha256": "e6229e5b0ed4cadb3ec9e82f6da6866d39dd3ed9b56f07d23aa246a8ea9b19ed",
+      "bytes": 4405
+    },
+    {
+      "source": "connectome/web/larva_life.js",
+      "path": "connectome/larva_life.js",
+      "source_sha256": "d85bc0fcf5ab1c50263e4d9f6a4fdc90ec621feac5774f963faa55f58cebec15",
+      "published_sha256": "d85bc0fcf5ab1c50263e4d9f6a4fdc90ec621feac5774f963faa55f58cebec15",
+      "bytes": 2395
+    },
+    {
+      "source": "connectome/web/larva_senses.js",
+      "path": "connectome/larva_senses.js",
+      "source_sha256": "2184e364f369f39ef4fc28d8042bd905832e126e33df21a923f889c4135e1740",
+      "published_sha256": "2184e364f369f39ef4fc28d8042bd905832e126e33df21a923f889c4135e1740",
+      "bytes": 5157
+    },
+    {
+      "source": "connectome/web/life.js",
+      "path": "connectome/life.js",
+      "source_sha256": "17a25763fb8eeaed259c1d796aa14ed50891c6286d10c6da2b5922105529e4d0",
+      "published_sha256": "17a25763fb8eeaed259c1d796aa14ed50891c6286d10c6da2b5922105529e4d0",
+      "bytes": 2674
+    },
+    {
+      "source": "connectome/web/limits.html",
+      "path": "connectome/limits.html",
+      "source_sha256": "0fa7c29ac805f19837830edfe02225e2b2cfee42c853f5b226ef3417ed8805d9",
+      "published_sha256": "fb34b982c5d14791c2accdd4ee90ff0b74505f39ad33736cf1135781a6e5435e",
+      "bytes": 1934
+    },
+    {
+      "source": "connectome/web/limits_page.js",
+      "path": "connectome/limits_page.js",
+      "source_sha256": "1253659b5afa91f613ef4a5c41c2b8b300d431b996b8209cf04f13b188f00050",
+      "published_sha256": "1253659b5afa91f613ef4a5c41c2b8b300d431b996b8209cf04f13b188f00050",
+      "bytes": 3535
+    },
+    {
+      "source": "connectome/web/match.html",
+      "path": "connectome/match.html",
+      "source_sha256": "545d8c1f36094a394e3e2503c69f434622b50de850800057edef24cd9bf25ffc",
+      "published_sha256": "5c40b5fac7265a722c63d873f73da2ac620d66ca907a528de76c8b45b0c06668",
+      "bytes": 3416
+    },
+    {
+      "source": "connectome/web/match_page.js",
+      "path": "connectome/match_page.js",
+      "source_sha256": "d61b9793ae63242844dbd96c5c4ba3ef32a07c7317d54617b3e963f4374237e4",
+      "published_sha256": "d61b9793ae63242844dbd96c5c4ba3ef32a07c7317d54617b3e963f4374237e4",
+      "bytes": 9823
+    },
+    {
+      "source": "connectome/web/neural-replay.js",
+      "path": "connectome/neural-replay.js",
+      "source_sha256": "e4c68f83956a6d667e9a49a9cee014653fd49dddf3184f85ed7e2b72e0e318ad",
+      "published_sha256": "e4c68f83956a6d667e9a49a9cee014653fd49dddf3184f85ed7e2b72e0e318ad",
+      "bytes": 5926
+    },
+    {
+      "source": "connectome/web/paste.html",
+      "path": "connectome/paste.html",
+      "source_sha256": "4776d155e0e6ec0688789f49e43980c7c1a636302f0ed21c7515a57cb8968143",
+      "published_sha256": "77ac9fc1f9d5b110cbfb968898d929d388082c9baab52053f21f8cb9bf5dae0e",
+      "bytes": 4996
+    },
+    {
+      "source": "connectome/web/paste_page.js",
+      "path": "connectome/paste_page.js",
+      "source_sha256": "78ec1faf3fa9135fae9fb4d3da66c050e007e212a03077054a5c2356478eb539",
+      "published_sha256": "78ec1faf3fa9135fae9fb4d3da66c050e007e212a03077054a5c2356478eb539",
+      "bytes": 12678
+    },
+    {
+      "source": "connectome/web/paste_worker.js",
+      "path": "connectome/paste_worker.js",
+      "source_sha256": "c0102168c46c848b677fad947651427780430f3aa86b32341a3bb875a5e9adcd",
+      "published_sha256": "c0102168c46c848b677fad947651427780430f3aa86b32341a3bb875a5e9adcd",
+      "bytes": 3702
+    },
+    {
+      "source": "connectome/web/senses.js",
+      "path": "connectome/senses.js",
+      "source_sha256": "972e0aedab96f8da018b14b41d012220957024ed42653f8b3d46511eebb0cb3d",
+      "published_sha256": "972e0aedab96f8da018b14b41d012220957024ed42653f8b3d46511eebb0cb3d",
+      "bytes": 5934
+    },
+    {
+      "source": "connectome/web/settlement-trace.js",
+      "path": "connectome/settlement-trace.js",
+      "source_sha256": "dab711022152a981850c6b337c6b5377acb6d2ce6e75eb65403e9c2d3c5bb636",
+      "published_sha256": "dab711022152a981850c6b337c6b5377acb6d2ce6e75eb65403e9c2d3c5bb636",
+      "bytes": 8045
+    },
+    {
+      "source": "connectome/web/site.css",
+      "path": "connectome/site.css",
+      "source_sha256": "031e8c0376c28a7842ee3a7b83078766c107960c4b7da1c3c54d44dd96a73bd0",
+      "published_sha256": "031e8c0376c28a7842ee3a7b83078766c107960c4b7da1c3c54d44dd96a73bd0",
+      "bytes": 10150
+    },
+    {
+      "source": "connectome/web/site.js",
+      "path": "connectome/site.js",
+      "source_sha256": "9003469ec67893a2a46a75b65b4e9ccd4cf6e133c8a7061d63293bda40a3731a",
+      "published_sha256": "9003469ec67893a2a46a75b65b4e9ccd4cf6e133c8a7061d63293bda40a3731a",
+      "bytes": 9177
+    },
+    {
+      "source": "connectome/web/spiking.js",
+      "path": "connectome/spiking.js",
+      "source_sha256": "ba3ec8ad2b99d2b638d6b9e9aed15de70fe00c32339310ec2ce6e50ca1fb92d1",
+      "published_sha256": "ba3ec8ad2b99d2b638d6b9e9aed15de70fe00c32339310ec2ce6e50ca1fb92d1",
+      "bytes": 15435
+    },
+    {
+      "source": "connectome/web/twin.js",
+      "path": "connectome/twin.js",
+      "source_sha256": "bef93a1e3e212cc419818dc33181a3449348c50a8e10999a6f183a41d3a0d708",
+      "published_sha256": "bef93a1e3e212cc419818dc33181a3449348c50a8e10999a6f183a41d3a0d708",
+      "bytes": 1575
+    },
+    {
+      "source": "connectome/web/why.html",
+      "path": "connectome/why.html",
+      "source_sha256": "17633489b678eec1597aac34fa263d4af41368633fe34fca9e1e0ac3bdc3f85d",
+      "published_sha256": "4135f81ff2b9e9c991eb995365868a5c8b93aa50bc298c03dc18a5c8a463d054",
+      "bytes": 8615
+    },
+    {
+      "source": "connectome/web/why_page.js",
+      "path": "connectome/why_page.js",
+      "source_sha256": "716060566006eafc0e1a566ca7f1d251d0903e7b1a5044c9aac91110b944bfb2",
+      "published_sha256": "716060566006eafc0e1a566ca7f1d251d0903e7b1a5044c9aac91110b944bfb2",
+      "bytes": 25886
+    },
+    {
+      "source": "connectome/web/worker.js",
+      "path": "connectome/worker.js",
+      "source_sha256": "0cf0725593ff5cf97dce056a0b2cbcae0deed9858e0b7d372c1c625a85813997",
+      "published_sha256": "0cf0725593ff5cf97dce056a0b2cbcae0deed9858e0b7d372c1c625a85813997",
+      "bytes": 1284
+    },
+    {
       "source": "patch-world/index.html",
       "path": "patch-world/index.html",
       "source_sha256": "0ba14ab21f5044ca6fac406e04414150c122615804531135c6fbfd88e12485ce",
-      "published_sha256": "ae7dfeaa3fb712e2cdc44ab7ba3d59b52cf7f2b0274df58bfdb933aaf52c0592",
+      "published_sha256": "0f09eef7f9da241aa0d114dbefeac15dbf6754eb90c2581b70126159dfc09b86",
       "bytes": 91761
     },
     {
@@ -154,7 +553,7 @@
       "source": "rover-lab/web/index.html",
       "path": "rover-lab/index.html",
       "source_sha256": "7fbc7378f8988c4ce39c4581f7ab56c378424d6b144bf4da40e0752fb94ae150",
-      "published_sha256": "bd112574266d3e81d86dc5e0d3c01560a47e63ae94c7527649c4d4bb2e4e1420",
+      "published_sha256": "c8caafb8307b908cc4857081fcd61de8504a4b5510bf6f0911dd519c6b85b0f0",
       "bytes": 12088
     },
     {
