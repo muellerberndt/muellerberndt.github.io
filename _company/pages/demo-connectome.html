@@ -9,7 +9,7 @@
  <div class="container">
   <div class="demo-player-controls">
    <p class="small">The larva opens first. <strong>Tap</strong> the glass, <strong>move the light</strong> or switch on the <strong>UV</strong> and watch the wave of gold repairs run through its net before it rests. <strong>The fish</strong> holds its gaze after a saccade. Hover any button for what it does to the animal and its brain; drag to orbit, wheel to zoom.</p>
-   <div class="actions"><a class="text-link" href="/demos/">All demos ↗</a><button class="button secondary" type="button" data-demo-fullscreen="demo-connectome" hidden>Full screen</button><a class="text-link" href="https://github.com/muellerberndt/cadence-demos/tree/main/connectome">Source ↗</a><a class="text-link" href="https://github.com/muellerberndt/cadence-connectome-compiler">The compiler ↗</a></div>
+   <div class="actions"><a class="text-link" href="/demos/">All demos ↗</a><button class="button secondary" type="button" data-demo-fullscreen="demo-connectome" hidden>Full screen</button><a class="text-link" href="https://github.com/muellerberndt/cadence-demos/tree/main/connectome">Source ↗</a></div>
   </div>
   <iframe class="demo-embed" id="demo-connectome" src="/demos/runtime/connectome/index.html" title="Fish in the Matrix: a Platynereis larva and a zebrafish with compiled connectomes" allow="fullscreen" allowfullscreen sandbox="allow-scripts allow-same-origin allow-popups allow-downloads"></iframe>
  </div>
@@ -18,6 +18,21 @@
  <div class="container split">
   <div><p class="eyebrow">Inside the tank</p><h2>Measured wiring,<br>running.</h2></div>
   <div><p class="lead">A connectome is a wiring diagram measured in an animal: every cell, every synapse, how many contacts each connection carries. The compiler turns that table into a Cadence patch net without changing a number in it.</p><p>Every cell becomes a patch that holds one number. Every recorded connection becomes a relation weighted by its synapse count. Each patch keeps correcting its own number toward what its neighbours tell it until the whole net agrees, and that settled agreement is the answer the body reads. Push the net with a stimulus and the disagreement spreads and settles again: the gold flashes in the brain view are those local repairs.</p></div>
+ </div>
+</section>
+<section class="section">
+ <div class="container split">
+  <div><p class="eyebrow">The compilation</p><h2>Five steps,<br>nothing invented.</h2></div>
+  <div>
+   <ol>
+    <li><strong>Read the release's own tables.</strong> Cells with their identity, type and position; synapses with sender, receiver and contact count. The files' digests go on the record.</li>
+    <li><strong>One patch per cell, one relation per connection.</strong> Each relation is weighted by its synapse count times the sender's declared sign. Nothing is added, moved or guessed; where the data lack a connection, the net lacks it too.</li>
+    <li><strong>Declare the unit and select the gain.</strong> The graded rate neuron and the time step are declared. The one free number, the gain, comes from a frozen protocol: scan from the least excitable gain upward, stop at the first ignition, keep the gain at which one training fact holds.</li>
+    <li><strong>Score the held-out facts once.</strong> On the measured wiring and on shuffled wirings that keep each cell's degrees, or also its input strengths, each with its own gain.</li>
+    <li><strong>Write the receipt and export.</strong> The receipt binds the source tables, the compiled net and the protocol by digest and discloses every exploratory look. The export feeds the browser engine, whose arithmetic matches the Cadence library to machine precision.</li>
+   </ol>
+   <p class="small muted">The compiler itself is not published. Everything it produced, the compiled nets and every receipt, ships with the demo, and the data behind them are the authors' public releases.</p>
+  </div>
  </div>
 </section>
 <section class="section dark">

@@ -1,6 +1,6 @@
 {
   "repository": "https://github.com/muellerberndt/cadence-demos",
-  "commit": "684d310e512832fc2199449415b23db499893d2f",
+  "commit": "9035d5685fd7d45cb8438f7ac38ae23dc5129806",
   "adaptation": "HTML metadata, archive presentation copy, shared CSS and a separate touch/camera presentation adapter; original application scripts, model, audio, emulator and ROM bytes unchanged.",
   "files": [
     {
@@ -167,9 +167,9 @@
     {
       "source": "connectome/web/content/disclaimers.js",
       "path": "connectome/content/disclaimers.js",
-      "source_sha256": "80bd92f9d126831b450ade2784cd222194665158df65941a15e89fefd3dab2fd",
-      "published_sha256": "80bd92f9d126831b450ade2784cd222194665158df65941a15e89fefd3dab2fd",
-      "bytes": 11459
+      "source_sha256": "d66612045174ca469a099589b9085df576e31d9f6cea930997392a0201c0321e",
+      "published_sha256": "d66612045174ca469a099589b9085df576e31d9f6cea930997392a0201c0321e",
+      "bytes": 11726
     },
     {
       "source": "connectome/web/content/explain.js",
@@ -212,6 +212,13 @@
       "source_sha256": "993b7afea93cf152d44b4e3146117642df2df3ecc3c6c8b9009ecec8e3812ee1",
       "published_sha256": "993b7afea93cf152d44b4e3146117642df2df3ecc3c6c8b9009ecec8e3812ee1",
       "bytes": 2698
+    },
+    {
+      "source": "connectome/web/data/coupling_arms.json",
+      "path": "connectome/data/coupling_arms.json",
+      "source_sha256": "deb1f10edc9012c0b0ca9560d55e84ef0cdd2ac119530019b24ad6e824ef7186",
+      "published_sha256": "deb1f10edc9012c0b0ca9560d55e84ef0cdd2ac119530019b24ad6e824ef7186",
+      "bytes": 10716
     },
     {
       "source": "connectome/web/data/feedforward.json",
@@ -277,11 +284,25 @@
       "bytes": 259651
     },
     {
+      "source": "connectome/web/data/receipt_oculomotor_v1.json",
+      "path": "connectome/data/receipt_oculomotor_v1.json",
+      "source_sha256": "2277097b8c4526857a3a4fb4b9fdcfa8a7f888bdcab7526b9cf3e950df9be274",
+      "published_sha256": "2277097b8c4526857a3a4fb4b9fdcfa8a7f888bdcab7526b9cf3e950df9be274",
+      "bytes": 258965
+    },
+    {
       "source": "connectome/web/data/receipt_platynereis.json",
       "path": "connectome/data/receipt_platynereis.json",
       "source_sha256": "96f5b1cde604ec0761d12a9aac1c307e9194d548ea0481d5d445ac0a43229ee7",
       "published_sha256": "96f5b1cde604ec0761d12a9aac1c307e9194d548ea0481d5d445ac0a43229ee7",
       "bytes": 192160
+    },
+    {
+      "source": "connectome/web/data/receipt_platynereis_v1.json",
+      "path": "connectome/data/receipt_platynereis_v1.json",
+      "source_sha256": "342898d955648d2a75c6d554a5dd7a4a12ce15396df9675ff11578741e968621",
+      "published_sha256": "342898d955648d2a75c6d554a5dd7a4a12ce15396df9675ff11578741e968621",
+      "bytes": 191011
     },
     {
       "source": "connectome/web/data/skeletons.json.gz",
@@ -307,16 +328,16 @@
     {
       "source": "connectome/web/disclaimers_page.js",
       "path": "connectome/disclaimers_page.js",
-      "source_sha256": "6a10219920c8d45ad00e2e9b265868d43f36426a48e4954c870968bd0b7b6f9e",
-      "published_sha256": "6a10219920c8d45ad00e2e9b265868d43f36426a48e4954c870968bd0b7b6f9e",
-      "bytes": 6522
+      "source_sha256": "e00df5a0d8cdaf14e8a848cf0946cc092fb004ae28cbc77aff6a11918d7cd355",
+      "published_sha256": "e00df5a0d8cdaf14e8a848cf0946cc092fb004ae28cbc77aff6a11918d7cd355",
+      "bytes": 6455
     },
     {
       "source": "connectome/web/evidence.js",
       "path": "connectome/evidence.js",
-      "source_sha256": "24fb92e1b49081d247a53463f9742c55d5d9a0c4b0a874af64ee2bf3e55a18fc",
-      "published_sha256": "24fb92e1b49081d247a53463f9742c55d5d9a0c4b0a874af64ee2bf3e55a18fc",
-      "bytes": 6986
+      "source_sha256": "24e444f3b9ace4f1daf351db8cc8a9044e287ce85828ffe34fd2c02c9412b83e",
+      "published_sha256": "24e444f3b9ace4f1daf351db8cc8a9044e287ce85828ffe34fd2c02c9412b83e",
+      "bytes": 6525
     },
     {
       "source": "connectome/web/explain.html",
@@ -328,9 +349,9 @@
     {
       "source": "connectome/web/explain_page.js",
       "path": "connectome/explain_page.js",
-      "source_sha256": "593ca9a840eafd2c96fc1a80bba668756251a1b9d664f2f3411c74245c96267c",
-      "published_sha256": "593ca9a840eafd2c96fc1a80bba668756251a1b9d664f2f3411c74245c96267c",
-      "bytes": 5530
+      "source_sha256": "e0ef4f2c0c81339a6243dd9a9f843c7cf190d2ba2271950434f4c918b3cadcc8",
+      "published_sha256": "e0ef4f2c0c81339a6243dd9a9f843c7cf190d2ba2271950434f4c918b3cadcc8",
+      "bytes": 5491
     },
     {
       "source": "connectome/web/fish.html",
