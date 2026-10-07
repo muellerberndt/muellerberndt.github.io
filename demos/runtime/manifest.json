@@ -1,6 +1,6 @@
 {
   "repository": "https://github.com/muellerberndt/cadence-demos",
-  "commit": "e584e38873f05507e5c279f883f504f8c0d64dfa",
+  "commit": "bb49d8e47b77450f86db1b8f18a7e5b2f6b026dc",
   "adaptation": "HTML metadata, archive presentation copy, shared CSS and a separate touch/camera presentation adapter; original application scripts, model, audio, emulator and ROM bytes unchanged.",
   "files": [
     {
@@ -370,9 +370,9 @@
     {
       "source": "connectome/web/fish.html",
       "path": "connectome/fish.html",
-      "source_sha256": "83f44220c97fb1756fce95c8bc7ac5c4232b34636fb14cb2d258779fe6267be0",
-      "published_sha256": "1eff69d606e0c4c743d6a52cd28779531a4644a3dee7bad9c57f7581b37496ea",
-      "bytes": 10994
+      "source_sha256": "0183a4dc278130f98261fe98b13704bf6eb7ed425254774abcbcff72c8869703",
+      "published_sha256": "4dab80a88a85c96a0236b81135602ce6d6fa94c57f58d1926e0d76ed9731f3b4",
+      "bytes": 11142
     },
     {
       "source": "connectome/web/fish.js",
@@ -384,9 +384,9 @@
     {
       "source": "connectome/web/fish_page.js",
       "path": "connectome/fish_page.js",
-      "source_sha256": "3568acb8c8fd1ad95d35722e67a405ca51d2ef73a61b454db9358499ec0f2873",
-      "published_sha256": "3568acb8c8fd1ad95d35722e67a405ca51d2ef73a61b454db9358499ec0f2873",
-      "bytes": 19954
+      "source_sha256": "94fd3861640f8ad46f2fb3136f56f425ea9e16f449f83dba8fcb2de455c55c6b",
+      "published_sha256": "94fd3861640f8ad46f2fb3136f56f425ea9e16f449f83dba8fcb2de455c55c6b",
+      "bytes": 20081
     },
     {
       "source": "connectome/web/index.html",
