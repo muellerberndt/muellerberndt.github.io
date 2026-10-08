@@ -4,9 +4,9 @@
 
 A typical deployed transformer keeps its learned weights fixed during use. Cadence explores an equilibrium brain that retains knowledge and can repair it from witnessed outcomes. Pragma Research builds the brains for robots that keep improving throughout their working lives. Robotics is the first proposed market. The product direction is a supported Cadence runtime and a brain prepared for a customer's embodiment, beginning with a paid evaluation on one adaptation or recovery task.
 
-Cadence 0.71.1 supplies one continuing Brain.compose interface. Default System 1 contains reciprocal neural regions, plastic connections, a working trace, associative memory and private responses to supplied hypothetical observations. Optional System 2 adds observing regions inside that same settlement. Bounded observer-like patches carry local state and receive signals through ports; readback, retained records and local repair support the intended world model. Actual accepted outcomes or demonstrations can update it. The acquired brain persists through use.
+For one continuing creature, construct Brain.compose(inputs=4, actions=2, arousal=ArousalConfig()) and call brain.live(observation), then brain.live(next_observation, reward=reward) with the last action's outcome. The live loop settles calm responses without learning and admits learning when aroused. Default System 1 contains reciprocal neural regions, plastic connections, a working trace, associative memory and private responses to supplied hypothetical observations. Optional System 2 adds observing regions to a developed two-module System 1 inside that same settlement. Bounded observer-like patches carry local state and receive signals through ports; readback, retained records and local repair support the intended world model. Actual accepted outcomes or demonstrations can update it. The acquired brain persists through use.
 
-Its intended lifecycle is bootstrap, familiar operation, witnessed mismatch, local repair and retained correction. Familiar behavior should reuse acquired knowledge at low additional cost. Automatic failure detection, selective learning, integrated learned environmental dynamics and an efficiency advantage require their own tests. Numerical convergence does not establish correctness about the world, and mathematical energy is not electrical energy. Canonical guide: https://github.com/muellerberndt/cadence/blob/main/docs/world-model.md
+Its intended lifecycle is bootstrap, familiar operation, witnessed mismatch, local repair and retained correction. Familiar behavior should reuse acquired knowledge at low additional cost. Brain.live supplies a first routine-and-repair loop for one stream, measured in one bounded chamber. Integrated learned world prediction, repair localized to what failed, broader retained capabilities and a measured cost advantage remain research goals. Numerical convergence does not establish correctness about the world, and mathematical energy is not electrical energy. Canonical guide: https://github.com/muellerberndt/cadence/blob/main/docs/world-model.md
 
 ## Company and product
 
@@ -26,9 +26,9 @@ Its intended lifecycle is bootstrap, familiar operation, witnessed mismatch, loc
 
 - [Official demonstrations](https://github.com/muellerberndt/cadence-demos): music, games and simulated worlds, with each application's engine and evidence described separately.
 - [Open-source core](https://github.com/muellerberndt/cadence): GPL-3.0-or-later Python package.
-- [Architecture](https://github.com/muellerberndt/cadence/blob/v0.71.1/docs/equilibrium/DRSN.md): the population solver's state-and-error observation within one coupled settlement.
-- [Quickstart](https://github.com/muellerberndt/cadence/blob/v0.71.1/docs/quickstart.md): build a small brain.
-- [Learning and memory](https://github.com/muellerberndt/cadence/blob/v0.71.1/docs/continuous.md).
+- [Architecture](https://github.com/muellerberndt/cadence/blob/v0.78.0/docs/equilibrium/DRSN.md): the population solver's state-and-error observation within one coupled settlement.
+- [Quickstart](https://github.com/muellerberndt/cadence/blob/v0.78.0/docs/quickstart.md): build a small brain.
+- [Learning and memory](https://github.com/muellerberndt/cadence/blob/v0.78.0/docs/continuous.md).
 - [Package](https://pypi.org/project/cadence-net/): install cadence-net.
 - [Cadence preprint](https://philpapers.org/rec/MUECAP-2).
 - [Doom evidence excerpt](https://floatingpragma.io/evidence/cadence/doom-confirmations.json): two reserved Basic-scenario evaluations, source hashes and verification records.
@@ -52,14 +52,14 @@ Observer Patch Holography (OPH) asks whether bounded observers can build a share
 
 Cadence takes inspiration from continuing biological learning. Its local plasticity is a software mechanism, not a claim of biological equivalence. The embodied design includes:
 
-- Learning on the job: bootstrap useful skills, then keep the acquired brain alive during use and admit actual outcomes. Automatic selection of necessary updates requires its own test.
+- Learning on the job: bootstrap useful skills, then keep the acquired brain alive during use and admit actual outcomes. Brain.live supplies a bounded routine-and-repair loop; broader retention and repair localized to what failed need separate evidence.
 - Adaptation to changed conditions: a worn actuator, a new payload or a different surface shows up in what the robot measures, and measured outcomes can support correction. Recovery and retained skills are separate tests.
 - Local learning: each connection changes from the activity of the two units it joins; the default brain keeps no backward computation graph, so learning can run on the robot itself.
 - Memory: a working trace carries the recent past and an associative memory keeps what mattered.
 - Settled answers: every action is the settled state of the whole brain, and a brain that does not settle refuses to act.
 - Inspection: the activity of every region can be read while the brain runs, and private imagination tests a response before the body commits to it.
 
-The separate Rover Lab, Patch World and Atari Arcade engines demonstrate bounded parts of this design in simulation. Cadence 0.71 is experimental research software; a physical robot evaluation is the next test. Conditional gradient arguments do not establish task competence or an efficiency advantage.
+The separate Rover Lab, Patch World and Atari Arcade engines demonstrate bounded parts of this design in simulation. Cadence is experimental research software; a physical robot evaluation is the next test. Conditional gradient arguments do not establish task competence or an efficiency advantage.
 
 ## Compared with a deep neural network
 
@@ -67,11 +67,11 @@ A feed-forward reference computes outputs through directed layers. Cadence's def
 
 ## Brain design: System 1 and optional System 2
 
-System 1 is the default brain, composed with Brain.compose; System 2 adds optional observers to the same brain. Every answer is the settled state of the whole brain, and a brain that does not settle refuses to act. Beside the main interface, Cadence 0.71.1 keeps advanced engines with their own contracts: the population solver, where populations of patches settle one joint energy and observers read exact prediction errors; record patches for event records and consolidation; and a temporal model for learned action consequences and planning. System 1 and System 2 name functional roles in software, not claims of biological equivalence. Choose observers by measured task quality, query latency and learning cost; deeper is not automatically better or faster. Archived AMEN uses a record-patch brain trained on an earlier release.
+System 1 is the default brain, composed with Brain.compose; System 2 adds optional observers to a developed two-module System 1 in the same brain. Every answer is the settled state of the whole brain, and a brain that does not settle refuses to act. Beside the main interface, Cadence keeps advanced engines with their own contracts: the population solver, where populations of patches settle one joint energy and observers read exact prediction errors; record patches for event records and consolidation; and a temporal model for learned action consequences and planning. System 1 and System 2 name functional roles in software, not claims of biological equivalence. Choose observers by measured task quality, query latency and learning cost; deeper is not automatically better or faster. Archived AMEN uses a record-patch brain trained on an earlier release.
 
 - Research and preprints: https://floatingpragma.io/research/
 - Work in physics, mathematics, AI and security: https://floatingpragma.io/work/
-- Brain design: https://github.com/muellerberndt/cadence/blob/v0.71.1/docs/brain.md
+- Brain design: https://github.com/muellerberndt/cadence/blob/v0.78.0/docs/brain.md
 - How it works: https://floatingpragma.io/cadence/#how-it-works
 - Compared with deep learning: https://floatingpragma.io/cadence/#deep-networks
 
