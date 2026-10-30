@@ -369,6 +369,7 @@ body.doc-page { display: block; }
 .entry p { margin-top: 6px; }
 .entry .links { margin-top: 8px; flex-wrap: wrap; gap: 4px 14px; }
 .entries.compact .entry { padding: 9px 0; }
+.doc .note-line { margin: -8px 0 18px; font-size: .76rem; color: var(--dim); }
 .entries.compact .entry h3 { font-size: .84rem; }
 
 .doc-foot {
