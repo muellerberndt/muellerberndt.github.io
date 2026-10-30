@@ -177,6 +177,10 @@ a:focus-visible { outline: 1px dashed var(--glow); outline-offset: 6px; }
 .links a::after { content: "]"; opacity: .6; }
 .links a:hover, .links a:focus-visible { color: var(--glow); text-shadow: 0 0 8px var(--glow); }
 
+/* Discreet link under the tree */
+.aside { margin-top: clamp(64px, 11vh, 104px); font-size: .66rem; }
+.aside a { color: rgba(74, 241, 242, .4); }
+
 /* Full-screen layers */
 .crt {
   position: fixed;
@@ -226,11 +230,12 @@ a:focus-visible { outline: 1px dashed var(--glow); outline-offset: 6px; }
 
 /* Boot sequence (only when the script runs) */
 .js .mark { transform: scaleY(.01); opacity: 0; }
-.js .word, .js .tree .node { opacity: 0; }
+.js .word, .js .tree .node, .js .aside { opacity: 0; }
 .js.booted .mark { animation: power 1.1s cubic-bezier(.2, .9, .2, 1) forwards, flicker 7s 1.1s infinite steps(1); }
 .js.booted .word { animation: fade .01s .9s forwards; }
 .js.booted .node.root { animation: fade .01s 1.5s forwards; }
 .js.booted .leaves .node { animation: fade .01s 2.3s forwards; }
+.js.booted .aside { animation: fade .01s 3.2s forwards; }
 @keyframes power {
   0% { transform: scaleY(.01) scaleX(1.6); opacity: 0; filter: brightness(4); }
   12% { opacity: 1; }
@@ -250,7 +255,7 @@ a:focus-visible { outline: 1px dashed var(--glow); outline-offset: 6px; }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
-  .js .mark, .js .word, .js .tree .node { transform: none; opacity: 1; }
+  .js .mark, .js .word, .js .tree .node, .js .aside { transform: none; opacity: 1; }
   .grain { display: none; }
 }
 
