@@ -27,7 +27,7 @@
   }
 
   const word = document.querySelector(".word [data-scramble]");
-  const labels = [...document.querySelectorAll(".label[data-scramble]")];
+  const labels = [...document.querySelectorAll(".label[data-scramble], h2[data-scramble]")];
   const rootLabel = document.querySelector(".node.root .label");
   const leafLabels = [...document.querySelectorAll(".leaves .label")];
 
@@ -68,6 +68,8 @@
   const mark = document.getElementById("mark");
   const stage = document.getElementById("stage");
   const tear = document.getElementById("tear");
+  // Document pages have no stage to tear: small caret glitches only.
+  const calm = !stage || !tear;
   let wireJolt = 0;
 
   function slice() {
@@ -82,8 +84,10 @@
     const step = () => {
       if (n++ >= frames) {
         mark.classList.remove("glitching");
-        stage.classList.remove("shake");
-        tear.classList.remove("on");
+        if (!calm) {
+          stage.classList.remove("shake");
+          tear.classList.remove("on");
+        }
         wireJolt = 0;
         return;
       }
@@ -115,7 +119,7 @@
   if (mark && !still) {
     const schedule = () => setTimeout(() => {
       if (!document.hidden) {
-        const big = Math.random() < .28;
+        const big = !calm && Math.random() < .28;
         burst(big);
         if (big && word && Math.random() < .5) scramble(word, 500);
       }
