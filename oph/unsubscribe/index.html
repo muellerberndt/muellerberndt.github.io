@@ -11,15 +11,23 @@
 <link rel="icon" href="/favicon.ico?v=8" sizes="16x16 32x32 48x48">
 <link rel="icon" href="/favicon.svg?v=8" type="image/svg+xml" sizes="any">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=8" sizes="180x180">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HLGH209WMG"></script>
+<!-- Google tags. Consent defaults come first; EEA, UK and CH start denied until the visitor chooses. -->
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', { ad_storage: 'granted', ad_user_data: 'granted', ad_personalization: 'granted', analytics_storage: 'granted' });
+  gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied', wait_for_update: 500, region: ['AT', 'BE', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'GR', 'HU', 'IE', 'IT', 'LV', 'LT', 'LU', 'MT', 'NL', 'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE', 'IS', 'LI', 'NO', 'GB', 'CH'] });
+  try {
+    var fpc = localStorage.getItem('fp_consent');
+    if (fpc) { var g = fpc === 'granted' ? 'granted' : 'denied'; gtag('consent', 'update', { ad_storage: g, ad_user_data: g, ad_personalization: g, analytics_storage: g }); }
+  } catch (e) {}
   gtag('js', new Date());
   gtag('config', 'G-HLGH209WMG', { cookie_domain: 'floatingpragma.io' });
+  gtag('config', 'AW-18551449316');
 </script>
-<link rel="stylesheet" href="/assets/stealth.css?v=4">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HLGH209WMG"></script>
+<script src="/assets/consent.js?v=1" defer></script>
+<link rel="stylesheet" href="/assets/stealth.css?v=7">
 </head>
 <body>
 <main class="stage">

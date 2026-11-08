@@ -469,3 +469,31 @@ body.doc-page { display: block; }
 .contact .status.ok { color: var(--glow); text-shadow: 0 0 8px var(--glow-soft); }
 .contact .status.err { color: var(--red); }
 .contact.sent label, .contact.sent button { display: none; }
+
+/* Cookie choice (Europe only) */
+.consent {
+  position: fixed;
+  left: 50%;
+  bottom: 16px;
+  z-index: 5;
+  transform: translateX(-50%);
+  width: min(560px, calc(100% - 32px));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 20px;
+  flex-wrap: wrap;
+  padding: 12px 16px;
+  font-size: .72rem;
+  line-height: 1.6;
+  letter-spacing: .06em;
+  color: rgba(201, 251, 251, .8);
+  background: rgba(0, 0, 0, .92);
+  border: 1px solid rgba(74, 241, 242, .28);
+  box-shadow: 0 0 24px rgba(74, 241, 242, .12);
+}
+.consent p { margin: 0; }
+.consent p a { color: var(--glow); border-bottom: 1px dotted var(--dim); }
+.consent .links a { color: var(--glow); }
+.doc-foot .links { font-size: .66rem; }
+.doc-foot .links a { color: rgba(74, 241, 242, .4); }

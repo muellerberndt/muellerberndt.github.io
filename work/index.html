@@ -25,16 +25,24 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=8" sizes="180x180">
 <link rel="manifest" href="/site.webmanifest?v=8">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "ProfilePage", "url": "https://floatingpragma.io/work/", "mainEntity": {"@type": "Person", "name": "Bernhard Mueller", "url": "https://floatingpragma.io/work/", "worksFor": {"@type": "Organization", "name": "Pragma Research", "url": "https://floatingpragma.io/"}, "sameAs": ["https://github.com/muellerberndt", "https://twitter.com/muellerberndt", "https://muellerberndt.medium.com"]}}</script>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HLGH209WMG"></script>
+<!-- Google tags. Consent defaults come first; EEA, UK and CH start denied until the visitor chooses. -->
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', { ad_storage: 'granted', ad_user_data: 'granted', ad_personalization: 'granted', analytics_storage: 'granted' });
+  gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied', wait_for_update: 500, region: ['AT', 'BE', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'GR', 'HU', 'IE', 'IT', 'LV', 'LT', 'LU', 'MT', 'NL', 'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE', 'IS', 'LI', 'NO', 'GB', 'CH'] });
+  try {
+    var fpc = localStorage.getItem('fp_consent');
+    if (fpc) { var g = fpc === 'granted' ? 'granted' : 'denied'; gtag('consent', 'update', { ad_storage: g, ad_user_data: g, ad_personalization: g, analytics_storage: g }); }
+  } catch (e) {}
   gtag('js', new Date());
   gtag('config', 'G-HLGH209WMG', { cookie_domain: 'floatingpragma.io' });
+  gtag('config', 'AW-18551449316');
 </script>
-<link rel="stylesheet" href="/assets/stealth.css?v=4">
-<script src="/assets/stealth.js?v=3" defer></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HLGH209WMG"></script>
+<script src="/assets/consent.js?v=1" defer></script>
+<link rel="stylesheet" href="/assets/stealth.css?v=7">
+<script src="/assets/stealth.js?v=4" defer></script>
 </head>
 <body class="doc-page">
 <main class="doc">
@@ -373,6 +381,7 @@
   <footer class="doc-foot">
     <a class="mark" href="/" aria-label="Pragma Research home"><svg class="layer base" viewBox="-1 -1 17 16" aria-hidden="true"><use href="#caret"/></svg></a>
     <span>PRAGMA RESEARCH</span>
+    <span class="links"><a href="/privacy/">privacy</a><a href="#cookies">cookies</a></span>
   </footer>
 </main>
 <canvas class="grain" id="grain" aria-hidden="true"></canvas>

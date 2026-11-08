@@ -2,6 +2,8 @@
   const form = document.querySelector("form.contact");
   if (!form) return;
   const ENDPOINT = "https://xrvowfsbmfoggykbeabo.functions.supabase.co/contact";
+  // Google Ads conversion actions, one per form (filled in once the actions exist).
+  const CONVERSIONS = { join: "", investors: "" };
   const opened = Date.now();
   const status = form.querySelector(".status");
   const button = form.querySelector("button");
@@ -26,7 +28,11 @@
       form.classList.add("sent");
       status.className = "status ok";
       status.textContent = "Sent. Thank you.";
-      if (window.gtag) gtag("event", "generate_lead", { form_kind: data.kind });
+      if (window.gtag) {
+        gtag("event", "generate_lead", { form_kind: data.kind });
+        const label = CONVERSIONS[data.kind];
+        if (label) gtag("event", "conversion", { send_to: label });
+      }
     } catch (err) {
       status.className = "status err";
       status.textContent = err.message;
