@@ -3,7 +3,7 @@
   if (!form) return;
   const ENDPOINT = "https://xrvowfsbmfoggykbeabo.functions.supabase.co/contact";
   // Google Ads conversion actions, one per form (filled in once the actions exist).
-  const CONVERSIONS = { join: "", investors: "" };
+  const CONVERSIONS = { join: "AW-18551449316/3Ge2CPiNq7QdEOTNgo5F", investors: "AW-18551449316/mzVvCPuNq7QdEOTNgo5F" };
   const opened = Date.now();
   const status = form.querySelector(".status");
   const button = form.querySelector("button");
