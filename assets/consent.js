@@ -20,6 +20,7 @@
     const g = c.dataset.c === "granted" ? "granted" : "denied";
     try { localStorage.setItem("fp_consent", g); } catch (err) {}
     if (window.gtag) gtag("consent", "update", { ad_storage: g, ad_user_data: g, ad_personalization: g, analytics_storage: g });
+    dispatchEvent(new CustomEvent("fp-consent", { detail: g }));
     bar.remove();
   });
   document.body.appendChild(bar);
