@@ -416,3 +416,56 @@ body.doc-page { display: block; }
   .cursor { display: none; }
   .entry { break-inside: avoid; }
 }
+
+/* Contact forms (join, investors) */
+.doc.narrow { width: min(640px, 100%); }
+.doc.narrow section { margin-top: 72px; }
+.contact { margin-top: 36px; display: grid; gap: 22px; }
+.contact label { display: grid; gap: 8px; }
+.contact label > span { font-size: .72rem; letter-spacing: .18em; text-transform: lowercase; color: var(--dim); }
+.contact label em { font-style: normal; opacity: .6; }
+.contact input, .contact textarea {
+  width: 100%;
+  padding: 11px 12px;
+  font: inherit;
+  font-size: .88rem;
+  color: var(--ink);
+  background: rgba(0, 0, 0, .78);
+  border: 1px solid rgba(74, 241, 242, .28);
+  border-radius: 0;
+  outline: none;
+  transition: border-color .15s, box-shadow .15s;
+}
+.contact textarea { resize: vertical; min-height: 9em; line-height: 1.6; }
+.contact input:focus, .contact textarea:focus {
+  border-color: var(--glow);
+  box-shadow: 0 0 18px rgba(74, 241, 242, .25), inset 0 0 12px rgba(74, 241, 242, .08);
+}
+.contact .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.contact .actions { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
+.contact button {
+  position: relative;
+  padding: 10px 18px;
+  padding-right: calc(18px - .32em);
+  font: inherit;
+  font-size: .82rem;
+  letter-spacing: .32em;
+  text-transform: uppercase;
+  color: var(--ink);
+  background: rgba(0, 0, 0, .78);
+  border: 1px solid rgba(74, 241, 242, .28);
+  border-radius: 0;
+  cursor: pointer;
+  text-shadow: 0 0 6px var(--glow-soft);
+  transition: color .15s, border-color .15s, box-shadow .15s;
+}
+.contact button:hover, .contact button:focus-visible {
+  color: #fff;
+  border-color: var(--glow);
+  box-shadow: 0 0 18px rgba(74, 241, 242, .35), inset 0 0 14px rgba(74, 241, 242, .12);
+}
+.contact button:disabled { opacity: .5; cursor: default; }
+.contact .status { font-size: .76rem; letter-spacing: .08em; color: var(--dim); }
+.contact .status.ok { color: var(--glow); text-shadow: 0 0 8px var(--glow-soft); }
+.contact .status.err { color: var(--red); }
+.contact.sent label, .contact.sent button { display: none; }
