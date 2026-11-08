@@ -27,12 +27,14 @@
   }
 
   const word = document.querySelector(".word [data-scramble]");
+  const mission = document.querySelector(".mission [data-scramble]");
   const labels = [...document.querySelectorAll(".label[data-scramble], h2[data-scramble]")];
   const rootLabel = document.querySelector(".node.root .label");
   const leafLabels = [...document.querySelectorAll(".leaves .label")];
 
   root.classList.add("booted");
   if (word) setTimeout(() => scramble(word, 1100), 900);
+  if (mission) setTimeout(() => scramble(mission, 1000), 1200);
   if (rootLabel) setTimeout(() => scramble(rootLabel, 900), 1500);
   leafLabels.forEach((el, i) => setTimeout(() => scramble(el, 800), 2300 + i * 120));
   labels.forEach((el) => {
