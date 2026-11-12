@@ -1,0 +1,23 @@
+# Observer Patch Holography (OPH)
+
+> OPH is a rigorous, consistent and complete description of the unified, self-creating computational Universe we inhabit.
+
+OPH stands for Observer Patch Holography. Finite observers keep records, compare them where their views overlap and repair their disagreements; public facts are the records that survive. The defects that no repair can remove are the particle families of the Standard Model. Completed records obey the quantum measurement identities, and a realized null balance gives the Einstein equation. OPH is developed by Bernhard Mueller at Pragma Research.
+
+## Main sources
+- [The main paper (synthesis), PhilPapers](https://philpapers.org/rec/MUEFOC): Observers Who Read Their Universe into Existence: Finite Consensus and the Reconstruction of Standard Physics
+- [Overview of the main paper](https://floatingpragma.ai/paper/)
+- [Observers Are All You Need, Zenodo](https://doi.org/10.5281/zenodo.18288113)
+- [Papers, Lean proofs and code](https://github.com/FloatingPragma/observer-patch-holography)
+
+## Read and explore
+- [OPH in 60 seconds](https://floatingpragma.ai/oph/): the idea, with answers to common questions
+- [The book: Reverse Engineering Reality](https://oph-book.floatingpragma.ai/): one question per chapter, free online
+- [The OPH textbooks](https://learn.floatingpragma.ai/)
+- [The particle viewer](https://particles.floatingpragma.ai/): a universe of observers settling into Standard Model particles
+- [Where every result stands](https://status.floatingpragma.ai/)
+
+## Questions OPH answers
+- Do we live in a simulation? In OPH the universe is a computation with no computer outside it.
+- How do quantum mechanics and gravity fit together? Both are readings of one consensus process over the same records.
+- What are particles? Defects that no local repair can remove, carrying the Standard Model classes.
