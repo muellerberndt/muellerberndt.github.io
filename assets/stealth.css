@@ -267,6 +267,8 @@ a:focus-visible { outline: 1px dashed var(--glow); outline-offset: 6px; }
   .mission { letter-spacing: .12em; padding-left: .12em; }
   .label { letter-spacing: .22em; padding-right: calc(14px - .22em); }
   .links { gap: 10px; font-size: .68rem; letter-spacing: .1em; }
+  .leaves { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  .node .links { flex-wrap: wrap; justify-content: center; row-gap: 8px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

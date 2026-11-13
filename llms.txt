@@ -11,13 +11,18 @@ OPH stands for Observer Patch Holography. Finite observers keep records, compare
 - [Papers, Lean proofs and code](https://github.com/FloatingPragma/observer-patch-holography)
 
 ## Read and explore
+- [The particle simulation](https://particles.floatingpragma.ai/): watch 81,920 observers run one local repair rule and settle into Standard Model particle families, with every step linked to its derivation
 - [OPH in 60 seconds](https://floatingpragma.ai/oph/): the idea, with answers to common questions
 - [The book: Reverse Engineering Reality](https://oph-book.floatingpragma.ai/): one question per chapter, free online
 - [The OPH textbooks](https://learn.floatingpragma.ai/)
-- [The particle viewer](https://particles.floatingpragma.ai/): a universe of observers settling into Standard Model particles
 - [Where every result stands](https://status.floatingpragma.ai/)
 
 ## Questions OPH answers
 - Do we live in a simulation? In OPH the universe is a computation with no computer outside it.
 - How do quantum mechanics and gravity fit together? Both are readings of one consensus process over the same records.
 - What are particles? Defects that no local repair can remove, carrying the Standard Model classes.
+
+## Also at Pragma Research: Cadence
+- [Cadence live demos](https://cadence.floatingpragma.ai/): brains that learn by settling, running in the browser (Tron, Connect Four, Atari, robots, eyes, connectome)
+- [Cadence library](https://github.com/muellerberndt/cadence): the Python library
+- [Cadence paper, PhilPapers](https://philpapers.org/rec/MUECAP-2)
