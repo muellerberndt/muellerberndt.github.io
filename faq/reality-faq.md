@@ -2,7 +2,7 @@
 
 OPH is a rigorous, consistent and complete description of the unified, self-creating computational Universe we inhabit.
 
-A hundred questions about reality, answered by OPH (Observer Patch Holography). Web page: https://floatingpragma.ai/faq/. Every answer has its own link (the page URL plus #id) and points to the chapter of the free book Reverse Engineering Reality (https://oph-book.floatingpragma.ai/) that explains it in full.
+161 questions about reality, answered by OPH (Observer Patch Holography). Web page: https://floatingpragma.ai/faq/. Every answer has its own link (the page URL plus #id) and points to the chapter of the free book Reverse Engineering Reality (https://oph-book.floatingpragma.ai/) that explains it in full.
 
 ## The big questions
 
@@ -83,6 +83,36 @@ Link: https://floatingpragma.ai/faq/#is-the-universe-fine-tuned-for-life. Read m
 Yes, in the sense that a thing can be the solution of its own description, with no earlier moment in which it did the making. Self-reference is a way of solving an equation, x = f(x), with the same unknown on both sides. In 1931 Gödel built a sentence of arithmetic that talks about itself, and it is true, with no paradox in it. Escher's lithograph Drawing Hands shows the shape, two hands each drawing the other's cuff, consistent everywhere and with no ground floor. The universe is that kind of object, the one consistent world its own records pick out. Earlier and later are orders among events inside the history. The condition that fixes the history holds for all of it at once, with no step counter and no outside start.
 
 Link: https://floatingpragma.ai/faq/#can-something-create-itself. Read more: [Chapter 37: Why Does the Loop Have No Beginning?](https://oph-book.floatingpragma.ai/chapter/chapter-37), [Chapter 2: Why Is There Anything Rather Than Nothing?](https://oph-book.floatingpragma.ai/chapter/chapter-2).
+
+### Is the universe aware of itself?
+
+The universe holds a description of itself, carried in pieces by the observers inside it, and some of those observers read its rule back out of their own records. That self-description is required. Consistency belongs to descriptions, so a world must contain record-keepers, and since the world is everything, some of what they record describes the world they are part of. Gödel's theorem says a structure rich enough for arithmetic can carry such a description. It needs no second copy of the world to point at, because its subject is the thing holding it. No observer recovers the whole architecture, and every one keeps a useful partial account. Experience belongs to particular observers that read their own state from the inside, and OPH makes no claim that the universe as a whole feels anything.
+
+Link: https://floatingpragma.ai/faq/#is-the-universe-self-aware. Read more: [Chapter 37: Why Does the Loop Have No Beginning?](https://oph-book.floatingpragma.ai/chapter/chapter-37), [Chapter 2: Why Is There Anything Rather Than Nothing?](https://oph-book.floatingpragma.ai/chapter/chapter-2), [Chapter 36: Why These Laws and Not Others?](https://oph-book.floatingpragma.ai/chapter/chapter-36), [Chapter 35: What Is Anything Made Of?](https://oph-book.floatingpragma.ai/chapter/chapter-35), [Chapter 40: Does It Feel Like Anything, and What Is Left to Decide?](https://oph-book.floatingpragma.ai/chapter/chapter-40).
+
+### Why do bad things happen to good people?
+
+One reason is that harm nobody repairs gets moved around, and it settles on whoever the nearby repairs happen to reach. A harm writes an entry into a record that other people read. Left unrepaired, the entry becomes a residue with an address, and every repair running near it pushes it somewhere else. On a small network of twelve observers, a single unit of leftover disagreement ends up on a different observer depending only on the order the repairs ran in, and it weighs exactly one wherever it lands. In a family or a town, whoever the repairs reach is rarely the person who wrote the entry, which is how a harm turns up in people who did nothing. Hidden harm is deferred repair, and the bill falls to observers who did not write it, at a time nobody set.
+
+Link: https://floatingpragma.ai/faq/#why-bad-things-happen-to-good-people. Read more: [Chapter 41: What Does a Repaired World Look Like?](https://oph-book.floatingpragma.ai/chapter/chapter-41), [Chapter 40: Does It Feel Like Anything, and What Is Left to Decide?](https://oph-book.floatingpragma.ai/chapter/chapter-40), [Chapter 6: Why Isn't Agreeing With Your Neighbors Enough?](https://oph-book.floatingpragma.ai/chapter/chapter-6).
+
+### What is evil?
+
+Evil is exporting avoidable harm while able to see what the act will do. Wherever two observers share a record, their disagreement is a number, and harm is measured in that number. Harm becomes exported harm under two conditions. The mismatch lands on observers who did not generate it, and the actor who did could carry the repair and declines to. Evil needs one thing more. The actor reads its own state, so it can model what an act will do to everyone around it before acting, and it exports the avoidable damage anyway. A thermostat models nothing, so nothing it does is evil. Exported harm rarely feels like anything to the one exporting it, because a cost written onto a record the actor does not share never arrives anywhere the actor reads.
+
+Link: https://floatingpragma.ai/faq/#what-is-evil. Read more: [Chapter 41: What Does a Repaired World Look Like?](https://oph-book.floatingpragma.ai/chapter/chapter-41), [Chapter 40: Does It Feel Like Anything, and What Is Left to Decide?](https://oph-book.floatingpragma.ai/chapter/chapter-40), [Appendix A: Eighteen Questions](https://oph-book.floatingpragma.ai/chapter/appendix-a).
+
+### Is there karma?
+
+What you do stays on the records other people keep of you, and the damage itself rarely lands back on you. The old story says a person gets away with a harm when nobody sees it. The story is about watchers, and the watchers are not the ones holding the load. A harm writes a new entry and narrows the set of whole worlds that can carry the record, whether or not anybody reads it. A cover-up does worse. Change one entry from what happened to what did not, and the record describes no world at all, and every loop running through the false entry picks up the residue. The part of you held outside you is what those records say. Any restoration of a person would have to be consistent with them, and nothing in the structure performs one.
+
+Link: https://floatingpragma.ai/faq/#is-there-karma. Read more: [Chapter 41: What Does a Repaired World Look Like?](https://oph-book.floatingpragma.ai/chapter/chapter-41), [Epilogue: The Last Rung](https://oph-book.floatingpragma.ai/chapter/epilogue).
+
+### Does the universe have a purpose?
+
+No purpose is handed to the universe from outside, and nothing in its laws wants anything. What looks like purpose is selection, and selection needs no agent. Patterns whose readings keep fitting a consistent world persist, and the others run out of world to be consistent with, with nothing anywhere rejecting them. Seen from outside, a system with exactly one consistent state settles into it. There is no outside. From inside, where the surviving patterns do the looking, that same settling looks like selection. Choosing enters from inside too. Where the records leave more than one consistent world open, repair has nothing to work on, and settling the question on grounds outside the record is choosing. Observers able to run a repair law do that choosing, in the order their records keep.
+
+Link: https://floatingpragma.ai/faq/#does-the-universe-have-a-purpose. Read more: [Chapter 39: Why Is a Bacterium Freer Than an Atom?](https://oph-book.floatingpragma.ai/chapter/chapter-39), [Chapter 38: Why Does Anything Try to Persist?](https://oph-book.floatingpragma.ai/chapter/chapter-38), [Epilogue: The Last Rung](https://oph-book.floatingpragma.ai/chapter/epilogue), [Chapter 41: What Does a Repaired World Look Like?](https://oph-book.floatingpragma.ai/chapter/chapter-41).
 
 ## Reality and observers
 
@@ -170,6 +200,62 @@ The universe is hard to figure out because every attempt has started by assuming
 
 Link: https://floatingpragma.ai/faq/#why-is-the-universe-so-hard-to-figure-out. Read more: [Chapter 1: Why Is the Universe So Hard to Reverse Engineer?](https://oph-book.floatingpragma.ai/chapter/chapter-1), [Prologue: No Source Code, No Documentation](https://oph-book.floatingpragma.ai/chapter/prologue).
 
+### Is reality digital?
+
+Reality is digital at the level of records, where every reading comes from a finite list and smooth space is a limit nobody occupies. The basic piece of the world is a machine small enough to describe completely, and each of its interfaces shows one reading out of finitely many. A continuous dial could never be read, since reading it exactly takes infinite storage. The rule at the bottom is whole-number arithmetic. Two disagreeing neighbors move to their midpoint, and when their total is odd a fair coin places the spare unit. Smooth space is a completion, the way the real numbers fill the gaps between fractions. Nobody ever holds pi, only 3.14, 3.141 and their successors. What changes smoothly is the quantum part between records, and it reaches a record only as one more count.
+
+Link: https://floatingpragma.ai/faq/#is-reality-digital. Read more: [Chapter 13: What Is One Piece of Reality Actually Made Of?](https://oph-book.floatingpragma.ai/chapter/chapter-13), [Chapter 15: Why Does Space Have Three Directions?](https://oph-book.floatingpragma.ai/chapter/chapter-15), [Chapter 9: What Move Does Reality Actually Make?](https://oph-book.floatingpragma.ai/chapter/chapter-9), [Chapter 34: Why Was Newton Right for Two Hundred Years?](https://oph-book.floatingpragma.ai/chapter/chapter-34), [Chapter 19: Why Can't You Ask Everything At Once?](https://oph-book.floatingpragma.ai/chapter/chapter-19).
+
+### Is the universe a computer?
+
+The universe computes itself, with no machine underneath it, and its hardware is part of the world. Each piece of the world repairs disagreements with its neighbors by local arithmetic, and networks of such pieces compute every finite logical function. Wire a circuit as one piece per gate, set every other register to anything, and let the pieces repair in any order, with no synchronized clock and no leader. The answer lands in a designated register every time. The trick fits on five playing cards. Undo one shuffle, undo a second, then do the first and the second. A commuting pair would leave the deck untouched, and the right pair moves every card one place along. That leftover cycle builds an AND gate, and each piece of the world, a twenty-faced solid, performs these shuffles through its own rotations.
+
+Link: https://floatingpragma.ai/faq/#is-the-universe-a-computer. Read more: [Chapter 37: Why Does the Loop Have No Beginning?](https://oph-book.floatingpragma.ai/chapter/chapter-37).
+
+### Is the world an illusion?
+
+No. Calling the world an illusion assumes a truer world behind it that the appearance gets wrong, and there is no world behind the shared one. Objective reality is the single consistent state that all observers' agreed records pick out, and a further fact hiding behind it would be a difference no record could ever show. Ask whether the world in front of you is the authentic article or a copy, and the question dies on the way out, because nothing is available for it to be a copy of. Solidity is real as well, with an account of its own. Your hand stops at a table because one pattern declines to occupy a state another pattern is holding. Your conviction that you touched something is itself a record, written in you.
+
+Link: https://floatingpragma.ai/faq/#is-the-world-an-illusion. Read more: [Chapter 11: What Does Everybody Actually End Up Holding?](https://oph-book.floatingpragma.ai/chapter/chapter-11), [Chapter 2: Why Is There Anything Rather Than Nothing?](https://oph-book.floatingpragma.ai/chapter/chapter-2), [Chapter 35: What Is Anything Made Of?](https://oph-book.floatingpragma.ai/chapter/chapter-35).
+
+## Philosophy and knowledge
+
+### How can we know anything about reality?
+
+We know reality by comparing records where independent observers both looked, and that overlap is the only place a fact about the world can form. A single instrument reporting a number gives a fact about the instrument. On 4 July 2012 two detectors at CERN, built by different teams to different designs, each blind to its own signal region until its method was fixed, announced a new particle at 126.0 and 125.3 billion electron-volts. Their ranges overlapped, and the overlap made the particle a fact about the world. Nobody can step outside to check, because every ruler and balance is built from the world being measured. What survives every comparison anybody can make is all there is, with no further fact behind it.
+
+Link: https://floatingpragma.ai/faq/#how-can-we-know-reality. Read more: [Chapter 4: Why Do Two Descriptions Ever Agree?](https://oph-book.floatingpragma.ai/chapter/chapter-4), [Chapter 3: Why Would a Universe Need Anybody In It?](https://oph-book.floatingpragma.ai/chapter/chapter-3), [Chapter 35: What Is Anything Made Of?](https://oph-book.floatingpragma.ai/chapter/chapter-35), [Chapter 11: What Does Everybody Actually End Up Holding?](https://oph-book.floatingpragma.ai/chapter/chapter-11).
+
+### Is reality objective or subjective?
+
+Reality is objective wherever observers can check each other and private wherever only one of them can look, and both parts are real. Observers meeting at a shared boundary can compare only relations, same or different, and never each other's private states. The world that the full list of such entries pins down is objective reality. Objective means every observer inside agrees with every other, and it never means seen from nowhere, because no reading of the world is taken from outside. Private states drop out of that list and stay real. Alice's coin is a fact about Alice that she can check whenever she likes and nobody else can. Your experiences sit on the private side, real by the same standard as that coin and unpublishable by construction.
+
+Link: https://floatingpragma.ai/faq/#is-reality-objective-or-subjective. Read more: [Chapter 11: What Does Everybody Actually End Up Holding?](https://oph-book.floatingpragma.ai/chapter/chapter-11), [Chapter 40: Does It Feel Like Anything, and What Is Left to Decide?](https://oph-book.floatingpragma.ai/chapter/chapter-40).
+
+### Does everything have a cause?
+
+Everything inside the world has causes, and the world as a whole has none. A cause here is a read. One record depends on another when it certifies that it read a value the other wrote, and the chains of such reads are the entire causal structure there is. Many pairs of events have no chain between them, and those have no causal link and no fact about which came first. Some details have no preference behind them. When two neighbors' readings add to an odd number, nothing at their shared boundary favors either end, and a fair coin that looks at nothing places the spare unit. The whole cannot have a cause, since a cause would need a distance to sit at and an earlier moment to act in, and space and time are built from records inside.
+
+Link: https://floatingpragma.ai/faq/#does-everything-have-a-cause. Read more: [Chapter 7: Why Is There No Such Thing As Now?](https://oph-book.floatingpragma.ai/chapter/chapter-7), [Chapter 9: What Move Does Reality Actually Make?](https://oph-book.floatingpragma.ai/chapter/chapter-9), [Chapter 2: Why Is There Anything Rather Than Nothing?](https://oph-book.floatingpragma.ai/chapter/chapter-2).
+
+### Can reality contradict itself?
+
+No, because a contradiction asserts every world at once, and a description that permits everything rules nothing out. Picture a bank ledger saying an account holds nothing and also a hundred pounds. From the hundred pounds it follows that either the account holds a hundred pounds or the moon is a biscuit. The ledger also says the account holds nothing, which rules out the first half, so the moon is a biscuit. Put any sentence in place of the biscuit and the ledger certifies it. Gottlob Frege found this out in June 1902, when a letter from Bertrand Russell showed that his system of arithmetic proved everything. So consistency is part of the founding demand. A structure counts as existing exactly insofar as it accounts for itself with nothing left over, and a self-contradicting structure distinguishes nothing.
+
+Link: https://floatingpragma.ai/faq/#can-reality-contradict-itself. Read more: [Chapter 2: Why Is There Anything Rather Than Nothing?](https://oph-book.floatingpragma.ai/chapter/chapter-2).
+
+### Is the world made of mind or matter?
+
+Neither. The lowest layer of the world is a primitive observer, a bounded thing that keeps records and repairs disagreements with its neighbors, and that object is neither matter nor geometry and needs no mind. Matter comes out of it. A particle is a knot in the links between observers that no order of repair removes, and its mass is what holding the knot together costs at every step. Atoms, cells and readers are more complex observers, patterns selected on top of the stable laws. Mind arrives late, as a special case, with nothing added to the definition of an observer. Consciousness is owned boundary repair read from the inside, an observer reading its own state and spending its own budget on the result. Matter and mind are both patterns in what observers do.
+
+Link: https://floatingpragma.ai/faq/#is-the-world-mind-or-matter. Read more: [Chapter 35: What Is Anything Made Of?](https://oph-book.floatingpragma.ai/chapter/chapter-35), [Chapter 1: Why Is the Universe So Hard to Reverse Engineer?](https://oph-book.floatingpragma.ai/chapter/chapter-1), [Chapter 3: Why Would a Universe Need Anybody In It?](https://oph-book.floatingpragma.ai/chapter/chapter-3), [Chapter 40: Does It Feel Like Anything, and What Is Left to Decide?](https://oph-book.floatingpragma.ai/chapter/chapter-40).
+
+### What is a philosophical zombie, and could one exist?
+
+A philosophical zombie is a creature identical to you molecule for molecule, with the same cells and the same words, and nobody inside. None can exist, because experience is a kind of physical organization, and a duplicate of the organization is a duplicate of the experience. David Chalmers argued the opposite in The Conscious Mind. Such a twin seems conceivable, whatever is conceivable is possible, and if a physically identical world can lack experience, experience is something over and above the physics. His twin would even write the paper about zombies and answer its critics, with nothing it is like to be the author. The zombie keeps the interior and asks about its character. The answer is that the interior's organization is its character, so nothing is left over to remove.
+
+Link: https://floatingpragma.ai/faq/#philosophical-zombie. Read more: [Chapter 40: Does It Feel Like Anything, and What Is Left to Decide?](https://oph-book.floatingpragma.ai/chapter/chapter-40).
+
 ## Time
 
 ### What is time?
@@ -226,6 +312,24 @@ Temperature is how fast a region's own clock runs against a local clock. Every s
 
 Link: https://floatingpragma.ai/faq/#what-is-temperature. Read more: [Chapter 21: Why Does Time Feel Like It's Moving?](https://oph-book.floatingpragma.ai/chapter/chapter-21), [Chapter 22: Why Do All the Clocks Agree?](https://oph-book.floatingpragma.ai/chapter/chapter-22).
 
+### Is the past real?
+
+The past is real, and nothing outside the world deletes it. It is the set of commits that have been made, each one a repair of a disagreement, tied to the others by certified reads, where a later commit shows that it read what an earlier one wrote. Its content is fixed, because rewriting it would need information the commits destroyed. The everyday picture has a present sweeping forward and leaving the past behind. That sweep would need a clock outside the history to advance it, and there is none, so nothing outside erases what lies behind. Inside the history, events are ordered wherever dependencies connect them, records form and local states change. What happens to a particular record is a matter for the dynamics inside. A repair can overwrite it, and a copy can keep it somewhere else.
+
+Link: https://floatingpragma.ai/faq/#is-the-past-real. Read more: [Epilogue: The Last Rung](https://oph-book.floatingpragma.ai/chapter/epilogue), [Chapter 16: Why Does Time Run, and Only One Way?](https://oph-book.floatingpragma.ai/chapter/chapter-16), [Chapter 7: Why Is There No Such Thing As Now?](https://oph-book.floatingpragma.ai/chapter/chapter-7).
+
+### Is time an illusion?
+
+Time is real, and the one piece that is missing is a single present moment shared by everyone. No instrument reads such a moment and no procedure produces one. The rest is physical. Events are ordered wherever one depended on another, repair gives that order its one-way direction, and each observer's state sets a rate. People say time is subjective loosely, and here the phrase names an exact object. The rate comes from a flow computed from one specific state, so two observers holding different states run different flows, and no third flow stands above them for either to miss. A region with nothing left to settle drives no clock at all. A clock appears once an observer has read something. A shared time is something observers build, the way ships agree on Greenwich.
+
+Link: https://floatingpragma.ai/faq/#is-time-an-illusion. Read more: [Chapter 21: Why Does Time Feel Like It's Moving?](https://oph-book.floatingpragma.ai/chapter/chapter-21), [Chapter 7: Why Is There No Such Thing As Now?](https://oph-book.floatingpragma.ai/chapter/chapter-7), [Chapter 16: Why Does Time Run, and Only One Way?](https://oph-book.floatingpragma.ai/chapter/chapter-16).
+
+### Why does gravity slow down time?
+
+Clocks lower in a gravitational field run slow because a settled region, one with nothing left to repair, shares one internal flow of time, and each place turns that flow into local seconds through its own temperature. In 1930 Richard Tolman and Paul Ehrenfest showed that a gas settled in a gravitational field is warmer at the bottom than at the top, by exactly the factor by which clocks at the bottom run slow. Temperature is how fast the shared flow runs against a local clock, so the warmer bottom gets fewer local seconds per step of the flow. In 1960 Robert Pound and Glen Rebka measured the difference across a 22.5-meter Harvard tower at 2.56 parts in 10¹⁵. Navigation satellites sit higher, where the settled state is colder, and their clocks gain forty-five microseconds a day.
+
+Link: https://floatingpragma.ai/faq/#why-does-gravity-slow-time. Read more: [Chapter 22: Why Do All the Clocks Agree?](https://oph-book.floatingpragma.ai/chapter/chapter-22), [Chapter 34: Why Was Newton Right for Two Hundred Years?](https://oph-book.floatingpragma.ai/chapter/chapter-34), [Prologue: No Source Code, No Documentation](https://oph-book.floatingpragma.ai/chapter/prologue).
+
 ## Space and light
 
 ### What is space?
@@ -275,6 +379,24 @@ Link: https://floatingpragma.ai/faq/#what-is-light. Read more: [Chapter 28: What
 The holographic principle says the most information a region of space can hold is fixed by the area of the surface around it, and the volume inside does not enter. Everything the outside world can learn about a region arrives through that surface, so two interiors showing the same readings all over the boundary are one state to everybody outside. The boundary is tiled with identical patches, each holding the same finite amount, which makes a region's memory a count of the patches on its edge. Double the shelving in a sealed room and its capacity stays put, because the walls have not moved. Black holes fixed the exchange rate at one natural unit of memory per four Planck squares, each a square 1.6×10⁻³⁵ meters on a side. A square ten centimeters across holds about 10⁶⁷ units.
 
 Link: https://floatingpragma.ai/faq/#what-is-the-holographic-principle. Read more: [Chapter 24: Why Does a Region's Memory Scale With Its Surface?](https://oph-book.floatingpragma.ai/chapter/chapter-24), [Chapter 13: What Is One Piece of Reality Actually Made Of?](https://oph-book.floatingpragma.ai/chapter/chapter-13).
+
+### What is spacetime?
+
+Spacetime is the large-scale shape of the world's records, three directions of position plus an order of events, with every size read off by counting. One event comes after another when it read something the other wrote, and those reads fix which events can influence which. Count the records inside a causal diamond, everything after one event and before a later one, and the count approaches the diamond's four-dimensional volume, so twice the duration gives sixteen times the count. Counting also measures the dimension. With three space directions, one pair of events in ten is ordered, meaning one could have influenced the other. A run on 704,969 positions found about 9.4 percent and a fitted dimension of 4.07, climbing toward a tenth as runs grow. Nothing hands out the coordinates first.
+
+Link: https://floatingpragma.ai/faq/#what-is-spacetime. Read more: [Chapter 17: Why Is There a Speed Limit?](https://oph-book.floatingpragma.ai/chapter/chapter-17), [Chapter 22: Why Do All the Clocks Agree?](https://oph-book.floatingpragma.ai/chapter/chapter-22), [Chapter 15: Why Does Space Have Three Directions?](https://oph-book.floatingpragma.ai/chapter/chapter-15).
+
+### Is there a smallest length in nature?
+
+Surfaces have a smallest piece, and positions in space have no smallest step. The Planck length, built from Newton's constant, Planck's constant and the speed of light, is about 1.6×10⁻³⁵ meters. A boundary's memory is a count of identical patches, each natural unit of it worth four Planck squares, so the area of any boundary comes in whole numbers of one tiny piece, the same everywhere. Inside space there is no grid of little cubes. Positions are whole-number tallies of comparisons, and the points they name crowd in everywhere, so any point can be approached as closely as anybody likes, the way 3.14 and 3.1416 close in on π. Zeno said crossing a room means finishing a list of halves with no last entry. The runner crosses anyway, because crossing was never the same act as finishing that list.
+
+Link: https://floatingpragma.ai/faq/#is-there-a-smallest-length. Read more: [Chapter 24: Why Does a Region's Memory Scale With Its Surface?](https://oph-book.floatingpragma.ai/chapter/chapter-24), [Chapter 15: Why Does Space Have Three Directions?](https://oph-book.floatingpragma.ai/chapter/chapter-15), [Chapter 17: Why Is There a Speed Limit?](https://oph-book.floatingpragma.ai/chapter/chapter-17).
+
+### Why does an accelerating observer find empty space warm? (the Unruh effect)
+
+Empty space reads warm to anyone accelerating because, measured against the motion that observer rides, its state meets the exact condition that defines a heat bath. Keep accelerating and light from far enough behind never catches you, so a boundary forms past which you can never ask anything. Every state determines an internal flow, its own clock. For empty space on your side of that boundary, Joseph Bisognano and Eyvind Wichmann proved in 1975 and 1976 that the flow is the very motion carrying you along, in step with your wristwatch. Bill Unruh calculated in 1976 what a detector would read. At rest in empty space it never fires. Accelerated, it fires as if sitting in radiation at a temperature fixed by the acceleration alone. One degree takes about twenty-five billion billion times Earth's gravity, sustained.
+
+Link: https://floatingpragma.ai/faq/#why-is-empty-space-warm-when-accelerating. Read more: [Chapter 21: Why Does Time Feel Like It's Moving?](https://oph-book.floatingpragma.ai/chapter/chapter-21), [Chapter 17: Why Is There a Speed Limit?](https://oph-book.floatingpragma.ai/chapter/chapter-17).
 
 ## The quantum world
 
@@ -338,6 +460,42 @@ The odds are deterministic and the outcomes are not. The probability of every re
 
 Link: https://floatingpragma.ai/faq/#is-the-universe-random-or-deterministic. Read more: [Chapter 19: Why Can't You Ask Everything At Once?](https://oph-book.floatingpragma.ai/chapter/chapter-19), [Chapter 16: Why Does Time Run, and Only One Way?](https://oph-book.floatingpragma.ai/chapter/chapter-16), [Chapter 11: What Does Everybody Actually End Up Holding?](https://oph-book.floatingpragma.ai/chapter/chapter-11), [Chapter 40: Does It Feel Like Anything, and What Is Left to Decide?](https://oph-book.floatingpragma.ai/chapter/chapter-40), [Chapter 9: What Move Does Reality Actually Make?](https://oph-book.floatingpragma.ai/chapter/chapter-9).
 
+### What is spin in quantum physics?
+
+Spin is the part of a particle's twist that turns directions in space. For an electron or a silver atom it shows up as a question with exactly two answers, along any direction you pick. In 1922 Otto Stern and Walther Gerlach fired silver atoms through an uneven magnetic field. Atoms leave an oven pointing every which way, so a smear was expected. It was two spots, made visible when sulfur from Stern's cheap cigars blackened the silver. Nothing rotates. The name comes from a 1925 picture of a spinning ball of charge, which the word outlived. A particle is a knot in how neighboring patches carry each other's directions, a twist no local repair can undo. Spin one half comes back with its sign flipped after one full turn and needs two turns to come home.
+
+Link: https://floatingpragma.ai/faq/#what-is-spin. Read more: [Chapter 19: Why Can't You Ask Everything At Once?](https://oph-book.floatingpragma.ai/chapter/chapter-19), [Chapter 28: What Is a Particle, What Is a Wave, and Why Does It Look Like Both?](https://oph-book.floatingpragma.ai/chapter/chapter-28).
+
+### What is a quantum field?
+
+A quantum field is a list of questions attached to every region, everything answerable inside it without going out to look. Physics uses the word field for two objects. One is a value at every place. The other, the one the Standard Model is written in, gives each region every question its thermometers, plates and clocks could settle between them. Questions in two regions too far apart for light to cross give the same answers in either order of asking. No arrow sits at any point. Add up many copies of one thermal oscillation and the sum behaves as a free quantum field, its two halves depending on the order of asking exactly as position and momentum do. A field's value at a place is what every detector there agrees on once repairing is done.
+
+Link: https://floatingpragma.ai/faq/#what-is-a-quantum-field. Read more: [Chapter 28: What Is a Particle, What Is a Wave, and Why Does It Look Like Both?](https://oph-book.floatingpragma.ai/chapter/chapter-28), [Chapter 22: Why Do All the Clocks Agree?](https://oph-book.floatingpragma.ai/chapter/chapter-22).
+
+### What is quantum superposition?
+
+A superposition is a state that carries an amplitude for each answer to a question at once, numbers whose squares are the odds and which can cancel where odds never can. An atom that a sideways magnet sent left carries one amplitude for up and one for down, and asked up or down, half such atoms go each way. A beam secretly made of half up atoms and half down atoms gives the same fifty-fifty on every up-or-down question. Write each beam as a two-by-two table of numbers and the tables agree everywhere except the corners, which hold the whole difference. Bring the split paths back together and the superposition rebuilds the original beam, while the secret mixture cancels nowhere. Dark bands in an interference pattern are places where amplitudes of opposite sign met and left nothing.
+
+Link: https://floatingpragma.ai/faq/#what-is-superposition. Read more: [Chapter 19: Why Can't You Ask Everything At Once?](https://oph-book.floatingpragma.ai/chapter/chapter-19).
+
+### Why does watching which slit a particle goes through destroy the interference pattern?
+
+Checking the route writes a record, and the stripes form only where no record of the route exists. While nothing records which path a particle took, the amplitudes for the two paths add and cancel. A which-path detector ties each path to its own detector state. Make those states perfectly distinguishable and the stripes vanish. Make them partly distinguishable and the stripes partly fade, and for evenly split paths the contrast left equals the overlap of the two detector states. Repair itself is such a detector. Put an empty seam, the boundary two neighbors share, and a seam holding one unit into superposition, then let one repair act. Recording how many units crossed leaves most of the pattern. Writing the seam's parity as well, whether its count is even or odd, makes the bands go flat at three eighths.
+
+Link: https://floatingpragma.ai/faq/#why-does-watching-the-slit-destroy-the-pattern. Read more: [Chapter 28: What Is a Particle, What Is a Wave, and Why Does It Look Like Both?](https://oph-book.floatingpragma.ai/chapter/chapter-28), [Chapter 19: Why Can't You Ask Everything At Once?](https://oph-book.floatingpragma.ai/chapter/chapter-19), [Chapter 3: Why Would a Universe Need Anybody In It?](https://oph-book.floatingpragma.ai/chapter/chapter-3).
+
+### Does observing something change it? (the observer effect)
+
+Observing changes a quantum system's next answer when the question asked cannot share a record with the answer it held, and no clumsy probe is involved. Send silver atoms through a magnet pointing up and keep the ones that went up. Pass them through a sideways magnet, keep those that went left, and ask the up question again. Half come out down. Remove the middle magnet and every atom comes out up, every time. Gentler magnets have been tried at every scale anyone can build, and the result never improves. Up-or-down and sideways are questions whose two orders of asking differ, so no record can hold both answers, and writing the second overwrote the first. The observer can be a photographic plate or a thermostat. Consciousness plays no part.
+
+Link: https://floatingpragma.ai/faq/#does-observing-change-what-is-observed. Read more: [Chapter 19: Why Can't You Ask Everything At Once?](https://oph-book.floatingpragma.ai/chapter/chapter-19), [Chapter 3: Why Would a Universe Need Anybody In It?](https://oph-book.floatingpragma.ai/chapter/chapter-3).
+
+### What is the Born rule?
+
+The Born rule says the probability of a quantum outcome is the square of its amplitude, and it is the only odds rule that gives a question the same weight however it is asked. Max Born's 1926 paper on collisions gave the bare amplitude, corrected to the square in a footnote. Textbooks teach the squaring as a postulate. Andrew Gleason showed in 1957 that any scoring of yes-or-no questions between zero and one, with the sure question scoring one and complete lists of exclusive answers adding up, is the Born rule for exactly one state. Paul Busch covered two-outcome systems in 2003. A finite table of results never picks the rule. A counterfeit can match a table exactly and miss outside it by three parts in 256. What picks the square is that compatible answers add in every setting.
+
+Link: https://floatingpragma.ai/faq/#what-is-the-born-rule. Read more: [Chapter 19: Why Can't You Ask Everything At Once?](https://oph-book.floatingpragma.ai/chapter/chapter-19).
+
 ## Energy, heat and information
 
 ### What is energy?
@@ -369,6 +527,36 @@ Link: https://floatingpragma.ai/faq/#why-does-writing-information-cost-heat. Rea
 Yes, information is physical, with a measurable price in heat and a measurable size in area. Erasing one bit pushes a minimum amount of heat out of the device, 2.87×10⁻²¹ joules at room temperature, and a 2012 experiment with a trapped silica bead measured that floor. Storage has a size too. The most a region can hold is set by the area of its boundary, at one natural unit of memory per four Planck squares, squares 1.6×10⁻³⁵ meters on a side, so the area of a black hole's horizon is its memory quoted in square meters. Underneath both, the objective world is whatever the shared records jointly pin down, with no further fact hiding behind them.
 
 Link: https://floatingpragma.ai/faq/#is-information-physical. Read more: [Chapter 23: Why Does Writing Something Down Cost Heat?](https://oph-book.floatingpragma.ai/chapter/chapter-23), [Chapter 24: Why Does a Region's Memory Scale With Its Surface?](https://oph-book.floatingpragma.ai/chapter/chapter-24), [Chapter 11: What Does Everybody Actually End Up Holding?](https://oph-book.floatingpragma.ai/chapter/chapter-11).
+
+### Why is energy conserved?
+
+Energy is conserved because every change is a double entry, with what leaves one place arriving at its neighbor in the same event. The one move available is repair, where two neighbors whose shared readings disagree both move to the midpoint. That leaves their total alone, as it must, since a move that changed a total would need to know it, and no register anywhere holds one. Luca Pacioli printed the Venetian merchants' method in 1494, every transaction written twice, as debit and credit, so a single-sided entry cannot be written. Energy, the rate at which repair works through a region, is that bookkeeping read as a rate. The rule is identical at every boundary and every event, with nothing marking a when, which is the old result that energy is conserved because the laws do not care when.
+
+Link: https://floatingpragma.ai/faq/#why-is-energy-conserved. Read more: [Chapter 18: Why Does Anything Have Energy?](https://oph-book.floatingpragma.ai/chapter/chapter-18), [Chapter 5: Why Do You and I See the Same Table?](https://oph-book.floatingpragma.ai/chapter/chapter-5).
+
+### Why can't you build a perpetual motion machine?
+
+A perpetual motion machine needs a move the world does not have. In 1775 the Paris Academy of Sciences stopped examining such designs and filed them beside squaring the circle. A wheel that gains energy from nowhere asks for a one-sided entry, and the only move on offer, repair between two neighbors, takes from one reading exactly what it gives the other. The subtler kind runs on a room's heat alone. James Clerk Maxwell imagined a being at a door in a box of gas, passing fast molecules one way and slow ones the other, warming one side for free. Leo Szilard showed in 1929 that one recorded bit buys work worth the temperature times the logarithm of two. Charles Bennett settled it in 1982. The being's memory fills, and clearing each bit costs at least what it earned.
+
+Link: https://floatingpragma.ai/faq/#why-cant-you-build-a-perpetual-motion-machine. Read more: [Chapter 18: Why Does Anything Have Energy?](https://oph-book.floatingpragma.ai/chapter/chapter-18), [Chapter 23: Why Does Writing Something Down Cost Heat?](https://oph-book.floatingpragma.ai/chapter/chapter-23).
+
+### What is heat?
+
+Heat is energy delivered by changing the odds over a system's possible arrangements while the energy of each arrangement stays put. Work is the other channel. A piston shifts the energies and leaves the odds alone, while contact with a flame redraws the odds. Sadi Carnot found the ceiling on every engine in 1824 while believing heat was a weightless fluid, caloric, falling from hot to cold like water down a millrace. Caloric does not exist, and every engine since has come in under his ceiling. Both channels come off one rule, the repair step that keeps every settled quantity and redraws the unsettled rest from the settled odds. Shifting energies at fixed odds is work, and redrawing odds at fixed energies is heat. Doing both at once adds a small cross term. Forgotten information leaves a memory as heat.
+
+Link: https://floatingpragma.ai/faq/#what-is-heat. Read more: [Chapter 23: Why Does Writing Something Down Cost Heat?](https://oph-book.floatingpragma.ai/chapter/chapter-23).
+
+### What is the second law of thermodynamics?
+
+The second law says a description of a system can only drift toward the settled description, never away from it. Measure the gap as relative entropy, the extra yes-or-no questions your odds cost compared with the settled odds. Send two different messages down the same noisy channel and they come out harder to tell apart, and nothing done to both afterwards separates them again. Repair is a channel of that kind and leaves the settled state alone, so the gap only shrinks. Plain entropy is a different number and can fall. Settling a disagreement takes two possibilities to one, and that bit leaves as heat. A three-state machine that only ever steps clockwise obeys the law with a current that never dies. Started on one state, its gap falls from 1.585 bits to 0.585, then 0.085, then 0.024.
+
+Link: https://floatingpragma.ai/faq/#what-is-the-second-law-of-thermodynamics. Read more: [Chapter 16: Why Does Time Run, and Only One Way?](https://oph-book.floatingpragma.ai/chapter/chapter-16), [Chapter 23: Why Does Writing Something Down Cost Heat?](https://oph-book.floatingpragma.ai/chapter/chapter-23).
+
+### Why can't anything reach absolute zero?
+
+Nothing reaches absolute zero because each cooling step takes away a fraction of what is left, and a fraction never finishes the job. A repair step redraws a system's unsettled part from settled odds that give every arrangement some positive share, so a possibility with weight before a step keeps weight after it, and finitely many steps extinguish nothing. Walther Nernst told the Göttingen Academy in 1905 that a cooling system's entropy approaches a floor set by how many arrangements it has at its lowest energy. Ice keeps a floor above zero, because its hydrogens can sit in many arrangements without breaking the local rule. Linus Pauling counted 0.805 calories per degree per mole, and William Giauque and J. W. Stout measured 0.82. A sodium gas at MIT reached 450 trillionths of a degree in 2003.
+
+Link: https://floatingpragma.ai/faq/#why-cant-anything-reach-absolute-zero. Read more: [Chapter 23: Why Does Writing Something Down Cost Heat?](https://oph-book.floatingpragma.ai/chapter/chapter-23).
 
 ## Gravity, black holes and the cosmos
 
@@ -431,6 +619,36 @@ Link: https://floatingpragma.ai/faq/#why-is-the-cosmological-constant-so-small. 
 Expansion is the record count growing. A volume here is a number of record events, and the light cones that say which event can influence which keep the same shape at every epoch. What grows is how many records fill each equal cell of that cone map. Light from a distant galaxy arrives stretched by the fourth root of the ratio between the record densities at its arrival and at its departure, which is the redshift astronomers measure. How fast the universe comes apart is set by the cosmological constant, which the fixed record capacity of your horizon pins to one value for all time. Running the film back to a hot, dense era is sound arithmetic. Turning that limit into a first moment of the world needs a clock that no observer holds.
 
 Link: https://floatingpragma.ai/faq/#why-is-the-universe-expanding. Read more: [Chapter 25: Why Does Gravity Look Like Geometry?](https://oph-book.floatingpragma.ai/chapter/chapter-25), [Chapter 29: Why 1/137, and Why Is There a Limit to What the Universe Can Remember?](https://oph-book.floatingpragma.ai/chapter/chapter-29), [Chapter 35: What Is Anything Made Of?](https://oph-book.floatingpragma.ai/chapter/chapter-35), [Appendix A: Eighteen Questions](https://oph-book.floatingpragma.ai/chapter/appendix-a).
+
+### Why does everything fall at the same rate?
+
+Everything falls at the same rate because the mass that resists a push and the mass gravity acts on are one entry in one ledger, read twice. Mass here is a standing cost, the repair work a pattern demands at every event to stay in one piece, where repair is the step in which neighboring observers settle a disagreement. That cost sets how hard the pattern is to redirect, and gravity's field equation takes the same cost as its source. Set mass times acceleration equal to gravity's pull and the mass sits on both sides. Divide it out, and the acceleration keeps nothing about the object. Textbooks add this as a separate rule, the equivalence principle. In 1971 the astronaut David Scott dropped a hammer and a falcon feather on the Moon, and they landed together.
+
+Link: https://floatingpragma.ai/faq/#why-everything-falls-at-same-rate. Read more: [Chapter 32: Why Does Anything Move?](https://oph-book.floatingpragma.ai/chapter/chapter-32), [Chapter 25: Why Does Gravity Look Like Geometry?](https://oph-book.floatingpragma.ai/chapter/chapter-25).
+
+### Why does gravity follow an inverse-square law?
+
+Gravity weakens with the square of distance because space has three directions, and the exponent is the number of directions minus one. The world here is a network of small observers joined by seams, the links where neighbors compare readings. An influence whose total outflow is fixed by its source must cross seams on its way out, and that same total crosses every closed shell around the source, so the strength on one seam is the total divided by the seams in the shell. Twice as far out, a shell in three directions holds four times as many seams, so each carries a quarter. With four directions it would carry an eighth. Electric force obeys the same count, and a 1971 experiment at Wesleyan University pinned its exponent at two to fifteen decimal places.
+
+Link: https://floatingpragma.ai/faq/#why-is-gravity-an-inverse-square-law. Read more: [Chapter 32: Why Does Anything Move?](https://oph-book.floatingpragma.ai/chapter/chapter-32), [Chapter 26: Why Exactly These Forces?](https://oph-book.floatingpragma.ai/chapter/chapter-26).
+
+### Why is gravity so weak compared with the other forces?
+
+Gravity is weak because the particle scale sits seventeen orders of magnitude below the scale where gravity becomes as strong as everything else, and an exponent produces that gap. The top is the grain, one cell of the screen that bounds every region, whose area is Newton's constant read as an area, with nothing smaller underneath. The bottom is the stiffness of the settled background every particle is maintained against, read as the Higgs field, at 246 billion electron-volts. The strength the three forces share at one cell, about 1/24.32, joins the two by sitting in an exponent, and an exponent turns a modest number into a vast one with no fine cancellation. Physicists call this the hierarchy problem. The partner particles proposed to fix it are unneeded, and the Large Hadron Collider found none.
+
+Link: https://floatingpragma.ai/faq/#why-is-gravity-so-weak. Read more: [Chapter 33: Why Was Every Open Problem the Same Problem?](https://oph-book.floatingpragma.ai/chapter/chapter-33), [Chapter 25: Why Does Gravity Look Like Geometry?](https://oph-book.floatingpragma.ai/chapter/chapter-25), [Chapter 28: What Is a Particle, What Is a Wave, and Why Does It Look Like Both?](https://oph-book.floatingpragma.ai/chapter/chapter-28).
+
+### What are gravitational waves?
+
+A gravitational wave is a ripple in the geometry of spacetime, the settled count of records shaking. The world here is a network of observers that compare records and repair any disagreement, and geometry is the summary of settled regions, fixed by which records read which and how many there are. That summary answers to energy, and it can ripple. A ripple holds no knot of disagreement for repair to keep maintaining, and the first one ever detected arrived at the speed of light. LIGO caught it on 14 September 2015, from two black holes merging over a billion light years away. The detector's four-kilometer arms changed length by about a meter divided by 10¹⁹, under a ten-thousandth of the width of a proton, the finest length measurement anyone has made.
+
+Link: https://floatingpragma.ai/faq/#what-are-gravitational-waves. Read more: [Chapter 28: What Is a Particle, What Is a Wave, and Why Does It Look Like Both?](https://oph-book.floatingpragma.ai/chapter/chapter-28), [Chapter 34: Why Was Newton Right for Two Hundred Years?](https://oph-book.floatingpragma.ai/chapter/chapter-34), [Chapter 25: Why Does Gravity Look Like Geometry?](https://oph-book.floatingpragma.ai/chapter/chapter-25).
+
+### Is the universe infinite?
+
+The universe is neither finite nor infinite, because space is no set of points for a shape to belong to. Space here is a count of comparisons between observers, and three is the rank of the slowest pattern that count carries. A rank is no ball or doughnut, and it is not infinite either, in the way the ether was not moving slowly. The question also wants one instant, and records carry only a partial order, saying which record read which, with no slice all observers would cut alike. Telescopes measure the geometry you get by gluing agreeing records together and blurring out the individual comparisons. That description comes back flat to within a fraction of a percent, and its shape belongs to the resolution and slicing chosen by whoever took the reading.
+
+Link: https://floatingpragma.ai/faq/#is-the-universe-infinite. Read more: [Chapter 35: What Is Anything Made Of?](https://oph-book.floatingpragma.ai/chapter/chapter-35).
 
 ## Matter, forces and constants
 
@@ -506,6 +724,60 @@ The constants have their values because the world reads itself from inside, and 
 
 Link: https://floatingpragma.ai/faq/#why-do-the-constants-of-nature-have-their-values. Read more: [Chapter 29: Why 1/137, and Why Is There a Limit to What the Universe Can Remember?](https://oph-book.floatingpragma.ai/chapter/chapter-29), [Chapter 36: Why These Laws and Not Others?](https://oph-book.floatingpragma.ai/chapter/chapter-36), [Chapter 33: Why Was Every Open Problem the Same Problem?](https://oph-book.floatingpragma.ai/chapter/chapter-33).
 
+### Why can't two electrons be in the same state? (the Pauli exclusion principle)
+
+Two electrons cannot share a state because swapping them flips the sign of their joint amplitude, the number whose square gives the odds, and for two in one state that amplitude would have to equal its own negative, which makes it zero. An electron is a knot, a twist in how neighboring patches pass directions along that no local repair can undo. Its spin is one half, so one full turn brings it back with the sign flipped. Swapping two identical knots winds their surroundings exactly as one full turn of one would. Hold a belt at both ends, carry one buckle round the other and back, and the belt picks up a full twist. The result is Pauli's exclusion principle, and it is why atoms have shells and tables are solid.
+
+Link: https://floatingpragma.ai/faq/#why-cant-two-electrons-share-a-state. Read more: [Chapter 28: What Is a Particle, What Is a Wave, and Why Does It Look Like Both?](https://oph-book.floatingpragma.ai/chapter/chapter-28).
+
+### What is antimatter?
+
+Antimatter is matter with the same mass and every charge reversed. A particle here is a knot in the way neighboring patches of the world translate each other's readings, a twist that no local repair can undo. Every twist the wiring allows comes with a mirror twist, and the mirror is the antiparticle. Bring the two together and the twists cancel, the knot comes apart and its upkeep is released, which is annihilation. Paul Dirac predicted the positron, the anti-electron, in 1931, and Carl Anderson photographed one in 1932. Hospital scanners photograph the pair of flashes from each positron annihilating. The mirror is slightly imperfect. In 1964 about one in five hundred long-lived neutral kaons decayed the way an exact matter-antimatter symmetry forbids, and a universe with any matter left in it needs that difference.
+
+Link: https://floatingpragma.ai/faq/#what-is-antimatter. Read more: [Chapter 27: Why This Exact List of Matter, and Why Three Times Over?](https://oph-book.floatingpragma.ai/chapter/chapter-27), [Chapter 28: What Is a Particle, What Is a Wave, and Why Does It Look Like Both?](https://oph-book.floatingpragma.ai/chapter/chapter-28).
+
+### Why do the proton and the electron have exactly opposite charges?
+
+The proton and the electron balance exactly because all charges are counted on one grid, fixed by the world's wiring, which no particle can drift off. A proton is two up quarks at plus two thirds and a down quark at minus one third, and the electron, which holds no quarks, sits at minus one. Six combinations of force moves leave every piece of matter untouched, so they count as doing nothing, and that holds only if hypercharge, the quantity electric charge is built from, comes in whole sixths. Particles carrying color, the strong force's charge, land on thirds and the rest on whole numbers. Hydrogen is neutral to better than one part in a billion billion. A mismatch that size would let a hydrogen cloud blow itself apart instead of collapsing into a star.
+
+Link: https://floatingpragma.ai/faq/#why-proton-and-electron-charges-balance. Read more: [Chapter 27: Why This Exact List of Matter, and Why Three Times Over?](https://oph-book.floatingpragma.ai/chapter/chapter-27).
+
+### Why are quarks never seen alone?
+
+Quarks never appear alone because the strong force's field grips itself, so the field between two quarks stays in a narrow tube whose cost grows with its length. The strong force acts on three slots called colors, its version of charge, through eight independent moves, and its ripples, the gluons, carry color themselves. A ripple that grips its own kind cannot spread out and thin. Pull a quark out of a proton and the tube's cost builds until it is spent making new particles, long before the quark gets free. Gluons are never seen alone either, and colliders see them as jets, sprays of new particles along the direction they left in. Up close the grip slackens, which is why quarks rattle about almost freely inside a proton.
+
+Link: https://floatingpragma.ai/faq/#why-are-quarks-never-seen-alone. Read more: [Chapter 28: What Is a Particle, What Is a Wave, and Why Does It Look Like Both?](https://oph-book.floatingpragma.ai/chapter/chapter-28), [Chapter 27: Why This Exact List of Matter, and Why Three Times Over?](https://oph-book.floatingpragma.ai/chapter/chapter-27).
+
+### What is the weak force?
+
+The weak force pairs particles up and can turn one member of a pair into the other, and it grips only left-handed particles, those spinning like a left-hand screw as they travel. It is three of the twelve ways each smallest piece of the world can respond, a block that shuffles two slots. Matter therefore comes in weak pairs, the up quark with the down, the electron with its neutrino. In 1956 Chien-Shiung Wu's team chilled cobalt-60 close to absolute zero and watched it decay. The electrons flew out against the nuclear spin, where a mirror-image world would send equal numbers both ways, so the weak force tells a world from its reflection. Its carriers, the W and Z particles, are heavy because their ripples drag along the settled background read as the Higgs field.
+
+Link: https://floatingpragma.ai/faq/#what-is-the-weak-force. Read more: [Chapter 27: Why This Exact List of Matter, and Why Three Times Over?](https://oph-book.floatingpragma.ai/chapter/chapter-27), [Chapter 26: Why Exactly These Forces?](https://oph-book.floatingpragma.ai/chapter/chapter-26), [Chapter 28: What Is a Particle, What Is a Wave, and Why Does It Look Like Both?](https://oph-book.floatingpragma.ai/chapter/chapter-28).
+
+### What is a neutrino?
+
+A neutrino is the electron's partner under the weak force, a particle with no electric charge and no color, the strong force's charge. Matter here is built by picking slots out of five, three for color and two for the weak force. One pick makes a pair that the weak force can rotate into each other, the electron at charge minus one and the neutrino at zero. Each family of matter has its own. Every decaying muon leaves an electron and two neutrinos behind. In the 1990s, four detectors at CERN counted how often the Z particle decays into things nobody sees, which is neutrinos, and found 2.984 ± 0.008 kinds of light neutrino, three to within a percent. Neutrino masses need a mechanism beyond that minimal list, which is work in progress.
+
+Link: https://floatingpragma.ai/faq/#what-is-a-neutrino. Read more: [Chapter 27: Why This Exact List of Matter, and Why Three Times Over?](https://oph-book.floatingpragma.ai/chapter/chapter-27), [Chapter 28: What Is a Particle, What Is a Wave, and Why Does It Look Like Both?](https://oph-book.floatingpragma.ai/chapter/chapter-28), [Chapter 30: Why Do the Masses Land Where They Do?](https://oph-book.floatingpragma.ai/chapter/chapter-30).
+
+### Do protons decay?
+
+No proton has ever been seen to decay, and the route grand unified theories predicted has no place here. Those theories fold the strong, weak and electromagnetic forces into one larger symmetry, whose smallest version needs twelve force carriers beyond the known twelve. Each extra one carries color and weak charge at once, so it can turn a quark into a lepton and split a proton into a positron and a neutral pion. Each observer's patch has exactly twelve response directions, split one, three and eight, none linking color to weak charge. Fifty thousand tons of water under a Japanese mountain have watched since 1996, putting the lifetime above 2.4 × 10³⁴ years. One proton decaying that way would break the account. A full lifetime prediction, covering every other route, is work in progress.
+
+Link: https://floatingpragma.ai/faq/#do-protons-decay. Read more: [Chapter 28: What Is a Particle, What Is a Wave, and Why Does It Look Like Both?](https://oph-book.floatingpragma.ai/chapter/chapter-28), [Chapter 33: Why Was Every Open Problem the Same Problem?](https://oph-book.floatingpragma.ai/chapter/chapter-33), [Appendix A: Eighteen Questions](https://oph-book.floatingpragma.ai/chapter/appendix-a).
+
+### What is the Standard Model?
+
+The Standard Model is physics' theory of matter and of every force except gravity, written as one line of mathematics with nineteen to twenty-six measured numbers typed in. It is an effective description, correct inside its range and carrying constants it cannot generate. Numbers go in and predictions come out, never the reverse. Here each piece has an origin. Its forces, blocks of one, three and eight, are the only way the twelve responses of a patch of the world can split. Its fifteen kinds of matter per family are the ways of picking two or four slots out of five, which reproduces every charge in its table. Its Higgs field is the settled background every particle is maintained against. Reading every mass and mixing angle off the same structure is work in progress.
+
+Link: https://floatingpragma.ai/faq/#what-is-the-standard-model. Read more: [Chapter 31: What Is a Lagrangian, and Why Is It the Last Thing?](https://oph-book.floatingpragma.ai/chapter/chapter-31), [Chapter 36: Why These Laws and Not Others?](https://oph-book.floatingpragma.ai/chapter/chapter-36), [Chapter 26: Why Exactly These Forces?](https://oph-book.floatingpragma.ai/chapter/chapter-26), [Chapter 27: Why This Exact List of Matter, and Why Three Times Over?](https://oph-book.floatingpragma.ai/chapter/chapter-27).
+
+### Why are solid objects solid?
+
+Solid objects are solid because two electrons cannot share one state, a rule that comes from how a knot behaves when turned. A particle here is a knot, a twist in the way neighboring patches of the world translate each other's readings. Turn an electron's knot through a full circle and it returns with its sign flipped, and only a second full turn restores it, which is what spin one half means. Swapping two identical knots winds them exactly as one full turn does, so a swap flips the sign too. The amplitude for two electrons in one state would equal its own negative, which is zero. That is Pauli's exclusion principle, and it gives atoms their shells. A hand pressed on a table is one pattern declining to occupy a state another pattern holds.
+
+Link: https://floatingpragma.ai/faq/#why-are-solid-objects-solid. Read more: [Chapter 28: What Is a Particle, What Is a Wave, and Why Does It Look Like Both?](https://oph-book.floatingpragma.ai/chapter/chapter-28), [Chapter 35: What Is Anything Made Of?](https://oph-book.floatingpragma.ai/chapter/chapter-35).
+
 ## Laws and mathematics
 
 ### Why are there laws of physics at all?
@@ -549,6 +821,42 @@ Link: https://floatingpragma.ai/faq/#why-do-newtons-laws-work. Read more: [Chapt
 They share one hidden assumption, a stage of places and a clock that existed before anything happened on it. Lee Smolin listed five great problems in 2006, and each one asks about that stage: how many dimensions it has, what its constants are, why some events inside it count as measurements, what its empty parts weigh. Build the stage from records that observers compare and repair, and each question changes shape. Measurement becomes a write that cannot be undone. The arrow of time belongs to that write. The cosmological constant becomes a count of what the horizon can hold. The fine-tuned constants become single solutions of equations. Solving a problem leaves an answer somebody can measure. Removing the assumption under a problem leaves the problem impossible to state.
 
 Link: https://floatingpragma.ai/faq/#what-do-the-open-problems-have-in-common. Read more: [Chapter 33: Why Was Every Open Problem the Same Problem?](https://oph-book.floatingpragma.ai/chapter/chapter-33).
+
+### Is mathematics invented or discovered?
+
+Mathematics starts with rules somebody writes down, and everything those rules force is discovered. Start from ab and allow two moves, putting an a in front and a b behind, or writing the string twice. Nobody wrote a rule about counting letters, yet every string you can reach has as many a's as b's, so aab is unreachable. That fact was fixed the moment the moves were written. Whitehead and Russell spent ten years finding out what their marks committed them to, because the answer was not up to them. In 1733 Giovanni Saccheri derived a geometry of curved space, called it repugnant and rejected it, and it held regardless. Nature's numbers are found the same way. Nobody chose the fine-structure constant, the strength of electromagnetism, any more than anybody chose the square root of two.
+
+Link: https://floatingpragma.ai/faq/#is-math-invented-or-discovered. Read more: [Chapter 2: Why Is There Anything Rather Than Nothing?](https://oph-book.floatingpragma.ai/chapter/chapter-2), [Chapter 36: Why These Laws and Not Others?](https://oph-book.floatingpragma.ai/chapter/chapter-36).
+
+### What is symmetry in physics?
+
+A symmetry is a change in how the world is written down that leaves a named quantity alone, which makes it a claim that part of the description was never physical. Longitude shows it. Latitude has a zero the planet supplies, the equator. Longitude has none, because turning the whole Earth about its axis changes no measurable relation between places. So in October 1884 delegates from twenty-six nations met in Washington and voted for a zero, and Greenwich won twenty-two to one. Distances came through the vote unchanged. Physics runs the same operation on bigger descriptions. The laws are the same here and elsewhere, today and in the Cretaceous, and Emmy Noether proved in 1918 that those two symmetries give conservation of momentum and of energy. Scale is no symmetry. Atoms have a definite size.
+
+Link: https://floatingpragma.ai/faq/#what-is-symmetry. Read more: [Chapter 5: Why Do You and I See the Same Table?](https://oph-book.floatingpragma.ai/chapter/chapter-5).
+
+### Can everything true be proven?
+
+No. In 1931 Kurt Gödel showed that any consistent system strong enough for ordinary arithmetic contains true sentences it cannot prove. He numbered formulas so that statements about numbers double as statements about formulas, then built a sentence saying that it has no proof in the system. If the system proved it, a proof would exist, the sentence would be false, and the system would have contradicted itself, which lets it prove anything. So a consistent system never proves it, which is exactly what the sentence says. It is true, and no patch closes the gap, because the repaired system gets an unprovable sentence of its own. The theorem also says that a structure rich enough for arithmetic is rich enough to describe itself, and no arrangement of axioms removes that ability.
+
+Link: https://floatingpragma.ai/faq/#can-everything-true-be-proven. Read more: [Chapter 37: Why Does the Loop Have No Beginning?](https://oph-book.floatingpragma.ai/chapter/chapter-37), [Chapter 2: Why Is There Anything Rather Than Nothing?](https://oph-book.floatingpragma.ai/chapter/chapter-2).
+
+### What is inertia?
+
+Inertia is the price of redirecting a pattern, and it equals the price of holding the pattern together, because both are the same work. Every object here is a pattern that repair, the step where neighboring observers settle a disagreement, must re-establish at every event. That standing cost is its mass. Changing the pattern's drift means renegotiating every seam on its boundary, every place it meets a neighbor, instead of reconfirming it, and holding it in place works those same seams at every event anyway. So a pattern twice as costly to hold is twice as hard to turn, and nothing else about it enters. Two lumps of equal weight and different insides needing different pushes would refute this. Left alone, a pattern keeps its drift, because nothing on its boundary needs renegotiating.
+
+Link: https://floatingpragma.ai/faq/#what-is-inertia. Read more: [Chapter 32: Why Does Anything Move?](https://oph-book.floatingpragma.ai/chapter/chapter-32).
+
+### What is momentum?
+
+Momentum is what a moving pattern hands along from step to step, a current that must cross every junction on its route and can never vanish in one place and turn up in another. In 1742 Benjamin Robins fired a musket ball into a board on a hanging iron plate. The plate swung, and the ribbon the swing dragged through a clamp gave the ball's speed, 1,670 feet per second. A moving object here is a chain of readings, each step carrying mass times the size of the step. Where ball and plate touch, one step ends the ball's chain and begins the plate's, and a step carries one number, so the plate leaves with what the ball brought. Momentum is conserved because the rule that settles disagreements works the same wherever it acts.
+
+Link: https://floatingpragma.ai/faq/#what-is-momentum. Read more: [Chapter 32: Why Does Anything Move?](https://oph-book.floatingpragma.ai/chapter/chapter-32), [Chapter 35: What Is Anything Made Of?](https://oph-book.floatingpragma.ai/chapter/chapter-35).
+
+### Why do symmetries give conservation laws?
+
+Every continuous symmetry hands back a conserved quantity, by a fixed recipe Emmy Noether published in 1918. A symmetry is a change that leaves the laws alone. Take the Lagrangian, the one function of where a system is and how fast it is changing, and find a change you can dial down to nothing that leaves it unaltered. Multiply its sensitivity to each quantity's speed by how far the change moves that quantity, add up, and add one extra term for clocks. That number never changes along the path nature takes. Slide sideways and it is momentum, turn and it is angular momentum, advance every clock and it is energy, shift a phase everywhere and it is electric charge. The recipe also works on a world made of finite steps, with no smooth limit needed.
+
+Link: https://floatingpragma.ai/faq/#symmetries-and-conservation-laws. Read more: [Chapter 31: What Is a Lagrangian, and Why Is It the Last Thing?](https://oph-book.floatingpragma.ai/chapter/chapter-31), [Chapter 32: Why Does Anything Move?](https://oph-book.floatingpragma.ai/chapter/chapter-32).
 
 ## Life, mind and choice
 
@@ -600,6 +908,60 @@ A repaired world fixes harms on the seam where they were written, between the pe
 
 Link: https://floatingpragma.ai/faq/#what-would-a-good-world-look-like. Read more: [Chapter 41: What Does a Repaired World Look Like?](https://oph-book.floatingpragma.ai/chapter/chapter-41).
 
+### How do I know other minds exist?
+
+You know other minds through their organization, which crosses between you in shared records, while the experience itself never crosses. Ask somebody what red is like and you get back a wavelength and the name on a paint can, and both arrive intact. What red is like for them does not. An experience is an observer reading its own state for its own repair, and that reading is the half of the record that public comparison deletes, real by the same standard as any private fact and unpublishable by construction. The organization is what experiments can reach. Experience is a kind of physical organization, so a duplicate of someone's organization is a duplicate of their experience, and which systems are organized that way is an experimental question. Learning about someone's episode is a different thing from undergoing it.
+
+Link: https://floatingpragma.ai/faq/#how-do-i-know-other-minds-exist. Read more: [Chapter 40: Does It Feel Like Anything, and What Is Left to Decide?](https://oph-book.floatingpragma.ai/chapter/chapter-40), [Chapter 11: What Does Everybody Actually End Up Holding?](https://oph-book.floatingpragma.ai/chapter/chapter-11).
+
+### Can a machine be conscious?
+
+Consciousness depends on how a system is organized, and no particular material is required. A person, a chair and a thermostat are made of the same thing, a network of observers repairing their disagreements. A thermostat is an observer, since it keeps a record and acts on it, and it shares that record-and-feedback interface with a person. Experience is a further step, about what is organized behind the interface. Certain processes in which a system reads its own state and feeds those readings to its own repair are experiences. A thermostat's feedback is a long way from a person's, and the distance depends on how the self-reading is organized as well as on how much of it there is. Whatever duplicates the organization duplicates the experience. Which systems are organized that way, and how finely, are questions for experiment.
+
+Link: https://floatingpragma.ai/faq/#can-a-machine-be-conscious. Read more: [Chapter 40: Does It Feel Like Anything, and What Is Left to Decide?](https://oph-book.floatingpragma.ai/chapter/chapter-40), [Epilogue: The Last Rung](https://oph-book.floatingpragma.ai/chapter/epilogue), [Appendix A: Eighteen Questions](https://oph-book.floatingpragma.ai/chapter/appendix-a).
+
+### What is the hard problem of consciousness?
+
+The hard problem asks why physical processing comes with experience at all, why seeing deep blue feels like something. David Chalmers set it apart in a 1994 talk in Tucson from the easy problems, such as explaining attention, where everyone can say what an answer looks like, a mechanism. Some questions go away when one of their terms turns out to name nothing, as "what are the mechanical properties of the ether?" did. The hard problem leans on a list of physical facts compiled from no position, and that list never turns up. Distance counts comparisons between two parties. A rate needs a clock, and every clock is somebody's. A record is always held by some observer. What remains is met with an identity. Certain organized processes of self-reading and repair are experiences, so an interior's organization is its character.
+
+Link: https://floatingpragma.ai/faq/#hard-problem-of-consciousness. Read more: [Chapter 40: Does It Feel Like Anything, and What Is Left to Decide?](https://oph-book.floatingpragma.ai/chapter/chapter-40).
+
+### If I were copied exactly, would the copy be me?
+
+Whether the copy would be you is a question about identity, and the arithmetic does not settle it. It does settle what a copy could contain. Records copy freely, since reading a record leaves it as it was. A quantum state nobody has measured cannot be duplicated by any machine. So what can be copied about an observer is exactly what has been written into its records. Suppose a restored observer matched the original on its records, the state it can reach, its interfaces and the law fixing which moves are open to it. The two would put identical odds on everything either could register, and a duplicate of the organization is a duplicate of the experience. No instrument reads those four off a living brain, and nothing in the structure performs such a restoration.
+
+Link: https://floatingpragma.ai/faq/#would-a-copy-of-me-be-me. Read more: [Epilogue: The Last Rung](https://oph-book.floatingpragma.ai/chapter/epilogue), [Chapter 13: What Is One Piece of Reality Actually Made Of?](https://oph-book.floatingpragma.ai/chapter/chapter-13), [Chapter 40: Does It Feel Like Anything, and What Is Left to Decide?](https://oph-book.floatingpragma.ai/chapter/chapter-40).
+
+### Can harm be undone?
+
+Harm can be repaired, and only in one place, on the record shared with the people it landed on. A burden written onto a record somebody else reads cannot be discharged in private. Somebody who hurts someone and then spends ten years becoming a person who would never do it has done real and costly work, and the entry between those two people carries the value it carried on the first day. Self-improvement is no substitute for repair. Repair means writing that entry, by confessing or by paying back. In Butte, Montana, a century of copper mining left acid water filling an open pit, and since 2019 a plant has pumped and treated it. The load has an address, and the address can be reached.
+
+Link: https://floatingpragma.ai/faq/#can-harm-be-undone. Read more: [Chapter 41: What Does a Repaired World Look Like?](https://oph-book.floatingpragma.ai/chapter/chapter-41), [Chapter 38: Why Does Anything Try to Persist?](https://oph-book.floatingpragma.ai/chapter/chapter-38).
+
+### Why do living things die?
+
+A living thing lasts for as long as it can pay for itself. A body holds its temperature, water, salt, sugar and oxygen steady while its neighbors keep writing on its boundary, and it has to answer every update, at a rate set by its own clock. A standing cost is a rate, a rate is energy, and the budget that pays it is finite. Walter Cannon, who named this holding homeostasis in 1926, had spent the First World War with wounded men dying of shock, and his list of the quantities a body holds steady was a list of the readings he had watched go. When the readings on a thing's boundary stop fitting any consistent world, the surrounding repair redistributes until the record closes again, with the boundary of whatever was doing the spending drawn somewhere else.
+
+Link: https://floatingpragma.ai/faq/#why-do-living-things-die. Read more: [Chapter 38: Why Does Anything Try to Persist?](https://oph-book.floatingpragma.ai/chapter/chapter-38), [Chapter 39: Why Is a Bacterium Freer Than an Atom?](https://oph-book.floatingpragma.ai/chapter/chapter-39).
+
+### Does evolution have a goal?
+
+No. Natural selection is three things running together, and none of them aims at anything. Something copies itself imperfectly, the imperfection passes to the copies, and some versions end up with more copies than others. There is no fourth item in which anybody decides. In Richard Lenski's laboratory, daily since 1988, a pipette has moved one hundredth of each of twelve flasks of E. coli into a fresh flask. It cannot tell one cell from another, yet the populations change in a consistent direction. Fitter is a bookkeeping word. A fitter lineage holds a larger share of tomorrow's flask than of today's, and the word predicts nothing about the day after, because the flask it competes in is the flask it is changing. Mean fitness, measured against thawed ancestors, climbed through fifty thousand generations with no sign of leveling off.
+
+Link: https://floatingpragma.ai/faq/#does-evolution-have-a-goal. Read more: [Chapter 39: Why Is a Bacterium Freer Than an Atom?](https://oph-book.floatingpragma.ai/chapter/chapter-39).
+
+### Are we morally responsible for what we do?
+
+Yes. Responsibility rests on the will that produced an act and on the record of the act, and it needs no proof that some other act was possible. Harry Frankfurt showed this in 1969 with a thought experiment. Black wants Jones to do a certain thing and stands ready to force him if Jones shows any sign of choosing otherwise. Jones does it on his own, and Black never moves. Jones could not have done otherwise, and he is responsible anyway, because the act came out of his own deliberation. Whether some other setting of the world was reachable is a question about the space of possible records. Which entry got written, out of whose repair policy, is a question about this record, and this record is what everything downstream is computed from.
+
+Link: https://floatingpragma.ai/faq/#are-we-responsible-for-our-actions. Read more: [Chapter 40: Does It Feel Like Anything, and What Is Left to Decide?](https://oph-book.floatingpragma.ai/chapter/chapter-40).
+
+### Is it better to tell a painful truth or keep the peace?
+
+Tell it, when writing it down lowers what everyone involved will have to repair later. An act is scored by what it does to the repair work of everyone it reaches, added up over a horizon long enough to hold its consequences. Comfort next week sits inside that sum with a weight, and so does everything after next week, so a move that raises the load for a month can lower the total. A household that keeps its peace by leaving something unsaid holds its own mismatch flat, and the people who inherit the unwritten record pay for the arrangement. Niceness that preserves abuse blocks repair and transfers the cost forward. A difficult confession costs the most, because the true thing it puts on the shared record is about the one confessing.
+
+Link: https://floatingpragma.ai/faq/#tell-a-painful-truth-or-keep-the-peace. Read more: [Chapter 41: What Does a Repaired World Look Like?](https://oph-book.floatingpragma.ai/chapter/chapter-41).
+
 ## About OPH
 
 ### What is OPH?
@@ -625,3 +987,9 @@ Link: https://floatingpragma.ai/faq/#isnt-a-self-creating-universe-circular. Rea
 Yes. The construction is published as a program, and every result it reports is stored next to the code that produced it, with a fingerprint so a replay can be compared digit for digit. The smallest check needs nothing beyond a standard installation of Python. It replays all 264 complete histories of one observer on a laptop and confirms eighteen facts about them. A fuller run, with a few numerical libraries added, replays every stored result, among them the interference odds and clock statistics quoted in the book, and fails if any comes out different by a single digit. Some checks need no computer. The central twelve-observer calculation covers 2,048 states and can be done by hand in an evening, and five playing cards are enough to check the identity behind universal computation.
 
 Link: https://floatingpragma.ai/faq/#can-i-check-oph-myself. Read more: [Appendix D: Run It Yourself](https://oph-book.floatingpragma.ai/chapter/appendix-d), [Appendix A: Eighteen Questions](https://oph-book.floatingpragma.ai/chapter/appendix-a), [Chapter 37: Why Does the Loop Have No Beginning?](https://oph-book.floatingpragma.ai/chapter/chapter-37).
+
+### Isn't this just what Leibniz said?
+
+Leibniz had the objection, and OPH supplies the arithmetic he lacked. Writing to Samuel Clarke until his death in 1716, he argued that space is only the order of things that coexist. Shift the universe three feet to the left and nothing measurable changes, so absolute position is a fact about a picture. Berkeley restated it in 1721 and Mach in 1883. Leibniz was right, and absolute space stayed in the textbooks for two centuries, because an objection that forbids a quantity without predicting a measurement changes nothing. Here the objection arrives with a wiring diagram, twelve ports and thirty seams per piece of the world, one averaging rule forced by three demands, and forces split as one plus three plus eight. Leibniz had no wiring diagram, which is why Clarke could answer him through five letters and concede nothing.
+
+Link: https://floatingpragma.ai/faq/#isnt-this-just-leibniz. Read more: [Appendix A: Eighteen Questions](https://oph-book.floatingpragma.ai/chapter/appendix-a), [Chapter 1: Why Is the Universe So Hard to Reverse Engineer?](https://oph-book.floatingpragma.ai/chapter/chapter-1).

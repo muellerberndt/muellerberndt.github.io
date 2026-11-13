@@ -13,7 +13,7 @@ OPH stands for Observer Patch Holography. Finite observers keep records, compare
 ## Read and explore
 - [The particle simulation](https://particles.floatingpragma.ai/): watch 81,920 observers run one local repair rule and settle into Standard Model particle families, with every step linked to its derivation
 - [OPH in 60 seconds](https://floatingpragma.ai/oph/): the idea, with answers to common questions
-- [Reality FAQ](https://floatingpragma.ai/faq/): a hundred questions about reality (God, death, time, the Big Bang, consciousness, dark matter) answered by OPH, one anchor per question, each linked to its book chapter; Markdown at https://floatingpragma.ai/faq/reality-faq.md
+- [Reality FAQ](https://floatingpragma.ai/faq/): 161 questions about reality (God, death, free will, time, the Big Bang, consciousness, dark matter, whether reality is digital) answered by OPH, with an on-page chat with OPH Sage, one anchor per question, each linked to its book chapter; Markdown at https://floatingpragma.ai/faq/reality-faq.md
 - [The book: Reverse Engineering Reality](https://oph-book.floatingpragma.ai/): one question per chapter, free online
 - [The OPH textbooks](https://learn.floatingpragma.ai/)
 - [Where every result stands](https://status.floatingpragma.ai/)
