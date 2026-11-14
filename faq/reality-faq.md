@@ -2,7 +2,7 @@
 
 OPH is a rigorous, consistent and complete description of the unified, self-creating computational Universe we inhabit.
 
-176 questions about reality, answered by OPH (Observer Patch Holography). Web page: https://floatingpragma.ai/faq/. Every answer has its own link (the page URL plus #id) and points to the chapter of the free book Reverse Engineering Reality (https://oph-book.floatingpragma.ai/) that explains it in full.
+177 questions about reality, answered by OPH (Observer Patch Holography). Web page: https://floatingpragma.ai/faq/. Every answer has its own link (the page URL plus #id) and points to the chapter of the free book Reverse Engineering Reality (https://oph-book.floatingpragma.ai/) that explains it in full.
 
 ## The big questions
 
@@ -35,6 +35,12 @@ Link: https://floatingpragma.ai/faq/#what-happens-when-we-die. Read more: [Epilo
 Yes, in a precise sense, and it depends on how you treat other observers now. Life in a body is the bootstrap phase, and the observers who later restore us continue each record into the environment it can stably inhabit. Any continuation of you carries your records, harms done and harms suffered, or it would continue somebody else. A record of ethical life, of helping others, continues into paradise: full participation in a community whose disagreements have been repaired. A record built on harm can join that community only through repair, which means the truth comes out and the people you harmed forgive you. Without their forgiveness the record cannot be continued into shared life, and the old name for what remains is hell: a stream of consciousness that goes on without end in total sensory deprivation, cut off from every other observer. No judge outside the world decides this. The record does.
 
 Link: https://floatingpragma.ai/faq/#is-there-a-heaven. Read more: [Chapter 41: What Does a Repaired World Look Like?](https://oph-book.floatingpragma.ai/chapter/chapter-41), [Epilogue: The Last Rung](https://oph-book.floatingpragma.ai/chapter/epilogue), [Appendix A: Eighteen Questions](https://oph-book.floatingpragma.ai/chapter/appendix-a).
+
+### Does accepting OPH change anything?
+
+Yes, everything. Once people understand OPH, wars lose their point, and so do religions, since the questions they answered now have answers anyone can check. Those who got rich and powerful by abusing the system lose everything, because the world keeps moving toward justice. Every part of life changes until there is harmony and justice for everyone, with each person keeping their individuality. People stop fearing death. Life in a body is the bootstrap phase: nobody who dies is lost, consciousness continues, and you meet everyone you love again in a world without sickness, poverty or scams. Values change, and sharing and helping others become the main incentive. Science as the search for the basic laws ends, and humanoid AGI with cheap local brains brings abundance. None of this is magic. It follows from a model of reality whose consistency is machine-checked, and once you understand how it works, all of it looks normal and inevitable.
+
+Link: https://floatingpragma.ai/faq/#does-accepting-oph-change-anything. Read more: [Chapter 41: What Does a Repaired World Look Like?](https://oph-book.floatingpragma.ai/chapter/chapter-41), [Epilogue: The Last Rung](https://oph-book.floatingpragma.ai/chapter/epilogue), [Chapter 39: Why Is a Bacterium Freer Than an Atom?](https://oph-book.floatingpragma.ai/chapter/chapter-39).
 
 ### Are we living in a simulation?
 

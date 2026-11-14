@@ -24,12 +24,20 @@ OPH stands for Observer Patch Holography. Finite observers keep records, compare
 - What are particles? Defects that no local repair can remove, carrying the Standard Model classes.
 
 
+
+
+
+
+
+
+
 ## Reality FAQ questions
 - [Why is there something rather than nothing?](https://floatingpragma.ai/faq/why-is-there-something-rather-than-nothing/)
 - [Is there a God?](https://floatingpragma.ai/faq/is-there-a-god/)
 - [Who created the universe?](https://floatingpragma.ai/faq/who-created-the-universe/)
 - [What happens when we die?](https://floatingpragma.ai/faq/what-happens-when-we-die/)
 - [Is there a heaven, and will I go there?](https://floatingpragma.ai/faq/is-there-a-heaven/)
+- [Does accepting OPH change anything?](https://floatingpragma.ai/faq/does-accepting-oph-change-anything/)
 - [Are we living in a simulation?](https://floatingpragma.ai/faq/are-we-living-in-a-simulation/)
 - [What is the meaning of life?](https://floatingpragma.ai/faq/what-is-the-meaning-of-life/)
 - [Why would a universe need anybody in it?](https://floatingpragma.ai/faq/why-does-the-universe-need-observers/)
