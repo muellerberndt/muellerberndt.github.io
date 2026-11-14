@@ -84,6 +84,9 @@
     box-shadow: 0 0 32px rgba(74, 241, 242, .18); font-size: .84rem; line-height: 1.65; color: rgba(201, 251, 251, .88);
   }
   .chat[hidden] { display: none; }
+  /* Big screens: the chat fills the free margin beside the text column and most of the height. */
+  @media (min-width: 1100px) { .chat { width: clamp(440px, calc(50vw - 300px), 860px); height: min(86vh, 1100px); max-height: calc(100vh - 32px); font-size: .92rem; } }
+  @media (min-width: 1100px) and (min-height: 1100px) { .chat { font-size: 1rem; } }
   .chat header { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px;
     border-bottom: 1px solid rgba(74, 241, 242, .2); font-size: .72rem; letter-spacing: .28em; color: var(--ink); }
   .chat header button { font: inherit; font-size: .7rem; letter-spacing: .12em; color: var(--dim); background: none; border: 0; cursor: pointer; }

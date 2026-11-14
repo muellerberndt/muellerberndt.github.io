@@ -23,6 +23,7 @@ OPH stands for Observer Patch Holography. Finite observers keep records, compare
 - How do quantum mechanics and gravity fit together? Both are readings of one consensus process over the same records.
 - What are particles? Defects that no local repair can remove, carrying the Standard Model classes.
 
+
 ## Reality FAQ questions
 - [Why is there something rather than nothing?](https://floatingpragma.ai/faq/why-is-there-something-rather-than-nothing/)
 - [Is there a God?](https://floatingpragma.ai/faq/is-there-a-god/)
