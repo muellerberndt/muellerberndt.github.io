@@ -118,7 +118,7 @@ Link: https://floatingpragma.ai/faq/#does-the-universe-have-a-purpose. Read more
 
 ### What is reality?
 
-Reality is the one consistent state that the shared records of all observers pick out, with no further fact hiding behind it. Two observers can check only what both of them see, so all they can write down is a relation, such as same or different. Collect every such entry into one list, and the world is whatever single state fits that list, up to changes no observer could ever detect. A record that survives every comparison anybody can make is a fact, the smallest piece of reality there is.
+Reality is the one consistent state that the shared records of all observers pick out, with no further fact hiding behind it. Two observers can check only what both of them see, so all they can write down is a relation, such as same or different. Collect every such entry into one list, and the world is whatever single state fits that list, up to changes no observer could ever detect. A record that survives every comparison anybody can make is a fact, the smallest piece of reality there is. Reality can also be described as a question that answers itself: what would a consistent, self-creating reality be like? The world we live in is that answer, worked out by the observers inside it.
 
 Link: https://floatingpragma.ai/faq/#what-is-reality. Read more: [Chapter 11: What Does Everybody Actually End Up Holding?](https://oph-book.floatingpragma.ai/chapter/chapter-11), [Chapter 5: Why Do You and I See the Same Table?](https://oph-book.floatingpragma.ai/chapter/chapter-5), [Chapter 1: Why Is the Universe So Hard to Reverse Engineer?](https://oph-book.floatingpragma.ai/chapter/chapter-1).
 
