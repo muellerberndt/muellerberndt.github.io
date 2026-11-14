@@ -110,6 +110,15 @@
   .next .talk.big { padding: 10px 16px; font: inherit; letter-spacing: .1em; cursor: pointer; color: #000; background: var(--glow);
     border: 1px solid var(--glow); border-radius: 0; box-shadow: 0 0 16px var(--glow-soft); }
   .next .talk.big:hover, .next .talk.big:focus-visible { background: #fff; border-color: #fff; }
+  .next a.talk.big { text-decoration: none; display: inline-block; }
+  .next .talk.big::before, .next .talk.big::after { content: none; }
+  .next .talk.big.alt { color: var(--glow); background: transparent; box-shadow: none; }
+  .next .talk.big.alt:hover, .next .talk.big.alt:focus-visible { color: #000; background: var(--glow); }
+  .next .ctx.entry { margin-top: 10px; color: #fff; }
+  .next .ctx { display: block !important; }
+  .next .ctx a { display: inline !important; }
+  .qa.hit .next .talk { animation: none; }
+  .next .cta.more { margin-top: 10px; font-size: .74rem; }
   .next .go { color: var(--glow); }
   .crumbs { margin-top: 36px; font-size: .74rem; letter-spacing: .06em; color: var(--dim); }
   .crumbs a { color: var(--dim); }
@@ -139,8 +148,8 @@
     <h1>Why are quarks never seen alone?</h1>
     <p>Quarks never appear alone because the strong force&#x27;s field grips itself, so the field between two quarks stays in a narrow tube whose cost grows with its length. The strong force acts on three slots called colors, its version of charge, through eight independent moves, and its ripples, the gluons, carry color themselves. A ripple that grips its own kind cannot spread out and thin. Pull a quark out of a proton and the tube&#x27;s cost builds until it is spent making new particles, long before the quark gets free. Gluons are never seen alone either, and colliders see them as jets, sprays of new particles along the direction they left in. Up close the grip slackens, which is why quarks rattle about almost freely inside a proton.</p>
     <p class="also">Also in <a href="https://oph-book.floatingpragma.ai/chapter/chapter-27" target="_blank" rel="noopener" data-kind="book">Chapter 27: Why This Exact List of Matter, and Why Three Times Over?</a>.</p>
-    <div class="next"><p class="ctx">This answer comes from <a href="/oph/">OPH</a>, Observer Patch Holography. OPH is a rigorous, consistent and complete description of the unified, self-creating computational Universe we inhabit. Its consistency is machine-checked: the fixed point at its core is constructed explicitly, and a theory with a model contains no contradiction.</p><span class="cta"><button type="button" class="talk big" data-chat="Why are quarks never seen alone?">go deeper with sage</button><a class="go" href="https://particles.floatingpragma.ai/" target="_blank" rel="noopener" data-kind="particles">watch a universe make its own particles</a><a class="go" href="https://oph-book.floatingpragma.ai/chapter/chapter-28" target="_blank" rel="noopener" data-kind="book">read chapter 28: What Is a Particle, What Is a Wave, and Why Does It Look Like Both?</a></span></div>
-    <span class="links"><a href="https://notebooklm.google.com/notebook/d5249760-6ce8-44a0-927b-ccf90402711a" target="_blank" rel="noopener" data-kind="notebook" data-ask="Why are quarks never seen alone?">ask the notebook</a><a href="https://t.me/HoloObserverBot" target="_blank" rel="noopener" data-kind="telegram">sage on telegram</a></span>
+    <div class="next"><p class="ctx">This answer comes from <a href="/oph/">OPH</a>, Observer Patch Holography. OPH is a rigorous, consistent and complete description of the unified, self-creating computational Universe we inhabit. Its consistency is machine-checked: the fixed point at its core is constructed explicitly, and a theory with a model contains no contradiction.</p><p class="ctx entry">To understand OPH and check every step yourself, start with the free book <a href="https://oph-book.floatingpragma.ai/" target="_blank" rel="noopener" data-kind="book">Reverse Engineering Reality</a>. It builds the theory from the ground up, and the OPH Notebook answers your questions while you read.</p><span class="cta"><a class="talk big" href="https://oph-book.floatingpragma.ai/" target="_blank" rel="noopener" data-kind="book">read the free book</a><a class="talk big alt" href="https://notebooklm.google.com/notebook/d5249760-6ce8-44a0-927b-ccf90402711a" target="_blank" rel="noopener" data-kind="notebook" data-ask="Why are quarks never seen alone?">ask the notebook</a><button type="button" class="talk big alt" data-chat="Why are quarks never seen alone?">chat with sage</button></span><span class="cta more"><a class="go chap" href="https://oph-book.floatingpragma.ai/chapter/chapter-28" target="_blank" rel="noopener" data-kind="book">read chapter 28: What Is a Particle, What Is a Wave, and Why Does It Look Like Both?</a><a class="go" href="https://particles.floatingpragma.ai/" target="_blank" rel="noopener" data-kind="particles">watch a universe make its own particles</a></span></div>
+    <span class="links"><a href="https://t.me/HoloObserverBot" target="_blank" rel="noopener" data-kind="telegram">sage on telegram</a></span>
   </article>
   <section class="related" aria-labelledby="rel-h"><h2 id="rel-h">MORE ABOUT MATTER, FORCES AND CONSTANTS</h2><ul><li><a href="/faq/what-is-everything-made-of/">What is everything made of?</a></li><li><a href="/faq/what-is-mass/">What is mass?</a></li><li><a href="/faq/why-twelve/">Why does every piece of reality have exactly twelve ports?</a></li><li><a href="/faq/why-these-forces/">Why are there exactly these forces?</a></li><li><a href="/faq/what-is-a-force/">What is a force?</a></li><li><a href="/faq/can-the-forces-be-unified/">Can all the forces be unified with gravity?</a></li><li><a href="/faq/why-three-generations/">Why are there three generations of matter?</a></li><li><a href="/faq/what-does-the-higgs-field-do/">What does the Higgs field do?</a></li></ul><p class="all"><a href="/faq/">all 161 questions about reality</a></p></section>
 
@@ -302,8 +311,10 @@
       var tpl = document.getElementById("next-tpl"), ql = hit.querySelector(".qlink");
       if (tpl && ql && !hit.querySelector(".next")) {
         var node = tpl.content.firstElementChild.cloneNode(true);
-        node.querySelector("button").setAttribute("data-chat", ql.textContent.trim());
-        var bk = hit.querySelector('.links a[data-kind="book"]'), nbk = node.querySelector('a[data-kind="book"]');
+        var qt = ql.textContent.trim();
+        node.querySelector("button").setAttribute("data-chat", qt);
+        var nbl = node.querySelector('a[data-kind="notebook"]'); if (nbl) nbl.setAttribute("data-ask", qt);
+        var bk = hit.querySelector('.links a[data-kind="book"]'), nbk = node.querySelector('a.chap');
         if (bk && nbk) { nbk.href = bk.href; nbk.textContent = bk.textContent; } else if (nbk) { nbk.remove(); }
         hit.querySelector(".links").before(node);
       }

@@ -110,6 +110,15 @@
   .next .talk.big { padding: 10px 16px; font: inherit; letter-spacing: .1em; cursor: pointer; color: #000; background: var(--glow);
     border: 1px solid var(--glow); border-radius: 0; box-shadow: 0 0 16px var(--glow-soft); }
   .next .talk.big:hover, .next .talk.big:focus-visible { background: #fff; border-color: #fff; }
+  .next a.talk.big { text-decoration: none; display: inline-block; }
+  .next .talk.big::before, .next .talk.big::after { content: none; }
+  .next .talk.big.alt { color: var(--glow); background: transparent; box-shadow: none; }
+  .next .talk.big.alt:hover, .next .talk.big.alt:focus-visible { color: #000; background: var(--glow); }
+  .next .ctx.entry { margin-top: 10px; color: #fff; }
+  .next .ctx { display: block !important; }
+  .next .ctx a { display: inline !important; }
+  .qa.hit .next .talk { animation: none; }
+  .next .cta.more { margin-top: 10px; font-size: .74rem; }
   .next .go { color: var(--glow); }
   .crumbs { margin-top: 36px; font-size: .74rem; letter-spacing: .06em; color: var(--dim); }
   .crumbs a { color: var(--dim); }
@@ -139,8 +148,8 @@
     <h1>If space isn&#x27;t a container, where is everything happening?</h1>
     <p>It happens in the comparisons between observers, with no larger room for them to sit in. The objection runs that a network drawn on a page sits on the page, so it must sit in something. Follow that through. A room for the network would have to be built from comparisons between record-keepers, which is a network, and that room would need a room. Distance is a count of comparisons, and two observers are far apart when many comparisons separate them. A direction is a pattern in that tally, and three directions come out of how fast such patterns fade. Time goes the same way, as an order of which record read which, and that order needs no room either. Observers do the counting from inside, occupying no position in anything larger.</p>
     <p class="also">Also in <a href="https://oph-book.floatingpragma.ai/chapter/chapter-12" target="_blank" rel="noopener" data-kind="book">Chapter 12: Why Is the World Made of Relations and Not of Things?</a>.</p>
-    <div class="next"><p class="ctx">This answer comes from <a href="/oph/">OPH</a>, Observer Patch Holography. OPH is a rigorous, consistent and complete description of the unified, self-creating computational Universe we inhabit. Its consistency is machine-checked: the fixed point at its core is constructed explicitly, and a theory with a model contains no contradiction.</p><span class="cta"><button type="button" class="talk big" data-chat="If space isn&#x27;t a container, where is everything happening?">go deeper with sage</button><a class="go" href="https://particles.floatingpragma.ai/" target="_blank" rel="noopener" data-kind="particles">watch a universe make its own particles</a><a class="go" href="https://oph-book.floatingpragma.ai/chapter/appendix-a" target="_blank" rel="noopener" data-kind="book">read appendix a: Eighteen Questions</a></span></div>
-    <span class="links"><a href="https://notebooklm.google.com/notebook/d5249760-6ce8-44a0-927b-ccf90402711a" target="_blank" rel="noopener" data-kind="notebook" data-ask="If space isn&#x27;t a container, where is everything happening?">ask the notebook</a><a href="https://t.me/HoloObserverBot" target="_blank" rel="noopener" data-kind="telegram">sage on telegram</a></span>
+    <div class="next"><p class="ctx">This answer comes from <a href="/oph/">OPH</a>, Observer Patch Holography. OPH is a rigorous, consistent and complete description of the unified, self-creating computational Universe we inhabit. Its consistency is machine-checked: the fixed point at its core is constructed explicitly, and a theory with a model contains no contradiction.</p><p class="ctx entry">To understand OPH and check every step yourself, start with the free book <a href="https://oph-book.floatingpragma.ai/" target="_blank" rel="noopener" data-kind="book">Reverse Engineering Reality</a>. It builds the theory from the ground up, and the OPH Notebook answers your questions while you read.</p><span class="cta"><a class="talk big" href="https://oph-book.floatingpragma.ai/" target="_blank" rel="noopener" data-kind="book">read the free book</a><a class="talk big alt" href="https://notebooklm.google.com/notebook/d5249760-6ce8-44a0-927b-ccf90402711a" target="_blank" rel="noopener" data-kind="notebook" data-ask="If space isn&#x27;t a container, where is everything happening?">ask the notebook</a><button type="button" class="talk big alt" data-chat="If space isn&#x27;t a container, where is everything happening?">chat with sage</button></span><span class="cta more"><a class="go chap" href="https://oph-book.floatingpragma.ai/chapter/appendix-a" target="_blank" rel="noopener" data-kind="book">read appendix a: Eighteen Questions</a><a class="go" href="https://particles.floatingpragma.ai/" target="_blank" rel="noopener" data-kind="particles">watch a universe make its own particles</a></span></div>
+    <span class="links"><a href="https://t.me/HoloObserverBot" target="_blank" rel="noopener" data-kind="telegram">sage on telegram</a></span>
   </article>
   <section class="related" aria-labelledby="rel-h"><h2 id="rel-h">MORE ABOUT SPACE AND LIGHT</h2><ul><li><a href="/faq/what-is-space/">What is space?</a></li><li><a href="/faq/why-does-space-have-three-dimensions/">Why does space have three dimensions?</a></li><li><a href="/faq/what-is-reality-made-of-at-the-smallest-scale/">What is the smallest piece of reality made of?</a></li><li><a href="/faq/why-can-nothing-go-faster-than-light/">Why can nothing go faster than light?</a></li><li><a href="/faq/why-is-the-speed-of-light-the-same-for-everyone/">Why is the speed of light the same for everyone?</a></li><li><a href="/faq/what-is-light/">What is light?</a></li><li><a href="/faq/what-is-the-holographic-principle/">What is the holographic principle?</a></li><li><a href="/faq/what-is-spacetime/">What is spacetime?</a></li></ul><p class="all"><a href="/faq/">all 161 questions about reality</a></p></section>
 
@@ -302,8 +311,10 @@
       var tpl = document.getElementById("next-tpl"), ql = hit.querySelector(".qlink");
       if (tpl && ql && !hit.querySelector(".next")) {
         var node = tpl.content.firstElementChild.cloneNode(true);
-        node.querySelector("button").setAttribute("data-chat", ql.textContent.trim());
-        var bk = hit.querySelector('.links a[data-kind="book"]'), nbk = node.querySelector('a[data-kind="book"]');
+        var qt = ql.textContent.trim();
+        node.querySelector("button").setAttribute("data-chat", qt);
+        var nbl = node.querySelector('a[data-kind="notebook"]'); if (nbl) nbl.setAttribute("data-ask", qt);
+        var bk = hit.querySelector('.links a[data-kind="book"]'), nbk = node.querySelector('a.chap');
         if (bk && nbk) { nbk.href = bk.href; nbk.textContent = bk.textContent; } else if (nbk) { nbk.remove(); }
         hit.querySelector(".links").before(node);
       }

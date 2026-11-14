@@ -110,6 +110,15 @@
   .next .talk.big { padding: 10px 16px; font: inherit; letter-spacing: .1em; cursor: pointer; color: #000; background: var(--glow);
     border: 1px solid var(--glow); border-radius: 0; box-shadow: 0 0 16px var(--glow-soft); }
   .next .talk.big:hover, .next .talk.big:focus-visible { background: #fff; border-color: #fff; }
+  .next a.talk.big { text-decoration: none; display: inline-block; }
+  .next .talk.big::before, .next .talk.big::after { content: none; }
+  .next .talk.big.alt { color: var(--glow); background: transparent; box-shadow: none; }
+  .next .talk.big.alt:hover, .next .talk.big.alt:focus-visible { color: #000; background: var(--glow); }
+  .next .ctx.entry { margin-top: 10px; color: #fff; }
+  .next .ctx { display: block !important; }
+  .next .ctx a { display: inline !important; }
+  .qa.hit .next .talk { animation: none; }
+  .next .cta.more { margin-top: 10px; font-size: .74rem; }
   .next .go { color: var(--glow); }
   .crumbs { margin-top: 36px; font-size: .74rem; letter-spacing: .06em; color: var(--dim); }
   .crumbs a { color: var(--dim); }
@@ -139,8 +148,8 @@
     <h1>What is heat?</h1>
     <p>Heat is energy delivered by changing the odds over a system&#x27;s possible arrangements while the energy of each arrangement stays put. Work is the other channel. A piston shifts the energies and leaves the odds alone, while contact with a flame redraws the odds. Sadi Carnot found the ceiling on every engine in 1824 while believing heat was a weightless fluid, caloric, falling from hot to cold like water down a millrace. Caloric does not exist, and every engine since has come in under his ceiling. Both channels come off one rule, the repair step that keeps every settled quantity and redraws the unsettled rest from the settled odds. Shifting energies at fixed odds is work, and redrawing odds at fixed energies is heat. Doing both at once adds a small cross term. Forgotten information leaves a memory as heat.</p>
     
-    <div class="next"><p class="ctx">This answer comes from <a href="/oph/">OPH</a>, Observer Patch Holography. OPH is a rigorous, consistent and complete description of the unified, self-creating computational Universe we inhabit. Its consistency is machine-checked: the fixed point at its core is constructed explicitly, and a theory with a model contains no contradiction.</p><span class="cta"><button type="button" class="talk big" data-chat="What is heat?">go deeper with sage</button><a class="go" href="https://particles.floatingpragma.ai/" target="_blank" rel="noopener" data-kind="particles">watch a universe make its own particles</a><a class="go" href="https://oph-book.floatingpragma.ai/chapter/chapter-23" target="_blank" rel="noopener" data-kind="book">read chapter 23: Why Does Writing Something Down Cost Heat?</a></span></div>
-    <span class="links"><a href="https://notebooklm.google.com/notebook/d5249760-6ce8-44a0-927b-ccf90402711a" target="_blank" rel="noopener" data-kind="notebook" data-ask="What is heat?">ask the notebook</a><a href="https://t.me/HoloObserverBot" target="_blank" rel="noopener" data-kind="telegram">sage on telegram</a></span>
+    <div class="next"><p class="ctx">This answer comes from <a href="/oph/">OPH</a>, Observer Patch Holography. OPH is a rigorous, consistent and complete description of the unified, self-creating computational Universe we inhabit. Its consistency is machine-checked: the fixed point at its core is constructed explicitly, and a theory with a model contains no contradiction.</p><p class="ctx entry">To understand OPH and check every step yourself, start with the free book <a href="https://oph-book.floatingpragma.ai/" target="_blank" rel="noopener" data-kind="book">Reverse Engineering Reality</a>. It builds the theory from the ground up, and the OPH Notebook answers your questions while you read.</p><span class="cta"><a class="talk big" href="https://oph-book.floatingpragma.ai/" target="_blank" rel="noopener" data-kind="book">read the free book</a><a class="talk big alt" href="https://notebooklm.google.com/notebook/d5249760-6ce8-44a0-927b-ccf90402711a" target="_blank" rel="noopener" data-kind="notebook" data-ask="What is heat?">ask the notebook</a><button type="button" class="talk big alt" data-chat="What is heat?">chat with sage</button></span><span class="cta more"><a class="go chap" href="https://oph-book.floatingpragma.ai/chapter/chapter-23" target="_blank" rel="noopener" data-kind="book">read chapter 23: Why Does Writing Something Down Cost Heat?</a><a class="go" href="https://particles.floatingpragma.ai/" target="_blank" rel="noopener" data-kind="particles">watch a universe make its own particles</a></span></div>
+    <span class="links"><a href="https://t.me/HoloObserverBot" target="_blank" rel="noopener" data-kind="telegram">sage on telegram</a></span>
   </article>
   <section class="related" aria-labelledby="rel-h"><h2 id="rel-h">MORE ABOUT ENERGY, HEAT AND INFORMATION</h2><ul><li><a href="/faq/what-is-energy/">What is energy?</a></li><li><a href="/faq/why-e-equals-mc2/">Why does E = mc²?</a></li><li><a href="/faq/what-is-entropy/">What is entropy?</a></li><li><a href="/faq/why-does-writing-information-cost-heat/">Why does writing information down cost heat?</a></li><li><a href="/faq/is-information-physical/">Is information physical?</a></li><li><a href="/faq/why-is-energy-conserved/">Why is energy conserved?</a></li><li><a href="/faq/why-cant-you-build-a-perpetual-motion-machine/">Why can&#x27;t you build a perpetual motion machine?</a></li><li><a href="/faq/what-is-the-second-law-of-thermodynamics/">What is the second law of thermodynamics?</a></li></ul><p class="all"><a href="/faq/">all 161 questions about reality</a></p></section>
 
@@ -302,8 +311,10 @@
       var tpl = document.getElementById("next-tpl"), ql = hit.querySelector(".qlink");
       if (tpl && ql && !hit.querySelector(".next")) {
         var node = tpl.content.firstElementChild.cloneNode(true);
-        node.querySelector("button").setAttribute("data-chat", ql.textContent.trim());
-        var bk = hit.querySelector('.links a[data-kind="book"]'), nbk = node.querySelector('a[data-kind="book"]');
+        var qt = ql.textContent.trim();
+        node.querySelector("button").setAttribute("data-chat", qt);
+        var nbl = node.querySelector('a[data-kind="notebook"]'); if (nbl) nbl.setAttribute("data-ask", qt);
+        var bk = hit.querySelector('.links a[data-kind="book"]'), nbk = node.querySelector('a.chap');
         if (bk && nbk) { nbk.href = bk.href; nbk.textContent = bk.textContent; } else if (nbk) { nbk.remove(); }
         hit.querySelector(".links").before(node);
       }

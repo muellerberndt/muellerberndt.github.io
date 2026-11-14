@@ -110,6 +110,15 @@
   .next .talk.big { padding: 10px 16px; font: inherit; letter-spacing: .1em; cursor: pointer; color: #000; background: var(--glow);
     border: 1px solid var(--glow); border-radius: 0; box-shadow: 0 0 16px var(--glow-soft); }
   .next .talk.big:hover, .next .talk.big:focus-visible { background: #fff; border-color: #fff; }
+  .next a.talk.big { text-decoration: none; display: inline-block; }
+  .next .talk.big::before, .next .talk.big::after { content: none; }
+  .next .talk.big.alt { color: var(--glow); background: transparent; box-shadow: none; }
+  .next .talk.big.alt:hover, .next .talk.big.alt:focus-visible { color: #000; background: var(--glow); }
+  .next .ctx.entry { margin-top: 10px; color: #fff; }
+  .next .ctx { display: block !important; }
+  .next .ctx a { display: inline !important; }
+  .qa.hit .next .talk { animation: none; }
+  .next .cta.more { margin-top: 10px; font-size: .74rem; }
   .next .go { color: var(--glow); }
   .crumbs { margin-top: 36px; font-size: .74rem; letter-spacing: .06em; color: var(--dim); }
   .crumbs a { color: var(--dim); }
@@ -139,8 +148,8 @@
     <h1>What is space?</h1>
     <p>Space is a pattern in a tally of comparisons, with no container underneath it. Observers meet at shared boundaries, and distance is how many comparisons separate two of them. Each piece of the world has twelve readings, one per port, and repair splits them into bands that fade at different rates, and only the slowest band lasts long enough for two observers to compare a position in it. That band has three directions. An observer&#x27;s position is six whole numbers, one per pair of opposite ports, each counting comparisons out through one port less those in through its opposite. Those points crowd in everywhere, and filling in their limits, as the real numbers fill the gaps between fractions, gives smooth continuous space. The only geometry put in was a list of which port is wired to which.</p>
     <p class="also">Also in <a href="https://oph-book.floatingpragma.ai/chapter/chapter-12" target="_blank" rel="noopener" data-kind="book">Chapter 12: Why Is the World Made of Relations and Not of Things?</a>, <a href="https://oph-book.floatingpragma.ai/chapter/appendix-a" target="_blank" rel="noopener" data-kind="book">Appendix A: Eighteen Questions</a>.</p>
-    <div class="next"><p class="ctx">This answer comes from <a href="/oph/">OPH</a>, Observer Patch Holography. OPH is a rigorous, consistent and complete description of the unified, self-creating computational Universe we inhabit. Its consistency is machine-checked: the fixed point at its core is constructed explicitly, and a theory with a model contains no contradiction.</p><span class="cta"><button type="button" class="talk big" data-chat="What is space?">go deeper with sage</button><a class="go" href="https://particles.floatingpragma.ai/" target="_blank" rel="noopener" data-kind="particles">watch a universe make its own particles</a><a class="go" href="https://oph-book.floatingpragma.ai/chapter/chapter-15" target="_blank" rel="noopener" data-kind="book">read chapter 15: Why Does Space Have Three Directions?</a></span></div>
-    <span class="links"><a href="https://notebooklm.google.com/notebook/d5249760-6ce8-44a0-927b-ccf90402711a" target="_blank" rel="noopener" data-kind="notebook" data-ask="What is space?">ask the notebook</a><a href="https://t.me/HoloObserverBot" target="_blank" rel="noopener" data-kind="telegram">sage on telegram</a></span>
+    <div class="next"><p class="ctx">This answer comes from <a href="/oph/">OPH</a>, Observer Patch Holography. OPH is a rigorous, consistent and complete description of the unified, self-creating computational Universe we inhabit. Its consistency is machine-checked: the fixed point at its core is constructed explicitly, and a theory with a model contains no contradiction.</p><p class="ctx entry">To understand OPH and check every step yourself, start with the free book <a href="https://oph-book.floatingpragma.ai/" target="_blank" rel="noopener" data-kind="book">Reverse Engineering Reality</a>. It builds the theory from the ground up, and the OPH Notebook answers your questions while you read.</p><span class="cta"><a class="talk big" href="https://oph-book.floatingpragma.ai/" target="_blank" rel="noopener" data-kind="book">read the free book</a><a class="talk big alt" href="https://notebooklm.google.com/notebook/d5249760-6ce8-44a0-927b-ccf90402711a" target="_blank" rel="noopener" data-kind="notebook" data-ask="What is space?">ask the notebook</a><button type="button" class="talk big alt" data-chat="What is space?">chat with sage</button></span><span class="cta more"><a class="go chap" href="https://oph-book.floatingpragma.ai/chapter/chapter-15" target="_blank" rel="noopener" data-kind="book">read chapter 15: Why Does Space Have Three Directions?</a><a class="go" href="https://particles.floatingpragma.ai/" target="_blank" rel="noopener" data-kind="particles">watch a universe make its own particles</a></span></div>
+    <span class="links"><a href="https://t.me/HoloObserverBot" target="_blank" rel="noopener" data-kind="telegram">sage on telegram</a></span>
   </article>
   <section class="related" aria-labelledby="rel-h"><h2 id="rel-h">MORE ABOUT SPACE AND LIGHT</h2><ul><li><a href="/faq/why-does-space-have-three-dimensions/">Why does space have three dimensions?</a></li><li><a href="/faq/where-is-everything-happening/">If space isn&#x27;t a container, where is everything happening?</a></li><li><a href="/faq/what-is-reality-made-of-at-the-smallest-scale/">What is the smallest piece of reality made of?</a></li><li><a href="/faq/why-can-nothing-go-faster-than-light/">Why can nothing go faster than light?</a></li><li><a href="/faq/why-is-the-speed-of-light-the-same-for-everyone/">Why is the speed of light the same for everyone?</a></li><li><a href="/faq/what-is-light/">What is light?</a></li><li><a href="/faq/what-is-the-holographic-principle/">What is the holographic principle?</a></li><li><a href="/faq/what-is-spacetime/">What is spacetime?</a></li></ul><p class="all"><a href="/faq/">all 161 questions about reality</a></p></section>
 
@@ -302,8 +311,10 @@
       var tpl = document.getElementById("next-tpl"), ql = hit.querySelector(".qlink");
       if (tpl && ql && !hit.querySelector(".next")) {
         var node = tpl.content.firstElementChild.cloneNode(true);
-        node.querySelector("button").setAttribute("data-chat", ql.textContent.trim());
-        var bk = hit.querySelector('.links a[data-kind="book"]'), nbk = node.querySelector('a[data-kind="book"]');
+        var qt = ql.textContent.trim();
+        node.querySelector("button").setAttribute("data-chat", qt);
+        var nbl = node.querySelector('a[data-kind="notebook"]'); if (nbl) nbl.setAttribute("data-ask", qt);
+        var bk = hit.querySelector('.links a[data-kind="book"]'), nbk = node.querySelector('a.chap');
         if (bk && nbk) { nbk.href = bk.href; nbk.textContent = bk.textContent; } else if (nbk) { nbk.remove(); }
         hit.querySelector(".links").before(node);
       }
