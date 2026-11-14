@@ -19,9 +19,12 @@ OPH stands for Observer Patch Holography. Finite observers keep records, compare
 - [Where every result stands](https://status.floatingpragma.ai/)
 
 ## Questions OPH answers
-- Do we live in a simulation? In OPH the universe is a computation with no computer outside it.
+- Do we live in a simulation? In OPH the universe is an ordinary computer program, the observer consensus protocol, running on a holographic screen that observers inside it build.
 - How do quantum mechanics and gravity fit together? Both are readings of one consensus process over the same records.
 - What are particles? Defects that no local repair can remove, carrying the Standard Model classes.
+
+
+
 
 
 
