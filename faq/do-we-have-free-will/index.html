@@ -97,6 +97,10 @@
     box-shadow: 0 0 32px rgba(74, 241, 242, .18); font-size: .84rem; line-height: 1.65; color: rgba(201, 251, 251, .88);
   }
   .chat[hidden] { display: none; }
+  .chat .share-row { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; font-size: .74rem; }
+  .chat .share-btn, .chat .share-net { padding: 4px 10px; font: inherit; color: var(--glow); background: none; border: 1px solid rgba(74, 241, 242, .45); cursor: pointer; text-decoration: none; }
+  .chat .share-btn:hover, .chat .share-net:hover { color: #000; background: var(--glow); }
+  .chat .share-btn:disabled { opacity: .6; cursor: wait; }
   /* Big screens: the chat fills the free margin beside the text column and most of the height. */
   @media (min-width: 1100px) { .chat { width: clamp(440px, calc(50vw - 300px), 860px); height: min(86vh, 1100px); max-height: calc(100vh - 32px); font-size: .92rem; } }
   @media (min-width: 1100px) and (min-height: 1100px) { .chat { font-size: 1rem; } }
@@ -199,6 +203,7 @@
 <script>
 (function () {
   var CHAT = "https://xrvowfsbmfoggykbeabo.functions.supabase.co/sage-chat", TALK = "AW-18551449316/KtwfCLigwLcdEOTNgo5F", DEEPER = "AW-18551449316/j2Y1COf8xLcdEOTNgo5F";
+  var SHARE_ON = false;
   function g() { if (typeof gtag === "function") gtag.apply(null, arguments); }
   function qid(el) { var qa = el && el.closest && el.closest(".qa"); return qa ? qa.id : ""; }
   function toast(msg) {
@@ -265,9 +270,49 @@
       .then(function (x) {
         wait.innerHTML = x.ok ? md(x.j.answer) : "<p>" + esc(x.j.error || "Sage could not answer just now. Please try again.") + "</p>";
         if (x.ok) g("event", "faq_sage_answer", { question: question || "top", seconds: Math.round((Date.now() - t0) / 1000) });
+        if (x.ok && SHARE_ON && x.j.turn) addShare(wait, x.j.turn, text);
       })
       .catch(function () { wait.innerHTML = "<p>The connection failed. Please try again.</p>"; })
       .then(function () { clearInterval(tick); wait.classList.remove("wait"); busy = false; log.scrollTop = log.scrollHeight; });
+  }
+  // Share one of Sage's answers: the bot stores it and returns a public page with its own preview card.
+  function shareLinks(row, url, q) {
+    var t = "I asked the theory of everything: " + q, u = encodeURIComponent(url);
+    var nets = [["copy", "copy link", null], ["x", "X", "https://x.com/intent/post?text=" + encodeURIComponent(t) + "&url=" + u],
+      ["reddit", "reddit", "https://www.reddit.com/submit?url=" + u + "&title=" + encodeURIComponent(t)],
+      ["whatsapp", "whatsapp", "https://wa.me/?text=" + encodeURIComponent(t + " " + url)],
+      ["facebook", "facebook", "https://www.facebook.com/sharer/sharer.php?u=" + u]];
+    row.innerHTML = "";
+    nets.forEach(function (n) {
+      var a = document.createElement(n[2] ? "a" : "button");
+      a.className = "share-net"; a.textContent = n[1];
+      if (n[2]) { a.href = n[2]; a.target = "_blank"; a.rel = "noopener"; } else { a.type = "button"; }
+      a.addEventListener("click", function () {
+        g("event", "share", { method: n[0], content_type: "sage_answer" });
+        if (!n[2] && navigator.clipboard) navigator.clipboard.writeText(url).then(function () { a.textContent = "link copied"; });
+      });
+      row.appendChild(a);
+    });
+    var open = document.createElement("a"); open.className = "share-net"; open.href = url; open.target = "_blank"; open.rel = "noopener";
+    open.textContent = "view page"; row.appendChild(open);
+    if (navigator.share && /Mobi|Android/i.test(navigator.userAgent)) navigator.share({ title: t, url: url }).catch(function () {});
+  }
+  function addShare(node, turn, q) {
+    var row = document.createElement("div"); row.className = "share-row";
+    var b = document.createElement("button"); b.type = "button"; b.className = "share-btn"; b.textContent = "share this answer";
+    row.appendChild(b); node.appendChild(row);
+    b.addEventListener("click", function () {
+      b.disabled = true; b.textContent = "making a link…";
+      fetch(CHAT, { method: "POST", headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ action: "share", conversation_id: cid, turn: turn }) })
+        .then(function (r) { return r.json().then(function (j) { return { ok: r.ok, j: j }; }); })
+        .then(function (x) {
+          if (!x.ok || !x.j.url) { b.disabled = false; b.textContent = x.j.error || "Sharing failed. Try again."; return; }
+          g("event", "faq_share_created", { turn: turn });
+          shareLinks(row, x.j.url, q);
+        })
+        .catch(function () { b.disabled = false; b.textContent = "Sharing failed. Try again."; });
+    });
   }
   form.addEventListener("submit", function (e) { e.preventDefault(); var v = input.value; input.value = ""; send(v, ""); });
   input.addEventListener("keydown", function (e) { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); form.requestSubmit(); } });
@@ -317,6 +362,8 @@
     if (words.length) timer = setTimeout(function () { g("event", "faq_search", { search_term: v, results: shown }); }, 1500);
   });
   }
+
+  try { if (new URLSearchParams(location.search).get("ask")) { openChat(); input.focus(); } } catch (e) {}
 
   // Ads land on ?q=<id>: show that answer first, say where it comes from and offer the next step.
   try {
