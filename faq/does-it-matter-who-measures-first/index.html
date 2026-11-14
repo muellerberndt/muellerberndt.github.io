@@ -83,6 +83,8 @@
   .links button.talk[data-chat]:hover, .links #ask-sage:hover, .links button.talk[data-chat]:focus-visible, .links #ask-sage:focus-visible,
   .next .talk.big[data-chat]:hover { color: #000; background: #fff; border-color: #fff; box-shadow: 0 0 22px rgba(74, 241, 242, .6); }
   .qa .links { align-items: center; }
+  /* Ad landing: the next-steps box carries the same links, so the answer's own link row is hidden. */
+  .qa.hit .next ~ .links { display: none; }
   .next .talk.big[data-chat] { padding: 10px 16px 10px 13px; letter-spacing: .1em; }
   .qa.hit { margin: 0 -14px; padding: 18px 14px; border: 1px solid rgba(74, 241, 242, .45); box-shadow: 0 0 24px rgba(74, 241, 242, .12); }
   .qa.hit h3 { color: #fff; text-shadow: 0 0 8px var(--glow-soft); }
