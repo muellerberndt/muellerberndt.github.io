@@ -31,6 +31,7 @@
   <url><loc>https://floatingpragma.ai/faq/would-heaven-be-boring/</loc><lastmod>2026-11-15</lastmod></url>
   <url><loc>https://floatingpragma.ai/faq/why-does-intelligence-exist/</loc><lastmod>2026-11-15</lastmod></url>
   <url><loc>https://floatingpragma.ai/faq/what-is-forgiveness/</loc><lastmod>2026-11-15</lastmod></url>
+  <url><loc>https://floatingpragma.ai/faq/what-is-a-fixed-point-solver/</loc><lastmod>2026-11-15</lastmod></url>
   <url><loc>https://floatingpragma.ai/faq/what-is-reality/</loc><lastmod>2026-11-15</lastmod></url>
   <url><loc>https://floatingpragma.ai/faq/does-reality-exist-without-observers/</loc><lastmod>2026-11-15</lastmod></url>
   <url><loc>https://floatingpragma.ai/faq/is-the-moon-there-when-nobody-looks/</loc><lastmod>2026-11-15</lastmod></url>
@@ -59,6 +60,20 @@
   <url><loc>https://floatingpragma.ai/faq/is-my-red-your-red/</loc><lastmod>2026-11-15</lastmod></url>
   <url><loc>https://floatingpragma.ai/faq/marys-room/</loc><lastmod>2026-11-15</lastmod></url>
   <url><loc>https://floatingpragma.ai/faq/is-color-real/</loc><lastmod>2026-11-15</lastmod></url>
+  <url><loc>https://floatingpragma.ai/faq/zenos-paradox/</loc><lastmod>2026-11-15</lastmod></url>
+  <url><loc>https://floatingpragma.ai/faq/ship-of-theseus/</loc><lastmod>2026-11-15</lastmod></url>
+  <url><loc>https://floatingpragma.ai/faq/sorites-paradox/</loc><lastmod>2026-11-15</lastmod></url>
+  <url><loc>https://floatingpragma.ai/faq/liars-paradox/</loc><lastmod>2026-11-15</lastmod></url>
+  <url><loc>https://floatingpragma.ai/faq/russells-paradox/</loc><lastmod>2026-11-15</lastmod></url>
+  <url><loc>https://floatingpragma.ai/faq/chinese-room/</loc><lastmod>2026-11-15</lastmod></url>
+  <url><loc>https://floatingpragma.ai/faq/symbol-grounding/</loc><lastmod>2026-11-15</lastmod></url>
+  <url><loc>https://floatingpragma.ai/faq/self-locating-knowledge/</loc><lastmod>2026-11-15</lastmod></url>
+  <url><loc>https://floatingpragma.ai/faq/can-a-description-create-a-world/</loc><lastmod>2026-11-15</lastmod></url>
+  <url><loc>https://floatingpragma.ai/faq/problem-of-induction/</loc><lastmod>2026-11-15</lastmod></url>
+  <url><loc>https://floatingpragma.ai/faq/can-physics-derive-morality/</loc><lastmod>2026-11-15</lastmod></url>
+  <url><loc>https://floatingpragma.ai/faq/bootstrap-paradox/</loc><lastmod>2026-11-15</lastmod></url>
+  <url><loc>https://floatingpragma.ai/faq/banach-tarski-paradox/</loc><lastmod>2026-11-15</lastmod></url>
+  <url><loc>https://floatingpragma.ai/faq/why-can-disagreement-be-useful/</loc><lastmod>2026-11-15</lastmod></url>
   <url><loc>https://floatingpragma.ai/faq/what-is-time/</loc><lastmod>2026-11-15</lastmod></url>
   <url><loc>https://floatingpragma.ai/faq/why-does-time-only-go-forward/</loc><lastmod>2026-11-15</lastmod></url>
   <url><loc>https://floatingpragma.ai/faq/why-do-we-remember-the-past-not-the-future/</loc><lastmod>2026-11-15</lastmod></url>
@@ -72,6 +87,8 @@
   <url><loc>https://floatingpragma.ai/faq/is-time-an-illusion/</loc><lastmod>2026-11-15</lastmod></url>
   <url><loc>https://floatingpragma.ai/faq/why-does-gravity-slow-time/</loc><lastmod>2026-11-15</lastmod></url>
   <url><loc>https://floatingpragma.ai/faq/why-only-one-time-dimension/</loc><lastmod>2026-11-15</lastmod></url>
+  <url><loc>https://floatingpragma.ai/faq/is-everything-predestined/</loc><lastmod>2026-11-15</lastmod></url>
+  <url><loc>https://floatingpragma.ai/faq/twin-paradox/</loc><lastmod>2026-11-15</lastmod></url>
   <url><loc>https://floatingpragma.ai/faq/what-is-space/</loc><lastmod>2026-11-15</lastmod></url>
   <url><loc>https://floatingpragma.ai/faq/why-does-space-have-three-dimensions/</loc><lastmod>2026-11-15</lastmod></url>
   <url><loc>https://floatingpragma.ai/faq/where-is-everything-happening/</loc><lastmod>2026-11-15</lastmod></url>
@@ -83,6 +100,7 @@
   <url><loc>https://floatingpragma.ai/faq/what-is-spacetime/</loc><lastmod>2026-11-15</lastmod></url>
   <url><loc>https://floatingpragma.ai/faq/is-there-a-smallest-length/</loc><lastmod>2026-11-15</lastmod></url>
   <url><loc>https://floatingpragma.ai/faq/why-is-empty-space-warm-when-accelerating/</loc><lastmod>2026-11-15</lastmod></url>
+  <url><loc>https://floatingpragma.ai/faq/continuum-from-discrete/</loc><lastmod>2026-11-15</lastmod></url>
   <url><loc>https://floatingpragma.ai/faq/why-is-the-world-quantum/</loc><lastmod>2026-11-15</lastmod></url>
   <url><loc>https://floatingpragma.ai/faq/uncertainty-principle/</loc><lastmod>2026-11-15</lastmod></url>
   <url><loc>https://floatingpragma.ai/faq/what-is-quantum-entanglement/</loc><lastmod>2026-11-15</lastmod></url>
@@ -100,6 +118,8 @@
   <url><loc>https://floatingpragma.ai/faq/does-observing-change-what-is-observed/</loc><lastmod>2026-11-15</lastmod></url>
   <url><loc>https://floatingpragma.ai/faq/what-is-the-born-rule/</loc><lastmod>2026-11-15</lastmod></url>
   <url><loc>https://floatingpragma.ai/faq/why-dont-we-see-quantum-effects/</loc><lastmod>2026-11-15</lastmod></url>
+  <url><loc>https://floatingpragma.ai/faq/wigners-friend/</loc><lastmod>2026-11-15</lastmod></url>
+  <url><loc>https://floatingpragma.ai/faq/quantum-zeno-effect/</loc><lastmod>2026-11-15</lastmod></url>
   <url><loc>https://floatingpragma.ai/faq/what-is-energy/</loc><lastmod>2026-11-15</lastmod></url>
   <url><loc>https://floatingpragma.ai/faq/why-e-equals-mc2/</loc><lastmod>2026-11-15</lastmod></url>
   <url><loc>https://floatingpragma.ai/faq/what-is-entropy/</loc><lastmod>2026-11-15</lastmod></url>
@@ -125,6 +145,13 @@
   <url><loc>https://floatingpragma.ai/faq/why-is-gravity-so-weak/</loc><lastmod>2026-11-15</lastmod></url>
   <url><loc>https://floatingpragma.ai/faq/what-are-gravitational-waves/</loc><lastmod>2026-11-15</lastmod></url>
   <url><loc>https://floatingpragma.ai/faq/is-the-universe-infinite/</loc><lastmod>2026-11-15</lastmod></url>
+  <url><loc>https://floatingpragma.ai/faq/vacuum-energy-problem/</loc><lastmod>2026-11-15</lastmod></url>
+  <url><loc>https://floatingpragma.ai/faq/horizon-flatness-problems/</loc><lastmod>2026-11-15</lastmod></url>
+  <url><loc>https://floatingpragma.ai/faq/hubble-tension/</loc><lastmod>2026-11-15</lastmod></url>
+  <url><loc>https://floatingpragma.ai/faq/cosmological-singularities/</loc><lastmod>2026-11-15</lastmod></url>
+  <url><loc>https://floatingpragma.ai/faq/boltzmann-brains/</loc><lastmod>2026-11-15</lastmod></url>
+  <url><loc>https://floatingpragma.ai/faq/low-entropy-beginning/</loc><lastmod>2026-11-15</lastmod></url>
+  <url><loc>https://floatingpragma.ai/faq/dark-energy-coincidence/</loc><lastmod>2026-11-15</lastmod></url>
   <url><loc>https://floatingpragma.ai/faq/what-is-everything-made-of/</loc><lastmod>2026-11-15</lastmod></url>
   <url><loc>https://floatingpragma.ai/faq/what-is-mass/</loc><lastmod>2026-11-15</lastmod></url>
   <url><loc>https://floatingpragma.ai/faq/why-twelve/</loc><lastmod>2026-11-15</lastmod></url>
@@ -146,6 +173,10 @@
   <url><loc>https://floatingpragma.ai/faq/do-protons-decay/</loc><lastmod>2026-11-15</lastmod></url>
   <url><loc>https://floatingpragma.ai/faq/what-is-the-standard-model/</loc><lastmod>2026-11-15</lastmod></url>
   <url><loc>https://floatingpragma.ai/faq/why-are-solid-objects-solid/</loc><lastmod>2026-11-15</lastmod></url>
+  <url><loc>https://floatingpragma.ai/faq/hierarchy-problem/</loc><lastmod>2026-11-15</lastmod></url>
+  <url><loc>https://floatingpragma.ai/faq/matter-antimatter-asymmetry/</loc><lastmod>2026-11-15</lastmod></url>
+  <url><loc>https://floatingpragma.ai/faq/neutrino-mass-problem/</loc><lastmod>2026-11-15</lastmod></url>
+  <url><loc>https://floatingpragma.ai/faq/strong-cp-problem/</loc><lastmod>2026-11-15</lastmod></url>
   <url><loc>https://floatingpragma.ai/faq/why-are-there-laws-of-physics/</loc><lastmod>2026-11-15</lastmod></url>
   <url><loc>https://floatingpragma.ai/faq/why-these-laws-and-not-others/</loc><lastmod>2026-11-15</lastmod></url>
   <url><loc>https://floatingpragma.ai/faq/why-does-mathematics-describe-nature/</loc><lastmod>2026-11-15</lastmod></url>
@@ -160,6 +191,9 @@
   <url><loc>https://floatingpragma.ai/faq/what-is-momentum/</loc><lastmod>2026-11-15</lastmod></url>
   <url><loc>https://floatingpragma.ai/faq/symmetries-and-conservation-laws/</loc><lastmod>2026-11-15</lastmod></url>
   <url><loc>https://floatingpragma.ai/faq/is-the-universe-made-of-mathematics/</loc><lastmod>2026-11-15</lastmod></url>
+  <url><loc>https://floatingpragma.ai/faq/do-infinities-exist/</loc><lastmod>2026-11-15</lastmod></url>
+  <url><loc>https://floatingpragma.ai/faq/can-an-infinite-computation-finish/</loc><lastmod>2026-11-15</lastmod></url>
+  <url><loc>https://floatingpragma.ai/faq/can-oph-predict-everything/</loc><lastmod>2026-11-15</lastmod></url>
   <url><loc>https://floatingpragma.ai/faq/what-is-life/</loc><lastmod>2026-11-15</lastmod></url>
   <url><loc>https://floatingpragma.ai/faq/why-do-living-things-try-to-survive/</loc><lastmod>2026-11-15</lastmod></url>
   <url><loc>https://floatingpragma.ai/faq/what-makes-a-living-thing-free/</loc><lastmod>2026-11-15</lastmod></url>
@@ -182,6 +216,9 @@
   <url><loc>https://floatingpragma.ai/faq/what-makes-humans-different/</loc><lastmod>2026-11-15</lastmod></url>
   <url><loc>https://floatingpragma.ai/faq/are-you-your-memories/</loc><lastmod>2026-11-15</lastmod></url>
   <url><loc>https://floatingpragma.ai/faq/are-dreams-real/</loc><lastmod>2026-11-15</lastmod></url>
+  <url><loc>https://floatingpragma.ai/faq/combination-problem/</loc><lastmod>2026-11-15</lastmod></url>
+  <url><loc>https://floatingpragma.ai/faq/fermi-paradox/</loc><lastmod>2026-11-15</lastmod></url>
+  <url><loc>https://floatingpragma.ai/faq/what-is-thinking/</loc><lastmod>2026-11-15</lastmod></url>
   <url><loc>https://floatingpragma.ai/faq/what-is-oph/</loc><lastmod>2026-11-15</lastmod></url>
   <url><loc>https://floatingpragma.ai/faq/is-oph-a-religion/</loc><lastmod>2026-11-15</lastmod></url>
   <url><loc>https://floatingpragma.ai/faq/isnt-a-self-creating-universe-circular/</loc><lastmod>2026-11-15</lastmod></url>

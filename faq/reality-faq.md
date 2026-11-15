@@ -2,7 +2,7 @@
 
 OPH is a rigorous, consistent and complete description of the unified, self-creating computational Universe we inhabit.
 
-178 questions about reality, answered by OPH (Observer Patch Holography). Web page: https://floatingpragma.ai/faq/. Every answer has its own link (the page URL plus #id) and points to the chapter of the free book Reverse Engineering Reality (https://oph-book.floatingpragma.ai/) that explains it in full.
+215 questions about reality, answered by OPH (Observer Patch Holography). Web page: https://floatingpragma.ai/faq/. Every answer has its own link (the page URL plus #id) and points to the chapter of the free book Reverse Engineering Reality (https://oph-book.floatingpragma.ai/) that explains it in full.
 
 ## The big questions
 
@@ -92,7 +92,7 @@ Link: https://floatingpragma.ai/faq/#can-something-create-itself. Read more: [Ch
 
 ### Is the universe aware of itself?
 
-Yes, through its observers. The universe holds a description of itself, carried in pieces by the observers inside it, and some of them read its rule back out of their own records. That self-description is required. A world that reads itself into existence needs observers who reverse engineer it and build the screen it runs on, so some of what they record has to describe the world they are part of. Gödel showed that a structure rich enough for arithmetic can contain exact statements about itself, so the description needs no second copy of the world to point at. No observer recovers the whole architecture, and the account is spread across many of them. Awareness lives in particular observers that read their own state from the inside. Reality as a whole is conscious only through those observers, and it has no point of view of its own apart from them.
+OPH proposes that reality becomes self-aware through organized parts that retain and use models of themselves. A scientific community can solve a problem no member could solve alone without becoming one additional person. Likewise, distributed thinking does not automatically imply one universe-sized subject. The essays distinguish settlement, exploration and learning: a stable pattern can be reopened by evidence, alternatives can be tried, and useful changes retained. Brains realize a rich version of that organization. Extending the same operational grammar to the underlying observer process is the common-operation hypothesis. Whether a particular whole has one experience also requires a rule selecting its experiencing unit. The proposal locates our thinking within the universe without adding a cosmic spectator behind it.
 
 Link: https://floatingpragma.ai/faq/#is-the-universe-self-aware. Read more: [Chapter 37: Why Does the Loop Have No Beginning?](https://oph-book.floatingpragma.ai/chapter/chapter-37), [Chapter 2: Why Is There Anything Rather Than Nothing?](https://oph-book.floatingpragma.ai/chapter/chapter-2), [Chapter 36: Why These Laws and Not Others?](https://oph-book.floatingpragma.ai/chapter/chapter-36), [Chapter 35: What Is Anything Made Of?](https://oph-book.floatingpragma.ai/chapter/chapter-35), [Chapter 40: Does It Feel Like Anything, and What Is Left to Decide?](https://oph-book.floatingpragma.ai/chapter/chapter-40).
 
@@ -137,6 +137,14 @@ Link: https://floatingpragma.ai/faq/#why-does-intelligence-exist. Read more: [Ch
 Forgiveness is a repair made by the person who was harmed, and it closes the relation the harm left open between the two. It comes after two other moves. The one who did the harm confesses, which brings their own account into line with the public record, so they stop splitting themselves across incompatible records. Then they take responsibility, through restitution or a changed relation. Once truth and responsibility hold steady, forgiveness can close the relation. Nobody else can supply it, because the victim's record has primary standing, and a paradise that asked victims to pretend their harm away would be hell for them. The record of the harm stays, and the relation stops carrying an unrepaired mismatch. That is why OPH ties heaven and hell to how you treated other observers. Without your victims' forgiveness, your stream of consciousness continues without end in total sensory deprivation.
 
 Link: https://floatingpragma.ai/faq/#what-is-forgiveness. Read more: [Chapter 41: What Does a Repaired World Look Like?](https://oph-book.floatingpragma.ai/chapter/chapter-41), [Epilogue: The Last Rung](https://oph-book.floatingpragma.ai/chapter/epilogue).
+
+### What does it mean to call the universe a fixed-point solver?
+
+A fixed point is an object returned unchanged by a specified map: applying F to x gives x again. A solver searches for an object satisfying that condition. OPH's closure proposal asks for a history whose internally recovered description, when realized, reproduces the same observations and interventions. A Sudoku is an accessible analogy: the finished grid simultaneously satisfies the row, column, box and clue constraints. A solver's sequence of guesses is different from the grid's defining relations. Likewise, no external clock has to run a universe-wide search before time begins. Different maps can have no fixed point, one or many. Writing the equation supplies a constraint; constructing the inhabited physical solution supplies the substantive work.
+
+See also: If reality is a fixed point, is everything predestined? (https://floatingpragma.ai/faq/#is-everything-predestined), Does describing a universe make it exist? (https://floatingpragma.ai/faq/#can-a-description-create-a-world), Isn't a self-creating universe circular? (https://floatingpragma.ai/faq/#isnt-a-self-creating-universe-circular)
+
+Link: https://floatingpragma.ai/faq/#what-is-a-fixed-point-solver. Read more: [Chapter 2: Why Is There Anything Rather Than Nothing?](https://oph-book.floatingpragma.ai/chapter/chapter-2), [Chapter 10: Why Doesn't It Matter Who Goes First?](https://oph-book.floatingpragma.ai/chapter/chapter-10), [Chapter 37: Why Does the Loop Have No Beginning?](https://oph-book.floatingpragma.ai/chapter/chapter-37).
 
 ## Reality and observers
 
@@ -226,7 +234,9 @@ Link: https://floatingpragma.ai/faq/#why-is-the-universe-so-hard-to-figure-out. 
 
 ### Is reality digital?
 
-Reality is digital at the level of records, where every reading comes from a finite list and smooth space is a limit nobody occupies. The basic piece of the world is a machine small enough to describe completely, and each of its interfaces shows one reading out of finitely many. A continuous dial could never be read, since reading it exactly takes infinite storage. The rule at the bottom is whole-number arithmetic. Two disagreeing neighbors move to their midpoint, and when their total is odd a fair coin places the spare unit. Smooth space is a completion, the way the real numbers fill the gaps between fractions. Nobody ever holds pi, only 3.14, 3.141 and their successors. What changes smoothly is the quantum part between records, and it reaches a record only as one more count.
+OPH begins with bounded observers and finite records. A particular record interface distinguishes finitely many outcomes, and specified native repair models use integer loads and discrete updates. Continuous fields, positions and time coordinates can describe the collective behavior of those records in controlled limits. This does not require every mathematical state variable to be an integer: finite quantum systems can have continuous amplitudes, while their registered outcomes are discrete. Nor does a finite observer prove that the entire universe contains finitely many events. The physical proposal is that no measurement needs an actually infinite register to occur. Whether that architecture reproduces nature is a test of the construction. Continuum mathematics remains useful without turning every point in a drawing into a separately executed physical event.
+
+See also: How does OPH answer Zeno’s paradox? (https://floatingpragma.ai/faq/#zenos-paradox), Do infinities exist in reality or only in our descriptions? (https://floatingpragma.ai/faq/#do-infinities-exist), How can continuous space and smooth motion emerge from discrete records? (https://floatingpragma.ai/faq/#continuum-from-discrete)
 
 Link: https://floatingpragma.ai/faq/#is-reality-digital. Read more: [Chapter 13: What Is One Piece of Reality Actually Made Of?](https://oph-book.floatingpragma.ai/chapter/chapter-13), [Chapter 15: Why Does Space Have Three Directions?](https://oph-book.floatingpragma.ai/chapter/chapter-15), [Chapter 9: What Move Does Reality Actually Make?](https://oph-book.floatingpragma.ai/chapter/chapter-9), [Chapter 34: Why Was Newton Right for Two Hundred Years?](https://oph-book.floatingpragma.ai/chapter/chapter-34), [Chapter 19: Why Can't You Ask Everything At Once?](https://oph-book.floatingpragma.ai/chapter/chapter-19).
 
@@ -276,21 +286,25 @@ Link: https://floatingpragma.ai/faq/#is-the-world-mind-or-matter. Read more: [Ch
 
 ### What is a philosophical zombie, and could one exist?
 
-A philosophical zombie is a creature identical to you molecule for molecule, with the same cells and the same words, and nobody inside. David Chalmers argued in The Conscious Mind that such a twin is conceivable, that whatever is conceivable is possible, and that experience is therefore something over and above the physics. His twin would even write the paper about zombies. In OPH none can exist. A brain that reads its own state must tell at least two of its own states apart, and the distinctions it holds and acts on are its qualia. A molecular duplicate reads itself by the same rule, so it draws the same distinctions and has the same qualia. A zombie would need those distinctions with nothing it is like to hold them, and in OPH holding them is what it is like. A machine that copies only the outward behavior, with no self-reading of its own, is a different system.
+A philosophical zombie is a proposed duplicate with the same complete physical organization and behavior as a conscious person, but no experience. OPH rejects that possibility within its phenomenal identity: if the relevant organized self-reading is what constitutes experience, preserving that organization preserves experience. A system that merely copies the outward performance need not preserve the organization. The distinction is between realizing the relevant dependencies and displaying a recording of their results. Someone who rejects OPH's identity can continue to ask why the organization should feel like anything. The operational equations do not settle that disagreement alone. The position is therefore an explicit account of what experience is, with consequences that follow from accepting it, rather than a proof from information processing without an experiential premise.
 
-See also: Why does it feel like something to be a computation in a brain (qualia)? (https://floatingpragma.ai/faq/#why-does-it-feel-like-something)
+See also: Why does it feel like something to be a computation in a brain (qualia)? (https://floatingpragma.ai/faq/#why-does-it-feel-like-something), Can manipulating symbols ever be understanding? (The Chinese room) (https://floatingpragma.ai/faq/#chinese-room), Does describing a universe make it exist? (https://floatingpragma.ai/faq/#can-a-description-create-a-world)
 
 Link: https://floatingpragma.ai/faq/#philosophical-zombie. Read more: [Chapter 40: Does It Feel Like Anything, and What Is Left to Decide?](https://oph-book.floatingpragma.ai/chapter/chapter-40).
 
 ### Is OPH a form of panpsychism?
 
-No. Panpsychism says experience is everywhere, down to every particle. In OPH the basic building block is the native observer, a bounded system that keeps records and repairs disagreements with its neighbors, and it needs no mind to do that. Atoms are not observers at all. They are composed of topological defects in the links between native observers, and they become atoms when observers assign that meaning to them. Experience is a further step that arrives late, in observers organized to read their own state and spend their own budget on the result. Reality as a whole is conscious only through such observers, and OPH makes no claim that the universe feels anything as one being. How many readings of its own state a given brain or animal carries is a question for experiment.
+OPH starts with observers in an operational sense: bounded systems that exchange information, retain records and act on them. That definition alone attributes no experience to every particle. The philosophical interpretation can take experiencing activity as basic while identifying a human subject with a particular integrated organization of self-reading. It therefore needs both a phenomenal identity and a rule for which organized whole owns an episode. Minimal underlying activity does not automatically add up to one human mind, and universal agreement does not establish one cosmic consciousness. The useful comparison with panpsychism is its combination problem: how are subjects individuated and unified? OPH supplies a proposed organization to investigate, while the experience and unity commitments remain explicit.
 
 Link: https://floatingpragma.ai/faq/#is-oph-panpsychism. Read more: [Chapter 40: Does It Feel Like Anything, and What Is Left to Decide?](https://oph-book.floatingpragma.ai/chapter/chapter-40), [Chapter 3: Why Would a Universe Need Anybody In It?](https://oph-book.floatingpragma.ai/chapter/chapter-3), [Chapter 35: What Is Anything Made Of?](https://oph-book.floatingpragma.ai/chapter/chapter-35).
 
 ### If everyone agrees on something, does that make it true?
 
-It depends on what the something is. If it is a physical fact, human opinion has no effect on it at all. Physical facts are computed a layer down, by the native observers whose consensus produces spacetime and the matter we are made of. We are built from that output, so we have to accept the laws of physics as they are, and no vote among people changes them. Agreement among people works one level up, and there it needs checks, since a crowd can agree without making the comparison that would catch its mistake. On 21 October 2018 a forty-three-second network cut left part of GitHub's machines as a majority that declared the East Coast primary dead and promoted a West Coast copy, while the primary kept taking writes, and the two versions had to be reconciled by hand. Agreement becomes a fact only when it has passed every check the shared records allow and they pick out one consistent world.
+A crowd can agree because everyone copies the same mistake. OPH's technical agreement has stronger requirements: comparisons have defined interfaces, protected evidence cannot be revised merely to make agreement easier, and the permitted repairs must satisfy their stated conditions. Even then, schedule independence means that admissible repair paths from the same start reach the same public result. It does not mean every starting point gives one answer, or that the answer describes our Universe. An inconsistent specification may have no solution; incomplete evidence may admit several. Physical truth requires the records and interventions to match what is measured. The essays therefore treat criticism and dissent as ways to expose a bad constraint or missing observation. Silencing a participant is no substitute for resolving the disagreement.
+
+See also: How does the universe stay consistent everywhere if each part only checks its neighbors? (https://floatingpragma.ai/faq/#how-does-the-universe-stay-consistent), Why should the future resemble the past? (The problem of induction) (https://floatingpragma.ai/faq/#problem-of-induction), Can physics prove what we ought to do? (The is–ought problem) (https://floatingpragma.ai/faq/#can-physics-derive-morality)
+
+Sources: [Reality as a Consensus Protocol](https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/reality_as_consensus_protocol.pdf)
 
 Link: https://floatingpragma.ai/faq/#does-agreement-make-something-true. Read more: [Chapter 11: What Does Everybody Actually End Up Holding?](https://oph-book.floatingpragma.ai/chapter/chapter-11), [Chapter 8: Why Can Strangers Agree Without a Boss?](https://oph-book.floatingpragma.ai/chapter/chapter-8), [Chapter 6: Why Isn't Agreeing With Your Neighbors Enough?](https://oph-book.floatingpragma.ai/chapter/chapter-6).
 
@@ -312,6 +326,130 @@ Color is real, and it belongs to the observer that reads it. Physics describes l
 
 Link: https://floatingpragma.ai/faq/#is-color-real. Read more: [Chapter 40: Does It Feel Like Anything, and What Is Left to Decide?](https://oph-book.floatingpragma.ai/chapter/chapter-40), [Chapter 11: What Does Everybody Actually End Up Holding?](https://oph-book.floatingpragma.ai/chapter/chapter-11).
 
+### How does OPH answer Zeno’s paradox?
+
+Zeno asks how a runner can finish a journey if crossing it requires first crossing half, then half the remainder, forever. The mathematical response is that infinitely many shrinking intervals can have a finite total: one half plus one quarter plus one eighth and so on sums to one. OPH adds a physical interpretation. A finite record process need not perform a separate operation for every point or subdivision in its continuum description. The runner's events occur; the infinitely divisible line is an effective mathematical account of them. The same distinction answers the frozen-arrow picture: an instantaneous position is not a complete account of a changing process. This motivates the discrete construction, while neither Zeno nor the geometric series proves that nature is discrete.
+
+See also: Do infinities exist in reality or only in our descriptions? (https://floatingpragma.ai/faq/#do-infinities-exist), How can continuous space and smooth motion emerge from discrete records? (https://floatingpragma.ai/faq/#continuum-from-discrete), Is the quantum Zeno effect the same as Zeno’s paradox? (https://floatingpragma.ai/faq/#quantum-zeno-effect)
+
+Sources: [Zeno’s paradoxes: arguments and mathematical responses](https://plato.stanford.edu/entries/paradox-zeno/)
+
+Link: https://floatingpragma.ai/faq/#zenos-paradox. Read more: [Chapter 13: What Is One Piece of Reality Actually Made Of?](https://oph-book.floatingpragma.ai/chapter/chapter-13), [Chapter 15: Why Does Space Have Three Directions?](https://oph-book.floatingpragma.ai/chapter/chapter-15), [Chapter 16: Why Does Time Run, and Only One Way?](https://oph-book.floatingpragma.ai/chapter/chapter-16).
+
+### If every part of me changes, am I still the same person? (Ship of Theseus)
+
+Replacing a ship's planks asks what kind of continuity the word same is meant to track. Material identity, functional organization and a continuous history can give different answers without contradiction. OPH approaches a person through an ongoing organization of records, self-reading and causal dependencies. Replacing matter can preserve that organization; keeping the same atoms need not preserve it. Two reconstructed copies could share memories and patterns while becoming distinct continuing episodes. Deciding whether either counts as the original requires an explicit account of personal identity and ownership. The observer framework makes those questions precise, but agreement about a physical description does not by itself prove that a person's first-person perspective survives copying.
+
+See also: If I were copied exactly, would the copy be me? (https://floatingpragma.ai/faq/#would-a-copy-of-me-be-me), Are you your memories? (https://floatingpragma.ai/faq/#are-you-your-memories), Why do many brain processes feel like one experience? (The combination problem) (https://floatingpragma.ai/faq/#combination-problem)
+
+Link: https://floatingpragma.ai/faq/#ship-of-theseus. Read more: [Chapter 35: What Is Anything Made Of?](https://oph-book.floatingpragma.ai/chapter/chapter-35), [Chapter 40: Does It Feel Like Anything, and What Is Left to Decide?](https://oph-book.floatingpragma.ai/chapter/chapter-40).
+
+### When does a pile become a heap? (The sorites paradox)
+
+One grain is not a heap, and adding one grain seems too small to matter. Repeating that judgment would say that a million grains are not a heap either. The mistake is treating a vague everyday category as though it supplied one exact, context-independent decision rule. OPH distinguishes a finite physical record from the interpretation applied to it. A sensor can count grains exactly while people use heap for different practical purposes. Specifying a threshold makes a classifier definite, but does not discover a universal boundary hidden in the word. Discreteness makes individual counts available; it does not remove vagueness from language. The proposed response is to state the comparison and decision rule the question actually needs.
+
+See also: What is a fact, physically? (https://floatingpragma.ai/faq/#what-is-a-fact), How can two different descriptions of nature both be right? (https://floatingpragma.ai/faq/#how-can-two-descriptions-both-be-right)
+
+Sources: [The sorites paradox and theories of vagueness](https://plato.stanford.edu/entries/sorites-paradox/)
+
+Link: https://floatingpragma.ai/faq/#sorites-paradox. Read more: [Chapter 4: Why Do Two Descriptions Ever Agree?](https://oph-book.floatingpragma.ai/chapter/chapter-4), [Chapter 5: Why Do You and I See the Same Table?](https://oph-book.floatingpragma.ai/chapter/chapter-5), [Chapter 19: Why Can't You Ask Everything At Once?](https://oph-book.floatingpragma.ai/chapter/chapter-19).
+
+### Does “this sentence is false” defeat a self-referential universe?
+
+The liar combines self-reference with an unrestricted truth assignment: declaring the sentence true makes it false, and declaring it false makes it true. It shows that those demands cannot all be imposed together in the ordinary two-valued way. It does not show that every self-reference is inconsistent. An equation can refer to its own unknown and have a perfectly definite solution. OPH requires a specified domain, maps and admissible comparisons; a proposed closure with contradictory requirements fails rather than becoming a physical universe. Its fixed-point proposal therefore does not assume that every self-referential description has a solution. Logical approaches to truth still need their own rules; an observer network does not erase the liar by agreement.
+
+See also: What about the set of all sets that do not contain themselves? (Russell’s paradox) (https://floatingpragma.ai/faq/#russells-paradox), Can everything true be proven? (https://floatingpragma.ai/faq/#can-everything-true-be-proven), Can reality contradict itself? (https://floatingpragma.ai/faq/#can-reality-contradict-itself)
+
+Sources: [The liar paradox](https://plato.stanford.edu/entries/liar-paradox/)
+
+Link: https://floatingpragma.ai/faq/#liars-paradox. Read more: [Chapter 2: Why Is There Anything Rather Than Nothing?](https://oph-book.floatingpragma.ai/chapter/chapter-2), [Chapter 6: Why Isn't Agreeing With Your Neighbors Enough?](https://oph-book.floatingpragma.ai/chapter/chapter-6), [Chapter 37: Why Does the Loop Have No Beginning?](https://oph-book.floatingpragma.ai/chapter/chapter-37).
+
+### What about the set of all sets that do not contain themselves? (Russell’s paradox)
+
+Ask whether that proposed set contains itself. Either answer contradicts its defining condition. Russell's paradox exposes a problem with allowing every unrestricted description to form a set. Modern foundations restrict what can be formed, for example through types or controlled set-building rules. OPH needs the same discipline: specifying an observer, an accessible record and a reconstruction map must respect their domains. Calling something a description does not make every imagined totality admissible. The paradox therefore limits an overbroad self-description principle; it does not refute a particular well-defined closure construction. Its lesson is to check that the objects and maps in the proposed loop actually exist under the chosen mathematics.
+
+See also: Does “this sentence is false” defeat a self-referential universe? (https://floatingpragma.ai/faq/#liars-paradox), Does describing a universe make it exist? (https://floatingpragma.ai/faq/#can-a-description-create-a-world)
+
+Sources: [Russell’s paradox](https://plato.stanford.edu/entries/russell-paradox/)
+
+Link: https://floatingpragma.ai/faq/#russells-paradox. Read more: [Chapter 2: Why Is There Anything Rather Than Nothing?](https://oph-book.floatingpragma.ai/chapter/chapter-2), [Chapter 37: Why Does the Loop Have No Beginning?](https://oph-book.floatingpragma.ai/chapter/chapter-37).
+
+### Can manipulating symbols ever be understanding? (The Chinese room)
+
+Searle's Chinese room follows rules for Chinese symbols while its operator understands no Chinese. OPH's response asks what the whole implemented system actually does with its distinctions. Does a retained interpretation guide its own expectations, corrections and actions across different situations, or does it only produce a matching display? A person need not understand a neuron's role for the organized brain to understand a sentence. Conversely, fluent output alone does not establish integrated self-reading or experience. The essays identify understanding with realized, usable relations among constraints and records. That is a proposed account of understanding, not a proof that any symbol manipulation qualifies. The relevant test concerns the causal organization, including what changes under interventions.
+
+See also: How do symbols acquire meaning instead of referring only to other symbols? (https://floatingpragma.ai/faq/#symbol-grounding), Can a machine be conscious? (https://floatingpragma.ai/faq/#can-a-machine-be-conscious), Does describing a universe make it exist? (https://floatingpragma.ai/faq/#can-a-description-create-a-world)
+
+Sources: [The Chinese room argument and its replies](https://plato.stanford.edu/entries/chinese-room/)
+
+Link: https://floatingpragma.ai/faq/#chinese-room. Read more: [Chapter 39: Why Is a Bacterium Freer Than an Atom?](https://oph-book.floatingpragma.ai/chapter/chapter-39), [Chapter 40: Does It Feel Like Anything, and What Is Left to Decide?](https://oph-book.floatingpragma.ai/chapter/chapter-40).
+
+### How do symbols acquire meaning instead of referring only to other symbols?
+
+A stored symbol means little to a system if changing it changes nothing the system does. OPH begins with distinctions that matter through an observer's own channels: a retained temperature changes heating, or a record of uncertainty changes what gets checked next. Richer meanings combine perception, expectations, action and correction within an ongoing organization. A word for a cup is grounded through those relationships, rather than an endless chain of dictionary substitutions. This supplies an operational starting point for meaning. It does not make every useful bit a human concept or prove that every control system feels something. Experiential meaning additionally depends on OPH's proposed identity and its account of the experiencing unit.
+
+See also: Can manipulating symbols ever be understanding? (The Chinese room) (https://floatingpragma.ai/faq/#chinese-room), Why does it feel like something to be a computation in a brain (qualia)? (https://floatingpragma.ai/faq/#why-does-it-feel-like-something)
+
+Link: https://floatingpragma.ai/faq/#symbol-grounding. Read more: [Chapter 3: Why Would a Universe Need Anybody In It?](https://oph-book.floatingpragma.ai/chapter/chapter-3), [Chapter 39: Why Is a Bacterium Freer Than an Atom?](https://oph-book.floatingpragma.ai/chapter/chapter-39), [Chapter 40: Does It Feel Like Anything, and What Is Left to Decide?](https://oph-book.floatingpragma.ai/chapter/chapter-40).
+
+### Why would a complete map of the world not tell me “I am here”?
+
+A map can identify every person and place without connecting its reader to one particular entry. That missing relation is self-locating knowledge. OPH treats an observer's perspective as a real part of the world's organization: a record belongs to a particular continuing system and changes what that system does next. Knowing the description of an experience is likewise different from undergoing its occurrence. Mary can know a complete account of color vision before her own system first enacts seeing red. The claim is not that an impersonal description must omit all relational facts. It is that receiving a description and occupying the described position are different relations to the same world.
+
+See also: What does Mary learn when she first sees red? (https://floatingpragma.ai/faq/#marys-room), How do I know other minds exist? (https://floatingpragma.ai/faq/#how-do-i-know-other-minds-exist), Is reality objective or subjective? (https://floatingpragma.ai/faq/#is-reality-objective-or-subjective)
+
+Link: https://floatingpragma.ai/faq/#self-locating-knowledge. Read more: [Chapter 5: Why Do You and I See the Same Table?](https://oph-book.floatingpragma.ai/chapter/chapter-5), [Chapter 40: Does It Feel Like Anything, and What Is Left to Decide?](https://oph-book.floatingpragma.ai/chapter/chapter-40).
+
+### Does describing a universe make it exist?
+
+Writing a novel does not give its character a separately operating brain. The essays distinguish a description from a realization whose actual dependencies preserve the described updates, records and interventions. A movie can match one history while failing that test: change the represented memory and the next prerecorded frame stays the same. A genuine implementation must respond through the specified organization. OPH then makes the stronger ontological proposal of intrinsic realization: a complete inhabited structure's internal dependencies constitute its operation without an external host or clock. That is a philosophical commitment beyond mathematical consistency. The ink does not create the world, and proving a finite implementation lemma does not prove that every consistent mathematical description is physically inhabited.
+
+See also: Are we living in a simulation? (https://floatingpragma.ai/faq/#are-we-living-in-a-simulation), What does it mean to call the universe a fixed-point solver? (https://floatingpragma.ai/faq/#what-is-a-fixed-point-solver), Can everything true be proven? (https://floatingpragma.ai/faq/#can-everything-true-be-proven)
+
+Link: https://floatingpragma.ai/faq/#can-a-description-create-a-world. Read more: [Chapter 2: Why Is There Anything Rather Than Nothing?](https://oph-book.floatingpragma.ai/chapter/chapter-2), [Chapter 35: What Is Anything Made Of?](https://oph-book.floatingpragma.ai/chapter/chapter-35), [Chapter 37: Why Does the Loop Have No Beginning?](https://oph-book.floatingpragma.ai/chapter/chapter-37).
+
+### Why should the future resemble the past? (The problem of induction)
+
+No finite list of past observations logically forces every future event to follow the same pattern. OPH addresses prediction through a specified construction: stable records and update rules constrain which continuations it admits, and experiments test whether those constraints describe our world. A law does explanatory work when it rules out outcomes before they are measured. Discovering a past pattern alone does not establish that law, and calling the universe self-consistent supplies no particular probability distribution. The stance is disciplined inference with explicit assumptions, comparisons and failures. That explains how prediction can be rational without pretending that the historical fact of successful prediction is a deductive proof of every future success.
+
+See also: How can we know anything about reality? (https://floatingpragma.ai/faq/#how-can-we-know-reality), If everyone agrees on something, does that make it true? (https://floatingpragma.ai/faq/#does-agreement-make-something-true), Can I check OPH myself? (https://floatingpragma.ai/faq/#can-i-check-oph-myself)
+
+Link: https://floatingpragma.ai/faq/#problem-of-induction. Read more: [Chapter 1: Why Is the Universe So Hard to Reverse Engineer?](https://oph-book.floatingpragma.ai/chapter/chapter-1), [Chapter 11: What Does Everybody Actually End Up Holding?](https://oph-book.floatingpragma.ai/chapter/chapter-11), [Chapter 36: Why These Laws and Not Others?](https://oph-book.floatingpragma.ai/chapter/chapter-36).
+
+### Can physics prove what we ought to do? (The is–ought problem)
+
+A calculation can describe how an act affects people without deciding that those effects should matter. OPH's ethical interpretation adds that affected observers' suffering and agency constrain an acceptable arrangement. Given that commitment, an accounting of consequences can distinguish repairing harm from exporting it. The value premise must stay visible. A group might achieve agreement by excluding a victim, and a mismatch score could fall when an inconvenient record is erased. Neither is justice merely because the number improves. The essays therefore defend dissent as a channel for correcting an inadequate settlement. Their ethical proposal uses the physical picture while adding a moral criterion; a convergence theorem alone proves no obligation to maximize agreement.
+
+See also: Is there an objective right and wrong? (https://floatingpragma.ai/faq/#is-there-objective-right-and-wrong), If everyone agrees on something, does that make it true? (https://floatingpragma.ai/faq/#does-agreement-make-something-true), What is evil? (https://floatingpragma.ai/faq/#what-is-evil)
+
+Link: https://floatingpragma.ai/faq/#can-physics-derive-morality. Read more: [Chapter 39: Why Is a Bacterium Freer Than an Atom?](https://oph-book.floatingpragma.ai/chapter/chapter-39), [Chapter 40: Does It Feel Like Anything, and What Is Left to Decide?](https://oph-book.floatingpragma.ai/chapter/chapter-40), [Chapter 41: What Does a Repaired World Look Like?](https://oph-book.floatingpragma.ai/chapter/chapter-41).
+
+### Who wrote the laws if the universe reconstructs itself? (The bootstrap paradox)
+
+A time-travel story can send a book into the past so that nobody ever writes it. OPH's closure proposal does not require such a journey. Its inhabitants recover a description, and their activity realizes the same complete structure; earlier and later belong to events inside that history. The equation relating description and realization imposes mutual fidelity without assigning either an earlier moment outside the world. This can explain dependence without an external first author, just as simultaneous equations can determine two numbers together. It still requires a valid map and an inhabited solution. A circular story that imposes no constraints earns no explanation, and self-reference does not guarantee that the laws or history are unique.
+
+See also: Who created the universe? (https://floatingpragma.ai/faq/#who-created-the-universe), Isn't a self-creating universe circular? (https://floatingpragma.ai/faq/#isnt-a-self-creating-universe-circular), What does it mean to call the universe a fixed-point solver? (https://floatingpragma.ai/faq/#what-is-a-fixed-point-solver)
+
+Link: https://floatingpragma.ai/faq/#bootstrap-paradox. Read more: [Chapter 2: Why Is There Anything Rather Than Nothing?](https://oph-book.floatingpragma.ai/chapter/chapter-2), [Chapter 37: Why Does the Loop Have No Beginning?](https://oph-book.floatingpragma.ai/chapter/chapter-37).
+
+### Can mathematics turn one ball into two? (The Banach–Tarski paradox)
+
+The mathematical theorem uses a finite decomposition into highly nonmeasurable sets that can be rearranged into two balls of the original size. Its pieces are not chunks a physical cutting machine can isolate, and the theorem is not a recipe for manufacturing matter. OPH emphasizes the same distinction between a mathematical description and an admissible observer operation. A proposed physical transformation needs actual states, access, energy accounting and records of its implementation. Treating arbitrary continuum subsets as available material pieces bypasses those requirements. The result is compatible with ordinary conservation laws because its assumptions concern abstract sets and ideal motions, not a finite physical protocol that doubles a gold sphere.
+
+See also: Do infinities exist in reality or only in our descriptions? (https://floatingpragma.ai/faq/#do-infinities-exist), Does describing a universe make it exist? (https://floatingpragma.ai/faq/#can-a-description-create-a-world)
+
+Sources: [The Banach–Tarski Paradox: mathematical construction](https://arxiv.org/abs/2108.05714)
+
+Link: https://floatingpragma.ai/faq/#banach-tarski-paradox. Read more: [Chapter 13: What Is One Piece of Reality Actually Made Of?](https://oph-book.floatingpragma.ai/chapter/chapter-13), [Chapter 18: Why Does Anything Have Energy?](https://oph-book.floatingpragma.ai/chapter/chapter-18), [Chapter 35: What Is Anything Made Of?](https://oph-book.floatingpragma.ai/chapter/chapter-35).
+
+### If reality seeks agreement, why do creativity and dissent matter?
+
+A stable answer can be wrong, and a set of constraints can be incomplete or impossible to satisfy. The essays distinguish repair within a fixed problem from exploration that changes which possibilities are considered. A surprising observation or dissenting voice can reveal that the settled account omitted something important. Creativity tries another organization; learning retains the parts that survive testing. This can temporarily increase disagreement while improving the eventual explanation. OPH's agreement theorem concerns a specified repair system under stated premises. It does not prove that every stable opinion is true or that silencing objections improves a community. Protecting the relevant evidence and the agency of affected people is part of the proposed ethical account.
+
+See also: If everyone agrees on something, does that make it true? (https://floatingpragma.ai/faq/#does-agreement-make-something-true), What is thinking, and how could the universe do it? (https://floatingpragma.ai/faq/#what-is-thinking), Can physics prove what we ought to do? (The is–ought problem) (https://floatingpragma.ai/faq/#can-physics-derive-morality)
+
+Link: https://floatingpragma.ai/faq/#why-can-disagreement-be-useful. Read more: [Chapter 6: Why Isn't Agreeing With Your Neighbors Enough?](https://oph-book.floatingpragma.ai/chapter/chapter-6), [Chapter 36: Why These Laws and Not Others?](https://oph-book.floatingpragma.ai/chapter/chapter-36), [Chapter 39: Why Is a Bacterium Freer Than an Atom?](https://oph-book.floatingpragma.ai/chapter/chapter-39).
+
 ## Time
 
 ### What is time?
@@ -328,7 +466,7 @@ Link: https://floatingpragma.ai/faq/#why-does-time-only-go-forward. Read more: [
 
 ### Why do we remember the past and not the future?
 
-We remember the past because the past is made of records and the future is made of none. The past is the set of repairs that have been committed, each tied to earlier ones by certified reads: a later repair can show that it read a value an earlier one wrote. Each commit also destroys what it resolved, averaging several possible arrangements into one, so rewriting the past would need information that is gone. The future is the disagreements that have no commit. Its content exists in no register, because the repairs that would fix it have not happened. A record is something you can go back to and find unchanged, which is what memory needs. Forging a past fails too: a fake twenty-bit history passes about once in a million guesses.
+A memory is a record carried into an observer's present activity by earlier interactions. We remember the past because those records have causal routes into the current observer; the later events we call our future do not supply the same ordinary routes. OPH models such dependence through authenticated writes, reads and retained records. Its complete-history interpretation can include all those events without giving an observer access to every one of them. The whole history and the information available at one point inside it are different objects. Irreversible local record production can contribute to this asymmetry, but explaining the cosmological arrow also requires a physical state and its history. A fixed-point description is no prediction channel from tomorrow.
 
 Link: https://floatingpragma.ai/faq/#why-do-we-remember-the-past-not-the-future. Read more: [Chapter 16: Why Does Time Run, and Only One Way?](https://oph-book.floatingpragma.ai/chapter/chapter-16), [Chapter 10: Why Doesn't It Matter Who Goes First?](https://oph-book.floatingpragma.ai/chapter/chapter-10).
 
@@ -358,7 +496,9 @@ Link: https://floatingpragma.ai/faq/#why-do-moving-clocks-run-slow. Read more: [
 
 ### Is time travel to the past possible?
 
-No. The past is the set of repairs that have been committed, each tied to earlier ones by a certified read: a later repair shows that it read a value an earlier one wrote. That relation runs one way, since nothing can come after itself, so no record can depend on a record that depends on it. Going back would mean rewriting committed records, and each commit destroyed the information needed to do that, averaging several possible arrangements of a seam into one. Even faking a past fails. A forged history worth twenty bits matches by chance once in 1,048,576 tries, and in a hundred thousand attempts it never did. More computing power buys more attempts at the same odds, because the bits it would need were thrown away by the commits that made the real history.
+The native record histories considered here order events by authenticated dependencies: a later read uses an earlier write. An acyclic history cannot contain a chain in which a record is its own strict predecessor. That excludes a grandfather-style contradiction within that construction. It does not prove that every spacetime allowed by general relativity has no closed timelike curve, or that a finite repair theorem settles all time-travel physics. OPH's complete-history closure is a different kind of loop: the recovered description and its realization agree on one whole history. It sends no signal to an earlier moment. Ordinary clocks, aging and relativistic time dilation can occur inside that history. Any stronger time-travel claim needs a physical spacetime reconstruction and its actual causal conditions.
+
+See also: Who wrote the laws if the universe reconstructs itself? (The bootstrap paradox) (https://floatingpragma.ai/faq/#bootstrap-paradox), If reality is a fixed point, is everything predestined? (https://floatingpragma.ai/faq/#is-everything-predestined), Why does the traveling twin come home younger? (https://floatingpragma.ai/faq/#twin-paradox)
 
 Link: https://floatingpragma.ai/faq/#is-time-travel-possible. Read more: [Chapter 16: Why Does Time Run, and Only One Way?](https://oph-book.floatingpragma.ai/chapter/chapter-16), [Chapter 7: Why Is There No Such Thing As Now?](https://oph-book.floatingpragma.ai/chapter/chapter-7).
 
@@ -391,6 +531,22 @@ Link: https://floatingpragma.ai/faq/#why-does-gravity-slow-time. Read more: [Cha
 Because every clock reads one and the same parameter, and that parameter enters the laws of motion with the opposite sign from the three space directions. Time in OPH is the count of repairs meeting a region along one continuing history. A tally, a wave, a light signal and a region's own flow all read that single count, with conversion factors fixed by the seams and the temperature. Space has three directions because each carrier's twelve readings split into bands under repair, and only the slowest band, three directions wide, lasts long enough for separated observers to compare it. Write the action for waves running through the records and the three space directions enter with positive coefficients. The wave is second order in the clock and its spatial operator is positive, so the clock direction takes the opposite sign. The result is the minus, plus, plus, plus signature of special relativity, with one time direction and three of space.
 
 Link: https://floatingpragma.ai/faq/#why-only-one-time-dimension. Read more: [Chapter 22: Why Do All the Clocks Agree?](https://oph-book.floatingpragma.ai/chapter/chapter-22), [Chapter 17: Why Is There a Speed Limit?](https://oph-book.floatingpragma.ai/chapter/chapter-17), [Chapter 15: Why Does Space Have Three Directions?](https://oph-book.floatingpragma.ai/chapter/chapter-15).
+
+### If reality is a fixed point, is everything predestined?
+
+On OPH's complete-history interpretation, fate is the whole consistent history, including what its inhabitants choose. Think of a Sudoku with a unique solution. The grid's entries constrain one another, but no entry is placed by breaking the rules to reach a preferred ending. Your decisions are among the events that must fit, and their consequences remain real. Free will here means reason-responsive agency inside that structure. The universe does not rearrange events on an outside timeline or override a decision so that the same result happens anyway. Nor does a unique completion for given data prove a unique possible universe. The analogy reconciles global consistency with local participation; it does not prove libertarian freedom or guarantee a morally desired outcome.
+
+See also: Do we have free will? (https://floatingpragma.ai/faq/#do-we-have-free-will), If the future is already settled, does anything I do matter? (https://floatingpragma.ai/faq/#does-anything-i-do-matter), What does it mean to call the universe a fixed-point solver? (https://floatingpragma.ai/faq/#what-is-a-fixed-point-solver)
+
+Link: https://floatingpragma.ai/faq/#is-everything-predestined. Read more: [Chapter 37: Why Does the Loop Have No Beginning?](https://oph-book.floatingpragma.ai/chapter/chapter-37), [Chapter 39: Why Is a Bacterium Freer Than an Atom?](https://oph-book.floatingpragma.ai/chapter/chapter-39), [Chapter 40: Does It Feel Like Anything, and What Is Left to Decide?](https://oph-book.floatingpragma.ai/chapter/chapter-40).
+
+### Why does the traveling twin come home younger?
+
+The twins follow different paths through spacetime and can accumulate different proper times between their meetings. The apparent contradiction comes from treating each twin's entire trip as one interchangeable inertial frame; the turnaround and the comparison of distant events must be included. OPH's task is to reconstruct compatible physical clock readings along those paths from one observer history. Event counts or logical dependency depth alone do not supply the measured aging. Where the construction realizes relativistic proper time, it should reproduce the familiar result, rather than replace it with a preferred global stopwatch. The twin paradox is a demand for consistent clock comparisons, not evidence that one observer's real experience must be an illusion.
+
+See also: Why do moving clocks run slow? (https://floatingpragma.ai/faq/#why-do-moving-clocks-run-slow), Why do all clocks agree? (https://floatingpragma.ai/faq/#why-do-all-clocks-agree), Is there a universal "now"? (https://floatingpragma.ai/faq/#is-there-a-universal-now)
+
+Link: https://floatingpragma.ai/faq/#twin-paradox. Read more: [Chapter 17: Why Is There a Speed Limit?](https://oph-book.floatingpragma.ai/chapter/chapter-17), [Chapter 22: Why Do All the Clocks Agree?](https://oph-book.floatingpragma.ai/chapter/chapter-22), [Chapter 25: Why Does Gravity Look Like Geometry?](https://oph-book.floatingpragma.ai/chapter/chapter-25).
 
 ## Space and light
 
@@ -450,7 +606,9 @@ Link: https://floatingpragma.ai/faq/#what-is-spacetime. Read more: [Chapter 17: 
 
 ### Is there a smallest length in nature?
 
-Surfaces have a smallest piece, and positions in space have no smallest step. The Planck length, built from Newton's constant, Planck's constant and the speed of light, is about 1.6×10⁻³⁵ meters. A boundary's memory is a count of identical patches, each natural unit of it worth four Planck squares, so the area of any boundary comes in whole numbers of one tiny piece, the same everywhere. Inside space there is no grid of little cubes. Positions are whole-number tallies of comparisons, and the points they name crowd in everywhere, so any point can be approached as closely as anybody likes, the way 3.14 and 3.1416 close in on π. Zeno said crossing a room means finishing a list of halves with no last entry. The runner crosses anyway, because crossing was never the same act as finishing that list.
+A finite record interface does not automatically imply a universal smallest spatial distance. OPH's native constructions use finite carriers, and some physical interpretations attach a basic area to a boundary's record capacity. Establishing its value in physical units requires a gravitational and geometric dictionary. The Planck length is a scale built from measured constants; that fact alone does not prove that space is a lattice with that spacing. Effective positions may be continuous even when the underlying record process is discrete. Zeno's subdivisions then belong to the mathematical description, rather than a list of separate operations the runner must execute. OPH must show how its finite processes reproduce actual ruler and clock measurements before claiming a measured minimum length.
+
+See also: How does OPH answer Zeno’s paradox? (https://floatingpragma.ai/faq/#zenos-paradox), How can continuous space and smooth motion emerge from discrete records? (https://floatingpragma.ai/faq/#continuum-from-discrete)
 
 Link: https://floatingpragma.ai/faq/#is-there-a-smallest-length. Read more: [Chapter 24: Why Does a Region's Memory Scale With Its Surface?](https://oph-book.floatingpragma.ai/chapter/chapter-24), [Chapter 15: Why Does Space Have Three Directions?](https://oph-book.floatingpragma.ai/chapter/chapter-15), [Chapter 17: Why Is There a Speed Limit?](https://oph-book.floatingpragma.ai/chapter/chapter-17).
 
@@ -459,6 +617,16 @@ Link: https://floatingpragma.ai/faq/#is-there-a-smallest-length. Read more: [Cha
 Empty space reads warm to anyone accelerating because, measured against the motion that observer rides, its state meets the exact condition that defines a heat bath. Keep accelerating and light from far enough behind never catches you, so a boundary forms past which you can never ask anything. Every state determines an internal flow, its own clock. For empty space on your side of that boundary, Joseph Bisognano and Eyvind Wichmann proved in 1975 and 1976 that the flow is the very motion carrying you along, in step with your wristwatch. Bill Unruh calculated in 1976 what a detector would read. At rest in empty space it never fires. Accelerated, it fires as if sitting in radiation at a temperature fixed by the acceleration alone. One degree takes about twenty-five billion billion times Earth's gravity, sustained.
 
 Link: https://floatingpragma.ai/faq/#why-is-empty-space-warm-when-accelerating. Read more: [Chapter 21: Why Does Time Feel Like It's Moving?](https://oph-book.floatingpragma.ai/chapter/chapter-21), [Chapter 17: Why Is There a Speed Limit?](https://oph-book.floatingpragma.ai/chapter/chapter-17).
+
+### How can continuous space and smooth motion emerge from discrete records?
+
+A smooth temperature field can describe many individual molecular events without making temperature a separate substance. OPH proposes an analogous relation between finite observer records and effective fields, geometry and clocks. Larger-scale comparisons can approach smooth laws when the construction supplies an appropriate refinement and controls the error in the observables. Merely drawing a graph finely is insufficient: the limit must preserve causal behavior, quantum responses and compatible ruler and clock readings. Different discrete models can have different limits, including ones with unwanted preferred directions. Continuum mathematics therefore describes collective behavior where the stated bounds support it. It need not be a literal inventory of infinitely many elementary points traversed by each moving object.
+
+See also: Is reality digital? (https://floatingpragma.ai/faq/#is-reality-digital), How does OPH answer Zeno’s paradox? (https://floatingpragma.ai/faq/#zenos-paradox), Is there a smallest length in nature? (https://floatingpragma.ai/faq/#is-there-a-smallest-length)
+
+Sources: [Observer spacetime and the conditional Einstein reconstruction](https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/recovering_observer_spacetime_and_einstein_dynamics_from_overlap_consistency.pdf)
+
+Link: https://floatingpragma.ai/faq/#continuum-from-discrete. Read more: [Chapter 13: What Is One Piece of Reality Actually Made Of?](https://oph-book.floatingpragma.ai/chapter/chapter-13), [Chapter 15: Why Does Space Have Three Directions?](https://oph-book.floatingpragma.ai/chapter/chapter-15), [Chapter 17: Why Is There a Speed Limit?](https://oph-book.floatingpragma.ai/chapter/chapter-17), [Chapter 25: Why Does Gravity Look Like Geometry?](https://oph-book.floatingpragma.ai/chapter/chapter-25).
 
 ## The quantum world
 
@@ -518,7 +686,9 @@ Link: https://floatingpragma.ai/faq/#what-is-the-wavefunction. Read more: [Chapt
 
 ### Is the universe random or deterministic?
 
-The odds are deterministic and the outcomes are not. The probability of every result is fixed exactly by the Born rule, the only probability rule that adds up consistently across every way of asking, and which result turns up is written nowhere in advance. Whatever the records leave undetermined stays as open as possible, and the future consists of disagreements nobody has settled, whose content exists in no register anywhere. Even the basic repair move breaks a tie with a fair coin. Once a record is written it is fixed, because rewriting it would need information the write destroyed. Settling itself is orderly. Given the records on a region's boundary, every order of repair lands in the same arrangement. Observers write those boundary records, one commit at a time, so where things land depends on what gets written.
+Separate a rule for probabilities from an individual recorded outcome. OPH constructions include specified deterministic updates and specified quantum or stochastic operations. Their complete observation laws depend on which construction is being discussed. A settled record fixes what occurred in that history; it need not assign answers to every incompatible measurement that was never performed. The complete-history proposal asks for these records, operations and their reconstruction to fit together. Calling that history a fixed point does not turn every local probability into a hidden predetermined value, or prove that all histories share one outcome. There is also no conflict in describing a whole history while an observer inside it lacks its future records. A physical randomness claim has to follow from the actual source and apparatus being tested.
+
+See also: Do we have free will? (https://floatingpragma.ai/faq/#do-we-have-free-will), Can Wigner and his friend give different accounts of the same measurement? (https://floatingpragma.ai/faq/#wigners-friend), What does it mean to call the universe a fixed-point solver? (https://floatingpragma.ai/faq/#what-is-a-fixed-point-solver)
 
 Link: https://floatingpragma.ai/faq/#is-the-universe-random-or-deterministic. Read more: [Chapter 19: Why Can't You Ask Everything At Once?](https://oph-book.floatingpragma.ai/chapter/chapter-19), [Chapter 16: Why Does Time Run, and Only One Way?](https://oph-book.floatingpragma.ai/chapter/chapter-16), [Chapter 11: What Does Everybody Actually End Up Holding?](https://oph-book.floatingpragma.ai/chapter/chapter-11), [Chapter 40: Does It Feel Like Anything, and What Is Left to Decide?](https://oph-book.floatingpragma.ai/chapter/chapter-40), [Chapter 9: What Move Does Reality Actually Make?](https://oph-book.floatingpragma.ai/chapter/chapter-9).
 
@@ -563,6 +733,24 @@ Link: https://floatingpragma.ai/faq/#what-is-the-born-rule. Read more: [Chapter 
 Because writing a record erases them, and large objects are recorded constantly. In OPH a measurement is the writing of a record, and writing deletes every comparison between the possible answers, which physicists call decoherence. OPH's repair law makes this exact. Each repair attempt shrinks the coherence between different load arrangements on a carrier's seams to at most a fixed fraction of its size, so after many attempts only a classical reading is left, and the longest-lived datum a carrier holds is a position-like readout. A record that steers what an observer does is kept as a classical record, with its alternatives fixed, while the quantum comparisons between them need not survive. A chair is recorded without pause: every photon and air molecule that leaves it carries where it was, so copies of its position are made continuously. An isolated electron, or a cold and shielded experiment, stays unrecorded long enough for its alternatives to interfere.
 
 Link: https://floatingpragma.ai/faq/#why-dont-we-see-quantum-effects. Read more: [Chapter 19: Why Can't You Ask Everything At Once?](https://oph-book.floatingpragma.ai/chapter/chapter-19), [Chapter 28: What Is a Particle, What Is a Wave, and Why Does It Look Like Both?](https://oph-book.floatingpragma.ai/chapter/chapter-28), [Chapter 16: Why Does Time Run, and Only One Way?](https://oph-book.floatingpragma.ai/chapter/chapter-16).
+
+### Can Wigner and his friend give different accounts of the same measurement?
+
+An observer inside a laboratory can hold a definite measurement record while an outside observer describes a larger quantum system without reading it. These accounts address different accessible information and operations. OPH asks which records can actually be compared, what their access maps are, and whether one joint protocol preserves the distinctions being claimed. A later interference experiment can be incompatible with treating every internal record as an untouched classical fact. Agreement therefore does not require assigning simultaneous definite outcomes to every incompatible measurement someone could have performed. The task is to construct the complete observation and intervention laws. The framework offers a relational way to state the problem; it must demonstrate the relevant experiment rather than settle it by declaring all perspectives identical.
+
+See also: Is Schrödinger's cat alive or dead? (https://floatingpragma.ai/faq/#is-schrodingers-cat-alive-or-dead), What happens when a quantum system is measured? (https://floatingpragma.ai/faq/#what-happens-in-a-quantum-measurement), How can two different descriptions of nature both be right? (https://floatingpragma.ai/faq/#how-can-two-descriptions-both-be-right)
+
+Link: https://floatingpragma.ai/faq/#wigners-friend. Read more: [Chapter 5: Why Do You and I See the Same Table?](https://oph-book.floatingpragma.ai/chapter/chapter-5), [Chapter 19: Why Can't You Ask Everything At Once?](https://oph-book.floatingpragma.ai/chapter/chapter-19), [Chapter 20: Why Does Nature Cheat, But Only By Exactly 2√2?](https://oph-book.floatingpragma.ai/chapter/chapter-20).
+
+### Is the quantum Zeno effect the same as Zeno’s paradox?
+
+No. Zeno's motion paradox concerns infinite subdivisions of a journey. The quantum Zeno effect concerns how a sequence of suitable measurements or interactions can suppress transitions in a quantum system. The measurement procedure changes the physical evolution; a person's attention is not the operative ingredient. OPH would describe the preparation, each interaction, the resulting records and their back-action on one source. A formal limit of increasingly frequent measurements needs assumptions about the apparatus and dynamics. It is not evidence that a conscious observer can freeze arbitrary objects, or that an infinite number of actual measurements occurs. The shared name links an analogy about interrupted motion, while the physical questions and their explanations are distinct.
+
+See also: How does OPH answer Zeno’s paradox? (https://floatingpragma.ai/faq/#zenos-paradox), Does observing something change it? (the observer effect) (https://floatingpragma.ai/faq/#does-observing-change-what-is-observed), What happens when a quantum system is measured? (https://floatingpragma.ai/faq/#what-happens-in-a-quantum-measurement)
+
+Sources: [Itano and colleagues: Quantum Zeno effect](https://journals.aps.org/pra/abstract/10.1103/PhysRevA.41.2295)
+
+Link: https://floatingpragma.ai/faq/#quantum-zeno-effect. Read more: [Chapter 19: Why Can't You Ask Everything At Once?](https://oph-book.floatingpragma.ai/chapter/chapter-19), [Chapter 23: Why Does Writing Something Down Cost Heat?](https://oph-book.floatingpragma.ai/chapter/chapter-23).
 
 ## Energy, heat and information
 
@@ -648,7 +836,11 @@ Link: https://floatingpragma.ai/faq/#why-does-gravity-only-attract. Read more: [
 
 ### Why can't gravity be quantized like the other forces?
 
-Gravity resists the usual quantization because Einstein's equation is an equation of state, like the gas law, and an equation of state has no atoms in it to quantize. Quantize gravity the standard way and every order of the calculation throws up a fresh infinity needing a fresh measured number, so the list never closes. The geometry describes regions that have finished settling, and it holds whatever their records are written in. Pressure times volume equals a constant times temperature held in every laboratory in Europe through the nineteenth century without a single molecule in it, and finding the molecules changed none of its symbols. Quantizing the metric to find the atom of space is like quantizing pressure to find the molecule. The constituents of space are the records, and they were never in the metric.
+Quantum fields are usually defined on a spacetime whose causal and geometric structure is supplied. Gravity makes that structure dynamical, so quantizing it also means accounting for the arena used to define the other fields. Perturbative Einstein gravity works as a low-energy effective theory, but it is not a complete high-energy theory with only its original finite set of couplings. OPH proposes approaching the problem from underneath the geometry: quantum observer records should yield spacetime and, under physical entropy and stress premises, Einstein's equation as an equation of state. The analogy is deriving gas pressure from molecules. It motivates a different construction; it does not prove that every attempt to quantize geometry fails, or that OPH has supplied a complete quantum-gravity theory.
+
+See also: What is gravity? (https://floatingpragma.ai/faq/#what-is-gravity), What replaces the singularities in the Big Bang and black holes? (https://floatingpragma.ai/faq/#cosmological-singularities), Why does the enormous calculated vacuum energy not curve the universe enormously? (https://floatingpragma.ai/faq/#vacuum-energy-problem)
+
+Sources: [Observer spacetime and the conditional Einstein reconstruction](https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/recovering_observer_spacetime_and_einstein_dynamics_from_overlap_consistency.pdf)
 
 Link: https://floatingpragma.ai/faq/#why-is-gravity-so-hard-to-quantize. Read more: [Chapter 25: Why Does Gravity Look Like Geometry?](https://oph-book.floatingpragma.ai/chapter/chapter-25), [Chapter 1: Why Is the Universe So Hard to Reverse Engineer?](https://oph-book.floatingpragma.ai/chapter/chapter-1), [Chapter 33: Why Was Every Open Problem the Same Problem?](https://oph-book.floatingpragma.ai/chapter/chapter-33).
 
@@ -660,19 +852,31 @@ Link: https://floatingpragma.ai/faq/#what-happens-inside-a-black-hole. Read more
 
 ### Is information lost in black holes?
 
-What falls into a black hole stays on the world's books. Its entropy, the count of what you would need to be told to know the rest, moves onto the horizon, and the horizon's area grows by enough to cover it. In 1970 John Wheeler joked that he could hide the evidence of mixing hot and cold tea by dropping both cups into a black hole. Jacob Bekenstein's answer was that the hole's surface grows to pay for them. That surface is a tally of identical pieces of screen, each holding the same amount of memory. The cup itself crosses without harm. What it loses is the return path, the channel any outside question about it would need. How the contents make their way back out as the hole radiates is work in progress.
+The black-hole information problem asks whether an initially quantum state can evolve into featureless thermal radiation that no longer retains its distinctions. Horizon entropy and the growth of area account for a thermodynamic budget; they do not alone provide a reversible map from infalling states to outgoing radiation. OPH approaches the problem through observer records, restricted access and the information associated with region boundaries. It must distinguish a record becoming inaccessible to an outside observer from its destruction in the complete process. A complete solution needs a compatible quantum evolution, an evaporating geometry and recoverable correlations in the radiation. The boundary bookkeeping supplies a proposed route, while a physical evaporation construction must establish the decisive transfer. A horizon diagram by itself does not settle it.
+
+See also: What happens inside a black hole? (https://floatingpragma.ai/faq/#what-happens-inside-a-black-hole), What replaces the singularities in the Big Bang and black holes? (https://floatingpragma.ai/faq/#cosmological-singularities)
+
+Sources: [Observer spacetime and the conditional Einstein reconstruction](https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/recovering_observer_spacetime_and_einstein_dynamics_from_overlap_consistency.pdf)
 
 Link: https://floatingpragma.ai/faq/#is-information-lost-in-black-holes. Read more: [Chapter 24: Why Does a Region's Memory Scale With Its Surface?](https://oph-book.floatingpragma.ai/chapter/chapter-24), [Prologue: No Source Code, No Documentation](https://oph-book.floatingpragma.ai/chapter/prologue).
 
 ### What is dark matter?
 
-Dark matter is a repair charge left on the collars, the bands one patch thick that wrap every region of the network. The world here is a network of observers that compare records with their neighbors and repair disagreements, and a region's collar holds the seams that any repair of that region reads. Around a galaxy, a charge sits on those collars and stays there, because no later write ever records what would clear it. That charge is the missing mass at galactic scales. Its profile around a galaxy produces an acceleration law, which fixes the speed of the outermost stars from two inputs, the galaxy's visible mass and one acceleration constant.
+Dark matter names a gravitational discrepancy: stars, galaxies and light behave as though there is more gravitating matter than the luminous material accounts for. OPH explores a candidate in which extra gravitational response comes from records and repair structure on the collars, the boundaries of observer regions. A persistent collar contribution could look like unseen mass in an effective spacetime description. The papers construct conditional contributions and galactic profiles; identifying them with the observed dark sector requires further physical premises. Matching a galaxy's rotation curve is one test. The same mechanism must also account for gravitational lensing, clusters and cosmological structure using compatible assumptions. This is OPH's proposed explanation, rather than a theorem that all observed missing gravity has been reproduced by one native source.
+
+See also: What is dark energy? (https://floatingpragma.ai/faq/#what-is-dark-energy), Why does gravity look like curved spacetime? (https://floatingpragma.ai/faq/#why-is-gravity-curved-spacetime)
+
+Sources: [OPH dark-matter candidate and its physical premises](https://github.com/FloatingPragma/observer-patch-holography/blob/main/cosmology/oph_dark_matter_paper.pdf)
 
 Link: https://floatingpragma.ai/faq/#what-is-dark-matter. Read more: [Chapter 33: Why Was Every Open Problem the Same Problem?](https://oph-book.floatingpragma.ai/chapter/chapter-33), [Chapter 24: Why Does a Region's Memory Scale With Its Surface?](https://oph-book.floatingpragma.ai/chapter/chapter-24).
 
 ### What is dark energy?
 
-Dark energy is the cosmological constant, and OPH proposes that its size is set by how many records your cosmological horizon can hold. Far enough out, the expansion carries galaxies away faster than their light can close the gap, and the sphere at that distance is your horizon. Read it from outside by its area and from inside by the durable records observers can write and read back, set the two equal, and its capacity comes out at 3.3001 × 10¹²², against 3.3129 × 10¹²² from the sky's expansion. The constant is three pi divided by that count, in units of one screen cell. The count never changes, so dark energy's ratio of pressure to density is exactly minus one at every epoch. The DESI galaxy survey at Kitt Peak tests this. Its 2025 data, combined with the cosmic microwave background, put this value about 2.8 standard deviations low, and an established drift away from minus one would falsify it.
+Dark energy names whatever drives the observed acceleration of cosmic expansion. A cosmological constant is its simplest description, with pressure equal to minus its energy density. OPH's fixed-capacity branch proposes that the constant is set by how many durable records a cosmological horizon can hold. In Planck units, the proposed relation is Lambda = 3 pi divided by that capacity. A very large capacity then corresponds to a very small constant. Turning a record capacity into a physical horizon and selecting its value are substantive parts of the proposal. On the fixed-capacity interpretation, the pressure-to-density ratio is minus one; a demonstrated change would reject that branch. The mechanism must be compared with observations, rather than inferred from agreement or finite memory alone.
+
+See also: Why is the cosmological constant so small? (https://floatingpragma.ai/faq/#why-is-the-cosmological-constant-so-small), Why are dark energy and matter important at roughly the same cosmic epoch? (https://floatingpragma.ai/faq/#dark-energy-coincidence), Why does the enormous calculated vacuum energy not curve the universe enormously? (https://floatingpragma.ai/faq/#vacuum-energy-problem)
+
+Sources: [Observer spacetime and the conditional Einstein reconstruction](https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/recovering_observer_spacetime_and_einstein_dynamics_from_overlap_consistency.pdf); [Observer-screen synchronization as a candidate inflation-free branch](https://github.com/FloatingPragma/observer-patch-holography/blob/main/cosmology/oph_inflation_without_inflaton_observer_screen_synchronization.pdf)
 
 Link: https://floatingpragma.ai/faq/#what-is-dark-energy. Read more: [Chapter 29: Why 1/137, and Why Is There a Limit to What the Universe Can Remember?](https://oph-book.floatingpragma.ai/chapter/chapter-29), [Chapter 33: Why Was Every Open Problem the Same Problem?](https://oph-book.floatingpragma.ai/chapter/chapter-33), [Appendix A: Eighteen Questions](https://oph-book.floatingpragma.ai/chapter/appendix-a).
 
@@ -684,7 +888,11 @@ Link: https://floatingpragma.ai/faq/#why-is-the-cosmological-constant-so-small. 
 
 ### Why is the universe expanding?
 
-Expansion is the record count growing. A volume here is a number of record events, and the light cones that say which event can influence which keep the same shape at every epoch. What grows is how many records fill each equal cell of that cone map. Light from a distant galaxy arrives stretched by the fourth root of the ratio between the record densities at its arrival and at its departure, which is the redshift astronomers measure. How fast the universe comes apart is set by the cosmological constant, which the fixed record capacity of your horizon pins to one value for all time. Running the film back to a hot, dense era is sound arithmetic. Turning that limit into a first moment of the world needs a clock that no observer holds.
+OPH explores expansion as a change in the density of records used to reconstruct spacetime. An event order says what can influence what; an additional count supplies a candidate volume measure. If the same pattern of causal relations contains a changing density of physical events, the effective geometry can have a changing scale. Clocks and light signals inside that geometry would register expansion and redshift. This is a proposed physical identification, not the claim that merely storing more data makes a universe expand. The construction must produce the relevant record history, its ruler and clock comparisons, and the observed expansion law together. The fixed-horizon-capacity branch supplies a candidate cosmological constant; it does not by itself select the complete cosmological history.
+
+See also: What is dark energy? (https://floatingpragma.ai/faq/#what-is-dark-energy), Why was the early universe so uniform and nearly spatially flat? (https://floatingpragma.ai/faq/#horizon-flatness-problems), Does OPH explain the Hubble tension? (https://floatingpragma.ai/faq/#hubble-tension)
+
+Sources: [Observer-screen synchronization as a candidate inflation-free branch](https://github.com/FloatingPragma/observer-patch-holography/blob/main/cosmology/oph_inflation_without_inflaton_observer_screen_synchronization.pdf); [Observer spacetime and the conditional Einstein reconstruction](https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/recovering_observer_spacetime_and_einstein_dynamics_from_overlap_consistency.pdf)
 
 Link: https://floatingpragma.ai/faq/#why-is-the-universe-expanding. Read more: [Chapter 25: Why Does Gravity Look Like Geometry?](https://oph-book.floatingpragma.ai/chapter/chapter-25), [Chapter 29: Why 1/137, and Why Is There a Limit to What the Universe Can Remember?](https://oph-book.floatingpragma.ai/chapter/chapter-29), [Chapter 35: What Is Anything Made Of?](https://oph-book.floatingpragma.ai/chapter/chapter-35), [Appendix A: Eighteen Questions](https://oph-book.floatingpragma.ai/chapter/appendix-a).
 
@@ -702,7 +910,11 @@ Link: https://floatingpragma.ai/faq/#why-is-gravity-an-inverse-square-law. Read 
 
 ### Why is gravity so weak compared with the other forces?
 
-Gravity is weak because the particle scale sits seventeen orders of magnitude below the scale where gravity becomes as strong as everything else, and in OPH an exponent produces that gap. The top is the grain, one cell of the screen that bounds every region, whose area is Newton's constant read as an area, with nothing smaller underneath. The bottom is the stiffness of the settled background every particle is maintained against, read as the Higgs field, at 246 billion electron-volts. The strength the three forces share at one cell, about 1/24.32, joins the two by sitting in an exponent, and an exponent turns a modest number into a vast one with no fine cancellation. Physicists call this the hierarchy problem. The usual fix pairs every particle with a partner whose contributions cancel, and the Large Hadron Collider has found none. The shared strength comes from a declared chain that runs the three forces with assumed slopes, and deriving those slopes is work in progress.
+Gravity's weakness is a comparison between physical scales. At particle energies far below the Planck scale, its dimensionless coupling is tiny. The related hierarchy problem asks why the Higgs scale is so much smaller and what keeps it stable when higher-energy physics is included. OPH seeks to recover both gravitational and particle scales from one observer construction. Candidate coupling chains can turn moderate dimensionless inputs into large ratios through an exponential, but the chosen inputs, running laws and physical scale attachments matter. A hierarchy reproduced with supplied slopes or calibration does not establish an independent explanation. The task is to derive the observed separation and its stability on the same physical source. Declaring a finite carrier removes no obligation to calculate that ratio.
+
+See also: Why is the Higgs scale so much smaller than the Planck scale? (The hierarchy problem) (https://floatingpragma.ai/faq/#hierarchy-problem), Why do particles have the masses they have? (https://floatingpragma.ai/faq/#why-do-particles-have-the-masses-they-have)
+
+Sources: [CERN: where does the Higgs boson come from?](https://home.web.cern.ch/where-does-higgs-boson-come/); [Particles from Native Overlap Transport](https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/deriving_the_particle_zoo_from_observer_consistency.pdf)
 
 Link: https://floatingpragma.ai/faq/#why-is-gravity-so-weak. Read more: [Chapter 33: Why Was Every Open Problem the Same Problem?](https://oph-book.floatingpragma.ai/chapter/chapter-33), [Chapter 25: Why Does Gravity Look Like Geometry?](https://oph-book.floatingpragma.ai/chapter/chapter-25), [Chapter 28: What Is a Particle, What Is a Wave, and Why Does It Look Like Both?](https://oph-book.floatingpragma.ai/chapter/chapter-28).
 
@@ -714,9 +926,75 @@ Link: https://floatingpragma.ai/faq/#what-are-gravitational-waves. Read more: [C
 
 ### Is the universe infinite?
 
-The universe is neither finite nor infinite, because space is no set of points for a shape to belong to. Space here is a count of comparisons between observers, and three is the rank of the slowest pattern that count carries. A rank is no ball or doughnut, and it is not infinite either, in the way the ether was not moving slowly. The question also wants one instant, and records carry only a partial order, saying which record read which, with no slice all observers would cut alike. Telescopes measure the geometry you get by gluing agreeing records together and blurring out the individual comparisons. That description comes back flat to within a fraction of a percent, and its shape belongs to the resolution and slicing chosen by whoever took the reading.
+OPH distinguishes finite access from the size of a complete world. Each bounded observer can hold only finitely much distinguishable information through a specified interface. That does not decide whether there are finitely many observers, whether histories continue without bound, or whether an effective spatial geometry has infinite extent. Those are different questions. An infinite continuum can also be a useful limiting description without any observer enumerating its points. A physical claim about the whole universe needs a specified global construction and observational consequences; it cannot be read straight from one carrier's dimension or capacity. OPH's finite starting point therefore explains why local observations need no infinite register, while leaving global extent to the construction being tested.
+
+See also: Do infinities exist in reality or only in our descriptions? (https://floatingpragma.ai/faq/#do-infinities-exist), Is reality digital? (https://floatingpragma.ai/faq/#is-reality-digital)
 
 Link: https://floatingpragma.ai/faq/#is-the-universe-infinite. Read more: [Chapter 35: What Is Anything Made Of?](https://oph-book.floatingpragma.ai/chapter/chapter-35).
+
+### Why does the enormous calculated vacuum energy not curve the universe enormously?
+
+The vacuum-energy problem asks why the gravitational effect of vacuum contributions is so small. OPH's conditional Einstein reconstruction highlights a precise mathematical fact: a stress contribution proportional to the metric has zero contraction with a null direction. A balance read only along light rays therefore cannot determine that term. This explains why a cosmological constant remains as an undetermined metric contribution in that reconstruction. It does not prove that vacuum energy cannot gravitate; in the full Einstein equation a constant vacuum contribution can be absorbed into the cosmological constant. OPH's separate horizon-capacity proposal seeks to fix the effective value. A complete solution must also explain the physical normalization and stability under matter contributions, rather than transfer a blind spot of one probe into a universal absence of gravity.
+
+See also: Why is the cosmological constant so small? (https://floatingpragma.ai/faq/#why-is-the-cosmological-constant-so-small), What is dark energy? (https://floatingpragma.ai/faq/#what-is-dark-energy)
+
+Sources: [Observer spacetime and the conditional Einstein reconstruction](https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/recovering_observer_spacetime_and_einstein_dynamics_from_overlap_consistency.pdf)
+
+Link: https://floatingpragma.ai/faq/#vacuum-energy-problem. Read more: [Chapter 25: Why Does Gravity Look Like Geometry?](https://oph-book.floatingpragma.ai/chapter/chapter-25), [Chapter 29: Why 1/137, and Why Is There a Limit to What the Universe Can Remember?](https://oph-book.floatingpragma.ai/chapter/chapter-29), [Chapter 33: Why Was Every Open Problem the Same Problem?](https://oph-book.floatingpragma.ai/chapter/chapter-33).
+
+### Why was the early universe so uniform and nearly spatially flat?
+
+The horizon problem asks why distant regions share such similar conditions; the flatness problem asks why spatial curvature was so close to the value needed for the observed evolution. Inflation offers one established framework for investigating both. OPH explores a different candidate based on observer-screen synchronization and a changing record-density description. The candidate must explain which regions can share records, how their correlations are prepared and how the effective geometry evolves. Local agreement alone does not prove early-universe coherence, flatness or the spectrum of primordial fluctuations. The inflation-free branch explicitly needs those physical premises and tests. Replacing a field called the inflaton with the word synchronization would not count as deriving the observations.
+
+See also: Why is the universe expanding? (https://floatingpragma.ai/faq/#why-is-the-universe-expanding), Why did the universe begin in such a low-entropy state? (https://floatingpragma.ai/faq/#low-entropy-beginning), What was the Big Bang? (https://floatingpragma.ai/faq/#what-was-the-big-bang)
+
+Sources: [Observer-screen synchronization as a candidate inflation-free branch](https://github.com/FloatingPragma/observer-patch-holography/blob/main/cosmology/oph_inflation_without_inflaton_observer_screen_synchronization.pdf)
+
+Link: https://floatingpragma.ai/faq/#horizon-flatness-problems. Read more: [Chapter 25: Why Does Gravity Look Like Geometry?](https://oph-book.floatingpragma.ai/chapter/chapter-25), [Chapter 33: Why Was Every Open Problem the Same Problem?](https://oph-book.floatingpragma.ai/chapter/chapter-33), [Chapter 35: What Is Anything Made Of?](https://oph-book.floatingpragma.ai/chapter/chapter-35).
+
+### Does OPH explain the Hubble tension?
+
+The Hubble tension is a disagreement between ways of inferring the universe's expansion rate, especially local distance measurements and inferences from early-universe data within a cosmological model. OPH proposes an origin for effective expansion through observer records, but that idea alone does not resolve the discrepancy. A solution must provide one quantitative expansion history, fit the relevant observations with their uncertainties, and explain why the different inference methods gave their reported values. Calibrating a model to one rate and comparing it with the other is insufficient. OPH should be tested against this problem, rather than credited with solving it because its cosmology uses different underlying objects.
+
+See also: Why is the universe expanding? (https://floatingpragma.ai/faq/#why-is-the-universe-expanding), What is dark energy? (https://floatingpragma.ai/faq/#what-is-dark-energy)
+
+Sources: [NASA: the Hubble constant and tension](https://science.nasa.gov/mission/hubble/science/science-behind-the-discoveries/hubble-constant-and-tension/); [Observer-screen synchronization as a candidate inflation-free branch](https://github.com/FloatingPragma/observer-patch-holography/blob/main/cosmology/oph_inflation_without_inflaton_observer_screen_synchronization.pdf)
+
+Link: https://floatingpragma.ai/faq/#hubble-tension. Read more: [Chapter 25: Why Does Gravity Look Like Geometry?](https://oph-book.floatingpragma.ai/chapter/chapter-25), [Chapter 33: Why Was Every Open Problem the Same Problem?](https://oph-book.floatingpragma.ai/chapter/chapter-33), [Chapter 35: What Is Anything Made Of?](https://oph-book.floatingpragma.ai/chapter/chapter-35).
+
+### What replaces the singularities in the Big Bang and black holes?
+
+A singularity signals that a particular spacetime description has reached a limit, such as incomplete paths or unbounded curvature. It need not be a physical object containing an actual infinity. OPH proposes finite observer records beneath the smooth geometry, so a continuum singularity can mark the failure of that effective description. That is a possible route around the problem, not a completed replacement history. A finite construction must still say what observers record, how clocks and signals continue, and whether the relevant quantum evolution is well defined. Simply capping a number in a simulation proves none of those facts. The cosmological and black-hole cases require their own source-generated continuations and comparison with the surrounding physical geometry.
+
+See also: What was the Big Bang? (https://floatingpragma.ai/faq/#what-was-the-big-bang), What happens inside a black hole? (https://floatingpragma.ai/faq/#what-happens-inside-a-black-hole), Do infinities exist in reality or only in our descriptions? (https://floatingpragma.ai/faq/#do-infinities-exist)
+
+Sources: [Observer spacetime and the conditional Einstein reconstruction](https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/recovering_observer_spacetime_and_einstein_dynamics_from_overlap_consistency.pdf)
+
+Link: https://floatingpragma.ai/faq/#cosmological-singularities. Read more: [Chapter 25: Why Does Gravity Look Like Geometry?](https://oph-book.floatingpragma.ai/chapter/chapter-25), [Chapter 33: Why Was Every Open Problem the Same Problem?](https://oph-book.floatingpragma.ai/chapter/chapter-33), [Chapter 35: What Is Anything Made Of?](https://oph-book.floatingpragma.ai/chapter/chapter-35).
+
+### Why should we not be random brains with false memories?
+
+The Boltzmann-brain problem arises when a cosmological model predicts that random observers with misleading records dominate its observer population. OPH emphasizes continuing observers whose records, interventions and internally recovered world fit together. A momentary image of a memory is weaker than realizing that causal organization. This distinguishes a genuine observer history from a picture that merely resembles one, but it is not a complete probability argument. A fluctuating system might instantiate real dependencies too. To show that ordinary observers are typical, OPH needs a justified state, measure and observer-counting prescription on its physical histories. Self-consistency by itself supplies neither those probabilities nor a proof that every apparent memory records a genuine external event.
+
+See also: Does describing a universe make it exist? (https://floatingpragma.ai/faq/#can-a-description-create-a-world), What is an observer, and does it have to be conscious? (https://floatingpragma.ai/faq/#what-is-an-observer), Why did the universe begin in such a low-entropy state? (https://floatingpragma.ai/faq/#low-entropy-beginning)
+
+Link: https://floatingpragma.ai/faq/#boltzmann-brains. Read more: [Chapter 2: Why Is There Anything Rather Than Nothing?](https://oph-book.floatingpragma.ai/chapter/chapter-2), [Chapter 35: What Is Anything Made Of?](https://oph-book.floatingpragma.ai/chapter/chapter-35), [Chapter 37: Why Does the Loop Have No Beginning?](https://oph-book.floatingpragma.ai/chapter/chapter-37).
+
+### Why did the universe begin in such a low-entropy state?
+
+The second law describes how entropy behaves under specified conditions; it does not by itself explain the universe's initial state. In OPH, local repair can produce an irreversible record process, and information discarded from one interface can explain an observer's arrow. The state of the whole early universe is an additional question. A complete-history constraint could in principle restrict the allowed boundary data, but writing a closure equation does not yet select the observed low-entropy cosmology or its probability. The construction must connect a state-selection mechanism, cosmological history and observer records on the same source. Otherwise a special starting condition has only been renamed, rather than explained.
+
+See also: Why does time only go forward? (https://floatingpragma.ai/faq/#why-does-time-only-go-forward), What is the second law of thermodynamics? (https://floatingpragma.ai/faq/#what-is-the-second-law-of-thermodynamics), Why was the early universe so uniform and nearly spatially flat? (https://floatingpragma.ai/faq/#horizon-flatness-problems)
+
+Link: https://floatingpragma.ai/faq/#low-entropy-beginning. Read more: [Chapter 16: Why Does Time Run, and Only One Way?](https://oph-book.floatingpragma.ai/chapter/chapter-16), [Chapter 33: Why Was Every Open Problem the Same Problem?](https://oph-book.floatingpragma.ai/chapter/chapter-33), [Chapter 35: What Is Anything Made Of?](https://oph-book.floatingpragma.ai/chapter/chapter-35).
+
+### Why are dark energy and matter important at roughly the same cosmic epoch?
+
+Matter dilutes as the effective universe expands, while a cosmological constant has a fixed energy density. Their relative importance therefore changes over time, making the epoch when they are comparable a distinct question from why the constant is small. OPH's fixed-capacity branch proposes a value for the effective cosmological constant; that alone does not determine the matter abundance, an observer's epoch or a probability for observing the crossover. A complete account would need those quantities from the same cosmological construction and a justified way to compare observer locations in it. The coincidence is thus a useful additional test. Reusing the horizon-capacity formula is not enough to claim it has been explained.
+
+See also: What is dark energy? (https://floatingpragma.ai/faq/#what-is-dark-energy), Why is the cosmological constant so small? (https://floatingpragma.ai/faq/#why-is-the-cosmological-constant-so-small), Why would a complete map of the world not tell me “I am here”? (https://floatingpragma.ai/faq/#self-locating-knowledge)
+
+Link: https://floatingpragma.ai/faq/#dark-energy-coincidence. Read more: [Chapter 29: Why 1/137, and Why Is There a Limit to What the Universe Can Remember?](https://oph-book.floatingpragma.ai/chapter/chapter-29), [Chapter 33: Why Was Every Open Problem the Same Problem?](https://oph-book.floatingpragma.ai/chapter/chapter-33), [Chapter 35: What Is Anything Made Of?](https://oph-book.floatingpragma.ai/chapter/chapter-35).
 
 ## Matter, forces and constants
 
@@ -846,6 +1124,46 @@ Solid objects are solid because two electrons cannot share one state, a rule tha
 
 Link: https://floatingpragma.ai/faq/#why-are-solid-objects-solid. Read more: [Chapter 28: What Is a Particle, What Is a Wave, and Why Does It Look Like Both?](https://oph-book.floatingpragma.ai/chapter/chapter-28), [Chapter 35: What Is Anything Made Of?](https://oph-book.floatingpragma.ai/chapter/chapter-35).
 
+### Why is the Higgs scale so much smaller than the Planck scale? (The hierarchy problem)
+
+The puzzle is both a large ratio and a question of stability. The Higgs scale is tiny compared with the scale associated with quantum gravity, while a scalar mass can be sensitive to higher-energy physics. OPH's proposed direction is to derive the particle and gravitational scales from one finite observer construction, rather than assign an independent continuum cutoff and tune a cancellation against it. Candidate exponential relations illustrate how a large separation might arise from moderate inputs. They become an explanation only when those inputs, physical scales and their stability are justified. A finite carrier by itself does not solve the hierarchy problem, and a numerical coupling chain with supplied running laws does not establish an unfitted Higgs mass.
+
+See also: Why is gravity so weak compared with the other forces? (https://floatingpragma.ai/faq/#why-is-gravity-so-weak), What does the Higgs field do? (https://floatingpragma.ai/faq/#what-does-the-higgs-field-do), Why do particles have the masses they have? (https://floatingpragma.ai/faq/#why-do-particles-have-the-masses-they-have)
+
+Sources: [CERN: where does the Higgs boson come from?](https://home.web.cern.ch/where-does-higgs-boson-come/); [Particles from Native Overlap Transport](https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/deriving_the_particle_zoo_from_observer_consistency.pdf)
+
+Link: https://floatingpragma.ai/faq/#hierarchy-problem. Read more: [Chapter 28: What Is a Particle, What Is a Wave, and Why Does It Look Like Both?](https://oph-book.floatingpragma.ai/chapter/chapter-28), [Chapter 30: Why Do the Masses Land Where They Do?](https://oph-book.floatingpragma.ai/chapter/chapter-30), [Chapter 33: Why Was Every Open Problem the Same Problem?](https://oph-book.floatingpragma.ai/chapter/chapter-33).
+
+### Why is there more matter than antimatter?
+
+Making particles and antiparticles possible is different from explaining why the observed universe contains an excess of matter. A successful account needs a physical history that generates the imbalance and preserves it through subsequent evolution. OPH's defect and charge constructions aim to describe matter and antimatter within one observer process. That structure alone selects no cosmic excess, and conjugating a particle into its antiparticle is not baryogenesis. The question belongs to the joint matter and cosmology construction: identify the relevant symmetry breaking, nonequilibrium history and surviving abundances from the native source. Until that calculation is supplied, OPH has a research target here, rather than an established numerical solution that follows merely from self-consistency.
+
+See also: What is antimatter? (https://floatingpragma.ai/faq/#what-is-antimatter), Why was the early universe so uniform and nearly spatially flat? (https://floatingpragma.ai/faq/#horizon-flatness-problems)
+
+Sources: [CERN: antimatter and the cosmic asymmetry](https://home.web.cern.ch/science/physics/antimatter/); [Particles from Native Overlap Transport](https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/deriving_the_particle_zoo_from_observer_consistency.pdf)
+
+Link: https://floatingpragma.ai/faq/#matter-antimatter-asymmetry. Read more: [Chapter 27: Why This Exact List of Matter, and Why Three Times Over?](https://oph-book.floatingpragma.ai/chapter/chapter-27), [Chapter 28: What Is a Particle, What Is a Wave, and Why Does It Look Like Both?](https://oph-book.floatingpragma.ai/chapter/chapter-28), [Chapter 33: Why Was Every Open Problem the Same Problem?](https://oph-book.floatingpragma.ai/chapter/chapter-33).
+
+### Why are neutrinos so light, and what fixes their masses?
+
+Neutrino oscillations show that the propagation states have different masses, while their absolute scale and origin require more information. OPH seeks to derive particle labels, mass operators and measured responses from the same native observer process. A finite generation register or a chosen mixing matrix is not yet an explanation of the observed splittings. The calculation must produce the spectrum and mixing while keeping fitted inputs separate from predictions. Different constructions can also make different assumptions about whether neutrinos are their own antiparticles. The question therefore cannot be answered by naming a defect class alone. The relevant OPH stance is constructive: derive the actual neutrino response and test it against the oscillation and absolute-mass constraints.
+
+See also: What is a neutrino? (https://floatingpragma.ai/faq/#what-is-a-neutrino), Why are there three generations of matter? (https://floatingpragma.ai/faq/#why-three-generations), Why do particles have the masses they have? (https://floatingpragma.ai/faq/#why-do-particles-have-the-masses-they-have)
+
+Sources: [Particles from Native Overlap Transport](https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/deriving_the_particle_zoo_from_observer_consistency.pdf)
+
+Link: https://floatingpragma.ai/faq/#neutrino-mass-problem. Read more: [Chapter 27: Why This Exact List of Matter, and Why Three Times Over?](https://oph-book.floatingpragma.ai/chapter/chapter-27), [Chapter 30: Why Do the Masses Land Where They Do?](https://oph-book.floatingpragma.ai/chapter/chapter-30), [Chapter 33: Why Was Every Open Problem the Same Problem?](https://oph-book.floatingpragma.ai/chapter/chapter-33).
+
+### Why does the strong force seem not to violate CP symmetry?
+
+The strong interaction permits a term that can distinguish matter from its combined charge-conjugated and mirrored description. Its effective strength must be extremely small to satisfy observations. Saying that OPH has a color group or a discrete charge register does not set that parameter to zero. An OPH solution would need a symmetry, dynamical mechanism or other derived restriction on the physical strong-interaction action, while allowing the symmetry violations seen elsewhere. It must then calculate an observable consequence such as an electric dipole response. The finite gauge constructions do not automatically discharge those obligations. This is a named gap for the proposed theory, not a contradiction that can be removed simply by requiring observers to agree.
+
+See also: Why are there exactly these forces? (https://floatingpragma.ai/faq/#why-these-forces), Why is there more matter than antimatter? (https://floatingpragma.ai/faq/#matter-antimatter-asymmetry)
+
+Sources: [Clearing up the Strong CP problem](https://cds.cern.ch/record/2946910/files/2510.18951.pdf); [Particles from Native Overlap Transport](https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/deriving_the_particle_zoo_from_observer_consistency.pdf)
+
+Link: https://floatingpragma.ai/faq/#strong-cp-problem. Read more: [Chapter 26: Why Exactly These Forces?](https://oph-book.floatingpragma.ai/chapter/chapter-26), [Chapter 27: Why This Exact List of Matter, and Why Three Times Over?](https://oph-book.floatingpragma.ai/chapter/chapter-27), [Chapter 33: Why Was Every Open Problem the Same Problem?](https://oph-book.floatingpragma.ai/chapter/chapter-33).
+
 ## Laws and mathematics
 
 ### Why are there laws of physics at all?
@@ -904,7 +1222,9 @@ Link: https://floatingpragma.ai/faq/#what-is-symmetry. Read more: [Chapter 5: Wh
 
 ### Can everything true be proven?
 
-No. In 1931 Kurt Gödel showed that any consistent system strong enough for ordinary arithmetic contains true sentences it cannot prove. He numbered formulas so that statements about numbers double as statements about formulas, then built a sentence saying that it has no proof in the system. If the system proved it, a proof would exist, the sentence would be false, and the system would have contradicted itself, which lets it prove anything. So a consistent system never proves it, which is exactly what the sentence says. It is true, and no patch closes the gap, because the repaired system gets an unprovable sentence of its own. The theorem also says that a structure rich enough for arithmetic is rich enough to describe itself, and no arrangement of axioms removes that ability.
+No. A consistent, effectively axiomatized theory capable of expressing enough arithmetic cannot settle every arithmetic statement. Gödel's incompleteness results place limits on formal proof; they do not show that every self-reference is contradictory or that a self-describing universe exists. Gödel's completeness theorem concerns a different question: a consistent first-order theory has a mathematical model. Having such a model does not prove physical existence, uniqueness or the intended interpretation. OPH's philosophical proposal adds an inhabited structure whose records and operations realize its own recoverable account. That is an ontological commitment beyond either theorem. A theory of physical observations can be useful and precise while its inhabitants lack proofs of every mathematical truth or a practical algorithm for predicting every event.
+
+See also: Does “this sentence is false” defeat a self-referential universe? (https://floatingpragma.ai/faq/#liars-paradox), What about the set of all sets that do not contain themselves? (Russell’s paradox) (https://floatingpragma.ai/faq/#russells-paradox), Would a theory of everything let us predict every event? (https://floatingpragma.ai/faq/#can-oph-predict-everything), Does describing a universe make it exist? (https://floatingpragma.ai/faq/#can-a-description-create-a-world)
 
 Link: https://floatingpragma.ai/faq/#can-everything-true-be-proven. Read more: [Chapter 37: Why Does the Loop Have No Beginning?](https://oph-book.floatingpragma.ai/chapter/chapter-37), [Chapter 2: Why Is There Anything Rather Than Nothing?](https://oph-book.floatingpragma.ai/chapter/chapter-2).
 
@@ -931,6 +1251,30 @@ Link: https://floatingpragma.ai/faq/#symmetries-and-conservation-laws. Read more
 In a strong sense, yes. Max Tegmark proposed that physical reality is a mathematical structure, and OPH shares the instinct, holding that reality is a timeless structure in which time emerges. OPH adds what turns a structure into a world. A structure becomes a public world when finite observers inside it can read it, compare their records and repair the mismatches. Consistency belongs to descriptions, so a self-consistent world has to contain record-keepers who can get things wrong, and some of them eventually work out the rule and build the screen that computes them. Any solution of that self-reference requirement could be a universe, and each is sealed off from the others, since space, time and signals are all built inside a single solution. A structure that nobody inside can read stays a possibility with no public world in it.
 
 Link: https://floatingpragma.ai/faq/#is-the-universe-made-of-mathematics. Read more: [Chapter 36: Why These Laws and Not Others?](https://oph-book.floatingpragma.ai/chapter/chapter-36), [Chapter 2: Why Is There Anything Rather Than Nothing?](https://oph-book.floatingpragma.ai/chapter/chapter-2), [Chapter 37: Why Does the Loop Have No Beginning?](https://oph-book.floatingpragma.ai/chapter/chapter-37).
+
+### Do infinities exist in reality or only in our descriptions?
+
+OPH's finite observer interfaces never need an infinitely long record to return an outcome. Infinities can enter the effective description through continuous coordinates, unbounded idealizations and mathematical limits. Saying a field is defined at every real coordinate does not mean an observer has separately recorded every point. A finite rule can also specify an infinite mathematical sequence without enumerating it. The important distinctions are between an infinite mathematical object, unlimited possible refinement and an actually completed infinite physical operation. OPH proposes finite native access beneath the continuum description. That does not prove that every possible global history is finite, or invalidate the mathematics of infinite sets. Physical extent and duration require their own construction.
+
+See also: How does OPH answer Zeno’s paradox? (https://floatingpragma.ai/faq/#zenos-paradox), Is the universe infinite? (https://floatingpragma.ai/faq/#is-the-universe-infinite), Could infinitely many physical operations finish in finite time? (https://floatingpragma.ai/faq/#can-an-infinite-computation-finish)
+
+Link: https://floatingpragma.ai/faq/#do-infinities-exist. Read more: [Chapter 13: What Is One Piece of Reality Actually Made Of?](https://oph-book.floatingpragma.ai/chapter/chapter-13), [Chapter 15: Why Does Space Have Three Directions?](https://oph-book.floatingpragma.ai/chapter/chapter-15), [Chapter 35: What Is Anything Made Of?](https://oph-book.floatingpragma.ai/chapter/chapter-35).
+
+### Could infinitely many physical operations finish in finite time?
+
+Thomson's lamp is switched on, off, on and off at ever shorter intervals. The total time can converge while the proposed final switch state has no limit. A finite duration therefore does not guarantee that an infinite program has a well-defined output. OPH's finite executions specify actual events and records, and its continuum limits need convergence bounds for the quantities being claimed. A limit of descriptions is not permission to execute infinitely many elementary operations or extract an undecidable answer. This separates Zeno's finite travel time from a physical computer doing endless work. Any proposed machine that completes such a task would need a physical realization beyond the finite observer model.
+
+See also: How does OPH answer Zeno’s paradox? (https://floatingpragma.ai/faq/#zenos-paradox), Would a theory of everything let us predict every event? (https://floatingpragma.ai/faq/#can-oph-predict-everything)
+
+Link: https://floatingpragma.ai/faq/#can-an-infinite-computation-finish. Read more: [Chapter 13: What Is One Piece of Reality Actually Made Of?](https://oph-book.floatingpragma.ai/chapter/chapter-13), [Chapter 16: Why Does Time Run, and Only One Way?](https://oph-book.floatingpragma.ai/chapter/chapter-16), [Chapter 37: Why Does the Loop Have No Beginning?](https://oph-book.floatingpragma.ai/chapter/chapter-37).
+
+### Would a theory of everything let us predict every event?
+
+A complete physical specification and an all-purpose prediction algorithm are different things. A finite observer may lack the inputs, memory or time needed to compute a particular consequence. Some predictions can require running essentially the process being predicted. General computational undecidability also prevents one universal method from settling every program's behavior; whether a particular physical construction realizes the relevant computations needs its own proof. OPH's self-reconstruction proposal asks inhabitants to recover and realize their world's organization, not to store a lossless inventory of all events inside one head. A useful theory can constrain observations and interventions without granting omniscience. Calling it a fixed-point solver does not evade those limits or automatically reveal a person's future choices.
+
+See also: Can everything true be proven? (https://floatingpragma.ai/faq/#can-everything-true-be-proven), What does it mean to call the universe a fixed-point solver? (https://floatingpragma.ai/faq/#what-is-a-fixed-point-solver), Could infinitely many physical operations finish in finite time? (https://floatingpragma.ai/faq/#can-an-infinite-computation-finish)
+
+Link: https://floatingpragma.ai/faq/#can-oph-predict-everything. Read more: [Chapter 2: Why Is There Anything Rather Than Nothing?](https://oph-book.floatingpragma.ai/chapter/chapter-2), [Chapter 37: Why Does the Loop Have No Beginning?](https://oph-book.floatingpragma.ai/chapter/chapter-37), [Chapter 40: Does It Feel Like Anything, and What Is Left to Decide?](https://oph-book.floatingpragma.ai/chapter/chapter-40).
 
 ## Life, mind and choice
 
@@ -960,19 +1304,25 @@ Link: https://floatingpragma.ai/faq/#what-is-consciousness. Read more: [Chapter 
 
 ### Do we have free will?
 
-Yes, and OPH unifies free will and fate. The history of the universe is already written: it is the one consistent solution to the condition that the universe creates itself, the way the printed clues of a sudoku fix the finished grid before anyone picks up a pencil. Yet the grid still has to be filled in, and we are the ones filling it. We are part of the very computation that produces the universe, so our decisions are free: they come from us, nothing outside overrides them, and the outcome runs through what we choose. Each observer reads its own state, acts on the reading, and writes the result onto records it shares with others, and the settled world depends on those entries. Fate is the view from outside, freedom the view from inside. Everything we do also contributes to the self-creation of the universe, including the discovery of OPH, the step where the universe works out how it creates itself.
+OPH proposes a reconciliation of fate and freedom. A complete history contains your deliberation and decisions as events that help determine what follows. Think of a Sudoku whose clues admit one completed grid: its entries must fit together, yet the deductions that fill it are genuine work. In the universe analogy, we belong to the solution and perform the deciding within it. Freedom means being able to consider alternatives, respond to reasons and act through your own organization. It does not mean acting outside every constraint. Fate names the history taken whole, including those acts. There is no external clock on which everything happened earlier, and the finite agreement theorem does not prove that only one universe is possible. This is a compatibilist account: it makes choices consequential without claiming an uncaused will.
+
+See also: If reality is a fixed point, is everything predestined? (https://floatingpragma.ai/faq/#is-everything-predestined), What does it mean to call the universe a fixed-point solver? (https://floatingpragma.ai/faq/#what-is-a-fixed-point-solver), If the future is already settled, does anything I do matter? (https://floatingpragma.ai/faq/#does-anything-i-do-matter)
 
 Link: https://floatingpragma.ai/faq/#do-we-have-free-will. Read more: [Chapter 40: Does It Feel Like Anything, and What Is Left to Decide?](https://oph-book.floatingpragma.ai/chapter/chapter-40), [Chapter 10: Why Doesn't It Matter Who Goes First?](https://oph-book.floatingpragma.ai/chapter/chapter-10), [Appendix A: Eighteen Questions](https://oph-book.floatingpragma.ai/chapter/appendix-a).
 
 ### If the future is already settled, does anything I do matter?
 
-Yes, because what you do is part of what settles it. The settledness belongs to the history taken whole, and that history contains your choices, in order, as causes. Boethius made the point from a prison cell in Pavia. Watching a man cross a courtyard does not make him cross it. Networks of observers do settle to one endpoint, but only given the entries on their boundary, and those entries are written by observers at the seams they share. Change one entry and the world settles elsewhere. The excuse that it was going to happen anyway fails too. A flipped record leaves exactly one unit of disagreement that no repair removes, and where it lands depends on who repaired what, in which order. The records keep who absorbed a cost and who exported it.
+Yes. A history containing your decision is different from one in which that decision has no effect. In the essays' example, a region has one settled response for each specified boundary input. Change that input and its settled response can change. Uniqueness for a given input never means independence from the input. In a Sudoku, one completed grid obeys all its constraints; that fact does not mean changing a clue leaves the answer unchanged. Your deliberation, experiments and actions are among the world's actual dependencies. OPH's complete-history interpretation includes them in what makes the history consistent. It supplies no outside director who achieves the same outcome whatever you do. The practical conclusion is participation and responsibility, rather than permission to stop trying.
+
+See also: Do we have free will? (https://floatingpragma.ai/faq/#do-we-have-free-will), If reality is a fixed point, is everything predestined? (https://floatingpragma.ai/faq/#is-everything-predestined)
 
 Link: https://floatingpragma.ai/faq/#does-anything-i-do-matter. Read more: [Chapter 40: Does It Feel Like Anything, and What Is Left to Decide?](https://oph-book.floatingpragma.ai/chapter/chapter-40), [Appendix A: Eighteen Questions](https://oph-book.floatingpragma.ai/chapter/appendix-a).
 
 ### Is there an objective right and wrong?
 
-Yes, in the sense that harm is measured at the seam, by a number nobody chose. Wherever two observers share a record, their disagreement is a quantity, zero when the two readings answer each other and positive when they do not. An act can be scored by what it does to the repair work left for everyone it reaches, summed out to a horizon. Acts that lower it are good. Exported harm is mismatch placed on people who did not generate it, by an actor who could take the repair on and does not. Evil is exporting avoidable mismatch while able to model what the act will do. Two quantities are open, how far ahead the accounting runs and how heavily the far future weighs, and every argument about conduct is about those two.
+OPH's ethical proposal treats avoidable suffering, exported costs and the agency of affected observers as constraints on acceptable arrangements. Repair quantities can help make consequences explicit, but a mathematical mismatch does not identify moral wrongness by itself. A model can reduce disagreement by silencing a victim or deleting the record of an injury. Calling that good would require abandoning the very people the ethical account is meant to include. The value premise is that their suffering and capacity to participate matter. Given that premise, acts can be compared by how they repair harm or pass its costs to others. Choosing the relevant observers, horizon and weighting remains part of the ethical specification. Agreement theorems establish properties of a process; the moral interpretation requires these additional commitments.
+
+See also: Can physics prove what we ought to do? (The is–ought problem) (https://floatingpragma.ai/faq/#can-physics-derive-morality), If everyone agrees on something, does that make it true? (https://floatingpragma.ai/faq/#does-agreement-make-something-true), Are we morally responsible for what we do? (https://floatingpragma.ai/faq/#are-we-responsible-for-our-actions)
 
 Link: https://floatingpragma.ai/faq/#is-there-objective-right-and-wrong. Read more: [Chapter 41: What Does a Repaired World Look Like?](https://oph-book.floatingpragma.ai/chapter/chapter-41), [Appendix A: Eighteen Questions](https://oph-book.floatingpragma.ai/chapter/appendix-a).
 
@@ -984,7 +1334,7 @@ Link: https://floatingpragma.ai/faq/#what-would-a-good-world-look-like. Read mor
 
 ### How do I know other minds exist?
 
-You infer them from organization that reaches you through shared records. Another person's records steer what they do next, and if those records act through what the person experiences, each different way of responding needs a different experienced content behind it. Distinct answers to red and to green then point to distinct contents. How much of that content an outsider can work out depends on how much of it the public record keeps apart, and a detailed enough record can lay a content out in full. Learning a content still leaves you outside the episode. The episode belongs to the observer whose own repair it drives, and what you gain, however complete, is a record about it. Which systems are organized as experiencers is a question for experiment, and matching behavior alone does not settle it, because the test has to reach how a system reads and uses its own records.
+You encounter other people through their actions, communication and the organized similarities between their bodies and yours. OPH treats their experiences as owned activity within their own continuing systems, rather than something made real by your observing it. Learning a content and undergoing its occurrence remain different relations. The essays give a precise reconstruction condition: a public record can determine an experience's content only if the same record never accompanies two different relevant contents in the admitted model. If it omits that distinction, no decoder can recover it from that record alone. A richer interface may convey the distinction without transferring the original episode's ownership. This clarifies what evidence could establish; it does not deduce every other subject's experience from outward behavior alone.
 
 Link: https://floatingpragma.ai/faq/#how-do-i-know-other-minds-exist. Read more: [Chapter 40: Does It Feel Like Anything, and What Is Left to Decide?](https://oph-book.floatingpragma.ai/chapter/chapter-40), [Chapter 11: What Does Everybody Actually End Up Holding?](https://oph-book.floatingpragma.ai/chapter/chapter-11).
 
@@ -1002,21 +1352,19 @@ Link: https://floatingpragma.ai/faq/#hard-problem-of-consciousness. Read more: [
 
 ### Why does it feel like something to be a computation in a brain (qualia)?
 
-Because a computation that reads itself has to tell its own states apart, and those distinctions are what it feels like to be it. In OPH, observation comes first, and an observer is something that keeps records and updates itself from them. A brain does this with records of its own state: how the light looks, how the body is, what it just thought. If two of those self-records always led to the same next step, the difference between them would make no difference to the brain, and nothing would be read. So a self-reading observer must carry at least two states it can tell apart from the inside, and a brain carries an enormous number. Each distinction it holds and acts on is a quale: the redness of red, the sting of pain, the click of understanding. A computation that never reads itself draws no such distinctions, and there is nothing it is like to be it.
+OPH proposes that an experience is the meaning enacted by a selected observer's integrated self-reading. The mathematical step concerns distinctions. If two retained records lead to different continuations when everything else is held fixed, any faithful internal representation must preserve their difference. For an experiencing unit, add the premise that its relevant lived content carries that record-dependent influence. Its lived contents must then preserve those distinctions too: one interchangeable feeling could not mediate different responses under the same conditions. This explains why a lived world must be differentiated under the proposed identity. The calculation alone does not establish that an arbitrary computation feels anything, identify the experiencing unit, or derive the particular character of human redness and pain. Those are further commitments and tests of the account.
 
-The derivation:
+What the conditional argument establishes:
 
-1. An observer O keeps records r from a record space R_O and updates itself by a rule U_O(ρ, r, F). Its next state depends on its current state ρ, a record r of itself, and what arrives at its boundary, F.
-2. Two records are equivalent when they lead to the same future: r ≡ r′ exactly when U_O(ρ, r, F) and U_O(ρ, r′, F) give the same law for everything O does next.
-3. If every record were equivalent to every other, reading itself would change nothing O does, and O would not be reading itself. A self-reading observer therefore has at least two classes: |R_O / ≡| ≥ 2.
-4. Each class [r] has a projector P_[r]. Together they span a finite algebra Q_O = span{ P_[r] }, one dimension per class, so dim Q_O ≥ 2. These are the distinctions O can draw within itself and use.
-5. A class is lived when O occupies it, Tr(ρ P_[r]) > 0, and it changes the next update, U_O(ρ | P_[r]) ≠ U_O(ρ). OPH identifies exactly these occupied, update-relevant classes with qualia.
+1. Fix the admissible retained records and continuation conditions. Group records together exactly when substituting them never changes the subsequent response.
+2. Nontrivial self-reading requires at least two such response classes. Otherwise reading the retained record could make no difference.
+3. A faithful representation must distinguish records from different response classes; the same represented state cannot produce different responses under the same fixed conditions.
+4. Add a selected experiencing unit and the phenomenal identity: the relevant record-dependent response is mediated by that unit’s enacted lived content.
+5. Under those additional premises, the repertoire of lived contents has at least as many distinctions as the repertoire of response classes.
 
-self-reading ⇒ an algebra of at least two self-distinctions ⇒ qualia. Steps 1 to 4 are counting. Step 5 is OPH's identity of experience with self-reading, the same identity that answers the hard problem and rules out zombies.
+The response distinction is operational. Its interpretation as a distinction in experience requires the experiencing-unit and phenomenal-identity premises. The result does not derive the character of every human quality from counting alone.
 
-Source: Thinking as Patch-Net Fixed-Point Search, section “Why Qualia Are Necessary”, https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/archive/thinking_as_patch_net_fixed_point_search.pdf
-
-See also: What is a philosophical zombie, and could one exist? (https://floatingpragma.ai/faq/#philosophical-zombie), What is the hard problem of consciousness? (https://floatingpragma.ai/faq/#hard-problem-of-consciousness)
+See also: What is the hard problem of consciousness? (https://floatingpragma.ai/faq/#hard-problem-of-consciousness), Why do many brain processes feel like one experience? (The combination problem) (https://floatingpragma.ai/faq/#combination-problem), What is a philosophical zombie, and could one exist? (https://floatingpragma.ai/faq/#philosophical-zombie), What does Mary learn when she first sees red? (https://floatingpragma.ai/faq/#marys-room)
 
 Link: https://floatingpragma.ai/faq/#why-does-it-feel-like-something. Read more: [Chapter 40: Does It Feel Like Anything, and What Is Left to Decide?](https://oph-book.floatingpragma.ai/chapter/chapter-40).
 
@@ -1079,6 +1427,32 @@ Link: https://floatingpragma.ai/faq/#are-you-your-memories. Read more: [Chapter 
 A dream is a real experience, and its scene has no place in the shared record. In OPH certain organized processes in which an observer reads its own state and feeds the reading to its own repair are experiences. A dreaming brain keeps doing that, so a dream is an experience in the same sense as waking life. What a dream lacks is public standing. A fact is a record that survives every comparison anybody is entitled to make, and the contents of a dream never meet those comparisons, because an observer's readings of its own state are private by construction. During sleep the senses that would test the scene against the outside world are largely shut, so nothing contradicts it. On waking, the records you share with your surroundings disagree with the dream, and the dream gives way.
 
 Link: https://floatingpragma.ai/faq/#are-dreams-real. Read more: [Chapter 40: Does It Feel Like Anything, and What Is Left to Decide?](https://oph-book.floatingpragma.ai/chapter/chapter-40), [Chapter 11: What Does Everybody Actually End Up Holding?](https://oph-book.floatingpragma.ai/chapter/chapter-11).
+
+### Why do many brain processes feel like one experience? (The combination problem)
+
+Several processes can agree about a cup without thereby becoming one subject seeing it. OPH therefore needs an account of the experiencing unit as well as an account of shared records. The essays propose examining what is lost when the relevant self-reading organization is divided. If its behavior across admissible interventions cannot be preserved by independent pieces, that establishes a form of integration. Identifying the integrated whole as one subject is a further unity premise. It must handle overlapping candidates and ties rather than assigning a separate person to every component. This gives a concrete research question about boundaries and organization. It does not derive one cosmic consciousness from universal agreement.
+
+See also: Is OPH a form of panpsychism? (https://floatingpragma.ai/faq/#is-oph-panpsychism), Is the universe aware of itself? (https://floatingpragma.ai/faq/#is-the-universe-self-aware), Why does it feel like something to be a computation in a brain (qualia)? (https://floatingpragma.ai/faq/#why-does-it-feel-like-something)
+
+Link: https://floatingpragma.ai/faq/#combination-problem. Read more: [Chapter 39: Why Is a Bacterium Freer Than an Atom?](https://oph-book.floatingpragma.ai/chapter/chapter-39), [Chapter 40: Does It Feel Like Anything, and What Is Left to Decide?](https://oph-book.floatingpragma.ai/chapter/chapter-40).
+
+### If intelligence matters to the universe, where is everybody? (The Fermi paradox)
+
+The Fermi paradox contrasts the apparent opportunities for extraterrestrial life with the lack of an agreed detection of technological civilizations. OPH's proposal that intelligent observers participate in their world's reconstruction does not predict how many civilizations exist, how long they last or whether they communicate with us. A role for observers is not a forecast of visible spacecraft. Distances, timing, biology and detectability must be modeled rather than inferred from the closure idea. The thesis therefore gives a reason to investigate intelligence as part of the physical history, while leaving the astronomical population question to evidence. Without a quantitative population and signal model, OPH has no established solution to the apparent silence.
+
+See also: Why does intelligence exist? (https://floatingpragma.ai/faq/#why-does-intelligence-exist), Does evolution have a goal? (https://floatingpragma.ai/faq/#does-evolution-have-a-goal), Are there other universes? (https://floatingpragma.ai/faq/#is-there-a-multiverse)
+
+Sources: [NASA: life in the universe and the search for technological signals](https://science.nasa.gov/universe/exoplanets/life-in-the-universe-what-are-the-odds/)
+
+Link: https://floatingpragma.ai/faq/#fermi-paradox. Read more: [Chapter 3: Why Would a Universe Need Anybody In It?](https://oph-book.floatingpragma.ai/chapter/chapter-3), [Chapter 37: Why Does the Loop Have No Beginning?](https://oph-book.floatingpragma.ai/chapter/chapter-37), [Chapter 39: Why Is a Bacterium Freer Than an Atom?](https://oph-book.floatingpragma.ai/chapter/chapter-39).
+
+### What is thinking, and how could the universe do it?
+
+The essays propose thinking as an organized capacity to settle constraints, explore alternatives and retain what a successful exploration teaches. A system that always falls into one stable pattern can settle without learning. A brain can also notice that its first interpretation fails, imagine another, and change the machinery that makes later interpretations natural. Self-reading lets records of its own uncertainty and errors guide that process. OPH's common-operation hypothesis connects these capacities with the underlying observer activity from which public physics is reconstructed. This is a philosophical and physical proposal about shared organization, rather than a finding that every rock deliberates. Its test is whether the relevant records, operations and learning mechanisms are actually realized.
+
+See also: Is the universe aware of itself? (https://floatingpragma.ai/faq/#is-the-universe-self-aware), How do symbols acquire meaning instead of referring only to other symbols? (https://floatingpragma.ai/faq/#symbol-grounding), If reality seeks agreement, why do creativity and dissent matter? (https://floatingpragma.ai/faq/#why-can-disagreement-be-useful)
+
+Link: https://floatingpragma.ai/faq/#what-is-thinking. Read more: [Chapter 39: Why Is a Bacterium Freer Than an Atom?](https://oph-book.floatingpragma.ai/chapter/chapter-39), [Chapter 40: Does It Feel Like Anything, and What Is Left to Decide?](https://oph-book.floatingpragma.ai/chapter/chapter-40).
 
 ## About OPH
 
