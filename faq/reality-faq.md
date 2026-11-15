@@ -2,7 +2,7 @@
 
 OPH is a rigorous, consistent and complete description of the unified, self-creating computational Universe we inhabit.
 
-177 questions about reality, answered by OPH (Observer Patch Holography). Web page: https://floatingpragma.ai/faq/. Every answer has its own link (the page URL plus #id) and points to the chapter of the free book Reverse Engineering Reality (https://oph-book.floatingpragma.ai/) that explains it in full.
+178 questions about reality, answered by OPH (Observer Patch Holography). Web page: https://floatingpragma.ai/faq/. Every answer has its own link (the page URL plus #id) and points to the chapter of the free book Reverse Engineering Reality (https://oph-book.floatingpragma.ai/) that explains it in full.
 
 ## The big questions
 
@@ -276,7 +276,9 @@ Link: https://floatingpragma.ai/faq/#is-the-world-mind-or-matter. Read more: [Ch
 
 ### What is a philosophical zombie, and could one exist?
 
-A philosophical zombie is a creature identical to you molecule for molecule, with the same cells and the same words, and nobody inside. David Chalmers argued in The Conscious Mind that such a twin is conceivable, that whatever is conceivable is possible, and that experience is therefore something over and above the physics. His twin would even write the paper about zombies. In OPH none can exist. Experience is a system's owned repair of its own state, read from the inside, so a world that keeps the full relation by which a system reads its own records already contains the interior, and a physical duplicate keeps that relation. Physics on its own does not force this conclusion. It follows from OPH's identity of experience with owned self-reading, a hypothesis that has to earn its place by what it accounts for and by experiment. A machine that copies only the outward behavior, with no repair it owns, is a different system.
+A philosophical zombie is a creature identical to you molecule for molecule, with the same cells and the same words, and nobody inside. David Chalmers argued in The Conscious Mind that such a twin is conceivable, that whatever is conceivable is possible, and that experience is therefore something over and above the physics. His twin would even write the paper about zombies. In OPH none can exist. A brain that reads its own state must tell at least two of its own states apart, and the distinctions it holds and acts on are its qualia. A molecular duplicate reads itself by the same rule, so it draws the same distinctions and has the same qualia. A zombie would need those distinctions with nothing it is like to hold them, and in OPH holding them is what it is like. A machine that copies only the outward behavior, with no self-reading of its own, is a different system.
+
+See also: Why does it feel like something to be a computation in a brain (qualia)? (https://floatingpragma.ai/faq/#why-does-it-feel-like-something)
 
 Link: https://floatingpragma.ai/faq/#philosophical-zombie. Read more: [Chapter 40: Does It Feel Like Anything, and What Is Left to Decide?](https://oph-book.floatingpragma.ai/chapter/chapter-40).
 
@@ -997,6 +999,26 @@ Link: https://floatingpragma.ai/faq/#can-a-machine-be-conscious. Read more: [Cha
 The hard problem asks why physical processing comes with experience at all, why seeing deep blue feels like something. David Chalmers set it apart in a 1994 talk in Tucson from the easy problems, where everyone can say what an answer looks like. The problem leans on a list of physical facts compiled from no position, and that list never turns up. Distance counts comparisons between two parties, a rate needs a clock, and every record is held by some observer. OPH starts from observers and builds the physics afterward. What remains is met with an identity. Experience is repair at an observer's boundary, owned by that observer and read from the inside. Chalmers is right that outward function leaves the owned interior out, and Daniel Dennett is right that a hidden viewer in an inner theater would explain nothing. Ownership is the missing variable. The identity is a hypothesis, judged by what it accounts for and by experiment, and it turns consciousness into an engineering problem.
 
 Link: https://floatingpragma.ai/faq/#hard-problem-of-consciousness. Read more: [Chapter 40: Does It Feel Like Anything, and What Is Left to Decide?](https://oph-book.floatingpragma.ai/chapter/chapter-40).
+
+### Why does it feel like something to be a computation in a brain (qualia)?
+
+Because a computation that reads itself has to tell its own states apart, and those distinctions are what it feels like to be it. In OPH, observation comes first, and an observer is something that keeps records and updates itself from them. A brain does this with records of its own state: how the light looks, how the body is, what it just thought. If two of those self-records always led to the same next step, the difference between them would make no difference to the brain, and nothing would be read. So a self-reading observer must carry at least two states it can tell apart from the inside, and a brain carries an enormous number. Each distinction it holds and acts on is a quale: the redness of red, the sting of pain, the click of understanding. A computation that never reads itself draws no such distinctions, and there is nothing it is like to be it.
+
+The derivation:
+
+1. An observer O keeps records r from a record space R_O and updates itself by a rule U_O(ρ, r, F). Its next state depends on its current state ρ, a record r of itself, and what arrives at its boundary, F.
+2. Two records are equivalent when they lead to the same future: r ≡ r′ exactly when U_O(ρ, r, F) and U_O(ρ, r′, F) give the same law for everything O does next.
+3. If every record were equivalent to every other, reading itself would change nothing O does, and O would not be reading itself. A self-reading observer therefore has at least two classes: |R_O / ≡| ≥ 2.
+4. Each class [r] has a projector P_[r]. Together they span a finite algebra Q_O = span{ P_[r] }, one dimension per class, so dim Q_O ≥ 2. These are the distinctions O can draw within itself and use.
+5. A class is lived when O occupies it, Tr(ρ P_[r]) > 0, and it changes the next update, U_O(ρ | P_[r]) ≠ U_O(ρ). OPH identifies exactly these occupied, update-relevant classes with qualia.
+
+self-reading ⇒ an algebra of at least two self-distinctions ⇒ qualia. Steps 1 to 4 are counting. Step 5 is OPH's identity of experience with self-reading, the same identity that answers the hard problem and rules out zombies.
+
+Source: Thinking as Patch-Net Fixed-Point Search, section “Why Qualia Are Necessary”, https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/archive/thinking_as_patch_net_fixed_point_search.pdf
+
+See also: What is a philosophical zombie, and could one exist? (https://floatingpragma.ai/faq/#philosophical-zombie), What is the hard problem of consciousness? (https://floatingpragma.ai/faq/#hard-problem-of-consciousness)
+
+Link: https://floatingpragma.ai/faq/#why-does-it-feel-like-something. Read more: [Chapter 40: Does It Feel Like Anything, and What Is Left to Decide?](https://oph-book.floatingpragma.ai/chapter/chapter-40).
 
 ### If I were copied exactly, would the copy be me?
 

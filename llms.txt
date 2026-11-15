@@ -186,6 +186,7 @@ OPH stands for Observer Patch Holography. Finite observers keep records, compare
 - [How do I know other minds exist?](https://floatingpragma.ai/faq/how-do-i-know-other-minds-exist/)
 - [Can a machine be conscious?](https://floatingpragma.ai/faq/can-a-machine-be-conscious/)
 - [What is the hard problem of consciousness?](https://floatingpragma.ai/faq/hard-problem-of-consciousness/)
+- [Why does it feel like something to be a computation in a brain (qualia)?](https://floatingpragma.ai/faq/why-does-it-feel-like-something/)
 - [If I were copied exactly, would the copy be me?](https://floatingpragma.ai/faq/would-a-copy-of-me-be-me/)
 - [Can harm be undone?](https://floatingpragma.ai/faq/can-harm-be-undone/)
 - [Why do living things die?](https://floatingpragma.ai/faq/why-do-living-things-die/)
