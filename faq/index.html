@@ -1558,7 +1558,7 @@
 <script>
 (function () {
   var CHAT = "https://xrvowfsbmfoggykbeabo.functions.supabase.co/sage-chat", TALK = "AW-18551449316/KtwfCLigwLcdEOTNgo5F", DEEPER = "AW-18551449316/j2Y1COf8xLcdEOTNgo5F";
-  var SHARE_ON = false;
+  var SHARE_ON = true;
   function g() { if (typeof gtag === "function") gtag.apply(null, arguments); }
   function qid(el) { var qa = el && el.closest && el.closest(".qa"); return qa ? qa.id : ""; }
   function toast(msg) {
@@ -1731,6 +1731,8 @@
         var node = tpl.content.firstElementChild.cloneNode(true);
         var qt = ql.textContent.trim();
         node.querySelector("button.talk.big").setAttribute("data-chat", qt);
+        // follow-ups carry the question, so Sage and a shared answer's title have the context
+        Array.prototype.forEach.call(node.querySelectorAll(".ask1"), function (b) { b.setAttribute("data-chat", qt + " " + b.textContent); });
         var nbl = node.querySelector('a[data-kind="notebook"]'); if (nbl) nbl.setAttribute("data-ask", qt);
         var bk = hit.querySelector('.links a[data-kind="book"]'), nbk = node.querySelector('a.chap');
         if (bk && nbk) { nbk.href = bk.href; nbk.textContent = bk.textContent; } else if (nbk) { nbk.remove(); }
