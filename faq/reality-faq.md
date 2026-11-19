@@ -2,7 +2,7 @@
 
 OPH is a rigorous, consistent and complete description of the unified, self-creating computational Universe we inhabit.
 
-215 questions about reality, answered by OPH (Observer Patch Holography). Web page: https://floatingpragma.ai/faq/. Every answer has its own link (the page URL plus #id) and points to the chapter of the free book Reverse Engineering Reality (https://oph-book.floatingpragma.ai/) that explains it in full.
+216 questions about reality, answered by OPH (Observer Patch Holography). Web page: https://floatingpragma.ai/faq/. Every answer has its own link (the page URL plus #id) and points to the chapter of the free book Reverse Engineering Reality (https://oph-book.floatingpragma.ai/) that explains it in full.
 
 ## The big questions
 
@@ -894,11 +894,33 @@ Link: https://floatingpragma.ai/faq/#why-is-the-cosmological-constant-so-small. 
 
 OPH explores expansion as a change in the density of records used to reconstruct spacetime. An event order says what can influence what; an additional count supplies a candidate volume measure. If the same pattern of causal relations contains a changing density of physical events, the effective geometry can have a changing scale. Clocks and light signals inside that geometry would register expansion and redshift. This is a proposed physical identification, not the claim that merely storing more data makes a universe expand. The construction must produce the relevant record history, its ruler and clock comparisons, and the observed expansion law together. The fixed-horizon-capacity branch supplies a candidate cosmological constant; it does not by itself select the complete cosmological history.
 
-See also: What is dark energy? (https://floatingpragma.ai/faq/#what-is-dark-energy), Why was the early universe so uniform and nearly spatially flat? (https://floatingpragma.ai/faq/#horizon-flatness-problems), Does OPH explain the Hubble tension? (https://floatingpragma.ai/faq/#hubble-tension)
+See also: Why is spacetime de Sitter? (https://floatingpragma.ai/faq/#why-is-spacetime-de-sitter), What is dark energy? (https://floatingpragma.ai/faq/#what-is-dark-energy), Why was the early universe so uniform and nearly spatially flat? (https://floatingpragma.ai/faq/#horizon-flatness-problems), Does OPH explain the Hubble tension? (https://floatingpragma.ai/faq/#hubble-tension)
 
 Sources: [Observer-screen synchronization as a candidate inflation-free branch](https://github.com/FloatingPragma/observer-patch-holography/blob/main/cosmology/oph_inflation_without_inflaton_observer_screen_synchronization.pdf); [Observer spacetime and the conditional Einstein reconstruction](https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/recovering_observer_spacetime_and_einstein_dynamics_from_overlap_consistency.pdf)
 
 Link: https://floatingpragma.ai/faq/#why-is-the-universe-expanding. Read more: [Chapter 25: Why Does Gravity Look Like Geometry?](https://oph-book.floatingpragma.ai/chapter/chapter-25), [Chapter 29: Why 1/137, and Why Is There a Limit to What the Universe Can Remember?](https://oph-book.floatingpragma.ai/chapter/chapter-29), [Chapter 35: What Is Anything Made Of?](https://oph-book.floatingpragma.ai/chapter/chapter-35), [Appendix A: Eighteen Questions](https://oph-book.floatingpragma.ai/chapter/appendix-a).
+
+### Why is spacetime de Sitter?
+
+We experience ourselves in an expanding universe that is turning into de Sitter space. Distant galaxies recede faster the farther away they are, and every observer sits at the centre of its own horizon, past which no signal will ever reach it. De Sitter is the effective description of how things seem to us. Spacetime is no container that could stretch. Observers come first, each reading the world from its own patch, and space and time are the account their records agree on. De Sitter is the geometry in which every perspective has the same shape: each observer is the centre, each horizon has the same size, and no observer is privileged. A horizon is a boundary, and a boundary holds a finite number of records, about 3.3 × 10¹²² for ours. That count never changes, so the horizon never changes size and the cosmological constant stays constant. Measured against an observer's own clock, the region inside its horizon is a heat bath at about 2 × 10⁻³⁰ degrees.
+
+From perspectives first to de Sitter space:
+
+1. Every observer holds its own records. What it can ever learn about is bounded by a horizon: signals from beyond it arrive at no point of that observer's future.
+2. A horizon is a boundary, and a boundary's memory is a count of the records on it. Reading the horizon from outside by its area and from inside by the lasting public records observers can write and read back, and requiring the two readings to agree, fixes the count at 3.3001 × 10¹²², four parts in a thousand from the 3.3129 × 10¹²² the Planck satellite reports.
+3. No observer is privileged and the count is fixed, so every observer's horizon has the same size at every moment. Among expanding universes the only one with that property is de Sitter space, with the cosmological constant equal to three pi divided by the count in Planck units.
+4. Every state carries its own clock, the flow its odds determine. For the region inside a horizon that flow runs along the observer's own time, and the state meets the exact condition of a heat bath. That is the horizon temperature Gary Gibbons and Stephen Hawking found in 1977, by the same mechanism that makes empty space warm for an accelerating observer.
+5. Expansion is a reading of record counts. The order of which record read which fixes the light cones, the number of records fixes the scale, and the redshift of a distant galaxy is the fourth root of the ratio of record densities at emission and reception.
+
+De Sitter space is how a world of perspectives with finite, equal horizons looks to each of its observers, and nothing in it stretches. The fixed count makes a falsifiable prediction: dark energy that measurably changes over time would rule it out.
+
+Source: Observers Are All You Need (OPH flagship paper), https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/observers_are_all_you_need.pdf
+
+See also: Why is the universe expanding? (https://floatingpragma.ai/faq/#why-is-the-universe-expanding), Is there a limit to what the universe can remember? (https://floatingpragma.ai/faq/#is-there-a-limit-to-what-the-universe-can-remember), Why does an accelerating observer find empty space warm? (the Unruh effect) (https://floatingpragma.ai/faq/#why-is-empty-space-warm-when-accelerating), Is reality objective or subjective? (https://floatingpragma.ai/faq/#is-reality-objective-or-subjective), What is dark energy? (https://floatingpragma.ai/faq/#what-is-dark-energy)
+
+Sources: [Gibbons and Hawking (1977): Cosmological event horizons, thermodynamics, and particle creation](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.15.2738); [The de Sitter time-advance sign from a finite screen with fixed capacity](https://github.com/FloatingPragma/observer-patch-holography/blob/main/extra/de_sitter_time_advance_sign_from_fixed_screen_capacity.pdf)
+
+Link: https://floatingpragma.ai/faq/#why-is-spacetime-de-sitter. Read more: [Chapter 29: Why 1/137, and Why Is There a Limit to What the Universe Can Remember?](https://oph-book.floatingpragma.ai/chapter/chapter-29), [Chapter 25: Why Does Gravity Look Like Geometry?](https://oph-book.floatingpragma.ai/chapter/chapter-25), [Chapter 21: Why Does Time Feel Like It's Moving?](https://oph-book.floatingpragma.ai/chapter/chapter-21).
 
 ### Why does everything fall at the same rate?
 

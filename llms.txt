@@ -155,6 +155,7 @@ OPH stands for Observer Patch Holography. Finite observers keep records, compare
 - [What is dark energy?](https://floatingpragma.ai/faq/what-is-dark-energy/)
 - [Why is the cosmological constant so small?](https://floatingpragma.ai/faq/why-is-the-cosmological-constant-so-small/)
 - [Why is the universe expanding?](https://floatingpragma.ai/faq/why-is-the-universe-expanding/)
+- [Why is spacetime de Sitter?](https://floatingpragma.ai/faq/why-is-spacetime-de-sitter/)
 - [Why does everything fall at the same rate?](https://floatingpragma.ai/faq/why-everything-falls-at-same-rate/)
 - [Why does gravity follow an inverse-square law?](https://floatingpragma.ai/faq/why-is-gravity-an-inverse-square-law/)
 - [Why is gravity so weak compared with the other forces?](https://floatingpragma.ai/faq/why-is-gravity-so-weak/)
