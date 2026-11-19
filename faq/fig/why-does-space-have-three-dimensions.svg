@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#c9fbfb"/></marker></defs>
+  <rect width="600" height="380" fill="#000"/>
+  <text x="300" y="32" text-anchor="middle" font-size="18" fill="#fff">which band is left ringing</text>
+  <path d="M230.0 70.0 L235.2 70.0 L240.3 70.0 L245.5 70.0 L250.7 70.0 L255.8 70.0 L261.0 70.0 L266.2 70.0 L271.3 70.0 L281.7 70.0 L292.0 70.0 L302.3 70.0 L312.7 70.0 L323.0 70.0 L333.3 70.0 L348.8 70.0 L364.3 70.0 L385.0 70.0 L405.7 70.0 L426.3 70.0 L447.0 70.0 L467.7 70.0 L488.3 70.0 L514.2 70.0 L540.0 70.0 L540.0 71.6 L514.2 72.4 L488.3 73.6 L467.7 74.8 L447.0 76.4 L426.3 78.5 L405.7 81.2 L385.0 84.5 L364.3 88.6 L348.8 92.3 L333.3 96.3 L323.0 99.3 L312.7 102.4 L302.3 105.8 L292.0 109.3 L281.7 112.9 L271.3 116.7 L266.2 118.7 L261.0 120.6 L255.8 122.6 L250.7 124.6 L245.5 126.6 L240.3 128.6 L235.2 130.7 L230.0 132.7 Z" fill="#4af1f2" fill-opacity=".08"/>
+  <path d="M230.0 132.7 L235.2 130.7 L240.3 128.6 L245.5 126.6 L250.7 124.6 L255.8 122.6 L261.0 120.6 L266.2 118.7 L271.3 116.7 L281.7 112.9 L292.0 109.3 L302.3 105.8 L312.7 102.4 L323.0 99.3 L333.3 96.3 L348.8 92.3 L364.3 88.6 L385.0 84.5 L405.7 81.2 L426.3 78.5 L447.0 76.4 L467.7 74.8 L488.3 73.6 L514.2 72.4 L540.0 71.6 L540.0 82.7 L514.2 86.9 L488.3 92.4 L467.7 97.9 L447.0 104.7 L426.3 112.7 L405.7 122.2 L385.0 133.1 L364.3 145.4 L348.8 155.4 L333.3 166.0 L323.0 173.3 L312.7 180.8 L302.3 188.2 L292.0 195.7 L281.7 203.1 L271.3 210.4 L266.2 214.0 L261.0 217.5 L255.8 221.0 L250.7 224.4 L245.5 227.7 L240.3 231.0 L235.2 234.2 L230.0 237.3 Z" fill="#4af1f2" fill-opacity=".22"/>
+  <path d="M230.0 237.3 L235.2 234.2 L240.3 231.0 L245.5 227.7 L250.7 224.4 L255.8 221.0 L261.0 217.5 L266.2 214.0 L271.3 210.4 L281.7 203.1 L292.0 195.7 L302.3 188.2 L312.7 180.8 L323.0 173.3 L333.3 166.0 L348.8 155.4 L364.3 145.4 L385.0 133.1 L405.7 122.2 L426.3 112.7 L447.0 104.7 L467.7 97.9 L488.3 92.4 L514.2 86.9 L540.0 82.7 L540.0 300.0 L514.2 300.0 L488.3 300.0 L467.7 300.0 L447.0 300.0 L426.3 300.0 L405.7 300.0 L385.0 300.0 L364.3 300.0 L348.8 300.0 L333.3 300.0 L323.0 300.0 L312.7 300.0 L302.3 300.0 L292.0 300.0 L281.7 300.0 L271.3 300.0 L266.2 300.0 L261.0 300.0 L255.8 300.0 L250.7 300.0 L245.5 300.0 L240.3 300.0 L235.2 300.0 L230.0 300.0 Z" fill="#4af1f2" fill-opacity=".5"/>
+  <g fill="none" stroke="#4af1f2" stroke-width="2.2">
+    <path d="M230.0 237.3 L235.2 234.2 L240.3 231.0 L245.5 227.7 L250.7 224.4 L255.8 221.0 L261.0 217.5 L266.2 214.0 L271.3 210.4 L281.7 203.1 L292.0 195.7 L302.3 188.2 L312.7 180.8 L323.0 173.3 L333.3 166.0 L348.8 155.4 L364.3 145.4 L385.0 133.1 L405.7 122.2 L426.3 112.7 L447.0 104.7 L467.7 97.9 L488.3 92.4 L514.2 86.9 L540.0 82.7"/>
+    <path d="M230.0 132.7 L235.2 130.7 L240.3 128.6 L245.5 126.6 L250.7 124.6 L255.8 122.6 L261.0 120.6 L266.2 118.7 L271.3 116.7 L281.7 112.9 L292.0 109.3 L302.3 105.8 L312.7 102.4 L323.0 99.3 L333.3 96.3 L348.8 92.3 L364.3 88.6 L385.0 84.5 L405.7 81.2 L426.3 78.5 L447.0 76.4 L467.7 74.8 L488.3 73.6 L514.2 72.4 L540.0 71.6"/>
+    <rect x="230" y="70" width="310" height="230" stroke-opacity=".45" stroke-width="1.5"/>
+  </g>
+  <line x1="261.0" y1="70" x2="261.0" y2="300" stroke="#fff" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <text x="257.0" y="62" font-size="14" fill="#fff">6 repairs, one round trip</text>
+  <circle cx="281.7" cy="203.1" r="4" fill="#fff"/>
+  <text x="289.7" y="223.1" font-size="14" fill="#fff" text-anchor="start">42%</text>
+  <circle cx="385.0" cy="133.1" r="4" fill="#fff"/>
+  <text x="393.0" y="153.1" font-size="14" fill="#fff" text-anchor="start">73%</text>
+  <circle cx="540.0" cy="82.7" r="4" fill="#fff"/>
+  <text x="532.0" y="102.7" font-size="14" fill="#fff" text-anchor="end">94%</text>
+  <g font-size="15" fill="#c9fbfb" text-anchor="end">
+    <text x="218" y="98.1" fill="#c9fbfb">fast band</text>
+    <text x="218" y="116.1" font-size="14" fill="#c9fbfb">3 wide, keeps 0.8794</text>
+    <text x="218" y="182.0" fill="#c9fbfb">middle band</text>
+    <text x="218" y="200.0" font-size="14" fill="#c9fbfb">5 wide, keeps 0.9</text>
+    <text x="218" y="265.9" fill="#fff">slow band</text>
+    <text x="218" y="283.9" font-size="14" fill="#fff">3 wide, keeps 0.9539</text>
+  </g>
+  <g font-size="14" fill="#c9fbfb" text-anchor="middle">
+    <text x="230.0" y="320">0</text>
+    <text x="333.3" y="320">20</text>
+    <text x="436.7" y="320">40</text>
+    <text x="540.0" y="320">60</text>
+    <text x="385.0" y="344">passes of repair</text>
+  </g>
+  <g font-size="14" fill="#c9fbfb">
+    <text x="546" y="305.0">0</text>
+    <text x="546" y="190.0">50%</text>
+    <text x="546" y="75.0">100%</text>
+  </g>
+  <text x="300" y="368" font-size="14" fill="#4af1f2" fill-opacity=".85" text-anchor="middle">share of the remaining disagreement held by each band</text>
+</svg>

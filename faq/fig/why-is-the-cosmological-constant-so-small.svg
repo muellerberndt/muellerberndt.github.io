@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#c9fbfb"/></marker><marker id="c" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#4af1f2"/></marker></defs>
+  <rect width="600" height="380" fill="#000"/>
+  <text x="300" y="32" text-anchor="middle" font-size="18" fill="#fff">a small constant is a large count</text>
+  <line x1="150" y1="65" x2="150" y2="335" stroke="#4af1f2" stroke-width="2"/>
+  <line x1="143" y1="75" x2="157" y2="75" stroke="#4af1f2" stroke-width="2"/>
+  <text x="136" y="80" text-anchor="end" font-size="15" fill="#c9fbfb">10<tspan dy="-7" font-size="11">0</tspan></text>
+  <line x1="143" y1="157" x2="157" y2="157" stroke="#4af1f2" stroke-width="2"/>
+  <text x="136" y="162" text-anchor="end" font-size="15" fill="#c9fbfb">10<tspan dy="-7" font-size="11">-40</tspan></text>
+  <line x1="143" y1="238.9" x2="157" y2="238.9" stroke="#4af1f2" stroke-width="2"/>
+  <text x="136" y="243.9" text-anchor="end" font-size="15" fill="#c9fbfb">10<tspan dy="-7" font-size="11">-80</tspan></text>
+  <line x1="143" y1="325" x2="157" y2="325" stroke="#4af1f2" stroke-width="2"/>
+  <text x="136" y="330" text-anchor="end" font-size="15" fill="#c9fbfb">10<tspan dy="-7" font-size="11">-122</tspan></text>
+  <text x="150" y="53" text-anchor="middle" font-size="15" fill="#c9fbfb">Λ in planck units</text>
+  <circle cx="150" cy="75" r="7" fill="#000" stroke="#4af1f2" stroke-width="2.5"/>
+  <text x="172" y="80" text-anchor="start" font-size="15" fill="#c9fbfb">zero-point estimate</text>
+  <circle cx="150" cy="325" r="7" fill="#fff"/>
+  <text x="172" y="330" text-anchor="start" font-size="15" fill="#fff">measured ≈ 2.85 × 10<tspan dy="-7" font-size="11">−122</tspan></text>
+  <line x1="184" y1="91" x2="184" y2="307" stroke="#4af1f2" stroke-width="1.5" stroke-opacity=".45" stroke-dasharray="5 6" marker-start="url(#c)" marker-end="url(#c)"/>
+  <text x="196" y="205" text-anchor="start" font-size="15" fill="#c9fbfb" fill-opacity=".85">≈ 120 orders</text>
+  <text x="460" y="140" text-anchor="middle" font-size="15" fill="#c9fbfb">horizon holds</text>
+  <text x="460" y="164" text-anchor="middle" font-size="16" fill="#fff">N ≈ 3.3 × 10<tspan dy="-7" font-size="11">122</tspan></text>
+  <text x="460" y="188" text-anchor="middle" font-size="15" fill="#c9fbfb">records</text>
+  <path d="M460 204 C 460 270, 360 300, 390 309" fill="none" stroke="#c9fbfb" stroke-width="1.6" marker-end="url(#a)"/>
+  <text x="482" y="262" text-anchor="middle" font-size="17" fill="#fff">3π / N</text>
+</svg>

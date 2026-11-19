@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#c9fbfb"/></marker><marker id="c" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#4af1f2"/></marker></defs>
+  <rect width="600" height="360" fill="#000"/>
+  <text x="300" y="30" text-anchor="middle" font-size="18" fill="#fff">symmetry in, conserved number out</text>
+  <rect x="40" y="66" width="22" height="22" fill="none" stroke="#4af1f2" stroke-opacity=".4" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <rect x="68" y="66" width="22" height="22" fill="none" stroke="#4af1f2" stroke-width="2"/>
+  <line x1="54" y1="98" x2="86" y2="98" stroke="#c9fbfb" stroke-width="1.6" marker-end="url(#a)"/>
+  <text x="110" y="84" text-anchor="start" font-size="15" fill="#c9fbfb">slide sideways</text>
+  <line x1="345" y1="79" x2="385" y2="79" stroke="#c9fbfb" stroke-width="1.6" marker-end="url(#a)"/>
+  <text x="400" y="84" text-anchor="start" font-size="16" fill="#fff">momentum</text>
+  <path d="M81 148 A20 20 0 1 1 65 131" fill="none" stroke="#4af1f2" stroke-width="2" marker-end="url(#c)"/>
+  <text x="110" y="156" text-anchor="start" font-size="15" fill="#c9fbfb">turn</text>
+  <line x1="345" y1="151" x2="385" y2="151" stroke="#c9fbfb" stroke-width="1.6" marker-end="url(#a)"/>
+  <text x="400" y="156" text-anchor="start" font-size="16" fill="#fff">angular momentum</text>
+  <circle cx="65" cy="222" r="19" fill="none" stroke="#4af1f2" stroke-width="2"/>
+  <line x1="65" y1="222" x2="65" y2="209" stroke="#4af1f2" stroke-width="2"/>
+  <line x1="65" y1="222" x2="74" y2="227" stroke="#4af1f2" stroke-width="2"/>
+  <text x="110" y="228" text-anchor="start" font-size="15" fill="#c9fbfb">advance every clock</text>
+  <line x1="345" y1="223" x2="385" y2="223" stroke="#c9fbfb" stroke-width="1.6" marker-end="url(#a)"/>
+  <text x="400" y="228" text-anchor="start" font-size="16" fill="#fff">energy</text>
+  <circle cx="65" cy="294" r="19" fill="none" stroke="#4af1f2" stroke-width="2"/>
+  <line x1="65" y1="294" x2="84" y2="294" stroke="#4af1f2" stroke-width="1.5" stroke-opacity=".4" stroke-dasharray="3 3"/>
+  <line x1="65" y1="294" x2="78" y2="280" stroke="#4af1f2" stroke-width="2"/>
+  <path d="M78 294 A13 13 0 0 0 74 285" fill="none" stroke="#c9fbfb" stroke-width="1.5"/>
+  <text x="110" y="300" text-anchor="start" font-size="15" fill="#c9fbfb">shift a phase everywhere</text>
+  <line x1="345" y1="295" x2="385" y2="295" stroke="#c9fbfb" stroke-width="1.6" marker-end="url(#a)"/>
+  <text x="400" y="300" text-anchor="start" font-size="16" fill="#fff">electric charge</text>
+  <text x="300" y="352" text-anchor="middle" font-size="14" fill="#c9fbfb" fill-opacity=".85">the laws stay the same under each change</text>
+</svg>

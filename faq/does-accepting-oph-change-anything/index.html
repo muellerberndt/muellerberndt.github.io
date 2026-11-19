@@ -43,6 +43,7 @@
 <script src="/assets/consent.js?v=2" defer></script>
 <script src="/assets/xpixel.js?v=1" data-id="r90vy" defer></script>
 <link rel="stylesheet" href="/assets/stealth.css?v=11">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.11/katex.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
 <script src="/assets/stealth.js?v=4" defer></script>
 <style>
   .faq-intro { margin-top: 40px; }
@@ -63,6 +64,16 @@
   .qa .perma { color: var(--dim); margin-right: 10px; opacity: .55; text-decoration: none; }
   .qa .perma:hover { color: var(--glow); opacity: 1; }
   .qa p { margin-top: 8px; }
+  .viz { margin-top: 16px; display: grid; gap: 14px; }
+  .viz figure { margin: 0; }
+  .viz img { display: block; width: 100%; max-width: 720px; height: auto; border: 1px solid rgba(74, 241, 242, .18); }
+  .viz figcaption { margin-top: 6px; font-size: .78rem; line-height: 1.55; color: var(--dim); max-width: 720px; }
+  .eqs { padding: 10px 14px; border-left: 2px solid rgba(74, 241, 242, .45); background: rgba(74, 241, 242, .04); }
+  .eqs h4 { margin: 0 0 2px; font-size: .78rem; letter-spacing: .12em; text-transform: uppercase; color: var(--glow); }
+  .eq { overflow-x: auto; overflow-y: hidden; }
+  .eq .katex-display { margin: .7em 0 .25em; }
+  .eq .katex { font-size: 1.12em; color: #fff; }
+  .eq .note { margin: 0 0 8px; font-size: .8rem; line-height: 1.55; color: var(--ink); }
   .deriv { margin-top: 14px; padding: 12px 14px; border-left: 2px solid rgba(74, 241, 242, .45); background: rgba(74, 241, 242, .04); }
   .deriv h4 { margin: 0 0 6px; font-size: .78rem; letter-spacing: .12em; text-transform: uppercase; color: var(--glow); }
   .deriv ol { margin: 0; padding-left: 1.4em; }

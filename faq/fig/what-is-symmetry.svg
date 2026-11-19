@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 330" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#c9fbfb"/></marker></defs>
+  <rect width="600" height="330" fill="#000"/>
+  <text x="300" y="32" text-anchor="middle" font-size="18" fill="#fff">move the zero, keep the distance</text>
+  <line x1="70.0" y1="92" x2="538.0" y2="92" stroke="#4af1f2" stroke-width="2.2" stroke-opacity="1"/>
+  <line x1="70.0" y1="86" x2="70.0" y2="98" stroke="#4af1f2" stroke-width="1.5" stroke-opacity=".7"/>
+  <line x1="135.0" y1="86" x2="135.0" y2="98" stroke="#4af1f2" stroke-width="1.5" stroke-opacity=".7"/>
+  <line x1="200.0" y1="86" x2="200.0" y2="98" stroke="#4af1f2" stroke-width="1.5" stroke-opacity=".7"/>
+  <line x1="265.0" y1="86" x2="265.0" y2="98" stroke="#4af1f2" stroke-width="1.5" stroke-opacity=".7"/>
+  <line x1="330.0" y1="86" x2="330.0" y2="98" stroke="#4af1f2" stroke-width="1.5" stroke-opacity=".7"/>
+  <line x1="395.0" y1="86" x2="395.0" y2="98" stroke="#4af1f2" stroke-width="1.5" stroke-opacity=".7"/>
+  <line x1="460.0" y1="86" x2="460.0" y2="98" stroke="#4af1f2" stroke-width="1.5" stroke-opacity=".7"/>
+  <line x1="525.0" y1="86" x2="525.0" y2="98" stroke="#4af1f2" stroke-width="1.5" stroke-opacity=".7"/>
+  <g font-size="14" fill="#c9fbfb" text-anchor="middle">
+    <text x="70.0" y="80">0°</text>
+    <text x="135.0" y="80">10°</text>
+    <text x="200.0" y="80">20°</text>
+    <text x="265.0" y="80">30°</text>
+    <text x="330.0" y="80">40°</text>
+    <text x="395.0" y="80">50°</text>
+    <text x="460.0" y="80">60°</text>
+    <text x="525.0" y="80">70°</text>
+  </g>
+  <line x1="70.0" y1="84" x2="70.0" y2="100" stroke="#fff" stroke-width="3"/>
+  <text x="64.0" y="118" font-size="14" fill="#fff">zero at Greenwich, by vote</text>
+  <line x1="70.0" y1="232" x2="538.0" y2="232" stroke="#4af1f2" stroke-width="1.6" stroke-opacity="0.6"/>
+  <line x1="70.0" y1="226" x2="70.0" y2="238" stroke="#4af1f2" stroke-width="1.5" stroke-opacity=".7"/>
+  <line x1="135.0" y1="226" x2="135.0" y2="238" stroke="#4af1f2" stroke-width="1.5" stroke-opacity=".7"/>
+  <line x1="200.0" y1="226" x2="200.0" y2="238" stroke="#4af1f2" stroke-width="1.5" stroke-opacity=".7"/>
+  <line x1="265.0" y1="226" x2="265.0" y2="238" stroke="#4af1f2" stroke-width="1.5" stroke-opacity=".7"/>
+  <line x1="330.0" y1="226" x2="330.0" y2="238" stroke="#4af1f2" stroke-width="1.5" stroke-opacity=".7"/>
+  <line x1="395.0" y1="226" x2="395.0" y2="238" stroke="#4af1f2" stroke-width="1.5" stroke-opacity=".7"/>
+  <line x1="460.0" y1="226" x2="460.0" y2="238" stroke="#4af1f2" stroke-width="1.5" stroke-opacity=".7"/>
+  <line x1="525.0" y1="226" x2="525.0" y2="238" stroke="#4af1f2" stroke-width="1.5" stroke-opacity=".7"/>
+  <g font-size="14" fill="#c9fbfb" text-anchor="middle">
+    <text x="70.0" y="220">−20°</text>
+    <text x="135.0" y="220">−10°</text>
+    <text x="200.0" y="220">0°</text>
+    <text x="265.0" y="220">10°</text>
+    <text x="330.0" y="220">20°</text>
+    <text x="395.0" y="220">30°</text>
+    <text x="460.0" y="220">40°</text>
+    <text x="525.0" y="220">50°</text>
+  </g>
+  <line x1="200.0" y1="224" x2="200.0" y2="240" stroke="#fff" stroke-width="3"/>
+  <text x="194.0" y="258" font-size="14" fill="#fff">zero here instead</text>
+  <line x1="135.0" y1="128" x2="135.0" y2="204" stroke="#4af1f2" stroke-opacity=".4" stroke-width="1.5" stroke-dasharray="4 5"/>
+  <circle cx="135.0" cy="162" r="7" fill="#fff"/>
+  <text x="121.0" y="168" font-size="16" fill="#fff" text-anchor="end">A</text>
+  <line x1="330.0" y1="128" x2="330.0" y2="204" stroke="#4af1f2" stroke-opacity=".4" stroke-width="1.5" stroke-dasharray="4 5"/>
+  <circle cx="330.0" cy="162" r="7" fill="#fff"/>
+  <text x="344.0" y="168" font-size="16" fill="#fff" text-anchor="start">B</text>
+  <path d="M147.0 162 H318.0" stroke="#c9fbfb" stroke-width="2" marker-start="url(#a)" marker-end="url(#a)"/>
+  <text x="370.0" y="168" font-size="15" fill="#fff">30° apart on</text>
+  <text x="370.0" y="188" font-size="15" fill="#fff">both scales</text>
+  <text x="300" y="312" font-size="14" fill="#4af1f2" fill-opacity=".85" text-anchor="middle">the readings change, the difference does not</text>
+</svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#c9fbfb"/></marker></defs>
+  <rect width="600" height="340" fill="#000"/>
+  <!-- other observers, each at the centre of a horizon of the same size -->
+  <g fill="none" stroke="#4af1f2" stroke-opacity=".28" stroke-width="1.5" stroke-dasharray="5 6">
+    <circle cx="150" cy="190" r="118"/>
+    <circle cx="450" cy="190" r="118"/>
+  </g>
+  <g fill="#4af1f2" fill-opacity=".55">
+    <circle cx="150" cy="190" r="5"/>
+    <circle cx="450" cy="190" r="5"/>
+  </g>
+  <!-- your horizon -->
+  <circle cx="300" cy="170" r="118" fill="#4af1f2" fill-opacity=".05" stroke="#4af1f2" stroke-width="2.5"/>
+  <circle cx="300" cy="170" r="7" fill="#fff"/>
+  <!-- distant galaxies carried toward the horizon -->
+  <g stroke="#c9fbfb" stroke-width="1.6" fill="none" stroke-linecap="round" marker-end="url(#a)">
+    <path d="M336 147 l30 -16"/><path d="M256 199 l-36 19"/><path d="M321 223 l14 34"/><path d="M272 125 l-18 -32"/>
+  </g>
+  <g fill="#c9fbfb">
+    <circle cx="330" cy="150" r="3"/><circle cx="262" cy="196" r="3"/><circle cx="318" cy="216" r="3"/><circle cx="276" cy="132" r="3"/>
+  </g>
+  <g fill="#c9fbfb" font-size="18">
+    <text x="300" y="30" text-anchor="middle" fill="#fff">every observer is a centre</text>
+    <text x="300" y="196" text-anchor="middle" font-size="16">you</text>
+    <text x="300" y="322" text-anchor="middle" font-size="16">your horizon: about 3.3 × 10<tspan dy="-7" font-size="11">122</tspan><tspan dy="7">&#160;records</tspan></text>
+    <text x="110" y="226" text-anchor="middle" font-size="14" fill="#4af1f2" fill-opacity=".85">another observer,</text>
+    <text x="110" y="244" text-anchor="middle" font-size="14" fill="#4af1f2" fill-opacity=".85">same horizon size</text>
+  </g>
+</svg>

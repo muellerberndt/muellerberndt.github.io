@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#c9fbfb"/></marker><marker id="c" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#4af1f2"/></marker></defs>
+  <rect width="600" height="340" fill="#000"/>
+  <text x="300" y="32" text-anchor="middle" font-size="17" fill="#fff">equation of state w over cosmic history</text>
+  <line x1="90" y1="64" x2="90" y2="280" stroke="#4af1f2" stroke-width="1.5" stroke-opacity=".6"/>
+  <line x1="90" y1="280" x2="560" y2="280" stroke="#4af1f2" stroke-width="1.5" stroke-opacity=".6" marker-end="url(#c)"/>
+  <line x1="84" y1="70" x2="90" y2="70" stroke="#4af1f2" stroke-width="1.5"/>
+  <text x="78" y="75" text-anchor="end" font-size="15" fill="#c9fbfb">−0.5</text>
+  <line x1="84" y1="175" x2="90" y2="175" stroke="#4af1f2" stroke-width="1.5"/>
+  <text x="78" y="180" text-anchor="end" font-size="15" fill="#c9fbfb">−1.0</text>
+  <line x1="84" y1="280" x2="90" y2="280" stroke="#4af1f2" stroke-width="1.5"/>
+  <text x="78" y="285" text-anchor="end" font-size="15" fill="#c9fbfb">−1.5</text>
+  <path d="M90 175 L97.5 175 L105 175 L112.5 174.9 L120 174.9 L127.5 174.8 L135 174.7 L142.5 174.6 L150 174.4 L157.5 174.2 L165 174 L172.5 173.8 L180 173.5 L187.5 173.3 L195 172.9 L202.5 172.6 L210 172.2 L217.5 171.9 L225 171.4 L232.5 171 L240 170.5 L247.5 170 L255 169.5 L262.5 168.9 L270 168.3 L277.5 167.7 L285 167 L292.5 166.3 L300 165.6 L307.5 164.8 L315 164 L322.5 163.2 L330 162.4 L337.5 161.5 L345 160.6 L352.5 159.6 L360 158.6 L367.5 157.6 L375 156.5 L382.5 155.5 L390 154.3 L397.5 153.2 L405 152 L412.5 150.8 L420 149.5 L427.5 148.2 L435 146.9 L442.5 145.5 L450 144.2 L457.5 142.7 L465 141.3 L472.5 139.8 L480 138.2 L487.5 136.6 L495 135 L502.5 133.4 L510 131.7 L517.5 130 L525 128.2 L532.5 126.4 L540 124.6" fill="none" stroke="#4af1f2" stroke-opacity=".45" stroke-width="2" stroke-dasharray="6 6"/>
+  <line x1="90" y1="175" x2="540" y2="175" stroke="#4af1f2" stroke-width="2.5"/>
+  <text x="540" y="201" text-anchor="end" font-size="15" fill="#fff">fixed capacity: w = −1</text>
+  <text x="250" y="128" text-anchor="start" font-size="15" fill="#c9fbfb" fill-opacity=".85">a drifting w would</text>
+  <text x="250" y="146" text-anchor="start" font-size="15" fill="#c9fbfb" fill-opacity=".85">rule the branch out</text>
+  <text x="94" y="304" text-anchor="start" font-size="15" fill="#c9fbfb">early</text>
+  <text x="540" y="304" text-anchor="end" font-size="15" fill="#c9fbfb">today</text>
+  <text x="325" y="304" text-anchor="middle" font-size="15" fill="#c9fbfb">cosmic history</text>
+</svg>

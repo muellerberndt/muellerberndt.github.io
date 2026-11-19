@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 290" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#c9fbfb"/></marker><marker id="b" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#4af1f2"/></marker></defs>
+  <rect width="600" height="290" fill="#000"/>
+  <line x1="40.0" y1="80.0" x2="330.0" y2="80.0" stroke="#4af1f2" stroke-width="2"/>
+  <line x1="40.0" y1="200.0" x2="330.0" y2="200.0" stroke="#4af1f2" stroke-width="2"/>
+  <text x="40.0" y="66.0" font-size="14" fill="#c9fbfb" text-anchor="start">upper answer, energy E</text>
+  <text x="40.0" y="228.0" font-size="14" fill="#c9fbfb" text-anchor="start">lower answer, energy 0</text>
+  <circle cx="185.0" cy="80.0" r="7" fill="#fff"/>
+  <circle cx="90.0" cy="188.0" r="7" fill="#fff"/>
+  <circle cx="111.0" cy="188.0" r="7" fill="#fff"/>
+  <circle cx="132.0" cy="188.0" r="7" fill="#fff"/>
+  <circle cx="153.0" cy="188.0" r="7" fill="#fff"/>
+  <circle cx="174.0" cy="188.0" r="7" fill="#fff"/>
+  <circle cx="195.0" cy="188.0" r="7" fill="#fff"/>
+  <circle cx="216.0" cy="188.0" r="7" fill="#fff"/>
+  <circle cx="237.0" cy="188.0" r="7" fill="#fff"/>
+  <circle cx="258.0" cy="188.0" r="7" fill="#fff"/>
+  <circle cx="279.0" cy="188.0" r="7" fill="#fff"/>
+  <circle cx="90.0" cy="169.0" r="7" fill="#fff"/>
+  <circle cx="111.0" cy="169.0" r="7" fill="#fff"/>
+  <circle cx="132.0" cy="169.0" r="7" fill="#fff"/>
+  <circle cx="153.0" cy="169.0" r="7" fill="#fff"/>
+  <circle cx="174.0" cy="169.0" r="7" fill="#fff"/>
+  <circle cx="195.0" cy="169.0" r="7" fill="#fff"/>
+  <circle cx="216.0" cy="169.0" r="7" fill="#fff"/>
+  <circle cx="237.0" cy="169.0" r="7" fill="#fff"/>
+  <circle cx="258.0" cy="169.0" r="7" fill="#fff"/>
+  <circle cx="279.0" cy="169.0" r="7" fill="#fff"/>
+  <line x1="352.0" y1="200.0" x2="352.0" y2="82.0" stroke="#c9fbfb" stroke-width="1.5" marker-end="url(#a)"/>
+  <line x1="352.0" y1="80.0" x2="352.0" y2="198.0" stroke="#c9fbfb" stroke-width="1.5" marker-end="url(#a)"/>
+  <text x="362.0" y="145.0" font-size="16" fill="#fff" text-anchor="start">E</text>
+  <text x="400.0" y="70.0" font-size="16" fill="#fff" text-anchor="start">odds 20 : 1</text>
+  <text x="400.0" y="96.0" font-size="16" fill="#fff" text-anchor="start">log 20 ≈ 2.996</text>
+  <text x="400.0" y="122.0" font-size="16" fill="#fff" text-anchor="start">= E / T</text>
+  <line x1="400.0" y1="152.0" x2="570.0" y2="152.0" stroke="#4af1f2" stroke-width="1.2" stroke-opacity="0.3"/>
+  <text x="400.0" y="184.0" font-size="15" fill="#4af1f2" text-anchor="start" fill-opacity=".85">halve T:</text>
+  <text x="400.0" y="210.0" font-size="15" fill="#c9fbfb" text-anchor="start">odds 400 : 1</text>
+  <text x="400.0" y="236.0" font-size="15" fill="#c9fbfb" text-anchor="start">log 400 ≈ 5.99</text>
+  <text x="40.0" y="270.0" font-size="14" fill="#4af1f2" text-anchor="start" fill-opacity=".85">20 in 21 sit low, 1 in 21 sits high</text>
+</svg>

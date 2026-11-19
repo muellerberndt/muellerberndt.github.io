@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#c9fbfb"/></marker><marker id="b" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#4af1f2"/></marker></defs>
+  <rect width="600" height="380" fill="#000"/>
+  <text x="300.0" y="28.0" font-size="17" fill="#fff" text-anchor="middle">two paths between the same two meetings</text>
+  <line x1="200.0" y1="345.0" x2="490.0" y2="55.0" stroke="#4af1f2" stroke-width="1.3" stroke-opacity="0.3" stroke-dasharray="5 6"/>
+  <line x1="200.0" y1="345.0" x2="75.3" y2="220.3" stroke="#4af1f2" stroke-width="1.3" stroke-opacity="0.3" stroke-dasharray="5 6"/>
+  <text x="466.8" y="100.2" font-size="14" fill="#4af1f2" text-anchor="start" fill-opacity=".7">light</text>
+  <line x1="200.0" y1="345.0" x2="200.0" y2="55.0" stroke="#4af1f2" stroke-width="2.5"/>
+  <line x1="194.0" y1="316.0" x2="206.0" y2="316.0" stroke="#4af1f2" stroke-width="2"/>
+  <line x1="194.0" y1="287.0" x2="206.0" y2="287.0" stroke="#4af1f2" stroke-width="2"/>
+  <line x1="194.0" y1="258.0" x2="206.0" y2="258.0" stroke="#4af1f2" stroke-width="2"/>
+  <line x1="194.0" y1="229.0" x2="206.0" y2="229.0" stroke="#4af1f2" stroke-width="2"/>
+  <line x1="194.0" y1="200.0" x2="206.0" y2="200.0" stroke="#4af1f2" stroke-width="2"/>
+  <line x1="194.0" y1="171.0" x2="206.0" y2="171.0" stroke="#4af1f2" stroke-width="2"/>
+  <line x1="194.0" y1="142.0" x2="206.0" y2="142.0" stroke="#4af1f2" stroke-width="2"/>
+  <line x1="194.0" y1="113.0" x2="206.0" y2="113.0" stroke="#4af1f2" stroke-width="2"/>
+  <line x1="194.0" y1="84.0" x2="206.0" y2="84.0" stroke="#4af1f2" stroke-width="2"/>
+  <path d="M200 345 L316 200 L200 55" fill="none" stroke="#fff" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="238.7" cy="296.7" r="4.5" fill="#fff"/>
+  <circle cx="277.3" cy="248.3" r="4.5" fill="#fff"/>
+  <circle cx="277.3" cy="151.7" r="4.5" fill="#fff"/>
+  <circle cx="238.7" cy="103.3" r="4.5" fill="#fff"/>
+  <circle cx="200.0" cy="345.0" r="6" fill="#fff"/>
+  <circle cx="200.0" cy="55.0" r="6" fill="#fff"/>
+  <text x="200.0" y="371.0" font-size="15" fill="#c9fbfb" text-anchor="middle">part</text>
+  <text x="186.0" y="53.0" font-size="15" fill="#c9fbfb" text-anchor="end">meet</text>
+  <text x="182.0" y="192.0" font-size="15" fill="#4af1f2" text-anchor="end">home</text>
+  <text x="182.0" y="212.0" font-size="15" fill="#4af1f2" text-anchor="end">10 years</text>
+  <text x="371.0" y="192.0" font-size="15" fill="#fff" text-anchor="start">traveller</text>
+  <text x="371.0" y="212.0" font-size="15" fill="#fff" text-anchor="start">6 years</text>
+  <text x="371.0" y="240.0" font-size="14" fill="#c9fbfb" text-anchor="start">out and back</text>
+  <text x="371.0" y="258.0" font-size="14" fill="#c9fbfb" text-anchor="start">at 0.8 c</text>
+  <path d="M40 345 L40 171" fill="none" stroke="#c9fbfb" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#a)"/>
+  <text x="52.0" y="185.0" font-size="14" fill="#c9fbfb" text-anchor="start">time</text>
+</svg>

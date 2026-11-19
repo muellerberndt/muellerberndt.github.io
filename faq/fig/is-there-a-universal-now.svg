@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#c9fbfb"/></marker><marker id="b" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#4af1f2"/></marker></defs>
+  <rect width="600" height="360" fill="#000"/>
+  <text x="300.0" y="34.0" font-size="18" fill="#fff" text-anchor="middle">the recipe is a partial order</text>
+  <line x1="122.0" y1="95.0" x2="218.0" y2="95.0" stroke="#c9fbfb" stroke-width="1.8" marker-end="url(#a)"/>
+  <line x1="242.0" y1="95.0" x2="338.0" y2="95.0" stroke="#c9fbfb" stroke-width="1.8" marker-end="url(#a)"/>
+  <line x1="362.0" y1="95.0" x2="458.0" y2="95.0" stroke="#c9fbfb" stroke-width="1.8" marker-end="url(#a)"/>
+  <circle cx="110.0" cy="95.0" r="7" fill="#4af1f2"/>
+  <text x="110.0" y="125.0" font-size="15" fill="#c9fbfb" text-anchor="middle">fill</text>
+  <circle cx="230.0" cy="95.0" r="7" fill="#4af1f2"/>
+  <text x="230.0" y="125.0" font-size="15" fill="#c9fbfb" text-anchor="middle">boil</text>
+  <circle cx="350.0" cy="95.0" r="7" fill="#4af1f2"/>
+  <text x="350.0" y="125.0" font-size="15" fill="#c9fbfb" text-anchor="middle">pasta</text>
+  <circle cx="470.0" cy="95.0" r="7" fill="#4af1f2"/>
+  <text x="470.0" y="125.0" font-size="15" fill="#c9fbfb" text-anchor="middle">drain</text>
+  <circle cx="290.0" cy="162.0" r="7" fill="#fff"/>
+  <text x="290.0" y="192.0" font-size="15" fill="#fff" text-anchor="middle">grate: no arrow</text>
+  <line x1="30.0" y1="216.0" x2="570.0" y2="216.0" stroke="#4af1f2" stroke-width="1" stroke-opacity="0.25"/>
+  <text x="300.0" y="244.0" font-size="15" fill="#c9fbfb" text-anchor="middle">five ways to break the tie</text>
+  <line x1="190.0" y1="270.0" x2="430.0" y2="270.0" stroke="#4af1f2" stroke-width="1.2" stroke-opacity="0.35"/>
+  <circle cx="190.0" cy="270.0" r="5.5" fill="#fff"/>
+  <circle cx="250.0" cy="270.0" r="4.5" fill="#4af1f2" fill-opacity="0.9"/>
+  <circle cx="310.0" cy="270.0" r="4.5" fill="#4af1f2" fill-opacity="0.9"/>
+  <circle cx="370.0" cy="270.0" r="4.5" fill="#4af1f2" fill-opacity="0.9"/>
+  <circle cx="430.0" cy="270.0" r="4.5" fill="#4af1f2" fill-opacity="0.9"/>
+  <line x1="190.0" y1="288.0" x2="430.0" y2="288.0" stroke="#4af1f2" stroke-width="1.2" stroke-opacity="0.35"/>
+  <circle cx="190.0" cy="288.0" r="4.5" fill="#4af1f2" fill-opacity="0.9"/>
+  <circle cx="250.0" cy="288.0" r="5.5" fill="#fff"/>
+  <circle cx="310.0" cy="288.0" r="4.5" fill="#4af1f2" fill-opacity="0.9"/>
+  <circle cx="370.0" cy="288.0" r="4.5" fill="#4af1f2" fill-opacity="0.9"/>
+  <circle cx="430.0" cy="288.0" r="4.5" fill="#4af1f2" fill-opacity="0.9"/>
+  <line x1="190.0" y1="306.0" x2="430.0" y2="306.0" stroke="#4af1f2" stroke-width="1.2" stroke-opacity="0.35"/>
+  <circle cx="190.0" cy="306.0" r="4.5" fill="#4af1f2" fill-opacity="0.9"/>
+  <circle cx="250.0" cy="306.0" r="4.5" fill="#4af1f2" fill-opacity="0.9"/>
+  <circle cx="310.0" cy="306.0" r="5.5" fill="#fff"/>
+  <circle cx="370.0" cy="306.0" r="4.5" fill="#4af1f2" fill-opacity="0.9"/>
+  <circle cx="430.0" cy="306.0" r="4.5" fill="#4af1f2" fill-opacity="0.9"/>
+  <line x1="190.0" y1="324.0" x2="430.0" y2="324.0" stroke="#4af1f2" stroke-width="1.2" stroke-opacity="0.35"/>
+  <circle cx="190.0" cy="324.0" r="4.5" fill="#4af1f2" fill-opacity="0.9"/>
+  <circle cx="250.0" cy="324.0" r="4.5" fill="#4af1f2" fill-opacity="0.9"/>
+  <circle cx="310.0" cy="324.0" r="4.5" fill="#4af1f2" fill-opacity="0.9"/>
+  <circle cx="370.0" cy="324.0" r="5.5" fill="#fff"/>
+  <circle cx="430.0" cy="324.0" r="4.5" fill="#4af1f2" fill-opacity="0.9"/>
+  <line x1="190.0" y1="342.0" x2="430.0" y2="342.0" stroke="#4af1f2" stroke-width="1.2" stroke-opacity="0.35"/>
+  <circle cx="190.0" cy="342.0" r="4.5" fill="#4af1f2" fill-opacity="0.9"/>
+  <circle cx="250.0" cy="342.0" r="4.5" fill="#4af1f2" fill-opacity="0.9"/>
+  <circle cx="310.0" cy="342.0" r="4.5" fill="#4af1f2" fill-opacity="0.9"/>
+  <circle cx="370.0" cy="342.0" r="4.5" fill="#4af1f2" fill-opacity="0.9"/>
+  <circle cx="430.0" cy="342.0" r="5.5" fill="#fff"/>
+</svg>

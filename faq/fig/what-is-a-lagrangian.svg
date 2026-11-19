@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#c9fbfb"/></marker><marker id="c" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#4af1f2"/></marker></defs>
+  <rect width="600" height="340" fill="#000"/>
+  <text x="300" y="30" text-anchor="middle" font-size="17" fill="#fff">the path where the action sits level</text>
+  <path d="M40 250 L46.5 234.9 L53 219.6 L59.5 204.3 L66 189.2 L72.5 174.5 L79 160.3 L85.5 146.9 L92 134.5 L98.5 123.3 L105 113.5 L111.5 105.2 L118 98.4 L124.5 93.4 L131 89.9 L137.5 88.2 L144 87.9 L150.5 89.2 L157 91.7 L163.5 95.4 L170 100 L176.5 105.4 L183 111.3 L189.5 117.6 L196 124.1 L202.5 130.6 L209 137.1 L215.5 143.4 L222 149.6 L228.5 155.6 L235 161.5 L241.5 167.4 L248 173.5 L254.5 179.8 L261 186.7 L267.5 194.3 L274 202.8 L280.5 212.4 L287 223.4 L293.5 235.9 L300 250" fill="none" stroke="#4af1f2" stroke-opacity=".4" stroke-width="1.6" stroke-dasharray="5 6"/>
+  <path d="M40 250 L46.5 235.9 L53 223.4 L59.5 212.4 L66 202.8 L72.5 194.3 L79 186.7 L85.5 179.8 L92 173.5 L98.5 167.4 L105 161.5 L111.5 155.6 L118 149.6 L124.5 143.4 L131 137.1 L137.5 130.6 L144 124.1 L150.5 117.6 L157 111.3 L163.5 105.4 L170 100 L176.5 95.4 L183 91.7 L189.5 89.2 L196 87.9 L202.5 88.2 L209 89.9 L215.5 93.4 L222 98.4 L228.5 105.2 L235 113.5 L241.5 123.3 L248 134.5 L254.5 146.9 L261 160.3 L267.5 174.5 L274 189.2 L280.5 204.3 L287 219.6 L293.5 234.9 L300 250" fill="none" stroke="#4af1f2" stroke-opacity=".4" stroke-width="1.6" stroke-dasharray="5 6"/>
+  <path d="M40 250 L46.5 235.4 L53 221.5 L59.5 208.4 L66 196 L72.5 184.4 L79 173.5 L85.5 163.4 L92 154 L98.5 145.4 L105 137.5 L111.5 130.4 L118 124 L124.5 118.4 L131 113.5 L137.5 109.4 L144 106 L150.5 103.4 L157 101.5 L163.5 100.4 L170 100 L176.5 100.4 L183 101.5 L189.5 103.4 L196 106 L202.5 109.4 L209 113.5 L215.5 118.4 L222 124 L228.5 130.4 L235 137.5 L241.5 145.4 L248 154 L254.5 163.4 L261 173.5 L267.5 184.4 L274 196 L280.5 208.4 L287 221.5 L293.5 235.4 L300 250" fill="none" stroke="#4af1f2" stroke-width="2.5"/>
+  <line x1="30" y1="250" x2="310" y2="250" stroke="#4af1f2" stroke-width="1.5" stroke-opacity=".5"/>
+  <circle cx="40" cy="250" r="5" fill="#fff"/>
+  <circle cx="300" cy="250" r="5" fill="#fff"/>
+  <text x="40" y="274" text-anchor="middle" font-size="15" fill="#c9fbfb">throw</text>
+  <text x="300" y="274" text-anchor="middle" font-size="15" fill="#c9fbfb">landing</text>
+  <text x="170" y="200" text-anchor="middle" font-size="15" fill="#fff">path taken</text>
+  <text x="170" y="296" text-anchor="middle" font-size="14" fill="#c9fbfb" fill-opacity=".85">dashed: nudged paths</text>
+  <line x1="360" y1="250" x2="570" y2="250" stroke="#4af1f2" stroke-width="1.5" stroke-opacity=".6" marker-end="url(#c)"/>
+  <line x1="360" y1="250" x2="360" y2="70" stroke="#4af1f2" stroke-width="1.5" stroke-opacity=".6" marker-end="url(#c)"/>
+  <path d="M385 90 L389.2 101.2 L393.5 111.8 L397.8 121.9 L402 131.4 L406.2 140.3 L410.5 148.7 L414.8 156.4 L419 163.6 L423.2 170.2 L427.5 176.2 L431.8 181.7 L436 186.6 L440.2 190.9 L444.5 194.6 L448.8 197.8 L453 200.4 L457.2 202.4 L461.5 203.8 L465.8 204.7 L470 205 L474.2 204.7 L478.5 203.8 L482.8 202.4 L487 200.4 L491.2 197.8 L495.5 194.6 L499.8 190.9 L504 186.6 L508.2 181.7 L512.5 176.2 L516.8 170.2 L521 163.6 L525.2 156.4 L529.5 148.7 L533.8 140.3 L538 131.4 L542.2 121.9 L546.5 111.9 L550.8 101.2 L555 90" fill="none" stroke="#4af1f2" stroke-width="2.5"/>
+  <line x1="430" y1="205" x2="510" y2="205" stroke="#fff" stroke-width="2" stroke-dasharray="5 4"/>
+  <circle cx="470" cy="205" r="5" fill="#fff"/>
+  <text x="470" y="228" text-anchor="middle" font-size="15" fill="#fff">level here</text>
+  <text x="570" y="274" text-anchor="end" font-size="15" fill="#c9fbfb">nudge</text>
+  <text x="368" y="74" text-anchor="start" font-size="15" fill="#c9fbfb">action</text>
+  <text x="470" y="274" text-anchor="middle" font-size="15" fill="#c9fbfb">0</text>
+</svg>

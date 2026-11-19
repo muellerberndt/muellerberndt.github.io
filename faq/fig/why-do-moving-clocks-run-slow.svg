@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#c9fbfb"/></marker><marker id="b" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#4af1f2"/></marker></defs>
+  <rect width="600" height="360" fill="#000"/>
+  <text x="300.0" y="32.0" font-size="18" fill="#fff" text-anchor="middle">one tick of a light clock at 0.8 c</text>
+  <line x1="70.0" y1="110.0" x2="130.0" y2="110.0" stroke="#4af1f2" stroke-width="3"/>
+  <line x1="70.0" y1="260.0" x2="130.0" y2="260.0" stroke="#4af1f2" stroke-width="3"/>
+  <path d="M100 254 L100 116" fill="none" stroke="#c9fbfb" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#a)"/>
+  <text x="100.0" y="300.0" font-size="15" fill="#c9fbfb" text-anchor="middle">on the train</text>
+  <text x="100.0" y="322.0" font-size="15" fill="#c9fbfb" text-anchor="middle">path = gap</text>
+  <line x1="220.0" y1="110.0" x2="280.0" y2="110.0" stroke="#4af1f2" stroke-width="2.5" stroke-opacity="0.3" stroke-dasharray="5 5"/>
+  <line x1="220.0" y1="260.0" x2="280.0" y2="260.0" stroke="#4af1f2" stroke-width="3"/>
+  <line x1="420.0" y1="110.0" x2="480.0" y2="110.0" stroke="#4af1f2" stroke-width="3"/>
+  <path d="M250 260 L450 110" fill="none" stroke="#fff" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#a)"/>
+  <line x1="250.0" y1="260.0" x2="450.0" y2="260.0" stroke="#4af1f2" stroke-width="1.5" stroke-opacity="0.45" stroke-dasharray="4 5"/>
+  <line x1="450.0" y1="260.0" x2="450.0" y2="110.0" stroke="#4af1f2" stroke-width="1.5" stroke-opacity="0.45" stroke-dasharray="4 5"/>
+  <text x="330.0" y="172.0" font-size="16" fill="#fff" text-anchor="end">slant 5</text>
+  <text x="462.0" y="190.0" font-size="15" fill="#c9fbfb" text-anchor="start">gap 3</text>
+  <text x="350.0" y="284.0" font-size="15" fill="#c9fbfb" text-anchor="middle">train moves 4</text>
+  <path d="M260 330 L440 330" fill="none" stroke="#4af1f2" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#b)"/>
+  <text x="350.0" y="352.0" font-size="14" fill="#4af1f2" text-anchor="middle">train at 0.8 c</text>
+  <text x="560.0" y="110.0" font-size="15" fill="#c9fbfb" text-anchor="middle">tick</text>
+  <text x="560.0" y="130.0" font-size="16" fill="#fff" text-anchor="middle">×5/3</text>
+</svg>

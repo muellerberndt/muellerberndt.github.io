@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 370" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#c9fbfb"/></marker></defs>
+  <rect width="600" height="370" fill="#000"/>
+  <text x="300" y="32" text-anchor="middle" font-size="18" fill="#fff">the check lives on the loop</text>
+  <text x="150" y="66" font-size="15" fill="#c9fbfb" text-anchor="middle">sum 0: coins can be set</text>
+  <line x1="150" y1="96" x2="65" y2="250" stroke="#4af1f2" stroke-width="2" stroke-opacity=".6" />
+  <text x="93.6" y="166.9" font-size="14" fill="#c9fbfb" text-anchor="end">same</text>
+  <line x1="65" y1="250" x2="235" y2="250" stroke="#4af1f2" stroke-width="2.4" />
+  <text x="150.0" y="285.0" font-size="14" fill="#c9fbfb" text-anchor="middle">different</text>
+  <line x1="235" y1="250" x2="150" y2="96" stroke="#4af1f2" stroke-width="2.4" />
+  <text x="206.4" y="166.9" font-size="14" fill="#c9fbfb" text-anchor="start">different</text>
+  <circle cx="150" cy="96" r="19" fill="#000" stroke="#fff" stroke-width="2.2"/>
+  <text x="150" y="102" font-size="17" fill="#fff" text-anchor="middle">H</text>
+  <circle cx="65" cy="250" r="19" fill="#000" stroke="#fff" stroke-width="2.2"/>
+  <text x="65" y="256" font-size="17" fill="#fff" text-anchor="middle">H</text>
+  <circle cx="235" cy="250" r="19" fill="#000" stroke="#fff" stroke-width="2.2"/>
+  <text x="235" y="256" font-size="17" fill="#fff" text-anchor="middle">T</text>
+  <text x="150" y="306" font-size="17" fill="#fff" text-anchor="middle">0 + 1 + 1 = 0</text>
+  <text x="450" y="66" font-size="15" fill="#c9fbfb" text-anchor="middle">sum 1: no setting fits</text>
+  <line x1="450" y1="96" x2="365" y2="250" stroke="#4af1f2" stroke-width="2.4" />
+  <text x="393.6" y="166.9" font-size="14" fill="#c9fbfb" text-anchor="end">different</text>
+  <line x1="365" y1="250" x2="535" y2="250" stroke="#4af1f2" stroke-width="2.4" />
+  <text x="450.0" y="285.0" font-size="14" fill="#c9fbfb" text-anchor="middle">different</text>
+  <line x1="535" y1="250" x2="450" y2="96" stroke="#4af1f2" stroke-width="2.4" />
+  <text x="506.4" y="166.9" font-size="14" fill="#c9fbfb" text-anchor="start">different</text>
+  <circle cx="450" cy="96" r="19" fill="#000" stroke="#fff" stroke-width="2.2"/>
+  <text x="450" y="102" font-size="17" fill="#fff" text-anchor="middle">H</text>
+  <circle cx="365" cy="250" r="19" fill="#000" stroke="#fff" stroke-width="2.2"/>
+  <text x="365" y="256" font-size="17" fill="#fff" text-anchor="middle">T</text>
+  <circle cx="535" cy="250" r="19" fill="#000" stroke="#4af1f2" stroke-width="2.2"/>
+  <text x="535" y="256" font-size="17" fill="#fff" text-anchor="middle">?</text>
+  <text x="450" y="306" font-size="17" fill="#fff" text-anchor="middle">1 + 1 + 1 = 1</text>
+  <text x="300" y="352" font-size="14" fill="#4af1f2" fill-opacity=".85" text-anchor="middle">count different as 1, with 1 + 1 = 0</text>
+</svg>

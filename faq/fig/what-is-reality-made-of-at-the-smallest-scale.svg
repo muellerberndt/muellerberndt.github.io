@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#c9fbfb"/></marker></defs>
+  <rect width="600" height="400" fill="#000"/>
+  <text x="300" y="32" text-anchor="middle" font-size="18" fill="#fff">the loop one patch runs</text>
+  <circle cx="300" cy="200" r="56" fill="#4af1f2" fill-opacity=".08" stroke="#4af1f2" stroke-width="2.2"/>
+  <g fill="#c9fbfb"><circle cx="354.1" cy="214.5" r="3.5"/><circle cx="339.6" cy="239.6" r="3.5"/><circle cx="314.5" cy="254.1" r="3.5"/><circle cx="285.5" cy="254.1" r="3.5"/><circle cx="260.4" cy="239.6" r="3.5"/><circle cx="245.9" cy="214.5" r="3.5"/><circle cx="245.9" cy="185.5" r="3.5"/><circle cx="260.4" cy="160.4" r="3.5"/><circle cx="285.5" cy="145.9" r="3.5"/><circle cx="314.5" cy="145.9" r="3.5"/><circle cx="339.6" cy="160.4" r="3.5"/><circle cx="354.1" cy="185.5" r="3.5"/></g>
+  <circle cx="300" cy="216" r="30" fill="none" stroke="#4af1f2" stroke-opacity=".45" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <text x="300" y="178" font-size="15" fill="#fff" text-anchor="middle">patch</text>
+  <text x="300" y="221" font-size="14" fill="#c9fbfb" text-anchor="middle">record</text>
+  <g fill="none" stroke="#4af1f2" stroke-width="2" stroke-opacity=".8" marker-end="url(#a)">
+    <path d="M358.5 83.3 L369.2 85.5 L379.7 88.1 L390.0 91.1 L400.0 94.3 L409.7 98.0 L419.0 101.9 L427.9 106.2 L436.4 110.8"/>
+    <path d="M494.9 172.6 L497.1 179.3 L498.7 186.2 L499.7 193.1 L500.0 200.0 L499.7 206.9 L498.7 213.8 L497.1 220.7 L494.9 227.4"/>
+    <path d="M436.4 289.2 L427.9 293.8 L419.0 298.1 L409.7 302.0 L400.0 305.7 L390.0 308.9 L379.7 311.9 L369.2 314.5 L358.5 316.7"/>
+    <path d="M241.5 316.7 L230.8 314.5 L220.3 311.9 L210.0 308.9 L200.0 305.7 L190.3 302.0 L181.0 298.1 L172.1 293.8 L163.6 289.2"/>
+    <path d="M105.1 227.4 L102.9 220.7 L101.3 213.8 L100.3 206.9 L100.0 200.0 L100.3 193.1 L101.3 186.2 L102.9 179.3 L105.1 172.6"/>
+    <path d="M163.6 110.8 L172.1 106.2 L181.0 101.9 L190.3 98.0 L200.0 94.3 L210.0 91.1 L220.3 88.1 L230.8 85.5 L241.5 83.3"/>
+  </g>
+  <text x="300.0" y="76.0" font-size="16" fill="#fff" text-anchor="middle">read</text>
+  <text x="300.0" y="94.0" font-size="14" fill="#c9fbfb" text-anchor="middle">its ports</text>
+  <text x="473.2" y="137.0" font-size="16" fill="#fff" text-anchor="middle">compare</text>
+  <text x="473.2" y="155.0" font-size="14" fill="#c9fbfb" text-anchor="middle">with neighbours</text>
+  <text x="473.2" y="259.0" font-size="16" fill="#fff" text-anchor="middle">choose</text>
+  <text x="473.2" y="277.0" font-size="14" fill="#c9fbfb" text-anchor="middle">from the menu</text>
+  <text x="300.0" y="320.0" font-size="16" fill="#fff" text-anchor="middle">write</text>
+  <text x="300.0" y="338.0" font-size="14" fill="#c9fbfb" text-anchor="middle">a record</text>
+  <text x="126.8" y="259.0" font-size="16" fill="#fff" text-anchor="middle">expose</text>
+  <text x="126.8" y="277.0" font-size="14" fill="#c9fbfb" text-anchor="middle">the result</text>
+  <text x="126.8" y="137.0" font-size="16" fill="#fff" text-anchor="middle">verify</text>
+  <text x="126.8" y="155.0" font-size="14" fill="#c9fbfb" text-anchor="middle">anyone can check</text>
+  <text x="300" y="388" font-size="14" fill="#4af1f2" fill-opacity=".85" text-anchor="middle">an outsider sees only what the ports show</text>
+</svg>

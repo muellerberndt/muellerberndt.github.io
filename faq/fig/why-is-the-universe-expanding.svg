@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#c9fbfb"/></marker><marker id="c" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#4af1f2"/></marker></defs>
+  <rect width="600" height="380" fill="#000"/>
+  <text x="300" y="30" text-anchor="middle" font-size="18" fill="#fff">same light cones, more records</text>
+  <line x1="50" y1="350" x2="50" y2="70" stroke="#4af1f2" stroke-width="1.5" stroke-opacity=".6" marker-end="url(#c)"/>
+  <line x1="50" y1="350" x2="300" y2="350" stroke="#4af1f2" stroke-width="1.5" stroke-opacity=".6" marker-end="url(#c)"/>
+  <text x="38" y="210" text-anchor="middle" font-size="14" fill="#c9fbfb" transform="rotate(-90 38 210)">conformal time</text>
+  <text x="285" y="340" text-anchor="end" font-size="14" fill="#c9fbfb">space</text>
+  <rect x="80" y="260" width="64" height="64" fill="#4af1f2" fill-opacity=".05" stroke="#4af1f2" stroke-width="2"/>
+  <circle cx="96" cy="276" r="3.2" fill="#c9fbfb"/>
+  <circle cx="96" cy="308" r="3.2" fill="#c9fbfb"/>
+  <circle cx="128" cy="276" r="3.2" fill="#c9fbfb"/>
+  <circle cx="128" cy="308" r="3.2" fill="#c9fbfb"/>
+  <rect x="264" y="76" width="64" height="64" fill="#4af1f2" fill-opacity=".05" stroke="#4af1f2" stroke-width="2"/>
+  <circle cx="268" cy="80" r="2" fill="#c9fbfb"/>
+  <circle cx="268" cy="88" r="2" fill="#c9fbfb"/>
+  <circle cx="268" cy="96" r="2" fill="#c9fbfb"/>
+  <circle cx="268" cy="104" r="2" fill="#c9fbfb"/>
+  <circle cx="268" cy="112" r="2" fill="#c9fbfb"/>
+  <circle cx="268" cy="120" r="2" fill="#c9fbfb"/>
+  <circle cx="268" cy="128" r="2" fill="#c9fbfb"/>
+  <circle cx="268" cy="136" r="2" fill="#c9fbfb"/>
+  <circle cx="276" cy="80" r="2" fill="#c9fbfb"/>
+  <circle cx="276" cy="88" r="2" fill="#c9fbfb"/>
+  <circle cx="276" cy="96" r="2" fill="#c9fbfb"/>
+  <circle cx="276" cy="104" r="2" fill="#c9fbfb"/>
+  <circle cx="276" cy="112" r="2" fill="#c9fbfb"/>
+  <circle cx="276" cy="120" r="2" fill="#c9fbfb"/>
+  <circle cx="276" cy="128" r="2" fill="#c9fbfb"/>
+  <circle cx="276" cy="136" r="2" fill="#c9fbfb"/>
+  <circle cx="284" cy="80" r="2" fill="#c9fbfb"/>
+  <circle cx="284" cy="88" r="2" fill="#c9fbfb"/>
+  <circle cx="284" cy="96" r="2" fill="#c9fbfb"/>
+  <circle cx="284" cy="104" r="2" fill="#c9fbfb"/>
+  <circle cx="284" cy="112" r="2" fill="#c9fbfb"/>
+  <circle cx="284" cy="120" r="2" fill="#c9fbfb"/>
+  <circle cx="284" cy="128" r="2" fill="#c9fbfb"/>
+  <circle cx="284" cy="136" r="2" fill="#c9fbfb"/>
+  <circle cx="292" cy="80" r="2" fill="#c9fbfb"/>
+  <circle cx="292" cy="88" r="2" fill="#c9fbfb"/>
+  <circle cx="292" cy="96" r="2" fill="#c9fbfb"/>
+  <circle cx="292" cy="104" r="2" fill="#c9fbfb"/>
+  <circle cx="292" cy="112" r="2" fill="#c9fbfb"/>
+  <circle cx="292" cy="120" r="2" fill="#c9fbfb"/>
+  <circle cx="292" cy="128" r="2" fill="#c9fbfb"/>
+  <circle cx="292" cy="136" r="2" fill="#c9fbfb"/>
+  <circle cx="300" cy="80" r="2" fill="#c9fbfb"/>
+  <circle cx="300" cy="88" r="2" fill="#c9fbfb"/>
+  <circle cx="300" cy="96" r="2" fill="#c9fbfb"/>
+  <circle cx="300" cy="104" r="2" fill="#c9fbfb"/>
+  <circle cx="300" cy="112" r="2" fill="#c9fbfb"/>
+  <circle cx="300" cy="120" r="2" fill="#c9fbfb"/>
+  <circle cx="300" cy="128" r="2" fill="#c9fbfb"/>
+  <circle cx="300" cy="136" r="2" fill="#c9fbfb"/>
+  <circle cx="308" cy="80" r="2" fill="#c9fbfb"/>
+  <circle cx="308" cy="88" r="2" fill="#c9fbfb"/>
+  <circle cx="308" cy="96" r="2" fill="#c9fbfb"/>
+  <circle cx="308" cy="104" r="2" fill="#c9fbfb"/>
+  <circle cx="308" cy="112" r="2" fill="#c9fbfb"/>
+  <circle cx="308" cy="120" r="2" fill="#c9fbfb"/>
+  <circle cx="308" cy="128" r="2" fill="#c9fbfb"/>
+  <circle cx="308" cy="136" r="2" fill="#c9fbfb"/>
+  <circle cx="316" cy="80" r="2" fill="#c9fbfb"/>
+  <circle cx="316" cy="88" r="2" fill="#c9fbfb"/>
+  <circle cx="316" cy="96" r="2" fill="#c9fbfb"/>
+  <circle cx="316" cy="104" r="2" fill="#c9fbfb"/>
+  <circle cx="316" cy="112" r="2" fill="#c9fbfb"/>
+  <circle cx="316" cy="120" r="2" fill="#c9fbfb"/>
+  <circle cx="316" cy="128" r="2" fill="#c9fbfb"/>
+  <circle cx="316" cy="136" r="2" fill="#c9fbfb"/>
+  <circle cx="324" cy="80" r="2" fill="#c9fbfb"/>
+  <circle cx="324" cy="88" r="2" fill="#c9fbfb"/>
+  <circle cx="324" cy="96" r="2" fill="#c9fbfb"/>
+  <circle cx="324" cy="104" r="2" fill="#c9fbfb"/>
+  <circle cx="324" cy="112" r="2" fill="#c9fbfb"/>
+  <circle cx="324" cy="120" r="2" fill="#c9fbfb"/>
+  <circle cx="324" cy="128" r="2" fill="#c9fbfb"/>
+  <circle cx="324" cy="136" r="2" fill="#c9fbfb"/>
+  <line x1="144" y1="260" x2="261" y2="143" stroke="#fff" stroke-width="2.2" marker-end="url(#a)"/>
+  <text x="216" y="222" text-anchor="start" font-size="15" fill="#fff">light</text>
+  <path d="M78 226 L112 260 L146 226" fill="none" stroke="#4af1f2" stroke-opacity=".4" stroke-width="1.5" stroke-dasharray="4 5"/>
+  <path d="M262 42 L296 76 L330 42" fill="none" stroke="#4af1f2" stroke-opacity=".4" stroke-width="1.5" stroke-dasharray="4 5"/>
+  <text x="158" y="298" text-anchor="start" font-size="15" fill="#c9fbfb">emission</text>
+  <text x="158" y="320" text-anchor="start" font-size="15" fill="#c9fbfb">4 records</text>
+  <text x="342" y="102" text-anchor="start" font-size="15" fill="#c9fbfb">reception</text>
+  <text x="342" y="124" text-anchor="start" font-size="15" fill="#c9fbfb">64 records</text>
+  <text x="342" y="146" text-anchor="start" font-size="15" fill="#c9fbfb">(16× denser)</text>
+  <text x="440" y="262" text-anchor="middle" font-size="16" fill="#fff">1 + z = 16<tspan dy="-7" font-size="11">1/4</tspan><tspan dy="7" dx="6">= 2</tspan></text>
+  <text x="440" y="290" text-anchor="middle" font-size="15" fill="#c9fbfb">scale factor doubled</text>
+</svg>

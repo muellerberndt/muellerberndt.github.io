@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#c9fbfb"/></marker><marker id="b" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#4af1f2"/></marker></defs>
+  <rect width="600" height="340" fill="#000"/>
+  <text x="140.0" y="40.0" font-size="16" fill="#fff" text-anchor="middle">red seven</text>
+  <text x="140.0" y="78.0" font-size="16" fill="#c9fbfb" text-anchor="middle">7</text>
+  <text x="220.0" y="78.0" font-size="16" fill="#c9fbfb" text-anchor="middle">8</text>
+  <text x="88.0" y="126.0" font-size="15" fill="#c9fbfb" text-anchor="end">red</text>
+  <text x="88.0" y="188.0" font-size="15" fill="#c9fbfb" text-anchor="end">black</text>
+  <rect x="100" y="90" width="80" height="62" fill="#4af1f2" fill-opacity=".35" stroke="#4af1f2" stroke-opacity="1" stroke-width="2"/>
+  <rect x="180" y="90" width="80" height="62" fill="#4af1f2" fill-opacity="0" stroke="#4af1f2" stroke-opacity="0.3" stroke-width="1.2"/>
+  <rect x="100" y="152" width="80" height="62" fill="#4af1f2" fill-opacity="0" stroke="#4af1f2" stroke-opacity="0.3" stroke-width="1.2"/>
+  <rect x="180" y="152" width="80" height="62" fill="#4af1f2" fill-opacity="0" stroke="#4af1f2" stroke-opacity="0.3" stroke-width="1.2"/>
+  <text x="140.0" y="262.0" font-size="14" fill="#c9fbfb" text-anchor="middle">color: red</text>
+  <text x="140.0" y="284.0" font-size="14" fill="#4af1f2" text-anchor="middle" fill-opacity=".85">rank: seven</text>
+  <text x="430.0" y="40.0" font-size="16" fill="#fff" text-anchor="middle">red seven or black eight</text>
+  <text x="430.0" y="78.0" font-size="16" fill="#c9fbfb" text-anchor="middle">7</text>
+  <text x="510.0" y="78.0" font-size="16" fill="#c9fbfb" text-anchor="middle">8</text>
+  <text x="378.0" y="126.0" font-size="15" fill="#c9fbfb" text-anchor="end">red</text>
+  <text x="378.0" y="188.0" font-size="15" fill="#c9fbfb" text-anchor="end">black</text>
+  <rect x="390" y="90" width="80" height="62" fill="#4af1f2" fill-opacity=".35" stroke="#4af1f2" stroke-opacity="1" stroke-width="2"/>
+  <text x="430.0" y="127.0" font-size="16" fill="#fff" text-anchor="middle">1/2</text>
+  <rect x="470" y="90" width="80" height="62" fill="#4af1f2" fill-opacity="0" stroke="#4af1f2" stroke-opacity="0.3" stroke-width="1.2"/>
+  <rect x="390" y="152" width="80" height="62" fill="#4af1f2" fill-opacity="0" stroke="#4af1f2" stroke-opacity="0.3" stroke-width="1.2"/>
+  <rect x="470" y="152" width="80" height="62" fill="#4af1f2" fill-opacity=".35" stroke="#4af1f2" stroke-opacity="1" stroke-width="2"/>
+  <text x="510.0" y="189.0" font-size="16" fill="#fff" text-anchor="middle">1/2</text>
+  <text x="430.0" y="262.0" font-size="14" fill="#c9fbfb" text-anchor="middle">color: open, rank: open</text>
+  <text x="430.0" y="284.0" font-size="14" fill="#4af1f2" text-anchor="middle" fill-opacity=".85">learn one, get the other</text>
+  <line x1="300.0" y1="60.0" x2="300.0" y2="320.0" stroke="#4af1f2" stroke-width="1.2" stroke-opacity="0.25" stroke-dasharray="4 6"/>
+</svg>

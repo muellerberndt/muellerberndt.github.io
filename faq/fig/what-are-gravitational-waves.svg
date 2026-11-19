@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#c9fbfb"/></marker><marker id="c" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#4af1f2"/></marker></defs>
+  <rect width="600" height="300" fill="#000"/>
+  <text x="300" y="30" text-anchor="middle" font-size="17" fill="#fff">a ring of free masses as a wave passes</text>
+  <circle cx="90" cy="140" r="38" fill="none" stroke="#4af1f2" stroke-opacity=".3" stroke-width="1.5" stroke-dasharray="4 5"/>
+  <circle cx="128" cy="140" r="4.5" fill="#fff"/>
+  <circle cx="116.9" cy="166.9" r="4.5" fill="#fff"/>
+  <circle cx="90" cy="178" r="4.5" fill="#fff"/>
+  <circle cx="63.1" cy="166.9" r="4.5" fill="#fff"/>
+  <circle cx="52" cy="140" r="4.5" fill="#fff"/>
+  <circle cx="63.1" cy="113.1" r="4.5" fill="#fff"/>
+  <circle cx="90" cy="102" r="4.5" fill="#fff"/>
+  <circle cx="116.9" cy="113.1" r="4.5" fill="#fff"/>
+  <circle cx="230" cy="140" r="38" fill="none" stroke="#4af1f2" stroke-opacity=".3" stroke-width="1.5" stroke-dasharray="4 5"/>
+  <circle cx="279.4" cy="140" r="4.5" fill="#fff"/>
+  <circle cx="264.9" cy="158.8" r="4.5" fill="#fff"/>
+  <circle cx="230" cy="166.6" r="4.5" fill="#fff"/>
+  <circle cx="195.1" cy="158.8" r="4.5" fill="#fff"/>
+  <circle cx="180.6" cy="140" r="4.5" fill="#fff"/>
+  <circle cx="195.1" cy="121.2" r="4.5" fill="#fff"/>
+  <circle cx="230" cy="113.4" r="4.5" fill="#fff"/>
+  <circle cx="264.9" cy="121.2" r="4.5" fill="#fff"/>
+  <circle cx="370" cy="140" r="38" fill="none" stroke="#4af1f2" stroke-opacity=".3" stroke-width="1.5" stroke-dasharray="4 5"/>
+  <circle cx="408" cy="140" r="4.5" fill="#fff"/>
+  <circle cx="396.9" cy="166.9" r="4.5" fill="#fff"/>
+  <circle cx="370" cy="178" r="4.5" fill="#fff"/>
+  <circle cx="343.1" cy="166.9" r="4.5" fill="#fff"/>
+  <circle cx="332" cy="140" r="4.5" fill="#fff"/>
+  <circle cx="343.1" cy="113.1" r="4.5" fill="#fff"/>
+  <circle cx="370" cy="102" r="4.5" fill="#fff"/>
+  <circle cx="396.9" cy="113.1" r="4.5" fill="#fff"/>
+  <circle cx="510" cy="140" r="38" fill="none" stroke="#4af1f2" stroke-opacity=".3" stroke-width="1.5" stroke-dasharray="4 5"/>
+  <circle cx="536.6" cy="140" r="4.5" fill="#fff"/>
+  <circle cx="528.8" cy="174.9" r="4.5" fill="#fff"/>
+  <circle cx="510" cy="189.4" r="4.5" fill="#fff"/>
+  <circle cx="491.2" cy="174.9" r="4.5" fill="#fff"/>
+  <circle cx="483.4" cy="140" r="4.5" fill="#fff"/>
+  <circle cx="491.2" cy="105.1" r="4.5" fill="#fff"/>
+  <circle cx="510" cy="90.6" r="4.5" fill="#fff"/>
+  <circle cx="528.8" cy="105.1" r="4.5" fill="#fff"/>
+  <line x1="60" y1="232" x2="545" y2="232" stroke="#c9fbfb" stroke-width="1.6" marker-end="url(#a)"/>
+  <text x="300" y="256" text-anchor="middle" font-size="15" fill="#c9fbfb">time</text>
+  <text x="90" y="214" text-anchor="middle" font-size="14" fill="#c9fbfb">start</text>
+  <text x="230" y="214" text-anchor="middle" font-size="14" fill="#c9fbfb">1/4 cycle</text>
+  <text x="370" y="214" text-anchor="middle" font-size="14" fill="#c9fbfb">1/2 cycle</text>
+  <text x="510" y="214" text-anchor="middle" font-size="14" fill="#c9fbfb">3/4 cycle</text>
+  <text x="300" y="284" text-anchor="middle" font-size="14" fill="#c9fbfb" fill-opacity=".85">stretch drawn hugely enlarged; wave travels into the page</text>
+</svg>

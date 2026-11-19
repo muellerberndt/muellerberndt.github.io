@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 330" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#c9fbfb"/></marker><marker id="b" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#4af1f2"/></marker></defs>
+  <rect width="600" height="330" fill="#000"/>
+  <text x="300.0" y="30.0" font-size="17" fill="#fff" text-anchor="middle">halves without end, total 1</text>
+  <rect x="60" y="90" width="480" height="24" fill="none" stroke="#4af1f2" stroke-width="1.2" stroke-opacity=".35"/>
+  <rect x="61.5" y="92" width="237.0" height="20" fill="#4af1f2" fill-opacity="0.75"/>
+  <text x="552.0" y="107.0" font-size="15" fill="#fff" text-anchor="start">1/2</text>
+  <rect x="60" y="132" width="480" height="24" fill="none" stroke="#4af1f2" stroke-width="1.2" stroke-opacity=".35"/>
+  <rect x="61.5" y="134" width="237.0" height="20" fill="#4af1f2" fill-opacity="0.3"/>
+  <rect x="301.5" y="134" width="117.0" height="20" fill="#4af1f2" fill-opacity="0.75"/>
+  <text x="552.0" y="149.0" font-size="15" fill="#fff" text-anchor="start">3/4</text>
+  <rect x="60" y="174" width="480" height="24" fill="none" stroke="#4af1f2" stroke-width="1.2" stroke-opacity=".35"/>
+  <rect x="61.5" y="176" width="237.0" height="20" fill="#4af1f2" fill-opacity="0.3"/>
+  <rect x="301.5" y="176" width="117.0" height="20" fill="#4af1f2" fill-opacity="0.3"/>
+  <rect x="421.5" y="176" width="57.0" height="20" fill="#4af1f2" fill-opacity="0.75"/>
+  <text x="552.0" y="191.0" font-size="15" fill="#fff" text-anchor="start">7/8</text>
+  <rect x="60" y="216" width="480" height="24" fill="none" stroke="#4af1f2" stroke-width="1.2" stroke-opacity=".35"/>
+  <rect x="61.5" y="218" width="237.0" height="20" fill="#4af1f2" fill-opacity="0.3"/>
+  <rect x="301.5" y="218" width="117.0" height="20" fill="#4af1f2" fill-opacity="0.3"/>
+  <rect x="421.5" y="218" width="57.0" height="20" fill="#4af1f2" fill-opacity="0.3"/>
+  <rect x="481.5" y="218" width="27.0" height="20" fill="#4af1f2" fill-opacity="0.75"/>
+  <text x="552.0" y="233.0" font-size="15" fill="#fff" text-anchor="start">15/16</text>
+  <rect x="60" y="258" width="480" height="24" fill="none" stroke="#4af1f2" stroke-width="1.2" stroke-opacity=".35"/>
+  <rect x="61.5" y="260" width="237.0" height="20" fill="#4af1f2" fill-opacity="0.3"/>
+  <rect x="301.5" y="260" width="117.0" height="20" fill="#4af1f2" fill-opacity="0.3"/>
+  <rect x="421.5" y="260" width="57.0" height="20" fill="#4af1f2" fill-opacity="0.3"/>
+  <rect x="481.5" y="260" width="27.0" height="20" fill="#4af1f2" fill-opacity="0.3"/>
+  <rect x="511.5" y="260" width="12.0" height="20" fill="#4af1f2" fill-opacity="0.75"/>
+  <text x="552.0" y="275.0" font-size="15" fill="#fff" text-anchor="start">31/32</text>
+  <text x="180.0" y="82.0" font-size="14" fill="#c9fbfb" text-anchor="middle">1/2</text>
+  <text x="360.0" y="82.0" font-size="14" fill="#c9fbfb" text-anchor="middle">1/4</text>
+  <text x="450.0" y="82.0" font-size="14" fill="#c9fbfb" text-anchor="middle">1/8</text>
+  <line x1="540.0" y1="75.0" x2="540.0" y2="290.0" stroke="#fff" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <text x="540.0" y="312.0" font-size="16" fill="#fff" text-anchor="middle">1</text>
+  <text x="60.0" y="312.0" font-size="16" fill="#c9fbfb" text-anchor="middle">0</text>
+  <text x="300.0" y="312.0" font-size="14" fill="#c9fbfb" text-anchor="middle">each gap equals the piece just added</text>
+</svg>

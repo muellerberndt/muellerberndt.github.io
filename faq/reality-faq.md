@@ -70,6 +70,16 @@ Link: https://floatingpragma.ai/faq/#what-came-before-the-big-bang. Read more: [
 
 There was no Big Bang, in the sense of a first moment when everything began. Winding the universe back to a beginning needs a global clock running for the whole universe, and there is none to turn back. Every clock is local, and time is the order in which observers read one another's records. Spacetime is not fundamental either. It is built from those records, so there is no container that could shrink to a point. What the records do show is a hot, dense era at the far end of a reconstruction from evidence held today, such as the microwave glow, light-element ratios, galaxy spectra and supernova catalogs. The name Big Bang marks where that trail of records goes dark. Ripples on the microwave sky are slightly stronger at large angles, and OPH puts that tilt at 0.966021. Planck measured 0.9649 ± 0.0042, a 2025 combined analysis reads 0.9743 ± 0.0034, and the prediction fails if the tilt lands well away from 0.966021.
 
+Figure: OPH puts the tilt at 0.966021 (dashed). Planck measured 0.9649 ± 0.0042; a 2025 combined analysis reads 0.9743 ± 0.0034 and places 0.966021 in its lowest 0.6 percent. A tilt well away from 0.966021 fails the prediction.
+
+$$ n_s = 1 - \frac{P}{48} = 1 - \frac{1.6309682414}{48} = 0.966021 $$
+
+The spectral index $n_s$ from the grain $P$, the number for how fine a distinction a screen supports. A forty-eighth of the grain is $0.033979$.
+
+$$ \Delta^{2}(k) \propto k^{\,n_s - 1} $$
+
+The strength $\Delta^2$ of the microwave ripples at wavenumber $k$. An index just below one makes large scales, small $k$, slightly stronger than small ones.
+
 Link: https://floatingpragma.ai/faq/#what-was-the-big-bang. Read more: [Appendix A: Eighteen Questions](https://oph-book.floatingpragma.ai/chapter/appendix-a), [Chapter 39: Why Is a Bacterium Freer Than an Atom?](https://oph-book.floatingpragma.ai/chapter/chapter-39).
 
 ### Are there other universes?
@@ -194,6 +204,20 @@ Link: https://floatingpragma.ai/faq/#how-can-two-descriptions-both-be-right. Rea
 
 Each part fixes disagreements with its neighbors, and the result is consistent everywhere exactly when the records around every closed loop cancel, which no single pair can check. Three people in separate rooms each hold a coin. Each pair meets and records only same or different, and all three pairs record different. Any two records fit together. All three cannot, because counting different as 1, with one plus one making zero, the loop totals 1 where it needs 0. Wire twelve observers as the corners of a twenty-sided solid and repair brings all 2,048 starting states to the one consistent state. Flip one record and repair converges anyway, leaving exactly one unit of disagreement that can be moved and never removed. That stubborn leftover is what a particle turns out to be.
 
+Figure: Three coins, each pair recording only same or different. With one same and two different, the loop sums to zero and the coins can be set. With three different, every pair fits on its own and the loop sums to one, so no setting fits all three.
+
+$$ s_{AB} + s_{BC} + s_{CA} \equiv 0 \pmod{2} $$
+
+The condition for three records to fit, counting different as 1 and same as 0, with $1 + 1 = 0$. Going round the loop returns to the first coin, which cannot differ from itself. Three differents total 1.
+
+$$ L = E - V + 1 = 30 - 12 + 1 = 19 $$
+
+Independent loops $L$ in a wiring diagram with $E$ links and $V$ observers. Twelve observers wired as the corners of an icosahedron have 30 links and 19 loops, and all 19 loop sums must vanish for the whole to be consistent.
+
+$$ 2^{12}/2 = 2048 $$
+
+Twelve bits with the all-over flip divided out. Repair brings every one of the 2,048 starting states to the single consistent state. Flip one record and repair converges anyway, leaving exactly one unit of disagreement that can be moved and never removed.
+
 Link: https://floatingpragma.ai/faq/#how-does-the-universe-stay-consistent. Read more: [Chapter 6: Why Isn't Agreeing With Your Neighbors Enough?](https://oph-book.floatingpragma.ai/chapter/chapter-6), [Chapter 36: Why These Laws and Not Others?](https://oph-book.floatingpragma.ai/chapter/chapter-36).
 
 ### How does the universe agree on facts without anyone in charge?
@@ -217,6 +241,16 @@ Link: https://floatingpragma.ai/faq/#what-does-the-universe-do-step-by-step. Rea
 ### Why doesn't it matter who measures first?
 
 It doesn't matter because the final state is fixed by the constraints before anyone moves, the way a sudoku's printed clues fix the finished grid. Two people solving one puzzle in different orders fill different squares at different minutes and hand in identical grids. Observers repairing their disagreements behave the same way. In 1942 the mathematician Max Newman proved that if a process always stops, and any two single steps can be brought back together, every starting state has exactly one endpoint. Repair meets both conditions. Total disagreement falls with every move and cannot drop below zero, and two repairs sharing an observer reach the same configuration after one further move each. A network of 81,920 observers was repaired in sixteen shuffled orders. All sixteen accepted 102,415 moves and finished in the identical state.
+
+Figure: Left, the diamond: two repairs out of one state each need one more move to meet again. Right, many repairs: every path down the lattice is a different order, and all of them end at one state, because disagreement falls with each move and cannot drop below zero.
+
+$$ \text{always stops} \;+\; \text{diamonds close} \;\Longrightarrow\; \text{exactly one endpoint} $$
+
+Newman's lemma, 1942. If a process always terminates and any two single steps out of a state can be brought back together, every starting state has a single endpoint, whatever order the steps take.
+
+$$ D = \sum_{\text{seams}} d_{\text{seam}} \;\ge\; 0, \qquad D_{\text{after}} < D_{\text{before}} $$
+
+Total disagreement $D$ is a sum of nonnegative terms and every accepted repair lowers it, so repair stops. In the 81,920-observer network each move removed one of the $102{,}415$ starting disagreements, in all sixteen shuffled orders.
 
 Link: https://floatingpragma.ai/faq/#does-it-matter-who-measures-first. Read more: [Chapter 10: Why Doesn't It Matter Who Goes First?](https://oph-book.floatingpragma.ai/chapter/chapter-10).
 
@@ -329,6 +363,16 @@ Link: https://floatingpragma.ai/faq/#is-color-real. Read more: [Chapter 40: Does
 ### How does OPH answer Zeno’s paradox?
 
 Zeno asks how a runner can finish a journey if crossing it requires first crossing half, then half the remainder, forever. The mathematical response is that infinitely many shrinking intervals can have a finite total: one half plus one quarter plus one eighth and so on sums to one. OPH adds a physical interpretation. A finite record process need not perform a separate operation for every point or subdivision in its continuum description. The runner's events occur; the infinitely divisible line is an effective mathematical account of them. The same distinction answers the frozen-arrow picture: an instantaneous position is not a complete account of a changing process. This motivates the discrete construction, while neither Zeno nor the geometric series proves that nature is discrete.
+
+Figure: Half, then a quarter, then an eighth: each row adds the next piece. The totals 1/2, 3/4, 7/8 crowd toward 1 without any row reaching it, and the gap left at each stage equals the piece just added.
+
+$$ \frac{1}{2} + \frac{1}{4} + \cdots + \frac{1}{2^n} = 1 - \frac{1}{2^n} $$
+
+After $n$ pieces the runner is short of the goal by exactly the last piece added. For any tolerance some finite $n$ gets inside it, and every later total stays inside: that is what the sum being 1 means.
+
+$$ \frac{1}{2^{10}} = \frac{1}{1024} < \frac{1}{1000} $$
+
+Ten pieces bring the total within a thousandth of 1. A finite process meets every finite demand for precision without performing a step for every point of the line.
 
 See also: Do infinities exist in reality or only in our descriptions? (https://floatingpragma.ai/faq/#do-infinities-exist), How can continuous space and smooth motion emerge from discrete records? (https://floatingpragma.ai/faq/#continuum-from-discrete), Is the quantum Zeno effect the same as Zeno’s paradox? (https://floatingpragma.ai/faq/#quantum-zeno-effect)
 
@@ -456,6 +500,12 @@ Link: https://floatingpragma.ai/faq/#why-can-disagreement-be-useful. Read more: 
 
 Time is three different things sharing one word: order, direction and flow. Order is which event depended on which. A later repair certifies that it read a value an earlier one wrote, and pairs with no such chain between them have no fact about which came first. Direction comes from the repair itself, which can average seven possible pasts of a seam into one reading and destroy the difference. Flow is what a region's own state makes its questions do, a reversible motion computed from the odds it holds, with its rate built in. A clock joins them, as an observer that counts every repair touching it and turns the count into phase. Tallies, waves, light signals and a region's own flow all read one parameter, because each is a reading of the same repair history.
 
+Figure: Three things share the word time. Order: which record read which, with some pairs left unordered. Direction: seven different pasts of a seam average to one reading. Flow: a clock counts every touch and turns the count into phase.
+
+$$ \rho \propto e^{-\beta H} \;\Longrightarrow\; \rho^{is}\,X\,\rho^{-is} = e^{-i\beta s H}\,X\,e^{i\beta s H} $$
+
+A region's state $\rho$ carries its questions $X$ along a flow with parameter $s$. Exactly when the state is thermal for the clock's energy $H$, that flow is the clock's own evolution rescaled by the inverse temperature $\beta$.
+
 Link: https://floatingpragma.ai/faq/#what-is-time. Read more: [Chapter 16: Why Does Time Run, and Only One Way?](https://oph-book.floatingpragma.ai/chapter/chapter-16), [Chapter 21: Why Does Time Feel Like It's Moving?](https://oph-book.floatingpragma.ai/chapter/chapter-21), [Chapter 22: Why Do All the Clocks Agree?](https://oph-book.floatingpragma.ai/chapter/chapter-22).
 
 ### Why does time only go forward?
@@ -474,6 +524,12 @@ Link: https://floatingpragma.ai/faq/#why-do-we-remember-the-past-not-the-future.
 
 There is no universal present moment, since no instrument reads one and no procedure produces one. What exists is an order of causes: one event comes after another when it read something the other wrote, and events with no such chain between them have no fact about which came first. In a recipe, the water must boil before the pasta goes in, while the cheese can be grated whenever, and nothing in the dinner says when. A timeline is that order with the ties broken, and ties can be broken many equally correct ways. In 1971 four atomic clocks flew around the world. Eastbound they came back 59 nanoseconds behind the clocks on the ground, westbound 273 ahead. Clocks compare only where they meet, since at a distance nothing measures how a signal's round trip splits between out and back.
 
+Figure: Four steps of the recipe are chained by dependence; grating the cheese depends on nothing. Writing the dinner as a timeline means choosing where grating goes, and five choices are equally correct. Causality fixes the arrows only.
+
+$$ t_B = t_1 + \varepsilon\,(t_3 - t_1), \qquad 0 < \varepsilon < 1 $$
+
+A signal leaves clock A at $t_1$, bounces off a distant clock B and returns at $t_3$. Only the round trip $t_3 - t_1$ is measured. Which reading at A matches the bounce depends on $\varepsilon$; choosing $\varepsilon = 1/2$ is Einstein's convention.
+
 Link: https://floatingpragma.ai/faq/#is-there-a-universal-now. Read more: [Chapter 7: Why Is There No Such Thing As Now?](https://oph-book.floatingpragma.ai/chapter/chapter-7).
 
 ### Why does time feel like it flows?
@@ -486,11 +542,35 @@ Link: https://floatingpragma.ai/faq/#why-does-time-feel-like-it-flows. Read more
 
 All clocks agree because each one is a reading of the same repair history. The basic clock counts every repair that touches a region, idle ones included. Regions are touched at different rates, yet each count, divided by its expected rate, converges on one parameter, with nobody synchronizing anything. The fluctuations of that traffic form a field that relaxes in the same count. A small memory stepped once per touch oscillates as a wave in that count. A disturbance reaches a distant region exactly when the count equals their distance, which makes the speed of light the exchange rate between count and ruler. A region's own internal flow matches too, scaled by its temperature. Satellite clocks gain forty-five microseconds a day because they sit where the settled state is colder, and they agree after conversion. Attaching normalized count ratios directly to published optical clock frequency ratios is rejected by the data, so a count becomes a reading in seconds only through a calibration that models the measuring apparatus.
 
+Figure: Four clocks on one horizontal axis, the normalized count of repairs. The tally steps up, the field relaxes, the wave oscillates, and light stays silent until the count equals the distance. Each reads the same repair history.
+
+$$ \frac{N_R}{\nu_R} \;\longrightarrow\; \tau $$
+
+$N_R$ counts every repair that touches region $R$, idle ones included, and $\nu_R$ is how many touches $R$ expects per unit of the history's progress. Every region's normalized count converges on the same parameter $\tau$, with nobody synchronizing anything.
+
+$$ \psi(\tau) \propto \cos\!\big(\kappa\,\tau\sqrt{A}\,\big) $$
+
+A small memory stepped once per touch oscillates in that same count. $A$ is the operator built from the seams that also sets the field's correlations and relaxation; $\kappa$ is a fixed factor set by how many seams the clock's port sits on.
+
+$$ \text{response at } y = 0 \quad \text{for} \quad \tau < d(x, y) $$
+
+A disturbance at $x$ reaches $y$ exactly when the count equals their distance $d(x,y)$, measured with $A$ as a ruler. The speed of the answer is one by construction, which makes the speed of light the exchange rate between count and ruler.
+
 Link: https://floatingpragma.ai/faq/#why-do-all-clocks-agree. Read more: [Chapter 22: Why Do All the Clocks Agree?](https://oph-book.floatingpragma.ai/chapter/chapter-22).
 
 ### Why do moving clocks run slow?
 
 A moving clock runs slow because each tick has further to travel at a speed that never changes. Take a clock of two mirrors one meter apart with a pulse of light bouncing between them, riding on a train. Seen from the platform, the mirrors slide sideways while the pulse is in flight, so the pulse runs along a slant, which is longer than the gap. Light has one speed for everybody, so the longer path takes longer and the tick stretches. By Pythagoras, at eighty percent of light speed a tick lasts five thirds as long. Cosmic-ray muons should decay long before reaching the ground, and they arrive anyway, on stretched ticks. Underneath the mirrors, a duration is a count of records in small regions strung along a path, and a moving path collects fewer of them.
+
+Figure: On the train the pulse crosses the gap straight. From the platform, at 0.8 c, the mirrors move 4 units while the pulse travels a slant of 5 across a gap of 3. Light has one speed, so the tick lasts 5/3 as long.
+
+$$ \Delta t = \frac{\Delta\tau}{\sqrt{1 - v^2/c^2}}, \qquad v = 0.8\,c \;\Rightarrow\; \Delta t = \tfrac{5}{3}\,\Delta\tau $$
+
+$\Delta\tau$ is one tick read on the train, $\Delta t$ the same tick read from the platform, $v$ the train's speed. The factor comes straight from Pythagoras applied to the light path.
+
+$$ \frac{\tau_1}{\tau_2} \approx \left(\frac{N_1}{N_2}\right)^{1/4} $$
+
+$N_1$ and $N_2$ count the records inside two causal diamonds. The count measures four-dimensional volume, so its fourth root measures duration. Small diamonds strung along a path add up to proper time, and a moving path collects less.
 
 Link: https://floatingpragma.ai/faq/#why-do-moving-clocks-run-slow. Read more: [Chapter 17: Why Is There a Speed Limit?](https://oph-book.floatingpragma.ai/chapter/chapter-17).
 
@@ -505,6 +585,20 @@ Link: https://floatingpragma.ai/faq/#is-time-travel-possible. Read more: [Chapte
 ### What is temperature, really?
 
 Temperature is how fast a region's own clock runs against a local clock. Every state determines a flow, a clock made from nothing but the odds it holds, and the recipe is to take minus the logarithm of the state. Run it on a system with two possible answers, where the lower one turns up twenty times for every once the upper one does. The recipe returns log 20, about 2.996, and that number is the energy gap divided by the temperature. A thermometer supplies the scale. Halve the temperature with the energies fixed and twenty to one becomes four hundred to one, so the number doubles. Empty space has a temperature too, for anyone accelerating through it, at about four parts in 10²¹ of a degree for every meter per second squared.
+
+Figure: A two-answer system whose lower answer turns up twenty times for every once the upper one does. Minus the log of that state leaves log 20, about 2.996, which is the gap E over the temperature T. Halving T squares the odds and doubles the number.
+
+$$ K = -\log \rho $$
+
+The generator of the flow, the internal clock, that a state $\rho$ determines. In finite dimensions take the natural logarithm of each eigenvalue of the density matrix and put a minus sign in front.
+
+$$ \rho = \begin{pmatrix} \tfrac{20}{21} & 0 \\ 0 & \tfrac{1}{21} \end{pmatrix} \;\Rightarrow\; K = \log\tfrac{21}{20}\,\mathbb{1} + \begin{pmatrix} 0 & 0 \\ 0 & \log 20 \end{pmatrix} $$
+
+For odds of twenty to one, $K$ is a constant, which moves nothing, plus $\log 20 \approx 2.996$ in the upper slot. That entry is $E/T$, the energy gap over the temperature.
+
+$$ \frac{p_{\text{upper}}}{p_{\text{lower}}} = e^{-E/T} $$
+
+Thermal odds, with $T$ in energy units. Halve $T$ at fixed $E$ and 20 to 1 becomes 400 to 1, so the entry doubles: $\log 400 \approx 5.99$. A thermometer supplies the scale.
 
 Link: https://floatingpragma.ai/faq/#what-is-temperature. Read more: [Chapter 21: Why Does Time Feel Like It's Moving?](https://oph-book.floatingpragma.ai/chapter/chapter-21), [Chapter 22: Why Do All the Clocks Agree?](https://oph-book.floatingpragma.ai/chapter/chapter-22).
 
@@ -524,11 +618,37 @@ Link: https://floatingpragma.ai/faq/#is-time-an-illusion. Read more: [Chapter 21
 
 Clocks lower in a gravitational field run slow because a settled region, one with nothing left to repair, shares one internal flow of time, and each place turns that flow into local seconds through its own temperature. In 1930 Richard Tolman and Paul Ehrenfest showed that a gas settled in a gravitational field is warmer at the bottom than at the top, by exactly the factor by which clocks at the bottom run slow. Temperature is how fast the shared flow runs against a local clock, so the warmer bottom gets fewer local seconds per step of the flow. In 1960 Robert Pound and Glen Rebka measured the difference across a 22.5-meter Harvard tower at 2.56 parts in 10¹⁵. Navigation satellites sit higher, where the settled state is colder, and their clocks gain forty-five microseconds a day.
 
+Figure: Pound and Rebka's 1960 tower at Harvard. Gamma rays fell 22.5 meters from a source at the top to an absorber at the bottom and arrived shifted by 2.56 parts in 10¹⁵. A settled state is warmer at the bottom, where clocks run slow by the same factor.
+
+$$ T\,\sqrt{g_{00}} = \text{const} \quad\Longrightarrow\quad \frac{T_{\text{bottom}}}{T_{\text{top}}} \approx 1 + \frac{g h}{c^2} $$
+
+Tolman and Ehrenfest, 1930: in a settled state the local temperature $T$ times the clock-rate factor $\sqrt{g_{00}}$ is the same everywhere. A height $h$ lower in gravity $g$ is warmer by exactly the factor by which clocks there run slow.
+
+$$ \frac{\Delta f}{f} = \frac{g h}{c^2} = \frac{9.81 \times 22.5}{(3.00 \times 10^{8})^{2}} \approx 2.5 \times 10^{-15} $$
+
+The predicted frequency shift across the 22.5 m tower. Pound and Rebka measured $2.56 \times 10^{-15}$, give or take $0.25 \times 10^{-15}$, over ten days of counting.
+
+$$ \underbrace{+45}_{\text{height}}\;\underbrace{-\,7}_{\text{speed}} \;=\; +38\ \mu\text{s per day} $$
+
+Navigation satellite clocks: higher up, where the settled state is colder, they gain about 45 microseconds a day; their orbital speed costs about 7. Without correcting the net gain, positions would drift by about ten kilometers a day.
+
 Link: https://floatingpragma.ai/faq/#why-does-gravity-slow-time. Read more: [Chapter 22: Why Do All the Clocks Agree?](https://oph-book.floatingpragma.ai/chapter/chapter-22), [Chapter 34: Why Was Newton Right for Two Hundred Years?](https://oph-book.floatingpragma.ai/chapter/chapter-34), [Prologue: No Source Code, No Documentation](https://oph-book.floatingpragma.ai/chapter/prologue).
 
 ### Why is there only one dimension of time?
 
 Because every clock reads one and the same parameter, and that parameter enters the laws of motion with the opposite sign from the three space directions. Time in OPH is the count of repairs meeting a region along one continuing history. A tally, a wave, a light signal and a region's own flow all read that single count, with conversion factors fixed by the seams and the temperature. Space has three directions because each carrier's twelve readings split into bands under repair, and only the slowest band, three directions wide, lasts long enough for separated observers to compare it. Write the action for waves running through the records and the three space directions enter with positive coefficients. The wave is second order in the clock and its spatial operator is positive, so the clock direction takes the opposite sign. The result is the minus, plus, plus, plus signature of special relativity, with one time direction and three of space.
+
+$$ S = \frac{1}{2}\int \Big( \dot\phi^{\,2} - \phi\,\big(A - \partial_r^{2}\big)\,\phi \Big)\,dt $$
+
+The action of a wave $\phi$ on the records. $A$ is the screen's positive operator (two directions), $r$ the depth direction, and the dot is the derivative in the clock count. The clock term enters with one sign, all three space directions with the other.
+
+$$ \omega = \sqrt{\omega_A^{2} + \omega_r^{2}} $$
+
+Each tick drives two pulses that do not commute, one at the screen frequency $\omega_A$ and one at the depth frequency $\omega_r$. They combine like the sides of a right triangle: the dispersion law of a wave with one speed in three directions.
+
+$$ ds^2 = -c^2\,dt^2 + dx^2 + dy^2 + dz^2 $$
+
+The coefficients of that action form a metric with signature minus, plus, plus, plus: one time direction and three of space, the spacetime of special relativity.
 
 Link: https://floatingpragma.ai/faq/#why-only-one-time-dimension. Read more: [Chapter 22: Why Do All the Clocks Agree?](https://oph-book.floatingpragma.ai/chapter/chapter-22), [Chapter 17: Why Is There a Speed Limit?](https://oph-book.floatingpragma.ai/chapter/chapter-17), [Chapter 15: Why Does Space Have Three Directions?](https://oph-book.floatingpragma.ai/chapter/chapter-15).
 
@@ -544,6 +664,16 @@ Link: https://floatingpragma.ai/faq/#is-everything-predestined. Read more: [Chap
 
 The twins follow different paths through spacetime and can accumulate different proper times between their meetings. The apparent contradiction comes from treating each twin's entire trip as one interchangeable inertial frame; the turnaround and the comparison of distant events must be included. OPH's task is to reconstruct compatible physical clock readings along those paths from one observer history. Event counts or logical dependency depth alone do not supply the measured aging. Where the construction realizes relativistic proper time, it should reproduce the familiar result, rather than replace it with a preferred global stopwatch. The twin paradox is a demand for consistent clock comparisons, not evidence that one observer's real experience must be an illusion.
 
+Figure: The twins part at one meeting and rejoin at another. The home path ages 10 years. The traveller goes 4 light-years out and back at 0.8 c and ages 6. Each clock reads the proper time of its own path between the same two meetings.
+
+$$ \tau = \int \sqrt{1 - \frac{v(t)^2}{c^2}}\;dt $$
+
+Proper time $\tau$ is what a clock carried along a path reads, with $v(t)$ its speed in the home frame. The straight, unaccelerated path between two meetings has the largest $\tau$.
+
+$$ c\,\tau_{\text{leg}} = \sqrt{(c\,t)^2 - x^2} = \sqrt{5^2 - 4^2}\ \text{ly} = 3\ \text{ly} $$
+
+Each leg lasts $t = 5$ years at home and covers $x = 4$ light-years, so the traveller's clock reads 3 years per leg, 6 in all, against 10 at home.
+
 See also: Why do moving clocks run slow? (https://floatingpragma.ai/faq/#why-do-moving-clocks-run-slow), Why do all clocks agree? (https://floatingpragma.ai/faq/#why-do-all-clocks-agree), Is there a universal "now"? (https://floatingpragma.ai/faq/#is-there-a-universal-now)
 
 Link: https://floatingpragma.ai/faq/#twin-paradox. Read more: [Chapter 17: Why Is There a Speed Limit?](https://oph-book.floatingpragma.ai/chapter/chapter-17), [Chapter 22: Why Do All the Clocks Agree?](https://oph-book.floatingpragma.ai/chapter/chapter-22), [Chapter 25: Why Does Gravity Look Like Geometry?](https://oph-book.floatingpragma.ai/chapter/chapter-25).
@@ -554,11 +684,35 @@ Link: https://floatingpragma.ai/faq/#twin-paradox. Read more: [Chapter 17: Why I
 
 Space is a pattern in a tally of comparisons, with no container underneath it. Observers meet at shared boundaries, and distance is how many comparisons separate two of them. Each piece of the world has twelve readings, one per port, and repair splits them into bands that fade at different rates, and only the slowest band lasts long enough for two observers to compare a position in it. That band has three directions. An observer's position is six whole numbers, one per pair of opposite ports, each counting comparisons out through one port less those in through its opposite. Those points crowd in everywhere, and filling in their limits, as the real numbers fill the gaps between fractions, gives smooth continuous space. The only geometry put in was a list of which port is wired to which.
 
+Figure: Each pair of opposite ports gives one counter: comparisons out through one port less those in through the other. Six whole numbers fix a point in the three-direction slow band, one step per comparison along an axis. Such points crowd in everywhere, and filling in their limits gives continuous space.
+
+$$ n_k = N^{\text{out}}_{k} - N^{\text{in}}_{\bar{k}} \in \mathbb{Z}, \qquad k = 1, \dots, 6 $$
+
+$N^{\text{out}}_{k}$ counts comparisons completed out through port $k$, $N^{\text{in}}_{\bar{k}}$ those coming in through the port opposite it. Six axes give six whole-number counters, and that list is everything an observer holds about where it is.
+
+$$ \cos\theta_{ij} \in \left\{ 1,\ \tfrac{1}{\sqrt{5}},\ -\tfrac{1}{\sqrt{5}},\ -1 \right\} $$
+
+The angles between the ports' shadows in the slow band, for a port with itself, with a neighbour across a seam, two seams away, and opposite. The table has rank 3. Since $\sqrt{5}$ is irrational, distinct tallies land on distinct points.
+
 Link: https://floatingpragma.ai/faq/#what-is-space. Read more: [Chapter 15: Why Does Space Have Three Directions?](https://oph-book.floatingpragma.ai/chapter/chapter-15), [Chapter 12: Why Is the World Made of Relations and Not of Things?](https://oph-book.floatingpragma.ai/chapter/chapter-12), [Appendix A: Eighteen Questions](https://oph-book.floatingpragma.ai/chapter/appendix-a).
 
 ### Why does space have three dimensions?
 
 Space has three directions because three is the width of the one pattern that lasts long enough to hold a position. Each piece of the world has twelve readings, and the repair that settles disagreements between them splits into bands that fade at fixed rates per pass: three directions keep 0.9539 of their content, five keep 0.9, and three keep 0.8794. The wiring allows no other rates. The quickest question an observer can put to the far side and get answered takes six repairs, longer than the fast band's half-life, so fast content has drained before anyone can confirm it. A position has to be something two observers can compare and both get. Only the slowest band survives that, like the lowest note left ringing after a struck bell, and it is three wide.
+
+Figure: Disagreement spread evenly over the eleven readable directions, followed pass by pass. The slow band starts with 27 percent and holds 42 percent after ten passes, 73 after thirty and 94 after sixty. The dashed line marks six repairs, the quickest question and answer across the patch.
+
+$$ 12 = 1 + 3 + 3 + 5 $$
+
+The twelve port readings split into pieces that the sixty rotations of the wiring never mix. The piece of size 1, all ports shifting together, carries no comparison and drops out. The other three are the bands.
+
+$$ \lambda_{\text{slow}} = \frac{55+\sqrt{5}}{60} \approx 0.9539, \quad \lambda_{\text{mid}} = \frac{9}{10}, \quad \lambda_{\text{fast}} = \frac{55-\sqrt{5}}{60} \approx 0.8794 $$
+
+The fraction of a disagreement each band keeps per pass of repair. The slow and fast bands are 3 directions wide, the middle band 5. The $55/60$ is the eleven twelfths a port keeps of its own reading; $\sqrt{5}/60$ comes from its five neighbours.
+
+$$ n_{1/2} = \frac{\ln 2}{-\ln \lambda} \approx 14.7,\ \ 6.6,\ \ 5.4 $$
+
+Passes needed to halve each band: 14.7 for the slow band, 6.6 for the middle, 5.4 for the fast. A round trip between the two farthest ports takes 6 repairs, so more than half the fast content is gone before an answer returns.
 
 Link: https://floatingpragma.ai/faq/#why-does-space-have-three-dimensions. Read more: [Chapter 15: Why Does Space Have Three Directions?](https://oph-book.floatingpragma.ai/chapter/chapter-15).
 
@@ -572,17 +726,43 @@ Link: https://floatingpragma.ai/faq/#where-is-everything-happening. Read more: [
 
 The smallest piece of reality is a patch, a machine small enough to describe completely, with a bounded amount of state, a set of interfaces and a finite list of allowed moves. Each interface is a port, and a piece of the world has twelve. What a port shows outside is a packet, one reading from a finite set. Two ports joined make a seam, the only place a disagreement can be detected. All the readings an observer can get form its screen, and the part of its state that later moves must leave alone is its record. A patch runs one loop: read its ports, compare with its neighbors, choose a move from a printed menu, write a record, expose the result, and let anyone verify it. An outsider learns only what the boundary shows.
 
+Figure: A patch is a finite machine with twelve ports on its boundary and a protected record inside. It repeats one loop of six operations, from reading its ports to letting anyone verify the result. Nothing behind the ports is visible to a neighbour.
+
 Link: https://floatingpragma.ai/faq/#what-is-reality-made-of-at-the-smallest-scale. Read more: [Chapter 13: What Is One Piece of Reality Actually Made Of?](https://oph-book.floatingpragma.ai/chapter/chapter-13), [Chapter 14: Why Twelve?](https://oph-book.floatingpragma.ai/chapter/chapter-14).
 
 ### Why can nothing go faster than light?
 
 Nothing outruns light because influence spreads by reading, and every read has a maximum reach. Each record in the world writes its next value after reading the records within a fixed reach of it, round by round. After five rounds an event's influence has got at most five reaches away, and everything closer than that can be reached. As the records get finer, that region of influence closes onto a single cone, the light cone, whose speed is one reach per round. Quoted in meters per second, it is the speed of light. Light carries nothing extra and moves at the full limit. Everything with mass carries a second part that has to be re-asserted every round or the thing stops being there, and paying for that holds it below the limit.
 
+Figure: Each round, every record reads the records within one reach of it in the round before. Influence from one event (white) never passes the outer cone and fills everything inside the inner one. As the records get finer the two cones close onto one, the light cone.
+
+$$ B\big(n\,(R - 2g)\big) \;\subseteq\; \text{influence after } n \text{ rounds} \;\subseteq\; B(nR) $$
+
+$R$ is the reach of one read, $g$ the largest distance from any point to a record, $B(r)$ the ball of radius $r$. As $g/R \to 0$ both bounds close onto one cone with speed $R$ per round, the speed of light.
+
+$$ v = \frac{p}{E} = \frac{p}{\sqrt{m^2 + p^2}} < 1 \quad (m > 0,\ c = 1) $$
+
+Anything with mass $m$ moves at speed $v$ below one for every momentum $p$; only $m = 0$ reaches the limit. Mass is the part re-asserted every round, and paying for it keeps the speed below the limit.
+
 Link: https://floatingpragma.ai/faq/#why-can-nothing-go-faster-than-light. Read more: [Chapter 17: Why Is There a Speed Limit?](https://oph-book.floatingpragma.ai/chapter/chapter-17), [Chapter 28: What Is a Particle, What Is a Wave, and Why Does It Look Like Both?](https://oph-book.floatingpragma.ai/chapter/chapter-28).
 
 ### Why is the speed of light the same for everyone?
 
 The speed of light is the same for everyone because it is a conversion between two counts every observer keeps, and motion has nothing in it that could change the conversion. Each observer measures distance as how long its own clock runs before a disturbance somewhere else can be answered, so the speed of the answer comes out as one, by construction. Motion does change how an observer sees the sky. Stars crowd toward the direction of travel, as James Bradley found in starlight in the 1720s. Every such shift keeps the angles at which lines cross, and the maps that keep those angles are exactly the transformations of special relativity. They leave the light cone where it was. Since 1983 the meter has been defined by light, so the number itself is a choice of units.
+
+Figure: The same twenty stars seen at rest and while moving at 0.6 c. Motion crowds them toward the direction of travel and thins them behind. Crossing angles survive the shift, and the maps that keep them are the Lorentz transformations, which leave the light cone in place.
+
+$$ \det\begin{pmatrix} t+z & x-iy \\ x+iy & t-z \end{pmatrix} = t^2 - x^2 - y^2 - z^2 $$
+
+One time and three distances in a two-by-two table, with light covering one unit per unit time. Observers in relative motion agree on the determinant. Where it vanishes lies the light cone, so all of them find one cone and one speed.
+
+$$ \alpha \approx \frac{v}{c} = \frac{30\ \text{km/s}}{300{,}000\ \text{km/s}} = 10^{-4} \approx 20.5'' $$
+
+Bradley's aberration: $v$ is the Earth's orbital speed and $\alpha$ the angle by which starlight tilts toward the direction of motion. The same ratio in June and December means light's speed did not change with the Earth's.
+
+$$ c = 299\,792\,458\ \mathrm{m/s} $$
+
+Exact by definition since 1983, when the meter became the distance light covers in $1/299\,792\,458$ of a second. The value is a choice of units.
 
 Link: https://floatingpragma.ai/faq/#why-is-the-speed-of-light-the-same-for-everyone. Read more: [Chapter 17: Why Is There a Speed Limit?](https://oph-book.floatingpragma.ai/chapter/chapter-17), [Chapter 22: Why Do All the Clocks Agree?](https://oph-book.floatingpragma.ai/chapter/chapter-22).
 
@@ -595,6 +775,16 @@ Link: https://floatingpragma.ai/faq/#what-is-light. Read more: [Chapter 28: What
 ### What is the holographic principle?
 
 The holographic principle says the most information a region of space can hold is fixed by the area of the surface around it, and the volume inside does not enter. Everything the outside world can learn about a region arrives through that surface, so two interiors showing the same readings all over the boundary are one state to everybody outside. The boundary is tiled with identical patches, each holding the same finite amount, which makes a region's memory a count of the patches on its edge. Double the shelving in a sealed room and its capacity stays put, because the walls have not moved. Black holes fixed the exchange rate at one natural unit of memory per four Planck squares, each a square 1.6×10⁻³⁵ meters on a side. A square ten centimeters across holds about 10⁶⁷ units.
+
+Figure: A sealed room holds what the patches on its walls allow. Double the shelving inside and the capacity stays put. Two interiors that give the same readings all over the boundary are one state to anyone outside.
+
+$$ S_{\max} = \frac{A}{4\,\ell_P^{2}}, \qquad \ell_P = \sqrt{\frac{\hbar G}{c^{3}}} \approx 1.6 \times 10^{-35}\ \mathrm{m} $$
+
+The most a region can hold, in natural units, is the area $A$ of its boundary divided by four Planck squares. The volume inside does not appear. Black holes fixed the quarter; $\ell_P$ is the Planck length.
+
+$$ \frac{(0.1\ \mathrm{m})^{2}}{4\,\ell_P^{2}} \approx 10^{67} $$
+
+A square ten centimeters on a side, drawn on any boundary, holds about $10^{67}$ natural units of memory.
 
 Link: https://floatingpragma.ai/faq/#what-is-the-holographic-principle. Read more: [Chapter 24: Why Does a Region's Memory Scale With Its Surface?](https://oph-book.floatingpragma.ai/chapter/chapter-24), [Chapter 13: What Is One Piece of Reality Actually Made Of?](https://oph-book.floatingpragma.ai/chapter/chapter-13).
 
@@ -612,6 +802,18 @@ Link: https://floatingpragma.ai/faq/#what-is-spacetime. Read more: [Chapter 17: 
 
 A finite record interface does not automatically imply a universal smallest spatial distance. OPH's native constructions use finite carriers, and some physical interpretations attach a basic area to a boundary's record capacity. Establishing its value in physical units requires a gravitational and geometric dictionary. The Planck length is a scale built from measured constants; that fact alone does not prove that space is a lattice with that spacing. Effective positions may be continuous even when the underlying record process is discrete. Zeno's subdivisions then belong to the mathematical description, rather than a list of separate operations the runner must execute. OPH must show how its finite processes reproduce actual ruler and clock measurements before claiming a measured minimum length.
 
+$$ \ell_P = \sqrt{\frac{\hbar G}{c^{3}}} \approx 1.6 \times 10^{-35}\ \mathrm{m} $$
+
+The Planck length, combined from Planck's constant $\hbar$, Newton's constant $G$ and the speed of light $c$. It is a scale built from measured constants. By itself it says nothing about space being a lattice with that spacing.
+
+$$ S = \frac{A}{4\,\ell_P^{2}} $$
+
+Bekenstein and Hawking: a horizon's entropy $S$ is a quarter of its area $A$ counted in Planck areas. What a boundary can hold is set by its area, with no reference to the volume inside.
+
+$$ 4\,\ell_P^{2} \approx 1.04 \times 10^{-69}\ \mathrm{m}^{2} $$
+
+Read in reverse, one natural unit of a boundary's memory is worth four Planck areas, about $9.6 \times 10^{68}$ units per square meter. That is a basic area for record capacity, a separate matter from a smallest distance between positions.
+
 See also: How does OPH answer Zeno’s paradox? (https://floatingpragma.ai/faq/#zenos-paradox), How can continuous space and smooth motion emerge from discrete records? (https://floatingpragma.ai/faq/#continuum-from-discrete)
 
 Link: https://floatingpragma.ai/faq/#is-there-a-smallest-length. Read more: [Chapter 24: Why Does a Region's Memory Scale With Its Surface?](https://oph-book.floatingpragma.ai/chapter/chapter-24), [Chapter 15: Why Does Space Have Three Directions?](https://oph-book.floatingpragma.ai/chapter/chapter-15), [Chapter 17: Why Is There a Speed Limit?](https://oph-book.floatingpragma.ai/chapter/chapter-17).
@@ -620,11 +822,31 @@ Link: https://floatingpragma.ai/faq/#is-there-a-smallest-length. Read more: [Cha
 
 Empty space reads warm to anyone accelerating because, measured against the motion that observer rides, its state meets the exact condition that defines a heat bath. Keep accelerating and light from far enough behind never catches you, so a boundary forms past which you can never ask anything. Every state determines an internal flow, its own clock. For empty space on your side of that boundary, Joseph Bisognano and Eyvind Wichmann proved in 1975 and 1976 that the flow is the very motion carrying you along, in step with your wristwatch. Bill Unruh calculated in 1976 what a detector would read. At rest in empty space it never fires. Accelerated, it fires as if sitting in radiation at a temperature fixed by the acceleration alone. One degree takes about twenty-five billion billion times Earth's gravity, sustained.
 
+Figure: A steadily accelerating observer traces a hyperbola. Light starting beyond the diagonal horizon never catches up, so that region is out of reach. Against the observer's own motion, empty space on the near side reads as a heat bath at a temperature set by the acceleration.
+
+$$ T = \frac{\hbar\, a}{2\pi c\, k_B} \approx 4 \times 10^{-21}\ \mathrm{K} \times \frac{a}{1\ \mathrm{m/s^2}} $$
+
+Unruh's temperature (1976) for proper acceleration $a$. One kelvin takes $a \approx 2.5 \times 10^{20}\ \mathrm{m/s^2}$, about $2.5 \times 10^{19}$ times Earth's gravity, sustained.
+
+$$ K = -\log \rho_{\text{vac}} = 2\pi B $$
+
+Bisognano and Wichmann (1975, 1976): for the vacuum on the observer's side of the horizon, the state's own flow is generated by the boost $B$ that carries the observer. Rescaled to the observer's proper time, the $2\pi$ gives Unruh's $T$.
+
 Link: https://floatingpragma.ai/faq/#why-is-empty-space-warm-when-accelerating. Read more: [Chapter 21: Why Does Time Feel Like It's Moving?](https://oph-book.floatingpragma.ai/chapter/chapter-21), [Chapter 17: Why Is There a Speed Limit?](https://oph-book.floatingpragma.ai/chapter/chapter-17).
 
 ### How can continuous space and smooth motion emerge from discrete records?
 
 A smooth temperature field can describe many individual molecular events without making temperature a separate substance. OPH proposes an analogous relation between finite observer records and effective fields, geometry and clocks. Larger-scale comparisons can approach smooth laws when the construction supplies an appropriate refinement and controls the error in the observables. Merely drawing a graph finely is insufficient: the limit must preserve causal behavior, quantum responses and compatible ruler and clock readings. Different discrete models can have different limits, including ones with unwanted preferred directions. Continuum mathematics therefore describes collective behavior where the stated bounds support it. It need not be a literal inventory of infinitely many elementary points traversed by each moving object.
+
+Figure: Records of one quantity at three spacings, placed irregularly. As the spacing shrinks, the line through the records approaches the smooth curve. The curve describes the records to within a stated error and needs no infinite list of points.
+
+$$ \frac{1}{2} + \frac{1}{4} + \cdots + \frac{1}{2^n} = 1 - \frac{1}{2^n} $$
+
+Zeno's halves added up. Every total falls short of 1 by exactly the last piece. For any tolerance some finite stage gets inside it and every later stage stays inside, which is the whole meaning of the infinite sum.
+
+$$ N \propto \delta^{-3} $$
+
+Records packed into a fixed region with minimum separation $\delta$, added until no more fit. Their number $N$ grows as the inverse cube of the separation, the three directions of space showing up in a count.
 
 See also: Is reality digital? (https://floatingpragma.ai/faq/#is-reality-digital), How does OPH answer Zeno’s paradox? (https://floatingpragma.ai/faq/#zenos-paradox), Is there a smallest length in nature? (https://floatingpragma.ai/faq/#is-there-a-smallest-length)
 
@@ -644,11 +866,35 @@ Link: https://floatingpragma.ai/faq/#why-is-the-world-quantum. Read more: [Chapt
 
 You can't know both because position and momentum are two questions with no joint answer. Socks then shoes is a different operation from shoes then socks, and asking position then momentum likewise differs from asking momentum then position. The difference between the two orders, called the commutator, is a fixed amount with Planck's constant in it. No apparatus appears in that statement, so no better apparatus shrinks it. The uncertainty relation reads that amount as a floor under the spread in position times the spread in momentum. Squeeze an electron into an atom-sized region, a tenth of a nanometer across, and the spread in its speed cannot drop below about six hundred kilometers a second. There is no state of the electron with a sharp position and a sharp speed, so the measurement has nothing to disturb.
 
+Figure: For an electron the floor under position spread times momentum spread becomes a curve. Below it there is no state at all. Confined to a tenth of a nanometer, the electron's speed spread is at least about 580 kilometers a second.
+
+$$ [\hat{x}, \hat{p}] = \hat{x}\hat{p} - \hat{p}\hat{x} = i\hbar $$
+
+The commutator of position and momentum: asking in one order minus asking in the other. It is a fixed amount set by Planck's constant $\hbar$, and no apparatus appears in it.
+
+$$ \Delta x\,\Delta p \ge \frac{\hbar}{2} $$
+
+The uncertainty relation reads that commutator as a floor under the product of the spreads. For an electron with $\Delta x = 0.1$ nm it gives $\Delta v \ge \hbar/(2 m_e \Delta x) \approx 580$ km/s.
+
+$$ US - SU = \begin{pmatrix} 0 & 2 \\ -2 & 0 \end{pmatrix}, \qquad U = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix},\; S = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix} $$
+
+The same refusal on a spin: $U$ asks up or down, $S$ asks sideways. The two orders come out as exact opposites, entry for entry, so the difference never vanishes.
+
 Link: https://floatingpragma.ai/faq/#uncertainty-principle. Read more: [Chapter 19: Why Can't You Ask Everything At Once?](https://oph-book.floatingpragma.ai/chapter/chapter-19).
 
 ### What is quantum entanglement?
 
 Entanglement is definiteness that lives in the relation between two systems and in neither one alone. A playing card shows the idea. “The seven of hearts” splits into a fact about the suit and a fact about the rank. “The red seven or the black eight” fixes how color and rank go together while leaving both unsettled, and learning one hands you the other. Most joint descriptions are of that second kind. Cut an entangled pair in two and each half on its own comes back vague, and that vagueness measures how much the cut severed. Quantum pairs go one step further. There is no hidden face underneath the relation for it to describe, which is why entangled pairs agree more often than any pre-arranged answer sheet allows. The relation is the object.
+
+Figure: Left, a description that splits into a fact about color and a fact about rank. Right, one that fixes only how color and rank go together. Each half alone is fifty-fifty, and learning one hands you the other.
+
+$$ |\Psi\rangle = \tfrac{1}{\sqrt{2}}\big(|{\uparrow}\rangle|{\downarrow}\rangle - |{\downarrow}\rangle|{\uparrow}\rangle\big) \;\neq\; |a\rangle \otimes |b\rangle $$
+
+The perfectly opposed pair: whichever direction both sides ask along, the two answers come out opposite. No choice of single-particle states $a$ and $b$ writes it as a product.
+
+$$ \rho_A = \mathrm{Tr}_B\,|\Psi\rangle\langle\Psi| = \tfrac{1}{2}\,\mathbb{1}, \qquad S(\rho_A) = S(\rho_B) = 1\ \text{bit} $$
+
+Average over one half and the other comes back maximally vague. Its entropy, equal on the two sides of the cut, measures how much the cut severed.
 
 Link: https://floatingpragma.ai/faq/#what-is-quantum-entanglement. Read more: [Chapter 20: Why Does Nature Cheat, But Only By Exactly 2√2?](https://oph-book.floatingpragma.ai/chapter/chapter-20), [Chapter 24: Why Does a Region's Memory Scale With Its Surface?](https://oph-book.floatingpragma.ai/chapter/chapter-24).
 
@@ -661,6 +907,20 @@ Link: https://floatingpragma.ai/faq/#is-entanglement-spooky-action-at-a-distance
 ### Why do quantum correlations beat classical physics, but only by 2√2?
 
 Quantum correlations beat classical ones because each side's two questions refuse to be answered together, and they stop at 2√2 because that refusal has a maximum size. In the standard test, two separated players each get one of two questions, and the best any pre-agreed answer sheet can score is 2, which wins three rounds in four. Square the quantum score and you get 4 plus a product of two terms, each measuring how much the order of one player's two questions matters. Commuting questions make those terms vanish, leaving 2. Each term is at most 2 in size, so their product is at most 4, the square at most 8, and the score at most √8, which is 2√2, about 2.83. That wins about 85 rounds in a hundred. Boris Tsirelson found the number in 1980.
+
+Figure: Two separated players each answer one of two questions. Pre-agreed answer sheets cap the score at 2. Quantum questions reach 2√2 when Bob's directions sit an eighth of a turn from Alice's. Meeting all four demands at once would score 4.
+
+$$ S = \langle A_0B_0\rangle + \langle A_0B_1\rangle + \langle A_1B_0\rangle - \langle A_1B_1\rangle $$
+
+The score: average products of the two answers, each $\pm 1$, for the three question pairs that reward matching, minus the one pair that rewards differing. Any answer sheet gives $|S| \le 2$.
+
+$$ \mathcal{S}^2 = 4 + [A_0, A_1]\,[B_1, B_0] $$
+
+Squaring the score operator leaves 4 plus a product of two commutators, one from each side. Commuting questions switch the second term off. Each commutator has size at most 2, so $\mathcal{S}^2 \le 8$ and $|S| \le 2\sqrt{2}$.
+
+$$ P_{\text{win}} = \frac{1}{2} + \frac{S}{8} $$
+
+A score $S$ wins a round with this probability: 75 in 100 at $S = 2$ and about 85 in 100 at $S = 2\sqrt{2}$, the bound Boris Tsirelson found in 1980.
 
 Link: https://floatingpragma.ai/faq/#why-only-2-root-2. Read more: [Chapter 20: Why Does Nature Cheat, But Only By Exactly 2√2?](https://oph-book.floatingpragma.ai/chapter/chapter-20).
 
@@ -712,11 +972,33 @@ Link: https://floatingpragma.ai/faq/#what-is-a-quantum-field. Read more: [Chapte
 
 A superposition is a state that carries an amplitude for each answer to a question at once, numbers whose squares are the odds and which can cancel where odds never can. An atom that a sideways magnet sent left carries one amplitude for up and one for down, and asked up or down, half such atoms go each way. A beam secretly made of half up atoms and half down atoms gives the same fifty-fifty on every up-or-down question. Write each beam as a two-by-two table of numbers and the tables agree everywhere except the corners, which hold the whole difference. Bring the split paths back together and the superposition rebuilds the original beam, while the secret mixture cancels nowhere. Dark bands in an interference pattern are places where amplitudes of opposite sign met and left nothing.
 
+$$ |\psi\rangle = \tfrac{1}{\sqrt{2}}\big(|{\uparrow}\rangle + |{\downarrow}\rangle\big), \qquad p_{\uparrow} = p_{\downarrow} = \Big(\tfrac{1}{\sqrt{2}}\Big)^2 = \tfrac{1}{2} $$
+
+An atom sent left by a sideways magnet, written in up-down terms: one amplitude for up, one for down. The odds are their squares, half each way.
+
+$$ \rho_{\text{super}} = \begin{pmatrix} \tfrac12 & \tfrac12 \\ \tfrac12 & \tfrac12 \end{pmatrix}, \qquad \rho_{\text{mix}} = \begin{pmatrix} \tfrac12 & 0 \\ 0 & \tfrac12 \end{pmatrix} $$
+
+The superposed beam and the secret half-and-half mixture as two-by-two tables. Every up-or-down question, scored by $p = \mathrm{Tr}(\rho P)$, gets the same odds from both. The corners hold the whole difference.
+
+$$ |a + (-a)|^2 = 0 \qquad\text{while}\qquad |a|^2 + |{-a}|^2 = 2|a|^2 $$
+
+Amplitudes add before squaring, odds add after. Two amplitudes of opposite sign meeting give zero, a dark band. A mixture adds odds and cancels nowhere.
+
 Link: https://floatingpragma.ai/faq/#what-is-superposition. Read more: [Chapter 19: Why Can't You Ask Everything At Once?](https://oph-book.floatingpragma.ai/chapter/chapter-19).
 
 ### Why does watching which slit a particle goes through destroy the interference pattern?
 
 Checking the route writes a record, and the stripes form only where no record of the route exists. While nothing records which path a particle took, the amplitudes for the two paths add and cancel. A which-path detector ties each path to its own detector state. Make those states perfectly distinguishable and the stripes vanish. Make them partly distinguishable and the stripes partly fade, and for evenly split paths the contrast left equals the overlap of the two detector states. Repair itself is such a detector. Put an empty seam, the boundary two neighbors share, and a seam holding one unit into superposition, then let one repair act. Recording how many units crossed leaves most of the pattern. Writing the seam's parity as well, whether its count is even or odd, makes the bands go flat at three eighths.
+
+Figure: The same screen under three kinds of route record. With no record the amplitudes of the two paths add and cancel into stripes. A partial record leaves stripes whose contrast equals the overlap of the two detector states. A complete record leaves one smooth hump.
+
+$$ I(x) \propto 1 + V \cos\varphi(x), \qquad V = |\langle D_1 \,|\, D_2 \rangle| $$
+
+Screen intensity for evenly split paths. $\varphi(x)$ is the phase difference between the paths at screen point $x$; $D_1$ and $D_2$ are the detector states tied to each path. Their overlap $V$ is the stripe contrast.
+
+$$ P = \frac{3}{8} + \frac{c}{2} $$
+
+One repair on a superposition of an empty seam and a seam holding one unit. $P$ is the chance the superposition comes back, $c$ the coherence the repair leaves. A count-only record gives about 0.73; adding the parity gives $c = 0$.
 
 Link: https://floatingpragma.ai/faq/#why-does-watching-the-slit-destroy-the-pattern. Read more: [Chapter 28: What Is a Particle, What Is a Wave, and Why Does It Look Like Both?](https://oph-book.floatingpragma.ai/chapter/chapter-28), [Chapter 19: Why Can't You Ask Everything At Once?](https://oph-book.floatingpragma.ai/chapter/chapter-19), [Chapter 3: Why Would a Universe Need Anybody In It?](https://oph-book.floatingpragma.ai/chapter/chapter-3).
 
@@ -729,6 +1011,20 @@ Link: https://floatingpragma.ai/faq/#does-observing-change-what-is-observed. Rea
 ### What is the Born rule?
 
 The Born rule says the probability of a quantum outcome is the square of its amplitude, and it is the only odds rule that gives a question the same weight however it is asked. Max Born's 1926 paper on collisions gave the bare amplitude, corrected to the square in a footnote. Textbooks teach the squaring as a postulate. Andrew Gleason showed in 1957 that any scoring of yes-or-no questions between zero and one, with the sure question scoring one and complete lists of exclusive answers adding up, is the Born rule for exactly one state. Paul Busch covered two-outcome systems in 2003. A finite table of results never picks the rule. A counterfeit can match a table exactly and miss outside it by three parts in 256. What picks the square is that compatible answers add in every setting.
+
+Figure: A state drawn as an arrow of length one. Its shadows on the two answers are the amplitudes a and b, and the odds are their squares. Turn the axes to ask a different question and the squares again add to one.
+
+$$ p = |\langle \phi \,|\, \psi \rangle|^2 $$
+
+The Born rule: a system in state $\psi$ answers yes to the question “is it $\phi$?” with probability equal to the squared size of the amplitude $\langle\phi|\psi\rangle$.
+
+$$ p = \mathrm{Tr}(\rho P) $$
+
+Gleason's form (1957): any scoring of yes-or-no questions $P$ that lies between 0 and 1, gives the sure question 1 and adds up over complete lists of exclusive answers is this trace against exactly one density matrix $\rho$.
+
+$$ 2 \times \frac{143}{512} = \frac{143}{256} \;\neq\; \frac{35}{64} = \frac{140}{256} $$
+
+A counterfeit rule matches a finite table of results exactly. Outside the table it scores a blunt question at $143/512$ and two copies of it at $35/64$, where adding up demands $143/256$.
 
 Link: https://floatingpragma.ai/faq/#what-is-the-born-rule. Read more: [Chapter 19: Why Can't You Ask Everything At Once?](https://oph-book.floatingpragma.ai/chapter/chapter-19).
 
@@ -768,17 +1064,51 @@ Link: https://floatingpragma.ai/faq/#what-is-energy. Read more: [Chapter 18: Why
 
 E = mc² holds because mass is energy that stays put, a standing cost of repair on the region's own clock. A region's energy is how fast its records are being worked through by repair. Mass is the cost of a pattern that keeps re-asserting itself, like the heap of water John Scott Russell chased along a canal, which held its shape while the water under it changed. Write a region's energy and its three components of momentum into a two-by-two table of numbers, and the table's determinant, a quantity every observer agrees on, is the square of the mass. Set the momentum to zero and energy equals mass. Restore the speed of light and E = mc². Because the conversion is squared, a helium nucleus's tiny mass shortfall against its four parts releases 28.3 million electronvolts.
 
+Figure: Energy against momentum in units where c = 1. Every state of one mass lies on the solid curve; its lowest point, at zero momentum, is E = m. Light rides the dashed lines E = |p|, which the curve approaches and never reaches.
+
+$$ \det\begin{pmatrix} E + p_z & p_x - i p_y \\ p_x + i p_y & E - p_z \end{pmatrix} = E^2 - p^2 = m^2 $$
+
+A region's energy $E$ and momentum $p$ written into the same two-by-two table as time and distance. Every observer computes the same determinant, and that shared value is the mass squared, in units with $c = 1$.
+
+$$ p = 0 \;\Longrightarrow\; E = m c^2 $$
+
+At rest the energy is all mass. Restoring the speed of light converts mass units into energy units.
+
+$$ \Delta m\,c^2 = 0.0304\ \text{u} \times 931.5\ \tfrac{\text{MeV}}{\text{u}} \approx 28.3\ \text{MeV} $$
+
+A helium-4 nucleus weighs $0.0304$ atomic mass units less than its two protons and two neutrons. Multiplied by $c^2$ that shortfall is the 28.3 million electronvolts released when they combine.
+
 Link: https://floatingpragma.ai/faq/#why-e-equals-mc2. Read more: [Chapter 18: Why Does Anything Have Energy?](https://oph-book.floatingpragma.ai/chapter/chapter-18), [Chapter 35: What Is Anything Made Of?](https://oph-book.floatingpragma.ai/chapter/chapter-35).
 
 ### What is entropy?
 
 Entropy is the average number of yes-or-no questions it would take to say exactly which arrangement something is in. A fair coin is one bit, one question. A fair eight-sided die is three. A coin weighted nine to one comes to under half a bit, since you can usually guess. Entropy is a property of a description, of somebody's odds over the possibilities, and different odds give a different number for the same object. The same quantity turns up on five instruments built by people who did not know they were measuring one thing. An engine reads it as heat divided by temperature, a gas as Boltzmann's count of arrangements, a memory as Shannon's count of questions, a black hole as the area of its horizon, and a public record as what a settled disagreement throws away.
 
+Figure: One repair takes a seam holding 6 and 0, or any of seven splits of six units, to 3 and 3. Afterwards the seam cannot say which of the seven it held: log base 2 of 7, or 2.807 bits, has left the description.
+
+$$ H = -\sum_i p_i \log_2 p_i $$
+
+Shannon entropy in bits: the average number of yes-or-no questions needed to pin down the arrangement, given odds $p_i$. A fair coin gives 1, a fair eight-sided die 3, a nine-to-one coin 0.469.
+
+$$ \Delta S = \frac{Q}{T}, \qquad S = k_B \ln W, \qquad S = \frac{k_B\, A}{4\,\ell_P^{2}} $$
+
+Three of the five instruments: an engine reads heat $Q$ taken in at temperature $T$, a gas Boltzmann's count $W$ of arrangements, a black hole its horizon area $A$ in units of four Planck areas.
+
 Link: https://floatingpragma.ai/faq/#what-is-entropy. Read more: [Chapter 16: Why Does Time Run, and Only One Way?](https://oph-book.floatingpragma.ai/chapter/chapter-16), [Chapter 23: Why Does Writing Something Down Cost Heat?](https://oph-book.floatingpragma.ai/chapter/chapter-23).
 
 ### Why does writing information down cost heat?
 
 Writing a record costs heat because settling a question throws away the alternatives, and what is thrown away has to leave as heat. Rolf Landauer showed in 1961 that looking is free and forgetting is not. Taking two distinguishable states of a memory down to one discards a distinction, and the only exit a memory has is heat, at least 2.87×10⁻²¹ joules per bit at room temperature, less in the cold. Writing a record is the same operation. Two readings that disagree hold two possibilities, and settling them leaves one. Copying onto blank memory postpones the bill, and clearing that memory later costs the same. In 2012 a bead in an optical trap showed the heat per erasure settling onto Landauer's floor. A temperature is a count of joules per bit.
+
+Figure: A one-bit memory as a bead in a two-well trap. Resetting it takes two possible states to one, and the discarded distinction leaves as heat, at least kT ln 2 per bit. In 2012 a silica bead in an optical trap showed the heat per erasure settling onto this floor.
+
+$$ E \ge k_B T \ln 2 \approx 2.87 \times 10^{-21}\ \mathrm{J} \quad (T = 300\ \mathrm{K}) $$
+
+Landauer's bound (1961): erasing one bit at temperature $T$ releases at least this much heat. $k_B$ is Boltzmann's constant. Colder surroundings lower the floor.
+
+$$ \frac{hc/\lambda}{k_B T \ln 2} = \frac{3.61 \times 10^{-19}\ \mathrm{J}}{2.87 \times 10^{-21}\ \mathrm{J}} \approx 126 $$
+
+One photon of green light, wavelength $\lambda = 550$ nm, carries enough energy to erase about 126 bits at room temperature.
 
 Link: https://floatingpragma.ai/faq/#why-does-writing-information-cost-heat. Read more: [Chapter 23: Why Does Writing Something Down Cost Heat?](https://oph-book.floatingpragma.ai/chapter/chapter-23), [Chapter 16: Why Does Time Run, and Only One Way?](https://oph-book.floatingpragma.ai/chapter/chapter-16).
 
@@ -810,6 +1140,16 @@ Link: https://floatingpragma.ai/faq/#what-is-heat. Read more: [Chapter 23: Why D
 
 The second law says a description of a system can only drift toward the settled description, never away from it. Measure the gap as relative entropy, the extra yes-or-no questions your odds cost compared with the settled odds. Send two different messages down the same noisy channel and they come out harder to tell apart, and nothing done to both afterwards separates them again. Repair is a channel of that kind and leaves the settled state alone, so the gap only shrinks. Plain entropy is a different number and can fall. Settling a disagreement takes two possibilities to one, and that bit leaves as heat. A three-state machine that only ever steps clockwise obeys the law with a current that never dies. Started on one state, its gap falls from 1.585 bits to 0.585, then 0.085, then 0.024.
 
+Figure: A three-state machine that only ever steps clockwise: each step stays or moves on with even odds. Its settled state is a third on each. Started on state 1, its gap to the settled state falls at every step and never climbs, while a current keeps circulating.
+
+$$ D(p \,\|\, q) = \sum_i p_i \log_2 \frac{p_i}{q_i} $$
+
+Relative entropy: the extra yes-or-no questions per state that odds $p$ cost compared with the settled odds $q$. It is zero exactly when $p = q$.
+
+$$ D(\Lambda p \,\|\, \Lambda q) \le D(p \,\|\, q) $$
+
+Passing two descriptions through the same channel $\Lambda$ never makes them easier to tell apart. Repair is such a channel and leaves the settled $q$ alone, so $D(p\,\|\,q)$ only shrinks.
+
 Link: https://floatingpragma.ai/faq/#what-is-the-second-law-of-thermodynamics. Read more: [Chapter 16: Why Does Time Run, and Only One Way?](https://oph-book.floatingpragma.ai/chapter/chapter-16), [Chapter 23: Why Does Writing Something Down Cost Heat?](https://oph-book.floatingpragma.ai/chapter/chapter-23).
 
 ### Why can't anything reach absolute zero?
@@ -829,6 +1169,16 @@ Link: https://floatingpragma.ai/faq/#what-is-gravity. Read more: [Chapter 25: Wh
 ### Why does gravity look like curved spacetime?
 
 Gravity looks like geometry because it treats everything identically, which makes it a property of the place. The MICROSCOPE satellite let titanium and platinum fall around the Earth and found no difference to one part in a thousand million million. Two walkers who set off due north from the equator, a kilometer apart, meet at the pole without either turning or feeling a force. Their straight paths converge because the surface is curved, and free fall is walking straight ahead in the same sense. In OPH the geometry is read off records. Which record read which gives an order of before and after. Where the records do form a spacetime, that order fixes the light cones and the shape up to a scale that can vary from place to place, and counting records supplies that scale. Energy bends the shape if every settled region keeps its entropy balanced, because then nothing else can give. That premise is not yet shown for the repair process the observers actually run.
+
+Figure: Two walkers start a kilometer apart on the equator, both facing due north, and walk straight ahead without turning. Their paths converge at the pole because the surface is curved. Free fall is walking straight ahead in the same sense.
+
+$$ G_{ab} + \Lambda\, g_{ab} = 8\pi G\, T_{ab} $$
+
+Einstein's equation, with $c = 1$: the curvature $G_{ab}$ of the metric $g_{ab}$ answers to the energy and momentum $T_{ab}$ present. $\Lambda$ is the cosmological constant.
+
+$$ \left.\frac{\ddot V}{V}\right|_{t=0} = -4\pi G\left(\rho + \frac{p_x + p_y + p_z}{c^{2}}\right) $$
+
+Baez and Bunn's reading of the same equation: a small ball of test particles released at rest starts to shrink at a rate set by the mass density $\rho$ at its center plus the pressures in the three directions.
 
 Link: https://floatingpragma.ai/faq/#why-is-gravity-curved-spacetime. Read more: [Chapter 25: Why Does Gravity Look Like Geometry?](https://oph-book.floatingpragma.ai/chapter/chapter-25).
 
@@ -858,6 +1208,14 @@ Link: https://floatingpragma.ai/faq/#what-happens-inside-a-black-hole. Read more
 
 The black-hole information problem asks whether an initially quantum state can evolve into featureless thermal radiation that no longer retains its distinctions. Horizon entropy and the growth of area account for a thermodynamic budget; they do not alone provide a reversible map from infalling states to outgoing radiation. OPH approaches the problem through observer records, restricted access and the information associated with region boundaries. It must distinguish a record becoming inaccessible to an outside observer from its destruction in the complete process. A complete solution needs a compatible quantum evolution, an evaporating geometry and recoverable correlations in the radiation. The boundary bookkeeping supplies a proposed route, while a physical evaporation construction must establish the decisive transfer. A horizon diagram by itself does not settle it.
 
+$$ S_{\mathrm{BH}} = \frac{k_B\, A}{4\,\ell_P^{2}} $$
+
+Bekenstein-Hawking entropy: a black hole's entropy is its horizon area $A$ in units of four Planck areas. It sets the thermodynamic budget and gives no map from what fell in to what comes out.
+
+$$ T_H = \frac{\hbar c^{3}}{8\pi G M k_B} $$
+
+Hawking temperature of a black hole of mass $M$. Smaller holes are hotter, so a hole radiates faster as it shrinks. The information question is whether correlations in that radiation carry what fell in.
+
 See also: What happens inside a black hole? (https://floatingpragma.ai/faq/#what-happens-inside-a-black-hole), What replaces the singularities in the Big Bang and black holes? (https://floatingpragma.ai/faq/#cosmological-singularities)
 
 Sources: [Observer spacetime and the conditional Einstein reconstruction](https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/recovering_observer_spacetime_and_einstein_dynamics_from_overlap_consistency.pdf)
@@ -878,6 +1236,20 @@ Link: https://floatingpragma.ai/faq/#what-is-dark-matter. Read more: [Chapter 33
 
 Dark energy names whatever drives the observed acceleration of cosmic expansion. A cosmological constant is its simplest description, with pressure equal to minus its energy density. OPH's fixed-capacity branch proposes that the constant is set by how many durable records a cosmological horizon can hold. In Planck units, the proposed relation is Lambda = 3 pi divided by that capacity. A very large capacity then corresponds to a very small constant. Turning a record capacity into a physical horizon and selecting its value are substantive parts of the proposal. On the fixed-capacity interpretation, the pressure-to-density ratio is minus one; a demonstrated change would reject that branch. The mechanism must be compared with observations, rather than inferred from agreement or finite memory alone.
 
+Figure: A fixed horizon capacity gives a cosmological constant, whose pressure-to-density ratio w stays at minus one through all of cosmic history. A demonstrated drift, like the dashed curve, would reject that branch.
+
+$$ w = \frac{p}{\rho c^{2}} = -1 $$
+
+The equation of state $w$ is pressure $p$ over energy density $\rho c^2$. A cosmological constant has $w = -1$ at every epoch, which is what a capacity that never changes gives.
+
+$$ \frac{\ddot a}{a} = -\frac{4\pi G}{3}\left(\rho + \frac{3p}{c^{2}}\right) $$
+
+The acceleration equation for the scale factor $a$, with $\rho$ as mass density. Ordinary matter decelerates the expansion. With $p = -\rho c^2$ the bracket turns negative and the expansion speeds up.
+
+$$ \Lambda\,\ell_P^{2} = \frac{3\pi}{N} $$
+
+The proposed relation in Planck units: $N$ is the number of durable records a cosmological horizon can hold. A very large capacity means a very small constant $\Lambda$.
+
 See also: Why is the cosmological constant so small? (https://floatingpragma.ai/faq/#why-is-the-cosmological-constant-so-small), Why are dark energy and matter important at roughly the same cosmic epoch? (https://floatingpragma.ai/faq/#dark-energy-coincidence), Why does the enormous calculated vacuum energy not curve the universe enormously? (https://floatingpragma.ai/faq/#vacuum-energy-problem)
 
 Sources: [Observer spacetime and the conditional Einstein reconstruction](https://github.com/FloatingPragma/observer-patch-holography/blob/main/paper/recovering_observer_spacetime_and_einstein_dynamics_from_overlap_consistency.pdf); [Observer-screen synchronization as a candidate inflation-free branch](https://github.com/FloatingPragma/observer-patch-holography/blob/main/cosmology/oph_inflation_without_inflaton_observer_screen_synchronization.pdf)
@@ -888,11 +1260,31 @@ Link: https://floatingpragma.ai/faq/#what-is-dark-energy. Read more: [Chapter 29
 
 On a proposed OPH branch, the cosmological constant is small because the horizon is large. In Planck units it equals three pi divided by the number of records your cosmological horizon can hold, about 3.3 × 10¹²². The puzzle comes from adding up the zero-point energy of empty space, which overshoots the sky by roughly 120 orders of magnitude. Gravity's local probes are light rays, and vacuum energy looks the same to every observer at any speed, so it is a number times the metric, the geometry's ruler. Along any light ray the metric reads exactly zero, so the light-ray balance leaves that number undetermined. The vacuum-energy problem stays open, and other local measurements remain possible. The candidate record counts give values within one percent of the Planck value, a comparison made after the fact. The branch predicts dark energy that never changes, so an established change over time would rule it out.
 
+Figure: Summing the zero-point energy of empty space overshoots the measured constant by about 120 orders of magnitude. Read as three pi over the horizon's record count, the small value is the size of the horizon written in another column.
+
+$$ \Lambda\,\ell_P^{2} = \frac{3\pi}{N} $$
+
+The cosmological constant $\Lambda$ in Planck units is three pi over the horizon's record count $N$. With the Planck satellite's $N = 3.3129\times10^{122}$ this gives $2.85\times10^{-122}$: a small constant is a large count.
+
+$$ T^{\mathrm{vac}}_{ab} = -\rho_{\mathrm{vac}}\, g_{ab}, \qquad g_{ab}\,k^{a}k^{b} = 0 \;\Rightarrow\; T^{\mathrm{vac}}_{ab}\,k^{a}k^{b} = 0 $$
+
+Vacuum energy looks the same to every observer, so its stress is a number $\rho_{\mathrm{vac}}$ times the metric $g_{ab}$. Along any light ray $k^a$ the metric reads zero, so the light-ray balance sees no vacuum energy, however large.
+
 Link: https://floatingpragma.ai/faq/#why-is-the-cosmological-constant-so-small. Read more: [Chapter 33: Why Was Every Open Problem the Same Problem?](https://oph-book.floatingpragma.ai/chapter/chapter-33), [Chapter 25: Why Does Gravity Look Like Geometry?](https://oph-book.floatingpragma.ai/chapter/chapter-25), [Chapter 29: Why 1/137, and Why Is There a Limit to What the Universe Can Remember?](https://oph-book.floatingpragma.ai/chapter/chapter-29).
 
 ### Why is the universe expanding?
 
 OPH explores expansion as a change in the density of records used to reconstruct spacetime. An event order says what can influence what; an additional count supplies a candidate volume measure. If the same pattern of causal relations contains a changing density of physical events, the effective geometry can have a changing scale. Clocks and light signals inside that geometry would register expansion and redshift. This is a proposed physical identification, not the claim that merely storing more data makes a universe expand. The construction must produce the relevant record history, its ruler and clock comparisons, and the observed expansion law together. The fixed-horizon-capacity branch supplies a candidate cosmological constant; it does not by itself select the complete cosmological history.
+
+Figure: Record order fixes the light cones, which are the same at every epoch; record counts fix the scale. Equal cells hold 16 times as many records at reception as at emission, so the scale factor has doubled and the light arrives with redshift z = 1.
+
+$$ ds^{2} = a(\eta)^{2}\left(-c^{2}\,d\eta^{2} + d\vec{x}^{\,2}\right) $$
+
+A flat expanding universe in conformal time $\eta$: the flat metric multiplied by the square of the scale factor $a$. The light cones are the same at every epoch; only the scale grows.
+
+$$ n \propto a^{4}, \qquad 1 + z = \left(\frac{n_0}{n_e}\right)^{1/4} $$
+
+Records sampling equal conformal four-volumes have a density $n$ that grows as the fourth power of the scale factor. The fourth root of the ratio between reception $n_0$ and emission $n_e$ is one plus the redshift $z$.
 
 See also: Why is spacetime de Sitter? (https://floatingpragma.ai/faq/#why-is-spacetime-de-sitter), What is dark energy? (https://floatingpragma.ai/faq/#what-is-dark-energy), Why was the early universe so uniform and nearly spatially flat? (https://floatingpragma.ai/faq/#horizon-flatness-problems), Does OPH explain the Hubble tension? (https://floatingpragma.ai/faq/#hubble-tension)
 
@@ -903,6 +1295,20 @@ Link: https://floatingpragma.ai/faq/#why-is-the-universe-expanding. Read more: [
 ### Why is spacetime de Sitter?
 
 We experience ourselves in an expanding universe that is turning into de Sitter space. Distant galaxies recede faster the farther away they are, and every observer sits at the centre of its own horizon, past which no signal will ever reach it. De Sitter is the effective description of how things seem to us. Spacetime is no container that could stretch. Observers come first, each reading the world from its own patch, and space and time are the account their records agree on. De Sitter is the geometry in which every perspective has the same shape: each observer is the centre, each horizon has the same size, and no observer is privileged. A horizon is a boundary, and a boundary holds a finite number of records, about 3.3 × 10¹²² for ours. That count never changes, so the horizon never changes size and the cosmological constant stays constant. Measured against an observer's own clock, the region inside its horizon is a heat bath at about 2 × 10⁻³⁰ degrees.
+
+Figure: Each observer sits at the centre of its own horizon, and every horizon holds the same number of records. Distant galaxies are carried toward your horizon and their signals fade out at it. No observer has a privileged place.
+
+$$ N = \frac{A}{4\,\ell_P^{2}} = \frac{3\pi}{\Lambda\,\ell_P^{2}} \approx 3.3 \times 10^{122} $$
+
+The horizon's record count $N$ is its area $A$ in units of four Planck areas. For a de Sitter horizon the area is fixed by the cosmological constant, so a fixed count means a fixed constant: $\Lambda = 3\pi/N$ in Planck units.
+
+$$ T = \frac{\hbar H}{2\pi k_B} \approx 2 \times 10^{-30}\ \mathrm{K}, \qquad H = c\sqrt{\Lambda/3} $$
+
+The temperature of the horizon measured on the observer's own clock, found by Gibbons and Hawking in 1977. $H$ is the expansion rate the horizon size sets.
+
+$$ 1 + z = \left(\frac{n_0}{n_e}\right)^{1/4} $$
+
+Redshift from record counts: $n_e$ and $n_0$ are the densities of records in equal comoving cells at emission and at reception. The count density grows as the fourth power of the scale factor.
 
 From perspectives first to de Sitter space:
 
@@ -926,11 +1332,33 @@ Link: https://floatingpragma.ai/faq/#why-is-spacetime-de-sitter. Read more: [Cha
 
 Everything falls at the same rate because, in OPH's account, the mass that resists a push and the mass gravity acts on are one entry read twice. Mass here is a standing cost, the repair work a pattern demands at every event to stay in one piece, where repair is the step in which neighboring observers settle a disagreement. That cost sets how hard the pattern is to redirect, and gravity's field equation takes the same cost as its source. Set mass times acceleration equal to gravity's pull and the mass divides out, leaving nothing about the object. Textbooks add this as a separate rule, the equivalence principle. OPH has still to show on its executed observers that this cost is measured rest mass and gravity's source. The MICROSCOPE satellite found titanium and platinum falling alike to one part in a thousand million million, which the account must reproduce. In 1971 David Scott dropped a hammer and a falcon feather on the Moon, and they landed together.
 
+$$ m_{\mathrm{in}}\, a = m_{\mathrm{gr}}\, g \quad\Rightarrow\quad a = g \quad \text{when } m_{\mathrm{in}} = m_{\mathrm{gr}} $$
+
+Mass times acceleration set equal to gravity's pull. In OPH's account the mass $m_{\mathrm{in}}$ that resists a push and the mass $m_{\mathrm{gr}}$ gravity acts on are one entry, the standing repair cost, so it divides out.
+
+$$ \eta = 2\,\frac{\lvert a_{\mathrm{Ti}} - a_{\mathrm{Pt}} \rvert}{\lvert a_{\mathrm{Ti}} + a_{\mathrm{Pt}} \rvert} \lesssim 10^{-15} $$
+
+The Eötvös ratio $\eta$ compares the free-fall accelerations of a titanium and a platinum test mass. The MICROSCOPE satellite found them equal to one part in a thousand million million.
+
 Link: https://floatingpragma.ai/faq/#why-everything-falls-at-same-rate. Read more: [Chapter 32: Why Does Anything Move?](https://oph-book.floatingpragma.ai/chapter/chapter-32), [Chapter 25: Why Does Gravity Look Like Geometry?](https://oph-book.floatingpragma.ai/chapter/chapter-25).
 
 ### Why does gravity follow an inverse-square law?
 
 Gravity weakens with the square of distance because space has three directions, and the exponent is the number of directions minus one. The world here is a network of small observers joined by seams, the links where neighbors compare readings. An influence whose total outflow is fixed by its source must cross seams on its way out, and that same total crosses every closed shell around the source, so the strength on one seam is the total divided by the seams in the shell. Twice as far out, a shell in three directions holds four times as many seams, so each carries a quarter. With four directions it would carry an eighth. Electric force obeys the same count, and a 1971 experiment at Wesleyan University pinned its exponent at two to fifteen decimal places.
+
+Figure: The same total outflow crosses every shell around the source. Twice as far out the shell holds four times as many seams, so each carries a quarter; three times as far, nine seams and a ninth each.
+
+$$ \text{strength} \;\propto\; \frac{1}{r^{\,d-1}} $$
+
+$r$ is the number of hops from the source and $d$ the number of independent directions. A shell has $d-1$ directions, so its seam count grows as $r^{d-1}$. For $d = 3$ this is the inverse square; for $d = 4$, an inverse cube.
+
+$$ \oint \vec g \cdot d\vec A = -4\pi G M \;\Rightarrow\; g = \frac{GM}{r^{2}} $$
+
+Gauss's law for gravity: the flux of the field $\vec g$ through any closed surface around a mass $M$ is the same, and a sphere of radius $r$ has area $4\pi r^2$.
+
+$$ F \propto \frac{1}{r^{\,2+q}}, \qquad q = (2.7 \pm 3.1) \times 10^{-16} $$
+
+Williams, Faller and Hill at Wesleyan in 1971 wrote the electric force exponent as two plus $q$ and measured $q$. It is zero to the fifteenth decimal place.
 
 Link: https://floatingpragma.ai/faq/#why-is-gravity-an-inverse-square-law. Read more: [Chapter 32: Why Does Anything Move?](https://oph-book.floatingpragma.ai/chapter/chapter-32), [Chapter 26: Why Exactly These Forces?](https://oph-book.floatingpragma.ai/chapter/chapter-26).
 
@@ -947,6 +1375,16 @@ Link: https://floatingpragma.ai/faq/#why-is-gravity-so-weak. Read more: [Chapter
 ### What are gravitational waves?
 
 A gravitational wave is a ripple in the geometry of spacetime, the settled count of records shaking. The world here is a network of observers that compare records and repair any disagreement, and geometry is the summary of settled regions, fixed by which records read which and how many there are. In OPH's account that summary answers to energy, and it can ripple. A ripple holds no knot of disagreement for repair to keep maintaining. LIGO caught the first one on 14 September 2015, from two black holes merging over a billion light years away. The detector's four-kilometer arms changed length by about a thousandth of the width of a proton, the finest length measurement anyone has made. In 2017 a wave from two merging neutron stars reached Earth together with the flash of light from the same collision, which showed that gravitational waves travel at the speed of light.
+
+Figure: A gravitational wave travelling into the page stretches a ring of free masses one way while squeezing it the other, then swaps, once per cycle. LIGO reads the same pattern as a change in the lengths of its two perpendicular arms.
+
+$$ \Box\, h_{ab} = 0, \qquad \Box = -\frac{1}{c^{2}}\frac{\partial^{2}}{\partial t^{2}} + \nabla^{2} $$
+
+Far from its sources, a small ripple $h_{ab}$ in the metric obeys the wave equation, so it travels at the speed of light $c$. The 2017 neutron-star merger confirmed it: wave and flash arrived together.
+
+$$ h \approx \frac{\Delta L}{L} $$
+
+The strain $h$ is the fractional change in a detector arm of length $L$. LIGO's four-kilometer arms changed length by $\Delta L$, about a thousandth of the width of a proton.
 
 Link: https://floatingpragma.ai/faq/#what-are-gravitational-waves. Read more: [Chapter 28: What Is a Particle, What Is a Wave, and Why Does It Look Like Both?](https://oph-book.floatingpragma.ai/chapter/chapter-28), [Chapter 34: Why Was Newton Right for Two Hundred Years?](https://oph-book.floatingpragma.ai/chapter/chapter-34), [Chapter 25: Why Does Gravity Look Like Geometry?](https://oph-book.floatingpragma.ai/chapter/chapter-25).
 
@@ -1040,11 +1478,35 @@ Link: https://floatingpragma.ai/faq/#what-is-mass. Read more: [Chapter 35: What 
 
 Twelve is forced by counting, the way a twenty-sided die always has twelve corners. Each piece of the world is a closed boundary carrying ports, its points of contact with neighbors, and four conditions fix how it is cut: triangular faces; two faces along every seam; five faces ringing each port; and every loop of comparisons bounding some faces, which makes the surface a sphere. Count seam-ends and face-sides two ways each, and ports minus seams plus faces comes out as a sixth of the ports. A sphere sets that combination to two, so there are twelve ports, thirty seams and twenty faces. Thirteen fails outright, since sixty-five seam-ends cannot pair up. The twelve readings, as twelve reversible dials, split into one plus three plus eight, which is hypercharge, the weak force and the strong force.
 
+Figure: The boundary of one patch as a wiring diagram, with twelve ports, thirty seams joining them and twenty triangular faces, five faces around every port. Ports minus seams plus faces gives two, the value of a sphere. No other port count meets the four conditions.
+
+$$ 5P = 2S, \qquad 3F = 2S $$
+
+Two double counts. $P$ is the number of ports, $S$ of seams, $F$ of faces. Five seams leave every port and each seam has two ends; each triangle has three sides and each seam borders two faces.
+
+$$ P - S + F = P - \frac{5P}{2} + \frac{5P}{3} = \frac{P}{6} = 2 \;\Longrightarrow\; P = 12 $$
+
+Feeding the double counts into ports minus seams plus faces leaves a sixth of the ports. A boundary that closes into a sphere sets that combination to 2, so $P = 12$, $S = 30$ and $F = 20$.
+
+$$ 20 \times 3 = 12 \times 5 = 30 \times 2 = 60 $$
+
+The turns that carry the boundary onto itself, counted three ways: each of 20 faces can be held in 3 positions, each of 12 ports in 5, each of 30 seams in 2. All three counts give 60.
+
 Link: https://floatingpragma.ai/faq/#why-twelve. Read more: [Chapter 14: Why Twelve?](https://oph-book.floatingpragma.ai/chapter/chapter-14), [Chapter 26: Why Exactly These Forces?](https://oph-book.floatingpragma.ai/chapter/chapter-26).
 
 ### Why are there exactly these forces?
 
 The forces are what a twelve-port patch can do to itself, and its twelve responses split only one way, one plus three plus eight, which are hypercharge, the weak force and the strong force. Every observer here is such a patch, and its complete set of reversible responses has twelve independent dials. No outside desk holds a preferred labeling of the ports, so at most one dial commutes with all the others. The rest must be built from pieces whose allowed sizes are a fixed mathematical list, three, eight, ten, fourteen and upward. Four threes would need four blocks of three in the wiring, which has two. That leaves one dial plus eleven, and eleven is three plus eight and nothing else. Electromagnetism is hypercharge mixed with one weak direction. No measured mass or coupling enters.
+
+Figure: The twelve port readings split into blocks of 1, 3, 3 and 5 that the rotations never mix. The uniform reading is the single central dial. One odd block carries the three-dial piece; the other odd block and the even block together carry the eight-dial piece.
+
+$$ \dim \mathrm{SU}(n) = n^2 - 1 = 3,\ 8 \quad (n = 2,\ 3) $$
+
+The reversible changes of $n$ complex slots that keep the total size, less the one dial that turns all slots together. Two slots give 3 dials, three slots give 8.
+
+$$ 12 = 1 + 11, \qquad 11 = 3 + 8 $$
+
+Twelve dials in all. At most one commutes with every other, because only the uniform reading survives all sixty rotations. Simple pieces come in sizes 3, 8, 10, 14 and upward, and four threes would need four blocks of three. Eleven splits only as $3 + 8$.
 
 Link: https://floatingpragma.ai/faq/#why-these-forces. Read more: [Chapter 26: Why Exactly These Forces?](https://oph-book.floatingpragma.ai/chapter/chapter-26).
 
@@ -1082,11 +1544,39 @@ Link: https://floatingpragma.ai/faq/#why-do-particles-have-the-masses-they-have.
 
 The fine-structure constant α, the strength with which light grips charge, is about 1/137 because that value lets one cell of the screen that bounds a region agree with itself. Measured from outside in gravity's area unit, the cell is a pure number, the grain. Read from inside, it is the finest detail light can resolve. Equating the two gives grain = φ + α√π, with φ the golden ratio, where the cell's entropy balances, and √π from the profile of its edge. The grain also fixes α, so the loop feeds itself and pulls every guess to one point, reaching twelve digits in ten passes without using the measured value. It returns 1/137.035660; the laboratory measures 1/137.035999. Settling the last 2.5 parts per million, in the vacuum's cloud of quark pairs, is work in progress.
 
+Figure: The grain fixes the coupling the forces share; running it down the range gives α; adding α√π to the golden ratio gives the grain again. The loop closes at one grain and returns 1/137.035660, against the laboratory's 1/137.035999.
+
+$$ P = \varphi + \alpha\sqrt{\pi} $$
+
+$P$ is the grain, the area of one screen cell in gravity's area unit. $\varphi = 1.6180339887$ is the golden ratio, where the cell's entropy balances, $\sqrt{\pi} = 1.7724538509$ comes from the profile of its edge, and $\alpha$ is the coupling at that grain.
+
+$$ P_\ast = 1.6309682414, \qquad \alpha^{-1} = 137.035660 \quad (\text{lab: } 137.035999) $$
+
+The fixed point of the loop and the coupling it returns, beside the laboratory value read at low energy. They differ by 2.5 parts per million. Settling that last step, in the vacuum's cloud of quark pairs, is work in progress.
+
+$$ |F(P) - F(P')| \le 0.0724\, |P - P'| $$
+
+$F$ is one pass of the loop. Any two trial grains come back at most 0.0724 of their distance apart, a bound proved with interval arithmetic. From a seed of 1 the loop reaches twelve digits in ten passes without using the measured value.
+
 Link: https://floatingpragma.ai/faq/#why-is-the-fine-structure-constant-1-137. Read more: [Chapter 29: Why 1/137, and Why Is There a Limit to What the Universe Can Remember?](https://oph-book.floatingpragma.ai/chapter/chapter-29).
 
 ### Is there a limit to what the universe can remember?
 
 Yes, because what a region can hold is set by the area of its boundary, and the largest boundary any observer has, the cosmic horizon, holds about 3.3 × 10¹²² units of memory. Double a region's radius and its volume grows eightfold while its memory grows fourfold, since everything learnable about a region crosses its surface. A square meter of boundary holds 9.6 × 10⁶⁸ units. The horizon's total comes from reading it twice, from outside by its area and from inside by the lasting public records observers can write and read back, and requiring agreement. That gives 3.3001 × 10¹²², four parts in a thousand below the 3.3129 × 10¹²² from the Planck satellite. The capacity fixes the cosmological constant, and since it never changes, any measured drift in dark energy would falsify it.
+
+Figure: Double a region's radius and its volume grows eightfold while its memory grows fourfold, because everything learnable about the region crosses its surface.
+
+$$ \frac{V(2r)}{V(r)} = 8, \qquad \frac{N(2r)}{N(r)} = \frac{A(2r)}{A(r)} = 4 $$
+
+Volume $V$ grows as the cube of the radius $r$; memory $N$ follows the boundary area $A$, which grows as the square.
+
+$$ \frac{1\ \mathrm{m}^{2}}{4\,\ell_P^{2}} \approx 9.6 \times 10^{68} $$
+
+Units of memory on one square meter of boundary, at four Planck squares per unit; $\ell_P$ is the Planck length.
+
+$$ N_\star = 3.3001 \times 10^{122} \quad \text{vs.} \quad N_{\text{Planck}} = 3.3129 \times 10^{122} $$
+
+The horizon capacity $N_\star$, fixed by requiring the area count and the count of durable public records to agree, next to the value read off the Planck satellite's expansion measurement. They differ by four parts in a thousand.
 
 Link: https://floatingpragma.ai/faq/#is-there-a-limit-to-what-the-universe-can-remember. Read more: [Chapter 29: Why 1/137, and Why Is There a Limit to What the Universe Can Remember?](https://oph-book.floatingpragma.ai/chapter/chapter-29), [Chapter 24: Why Does a Region's Memory Scale With Its Surface?](https://oph-book.floatingpragma.ai/chapter/chapter-24).
 
@@ -1100,6 +1590,18 @@ Link: https://floatingpragma.ai/faq/#why-do-the-constants-of-nature-have-their-v
 
 Two electrons cannot share a state because swapping them flips the sign of their joint amplitude, the number whose square gives the odds, and for two in one state that amplitude would have to equal its own negative, which makes it zero. An electron is a knot, a twist in how neighboring patches pass directions along that no local repair can undo. Its spin is one half, so one full turn brings it back with the sign flipped. Swapping two identical knots winds their surroundings exactly as one full turn of one would. Hold a belt at both ends, carry one buckle round the other and back, and the belt picks up a full twist. The result is Pauli's exclusion principle, and it is why atoms have shells and tables are solid.
 
+$$ \psi(x_2, x_1) = -\psi(x_1, x_2) \;\Rightarrow\; \psi(x, x) = -\psi(x, x) = 0 $$
+
+Swapping two identical spin-one-half particles flips the sign of their joint amplitude. Put both in the same state $x$ and the amplitude equals its own negative, so it is zero.
+
+$$ R(2\pi) = -1, \qquad R(4\pi) = +1 $$
+
+For spin one half a full turn $R(2\pi)$ returns the state with its sign flipped, and only two full turns restore it. A swap winds the surroundings as one full turn does, so it carries the same sign.
+
+$$ a^\dagger_j a^\dagger_k = -\,a^\dagger_k a^\dagger_j \;\Rightarrow\; a^\dagger_k a^\dagger_k = 0 $$
+
+The same rule in operators: creating two electrons in one order gives minus the other order, so creating two in the same mode $k$ gives nothing.
+
 Link: https://floatingpragma.ai/faq/#why-cant-two-electrons-share-a-state. Read more: [Chapter 28: What Is a Particle, What Is a Wave, and Why Does It Look Like Both?](https://oph-book.floatingpragma.ai/chapter/chapter-28).
 
 ### What is antimatter?
@@ -1111,6 +1613,20 @@ Link: https://floatingpragma.ai/faq/#what-is-antimatter. Read more: [Chapter 27:
 ### Why do the proton and the electron have exactly opposite charges?
 
 The proton and the electron balance exactly because all charges are counted on one grid, fixed by the world's wiring, which no particle can drift off. A proton is two up quarks at plus two thirds and a down quark at minus one third, and the electron, which holds no quarks, sits at minus one. Six combinations of force moves leave every piece of matter untouched, so they count as doing nothing, and that holds only if hypercharge, the quantity electric charge is built from, comes in whole sixths. Particles carrying color, the strong force's charge, land on thirds and the rest on whole numbers. Hydrogen is neutral to better than one part in a billion billion. A mismatch that size would let a hydrogen cloud blow itself apart instead of collapsing into a star.
+
+Figure: Electric charge on a grid of thirds. The proton's quarks step down a third and up two thirds twice, landing on +1. The electron, with no color, sits on the whole number −1. Both are counted in one unit set by the wiring.
+
+$$ Q_p = \tfrac{2}{3} + \tfrac{2}{3} - \tfrac{1}{3} = +1, \qquad Q_e = -1 $$
+
+The proton's charge from two up quarks and a down quark, against the electron's. Measured, hydrogen is neutral to better than one part in $10^{18}$.
+
+$$ Q = T_3 + Y $$
+
+Electric charge $Q$ is hypercharge $Y$ plus the weak component $T_3 = \pm\tfrac{1}{2}$ inside a weak pair. Up quark $\tfrac16 + \tfrac12 = \tfrac23$, down quark $\tfrac16 - \tfrac12 = -\tfrac13$, electron $-\tfrac12 - \tfrac12 = -1$.
+
+$$ \underbrace{\tfrac{1}{3}}_{\text{color}} + \underbrace{\tfrac{1}{2}}_{\text{weak}} + \underbrace{\tfrac{1}{6}}_{\text{hypercharge}} = 1 $$
+
+One combined central move on the quark pair, in fractions of a full turn. It adds to exactly one turn, and so do all fifteen states. Six such moves count as doing nothing, which holds only if every hypercharge is a whole number of sixths.
 
 Link: https://floatingpragma.ai/faq/#why-proton-and-electron-charges-balance. Read more: [Chapter 27: Why This Exact List of Matter, and Why Three Times Over?](https://oph-book.floatingpragma.ai/chapter/chapter-27).
 
@@ -1141,6 +1657,20 @@ Link: https://floatingpragma.ai/faq/#do-protons-decay. Read more: [Chapter 28: W
 ### What is the Standard Model?
 
 The Standard Model is physics' theory of matter and of every force except gravity, written as one line of mathematics with nineteen to twenty-six measured numbers typed in. It is an effective description, correct inside its range and carrying constants it cannot generate. Numbers go in and predictions come out, never the reverse. OPH gives each piece an origin, on stated premises about the twelve responses of a patch of the world and how its relabelings act on them. Its forces, blocks of one, three and eight, come from splitting those twelve responses. Its fifteen kinds of matter per family are the ways of picking two or four slots out of five, which reproduces every charge in its table. Its Higgs field is the settled background every particle is maintained against. Deriving those premises from the executed observer, and reading every mass and mixing angle off the same structure, are work in progress.
+
+Figure: Three color slots tagged −1/3 and two weak slots tagged +1/2. Picking two or four of the five gives the fifteen states of one family, shown with one example pick per row. Adding the tags of a pick gives its hypercharge Y.
+
+$$ G = \frac{\mathrm{SU}(3) \times \mathrm{SU}(2) \times \mathrm{U}(1)}{\mathbb{Z}_6} $$
+
+The force group, built from blocks of 8, 3 and 1 dials: strong, weak and hypercharge. Six combinations of central moves leave every state of a family unchanged, so they count as doing nothing and are divided out.
+
+$$ \binom{5}{2} + \binom{5}{4} = 10 + 5 = 15 $$
+
+The matter states in one family, as the ways of picking two or four slots out of five. Swapping two picked slots flips the sign, so no slot can be picked twice.
+
+$$ 6\left(\tfrac{1}{6}\right)^{3} + 3\left(-\tfrac{2}{3}\right)^{3} + 3\left(\tfrac{1}{3}\right)^{3} + 2\left(-\tfrac{1}{2}\right)^{3} + 1^{3} = 0 $$
+
+One of the anomaly sums that must vanish for the forces to stay consistent: every state's hypercharge cubed, over the fifteen states. Over a common denominator of 36 the terms are $1, -32, 4, -9$ and $36$.
 
 Link: https://floatingpragma.ai/faq/#what-is-the-standard-model. Read more: [Chapter 31: What Is a Lagrangian, and Why Is It the Last Thing?](https://oph-book.floatingpragma.ai/chapter/chapter-31), [Chapter 36: Why These Laws and Not Others?](https://oph-book.floatingpragma.ai/chapter/chapter-36), [Chapter 26: Why Exactly These Forces?](https://oph-book.floatingpragma.ai/chapter/chapter-26), [Chapter 27: Why This Exact List of Matter, and Why Three Times Over?](https://oph-book.floatingpragma.ai/chapter/chapter-27).
 
@@ -1214,6 +1744,20 @@ Link: https://floatingpragma.ai/faq/#why-does-mathematics-describe-nature. Read 
 
 A Lagrangian is one function of where a system is and how fast it is changing, a single line its whole behavior can be regenerated from. Its running total along a path is the action, and nature takes the path where that total sits level under small nudges, like a valley floor. For a thrown ball the function is energy of motion minus energy of height. Since the level spot can be a peak or saddle, the rule is stationary action. Maupertuis saw a supreme being in it, because it seems to know where the ball lands. No foresight is needed. If each step's odds depend on the present alone, minus the logarithm of a history's odds is a sum of per-step terms, totted up like a receipt. Matching that tally to physical action is separate mathematics.
 
+Figure: The thrown ball's actual arc and two nudged arcs share their endpoints. Plot the action against the size of the nudge and the actual arc sits where the curve is level.
+
+$$ L = \tfrac{1}{2} m v^{2} - m g h, \qquad S = \int L\, dt $$
+
+For a thrown ball of mass $m$, the Lagrangian $L$ is energy of motion minus energy of height. Its running total along a path is the action $S$.
+
+$$ \delta S = 0 $$
+
+Stationary action: nudge the path slightly with its endpoints held and $S$ does not change to first order. The level spot can be a valley floor, a peak or a saddle.
+
+$$ -\log\left(p_{1} p_{2} \cdots p_{n}\right) = \sum_{k=1}^{n} \left(-\log p_{k}\right) $$
+
+When each step's odds $p_k$ depend on the present alone, minus the logarithm of a history's odds is a sum of per-step terms, totted up like a receipt. Matching that tally to physical action is separate mathematics.
+
 Link: https://floatingpragma.ai/faq/#what-is-a-lagrangian. Read more: [Chapter 31: What Is a Lagrangian, and Why Is It the Last Thing?](https://oph-book.floatingpragma.ai/chapter/chapter-31).
 
 ### Why does anything move at all?
@@ -1244,6 +1788,20 @@ Link: https://floatingpragma.ai/faq/#is-math-invented-or-discovered. Read more: 
 
 A symmetry is a change in how the world is written down that leaves a named quantity alone, which makes it a claim that part of the description was never physical. Longitude shows it. Latitude has a zero the planet supplies, the equator. Longitude has none, because turning the whole Earth about its axis changes no measurable relation between places. So in October 1884 delegates from twenty-six nations met in Washington and voted for a zero, and Greenwich won twenty-two to one. Distances came through the vote unchanged. Physics runs the same operation on bigger descriptions. The laws are the same here and elsewhere, today and in the Cretaceous, and Emmy Noether proved in 1918 that those two symmetries give conservation of momentum and of energy. Scale is no symmetry. Atoms have a definite size.
 
+Figure: Two places read on two longitude scales whose zeros differ. Every reading changes and the separation of the two places does not. The separation is the physics; the zero is a convention, which is why the 1884 conference had to settle it by vote.
+
+$$ \lambda' = \lambda + c, \qquad \lambda'_B - \lambda'_A = \lambda_B - \lambda_A $$
+
+Moving the zero of longitude $\lambda$ by any amount $c$ changes every reading and leaves every difference alone. A symmetry names the part of a description, here the zero, that was never physical.
+
+$$ \frac{\partial L}{\partial x} = 0 \;\Longrightarrow\; \frac{d}{dt}\,\frac{\partial L}{\partial \dot{x}} = 0 $$
+
+Noether's theorem of 1918 in its simplest case. If the laws, written as a Lagrangian $L$, do not change when everything shifts in space, the momentum $p = \partial L/\partial \dot{x}$ is conserved. Shifting in time gives conservation of energy.
+
+$$ a_0 = \frac{4\pi\varepsilon_0 \hbar^2}{m_e e^2} \approx 0.53 \times 10^{-10}\ \mathrm{m} $$
+
+The Bohr radius, the size of a hydrogen atom, built from Planck's constant and the electron's mass and charge. A length fixed by the laws is exactly what a scale symmetry would forbid, so scale is no symmetry.
+
 Link: https://floatingpragma.ai/faq/#what-is-symmetry. Read more: [Chapter 5: Why Do You and I See the Same Table?](https://oph-book.floatingpragma.ai/chapter/chapter-5).
 
 ### Can everything true be proven?
@@ -1269,6 +1827,16 @@ Link: https://floatingpragma.ai/faq/#what-is-momentum. Read more: [Chapter 32: W
 ### Why do symmetries give conservation laws?
 
 Every continuous symmetry hands back a conserved quantity, by a fixed recipe Emmy Noether published in 1918. A symmetry is a change that leaves the laws alone. Take the Lagrangian, the one function of where a system is and how fast it is changing, and find a change you can dial down to nothing that leaves it unaltered. Multiply its sensitivity to each quantity's speed by how far the change moves that quantity, add up, and add one extra term for clocks. That number never changes along the path nature takes. Slide sideways and it is momentum, turn and it is angular momentum, advance every clock and it is energy, shift a phase everywhere and it is electric charge. The recipe also works on a world made of finite steps, with no smooth limit needed.
+
+Figure: Each change that leaves the laws alone hands back one conserved number. Sliding gives momentum, turning gives angular momentum, advancing every clock gives energy, and shifting a phase everywhere gives electric charge.
+
+$$ Q = \sum_i \frac{\partial L}{\partial \dot q_i}\,\delta q_i \;-\; L\,\delta t, \qquad \frac{dQ}{dt} = 0 $$
+
+Noether's recipe: $\partial L/\partial \dot q_i$ is the momentum of quantity $q_i$, $\delta q_i$ how far the symmetry moves it, and $-L\,\delta t$ the clock term. Along the path nature takes, $Q$ never changes.
+
+$$ E = \sum_i \dot q_i\,\frac{\partial L}{\partial \dot q_i} - L $$
+
+The recipe applied to advancing every clock, where each $q_i$ moves by $\dot q_i\,\delta t$, gives the energy $E$. For a ball, $L$ is energy of motion minus energy of height, and $E$ is their sum.
 
 Link: https://floatingpragma.ai/faq/#symmetries-and-conservation-laws. Read more: [Chapter 31: What Is a Lagrangian, and Why Is It the Last Thing?](https://oph-book.floatingpragma.ai/chapter/chapter-31), [Chapter 32: Why Does Anything Move?](https://oph-book.floatingpragma.ai/chapter/chapter-32).
 
