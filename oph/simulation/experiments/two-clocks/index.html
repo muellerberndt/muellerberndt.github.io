@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clocks · Two clocks on one journey · OPH Simulator</title>
+<meta name="description" content="A private-mode beat clock and an optical clock, a pulse circling the third spatial axis, travel the forward diagonal and return.">
+<meta name="theme-color" content="#000000">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Pragma Research">
+<meta property="og:title" content="Clocks · Two clocks on one journey · OPH Simulator">
+<meta property="og:description" content="A private-mode beat clock and an optical clock, a pulse circling the third spatial axis, travel the forward diagonal and return.">
+<meta property="og:image" content="https://floatingpragma.ai/assets/og.png">
+<meta property="og:image:alt" content="The Pragma Research caret glowing on black.">
+<link rel="icon" href="../../favicon.ico" sizes="16x16 32x32 48x48">
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml" sizes="any">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png" sizes="180x180">
+<link rel="stylesheet" href="../../app.css">
+</head>
+<body>
+<header>
+  <a class="mark" id="mark" href="https://floatingpragma.ai/" title="Pragma Research" aria-label="Pragma Research">
+    <svg class="layer base" viewBox="-1 -1 17 16" aria-hidden="true"><use href="#caret"/></svg>
+    <svg class="layer r" viewBox="-1 -1 17 16" aria-hidden="true"><use href="#caret"/></svg>
+    <svg class="layer b" viewBox="-1 -1 17 16" aria-hidden="true"><use href="#caret"/></svg>
+  </a>
+  <h1 class="brand"><a class="org" href="https://floatingpragma.ai/">PRAGMA RESEARCH</a><a class="home" href="../../">OPH SIMULATOR<span class="cursor" aria-hidden="true"></span></a></h1>
+  <select id="runPicker" title="Experiments"></select>
+  <div class="ow"><button id="owButton" title="The 31 rows of the OpenWave evaluation framework">OpenWave ▾</button><div id="owPanel" class="ow-panel"></div></div>
+  <div class="grow"></div>
+  <label class="file">Open run file<input id="file" type="file" accept=".gz,.json" multiple></label>
+</header>
+<main>
+  <div id="stage">
+    <canvas id="gl"></canvas>
+    <canvas id="c2d"></canvas>
+    <div id="html"></div>
+    <div id="hud" class="overlay"></div>
+    <div id="legend" class="overlay"></div>
+    <div id="empty">Open a run file written by <code>python -m simulator run ...</code>,<br>or drop it here.</div>
+    <div id="drop">Drop a run file</div>
+  </div>
+  <aside>
+    <section id="lawCard"><div id="law"></div></section>
+    <section class="only-field" id="viewCard">
+      <h2>View</h2>
+      <div class="seg" id="frameSeg">
+        <button data-v="observer" class="on" title="Each address as A's records show it: emitted at t - r/c">Observer A's records</button>
+        <button data-v="chart" title="Every address at the same chart time: the description all observers agree on once every record is collected">Chart description</button>
+      </div>
+      <div class="seg" id="sourceSeg">
+        <button data-v="law" class="on">Law</button>
+        <button data-v="continuum">Continuum limit</button>
+        <button data-v="difference">Law − continuum ×20</button>
+      </div>
+      <div class="row">Point size <input id="size" type="range" min="2" max="16" step="0.5" value="8"></div>
+      <div class="row">Glow <input id="gain" type="range" min="0.05" max="1.5" step="0.01" value="0.8"></div>
+      <div class="row"><label><input id="spin" type="checkbox" checked> Rotate</label></div>
+    </section>
+    <section class="only-field">
+      <h2>Plane through A</h2>
+      <canvas id="slice" class="panel" width="560" height="560"></canvas>
+      <p class="note" id="sliceNote"></p>
+    </section>
+    <section class="only-field">
+      <h2>Readings in A's records</h2>
+      <canvas id="series" class="panel" width="560" height="300"></canvas>
+      <p class="note">Solid: the law's readings at A and at two corner stations, drawn up to the latest one A has received. Dashed: the continuum forecast.</p>
+    </section>
+    <section class="only-field">
+      <h2>Law against continuum</h2>
+      <div id="convergence"></div>
+    </section>
+    <div id="dyn"></div>
+    <section>
+      <h2>What this shows</h2>
+      <p class="note" id="explain"></p>
+      <div class="kv" id="meta"></div>
+    </section>
+  </aside>
+</main>
+<footer>
+  <button id="play">Pause</button>
+  <input id="time" type="range" min="0" max="1000" value="0">
+  <div id="clock"></div>
+</footer>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <g id="caret" fill="currentColor" shape-rendering="crispEdges">
+      <rect x="6" y="0" width="3" height="2"/>
+      <rect x="5" y="2" width="5" height="2"/>
+      <rect x="4" y="4" width="3" height="2"/><rect x="8" y="4" width="3" height="2"/>
+      <rect x="3" y="6" width="3" height="2"/><rect x="9" y="6" width="3" height="2"/>
+      <rect x="2" y="8" width="3" height="2"/><rect x="10" y="8" width="3" height="2"/>
+      <rect x="1" y="10" width="3" height="2"/><rect x="11" y="10" width="3" height="2"/>
+      <rect x="0" y="12" width="3" height="2"/><rect x="12" y="12" width="3" height="2"/>
+    </g>
+  </defs>
+</svg>
+<script>window.OPH_PAGE = {"view":"run","run":"two-clocks","row":null,"root":"../../"}; window.OPH_RUNS = [];</script>
+<script src="../../site.js"></script>
+<script src="../../data/two-clocks.js"></script>
+<script src="../../app.js"></script>
+</body>
+</html>
