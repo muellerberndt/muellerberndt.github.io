@@ -16,7 +16,7 @@ select { background: #000; color: var(--text); border: 1px solid var(--line); bo
 select:hover { border-color: var(--dim); }
 p.line { margin: 0; padding: 0 16px 8px; color: var(--dim); text-align: center; }
 main { flex: 1; min-height: 0; display: flex; align-items: center; justify-content: center; }
-video { max-width: 100%; max-height: calc(100vh - 120px); display: block; cursor: pointer; background: #000; }
+video { max-width: 100%; max-height: calc(100vh - 150px); display: block; cursor: pointer; background: #000; }
 .bar { position: relative; height: 3px; background: #0d1b1e; cursor: pointer; margin: 0 16px 14px; }
 .fill { position: absolute; inset: 0 auto 0 0; width: 0; background: var(--cyan); box-shadow: 0 0 8px var(--cyan); }
 /* row pages */
