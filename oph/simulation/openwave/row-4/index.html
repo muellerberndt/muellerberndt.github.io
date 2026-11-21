@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>OpenWave Row 4 · Particle stability</title><meta name="description" content="Interval Echo's two-load pair released with every seam open stays together; with exchange alone it falls apart. Animated from the verified release frames.">
+<link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../assets/style.css">
+</head><body>
+<header><a class="brand" href="https://floatingpragma.ai/"><span class="caret">▌</span>OPH simulation</a><nav><select data-nav aria-label="Universe"><option value="" selected disabled>Universe</option><option value="universe/320/">320 observers</option><option value="universe/81920/">81,920 observers</option><option value="universe/1310720/">1,310,720 observers</option></select><select data-nav aria-label="OpenWave rows"><option value="" disabled>OpenWave</option><option value="openwave/row-4/" selected>Row 4 · Particle stability</option></select></nav></header>
+<p class="line">Two loads released side by side on the full sphere, every seam open: Interval Echo's seam interaction keeps them together, exchange alone lets them drift apart.</p>
+<div class="grid">
+  <div class="cell"><canvas id="s0"></canvas><span class="tag">Interval Echo · κ = 8</span><span class="big" id="b0"></span></div>
+  <div class="cell"><canvas id="s1"></canvas><span class="tag">exchange only · κ = 0</span><span class="big" id="b1"></span></div>
+  <div class="cell"><canvas id="c0"></canvas><span class="tag">birth echosahedron · κ = 8</span><span class="big" id="h0"></span></div>
+  <div class="cell"><canvas id="c1"></canvas><span class="tag">birth echosahedron · κ = 0</span><span class="big" id="h1"></span></div>
+  <div class="cell wide"><canvas id="plot"></canvas><span class="tag">probability the two loads sit on one seam</span></div>
+</div>
+<div class="controls">
+  <button id="play">❚❚</button><input id="time" type="range" min="0" max="1000" value="0"><span id="clock"></span>
+  <span id="boards"></span>
+</div>
+<script>window.ROW4 = {"boards": [{"name": "20 cells", "url": "../../data/row04_L0.json"}, {"name": "80 cells", "url": "../../data/row04_L1.json"}]};</script>
+<script src="../../assets/row4.js"></script>
+<script>document.querySelectorAll("select[data-nav]").forEach((s) => s.onchange = () => { if (s.value) location.href = "../../" + s.value; });</script>
+</body></html>

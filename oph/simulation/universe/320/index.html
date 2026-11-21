@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>OPH Universe · 320 observers</title><meta name="description" content="Interval Echo on a spherical federation of 320 echosahedra: the holographic screen and the continuum observer 0 reads from it.">
+<link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../assets/style.css">
+</head><body>
+<header><a class="brand" href="https://floatingpragma.ai/"><span class="caret">▌</span>OPH simulation</a><nav><select data-nav aria-label="Universe"><option value="" disabled>Universe</option><option value="universe/320/" selected>320 observers</option><option value="universe/81920/">81,920 observers</option><option value="universe/1310720/">1,310,720 observers</option></select><select data-nav aria-label="OpenWave rows"><option value="" selected disabled>OpenWave</option><option value="openwave/row-4/">Row 4 · Particle stability</option></select></nav></header>
+<p class="line">Left: the holographic screen, where every echosahedron is an observer moving along its own subjective, emergent modular timeline (needle = its modular clock). Right: the continuum observer 0 reads from those records at their light delays, growing with its horizon (blue behind, red ahead).</p>
+<main><video id="v" muted playsinline loop autoplay preload="auto" poster="../../media/L2/poster.jpg"></video></main>
+<div class="bar" id="bar"><div class="fill" id="fill"></div></div>
+<script src="../../assets/hls.min.js"></script>
+<script>
+const v = document.getElementById("v"), bar = document.getElementById("bar"), fill = document.getElementById("fill");
+const src = "../../media/L2/master.m3u8";
+if (v.canPlayType("application/vnd.apple.mpegurl")) { v.src = src; }
+else if (window.Hls && Hls.isSupported()) { const h = new Hls({ capLevelToPlayerSize: true }); h.loadSource(src); h.attachMedia(v); }
+else { v.src = "../../media/L2/master.m3u8"; }
+v.play().catch(() => {});
+v.onclick = () => (v.paused ? v.play() : v.pause());
+v.ontimeupdate = () => { fill.style.width = (100 * v.currentTime / (v.duration || 1)) + "%"; };
+let drag = false;
+const seek = (e) => { const r = bar.getBoundingClientRect(); v.currentTime = Math.max(0, Math.min(1, (e.clientX - r.left) / r.width)) * (v.duration || 0); };
+bar.onpointerdown = (e) => { drag = true; v.pause(); seek(e); bar.setPointerCapture(e.pointerId); };
+bar.onpointermove = (e) => drag && seek(e);
+bar.onpointerup = () => { drag = false; v.play(); };
+addEventListener("keydown", (e) => {
+  if (e.target.tagName === "SELECT") return;
+  if (e.code === "Space") { e.preventDefault(); v.paused ? v.play() : v.pause(); }
+  if (e.code === "ArrowRight") { v.pause(); v.currentTime += 1 / 24; }
+  if (e.code === "ArrowLeft") { v.pause(); v.currentTime -= 1 / 24; }
+});
+</script>
+<script>document.querySelectorAll("select[data-nav]").forEach((s) => s.onchange = () => { if (s.value) location.href = "../../" + s.value; });</script>
+</body></html>
