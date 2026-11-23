@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The emergent field as a volume</title><meta name="description" content="Observer 0's emergent field of 83,886,080 observers, smoothed into a volume and rendered as glowing matter.">
+<meta property="og:type" content="video.other"><meta property="og:title" content="The emergent field as a volume">
+<meta property="og:description" content="Observer 0's emergent field of 83,886,080 observers, smoothed into a volume and rendered as glowing matter."><meta property="og:image" content="https://floatingpragma.ai/oph/simulation/media/field-nebula/poster.jpg">
+<meta property="og:url" content="https://floatingpragma.ai/oph/simulation/simulations/field-nebula/"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The emergent field as a volume"><meta name="twitter:description" content="Observer 0's emergent field of 83,886,080 observers, smoothed into a volume and rendered as glowing matter.">
+<meta name="twitter:image" content="https://floatingpragma.ai/oph/simulation/media/field-nebula/poster.jpg">
+<link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../assets/style.css">
+<!-- Google tags. Consent defaults come first; EEA, UK and CH start denied until the visitor chooses. -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', { ad_storage: 'granted', ad_user_data: 'granted', ad_personalization: 'granted', analytics_storage: 'granted' });
+  gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied', wait_for_update: 500, region: ['AT', 'BE', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'GR', 'HU', 'IE', 'IT', 'LV', 'LT', 'LU', 'MT', 'NL', 'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE', 'IS', 'LI', 'NO', 'GB', 'CH'] });
+  try {
+    var fpc = localStorage.getItem('fp_consent');
+    if (fpc) { var g = fpc === 'granted' ? 'granted' : 'denied'; gtag('consent', 'update', { ad_storage: g, ad_user_data: g, ad_personalization: g, analytics_storage: g }); }
+  } catch (e) {}
+  gtag('js', new Date());
+  gtag('config', 'G-HLGH209WMG', { cookie_domain: 'floatingpragma.ai' });
+  gtag('config', 'AW-18551449316');
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HLGH209WMG"></script>
+<script src="/assets/consent.js?v=2" defer></script>
+<script src="/assets/xpixel.js?v=1" data-id="r90vy" defer></script>
+<style>
+.consent { position: fixed; left: 50%; bottom: 64px; z-index: 5; transform: translateX(-50%); width: min(560px, calc(100% - 32px));
+  display: flex; align-items: center; justify-content: space-between; gap: 12px 20px; flex-wrap: wrap; padding: 12px 16px;
+  font-size: .72rem; line-height: 1.6; letter-spacing: .06em; color: rgba(201, 251, 251, .8); background: rgba(0, 0, 0, .92);
+  border: 1px solid rgba(74, 241, 242, .28); box-shadow: 0 0 24px rgba(74, 241, 242, .12); }
+.consent p { margin: 0; }
+.consent a { color: #4af1f2; text-decoration: none; }
+.consent p a { border-bottom: 1px dotted rgba(74, 241, 242, .62); }
+.consent .links { display: flex; gap: 16px; }
+</style>
+</head><body>
+<header><a class="brand" href="https://floatingpragma.ai/"><span class="caret">▌</span>OPH simulation</a><nav><a class="faq" href="https://floatingpragma.ai/faq/what-was-the-big-bang/">What was the Big Bang?</a><select data-nav aria-label="Universe"><option value="" selected disabled>Universe</option><option value="universe/320/">320 observers</option><option value="universe/81920/">81,920 observers</option><option value="universe/1310720/">1,310,720 observers</option><option value="universe/83886080/">83,886,080 observers</option></select><select data-nav aria-label="Simulations"><option value="" disabled>Simulations</option><option value="simulations/particle-pair/">Particle pair</option><option value="simulations/gravity/">Gravity: two masses</option><option value="simulations/black-hole/">Black hole</option><option value="simulations/field-dome/">Field: 3D shell</option><option value="simulations/field-sky/">Field: observer 0's sky</option><option value="simulations/field-nebula/" selected>Field: volume</option></select><select data-nav aria-label="OpenWave rows"><option value="" selected disabled>OpenWave</option><option value="openwave/row-4/">Row 4 · Particle stability</option></select></nav></header>
+<p class="line">Observer 0's emergent field of 83,886,080 observers, smoothed into a volume and rendered as glowing matter.</p>
+<main><video id="v" muted playsinline loop autoplay preload="auto" poster="../../media/field-nebula/poster.jpg"></video></main>
+<div class="controls">
+  <button id="play" aria-label="play or pause">❚❚</button>
+  <input id="time" type="range" min="0" max="1000" value="0" aria-label="time">
+  <span id="clock">0:00 / 0:00</span>
+</div>
+<script src="../../assets/hls.min.js"></script>
+<script>
+const v = document.getElementById("v"), btn = document.getElementById("play"), slider = document.getElementById("time");
+const clock = document.getElementById("clock"), src = "../../media/field-nebula/master.m3u8";
+const start = () => { v.muted = true; const p = v.play(); if (p) p.catch(() => {}); };
+if (v.canPlayType("application/vnd.apple.mpegurl")) { v.src = src; v.addEventListener("loadedmetadata", start); }
+else if (window.Hls && Hls.isSupported()) {
+  const h = new Hls({ capLevelToPlayerSize: true, startLevel: -1 });
+  h.on(Hls.Events.MANIFEST_PARSED, start); h.loadSource(src); h.attachMedia(v);
+} else { v.src = src; }
+const fmt = (s) => `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, "0")}`;
+let dragging = false;
+v.addEventListener("play", () => { btn.textContent = "❚❚"; });
+v.addEventListener("pause", () => { btn.textContent = "▶"; });
+v.addEventListener("timeupdate", () => {
+  if (!dragging && v.duration) slider.value = Math.round(1000 * v.currentTime / v.duration);
+  clock.textContent = `${fmt(v.currentTime || 0)} / ${fmt(v.duration || 0)}`;
+});
+const toggle = () => (v.paused ? start() : v.pause());
+btn.onclick = toggle; v.onclick = toggle;
+slider.oninput = () => { dragging = true; if (v.duration) v.currentTime = (+slider.value / 1000) * v.duration; };
+slider.onchange = () => { dragging = false; };
+addEventListener("keydown", (e) => {
+  if (e.target.tagName === "SELECT" || e.target.tagName === "INPUT") return;
+  if (e.code === "Space") { e.preventDefault(); toggle(); }
+  if (e.code === "ArrowRight") { v.pause(); v.currentTime += 1 / 24; }
+  if (e.code === "ArrowLeft") { v.pause(); v.currentTime -= 1 / 24; }
+});
+</script>
+<script>document.querySelectorAll("select[data-nav]").forEach((s) => s.onchange = () => { if (s.value) location.href = "../../" + s.value; });</script>
+</body></html>
