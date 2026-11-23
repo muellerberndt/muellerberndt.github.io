@@ -64,6 +64,7 @@ OPH stands for Observer Patch Holography. Finite observers keep records, compare
 - [Is reality digital?](https://floatingpragma.ai/faq/is-reality-digital/)
 - [Is the universe a computer?](https://floatingpragma.ai/faq/is-the-universe-a-computer/)
 - [Is the world an illusion?](https://floatingpragma.ai/faq/is-the-world-an-illusion/)
+- [Can local repair find a self-consistent universe in polynomial time?](https://floatingpragma.ai/faq/can-local-repair-find-a-self-consistent-universe-in-polynomial-time/)
 - [How can we know anything about reality?](https://floatingpragma.ai/faq/how-can-we-know-reality/)
 - [Is reality objective or subjective?](https://floatingpragma.ai/faq/is-reality-objective-or-subjective/)
 - [Does everything have a cause?](https://floatingpragma.ai/faq/does-everything-have-a-cause/)

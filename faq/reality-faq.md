@@ -2,7 +2,7 @@
 
 OPH is a rigorous, consistent and complete description of the unified, self-creating computational Universe we inhabit.
 
-216 questions about reality, answered by OPH (Observer Patch Holography). Web page: https://floatingpragma.ai/faq/. Every answer has its own link (the page URL plus #id) and points to the chapter of the free book Reverse Engineering Reality (https://oph-book.floatingpragma.ai/) that explains it in full.
+217 questions about reality, answered by OPH (Observer Patch Holography). Web page: https://floatingpragma.ai/faq/. Every answer has its own link (the page URL plus #id) and points to the chapter of the free book Reverse Engineering Reality (https://oph-book.floatingpragma.ai/) that explains it in full.
 
 ## The big questions
 
@@ -152,7 +152,7 @@ Link: https://floatingpragma.ai/faq/#what-is-forgiveness. Read more: [Chapter 41
 
 A fixed point is an object returned unchanged by a specified map: applying F to x gives x again. A solver searches for an object satisfying that condition. OPH's closure proposal asks for a history whose internally recovered description, when realized, reproduces the same observations and interventions. A Sudoku is an accessible analogy: the finished grid simultaneously satisfies the row, column, box and clue constraints. A solver's sequence of guesses is different from the grid's defining relations. Likewise, no external clock has to run a universe-wide search before time begins. Different maps can have no fixed point, one or many. Writing the equation supplies a constraint; constructing the inhabited physical solution supplies the substantive work.
 
-See also: If reality is a fixed point, is everything predestined? (https://floatingpragma.ai/faq/#is-everything-predestined), Does describing a universe make it exist? (https://floatingpragma.ai/faq/#can-a-description-create-a-world), Isn't a self-creating universe circular? (https://floatingpragma.ai/faq/#isnt-a-self-creating-universe-circular)
+See also: If reality is a fixed point, is everything predestined? (https://floatingpragma.ai/faq/#is-everything-predestined), Does describing a universe make it exist? (https://floatingpragma.ai/faq/#can-a-description-create-a-world), Isn't a self-creating universe circular? (https://floatingpragma.ai/faq/#isnt-a-self-creating-universe-circular), Can local repair find a self-consistent universe in polynomial time? (https://floatingpragma.ai/faq/#can-local-repair-find-a-self-consistent-universe-in-polynomial-time)
 
 Link: https://floatingpragma.ai/faq/#what-is-a-fixed-point-solver. Read more: [Chapter 2: Why Is There Anything Rather Than Nothing?](https://oph-book.floatingpragma.ai/chapter/chapter-2), [Chapter 10: Why Doesn't It Matter Who Goes First?](https://oph-book.floatingpragma.ai/chapter/chapter-10), [Chapter 37: Why Does the Loop Have No Beginning?](https://oph-book.floatingpragma.ai/chapter/chapter-37).
 
@@ -285,6 +285,27 @@ Link: https://floatingpragma.ai/faq/#is-the-universe-a-computer. Read more: [Cha
 No. Calling the world an illusion assumes a truer world behind it that the appearance gets wrong, and there is no world behind the shared one. Objective reality is the single consistent state that all observers' agreed records pick out, and a further fact hiding behind it would be a difference no record could ever show. Ask whether the world in front of you is the authentic article or a copy, and the question dies on the way out, because nothing is available for it to be a copy of. Solidity is real as well, with an account of its own. Your hand stops at a table because one pattern declines to occupy a state another pattern is holding. Your conviction that you touched something is itself a record, written in you.
 
 Link: https://floatingpragma.ai/faq/#is-the-world-an-illusion. Read more: [Chapter 11: What Does Everybody Actually End Up Holding?](https://oph-book.floatingpragma.ai/chapter/chapter-11), [Chapter 2: Why Is There Anything Rather Than Nothing?](https://oph-book.floatingpragma.ai/chapter/chapter-2), [Chapter 35: What Is Anything Made Of?](https://oph-book.floatingpragma.ai/chapter/chapter-35).
+
+### Can local repair find a self-consistent universe in polynomial time?
+
+Picture a row of lamps, each meant to copy its neighbor on the left. Flip the first lamp. Each neighbor can spot a mismatch and correct it. Checking from left to right carries the change down the row in one pass. Nobody needs to see the whole row. OPH uses this idea on overlapping observer records. The same local check verifies agreement and, when it fails, tells the repair law where to act. Polynomial time means the work grows no faster than a fixed power of the network size. OPH proves such a bound for networks that evaluate Boolean formulas on a given input. Its larger proposal is that the universe’s own repair law can realize a history whose observers recover that law and reproduce their records. A polynomial bound for that whole construction remains open, as does the claim that this is the only efficient way to achieve it.
+
+What counts as a repair step?:
+
+1. Hold a proposed record fixed and check each overlap once. If every check passes, that record is a certificate of consensus. During a search, a failed check also identifies a place to rewrite. The time to reach consensus depends on how often checks have to be revisited.
+2. The classical seam rule gives a small example. If two ports hold 2 and 0, balancing leaves them with 1 and 1. Their total is conserved and the sum of their squares falls from 4 to 2. Each strict balancing move lowers the sum of squares by at least 2. For N ports with integer loads from 0 to a fixed M, there are at most NM²/2 such moves. This count covers strict balancing of classical loads. Idle checks and coherent quantum evolution have their own accounting.
+3. For a compiled Boolean formula on a given input, every computed register feeds at most one later check. Any update order then makes at most n(n+1)/2 repairs that actually change the record. The dependency-order sweep reaches consensus in at most n attempts, including checks that already pass.
+4. The dependence on the wiring and the schedule can be tested. Allow a register to feed several later checks and an explicit n-node network admits an update order with 2ⁿ − 1 genuine repairs. Even on the compiled formulas, a scheduler that eventually visits a failing check may spend arbitrarily long checking other sites first.
+
+For the full closure claim, one would have to specify a growing family of physical histories, count the resources used to recover and realize each description, and show that the reconstructed records and responses agree. An efficient construction would establish possibility. Proving it was the only efficient construction would also require ruling out alternatives.
+
+Source: Reality as a Consensus Protocol, §3.2, pp. 16–17 (PDF), https://raw.githubusercontent.com/FloatingPragma/observer-patch-holography/r2073/paper/reality_as_consensus_protocol.pdf#page=16
+
+See also: What does it mean to call the universe a fixed-point solver? (https://floatingpragma.ai/faq/#what-is-a-fixed-point-solver), How does the universe stay consistent everywhere if each part only checks its neighbors? (https://floatingpragma.ai/faq/#how-does-the-universe-stay-consistent), Does describing a universe make it exist? (https://floatingpragma.ai/faq/#can-a-description-create-a-world)
+
+Sources: [Flagship paper, §2.1, p. 6, the closure hypothesis (PDF)](https://raw.githubusercontent.com/FloatingPragma/observer-patch-holography/r2073/flagship/from_observer_consensus_to_standard_physics.pdf#page=6); [Executable Observer Construction, §15, p. 35, the classical seam rule (PDF)](https://raw.githubusercontent.com/FloatingPragma/observer-patch-holography/r2073/paper/executable_observer_construction.pdf#page=35); [Lean proof of the quadratic repair bound](https://github.com/FloatingPragma/observer-patch-holography/blob/r2073/Lean/Computation/FixedFederationComplexity.lean#L427-L445); [Lean construction of the exponential update order](https://github.com/FloatingPragma/observer-patch-holography/blob/r2073/Lean/Computation/FixedFederationFanoutControl.lean#L328-L342)
+
+Link: https://floatingpragma.ai/faq/#can-local-repair-find-a-self-consistent-universe-in-polynomial-time. Read more: [Chapter 2: Why Is There Anything Rather Than Nothing?](https://oph-book.floatingpragma.ai/chapter/chapter-2), [Chapter 6: Why Isn't Agreeing With Your Neighbors Enough?](https://oph-book.floatingpragma.ai/chapter/chapter-6), [Chapter 37: Why Does the Loop Have No Beginning?](https://oph-book.floatingpragma.ai/chapter/chapter-37).
 
 ## Philosophy and knowledge
 
@@ -884,17 +905,32 @@ Link: https://floatingpragma.ai/faq/#uncertainty-principle. Read more: [Chapter 
 
 ### What is quantum entanglement?
 
-Entanglement is definiteness that lives in the relation between two systems and in neither one alone. A playing card shows the idea. “The seven of hearts” splits into a fact about the suit and a fact about the rank. “The red seven or the black eight” fixes how color and rank go together while leaving both unsettled, and learning one hands you the other. Most joint descriptions are of that second kind. Cut an entangled pair in two and each half on its own comes back vague, and that vagueness measures how much the cut severed. Quantum pairs go one step further. There is no hidden face underneath the relation for it to describe, which is why entangled pairs agree more often than any pre-arranged answer sheet allows. The relation is the object.
+In OPH, two observers can each see a random result while something about their pair is certain. Prepare two spins in a singlet state and send one to Alice and one to Bob. If both measure along the same axis, each sees up or down with equal odds. When they compare notes, the answers are always opposite. Two sealed envelopes, one holding a red card and the other a black card, could give the same kind of agreement. The revealing test is to let Alice and Bob each choose a measurement axis independently. Across several pairs of axes, their spin correlations can exceed what any locally prewritten set of answers allows. That is the sense in which the outcomes are settled jointly. If Alice sees up, she can predict Bob’s answer on the same axis. Changing her setting leaves his own counts fifty-fifty. Only when they bring their records together can they see how the correlation depends on both settings.
 
-Figure: Left, a description that splits into a fact about color and a fact about rank. Right, one that fixes only how color and rank go together. Each half alone is fifty-fifty, and learning one hands you the other.
+Figure: A classical comparison. The right grid shows a fair draw between a red seven and a black eight. Finding the color tells you the rank. These correlations can be prepared by shuffling cards. The quantum example below also makes predictions for other choices of measurement.
 
 $$ |\Psi\rangle = \tfrac{1}{\sqrt{2}}\big(|{\uparrow}\rangle|{\downarrow}\rangle - |{\downarrow}\rangle|{\uparrow}\rangle\big) \;\neq\; |a\rangle \otimes |b\rangle $$
 
-The perfectly opposed pair: whichever direction both sides ask along, the two answers come out opposite. No choice of single-particle states $a$ and $b$ writes it as a product.
+For this spin singlet, measuring both spins along the same axis always gives opposite results. No pair of single-spin states $a$ and $b$ has this joint pure state as its product.
 
 $$ \rho_A = \mathrm{Tr}_B\,|\Psi\rangle\langle\Psi| = \tfrac{1}{2}\,\mathbb{1}, \qquad S(\rho_A) = S(\rho_B) = 1\ \text{bit} $$
 
-Average over one half and the other comes back maximally vague. Its entropy, equal on the two sides of the cut, measures how much the cut severed.
+Each spin alone gives a fair up-or-down result along any axis. Because the joint state here is pure, the one bit of entropy on either side measures entanglement between the two spins.
+
+How can an observer tell the difference from shared randomness?:
+
+1. A joint quantum state is entangled when no random mixture of separate states for Alice and Bob can reproduce it. This definition applies even when the measurements at hand cannot demonstrate a Bell violation.
+2. In the executable Interval Echo model, start with one unit of load at the left port, zero at the right, and blank seam memory. Apply the registered seam generator at coupling 8 for an exposure of π/2. The two possible locations have equal probabilities and a definite relative phase. The resulting state of the two ports is entangled.
+3. Read either port at this point and it reports the load in half the trials. A classical coin that places the load at one port or the other would give exactly those counts.
+4. Apply the same pulse again. The two amplitudes interfere and the load reaches the right port with probability 1. If a which-port measurement is made between pulses and its outcome is averaged over, the right-port probability is 1/2. The first pulse also gives a minimum eigenvalue of −1/2 under partial transposition of the two-port state, which certifies entanglement across those ports.
+
+This is a joint experiment on neighboring ports. The separate Bell test uses independently chosen local measurements on a prepared pair. For four suitable choices of paired settings, the singlet gives a Bell score of 2√2. A local model with prewritten answers can reach at most 2. Either observer’s local outcomes still look random.
+
+Source: Executable Observer Construction, Theorem 3.2, Eq. (7), p. 6 (PDF), https://raw.githubusercontent.com/FloatingPragma/observer-patch-holography/r2073/paper/executable_observer_construction.pdf#page=6
+
+See also: Is entanglement "spooky action at a distance"? (https://floatingpragma.ai/faq/#is-entanglement-spooky-action-at-a-distance), Why do quantum correlations beat classical physics, but only by 2√2? (https://floatingpragma.ai/faq/#why-only-2-root-2)
+
+Sources: [Flagship paper, Theorem 4.5, pp. 16–17, finite Bell correlations (PDF)](https://raw.githubusercontent.com/FloatingPragma/observer-patch-holography/r2073/flagship/from_observer_consensus_to_standard_physics.pdf#page=16); [Reality as a Consensus Protocol, §3.3, Theorem 3.30 and Proposition 3.31, pp. 17–18 (PDF)](https://raw.githubusercontent.com/FloatingPragma/observer-patch-holography/r2073/paper/reality_as_consensus_protocol.pdf#page=17); [Executable 99-state Interval Echo seam generator](https://github.com/FloatingPragma/observer-patch-holography/blob/r2073/model/candidate_laws/contrast_memory_spherical_v1/law.py#L67-L98); [Archived transport experiment with six preparations and three receiver settings](https://github.com/FloatingPragma/observer-patch-holography/blob/r2073/model/experiments/interval_echo_gauge/singlet_flight/README.md#singlet-readings-at-both-endpoints)
 
 Link: https://floatingpragma.ai/faq/#what-is-quantum-entanglement. Read more: [Chapter 20: Why Does Nature Cheat, But Only By Exactly 2√2?](https://oph-book.floatingpragma.ai/chapter/chapter-20), [Chapter 24: Why Does a Region's Memory Scale With Its Surface?](https://oph-book.floatingpragma.ai/chapter/chapter-24).
 
