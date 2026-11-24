@@ -16,7 +16,6 @@ OPH stands for Observer Patch Holography. Finite observers keep records, compare
 - [Reality FAQ](https://floatingpragma.ai/faq/): questions about reality (God, death, free will, time, the Big Bang, consciousness, dark matter, whether reality is digital) answered by OPH, with an on-page chat with OPH Sage, one page per question, each linked to its book chapter; Markdown at https://floatingpragma.ai/faq/reality-faq.md
 - [The book: Reverse Engineering Reality](https://oph-book.floatingpragma.ai/): one question per chapter, free online
 - [The OPH textbooks](https://learn.floatingpragma.ai/)
-- [Where every result stands](https://status.floatingpragma.ai/)
 
 ## Questions OPH answers
 - Do we live in a simulation? In OPH the universe is an ordinary computer program, the observer consensus protocol, running on a holographic screen that observers inside it build.
