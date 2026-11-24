@@ -35,3 +35,8 @@ video { max-width: 100%; max-height: calc(100vh - 150px); display: block; cursor
 .controls input[type=range] { flex: 1; accent-color: var(--cyan); }
 @media (max-width: 800px) { .grid { grid-template-columns: 1fr; grid-template-rows: repeat(5, minmax(220px, 1fr)); }
   .cell.wide { grid-column: auto; } }
+
+@media (max-width: 800px) {
+  header nav { margin-left: 0; flex-wrap: wrap; max-width: 100%; gap: 6px; }
+  header nav select { max-width: 100%; }
+}
