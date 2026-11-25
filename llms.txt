@@ -235,6 +235,7 @@ OPH stands for Observer Patch Holography. Finite observers keep records, compare
 - [Why do many brain processes feel like one experience? (The combination problem)](https://floatingpragma.ai/faq/combination-problem/)
 - [If intelligence matters to the universe, where is everybody? (The Fermi paradox)](https://floatingpragma.ai/faq/fermi-paradox/)
 - [What is thinking, and how could the universe do it?](https://floatingpragma.ai/faq/what-is-thinking/)
+- [Why do we have a sense of music?](https://floatingpragma.ai/faq/why-do-we-have-a-sense-of-music/)
 - [What is OPH?](https://floatingpragma.ai/faq/what-is-oph/)
 - [Is OPH a religion?](https://floatingpragma.ai/faq/is-oph-a-religion/)
 - [Isn't a self-creating universe circular?](https://floatingpragma.ai/faq/isnt-a-self-creating-universe-circular/)
