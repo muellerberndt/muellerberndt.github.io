@@ -499,6 +499,7 @@ body.doc-page { display: block; }
 .consent .links a { color: var(--glow); }
 .doc-foot .links { font-size: .66rem; }
 .doc-foot .links a { color: rgba(74, 241, 242, .4); }
+.doc-foot .links, .links.aside { flex-wrap: wrap; justify-content: center; row-gap: 8px; }
 
 /* OPH in 60 seconds */
 .explained .scene { margin-top: 88px; }
