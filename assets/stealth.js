@@ -28,14 +28,16 @@
 
   const word = document.querySelector(".word [data-scramble]");
   const mission = document.querySelector(".mission [data-scramble]");
-  const labels = [...document.querySelectorAll(".label[data-scramble], h2[data-scramble]")];
+  const labels = [...document.querySelectorAll(".label[data-scramble], h2[data-scramble], .unify [data-scramble]")];
   const rootLabel = document.querySelector(".node.root .label");
   const leafLabels = [...document.querySelectorAll(".leaves .label")];
+  const unify = document.querySelector(".unify [data-scramble]");
 
   root.classList.add("booted");
   if (word) setTimeout(() => scramble(word, 1100), 900);
   if (mission) setTimeout(() => scramble(mission, 1000), 1200);
   if (rootLabel) setTimeout(() => scramble(rootLabel, 900), 1500);
+  if (unify) setTimeout(() => scramble(unify, 900), 1500);
   leafLabels.forEach((el, i) => setTimeout(() => scramble(el, 800), 2300 + i * 120));
   labels.forEach((el) => {
     el.addEventListener("mouseenter", () => scramble(el, 380));
@@ -134,7 +136,9 @@
   // Wires: repair network to physics and AI, signals running both ways.
   const tree = document.getElementById("tree");
   const wires = document.getElementById("wires");
-  if (!tree || !wires || !rootLabel || leafLabels.length !== 2) return;
+  // The wires start under the root: the line that names the common idea, or the root label's node.
+  const wireRoot = document.querySelector("[data-wire-root]") || (rootLabel && rootLabel.parentElement);
+  if (!tree || !wires || !wireRoot || leafLabels.length !== 2) return;
   const w = wires.getContext("2d");
   let segs = [];
   let dpr = 1;
@@ -144,7 +148,7 @@
     const box = tree.getBoundingClientRect();
     wires.width = Math.round(box.width * dpr);
     wires.height = Math.round(box.height * dpr);
-    const r = rootLabel.parentElement.getBoundingClientRect();
+    const r = wireRoot.getBoundingClientRect();
     const from = { x: r.left + r.width / 2 - box.left, y: r.bottom + 8 - box.top };
     segs = leafLabels.map((el) => {
       const l = el.getBoundingClientRect();
